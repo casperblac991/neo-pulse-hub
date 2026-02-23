@@ -1,281 +1,175 @@
-import React, { useState, useEffect, useCallback, useMemo } from 'react';
-import { initializeApp } from 'firebase/app';
-import { getAuth, signInAnonymously, onAuthStateChanged, signInWithCustomToken } from 'firebase/auth';
-import { getFirestore, collection, addDoc, serverTimestamp, doc, setDoc } from 'firebase/firestore';
-import { 
-  Zap, X, ShoppingBag, MousePointer2, 
-  MessageCircle, Truck, Globe, Cpu, 
-  ShieldCheck, Activity, ChevronRight, AlertCircle
-} from 'lucide-react';
-
-// --- التحصين الأمني لـ Firebase ---
-const firebaseConfig = JSON.parse(__firebase_config);
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const db = getFirestore(app);
-const appId = typeof __app_id !== 'undefined' ? __app_id : 'neo-pulse-ironclad-v1';
-
-const App = () => {
-  const [user, setUser] = useState(null);
-  const [cart, setCart] = useState([]);
-  const [logs, setLogs] = useState([]);
-  const [isCartOpen, setIsCartOpen] = useState(false);
-  const [lang, setLang] = useState('ar');
-  const [isProcessing, setIsProcessing] = useState(false);
-  const [error, setError] = useState(null);
-
-  // 1. نظام المصادقة القوي مع معالجة الأخطاء
-  useEffect(() => {
-    let isMounted = true;
-    const initAuth = async (retries = 5, delay = 1000) => {
-      try {
-        if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
-          await signInWithCustomToken(auth, __initial_auth_token);
-        } else {
-          await signInAnonymously(auth);
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEO-PULSE | الذكاء التجاري</title>
+    <!-- تضمين المحركات البرمجية الخارجية -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
+        [x-cloak] { display: none !important; }
+        body { 
+            font-family: 'Cairo', sans-serif; 
+            background-color: #030303; 
+            color: #ffffff;
+            overflow-x: hidden;
         }
-      } catch (err) {
-        if (retries > 0) {
-          setTimeout(() => initAuth(retries - 1, delay * 2), delay);
-        } else if (isMounted) {
-          setError("خطأ في الاتصال بالسحابة. يرجى التحديث.");
-        }
-      }
-    };
+        .neon-glow { box-shadow: 0 0 20px rgba(37, 99, 235, 0.3); }
+        .glass-ui { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .product-hover:hover { transform: scale(1.02); border-color: #2563eb; transition: all 0.4s ease; }
+    </style>
+</head>
+<body x-data="neoEngine" x-cloak>
 
-    initAuth();
-    const unsubscribe = onAuthStateChanged(auth, (u) => {
-      if (isMounted) setUser(u);
-    });
-
-    return () => { isMounted = false; unsubscribe(); };
-  }, []);
-
-  // 2. المحاكي اللوجستي المستقر (Memoized)
-  const addLog = useCallback((msg) => {
-    const time = new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
-    setLogs(prev => [`[${time}] ${msg}`, ...prev].slice(0, 5));
-  }, []);
-
-  useEffect(() => {
-    const messages = [
-      "System: Price parity sync - OK",
-      "NEO: Madrid hub security check - Clear",
-      "Logistics: AI routing optimized for US/EU",
-      "Inventory: Global stock real-time sync completed"
-    ];
-    const logInterval = setInterval(() => {
-      addLog(messages[Math.floor(Math.random() * messages.length)]);
-    }, 10000);
-    return () => clearInterval(logInterval);
-  }, [addLog]);
-
-  // 3. قاعدة بيانات المنتجات (Static Optimization)
-  const products = useMemo(() => [
-    { id: "p1", market: 680, price: 420, tag: "Spain Royal Edition", hub: "Madrid Hub", img: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800" },
-    { id: "p2", market: 450, price: 290, tag: "Maha Signature Set", hub: "Casablanca Hub", img: "https://images.unsplash.com/photo-1539109132314-347f85417bd4?w=800" },
-    { id: "p3", market: 320, price: 195, tag: "Digital Pulse Bag", hub: "Global Ship", img: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800" }
-  ], []);
-
-  // 4. نظام الخروج المؤمن (Secure Checkout)
-  const handleCheckout = async () => {
-    if (!user || cart.length === 0 || isProcessing) return;
-    
-    setIsProcessing(true);
-    setError(null);
-
-    try {
-      // تنفيذ القاعدة رقم 1 و 3: مسار بيانات صارم ومؤمن
-      const orderRef = collection(db, 'artifacts', appId, 'public', 'data', 'verified_orders');
-      await addDoc(orderRef, {
-        userId: user.uid,
-        items: cart.map(i => ({ id: i.id, name: i.tag })),
-        total: cart.reduce((s, i) => s + i.price, 0),
-        currency: "USD",
-        status: "verified_factory_order",
-        createdAt: serverTimestamp()
-      });
-
-      const total = cart.reduce((s, i) => s + i.price, 0);
-      const msg = `🚀 *NEO-PULSE SECURE ORDER*\n\nID: ${user.uid.substring(0,8)}\nProducts: ${cart.map(i => i.tag).join(', ')}\nTotal: $${total}\n\n_Requesting direct dispatch..._`;
-
-      window.open(`https://wa.me/34632684017?text=${encodeURIComponent(msg)}`, '_blank');
-      setCart([]);
-      setIsCartOpen(false);
-    } catch (e) {
-      setError("فشل تسجيل الطلب. حاول مرة أخرى.");
-    } finally {
-      setIsProcessing(false);
-    }
-  };
-
-  return (
-    <div className={`min-h-screen bg-[#020202] text-white selection:bg-pink-600/30 overflow-x-hidden ${lang === 'ar' ? 'font-arabic' : ''}`} dir={lang === 'ar' ? 'rtl' : 'ltr'}>
-      
-      {/* نظام عرض الأخطاء الذكي */}
-      {error && (
-        <div className="fixed top-28 left-1/2 -translate-x-1/2 z-[200] bg-red-600/90 backdrop-blur-xl px-6 py-3 rounded-full flex items-center gap-3 animate-bounce">
-          <AlertCircle className="w-5 h-5" />
-          <span className="text-sm font-black uppercase tracking-tighter">{error}</span>
-        </div>
-      )}
-
-      {/* الرادار الإداري (بدون استهلاك موارد) */}
-      <aside className="fixed top-28 left-8 z-[90] w-64 hidden xl:block">
-        <div className="bg-zinc-900/30 backdrop-blur-2xl border border-white/5 p-6 rounded-[2.5rem] shadow-2xl">
-          <div className="flex items-center gap-3 mb-6 border-b border-white/5 pb-4">
-            <Cpu className="w-4 h-4 text-pink-500" />
-            <span className="text-[9px] font-black uppercase tracking-[0.2em] text-pink-400">Security Node</span>
-          </div>
-          <div className="space-y-2 mb-6">
-            {logs.map((l, i) => (
-              <div key={i} className="text-[8px] font-mono text-zinc-500 truncate leading-relaxed">
-                <span className="text-pink-600 mr-1">●</span> {l}
-              </div>
-            ))}
-          </div>
-          <div className="bg-green-500/5 p-4 rounded-2xl border border-green-500/10">
-            <p className="text-[8px] text-green-500 font-black uppercase">End-to-End Encryption</p>
-            <p className="text-[10px] text-white/50 font-mono mt-1 italic">AES-256 Active</p>
-          </div>
-        </div>
-      </aside>
-
-      {/* نافبار معزز */}
-      <nav className="h-24 sticky top-0 z-[100] bg-black/80 backdrop-blur-2xl border-b border-white/5 px-6 md:px-12 flex items-center justify-between">
-        <div className="flex items-center gap-4">
-          <div className="w-12 h-12 bg-gradient-to-tr from-pink-600 to-indigo-700 rounded-2xl flex items-center justify-center shadow-2xl shadow-pink-600/20">
-            <Zap className="w-7 h-7 text-white" />
-          </div>
-          <div className="hidden sm:block">
-            <h1 className="text-2xl font-black tracking-tighter">NEO-PULSE</h1>
-            <p className="text-[8px] text-pink-500 font-black uppercase tracking-[0.4em]">Autonomous Chain</p>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-6">
-          <div className="flex gap-4 text-[10px] font-black uppercase tracking-widest bg-white/5 px-4 py-2 rounded-xl border border-white/5">
-            <span onClick={() => setLang('en')} className={`cursor-pointer transition-colors ${lang === 'en' ? 'text-pink-500' : 'text-zinc-600 hover:text-white'}`}>EN</span>
-            <span onClick={() => setLang('ar')} className={`cursor-pointer transition-colors ${lang === 'ar' ? 'text-pink-500' : 'text-zinc-600 hover:text-white'}`}>AR</span>
-          </div>
-          <button onClick={() => setIsCartOpen(true)} className="p-4 bg-white/5 rounded-2xl border border-white/10 relative hover:border-pink-500 transition-all active:scale-95 touch-manipulation">
-            <ShoppingBag className="w-6 h-6" />
-            {cart.length > 0 && <span className="absolute -top-1 -right-1 bg-pink-600 w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-black border-4 border-black animate-pulse">{cart.length}</span>}
-          </button>
-        </div>
-      </nav>
-
-      {/* المحتوى الرئيسي */}
-      <main className="pt-20 pb-32 px-6 max-w-7xl mx-auto">
-        <header className="text-center mb-32 relative">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-pink-600/10 blur-[100px] -z-10"></div>
-          <div className="inline-flex items-center gap-3 bg-white/5 border border-white/10 px-8 py-3 rounded-full mb-12">
-            <Activity className="w-4 h-4 text-pink-500" />
-            <span className="text-[10px] font-black uppercase tracking-[0.3em]">{lang === 'ar' ? 'نظام توريد مشفر بالكامل' : 'Ironclad Supply Protocol'}</span>
-          </div>
-          <h2 className="text-6xl md:text-[9rem] font-black mb-12 tracking-tighter leading-[0.8] italic">
-            {lang === 'ar' ? 'رفاهية' : 'Luxury'} <br /> 
-            <span className="text-pink-600">{lang === 'ar' ? 'مؤمنة' : 'Secured'}</span>
-          </h2>
-          <p className="text-zinc-500 text-lg md:text-2xl max-w-2xl mx-auto leading-relaxed font-light">
-            {lang === 'ar' ? 'تجاوز الوسطاء بأمان. نظامنا يربطك مباشرة بمصادر الفخامة في إسبانيا والمغرب.' : 'Bypass middlemen securely. Our system connects you directly to the heart of luxury.'}
-          </p>
-        </header>
-
-        {/* شبكة المنتجات */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-          {products.map((p) => (
-            <div key={p.id} className="bg-zinc-900/10 border border-white/5 p-8 rounded-[4rem] group hover:border-pink-500/30 transition-all duration-1000">
-              <div className="aspect-[3/4] rounded-[3rem] overflow-hidden mb-10 bg-zinc-800 relative shadow-2xl">
-                <img src={p.img} className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-[2s] opacity-70 group-hover:opacity-100" loading="lazy" alt={p.tag} />
-                <div className="absolute top-8 left-8 bg-black/60 backdrop-blur-md border border-white/10 px-5 py-2 rounded-full text-[9px] font-black uppercase tracking-widest text-pink-500">
-                  {p.hub}
-                </div>
-              </div>
-              <div className="px-4">
-                <div className="flex justify-between items-center mb-6">
-                  <span className="text-[11px] font-bold text-zinc-600 line-through tracking-widest">${p.market}</span>
-                  <span className="text-[11px] font-black text-green-500 uppercase flex items-center gap-2">
-                    <ShieldCheck className="w-3 h-3" /> {lang === 'ar' ? 'أفضل عرض' : 'Price Guard'}
-                  </span>
-                </div>
-                <div className="flex justify-between items-end">
-                  <div>
-                    <h3 className="font-black text-2xl mb-2 tracking-tighter">{p.tag}</h3>
-                    <p className="text-5xl font-black tracking-tighter text-white">${p.price}</p>
-                  </div>
-                  <button onClick={() => {setCart([...cart, p]); addLog(`Cart: Allocated stock for ${p.id}`);}} className="p-7 bg-white text-black rounded-3xl hover:bg-pink-600 hover:text-white transition-all shadow-2xl active:scale-90 touch-manipulation">
-                    <MousePointer2 className="w-9 h-9" />
-                  </button>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </main>
-
-      {/* هب التوريد (Cart Drawer) */}
-      <div className={`fixed inset-y-0 ${lang === 'ar' ? 'left-0' : 'right-0'} w-full md:w-[500px] bg-[#050505] border-x border-white/10 z-[200] transition-transform duration-1000 cubic-bezier(0.16, 1, 0.3, 1) ${isCartOpen ? 'translate-x-0' : (lang === 'ar' ? '-translate-x-full' : 'translate-x-full')}`}>
-        <div className="h-full flex flex-col p-10 md:p-14">
-          <div className="flex justify-between items-center mb-16">
-            <h3 className="text-5xl font-black italic uppercase tracking-tighter shimmer-text">Hub</h3>
-            <button onClick={() => setIsCartOpen(false)} className="p-5 bg-white/5 rounded-2xl hover:bg-pink-600/20 transition-all"><X className="w-8 h-8" /></button>
-          </div>
-
-          <div className="flex-grow overflow-y-auto space-y-8 scrollbar-hide">
-            {cart.map((item, idx) => (
-              <div key={idx} className="p-8 bg-zinc-900/40 rounded-[2.5rem] border border-white/5 flex justify-between items-center group animate-in slide-in-from-bottom-5">
-                <div>
-                  <p className="font-black text-xl mb-1">{item.tag}</p>
-                  <p className="text-[9px] text-pink-500 font-black uppercase flex items-center gap-2 tracking-widest"><Truck className="w-3 h-3"/> {item.hub}</p>
-                </div>
-                <div className="text-right">
-                  <span className="text-3xl font-black">${item.price}</span>
-                  <button onClick={() => setCart(cart.filter((_, i) => i !== idx))} className="block text-[8px] uppercase font-black text-red-500 mt-2 hover:underline">Remove</button>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {cart.length > 0 && (
-            <div className="mt-12 pt-12 border-t border-white/10">
-              <div className="flex justify-between items-end mb-12">
-                <div>
-                  <p className="text-[10px] text-zinc-600 font-black uppercase tracking-[0.5em] mb-3">Verified Total</p>
-                  <p className="text-8xl font-black tracking-tighter">${cart.reduce((s, i) => s + i.price, 0)}</p>
-                </div>
-                <div className="w-20 h-20 bg-pink-600 rounded-3xl flex items-center justify-center animate-pulse">
-                  <ShieldCheck className="w-10 h-10 text-white" />
-                </div>
-              </div>
-
-              <button 
-                onClick={handleCheckout} 
-                disabled={isProcessing}
-                className={`w-full py-9 rounded-[3rem] font-black text-2xl flex items-center justify-center gap-5 transition-all shadow-2xl ${isProcessing ? 'bg-zinc-800 cursor-wait' : 'bg-pink-600 hover:bg-pink-500 shadow-pink-600/20'}`}
-              >
-                {isProcessing ? (
-                  <div className="w-8 h-8 border-4 border-white/20 border-t-white rounded-full animate-spin"></div>
-                ) : (
-                  <>
-                    <MessageCircle className="w-9 h-9" /> 
-                    {lang === 'ar' ? 'تأكيد التوريد الآمن' : 'Confirm Secure Ship'}
-                  </>
-                )}
-              </button>
-            </div>
-          )}
-        </div>
-      </div>
-
-      <footer className="py-32 border-t border-white/5 text-center relative overflow-hidden">
-          <Globe className="w-10 h-10 mx-auto mb-8 text-zinc-800 animate-spin-slow" />
-          <p className="text-[10px] text-zinc-700 font-black uppercase tracking-[1.2em]">NEO-PULSE Autonomous Core</p>
-          <p className="text-[8px] text-zinc-800 mt-6 uppercase tracking-widest">Global Encryption: Active | Node: Verified</p>
-      </footer>
+    <!-- محرك الإضاءة الخلفي -->
+    <div class="fixed inset-0 -z-10 overflow-hidden">
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/10 blur-[120px] rounded-full"></div>
+        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-600/10 blur-[120px] rounded-full"></div>
     </div>
-  );
-};
 
-export default App;
+    <!-- نافبار ذكي -->
+    <nav class="sticky top-0 z-[100] glass-ui border-b border-white/5 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center neon-glow">
+                    <i class="fas fa-robot text-white"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-black italic tracking-tighter">NEO-PULSE</h1>
+                    <p class="text-[8px] text-blue-400 font-bold uppercase tracking-widest">AI Powered Store</p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-5">
+                <!-- بوت تبديل العملات -->
+                <div class="bg-black/50 rounded-lg p-1 border border-white/10 flex gap-2">
+                    <template x-for="c in currencies">
+                        <button @click="currency = c" 
+                                :class="currency === c ? 'bg-blue-600 text-white shadow-lg' : 'text-zinc-500'"
+                                class="px-3 py-1 rounded-md text-[9px] font-black uppercase transition-all" 
+                                x-text="c"></button>
+                    </template>
+                </div>
+                <!-- عداد السلة التلقائي -->
+                <button @click="ui.cart = true" class="relative">
+                    <i class="fas fa-shopping-cart text-xl text-zinc-400 hover:text-blue-500"></i>
+                    <span x-show="cart.length > 0" 
+                          class="absolute -top-2 -right-2 bg-blue-600 text-[9px] w-4 h-4 rounded-full flex items-center justify-center font-bold"
+                          x-text="cart.length"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- البانر الرئيسي -->
+    <header class="py-24 text-center px-6">
+        <div class="inline-flex items-center gap-2 bg-blue-600/10 border border-blue-600/20 px-4 py-2 rounded-full mb-6">
+            <i class="fas fa-bolt text-blue-500 text-xs"></i>
+            <span class="text-[10px] font-black uppercase tracking-widest text-blue-400">نظام التشغيل الآلي مفعل</span>
+        </div>
+        <h2 class="text-6xl md:text-8xl font-black mb-6 italic uppercase leading-none">مستقبل <br><span class="text-blue-600">التسوق</span></h2>
+        <p class="text-zinc-500 max-w-lg mx-auto text-lg">تحكم كامل بمتجرك العالمي. شحن سريع، أسعار ذكية، وخدمة عملاء فائقة.</p>
+    </header>
+
+    <!-- بوت عرض المنتجات -->
+    <main class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-32">
+        <template x-for="item in products" :key="item.id">
+            <div class="glass-ui p-6 rounded-[2.5rem] product-hover flex flex-col">
+                <div class="aspect-square bg-zinc-900/50 rounded-[2rem] mb-6 overflow-hidden relative">
+                    <img :src="item.img" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity">
+                    <span class="absolute top-4 left-4 bg-blue-600 px-3 py-1 rounded-full text-[8px] font-black" x-text="item.category"></span>
+                </div>
+                <h3 class="text-xl font-black italic uppercase mb-2" x-text="item.name"></h3>
+                <div class="flex justify-between items-center mt-auto">
+                    <p class="text-2xl font-black text-blue-500 italic">
+                        <span x-text="calcPrice(item.price)"></span>
+                        <span class="text-[10px] text-zinc-600 uppercase" x-text="currency"></span>
+                    </p>
+                    <button @click="addToCart(item)" class="w-12 h-12 bg-white text-black rounded-xl hover:bg-blue-600 hover:text-white transition-all shadow-xl active:scale-90">
+                        <i class="fas fa-cart-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </template>
+    </main>
+
+    <!-- واجهة السلة (بوت المعالجة) -->
+    <div x-show="ui.cart" class="fixed inset-0 z-[200]" style="display: none;">
+        <div class="absolute inset-0 bg-black/90 backdrop-blur-md" @click="ui.cart = false"></div>
+        <div x-show="ui.cart" 
+             x-transition:enter="transition ease-out duration-300 transform"
+             x-transition:enter-start="translate-x-full"
+             x-transition:enter-end="translate-x-0"
+             class="absolute inset-y-0 left-0 w-full md:w-[400px] bg-zinc-950 border-r border-white/5 p-8 flex flex-col">
+            
+            <div class="flex justify-between items-center mb-10">
+                <h4 class="text-3xl font-black italic tracking-tighter">MY SACK</h4>
+                <button @click="ui.cart = false"><i class="fas fa-times text-zinc-500"></i></button>
+            </div>
+
+            <div class="flex-grow overflow-y-auto space-y-4">
+                <template x-for="(ci, index) in cart" :key="index">
+                    <div class="glass-ui p-4 rounded-2xl flex justify-between items-center">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-zinc-900 rounded-lg overflow-hidden">
+                                <img :src="ci.img" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <p class="text-[10px] font-black uppercase" x-text="ci.name"></p>
+                                <p class="text-blue-500 font-bold" x-text="calcPrice(ci.price) + ' ' + currency"></p>
+                            </div>
+                        </div>
+                        <button @click="cart.splice(index, 1)" class="text-zinc-700 hover:text-red-500"><i class="fas fa-trash"></i></button>
+                    </div>
+                </template>
+            </div>
+
+            <div class="pt-8 border-t border-white/5 mt-auto">
+                <div class="flex justify-between items-center mb-8 px-2">
+                    <span class="text-zinc-500 text-[10px] font-bold uppercase tracking-widest">Total Amount</span>
+                    <span class="text-3xl font-black" x-text="calcPrice(total()) + ' ' + currency"></span>
+                </div>
+                <button @click="botCheckout()" class="w-full py-5 bg-blue-600 rounded-2xl font-black text-lg hover:bg-blue-500 shadow-xl shadow-blue-600/20 flex items-center justify-center gap-3 active:scale-95 transition-all">
+                    تأكيد الطلب تلقائياً
+                    <i class="fab fa-whatsapp"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('neoEngine', () => ({
+                ui: { cart: false },
+                currency: 'SAR',
+                currencies: ['SAR', 'EUR', 'MAD', 'USD'],
+                rates: { 'SAR': 1, 'EUR': 0.25, 'MAD': 2.7, 'USD': 0.27 },
+                products: [
+                    { id: 1, name: 'ساعة نيو كوانتم', price: 550, category: 'Tech', img: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600' },
+                    { id: 2, name: 'حذاء النبض V2', price: 320, category: 'Sport', img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600' },
+                    { id: 3, name: 'سترة مدريد الرقمية', price: 420, category: 'Luxury', img: 'https://images.unsplash.com/photo-1550009158-9ebf69173e03?w=600' }
+                ],
+                cart: [],
+                
+                addToCart(p) { this.cart.push({...p}); },
+                calcPrice(p) { return (p * this.rates[this.currency]).toFixed(0); },
+                total() { return this.cart.reduce((s, i) => s + i.price, 0); },
+                
+                botCheckout() {
+                    if(this.cart.length === 0) return alert('السلة فارغة!');
+                    let msg = `🛒 *طلب جديد عبر بوت NEO-PULSE*:%0A%0A`;
+                    this.cart.forEach((i, idx) => {
+                        msg += `${idx+1}. *${i.name}* - (${this.calcPrice(i.price)} ${this.currency})%0A`;
+                    });
+                    msg += `%0A💰 *الإجمالي النهائي: ${this.calcPrice(this.total())} ${this.currency}*%0A%0A_تمت معالجة هذا الطلب تلقائياً_`;
+                    window.open(`https://wa.me/34632684017?text=${msg}`, '_blank');
+                }
+            }));
+        });
+    </script>
+</body>
+</html>
 
