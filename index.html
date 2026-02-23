@@ -1,0 +1,226 @@
+import React, { useState, useEffect } from 'react';
+import { initializeApp } from 'firebase/app';
+import { getAuth, signInAnonymously, onAuthStateChanged } from 'firebase/auth';
+import { getFirestore, collection, addDoc, serverTimestamp } from 'firebase/firestore';
+import { 
+  Zap, X, ShoppingBag, Sparkles, Activity, MousePointer2, 
+  MessageCircle, Truck, Factory, TrendingDown, ShieldCheck,
+  Globe, Cpu, BarChart3, Radio
+} from 'lucide-react';
+
+// --- المربع الأمني لـ Firebase ---
+const firebaseConfig = JSON.parse(__firebase_config);
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
+const appId = typeof __app_id !== 'undefined' ? __app_id : 'neo-pulse-final-master';
+
+const App = () => {
+  const [user, setUser] = useState(null);
+  const [cart, setCart] = useState([]);
+  const [logs, setLogs] = useState([]);
+  const [isCartOpen, setIsCartOpen] = useState(false);
+  const [lang, setLang] = useState('ar');
+
+  // إحصائيات النظام الفورية (Simulated Real-time Data)
+  const [liveStats, setLiveStats] = useState({ visitors: 142, savings: 32 });
+
+  useEffect(() => {
+    // تشغيل نظام المصادقة السحابي
+    const initSession = async () => {
+      try {
+        if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+          await signInAnonymously(auth);
+        } else {
+          await signInAnonymously(auth);
+        }
+      } catch (e) { console.error("Session Sync Error"); }
+    };
+    initSession();
+    const unsubscribe = onAuthStateChanged(auth, setUser);
+
+    // محاكي العمليات الإدارية (Admin Activity Simulation)
+    const logInterval = setInterval(() => {
+      const messages = [
+        "تحديث: مزامنة الأسعار مع مورد إسبانيا.",
+        "نظام NEO: فحص الجودة في مستودع المغرب مكتمل.",
+        "لوجستيات: تم تأمين مسار شحن جديد.",
+        "تنبيه: ارتفاع في طلبات 'فستان النخبة'."
+      ];
+      addLog(messages[Math.floor(Math.random() * messages.length)]);
+    }, 8000);
+
+    return () => {
+      unsubscribe();
+      clearInterval(logInterval);
+    };
+  }, []);
+
+  const addLog = (msg) => {
+    const time = new Date().toLocaleTimeString();
+    setLogs(prev => [`[${time}] ${msg}`, ...prev].slice(0, 6));
+  };
+
+  const products = [
+    { id: "p1", market: 680, price: 420, tag: "Spain Royal Edition", hub: "Madrid Hub", img: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800" },
+    { id: "p2", market: 450, price: 290, tag: "Maha Signature Set", hub: "Casablanca Hub", img: "https://images.unsplash.com/photo-1539109132314-347f85417bd4?w=800" },
+    { id: "p3", market: 320, price: 195, tag: "Digital Pulse Bag", hub: "Global Ship", img: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800" }
+  ];
+
+  const handleCheckout = async () => {
+    if (!user || cart.length === 0) return;
+    
+    // تسجيل العملية مالياً في Firebase
+    const orderRef = collection(db, 'artifacts', appId, 'public', 'data', 'verified_orders');
+    await addDoc(orderRef, {
+      uid: user.uid,
+      items: cart,
+      total: cart.reduce((s, i) => s + i.price, 0),
+      admin_status: 'pending_factory_dispatch',
+      timestamp: serverTimestamp()
+    });
+
+    const total = cart.reduce((s, i) => s + i.price, 0);
+    const msg = `طلب إداري جديد (NEO-PULSE):\nالعميل: ${user.uid}\nالطلبات:\n` + 
+                cart.map(i => `- ${i.tag} (مخزن: ${i.hub})`).join('\n') + 
+                `\nإجمالي الدفع: $${total}\nيرجى تأكيد الشحن المباشر.`;
+
+    window.open(`https://wa.me/34632684017?text=${encodeURIComponent(msg)}`, '_blank');
+  };
+
+  return (
+    <div className={`min-h-screen bg-[#020202] text-white selection:bg-pink-600/30 ${lang === 'ar' ? 'font-arabic' : ''}`} dir={lang === 'ar' ? 'rtl' : 'ltr'}>
+      
+      {/* HUD - الرادار التقني والإداري */}
+      <div className="fixed top-28 left-8 z-[90] w-64 hidden xl:block">
+        <div className="bg-zinc-900/60 backdrop-blur-2xl border border-white/10 p-6 rounded-[2.5rem] shadow-2xl">
+          <div className="flex items-center gap-3 mb-6 border-b border-white/5 pb-4">
+            <Cpu className="w-4 h-4 text-pink-500 animate-pulse" />
+            <span className="text-[9px] font-black uppercase tracking-[0.2em] text-pink-400">مركز التحكم الإداري</span>
+          </div>
+          
+          <div className="grid grid-cols-2 gap-2 mb-6 text-center">
+            <div className="bg-black/40 p-3 rounded-2xl border border-white/5">
+              <p className="text-[7px] text-slate-500 uppercase font-black">الربط السحابي</p>
+              <p className="text-xs font-black text-green-500 uppercase">Active</p>
+            </div>
+            <div className="bg-black/40 p-3 rounded-2xl border border-white/5">
+              <p className="text-[7px] text-slate-500 uppercase font-black">توفير الزبائن</p>
+              <p className="text-xs font-black text-white">{liveStats.savings}%</p>
+            </div>
+          </div>
+
+          <div className="h-28 overflow-hidden text-[8px] font-mono text-slate-500 space-y-1">
+            {logs.map((l, i) => <div key={i} className="truncate"> {'>'} {l}</div>)}
+          </div>
+        </div>
+      </div>
+
+      <nav className="h-24 sticky top-0 z-[100] bg-black/80 backdrop-blur-3xl border-b border-white/5 px-10 flex items-center justify-between">
+        <div className="flex items-center gap-4">
+          <div className="w-12 h-12 bg-gradient-to-br from-pink-600 to-purple-800 rounded-2xl flex items-center justify-center">
+            <Zap className="w-7 h-7 text-white" />
+          </div>
+          <div>
+            <h1 className="text-2xl font-black tracking-tighter text-white">NEO-PULSE</h1>
+            <p className="text-[8px] text-pink-500 font-black uppercase tracking-[0.4em]">Integrated Hub</p>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-6">
+          <button onClick={() => setIsCartOpen(true)} className="p-4 bg-white/5 rounded-2xl border border-white/10 relative group hover:border-pink-500 transition-all">
+            <ShoppingBag className="w-6 h-6" />
+            {cart.length > 0 && <span className="absolute -top-1 -right-1 bg-pink-600 w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-black border-4 border-black">{cart.length}</span>}
+          </button>
+        </div>
+      </nav>
+
+      <main className="pt-24 pb-32 px-6 max-w-7xl mx-auto">
+        <div className="text-center mb-32">
+          <div className="inline-flex items-center gap-2 bg-pink-600/10 border border-pink-500/20 px-8 py-3 rounded-full mb-10">
+            <Globe className="w-4 h-4 text-pink-500" />
+            <span className="text-pink-500 text-[10px] font-black uppercase tracking-[0.3em]">Direct Supply Chain: Spain | Morocco</span>
+          </div>
+          <h2 className="text-6xl md:text-9xl font-black mb-10 tracking-tighter leading-none italic">
+            الفخامة بلا <span className="text-pink-600">وسطاء</span>
+          </h2>
+          <p className="text-slate-400 text-xl max-w-3xl mx-auto leading-relaxed">
+            نحن ندير الدورة الكاملة من المصنع إلى باب بيتكِ. جودة الماركات العالمية بأسعار المصنع المباشرة، مع شحن دولي مؤمن ومضمون.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          {products.map((p) => (
+            <div key={p.id} className="bg-zinc-900/20 border border-white/5 p-8 rounded-[3.5rem] group hover:border-pink-600/30 transition-all duration-1000">
+              <div className="aspect-[3/4] rounded-[2.5rem] overflow-hidden mb-8 bg-zinc-800 relative">
+                <img src={p.img} className="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000 grayscale group-hover:grayscale-0" alt="" />
+                <div className="absolute top-6 left-6 bg-pink-600 text-white px-5 py-2 rounded-full text-[10px] font-black tracking-widest uppercase">Factory Direct</div>
+              </div>
+              <div className="px-2">
+                <div className="flex justify-between items-center mb-4">
+                  <span className="text-xs font-bold text-slate-500 tracking-wide uppercase">سعر السوق: <del>${p.market}</del></span>
+                  <span className="text-[10px] font-black text-green-500 bg-green-500/10 px-3 py-1 rounded-full uppercase">وفرت ${p.market - p.price}</span>
+                </div>
+                <div className="flex justify-between items-end">
+                  <div>
+                    <h3 className="font-black text-2xl text-white mb-2">{p.tag}</h3>
+                    <p className="text-5xl font-black text-white tracking-tighter">${p.price}</p>
+                  </div>
+                  <button onClick={() => {setCart([...cart, p]); addLog(`أمر إداري: حجز مخزون من ${p.hub}`);}} className="p-6 bg-white text-black rounded-3xl hover:bg-pink-600 hover:text-white transition-all shadow-2xl active:scale-90">
+                    <MousePointer2 className="w-8 h-8" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </main>
+
+      {/* Cart Drawer - Terminal Hub */}
+      <div className={`fixed inset-y-0 ${lang === 'ar' ? 'left-0' : 'right-0'} w-full md:w-[500px] bg-black border-x border-white/10 z-[200] transition-transform duration-1000 ease-in-out ${isCartOpen ? 'translate-x-0' : (lang === 'ar' ? '-translate-x-full' : 'translate-x-full')}`}>
+        <div className="h-full flex flex-col p-12">
+          <div className="flex justify-between items-center mb-16">
+            <h3 className="text-5xl font-black tracking-tighter uppercase italic">Supply Hub</h3>
+            <button onClick={() => setIsCartOpen(false)} className="p-4 bg-white/5 rounded-2xl"><X className="w-8 h-8" /></button>
+          </div>
+
+          <div className="flex-grow space-y-6 overflow-y-auto pr-2 scrollbar-hide">
+            {cart.map((item, idx) => (
+              <div key={idx} className="p-8 bg-white/5 rounded-[2.5rem] border border-white/5 flex justify-between items-center group">
+                <div>
+                  <p className="font-black text-xl text-white">{item.tag}</p>
+                  <p className="text-[10px] text-pink-500 font-black uppercase mt-1 flex items-center gap-2"><Truck className="w-3 h-3"/> {item.hub}</p>
+                </div>
+                <span className="text-3xl font-black text-white">${item.price}</span>
+              </div>
+            ))}
+          </div>
+
+          {cart.length > 0 && (
+            <div className="mt-16 space-y-8">
+              <div className="flex justify-between items-end">
+                <div className="space-y-2">
+                  <p className="text-slate-500 text-[10px] font-black uppercase tracking-[0.3em]">المجموع الصافي</p>
+                  <p className="text-7xl font-black text-white tracking-tighter">
+                    ${cart.reduce((s, i) => s + i.price, 0)}
+                  </p>
+                </div>
+                <div className="bg-green-600/10 px-6 py-4 rounded-3xl border border-green-500/20 text-right">
+                  <p className="text-green-500 text-[10px] font-black uppercase mb-1">حالة السعر</p>
+                  <p className="text-2xl font-black text-green-500 uppercase italic">Best Deal</p>
+                </div>
+              </div>
+
+              <button onClick={handleCheckout} className="w-full py-9 bg-pink-600 hover:bg-pink-500 rounded-[3rem] font-black text-2xl text-white flex items-center justify-center gap-6 shadow-2xl shadow-pink-600/30 transition-all">
+                <MessageCircle className="w-9 h-9" /> تأكيد الشحن المباشر
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default App;
+
