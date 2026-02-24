@@ -2,27 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neo-Pulse Hub | Global Fulfillment</title>
-    <style>
-        body { font-family: sans-serif; background: #0a0a0a; color: white; text-align: center; padding: 50px; }
-        .card { border: 1px solid #00ffcc; padding: 20px; border-radius: 15px; display: inline-block; }
-        input, select { display: block; width: 100%; margin: 10px 0; padding: 10px; }
-        button { background: #00ffcc; color: black; border: none; padding: 15px 30px; cursor: pointer; font-weight: bold; }
-    </style>
+    <title>Neo-Pulse Hub | Global Store</title>
 </head>
-<body>
+<body style="background:#000; color:#0ff; text-align:center; padding:50px;">
     <h1>NEO-PULSE HUB</h1>
-    <div class="card">
-        <form name="global-orders" method="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="global-orders" />
-            <input type="text" name="name" placeholder="Full Name" required>
-            <input type="email" name="email" placeholder="Email Address" required>
-            <select name="product">
-                <option value="pulse-unit">Neo-Pulse Unit - $149</option>
-            </select>
-            <button type="submit">AUTHORIZE ORDER</button>
-        </form>
-    </div>
+    <p>Global Autonomous Tech Distribution</p>
+    <form name="global-orders" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="global-orders" />
+        <input type="text" name="name" placeholder="Name" required><br><br>
+        <input type="email" name="email" placeholder="Email" required><br><br>
+        <button type="submit" style="padding:10px 20px; cursor:pointer;">AUTHORIZE ORDER</button>
+    </form>
 </body>
 </html>
