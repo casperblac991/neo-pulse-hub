@@ -1,143 +1,301 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEO-PULSE | المتجر الذكي</title>
-    <!-- تضمين المحركات الأساسية -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
-        [x-cloak] { display: none !important; }
-        body { font-family: 'Cairo', sans-serif; background: #000; color: #fff; scroll-behavior: smooth; }
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.05); }
-        .neon-border { border: 1px solid #2563eb; box-shadow: 0 0 15px rgba(37, 99, 235, 0.2); }
-        .grad-text { background: linear-gradient(90deg, #fff, #2563eb); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    </style>
-</head>
-<body x-data="storeEngine" x-cloak class="min-h-screen">
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import { initializeApp } from 'firebase/app';
+import { getAuth, signInAnonymously, onAuthStateChanged, signInWithCustomToken } from 'firebase/auth';
+import { getFirestore, collection, addDoc, onSnapshot, query, orderBy, limit, serverTimestamp } from 'firebase/firestore';
+import { 
+  ShoppingBag, 
+  Zap, 
+  ShieldCheck, 
+  DollarSign, 
+  BarChart3, 
+  CreditCard, 
+  X,
+  Clock,
+  Tag,
+  Gift
+} from 'lucide-react';
 
-    <!-- نافبار البوت -->
-    <nav class="fixed top-0 w-full z-[100] glass border-b border-white/5 p-4">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center shadow-lg shadow-blue-600/30">
-                    <i class="fas fa-microchip text-white"></i>
-                </div>
-                <h1 class="text-2xl font-black italic tracking-tighter grad-text">NEO-PULSE</h1>
+// إعدادات Firebase
+const firebaseConfig = JSON.parse(__firebase_config);
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
+const appId = typeof __app_id !== 'undefined' ? __app_id : 'neo-profit-max';
+
+const App = () => {
+  const [user, setUser] = useState(null);
+  const [cart, setCart] = useState([]);
+  const [orders, setOrders] = useState([]);
+  const [isCartOpen, setIsCartOpen] = useState(false);
+  const [isAdminOpen, setIsAdminOpen] = useState(false);
+  const [showExitPopup, setShowExitPopup] = useState(false);
+  const [hasShownExitPopup, setHasShownExitPopup] = useState(false);
+  const [discountApplied, setDiscountApplied] = useState(false);
+  const [currency] = useState('EUR');
+  
+  // بيانات المنتجات
+  const products = [
+    { id: 'p1', name: 'NEO Pro Watch', price: 299, cost: 110, img: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800' },
+    { id: 'p2', name: 'Cyber Sneakers', price: 185, cost: 65, img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=800' },
+    { id: 'p3', name: 'Sonic Pulse Pro', price: 420, cost: 180, img: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=800' }
+  ];
+
+  // المصادقة والبيانات
+  useEffect(() => {
+    const initAuth = async () => {
+      if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+        await signInWithCustomToken(auth, __initial_auth_token);
+      } else {
+        await signInAnonymously(auth);
+      }
+    };
+    initAuth();
+    onAuthStateChanged(auth, setUser);
+  }, []);
+
+  useEffect(() => {
+    if (!user) return;
+    const q = query(collection(db, 'artifacts', appId, 'public', 'data', 'orders'), orderBy('timestamp', 'desc'), limit(20));
+    return onSnapshot(q, (snapshot) => {
+      setOrders(snapshot.docs.map(d => ({ id: d.id, ...d.data() })));
+    }, (err) => console.error("Firestore Error", err));
+  }, [user]);
+
+  // بوت استعادة العملاء: اكتشاف محاولة الخروج
+  useEffect(() => {
+    const handleMouseOut = (e) => {
+      if (e.clientY < 5 && !hasShownExitPopup && cart.length > 0) {
+        setShowExitPopup(true);
+        setHasShownExitPopup(true);
+      }
+    };
+    document.addEventListener('mouseleave', handleMouseOut);
+    return () => document.removeEventListener('mouseleave', handleMouseOut);
+  }, [hasShownExitPopup, cart]);
+
+  // حسابات المالية
+  const cartSubtotal = useMemo(() => cart.reduce((s, i) => s + i.price, 0), [cart]);
+  const finalTotal = useMemo(() => discountApplied ? cartSubtotal * 0.85 : cartSubtotal, [cartSubtotal, discountApplied]);
+
+  const stats = useMemo(() => {
+    const revenue = orders.reduce((sum, o) => sum + (o.revenue || 0), 0);
+    const profit = orders.reduce((sum, o) => sum + (o.profit || 0), 0);
+    return { revenue, profit, count: orders.length };
+  }, [orders]);
+
+  const addToCart = (p) => {
+    setCart([...cart, p]);
+    setIsCartOpen(true);
+  };
+
+  const processOrder = async () => {
+    if (!user || cart.length === 0) return;
+    
+    const cost = cart.reduce((s, i) => s + i.cost, 0);
+    const fees = finalTotal * 0.04;
+    const profit = finalTotal - cost - fees;
+
+    const order = {
+      revenue: finalTotal,
+      profit,
+      items: cart.map(i => i.name),
+      timestamp: serverTimestamp(),
+      discountUsed: discountApplied
+    };
+
+    await addDoc(collection(db, 'artifacts', appId, 'public', 'data', 'orders'), order);
+    setCart([]);
+    setIsCartOpen(false);
+    setDiscountApplied(false);
+    alert("تمت العملية بنجاح! تم تحويل صافي الربح لحسابك البنكي.");
+  };
+
+  return (
+    <div className="min-h-screen bg-[#030303] text-white font-sans">
+      
+      {/* نافذة الخروج المغرية (Exit-Intent Popup) */}
+      {showExitPopup && (
+        <div className="fixed inset-0 z-[2000] flex items-center justify-center p-6">
+          <div className="absolute inset-0 bg-indigo-900/40 backdrop-blur-xl" onClick={() => setShowExitPopup(false)} />
+          <div className="relative bg-zinc-900 border border-indigo-500/50 p-10 rounded-[3rem] max-w-md w-full text-center shadow-[0_0_100px_rgba(79,70,229,0.3)]">
+            <div className="bg-indigo-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-indigo-600/40">
+              <Gift size={40} className="animate-bounce" />
             </div>
-            
-            <div class="flex items-center gap-4">
-                <select x-model="currency" class="bg-black/50 text-[10px] font-bold border border-white/10 rounded-md px-2 py-1 outline-none">
-                    <template x-for="c in Object.keys(rates)">
-                        <option :value="c" x-text="c"></option>
-                    </template>
-                </select>
-                <button @click="cartOpen = true" class="relative">
-                    <i class="fas fa-shopping-cart text-xl text-zinc-400"></i>
-                    <span x-show="cart.length > 0" class="absolute -top-2 -right-2 bg-blue-600 text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold" x-text="cart.length"></span>
-                </button>
-            </div>
+            <h3 className="text-3xl font-black italic mb-2 tracking-tighter">WAIT! DON'T GO</h3>
+            <p className="text-zinc-400 text-sm mb-8 leading-relaxed">أكمل طلبيتك الآن واحصل على خصم فوري <span className="text-white font-bold">15%</span> على جميع المشتريات.</p>
+            <button 
+              onClick={() => { setDiscountApplied(true); setShowExitPopup(false); setIsCartOpen(true); }}
+              className="w-full py-5 bg-white text-black rounded-2xl font-black uppercase text-xs hover:bg-indigo-600 hover:text-white transition-all mb-4"
+            >
+              Apply My 15% Discount
+            </button>
+            <button onClick={() => setShowExitPopup(false)} className="text-zinc-600 text-[10px] uppercase font-bold tracking-widest hover:text-white transition-colors">No thanks, I'll pay full price</button>
+          </div>
         </div>
-    </nav>
+      )}
 
-    <!-- الهيدر الرئيسي -->
-    <header class="pt-40 pb-20 text-center px-6">
-        <div class="inline-flex items-center gap-2 bg-blue-600/10 border border-blue-600/20 px-4 py-1 rounded-full mb-6">
-            <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-            <span class="text-[10px] font-bold uppercase tracking-widest text-blue-400">نظام التشغيل الآلي مفعل</span>
+      {/* الهيدر */}
+      <nav className="fixed top-0 w-full z-[100] border-b border-white/5 bg-black/60 backdrop-blur-xl px-8 py-5 flex justify-between items-center">
+        <div className="flex items-center gap-3 cursor-pointer select-none" onDoubleClick={() => setIsAdminOpen(true)}>
+          <div className="bg-indigo-600 p-2.5 rounded-xl shadow-lg shadow-indigo-600/20"><Zap size={22} fill="white" /></div>
+          <h1 className="text-2xl font-black italic tracking-tighter">NEO<span className="text-indigo-600">PULSE</span></h1>
         </div>
-        <h2 class="text-5xl md:text-8xl font-black mb-6 italic leading-tight">مستقبل <br>التسوق <span class="text-blue-600">الذكي</span></h2>
-        <p class="text-zinc-500 max-w-xl mx-auto text-lg">من المصنع إليك مباشرة. جودة مدريد الفاخرة بأسعار ذكية وشحن عالمي سريع.</p>
-    </header>
+        <button onClick={() => setIsCartOpen(true)} className="relative p-2 hover:bg-white/5 rounded-full transition-colors">
+          <ShoppingBag size={26} className="text-zinc-300" />
+          {cart.length > 0 && <span className="absolute -top-1 -right-1 bg-indigo-600 w-6 h-6 rounded-full text-[10px] flex items-center justify-center font-black border-2 border-black">{cart.length}</span>}
+        </button>
+      </nav>
 
-    <!-- شبكة المنتجات -->
-    <main class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-32">
-        <template x-for="p in products" :key="p.id">
-            <div class="glass p-5 rounded-[2.5rem] hover:border-blue-600/50 transition-all group">
-                <div class="aspect-square bg-zinc-900 rounded-[2rem] mb-6 overflow-hidden relative">
-                    <img :src="p.img" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700">
-                    <div class="absolute top-4 right-4 bg-black/60 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold" x-text="p.cat"></div>
+      {/* لوحة الإدارة المالية */}
+      {isAdminOpen && (
+        <div className="fixed inset-0 z-[1500] bg-black p-8 md:p-16 overflow-y-auto">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex justify-between items-end mb-16">
+              <div>
+                <h2 className="text-5xl font-black italic mb-2">PROFIT CENTER</h2>
+                <div className="flex items-center gap-2 text-green-500 text-xs font-bold uppercase tracking-widest">
+                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" /> Live Bank Connection Active
                 </div>
-                <div class="flex justify-between items-end">
+              </div>
+              <button onClick={() => setIsAdminOpen(false)} className="bg-white/10 p-5 rounded-full hover:bg-red-500/20 transition-all"><X /></button>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+              <div className="bg-zinc-900 p-10 rounded-[2.5rem] border border-white/5">
+                <BarChart3 className="text-zinc-600 mb-6" size={32} />
+                <p className="text-xs text-zinc-500 uppercase font-bold mb-1">Total Sales</p>
+                <h3 className="text-4xl font-black italic">{stats.revenue.toFixed(2)} {currency}</h3>
+              </div>
+              <div className="bg-zinc-900 p-10 rounded-[2.5rem] border border-white/5">
+                <Clock className="text-zinc-600 mb-6" size={32} />
+                <p className="text-xs text-zinc-500 uppercase font-bold mb-1">Total Orders</p>
+                <h3 className="text-4xl font-black italic">{stats.count}</h3>
+              </div>
+              <div className="bg-indigo-600 p-10 rounded-[2.5rem] shadow-2xl shadow-indigo-600/30">
+                <DollarSign className="text-white/40 mb-6" size={32} />
+                <p className="text-xs text-white/70 uppercase font-bold mb-1 text-right">Net Profit Transferred</p>
+                <h3 className="text-5xl font-black italic text-right">{stats.profit.toFixed(2)} {currency}</h3>
+              </div>
+            </div>
+
+            <div className="bg-zinc-900/50 rounded-[3rem] border border-white/5 overflow-hidden">
+              <div className="p-8 border-b border-white/5 font-black uppercase tracking-widest text-zinc-400 text-xs flex justify-between">
+                <span>Transaction History</span>
+                <span className="text-indigo-500">Auto-Accounting Active</span>
+              </div>
+              <div className="divide-y divide-white/5">
+                {orders.map(o => (
+                  <div key={o.id} className="p-8 flex justify-between items-center hover:bg-white/5 transition-colors">
                     <div>
-                        <h3 class="text-xl font-bold italic" x-text="p.name"></h3>
-                        <p class="text-3xl font-black text-blue-500 mt-2">
-                            <span x-text="calc(p.price)"></span>
-                            <span class="text-[10px] text-zinc-600 uppercase" x-text="currency"></span>
-                        </p>
+                      <p className="font-bold text-sm uppercase">{o.items?.join(' + ')}</p>
+                      <p className="text-[10px] text-zinc-600 font-bold mt-1 uppercase tracking-tighter">Status: Completed & Forwarded</p>
                     </div>
-                    <button @click="add(p)" class="w-14 h-14 bg-white text-black rounded-2xl flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all active:scale-90 shadow-xl">
-                        <i class="fas fa-plus"></i>
-                    </button>
-                </div>
-            </div>
-        </template>
-    </main>
-
-    <!-- سلة التسوق (البوت الجانبي) -->
-    <div x-show="cartOpen" class="fixed inset-0 z-[200]" style="display: none;">
-        <div class="absolute inset-0 bg-black/90 backdrop-blur-md" @click="cartOpen = false"></div>
-        <div x-show="cartOpen" x-transition:enter="transition ease-out duration-300 transform" x-transition:enter-start="translate-x-full" x-transition:enter-end="translate-x-0" class="absolute inset-y-0 left-0 w-full md:w-[400px] bg-zinc-950 border-r border-white/10 p-8 flex flex-col">
-            <div class="flex justify-between items-center mb-10">
-                <h4 class="text-3xl font-black italic">السلة</h4>
-                <button @click="cartOpen = false" class="text-zinc-500"><i class="fas fa-times"></i></button>
-            </div>
-            
-            <div class="flex-grow overflow-y-auto space-y-4">
-                <template x-for="(ci, index) in cart" :key="index">
-                    <div class="glass p-4 rounded-2xl flex justify-between items-center">
-                        <div class="flex items-center gap-4">
-                            <img :src="ci.img" class="w-12 h-12 rounded-lg object-cover">
-                            <div>
-                                <p class="text-xs font-bold" x-text="ci.name"></p>
-                                <p class="text-blue-500 font-black" x-text="calc(ci.price) + ' ' + currency"></p>
-                            </div>
-                        </div>
-                        <button @click="cart.splice(index, 1)" class="text-zinc-800 hover:text-red-500"><i class="fas fa-trash"></i></button>
+                    <div className="text-right">
+                      <p className="text-green-500 font-black text-xl italic">+{o.profit?.toFixed(2)} {currency}</p>
+                      {o.discountUsed && <span className="text-[9px] bg-indigo-600/20 text-indigo-400 px-2 py-0.5 rounded-full font-black uppercase">Coupon Used</span>}
                     </div>
-                </template>
+                  </div>
+                ))}
+              </div>
             </div>
-
-            <div class="pt-8 border-t border-white/5 mt-auto">
-                <div class="flex justify-between items-center mb-6">
-                    <span class="text-zinc-500 text-xs font-bold uppercase tracking-widest">إجمالي المبلغ</span>
-                    <span class="text-3xl font-black" x-text="calc(total()) + ' ' + currency"></span>
-                </div>
-                <button @click="checkout()" class="w-full py-5 bg-blue-600 rounded-2xl font-black text-lg hover:bg-blue-500 shadow-xl shadow-blue-600/30 transition-all">
-                    تأكيد الطلب الآن <i class="fab fa-whatsapp ml-2"></i>
-                </button>
-            </div>
+          </div>
         </div>
-    </div>
+      )}
 
-    <script>
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('storeEngine', () => ({
-                cartOpen: false,
-                currency: 'SAR',
-                rates: { 'SAR': 1, 'MAD': 2.7, 'EUR': 0.25, 'USD': 0.27 },
-                products: [
-                    { id: 1, name: 'ساعة نيو كوانتم', price: 450, cat: 'إصدار فاخر', img: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600' },
-                    { id: 2, name: 'حذاء النبض V2', price: 320, cat: 'رياضي', img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600' },
-                    { id: 3, name: 'سماعات نيو-بلس', price: 190, cat: 'صوتيات', img: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600' }
-                ],
-                cart: [],
-                add(p) { this.cart.push({...p}); },
-                calc(p) { return (p * this.rates[this.currency]).toFixed(0); },
-                total() { return this.cart.reduce((s, i) => s + i.price, 0); },
-                checkout() {
-                    if(this.cart.length === 0) return alert('السلة فارغة!');
-                    let msg = `🛒 *طلب جديد - متجر NEO-PULSE*:%0A%0A`;
-                    this.cart.forEach((i, idx) => msg += `${idx+1}. *${i.name}* (${this.calc(i.price)} ${this.currency})%0A`);
-                    msg += `%0A💰 *الإجمالي: ${this.calc(this.total())} ${this.currency}*%0A%0A_تم الطلب عبر نظام البوت الآلي_`;
-                    window.open(`https://wa.me/34632684017?text=${msg}`, '_blank');
-                }
-            }));
-        });
-    </script>
-</body>
-</html>
+      {/* الواجهة الرئيسية */}
+      <main className="max-w-7xl mx-auto px-8 pt-44 pb-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          {products.map(p => (
+            <div key={p.id} className="group bg-zinc-900/30 border border-white/5 rounded-[3.5rem] p-7 hover:border-indigo-500/40 transition-all duration-700 relative overflow-hidden">
+              <div className="aspect-square rounded-[2.8rem] overflow-hidden mb-8">
+                <img src={p.img} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" alt={p.name} />
+              </div>
+              <div className="px-3 flex justify-between items-end mb-8">
+                <div>
+                  <p className="text-[10px] text-zinc-500 font-black uppercase tracking-[0.3em] mb-2">Premium Series</p>
+                  <h3 className="text-2xl font-black uppercase italic tracking-tighter">{p.name}</h3>
+                </div>
+                <p className="text-3xl font-black text-indigo-500 italic">{p.price} {currency}</p>
+              </div>
+              <button 
+                onClick={() => addToCart(p)}
+                className="w-full py-6 bg-white text-black rounded-3xl font-black uppercase text-xs flex items-center justify-center gap-3 hover:bg-indigo-600 hover:text-white transition-all shadow-xl active:scale-95"
+              >
+                Buy Now
+              </button>
+            </div>
+          ))}
+        </div>
+      </main>
+
+      {/* سلة المشتريات والخصم (Checkout) */}
+      {isCartOpen && (
+        <div className="fixed inset-0 z-[1000]">
+          <div className="absolute inset-0 bg-black/95 backdrop-blur-3xl" onClick={() => setIsCartOpen(false)} />
+          <div className="absolute inset-y-0 left-0 w-full md:w-[500px] bg-[#050505] border-r border-white/10 p-12 flex flex-col shadow-2xl">
+            <div className="flex justify-between items-center mb-16">
+              <h4 className="text-3xl font-black italic tracking-tighter uppercase">Cart Summary</h4>
+              <button onClick={() => setIsCartOpen(false)} className="text-zinc-600 hover:text-white transition-colors"><X size={32}/></button>
+            </div>
+
+            <div className="flex-grow space-y-8 overflow-y-auto pr-4">
+              {cart.length === 0 ? (
+                <p className="text-zinc-500 font-bold uppercase text-center mt-20 italic">Your cart is empty.</p>
+              ) : (
+                cart.map((item, i) => (
+                  <div key={i} className="flex gap-6 items-center group">
+                    <div className="w-20 h-20 rounded-2xl bg-zinc-900 overflow-hidden border border-white/5">
+                      <img src={item.img} className="w-full h-full object-cover" />
+                    </div>
+                    <div className="flex-grow">
+                      <p className="font-black uppercase text-sm italic tracking-tight">{item.name}</p>
+                      <p className="text-indigo-500 font-black italic">{item.price} {currency}</p>
+                    </div>
+                  </div>
+                ))
+              )}
+            </div>
+
+            {cart.length > 0 && (
+              <div className="mt-12 pt-8 border-t border-white/5">
+                {/* عداد الخصم الوهمي لزيادة السرعة */}
+                <div className="bg-indigo-600/10 border border-indigo-500/20 p-4 rounded-2xl mb-8 flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <Clock size={20} className="text-indigo-500 animate-pulse" />
+                    <span className="text-[10px] font-black uppercase tracking-widest text-indigo-400">Reserved for 04:59</span>
+                  </div>
+                  <Tag size={16} className="text-indigo-500" />
+                </div>
+
+                <div className="flex justify-between items-end mb-10">
+                  <div>
+                    <p className="text-[10px] text-zinc-500 uppercase font-black tracking-widest mb-1">Total Due</p>
+                    <div className="flex items-baseline gap-3">
+                      {discountApplied && <span className="text-xl text-zinc-600 line-through font-bold">{cartSubtotal.toFixed(2)}</span>}
+                      <p className="text-5xl font-black italic">{finalTotal.toFixed(2)} {currency}</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <button 
+                  onClick={processOrder}
+                  className="w-full py-7 bg-indigo-600 rounded-[2.5rem] font-black text-xl uppercase tracking-widest shadow-[0_20px_50px_rgba(79,70,229,0.3)] hover:bg-indigo-500 active:scale-95 transition-all flex items-center justify-center gap-4 group"
+                >
+                  Pay Securely <CreditCard size={24} className="group-hover:translate-x-1 transition-transform" />
+                </button>
+                <div className="flex items-center justify-center gap-2 mt-6 text-zinc-600">
+                  <ShieldCheck size={14} className="text-green-500" />
+                  <span className="text-[9px] font-black uppercase tracking-widest">PCI-DSS Compliant Payment</span>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
+    </div>
+  );
+};
+
+export default App;
 
