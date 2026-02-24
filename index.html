@@ -1,219 +1,93 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEO-PULSE | الإطلاق الرسمي</title>
+    <title>AI Managed Store | Premium Global Products</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&family=Noto+Sans+Arabic:wght@400;900&display=swap');
-        
-        body { 
-            font-family: 'Noto Sans Arabic', sans-serif; 
-            background: #000; 
-            color: #fff;
-            overflow-x: hidden;
-        }
-
-        .font-space { font-family: 'Space Grotesk', sans-serif; }
-        
-        .launch-glow {
-            box-shadow: 0 0 50px rgba(79, 70, 229, 0.3);
-            border: 1px solid rgba(99, 102, 241, 0.4);
-        }
-
-        .gradient-text {
-            background: linear-gradient(90deg, #818cf8, #c084fc);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .pulse-ring {
-            animation: pulse-ring 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
-        }
-
-        @keyframes pulse-ring {
-            0% { transform: scale(0.33); }
-            80%, 100% { opacity: 0; }
-        }
-
-        .cart-float {
-            animation: bounce 3s infinite;
-        }
-
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
+        .glow-border { border: 2px solid #2ecc71; box-shadow: 0 0 15px rgba(46, 204, 113, 0.3); }
+        .bg-dark { background: #0a0a0a; }
     </style>
 </head>
-<body x-data="launchEngine()" x-init="init()">
+<body class="bg-dark text-white font-sans flex flex-col items-center justify-center min-h-screen p-4">
 
-    <!-- شريط الإطلاق الرسمي -->
-    <div class="fixed top-0 w-full z-[1000] bg-black border-b border-indigo-500/30 py-2">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <div class="flex items-center gap-3">
+    <div class="max-w-md w-full bg-[#111] p-8 rounded-[2.5rem] glow-border text-center relative overflow-hidden">
+        
+        <div class="mb-6 flex flex-col items-center">
+            <h2 class="text-[#2ecc71] text-2xl font-black italic flex items-center gap-2">
+                ⚡ AI Managed Store
+            </h2>
+            <p class="text-gray-500 text-[10px] mt-1 tracking-widest uppercase">Scanning for secure connections...</p>
+        </div>
+
+        <div class="bg-[#1a1a1a] p-6 rounded-3xl mb-8 border border-gray-800">
+            <h3 class="text-gray-400 text-sm mb-2 uppercase tracking-tight">Premium Global Product</h3>
+            <div class="text-4xl font-black text-white mb-2">$29.99</div>
+            <p class="text-[10px] text-gray-500 italic">Limited Stock Available for USA & Europe</p>
+        </div>
+
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="Saidchaik@gmail.com">
+            <input type="hidden" name="item_name" value="Smart AI Store - Premium Order">
+            <input type="hidden" name="amount" value="29.99">
+            <input type="hidden" name="currency_code" value="USD">
+            
+            <button type="submit" class="w-full bg-[#f1c40f] hover:bg-yellow-500 text-black font-black py-5 rounded-full text-xl transition-all transform hover:scale-105 shadow-xl">
+                Buy Now via PayPal
+            </button>
+        </form>
+
+        <div class="mt-10 space-y-4">
+            <div class="flex items-center justify-center gap-2">
                 <span class="relative flex h-3 w-3">
                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                     <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
                 </span>
-                <span class="text-[10px] font-black uppercase tracking-widest text-zinc-400">نظام الإطلاق نشط: متاح عالمياً</span>
+                <span class="text-[#2ecc71] text-sm font-bold uppercase">System Active: USA Market</span>
             </div>
-            <div class="flex gap-4 items-center">
-                <span class="text-[9px] font-bold text-indigo-400">ROI: 14.5x</span>
-                <span class="text-zinc-700">|</span>
-                <span class="text-[9px] font-bold text-zinc-400 font-space" x-text="currentTime"></span>
-            </div>
-        </div>
-    </div>
-
-    <!-- واجهة المتجر الرئيسية -->
-    <div class="min-h-screen pt-20 pb-20 px-4 md:px-10">
-        
-        <!-- الهيرو (Hero Section) -->
-        <header class="max-w-7xl mx-auto text-center mb-24">
-            <div class="inline-block p-1 px-4 mb-6 rounded-full border border-indigo-500/20 bg-indigo-500/5">
-                <span class="text-[10px] font-black uppercase tracking-[0.4em] text-indigo-400">الجيل القادم من التجارة الذكية</span>
-            </div>
-            <h1 class="text-6xl md:text-9xl font-black italic font-space tracking-tighter mb-6">
-                NEO<span class="gradient-text">PULSE</span>
-            </h1>
-            <p class="max-w-2xl mx-auto text-zinc-500 text-sm md:text-lg font-medium leading-relaxed">
-                مستقبلك يبدأ هنا. منظومة متكاملة لبيع المنتجات التقنية والعصرية بذكاء اصطناعي لا ينام.
-            </p>
-        </header>
-
-        <!-- الإحصائيات الحية -->
-        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
-            <template x-for="stat in stats">
-                <div class="launch-glow p-6 rounded-[30px] bg-zinc-950/50 backdrop-blur-xl">
-                    <p class="text-[10px] font-black text-zinc-500 uppercase mb-2" x-text="stat.label"></p>
-                    <h3 class="text-2xl font-black italic font-space" x-text="stat.value"></h3>
-                </div>
-            </template>
-        </div>
-
-        <!-- معرض المنتجات -->
-        <section class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
-            <template x-for="product in products">
-                <div class="group relative bg-zinc-950 rounded-[40px] p-6 border border-white/5 hover:border-indigo-500/40 transition-all duration-700">
-                    <div class="relative aspect-square rounded-[30px] overflow-hidden mb-8">
-                        <img :src="product.img" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    </div>
-                    <div class="space-y-4">
-                        <div class="flex justify-between items-center">
-                            <h4 x-text="product.name" class="text-xl font-black italic font-space uppercase"></h4>
-                            <span class="text-xl font-black italic text-indigo-400" x-text="'$' + product.price"></span>
-                        </div>
-                        <p class="text-[10px] text-zinc-500 font-bold" x-text="product.desc"></p>
-                        <button @click="addToCart(product)" class="w-full py-4 bg-white text-black rounded-2xl font-black text-[10px] uppercase tracking-widest hover:bg-indigo-600 hover:text-white transition-all">
-                            اقتنِ الآن
-                        </button>
-                    </div>
-                </div>
-            </template>
-        </section>
-    </div>
-
-    <!-- سلة التسوق العائمة -->
-    <div class="fixed bottom-10 left-10 z-[1000]">
-        <button @click="isCartOpen = true" class="w-20 h-20 bg-indigo-600 rounded-[30px] flex items-center justify-center shadow-2xl shadow-indigo-500/40 cart-float">
-            <i data-lucide="shopping-bag" class="w-8 h-8"></i>
-            <span x-show="cart.length" x-text="cart.length" class="absolute -top-2 -right-2 w-8 h-8 bg-white text-black text-xs font-black rounded-full flex items-center justify-center"></span>
-        </button>
-    </div>
-
-    <!-- نافذة الدفع -->
-    <div x-show="isCartOpen" x-transition x-cloak class="fixed inset-0 z-[2000] flex items-center justify-center p-6">
-        <div class="absolute inset-0 bg-black/95 backdrop-blur-2xl" @click="isCartOpen = false"></div>
-        <div class="relative w-full max-w-2xl bg-zinc-950 rounded-[50px] p-10 border border-white/10 overflow-hidden">
-            <div class="absolute top-0 right-0 w-64 h-64 bg-indigo-600/10 rounded-full blur-[100px]"></div>
             
-            <h3 class="text-4xl font-black italic font-space mb-10">THE BAG</h3>
-            <div class="space-y-4 mb-10 max-h-60 overflow-y-auto pr-4 custom-scroll">
-                <template x-for="(item, i) in cart">
-                    <div class="flex justify-between items-center p-6 bg-white/5 rounded-3xl">
-                        <span x-text="item.name" class="font-black italic"></span>
-                        <div class="flex items-center gap-6">
-                            <span x-text="'$' + item.price" class="text-indigo-400 font-bold"></span>
-                            <button @click="cart.splice(i, 1)" class="text-zinc-600 hover:text-red-500"><i data-lucide="trash-2"></i></button>
-                        </div>
-                    </div>
-                </template>
+            <p class="text-gray-400 text-xs">Tracking <span id="visitor-count" class="font-bold text-white">171</span> live visitors...</p>
+            
+            <div id="live-activity" class="bg-black/50 p-3 rounded-2xl border border-gray-800 flex items-center justify-center gap-2 transition-all duration-500">
+                <span class="text-yellow-500">🔔</span>
+                <span id="activity-msg" class="text-[11px] text-[#2ecc71] font-medium italic">Chicago: is looking at this item</span>
             </div>
+        </div>
 
-            <div class="flex justify-between items-end mb-10">
-                <p class="text-[10px] font-black text-zinc-500 uppercase">مجموع الاستثمار</p>
-                <span class="text-6xl font-black italic font-space text-indigo-400" x-text="'$' + calculateTotal()"></span>
-            </div>
-
-            <button @click="checkout()" class="w-full py-6 bg-white text-black rounded-[25px] font-black text-xl italic font-space hover:bg-indigo-600 hover:text-white transition-all">
-                إتمام العملية بنجاح
-            </button>
+        <div class="mt-6 pt-6 border-t border-gray-900 text-[10px] text-gray-600 flex justify-center gap-4">
+            <span>🔒 Secure Transaction</span>
+            <span>🌍 Global Shipping</span>
         </div>
     </div>
 
-    <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js";
-        import { getFirestore, collection, addDoc, onSnapshot, serverTimestamp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-firestore.js";
-        import Alpine from 'https://unpkg.com/alpinejs@3.x.x/dist/module.esm.js';
+    <script>
+        // نظام تحديث عدد الزوار تلقائياً
+        setInterval(() => {
+            const count = Math.floor(Math.random() * (195 - 160 + 1)) + 160;
+            document.getElementById('visitor-count').innerText = count;
+        }, 10000);
 
-        window.launchEngine = () => ({
-            db: null, cart: [], isCartOpen: false, totalSales: 0,
-            currentTime: '',
-            stats: [
-                { label: 'الزوار الآن', value: '1,240' },
-                { label: 'معدل الطلب', value: '98%' },
-                { label: 'الدول النشطة', value: '14' },
-                { label: 'الأرباح الكلية', value: '$0' }
-            ],
-            products: [
-                { id: 1, name: 'Core Shell v2', price: 420, desc: 'حماية قصوى مع تصميم مستقبلي.', img: 'https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=600' },
-                { id: 2, name: 'Pulse Runners', price: 210, desc: 'تكنولوجيا استعادة الطاقة في كل خطوة.', img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600' },
-                { id: 3, name: 'Nexus Gear', price: 155, desc: 'تخزين ذكي لكل أدواتك الرقمية.', img: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600' }
-            ],
-
-            async init() {
-                const firebaseConfig = JSON.parse(typeof __firebase_config !== 'undefined' ? __firebase_config : '{}');
-                this.db = getFirestore(initializeApp(firebaseConfig));
-                
-                this.updateTime();
-                setInterval(() => this.updateTime(), 1000);
-                this.loadSales();
-                lucide.createIcons();
-            },
-
-            updateTime() {
-                this.currentTime = new Date().toLocaleTimeString('en-US', { hour12: false });
-            },
-
-            loadSales() {
-                const appId = typeof __app_id !== 'undefined' ? __app_id : 'neo-pulse-final';
-                onSnapshot(collection(this.db, 'artifacts', appId, 'public', 'data', 'orders'), (s) => {
-                    const total = s.docs.reduce((sum, d) => sum + (d.data().revenue || 0), 0);
-                    this.stats[3].value = '$' + total.toLocaleString();
-                });
-            },
-
-            addToCart(p) { this.cart.push(p); this.isCartOpen = true; lucide.createIcons(); },
-            calculateTotal() { return this.cart.reduce((s, i) => s + i.price, 0); },
-
-            async checkout() {
-                if(!this.cart.length) return;
-                const appId = typeof __app_id !== 'undefined' ? __app_id : 'neo-pulse-final';
-                await addDoc(collection(this.db, 'artifacts', appId, 'public', 'data', 'orders'), {
-                    revenue: this.calculateTotal(),
-                    timestamp: serverTimestamp(),
-                    items: this.cart.map(i => i.name)
-                });
-                this.cart = []; this.isCartOpen = false;
-                lucide.createIcons();
-            }
-        });
-        Alpine.start();
+        // نظام تنبيهات النشاط المباشر (السوق الأمريكي)
+        const activities = [
+            "New York: someone just purchased!",
+            "California: checking out right now",
+            "Texas: items added to cart",
+            "Chicago: is looking at this item",
+            "Florida: secured 1 unit via PayPal"
+        ];
+        
+        let i = 0;
+        setInterval(() => {
+            const msgBox = document.getElementById('activity-msg');
+            msgBox.style.opacity = 0;
+            setTimeout(() => {
+                msgBox.innerText = activities[i];
+                msgBox.style.opacity = 1;
+                i = (i + 1) % activities.length;
+            }, 500);
+        }, 6000);
     </script>
 </body>
 </html>
-
