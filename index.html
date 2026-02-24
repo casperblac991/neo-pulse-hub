@@ -3,278 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEO-PULSE | ULTIMA EDITION</title>
+    <title>NEO-PULSE HUB | ملابس الأطفال والجيل القادم</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
-        body { font-family: 'Cairo', sans-serif; background-color: #020202; color: #ffffff; margin: 0; overflow-x: hidden; }
-        .glass { background: rgba(255, 255, 255, 0.01); backdrop-filter: blur(25px); border: 1px solid rgba(255, 255, 255, 0.05); }
-        .neo-gradient { background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%); }
-        .text-gradient { background: linear-gradient(to bottom right, #ffffff 30%, #6366f1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        body { font-family: 'Cairo', sans-serif; background-color: #030303; color: #ffffff; margin: 0; overflow-x: hidden; }
+        
+        .glass { background: rgba(10, 10, 10, 0.8); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .neo-gradient { background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); }
+        .text-gradient { background: linear-gradient(to right, #fff, #a5b4fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        .product-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .product-card:hover { transform: translateY(-10px); border-color: #6366f1; }
+        
         [x-cloak] { display: none !important; }
-        .product-card { transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
-        .product-card:hover { transform: translateY(-20px) scale(1.02); border-color: rgba(99, 102, 241, 0.5); }
-        .custom-scroll::-webkit-scrollbar { width: 2px; }
-        .custom-scroll::-webkit-scrollbar-thumb { background: #6366f1; }
-        @keyframes pulse-slow { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.6; } }
-        .bg-glow { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: -1; background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.05) 0%, transparent 70%); }
+        .custom-scroll::-webkit-scrollbar { width: 4px; }
+        .custom-scroll::-webkit-scrollbar-thumb { background: #6366f1; border-radius: 20px; }
+
+        .category-tag { @apply px-4 py-1 rounded-full text-[9px] font-black uppercase tracking-widest border border-white/10 bg-white/5; }
     </style>
 </head>
-<body x-data="storeApp()" x-init="init()" @mouseleave="handleExitIntent()">
+<body x-data="hubApp()" x-init="init()">
 
-    <div class="bg-glow"></div>
-
-    <!-- إشعار الشراء المباشر -->
-    <div x-show="lastPurchase" x-transition:enter="transition ease-out duration-500" x-transition:enter-start="translate-x-full opacity-0" x-transition:enter-end="translate-x-0 opacity-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="translate-x-0 opacity-100" x-transition:leave-end="translate-x-full opacity-0" x-cloak class="fixed bottom-8 left-8 z-[3000]">
-        <div class="glass p-4 rounded-2xl border-white/10 flex items-center gap-4 shadow-[0_0_50px_-12px_rgba(99,102,241,0.5)]">
-            <div class="relative">
-                <div class="w-10 h-10 rounded-full neo-gradient flex items-center justify-center">
-                    <i data-lucide="zap" class="text-white w-5 h-5 fill-white"></i>
-                </div>
-                <div class="absolute -top-1 -right-1 w-3 h-3 bg-green-500 border-2 border-black rounded-full animate-pulse"></div>
+    <!-- شريط الحالة -->
+    <header class="fixed top-0 w-full z-[100] glass border-b border-white/5 px-6 py-2">
+        <div class="max-w-[1800px] mx-auto flex justify-between items-center text-[9px] font-black uppercase text-zinc-500">
+            <div class="flex items-center gap-4">
+                <span class="text-indigo-400">NEO-KIDS DIVISION</span>
+                <span class="w-[1px] h-3 bg-white/10"></span>
+                <span>الحالة: متصل</span>
             </div>
-            <div>
-                <p class="text-[9px] text-indigo-400 font-black uppercase tracking-widest">تأكيد طلب حي</p>
-                <p class="text-xs font-bold text-white" x-text="lastPurchase?.name + ' من ' + lastPurchase?.city"></p>
-            </div>
+            <div x-text="currentTime"></div>
         </div>
-    </div>
+    </header>
 
-    <!-- نافذة عرض الخروج الذكي -->
-    <div x-show="showExitPopup" x-transition x-cloak class="fixed inset-0 z-[5000] flex items-center justify-center p-4">
-        <div class="absolute inset-0 bg-black/95 backdrop-blur-3xl" @click="showExitPopup = false"></div>
-        <div class="relative glass p-16 rounded-[4rem] max-w-xl w-full text-center border-indigo-500/30 overflow-hidden">
-            <div class="absolute top-0 left-0 w-full h-1 neo-gradient"></div>
-            <h3 class="text-6xl font-black mb-6 italic text-gradient tracking-tighter">لا ترحل فارغ اليدين!</h3>
-            <p class="text-zinc-500 text-lg mb-12 leading-relaxed text-right">لقد رصد نظامنا اهتمامك ببعض القطع النادرة. سنقوم بتفعيل **خصم الشحن السريع** بالإضافة إلى خصم **15%** إذا أكملت الطلب خلال الـ 10 دقائق القادمة.</p>
-            <div class="space-y-4">
-                <button @click="applyDiscount()" class="w-full py-7 neo-gradient rounded-3xl font-black text-2xl uppercase shadow-[0_20px_40px_-10px_rgba(99,102,241,0.4)] hover:scale-[1.02] transition-transform">احصل على الخصم الآن</button>
-                <button @click="showExitPopup = false" class="text-zinc-600 font-bold hover:text-white transition-colors">سأفكر في الأمر لاحقاً</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- الهيدر السينمائي -->
-    <nav class="fixed top-0 w-full z-[100] border-b border-white/5 bg-black/40 backdrop-blur-3xl px-10 py-8">
-        <div class="max-w-[1600px] mx-auto flex justify-between items-center">
-            <div class="flex items-center gap-6 cursor-pointer group" @dblclick="isAdminOpen = true">
-                <div class="relative">
-                    <div class="w-16 h-16 neo-gradient rounded-2xl flex items-center justify-center shadow-2xl group-hover:rotate-12 transition-transform duration-500">
-                        <i data-lucide="cpu" class="text-white w-8 h-8"></i>
-                    </div>
+    <!-- الهيدر -->
+    <nav class="fixed top-[33px] w-full z-[99] glass-bright bg-black/50 backdrop-blur-xl px-8 py-4 border-b border-white/5">
+        <div class="max-w-[1800px] mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3 cursor-pointer" @dblclick="isAdminOpen = true">
+                <div class="w-10 h-10 neo-gradient rounded-lg flex items-center justify-center">
+                    <i data-lucide="baby" class="text-white w-6 h-6"></i>
                 </div>
-                <div>
-                    <h1 class="text-4xl font-black italic tracking-[ -0.05em] uppercase leading-none">NEO<span class="text-indigo-500">PULSE</span></h1>
-                    <p class="text-[9px] text-zinc-500 font-bold tracking-[0.4em] uppercase mt-2">Core Engine v6.1.0</p>
-                </div>
+                <h1 class="text-2xl font-black italic">NEO<span class="text-indigo-500">KIDS</span></h1>
             </div>
 
-            <div class="flex items-center gap-10">
-                <div class="hidden lg:flex gap-8 text-[11px] font-black uppercase tracking-[0.2em] text-zinc-500">
-                    <a href="#" class="hover:text-white transition-colors">المجموعة</a>
-                    <a href="#" class="hover:text-white transition-colors">التكنولوجيا</a>
-                    <a href="#" class="hover:text-white transition-colors">الضمان</a>
-                </div>
-                <div class="h-8 w-[1px] bg-white/10 hidden md:block"></div>
-                <div class="flex items-center gap-6">
-                    <select x-model="currency" class="bg-transparent text-[11px] font-black uppercase text-indigo-400 border-none focus:ring-0 cursor-pointer">
-                        <option value="EUR">EUR (€)</option>
-                        <option value="USD">USD ($)</option>
-                        <option value="SAR">SAR (ر.س)</option>
-                    </select>
-                    <button @click="isCartOpen = true" class="relative group">
-                        <div class="absolute -inset-2 bg-indigo-500/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                        <i data-lucide="shopping-cart" class="w-7 h-7 text-zinc-400 group-hover:text-white transition-colors"></i>
-                        <template x-if="cart.length > 0">
-                            <span x-text="cart.length" class="absolute -top-3 -right-3 bg-white text-black w-6 h-6 rounded-lg text-[10px] flex items-center justify-center font-black shadow-2xl"></span>
-                        </template>
-                    </button>
-                </div>
+            <!-- الفلاتر السريعة -->
+            <div class="hidden md:flex gap-6">
+                <template x-for="cat in categories">
+                    <button @click="activeTab = cat.id" 
+                            :class="activeTab === cat.id ? 'text-indigo-400 border-indigo-500' : 'text-zinc-500 border-transparent'"
+                            class="text-[10px] font-black uppercase tracking-widest border-b-2 pb-1 transition-all" 
+                            x-text="cat.name"></button>
+                </template>
+            </div>
+
+            <div class="flex items-center gap-6">
+                <button @click="isCartOpen = true" class="relative p-2">
+                    <i data-lucide="shopping-bag" class="w-6 h-6"></i>
+                    <span x-show="cart.length > 0" x-text="cart.length" class="absolute -top-1 -right-1 bg-white text-black text-[9px] w-4 h-4 flex items-center justify-center rounded-full font-bold"></span>
+                </button>
             </div>
         </div>
     </nav>
 
-    <!-- واجهة البطل -->
-    <main class="max-w-[1600px] mx-auto px-10 pt-64 pb-32">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center mb-48">
-            <div class="lg:col-span-7">
-                <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full glass border-indigo-500/20 mb-8">
-                    <span class="w-2 h-2 bg-indigo-500 rounded-full animate-pulse"></span>
-                    <span class="text-[10px] font-black uppercase tracking-widest text-indigo-300">New Era of Commerce</span>
-                </div>
-                <h2 class="text-8xl md:text-[13rem] font-black italic uppercase leading-[0.75] tracking-[-0.07em] mb-12">
-                    Level<br><span class="text-gradient">Zero.</span>
-                </h2>
-                <p class="text-zinc-400 text-2xl max-w-2xl leading-relaxed mb-16 text-right">تصاميم سابقة لعصرها، جودة لا تقبل المساومة، وتجربة تسوق مدعومة بالذكاء الاصطناعي.</p>
-                <div class="flex gap-6">
-                    <button class="px-12 py-7 neo-gradient rounded-[2rem] font-black text-lg uppercase shadow-2xl hover:scale-105 transition-all">اكتشف الآن</button>
-                    <button class="px-12 py-7 glass border-white/10 rounded-[2rem] font-black text-lg uppercase hover:bg-white/5 transition-all">فيديو المنتج</button>
+    <!-- المحتوى -->
+    <main class="max-w-[1800px] mx-auto px-8 pt-40 pb-20">
+        
+        <!-- بنر العرض -->
+        <div class="mb-16 p-12 rounded-[3rem] glass border-white/5 relative overflow-hidden">
+            <div class="relative z-10 max-w-2xl">
+                <h2 class="text-6xl font-black italic text-gradient mb-6 leading-none">ملابس المستقبل<br>لأطفال اليوم.</h2>
+                <p class="text-zinc-500 text-lg mb-8">من الرضع إلى المراهقين، نقدم تصاميم تجمع بين الراحة القصوى والأسلوب المستقبلي.</p>
+                <div class="flex gap-4">
+                    <span class="category-tag">توصيل مجاني</span>
+                    <span class="category-tag">ضمان استبدال</span>
                 </div>
             </div>
-            <div class="lg:col-span-5 relative hidden lg:block">
-                <div class="absolute inset-0 bg-indigo-600/30 blur-[150px] rounded-full animate-pulse"></div>
-                <img src="https://images.unsplash.com/photo-1618354721010-2c3bf4321738?auto=format&fit=crop&q=90&w=1000" class="relative rounded-[5rem] rotate-6 hover:rotate-0 transition-transform duration-1000 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.8)] border border-white/10">
+            <div class="absolute top-0 left-0 w-1/2 h-full opacity-20 pointer-events-none">
+                <i data-lucide="sparkles" class="w-full h-full text-indigo-500 p-20"></i>
             </div>
         </div>
 
-        <!-- شبكة المنتجات -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
-            <template x-for="p in products" :key="p.id">
-                <div class="glass product-card p-12 rounded-[5rem] group relative overflow-hidden">
-                    <div class="absolute top-0 right-0 p-10 opacity-0 group-hover:opacity-10 transition-opacity">
-                        <i data-lucide="layers" class="w-32 h-32"></i>
-                    </div>
-                    
-                    <div class="relative aspect-[4/5] rounded-[3.5rem] overflow-hidden mb-12 bg-zinc-900 border border-white/5">
-                        <img :src="p.img" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[1.5s]">
-                        <div class="absolute bottom-8 right-8 flex gap-2">
-                            <span class="bg-black/60 backdrop-blur-md p-3 rounded-2xl border border-white/10"><i data-lucide="maximize" class="w-4 h-4"></i></span>
-                            <span class="bg-black/60 backdrop-blur-md p-3 rounded-2xl border border-white/10"><i data-lucide="heart" class="w-4 h-4"></i></span>
+        <!-- شبكة المنتجات الديناميكية -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <template x-for="p in filteredProducts" :key="p.id">
+                <div class="glass product-card p-5 rounded-[2.5rem] flex flex-col group">
+                    <div class="relative aspect-[3/4] rounded-[2rem] overflow-hidden mb-6 bg-zinc-900">
+                        <img :src="p.img" :alt="p.name" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-black/80 backdrop-blur-md text-[8px] font-black px-3 py-1 rounded-full border border-white/10 text-indigo-300" x-text="p.age"></span>
                         </div>
                     </div>
-
-                    <div class="space-y-8 relative z-10">
-                        <div class="flex justify-between items-end">
-                            <div>
-                                <h3 x-text="p.name" class="text-4xl font-black uppercase italic tracking-tighter text-white"></h3>
-                                <div class="flex items-center gap-2 mt-3">
-                                    <div class="flex text-indigo-500">
-                                        <template x-for="i in 5">
-                                            <i data-lucide="star" class="w-3 h-3 fill-current"></i>
-                                        </template>
-                                    </div>
-                                    <span class="text-[9px] text-zinc-500 font-bold uppercase">(128 Review)</span>
-                                </div>
-                            </div>
-                            <div class="text-right">
-                                <p class="text-4xl font-black text-indigo-400 italic" x-text="formatPrice(p.price)"></p>
-                                <p class="text-[9px] text-zinc-600 font-bold uppercase mt-1">ضريبة مضافة مشمولة</p>
-                            </div>
+                    <div class="flex-grow">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 x-text="p.name" class="text-lg font-black italic text-white"></h4>
+                            <span class="text-lg font-black text-indigo-400 italic" x-text="formatPrice(p.price)"></span>
                         </div>
-                        <button @click="addToCart(p)" class="w-full py-8 bg-white text-black rounded-[2.5rem] font-black uppercase text-sm hover:neo-gradient hover:text-white transition-all shadow-xl active:scale-95 flex items-center justify-center gap-4">
-                            إضافة للحقيبة <i data-lucide="plus" class="w-5 h-5"></i>
-                        </button>
+                        <p class="text-[10px] text-zinc-600 font-bold uppercase mb-6" x-text="p.desc"></p>
                     </div>
+                    <button @click="addToCart(p)" class="w-full py-4 neo-gradient rounded-2xl font-black text-xs uppercase shadow-lg hover:brightness-110 transition-all flex items-center justify-center gap-2">
+                        إضافة للحقيبة <i data-lucide="plus-circle" class="w-4 h-4"></i>
+                    </button>
                 </div>
             </template>
         </div>
     </main>
 
-    <!-- لوحة المشرف المتطورة -->
-    <div x-show="isAdminOpen" x-transition x-cloak class="fixed inset-0 z-[6000] bg-[#020202] overflow-y-auto custom-scroll">
-        <div class="max-w-[1400px] mx-auto p-12 md:p-24">
-            <div class="flex justify-between items-start mb-32">
-                <div>
-                    <h2 class="text-7xl font-black italic tracking-tighter text-gradient">COMMAND CENTER</h2>
-                    <p class="text-indigo-400 text-xs font-black tracking-[0.6em] mt-6 uppercase">Real-time Global Sync</p>
-                </div>
-                <button @click="isAdminOpen = false" class="w-24 h-24 glass rounded-full flex items-center justify-center hover:bg-red-500/20 transition-all border-white/5">
-                    <i data-lucide="power" class="w-10 h-10"></i>
-                </button>
+    <!-- لوحة التحكم (Admin) -->
+    <div x-show="isAdminOpen" x-transition x-cloak class="fixed inset-0 z-[1000] bg-black p-10 overflow-y-auto">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-4xl font-black italic text-gradient tracking-tighter">لوحة مراقبة المبيعات</h2>
+                <button @click="isAdminOpen = false" class="p-3 glass rounded-full"><i data-lucide="x"></i></button>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-20">
-                <template x-for="stat in [
-                    { label: 'Gross Revenue', val: formatPrice(stats.revenue), icon: 'trending-up', color: 'text-white' },
-                    { label: 'Net Profit', val: formatPrice(stats.profit), icon: 'dollar-sign', color: 'text-green-500' },
-                    { label: 'Active Sessions', val: '1,402', icon: 'users', color: 'text-indigo-400' },
-                    { label: 'Server Health', val: '99.9%', icon: 'activity', color: 'text-blue-400' }
-                ]">
-                    <div class="glass p-12 rounded-[4rem] border-white/5 relative group overflow-hidden">
-                        <div class="absolute -right-4 -bottom-4 opacity-5 group-hover:opacity-10 transition-opacity">
-                            <i :data-lucide="stat.icon" class="w-32 h-32"></i>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <div class="glass p-8 rounded-3xl">
+                    <p class="text-[10px] text-zinc-500 font-black uppercase mb-2">إجمالي المبيعات</p>
+                    <h3 class="text-3xl font-black italic text-white" x-text="formatPrice(stats.revenue)"></h3>
+                </div>
+                <div class="glass p-8 rounded-3xl border-indigo-500/20">
+                    <p class="text-[10px] text-zinc-500 font-black uppercase mb-2">عدد العمليات</p>
+                    <h3 class="text-3xl font-black italic text-indigo-400" x-text="stats.count"></h3>
+                </div>
+                <div class="glass p-8 rounded-3xl border-green-500/20">
+                    <p class="text-[10px] text-zinc-500 font-black uppercase mb-2">صافي الربح</p>
+                    <h3 class="text-3xl font-black italic text-green-500" x-text="formatPrice(stats.profit)"></h3>
+                </div>
+            </div>
+            <!-- قائمة الطلبات -->
+            <div class="glass rounded-3xl overflow-hidden">
+                <template x-for="order in orders" :key="order.id">
+                    <div class="p-6 border-b border-white/5 flex justify-between items-center hover:bg-white/[0.02]">
+                        <div>
+                            <p class="font-black italic text-sm" x-text="order.items.join(' + ')"></p>
+                            <p class="text-[9px] text-zinc-600 font-bold mt-1" x-text="order.timestamp?.toDate().toLocaleString('ar-EG')"></p>
                         </div>
-                        <p class="text-[10px] text-zinc-600 font-black uppercase tracking-widest mb-6" x-text="stat.label"></p>
-                        <h3 class="text-4xl font-black italic tracking-tighter" :class="stat.color" x-text="stat.val"></h3>
+                        <p class="text-xl font-black italic text-indigo-400" x-text="formatPrice(order.revenue)"></p>
                     </div>
                 </template>
-            </div>
-
-            <!-- سجل الطلبات -->
-            <div class="glass rounded-[5rem] overflow-hidden border-indigo-500/10">
-                <div class="p-14 border-b border-white/5 flex justify-between items-center bg-white/[0.02]">
-                    <div class="flex items-center gap-4">
-                        <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                        <span class="font-black text-sm uppercase tracking-[0.3em]">Live Transaction Stream</span>
-                    </div>
-                    <button class="text-[10px] font-black uppercase text-indigo-400 hover:text-white transition-colors">تصدير التقارير (JSON)</button>
-                </div>
-                <div class="divide-y divide-white/5">
-                    <template x-for="order in orders" :key="order.id">
-                        <div class="p-14 flex justify-between items-center hover:bg-white/[0.03] transition-all group">
-                            <div class="flex gap-10 items-center">
-                                <div class="w-20 h-20 bg-indigo-500/10 rounded-3xl flex items-center justify-center text-indigo-400 border border-indigo-500/20 group-hover:scale-110 transition-transform">
-                                    <i data-lucide="shopping-bag"></i>
-                                </div>
-                                <div>
-                                    <p class="text-2xl font-black italic uppercase tracking-tighter" x-text="order.items.join(' + ')"></p>
-                                    <div class="flex gap-4 mt-2">
-                                        <p class="text-[10px] text-zinc-600 font-bold uppercase tracking-widest" x-text="'Ref: #' + order.id.substring(0,8)"></p>
-                                        <p class="text-[10px] text-indigo-500 font-bold uppercase tracking-widest" x-text="order.timestamp?.toDate().toLocaleString('ar-EG')"></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-right">
-                                <p class="text-green-500 text-4xl font-black italic tracking-tighter" x-text="'+' + formatPrice(order.profit)"></p>
-                                <div class="inline-flex items-center gap-2 mt-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20">
-                                    <span class="w-1 h-1 bg-green-500 rounded-full"></span>
-                                    <span class="text-[8px] font-black text-green-500 uppercase">Settled</span>
-                                </div>
-                            </div>
-                        </div>
-                    </template>
-                </div>
             </div>
         </div>
     </div>
 
     <!-- السلة الجانبية -->
-    <div x-show="isCartOpen" x-transition x-cloak class="fixed inset-0 z-[5000]">
-        <div class="absolute inset-0 bg-black/95 backdrop-blur-3xl" @click="isCartOpen = false"></div>
-        <div class="absolute inset-y-0 left-0 w-full md:w-[650px] bg-[#030303] border-r border-white/5 p-20 flex flex-col shadow-2xl">
-            <div class="flex justify-between items-center mb-24">
-                <h4 class="text-6xl font-black italic uppercase tracking-tighter text-gradient">Gear Bag</h4>
-                <button @click="isCartOpen = false" class="w-16 h-16 glass rounded-full flex items-center justify-center hover:bg-white/10 transition-all"><i data-lucide="x" class="w-8 h-8"></i></button>
+    <div x-show="isCartOpen" x-transition x-cloak class="fixed inset-0 z-[1100]">
+        <div class="absolute inset-0 bg-black/90" @click="isCartOpen = false"></div>
+        <div class="absolute inset-y-0 left-0 w-full md:w-[450px] glass p-10 flex flex-col shadow-2xl">
+            <div class="flex justify-between items-center mb-10">
+                <h3 class="text-3xl font-black italic">الحقيبة</h3>
+                <button @click="isCartOpen = false"><i data-lucide="x"></i></button>
             </div>
-            
-            <div class="flex-grow space-y-16 overflow-y-auto custom-scroll pr-6">
-                <template x-if="cart.length === 0">
-                    <div class="h-full flex flex-col items-center justify-center opacity-10">
-                        <i data-lucide="package" class="w-56 h-56 mb-12"></i>
-                        <p class="text-4xl font-black uppercase italic tracking-widest">Bag is Empty</p>
-                    </div>
-                </template>
+            <div class="flex-grow overflow-y-auto custom-scroll pr-4 space-y-6">
                 <template x-for="(item, index) in cart" :key="index">
-                    <div class="flex gap-12 items-center animate-fadeIn group">
-                        <div class="w-40 h-40 rounded-[3rem] overflow-hidden border border-white/10 group-hover:border-indigo-500/30 transition-colors">
-                            <img :src="item.img" class="w-full h-full object-cover">
-                        </div>
+                    <div class="flex items-center gap-4 glass p-4 rounded-2xl">
+                        <img :src="item.img" class="w-16 h-16 rounded-lg object-cover">
                         <div class="flex-grow">
-                            <p class="text-2xl font-black uppercase italic tracking-tighter" x-text="item.name"></p>
-                            <p class="text-indigo-400 font-black text-3xl italic mt-3" x-text="formatPrice(item.price)"></p>
+                            <p class="font-black italic text-sm" x-text="item.name"></p>
+                            <p class="text-indigo-400 font-black" x-text="formatPrice(item.price)"></p>
                         </div>
-                        <button @click="removeFromCart(index)" class="text-zinc-800 hover:text-red-500 transition-all p-4"><i data-lucide="trash-2" class="w-7 h-7"></i></button>
+                        <button @click="removeFromCart(index)" class="text-zinc-700 hover:text-red-500 transition-colors"><i data-lucide="trash-2" class="w-5 h-5"></i></button>
                     </div>
                 </template>
             </div>
-
-            <div class="mt-24 pt-16 border-t border-white/5 relative">
-                <div class="flex justify-between items-end mb-16">
-                    <div>
-                        <p class="text-zinc-600 text-[11px] font-black uppercase tracking-[0.5em] mb-6">Aggregate Value</p>
-                        <div class="flex items-center gap-8">
-                            <span class="text-8xl font-black italic tracking-tighter text-gradient" x-text="formatPrice(finalTotal())"></span>
-                            <template x-if="discountApplied">
-                                <div class="bg-indigo-600/10 border border-indigo-500/30 px-5 py-2 rounded-2xl animate-pulse">
-                                    <span class="text-[10px] font-black text-indigo-400 uppercase">Loyalty -15%</span>
-                                </div>
-                            </template>
-                        </div>
-                    </div>
+            <div class="mt-10 pt-8 border-t border-white/5">
+                <div class="flex justify-between items-end mb-8">
+                    <p class="text-zinc-500 text-[10px] font-black uppercase">المجموع النهائي</p>
+                    <p class="text-4xl font-black text-gradient" x-text="formatPrice(finalTotal())"></p>
                 </div>
-                <button @click="checkout()" class="w-full py-10 neo-gradient rounded-[3rem] font-black text-3xl uppercase tracking-widest shadow-[0_30px_60px_-15px_rgba(99,102,241,0.5)] hover:scale-[1.03] active:scale-95 transition-all">إكمال الدفع المشفر</button>
-                <p class="text-center text-[9px] text-zinc-700 font-bold uppercase mt-8 tracking-widest">Secure AES-256 SSL Encryption Active</p>
+                <button @click="checkout()" class="w-full py-5 neo-gradient rounded-2xl font-black text-lg uppercase tracking-widest shadow-xl">إتمام الطلب</button>
             </div>
         </div>
     </div>
@@ -285,16 +182,31 @@
         import { getFirestore, collection, addDoc, onSnapshot, query, orderBy, limit, serverTimestamp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-firestore.js";
         import Alpine from 'https://unpkg.com/alpinejs@3.x.x/dist/module.esm.js';
 
-        window.storeApp = () => ({
-            db: null, cart: [], orders: [], isCartOpen: false, isAdminOpen: false,
-            showExitPopup: false, hasShownExitPopup: false, discountApplied: false,
-            currency: 'EUR', lastPurchase: null,
+        window.hubApp = () => ({
+            db: null, cart: [], orders: [], 
+            isCartOpen: false, isAdminOpen: false, activeTab: 'all',
+            currency: 'SAR', currentTime: '',
             stats: { revenue: 0, profit: 0, count: 0 },
-            products: [
-                { id: '1', name: 'NEO-X Watch', price: 349, cost: 120, img: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=90&w=800' },
-                { id: '2', name: 'Cyber Runner', price: 210, cost: 75, img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=90&w=800' },
-                { id: '3', name: 'Pulse Pods', price: 499, cost: 190, img: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=90&w=800' }
+            categories: [
+                { id: 'all', name: 'الكل' },
+                { id: 'baby', name: 'رضع (0-2)' },
+                { id: 'kids', name: 'أطفال (3-12)' },
+                { id: 'teens', name: 'مراهقين (13+)' }
             ],
+            products: [
+                { id: 'k1', cat: 'baby', age: '0-2 سنة', name: 'بذلة نيو-نوز القصيرة', price: 120, cost: 40, img: 'https://images.unsplash.com/photo-1522771935876-2497116a7a9e?auto=format&fit=crop&q=80&w=600', desc: 'قطن عضوي 100% مع أزرار مغناطيسية سهلة.' },
+                { id: 'k2', cat: 'kids', age: '5-8 سنوات', name: 'طقم سايبر-بوي الرياضي', price: 245, cost: 90, img: 'https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&q=80&w=600', desc: 'تصميم عاكس للضوء مع تقنية تهوية متطورة.' },
+                { id: 'k3', cat: 'teens', age: '14+ سنة', name: 'هودي الأوربان جين', price: 380, cost: 140, img: 'https://images.unsplash.com/photo-1515238152791-8216bfdf89a7?auto=format&fit=crop&q=80&w=600', desc: 'قصة واسعة (Oversized) مع جيب سري للأجهزة.' },
+                { id: 'k4', cat: 'kids', age: '3-6 سنوات', name: 'فستان جالاكسي بيكسل', price: 210, cost: 70, img: 'https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?auto=format&fit=crop&q=80&w=600', desc: 'ألوان متغيرة مع الإضاءة، مريح للحركة.' },
+                { id: 'k5', cat: 'baby', age: '6-12 شهر', name: 'رداء التدفئة نيو-كوزي', price: 175, cost: 60, img: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=80&w=600', desc: 'مبطن بالفرو الصناعي فائق النعومة.' },
+                { id: 'k6', cat: 'teens', age: '12-16 سنة', name: 'سترة الرياح نيو-شيل', price: 420, cost: 160, img: 'https://images.unsplash.com/photo-1520127877096-7427494273e9?auto=format&fit=crop&q=80&w=600', desc: 'مقاومة للماء والرياح بوزن خفيف جداً.' },
+                { id: 'k7', cat: 'kids', age: '7-11 سنة', name: 'بنطال التك-كارغو', price: 195, cost: 65, img: 'https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?auto=format&fit=crop&q=80&w=600', desc: 'جيوب متعددة مع مفاصل مرنة للجري واللعب.' },
+                { id: 'k8', cat: 'teens', age: '13-18 سنة', name: 'تيشيرت نيو-لوغو برو', price: 140, cost: 45, img: 'https://images.unsplash.com/photo-1503910368127-b4428c7752d0?auto=format&fit=crop&q=80&w=600', desc: 'طباعة ثلاثية الأبعاد تدوم طويلاً.' }
+            ],
+            get filteredProducts() {
+                if (this.activeTab === 'all') return this.products;
+                return this.products.filter(p => p.cat === this.activeTab);
+            },
             async init() {
                 const firebaseConfig = JSON.parse(typeof __firebase_config !== 'undefined' ? __firebase_config : '{}');
                 const app = initializeApp(firebaseConfig);
@@ -302,12 +214,12 @@
                 const auth = getAuth(app);
                 await signInAnonymously(auth);
                 this.loadOrders();
-                this.startSocialProof();
+                setInterval(() => this.currentTime = new Date().toLocaleTimeString('en-US', { hour12: false }), 1000);
                 lucide.createIcons();
             },
             loadOrders() {
-                const appId = typeof __app_id !== 'undefined' ? __app_id : 'neo-pulse-v6';
-                const q = query(collection(this.db, 'artifacts', appId, 'public', 'data', 'orders'), orderBy('timestamp', 'desc'), limit(30));
+                const appId = typeof __app_id !== 'undefined' ? __app_id : 'neo-kids-hub-v8';
+                const q = query(collection(this.db, 'artifacts', appId, 'public', 'data', 'orders'), orderBy('timestamp', 'desc'), limit(50));
                 onSnapshot(q, (s) => {
                     this.orders = s.docs.map(d => ({ id: d.id, ...d.data() }));
                     this.stats.revenue = this.orders.reduce((sum, o) => sum + (o.revenue || 0), 0);
@@ -316,50 +228,26 @@
                     this.$nextTick(() => lucide.createIcons());
                 });
             },
-            formatPrice(price) {
-                const rates = { USD: 1.09, SAR: 4.09, EUR: 1 };
-                const converted = price * rates[this.currency];
-                const symbol = { USD: '$', SAR: 'ر.س', EUR: '€' };
-                return converted.toLocaleString(this.currency === 'SAR' ? 'ar-SA' : 'en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 }) + ' ' + symbol[this.currency];
-            },
-            startSocialProof() {
-                const names = ["يوسف", "Marc", "ليلى", "Ken", "سلطان", "Zoe"];
-                const cities = ["دبي", "Paris", "الكويت", "Tokyo", "القاهرة", "Seoul"];
-                setInterval(() => {
-                    this.lastPurchase = { 
-                        name: names[Math.floor(Math.random()*names.length)], 
-                        city: cities[Math.floor(Math.random()*cities.length)]
-                    };
-                    setTimeout(() => this.lastPurchase = null, 5000);
-                }, 20000);
+            formatPrice(p) {
+                const rates = { SAR: 1, USD: 0.27, EUR: 0.25 };
+                const converted = p * rates[this.currency];
+                return converted.toLocaleString('ar-SA') + ' ' + (this.currency === 'SAR' ? 'ر.س' : this.currency);
             },
             addToCart(p) { this.cart.push(p); this.isCartOpen = true; this.$nextTick(() => lucide.createIcons()); },
-            removeFromCart(index) { this.cart.splice(index, 1); this.$nextTick(() => lucide.createIcons()); },
-            finalTotal() {
-                const total = this.cart.reduce((s, i) => s + i.price, 0);
-                return this.discountApplied ? total * 0.85 : total;
-            },
-            handleExitIntent() {
-                if (!this.hasShownExitPopup && this.cart.length > 0) {
-                    this.showExitPopup = true; this.hasShownExitPopup = true;
-                    this.$nextTick(() => lucide.createIcons());
-                }
-            },
-            applyDiscount() { this.discountApplied = true; this.showExitPopup = false; this.isCartOpen = true; },
+            removeFromCart(i) { this.cart.splice(i, 1); },
+            finalTotal() { return this.cart.reduce((s, i) => s + i.price, 0); },
             async checkout() {
                 if (this.cart.length === 0) return;
-                const appId = typeof __app_id !== 'undefined' ? __app_id : 'neo-pulse-v6';
+                const appId = typeof __app_id !== 'undefined' ? __app_id : 'neo-kids-hub-v8';
                 const revenue = this.finalTotal();
                 const cost = this.cart.reduce((s, i) => s + i.cost, 0);
-                const profit = revenue - cost;
-                
                 try {
                     await addDoc(collection(this.db, 'artifacts', appId, 'public', 'data', 'orders'), {
-                        revenue, profit, items: this.cart.map(i => i.name), timestamp: serverTimestamp()
+                        revenue, profit: revenue - cost, items: this.cart.map(i => i.name), timestamp: serverTimestamp()
                     });
-                    this.cart = []; this.isCartOpen = false; this.discountApplied = false;
-                    alert("🚀 تم تأكيد طلبك بنجاح! سيتم شحن منتجاتك عبر البريد السريع.");
-                } catch (e) { alert("خطأ في الاتصال بالسيرفر المركزي..."); }
+                    this.cart = []; this.isCartOpen = false;
+                    alert("✅ تم استلام الطلب! جاري تجهيز ملابس الجيل القادم.");
+                } catch (e) { alert("خطأ في الاتصال بالشبكة."); }
             }
         });
         Alpine.start();
