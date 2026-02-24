@@ -3,86 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEO-PULSE | GLOBAL STORE</title>
-    <!-- تضمين أدوات التصميم والتشغيل الآلي -->
+    <title>NEO-PULSE | المتجر الذكي</title>
+    <!-- تضمين المحركات الأساسية -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
         [x-cloak] { display: none !important; }
-        body { 
-            font-family: 'Cairo', sans-serif; 
-            background: #050505; 
-            color: #fff; 
-            margin: 0; 
-            padding: 0;
-        }
-        .neo-card { 
-            background: rgba(255, 255, 255, 0.02); 
-            border: 1px solid rgba(255, 255, 255, 0.05); 
-            border-radius: 24px; 
-            transition: 0.3s;
-        }
-        .neo-card:hover { 
-            border-color: #2563eb; 
-            transform: translateY(-5px); 
-        }
-        .btn-glow { 
-            box-shadow: 0 0 15px rgba(37, 99, 235, 0.4); 
-        }
+        body { font-family: 'Cairo', sans-serif; background: #000; color: #fff; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .neon-border { border: 1px solid #2563eb; box-shadow: 0 0 15px rgba(37, 99, 235, 0.2); }
+        .grad-text { background: linear-gradient(90deg, #fff, #2563eb); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
 </head>
-<body x-data="storeBot" x-cloak>
+<body x-data="storeEngine" x-cloak class="min-h-screen">
 
-    <!-- شريط الرأس -->
-    <header class="sticky top-0 z-50 bg-black/80 backdrop-blur-lg border-b border-white/5 p-4">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <i class="fas fa-bolt text-blue-600 text-2xl"></i>
-                <h1 class="text-xl font-black tracking-tighter">NEO-PULSE</h1>
+    <!-- نافبار البوت -->
+    <nav class="fixed top-0 w-full z-[100] glass border-b border-white/5 p-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center shadow-lg shadow-blue-600/30">
+                    <i class="fas fa-microchip text-white"></i>
+                </div>
+                <h1 class="text-2xl font-black italic tracking-tighter grad-text">NEO-PULSE</h1>
             </div>
             
             <div class="flex items-center gap-4">
-                <!-- بوت العملات -->
-                <select x-model="currency" class="bg-zinc-900 text-xs border border-white/10 rounded-lg p-1">
-                    <option value="SAR">SAR (ريال)</option>
-                    <option value="EUR">EUR (يورو)</option>
-                    <option value="USD">USD (دولار)</option>
-                    <option value="MAD">MAD (درهم)</option>
+                <select x-model="currency" class="bg-black/50 text-[10px] font-bold border border-white/10 rounded-md px-2 py-1 outline-none">
+                    <template x-for="c in Object.keys(rates)">
+                        <option :value="c" x-text="c"></option>
+                    </template>
                 </select>
-                <!-- أيقونة السلة -->
-                <button @click="openCart = true" class="relative p-2">
-                    <i class="fas fa-shopping-basket text-xl"></i>
-                    <span x-show="cart.length > 0" class="absolute -top-1 -right-1 bg-blue-600 text-[10px] w-4 h-4 rounded-full flex items-center justify-center" x-text="cart.length"></span>
+                <button @click="cartOpen = true" class="relative">
+                    <i class="fas fa-shopping-cart text-xl text-zinc-400"></i>
+                    <span x-show="cart.length > 0" class="absolute -top-2 -right-2 bg-blue-600 text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold" x-text="cart.length"></span>
                 </button>
             </div>
         </div>
+    </nav>
+
+    <!-- الهيدر الرئيسي -->
+    <header class="pt-40 pb-20 text-center px-6">
+        <div class="inline-flex items-center gap-2 bg-blue-600/10 border border-blue-600/20 px-4 py-1 rounded-full mb-6">
+            <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-blue-400">نظام التشغيل الآلي مفعل</span>
+        </div>
+        <h2 class="text-5xl md:text-8xl font-black mb-6 italic leading-tight">مستقبل <br>التسوق <span class="text-blue-600">الذكي</span></h2>
+        <p class="text-zinc-500 max-w-xl mx-auto text-lg">من المصنع إليك مباشرة. جودة مدريد الفاخرة بأسعار ذكية وشحن عالمي سريع.</p>
     </header>
 
-    <!-- واجهة الترحيب -->
-    <section class="text-center py-20 px-6">
-        <div class="bg-blue-600/10 text-blue-500 text-[10px] font-bold px-4 py-1 rounded-full inline-block mb-4 uppercase tracking-widest">
-            بوت التشغيل: نشط ومستقر
-        </div>
-        <h2 class="text-5xl md:text-7xl font-black mb-4 italic uppercase">المستقبل <span class="text-blue-600">الآن</span></h2>
-        <p class="text-zinc-500 max-w-lg mx-auto">نظام توريد مباشر من المصنع بجودة عالمية. اطلب الآن ليصلك أينما كنت.</p>
-    </section>
-
-    <!-- قائمة المنتجات -->
-    <main class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 pb-20">
-        <template x-for="product in products" :key="product.id">
-            <div class="neo-card p-5">
-                <div class="aspect-square bg-zinc-900 rounded-xl mb-4 overflow-hidden">
-                    <img :src="product.img" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity">
+    <!-- شبكة المنتجات -->
+    <main class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-32">
+        <template x-for="p in products" :key="p.id">
+            <div class="glass p-5 rounded-[2.5rem] hover:border-blue-600/50 transition-all group">
+                <div class="aspect-square bg-zinc-900 rounded-[2rem] mb-6 overflow-hidden relative">
+                    <img :src="p.img" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700">
+                    <div class="absolute top-4 right-4 bg-black/60 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold" x-text="p.cat"></div>
                 </div>
-                <h3 class="font-bold text-lg mb-1" x-text="product.name"></h3>
-                <div class="flex justify-between items-center mt-4">
-                    <p class="text-blue-500 font-black text-xl italic">
-                        <span x-text="convertPrice(product.price)"></span>
-                        <span class="text-[10px] text-zinc-600 uppercase" x-text="currency"></span>
-                    </p>
-                    <button @click="addToCart(product)" class="w-10 h-10 bg-white text-black rounded-lg hover:bg-blue-600 hover:text-white transition-all active:scale-90">
+                <div class="flex justify-between items-end">
+                    <div>
+                        <h3 class="text-xl font-bold italic" x-text="p.name"></h3>
+                        <p class="text-3xl font-black text-blue-500 mt-2">
+                            <span x-text="calc(p.price)"></span>
+                            <span class="text-[10px] text-zinc-600 uppercase" x-text="currency"></span>
+                        </p>
+                    </div>
+                    <button @click="add(p)" class="w-14 h-14 bg-white text-black rounded-2xl flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all active:scale-90 shadow-xl">
                         <i class="fas fa-plus"></i>
                     </button>
                 </div>
@@ -90,40 +77,37 @@
         </template>
     </main>
 
-    <!-- واجهة السلة (بوت المعالجة) -->
-    <div x-show="openCart" class="fixed inset-0 z-[100]" style="display: none;">
-        <div class="absolute inset-0 bg-black/90 backdrop-blur-md" @click="openCart = false"></div>
-        <div class="absolute inset-y-0 left-0 w-full md:w-[380px] bg-black border-r border-white/10 p-8 flex flex-col">
+    <!-- سلة التسوق (البوت الجانبي) -->
+    <div x-show="cartOpen" class="fixed inset-0 z-[200]" style="display: none;">
+        <div class="absolute inset-0 bg-black/90 backdrop-blur-md" @click="cartOpen = false"></div>
+        <div x-show="cartOpen" x-transition:enter="transition ease-out duration-300 transform" x-transition:enter-start="translate-x-full" x-transition:enter-end="translate-x-0" class="absolute inset-y-0 left-0 w-full md:w-[400px] bg-zinc-950 border-r border-white/10 p-8 flex flex-col">
             <div class="flex justify-between items-center mb-10">
-                <h4 class="text-2xl font-black italic">السلة</h4>
-                <button @click="openCart = false"><i class="fas fa-times"></i></button>
+                <h4 class="text-3xl font-black italic">السلة</h4>
+                <button @click="cartOpen = false" class="text-zinc-500"><i class="fas fa-times"></i></button>
             </div>
-
+            
             <div class="flex-grow overflow-y-auto space-y-4">
-                <template x-if="cart.length === 0">
-                    <p class="text-center text-zinc-700 py-10">لا توجد منتجات</p>
-                </template>
-                <template x-for="(item, index) in cart" :key="index">
-                    <div class="bg-zinc-900/50 p-3 rounded-xl flex justify-between items-center">
-                        <div class="flex items-center gap-3">
-                            <img :src="item.img" class="w-10 h-10 rounded shadow-lg">
+                <template x-for="(ci, index) in cart" :key="index">
+                    <div class="glass p-4 rounded-2xl flex justify-between items-center">
+                        <div class="flex items-center gap-4">
+                            <img :src="ci.img" class="w-12 h-12 rounded-lg object-cover">
                             <div>
-                                <p class="text-xs font-bold" x-text="item.name"></p>
-                                <p class="text-blue-500 text-xs font-black" x-text="convertPrice(item.price) + ' ' + currency"></p>
+                                <p class="text-xs font-bold" x-text="ci.name"></p>
+                                <p class="text-blue-500 font-black" x-text="calc(ci.price) + ' ' + currency"></p>
                             </div>
                         </div>
-                        <button @click="cart.splice(index, 1)" class="text-zinc-700 hover:text-red-500"><i class="fas fa-trash"></i></button>
+                        <button @click="cart.splice(index, 1)" class="text-zinc-800 hover:text-red-500"><i class="fas fa-trash"></i></button>
                     </div>
                 </template>
             </div>
 
-            <div class="pt-6 border-t border-white/10 mt-auto">
+            <div class="pt-8 border-t border-white/5 mt-auto">
                 <div class="flex justify-between items-center mb-6">
-                    <span class="text-zinc-500 text-xs uppercase font-bold tracking-widest">الإجمالي</span>
-                    <span class="text-2xl font-black" x-text="convertPrice(total()) + ' ' + currency"></span>
+                    <span class="text-zinc-500 text-xs font-bold uppercase tracking-widest">إجمالي المبلغ</span>
+                    <span class="text-3xl font-black" x-text="calc(total()) + ' ' + currency"></span>
                 </div>
-                <button @click="sendWhatsApp()" class="w-full py-4 bg-blue-600 rounded-xl font-black text-white btn-glow hover:bg-blue-500 active:scale-95 transition-all">
-                    تأكيد عبر واتساب <i class="fab fa-whatsapp ml-2"></i>
+                <button @click="checkout()" class="w-full py-5 bg-blue-600 rounded-2xl font-black text-lg hover:bg-blue-500 shadow-xl shadow-blue-600/30 transition-all">
+                    تأكيد الطلب الآن <i class="fab fa-whatsapp ml-2"></i>
                 </button>
             </div>
         </div>
@@ -131,27 +115,25 @@
 
     <script>
         document.addEventListener('alpine:init', () => {
-            Alpine.data('storeBot', () => ({
-                openCart: false,
+            Alpine.data('storeEngine', () => ({
+                cartOpen: false,
                 currency: 'SAR',
-                rates: { 'SAR': 1, 'EUR': 0.25, 'MAD': 2.7, 'USD': 0.27 },
+                rates: { 'SAR': 1, 'MAD': 2.7, 'EUR': 0.25, 'USD': 0.27 },
                 products: [
-                    { id: 1, name: 'ساعة نيو برو الذكية', price: 450, img: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500' },
-                    { id: 2, name: 'سماعات بلوتوث مخصصة', price: 180, img: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500' },
-                    { id: 3, name: 'حذاء النبض الرياضي', price: 320, img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500' }
+                    { id: 1, name: 'ساعة نيو كوانتم', price: 450, cat: 'إصدار فاخر', img: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600' },
+                    { id: 2, name: 'حذاء النبض V2', price: 320, cat: 'رياضي', img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600' },
+                    { id: 3, name: 'سماعات نيو-بلس', price: 190, cat: 'صوتيات', img: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600' }
                 ],
                 cart: [],
-                addToCart(p) { this.cart.push({...p}); },
-                convertPrice(p) { return (p * this.rates[this.currency]).toFixed(0); },
-                total() { return this.cart.reduce((sum, i) => sum + i.price, 0); },
-                sendWhatsApp() {
-                    if(this.cart.length === 0) return alert('السلة فارغة');
-                    let text = `🛒 *طلب جديد من متجر نيو-بلس*:%0A%0A`;
-                    this.cart.forEach((i, idx) => {
-                        text += `${idx+1}. *${i.name}* - (${this.convertPrice(i.price)} ${this.currency})%0A`;
-                    });
-                    text += `%0A💰 *الإجمالي النهائي: ${this.convertPrice(this.total())} ${this.currency}*`;
-                    window.open(`https://wa.me/34632684017?text=${text}`, '_blank');
+                add(p) { this.cart.push({...p}); },
+                calc(p) { return (p * this.rates[this.currency]).toFixed(0); },
+                total() { return this.cart.reduce((s, i) => s + i.price, 0); },
+                checkout() {
+                    if(this.cart.length === 0) return alert('السلة فارغة!');
+                    let msg = `🛒 *طلب جديد - متجر NEO-PULSE*:%0A%0A`;
+                    this.cart.forEach((i, idx) => msg += `${idx+1}. *${i.name}* (${this.calc(i.price)} ${this.currency})%0A`);
+                    msg += `%0A💰 *الإجمالي: ${this.calc(this.total())} ${this.currency}*%0A%0A_تم الطلب عبر نظام البوت الآلي_`;
+                    window.open(`https://wa.me/34632684017?text=${msg}`, '_blank');
                 }
             }));
         });
