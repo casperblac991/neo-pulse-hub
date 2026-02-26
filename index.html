@@ -3,109 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEO-PULSE HUB | Global Fashion & Eyewear</title>
+    <title>NEO-PULSE | Global Wholesale Marketplace</title>
     <script src="https://www.paypal.com/sdk/js?client-id=AQ_I7r7rF_485f7C9LpPjX0qG2t7m_F_yE_vE_vE_vE_vE&currency=USD"></script>
     <style>
-        :root { --accent: #00ffcc; --bg: #050505; --card: #111; }
-        body { background: var(--bg); color: #eee; font-family: 'Inter', sans-serif; margin: 0; padding: 0; }
-        .nav { padding: 20px; border-bottom: 1px solid #222; text-align: center; font-weight: bold; letter-spacing: 2px; }
-        .hero { padding: 50px 20px; text-align: center; background: linear-gradient(to bottom, #111, #050505); }
-        .hero h1 { color: var(--accent); font-size: 2.5rem; margin: 0; }
-        .container { max-width: 1000px; margin: auto; padding: 20px; }
-        /* تصميم "شبكة عرض" احترافية لصور البضاعة */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
-        .card { background: var(--card); border: 1px solid #222; border-radius: 15px; overflow: hidden; transition: 0.3s; }
-        .card:hover { border-color: var(--accent); transform: scale(1.02); }
-        /* التحكم في صور المنتجات لجعلها تظهر بجودة عالية */
-        .card img { width: 100%; height: 280px; object-fit: cover; }
-        .info { padding: 20px; }
-        .tag { background: var(--accent); color: black; padding: 3px 8px; border-radius: 5px; font-size: 0.7rem; font-weight: bold; }
-        .price { font-size: 1.5rem; color: var(--accent); margin: 10px 0; }
-        .form-section { background: #111; padding: 30px; border-radius: 20px; margin-top: 50px; border: 1px dashed var(--accent); }
-        input { width: 100%; padding: 15px; margin: 10px 0; background: #1a1a1a; border: 1px solid #333; color: white; border-radius: 8px; box-sizing: border-box; }
-        input:focus { border-color: var(--accent); outline: none; }
-        #paypal-button-container { margin-top: 20px; }
+        :root { --ali-orange: #ff6600; --ali-blue: #061e3c; --discount: #e62e04; --bg: #f4f4f7; }
+        body { font-family: 'Roboto', Arial, sans-serif; background: var(--bg); margin: 0; padding-bottom: 50px; }
+        
+        /* Header & Search - Alibaba Style */
+        .header { background: white; padding: 15px 5%; display: flex; align-items: center; border-bottom: 2px solid var(--ali-orange); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 28px; font-weight: bold; color: var(--ali-orange); text-decoration: none; flex: 1; }
+        .search-box { flex: 2; display: flex; }
+        .search-box input { width: 100%; padding: 10px; border: 2px solid var(--ali-orange); border-radius: 4px 0 0 4px; outline: none; }
+        .search-btn { background: var(--ali-orange); color: white; border: none; padding: 10px 20px; border-radius: 0 4px 4px 0; cursor: pointer; }
+
+        /* Categories Navigation */
+        .nav-cats { background: white; padding: 10px; display: flex; justify-content: center; gap: 30px; border-bottom: 1px solid #ddd; }
+        .cat-item { cursor: pointer; font-weight: bold; color: #555; padding: 8px 15px; border-radius: 4px; transition: 0.3s; }
+        .cat-item:hover, .cat-item.active { background: var(--ali-orange); color: white; }
+
+        /* Product Grid */
+        .container { padding: 30px 5%; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; }
+        .p-card { background: white; border-radius: 8px; overflow: hidden; border: 1px solid #ddd; display: none; transition: 0.3s; position: relative; }
+        .p-card.show { display: block; }
+        .p-card:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.1); transform: translateY(-3px); }
+        .p-card img { width: 100%; height: 240px; object-fit: cover; }
+        .discount-badge { position: absolute; top: 10px; left: 10px; background: var(--discount); color: white; padding: 3px 7px; border-radius: 3px; font-size: 12px; font-weight: bold; }
+        
+        .p-info { padding: 15px; }
+        .p-title { font-size: 14px; color: #444; height: 36px; overflow: hidden; margin-bottom: 10px; }
+        .p-price-row { display: flex; align-items: baseline; gap: 8px; }
+        .p-new-price { font-size: 20px; font-weight: bold; color: var(--discount); }
+        .p-old-price { font-size: 14px; color: #999; text-decoration: line-through; }
+        .moq { font-size: 12px; color: #777; margin-top: 5px; }
+
+        /* Checkout Section */
+        .checkout-box { background: white; padding: 30px; border-radius: 12px; margin-top: 40px; border: 2px solid var(--ali-orange); }
+        .checkout-box input { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 6px; font-size: 16px; }
     </style>
 </head>
 <body>
 
-    <div class="nav">NEO-PULSE HUB v4.0</div>
-
-    <div class="hero">
-        <h1>Trending Apparel & Eyewear</h1>
-        <p>Curated Collection for USA, Canada & Europe</p>
+<header class="header">
+    <a href="#" class="logo">NEO-PULSE HUB</a>
+    <div class="search-box">
+        <input type="text" placeholder="Search for wholesale clothing, sunglasses...">
+        <button class="search-btn">Search</button>
     </div>
+</header>
 
-    <div class="container">
-        <div class="grid">
-            
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=500" alt="Sunglasses">
-                <div class="info">
-                    <span class="tag">TOP SELLING</span>
-                    <h3>Elite Urban Shades</h3>
-                    <p>Polarized, UV400 Protection. High-end style.</p>
-                    <div class="price">$27.99</div>
-                </div>
-            </div>
+<nav class="nav-cats">
+    <div class="cat-item active" onclick="filter('all')">All Products</div>
+    <div class="cat-item" onclick="filter('shades')">Eyewear</div>
+    <div class="cat-item" onclick="filter('kids')">Kids Fashion</div>
+    <div class="cat-item" onclick="filter('adult')">Adult Fashion</div>
+</nav>
 
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1519704943960-da368872243c?auto=format&fit=crop&w=500" alt="Kids Clothes">
-                <div class="info">
-                    <span class="tag">NEW ARRIVAL</span>
-                    <h3>Kids Summer Organic Set</h3>
-                    <p>100% Organic Cotton. Breathable and stylish.</p>
-                    <div class="price">$39.00</div>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1521577352947-9bb58764b69a?auto=format&fit=crop&w=500" alt="Adult Clothes">
-                <div class="info">
-                    <span class="tag">BEST VALUE</span>
-                    <h3>Premium Urban Hoodie</h3>
-                    <p>Streetwear style. Soft, durable, and comfortable.</p>
-                    <div class="price">$49.99</div>
-                </div>
+<div class="container">
+    <div class="grid" id="product-grid">
+        
+        <div class="p-card show shades">
+            <span class="discount-badge">-35% OFF</span>
+            <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=600" alt="Sunglasses">
+            <div class="p-info">
+                <div class="p-title">Luxury Polarized UV400 Sunglasses - Urban Black</div>
+                <div class="p-price-row"><span class="p-new-price">$12.99</span><span class="p-old-price">$25.00</span></div>
+                <div class="moq">Min. Order: 2 Pieces</div>
             </div>
         </div>
 
-        <div class="form-section">
-            <h2 style="text-align: center;">Secure Checkout</h2>
-            <p style="text-align: center; font-size: 0.9rem; color: #888;">Complete your info to activate AI-Fulfillment Bot</p>
-            
-            <form id="masterForm">
-                <input type="text" id="name" placeholder="Full Name" required>
-                <input type="email" id="email" placeholder="Email Address" required>
-                <input type="text" id="address" placeholder="Shipping Address (Street, City, Zip Code)" required>
-                <div id="paypal-button-container"></div>
-            </form>
+        <div class="p-card show shades">
+            <span class="discount-badge">-20% OFF</span>
+            <img src="https://images.unsplash.com/photo-1511499767390-91f898700432?w=600" alt="Aviator">
+            <div class="p-info">
+                <div class="p-title">Classic Gold Aviator - Wholesale Edition USA</div>
+                <div class="p-price-row"><span class="p-new-price">$15.50</span><span class="p-old-price">$20.00</span></div>
+                <div class="moq">Min. Order: 1 Piece</div>
+            </div>
         </div>
+
+        <div class="p-card show kids">
+            <span class="discount-badge">-50% OFF</span>
+            <img src="https://images.unsplash.com/photo-1519704943960-da368872243c?w=600" alt="Kids clothes">
+            <div class="p-info">
+                <div class="p-title">Organic Cotton Toddler Summer Set - 2 Pcs</div>
+                <div class="p-price-row"><span class="p-new-price">$18.00</span><span class="p-old-price">$36.00</span></div>
+                <div class="moq">Min. Order: 5 Sets</div>
+            </div>
+        </div>
+
+        <div class="p-card show adult">
+            <span class="discount-badge">BEST SELLER</span>
+            <img src="https://images.unsplash.com/photo-1521577352947-9bb58764b69a?w=600" alt="Hoodie">
+            <div class="p-info">
+                <div class="p-title">Premium Urban Streetwear Hoodie - Unisex</div>
+                <div class="p-price-row"><span class="p-new-price">$29.99</span><span class="p-old-price">$45.00</span></div>
+                <div class="moq">Min. Order: 1 Piece</div>
+            </div>
+        </div>
+
     </div>
 
-    <script>
-        // تفعيل أزرار الدفع والمتابعة الآلية
-        paypal.Buttons({
-            createOrder: function(data, actions) {
-                return actions.order.create({ purchase_units: [{ amount: { value: '27.99' } }] }); // السعر الافتراضي للنظارات
-            },
-            onApprove: function(data, actions) {
-                return actions.order.capture().then(function(details) {
-                    const orderData = {
+    <div class="checkout-box">
+        <h3 style="text-align: center; color: var(--ali-blue);">Global Shipping & Secure Checkout</h3>
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="text" id="address" placeholder="Shipping Address (Street, City, Country)">
+        <div id="paypal-button-container" style="max-width: 500px; margin: 20px auto;"></div>
+    </div>
+</div>
+
+<script>
+    // بوت تصفية الفئات (صفحة مخصصة لكل نوع)
+    function filter(cat) {
+        const cards = document.querySelectorAll('.p-card');
+        const items = document.querySelectorAll('.cat-item');
+        
+        items.forEach(i => i.classList.remove('active'));
+        event.target.classList.add('active');
+
+        cards.forEach(card => {
+            if (cat === 'all' || card.classList.contains(cat)) {
+                card.classList.add('show');
+            } else {
+                card.classList.remove('show');
+            }
+        });
+    }
+
+    // تفعيل الدفع لبوت الشحن Said Chaik
+    paypal.Buttons({
+        createOrder: function(data, actions) {
+            return actions.order.create({ purchase_units: [{ amount: { value: '45.00' } }] });
+        },
+        onApprove: function(data, actions) {
+            return actions.order.capture().then(function(details) {
+                // إرسال البيانات فوراً لـ Zapier
+                fetch('YOUR_ZAPIER_WEBHOOK_URL', {
+                    method: 'POST',
+                    body: JSON.stringify({
                         customer: details.payer.name.given_name,
                         address: document.getElementById('address').value,
-                        status: 'Wholesale Order Verified',
-                        store_owner: 'Said Chaik'
-                    };
-                    // إرسال البيانات فوراً لـ Zapier لتفعيل البوت التسويقي واللوجستي
-                    fetch('YOUR_ZAPIER_WEBHOOK_URL', {
-                        method: 'POST',
-                        body: JSON.stringify(orderData)
-                    });
-                    alert('Success! Your Alibaba-style wholesale order has been processed.');
+                        owner: 'Said Chaik',
+                        status: 'ORDER_VERIFIED'
+                    })
                 });
-            }
-        }).render('#paypal-button-container');
-    </script>
+                alert('Order Success! Global Shipping Activated.');
+            });
+        }
+    }).render('#paypal-button-container');
+</script>
 </body>
 </html>
