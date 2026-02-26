@@ -3,44 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neo-Pulse Hub | Global Autonomous Store</title>
+    <title>NEO-PULSE HUB | Premium Storefront</title>
+    <script src="https://www.paypal.com/sdk/js?client-id=AQ_I7r7rF_485f7C9LpPjX0qG2t7m_F_yE_vE_vE_vE_vE&currency=USD"></script>
     <style>
-        body { background: #000; color: #00ffcc; text-align: center; font-family: 'Courier New', monospace; padding: 40px; }
-        .terminal { border: 2px solid #00ffcc; padding: 30px; border-radius: 15px; display: inline-block; box-shadow: 0 0 20px #00ffcc; }
-        input { display: block; margin: 15px auto; padding: 12px; width: 300px; background: #111; border: 1px solid #00ffcc; color: #fff; border-radius: 5px; }
+        :root { --accent: #00ffcc; --bg: #050505; --card: #111; }
+        body { background: var(--bg); color: #eee; font-family: 'Inter', sans-serif; margin: 0; padding: 0; }
+        .nav { padding: 20px; border-bottom: 1px solid #222; text-align: center; font-weight: bold; letter-spacing: 2px; }
+        .hero { padding: 50px 20px; text-align: center; background: linear-gradient(to bottom, #111, #050505); }
+        .hero h1 { color: var(--accent); font-size: 2.5rem; margin: 0; }
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .card { background: var(--card); border: 1px solid #222; border-radius: 15px; overflow: hidden; transition: 0.3s; }
+        .card:hover { border-color: var(--accent); transform: scale(1.02); }
+        .card img { width: 100%; height: 250px; object-fit: cover; }
+        .info { padding: 20px; }
+        .tag { background: var(--accent); color: black; padding: 3px 8px; border-radius: 5px; font-size: 0.7rem; font-weight: bold; }
+        .price { font-size: 1.5rem; color: var(--accent); margin: 10px 0; }
+        .form-section { background: #111; padding: 30px; border-radius: 20px; margin-top: 50px; border: 1px dashed var(--accent); }
+        input { width: 100%; padding: 15px; margin: 10px 0; background: #1a1a1a; border: 1px solid #333; color: white; border-radius: 8px; box-sizing: border-box; }
+        input:focus { border-color: var(--accent); outline: none; }
         #paypal-button-container { margin-top: 20px; }
     </style>
 </head>
 <body>
-    <div class="terminal">
-        <h1>NEO-PULSE HUB v2.0</h1>
-        <p>SYSTEM STATUS: READY FOR AUTO-FULFILLMENT</p>
-        
-        <form id="masterForm" name="global-autopilot" method="POST">
-            <input type="text" name="name" placeholder="CUSTOMER FULL NAME" required>
-            <input type="email" name="email" placeholder="CUSTOMER EMAIL" required>
-            <input type="text" name="address" placeholder="FULL SHIPPING ADDRESS" required>
-            
-            <div id="paypal-button-container"></div>
-        </form>
+
+    <div class="nav">NEO-PULSE HUB v3.0</div>
+
+    <div class="hero">
+        <h1>Global Trends Collection</h1>
+        <p>Curated Fashion for USA, Canada & Europe</p>
     </div>
 
-    <script src="https://www.paypal.com/sdk/js?client-id=AScL4x45P_bIkB8STA4QpNFEgSn3vRI8tv8BdATNdNCSW4A25PlYoZHH-EayoEAIumo6KgcSDDwkAUn-&currency=USD"></script>
-    
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1511499767390-91f898700432?auto=format&fit=crop&w=500" alt="Sunglasses">
+                <div class="info">
+                    <span class="tag">TOP SELLING</span>
+                    <h3>Elite Urban Shades</h3>
+                    <p>Polarized, UV400 Protection. Designed for durability.</p>
+                    <div class="price">$27.99</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1522771935876-2492c18b5c92?auto=format&fit=crop&w=500" alt="Kids Wear">
+                <div class="info">
+                    <span class="tag">NEW ARRIVAL</span>
+                    <h3>Junior Summer Set</h3>
+                    <p>100% Organic Cotton. Breathable and stylish.</p>
+                    <div class="price">$39.00</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2 style="text-align: center;">Secure Checkout</h2>
+            <p style="text-align: center; font-size: 0.9rem; color: #888;">Complete your info to activate AI-Fulfillment Bot</p>
+            <form id="masterForm">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="text" id="address" placeholder="Shipping Address (Street, City, Zip Code)" required>
+                <div id="paypal-button-container"></div>
+            </form>
+        </div>
+    </div>
+
     <script>
+        // تفعيل أزرار الدفع والمتابعة الآلية
         paypal.Buttons({
             createOrder: function(data, actions) {
                 return actions.order.create({
-                    purchase_units: [{ amount: { value: '29.99' } }]
+                    purchase_units: [{ amount: { value: '27.99' } }] // السعر الافتراضي للمنتج الأول
                 });
             },
             onApprove: function(data, actions) {
                 return actions.order.capture().then(function(details) {
-                    // بعد نجاح الدفع، يتم إرسال البيانات فوراً لـ Zapier لتشغيل بوت المورد
-                    document.getElementById("masterForm").submit();
+                    // البيانات التي سيلتقطها البوت في Zapier للبدء في الإشهار والشحن
+                    const orderData = {
+                        customer_name: document.getElementById('name').value,
+                        customer_email: document.getElementById('email').value,
+                        shipping_address: document.getElementById('address').value,
+                        order_id: details.id,
+                        store_owner: 'Said Chaik',
+                        timestamp: new Date().toISOString()
+                    };
+
+                    // إرسال البيانات فوراً لـ Zapier (ضع رابط الـ Webhook الخاص بك هنا)
+                    fetch('YOUR_ZAPIER_WEBHOOK_URL', {
+                        method: 'POST',
+                        mode: 'no-cors',
+                        body: JSON.stringify(orderData)
+                    });
+
+                    alert('Success! Order ' + details.id + ' processed. Our bot is preparing your shipment.');
                 });
             }
         }).render('#paypal-button-container');
+
+        // كود تتبع (اختياري لبوت الإشهار) لمراقبة من بدأ تعبئة البيانات ولم يكمل
+        document.getElementById('email').addEventListener('blur', function() {
+            console.log('Bot Tracking: Potential Customer detected...');
+        });
     </script>
 </body>
 </html>
