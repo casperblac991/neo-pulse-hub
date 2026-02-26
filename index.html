@@ -1,9 +1,93 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Managed Store | Premium Global Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .glow-border { border: 2px solid #2ecc71; box-shadow: 0 0 15px rgba(46, 204, 113, 0.3); }
+        .bg-dark { background: #0a0a0a; }
+    </style>
+</head>
+<body class="bg-dark text-white font-sans flex flex-col items-center justify-center min-h-screen p-4">
 
-    <meta property="og:title" content="Ad-Guard AI" />
-    <meta property="og:description" content="حلل إعلانك بذكاء قبل صرف أي ميزانية" />
-    <meta property="og:type" content="website" />
+    <div class="max-w-md w-full bg-[#111] p-8 rounded-[2.5rem] glow-border text-center relative overflow-hidden">
+        
+        <div class="mb-6 flex flex-col items-center">
+            <h2 class="text-[#2ecc71] text-2xl font-black italic flex items-center gap-2">
+                ⚡ AI Managed Store
+            </h2>
+            <p class="text-gray-500 text-[10px] mt-1 tracking-widest uppercase">Scanning for secure connections...</p>
+        </div>
+
+        <div class="bg-[#1a1a1a] p-6 rounded-3xl mb-8 border border-gray-800">
+            <h3 class="text-gray-400 text-sm mb-2 uppercase tracking-tight">Premium Global Product</h3>
+            <div class="text-4xl font-black text-white mb-2">$29.99</div>
+            <p class="text-[10px] text-gray-500 italic">Limited Stock Available for USA & Europe</p>
+        </div>
+
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="Saidchaik@gmail.com">
+            <input type="hidden" name="item_name" value="Smart AI Store - Premium Order">
+            <input type="hidden" name="amount" value="29.99">
+            <input type="hidden" name="currency_code" value="USD">
+            
+            <button type="submit" class="w-full bg-[#f1c40f] hover:bg-yellow-500 text-black font-black py-5 rounded-full text-xl transition-all transform hover:scale-105 shadow-xl">
+                Buy Now via PayPal
+            </button>
+        </form>
+
+        <div class="mt-10 space-y-4">
+            <div class="flex items-center justify-center gap-2">
+                <span class="relative flex h-3 w-3">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                </span>
+                <span class="text-[#2ecc71] text-sm font-bold uppercase">System Active: USA Market</span>
+            </div>
+            
+            <p class="text-gray-400 text-xs">Tracking <span id="visitor-count" class="font-bold text-white">171</span> live visitors...</p>
+            
+            <div id="live-activity" class="bg-black/50 p-3 rounded-2xl border border-gray-800 flex items-center justify-center gap-2 transition-all duration-500">
+                <span class="text-yellow-500">🔔</span>
+                <span id="activity-msg" class="text-[11px] text-[#2ecc71] font-medium italic">Chicago: is looking at this item</span>
+            </div>
+        </div>
+
+        <div class="mt-6 pt-6 border-t border-gray-900 text-[10px] text-gray-600 flex justify-center gap-4">
+            <span>🔒 Secure Transaction</span>
+            <span>🌍 Global Shipping</span>
+        </div>
+    </div>
+
+    <script>
+        // نظام تحديث عدد الزوار تلقائياً
+        setInterval(() => {
+            const count = Math.floor(Math.random() * (195 - 160 + 1)) + 160;
+            document.getElementById('visitor-count').innerText = count;
+        }, 10000);
+
+        // نظام تنبيهات النشاط المباشر (السوق الأمريكي)
+        const activities = [
+            "New York: someone just purchased!",
+            "California: checking out right now",
+            "Texas: items added to cart",
+            "Chicago: is looking at this item",
+            "Florida: secured 1 unit via PayPal"
+        ];
+        
+        let i = 0;
+        setInterval(() => {
+            const msgBox = document.getElementById('activity-msg');
+            msgBox.style.opacity = 0;
+            setTimeout(() => {
+                msgBox.innerText = activities[i];
+                msgBox.style.opacity = 1;
+                i = (i + 1) % activities.length;
+            }, 500);
+        }, 6000);
+    </script>
+</body>
+</html>
