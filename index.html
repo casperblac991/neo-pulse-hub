@@ -3,145 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEO PULSE HUB | Global Wholesale 2015</title>
+    <title>NEO PULSE HUB | Smart AI Marketplace</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        :root { --main: #ff6600; --dark: #1a1a1a; --bg: #f8f9fa; }
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--bg); transition: 0.3s; }
-        .rtl { direction: rtl; font-family: 'Cairo', sans-serif; }
-        
-        /* شريط اللغة العلوي */
-        .lang-bar { background: #fff; padding: 5px 5%; display: flex; justify-content: flex-end; gap: 10px; border-bottom: 1px solid #eee; }
-        .lang-btn { cursor: pointer; border: 1px solid #ddd; padding: 2px 8px; border-radius: 4px; font-size: 12px; background: #f9f9f9; }
-        
-        /* هيدر علي بابا */
-        header { background: #fff; padding: 15px 5%; display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid var(--main); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .logo { font-size: 24px; font-weight: 900; color: var(--main); text-decoration: none; }
-
-        /* المقدمة التعريفية */
-        .about-section { background: var(--dark); color: #fff; padding: 20px 5%; text-align: center; font-size: 14px; line-height: 1.6; border-bottom: 3px solid var(--main); }
-
-        .nav-tabs { background: #fff; display: flex; justify-content: center; gap: 10px; padding: 10px; border-bottom: 1px solid #ddd; overflow-x: auto; }
-        .tab-btn { padding: 8px 15px; border: 1px solid #eee; background: #fff; cursor: pointer; font-weight: bold; border-radius: 5px; white-space: nowrap; }
+        :root { --main: #ff6600; --dark: #111; --bg: #f5f5f7; }
+        body { font-family: 'Arial', sans-serif; margin: 0; background: var(--bg); }
+        .rtl { direction: rtl; }
+        header { background: #fff; padding: 20px 5%; border-bottom: 3px solid var(--main); position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 26px; font-weight: 900; color: var(--main); text-decoration: none; }
+        .nav-tabs { background: #fff; display: flex; justify-content: center; gap: 10px; padding: 10px; border-bottom: 1px solid #ddd; }
+        .tab-btn { padding: 10px 20px; border: 1px solid #ddd; background: #fff; cursor: pointer; font-weight: bold; border-radius: 5px; transition: 0.3s; }
         .tab-btn.active { background: var(--main); color: #fff; }
-
-        .container { padding: 20px 5%; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; }
-        
-        .p-card { background: #fff; border-radius: 8px; border: 1px solid #ddd; overflow: hidden; position: relative; transition: 0.3s; }
-        .p-card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        .p-card img { width: 100%; height: 200px; object-fit: cover; }
-        
-        .info { padding: 12px; }
-        .price { font-size: 18px; font-weight: bold; color: #d32f2f; }
-        .old { font-size: 12px; color: #999; text-decoration: line-through; margin-left: 5px; }
-        .moq { font-size: 11px; color: #666; margin-top: 5px; }
-
-        /* بوت السياسات */
-        .policy-area { background: #fff; padding: 30px 5%; margin-top: 30px; border: 1px solid #ddd; border-radius: 8px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; text-align: center; }
-        .policy-item i { font-size: 24px; color: var(--main); margin-bottom: 10px; }
+        .grid { padding: 25px 5%; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+        .p-card { background: #fff; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; position: relative; transition: 0.3s; }
+        .p-card img { width: 100%; height: 220px; object-fit: cover; }
+        .tag { position: absolute; top: 10px; left: 10px; background: red; color: #fff; padding: 3px 8px; font-size: 11px; font-weight: bold; border-radius: 4px; }
+        .info { padding: 15px; }
+        .title { font-size: 13px; font-weight: bold; color: #333; height: 35px; overflow: hidden; margin-bottom: 10px; }
+        .price { font-size: 20px; font-weight: bold; color: #e62e04; }
+        .old { font-size: 13px; color: #999; text-decoration: line-through; margin-left: 5px; }
+        .moq { font-size: 11px; color: #777; margin-top: 8px; border-top: 1px solid #eee; padding-top: 5px; }
+        .urgency { background: #fffbe6; color: #856404; padding: 5px; font-size: 10px; border-radius: 4px; margin-top: 10px; text-align: center; border: 1px solid #ffe58f; }
     </style>
 </head>
 <body id="body">
 
-<div class="lang-bar">
-    <button class="lang-btn" onclick="setLang('ar')">العربية</button>
-    <button class="lang-btn" onclick="setLang('en')">English</button>
-    <button class="lang-btn" onclick="setLang('es')">Español</button>
-</div>
-
-<div class="about-section" id="aboutText">
-    Established in 2015, NEO PULSE HUB is a global leader in wholesale fashion and eyewear, serving international markets with AI-driven logistics.
-</div>
-
 <header>
     <a href="#" class="logo">NEO PULSE HUB</a>
+    <div id="bot-status" style="font-size: 12px; color: #00aa00; font-weight: bold;">
+        <i class="fas fa-robot"></i> Data Matching Bot: Active
+    </div>
 </header>
 
-<nav class="nav-tabs" id="navTabs">
-    </nav>
-
-<div class="container">
-    <div class="grid" id="mainGrid"></div>
-
-    <div class="policy-area" id="policyArea">
-        </div>
+<div class="nav-tabs" id="tabs">
+    <button class="tab-btn active" onclick="botLoad('all', this)">All (200+)</button>
+    <button class="tab-btn" onclick="botLoad('men', this)">Men</button>
+    <button class="tab-btn" onclick="botLoad('women', this)">Women</button>
+    <button class="tab-btn" onclick="botLoad('kids', this)">Kids</button>
+    <button class="tab-btn" onclick="botLoad('shades', this)">Eyewear</button>
 </div>
 
+<div class="grid" id="grid"></div>
+
 <script>
-    const translations = {
-        en: {
-            about: "Established in 2015, NEO PULSE HUB is a global leader in wholesale fashion and eyewear, serving international markets with AI-driven logistics.",
-            cats: ["All Products", "Men", "Women", "Kids", "Eyewear"],
-            moq: "Min. Order",
-            refund: "30-Day Refund",
-            exchange: "Free Exchange",
-            money: "Secure Payment"
-        },
-        ar: {
-            about: "تأسس NEO PULSE HUB في عام 2015، وهو رائد عالمي في تجارة الملابس والنظارات بالجملة، نخدم الأسواق الدولية بأحدث التقنيات الذكية.",
-            cats: ["كل المنتجات", "رجالي", "نسائي", "أطفال", "نظارات"],
-            moq: "أقل طلب",
-            refund: "استرجاع خلال 30 يوم",
-            exchange: "تبديل مجاني",
-            money: "دفع آمن"
-        },
-        es: {
-            about: "Establecido en 2015, NEO PULSE HUB es un líder global en moda y gafas al por mayor, sirviendo a mercados internacionales con logística IA.",
-            cats: ["Todos", "Hombre", "Mujer", "Niños", "Gafas"],
-            moq: "Pedido Mínimo",
-            refund: "Reembolso 30 Días",
-            exchange: "Cambio Gratis",
-            money: "Pago Seguro"
-        }
+    // بوت مطابقة البيانات (Data Matching Bot Logic)
+    // هذا الجزء هو "المخ" الذي يربط الاسم بالصورة والسعر آلياً
+    const botBrain = {
+        shades: { name: "Luxury UV400 Sunglasses", price: 12.99, old: 25.00, moq: "2 Pcs", img: "https://picsum.photos/seed/glass/400/400" },
+        men: { name: "Wholesale Men's Fashion Wear", price: 35.00, old: 70.00, moq: "1 Set", img: "https://picsum.photos/seed/men/400/400" },
+        women: { name: "Elegant Women's Summer Dress", price: 22.50, old: 45.00, moq: "3 Pcs", img: "https://picsum.photos/seed/women/400/400" },
+        kids: { name: "Organic Cotton Kids Clothes", price: 18.00, old: 36.00, moq: "5 Sets", img: "https://picsum.photos/seed/kids/400/400" }
     };
 
-    let currentLang = 'en';
+    function botLoad(cat, btn) {
+        // تحديث الأزرار
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
 
-    function setLang(lang) {
-        currentLang = lang;
-        const b = document.getElementById('body');
-        lang === 'ar' ? b.classList.add('rtl') : b.classList.remove('rtl');
-        
-        document.getElementById('aboutText').innerText = translations[lang].about;
-        renderNav();
-        renderPolicies();
-        renderProducts();
-    }
-
-    function renderNav() {
-        const nav = document.getElementById('navTabs');
-        nav.innerHTML = '';
-        translations[currentLang].cats.forEach((c, i) => {
-            nav.innerHTML += `<button class="tab-btn ${i===0?'active':''}" onclick="renderProducts()">${c}</button>`;
-        });
-    }
-
-    function renderPolicies() {
-        const area = document.getElementById('policyArea');
-        area.innerHTML = `
-            <div class="policy-item"><i class="fas fa-undo"></i><div>${translations[currentLang].refund}</div></div>
-            <div class="policy-item"><i class="fas fa-sync"></i><div>${translations[currentLang].exchange}</div></div>
-            <div class="policy-item"><i class="fas fa-shield-alt"></i><div>${translations[currentLang].money}</div></div>
-        `;
-    }
-
-    function renderProducts() {
-        const grid = document.getElementById('mainGrid');
+        const grid = document.getElementById('grid');
         grid.innerHTML = '';
-        for(let i=0; i<20; i++) { // مثال لـ 20 منتج يتكرر لـ 200
+
+        // البوت يقوم بتوليد 200 منتج الآن
+        for (let i = 1; i <= 200; i++) {
+            // اختيار الفئة آلياً للتوزيع العادل
+            let type = ['shades', 'men', 'women', 'kids'][i % 4];
+            
+            // إذا كان المستخدم ضاغطاً على فئة معينة، نعرضها هي فقط
+            if (cat !== 'all' && cat !== type) continue;
+
+            let data = botBrain[type];
+            
+            // البوت يركب الصورة مع السعر والاسم المطابق
             grid.innerHTML += `
                 <div class="p-card">
-                    <img src="https://picsum.photos/seed/${i}/400/400">
+                    <div class="tag">-50% OFF</div>
+                    <img src="${data.img}${i}" alt="${data.name}">
                     <div class="info">
-                        <div class="price">$15.00 <span class="old">$30.00</span></div>
-                        <div class="moq">${translations[currentLang].moq}: 5 Pcs</div>
+                        <div class="title">${data.name} #${i}</div>
+                        <div class="price">$${data.price} <span class="old">$${data.old}</span></div>
+                        <div class="moq">Min. Order: ${data.moq}</div>
+                        <div class="urgency"><i class="fas fa-eye"></i> 14 people looking now!</div>
                     </div>
                 </div>`;
         }
     }
 
-    setLang('en');
+    // تشغيل البوت فور فتح الصفحة
+    botLoad('all', document.querySelector('.tab-btn'));
 </script>
 </body>
 </html>
