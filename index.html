@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEO-PULSE HUB | Premium Storefront</title>
+    <title>NEO-PULSE HUB | Global Fashion & Eyewear</title>
     <script src="https://www.paypal.com/sdk/js?client-id=AQ_I7r7rF_485f7C9LpPjX0qG2t7m_F_yE_vE_vE_vE_vE&currency=USD"></script>
     <style>
         :root { --accent: #00ffcc; --bg: #050505; --card: #111; }
@@ -12,10 +12,12 @@
         .hero { padding: 50px 20px; text-align: center; background: linear-gradient(to bottom, #111, #050505); }
         .hero h1 { color: var(--accent); font-size: 2.5rem; margin: 0; }
         .container { max-width: 1000px; margin: auto; padding: 20px; }
+        /* تصميم "شبكة عرض" احترافية لصور البضاعة */
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
         .card { background: var(--card); border: 1px solid #222; border-radius: 15px; overflow: hidden; transition: 0.3s; }
         .card:hover { border-color: var(--accent); transform: scale(1.02); }
-        .card img { width: 100%; height: 250px; object-fit: cover; }
+        /* التحكم في صور المنتجات لجعلها تظهر بجودة عالية */
+        .card img { width: 100%; height: 280px; object-fit: cover; }
         .info { padding: 20px; }
         .tag { background: var(--accent); color: black; padding: 3px 8px; border-radius: 5px; font-size: 0.7rem; font-weight: bold; }
         .price { font-size: 1.5rem; color: var(--accent); margin: 10px 0; }
@@ -27,32 +29,43 @@
 </head>
 <body>
 
-    <div class="nav">NEO-PULSE HUB v3.0</div>
+    <div class="nav">NEO-PULSE HUB v4.0</div>
 
     <div class="hero">
-        <h1>Global Trends Collection</h1>
-        <p>Curated Fashion for USA, Canada & Europe</p>
+        <h1>Trending Apparel & Eyewear</h1>
+        <p>Curated Collection for USA, Canada & Europe</p>
     </div>
 
     <div class="container">
         <div class="grid">
+            
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1511499767390-91f898700432?auto=format&fit=crop&w=500" alt="Sunglasses">
+                <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=500" alt="Sunglasses">
                 <div class="info">
                     <span class="tag">TOP SELLING</span>
                     <h3>Elite Urban Shades</h3>
-                    <p>Polarized, UV400 Protection. Designed for durability.</p>
+                    <p>Polarized, UV400 Protection. High-end style.</p>
                     <div class="price">$27.99</div>
                 </div>
             </div>
 
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1522771935876-2492c18b5c92?auto=format&fit=crop&w=500" alt="Kids Wear">
+                <img src="https://images.unsplash.com/photo-1519704943960-da368872243c?auto=format&fit=crop&w=500" alt="Kids Clothes">
                 <div class="info">
                     <span class="tag">NEW ARRIVAL</span>
-                    <h3>Junior Summer Set</h3>
+                    <h3>Kids Summer Organic Set</h3>
                     <p>100% Organic Cotton. Breathable and stylish.</p>
                     <div class="price">$39.00</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1521577352947-9bb58764b69a?auto=format&fit=crop&w=500" alt="Adult Clothes">
+                <div class="info">
+                    <span class="tag">BEST VALUE</span>
+                    <h3>Premium Urban Hoodie</h3>
+                    <p>Streetwear style. Soft, durable, and comfortable.</p>
+                    <div class="price">$49.99</div>
                 </div>
             </div>
         </div>
@@ -60,6 +73,7 @@
         <div class="form-section">
             <h2 style="text-align: center;">Secure Checkout</h2>
             <p style="text-align: center; font-size: 0.9rem; color: #888;">Complete your info to activate AI-Fulfillment Bot</p>
+            
             <form id="masterForm">
                 <input type="text" id="name" placeholder="Full Name" required>
                 <input type="email" id="email" placeholder="Email Address" required>
@@ -73,38 +87,25 @@
         // تفعيل أزرار الدفع والمتابعة الآلية
         paypal.Buttons({
             createOrder: function(data, actions) {
-                return actions.order.create({
-                    purchase_units: [{ amount: { value: '27.99' } }] // السعر الافتراضي للمنتج الأول
-                });
+                return actions.order.create({ purchase_units: [{ amount: { value: '27.99' } }] }); // السعر الافتراضي للنظارات
             },
             onApprove: function(data, actions) {
                 return actions.order.capture().then(function(details) {
-                    // البيانات التي سيلتقطها البوت في Zapier للبدء في الإشهار والشحن
                     const orderData = {
-                        customer_name: document.getElementById('name').value,
-                        customer_email: document.getElementById('email').value,
-                        shipping_address: document.getElementById('address').value,
-                        order_id: details.id,
-                        store_owner: 'Said Chaik',
-                        timestamp: new Date().toISOString()
+                        customer: details.payer.name.given_name,
+                        address: document.getElementById('address').value,
+                        status: 'Wholesale Order Verified',
+                        store_owner: 'Said Chaik'
                     };
-
-                    // إرسال البيانات فوراً لـ Zapier (ضع رابط الـ Webhook الخاص بك هنا)
+                    // إرسال البيانات فوراً لـ Zapier لتفعيل البوت التسويقي واللوجستي
                     fetch('YOUR_ZAPIER_WEBHOOK_URL', {
                         method: 'POST',
-                        mode: 'no-cors',
                         body: JSON.stringify(orderData)
                     });
-
-                    alert('Success! Order ' + details.id + ' processed. Our bot is preparing your shipment.');
+                    alert('Success! Your Alibaba-style wholesale order has been processed.');
                 });
             }
         }).render('#paypal-button-container');
-
-        // كود تتبع (اختياري لبوت الإشهار) لمراقبة من بدأ تعبئة البيانات ولم يكمل
-        document.getElementById('email').addEventListener('blur', function() {
-            console.log('Bot Tracking: Potential Customer detected...');
-        });
     </script>
 </body>
 </html>
