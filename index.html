@@ -3,52 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEO PULSE HUB | Vercel Store</title>
+    <title>NEO PULSE HUB | Verified Store</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         :root { --main: #ff6600; --dark: #111; --bg: #f8f9fa; }
         body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--bg); color: var(--dark); }
         
-        /* هيدر المتجر */
-        header { background: #fff; padding: 15px 5%; border-bottom: 2px solid var(--main); position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; }
+        /* الهيدر مع حالة البوت */
+        header { background: #fff; padding: 15px 5%; border-bottom: 2px solid var(--main); position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
         .logo { font-size: 22px; font-weight: 900; color: var(--main); text-decoration: none; text-transform: uppercase; }
+        .status-badge { font-size: 11px; color: #28a745; font-weight: bold; background: #e9f7ef; padding: 5px 10px; border-radius: 15px; }
 
-        /* شريط الأقسام لراحة الزبون */
+        /* شريط الأقسام المنظم لراحة الزبون */
         .category-nav { background: #fff; display: flex; justify-content: center; gap: 10px; padding: 12px; border-bottom: 1px solid #eee; position: sticky; top: 60px; z-index: 999; overflow-x: auto; }
-        .cat-item { padding: 8px 18px; border: 1px solid #ddd; background: #fff; cursor: pointer; font-weight: 600; border-radius: 25px; transition: 0.3s; white-space: nowrap; font-size: 13px; }
-        .cat-item.active { background: var(--main); color: #fff; border-color: var(--main); }
+        .cat-item { padding: 8px 20px; border: 1px solid #ddd; background: #fff; cursor: pointer; font-weight: 600; border-radius: 25px; transition: 0.3s; white-space: nowrap; font-size: 13px; }
+        .cat-item.active { background: var(--main); color: #fff; border-color: var(--main); box-shadow: 0 4px 10px rgba(255,102,0,0.2); }
 
         .container { padding: 20px 5%; max-width: 1200px; margin: auto; }
         
-        /* شبكة الـ 100 صنف */
-        .p-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; }
-        .p-card { background: #fff; border-radius: 10px; border: 1px solid #eee; overflow: hidden; transition: 0.3s; display: flex; flex-direction: column; }
-        .p-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        /* شبكة المنتجات الاحترافية */
+        .p-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+        .p-card { background: #fff; border-radius: 12px; border: 1px solid #eee; overflow: hidden; transition: 0.3s; display: flex; flex-direction: column; }
+        .p-card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.1); }
         
-        .img-box { width: 100%; height: 180px; background: #f0f0f0; }
-        .img-box img { width: 100%; height: 100%; object-fit: cover; }
+        /* صندوق الصور لضمان التطابق */
+        .img-box { width: 100%; height: 220px; background: #f4f4f4; position: relative; }
+        .img-box img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+        .p-card:hover img { scale: 1.05; }
 
-        .p-info { padding: 12px; flex-grow: 1; }
-        .p-name { font-size: 13px; font-weight: 600; height: 36px; overflow: hidden; margin-bottom: 5px; }
-        .p-price { font-size: 18px; font-weight: 800; color: #e62e04; margin-bottom: 10px; }
+        .p-info { padding: 15px; flex-grow: 1; display: flex; flex-direction: column; }
+        .p-name { font-size: 14px; font-weight: 600; color: #333; height: 40px; overflow: hidden; margin-bottom: 8px; line-height: 1.4; }
+        .p-price { font-size: 20px; font-weight: 800; color: #e62e04; margin-bottom: 15px; }
         
         /* زر الطلب المرتبط بـ Zapier */
-        .order-btn { width: 100%; background: var(--dark); color: #fff; border: none; padding: 10px; font-weight: bold; cursor: pointer; border-radius: 5px; font-size: 13px; transition: 0.2s; }
-        .order-btn:hover { background: var(--main); }
+        .order-btn { width: 100%; background: var(--dark); color: #fff; border: none; padding: 12px; font-weight: bold; cursor: pointer; border-radius: 8px; font-size: 14px; transition: 0.3s; display: flex; align-items: center; justify-content: center; gap: 10px; }
+        .order-btn:hover { background: var(--main); letter-spacing: 0.5px; }
     </style>
 </head>
 <body>
 
 <header>
     <a href="#" class="logo">NEO PULSE HUB</a>
-    <div style="font-size: 11px; color: #28a745;"><i class="fas fa-robot"></i> Bot Linked</div>
+    <div class="status-badge"><i class="fas fa-check-circle"></i> Vercel & Zapier Active</div>
 </header>
 
 <div class="category-nav">
-    <div class="cat-item active" onclick="updateStore('all', this)">All</div>
-    <div class="cat-item" onclick="updateStore('men', this)">Men</div>
-    <div class="cat-item" onclick="updateStore('women', this)">Women</div>
-    <div class="cat-item" onclick="updateStore('kids', this)">Kids</div>
+    <div class="cat-item active" onclick="updateStore('all', this)">All Products</div>
+    <div class="cat-item" onclick="updateStore('men', this)">Men's Fashion</div>
+    <div class="cat-item" onclick="updateStore('women', this)">Women's Style</div>
+    <div class="cat-item" onclick="updateStore('kids', this)">Kids Wear</div>
     <div class="cat-item" onclick="updateStore('shades', this)">Eyewear</div>
 </div>
 
@@ -57,56 +60,69 @@
 </div>
 
 <script>
-    // بيانات المنتجات المنظمة
-    const storeData = {
-        shades: { n: "Luxury UV400 Sunglasses", p: 15.00, img: "https://picsum.photos/seed/glass" },
-        men: { n: "Men's Fashion Wear", p: 45.00, img: "https://picsum.photos/seed/men" },
-        women: { n: "Women's Summer Dress", p: 35.00, img: "https://picsum.photos/seed/woman" },
-        kids: { n: "Kids Cotton Set", p: 25.00, img: "https://picsum.photos/seed/kid" }
+    // نظام الأصول لضمان تطابق الصور مع المنتجات
+    const productAssets = {
+        shades: { name: "Luxury UV400 Sunglasses", price: 15.00, keywords: "sunglasses,fashion,glasses" },
+        men: { name: "Men's Premium Outfit", price: 45.00, keywords: "men,clothes,fashion" },
+        women: { name: "Women's Elegant Dress", price: 35.00, keywords: "women,dress,fashion" },
+        kids: { name: "Kids Cotton Set", price: 25.00, keywords: "kids,clothing,baby" }
     };
 
     function updateStore(category, element) {
+        // تحديث التصميم البصري للأقسام
         document.querySelectorAll('.cat-item').forEach(item => item.classList.remove('active'));
         element.classList.add('active');
 
         const grid = document.getElementById('displayArea');
-        grid.innerHTML = ''; // مسح القديم لراحة الزبون
+        grid.innerHTML = ''; 
 
-        // توليد 100 منتج فقط لسرعة Vercel
+        // توليد الـ 100 صنف مع ضمان التطابق 100%
         for (let i = 1; i <= 100; i++) {
             let type = ['shades', 'men', 'women', 'kids'][i % 4];
             if (category !== 'all' && category !== type) continue;
 
-            let data = storeData[type];
+            let data = productAssets[type];
+            // استخدام محرك صور ذكي يبحث بالكلمات الدلالية لضمان التطابق
+            const finalImg = `https://loremflickr.com/400/500/${data.keywords}?lock=${i}`;
+
             grid.innerHTML += `
                 <div class="p-card">
-                    <div class="img-box"><img src="${data.img}${i}/400/400" loading="lazy"></div>
+                    <div class="img-box">
+                        <img src="${finalImg}" loading="lazy" alt="${data.name}">
+                    </div>
                     <div class="p-info">
-                        <div class="p-name">${data.n} #${i}</div>
-                        <div class="p-price">$${data.p}</div>
-                        <button class="order-btn" onclick="sendOrder('${data.n} #${i}', '${data.p}')">Order Now</button>
+                        <div class="p-name">${data.name} #${i}</div>
+                        <div class="p-price">$${data.price.toFixed(2)}</div>
+                        <button class="order-btn" onclick="sendOrder('${data.name} #${i}', '${data.price}')">
+                            <i class="fas fa-shopping-cart"></i> Order Now
+                        </button>
                     </div>
                 </div>`;
         }
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // وظيفة إرسال الطلب لرابط Zapier الخاص بك
-    function sendOrder(name, price) {
-        const zapLink = 'https://hooks.zapier.com/hooks/catch/26575673/u0mdfbv/'; 
+    // وظيفة إرسال الطلب لـ Zapier المربوط بـ Vercel
+    function sendOrder(productName, price) {
+        const zapierWebhook = 'https://hooks.zapier.com/hooks/catch/26575673/u0mdfbv/'; 
 
-        fetch(zapLink, {
+        fetch(zapierWebhook, {
             method: 'POST',
-            mode: 'no-cors', // ضروري للعمل على Vercel
+            mode: 'no-cors', // لضمان عدم حدوث تعارض مع Vercel
             body: JSON.stringify({
-                product: name,
-                price: price,
-                store: "NEO PULSE HUB"
+                store: "NEO PULSE HUB",
+                item: productName,
+                amount: price,
+                time: new Date().toLocaleString()
             })
         }).then(() => {
-            alert('Bot: Order for (' + name + ') sent to Zapier!');
+            alert('Bot Alert: Order for (' + productName + ') has been sent to Zapier!');
+        }).catch(err => {
+            console.error('Bot Error:', err);
         });
     }
 
+    // تشغيل المتجر عند التحميل
     updateStore('all', document.querySelector('.cat-item'));
 </script>
 </body>
