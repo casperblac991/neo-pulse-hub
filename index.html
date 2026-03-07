@@ -1,129 +1,918 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEO PULSE HUB | Verified Store</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        :root { --main: #ff6600; --dark: #111; --bg: #f8f9fa; }
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--bg); color: var(--dark); }
-        
-        /* الهيدر مع حالة البوت */
-        header { background: #fff; padding: 15px 5%; border-bottom: 2px solid var(--main); position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .logo { font-size: 22px; font-weight: 900; color: var(--main); text-decoration: none; text-transform: uppercase; }
-        .status-badge { font-size: 11px; color: #28a745; font-weight: bold; background: #e9f7ef; padding: 5px 10px; border-radius: 15px; }
-
-        /* شريط الأقسام المنظم لراحة الزبون */
-        .category-nav { background: #fff; display: flex; justify-content: center; gap: 10px; padding: 12px; border-bottom: 1px solid #eee; position: sticky; top: 60px; z-index: 999; overflow-x: auto; }
-        .cat-item { padding: 8px 20px; border: 1px solid #ddd; background: #fff; cursor: pointer; font-weight: 600; border-radius: 25px; transition: 0.3s; white-space: nowrap; font-size: 13px; }
-        .cat-item.active { background: var(--main); color: #fff; border-color: var(--main); box-shadow: 0 4px 10px rgba(255,102,0,0.2); }
-
-        .container { padding: 20px 5%; max-width: 1200px; margin: auto; }
-        
-        /* شبكة المنتجات الاحترافية */
-        .p-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
-        .p-card { background: #fff; border-radius: 12px; border: 1px solid #eee; overflow: hidden; transition: 0.3s; display: flex; flex-direction: column; }
-        .p-card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.1); }
-        
-        /* صندوق الصور لضمان التطابق */
-        .img-box { width: 100%; height: 220px; background: #f4f4f4; position: relative; }
-        .img-box img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
-        .p-card:hover img { scale: 1.05; }
-
-        .p-info { padding: 15px; flex-grow: 1; display: flex; flex-direction: column; }
-        .p-name { font-size: 14px; font-weight: 600; color: #333; height: 40px; overflow: hidden; margin-bottom: 8px; line-height: 1.4; }
-        .p-price { font-size: 20px; font-weight: 800; color: #e62e04; margin-bottom: 15px; }
-        
-        /* زر الطلب المرتبط بـ Zapier */
-        .order-btn { width: 100%; background: var(--dark); color: #fff; border: none; padding: 12px; font-weight: bold; cursor: pointer; border-radius: 8px; font-size: 14px; transition: 0.3s; display: flex; align-items: center; justify-content: center; gap: 10px; }
-        .order-btn:hover { background: var(--main); letter-spacing: 0.5px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="site_title">NEO PULSE HUB | مستقبل التقنية بين يديك</title>
+  <meta name="description" content="" id="metaDescription">
+  <meta name="keywords" content="منتجات ذكاء اصطناعي, ساعة ذكية, نظارات ذكية, متجر تقنية">
+  <meta property="og:title" content="NEO PULSE HUB | مستقبل التقنية">
+  <meta property="og:description" content="متجر متخصص في منتجات الذكاء الاصطناعي والتقنية الذكية">
+  <meta property="og:image" content="https://neo-pulse-hub.it.com/og-image.png">
+  <meta property="og:url" content="https://neo-pulse-hub.it.com">
+  <link rel="canonical" href="https://neo-pulse-hub.it.com">
+  <link rel="alternate" hreflang="ar" href="https://neo-pulse-hub.it.com/">
+  <link rel="alternate" hreflang="en" href="https://neo-pulse-hub.it.com/en/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&family=Poppins:wght@300;400;500;600;700;900&family=Orbitron:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    /* نفس الـ CSS الذي أرسلته سابقاً - يبقى كما هو */
+    :root {
+      --bg: #020510;
+      --surface: #0a0d1a;
+      --surface2: #0f1423;
+      --border: rgba(99,179,237,.12);
+      --border2: rgba(99,179,237,.25);
+      --blue: #3b82f6;
+      --blue2: #60a5fa;
+      --purple: #7c3aed;
+      --purple2: #a855f7;
+      --cyan: #06b6d4;
+      --cyan2: #22d3ee;
+      --green: #10b981;
+      --red: #ef4444;
+      --gold: #f59e0b;
+      --text: #e2e8f0;
+      --muted: rgba(226,232,240,.55);
+      --r: 12px;
+      --r2: 20px;
+      --rp: 50px;
+      --ease: .3s cubic-bezier(.4,0,.2,1);
+      --glow-b: 0 0 30px rgba(59,130,246,.35);
+      --glow-p: 0 0 30px rgba(124,58,237,.35);
+      --glow-c: 0 0 30px rgba(6,182,212,.35);
+    }
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'Cairo','Poppins',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.7}
+    a{color:inherit;text-decoration:none}
+    button{cursor:pointer;border:none;background:none;font-family:inherit}
+    img{max-width:100%;display:block}
+    .bg-grid{position:fixed;inset:0;z-index:-3;background-image:linear-gradient(rgba(59,130,246,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,.04) 1px,transparent 1px);background-size:60px 60px}
+    .bg-grad{position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse 80% 50% at 20% 20%,rgba(124,58,237,.12),transparent 60%),radial-gradient(ellipse 60% 40% at 80% 80%,rgba(6,182,212,.08),transparent 60%)}
+    .scanline{position:fixed;inset:0;z-index:-1;pointer-events:none;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,.03) 2px,rgba(0,0,0,.03) 4px);opacity:.4}
+    nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:.9rem 2.5rem;gap:1rem;background:rgba(2,5,16,.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+    .nav-logo{font-family:'Orbitron',sans-serif;font-size:1.1rem;font-weight:700;letter-spacing:.08em;background:linear-gradient(135deg,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;white-space:nowrap}
+    .nav-links{display:flex;align-items:center;gap:.2rem;list-style:none}
+    .nav-links a{font-size:.85rem;font-weight:500;color:var(--muted);padding:.35rem .8rem;border-radius:var(--rp);transition:color var(--ease),background var(--ease)}
+    .nav-links a:hover{color:var(--cyan2);background:rgba(6,182,212,.08)}
+    .lang-switch{display:flex;gap:5px;margin:0 10px}
+    .lang-btn{background:rgba(59,130,246,.1);border:1px solid var(--border2);color:var(--text);padding:.25rem .8rem;border-radius:var(--rp);font-size:.8rem;font-weight:600;cursor:pointer;transition:all var(--ease)}
+    .lang-btn.active{background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;border-color:transparent}
+    .lang-btn:hover{background:rgba(59,130,246,.2)}
+    .nav-cart{position:relative;display:flex;align-items:center;gap:6px;font-size:.85rem;font-weight:600;color:var(--text);background:rgba(59,130,246,.1);border:1px solid var(--border2);border-radius:var(--rp);padding:.4rem 1rem;transition:all var(--ease)}
+    .nav-cart:hover{background:rgba(59,130,246,.2);box-shadow:var(--glow-b);color:var(--blue2)}
+    .cart-count{position:absolute;top:-6px;right:-6px;background:var(--purple);color:#fff;font-size:.65rem;font-weight:700;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;display:none}
+    .hamburger{display:none;flex-direction:column;gap:5px;padding:6px;background:rgba(59,130,246,.08);border:1px solid var(--border);border-radius:8px}
+    .hamburger span{display:block;width:20px;height:2px;background:var(--blue2);border-radius:2px;transition:all var(--ease)}
+    .mobile-drawer{display:none;position:fixed;top:61px;inset:0;z-index:199;background:rgba(2,5,16,.97);backdrop-filter:blur(20px);flex-direction:column;align-items:center;justify-content:center;gap:1.5rem;padding:2rem;opacity:0;pointer-events:none;transition:opacity var(--ease)}
+    .mobile-drawer.open{display:flex!important;opacity:1;pointer-events:all}
+    .mobile-drawer a{font-size:1.3rem;font-weight:700;color:var(--muted);transition:color var(--ease)}
+    .mobile-drawer a:hover{color:var(--cyan2)}
+    .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:6rem 2rem 4rem;position:relative;overflow:hidden}
+    .hero-orb{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none}
+    .hero-orb-1{width:600px;height:600px;background:rgba(124,58,237,.15);top:-200px;left:-200px;animation:float1 8s ease-in-out infinite}
+    .hero-orb-2{width:500px;height:500px;background:rgba(6,182,212,.1);bottom:-150px;right:-150px;animation:float2 10s ease-in-out infinite}
+    @keyframes float1{0%,100%{transform:translate(0,0)}50%{transform:translate(40px,30px)}}
+    @keyframes float2{0%,100%{transform:translate(0,0)}50%{transform:translate(-30px,40px)}}
+    .hero-content{text-align:center;max-width:900px;position:relative;z-index:1}
+    .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.3);color:var(--blue2);font-size:.82rem;font-weight:600;padding:.35rem 1.1rem;border-radius:var(--rp);margin-bottom:1.5rem;animation:fadeDown .8s ease both}
+    .hero-badge .dot{width:7px;height:7px;border-radius:50%;background:var(--cyan2);animation:pulse 1.5s infinite}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.8)}}
+    .hero-title{font-family:'Orbitron',sans-serif;font-size:clamp(2rem,6vw,4.5rem);font-weight:900;line-height:1.1;margin-bottom:1rem;background:linear-gradient(135deg,#fff 0%,var(--blue2) 50%,var(--cyan2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:fadeUp .9s ease .1s both}
+    .hero-sub-title{font-family:'Cairo',sans-serif;font-size:clamp(1rem,2vw,1.5rem);font-weight:700;color:var(--purple2);margin-bottom:1.2rem;animation:fadeUp .9s ease .2s both}
+    .hero-desc{font-size:1rem;color:var(--muted);max-width:600px;margin:0 auto 2.5rem;animation:fadeUp .9s ease .3s both}
+    .hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;animation:fadeUp .9s ease .4s both}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:.85rem 2rem;border-radius:var(--rp);font-weight:700;font-size:.95rem;font-family:inherit;transition:all var(--ease);white-space:nowrap}
+    .btn-primary{background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;box-shadow:0 0 25px rgba(59,130,246,.4)}
+    .btn-primary:hover{transform:translateY(-3px);box-shadow:0 8px 40px rgba(59,130,246,.6)}
+    .btn-outline{background:rgba(6,182,212,.08);border:1px solid rgba(6,182,212,.4);color:var(--cyan2)}
+    .btn-outline:hover{background:rgba(6,182,212,.15);box-shadow:var(--glow-c);transform:translateY(-2px)}
+    .hero-stats{display:flex;gap:3rem;justify-content:center;flex-wrap:wrap;margin-top:4rem;padding-top:3rem;border-top:1px solid var(--border);animation:fadeUp .9s ease .6s both}
+    .hero-stat-num{font-family:'Orbitron',sans-serif;font-size:1.8rem;font-weight:700;background:linear-gradient(135deg,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .hero-stat-label{font-size:.82rem;color:var(--muted);margin-top:2px}
+    @keyframes fadeDown{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+    .section{padding:5rem 2rem}
+    .section-inner{max-width:1200px;margin:0 auto}
+    .section-header{text-align:center;margin-bottom:3rem}
+    .section-tag{display:inline-block;font-size:.73rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan2);border:1px solid rgba(6,182,212,.3);background:rgba(6,182,212,.06);padding:.25rem .9rem;border-radius:var(--rp);margin-bottom:1rem}
+    .section-title{font-family:'Orbitron',sans-serif;font-size:clamp(1.4rem,3vw,2.2rem);font-weight:700;background:linear-gradient(135deg,#fff,var(--blue2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.7rem}
+    .section-sub{color:var(--muted);font-size:.95rem;max-width:500px;margin:0 auto}
+    .categories-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem}
+    .cat-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:1.5rem 1rem;text-align:center;cursor:pointer;transition:all var(--ease);position:relative;overflow:hidden}
+    .cat-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(59,130,246,.06),rgba(6,182,212,.06));opacity:0;transition:opacity var(--ease)}
+    .cat-card:hover{border-color:var(--border2);transform:translateY(-4px);box-shadow:var(--glow-b)}
+    .cat-card:hover::before{opacity:1}
+    .cat-icon{font-size:2rem;margin-bottom:.6rem}
+    .cat-name{font-size:.88rem;font-weight:600;color:var(--text)}
+    .cat-count{font-size:.75rem;color:var(--muted);margin-top:3px}
+    .products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem}
+    .product-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);overflow:hidden;transition:all var(--ease);cursor:pointer;position:relative}
+    .product-card:hover{border-color:var(--border2);transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,.4),var(--glow-b)}
+    .product-img{position:relative;height:220px;overflow:hidden;background:var(--surface2)}
+    .product-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+    .product-card:hover .product-img img{transform:scale(1.05)}
+    .product-badge{position:absolute;top:.75rem;right:.75rem;background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;font-size:.72rem;font-weight:700;padding:.2rem .7rem;border-radius:var(--rp)}
+    .product-discount{position:absolute;top:.75rem;left:.75rem;background:rgba(239,68,68,.9);color:#fff;font-size:.72rem;font-weight:700;padding:.2rem .7rem;border-radius:var(--rp)}
+    .product-wishlist{position:absolute;bottom:.75rem;left:.75rem;background:rgba(2,5,16,.7);border:1px solid var(--border);color:var(--muted);width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1rem;transition:all var(--ease);opacity:0}
+    .product-card:hover .product-wishlist{opacity:1}
+    .product-wishlist:hover{background:rgba(239,68,68,.15);border-color:var(--red);color:var(--red)}
+    .product-body{padding:1.25rem}
+    .product-cat{font-size:.72rem;color:var(--cyan2);font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.4rem}
+    .product-name{font-size:1rem;font-weight:700;color:var(--text);margin-bottom:.6rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+    .product-rating{display:flex;align-items:center;gap:.4rem;margin-bottom:.8rem}
+    .stars{color:var(--gold);font-size:.85rem}
+    .rating-num{font-size:.8rem;color:var(--muted)}
+    .product-price-row{display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+    .product-price{font-family:'Orbitron',sans-serif;font-size:1.2rem;font-weight:700;background:linear-gradient(135deg,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .product-original{font-size:.82rem;color:var(--muted);text-decoration:line-through}
+    .add-cart-btn{background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;border-radius:var(--rp);padding:.5rem 1.1rem;font-size:.82rem;font-weight:700;transition:all var(--ease);white-space:nowrap}
+    .add-cart-btn:hover{transform:translateY(-2px);box-shadow:var(--glow-p)}
+    .add-cart-btn.added{background:linear-gradient(135deg,var(--green),#059669)}
+    .features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem}
+    .feature-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:2rem 1.5rem;position:relative;overflow:hidden;transition:all var(--ease)}
+    .feature-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--blue),var(--cyan2),transparent);opacity:0;transition:opacity var(--ease)}
+    .feature-card:hover{border-color:var(--border2);transform:translateY(-4px)}
+    .feature-card:hover::after{opacity:1}
+    .feature-icon{width:52px;height:52px;border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1.2rem;background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.2)}
+    .feature-title{font-size:1rem;font-weight:700;color:var(--text);margin-bottom:.5rem}
+    .feature-desc{font-size:.88rem;color:var(--muted);line-height:1.7}
+    .chat-widget{position:fixed;bottom:2rem;left:2rem;z-index:300}
+    .chat-btn{width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--purple));display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 4px 20px rgba(59,130,246,.5);transition:all var(--ease);cursor:pointer}
+    .chat-btn:hover{transform:scale(1.1);box-shadow:0 8px 32px rgba(59,130,246,.7)}
+    .chat-bubble{position:absolute;bottom:72px;left:0;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--r2);padding:1.2rem;min-width:260px;display:none;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+    .chat-bubble.show{display:block;animation:fadeUp .3s ease}
+    .chat-bubble p{font-size:.9rem;color:var(--text);margin-bottom:.8rem}
+    .chat-bubble a{display:block;background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;text-align:center;padding:.6rem 1rem;border-radius:var(--rp);font-size:.85rem;font-weight:700}
+    .newsletter-section{background:linear-gradient(135deg,rgba(59,130,246,.08),rgba(124,58,237,.06));border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+    .newsletter-inner{max-width:600px;margin:0 auto;text-align:center;padding:4rem 2rem}
+    .newsletter-title{font-family:'Orbitron',sans-serif;font-size:clamp(1.2rem,2.5vw,1.8rem);font-weight:700;color:#fff;margin-bottom:.6rem}
+    .newsletter-sub{color:var(--muted);font-size:.92rem;margin-bottom:2rem}
+    .newsletter-form{display:flex;gap:.6rem;max-width:460px;margin:0 auto}
+    .newsletter-input{flex:1;background:var(--surface);border:1px solid var(--border2);color:var(--text);border-radius:var(--rp);padding:.75rem 1.2rem;font-size:.9rem;font-family:inherit;outline:none;transition:border-color var(--ease)}
+    .newsletter-input:focus{border-color:var(--blue2)}
+    .newsletter-input::placeholder{color:var(--muted)}
+    footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem 2rem 1.5rem}
+    .footer-inner{max-width:1200px;margin:0 auto}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:2.5rem}
+    .footer-brand-name{font-family:'Orbitron',sans-serif;font-size:1rem;font-weight:700;background:linear-gradient(135deg,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.7rem}
+    .footer-brand-desc{font-size:.85rem;color:var(--muted);line-height:1.7;max-width:280px;margin-bottom:1.2rem}
+    .footer-social{display:flex;gap:.6rem}
+    .social-btn{width:36px;height:36px;border-radius:8px;background:rgba(59,130,246,.1);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:.95rem;transition:all var(--ease)}
+    .social-btn:hover{background:rgba(59,130,246,.2);border-color:var(--blue2);color:var(--blue2)}
+    .footer-col-title{font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue2);margin-bottom:1rem}
+    .footer-links{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+    .footer-links a{font-size:.85rem;color:var(--muted);transition:color var(--ease)}
+    .footer-links a:hover{color:var(--cyan2)}
+    .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;padding-top:1.5rem;border-top:1px solid var(--border)}
+    .footer-copy{font-size:.78rem;color:rgba(226,232,240,.3)}
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+    .toast{position:fixed;bottom:2rem;right:2rem;z-index:999;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--r);padding:1rem 1.5rem;display:flex;align-items:center;gap:.75rem;box-shadow:0 10px 30px rgba(0,0,0,.5);transform:translateY(100px);opacity:0;transition:all var(--ease);pointer-events:none}
+    .toast.show{transform:translateY(0);opacity:1}
+    .toast-icon{font-size:1.2rem}
+    .toast-text{font-size:.9rem;font-weight:600}
+    @media(max-width:1024px){.footer-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:768px){
+      nav{padding:.9rem 1.2rem}
+      .nav-links{display:none}
+      .hamburger{display:flex}
+      .hero-btns{flex-direction:column;align-items:center}
+      .hero-stats{gap:1.5rem}
+      .newsletter-form{flex-direction:column}
+      .footer-grid{grid-template-columns:1fr;gap:1.5rem}
+      .footer-bottom{flex-direction:column;text-align:center}
+    }
+    @media(max-width:480px){
+      .section{padding:3.5rem 1rem}
+      .products-grid{grid-template-columns:1fr}
+      .categories-grid{grid-template-columns:repeat(2,1fr)}
+    }
+  </style>
 </head>
 <body>
+<div class="bg-grid"></div>
+<div class="bg-grad"></div>
+<div class="scanline"></div>
 
-<header>
-    <a href="#" class="logo">NEO PULSE HUB</a>
-    <div class="status-badge"><i class="fas fa-check-circle"></i> Vercel & Zapier Active</div>
-</header>
-
-<div class="category-nav">
-    <div class="cat-item active" onclick="updateStore('all', this)">All Products</div>
-    <div class="cat-item" onclick="updateStore('men', this)">Men's Fashion</div>
-    <div class="cat-item" onclick="updateStore('women', this)">Women's Style</div>
-    <div class="cat-item" onclick="updateStore('kids', this)">Kids Wear</div>
-    <div class="cat-item" onclick="updateStore('shades', this)">Eyewear</div>
+<!-- ═══ NAV ═══ -->
+<nav>
+  <a href="index.html" class="nav-logo">NEO PULSE HUB</a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-i18n="nav_home" style="color:var(--cyan2)">الرئيسية</a></li>
+    <li><a href="products.html" data-i18n="nav_products">المنتجات</a></li>
+    <li><a href="about.html" data-i18n="nav_about">من نحن</a></li>
+    <li><a href="contact.html" data-i18n="nav_contact">اتصل بنا</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:.8rem">
+    <div class="lang-switch">
+      <button class="lang-btn" onclick="changeLang('ar')" id="langAr">العربية</button>
+      <button class="lang-btn" onclick="changeLang('en')" id="langEn">English</button>
+    </div>
+    <button class="nav-cart" onclick="openCart()">
+      <span data-i18n="nav_cart">🛒 السلة</span>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-drawer" id="mobileDrawer">
+  <a href="index.html" data-i18n="nav_home" onclick="closeMenu()">🏠 الرئيسية</a>
+  <a href="products.html" data-i18n="nav_products" onclick="closeMenu()">🛍️ المنتجات</a>
+  <a href="about.html" data-i18n="nav_about" onclick="closeMenu()">ℹ️ من نحن</a>
+  <a href="contact.html" data-i18n="nav_contact" onclick="closeMenu()">📞 اتصل بنا</a>
+  <button class="btn btn-primary" onclick="openCart();closeMenu()"><span data-i18n="nav_cart">🛒 السلة</span></button>
 </div>
 
-<div class="container">
-    <div class="p-grid" id="displayArea"></div>
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      <span data-i18n="hero_badge">🤖 منتجات الذكاء الاصطناعي — متاحة الآن</span>
+    </div>
+    <h1 class="hero-title">NEO PULSE HUB</h1>
+    <div class="hero-sub-title" data-i18n="hero_subtitle">مستقبل التقنية بين يديك</div>
+    <p class="hero-desc" data-i18n="hero_desc">
+      متجرك المتخصص لأحدث منتجات الذكاء الاصطناعي والتقنية الذكية.
+      من الساعات الذكية إلى نظارات AR — كل ما تحتاجه لتعيش المستقبل اليوم.
+    </p>
+    <div class="hero-btns">
+      <a href="products.html" class="btn btn-primary"><span data-i18n="shop_now">🛍️ تسوق الآن</span></a>
+      <a href="#features" class="btn btn-outline"><span data-i18n="discover">⚡ اكتشف المميزات</span></a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-num" data-target="15">0</div>
+        <div class="hero-stat-label" data-i18n="stat_products">منتج ذكي</div>
+      </div>
+      <div>
+        <div class="hero-stat-num" data-target="500">0</div>
+        <div class="hero-stat-label" data-i18n="stat_customers">عميل سعيد</div>
+      </div>
+      <div>
+        <div class="hero-stat-num" data-target="98">0</div>
+        <div class="hero-stat-label" data-i18n="stat_satisfaction">% رضا العملاء</div>
+      </div>
+      <div>
+        <div class="hero-stat-num" data-target="24">0</div>
+        <div class="hero-stat-label" data-i18n="stat_support">دعم / 7</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CATEGORIES ═══ -->
+<section class="section" style="padding-top:2rem">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-tag" data-i18n="categories_tag">الفئات</div>
+      <h2 class="section-title" data-i18n="categories_title">تسوق حسب الفئة</h2>
+      <p class="section-sub" data-i18n="categories_sub">اختر من أحدث فئات التقنية الذكية</p>
+    </div>
+    <div class="categories-grid reveal">
+      <div class="cat-card" onclick="filterCategory('smartwatch')">
+        <div class="cat-icon">⌚</div>
+        <div class="cat-name" data-i18n="cat_smartwatch">ساعات ذكية</div>
+        <div class="cat-count" data-i18n="cat_smartwatch_count">2 منتج</div>
+      </div>
+      <div class="cat-card" onclick="filterCategory('smart-glasses')">
+        <div class="cat-icon">🥽</div>
+        <div class="cat-name" data-i18n="cat_glasses">نظارات ذكية</div>
+        <div class="cat-count" data-i18n="cat_glasses_count">2 منتج</div>
+      </div>
+      <div class="cat-card" onclick="filterCategory('health')">
+        <div class="cat-icon">❤️</div>
+        <div class="cat-name" data-i18n="cat_health">الصحة الذكية</div>
+        <div class="cat-count" data-i18n="cat_health_count">3 منتج</div>
+      </div>
+      <div class="cat-card" onclick="filterCategory('smart-home')">
+        <div class="cat-icon">🏠</div>
+        <div class="cat-name" data-i18n="cat_smarthome">المنزل الذكي</div>
+        <div class="cat-count" data-i18n="cat_smarthome_count">3 منتج</div>
+      </div>
+      <div class="cat-card" onclick="filterCategory('earbuds')">
+        <div class="cat-icon">🎧</div>
+        <div class="cat-name" data-i18n="cat_earbuds">سماعات ذكية</div>
+        <div class="cat-count" data-i18n="cat_earbuds_count">1 منتج</div>
+      </div>
+      <div class="cat-card" onclick="filterCategory('productivity')">
+        <div class="cat-icon">💼</div>
+        <div class="cat-name" data-i18n="cat_productivity">الإنتاجية</div>
+        <div class="cat-count" data-i18n="cat_productivity_count">4 منتجات</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FEATURED PRODUCTS ═══ -->
+<section class="section" id="products">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-tag" data-i18n="products_tag">المنتجات</div>
+      <h2 class="section-title" data-i18n="products_title">المنتجات المميزة</h2>
+      <p class="section-sub" data-i18n="products_sub">أحدث منتجات الذكاء الاصطناعي بأفضل الأسعار</p>
+    </div>
+    <div class="products-grid" id="productsGrid">
+      <!-- يتم التعبئة بواسطة JavaScript -->
+    </div>
+    <div style="text-align:center;margin-top:2.5rem" class="reveal">
+      <a href="products.html" class="btn btn-outline"><span data-i18n="view_all">عرض جميع المنتجات ←</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FEATURES ═══ -->
+<section class="section" id="features">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-tag" data-i18n="features_tag">لماذا نحن</div>
+      <h2 class="section-title" data-i18n="features_title">مميزات NEO PULSE HUB</h2>
+      <p class="section-sub" data-i18n="features_sub">تجربة تسوق مستقبلية مدعومة بالذكاء الاصطناعي</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon">🤖</div>
+        <div class="feature-title" data-i18n="feature1_title">مساعد AI ذكي</div>
+        <div class="feature-desc" data-i18n="feature1_desc">بوت محادثة يفهم احتياجاتك ويقترح المنتجات المناسبة لك بدقة عالية.</div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">🚚</div>
+        <div class="feature-title" data-i18n="feature2_title">شحن سريع مضمون</div>
+        <div class="feature-desc" data-i18n="feature2_desc">شحن مجاني للطلبات فوق $150. توصيل لجميع أنحاء العالم مع تتبع لحظي.</div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">🛡️</div>
+        <div class="feature-title" data-i18n="feature3_title">ضمان الجودة 100%</div>
+        <div class="feature-desc" data-i18n="feature3_desc">جميع المنتجات أصلية بضمان المصنع. سياسة إرجاع 30 يوم بدون أسئلة.</div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">💳</div>
+        <div class="feature-title" data-i18n="feature4_title">دفع آمن ومتعدد</div>
+        <div class="feature-desc" data-i18n="feature4_desc">Visa, PayPal, Apple Pay, العملات الرقمية — جميع المعاملات مشفرة SSL.</div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">📊</div>
+        <div class="feature-title" data-i18n="feature5_title">توصيات مخصصة AI</div>
+        <div class="feature-desc" data-i18n="feature5_desc">نظام AI يتعلم تفضيلاتك ويقترح المنتجات الأنسب لك تلقائياً.</div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">⚡</div>
+        <div class="feature-title" data-i18n="feature6_title">تحديث فوري للمخزون</div>
+        <div class="feature-desc" data-i18n="feature6_desc">بوت التوريد يحدث الأسعار والمخزون تلقائياً كل 24 ساعة.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ NEWSLETTER ═══ -->
+<section class="newsletter-section">
+  <div class="newsletter-inner">
+    <h2 class="newsletter-title" data-i18n="newsletter_title">انضم لمجتمع NEO PULSE</h2>
+    <p class="newsletter-sub" data-i18n="newsletter_sub">اشترك وكن أول من يعلم بالمنتجات الجديدة والعروض الحصرية</p>
+    <div class="newsletter-form">
+      <input class="newsletter-input" type="email" id="emailInput" data-i18n-placeholder="newsletter_placeholder" placeholder="بريدك الإلكتروني...">
+      <button class="btn btn-primary" onclick="subscribeEmail()"><span data-i18n="newsletter_btn">اشترك ⚡</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">NEO PULSE HUB</div>
+        <p class="footer-brand-desc" data-i18n="footer_desc">متجرك المتخصص في أحدث منتجات الذكاء الاصطناعي والتقنية الذكية. نجلب المستقبل إليك.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn">📱</a>
+          <a href="https://t.me/NeoPulseBot" class="social-btn" target="_blank">✈️</a>
+          <a href="#" class="social-btn">📘</a>
+          <a href="#" class="social-btn">📸</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="footer_store">المتجر</div>
+        <ul class="footer-links">
+          <li><a href="products.html" data-i18n="footer_all">جميع المنتجات</a></li>
+          <li><a href="products.html?cat=smartwatch" data-i18n="footer_smartwatch">ساعات ذكية</a></li>
+          <li><a href="products.html?cat=health" data-i18n="footer_health">الصحة الذكية</a></li>
+          <li><a href="products.html?cat=smart-home" data-i18n="footer_smarthome">المنزل الذكي</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="footer_company">الشركة</div>
+        <ul class="footer-links">
+          <li><a href="about.html" data-i18n="footer_about">من نحن</a></li>
+          <li><a href="contact.html" data-i18n="footer_contact">اتصل بنا</a></li>
+          <li><a href="privacy.html" data-i18n="footer_privacy">سياسة الخصوصية</a></li>
+          <li><a href="privacy.html#returns" data-i18n="footer_returns">سياسة الإرجاع</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="footer_support">الدعم</div>
+        <ul class="footer-links">
+          <li><a href="https://t.me/NeoPulseBot" target="_blank" data-i18n="footer_telegram">بوت تيليجرام</a></li>
+          <li><a href="contact.html" data-i18n="footer_customers">خدمة العملاء</a></li>
+          <li><a href="contact.html#track" data-i18n="footer_track">تتبع الطلب</a></li>
+          <li><a href="privacy.html#shipping" data-i18n="footer_shipping">سياسة الشحن</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy" data-i18n="footer_copy">© 2026 NEO PULSE HUB — جميع الحقوق محفوظة</span>
+      <span class="footer-copy">neo-pulse-hub.it.com</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══ CHAT WIDGET ═══ -->
+<div class="chat-widget">
+  <div class="chat-bubble" id="chatBubble">
+    <p data-i18n="chat_greeting">👋 مرحباً! هل تحتاج مساعدة في اختيار منتج؟</p>
+    <a href="https://t.me/NeoPulseBot" target="_blank" data-i18n="chat_btn">🤖 تحدث مع مساعد AI</a>
+  </div>
+  <button class="chat-btn" onclick="toggleChat()" title="مساعد AI">🤖</button>
+</div>
+
+<!-- ═══ TOAST ═══ -->
+<div class="toast" id="toast">
+  <span class="toast-icon" id="toastIcon">✅</span>
+  <span class="toast-text" id="toastText"></span>
 </div>
 
 <script>
-    // نظام الأصول لضمان تطابق الصور مع المنتجات
-    const productAssets = {
-        shades: { name: "Luxury UV400 Sunglasses", price: 15.00, keywords: "sunglasses,fashion,glasses" },
-        men: { name: "Men's Premium Outfit", price: 45.00, keywords: "men,clothes,fashion" },
-        women: { name: "Women's Elegant Dress", price: 35.00, keywords: "women,dress,fashion" },
-        kids: { name: "Kids Cotton Set", price: 25.00, keywords: "kids,clothing,baby" }
-    };
+// ═══ الترجمة ═══
+const translations = {
+  ar: {
+    site_title: "NEO PULSE HUB | مستقبل التقنية بين يديك",
+    nav_home: "الرئيسية",
+    nav_products: "المنتجات",
+    nav_about: "من نحن",
+    nav_contact: "اتصل بنا",
+    nav_cart: "🛒 السلة",
+    hero_badge: "🤖 منتجات الذكاء الاصطناعي — متاحة الآن",
+    hero_subtitle: "مستقبل التقنية بين يديك",
+    hero_desc: "متجرك المتخصص لأحدث منتجات الذكاء الاصطناعي والتقنية الذكية. من الساعات الذكية إلى نظارات AR — كل ما تحتاجه لتعيش المستقبل اليوم.",
+    shop_now: "🛍️ تسوق الآن",
+    discover: "⚡ اكتشف المميزات",
+    stat_products: "منتج ذكي",
+    stat_customers: "عميل سعيد",
+    stat_satisfaction: "% رضا العملاء",
+    stat_support: "دعم / 7",
+    categories_tag: "الفئات",
+    categories_title: "تسوق حسب الفئة",
+    categories_sub: "اختر من أحدث فئات التقنية الذكية",
+    cat_smartwatch: "ساعات ذكية",
+    cat_smartwatch_count: "2 منتج",
+    cat_glasses: "نظارات ذكية",
+    cat_glasses_count: "2 منتج",
+    cat_health: "الصحة الذكية",
+    cat_health_count: "3 منتج",
+    cat_smarthome: "المنزل الذكي",
+    cat_smarthome_count: "3 منتج",
+    cat_earbuds: "سماعات ذكية",
+    cat_earbuds_count: "1 منتج",
+    cat_productivity: "الإنتاجية",
+    cat_productivity_count: "4 منتجات",
+    products_tag: "المنتجات",
+    products_title: "المنتجات المميزة",
+    products_sub: "أحدث منتجات الذكاء الاصطناعي بأفضل الأسعار",
+    view_all: "عرض جميع المنتجات ←",
+    features_tag: "لماذا نحن",
+    features_title: "مميزات NEO PULSE HUB",
+    features_sub: "تجربة تسوق مستقبلية مدعومة بالذكاء الاصطناعي",
+    feature1_title: "مساعد AI ذكي",
+    feature1_desc: "بوت محادثة يفهم احتياجاتك ويقترح المنتجات المناسبة لك بدقة عالية.",
+    feature2_title: "شحن سريع مضمون",
+    feature2_desc: "شحن مجاني للطلبات فوق $150. توصيل لجميع أنحاء العالم مع تتبع لحظي.",
+    feature3_title: "ضمان الجودة 100%",
+    feature3_desc: "جميع المنتجات أصلية بضمان المصنع. سياسة إرجاع 30 يوم بدون أسئلة.",
+    feature4_title: "دفع آمن ومتعدد",
+    feature4_desc: "Visa, PayPal, Apple Pay, العملات الرقمية — جميع المعاملات مشفرة SSL.",
+    feature5_title: "توصيات مخصصة AI",
+    feature5_desc: "نظام AI يتعلم تفضيلاتك ويقترح المنتجات الأنسب لك تلقائياً.",
+    feature6_title: "تحديث فوري للمخزون",
+    feature6_desc: "بوت التوريد يحدث الأسعار والمخزون تلقائياً كل 24 ساعة.",
+    newsletter_title: "انضم لمجتمع NEO PULSE",
+    newsletter_sub: "اشترك وكن أول من يعلم بالمنتجات الجديدة والعروض الحصرية",
+    newsletter_placeholder: "بريدك الإلكتروني...",
+    newsletter_btn: "اشترك ⚡",
+    footer_desc: "متجرك المتخصص في أحدث منتجات الذكاء الاصطناعي والتقنية الذكية. نجلب المستقبل إليك.",
+    footer_store: "المتجر",
+    footer_all: "جميع المنتجات",
+    footer_smartwatch: "ساعات ذكية",
+    footer_health: "الصحة الذكية",
+    footer_smarthome: "المنزل الذكي",
+    footer_company: "الشركة",
+    footer_about: "من نحن",
+    footer_contact: "اتصل بنا",
+    footer_privacy: "سياسة الخصوصية",
+    footer_returns: "سياسة الإرجاع",
+    footer_support: "الدعم",
+    footer_telegram: "بوت تيليجرام",
+    footer_customers: "خدمة العملاء",
+    footer_track: "تتبع الطلب",
+    footer_shipping: "سياسة الشحن",
+    footer_copy: "© 2026 NEO PULSE HUB — جميع الحقوق محفوظة",
+    chat_greeting: "👋 مرحباً! هل تحتاج مساعدة في اختيار منتج؟",
+    chat_btn: "🤖 تحدث مع مساعد AI"
+  },
+  en: {
+    site_title: "NEO PULSE HUB | Future of Tech in Your Hands",
+    nav_home: "Home",
+    nav_products: "Products",
+    nav_about: "About",
+    nav_contact: "Contact",
+    nav_cart: "🛒 Cart",
+    hero_badge: "🤖 AI Products — Available Now",
+    hero_subtitle: "The Future of Tech in Your Hands",
+    hero_desc: "Your specialized store for the latest AI products and smart technology. From smartwatches to AR glasses — everything you need to live the future today.",
+    shop_now: "🛍️ Shop Now",
+    discover: "⚡ Discover Features",
+    stat_products: "Smart Products",
+    stat_customers: "Happy Customers",
+    stat_satisfaction: "% Satisfaction",
+    stat_support: "Support / 7",
+    categories_tag: "Categories",
+    categories_title: "Shop by Category",
+    categories_sub: "Choose from the latest smart tech categories",
+    cat_smartwatch: "Smart Watches",
+    cat_smartwatch_count: "2 products",
+    cat_glasses: "Smart Glasses",
+    cat_glasses_count: "2 products",
+    cat_health: "Smart Health",
+    cat_health_count: "3 products",
+    cat_smarthome: "Smart Home",
+    cat_smarthome_count: "3 products",
+    cat_earbuds: "Smart Earbuds",
+    cat_earbuds_count: "1 product",
+    cat_productivity: "Productivity",
+    cat_productivity_count: "4 products",
+    products_tag: "Products",
+    products_title: "Featured Products",
+    products_sub: "Latest AI products at best prices",
+    view_all: "View All Products →",
+    features_tag: "Why Us",
+    features_title: "NEO PULSE HUB Features",
+    features_sub: "Futuristic shopping experience powered by AI",
+    feature1_title: "Smart AI Assistant",
+    feature1_desc: "Chat bot that understands your needs and suggests the right products with high accuracy.",
+    feature2_title: "Fast Shipping",
+    feature2_desc: "Free shipping on orders over $150. Worldwide delivery with real-time tracking.",
+    feature3_title: "100% Quality Guarantee",
+    feature3_desc: "All products are genuine with manufacturer warranty. 30-day return policy.",
+    feature4_title: "Secure Payments",
+    feature4_desc: "Visa, PayPal, Apple Pay, Crypto — all transactions are SSL encrypted.",
+    feature5_title: "AI Recommendations",
+    feature5_desc: "AI system learns your preferences and suggests the best products automatically.",
+    feature6_title: "Real-time Inventory",
+    feature6_desc: "Supply bot updates prices and inventory automatically every 24 hours.",
+    newsletter_title: "Join NEO PULSE Community",
+    newsletter_sub: "Subscribe and be the first to know about new products and exclusive offers",
+    newsletter_placeholder: "Your email...",
+    newsletter_btn: "Subscribe ⚡",
+    footer_desc: "Your specialized store for the latest AI products and smart technology. We bring the future to you.",
+    footer_store: "Store",
+    footer_all: "All Products",
+    footer_smartwatch: "Smart Watches",
+    footer_health: "Smart Health",
+    footer_smarthome: "Smart Home",
+    footer_company: "Company",
+    footer_about: "About Us",
+    footer_contact: "Contact Us",
+    footer_privacy: "Privacy Policy",
+    footer_returns: "Return Policy",
+    footer_support: "Support",
+    footer_telegram: "Telegram Bot",
+    footer_customers: "Customer Service",
+    footer_track: "Track Order",
+    footer_shipping: "Shipping Policy",
+    footer_copy: "© 2026 NEO PULSE HUB — All Rights Reserved",
+    chat_greeting: "👋 Hello! Need help choosing a product?",
+    chat_btn: "🤖 Chat with AI Assistant"
+  }
+};
 
-    function updateStore(category, element) {
-        // تحديث التصميم البصري للأقسام
-        document.querySelectorAll('.cat-item').forEach(item => item.classList.remove('active'));
-        element.classList.add('active');
+let currentLang = localStorage.getItem('lang') || 'ar';
+let allProducts = [];
+let cart = JSON.parse(localStorage.getItem('nph_cart') || '[]');
 
-        const grid = document.getElementById('displayArea');
-        grid.innerHTML = ''; 
-
-        // توليد الـ 100 صنف مع ضمان التطابق 100%
-        for (let i = 1; i <= 100; i++) {
-            let type = ['shades', 'men', 'women', 'kids'][i % 4];
-            if (category !== 'all' && category !== type) continue;
-
-            let data = productAssets[type];
-            // استخدام محرك صور ذكي يبحث بالكلمات الدلالية لضمان التطابق
-            const finalImg = `https://loremflickr.com/400/500/${data.keywords}?lock=${i}`;
-
-            grid.innerHTML += `
-                <div class="p-card">
-                    <div class="img-box">
-                        <img src="${finalImg}" loading="lazy" alt="${data.name}">
-                    </div>
-                    <div class="p-info">
-                        <div class="p-name">${data.name} #${i}</div>
-                        <div class="p-price">$${data.price.toFixed(2)}</div>
-                        <button class="order-btn" onclick="sendOrder('${data.name} #${i}', '${data.price}')">
-                            <i class="fas fa-shopping-cart"></i> Order Now
-                        </button>
-                    </div>
-                </div>`;
-        }
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+// ═══ دوال الترجمة ═══
+function changeLang(lang) {
+  currentLang = lang;
+  localStorage.setItem('lang', lang);
+  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  document.documentElement.lang = lang;
+  
+  // تحديث أزرار اللغة
+  document.getElementById('langAr').classList.toggle('active', lang === 'ar');
+  document.getElementById('langEn').classList.toggle('active', lang === 'en');
+  
+  // تحديث جميع النصوص
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.dataset.i18n;
+    if (translations[lang][key]) {
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.placeholder = translations[lang][key];
+      } else {
+        el.textContent = translations[lang][key];
+      }
     }
+  });
+  
+  // تحديث وصف الميتا
+  document.getElementById('metaDescription').content = translations[lang].hero_desc;
+  
+  // إعادة تحميل المنتجات لعرض الأسماء حسب اللغة
+  renderFeaturedProducts();
+}
 
-    // وظيفة إرسال الطلب لـ Zapier المربوط بـ Vercel
-    function sendOrder(productName, price) {
-        const zapierWebhook = 'https://hooks.zapier.com/hooks/catch/26575673/u0mdfbv/'; 
+// ═══ تحميل المنتجات ═══
+const PRODUCTS_URL = 'products.json';
 
-        fetch(zapierWebhook, {
-            method: 'POST',
-            mode: 'no-cors', // لضمان عدم حدوث تعارض مع Vercel
-            body: JSON.stringify({
-                store: "NEO PULSE HUB",
-                item: productName,
-                amount: price,
-                time: new Date().toLocaleString()
-            })
-        }).then(() => {
-            alert('Bot Alert: Order for (' + productName + ') has been sent to Zapier!');
-        }).catch(err => {
-            console.error('Bot Error:', err);
-        });
-    }
+async function loadProducts() {
+  try {
+    const r = await fetch(PRODUCTS_URL);
+    allProducts = await r.json();
+  } catch {
+    // بيانات افتراضية إذا فشل التحميل
+    allProducts = [
+      {
+        id:'NPH-001',
+        name: {ar:'ساعة ذكية Pro X1', en:'Smart Watch Pro X1'},
+        category:'smartwatch',
+        category_ar:'ساعات ذكية',
+        category_en:'Smart Watches',
+        price:149.99,
+        original_price:199.99,
+        discount:25,
+        rating:4.8,
+        reviews:324,
+        image:'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400',
+        badge:{ar:'الأكثر مبيعاً', en:'Best Seller'}
+      },
+      {
+        id:'NPH-002',
+        name: {ar:'نظارات ذكية AR Vision', en:'AR Vision Smart Glasses'},
+        category:'smart-glasses',
+        category_ar:'نظارات ذكية',
+        category_en:'Smart Glasses',
+        price:299.99,
+        original_price:399.99,
+        discount:25,
+        rating:4.6,
+        reviews:156,
+        image:'https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=400',
+        badge:{ar:'جديد', en:'New'}
+      },
+      {
+        id:'NPH-003',
+        name: {ar:'سماعة AI Assistant Pro', en:'AI Assistant Pro Earbuds'},
+        category:'earbuds',
+        category_ar:'سماعات ذكية',
+        category_en:'Smart Earbuds',
+        price:89.99,
+        original_price:129.99,
+        discount:31,
+        rating:4.9,
+        reviews:512,
+        image:'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400',
+        badge:{ar:'الأعلى تقييماً', en:'Top Rated'}
+      },
+      {
+        id:'NPH-008',
+        name: {ar:'روبوت تنظيف AI Clean', en:'AI Clean Robot'},
+        category:'smart-home',
+        category_ar:'المنزل الذكي',
+        category_en:'Smart Home',
+        price:349.99,
+        original_price:499.99,
+        discount:30,
+        rating:4.6,
+        reviews:445,
+        image:'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400',
+        badge:{ar:'خصم 30%', en:'30% OFF'}
+      },
+      {
+        id:'NPH-010',
+        name: {ar:'مقياس صحة ذكي BodyAI', en:'BodyAI Smart Scale'},
+        category:'health',
+        category_ar:'الصحة الذكية',
+        category_en:'Smart Health',
+        price:69.99,
+        original_price:89.99,
+        discount:22,
+        rating:4.8,
+        reviews:367,
+        image:'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400',
+        badge:{ar:'الأكثر طلباً', en:'Most Wanted'}
+      },
+      {
+        id:'NPH-014',
+        name: {ar:'جهاز ترجمة AI فوري', en:'AI Instant Translator'},
+        category:'productivity',
+        category_ar:'الإنتاجية',
+        category_en:'Productivity',
+        price:99.99,
+        original_price:139.99,
+        discount:29,
+        rating:4.5,
+        reviews:276,
+        image:'https://images.unsplash.com/photo-1546776310-eef45dd6d63c?w=400',
+        badge:{ar:null, en:null}
+      }
+    ];
+  }
+  renderFeaturedProducts();
+  updateCartUI();
+}
 
-    // تشغيل المتجر عند التحميل
-    updateStore('all', document.querySelector('.cat-item'));
+function renderFeaturedProducts() {
+  const grid = document.getElementById('productsGrid');
+  const featured = allProducts.slice(0, 6);
+  grid.innerHTML = featured.map(p => productCardHTML(p)).join('');
+}
+
+function productCardHTML(p) {
+  const stars = '★'.repeat(Math.floor(p.rating)) + (p.rating % 1 >= .5 ? '½' : '');
+  const inCart = cart.some(c => c.id === p.id);
+  const name = p.name[currentLang] || p.name.ar;
+  const category = currentLang === 'ar' ? p.category_ar : p.category_en;
+  const badge = p.badge ? (p.badge[currentLang] || p.badge.ar) : null;
+  
+  return `
+  <div class="product-card reveal" onclick="goProduct('${p.id}')">
+    <div class="product-img">
+      <img src="${p.image}" alt="${name}" loading="lazy">
+      ${badge ? `<span class="product-badge">${badge}</span>` : ''}
+      ${p.discount ? `<span class="product-discount">-${p.discount}%</span>` : ''}
+      <button class="product-wishlist" onclick="wishlist(event,'${p.id}')">♡</button>
+    </div>
+    <div class="product-body">
+      <div class="product-cat">${category}</div>
+      <div class="product-name">${name}</div>
+      <div class="product-rating">
+        <span class="stars">${stars}</span>
+        <span class="rating-num">${p.rating} (${p.reviews})</span>
+      </div>
+      <div class="product-price-row">
+        <div>
+          <div class="product-price">$${p.price}</div>
+          ${p.original_price ? `<div class="product-original">$${p.original_price}</div>` : ''}
+        </div>
+        <button class="add-cart-btn ${inCart?'added':''}" onclick="addToCart(event,'${p.id}')">
+          ${inCart ? (currentLang === 'ar' ? '✅ أُضيف' : '✅ Added') : (currentLang === 'ar' ? '🛒 أضف' : '🛒 Add')}
+        </button>
+      </div>
+    </div>
+  </div>`;
+}
+
+// ═══ دوال السلة ═══
+function addToCart(e, id) {
+  e.stopPropagation();
+  const product = allProducts.find(p => p.id === id);
+  if (!product) return;
+  const existing = cart.find(c => c.id === id);
+  if (existing) { existing.qty = (existing.qty || 1) + 1; }
+  else { cart.push({...product, qty: 1}); }
+  localStorage.setItem('nph_cart', JSON.stringify(cart));
+  updateCartUI();
+  const name = product.name[currentLang] || product.name.ar;
+  showToast('✅', currentLang === 'ar' ? `${name} أُضيف للسلة!` : `${name} added to cart!`);
+  renderFeaturedProducts();
+}
+
+function updateCartUI() {
+  const total = cart.reduce((s, i) => s + (i.qty || 1), 0);
+  const badge = document.getElementById('cartCount');
+  if (badge) { badge.textContent = total; badge.style.display = total > 0 ? 'flex' : 'none'; }
+}
+
+function openCart() {
+  if (cart.length === 0) {
+    showToast('🛒', currentLang === 'ar' ? 'سلتك فارغة!' : 'Your cart is empty!');
+    return;
+  }
+  const items = cart.map(i => {
+    const name = i.name[currentLang] || i.name.ar;
+    return `• ${name} x${i.qty||1} = $${(i.price*(i.qty||1)).toFixed(2)}`;
+  }).join('\n');
+  const total = cart.reduce((s, i) => s + i.price * (i.qty || 1), 0);
+  alert(currentLang === 'ar' 
+    ? `🛒 سلة التسوق:\n\n${items}\n\n💰 الإجمالي: $${total.toFixed(2)}\n\n(نظام الدفع سيُضاف قريباً)`
+    : `🛒 Shopping Cart:\n\n${items}\n\n💰 Total: $${total.toFixed(2)}\n\n(Payment system coming soon)`);
+}
+
+function wishlist(e, id) {
+  e.stopPropagation();
+  showToast('❤️', currentLang === 'ar' ? 'أُضيف لقائمة الأمنيات!' : 'Added to wishlist!');
+}
+
+function goProduct(id) {
+  window.location.href = `product-detail.html?id=${id}`;
+}
+
+function filterCategory(cat) {
+  window.location.href = `products.html?cat=${cat}`;
+}
+
+// ═══ عدادات الإحصائيات ═══
+function animateCounters() {
+  document.querySelectorAll('[data-target]').forEach(el => {
+    const target = parseInt(el.dataset.target);
+    let current = 0;
+    const step = target / 60;
+    const timer = setInterval(() => {
+      current = Math.min(current + step, target);
+      el.textContent = Math.floor(current) + (el.dataset.target === '98' ? (currentLang === 'ar' ? '%' : '%') : '+');
+      if (current >= target) clearInterval(timer);
+    }, 16);
+  });
+}
+
+// ═══ Scroll Reveal ═══
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+}, { threshold: .08, rootMargin: '0px 0px -30px 0px' });
+
+function observeReveal() {
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+}
+
+// ═══ Hero Observer ═══
+const heroObserver = new IntersectionObserver(([e]) => { if (e.isIntersecting) { animateCounters(); heroObserver.disconnect(); } }, { threshold: .3 });
+const heroStats = document.querySelector('.hero-stats');
+if (heroStats) heroObserver.observe(heroStats);
+
+// ═══ Nav / Menu ═══
+function toggleMenu() {
+  const h = document.getElementById('hamburger'), d = document.getElementById('mobileDrawer');
+  h.classList.toggle('open'); d.classList.toggle('open');
+  document.body.style.overflow = d.classList.contains('open') ? 'hidden' : '';
+}
+
+function closeMenu() {
+  document.getElementById('hamburger').classList.remove('open');
+  document.getElementById('mobileDrawer').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('click', e => {
+  const d = document.getElementById('mobileDrawer'), h = document.getElementById('hamburger');
+  if (d.classList.contains('open') && !d.contains(e.target) && !h.contains(e.target)) closeMenu();
+});
+
+// ═══ Chat Widget ═══
+function toggleChat() {
+  const b = document.getElementById('chatBubble');
+  b.classList.toggle('show');
+}
+
+// ═══ Newsletter ═══
+function subscribeEmail() {
+  const v = document.getElementById('emailInput').value.trim();
+  if (!v || !v.includes('@')) { 
+    showToast('⚠️', currentLang === 'ar' ? 'يرجى إدخال بريد إلكتروني صحيح' : 'Please enter a valid email'); 
+    return; 
+  }
+  showToast('🎉', currentLang === 'ar' ? 'تم الاشتراك بنجاح!' : 'Subscribed successfully!');
+  document.getElementById('emailInput').value = '';
+}
+
+// ═══ Toast ═══
+let toastTimer;
+function showToast(icon, text) {
+  const t = document.getElementById('toast');
+  document.getElementById('toastIcon').textContent = icon;
+  document.getElementById('toastText').textContent = text;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 3000);
+}
+
+// ═══ Init ═══
+window.addEventListener('load', () => {
+  // تهيئة اللغة
+  changeLang(currentLang);
+  
+  // تحميل المنتجات
+  loadProducts();
+  
+  // مراقبة العناصر للظهور
+  setTimeout(observeReveal, 100);
+  
+  // إظهار فقاعة المحادثة بعد 5 ثوان
+  setTimeout(() => document.getElementById('chatBubble').classList.add('show'), 5000);
+  setTimeout(() => document.getElementById('chatBubble').classList.remove('show'), 10000);
+});
 </script>
 </body>
 </html>
