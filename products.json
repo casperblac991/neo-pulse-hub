@@ -375,3 +375,266 @@
     }
   }
 ]
+[
+  // ... المنتجات السابقة موجودة هنا ...
+  
+  // 🏠 أضف منتجات المنزل الذكي
+  {
+    "id": "NPH-016",
+    "name": {
+      "ar": "ثرموستات ذكي Nest Learning Thermostat",
+      "en": "Nest Learning Thermostat"
+    },
+    "category": "smart-home",
+    "category_ar": "المنزل الذكي",
+    "category_en": "Smart Home",
+    "price": 199.99,
+    "original_price": 249.99,
+    "discount": 20,
+    "rating": 4.8,
+    "reviews": 1876,
+    "image": "https://images.unsplash.com/photo-1558001373-7b93ee48ffa0?w=400",
+    "badge": {
+      "ar": "الأكثر توفيراً",
+      "en": "Most Efficient"
+    },
+    "in_stock": true,
+    "description": {
+      "ar": "ثرموستات ذكي يتعلم عاداتك ويضبط درجة الحرارة تلقائياً لتوفير الطاقة.",
+      "en": "Smart thermostat that learns your habits and adjusts temperature automatically to save energy."
+    }
+  },
+  {
+    "id": "NPH-017",
+    "name": {
+      "ar": "مصباح ذكي Philips Hue مع أليكسا",
+      "en": "Philips Hue Smart Bulb with Alexa"
+    },
+    "category": "smart-home",
+    "category_ar": "المنزل الذكي",
+    "category_en": "Smart Home",
+    "price": 49.99,
+    "original_price": 69.99,
+    "discount": 29,
+    "rating": 4.7,
+    "reviews": 3452,
+    "image": "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=400",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Best Seller"
+    },
+    "in_stock": true,
+    "description": {
+      "ar": "مصباح ذكي بـ16 مليون لون، تحكم بالصوت عبر أليكسا، وجدولة ذكية.",
+      "en": "Smart bulb with 16 million colors, voice control via Alexa, and smart scheduling."
+    }
+  },
+  
+  // 🏃 أضف منتجات اللياقة والصحة
+  {
+    "id": "NPH-018",
+    "name": {
+      "ar": "حذاء الجري الذكي Under Armour HOVR",
+      "en": "Under Armour HOVR Smart Running Shoes"
+    },
+    "category": "health",
+    "category_ar": "الصحة الذكية",
+    "category_en": "Smart Health",
+    "price": 149.99,
+    "original_price": 179.99,
+    "discount": 17,
+    "rating": 4.6,
+    "reviews": 892,
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+    "badge": {
+      "ar": "جديد",
+      "en": "New"
+    },
+    "in_stock": true,
+    "description": {
+      "ar": "حذاء جري مزود بمستشعرات ذكية تقيس المسافة، السرعة، وجودة الجري.",
+      "en": "Running shoes with smart sensors measuring distance, speed, and running quality."
+    }
+  },
+  {
+    "id": "NPH-019",
+    "name": {
+      "ar": "زجاجة ماء ذكية HidrateSpark 3",
+      "en": "HidrateSpark 3 Smart Water Bottle"
+    },
+    "category": "health",
+    "category_ar": "الصحة الذكية",
+    "category_en": "Smart Health",
+    "price": 59.99,
+    "original_price": 79.99,
+    "discount": 25,
+    "rating": 4.5,
+    "reviews": 567,
+    "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400",
+    "badge": {
+      "ar": "خصم 25%",
+      "en": "25% OFF"
+    },
+    "in_stock": true,
+    "description": {
+      "ar": "زجاجة ماء ذكية تتتبع كمية شربك وتضيء لتذكرك بشرب الماء.",
+      "en": "Smart water bottle that tracks your hydration and glows to remind you to drink."
+    }
+  },
+  
+  // 🎮 أضف منتجات الترفيه الذكي
+  {
+    "id": "NPH-020",
+    "name": {
+      "ar": "نظارة الواقع الافتراضي Meta Quest 3",
+      "en": "Meta Quest 3 VR Headset"
+    },
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "category_en": "Smart Glasses",
+    "price": 499.99,
+    "original_price": 599.99,
+    "discount": 17,
+    "rating": 4.9,
+    "reviews": 2341,
+    "image": "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=400",
+    "badge": {
+      "ar": "الأعلى تقييماً",
+      "en": "Top Rated"
+    },
+    "in_stock": true,
+    "description": {
+      "ar": "أحدث نظارة واقع افتراضي من ميتا، ألعاب غامرة، وتجارب تفاعلية.",
+      "en": "The latest VR headset from Meta, immersive games, and interactive experiences."
+    }
+  },
+  {
+    "id": "NPH-021",
+    "name": {
+      "ar": "جهاز الألعاب المحمول Steam Deck OLED",
+      "en": "Steam Deck OLED"
+    },
+    "category": "productivity",
+    "category_ar": "الإنتاجية",
+    "category_en": "Productivity",
+    "price": 549.99,
+    "original_price": 649.99,
+    "discount": 15,
+    "rating": 4.8,
+    "reviews": 1567,
+    "image": "https://images.unsplash.com/photo-1605901309584-818e25960a8f?w=400",
+    "badge": {
+      "ar": "الأكثر طلباً",
+      "en": "Most Wanted"
+    },
+    "in_stock": true,
+    "description": {
+      "ar": "جهاز ألعاب محمول يشغل آلاف الألعاب من منصة Steam، مع شاشة OLED.",
+      "en": "Handheld gaming device that runs thousands of Steam games, with OLED screen."
+    }
+  },
+  
+  // 🔐 أضف منتجات الأمن الذكي
+  {
+    "id": "NPH-022",
+    "name": {
+      "ar": "قفل الباب الذكي August Wi-Fi Smart Lock",
+      "en": "August Wi-Fi Smart Lock"
+    },
+    "category": "smart-home",
+    "category_ar": "المنزل الذكي",
+    "category_en": "Smart Home",
+    "price": 199.99,
+    "original_price": 249.99,
+    "discount": 20,
+    "rating": 4.6,
+    "reviews": 789,
+    "image": "https://images.unsplash.com/photo-1558001373-7b93ee48ffa0?w=400",
+    "badge": {
+      "ar": "الأفضل للأمان",
+      "en": "Best for Security"
+    },
+    "in_stock": true,
+    "description": {
+      "ar": "قفل ذكي يفتح بهاتفك، يعطي رموز دخول مؤقتة للضيوف، ويتتبع الدخول.",
+      "en": "Smart lock that opens with your phone, gives temporary guest codes, and tracks entry."
+    }
+  },
+  {
+    "id": "NPH-023",
+    "name": {
+      "ar": "جرس الباب الذكي Ring Video Doorbell 4",
+      "en": "Ring Video Doorbell 4"
+    },
+    "category": "smart-home",
+    "category_ar": "المنزل الذكي",
+    "category_en": "Smart Home",
+    "price": 179.99,
+    "original_price": 219.99,
+    "discount": 18,
+    "rating": 4.7,
+    "reviews": 3456,
+    "image": "https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?w=400",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Best Seller"
+    },
+    "in_stock": true,
+    "description": {
+      "ar": "جرس باب بكاميرا ذكية، رؤية ليلية، وتنبيهات فورية عند وجود زوار.",
+      "en": "Doorbell with smart camera, night vision, and instant alerts when visitors arrive."
+    }
+  },
+  
+  // 🎧 أضف سماعات ذكية متنوعة
+  {
+    "id": "NPH-024",
+    "name": {
+      "ar": "سماعات Bose QuietComfort Ultra",
+      "en": "Bose QuietComfort Ultra"
+    },
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "category_en": "Smart Earbuds",
+    "price": 429.99,
+    "original_price": 499.99,
+    "discount": 14,
+    "rating": 4.9,
+    "reviews": 2345,
+    "image": "https://images.unsplash.com/photo-1546435770-a3e9bf540a4b?w=400",
+    "badge": {
+      "ar": "الأفضل للصوت",
+      "en": "Best Sound"
+    },
+    "in_stock": true,
+    "description": {
+      "ar": "أفضل سماعات مانعة للضوضاء مع صوت مكاني غامر وتقنية CustomTune.",
+      "en": "Best noise-cancelling headphones with immersive spatial audio and CustomTune technology."
+    }
+  },
+  {
+    "id": "NPH-025",
+    "name": {
+      "ar": "سماعات أبل AirPods Pro 2",
+      "en": "Apple AirPods Pro 2"
+    },
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "category_en": "Smart Earbuds",
+    "price": 249.99,
+    "original_price": 279.99,
+    "discount": 11,
+    "rating": 4.8,
+    "reviews": 5678,
+    "image": "https://images.unsplash.com/photo-1588423771073-b8903fbb85b5?w=400",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Best Seller"
+    },
+    "in_stock": true,
+    "description": {
+      "ar": "سماعات لاسلكية مع إلغاء ضوضاء متطور، صوت عالي الدقة، وشحن MagSafe.",
+      "en": "Wireless earbuds with advanced noise cancellation, high-fidelity sound, and MagSafe charging."
+    }
+  }
+]
