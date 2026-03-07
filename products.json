@@ -1,0 +1,377 @@
+[
+  {
+    "id": "NPH-001",
+    "name": {
+      "ar": "ساعة أبل الذكية Series 9",
+      "en": "Apple Watch Series 9"
+    },
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "Smart Watches",
+    "price": 249.99,
+    "original_price": 299.99,
+    "discount": 17,
+    "rating": 4.8,
+    "reviews": 1245,
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Best Seller"
+    },
+    "in_stock": true,
+    "description": {
+      "ar": "أحدث ساعة ذكية من أبل مع شاشة ريتينا دائماً، قياس الأكسجين في الدم، وتخطيط القلب.",
+      "en": "The latest Apple smartwatch with always-on Retina display, blood oxygen measurement, and ECG."
+    }
+  },
+  {
+    "id": "NPH-002",
+    "name": {
+      "ar": "نظارة ميتا الذكية Ray-Ban Meta",
+      "en": "Ray-Ban Meta Smart Glasses"
+    },
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "category_en": "Smart Glasses",
+    "price": 329.99,
+    "original_price": 399.99,
+    "discount": 18,
+    "rating": 4.6,
+    "reviews": 876,
+    "image": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=400",
+    "badge": {
+      "ar": "جديد",
+      "en": "New"
+    },
+    "in_stock": true,
+    "description": {
+      "ar": "نظارات ذكية من Ray-Ban بتقنية ميتا، كاميرا مدمجة 12MP، سماعات مفتوحة، وتصميم عصري.",
+      "en": "Ray-Ban smart glasses with Meta technology, 12MP integrated camera, open-ear speakers, and modern design."
+    }
+  },
+  {
+    "id": "NPH-003",
+    "name": {
+      "ar": "سماعات سوني الذكية WH-1000XM5",
+      "en": "Sony WH-1000XM5"
+    },
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "category_en": "Smart Earbuds",
+    "price": 299.99,
+    "original_price": 399.99,
+    "discount": 25,
+    "rating": 4.9,
+    "reviews": 3456,
+    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400",
+    "badge": {
+      "ar": "الأعلى تقييماً",
+      "en": "Top Rated"
+    },
+    "in_stock": true,
+    "description": {
+      "ar": "أفضل سماعات مانعة للضوضاء مع تقنية الذكاء الاصطناعي لتحسين الصوت وجودة المكالمات.",
+      "en": "Best noise-cancelling headphones with AI technology for sound enhancement and call quality."
+    }
+  },
+  {
+    "id": "NPH-004",
+    "name": {
+      "ar": "جهاز قياس الصحة الذكي Withings Body Scan",
+      "en": "Withings Body Scan"
+    },
+    "category": "health",
+    "category_ar": "الصحة الذكية",
+    "category_en": "Smart Health",
+    "price": 199.99,
+    "original_price": 249.99,
+    "discount": 20,
+    "rating": 4.7,
+    "reviews": 567,
+    "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400",
+    "badge": {
+      "ar": "خصم 20%",
+      "en": "20% OFF"
+    },
+    "in_stock": true,
+    "description": {
+      "ar": "مقياس صحي متطور يقيس الوزن، تكوين الجسم، معدل ضربات القلب، وصحة الأعصاب.",
+      "en": "Advanced health scale measuring weight, body composition, heart rate, and nerve health."
+    }
+  },
+  {
+    "id": "NPH-005",
+    "name": {
+      "ar": "روبوت التنظيف الذكي روبوروك S8 Pro Ultra",
+      "en": "Roborock S8 Pro Ultra"
+    },
+    "category": "smart-home",
+    "category_ar": "المنزل الذكي",
+    "category_en": "Smart Home",
+    "price": 999.99,
+    "original_price": 1299.99,
+    "discount": 23,
+    "rating": 4.8,
+    "reviews": 2341,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+    "badge": {
+      "ar": "الأكثر طلباً",
+      "en": "Most Wanted"
+    },
+    "in_stock": true,
+    "description": {
+      "ar": "روبوت كنس وغسيل ذكي مع محطة تنظيف ذاتي، خرائط ذكية، وتحكم بالصوت.",
+      "en": "Smart vacuum and mop robot with self-cleaning station, smart mapping, and voice control."
+    }
+  },
+  {
+    "id": "NPH-006",
+    "name": {
+      "ar": "مترجم اللغة الفوري Timekettle M3",
+      "en": "Timekettle M3 Translator"
+    },
+    "category": "productivity",
+    "category_ar": "الإنتاجية",
+    "category_en": "Productivity",
+    "price": 149.99,
+    "original_price": 199.99,
+    "discount": 25,
+    "rating": 4.5,
+    "reviews": 892,
+    "image": "https://images.unsplash.com/photo-1546776310-eef45dd6d63c?w=400",
+    "badge": {
+      "ar": null,
+      "en": null
+    },
+    "in_stock": true,
+    "description": {
+      "ar": "سماعات ترجمة فورية تدعم 40 لغة، ترجمة ثنائية الاتجاه، واتصال بالتطبيق الذكي.",
+      "en": "Instant translator earbuds supporting 40 languages, two-way translation, and smart app connection."
+    }
+  },
+  {
+    "id": "NPH-007",
+    "name": {
+      "ar": "خاتم Oura الذكي الجيل الثالث",
+      "en": "Oura Ring Gen 3"
+    },
+    "category": "health",
+    "category_ar": "الصحة الذكية",
+    "category_en": "Smart Health",
+    "price": 299.99,
+    "original_price": 349.99,
+    "discount": 14,
+    "rating": 4.6,
+    "reviews": 1567,
+    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd6b0?w=400",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Best Seller"
+    },
+    "in_stock": true,
+    "description": {
+      "ar": "خاتم ذكي لتتبع النوم، النشاط، درجة حرارة الجسم، ومستوى التوتر.",
+      "en": "Smart ring for tracking sleep, activity, body temperature, and stress levels."
+    }
+  },
+  {
+    "id": "NPH-008",
+    "name": {
+      "ar": "مكبر الصوت الذكي أمازون Echo Studio",
+      "en": "Amazon Echo Studio"
+    },
+    "category": "smart-home",
+    "category_ar": "المنزل الذكي",
+    "category_en": "Smart Home",
+    "price": 179.99,
+    "original_price": 229.99,
+    "discount": 22,
+    "rating": 4.7,
+    "reviews": 3452,
+    "image": "https://images.unsplash.com/photo-1543512214-318c7553f230?w=400",
+    "badge": {
+      "ar": "خصم 22%",
+      "en": "22% OFF"
+    },
+    "in_stock": true,
+    "description": {
+      "ar": "مكبر صوت ذكي مع أليكسا، صوت ثلاثي الأبعاد، ومستشعر حرارة مدمج للتحكم بالمنزل.",
+      "en": "Smart speaker with Alexa, 3D audio, and built-in temperature sensor for home control."
+    }
+  },
+  {
+    "id": "NPH-009",
+    "name": {
+      "ar": "كاميرا المراقبة الذكية Ring Stick Up Cam Pro",
+      "en": "Ring Stick Up Cam Pro"
+    },
+    "category": "smart-home",
+    "category_ar": "المنزل الذكي",
+    "category_en": "Smart Home",
+    "price": 129.99,
+    "original_price": 169.99,
+    "discount": 24,
+    "rating": 4.5,
+    "reviews": 678,
+    "image": "https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?w=400",
+    "badge": {
+      "ar": null,
+      "en": null
+    },
+    "in_stock": true,
+    "description": {
+      "ar": "كاميرا مراقبة ذكية تعمل بالبطارية، كشف حركة متقدم، ورؤية ليلية ملونة.",
+      "en": "Battery-powered smart security camera, advanced motion detection, and color night vision."
+    }
+  },
+  {
+    "id": "NPH-010",
+    "name": {
+      "ar": "قلم سامسونج الذكي S Pen Pro",
+      "en": "Samsung S Pen Pro"
+    },
+    "category": "productivity",
+    "category_ar": "الإنتاجية",
+    "category_en": "Productivity",
+    "price": 79.99,
+    "original_price": 99.99,
+    "discount": 20,
+    "rating": 4.6,
+    "reviews": 345,
+    "image": "https://images.unsplash.com/photo-1585338107527-9451b39c8e98?w=400",
+    "badge": {
+      "ar": "الأفضل للأعمال",
+      "en": "Best for Business"
+    },
+    "in_stock": true,
+    "description": {
+      "ar": "قلم ذكي مع بلوتوث، تحكم عن بعد، وشحن سريع عبر USB-C.",
+      "en": "Smart pen with Bluetooth, remote control, and fast USB-C charging."
+    }
+  },
+  {
+    "id": "NPH-011",
+    "name": {
+      "ar": "نظارة الواقع المختلط Apple Vision Pro",
+      "en": "Apple Vision Pro"
+    },
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "category_en": "Smart Glasses",
+    "price": 3499.99,
+    "original_price": 3999.99,
+    "discount": 13,
+    "rating": 4.9,
+    "reviews": 432,
+    "image": "https://images.unsplash.com/photo-1635372722656-389f87a9416b?w=400",
+    "badge": {
+      "ar": "الوافد الجديد",
+      "en": "New Arrival"
+    },
+    "in_stock": true,
+    "description": {
+      "ar": "أول حاسوب مكاني من Apple يمزج بين المحتوى الرقمي والعالم الحقيقي بسلاسة.",
+      "en": "Apple's first spatial computer that seamlessly blends digital content with the real world."
+    }
+  },
+  {
+    "id": "NPH-012",
+    "name": {
+      "ar": "ساعة سامسونج الذكية Galaxy Watch 6 Classic",
+      "en": "Samsung Galaxy Watch 6 Classic"
+    },
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "Smart Watches",
+    "price": 329.99,
+    "original_price": 399.99,
+    "discount": 18,
+    "rating": 4.7,
+    "reviews": 2345,
+    "image": "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=400",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Best Seller"
+    },
+    "in_stock": true,
+    "description": {
+      "ar": "ساعة ذكية بإطار دوار، قياس ضغط الدم، تخطيط القلب، وتحليل تكوين الجسم.",
+      "en": "Smart watch with rotating bezel, blood pressure measurement, ECG, and body composition analysis."
+    }
+  },
+  {
+    "id": "NPH-013",
+    "name": {
+      "ar": "سماعات جوجل الذكية Pixel Buds Pro",
+      "en": "Google Pixel Buds Pro"
+    },
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "category_en": "Smart Earbuds",
+    "price": 179.99,
+    "original_price": 199.99,
+    "discount": 10,
+    "rating": 4.6,
+    "reviews": 1234,
+    "image": "https://images.unsplash.com/photo-1613040809024-b4ef7ba99bc3?w=400",
+    "badge": {
+      "ar": "الأعلى تقييماً",
+      "en": "Top Rated"
+    },
+    "in_stock": true,
+    "description": {
+      "ar": "سماعات مع إلغاء ضوضاء نشط، ترجمة فورية، وتكامل عميق مع مساعد جوجل.",
+      "en": "Earbuds with active noise cancellation, real-time translation, and deep Google Assistant integration."
+    }
+  },
+  {
+    "id": "NPH-014",
+    "name": {
+      "ar": "جهاز تتبع اللياقة Fitbit Charge 6",
+      "en": "Fitbit Charge 6"
+    },
+    "category": "health",
+    "category_ar": "الصحة الذكية",
+    "category_en": "Smart Health",
+    "price": 129.99,
+    "original_price": 159.99,
+    "discount": 19,
+    "rating": 4.6,
+    "reviews": 3456,
+    "image": "https://images.unsplash.com/photo-1557935728-8c1c7f5c5b5f?w=400",
+    "badge": {
+      "ar": null,
+      "en": null
+    },
+    "in_stock": true,
+    "description": {
+      "ar": "سوار لياقة متطور مع تتبع النشاط، مراقبة معدل ضربات القلب، ومدة النوم.",
+      "en": "Advanced fitness tracker with activity tracking, heart rate monitoring, and sleep tracking."
+    }
+  },
+  {
+    "id": "NPH-015",
+    "name": {
+      "ar": "المنبه الذكي Hatch Restore 2",
+      "en": "Hatch Restore 2"
+    },
+    "category": "smart-home",
+    "category_ar": "المنزل الذكي",
+    "category_en": "Smart Home",
+    "price": 129.99,
+    "original_price": 149.99,
+    "discount": 13,
+    "rating": 4.5,
+    "reviews": 567,
+    "image": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=400",
+    "badge": {
+      "ar": "الأفضل للاسترخاء",
+      "en": "Best for Relaxation"
+    },
+    "in_stock": true,
+    "description": {
+      "ar": "منبه ذكي لمحاكاة شروق الشمس، أصوات طبيعية، وتأملات موجهة لنوم أفضل.",
+      "en": "Smart alarm clock with sunrise simulation, nature sounds, and guided meditations for better sleep."
+    }
+  }
+]
