@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEO PULSE HUB | المتجر الذكي</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&family=Poppins:wght@300;400;500;600;700;900&family=Orbitron:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    /* نفس الـ CSS الرائع من index.html */
+    :root {
+      --bg: #020510;
+      --surface: #0a0d1a;
+      --surface2: #0f1423;
+      --border: rgba(99,179,237,.12);
+      --border2: rgba(99,179,237,.25);
+      --blue: #3b82f6;
+      --blue2: #60a5fa;
+      --purple: #7c3aed;
+      --purple2: #a855f7;
+      --cyan: #06b6d4;
+      --cyan2: #22d3ee;
+      --green: #10b981;
+      --red: #ef4444;
+      --gold: #f59e0b;
+      --text: #e2e8f0;
+      --muted: rgba(226,232,240,.55);
+      --r: 12px;
+      --r2: 20px;
+      --rp: 50px;
+      --ease: .3s cubic-bezier(.4,0,.2,1);
+      --glow-b: 0 0 30px rgba(59,130,246,.35);
+      --glow-p: 0 0 30px rgba(124,58,237,.35);
+      --glow-c: 0 0 30px rgba(6,182,212,.35);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Cairo', 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    .bg-grid {
+      position: fixed; inset: 0; z-index: -3;
+      background-image: linear-gradient(rgba(59,130,246,.04) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(59,130,246,.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .bg-grad {
+      position: fixed; inset: 0; z-index: -2;
+      background: radial-gradient(ellipse 80% 50% at 20% 20%, rgba(124,58,237,.12), transparent 60%),
+                  radial-gradient(ellipse 60% 40% at 80% 80%, rgba(6,182,212,.08), transparent 60%);
+    }
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: .9rem 2.5rem;
+      background: rgba(2,5,16,.85);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      font-family: 'Orbitron', sans-serif; font-size: 1.1rem; font-weight: 700;
+      background: linear-gradient(135deg, var(--blue2), var(--cyan2));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .nav-links { display: flex; gap: 1rem; list-style: none; }
+    .nav-links a {
+      color: var(--muted); text-decoration: none; padding: .35rem .8rem;
+      border-radius: 50px; transition: all var(--ease);
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--cyan2); background: rgba(6,182,212,.08); }
+    .products-page { padding: 100px 2rem 4rem; max-width: 1200px; margin: 0 auto; }
+    .page-header { text-align: center; margin-bottom: 2rem; }
+    .page-title {
+      font-family: 'Orbitron', sans-serif; font-size: 2rem;
+      background: linear-gradient(135deg, #fff, var(--blue2));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      margin-bottom: .5rem;
+    }
+    .category-info {
+      display: inline-block;
+      background: rgba(124,58,237,.2);
+      border: 1px solid var(--purple);
+      padding: .5rem 2rem;
+      border-radius: var(--rp);
+      color: var(--purple2);
+      margin-bottom: 2rem;
+    }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .product-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--r2);
+      overflow: hidden;
+      transition: all var(--ease);
+      cursor: pointer;
+    }
+    .product-card:hover {
+      border-color: var(--border2);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0,0,0,.4), var(--glow-b);
+    }
+    .product-img {
+      height: 200px;
+      background: var(--surface2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+    }
+    .product-body { padding: 1.5rem; }
+    .product-name {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: .5rem;
+    }
+    .product-price {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--blue2), var(--cyan2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .back-btn {
+      display: inline-block;
+      margin-top: 3rem;
+      padding: .8rem 2rem;
+      background: rgba(59,130,246,.1);
+      border: 1px solid var(--border2);
+      border-radius: var(--rp);
+      color: var(--text);
+      text-decoration: none;
+      transition: all var(--ease);
+    }
+    .back-btn:hover {
+      background: rgba(59,130,246,.2);
+      border-color: var(--blue2);
+      color: var(--blue2);
+    }
+    .no-products {
+      text-align: center;
+      padding: 4rem;
+      color: var(--muted);
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="bg-grad"></div>
+
+<nav>
+  <a href="index.html" class="nav-logo">NEO PULSE HUB</a>
+  <ul class="nav-links">
+    <li><a href="index.html">الرئيسية</a></li>
+    <li><a href="products.html" class="active">المنتجات</a></li>
+    <li><a href="#">من نحن</a></li>
+    <li><a href="#">اتصل بنا</a></li>
+  </ul>
+</nav>
+
+<div class="products-page" id="productsPage">
+  <!-- يتم التعبئة بواسطة JavaScript -->
+  <div style="text-align: center; padding: 4rem;">
+    <div style="font-size: 3rem; margin-bottom: 1rem;">⚡</div>
+    <h2>جاري تحميل المنتجات...</h2>
+  </div>
+</div>
+
+<script>
+// ========== بيانات المنتجات (15 منتج ذكي) ==========
+const allProducts = [
+  // ساعات ذكية
+  {
+    id: 1,
+    name: "ساعة أبل الذكية Series 9",
+    category: "ساعات ذكية",
+    categoryId: "smartwatch",
+    price: 249.99,
+    image: "⌚",
+    description: "أحدث ساعة ذكية من أبل مع شاشة ريتينا دائماً"
+  },
+  {
+    id: 2,
+    name: "ساعة سامسونج Galaxy Watch 6",
+    category: "ساعات ذكية",
+    categoryId: "smartwatch",
+    price: 229.99,
+    image: "⌚",
+    description: "ساعة ذكية بإطار دوار وقياس ضغط الدم"
+  },
+  
+  // نظارات ذكية
+  {
+    id: 3,
+    name: "نظارة ميتا الذكية Ray-Ban",
+    category: "نظارات ذكية",
+    categoryId: "smart-glasses",
+    price: 329.99,
+    image: "🥽",
+    description: "نظارات ذكية من Ray-Ban بتقنية ميتا"
+  },
+  {
+    id: 4,
+    name: "نظارة Apple Vision Pro",
+    category: "نظارات ذكية",
+    categoryId: "smart-glasses",
+    price: 3499.99,
+    image: "🥽",
+    description: "أول حاسوب مكاني من Apple"
+  },
+  
+  // صحة ذكية
+  {
+    id: 5,
+    name: "خاتم Oura الذكي",
+    category: "صحة ذكية",
+    categoryId: "health",
+    price: 299.99,
+    image: "💍",
+    description: "خاتم ذكي لتتبع النوم والنشاط"
+  },
+  {
+    id: 6,
+    name: "مقياس صحة Withings",
+    category: "صحة ذكية",
+    categoryId: "health",
+    price: 199.99,
+    image: "⚖️",
+    description: "مقياس صحي متطور مع تخطيط القلب"
+  },
+  {
+    id: 7,
+    name: "سوار Fitbit Charge 6",
+    category: "صحة ذكية",
+    categoryId: "health",
+    price: 129.99,
+    image: "⌚",
+    description: "سوار لياقة مع تتبع النشاط"
+  },
+  
+  // منزل ذكي
+  {
+    id: 8,
+    name: "روبوت روبوروك S8",
+    category: "منزل ذكي",
+    categoryId: "smart-home",
+    price: 999.99,
+    image: "🤖",
+    description: "روبوت كنس وغسيل ذكي"
+  },
+  {
+    id: 9,
+    name: "مكبر Echo Studio",
+    category: "منزل ذكي",
+    categoryId: "smart-home",
+    price: 179.99,
+    image: "🔊",
+    description: "مكبر صوت ذكي مع أليكسا"
+  },
+  {
+    id: 10,
+    name: "ثرموستات Nest",
+    category: "منزل ذكي",
+    categoryId: "smart-home",
+    price: 199.99,
+    image: "🌡️",
+    description: "ثرموستات ذكي يوفر الطاقة"
+  },
+  
+  // سماعات ذكية
+  {
+    id: 11,
+    name: "سماعات سوني WH-1000XM5",
+    category: "سماعات ذكية",
+    categoryId: "earbuds",
+    price: 299.99,
+    image: "🎧",
+    description: "أفضل سماعات مانعة للضوضاء"
+  },
+  {
+    id: 12,
+    name: "سماعات Bose QC Ultra",
+    category: "سماعات ذكية",
+    categoryId: "earbuds",
+    price: 429.99,
+    image: "🎧",
+    description: "سماعات مع صوت مكاني"
+  },
+  
+  // إنتاجية
+  {
+    id: 13,
+    name: "مترجم Timekettle M3",
+    category: "إنتاجية",
+    categoryId: "productivity",
+    price: 149.99,
+    image: "🗣️",
+    description: "سماعات ترجمة فورية لـ 40 لغة"
+  },
+  {
+    id: 14,
+    name: "قلم S Pen Pro",
+    category: "إنتاجية",
+    categoryId: "productivity",
+    price: 79.99,
+    image: "✏️",
+    description: "قلم ذكي مع بلوتوث"
+  },
+  {
+    id: 15,
+    name: "جهاز Steam Deck",
+    category: "إنتاجية",
+    categoryId: "productivity",
+    price: 549.99,
+    image: "🎮",
+    description: "جهاز ألعاب محمول"
+  }
+];
+
+// ========== عرض المنتجات حسب الفئة أو البحث ==========
+function displayProducts() {
+  // قراءة المعاملات من الرابط
+  const urlParams = new URLSearchParams(window.location.search);
+  const category = urlParams.get('cat');
+  const searchQuery = urlParams.get('search');
+  
+  let filteredProducts = [];
+  let pageTitle = "جميع المنتجات";
+  let categoryName = "";
+  
+  // تصفية حسب الفئة
+  if (category) {
+    filteredProducts = allProducts.filter(p => p.categoryId === category);
+    
+    // تحديد اسم الفئة
+    const categoryMap = {
+      'smartwatch': 'الساعات الذكية',
+      'smart-glasses': 'النظارات الذكية',
+      'health': 'الصحة الذكية',
+      'smart-home': 'المنزل الذكي',
+      'earbuds': 'السماعات الذكية',
+      'productivity': 'الإنتاجية'
+    };
+    categoryName = categoryMap[category] || category;
+    pageTitle = categoryName;
+  }
+  // تصفية حسب البحث
+  else if (searchQuery) {
+    const query = searchQuery.toLowerCase();
+    filteredProducts = allProducts.filter(p => 
+      p.name.includes(query) || p.category.includes(query)
+    );
+    pageTitle = `نتائج البحث عن: "${searchQuery}"`;
+  }
+  // عرض الكل
+  else {
+    filteredProducts = allProducts;
+  }
+  
+  // عرض النتائج
+  const pageDiv = document.getElementById('productsPage');
+  
+  if (filteredProducts.length === 0) {
+    pageDiv.innerHTML = `
+      <div class="page-header">
+        <h1 class="page-title">${pageTitle}</h1>
+      </div>
+      <div class="no-products">
+        <div style="font-size: 4rem; margin-bottom: 1rem;">😕</div>
+        <h2>لا توجد منتجات</h2>
+        <p>لم نجد منتجات تطابق بحثك</p>
+        <a href="products.html" class="back-btn">← عرض جميع المنتجات</a>
+      </div>
+    `;
+    return;
+  }
+  
+  // بناء HTML المنتجات
+  let productsHTML = '';
+  filteredProducts.forEach(p => {
+    productsHTML += `
+      <div class="product-card" onclick="showProductDetails(${p.id})">
+        <div class="product-img">${p.image}</div>
+        <div class="product-body">
+          <div class="product-name">${p.name}</div>
+          <div style="color: var(--muted); font-size: 0.9rem; margin-bottom: 0.5rem;">${p.category}</div>
+          <div class="product-price">$${p.price}</div>
+        </div>
+      </div>
+    `;
+  });
+  
+  // عرض الصفحة كاملة
+  pageDiv.innerHTML = `
+    <div class="page-header">
+      <h1 class="page-title">${pageTitle}</h1>
+      ${category ? `<div class="category-info">${filteredProducts.length} منتج متاح</div>` : ''}
+    </div>
+    <div class="products-grid">
+      ${productsHTML}
+    </div>
+    <div style="text-align: center;">
+      <a href="index.html" class="back-btn">← العودة للرئيسية</a>
+    </div>
+  `;
+}
+
+// ========== عرض تفاصيل المنتج ==========
+function showProductDetails(id) {
+  const product = allProducts.find(p => p.id === id);
+  if (!product) return;
+  
+  const pageDiv = document.getElementById('productsPage');
+  pageDiv.innerHTML = `
+    <div class="page-header">
+      <h1 class="page-title">${product.name}</h1>
+    </div>
+    <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 2rem; max-width: 600px; margin: 0 auto;">
+      <div style="font-size: 6rem; text-align: center; margin-bottom: 2rem;">${product.image}</div>
+      <h2 style="margin-bottom: 1rem;">${product.name}</h2>
+      <p style="color: var(--muted); margin-bottom: 1rem;">${product.description}</p>
+      <div style="font-size: 2rem; font-family: 'Orbitron'; background: linear-gradient(135deg, var(--blue2), var(--cyan2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1rem;">
+        $${product.price}
+      </div>
+      <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+        <button onclick="addToCart(${product.id})" style="flex:1; background: linear-gradient(135deg, var(--blue), var(--purple)); color: white; border: none; padding: 1rem; border-radius: 50px; font-size: 1rem; cursor: pointer;">
+          🛒 أضف للسلة
+        </button>
+        <button onclick="displayProducts()" style="flex:1; background: rgba(6,182,212,.08); border: 1px solid var(--cyan2); color: var(--cyan2); padding: 1rem; border-radius: 50px; font-size: 1rem; cursor: pointer;">
+          ← رجوع
+        </button>
+      </div>
+    </div>
+  `;
+}
+
+// ========== إضافة للسلة ==========
+function addToCart(id) {
+  const product = allProducts.find(p => p.id === id);
+  alert(`✅ تمت إضافة ${product.name} إلى السلة!`);
+  // هنا يمكن إضافة منطق السلة الحقيقي
+}
+
+// ========== تشغيل عند تحميل الصفحة ==========
+window.onload = displayProducts;
+</script>
+</body>
+</html>
