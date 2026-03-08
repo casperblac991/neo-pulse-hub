@@ -1,25 +1,8 @@
-# ══════════════════════════════════════════════════════════════
-# NEO PULSE HUB — Python Requirements (Force clean build)
-# ══════════════════════════════════════════════════════════════
-
-# ── Telegram Bot Framework ─────────────────────────────────────
-python-telegram-bot[job-queue]==21.11.1
-
-# ── AI / Gemini ────────────────────────────────────────────────
-google-generativeai>=0.8.0
+python-telegram-bot[job-queue]==21.7.2
 requests>=2.31.0
-
-# ── Web API Server ─────────────────────────────────────────────
 flask>=3.0.0
 flask-cors>=4.0.0
-
-# ── Environment & Config ───────────────────────────────────────
 python-dotenv>=1.0.0
-
-# ── Utilities ──────────────────────────────────────────────────
 aiohttp>=3.9.0
 apscheduler>=3.10.4
 pytz>=2024.1
-
-# 🚨 FORCE CLEAN BUILD - 08/03/2026 - IGNORE CACHE 🚨
-# هذا التعليق مهم جداً لإجبار Render على إعادة التثبيت من الصفر
