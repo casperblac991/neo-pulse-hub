@@ -621,7 +621,7 @@ def main():
     # Scheduled jobs
     jq = app.job_queue
     if jq:
-        jq.run_daily(daily_report_job, time=datetime.strptime("08:00","% H:%M").time())
+        jq.run_daily(daily_report_job, time=datetime.strptime("08:00","%H:%M").time())
         jq.run_repeating(low_stock_alert_job, interval=21600)  # every 6h
 
     print(f"✅ Admin Bot running! Admin: {ADMIN_ID}")
