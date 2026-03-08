@@ -17,6 +17,13 @@
 import os, re, json, time, logging, requests
 from typing import Optional
 
+# دالة مساعدة لتنظيف النصوص من الخطوط المائلة العكسية
+def clean_text(text):
+    """تنظيف النص من الخطوط المائلة العكسية للاستخدام في f-strings"""
+    if text is None:
+        return ""
+    return str(text).replace('\\', '/')
+
 log = logging.getLogger("ai_engine")
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
@@ -169,8 +176,10 @@ def recommend_products(user_query: str, products: list,
 
 def extract_budget(text: str) -> Optional[float]:
     """يستخرج الميزانية من النص العربي."""
+    # استخدام الدالة المساعدة clean_text لتنظيف النص
+    clean_input = clean_text(text)
     result = _call(
-        f'استخرج الميزانية بالدولار من هذا النص وأرجع رقماً فقط (مثال: 150.00)، إذا لم توجد أرجع null: "{text}"',
+        f'استخرج الميزانية بالدولار من هذا النص وأرجع رقماً فقط (مثال: 150.00)، إذا لم توجد أرجع null: "{clean_input}"',
         temperature=0.1, max_tokens=20
     )
     try:
@@ -205,8 +214,10 @@ def generate_product_description(product_data: dict) -> str:
 
 def search_product_by_description(query: str) -> Optional[dict]:
     """يبحث عن منتج بالوصف ويُرجع بياناته الكاملة."""
+    # استخدام الدالة المساعدة لتنظيف الاستعلام
+    clean_query = clean_text(query)
     prompt = f"""أنت خبير منتجات تقنية. ابحث في معرفتك عن أفضل منتج حقيقي لهذا الوصف:
-"{query}"
+"{clean_query}"
 
 أرجع JSON:
 {{
