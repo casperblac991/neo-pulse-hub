@@ -16,6 +16,7 @@
 ║   GET  /api/analytics         — إحصائيات (admin only)          ║
 ║   POST /api/ai/recommend      — توصيات AI                       ║
 ║   POST /api/ai/chat           — محادثة AI                       ║
+║   POST /webhook               — استقبال تحديثات تيليجرام        ║
 ╚══════════════════════════════════════════════════════════════════╝
 
 تشغيل: python webhook_server.py
@@ -103,7 +104,7 @@ def get_client_ip():
 
 @app.before_request
 def log_request():
-    if request.path.startswith("/api"):
+    if request.path.startswith("/api") or request.path == "/webhook":
         log.info(f"{request.method} {request.path} — {get_client_ip()}")
 
 @app.after_request
@@ -111,6 +112,25 @@ def add_headers(response):
     response.headers["X-Powered-By"]        = "NEO PULSE HUB API"
     response.headers["X-Content-Type-Options"] = "nosniff"
     return response
+
+# ══════════════════════════════════════════════════════════════════
+# TELEGRAM WEBHOOK
+# ══════════════════════════════════════════════════════════════════
+
+@app.route("/webhook", methods=["POST"])
+def telegram_webhook():
+    """استقبال التحديثات من تيليجرام"""
+    try:
+        update = request.get_json()
+        log.info(f"📩 Received Telegram update: {update.get('update_id')}")
+        
+        # هنا يمكنك إضافة معالجة التحديثات
+        # على سبيل المثال، توجيهها إلى البوتات المختلفة
+        
+        return "OK", 200
+    except Exception as e:
+        log.error(f"Webhook error: {e}")
+        return "Error", 500
 
 # ══════════════════════════════════════════════════════════════════
 # PRODUCTS ENDPOINTS
