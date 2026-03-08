@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شكراً لك! | NEO PULSE HUB</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <style>
+:root{--bg:#020510;--surface:#0a0d1a;--border:rgba(99,179,237,.15);--blue2:#60a5fa;--cyan2:#22d3ee;--green:#10b981;--text:#e2e8f0;--muted:rgba(226,232,240,.55);--r2:22px;--rp:50px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:1rem}
+.bg-grid{position:fixed;inset:0;z-index:-1;background-image:linear-gradient(rgba(59,130,246,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,.04) 1px,transparent 1px);background-size:60px 60px}
+.card{background:var(--surface);border:1px solid rgba(16,185,129,.3);border-radius:var(--r2);padding:3rem 2.5rem;max-width:520px;width:100%;text-align:center;box-shadow:0 0 60px rgba(16,185,129,.1)}
+.check-circle{width:90px;height:90px;border-radius:50%;background:linear-gradient(135deg,#059669,#10b981);margin:0 auto 1.5rem;display:flex;align-items:center;justify-content:center;font-size:2.5rem;animation:pop .5s cubic-bezier(.175,.885,.32,1.275) both}
+@keyframes pop{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
+.logo{font-family:'Orbitron',sans-serif;font-size:.9rem;font-weight:700;background:linear-gradient(135deg,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:1.5rem}
+h1{font-size:1.8rem;font-weight:900;margin-bottom:.5rem}
+.sub{color:var(--muted);font-size:.95rem;margin-bottom:2rem;line-height:1.7}
+.order-num{background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.2);border-radius:.8rem;padding:.8rem 1.5rem;margin-bottom:2rem;font-family:'Orbitron',sans-serif;font-size:.9rem;color:var(--green)}
+.next-steps{text-align:right;margin-bottom:2rem}
+.step-item{display:flex;align-items:flex-start;gap:.8rem;padding:.7rem 0;border-bottom:1px solid var(--border);font-size:.88rem}
+.step-item:last-child{border-bottom:none}
+.step-icon{width:28px;height:28px;border-radius:50%;background:rgba(59,130,246,.1);display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;margin-top:.15rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 2rem;border-radius:var(--rp);font-family:'Cairo',sans-serif;font-weight:700;font-size:.95rem;cursor:pointer;border:none;text-decoration:none;transition:all .3s}
+.btn-primary{background:linear-gradient(135deg,#3b82f6,#7c3aed);color:#fff;margin-bottom:.7rem;width:100%;justify-content:center}
+.btn-outline{background:rgba(6,182,212,.06);border:1px solid rgba(6,182,212,.3);color:var(--cyan2);width:100%;justify-content:center}
+.btn:hover{transform:translateY(-2px)}
+.total-paid{font-size:1.4rem;font-weight:900;color:var(--green);margin:.5rem 0}
+  </style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="card">
+  <div class="logo">NEO PULSE HUB</div>
+  <div class="check-circle">✅</div>
+  <h1>شكراً لك! 🎉</h1>
+  <p class="sub">تم استلام طلبك بنجاح.<br>ستصلك رسالة تأكيد على بريدك الإلكتروني.</p>
+
+  <div class="order-num" id="orderNum">رقم الطلب: ---</div>
+  <div class="total-paid" id="totalPaid"></div>
+
+  <div class="next-steps">
+    <div class="step-item">
+      <div class="step-icon">📧</div>
+      <div><strong>تأكيد بالبريد</strong><br><span style="color:var(--muted)">ستصلك رسالة تأكيد خلال دقائق</span></div>
+    </div>
+    <div class="step-item">
+      <div class="step-icon">📦</div>
+      <div><strong>معالجة الطلب</strong><br><span style="color:var(--muted)">خلال 24-48 ساعة عمل</span></div>
+    </div>
+    <div class="step-item">
+      <div class="step-icon">🚚</div>
+      <div><strong>الشحن</strong><br><span style="color:var(--muted)">7-14 يوم حسب موقعك</span></div>
+    </div>
+    <div class="step-item">
+      <div class="step-icon">📱</div>
+      <div><strong>تتبع الشحنة</strong><br><span style="color:var(--muted)">رقم تتبع عبر تيليجرام @NeoPulseBot</span></div>
+    </div>
+  </div>
+
+  <a href="products.html" class="btn btn-primary">🛍️ تسوق المزيد</a>
+  <a href="https://t.me/NeoPulseBot" class="btn btn-outline">📞 تواصل مع الدعم</a>
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const id     = params.get("id");
+const total  = params.get("total");
+
+if (id)    document.getElementById("orderNum").textContent   = `رقم الطلب: ${id}-${Date.now().toString(36).toUpperCase()}`;
+if (total) document.getElementById("totalPaid").textContent  = `✅ دفعت: $${total}`;
+</script>
+</body>
+</html>
