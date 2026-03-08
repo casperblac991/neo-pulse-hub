@@ -17,6 +17,11 @@ from typing import Optional
 
 log = logging.getLogger("shared_db")
 
+# دالة مساعدة لتحويل المسارات بدون استخدام \ داخل f-string
+def safe_path(path_obj):
+    """تحويل كائن Path إلى نص مع / بدلاً من \\"""
+    return str(path_obj).replace('\\', '/')
+
 # ── Paths (relative to bots/ folder, data in parent) ──────────────
 BASE = Path(__file__).parent.parent
 DB   = {
@@ -77,7 +82,8 @@ def add_product(product: dict) -> dict:
     # Auto-generate ID
     ids = [p.get("id","") for p in products]
     n   = len(products) + 1
-    while f"NPH-{n:03d}" in ids: n += 1
+    while f"NPH-{n:03d}" in ids:
+        n += 1
     product["id"]       = f"NPH-{n:03d}"
     product["added_at"] = datetime.now().isoformat()
     product["active"]   = True
