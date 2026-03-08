@@ -1,4 +1,4 @@
-python-telegram-bot[job-queue]==21.7.2
+python-telegram-bot[job-queue]==22.0
 requests>=2.31.0
 flask>=3.0.0
 flask-cors>=4.0.0
