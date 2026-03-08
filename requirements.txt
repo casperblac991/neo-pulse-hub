@@ -3,8 +3,8 @@
 # تثبيت: pip install -r requirements.txt
 # ══════════════════════════════════════════════════════════════
 
-# ── Telegram Bot Framework ─────────────────────────────────────
-python-telegram-bot[job-queue]==21.7.2
+# ── Telegram Bot Framework (الإصدار الصحيح 21.11.1) ────────────
+python-telegram-bot[job-queue]==21.11.1
 
 # ── AI / Gemini ────────────────────────────────────────────────
 google-generativeai>=0.8.0
