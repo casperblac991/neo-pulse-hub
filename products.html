@@ -5,454 +5,217 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NEO PULSE HUB | المتجر الذكي</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&family=Poppins:wght@300;400;500;600;700;900&family=Orbitron:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&family=Orbitron:wght@400;500;600;700;900&display=swap" rel="stylesheet">
   <style>
-    /* نفس الـ CSS الرائع من index.html */
     :root {
-      --bg: #020510;
-      --surface: #0a0d1a;
-      --surface2: #0f1423;
-      --border: rgba(99,179,237,.12);
-      --border2: rgba(99,179,237,.25);
-      --blue: #3b82f6;
-      --blue2: #60a5fa;
-      --purple: #7c3aed;
-      --purple2: #a855f7;
-      --cyan: #06b6d4;
-      --cyan2: #22d3ee;
-      --green: #10b981;
-      --red: #ef4444;
-      --gold: #f59e0b;
-      --text: #e2e8f0;
-      --muted: rgba(226,232,240,.55);
-      --r: 12px;
-      --r2: 20px;
-      --rp: 50px;
-      --ease: .3s cubic-bezier(.4,0,.2,1);
-      --glow-b: 0 0 30px rgba(59,130,246,.35);
-      --glow-p: 0 0 30px rgba(124,58,237,.35);
-      --glow-c: 0 0 30px rgba(6,182,212,.35);
+      --bg:#020510;--surface:#0a0d1a;--surface2:#0f1423;
+      --border:rgba(99,179,237,.12);--border2:rgba(99,179,237,.25);
+      --blue:#3b82f6;--blue2:#60a5fa;--purple:#7c3aed;--purple2:#a855f7;
+      --cyan:#06b6d4;--cyan2:#22d3ee;--green:#10b981;--red:#ef4444;
+      --gold:#f59e0b;--text:#e2e8f0;--muted:rgba(226,232,240,.55);
+      --r:12px;--r2:20px;--rp:50px;--ease:.3s cubic-bezier(.4,0,.2,1);
+      --glow-b:0 0 30px rgba(59,130,246,.35);
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Cairo', 'Poppins', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-    }
-    .bg-grid {
-      position: fixed; inset: 0; z-index: -3;
-      background-image: linear-gradient(rgba(59,130,246,.04) 1px, transparent 1px),
-                        linear-gradient(90deg, rgba(59,130,246,.04) 1px, transparent 1px);
-      background-size: 60px 60px;
-    }
-    .bg-grad {
-      position: fixed; inset: 0; z-index: -2;
-      background: radial-gradient(ellipse 80% 50% at 20% 20%, rgba(124,58,237,.12), transparent 60%),
-                  radial-gradient(ellipse 60% 40% at 80% 80%, rgba(6,182,212,.08), transparent 60%);
-    }
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
-      display: flex; align-items: center; justify-content: space-between;
-      padding: .9rem 2.5rem;
-      background: rgba(2,5,16,.85);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--border);
-    }
-    .nav-logo {
-      font-family: 'Orbitron', sans-serif; font-size: 1.1rem; font-weight: 700;
-      background: linear-gradient(135deg, var(--blue2), var(--cyan2));
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    }
-    .nav-links { display: flex; gap: 1rem; list-style: none; }
-    .nav-links a {
-      color: var(--muted); text-decoration: none; padding: .35rem .8rem;
-      border-radius: 50px; transition: all var(--ease);
-    }
-    .nav-links a:hover, .nav-links a.active { color: var(--cyan2); background: rgba(6,182,212,.08); }
-    .products-page { padding: 100px 2rem 4rem; max-width: 1200px; margin: 0 auto; }
-    .page-header { text-align: center; margin-bottom: 2rem; }
-    .page-title {
-      font-family: 'Orbitron', sans-serif; font-size: 2rem;
-      background: linear-gradient(135deg, #fff, var(--blue2));
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-      margin-bottom: .5rem;
-    }
-    .category-info {
-      display: inline-block;
-      background: rgba(124,58,237,.2);
-      border: 1px solid var(--purple);
-      padding: .5rem 2rem;
-      border-radius: var(--rp);
-      color: var(--purple2);
-      margin-bottom: 2rem;
-    }
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-    .product-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--r2);
-      overflow: hidden;
-      transition: all var(--ease);
-      cursor: pointer;
-    }
-    .product-card:hover {
-      border-color: var(--border2);
-      transform: translateY(-6px);
-      box-shadow: 0 20px 40px rgba(0,0,0,.4), var(--glow-b);
-    }
-    .product-img {
-      height: 200px;
-      background: var(--surface2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 4rem;
-    }
-    .product-body { padding: 1.5rem; }
-    .product-name {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--text);
-      margin-bottom: .5rem;
-    }
-    .product-price {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 1.3rem;
-      font-weight: 700;
-      background: linear-gradient(135deg, var(--blue2), var(--cyan2));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .back-btn {
-      display: inline-block;
-      margin-top: 3rem;
-      padding: .8rem 2rem;
-      background: rgba(59,130,246,.1);
-      border: 1px solid var(--border2);
-      border-radius: var(--rp);
-      color: var(--text);
-      text-decoration: none;
-      transition: all var(--ease);
-    }
-    .back-btn:hover {
-      background: rgba(59,130,246,.2);
-      border-color: var(--blue2);
-      color: var(--blue2);
-    }
-    .no-products {
-      text-align: center;
-      padding: 4rem;
-      color: var(--muted);
-      font-size: 1.2rem;
-    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+    .bg-grid{position:fixed;inset:0;z-index:-3;background-image:linear-gradient(rgba(59,130,246,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,.04) 1px,transparent 1px);background-size:60px 60px}
+    .bg-grad{position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse 80% 50% at 20% 20%,rgba(124,58,237,.12),transparent 60%),radial-gradient(ellipse 60% 40% at 80% 80%,rgba(6,182,212,.08),transparent 60%)}
+    nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:.9rem 2.5rem;background:rgba(2,5,16,.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+    .nav-logo{font-family:'Orbitron',sans-serif;font-size:1.1rem;font-weight:700;background:linear-gradient(135deg,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none}
+    .nav-links{display:flex;gap:1rem;list-style:none}
+    .nav-links a{color:var(--muted);text-decoration:none;padding:.35rem .8rem;border-radius:50px;transition:all var(--ease)}
+    .nav-links a:hover,.nav-links a.active{color:var(--cyan2);background:rgba(6,182,212,.08)}
+    .page{padding:100px 2rem 4rem;max-width:1300px;margin:0 auto}
+    .page-header{text-align:center;margin-bottom:2rem}
+    .page-title{font-family:'Orbitron',sans-serif;font-size:2rem;background:linear-gradient(135deg,#fff,var(--blue2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.5rem}
+    .search-bar{display:flex;gap:.7rem;max-width:500px;margin:0 auto 1.5rem}
+    .search-bar input{flex:1;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--rp);padding:.7rem 1.2rem;color:var(--text);font-family:'Cairo',sans-serif;font-size:1rem;outline:none;transition:border-color var(--ease)}
+    .search-bar input:focus{border-color:var(--blue2)}
+    .search-bar button{background:linear-gradient(135deg,var(--blue),var(--purple));border:none;border-radius:var(--rp);padding:.7rem 1.5rem;color:white;cursor:pointer;font-size:1rem}
+    .filters{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center;margin-bottom:1.5rem}
+    .filter-btn{padding:.45rem 1.2rem;border-radius:var(--rp);border:1px solid var(--border2);background:transparent;color:var(--muted);cursor:pointer;font-family:'Cairo',sans-serif;font-size:.9rem;transition:all var(--ease)}
+    .filter-btn:hover,.filter-btn.active{background:rgba(59,130,246,.15);border-color:var(--blue2);color:var(--blue2)}
+    .results-count{color:var(--muted);text-align:center;margin-bottom:1.5rem;font-size:.9rem}
+    .products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem}
+    .product-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);overflow:hidden;cursor:pointer;transition:all var(--ease);display:flex;flex-direction:column}
+    .product-card:hover{border-color:var(--border2);transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,.4),var(--glow-b)}
+    .product-img{height:200px;overflow:hidden;position:relative;background:var(--surface2)}
+    .product-img img{width:100%;height:100%;object-fit:cover;transition:transform var(--ease)}
+    .product-card:hover .product-img img{transform:scale(1.05)}
+    .product-img-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:4rem}
+    .product-badge{position:absolute;top:.8rem;right:.8rem;background:linear-gradient(135deg,var(--blue),var(--purple));color:white;padding:.2rem .7rem;border-radius:var(--rp);font-size:.75rem;font-weight:700}
+    .discount-badge{position:absolute;top:.8rem;left:.8rem;background:var(--red);color:white;padding:.2rem .6rem;border-radius:var(--rp);font-size:.75rem}
+    .product-body{padding:1.2rem;flex:1;display:flex;flex-direction:column}
+    .product-cat{color:var(--muted);font-size:.8rem;margin-bottom:.3rem}
+    .product-name{font-size:1rem;font-weight:700;margin-bottom:.5rem}
+    .product-rating{display:flex;align-items:center;gap:.4rem;margin-bottom:.7rem}
+    .stars{color:var(--gold);font-size:.85rem}
+    .reviews{color:var(--muted);font-size:.8rem}
+    .product-footer{display:flex;align-items:center;justify-content:space-between;margin-top:auto}
+    .product-price{font-family:'Orbitron',sans-serif;font-size:1.2rem;font-weight:700;background:linear-gradient(135deg,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .original-price{color:var(--muted);font-size:.85rem;text-decoration:line-through}
+    .add-btn{background:linear-gradient(135deg,var(--blue),var(--purple));border:none;border-radius:var(--rp);padding:.5rem 1rem;color:white;cursor:pointer;font-size:.85rem;font-family:'Cairo',sans-serif;transition:opacity var(--ease)}
+    .add-btn:hover{opacity:.85}
+    .stock-low{color:var(--gold);font-size:.75rem;margin-top:.3rem}
+    .stock-out{color:var(--red);font-size:.75rem;margin-top:.3rem}
+    .loading{text-align:center;padding:5rem 2rem;grid-column:1/-1}
+    .spinner{width:50px;height:50px;border:3px solid var(--border2);border-top-color:var(--blue2);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 1.5rem}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .empty{text-align:center;padding:5rem 2rem;color:var(--muted);grid-column:1/-1}
+    .modal-overlay{position:fixed;inset:0;z-index:999;background:rgba(0,0,0,.8);backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:center;padding:1rem;opacity:0;pointer-events:none;transition:opacity var(--ease)}
+    .modal-overlay.open{opacity:1;pointer-events:all}
+    .modal{background:var(--surface);border:1px solid var(--border2);border-radius:var(--r2);max-width:650px;width:100%;max-height:90vh;overflow-y:auto;transform:translateY(20px);transition:transform var(--ease)}
+    .modal-overlay.open .modal{transform:translateY(0)}
+    .modal-img{height:260px;overflow:hidden;border-radius:var(--r2) var(--r2) 0 0}
+    .modal-img img{width:100%;height:100%;object-fit:cover}
+    .modal-img-ph{height:260px;display:flex;align-items:center;justify-content:center;font-size:7rem;background:var(--surface2);border-radius:var(--r2) var(--r2) 0 0}
+    .modal-body{padding:2rem}
+    .modal-cat{color:var(--cyan2);font-size:.85rem;margin-bottom:.5rem}
+    .modal-name{font-size:1.5rem;font-weight:700;margin-bottom:1rem}
+    .modal-desc{color:var(--muted);margin-bottom:1.5rem;line-height:1.8}
+    .feature-tag{display:inline-block;background:rgba(59,130,246,.1);border:1px solid var(--border2);border-radius:var(--rp);padding:.25rem .8rem;font-size:.8rem;margin:.25rem}
+    .modal-price{font-family:'Orbitron',sans-serif;font-size:2rem;font-weight:700;background:linear-gradient(135deg,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .modal-actions{display:flex;gap:1rem;margin-top:1.5rem}
+    .btn-primary{flex:1;background:linear-gradient(135deg,var(--blue),var(--purple));border:none;border-radius:var(--rp);padding:1rem;color:white;font-size:1rem;font-family:'Cairo',sans-serif;cursor:pointer}
+    .btn-secondary{flex:1;background:transparent;border:1px solid var(--border2);border-radius:var(--rp);padding:1rem;color:var(--muted);font-size:1rem;font-family:'Cairo',sans-serif;cursor:pointer;transition:all var(--ease)}
+    .btn-secondary:hover{border-color:var(--blue2);color:var(--blue2)}
+    .toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%) translateY(100px);background:var(--green);color:white;padding:.8rem 2rem;border-radius:var(--rp);font-size:1rem;z-index:9999;transition:transform .4s ease;white-space:nowrap}
+    .toast.show{transform:translateX(-50%) translateY(0)}
+    @media(max-width:768px){nav{padding:.8rem 1rem}.nav-links{display:none}.page{padding:80px 1rem 3rem}.page-title{font-size:1.5rem}}
   </style>
 </head>
 <body>
 <div class="bg-grid"></div>
 <div class="bg-grad"></div>
-
 <nav>
   <a href="index.html" class="nav-logo">NEO PULSE HUB</a>
   <ul class="nav-links">
     <li><a href="index.html">الرئيسية</a></li>
     <li><a href="products.html" class="active">المنتجات</a></li>
-    <li><a href="#">من نحن</a></li>
-    <li><a href="#">اتصل بنا</a></li>
+    <li><a href="index.html#about">من نحن</a></li>
+    <li><a href="index.html#contact">اتصل بنا</a></li>
   </ul>
 </nav>
-
-<div class="products-page" id="productsPage">
-  <!-- يتم التعبئة بواسطة JavaScript -->
-  <div style="text-align: center; padding: 4rem;">
-    <div style="font-size: 3rem; margin-bottom: 1rem;">⚡</div>
-    <h2>جاري تحميل المنتجات...</h2>
+<div class="page">
+  <div class="page-header">
+    <h1 class="page-title">🛍️ المتجر الذكي</h1>
+    <p style="color:var(--muted)">أحدث المنتجات التقنية بأفضل الأسعار</p>
   </div>
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="ابحث عن منتج..." onkeydown="if(event.key==='Enter')doSearch()">
+    <button onclick="doSearch()">🔍</button>
+  </div>
+  <div class="filters">
+    <button class="filter-btn active" onclick="filterBy('all',this)">🌟 الكل</button>
+    <button class="filter-btn" onclick="filterBy('smartwatch',this)">⌚ ساعات ذكية</button>
+    <button class="filter-btn" onclick="filterBy('smart-glasses',this)">🥽 نظارات ذكية</button>
+    <button class="filter-btn" onclick="filterBy('health',this)">💪 صحة ذكية</button>
+    <button class="filter-btn" onclick="filterBy('smart-home',this)">🏠 منزل ذكي</button>
+    <button class="filter-btn" onclick="filterBy('earbuds',this)">🎧 سماعات</button>
+    <button class="filter-btn" onclick="filterBy('productivity',this)">💼 إنتاجية</button>
+  </div>
+  <div class="results-count" id="resultsCount"></div>
+  <div id="productsGrid" class="products-grid"></div>
 </div>
-
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+  <div class="modal" id="modalContent"></div>
+</div>
+<div class="toast" id="toast"></div>
 <script>
-// ========== بيانات المنتجات (15 منتج ذكي) ==========
-const allProducts = [
-  // ساعات ذكية
-  {
-    id: 1,
-    name: "ساعة أبل الذكية Series 9",
-    category: "ساعات ذكية",
-    categoryId: "smartwatch",
-    price: 249.99,
-    image: "⌚",
-    description: "أحدث ساعة ذكية من أبل مع شاشة ريتينا دائماً"
-  },
-  {
-    id: 2,
-    name: "ساعة سامسونج Galaxy Watch 6",
-    category: "ساعات ذكية",
-    categoryId: "smartwatch",
-    price: 229.99,
-    image: "⌚",
-    description: "ساعة ذكية بإطار دوار وقياس ضغط الدم"
-  },
-  
-  // نظارات ذكية
-  {
-    id: 3,
-    name: "نظارة ميتا الذكية Ray-Ban",
-    category: "نظارات ذكية",
-    categoryId: "smart-glasses",
-    price: 329.99,
-    image: "🥽",
-    description: "نظارات ذكية من Ray-Ban بتقنية ميتا"
-  },
-  {
-    id: 4,
-    name: "نظارة Apple Vision Pro",
-    category: "نظارات ذكية",
-    categoryId: "smart-glasses",
-    price: 3499.99,
-    image: "🥽",
-    description: "أول حاسوب مكاني من Apple"
-  },
-  
-  // صحة ذكية
-  {
-    id: 5,
-    name: "خاتم Oura الذكي",
-    category: "صحة ذكية",
-    categoryId: "health",
-    price: 299.99,
-    image: "💍",
-    description: "خاتم ذكي لتتبع النوم والنشاط"
-  },
-  {
-    id: 6,
-    name: "مقياس صحة Withings",
-    category: "صحة ذكية",
-    categoryId: "health",
-    price: 199.99,
-    image: "⚖️",
-    description: "مقياس صحي متطور مع تخطيط القلب"
-  },
-  {
-    id: 7,
-    name: "سوار Fitbit Charge 6",
-    category: "صحة ذكية",
-    categoryId: "health",
-    price: 129.99,
-    image: "⌚",
-    description: "سوار لياقة مع تتبع النشاط"
-  },
-  
-  // منزل ذكي
-  {
-    id: 8,
-    name: "روبوت روبوروك S8",
-    category: "منزل ذكي",
-    categoryId: "smart-home",
-    price: 999.99,
-    image: "🤖",
-    description: "روبوت كنس وغسيل ذكي"
-  },
-  {
-    id: 9,
-    name: "مكبر Echo Studio",
-    category: "منزل ذكي",
-    categoryId: "smart-home",
-    price: 179.99,
-    image: "🔊",
-    description: "مكبر صوت ذكي مع أليكسا"
-  },
-  {
-    id: 10,
-    name: "ثرموستات Nest",
-    category: "منزل ذكي",
-    categoryId: "smart-home",
-    price: 199.99,
-    image: "🌡️",
-    description: "ثرموستات ذكي يوفر الطاقة"
-  },
-  
-  // سماعات ذكية
-  {
-    id: 11,
-    name: "سماعات سوني WH-1000XM5",
-    category: "سماعات ذكية",
-    categoryId: "earbuds",
-    price: 299.99,
-    image: "🎧",
-    description: "أفضل سماعات مانعة للضوضاء"
-  },
-  {
-    id: 12,
-    name: "سماعات Bose QC Ultra",
-    category: "سماعات ذكية",
-    categoryId: "earbuds",
-    price: 429.99,
-    image: "🎧",
-    description: "سماعات مع صوت مكاني"
-  },
-  
-  // إنتاجية
-  {
-    id: 13,
-    name: "مترجم Timekettle M3",
-    category: "إنتاجية",
-    categoryId: "productivity",
-    price: 149.99,
-    image: "🗣️",
-    description: "سماعات ترجمة فورية لـ 40 لغة"
-  },
-  {
-    id: 14,
-    name: "قلم S Pen Pro",
-    category: "إنتاجية",
-    categoryId: "productivity",
-    price: 79.99,
-    image: "✏️",
-    description: "قلم ذكي مع بلوتوث"
-  },
-  {
-    id: 15,
-    name: "جهاز Steam Deck",
-    category: "إنتاجية",
-    categoryId: "productivity",
-    price: 549.99,
-    image: "🎮",
-    description: "جهاز ألعاب محمول"
-  }
-];
+const GITHUB_RAW="https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/products.json";
+const CACHE_KEY="nph_v2";
+const CACHE_TTL=60000;
+let allProducts=[];
+let activeFilter="all";
+let searchQuery="";
 
-// ========== عرض المنتجات حسب الفئة أو البحث ==========
-function displayProducts() {
-  // قراءة المعاملات من الرابط
-  const urlParams = new URLSearchParams(window.location.search);
-  const category = urlParams.get('cat');
-  const searchQuery = urlParams.get('search');
-  
-  let filteredProducts = [];
-  let pageTitle = "جميع المنتجات";
-  let categoryName = "";
-  
-  // تصفية حسب الفئة
-  if (category) {
-    filteredProducts = allProducts.filter(p => p.categoryId === category);
-    
-    // تحديد اسم الفئة
-    const categoryMap = {
-      'smartwatch': 'الساعات الذكية',
-      'smart-glasses': 'النظارات الذكية',
-      'health': 'الصحة الذكية',
-      'smart-home': 'المنزل الذكي',
-      'earbuds': 'السماعات الذكية',
-      'productivity': 'الإنتاجية'
-    };
-    categoryName = categoryMap[category] || category;
-    pageTitle = categoryName;
-  }
-  // تصفية حسب البحث
-  else if (searchQuery) {
-    const query = searchQuery.toLowerCase();
-    filteredProducts = allProducts.filter(p => 
-      p.name.includes(query) || p.category.includes(query)
-    );
-    pageTitle = `نتائج البحث عن: "${searchQuery}"`;
-  }
-  // عرض الكل
-  else {
-    filteredProducts = allProducts;
-  }
-  
-  // عرض النتائج
-  const pageDiv = document.getElementById('productsPage');
-  
-  if (filteredProducts.length === 0) {
-    pageDiv.innerHTML = `
-      <div class="page-header">
-        <h1 class="page-title">${pageTitle}</h1>
-      </div>
-      <div class="no-products">
-        <div style="font-size: 4rem; margin-bottom: 1rem;">😕</div>
-        <h2>لا توجد منتجات</h2>
-        <p>لم نجد منتجات تطابق بحثك</p>
-        <a href="products.html" class="back-btn">← عرض جميع المنتجات</a>
-      </div>
-    `;
-    return;
-  }
-  
-  // بناء HTML المنتجات
-  let productsHTML = '';
-  filteredProducts.forEach(p => {
-    productsHTML += `
-      <div class="product-card" onclick="showProductDetails(${p.id})">
-        <div class="product-img">${p.image}</div>
-        <div class="product-body">
-          <div class="product-name">${p.name}</div>
-          <div style="color: var(--muted); font-size: 0.9rem; margin-bottom: 0.5rem;">${p.category}</div>
-          <div class="product-price">$${p.price}</div>
-        </div>
-      </div>
-    `;
-  });
-  
-  // عرض الصفحة كاملة
-  pageDiv.innerHTML = `
-    <div class="page-header">
-      <h1 class="page-title">${pageTitle}</h1>
-      ${category ? `<div class="category-info">${filteredProducts.length} منتج متاح</div>` : ''}
-    </div>
-    <div class="products-grid">
-      ${productsHTML}
-    </div>
-    <div style="text-align: center;">
-      <a href="index.html" class="back-btn">← العودة للرئيسية</a>
-    </div>
-  `;
+async function loadProducts(){
+  showLoading();
+  try{
+    const cached=sessionStorage.getItem(CACHE_KEY);
+    if(cached){const{data,time}=JSON.parse(cached);if(Date.now()-time<CACHE_TTL){allProducts=data;applyFilters();return;}}
+    const r=await fetch(GITHUB_RAW+"?t="+Date.now());
+    if(!r.ok)throw new Error("fetch failed");
+    allProducts=await r.json();
+    sessionStorage.setItem(CACHE_KEY,JSON.stringify({data:allProducts,time:Date.now()}));
+    applyFilters();
+  }catch(e){showError();}
 }
 
-// ========== عرض تفاصيل المنتج ==========
-function showProductDetails(id) {
-  const product = allProducts.find(p => p.id === id);
-  if (!product) return;
-  
-  const pageDiv = document.getElementById('productsPage');
-  pageDiv.innerHTML = `
-    <div class="page-header">
-      <h1 class="page-title">${product.name}</h1>
-    </div>
-    <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 2rem; max-width: 600px; margin: 0 auto;">
-      <div style="font-size: 6rem; text-align: center; margin-bottom: 2rem;">${product.image}</div>
-      <h2 style="margin-bottom: 1rem;">${product.name}</h2>
-      <p style="color: var(--muted); margin-bottom: 1rem;">${product.description}</p>
-      <div style="font-size: 2rem; font-family: 'Orbitron'; background: linear-gradient(135deg, var(--blue2), var(--cyan2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1rem;">
-        $${product.price}
-      </div>
-      <div style="display: flex; gap: 1rem; margin-top: 2rem;">
-        <button onclick="addToCart(${product.id})" style="flex:1; background: linear-gradient(135deg, var(--blue), var(--purple)); color: white; border: none; padding: 1rem; border-radius: 50px; font-size: 1rem; cursor: pointer;">
-          🛒 أضف للسلة
-        </button>
-        <button onclick="displayProducts()" style="flex:1; background: rgba(6,182,212,.08); border: 1px solid var(--cyan2); color: var(--cyan2); padding: 1rem; border-radius: 50px; font-size: 1rem; cursor: pointer;">
-          ← رجوع
-        </button>
-      </div>
-    </div>
-  `;
+function showLoading(){
+  document.getElementById("productsGrid").innerHTML=`<div class="loading"><div class="spinner"></div><p style="color:var(--muted)">جاري تحميل المنتجات...</p></div>`;
+}
+function showError(){
+  document.getElementById("productsGrid").innerHTML=`<div class="empty"><div style="font-size:4rem">😕</div><h3>تعذّر تحميل المنتجات</h3><button onclick="loadProducts()" style="margin-top:1rem;background:rgba(59,130,246,.15);border:1px solid var(--border2);color:var(--blue2);padding:.6rem 1.5rem;border-radius:50px;cursor:pointer;font-family:'Cairo',sans-serif">🔄 إعادة المحاولة</button></div>`;
 }
 
-// ========== إضافة للسلة ==========
-function addToCart(id) {
-  const product = allProducts.find(p => p.id === id);
-  alert(`✅ تمت إضافة ${product.name} إلى السلة!`);
-  // هنا يمكن إضافة منطق السلة الحقيقي
+function filterBy(cat,btn){
+  activeFilter=cat;searchQuery="";
+  document.getElementById("searchInput").value="";
+  document.querySelectorAll(".filter-btn").forEach(b=>b.classList.remove("active"));
+  btn.classList.add("active");
+  applyFilters();
 }
-
-// ========== تشغيل عند تحميل الصفحة ==========
-window.onload = displayProducts;
+function doSearch(){
+  searchQuery=document.getElementById("searchInput").value.trim();
+  activeFilter="all";
+  document.querySelectorAll(".filter-btn").forEach(b=>b.classList.remove("active"));
+  document.querySelector(".filter-btn").classList.add("active");
+  applyFilters();
+}
+function applyFilters(){
+  let list=allProducts.filter(p=>p.active!==false);
+  if(activeFilter!=="all")list=list.filter(p=>p.category===activeFilter);
+  if(searchQuery){
+    const q=searchQuery.toLowerCase();
+    list=list.filter(p=>(p.name_ar||"").includes(q)||(p.name_en||"").toLowerCase().includes(q)||(p.category_ar||"").includes(q)||(p.tags||[]).some(t=>t.includes(q)));
+  }
+  const urlCat=new URLSearchParams(window.location.search).get("cat");
+  if(urlCat&&activeFilter==="all"&&!searchQuery)list=list.filter(p=>p.category===urlCat);
+  document.getElementById("resultsCount").textContent=list.length>0?list.length+" منتج متاح":"";
+  renderGrid(list);
+}
+function stars(r){const f=Math.floor(r||0);return"★".repeat(f)+"☆".repeat(5-f);}
+const emojiMap={"smartwatch":"⌚","smart-glasses":"🥽","health":"💪","smart-home":"🏠","earbuds":"🎧","productivity":"💼"};
+function catEmoji(c){return emojiMap[c]||"📦";}
+function renderGrid(list){
+  const grid=document.getElementById("productsGrid");
+  if(!list.length){grid.innerHTML=`<div class="empty"><div style="font-size:4rem">🔍</div><h3>لا توجد نتائج</h3></div>`;return;}
+  grid.innerHTML=list.map(p=>{
+    const img=p.image?`<img src="${p.image}" alt="${p.name_ar}" loading="lazy" onerror="this.parentNode.innerHTML='<div class=product-img-placeholder>${catEmoji(p.category)}</div>'">`:`<div class="product-img-placeholder">${catEmoji(p.category)}</div>`;
+    const badge=p.badge?`<div class="product-badge">${p.badge}</div>`:"";
+    const disc=p.discount>0?`<div class="discount-badge">-${p.discount}%</div>`:"";
+    const orig=p.original_price>p.price?`<div class="original-price">$${p.original_price}</div>`:"";
+    const stock=p.stock===0?`<div class="stock-out">❌ نفد</div>`:p.stock<=5?`<div class="stock-low">⚠️ آخر ${p.stock}</div>`:"";
+    return`<div class="product-card" onclick="openModal('${p.id}')"><div class="product-img">${img}${badge}${disc}</div><div class="product-body"><div class="product-cat">${p.category_ar||""}</div><div class="product-name">${p.name_ar}</div><div class="product-rating"><span class="stars">${stars(p.rating)}</span><span class="reviews">(${p.reviews||0})</span></div>${stock}<div class="product-footer"><div><div class="product-price">$${p.price}</div>${orig}</div><button class="add-btn" onclick="event.stopPropagation();addToCart('${p.id}')">🛒 أضف</button></div></div></div>`;
+  }).join("");
+}
+function openModal(id){
+  const p=allProducts.find(x=>x.id===id);if(!p)return;
+  const img=p.image?`<div class="modal-img"><img src="${p.image}" alt="${p.name_ar}"></div>`:`<div class="modal-img-ph">${catEmoji(p.category)}</div>`;
+  const feats=(p.features_ar||[]).length?`<div style="margin-bottom:1.5rem"><p style="color:var(--blue2);margin-bottom:.7rem">✨ المميزات</p>${p.features_ar.map(f=>`<span class="feature-tag">${f}</span>`).join("")}</div>`:"";
+  const ship=p.shipping_days?`<p style="color:var(--muted);font-size:.85rem;margin-bottom:1rem">🚚 الشحن: ${p.shipping_days} يوم</p>`:"";
+  document.getElementById("modalContent").innerHTML=`${img}<div class="modal-body"><div class="modal-cat">${p.category_ar||""}</div><div class="modal-name">${p.name_ar}</div><div class="product-rating" style="margin-bottom:1rem"><span class="stars">${stars(p.rating)}</span><span class="reviews">(${p.reviews||0} تقييم)</span></div><div class="modal-desc">${p.description_ar||""}</div>${feats}${ship}<div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap"><div class="modal-price">$${p.price}</div>${p.original_price>p.price?`<div style="color:var(--muted);text-decoration:line-through">$${p.original_price}</div>`:""} ${p.discount>0?`<div class="product-badge">وفّر ${p.discount}%</div>`:""}</div><div class="modal-actions"><button class="btn-primary" onclick="addToCart('${p.id}')">🛒 أضف إلى السلة</button><button class="btn-secondary" onclick="closeModal()">✕ إغلاق</button></div></div>`;
+  document.getElementById("modalOverlay").classList.add("open");
+}
+function closeModal(e){if(!e||e.target===document.getElementById("modalOverlay"))document.getElementById("modalOverlay").classList.remove("open");}
+function addToCart(id){
+  const p=allProducts.find(x=>x.id===id);if(!p)return;
+  if(p.stock===0){showToast("❌ المنتج غير متوفر");return;}
+  showToast("✅ تمت إضافة "+p.name_ar+" إلى السلة!");
+}
+function showToast(msg){
+  const t=document.getElementById("toast");t.textContent=msg;t.classList.add("show");
+  setTimeout(()=>t.classList.remove("show"),3000);
+}
+window.addEventListener("DOMContentLoaded",()=>{
+  const urlCat=new URLSearchParams(window.location.search).get("cat");
+  if(urlCat){
+    const btn=document.querySelector(`.filter-btn[onclick*="${urlCat}"]`);
+    if(btn){document.querySelectorAll(".filter-btn").forEach(b=>b.classList.remove("active"));btn.classList.add("active");activeFilter=urlCat;}
+  }
+  loadProducts();
+});
 </script>
 </body>
 </html>
