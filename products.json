@@ -397,5 +397,29 @@
       "ساعة ذكية سامسونج"
     ],
     "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400"
+  },
+  {
+    "id": "NPH-520",
+    "name_ar": "Oppo Air Glass 2 بالذكاء الاصطناعي",
+    "name_en": "Oppo Air Glass 2 بالذكاء الاصطناعي",
+    "price": 99,
+    "original_price": 129,
+    "category": "smart-home",
+    "category_ar": "منتجات ذكية",
+    "rating": 4.3,
+    "reviews": 500,
+    "stock": 50,
+    "discount": 10,
+    "featured": false,
+    "active": true,
+    "features_ar": [
+      "منتج تقني متقدم",
+      "جودة عالية"
+    ],
+    "description_ar": "منتج تقني مميز",
+    "tags": [
+      "Oppo Air Glass 2 بالذكاء الاصطناعي"
+    ],
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400"
   }
 ]
