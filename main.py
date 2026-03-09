@@ -2,20 +2,15 @@
 # -*- coding: utf-8 -*-
 """
 ╔══════════════════════════════════════════════════════════════════╗
-║   NEO PULSE HUB - Bot Launcher (Webhook Only)                  ║
-║   يشغل جميع البوتات مع تعطيل Polling نهائياً                   ║
+║   NEO PULSE HUB - Bot Launcher (All Bots)                      ║
+║   يشغل جميع البوتات الأربعة معاً                               ║
 ╚══════════════════════════════════════════════════════════════════╝
 """
 
-# Force disable polling completely
 import os
-os.environ['PYTHON_TELEGRAM_BOT_POLLING'] = 'false'
-os.environ['PTB_POLLING'] = 'false'
-
 import sys
 import time
 import logging
-import asyncio
 import threading
 from datetime import datetime
 
@@ -39,7 +34,7 @@ logger = logging.getLogger("launcher")
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 # ══════════════════════════════════════════════════════════════════
-# استيراد البوتات
+# استيراد جميع البوتات
 # ══════════════════════════════════════════════════════════════════
 
 try:
@@ -58,32 +53,55 @@ except ImportError as e:
 # ══════════════════════════════════════════════════════════════════
 
 def check_environment():
-    """التحقق من وجود المتغيرات البيئية الأساسية"""
-    token = os.environ.get('TELEGRAM_TOKEN')
-    if not token:
-        logger.error("❌ TELEGRAM_TOKEN غير موجود في المتغيرات البيئية!")
-        return False
+    """التحقق من وجود جميع التوكنات"""
+    tokens = {
+        'TELEGRAM_TOKEN': os.environ.get('TELEGRAM_TOKEN'),
+        'ADMIN_BOT_TOKEN': os.environ.get('ADMIN_BOT_TOKEN'),
+        'RECOMMEND_BOT_TOKEN': os.environ.get('RECOMMEND_BOT_TOKEN'),
+        'SUPPLIER_BOT_TOKEN': os.environ.get('SUPPLIER_BOT_TOKEN'),
+    }
     
-    # التحقق من طول التوكن (تقريبي)
-    if len(token) < 40:
-        logger.error(f"❌ TELEGRAM_TOKEN يبدو غير صحيح (طوله {len(token)})")
-        return False
+    all_ok = True
+    for name, token in tokens.items():
+        if not token:
+            logger.error(f"❌ {name} غير موجود في المتغيرات البيئية!")
+            all_ok = False
+        else:
+            logger.info(f"✅ {name} موجود (آخر 4 أحرف: ...{token[-4:]})")
     
-    logger.info(f"✅ TELEGRAM_TOKEN موجود (آخر 4 أحرف: ...{token[-4:]})")
-    return True
+    return all_ok
 
 # ══════════════════════════════════════════════════════════════════
-# دوال تشغيل البوتات (مع Webhook فقط)
+# دوال تشغيل البوتات
 # ══════════════════════════════════════════════════════════════════
+
+def run_bot(bot_name, bot_module, token_env):
+    """تشغيل بوت معين مع التوكن الخاص به"""
+    try:
+        logger.info(f"🚀 بدء تشغيل {bot_name}...")
+        
+        # تعيين التوكن المناسب للبوت
+        token = os.environ.get(token_env)
+        if not token:
+            logger.error(f"❌ {token_env} غير موجود!")
+            return
+        
+        os.environ['TELEGRAM_TOKEN'] = token
+        
+        if hasattr(bot_module, 'main'):
+            bot_module.main()
+        else:
+            logger.error(f"❌ {bot_name} لا يحتوي على دالة main()")
+    except Exception as e:
+        logger.error(f"💥 {bot_name} error: {e}")
 
 def run_webhook():
-    """تشغيل خادم API (الطريقة الوحيدة المسموح بها)"""
+    """تشغيل خادم API"""
     try:
         logger.info("🌐 بدء تشغيل Webhook Server...")
         port = int(os.environ.get('PORT', 10000))
         logger.info(f"📡 Webhook listening on port {port}")
         
-        # تشغيل Flask
         webhook_server.app.run(
             host='0.0.0.0',
             port=port,
@@ -97,10 +115,10 @@ def run_webhook():
 # ══════════════════════════════════════════════════════════════════
 
 def main():
-    """تشغيل Webhook Server فقط"""
+    """تشغيل جميع البوتات"""
     
     logger.info("=" * 60)
-    logger.info("🤖 NEO PULSE HUB - Bot Launcher (Webhook Only)")
+    logger.info("🤖 NEO PULSE HUB - All Bots Launcher")
     logger.info(f"📅 تاريخ التشغيل: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     logger.info("=" * 60)
     
@@ -109,18 +127,54 @@ def main():
         logger.error("❌ فشل التحقق من المتغيرات البيئية. إيقاف التشغيل.")
         sys.exit(1)
     
-    # تحذير مهم
-    logger.info("⚠️ تم تعطيل Polling نهائياً. استخدام Webhook فقط.")
+    # قائمة البوتات
+    bots = [
+        ("Webhook", run_webhook, None, None),
+        ("Customer", run_bot, customer_bot, 'TELEGRAM_TOKEN'),
+        ("Admin", run_bot, admin_bot, 'ADMIN_BOT_TOKEN'),
+        ("Recommendation", run_bot, recommendation_bot, 'RECOMMEND_BOT_TOKEN'),
+        ("Supplier", run_bot, supplier_bot, 'SUPPLIER_BOT_TOKEN'),
+    ]
     
-    # تشغيل Webhook Server فقط (بدون أي بوتات Polling)
+    # تشغيل كل بوت في Thread منفصل
+    threads = []
+    
+    for name, func, module, token_env in bots:
+        try:
+            if module:
+                thread = threading.Thread(
+                    target=func,
+                    args=(name, module, token_env),
+                    name=name,
+                    daemon=True
+                )
+            else:
+                thread = threading.Thread(
+                    target=func,
+                    name=name,
+                    daemon=True
+                )
+            
+            thread.start()
+            threads.append(thread)
+            logger.info(f"✅ {name} thread started successfully")
+            time.sleep(2)  # مهلة بين البوتات
+        except Exception as e:
+            logger.error(f"❌ فشل تشغيل {name}: {e}")
+    
+    logger.info("🎉 جميع البوتات تعمل بنجاح!")
+    logger.info("=" * 60)
+    
+    # مراقبة البوتات
     try:
-        run_webhook()
+        while True:
+            time.sleep(60)
+            alive = sum(1 for t in threads if t.is_alive())
+            logger.info(f"📊 حالة البوتات: {alive}/{len(threads)} تعمل")
     except KeyboardInterrupt:
-        logger.info("👋 إيقاف الخادم...")
+        logger.info("👋 إيقاف البوتات...")
     except Exception as e:
         logger.error(f"💥 خطأ غير متوقع: {e}")
-    finally:
-        logger.info("🏁 تم إنهاء التشغيل")
 
 if __name__ == "__main__":
     main()
