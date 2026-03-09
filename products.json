@@ -373,5 +373,29 @@
       "ar": "منبه ذكي لمحاكاة شروق الشمس، أصوات طبيعية، وتأملات موجهة لنوم أفضل.",
       "en": "Smart alarm clock with sunrise simulation, nature sounds, and guided meditations for better sleep."
     }
+  },
+  {
+    "id": "NPH-288",
+    "name_ar": "ساعة ذكية سامسونج",
+    "name_en": "ساعة ذكية سامسونج",
+    "price": 99,
+    "original_price": 129,
+    "category": "smart-home",
+    "category_ar": "منتجات ذكية",
+    "rating": 4.3,
+    "reviews": 500,
+    "stock": 50,
+    "discount": 10,
+    "featured": false,
+    "active": true,
+    "features_ar": [
+      "منتج تقني متقدم",
+      "جودة عالية"
+    ],
+    "description_ar": "منتج تقني مميز",
+    "tags": [
+      "ساعة ذكية سامسونج"
+    ],
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400"
   }
 ]
