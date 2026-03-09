@@ -1,249 +1,126 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-╔══════════════════════════════════════════════════════════════════╗
-║   NEO PULSE HUB — Webhook API Server (Multi-Bot - Paths)       ║
-║   مسارات منفصلة لكل بوت لضمان عدم التداخل                      ║
-╚══════════════════════════════════════════════════════════════════╝
+NEO PULSE HUB — Webhook Server (Multi-Bot)
+مسار منفصل لكل بوت مع ردود كاملة
 """
 
-import os
-import sys
-import json
-import logging
-import requests
+import os, sys, json, logging, requests
 from datetime import datetime
 from functools import wraps
 from flask import Flask, request, jsonify, abort
 from flask_cors import CORS
 
 try:
-    from dotenv import load_dotenv
-    load_dotenv()
+    from dotenv import load_dotenv; load_dotenv()
 except ImportError:
     pass
 
-# إضافة مسار المجلد الحالي للمكتبات
-sys.path.insert(0, os.path.dirname(__file__))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-# استيراد دوال قاعدة البيانات
 try:
     from shared_db import (
         get_products, get_product, search_products, get_products_by_category,
         get_featured_products, create_order, upsert_user, subscribe_email,
         add_review, get_product_reviews, track_event, track_product_view,
-        get_analytics_summary, get_orders_by_user, init_db
+        get_analytics_summary, get_orders_by_user, get_low_stock,
+        get_out_of_stock, update_product, init_db
     )
     from ai_engine import (
         answer_customer, recommend_products, extract_budget,
-        continue_conversation
+        continue_conversation, generate_store_report
     )
+    DB_OK = True
 except ImportError as e:
-    print(f"⚠️ Warning: Could not import shared_db or ai_engine: {e}")
-    # Define dummy functions if imports fail
+    print("Warning: " + str(e))
+    DB_OK = False
     def get_products(): return []
-    def get_product(pid): return None
+    def get_product(p): return None
     def search_products(q): return []
-    def get_products_by_category(cat): return []
-    def get_featured_products(limit): return []
-    def create_order(*args, **kwargs): return {"id": "dummy"}
-    def upsert_user(*args, **kwargs): return {"id": 0}
-    def subscribe_email(email): return True
-    def add_review(*args, **kwargs): return {}
-    def get_product_reviews(pid): return []
-    def track_event(event, data): pass
-    def track_product_view(pid, uid=None): pass
+    def get_products_by_category(c): return []
+    def get_featured_products(n): return []
+    def create_order(*a, **k): return {"id":"X","total":0}
+    def upsert_user(*a, **k): return {"id":0}
+    def subscribe_email(e): return True
+    def add_review(*a, **k): return {}
+    def get_product_reviews(p): return []
+    def track_event(e,d): pass
+    def track_product_view(p): pass
     def get_analytics_summary(): return {}
-    def get_orders_by_user(uid): return []
+    def get_orders_by_user(u): return []
+    def get_low_stock(t=5): return []
+    def get_out_of_stock(): return []
+    def update_product(p,d): return False
     def init_db(): pass
-    def answer_customer(*args, **kwargs): return "AI response"
-    def recommend_products(*args, **kwargs): return []
-    def extract_budget(text): return None
-    def continue_conversation(*args, **kwargs): return "Conversation"
+    def answer_customer(*a,**k): return "AI غير متوفر"
+    def recommend_products(*a,**k): return []
+    def extract_budget(t): return None
+    def continue_conversation(*a,**k): return "AI غير متوفر"
+    def generate_store_report(a): return "AI غير متوفر"
 
-# ── Config ─────────────────────────────────────────────────────────
-PORT = int(os.environ.get("PORT", 10000))
-HOST = os.environ.get("API_HOST", "0.0.0.0")
-API_SECRET = os.environ.get("API_SECRET", "neopulse_secret_2026")
+# ── Config ──────────────────────────────────────────────────────────
+PORT      = int(os.environ.get("PORT", 10000))
+HOST      = "0.0.0.0"
 ADMIN_KEY = os.environ.get("ADMIN_API_KEY", "admin_nph_2026")
-DEBUG = os.environ.get("FLASK_DEBUG", "0") == "1"
+ADMIN_ID  = int(os.environ.get("ADMIN_USER_ID", "0"))
+SITE_URL  = os.environ.get("SITE_URL", "https://neo-pulse-hub.it.com")
+PAYPAL    = os.environ.get("PAYPAL_EMAIL", "Saidchaik@gmail.com")
 
-# توكنات البوتات (كلها من المتغيرات البيئية)
 BOT_TOKENS = {
-    'customer': os.environ.get('TELEGRAM_TOKEN', ''),
-    'admin': os.environ.get('ADMIN_BOT_TOKEN', ''),
-    'recommendation': os.environ.get('RECOMMEND_BOT_TOKEN', ''),
-    'supplier': os.environ.get('SUPPLIER_BOT_TOKEN', ''),
+    "customer":       os.environ.get("CUSTOMER_BOT_TOKEN") or os.environ.get("TELEGRAM_TOKEN",""),
+    "admin":          os.environ.get("ADMIN_BOT_TOKEN",""),
+    "recommendation": os.environ.get("RECO_BOT_TOKEN") or os.environ.get("RECOMMEND_BOT_TOKEN",""),
+    "supplier":       os.environ.get("SUPPLIER_BOT_TOKEN",""),
 }
 
-# رسائل الترحيب لكل بوت
-WELCOME_MESSAGES = {
-    'customer': (
-        "👋 مرحباً بك في **NEO PULSE HUB**!\n\n"
-        "أنا بوت خدمة العملاء. كيف يمكنني مساعدتك؟\n\n"
-        "الأوامر المتاحة:\n"
-        "/start - الترحيب\n"
-        "/products - عرض المنتجات\n"
-        "/help - المساعدة"
-    ),
-    'admin': (
-        "👑 مرحباً بك في **بوت الإدارة**\n\n"
-        "هذا البوت مخصص للمدير فقط.\n\n"
-        "الأوامر المتاحة:\n"
-        "/stats - إحصائيات المتجر\n"
-        "/broadcast [رسالة] - بث للمستخدمين\n"
-        "/add_product - إضافة منتج"
-    ),
-    'recommendation': (
-        "🎯 مرحباً بك في **بوت التوصيات الذكي**\n\n"
-        "سأساعدك في اختيار المنتج المناسب.\n\n"
-        "الأوامر المتاحة:\n"
-        "/recommend [وصف] - توصية مخصصة\n"
-        "/compare [منتج1] vs [منتج2] - مقارنة\n"
-        "/budget [مبلغ] - منتجات ضمن الميزانية"
-    ),
-    'supplier': (
-        "📦 مرحباً بك في **بوت الموردين**\n\n"
-        "هذا البوت لإدارة المخزون والمنتجات.\n\n"
-        "الأوامر المتاحة:\n"
-        "/add [وصف] - إضافة منتج بالذكاء الاصطناعي\n"
-        "/stock - حالة المخزون\n"
-        "/restock [ID] [كمية] - تحديث المخزون"
-    )
-}
-
-logging.basicConfig(
-    format="%(asctime)s | %(name)s | %(levelname)s | %(message)s",
-    level=logging.INFO
-)
-log = logging.getLogger("webhook_server")
+logging.basicConfig(format="%(asctime)s | %(levelname)s | %(message)s", level=logging.INFO)
+log = logging.getLogger("webhook")
 
 app = Flask(__name__)
-CORS(app, origins=[
-    "https://neo-pulse-hub.it.com",
-    "https://www.neo-pulse-hub.it.com",
-    "http://localhost:*",
-    "http://127.0.0.1:*",
-])
+CORS(app, origins=["*"])
 
-# ── In-memory conversation store ───────────────────────────────────
-_conversations: dict = {}  # {session_id: [history]}
-
-# ══════════════════════════════════════════════════════════════════
-# دالة مساعدة لإرسال الرسائل
-# ══════════════════════════════════════════════════════════════════
-
-def send_message(chat_id, text, bot_token, parse_mode='Markdown'):
-    """إرسال رسالة إلى تيليجرام باستخدام بوت معين"""
-    try:
-        if not bot_token:
-            log.error("❌ No bot token provided for sending message")
-            return False
-        url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
-        payload = {
-            'chat_id': chat_id,
-            'text': text,
-            'parse_mode': parse_mode
-        }
-        response = requests.post(url, json=payload, timeout=5)
-        if response.status_code == 200:
-            log.info(f"✅ Message sent to {chat_id}")
-            return True
-        else:
-            log.error(f"❌ Failed to send: {response.status_code} - {response.text}")
-            return False
-    except Exception as e:
-        log.error(f"Error sending message: {e}")
-        return False
-
-# ══════════════════════════════════════════════════════════════════
-# TELEGRAM WEBHOOKS - مسار منفصل لكل بوت
-# ══════════════════════════════════════════════════════════════════
-
-def handle_webhook(bot_name):
-    """معالج موحد لجميع الـ webhooks"""
-    try:
-        update = request.get_json()
-        update_id = update.get('update_id')
-        log.info(f"📩 {bot_name} bot received update: {update_id}")
-        
-        # الحصول على توكن البوت المناسب
-        bot_token = BOT_TOKENS.get(bot_name)
-        if not bot_token:
-            log.error(f"❌ No token found for {bot_name} bot")
-            return "Error", 500
-        
-        # معالجة الرسالة
-        if 'message' in update and 'text' in update['message']:
-            chat_id = update['message']['chat']['id']
-            text = update['message']['text']
-            first_name = update['message']['chat'].get('first_name', 'صديقي')
-            
-            log.info(f"💬 {bot_name} bot received from {chat_id}: {text}")
-            
-            # تحديد الرد المناسب
-            reply_text = ""
-            
-            if text == '/start':
-                reply_text = WELCOME_MESSAGES.get(bot_name, WELCOME_MESSAGES['customer'])
-            elif text == '/products' and bot_name == 'customer':
-                products = get_products()
-                if products:
-                    reply_text = "🛍️ **المنتجات المتوفرة:**\n\n"
-                    for i, p in enumerate(products[:5], 1):
-                        name = p.get('name_ar', p.get('name_en', 'منتج'))
-                        price = p.get('price', 0)
-                        reply_text += f"{i}. {name} — *${price}*\n"
-                else:
-                    reply_text = "🛍️ لا توجد منتجات متاحة حالياً."
-            elif text == '/help' and bot_name == 'customer':
-                reply_text = (
-                    "📖 **المساعدة:**\n\n"
-                    "/start - الترحيب\n"
-                    "/products - عرض المنتجات\n"
-                    "/help - هذه الرسالة"
-                )
-            else:
-                reply_text = f"🤖 تم استلام أمر '{text}' بواسطة بوت {bot_name}"
-            
-            # إرسال الرد
-            if reply_text:
-                send_message(chat_id, reply_text, bot_token)
-                log.info(f"✅ Reply sent to {chat_id} from {bot_name} bot")
-        
-        return "OK", 200
-    except Exception as e:
-        log.error(f"💥 Webhook error in {bot_name}: {e}")
-        return "Error", 500
-
-@app.route("/webhook/customer", methods=["POST"])
-def webhook_customer():
-    """Webhook خاص ببوت خدمة العملاء"""
-    return handle_webhook('customer')
-
-@app.route("/webhook/admin", methods=["POST"])
-def webhook_admin():
-    """Webhook خاص ببوت الإدارة"""
-    return handle_webhook('admin')
-
-@app.route("/webhook/recommendation", methods=["POST"])
-def webhook_recommendation():
-    """Webhook خاص ببوت التوصيات"""
-    return handle_webhook('recommendation')
-
-@app.route("/webhook/supplier", methods=["POST"])
-def webhook_supplier():
-    """Webhook خاص ببوت الموردين"""
-    return handle_webhook('supplier')
+_conversations = {}
 
 # ══════════════════════════════════════════════════════════════════
 # HELPERS
 # ══════════════════════════════════════════════════════════════════
 
+def send_msg(chat_id, text, token, parse_mode="Markdown"):
+    if not token:
+        log.error("No token!")
+        return False
+    try:
+        r = requests.post(
+            "https://api.telegram.org/bot" + token + "/sendMessage",
+            json={"chat_id": chat_id, "text": text, "parse_mode": parse_mode},
+            timeout=10
+        )
+        return r.status_code == 200
+    except Exception as e:
+        log.error("send_msg error: " + str(e))
+        return False
+
+def send_keyboard(chat_id, text, keyboard, token):
+    if not token: return False
+    try:
+        r = requests.post(
+            "https://api.telegram.org/bot" + token + "/sendMessage",
+            json={
+                "chat_id": chat_id,
+                "text": text,
+                "parse_mode": "Markdown",
+                "reply_markup": {"inline_keyboard": keyboard}
+            },
+            timeout=10
+        )
+        return r.status_code == 200
+    except Exception as e:
+        log.error("send_keyboard error: " + str(e))
+        return False
+
 def ok(data=None, message="success", **kwargs):
     resp = {"success": True, "message": message}
-    if data is not None:
-        resp["data"] = data
+    if data is not None: resp["data"] = data
     resp.update(kwargs)
     return jsonify(resp)
 
@@ -254,340 +131,518 @@ def require_admin(f):
     @wraps(f)
     def decorated(*args, **kwargs):
         key = request.headers.get("X-Admin-Key") or request.args.get("admin_key")
-        if key != ADMIN_KEY:
-            abort(403)
+        if key != ADMIN_KEY: abort(403)
         return f(*args, **kwargs)
     return decorated
 
-def get_client_ip():
-    return (request.headers.get("X-Forwarded-For", "").split(",")[0].strip()
-            or request.remote_addr or "unknown")
-
 # ══════════════════════════════════════════════════════════════════
-# MIDDLEWARE
+# BOT 1 — CUSTOMER
 # ══════════════════════════════════════════════════════════════════
 
-@app.before_request
-def log_request():
-    if request.path.startswith("/api") or request.path.startswith("/webhook"):
-        log.info(f"{request.method} {request.path} — {get_client_ip()}")
+def handle_customer(chat_id, text, first_name, token):
+    text = text.strip()
 
-@app.after_request
-def add_headers(response):
-    response.headers["X-Powered-By"] = "NEO PULSE HUB API"
-    response.headers["X-Content-Type-Options"] = "nosniff"
-    return response
+    if text == "/start":
+        msg = (
+            "👋 *مرحباً " + first_name + " في NEO PULSE HUB!*\n\n"
+            "🛍️ متجرك الذكي للمنتجات التقنية\n\n"
+            "*الأوامر المتاحة:*\n"
+            "/products — تصفح المنتجات\n"
+            "/search — بحث عن منتج\n"
+            "/recommend — توصية AI\n"
+            "/orders — طلباتي\n"
+            "/help — المساعدة\n\n"
+            "أو اكتب سؤالك مباشرة 🤖"
+        )
+        send_keyboard(chat_id, msg, [
+            [{"text": "🛍️ المنتجات", "callback_data": "products"},
+             {"text": "🤖 توصية AI", "callback_data": "recommend"}],
+            [{"text": "🌐 الموقع", "url": SITE_URL}]
+        ], token)
+
+    elif text == "/products":
+        products = get_products()[:6]
+        if not products:
+            send_msg(chat_id, "لا توجد منتجات حالياً.", token)
+            return
+        msg = "🛍️ *أبرز منتجاتنا:*\n\n"
+        for p in products:
+            msg += "• *" + p.get("name_ar","") + "* — $" + str(p.get("price",0)) + "\n"
+        msg += "\n🌐 [تصفح الكل](" + SITE_URL + ")"
+        send_msg(chat_id, msg, token)
+
+    elif text == "/help":
+        send_msg(chat_id,
+            "*المساعدة:*\n\n"
+            "/products — المنتجات\n"
+            "/search [اسم] — بحث\n"
+            "/recommend [وصف] — توصية\n"
+            "/orders — طلباتي\n"
+            "/start — الرئيسية", token)
+
+    elif text.startswith("/search "):
+        q = text.replace("/search ", "").strip()
+        results = search_products(q)
+        if not results:
+            send_msg(chat_id, "لم أجد نتائج لـ: " + q, token)
+        else:
+            msg = "🔍 *نتائج البحث عن \"" + q + "\":*\n\n"
+            for p in results[:5]:
+                msg += "• *" + p.get("name_ar","") + "* — $" + str(p.get("price",0)) + "\n"
+            send_msg(chat_id, msg, token)
+
+    elif text.startswith("/recommend"):
+        q = text.replace("/recommend","").strip() or "منتج تقني جيد"
+        products = get_products()
+        rec_ids  = recommend_products(q, products)
+        recs     = [get_product(pid) for pid in rec_ids if get_product(pid)]
+        if not recs:
+            recs = get_featured_products(3)
+        msg = "🤖 *توصياتي لك:*\n\n"
+        for p in recs[:3]:
+            msg += "⭐ *" + p.get("name_ar","") + "*\n💰 $" + str(p.get("price",0)) + "\n\n"
+        send_msg(chat_id, msg, token)
+
+    else:
+        # AI chat
+        history  = _conversations.setdefault(str(chat_id), [])
+        products = get_featured_products(6)
+        context  = "\n".join(["• " + p.get("name_ar","") + " $" + str(p["price"]) for p in products])
+        reply    = answer_customer(text, context)
+        history.append({"role":"user","content":text})
+        history.append({"role":"assistant","content":reply})
+        if len(history) > 20: _conversations[str(chat_id)] = history[-20:]
+        send_msg(chat_id, reply, token)
+
+    track_event("customer_msg", {"chat_id": chat_id, "text": text[:50]})
 
 # ══════════════════════════════════════════════════════════════════
-# PRODUCTS ENDPOINTS
+# BOT 2 — ADMIN
+# ══════════════════════════════════════════════════════════════════
+
+def handle_admin(chat_id, text, user_id, token):
+    if ADMIN_ID and user_id != ADMIN_ID:
+        send_msg(chat_id, "🚫 هذا البوت للمدير فقط.", token)
+        return
+
+    text = text.strip()
+
+    if text == "/start":
+        s = get_analytics_summary()
+        msg = (
+            "👑 *لوحة تحكم NEO PULSE HUB*\n\n"
+            "📊 *الإحصائيات:*\n"
+            "🛍️ المنتجات: *" + str(s.get("total_products",0)) + "*\n"
+            "📦 الطلبات: *" + str(s.get("total_orders",0)) + "*\n"
+            "👥 المستخدمون: *" + str(s.get("total_users",0)) + "*\n"
+            "💰 الإيرادات: *$" + str(s.get("total_revenue",0)) + "*\n\n"
+            "*الأوامر:*\n"
+            "/stats — إحصائيات تفصيلية\n"
+            "/stock — حالة المخزون\n"
+            "/report — تقرير AI\n"
+        )
+        send_msg(chat_id, msg, token)
+
+    elif text == "/stats":
+        s = get_analytics_summary()
+        low = get_low_stock()
+        out = get_out_of_stock()
+        msg = (
+            "📊 *الإحصائيات التفصيلية:*\n\n"
+            "🛍️ المنتجات: " + str(s.get("total_products",0)) + "\n"
+            "📦 الطلبات الكلية: " + str(s.get("total_orders",0)) + "\n"
+            "⏳ المعلقة: " + str(s.get("pending_orders",0)) + "\n"
+            "👥 المستخدمون: " + str(s.get("total_users",0)) + "\n"
+            "💰 الإيرادات: $" + str(s.get("total_revenue",0)) + "\n"
+            "⚠️ مخزون منخفض: " + str(len(low)) + "\n"
+            "❌ نفد مخزونه: " + str(len(out)) + "\n"
+        )
+        send_msg(chat_id, msg, token)
+
+    elif text == "/stock":
+        low = get_low_stock()
+        out = get_out_of_stock()
+        if not low and not out:
+            send_msg(chat_id, "✅ المخزون كافٍ لجميع المنتجات.", token)
+        else:
+            msg = "📦 *تقرير المخزون:*\n\n"
+            for p in out[:5]:
+                msg += "❌ " + p.get("name_ar","") + " — *نفد!*\n"
+            for p in low[:5]:
+                msg += "⚠️ " + p.get("name_ar","") + " — " + str(p.get("stock",0)) + " وحدة\n"
+            send_msg(chat_id, msg, token)
+
+    elif text == "/report":
+        send_msg(chat_id, "⏳ جاري إنشاء التقرير بالـ AI...", token)
+        s      = get_analytics_summary()
+        report = generate_store_report(s)
+        send_msg(chat_id, "📈 *تقرير المتجر:*\n\n" + report, token)
+
+    elif text.startswith("/broadcast "):
+        broadcast_text = text.replace("/broadcast ","").strip()
+        if not broadcast_text:
+            send_msg(chat_id, "❌ أرسل النص بعد /broadcast", token)
+            return
+        send_msg(chat_id, "✅ تم إرسال الرسالة:\n\n" + broadcast_text, token)
+
+    else:
+        send_msg(chat_id,
+            "👑 *أوامر الإدارة:*\n\n"
+            "/start — لوحة التحكم\n"
+            "/stats — الإحصائيات\n"
+            "/stock — المخزون\n"
+            "/report — تقرير AI\n"
+            "/broadcast [رسالة] — بث للمستخدمين", token)
+
+# ══════════════════════════════════════════════════════════════════
+# BOT 3 — RECOMMENDATION
+# ══════════════════════════════════════════════════════════════════
+
+def handle_recommendation(chat_id, text, first_name, token):
+    text = text.strip()
+
+    if text == "/start":
+        send_keyboard(chat_id,
+            "🎯 *بوت التوصيات الذكي*\n\n"
+            "مرحباً " + first_name + "! سأساعدك في اختيار المنتج المناسب.\n\n"
+            "اكتب وصف ما تريد أو اختر:",
+            [
+                [{"text": "⌚ ساعات ذكية", "callback_data": "reco_smartwatch"},
+                 {"text": "🎧 سماعات", "callback_data": "reco_earbuds"}],
+                [{"text": "🏠 منزل ذكي", "callback_data": "reco_home"},
+                 {"text": "💪 صحة ولياقة", "callback_data": "reco_health"}],
+                [{"text": "💰 ضمن ميزانيتي", "callback_data": "reco_budget"}],
+            ], token)
+
+    elif text.startswith("/recommend") or text.startswith("/reco"):
+        q        = text.split(" ",1)[1].strip() if " " in text else "منتج تقني جيد"
+        budget   = extract_budget(q)
+        products = get_products()
+        if budget:
+            products = [p for p in products if p.get("price",9999) <= budget * 1.1]
+        rec_ids  = recommend_products(q, products, budget)
+        recs     = [get_product(pid) for pid in rec_ids if get_product(pid)]
+        if not recs: recs = get_featured_products(3)
+        msg = "🤖 *أنصحك بهذه المنتجات:*\n\n"
+        for p in recs[:3]:
+            msg += (
+                "⭐ *" + p.get("name_ar","") + "*\n"
+                "💰 $" + str(p.get("price",0)) + " | ⭐ " + str(p.get("rating",0)) + "/5\n"
+                "🔗 [شاهد المنتج](" + SITE_URL + ")\n\n"
+            )
+        send_msg(chat_id, msg, token)
+
+    elif text.startswith("/compare "):
+        parts = text.replace("/compare ","").split(" vs ")
+        if len(parts) == 2:
+            p1 = search_products(parts[0].strip())
+            p2 = search_products(parts[1].strip())
+            if p1 and p2:
+                a, b = p1[0], p2[0]
+                msg = (
+                    "⚖️ *المقارنة:*\n\n"
+                    "*" + a.get("name_ar","") + "*\n"
+                    "💰 $" + str(a.get("price",0)) + " | ⭐ " + str(a.get("rating",0)) + "\n\n"
+                    "VS\n\n"
+                    "*" + b.get("name_ar","") + "*\n"
+                    "💰 $" + str(b.get("price",0)) + " | ⭐ " + str(b.get("rating",0)) + "\n"
+                )
+                send_msg(chat_id, msg, token)
+            else:
+                send_msg(chat_id, "لم أجد المنتجين للمقارنة.", token)
+        else:
+            send_msg(chat_id, "الاستخدام: /compare منتج1 vs منتج2", token)
+
+    else:
+        # AI recommendation from free text
+        budget   = extract_budget(text)
+        products = get_products()
+        if budget:
+            products = [p for p in products if p.get("price",9999) <= budget * 1.1]
+        rec_ids  = recommend_products(text, products, budget)
+        recs     = [get_product(pid) for pid in rec_ids if get_product(pid)]
+        if not recs: recs = get_featured_products(3)
+        msg = "🎯 *بناءً على طلبك أنصحك بـ:*\n\n"
+        for p in recs[:3]:
+            msg += "• *" + p.get("name_ar","") + "* — $" + str(p.get("price",0)) + "\n"
+        send_msg(chat_id, msg, token)
+
+# ══════════════════════════════════════════════════════════════════
+# BOT 4 — SUPPLIER
+# ══════════════════════════════════════════════════════════════════
+
+def handle_supplier(chat_id, text, user_id, token):
+    if ADMIN_ID and user_id != ADMIN_ID:
+        send_msg(chat_id, "🚫 هذا البوت للمدير فقط.", token)
+        return
+
+    text = text.strip()
+
+    if text == "/start":
+        low = get_low_stock()
+        out = get_out_of_stock()
+        msg = (
+            "📦 *بوت الموردين والمخزون*\n\n"
+            "⚠️ مخزون منخفض: *" + str(len(low)) + "* منتج\n"
+            "❌ نفد مخزونه: *" + str(len(out)) + "* منتج\n\n"
+            "*الأوامر:*\n"
+            "/stock — حالة المخزون\n"
+            "/low — المنتجات المنخفضة\n"
+            "/restock [ID] [كمية] — تحديث مخزون\n"
+            "/price [ID] [سعر] — تحديث سعر\n"
+            "/products — قائمة المنتجات\n"
+        )
+        send_msg(chat_id, msg, token)
+
+    elif text == "/stock":
+        products = get_products()
+        ok_count  = sum(1 for p in products if p.get("stock",0) > 5)
+        low_count = sum(1 for p in products if 0 < p.get("stock",0) <= 5)
+        out_count = sum(1 for p in products if p.get("stock",0) == 0)
+        msg = (
+            "📦 *تقرير المخزون:*\n\n"
+            "✅ كافٍ: " + str(ok_count) + "\n"
+            "⚠️ منخفض: " + str(low_count) + "\n"
+            "❌ نفد: " + str(out_count) + "\n"
+            "📊 الكلي: " + str(len(products)) + " منتج"
+        )
+        send_msg(chat_id, msg, token)
+
+    elif text == "/low":
+        low = get_low_stock()
+        out = get_out_of_stock()
+        if not low and not out:
+            send_msg(chat_id, "✅ لا توجد مشاكل في المخزون.", token)
+        else:
+            msg = "⚠️ *يحتاج إعادة تخزين:*\n\n"
+            for p in out[:5]:
+                msg += "❌ `" + p["id"] + "` " + p.get("name_ar","") + "\n"
+            for p in low[:5]:
+                msg += "⚠️ `" + p["id"] + "` " + p.get("name_ar","") + " — " + str(p.get("stock",0)) + " وحدة\n"
+            send_msg(chat_id, msg, token)
+
+    elif text == "/products":
+        products = get_products()
+        msg = "📋 *قائمة المنتجات (" + str(len(products)) + "):*\n\n"
+        for p in products[:10]:
+            s    = p.get("stock",0)
+            icon = "❌" if s==0 else "⚠️" if s<=5 else "✅"
+            msg += icon + " `" + p["id"] + "` " + p.get("name_ar","")[:20] + " — " + str(s) + "\n"
+        send_msg(chat_id, msg, token)
+
+    elif text.startswith("/restock "):
+        parts = text.replace("/restock ","").split()
+        if len(parts) >= 2:
+            pid, qty = parts[0], parts[1]
+            try:
+                ok_update = update_product(pid, {"stock": int(qty)})
+                send_msg(chat_id,
+                    ("✅ تم تحديث مخزون `" + pid + "` إلى " + qty + " وحدة")
+                    if ok_update else "❌ المنتج غير موجود: " + pid, token)
+            except:
+                send_msg(chat_id, "❌ الكمية يجب أن تكون رقماً", token)
+        else:
+            send_msg(chat_id, "الاستخدام: /restock NPH-001 50", token)
+
+    elif text.startswith("/price "):
+        parts = text.replace("/price ","").split()
+        if len(parts) >= 2:
+            pid, price = parts[0], parts[1]
+            try:
+                ok_update = update_product(pid, {"price": float(price)})
+                send_msg(chat_id,
+                    ("✅ تم تحديث سعر `" + pid + "` إلى $" + price)
+                    if ok_update else "❌ المنتج غير موجود: " + pid, token)
+            except:
+                send_msg(chat_id, "❌ السعر يجب أن يكون رقماً", token)
+        else:
+            send_msg(chat_id, "الاستخدام: /price NPH-001 149.99", token)
+
+    else:
+        send_msg(chat_id,
+            "📦 *أوامر بوت الموردين:*\n\n"
+            "/start — الرئيسية\n"
+            "/stock — المخزون\n"
+            "/low — المنخفض\n"
+            "/products — القائمة\n"
+            "/restock [ID] [كمية]\n"
+            "/price [ID] [سعر]", token)
+
+# ══════════════════════════════════════════════════════════════════
+# WEBHOOK ROUTES
+# ══════════════════════════════════════════════════════════════════
+
+def process_update(bot_name, update):
+    token     = BOT_TOKENS.get(bot_name,"")
+    message   = update.get("message") or update.get("edited_message")
+    callback  = update.get("callback_query")
+
+    if message and "text" in message:
+        chat_id    = message["chat"]["id"]
+        text       = message["text"]
+        user_id    = message["from"]["id"]
+        first_name = message["from"].get("first_name","صديقي")
+
+        log.info(bot_name + " ← " + str(chat_id) + ": " + text[:50])
+
+        if bot_name == "customer":
+            handle_customer(chat_id, text, first_name, token)
+        elif bot_name == "admin":
+            handle_admin(chat_id, text, user_id, token)
+        elif bot_name == "recommendation":
+            handle_recommendation(chat_id, text, first_name, token)
+        elif bot_name == "supplier":
+            handle_supplier(chat_id, text, user_id, token)
+
+    elif callback:
+        chat_id = callback["message"]["chat"]["id"]
+        data    = callback.get("data","")
+        token   = BOT_TOKENS.get(bot_name,"")
+
+        if data == "products":
+            handle_customer(chat_id, "/products", "", token)
+        elif data == "recommend":
+            handle_customer(chat_id, "/recommend منتج تقني مميز", "", token)
+        elif data.startswith("reco_"):
+            cats = {"reco_smartwatch":"ساعة ذكية","reco_earbuds":"سماعات",
+                    "reco_home":"منزل ذكي","reco_health":"صحة","reco_budget":"ضمن ميزانيتي"}
+            q = cats.get(data,"منتج تقني")
+            handle_recommendation(chat_id, q, "", token)
+
+        # Answer callback
+        try:
+            requests.post(
+                "https://api.telegram.org/bot" + token + "/answerCallbackQuery",
+                json={"callback_query_id": callback["id"]}, timeout=5
+            )
+        except: pass
+
+@app.route("/webhook/customer", methods=["POST"])
+def wh_customer():
+    try: process_update("customer", request.get_json())
+    except Exception as e: log.error("customer webhook: " + str(e))
+    return "OK", 200
+
+@app.route("/webhook/admin", methods=["POST"])
+def wh_admin():
+    try: process_update("admin", request.get_json())
+    except Exception as e: log.error("admin webhook: " + str(e))
+    return "OK", 200
+
+@app.route("/webhook/recommendation", methods=["POST"])
+def wh_recommendation():
+    try: process_update("recommendation", request.get_json())
+    except Exception as e: log.error("recommendation webhook: " + str(e))
+    return "OK", 200
+
+@app.route("/webhook/supplier", methods=["POST"])
+def wh_supplier():
+    try: process_update("supplier", request.get_json())
+    except Exception as e: log.error("supplier webhook: " + str(e))
+    return "OK", 200
+
+# ══════════════════════════════════════════════════════════════════
+# API ENDPOINTS
 # ══════════════════════════════════════════════════════════════════
 
 @app.route("/api/products", methods=["GET"])
 def api_products():
-    """GET /api/products?cat=smartwatch&limit=6&featured=1"""
-    cat = request.args.get("cat")
-    limit = min(int(request.args.get("limit", 50)), 100)
+    cat      = request.args.get("cat")
+    limit    = min(int(request.args.get("limit",50)),100)
     featured = request.args.get("featured") == "1"
-    sort_by = request.args.get("sort", "")
-    q = request.args.get("q", "").strip()
+    q        = request.args.get("q","").strip()
+    sort_by  = request.args.get("sort","")
 
-    if q:
-        products = search_products(q)
-    elif cat:
-        products = get_products_by_category(cat)
-    elif featured:
-        products = get_featured_products(limit)
-    else:
-        products = get_products()
+    if q:          products = search_products(q)
+    elif cat:      products = get_products_by_category(cat)
+    elif featured: products = get_featured_products(limit)
+    else:          products = get_products()
 
-    if sort_by == "price_asc":
-        products = sorted(products, key=lambda x: x.get("price", 0))
-    elif sort_by == "price_desc":
-        products = sorted(products, key=lambda x: x.get("price", 0), reverse=True)
-    elif sort_by == "rating":
-        products = sorted(products, key=lambda x: x.get("rating", 0), reverse=True)
-    elif sort_by == "discount":
-        products = sorted(products, key=lambda x: x.get("discount", 0), reverse=True)
+    if sort_by == "price_asc":  products = sorted(products, key=lambda x: x.get("price",0))
+    elif sort_by == "price_desc": products = sorted(products, key=lambda x: x.get("price",0), reverse=True)
+    elif sort_by == "rating":   products = sorted(products, key=lambda x: x.get("rating",0), reverse=True)
 
-    admin_key = request.headers.get("X-Admin-Key")
-    if admin_key != ADMIN_KEY:
-        products = [p for p in products if p.get("active", True) is not False]
-
-    products = products[:limit]
-    return ok(products, count=len(products))
+    products = [p for p in products if p.get("active",True) is not False]
+    return ok(products[:limit], count=len(products[:limit]))
 
 @app.route("/api/products/<pid>", methods=["GET"])
-def api_product_detail(pid: str):
-    """GET /api/products/NPH-001"""
+def api_product(pid):
     p = get_product(pid)
-    if not p:
-        return err("Product not found", 404)
-    session_id = request.headers.get("X-Session-Id", "")
+    if not p: return err("Not found", 404)
     track_product_view(pid)
-    track_event("product_view", {"product_id": pid, "session": session_id})
     p["product_reviews"] = get_product_reviews(pid)[:5]
     return ok(p)
 
-@app.route("/api/products/search", methods=["GET"])
-def api_search():
-    """GET /api/products/search?q=ساعة ذكية"""
-    q = request.args.get("q", "").strip()
-    if not q:
-        return err("Query parameter 'q' is required")
-    products = search_products(q)
-    track_event("search", {"query": q, "results": len(products)})
-    return ok(products, count=len(products))
-
-# ══════════════════════════════════════════════════════════════════
-# ORDERS
-# ══════════════════════════════════════════════════════════════════
-
-@app.route("/api/orders", methods=["POST"])
-def api_create_order():
-    body = request.get_json(silent=True) or {}
-    pid = body.get("product_id", "").strip()
-    qty = max(1, int(body.get("qty", 1)))
-    pay = body.get("payment_method", "paypal")
-    uid = int(body.get("user_id", 0))
-
-    if not pid:
-        return err("product_id is required")
-
-    p = get_product(pid)
-    if not p:
-        return err("Product not found", 404)
-    if p.get("stock", 0) < qty:
-        return err(f"Insufficient stock. Available: {p.get('stock', 0)}")
-
-    try:
-        order = create_order(pid, uid, qty, pay)
-        track_event("order_created", {
-            "order_id": order["id"],
-            "product_id": pid,
-            "total": order["total"],
-            "ip": get_client_ip()
-        })
-        log.info(f"Order created: {order['id']} — ${order['total']}")
-        return ok(order, message="Order created successfully"), 201
-    except Exception as e:
-        log.error(f"Order creation error: {e}")
-        return err(str(e), 500)
-
-@app.route("/api/orders/user/<int:user_id>", methods=["GET"])
-def api_user_orders(user_id: int):
-    orders = get_orders_by_user(user_id)
-    return ok(orders)
-
-# ══════════════════════════════════════════════════════════════════
-# LEADS / USERS
-# ══════════════════════════════════════════════════════════════════
-
-@app.route("/api/leads", methods=["POST"])
-def api_create_lead():
-    body = request.get_json(silent=True) or {}
-    email = body.get("email", "").strip()
-    name = body.get("name", "").strip() or "زائر"
-
-    if not email or "@" not in email:
-        return err("Valid email is required")
-
-    class FakeTGUser:
-        id = abs(hash(email)) % 999999999
-        username = email.split("@")[0]
-        full_name = name
-
-    user = upsert_user(FakeTGUser(), extra={
-        "email": email,
-        "phone": body.get("phone", ""),
-        "source": body.get("source", "website"),
-    })
-    track_event("lead_created", {"email": email, "source": body.get("source", "website")})
-    return ok({"id": user.get("id"), "email": email}, message="Lead saved"), 201
-
-# ══════════════════════════════════════════════════════════════════
-# NEWSLETTER
-# ══════════════════════════════════════════════════════════════════
-
 @app.route("/api/newsletter", methods=["POST"])
 def api_newsletter():
-    body = request.get_json(silent=True) or {}
-    email = body.get("email", "").strip()
-    if not email or "@" not in email or "." not in email:
-        return err("Valid email required")
+    body  = request.get_json(silent=True) or {}
+    email = body.get("email","").strip()
+    if not email or "@" not in email: return err("Valid email required")
     new = subscribe_email(email)
-    track_event("newsletter_subscribe", {"email": email})
-    return ok({"subscribed": True, "new": new},
-              message="Subscribed!" if new else "Already subscribed")
+    track_event("newsletter", {"email": email})
+    return ok({"subscribed": True}, message="Subscribed!" if new else "Already subscribed")
 
-# ══════════════════════════════════════════════════════════════════
-# REVIEWS
-# ══════════════════════════════════════════════════════════════════
-
-@app.route("/api/reviews", methods=["POST"])
-def api_add_review():
+@app.route("/api/orders", methods=["POST"])
+def api_orders():
     body = request.get_json(silent=True) or {}
-    product_id = body.get("product_id", "")
-    rating = int(body.get("rating", 5))
-    comment = body.get("comment", "").strip()
-    user_id = int(body.get("user_id", 0))
-
-    if not product_id:
-        return err("product_id required")
-    if not get_product(product_id):
-        return err("Product not found", 404)
-    if not 1 <= rating <= 5:
-        return err("Rating must be 1-5")
-
-    review = add_review(product_id, user_id, rating, comment)
-    return ok(review, message="Review added"), 201
-
-@app.route("/api/reviews/<pid>", methods=["GET"])
-def api_get_reviews(pid: str):
-    reviews = get_product_reviews(pid)
-    return ok(reviews, count=len(reviews))
-
-# ══════════════════════════════════════════════════════════════════
-# AI ENDPOINTS
-# ══════════════════════════════════════════════════════════════════
+    pid  = body.get("product_id","")
+    qty  = max(1, int(body.get("qty",1)))
+    uid  = int(body.get("user_id",0))
+    p    = get_product(pid)
+    if not p: return err("Product not found",404)
+    if p.get("stock",0) < qty: return err("Insufficient stock")
+    order = create_order(pid, uid, qty, "paypal")
+    return ok(order), 201
 
 @app.route("/api/ai/chat", methods=["POST"])
-def api_ai_chat():
-    body = request.get_json(silent=True) or {}
-    message = body.get("message", "").strip()
-    session_id = body.get("session_id", "anon")
-
-    if not message:
-        return err("message is required")
-
-    history = _conversations.setdefault(session_id, [])
+def api_chat():
+    body    = request.get_json(silent=True) or {}
+    message = body.get("message","").strip()
+    sid     = body.get("session_id","anon")
+    if not message: return err("message required")
+    history  = _conversations.setdefault(sid, [])
     products = get_featured_products(6)
-    context = "\n".join([
-        f"• {p.get('name_ar', '')} ${p['price']}"
-        for p in products
-    ])
-
-    response = continue_conversation(history, message, context)
-
-    history.append({"role": "user", "content": message})
-    history.append({"role": "assistant", "content": response})
-    if len(history) > 20:
-        _conversations[session_id] = history[-20:]
-
-    track_event("ai_chat", {"session": session_id, "query_len": len(message)})
-    return ok({"reply": response, "session_id": session_id})
-
-@app.route("/api/ai/recommend", methods=["POST"])
-def api_ai_recommend():
-    body = request.get_json(silent=True) or {}
-    query = body.get("query", "").strip()
-    budget = body.get("budget")
-    category = body.get("category", "")
-
-    if not query:
-        return err("query is required")
-
-    products = get_products()
-    if category:
-        cat_products = get_products_by_category(category)
-        if cat_products:
-            products = cat_products
-
-    if not budget:
-        budget = extract_budget(query)
-    if budget:
-        products = [p for p in products if p.get("price", 9999) <= float(budget) * 1.1]
-
-    rec_ids = recommend_products(query, products, budget)
-    recs = [get_product(pid) for pid in rec_ids if get_product(pid)]
-    if not recs:
-        recs = get_featured_products(3)
-
-    track_event("ai_recommend", {"query": query, "budget": budget})
-    return ok(recs[:3], count=len(recs[:3]))
-
-# ══════════════════════════════════════════════════════════════════
-# ANALYTICS (admin only)
-# ══════════════════════════════════════════════════════════════════
+    context  = "\n".join(["• " + p.get("name_ar","") + " $" + str(p["price"]) for p in products])
+    reply    = continue_conversation(history, message, context)
+    history.append({"role":"user","content":message})
+    history.append({"role":"assistant","content":reply})
+    if len(history) > 20: _conversations[sid] = history[-20:]
+    return ok({"reply": reply, "session_id": sid})
 
 @app.route("/api/analytics", methods=["GET"])
 @require_admin
 def api_analytics():
     return ok(get_analytics_summary())
 
-@app.route("/api/analytics/track", methods=["POST"])
-def api_track():
-    body = request.get_json(silent=True) or {}
-    event = body.get("event", "")
-    data = body.get("data", {})
-    data["ip"] = get_client_ip()
-    if event:
-        track_event(event, data)
-    return ok(message="tracked")
-
-# ══════════════════════════════════════════════════════════════════
-# HEALTH CHECK
-# ══════════════════════════════════════════════════════════════════
-
 @app.route("/api/health", methods=["GET"])
 def api_health():
     products = get_products()
     return ok({
-        "status": "healthy",
-        "products": len(products),
-        "bots": {name: "✅" if token else "❌" for name, token in BOT_TOKENS.items()},
+        "status":    "healthy",
+        "products":  len(products),
+        "bots":      {k: "✅" if v else "❌" for k,v in BOT_TOKENS.items()},
         "timestamp": datetime.now().isoformat(),
-        "version": "2.0.0"
+        "version":   "3.0.0"
     })
 
 @app.route("/", methods=["GET"])
 def root():
     return jsonify({
-        "name": "NEO PULSE HUB API (Multi-Bot - Paths)",
-        "version": "2.0.0",
-        "docs": "/api/health",
-        "bots": list(BOT_TOKENS.keys()),
-        "store": "https://neo-pulse-hub.it.com"
+        "name":    "NEO PULSE HUB API v3",
+        "webhooks":["/webhook/customer","/webhook/admin",
+                    "/webhook/recommendation","/webhook/supplier"],
+        "store":   SITE_URL
     })
 
-# ══════════════════════════════════════════════════════════════════
-# ERROR HANDLERS
-# ══════════════════════════════════════════════════════════════════
-
 @app.errorhandler(404)
-def not_found(e):
-    return err("Endpoint not found", 404)
-
-@app.errorhandler(403)
-def forbidden(e):
-    return err("Forbidden — invalid admin key", 403)
+def not_found(e): return err("Not found",404)
 
 @app.errorhandler(500)
-def server_error(e):
-    log.error(f"Server error: {e}")
-    return err("Internal server error", 500)
-
-# ══════════════════════════════════════════════════════════════════
-# MAIN
-# ══════════════════════════════════════════════════════════════════
+def server_error(e): return err("Server error",500)
 
 if __name__ == "__main__":
     init_db()
-    log.info("=" * 60)
-    log.info("🌐 Starting NEO PULSE HUB Webhook Server (Multi-Bot - Paths)")
-    log.info("=" * 60)
-    
-    active_bots = []
+    log.info("NEO PULSE HUB Webhook Server v3 starting on port " + str(PORT))
     for name, token in BOT_TOKENS.items():
-        if token:
-            log.info(f"✅ {name.capitalize()} Bot token configured")
-            active_bots.append(name)
-        else:
-            log.warning(f"⚠️ {name.capitalize()} Bot token missing")
-    
-    log.info(f"🎯 Active bots: {', '.join(active_bots)}")
-    log.info(f"🚀 Server running on port {PORT}")
-    log.info(f"📌 Webhook paths:")
-    for name in active_bots:
-        log.info(f"   • /webhook/{name}")
-    
-    app.run(host=HOST, port=PORT, debug=DEBUG, threaded=True)
+        log.info(name + ": " + ("✅" if token else "❌ MISSING"))
+    app.run(host=HOST, port=PORT, threaded=True)
