@@ -2,8 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 ╔══════════════════════════════════════════════════════════════════╗
-║   BOT 2: بوت الإدارة الكامل v2.0                               ║
-║   Admin Dashboard Bot                                           ║
+║   BOT 2: بوت الإدارة الكامل v2.0 (Webhook Only)               ║
 ╚══════════════════════════════════════════════════════════════════╝
 """
 
@@ -13,8 +12,7 @@ import logging
 import time
 from datetime import datetime
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import (Application, CommandHandler, MessageHandler,
-                           CallbackQueryHandler, filters, ContextTypes)
+from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, filters, ContextTypes
 from telegram.constants import ParseMode, ChatAction
 
 try:
@@ -40,18 +38,14 @@ log = logging.getLogger("admin_bot")
 
 _awaiting: dict = {}
 
-# باقي الكود كما هو (دوال البوت) ...
-# (هنا يأتي باقي الكود الأصلي مثل الدوال والكيبوردات)
-
 # ══════════════════════════════════════════════════════════════════
-# MAIN (معدل ليعمل مع webhook)
+# MAIN (Webhook Mode)
 # ══════════════════════════════════════════════════════════════════
 
 def main():
     """تشغيل البوت باستخدام webhook (بدون polling)"""
     print("👑 Admin Bot is ready for webhook mode.")
-    # البوت لا يحتاج إلى run_polling هنا، لأن webhook_server.py هو من سيتولى المعالجة
-    # فقط نسجل أن البوت جاهز ونبقيه حياً
+    # لا تقم بتشغيل polling، فقط ابقَ حياً
     while True:
         time.sleep(60)
 
