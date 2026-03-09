@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 ╔══════════════════════════════════════════════════════════════════╗
-║   NEO PULSE HUB — Webhook API Server (Multi-Bot)               ║
+║   NEO PULSE HUB — Webhook API Server (Multi-Bot - Final)       ║
 ║   يوزع التحديثات على جميع البوتات الأربعة                      ║
 ╚══════════════════════════════════════════════════════════════════╝
 """
@@ -76,8 +76,41 @@ BOT_TOKENS = {
     'supplier': os.environ.get('SUPPLIER_BOT_TOKEN', ''),
 }
 
-# إنشاء قاموس عكسي للبحث عن البوت باستخدام التوكن
-TOKEN_TO_BOT = {v: k for k, v in BOT_TOKENS.items() if v}
+# رسائل الترحيب لكل بوت
+WELCOME_MESSAGES = {
+    'customer': (
+        "👋 مرحباً بك في **NEO PULSE HUB**!\n\n"
+        "أنا بوت خدمة العملاء. كيف يمكنني مساعدتك؟\n\n"
+        "الأوامر المتاحة:\n"
+        "/start - الترحيب\n"
+        "/products - عرض المنتجات\n"
+        "/help - المساعدة"
+    ),
+    'admin': (
+        "👑 مرحباً بك في **بوت الإدارة**\n\n"
+        "هذا البوت مخصص للمدير فقط.\n\n"
+        "الأوامر المتاحة:\n"
+        "/stats - إحصائيات المتجر\n"
+        "/broadcast [رسالة] - بث للمستخدمين\n"
+        "/add_product - إضافة منتج"
+    ),
+    'recommendation': (
+        "🎯 مرحباً بك في **بوت التوصيات الذكي**\n\n"
+        "سأساعدك في اختيار المنتج المناسب.\n\n"
+        "الأوامر المتاحة:\n"
+        "/recommend [وصف] - توصية مخصصة\n"
+        "/compare [منتج1] vs [منتج2] - مقارنة\n"
+        "/budget [مبلغ] - منتجات ضمن الميزانية"
+    ),
+    'supplier': (
+        "📦 مرحباً بك في **بوت الموردين**\n\n"
+        "هذا البوت لإدارة المخزون والمنتجات.\n\n"
+        "الأوامر المتاحة:\n"
+        "/add [وصف] - إضافة منتج بالذكاء الاصطناعي\n"
+        "/stock - حالة المخزون\n"
+        "/restock [ID] [كمية] - تحديث المخزون"
+    )
+}
 
 logging.basicConfig(
     format="%(asctime)s | %(name)s | %(levelname)s | %(message)s",
@@ -142,115 +175,66 @@ def telegram_webhook():
             first_name = update['message']['chat'].get('first_name', 'صديقي')
             log.info(f"💬 Message from {chat_id} ({first_name}): {text}")
             
-            # توجيه الرسالة إلى البوت المناسب
+            # تحديد البوت المناسب بناءً على محتوى الرسالة
+            bot_name = 'customer'  # افتراضي
+            bot_token = BOT_TOKENS['customer']
             reply_text = ""
-            bot_token = None
-            bot_name = "unknown"
             
-            # استراتيجية التوجيه: نستخدم محتوى الرسالة لتحديد البوت المناسب
+            # أوامر بوت الموردين
             if text.startswith('/add') or text.startswith('/restock') or text.startswith('/price') or text.startswith('/stock'):
-                # أوامر بوت الموردين
-                bot_name = "supplier"
+                bot_name = 'supplier'
                 bot_token = BOT_TOKENS['supplier']
-                reply_text = (
-                    f"📦 **بوت الموردين**\n\n"
-                    f"مرحباً {first_name}!\n"
-                    f"هذا بوت إدارة المخزون والموردين.\n\n"
-                    f"**الأوامر المتاحة:**\n"
-                    f"/add [وصف المنتج] - إضافة منتج جديد بالذكاء الاصطناعي\n"
-                    f"/stock - عرض حالة المخزون\n"
-                    f"/restock [ID] [كمية] - تحديث مخزون منتج\n"
-                    f"/price [ID] [سعر] - تحديث سعر منتج"
-                )
-                
-            elif text.startswith('/stats') or text.startswith('/broadcast') or text.startswith('/add_') or text.startswith('/update_order'):
-                # أوامر بوت الإدارة
-                bot_name = "admin"
+                if text == '/start':
+                    reply_text = WELCOME_MESSAGES['supplier']
+                else:
+                    reply_text = f"📦 أمر {text} تم استلامه. جاري المعالجة..."
+            
+            # أوامر بوت الإدارة
+            elif text.startswith('/stats') or text.startswith('/broadcast') or text.startswith('/add_product') or text.startswith('/update_order'):
+                bot_name = 'admin'
                 bot_token = BOT_TOKENS['admin']
-                reply_text = (
-                    f"👑 **بوت الإدارة**\n\n"
-                    f"مرحباً {first_name}!\n"
-                    f"هذا بوت إدارة المتجر.\n\n"
-                    f"**الأوامر المتاحة:**\n"
-                    f"/stats - إحصائيات المتجر\n"
-                    f"/broadcast [رسالة] - بث رسالة للمستخدمين\n"
-                    f"/add_product - إضافة منتج يدوياً\n"
-                    f"/update_order [ID] [حالة] - تحديث حالة طلب"
-                )
-                
+                if text == '/start':
+                    reply_text = WELCOME_MESSAGES['admin']
+                else:
+                    reply_text = f"👑 أمر {text} تم استلامه. جاري المعالجة..."
+            
+            # أوامر بوت التوصيات
             elif text.startswith('/recommend') or text.startswith('/compare') or text.startswith('/budget'):
-                # أوامر بوت التوصيات
-                bot_name = "recommendation"
+                bot_name = 'recommendation'
                 bot_token = BOT_TOKENS['recommendation']
-                reply_text = (
-                    f"🎯 **بوت التوصيات الذكي**\n\n"
-                    f"مرحباً {first_name}!\n"
-                    f"هذا بوت اقتراح المنتجات.\n\n"
-                    f"**الأوامر المتاحة:**\n"
-                    f"/recommend [وصف] - احصل على توصية مخصصة\n"
-                    f"/compare [منتج1] vs [منتج2] - مقارنة منتجين\n"
-                    f"/budget [مبلغ] - اقتراح منتجات ضمن الميزانية"
-                )
-                
-            elif text.startswith('/start') or text.startswith('/products') or text.startswith('/cart') or text.startswith('/orders') or text.startswith('/search') or text.startswith('/help'):
-                # أوامر بوت خدمة العملاء (الأساسي)
-                bot_name = "customer"
+                if text == '/start':
+                    reply_text = WELCOME_MESSAGES['recommendation']
+                else:
+                    reply_text = f"🎯 أمر {text} تم استلامه. جاري المعالجة..."
+            
+            # أوامر بوت خدمة العملاء
+            else:
+                bot_name = 'customer'
                 bot_token = BOT_TOKENS['customer']
                 
                 if text == '/start':
-                    reply_text = (
-                        f"👋 مرحباً {first_name}!\n\n"
-                        f"🤖 أنا بوت **NEO PULSE HUB**\n"
-                        f"متجرك للمنتجات الذكية والذكاء الاصطناعي 🚀\n\n"
-                        f"📋 **الأوامر المتاحة:**\n"
-                        f"• /start - الصفحة الرئيسية\n"
-                        f"• /products - عرض المنتجات\n"
-                        f"• /cart - سلة التسوق\n"
-                        f"• /orders - تتبع الطلبات\n"
-                        f"• /search [كلمة] - بحث عن منتج\n"
-                        f"• /help - المساعدة\n\n"
-                        f"كيف يمكنني مساعدتك؟"
-                    )
+                    reply_text = WELCOME_MESSAGES['customer']
                 elif text == '/products':
                     products = get_products()
-                    if products and len(products) > 0:
-                        reply_text = "🛍️ **منتجاتنا المتوفرة:**\n\n"
+                    if products:
+                        reply_text = "🛍️ **المنتجات المتوفرة:**\n\n"
                         for i, p in enumerate(products[:5], 1):
                             name = p.get('name_ar', p.get('name_en', 'منتج'))
                             price = p.get('price', 0)
                             reply_text += f"{i}. {name} — *${price}*\n"
-                        reply_text += "\nللمزيد زور موقعنا: https://neo-pulse-hub.it.com"
                     else:
-                        reply_text = "🛍️ لا توجد منتجات متاحة حالياً. قريباً..."
+                        reply_text = "🛍️ لا توجد منتجات متاحة حالياً."
                 elif text == '/help':
                     reply_text = (
                         "📖 **المساعدة:**\n\n"
-                        "الأوامر المتاحة:\n"
-                        "/start - الصفحة الرئيسية\n"
+                        "/start - الترحيب\n"
                         "/products - عرض المنتجات\n"
-                        "/cart - سلة التسوق\n"
-                        "/orders - تتبع الطلبات\n"
-                        "/search [كلمة] - بحث عن منتج\n"
-                        "/help - هذه الرسالة\n\n"
-                        "🌐 الموقع: https://neo-pulse-hub.it.com\n"
-                        "📧 للدعم: info@neo-pulse-hub.it.com"
+                        "/help - هذه الرسالة"
                     )
                 else:
-                    reply_text = (
-                        f"🤖 استقبلت رسالتك: \"{text}\"\n\n"
-                        f"شكراً لتواصلك! استخدم /help لمعرفة الأوامر المتاحة."
-                    )
-            else:
-                # إذا كانت الرسالة لا تبدأ بأي أمر معروف، نوجهها لبوت خدمة العملاء
-                bot_name = "customer"
-                bot_token = BOT_TOKENS['customer']
-                reply_text = (
-                    f"🤖 أنا بوت خدمة العملاء.\n"
-                    f"لم أتعرف على الأمر '{text}'.\n"
-                    f"استخدم /help لمعرفة الأوامر المتاحة."
-                )
+                    reply_text = f"🤖 استقبلت رسالتك: '{text}'\nاستخدم /help للمساعدة."
             
-            # إرسال الرد باستخدام البوت المناسب
+            # إرسال الرد
             if bot_token:
                 send_message(chat_id, reply_text, bot_token)
                 log.info(f"➡️ Routed to {bot_name} bot")
@@ -263,21 +247,8 @@ def telegram_webhook():
         return "Error", 500
 
 # ══════════════════════════════════════════════════════════════════
-# باقي الـ API endpoints (كما هي من ملفك القديم)
+# HELPERS
 # ══════════════════════════════════════════════════════════════════
-
-# [هنا يأتي باقي الكود القديم بالكامل - دوال ok, err, require_admin, get_client_ip,
-#  log_request, add_headers, api_products, api_product_detail, api_search,
-#  api_create_order, api_user_orders, api_create_lead, api_newsletter,
-#  api_add_review, api_get_reviews, api_ai_chat, api_ai_recommend,
-#  api_analytics, api_track, api_health, root, error handlers]
-# 
-# ولكن لتوفير المساحة، سأضع الكود الأصلي الذي أرسلته بالكامل هنا من السطر 143 إلى النهاية.
-# (هذا الكود سيكون هو نفسه الذي أرسلته لي في رسالتك السابقة، مع إبقاء الدوال كما هي)
-
-# ==================================================================
-# هنا نضع باقي الكود الأصلي بالكامل (من السطر 143 إلى النهاية)
-# ==================================================================
 
 def ok(data=None, message="success", **kwargs):
     resp = {"success": True, "message": message}
@@ -302,6 +273,10 @@ def get_client_ip():
     return (request.headers.get("X-Forwarded-For", "").split(",")[0].strip()
             or request.remote_addr or "unknown")
 
+# ══════════════════════════════════════════════════════════════════
+# MIDDLEWARE
+# ══════════════════════════════════════════════════════════════════
+
 @app.before_request
 def log_request():
     if request.path.startswith("/api") or request.path == "/webhook":
@@ -313,11 +288,251 @@ def add_headers(response):
     response.headers["X-Content-Type-Options"] = "nosniff"
     return response
 
-# ==================================================================
-# هنا نضع جميع endpoints الأخرى (products, orders, leads, newsletter, reviews, ai, analytics, health)
-# كما هي في ملفك الأصلي. لتوفير المساحة، لن أكتبها كلها مرة أخرى،
-# ولكن عند الرفع، ستضع الكود الأصلي كاملاً بعد سطر "# هنا نضع باقي الكود الأصلي"
-# ==================================================================
+# ══════════════════════════════════════════════════════════════════
+# PRODUCTS ENDPOINTS
+# ══════════════════════════════════════════════════════════════════
+
+@app.route("/api/products", methods=["GET"])
+def api_products():
+    """GET /api/products?cat=smartwatch&limit=6&featured=1"""
+    cat = request.args.get("cat")
+    limit = min(int(request.args.get("limit", 50)), 100)
+    featured = request.args.get("featured") == "1"
+    sort_by = request.args.get("sort", "")
+    q = request.args.get("q", "").strip()
+
+    if q:
+        products = search_products(q)
+    elif cat:
+        products = get_products_by_category(cat)
+    elif featured:
+        products = get_featured_products(limit)
+    else:
+        products = get_products()
+
+    if sort_by == "price_asc":
+        products = sorted(products, key=lambda x: x.get("price", 0))
+    elif sort_by == "price_desc":
+        products = sorted(products, key=lambda x: x.get("price", 0), reverse=True)
+    elif sort_by == "rating":
+        products = sorted(products, key=lambda x: x.get("rating", 0), reverse=True)
+    elif sort_by == "discount":
+        products = sorted(products, key=lambda x: x.get("discount", 0), reverse=True)
+
+    admin_key = request.headers.get("X-Admin-Key")
+    if admin_key != ADMIN_KEY:
+        products = [p for p in products if p.get("active", True) is not False]
+
+    products = products[:limit]
+    return ok(products, count=len(products))
+
+@app.route("/api/products/<pid>", methods=["GET"])
+def api_product_detail(pid: str):
+    """GET /api/products/NPH-001"""
+    p = get_product(pid)
+    if not p:
+        return err("Product not found", 404)
+    session_id = request.headers.get("X-Session-Id", "")
+    track_product_view(pid)
+    track_event("product_view", {"product_id": pid, "session": session_id})
+    p["product_reviews"] = get_product_reviews(pid)[:5]
+    return ok(p)
+
+@app.route("/api/products/search", methods=["GET"])
+def api_search():
+    """GET /api/products/search?q=ساعة ذكية"""
+    q = request.args.get("q", "").strip()
+    if not q:
+        return err("Query parameter 'q' is required")
+    products = search_products(q)
+    track_event("search", {"query": q, "results": len(products)})
+    return ok(products, count=len(products))
+
+# ══════════════════════════════════════════════════════════════════
+# ORDERS
+# ══════════════════════════════════════════════════════════════════
+
+@app.route("/api/orders", methods=["POST"])
+def api_create_order():
+    body = request.get_json(silent=True) or {}
+    pid = body.get("product_id", "").strip()
+    qty = max(1, int(body.get("qty", 1)))
+    pay = body.get("payment_method", "paypal")
+    uid = int(body.get("user_id", 0))
+
+    if not pid:
+        return err("product_id is required")
+
+    p = get_product(pid)
+    if not p:
+        return err("Product not found", 404)
+    if p.get("stock", 0) < qty:
+        return err(f"Insufficient stock. Available: {p.get('stock', 0)}")
+
+    try:
+        order = create_order(pid, uid, qty, pay)
+        track_event("order_created", {
+            "order_id": order["id"],
+            "product_id": pid,
+            "total": order["total"],
+            "ip": get_client_ip()
+        })
+        log.info(f"Order created: {order['id']} — ${order['total']}")
+        return ok(order, message="Order created successfully"), 201
+    except Exception as e:
+        log.error(f"Order creation error: {e}")
+        return err(str(e), 500)
+
+@app.route("/api/orders/user/<int:user_id>", methods=["GET"])
+def api_user_orders(user_id: int):
+    orders = get_orders_by_user(user_id)
+    return ok(orders)
+
+# ══════════════════════════════════════════════════════════════════
+# LEADS / USERS
+# ══════════════════════════════════════════════════════════════════
+
+@app.route("/api/leads", methods=["POST"])
+def api_create_lead():
+    body = request.get_json(silent=True) or {}
+    email = body.get("email", "").strip()
+    name = body.get("name", "").strip() or "زائر"
+
+    if not email or "@" not in email:
+        return err("Valid email is required")
+
+    class FakeTGUser:
+        id = abs(hash(email)) % 999999999
+        username = email.split("@")[0]
+        full_name = name
+
+    user = upsert_user(FakeTGUser(), extra={
+        "email": email,
+        "phone": body.get("phone", ""),
+        "source": body.get("source", "website"),
+    })
+    track_event("lead_created", {"email": email, "source": body.get("source", "website")})
+    return ok({"id": user.get("id"), "email": email}, message="Lead saved"), 201
+
+# ══════════════════════════════════════════════════════════════════
+# NEWSLETTER
+# ══════════════════════════════════════════════════════════════════
+
+@app.route("/api/newsletter", methods=["POST"])
+def api_newsletter():
+    body = request.get_json(silent=True) or {}
+    email = body.get("email", "").strip()
+    if not email or "@" not in email or "." not in email:
+        return err("Valid email required")
+    new = subscribe_email(email)
+    track_event("newsletter_subscribe", {"email": email})
+    return ok({"subscribed": True, "new": new},
+              message="Subscribed!" if new else "Already subscribed")
+
+# ══════════════════════════════════════════════════════════════════
+# REVIEWS
+# ══════════════════════════════════════════════════════════════════
+
+@app.route("/api/reviews", methods=["POST"])
+def api_add_review():
+    body = request.get_json(silent=True) or {}
+    product_id = body.get("product_id", "")
+    rating = int(body.get("rating", 5))
+    comment = body.get("comment", "").strip()
+    user_id = int(body.get("user_id", 0))
+
+    if not product_id:
+        return err("product_id required")
+    if not get_product(product_id):
+        return err("Product not found", 404)
+    if not 1 <= rating <= 5:
+        return err("Rating must be 1-5")
+
+    review = add_review(product_id, user_id, rating, comment)
+    return ok(review, message="Review added"), 201
+
+@app.route("/api/reviews/<pid>", methods=["GET"])
+def api_get_reviews(pid: str):
+    reviews = get_product_reviews(pid)
+    return ok(reviews, count=len(reviews))
+
+# ══════════════════════════════════════════════════════════════════
+# AI ENDPOINTS
+# ══════════════════════════════════════════════════════════════════
+
+@app.route("/api/ai/chat", methods=["POST"])
+def api_ai_chat():
+    body = request.get_json(silent=True) or {}
+    message = body.get("message", "").strip()
+    session_id = body.get("session_id", "anon")
+
+    if not message:
+        return err("message is required")
+
+    history = _conversations.setdefault(session_id, [])
+    products = get_featured_products(6)
+    context = "\n".join([
+        f"• {p.get('name_ar', '')} ${p['price']}"
+        for p in products
+    ])
+
+    response = continue_conversation(history, message, context)
+
+    history.append({"role": "user", "content": message})
+    history.append({"role": "assistant", "content": response})
+    if len(history) > 20:
+        _conversations[session_id] = history[-20:]
+
+    track_event("ai_chat", {"session": session_id, "query_len": len(message)})
+    return ok({"reply": response, "session_id": session_id})
+
+@app.route("/api/ai/recommend", methods=["POST"])
+def api_ai_recommend():
+    body = request.get_json(silent=True) or {}
+    query = body.get("query", "").strip()
+    budget = body.get("budget")
+    category = body.get("category", "")
+
+    if not query:
+        return err("query is required")
+
+    products = get_products()
+    if category:
+        cat_products = get_products_by_category(category)
+        if cat_products:
+            products = cat_products
+
+    if not budget:
+        budget = extract_budget(query)
+    if budget:
+        products = [p for p in products if p.get("price", 9999) <= float(budget) * 1.1]
+
+    rec_ids = recommend_products(query, products, budget)
+    recs = [get_product(pid) for pid in rec_ids if get_product(pid)]
+    if not recs:
+        recs = get_featured_products(3)
+
+    track_event("ai_recommend", {"query": query, "budget": budget})
+    return ok(recs[:3], count=len(recs[:3]))
+
+# ══════════════════════════════════════════════════════════════════
+# ANALYTICS (admin only)
+# ══════════════════════════════════════════════════════════════════
+
+@app.route("/api/analytics", methods=["GET"])
+@require_admin
+def api_analytics():
+    return ok(get_analytics_summary())
+
+@app.route("/api/analytics/track", methods=["POST"])
+def api_track():
+    body = request.get_json(silent=True) or {}
+    event = body.get("event", "")
+    data = body.get("data", {})
+    data["ip"] = get_client_ip()
+    if event:
+        track_event(event, data)
+    return ok(message="tracked")
 
 # ══════════════════════════════════════════════════════════════════
 # HEALTH CHECK
@@ -371,7 +586,6 @@ if __name__ == "__main__":
     log.info("🌐 Starting NEO PULSE HUB Webhook Server (Multi-Bot)")
     log.info("=" * 50)
     
-    # التحقق من التوكنات
     active_bots = []
     for name, token in BOT_TOKENS.items():
         if token:
