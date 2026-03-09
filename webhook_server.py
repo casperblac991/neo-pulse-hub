@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 """
 ╔══════════════════════════════════════════════════════════════════╗
-║   NEO PULSE HUB — Webhook API Server (Multi-Bot - Final)       ║
-║   يوزع التحديثات على جميع البوتات الأربعة                      ║
+║   NEO PULSE HUB — Webhook API Server (Multi-Bot - Paths)       ║
+║   مسارات منفصلة لكل بوت لضمان عدم التداخل                      ║
 ╚══════════════════════════════════════════════════════════════════╝
 """
 
@@ -157,94 +157,84 @@ def send_message(chat_id, text, bot_token, parse_mode='Markdown'):
         return False
 
 # ══════════════════════════════════════════════════════════════════
-# TELEGRAM WEBHOOK - معالج موحد لجميع البوتات
+# TELEGRAM WEBHOOKS - مسار منفصل لكل بوت
 # ══════════════════════════════════════════════════════════════════
 
-@app.route("/webhook", methods=["POST"])
-def telegram_webhook():
-    """استقبال التحديثات من تيليجرام لجميع البوتات"""
+def handle_webhook(bot_name):
+    """معالج موحد لجميع الـ webhooks"""
     try:
         update = request.get_json()
         update_id = update.get('update_id')
-        log.info(f"📩 Received Telegram update: {update_id}")
+        log.info(f"📩 {bot_name} bot received update: {update_id}")
         
-        # التحقق من وجود رسالة نصية
+        # الحصول على توكن البوت المناسب
+        bot_token = BOT_TOKENS.get(bot_name)
+        if not bot_token:
+            log.error(f"❌ No token found for {bot_name} bot")
+            return "Error", 500
+        
+        # معالجة الرسالة
         if 'message' in update and 'text' in update['message']:
             chat_id = update['message']['chat']['id']
             text = update['message']['text']
             first_name = update['message']['chat'].get('first_name', 'صديقي')
-            log.info(f"💬 Message from {chat_id} ({first_name}): {text}")
             
-            # تحديد البوت المناسب بناءً على محتوى الرسالة
-            bot_name = 'customer'  # افتراضي
-            bot_token = BOT_TOKENS['customer']
+            log.info(f"💬 {bot_name} bot received from {chat_id}: {text}")
+            
+            # تحديد الرد المناسب
             reply_text = ""
             
-            # أوامر بوت الموردين
-            if text.startswith('/add') or text.startswith('/restock') or text.startswith('/price') or text.startswith('/stock'):
-                bot_name = 'supplier'
-                bot_token = BOT_TOKENS['supplier']
-                if text == '/start':
-                    reply_text = WELCOME_MESSAGES['supplier']
+            if text == '/start':
+                reply_text = WELCOME_MESSAGES.get(bot_name, WELCOME_MESSAGES['customer'])
+            elif text == '/products' and bot_name == 'customer':
+                products = get_products()
+                if products:
+                    reply_text = "🛍️ **المنتجات المتوفرة:**\n\n"
+                    for i, p in enumerate(products[:5], 1):
+                        name = p.get('name_ar', p.get('name_en', 'منتج'))
+                        price = p.get('price', 0)
+                        reply_text += f"{i}. {name} — *${price}*\n"
                 else:
-                    reply_text = f"📦 أمر {text} تم استلامه. جاري المعالجة..."
-            
-            # أوامر بوت الإدارة
-            elif text.startswith('/stats') or text.startswith('/broadcast') or text.startswith('/add_product') or text.startswith('/update_order'):
-                bot_name = 'admin'
-                bot_token = BOT_TOKENS['admin']
-                if text == '/start':
-                    reply_text = WELCOME_MESSAGES['admin']
-                else:
-                    reply_text = f"👑 أمر {text} تم استلامه. جاري المعالجة..."
-            
-            # أوامر بوت التوصيات
-            elif text.startswith('/recommend') or text.startswith('/compare') or text.startswith('/budget'):
-                bot_name = 'recommendation'
-                bot_token = BOT_TOKENS['recommendation']
-                if text == '/start':
-                    reply_text = WELCOME_MESSAGES['recommendation']
-                else:
-                    reply_text = f"🎯 أمر {text} تم استلامه. جاري المعالجة..."
-            
-            # أوامر بوت خدمة العملاء
+                    reply_text = "🛍️ لا توجد منتجات متاحة حالياً."
+            elif text == '/help' and bot_name == 'customer':
+                reply_text = (
+                    "📖 **المساعدة:**\n\n"
+                    "/start - الترحيب\n"
+                    "/products - عرض المنتجات\n"
+                    "/help - هذه الرسالة"
+                )
             else:
-                bot_name = 'customer'
-                bot_token = BOT_TOKENS['customer']
-                
-                if text == '/start':
-                    reply_text = WELCOME_MESSAGES['customer']
-                elif text == '/products':
-                    products = get_products()
-                    if products:
-                        reply_text = "🛍️ **المنتجات المتوفرة:**\n\n"
-                        for i, p in enumerate(products[:5], 1):
-                            name = p.get('name_ar', p.get('name_en', 'منتج'))
-                            price = p.get('price', 0)
-                            reply_text += f"{i}. {name} — *${price}*\n"
-                    else:
-                        reply_text = "🛍️ لا توجد منتجات متاحة حالياً."
-                elif text == '/help':
-                    reply_text = (
-                        "📖 **المساعدة:**\n\n"
-                        "/start - الترحيب\n"
-                        "/products - عرض المنتجات\n"
-                        "/help - هذه الرسالة"
-                    )
-                else:
-                    reply_text = f"🤖 استقبلت رسالتك: '{text}'\nاستخدم /help للمساعدة."
+                reply_text = f"🤖 تم استلام أمر '{text}' بواسطة بوت {bot_name}"
             
             # إرسال الرد
-            if bot_token:
+            if reply_text:
                 send_message(chat_id, reply_text, bot_token)
-                log.info(f"➡️ Routed to {bot_name} bot")
-            else:
-                log.error(f"❌ No token found for {bot_name} bot")
+                log.info(f"✅ Reply sent to {chat_id} from {bot_name} bot")
         
         return "OK", 200
     except Exception as e:
-        log.error(f"💥 Webhook error: {e}")
+        log.error(f"💥 Webhook error in {bot_name}: {e}")
         return "Error", 500
+
+@app.route("/webhook/customer", methods=["POST"])
+def webhook_customer():
+    """Webhook خاص ببوت خدمة العملاء"""
+    return handle_webhook('customer')
+
+@app.route("/webhook/admin", methods=["POST"])
+def webhook_admin():
+    """Webhook خاص ببوت الإدارة"""
+    return handle_webhook('admin')
+
+@app.route("/webhook/recommendation", methods=["POST"])
+def webhook_recommendation():
+    """Webhook خاص ببوت التوصيات"""
+    return handle_webhook('recommendation')
+
+@app.route("/webhook/supplier", methods=["POST"])
+def webhook_supplier():
+    """Webhook خاص ببوت الموردين"""
+    return handle_webhook('supplier')
 
 # ══════════════════════════════════════════════════════════════════
 # HELPERS
@@ -279,7 +269,7 @@ def get_client_ip():
 
 @app.before_request
 def log_request():
-    if request.path.startswith("/api") or request.path == "/webhook":
+    if request.path.startswith("/api") or request.path.startswith("/webhook"):
         log.info(f"{request.method} {request.path} — {get_client_ip()}")
 
 @app.after_request
@@ -552,7 +542,7 @@ def api_health():
 @app.route("/", methods=["GET"])
 def root():
     return jsonify({
-        "name": "NEO PULSE HUB API (Multi-Bot)",
+        "name": "NEO PULSE HUB API (Multi-Bot - Paths)",
         "version": "2.0.0",
         "docs": "/api/health",
         "bots": list(BOT_TOKENS.keys()),
@@ -582,9 +572,9 @@ def server_error(e):
 
 if __name__ == "__main__":
     init_db()
-    log.info("=" * 50)
-    log.info("🌐 Starting NEO PULSE HUB Webhook Server (Multi-Bot)")
-    log.info("=" * 50)
+    log.info("=" * 60)
+    log.info("🌐 Starting NEO PULSE HUB Webhook Server (Multi-Bot - Paths)")
+    log.info("=" * 60)
     
     active_bots = []
     for name, token in BOT_TOKENS.items():
@@ -596,5 +586,8 @@ if __name__ == "__main__":
     
     log.info(f"🎯 Active bots: {', '.join(active_bots)}")
     log.info(f"🚀 Server running on port {PORT}")
+    log.info(f"📌 Webhook paths:")
+    for name in active_bots:
+        log.info(f"   • /webhook/{name}")
     
     app.run(host=HOST, port=PORT, debug=DEBUG, threaded=True)
