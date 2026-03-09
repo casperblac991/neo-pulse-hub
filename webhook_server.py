@@ -646,3 +646,4 @@ if __name__ == "__main__":
     for name, token in BOT_TOKENS.items():
         log.info(name + ": " + ("✅" if token else "❌ MISSING"))
     app.run(host=HOST, port=PORT, threaded=True)
+    grep -n "supplier" /home/claude/neopulse/webhook_server.py | head -30
