@@ -3478,5 +3478,29 @@
     "badge": "",
     "active": true,
     "shipping_days": "7-14"
+  },
+  {
+    "id": "NPH-702",
+    "name_ar": "ساعة أبل ألترا 2\n/add ساعة سامسونج Galaxy Watch 6\n/add ساعة جارمن فينكس 7\n/add ساعة هواوي واتش جي تي 3\n/add ساعة أبل Series 9\n/add ساعة سامسونج Watch 5 Pro\n/add ساعة جارمن فينكس 6\n/add ساعة هواوي واتش 3\n/add ساعة أبل SE\n/add ساعة سامسونج Watch 4 Classic\n/add ساعة جارمن فينكس 5\n/add ساعة هواوي واتش فيت 2\n/add ساعة أبل Ultra\n/add ساعة سامسونج Watch 6 Classic\n/add ساعة جارمن إبيكس 2\n/add ساعة هواوي واتش جي تي 2\n/add ساعة أبل Series 8\n/add ساعة سامسونج Watch 4\n/add ساعة جارمن فينكس 7X\n/add ساعة هواوي واتش جي تي رنر",
+    "name_en": "ساعة أبل ألترا 2\n/add ساعة سامسونج Galaxy Watch 6\n/add ساعة جارمن فينكس 7\n/add ساعة هواوي واتش جي تي 3\n/add ساعة أبل Series 9\n/add ساعة سامسونج Watch 5 Pro\n/add ساعة جارمن فينكس 6\n/add ساعة هواوي واتش 3\n/add ساعة أبل SE\n/add ساعة سامسونج Watch 4 Classic\n/add ساعة جارمن فينكس 5\n/add ساعة هواوي واتش فيت 2\n/add ساعة أبل Ultra\n/add ساعة سامسونج Watch 6 Classic\n/add ساعة جارمن إبيكس 2\n/add ساعة هواوي واتش جي تي 2\n/add ساعة أبل Series 8\n/add ساعة سامسونج Watch 4\n/add ساعة جارمن فينكس 7X\n/add ساعة هواوي واتش جي تي رنر",
+    "price": 99,
+    "original_price": 129,
+    "category": "smart-home",
+    "category_ar": "منتجات ذكية",
+    "rating": 4.3,
+    "reviews": 500,
+    "stock": 50,
+    "discount": 10,
+    "featured": false,
+    "active": true,
+    "features_ar": [
+      "منتج تقني متقدم",
+      "جودة عالية"
+    ],
+    "description_ar": "منتج تقني مميز",
+    "tags": [
+      "ساعة أبل ألترا 2\n/add ساعة سامسونج Galaxy Watch 6\n/add ساعة جارمن فينكس 7\n/add ساعة هواوي واتش جي تي 3\n/add ساعة أبل Series 9\n/add ساعة سامسونج Watch 5 Pro\n/add ساعة جارمن فينكس 6\n/add ساعة هواوي واتش 3\n/add ساعة أبل SE\n/add ساعة سامسونج Watch 4 Classic\n/add ساعة جارمن فينكس 5\n/add ساعة هواوي واتش فيت 2\n/add ساعة أبل Ultra\n/add ساعة سامسونج Watch 6 Classic\n/add ساعة جارمن إبيكس 2\n/add ساعة هواوي واتش جي تي 2\n/add ساعة أبل Series 8\n/add ساعة سامسونج Watch 4\n/add ساعة جارمن فينكس 7X\n/add ساعة هواوي واتش جي تي رنر"
+    ],
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400"
   }
 ]
