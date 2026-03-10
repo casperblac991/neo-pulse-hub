@@ -215,57 +215,34 @@ def get_real_image_url(product_name: str) -> str:
     return ""
 
 
-def get_product_image(product_name: str, product_id: str) -> str:
-    """
-    الوظيفة الرئيسية:
-    1. يبحث عن الصورة في Google
-    2. يحملها
-    3. يرفعها على GitHub
-    4. يرجع raw URL مضمون
-    """
-    log.info(f"🔍 Finding image for: {product_name[:40]}")
-    
-    # اسم الملف
-    safe_name = re.sub(r'[^a-zA-Z0-9]', '_', product_name.lower())[:40]
-    filename = f"{product_id}_{safe_name}.jpg"
-    
-    # تحقق إذا كانت الصورة موجودة على GitHub
-    raw_url = f"{RAW_BASE}/images/{filename}"
+def get_product_image(product_name: str, product_id: str, category: str = "") -> str:
+    """يجيب صورة حقيقية ويرفعها على GitHub"""
     try:
-        r = requests.head(raw_url, timeout=5)
-        if r.status_code == 200:
-            log.info(f"✅ Already exists: {filename}")
-            return raw_url
-    except:
-        pass
-    
-    # جيب رابط الصورة من Google
-    img_url = get_real_image_url(product_name)
-    if not img_url:
-        log.warning(f"⚠️ No Google result for: {product_name[:30]}")
-        return ""
-    
-    # حمّل الصورة
-    img_data = download_image(img_url)
-    if not img_data:
-        log.warning(f"⚠️ Download failed: {img_url[:50]}")
-        # جرب نتيجة ثانية
-        return ""
-    
-    # ارفع على GitHub
-    github_url = upload_image_to_github(img_data, filename)
-    if github_url:
-        return github_url
-    
-    return ""
+        import image_fetcher
+        return image_fetcher.get_image_for_product(product_name, product_id, category)
+    except Exception as e:
+        log.error(f"image_fetcher error: {e}")
+        return get_svg_placeholder(category, product_name)
 
 
 # ═══════════════════════════════════════════════════════
 # SVG Fallback احترافي
 # ═══════════════════════════════════════════════════════
 
-def get_svg_placeholder(category: str, name: str) -> str:
-    """يرجع data URI لـ SVG احترافي حسب الفئة"""
+def get_svg_placeholder(category: str, name: str = "") -> str:
+    """يرجع رابط SVG من GitHub حسب الفئة"""
+    svg_map = {
+        "smartwatch":    f"{RAW_BASE}/images/smartwatch.svg",
+        "smart-glasses": f"{RAW_BASE}/images/smart-glasses.svg",
+        "health":        f"{RAW_BASE}/images/health.svg",
+        "smart-home":    f"{RAW_BASE}/images/smart-home.svg",
+        "earbuds":       f"{RAW_BASE}/images/earbuds.svg",
+        "productivity":  f"{RAW_BASE}/images/productivity.svg",
+    }
+    return svg_map.get(category, svg_map["smartwatch"])
+
+def _get_svg_placeholder_old(category: str, name: str) -> str:
+    """OLD - data URI version"""
     svgs = {
         "smartwatch": f"""<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="300" fill="#0f1923"/><rect x="112" y="45" width="76" height="12" rx="6" fill="#1e3a5f"/><rect x="112" y="243" width="76" height="12" rx="6" fill="#1e3a5f"/><rect x="90" y="70" width="120" height="160" rx="30" fill="#1a2a3a" stroke="#3b82f6" stroke-width="2.5"/><rect x="102" y="82" width="96" height="136" rx="20" fill="#0a0f1a"/><text x="150" y="145" text-anchor="middle" fill="#60a5fa" font-size="32" font-family="Arial" font-weight="bold">10:08</text><text x="150" y="170" text-anchor="middle" fill="#94a3b8" font-size="14" font-family="Arial">SAT</text><text x="150" y="205" text-anchor="middle" fill="#3b82f6" font-size="11" font-family="Arial">{name[:18]}</text></svg>""",
         "smart-glasses": f"""<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="300" fill="#0f0a1a"/><rect x="15" y="143" width="270" height="4" rx="2" fill="#4a3a6a"/><ellipse cx="97" cy="150" rx="63" ry="48" fill="#1a0f2e" stroke="#7c3aed" stroke-width="2.5"/><ellipse cx="203" cy="150" rx="63" ry="48" fill="#1a0f2e" stroke="#7c3aed" stroke-width="2.5"/><rect x="160" y="138" width="40" height="24" rx="6" fill="#2d1b4e"/><ellipse cx="97" cy="150" rx="45" ry="33" fill="#120a22"/><ellipse cx="203" cy="150" rx="45" ry="33" fill="#120a22"/><circle cx="97" cy="150" r="18" fill="#1e0f3a"/><circle cx="203" cy="150" r="18" fill="#1e0f3a"/><circle cx="97" cy="150" r="8" fill="#7c3aed" opacity="0.9"/><circle cx="203" cy="150" r="8" fill="#7c3aed" opacity="0.9"/><text x="150" y="240" text-anchor="middle" fill="#7c3aed" font-size="11" font-family="Arial">{name[:18]}</text></svg>""",
@@ -340,7 +317,7 @@ def fill_store(chat_id=None):
             discount = round((1 - p["price"] / p["orig"]) * 100)
 
             # جيب صورة حقيقية من Google وارفعها على GitHub
-            image_url = get_product_image(p["name_en"], pid)
+            image_url = get_product_image(p["name_en"], pid, cat_id)
 
             # إذا فشل كل شيء، استخدم SVG مدمج
             if not image_url:
@@ -416,7 +393,7 @@ def auto_add_products(count=5, chat_id=None):
         pid = f"NPH-{counter:03d}"
         discount = round((1 - p["price"] / p["orig"]) * 100)
 
-        image_url = get_product_image(p["name_en"], pid)
+        image_url = get_product_image(p["name_en"], pid, cat_id)
         if not image_url:
             image_url = get_svg_placeholder(cat_id, p["name_ar"])
 
