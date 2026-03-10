@@ -4622,5 +4622,165 @@
     "featured": false,
     "added_by": "auto_bot",
     "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-738",
+    "name_ar": "شاشة Samsung Odyssey OLED G9",
+    "name_en": "Samsung Odyssey OLED G9 49\"",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 1299,
+    "original_price": 1499,
+    "discount": 13,
+    "rating": 4.7,
+    "reviews": 3456,
+    "stock": 86,
+    "image": "https://image-us.samsung.com/SamsungUS/home/computing/monitors/gaming/odyssey-oled-g9-750.jpg",
+    "description_ar": "شاشة Samsung Odyssey OLED G9 — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "OLED 49\" QHD",
+      "240Hz",
+      "0.03ms GtG",
+      "DisplayHDR True Black 400",
+      "AMD FreeSync"
+    ],
+    "tags": [
+      "إنتاجية",
+      "شاشة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-739",
+    "name_ar": "سماعات Apple AirPods 4 ANC",
+    "name_en": "Apple AirPods 4 ANC",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 179,
+    "original_price": 199,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 32145,
+    "stock": 60,
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-4-hero-202409?wid=750",
+    "description_ar": "سماعات Apple AirPods 4 ANC — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "H2 Chip ANC",
+      "Open-ear راحة",
+      "USB-C",
+      "5h + 30h",
+      "IP54"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-740",
+    "name_ar": "نظام Eufy Security HomeBase 3",
+    "name_en": "Eufy Security S380 HomeBase 3",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.6,
+    "reviews": 4321,
+    "stock": 36,
+    "image": "https://m.media-amazon.com/images/I/41t9pNyFRQL._AC_SL750_.jpg",
+    "description_ar": "نظام Eufy Security HomeBase 3 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "16GB تخزين محلي",
+      "Triple Band WiFi",
+      "BionicMind AI",
+      "8K تخزين",
+      "بدون اشتراك"
+    ],
+    "tags": [
+      "منزل ذكي",
+      "نظام"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-741",
+    "name_ar": "نظارة Inmo Air 2 الذكية",
+    "name_en": "Inmo Air 2",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "price": 399,
+    "original_price": 449,
+    "discount": 11,
+    "rating": 4.2,
+    "reviews": 654,
+    "stock": 94,
+    "image": "https://www.inmoglass.com/cdn/shop/files/inmo-air2-product-black.jpg",
+    "description_ar": "نظارة Inmo Air 2 الذكية — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "ChatGPT مدمج",
+      "ترجمة فورية",
+      "27g خفيف",
+      "9 ساعات بطارية",
+      "Waveguide"
+    ],
+    "tags": [
+      "نظارات ذكية",
+      "نظارة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-742",
+    "name_ar": "نظارة TCL NXTWEAR S2 Plus",
+    "name_en": "TCL NXTWEAR S2 Plus",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "price": 379,
+    "original_price": 429,
+    "discount": 12,
+    "rating": 4.4,
+    "reviews": 876,
+    "stock": 64,
+    "image": "https://www.tcl.com/eu/en/products/mobile/nxtwear-s-series/tcl-nxtwear-s2-plus-product.jpg",
+    "description_ar": "نظارة TCL NXTWEAR S2 Plus — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "105\" شاشة افتراضية",
+      "1080p Full HD",
+      "USB-C",
+      "72g وزن",
+      "120Hz"
+    ],
+    "tags": [
+      "نظارات ذكية",
+      "نظارة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
   }
 ]
