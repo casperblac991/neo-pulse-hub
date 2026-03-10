@@ -3502,5 +3502,165 @@
       "ساعة أبل ألترا 2\n/add ساعة سامسونج Galaxy Watch 6\n/add ساعة جارمن فينكس 7\n/add ساعة هواوي واتش جي تي 3\n/add ساعة أبل Series 9\n/add ساعة سامسونج Watch 5 Pro\n/add ساعة جارمن فينكس 6\n/add ساعة هواوي واتش 3\n/add ساعة أبل SE\n/add ساعة سامسونج Watch 4 Classic\n/add ساعة جارمن فينكس 5\n/add ساعة هواوي واتش فيت 2\n/add ساعة أبل Ultra\n/add ساعة سامسونج Watch 6 Classic\n/add ساعة جارمن إبيكس 2\n/add ساعة هواوي واتش جي تي 2\n/add ساعة أبل Series 8\n/add ساعة سامسونج Watch 4\n/add ساعة جارمن فينكس 7X\n/add ساعة هواوي واتش جي تي رنر"
     ],
     "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400"
+  },
+  {
+    "id": "NPH-703",
+    "name_ar": "سوار شاومي Smart Band 9 Pro",
+    "name_en": "Xiaomi Smart Band 9 Pro",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 79,
+    "original_price": 99,
+    "discount": 20,
+    "rating": 4.6,
+    "reviews": 15432,
+    "stock": 58,
+    "image": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-smart-band9-pro/overview-design.jpg",
+    "description_ar": "سوار شاومي Smart Band 9 Pro — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "شاشة AMOLED 1.74\"",
+      "GPS مدمج",
+      "21 يوم بطارية",
+      "150+ رياضة",
+      "SpO2"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "سوار"
+    ],
+    "badge": "اقتصادي",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-704",
+    "name_ar": "ساعة شاومي Watch S3",
+    "name_en": "Xiaomi Watch S3",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "price": 139,
+    "original_price": 169,
+    "discount": 18,
+    "rating": 4.5,
+    "reviews": 6543,
+    "stock": 95,
+    "image": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-watch-s3/overview-design.jpg",
+    "description_ar": "ساعة شاومي Watch S3 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "شاشة AMOLED 1.43\"",
+      "12 أيام بطارية",
+      "GPS مدمج",
+      "150 وضع رياضي",
+      "مقاوم للماء 5ATM"
+    ],
+    "tags": [
+      "ساعات ذكية",
+      "ساعة"
+    ],
+    "badge": "قيمة مثالية",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-705",
+    "name_ar": "شاحن Anker 737 GaNPrime 120W",
+    "name_en": "Anker 737 GaNPrime 120W",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 89,
+    "original_price": 109,
+    "discount": 18,
+    "rating": 4.8,
+    "reviews": 34567,
+    "stock": 63,
+    "image": "https://m.media-amazon.com/images/I/51XY8gORd6L._AC_SL750_.jpg",
+    "description_ar": "شاحن Anker 737 GaNPrime 120W — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "120W إجمالي",
+      "3 منافذ",
+      "GaN III",
+      "شحن 0→80% بـ 43 دقيقة",
+      "USB-C + USB-A"
+    ],
+    "tags": [
+      "إنتاجية",
+      "شاحن"
+    ],
+    "badge": "قيمة مثالية",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-706",
+    "name_ar": "ساعة غارمن Venu 3S",
+    "name_en": "Garmin Venu 3S",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "price": 449,
+    "original_price": 499,
+    "discount": 10,
+    "rating": 4.7,
+    "reviews": 3456,
+    "stock": 43,
+    "image": "https://static.garmin.com/en/products/010-02785-10/v/cf-lg@2x.jpg",
+    "description_ar": "ساعة غارمن Venu 3S — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "شاشة AMOLED",
+      "استجابة جسم AI",
+      "يومين ونصف بطارية",
+      "تتبع سكر الدم",
+      "Body Battery"
+    ],
+    "tags": [
+      "ساعات ذكية",
+      "ساعة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-707",
+    "name_ar": "عصابة Muse 2 للتأمل",
+    "name_en": "Muse 2 Meditation Headband",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 249,
+    "original_price": 299,
+    "discount": 17,
+    "rating": 4.5,
+    "reviews": 2876,
+    "stock": 37,
+    "image": "https://choosemuse.com/cdn/shop/products/Muse2-product-750.jpg",
+    "description_ar": "عصابة Muse 2 للتأمل — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "EEG 7 مستشعرات",
+      "تأمل موجَّه",
+      "تتبع تنفس",
+      "نبضات القلب",
+      "تطبيق تحليل"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "عصابة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
   }
 ]
