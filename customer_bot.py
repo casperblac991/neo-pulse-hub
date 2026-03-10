@@ -650,6 +650,19 @@ async def _handle_review_text(update: Update, ctx: ContextTypes.DEFAULT_TYPE,
 # MAIN
 # ══════════════════════════════════════════════════════════════════
 
+def _register_handlers(app):
+    """يُستخدم في Webhook mode"""
+    from telegram.ext import CommandHandler, MessageHandler, CallbackQueryHandler, filters
+    app.add_handler(CommandHandler("start",     cmd_start))
+    app.add_handler(CommandHandler("help",      cmd_help))
+    app.add_handler(CommandHandler("products",  cmd_products))
+    app.add_handler(CommandHandler("cart",      cmd_cart))
+    app.add_handler(CommandHandler("orders",    cmd_orders))
+    app.add_handler(CommandHandler("search",    cmd_search))
+    app.add_handler(CommandHandler("recommend", cmd_recommend))
+    app.add_handler(CallbackQueryHandler(handle_callback))
+    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
+
 def main():
     if not TOKEN:
         print("❌ CUSTOMER_BOT_TOKEN or TELEGRAM_TOKEN missing!")
