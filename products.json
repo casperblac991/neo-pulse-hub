@@ -4942,5 +4942,165 @@
     "featured": true,
     "added_by": "auto_bot",
     "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-748",
+    "name_ar": "لوح رسم Wacom Intuos Pro L",
+    "name_en": "Wacom Intuos Pro Large",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 449,
+    "original_price": 499,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 8765,
+    "stock": 94,
+    "image": "https://estore.wacom.com/media/catalog/product/w/a/wacom-intuos-pro-large-product.jpg",
+    "description_ar": "لوح رسم Wacom Intuos Pro L — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "8192 مستوى ضغط",
+      "Pro Pen 3",
+      "Bluetooth 5.0",
+      "Touch Multi",
+      "ExpressKey Remote"
+    ],
+    "tags": [
+      "إنتاجية",
+      "لوح"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-749",
+    "name_ar": "شاشة Google Nest Hub Max",
+    "name_en": "Google Nest Hub Max",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 229,
+    "original_price": 279,
+    "discount": 18,
+    "rating": 4.6,
+    "reviews": 15432,
+    "stock": 83,
+    "image": "https://lh3.googleusercontent.com/sxTjJW8mPe5Zz1TuK3-1MlGBJeIEi6GqRkFBHMFGJCMcBlJxMi2D4p0HaJRsCb8_dQ=w750",
+    "description_ar": "شاشة Google Nest Hub Max — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "شاشة 10\"",
+      "كاميرا Duo",
+      "Google Photos",
+      "Assistant",
+      "مكبرات Full-range"
+    ],
+    "tags": [
+      "منزل ذكي",
+      "شاشة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-750",
+    "name_ar": "ساعة غارمن Fenix 7X Solar",
+    "name_en": "Garmin Fenix 7X Solar",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "price": 699,
+    "original_price": 799,
+    "discount": 13,
+    "rating": 4.8,
+    "reviews": 5432,
+    "stock": 59,
+    "image": "https://static.garmin.com/en/products/010-02541-23/v/cf-lg@2x.jpg",
+    "description_ar": "ساعة غارمن Fenix 7X Solar — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "شحن شمسي",
+      "GPS متعدد التردد",
+      "بطارية 37 يوم",
+      "خرائط توبو مدمجة",
+      "مناسب للمغامرات"
+    ],
+    "tags": [
+      "ساعات ذكية",
+      "ساعة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-751",
+    "name_ar": "جرس Ring Video Doorbell Pro 2",
+    "name_en": "Ring Video Doorbell Pro 2",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 249,
+    "original_price": 299,
+    "discount": 17,
+    "rating": 4.5,
+    "reviews": 43210,
+    "stock": 48,
+    "image": "https://m.media-amazon.com/images/I/41P5UiEILEL._AC_SL750_.jpg",
+    "description_ar": "جرس Ring Video Doorbell Pro 2 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "فيديو 1536p HD+",
+      "رؤية ثلاثية الأبعاد",
+      "تقنية Bird's Eye View",
+      "تنبيه ذكي",
+      "Alexa"
+    ],
+    "tags": [
+      "منزل ذكي",
+      "جرس"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-752",
+    "name_ar": "جهاز iPad Pro M4 13 بوصة",
+    "name_en": "iPad Pro M4 13-inch",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 1299,
+    "original_price": 1499,
+    "discount": 13,
+    "rating": 4.9,
+    "reviews": 23456,
+    "stock": 72,
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-m4-finish-select-202405-13inch-silver?wid=750",
+    "description_ar": "جهاز iPad Pro M4 13 بوصة — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "M4 Chip Ultra Thin",
+      "OLED Tandem",
+      "Apple Intelligence",
+      "120Hz ProMotion",
+      "USB4 40Gbps"
+    ],
+    "tags": [
+      "إنتاجية",
+      "جهاز"
+    ],
+    "badge": "الأكثر مبيعاً",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": true,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
   }
 ]
