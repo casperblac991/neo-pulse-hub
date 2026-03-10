@@ -3822,5 +3822,165 @@
     "featured": false,
     "added_by": "auto_bot",
     "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-713",
+    "name_ar": "جهاز Garmin Index لضغط الدم",
+    "name_en": "Garmin Index BPM",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 149,
+    "original_price": 179,
+    "discount": 17,
+    "rating": 4.5,
+    "reviews": 3456,
+    "stock": 72,
+    "image": "https://static.garmin.com/en/products/010-02888-00/v/cf-lg@2x.jpg",
+    "description_ar": "جهاز Garmin Index لضغط الدم — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "قياس ضغط الدم",
+      "Bluetooth 5.0",
+      "مزامنة Garmin Connect",
+      "نتائج دقيقة",
+      "ذاكرة 40 قياس"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "جهاز"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-714",
+    "name_ar": "إضاءة Nanoleaf Shapes سداسية",
+    "name_en": "Nanoleaf Shapes Hexagons Starter",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 199,
+    "original_price": 249,
+    "discount": 20,
+    "rating": 4.5,
+    "reviews": 12345,
+    "stock": 39,
+    "image": "https://nanoleaf.me/en-US/cdn/shop/products/nanoleaf-hexagons-product-750.jpg",
+    "description_ar": "إضاءة Nanoleaf Shapes سداسية — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "16M لون",
+      "موسيقى تفاعلية",
+      "لمس تحكم",
+      "Thread",
+      "تصميم حر"
+    ],
+    "tags": [
+      "منزل ذكي",
+      "إضاءة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-715",
+    "name_ar": "مكنسة iRobot Roomba j9+",
+    "name_en": "iRobot Roomba j9+",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 799,
+    "original_price": 999,
+    "discount": 20,
+    "rating": 4.7,
+    "reviews": 6543,
+    "stock": 35,
+    "image": "https://m.media-amazon.com/images/I/71kZ2J9ZTLL._AC_SL750_.jpg",
+    "description_ar": "مكنسة iRobot Roomba j9+ — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "تفريغ تلقائي 60 يوم",
+      "تجنب العوائق AI",
+      "خريطة ذكية",
+      "Alexa + Google",
+      "شحن تلقائي"
+    ],
+    "tags": [
+      "منزل ذكي",
+      "مكنسة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-716",
+    "name_ar": "منظم Ecobee Smart Premium",
+    "name_en": "Ecobee Smart Thermostat Premium",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 249,
+    "original_price": 299,
+    "discount": 17,
+    "rating": 4.7,
+    "reviews": 21345,
+    "stock": 81,
+    "image": "https://m.media-amazon.com/images/I/51pnxFWqHyL._AC_SL750_.jpg",
+    "description_ar": "منظم Ecobee Smart Premium — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "Alexa مدمج",
+      "حساس درجة حرارة غرفة",
+      "توفير 23% طاقة",
+      "SmartSensor",
+      "ENERGY STAR"
+    ],
+    "tags": [
+      "منزل ذكي",
+      "منظم"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-717",
+    "name_ar": "ساعة غوغل Pixel Watch 3",
+    "name_en": "Google Pixel Watch 3",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "price": 349,
+    "original_price": 399,
+    "discount": 13,
+    "rating": 4.7,
+    "reviews": 3210,
+    "stock": 48,
+    "image": "https://lh3.googleusercontent.com/sxTjJW8mPe5Zz1TuK3-1MlGBJeIEi6GqRkFBHMFGJCMcBlJxMi2D4p0HaJRsCb8_dQ=w750",
+    "description_ar": "ساعة غوغل Pixel Watch 3 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "Wear OS 4",
+      "تتبع قلب متقدم",
+      "شاشة AMOLED 45mm",
+      "Google Wallet",
+      "بطارية 24 ساعة"
+    ],
+    "tags": [
+      "ساعات ذكية",
+      "ساعة"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
   }
 ]
