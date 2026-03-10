@@ -597,6 +597,17 @@ async def low_stock_alert_job(ctx: ContextTypes.DEFAULT_TYPE):
 # MAIN
 # ══════════════════════════════════════════════════════════════════
 
+def _register_handlers(app):
+    """يُستخدم في Webhook mode"""
+    from telegram.ext import CommandHandler, MessageHandler, CallbackQueryHandler, filters
+    app.add_handler(CommandHandler("start",        cmd_start))
+    app.add_handler(CommandHandler("stats",        cmd_stats))
+    app.add_handler(CommandHandler("broadcast",    cmd_broadcast))
+    app.add_handler(CommandHandler("add",          cmd_add_product))
+    app.add_handler(CommandHandler("update_order", cmd_update_order))
+    app.add_handler(CallbackQueryHandler(handle_callback))
+    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
+
 def main():
     if not TOKEN:
         print("❌ ADMIN_BOT_TOKEN or TELEGRAM_TOKEN missing!")
