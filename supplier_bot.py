@@ -526,6 +526,17 @@ async def daily_inventory_report(ctx: ContextTypes.DEFAULT_TYPE):
 # MAIN
 # ══════════════════════════════════════════════════════════════════
 
+def _register_handlers(app):
+    """يُستخدم في Webhook mode"""
+    from telegram.ext import CommandHandler, MessageHandler, CallbackQueryHandler, filters
+    app.add_handler(CommandHandler("start",   cmd_start))
+    app.add_handler(CommandHandler("stock",   cmd_stock))
+    app.add_handler(CommandHandler("add",     cmd_add))
+    app.add_handler(CommandHandler("restock", cmd_restock))
+    app.add_handler(CommandHandler("price",   cmd_price))
+    app.add_handler(CallbackQueryHandler(handle_callback))
+    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
+
 def main():
     if not TOKEN:
         print("❌ SUPPLIER_BOT_TOKEN or TELEGRAM_TOKEN is missing!")
