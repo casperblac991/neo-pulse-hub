@@ -2,6 +2,8 @@ import sys
 import os
 import logging
 import threading
+import time
+import requests
 
 logging.basicConfig(
     format="%(asctime)s | %(name)s | %(levelname)s | %(message)s",
@@ -10,6 +12,37 @@ logging.basicConfig(
 log = logging.getLogger("launcher")
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'bots'))
+
+
+# ══════════════════════════════════════════════════════════
+# KILL OLD SESSIONS — يوقف أي polling قديم قبل البدء
+# ══════════════════════════════════════════════════════════
+
+def kill_old_sessions():
+    """يحذف كل webhooks قديمة ويمسح updates معلقة لكل البوتات"""
+    tokens = {
+        "CUSTOMER_BOT_TOKEN":    os.environ.get("CUSTOMER_BOT_TOKEN", ""),
+        "ADMIN_BOT_TOKEN":       os.environ.get("ADMIN_BOT_TOKEN", ""),
+        "SUPPLIER_BOT_TOKEN":    os.environ.get("SUPPLIER_BOT_TOKEN", ""),
+        "RECO_BOT_TOKEN":        os.environ.get("RECO_BOT_TOKEN", ""),
+    }
+    for name, token in tokens.items():
+        if not token:
+            continue
+        try:
+            r = requests.post(
+                f"https://api.telegram.org/bot{token}/deleteWebhook",
+                json={"drop_pending_updates": True},
+                timeout=10
+            )
+            status = r.json().get("result", False)
+            log.info(f"deleteWebhook {name}: {'✅' if status else '⚠️'} {r.json()}")
+        except Exception as e:
+            log.warning(f"deleteWebhook {name} error: {e}")
+    # انتظر 3 ثواني بعد الحذف
+    time.sleep(3)
+    log.info("✅ Old sessions cleared")
+
 
 # ══════════════════════════════════════════════════════════
 # AUTO-POPULATE SCHEDULER
@@ -59,7 +92,12 @@ def start_auto_populate_scheduler():
         return None
 
 
+# ══════════════════════════════════════════════════════════
+# BOT RUNNERS
+# ══════════════════════════════════════════════════════════
+
 def run_admin():
+    time.sleep(1)
     try:
         import admin_bot as ab
         log.info("Starting Admin Bot...")
@@ -68,6 +106,7 @@ def run_admin():
         log.error("Admin error: " + str(e))
 
 def run_recommendation():
+    time.sleep(2)
     try:
         import recommendation_bot as rb
         log.info("Starting Recommendation Bot...")
@@ -76,6 +115,7 @@ def run_recommendation():
         log.error("Recommendation error: " + str(e))
 
 def run_supplier():
+    time.sleep(3)
     try:
         import supplier_bot as sb
         log.info("Starting Supplier Bot...")
@@ -84,6 +124,7 @@ def run_supplier():
         log.error("Supplier error: " + str(e))
 
 def run_webhook():
+    time.sleep(1)
     try:
         import webhook_server as ws
         log.info("Starting Webhook/Flask Server...")
@@ -92,12 +133,20 @@ def run_webhook():
         log.error("Webhook error: " + str(e))
 
 
+# ══════════════════════════════════════════════════════════
+# MAIN
+# ══════════════════════════════════════════════════════════
+
 if __name__ == "__main__":
     log.info("🚀 NEO PULSE HUB Starting...")
 
-    # بدء scheduler التلقائي
+    # أولاً: امسح كل sessions قديمة
+    kill_old_sessions()
+
+    # ثانياً: بدء scheduler التلقائي
     start_auto_populate_scheduler()
 
+    # ثالثاً: شغّل البوتات في خيوط منفصلة
     threads = [
         threading.Thread(target=run_admin,          name="Admin",    daemon=True),
         threading.Thread(target=run_recommendation, name="Reco",     daemon=True),
@@ -106,9 +155,10 @@ if __name__ == "__main__":
     ]
     for t in threads:
         t.start()
-        log.info("Started: " + t.name)
+        log.info("Started thread: " + t.name)
 
-    # Customer bot في الخيط الرئيسي
+    # رابعاً: Customer bot في الخيط الرئيسي
+    time.sleep(4)
     try:
         import customer_bot as cb
         log.info("Starting Customer Bot in main thread...")
