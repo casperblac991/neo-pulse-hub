@@ -10,8 +10,8 @@
     "discount": 11,
     "rating": 4.9,
     "reviews": 12430,
-    "stock": 52,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Apple%20Watch%20Series%209%2045mm",
+    "stock": 42,
+    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Apple+Watch+Series+9",
     "description_ar": "ساعة أبل Watch Series 9 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "شاشة Retina دائمة التشغيل",
@@ -28,7 +28,7 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": true,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
@@ -42,8 +42,8 @@
     "discount": 14,
     "rating": 4.8,
     "reviews": 8765,
-    "stock": 87,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Samsung%20Galaxy%20Watch%207%2044",
+    "stock": 21,
+    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Samsung+Galaxy+Watch",
     "description_ar": "ساعة سامسونج Galaxy Watch 7 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "معالج Exynos W1000",
@@ -60,7 +60,7 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": true,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
@@ -74,8 +74,8 @@
     "discount": 13,
     "rating": 4.8,
     "reviews": 5432,
-    "stock": 64,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Garmin%20Fenix%207X%20Solar",
+    "stock": 87,
+    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Garmin+Fenix+7X+Sola",
     "description_ar": "ساعة غارمن Fenix 7X Solar — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "شحن شمسي",
@@ -92,7 +92,7 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
@@ -106,8 +106,8 @@
     "discount": 11,
     "rating": 4.9,
     "reviews": 4321,
-    "stock": 97,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Apple%20Watch%20Ultra%202",
+    "stock": 85,
+    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Apple+Watch+Ultra+2",
     "description_ar": "ساعة أبل Watch Ultra 2 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "هيكل تيتانيوم",
@@ -124,13 +124,13 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": true,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
     "id": "NPH-005",
     "name_ar": "ساعة غوغل Pixel Watch 3",
-    "name_en": "Google Pixel Watch 3",
+    "name_en": "Google Pixel Watch 3 45mm",
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
     "price": 349,
@@ -138,13 +138,13 @@
     "discount": 13,
     "rating": 4.7,
     "reviews": 3210,
-    "stock": 55,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Google%20Pixel%20Watch%203",
+    "stock": 89,
+    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Google+Pixel+Watch+3",
     "description_ar": "ساعة غوغل Pixel Watch 3 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Wear OS 4",
       "تتبع قلب متقدم",
-      "شاشة AMOLED 45mm",
+      "شاشة AMOLED",
       "Google Wallet",
       "بطارية 24 ساعة"
     ],
@@ -156,7 +156,7 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
@@ -170,15 +170,15 @@
     "discount": 18,
     "rating": 4.5,
     "reviews": 6543,
-    "stock": 51,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Xiaomi%20Watch%20S3",
+    "stock": 59,
+    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Xiaomi+Watch+S3",
     "description_ar": "ساعة شاومي Watch S3 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "شاشة AMOLED 1.43\"",
       "12 أيام بطارية",
       "GPS مدمج",
       "150 وضع رياضي",
-      "مقاوم للماء 5ATM"
+      "5ATM"
     ],
     "tags": [
       "ساعات ذكية",
@@ -188,7 +188,7 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
@@ -202,8 +202,8 @@
     "discount": 15,
     "rating": 4.6,
     "reviews": 2876,
-    "stock": 85,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Amazfit%20Balance",
+    "stock": 84,
+    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Amazfit+Balance",
     "description_ar": "ساعة أمازفيت Balance — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Zepp OS 3.0",
@@ -220,7 +220,7 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
@@ -234,15 +234,15 @@
     "discount": 13,
     "rating": 4.8,
     "reviews": 1987,
-    "stock": 75,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Samsung%20Galaxy%20Watch%20Ultr",
+    "stock": 39,
+    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Samsung+Galaxy+Watch",
     "description_ar": "ساعة سامسونج Galaxy Watch Ultra — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "هيكل تيتانيوم",
       "بطارية 60 ساعة",
-      "مقاومة MIL-STD-810X",
-      "10ATM مقاومة",
-      "GPS Dual-frequency"
+      "MIL-STD-810X",
+      "10ATM",
+      "GPS Dual"
     ],
     "tags": [
       "ساعات ذكية",
@@ -252,7 +252,7 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
@@ -266,15 +266,15 @@
     "discount": 25,
     "rating": 4.5,
     "reviews": 9876,
-    "stock": 97,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Fitbit%20Versa%204",
+    "stock": 78,
+    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Fitbit+Versa+4",
     "description_ar": "ساعة فيتبيت Versa 4 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Alexa مدمج",
       "GPS",
       "6 أيام بطارية",
       "تتبع النوم",
-      "+40 وضع تمرين"
+      "40+ وضع تمرين"
     ],
     "tags": [
       "ساعات ذكية",
@@ -284,7 +284,7 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
@@ -298,15 +298,15 @@
     "discount": 10,
     "rating": 4.7,
     "reviews": 3456,
-    "stock": 58,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Garmin%20Venu%203S",
+    "stock": 32,
+    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Garmin+Venu+3S",
     "description_ar": "ساعة غارمن Venu 3S — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "شاشة AMOLED",
       "استجابة جسم AI",
-      "يومين ونصف بطارية",
+      "Body Battery",
       "تتبع سكر الدم",
-      "Body Battery"
+      "GPS"
     ],
     "tags": [
       "ساعات ذكية",
@@ -316,7 +316,7 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
@@ -330,15 +330,15 @@
     "discount": 13,
     "rating": 4.6,
     "reviews": 2134,
-    "stock": 82,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=OnePlus%20Watch%203",
+    "stock": 76,
+    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=OnePlus+Watch+3",
     "description_ar": "ساعة ون بلس Watch 3 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Wear OS 4",
-      "بطارية 100 ساعة",
+      "100 ساعة بطارية",
       "شحن 80% بـ 30 دقيقة",
-      "GPS Dual-band",
-      "مقاومة 5ATM"
+      "GPS Dual",
+      "5ATM"
     ],
     "tags": [
       "ساعات ذكية",
@@ -348,7 +348,7 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
@@ -362,15 +362,15 @@
     "discount": 13,
     "rating": 4.7,
     "reviews": 4567,
-    "stock": 43,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Huawei%20Watch%20GT%205%20Pro",
+    "stock": 28,
+    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Huawei+Watch+GT+5+Pr",
     "description_ar": "ساعة هواوي Watch GT 5 Pro — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "هيكل تيتانيوم",
       "بطارية 14 يوم",
       "تتبع صحي شامل",
       "GPS مزدوج",
-      "خرائط داخلية"
+      "خرائط"
     ],
     "tags": [
       "ساعات ذكية",
@@ -380,7 +380,7 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
@@ -394,15 +394,15 @@
     "discount": 14,
     "rating": 4.6,
     "reviews": 1876,
-    "stock": 76,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Withings%20ScanWatch%202",
+    "stock": 44,
+    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Withings+ScanWatch+2",
     "description_ar": "ساعة ويذينغز ScanWatch 2 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "تخطيط قلب ECG",
-      "أكسجين الدم SpO2",
+      "SpO2",
       "30 يوم بطارية",
       "تصميم كلاسيكي",
-      "FDA Cleared"
+      "FDA"
     ],
     "tags": [
       "ساعات ذكية",
@@ -412,7 +412,7 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
@@ -426,15 +426,15 @@
     "discount": 11,
     "rating": 4.6,
     "reviews": 1234,
-    "stock": 49,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=TicWatch%20Pro%205%20Enduro",
+    "stock": 65,
+    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=TicWatch+Pro+5+Endur",
     "description_ar": "ساعة تيكووتش Pro 5 Enduro — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
-      "Snapdragon W5+ Gen 1",
+      "Snapdragon W5+",
       "شاشة مزدوجة",
       "80 ساعة بطارية",
-      "Wear OS 3.5",
-      "MIL-STD-810H"
+      "Wear OS",
+      "MIL-STD"
     ],
     "tags": [
       "ساعات ذكية",
@@ -444,7 +444,7 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
@@ -458,15 +458,15 @@
     "discount": 17,
     "rating": 4.8,
     "reviews": 2345,
-    "stock": 26,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Coros%20Apex%202%20Pro",
+    "stock": 100,
+    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Coros+Apex+2+Pro",
     "description_ar": "ساعة كوروس Apex 2 Pro — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
-      "GPS متعدد التردد",
+      "GPS متعدد",
       "75 ساعة GPS",
       "خرائط توبو",
-      "Blood Lactate",
-      "شحن سريع"
+      "شحن سريع",
+      "تيتانيوم"
     ],
     "tags": [
       "ساعات ذكية",
@@ -476,7 +476,7 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
@@ -490,15 +490,15 @@
     "discount": 13,
     "rating": 4.8,
     "reviews": 4532,
-    "stock": 71,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Apple%20Vision%20Pro",
+    "stock": 84,
+    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Apple+Vision+Pro",
     "description_ar": "نظارة Apple Vision Pro — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "شاشة micro-OLED 4K",
       "visionOS",
       "R1 Chip",
       "كاميرات 3D",
-      "تصميم انغماسي كامل"
+      "انغماس كامل"
     ],
     "tags": [
       "نظارات ذكية",
@@ -508,7 +508,7 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": true,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
@@ -522,14 +522,14 @@
     "discount": 13,
     "rating": 4.8,
     "reviews": 15432,
-    "stock": 65,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Meta%20Quest%203%20512GB",
+    "stock": 81,
+    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Meta+Quest+3+512GB",
     "description_ar": "نظارة Meta Quest 3 — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Snapdragon XR2 Gen 2",
       "Mixed Reality",
       "عدسات Pancake",
-      "بطارية 2.2 ساعة",
+      "بطارية 2.2h",
       "Meta Store"
     ],
     "tags": [
@@ -540,12 +540,12 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": true,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
     "id": "NPH-018",
-    "name_ar": "نظارة Ray-Ban Meta Wayfarer الذكية",
+    "name_ar": "نظارة Ray-Ban Meta الذكية",
     "name_en": "Ray-Ban Meta Wayfarer",
     "category": "smart-glasses",
     "category_ar": "نظارات ذكية",
@@ -554,15 +554,15 @@
     "discount": 13,
     "rating": 4.5,
     "reviews": 8765,
-    "stock": 28,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Ray-Ban%20Meta%20Wayfarer",
-    "description_ar": "نظارة Ray-Ban Meta Wayfarer الذكية — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 84,
+    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Ray-Ban+Meta+Wayfare",
+    "description_ar": "نظارة Ray-Ban Meta الذكية — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "كاميرا 12MP",
-      "مكبرات صوت مفتوحة",
+      "مكبرات مفتوحة",
       "Bluetooth 5.3",
-      "استدعاء Meta AI",
-      "بطارية 4 ساعات"
+      "Meta AI",
+      "4 ساعات"
     ],
     "tags": [
       "نظارات ذكية",
@@ -572,13 +572,13 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": true,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
     "id": "NPH-019",
     "name_ar": "نظارة Meta Quest 3S",
-    "name_en": "Meta Quest 3S",
+    "name_en": "Meta Quest 3S 128GB",
     "category": "smart-glasses",
     "category_ar": "نظارات ذكية",
     "price": 299,
@@ -586,15 +586,15 @@
     "discount": 14,
     "rating": 4.7,
     "reviews": 6543,
-    "stock": 22,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Meta%20Quest%203S",
+    "stock": 27,
+    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Meta+Quest+3S+128GB",
     "description_ar": "نظارة Meta Quest 3S — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Snapdragon XR2 Gen 2",
       "Mixed Reality",
-      "128GB Storage",
-      "بطارية معززة",
-      "أخف بـ 50%"
+      "128GB",
+      "أخف بـ 50%",
+      "Meta Store"
     ],
     "tags": [
       "نظارات ذكية",
@@ -604,7 +604,7 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
@@ -618,15 +618,15 @@
     "discount": 10,
     "rating": 4.6,
     "reviews": 3210,
-    "stock": 28,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=XREAL%20Air%202%20Pro",
+    "stock": 31,
+    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=XREAL+Air+2+Pro",
     "description_ar": "نظارة XREAL Air 2 Pro — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "شاشة 330\" افتراضية",
-      "120Hz Refresh",
-      "Electrochromic Dimming",
+      "120Hz",
+      "Electrochromic",
       "USB-C",
-      "72g خفيف"
+      "72g"
     ],
     "tags": [
       "نظارات ذكية",
@@ -636,7 +636,7 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
@@ -650,15 +650,15 @@
     "discount": 17,
     "rating": 4.6,
     "reviews": 1876,
-    "stock": 41,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=HTC%20Vive%20XR%20Elite",
+    "stock": 53,
+    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=HTC+Vive+XR+Elite",
     "description_ar": "نظارة HTC Vive XR Elite — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Snapdragon XR2 Gen 1",
       "4K+ عرض",
-      "بطارية 2 ساعة",
       "Viveport Infinity",
-      "قابل للخلع"
+      "قابل للخلع",
+      "2h"
     ],
     "tags": [
       "نظارات ذكية",
@@ -668,13 +668,13 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
     "id": "NPH-022",
     "name_ar": "نظارة Pico 4 Ultra",
-    "name_en": "Pico 4 Ultra",
+    "name_en": "Pico 4 Ultra VR",
     "category": "smart-glasses",
     "category_ar": "نظارات ذكية",
     "price": 599,
@@ -682,15 +682,15 @@
     "discount": 14,
     "rating": 4.5,
     "reviews": 2345,
-    "stock": 81,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Pico%204%20Ultra",
+    "stock": 38,
+    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Pico+4+Ultra+VR",
     "description_ar": "نظارة Pico 4 Ultra — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Snapdragon XR2 Gen 2",
       "Spatial Video",
       "Hand Tracking",
       "3GB RAM",
-      "بطارية 3 ساعة"
+      "3h"
     ],
     "tags": [
       "نظارات ذكية",
@@ -700,13 +700,13 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
     "id": "NPH-023",
-    "name_ar": "نظارة Snap Spectacles 5",
-    "name_en": "Snap Spectacles 5",
+    "name_ar": "نظارة Snap Spectacles الجيل 5",
+    "name_en": "Snap Spectacles 5th Gen",
     "category": "smart-glasses",
     "category_ar": "نظارات ذكية",
     "price": 399,
@@ -714,15 +714,15 @@
     "discount": 11,
     "rating": 4.3,
     "reviews": 1234,
-    "stock": 34,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Snap%20Spectacles%205",
-    "description_ar": "نظارة Snap Spectacles 5 — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 83,
+    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Snap+Spectacles+5th+",
+    "description_ar": "نظارة Snap Spectacles الجيل 5 — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "AR مدمج",
       "كاميرا ثنائية",
       "Snapchat مدمج",
-      "بطارية 30 دقيقة",
-      "Lens Studio"
+      "Lens Studio",
+      "30 دقيقة"
     ],
     "tags": [
       "نظارات ذكية",
@@ -732,7 +732,7 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
@@ -746,15 +746,15 @@
     "discount": 14,
     "rating": 4.5,
     "reviews": 1543,
-    "stock": 45,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=XREAL%20Beam%20Pro",
+    "stock": 33,
+    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=XREAL+Beam+Pro",
     "description_ar": "نظارة XREAL Beam Pro — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Spatial Computing",
-      "Dual cameras",
+      "كاميرتين",
       "Android 13",
       "3D Capture",
-      "5000mAh بطارية"
+      "5000mAh"
     ],
     "tags": [
       "نظارات ذكية",
@@ -764,13 +764,13 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
     "id": "NPH-025",
     "name_ar": "نظارة Vuzix Z100 الذكية",
-    "name_en": "Vuzix Z100 Smart Glasses",
+    "name_en": "Vuzix Z100 AR Glasses",
     "category": "smart-glasses",
     "category_ar": "نظارات ذكية",
     "price": 699,
@@ -778,13 +778,13 @@
     "discount": 13,
     "rating": 4.3,
     "reviews": 543,
-    "stock": 38,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Vuzix%20Z100%20Smart%20Glasses",
+    "stock": 84,
+    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Vuzix+Z100+AR+Glasse",
     "description_ar": "نظارة Vuzix Z100 الذكية — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Waveguide AR",
       "Qualcomm AR1",
-      "8 ساعات بطارية",
+      "8h بطارية",
       "Android 11",
       "Hands-free"
     ],
@@ -796,7 +796,7 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
@@ -810,14 +810,14 @@
     "discount": 12,
     "rating": 4.4,
     "reviews": 876,
-    "stock": 87,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=TCL%20NXTWEAR%20S2%20Plus",
+    "stock": 30,
+    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=TCL+NXTWEAR+S2+Plus",
     "description_ar": "نظارة TCL NXTWEAR S2 Plus — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
-      "105\" شاشة افتراضية",
+      "105\" افتراضية",
       "1080p Full HD",
       "USB-C",
-      "72g وزن",
+      "72g",
       "120Hz"
     ],
     "tags": [
@@ -828,13 +828,13 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
     "id": "NPH-027",
     "name_ar": "نظارة Inmo Air 2 الذكية",
-    "name_en": "Inmo Air 2",
+    "name_en": "Inmo Air 2 Smart Glasses",
     "category": "smart-glasses",
     "category_ar": "نظارات ذكية",
     "price": 399,
@@ -842,14 +842,14 @@
     "discount": 11,
     "rating": 4.2,
     "reviews": 654,
-    "stock": 26,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Inmo%20Air%202",
+    "stock": 87,
+    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Inmo+Air+2+Smart+Gla",
     "description_ar": "نظارة Inmo Air 2 الذكية — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "ChatGPT مدمج",
       "ترجمة فورية",
-      "27g خفيف",
-      "9 ساعات بطارية",
+      "27g",
+      "9h بطارية",
       "Waveguide"
     ],
     "tags": [
@@ -860,13 +860,13 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
     "id": "NPH-028",
     "name_ar": "نظارة Rokid Max 2",
-    "name_en": "Rokid Max 2",
+    "name_en": "Rokid Max 2 AR",
     "category": "smart-glasses",
     "category_ar": "نظارات ذكية",
     "price": 549,
@@ -874,8 +874,8 @@
     "discount": 13,
     "rating": 4.5,
     "reviews": 987,
-    "stock": 56,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Rokid%20Max%202",
+    "stock": 93,
+    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Rokid+Max+2+AR",
     "description_ar": "نظارة Rokid Max 2 — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Micro-OLED 1080p",
@@ -892,13 +892,13 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
     "id": "NPH-029",
     "name_ar": "نظارة Viture One XR",
-    "name_en": "Viture One XR",
+    "name_en": "Viture One XR Glasses",
     "category": "smart-glasses",
     "category_ar": "نظارات ذكية",
     "price": 439,
@@ -906,14 +906,14 @@
     "discount": 12,
     "rating": 4.4,
     "reviews": 765,
-    "stock": 48,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Viture%20One%20XR",
+    "stock": 45,
+    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Viture+One+XR+Glasse",
     "description_ar": "نظارة Viture One XR — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
-      "شاشة 135\" افتراضية",
+      "135\" افتراضية",
       "Electrochromic",
       "Cinema Mode",
-      "2K Resolution",
+      "2K",
       "77g"
     ],
     "tags": [
@@ -924,13 +924,13 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
     "id": "NPH-030",
-    "name_ar": "نظارة Meta Ray-Ban Skyler الذكية",
-    "name_en": "Meta Ray-Ban Skyler",
+    "name_ar": "نظارة Meta Ray-Ban Skyler",
+    "name_en": "Meta Ray-Ban Skyler Glasses",
     "category": "smart-glasses",
     "category_ar": "نظارات ذكية",
     "price": 349,
@@ -938,15 +938,15 @@
     "discount": 13,
     "rating": 4.5,
     "reviews": 3210,
-    "stock": 98,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Meta%20Ray-Ban%20Skyler",
-    "description_ar": "نظارة Meta Ray-Ban Skyler الذكية — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 89,
+    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Meta+Ray-Ban+Skyler+",
+    "description_ar": "نظارة Meta Ray-Ban Skyler — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "كاميرا 12MP Ultra Wide",
-      "AI المساعد",
-      "مكبرات مفتوحة",
+      "AI مساعد",
       "Bluetooth 5.3",
-      "6 ساعات"
+      "6h",
+      "مفتوحة"
     ],
     "tags": [
       "نظارات ذكية",
@@ -956,7 +956,7 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
@@ -970,13 +970,13 @@
     "discount": 13,
     "rating": 4.8,
     "reviews": 18765,
-    "stock": 46,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Oura%20Ring%20Gen%204",
+    "stock": 55,
+    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Oura+Ring+Gen+4",
     "description_ar": "خاتم Oura Ring الجيل 4 — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "تتبع نوم دقيق",
       "Readiness Score",
-      "بطارية 8 أيام",
+      "8 أيام بطارية",
       "Blood Oxygen",
       "Ring AI"
     ],
@@ -988,13 +988,13 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": true,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
     "id": "NPH-032",
     "name_ar": "حزام WHOOP 4.0",
-    "name_en": "Whoop 4.0 Band",
+    "name_en": "WHOOP 4.0 Fitness Band",
     "category": "health",
     "category_ar": "صحة ذكية",
     "price": 239,
@@ -1002,15 +1002,15 @@
     "discount": 14,
     "rating": 4.6,
     "reviews": 8765,
-    "stock": 34,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Whoop%204.0%20Band",
+    "stock": 78,
+    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=WHOOP+4.0+Fitness+Ba",
     "description_ar": "حزام WHOOP 4.0 — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Strain Tracking",
       "Recovery Score",
       "HRV متقدم",
-      "بطارية 5 أيام",
-      "لا شاشة = دقة أعلى"
+      "5 أيام بطارية",
+      "دقة عالية"
     ],
     "tags": [
       "صحة ذكية",
@@ -1020,7 +1020,7 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
@@ -1034,14 +1034,14 @@
     "discount": 13,
     "rating": 4.7,
     "reviews": 5432,
-    "stock": 50,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Ultrahuman%20Ring%20AIR",
+    "stock": 29,
+    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Ultrahuman+Ring+AIR",
     "description_ar": "خاتم Ultrahuman Ring AIR — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
-      "خاتم ذكي بدون اشتراك",
-      "تتبع نوم AI",
+      "بدون اشتراك",
+      "AI نوم",
       "Metabolic Score",
-      "سبعة أيام بطارية",
+      "7 أيام",
       "IP68"
     ],
     "tags": [
@@ -1052,13 +1052,13 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": true,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
     "id": "NPH-034",
     "name_ar": "سوار Fitbit Charge 6",
-    "name_en": "Fitbit Charge 6",
+    "name_en": "Fitbit Charge 6 Tracker",
     "category": "health",
     "category_ar": "صحة ذكية",
     "price": 159,
@@ -1066,14 +1066,14 @@
     "discount": 20,
     "rating": 4.6,
     "reviews": 12345,
-    "stock": 65,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Fitbit%20Charge%206",
+    "stock": 76,
+    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Fitbit+Charge+6+Trac",
     "description_ar": "سوار Fitbit Charge 6 — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
-      "تخطيط قلب ECG",
-      "Google Maps مدمج",
+      "ECG",
+      "Google Maps",
       "YouTube Music",
-      "سبعة أيام بطارية",
+      "7 أيام",
       "GPS"
     ],
     "tags": [
@@ -1084,7 +1084,7 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
@@ -1098,15 +1098,15 @@
     "discount": 17,
     "rating": 4.5,
     "reviews": 6543,
-    "stock": 75,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Garmin%20Vivosmart%205",
+    "stock": 79,
+    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Garmin+Vivosmart+5",
     "description_ar": "سوار Garmin Vivosmart 5 — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
-      "OLED صغير",
-      "7 أيام بطارية",
+      "OLED",
+      "7 أيام",
       "Body Battery",
       "HRV Status",
-      "مقاوم للماء 5ATM"
+      "5ATM"
     ],
     "tags": [
       "صحة ذكية",
@@ -1116,7 +1116,7 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
@@ -1130,15 +1130,15 @@
     "discount": 17,
     "rating": 4.7,
     "reviews": 2345,
-    "stock": 54,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Withings%20ScanWatch%20Nova",
+    "stock": 59,
+    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Withings+ScanWatch+N",
     "description_ar": "ساعة Withings ScanWatch Nova — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
-      "تصميم ساعة كلاسيكي",
       "ECG",
       "30 يوم بطارية",
       "SpO2",
-      "نوم متقدم"
+      "تصميم كلاسيكي",
+      "FDA"
     ],
     "tags": [
       "صحة ذكية",
@@ -1148,7 +1148,7 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
@@ -1162,14 +1162,14 @@
     "discount": 14,
     "rating": 4.5,
     "reviews": 1876,
-    "stock": 62,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Amazfit%20Helio%20Ring",
+    "stock": 20,
+    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Amazfit+Helio+Ring",
     "description_ar": "خاتم أمازفيت Helio Ring — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
-      "تيتانيوم Ti-Al",
-      "تتبع صحي شامل",
-      "بطارية 4 أيام",
-      "Zepp Health App",
+      "تيتانيوم",
+      "صحة شاملة",
+      "4 أيام",
+      "Zepp Health",
       "IP68"
     ],
     "tags": [
@@ -1180,1707 +1180,11 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "fill_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
     "id": "NPH-038",
-    "name_ar": "خاتم RingConn Gen 2 Air",
-    "name_en": "RingConn Gen 2 Air",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 199,
-    "original_price": 249,
-    "discount": 20,
-    "rating": 4.5,
-    "reviews": 3210,
-    "stock": 33,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=RingConn%20Gen%202%20Air",
-    "description_ar": "خاتم RingConn Gen 2 Air — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "10 أيام بطارية",
-      "بدون اشتراك",
-      "تتبع نوم",
-      "SpO2",
-      "أنواع خواتم متعددة"
-    ],
-    "tags": [
-      "صحة ذكية",
-      "خاتم"
-    ],
-    "badge": "قيمة مثالية",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-039",
-    "name_ar": "سوار شاومي Smart Band 9 Pro",
-    "name_en": "Xiaomi Smart Band 9 Pro",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 79,
-    "original_price": 99,
-    "discount": 20,
-    "rating": 4.6,
-    "reviews": 15432,
-    "stock": 48,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Xiaomi%20Smart%20Band%209%20Pro",
-    "description_ar": "سوار شاومي Smart Band 9 Pro — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "شاشة AMOLED 1.74\"",
-      "GPS مدمج",
-      "21 يوم بطارية",
-      "150+ رياضة",
-      "SpO2"
-    ],
-    "tags": [
-      "صحة ذكية",
-      "سوار"
-    ],
-    "badge": "اقتصادي",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-040",
-    "name_ar": "سوار Biostrap EVO الصحي",
-    "name_en": "Biostrap EVO",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 199,
-    "original_price": 249,
-    "discount": 20,
-    "rating": 4.4,
-    "reviews": 1234,
-    "stock": 66,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Biostrap%20EVO",
-    "description_ar": "سوار Biostrap EVO الصحي — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "قياس HRV دقيق",
-      "SpO2 مستمر",
-      "تحليل نوم",
-      "تطبيق طبي",
-      "IP67"
-    ],
-    "tags": [
-      "صحة ذكية",
-      "سوار"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-041",
-    "name_ar": "عصابة Muse 2 للتأمل",
-    "name_en": "Muse 2 Meditation Headband",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 249,
-    "original_price": 299,
-    "discount": 17,
-    "rating": 4.5,
-    "reviews": 2876,
-    "stock": 88,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Muse%202%20Meditation%20Headban",
-    "description_ar": "عصابة Muse 2 للتأمل — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "EEG 7 مستشعرات",
-      "تأمل موجَّه",
-      "تتبع تنفس",
-      "نبضات القلب",
-      "تطبيق تحليل"
-    ],
-    "tags": [
-      "صحة ذكية",
-      "عصابة"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-042",
-    "name_ar": "جهاز Withings U-Scan للبول",
-    "name_en": "Withings U-Scan",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 499,
-    "original_price": 599,
-    "discount": 17,
-    "rating": 4.3,
-    "reviews": 654,
-    "stock": 83,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Withings%20U-Scan",
-    "description_ar": "جهاز Withings U-Scan للبول — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "تحليل بول منزلي",
-      "ترطيب الجسم",
-      "دورة هرمونية",
-      "تطبيق Health+",
-      "أول في العالم"
-    ],
-    "tags": [
-      "صحة ذكية",
-      "جهاز"
-    ],
-    "badge": "فريد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-043",
-    "name_ar": "جهاز Garmin Index لضغط الدم",
-    "name_en": "Garmin Index BPM",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 149,
-    "original_price": 179,
-    "discount": 17,
-    "rating": 4.5,
-    "reviews": 3456,
-    "stock": 75,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Garmin%20Index%20BPM",
-    "description_ar": "جهاز Garmin Index لضغط الدم — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "قياس ضغط الدم",
-      "Bluetooth 5.0",
-      "مزامنة Garmin Connect",
-      "نتائج دقيقة",
-      "ذاكرة 40 قياس"
-    ],
-    "tags": [
-      "صحة ذكية",
-      "جهاز"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-044",
-    "name_ar": "جهاز Polar Verity Sense",
-    "name_en": "Polar Verity Sense",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 89,
-    "original_price": 109,
-    "discount": 18,
-    "rating": 4.7,
-    "reviews": 5678,
-    "stock": 85,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Polar%20Verity%20Sense",
-    "description_ar": "جهاز Polar Verity Sense — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "HR دقة عالية",
-      "يُثبَّت على الذراع",
-      "30 ساعة بطارية",
-      "Bluetooth + ANT+",
-      "IP67"
-    ],
-    "tags": [
-      "صحة ذكية",
-      "جهاز"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-045",
-    "name_ar": "خاتم سامسونج Galaxy Ring",
-    "name_en": "Samsung Galaxy Ring",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 399,
-    "original_price": 449,
-    "discount": 11,
-    "rating": 4.6,
-    "reviews": 4321,
-    "stock": 76,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Samsung%20Galaxy%20Ring",
-    "description_ar": "خاتم سامسونج Galaxy Ring — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "تيتانيوم خفيف",
-      "7 أيام بطارية",
-      "Samsung Health",
-      "تتبع نوم AI",
-      "IP68 ماء"
-    ],
-    "tags": [
-      "صحة ذكية",
-      "خاتم"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-046",
-    "name_ar": "مكبر صوت Amazon Echo Show 10",
-    "name_en": "Amazon Echo Show 10 Gen 4",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "price": 249,
-    "original_price": 299,
-    "discount": 17,
-    "rating": 4.7,
-    "reviews": 23456,
-    "stock": 48,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Amazon%20Echo%20Show%2010%20Gen%204",
-    "description_ar": "مكبر صوت Amazon Echo Show 10 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "شاشة HD 10\"",
-      "يتابعك تلقائياً",
-      "كاميرا 13MP",
-      "Alexa",
-      "مكبر 3\" + تيرور"
-    ],
-    "tags": [
-      "منزل ذكي",
-      "مكبر"
-    ],
-    "badge": "الأكثر مبيعاً",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": true,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-047",
-    "name_ar": "مكبر Apple HomePod الجيل 2",
-    "name_en": "Apple HomePod 2nd Gen",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "price": 299,
-    "original_price": 349,
-    "discount": 14,
-    "rating": 4.7,
-    "reviews": 12345,
-    "stock": 30,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Apple%20HomePod%202nd%20Gen",
-    "description_ar": "مكبر Apple HomePod الجيل 2 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "Spatial Audio",
-      "S7 Chip",
-      "تحكم في المنزل",
-      "Siri",
-      "جودة صوت استثنائية"
-    ],
-    "tags": [
-      "منزل ذكي",
-      "مكبر"
-    ],
-    "badge": "مميز",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": true,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-048",
-    "name_ar": "شاشة Google Nest Hub Max",
-    "name_en": "Google Nest Hub Max",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "price": 229,
-    "original_price": 279,
-    "discount": 18,
-    "rating": 4.6,
-    "reviews": 15432,
-    "stock": 57,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Google%20Nest%20Hub%20Max",
-    "description_ar": "شاشة Google Nest Hub Max — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "شاشة 10\"",
-      "كاميرا Duo",
-      "Google Photos",
-      "Assistant",
-      "مكبرات Full-range"
-    ],
-    "tags": [
-      "منزل ذكي",
-      "شاشة"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-049",
-    "name_ar": "طقم إضاءة Philips Hue الذكية",
-    "name_en": "Philips Hue White & Color Starter Kit",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "price": 199,
-    "original_price": 249,
-    "discount": 20,
-    "rating": 4.7,
-    "reviews": 34567,
-    "stock": 42,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Philips%20Hue%20White%20%26%20Color",
-    "description_ar": "طقم إضاءة Philips Hue الذكية — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "16 مليون لون",
-      "تحكم صوتي",
-      "Hue Bridge",
-      "تطبيق ذكي",
-      "مزامنة مع الموسيقى"
-    ],
-    "tags": [
-      "منزل ذكي",
-      "طقم"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-050",
-    "name_ar": "جرس Ring Video Doorbell Pro 2",
-    "name_en": "Ring Video Doorbell Pro 2",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "price": 249,
-    "original_price": 299,
-    "discount": 17,
-    "rating": 4.5,
-    "reviews": 43210,
-    "stock": 98,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Ring%20Video%20Doorbell%20Pro%202",
-    "description_ar": "جرس Ring Video Doorbell Pro 2 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "فيديو 1536p HD+",
-      "رؤية ثلاثية الأبعاد",
-      "تقنية Bird's Eye View",
-      "تنبيه ذكي",
-      "Alexa"
-    ],
-    "tags": [
-      "منزل ذكي",
-      "جرس"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-051",
-    "name_ar": "منظم حرارة Nest الجيل 4",
-    "name_en": "Google Nest Learning Thermostat 4",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "price": 279,
-    "original_price": 329,
-    "discount": 15,
-    "rating": 4.7,
-    "reviews": 28765,
-    "stock": 99,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Google%20Nest%20Learning%20Ther",
-    "description_ar": "منظم حرارة Nest الجيل 4 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "تعلم جدولك تلقائياً",
-      "توفير 15% طاقة",
-      "يُحس بتواجدك",
-      "شاشة OLED",
-      "Google Home"
-    ],
-    "tags": [
-      "منزل ذكي",
-      "منظم"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-052",
-    "name_ar": "مكبر Amazon Echo Dot الجيل 5",
-    "name_en": "Amazon Echo Dot 5th Gen",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "price": 49,
-    "original_price": 59,
-    "discount": 17,
-    "rating": 4.7,
-    "reviews": 98765,
-    "stock": 60,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Amazon%20Echo%20Dot%205th%20Gen",
-    "description_ar": "مكبر Amazon Echo Dot الجيل 5 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "Alexa",
-      "صوت أوضح 2x",
-      "تحكم Smart Home",
-      "ساعة LED",
-      "مزامنة لغرف"
-    ],
-    "tags": [
-      "منزل ذكي",
-      "مكبر"
-    ],
-    "badge": "قيمة مثالية",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-053",
-    "name_ar": "كاميرا Arlo Pro 5S أمان",
-    "name_en": "Arlo Pro 5S 2K Camera",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "price": 249,
-    "original_price": 299,
-    "discount": 17,
-    "rating": 4.6,
-    "reviews": 8765,
-    "stock": 95,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Arlo%20Pro%205S%202K%20Camera",
-    "description_ar": "كاميرا Arlo Pro 5S أمان — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "2K + HDR",
-      "ألوان ليلية",
-      "رؤية 160°",
-      "بطارية 6 أشهر",
-      "Alexa + Google"
-    ],
-    "tags": [
-      "منزل ذكي",
-      "كاميرا"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-054",
-    "name_ar": "مركز Samsung SmartThings",
-    "name_en": "Samsung SmartThings Hub v3",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "price": 129,
-    "original_price": 149,
-    "discount": 13,
-    "rating": 4.5,
-    "reviews": 5432,
-    "stock": 30,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Samsung%20SmartThings%20Hub%20v",
-    "description_ar": "مركز Samsung SmartThings — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "Zigbee + Z-Wave + WiFi",
-      "تحكم مركزي",
-      "روتين تلقائي",
-      "أمان محلي",
-      "تكامل شامل"
-    ],
-    "tags": [
-      "منزل ذكي",
-      "مركز"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-055",
-    "name_ar": "قفل ذكي Yale Assure Lock 2 Plus",
-    "name_en": "Yale Assure Lock 2 Plus",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "price": 329,
-    "original_price": 379,
-    "discount": 13,
-    "rating": 4.5,
-    "reviews": 4321,
-    "stock": 52,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Yale%20Assure%20Lock%202%20Plus",
-    "description_ar": "قفل ذكي Yale Assure Lock 2 Plus — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "Matter + Z-Wave",
-      "بصمة + رمز",
-      "أمان AES-128",
-      "تطبيق Yale Access",
-      "تنبيهات فورية"
-    ],
-    "tags": [
-      "منزل ذكي",
-      "قفل"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-056",
-    "name_ar": "مكنسة iRobot Roomba j9+",
-    "name_en": "iRobot Roomba j9+",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "price": 799,
-    "original_price": 999,
-    "discount": 20,
-    "rating": 4.7,
-    "reviews": 6543,
-    "stock": 47,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=iRobot%20Roomba%20j9%2B",
-    "description_ar": "مكنسة iRobot Roomba j9+ — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "تفريغ تلقائي 60 يوم",
-      "تجنب العوائق AI",
-      "خريطة ذكية",
-      "Alexa + Google",
-      "شحن تلقائي"
-    ],
-    "tags": [
-      "منزل ذكي",
-      "مكنسة"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-057",
-    "name_ar": "إضاءة Nanoleaf Shapes سداسية",
-    "name_en": "Nanoleaf Shapes Hexagons Starter",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "price": 199,
-    "original_price": 249,
-    "discount": 20,
-    "rating": 4.5,
-    "reviews": 12345,
-    "stock": 53,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Nanoleaf%20Shapes%20Hexagons%20",
-    "description_ar": "إضاءة Nanoleaf Shapes سداسية — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "16M لون",
-      "موسيقى تفاعلية",
-      "لمس تحكم",
-      "Thread",
-      "تصميم حر"
-    ],
-    "tags": [
-      "منزل ذكي",
-      "إضاءة"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-058",
-    "name_ar": "مكبر Sonos Era 300 الصوتي",
-    "name_en": "Sonos Era 300",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "price": 449,
-    "original_price": 499,
-    "discount": 10,
-    "rating": 4.7,
-    "reviews": 3456,
-    "stock": 68,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Sonos%20Era%20300",
-    "description_ar": "مكبر Sonos Era 300 الصوتي — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "Spatial Audio حقيقي",
-      "Dolby Atmos",
-      "6 مكبرات",
-      "S2 App",
-      "بدون اشتراك"
-    ],
-    "tags": [
-      "منزل ذكي",
-      "مكبر"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-059",
-    "name_ar": "منظم Ecobee Smart Premium",
-    "name_en": "Ecobee Smart Thermostat Premium",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "price": 249,
-    "original_price": 299,
-    "discount": 17,
-    "rating": 4.7,
-    "reviews": 21345,
-    "stock": 96,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Ecobee%20Smart%20Thermostat%20P",
-    "description_ar": "منظم Ecobee Smart Premium — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "Alexa مدمج",
-      "حساس درجة حرارة غرفة",
-      "توفير 23% طاقة",
-      "SmartSensor",
-      "ENERGY STAR"
-    ],
-    "tags": [
-      "منزل ذكي",
-      "منظم"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-060",
-    "name_ar": "نظام Eufy Security HomeBase 3",
-    "name_en": "Eufy Security S380 HomeBase 3",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "price": 299,
-    "original_price": 349,
-    "discount": 14,
-    "rating": 4.6,
-    "reviews": 4321,
-    "stock": 51,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Eufy%20Security%20S380%20HomeBa",
-    "description_ar": "نظام Eufy Security HomeBase 3 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "16GB تخزين محلي",
-      "Triple Band WiFi",
-      "BionicMind AI",
-      "8K تخزين",
-      "بدون اشتراك"
-    ],
-    "tags": [
-      "منزل ذكي",
-      "نظام"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-061",
-    "name_ar": "سماعات AirPods Pro الجيل 2",
-    "name_en": "Apple AirPods Pro 2nd Gen USB-C",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "price": 249,
-    "original_price": 279,
-    "discount": 11,
-    "rating": 4.9,
-    "reviews": 54321,
-    "stock": 58,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Apple%20AirPods%20Pro%202nd%20Gen",
-    "description_ar": "سماعات AirPods Pro الجيل 2 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "ANC H2 Chip",
-      "Adaptive Audio",
-      "صوت مكاني",
-      "IP68",
-      "6h + 30h case"
-    ],
-    "tags": [
-      "سماعات ذكية",
-      "سماعات"
-    ],
-    "badge": "الأكثر مبيعاً",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": true,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-062",
-    "name_ar": "سماعات Sony WF-1000XM5",
-    "name_en": "Sony WF-1000XM5",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "price": 279,
-    "original_price": 329,
-    "discount": 15,
-    "rating": 4.8,
-    "reviews": 23456,
-    "stock": 63,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Sony%20WF-1000XM5",
-    "description_ar": "سماعات Sony WF-1000XM5 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "أفضل ANC في السوق",
-      "Integrated Processor V2",
-      "360 صوت مكاني",
-      "LDAC",
-      "8h + 24h"
-    ],
-    "tags": [
-      "سماعات ذكية",
-      "سماعات"
-    ],
-    "badge": "مميز",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": true,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-063",
-    "name_ar": "سماعات Bose QuietComfort Ultra",
-    "name_en": "Bose QuietComfort Ultra Earbuds",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "price": 299,
-    "original_price": 349,
-    "discount": 14,
-    "rating": 4.8,
-    "reviews": 15432,
-    "stock": 61,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Bose%20QuietComfort%20Ultra%20E",
-    "description_ar": "سماعات Bose QuietComfort Ultra — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "Immersive Audio",
-      "CustomTune ANC",
-      "6h + 24h",
-      "USB-C",
-      "IP54"
-    ],
-    "tags": [
-      "سماعات ذكية",
-      "سماعات"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-064",
-    "name_ar": "سماعات Samsung Galaxy Buds 3 Pro",
-    "name_en": "Samsung Galaxy Buds 3 Pro",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "price": 249,
-    "original_price": 299,
-    "discount": 17,
-    "rating": 4.7,
-    "reviews": 12345,
-    "stock": 58,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Samsung%20Galaxy%20Buds%203%20Pro",
-    "description_ar": "سماعات Samsung Galaxy Buds 3 Pro — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "ANC AI-powered",
-      "Blade-shaped Design",
-      "IP57",
-      "360° Audio",
-      "6h + 30h"
-    ],
-    "tags": [
-      "سماعات ذكية",
-      "سماعات"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-065",
-    "name_ar": "سماعات Apple AirPods 4 ANC",
-    "name_en": "Apple AirPods 4 ANC",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "price": 179,
-    "original_price": 199,
-    "discount": 10,
-    "rating": 4.8,
-    "reviews": 32145,
-    "stock": 91,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Apple%20AirPods%204%20ANC",
-    "description_ar": "سماعات Apple AirPods 4 ANC — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "H2 Chip ANC",
-      "Open-ear راحة",
-      "USB-C",
-      "5h + 30h",
-      "IP54"
-    ],
-    "tags": [
-      "سماعات ذكية",
-      "سماعات"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-066",
-    "name_ar": "سماعات Sony WH-1000XM5 فوق الأذن",
-    "name_en": "Sony WH-1000XM5 Over-Ear",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "price": 349,
-    "original_price": 399,
-    "discount": 13,
-    "rating": 4.8,
-    "reviews": 45678,
-    "stock": 80,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Sony%20WH-1000XM5%20Over-Ear",
-    "description_ar": "سماعات Sony WH-1000XM5 فوق الأذن — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "ANC صناعي AI",
-      "30 ساعة بطارية",
-      "Multi-point",
-      "LDAC HiRes",
-      "فولد مدمج"
-    ],
-    "tags": [
-      "سماعات ذكية",
-      "سماعات"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-067",
-    "name_ar": "سماعات Nothing Ear 3",
-    "name_en": "Nothing Ear (3)",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "price": 149,
-    "original_price": 179,
-    "discount": 17,
-    "rating": 4.6,
-    "reviews": 8765,
-    "stock": 50,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Nothing%20Ear%20%283%29",
-    "description_ar": "سماعات Nothing Ear 3 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "تصميم شفاف أيقوني",
-      "ANC 45dB",
-      "بطارية 8.5h + 40h",
-      "IP55",
-      "ChatGPT مدمج"
-    ],
-    "tags": [
-      "سماعات ذكية",
-      "سماعات"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-068",
-    "name_ar": "سماعات Jabra Evolve2 Buds",
-    "name_en": "Jabra Evolve2 Buds",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "price": 249,
-    "original_price": 299,
-    "discount": 17,
-    "rating": 4.5,
-    "reviews": 4321,
-    "stock": 69,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Jabra%20Evolve2%20Buds",
-    "description_ar": "سماعات Jabra Evolve2 Buds — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "للمهنيين",
-      "ANC AI",
-      "Jabra AI",
-      "6h + 33h",
-      "UC certified"
-    ],
-    "tags": [
-      "سماعات ذكية",
-      "سماعات"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-069",
-    "name_ar": "سماعات Beats Studio Buds+",
-    "name_en": "Beats Studio Buds+",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "price": 169,
-    "original_price": 199,
-    "discount": 15,
-    "rating": 4.6,
-    "reviews": 6543,
-    "stock": 22,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Beats%20Studio%20Buds%2B",
-    "description_ar": "سماعات Beats Studio Buds+ — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "ANC 36dB",
-      "Transparency Mode",
-      "IP54",
-      "9h + 36h",
-      "Android + iOS"
-    ],
-    "tags": [
-      "سماعات ذكية",
-      "سماعات"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-070",
-    "name_ar": "سماعات Sennheiser Momentum TW4",
-    "name_en": "Sennheiser Momentum True Wireless 4",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "price": 279,
-    "original_price": 329,
-    "discount": 15,
-    "rating": 4.7,
-    "reviews": 3456,
-    "stock": 55,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Sennheiser%20Momentum%20True%20",
-    "description_ar": "سماعات Sennheiser Momentum TW4 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "صوت Hi-Fi استثنائي",
-      "ANC Adaptive",
-      "7h + 28h",
-      "aptX Lossless",
-      "IP54"
-    ],
-    "tags": [
-      "سماعات ذكية",
-      "سماعات"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-071",
-    "name_ar": "سماعات Google Pixel Buds Pro 2",
-    "name_en": "Google Pixel Buds Pro 2",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "price": 229,
-    "original_price": 259,
-    "discount": 12,
-    "rating": 4.7,
-    "reviews": 8765,
-    "stock": 44,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Google%20Pixel%20Buds%20Pro%202",
-    "description_ar": "سماعات Google Pixel Buds Pro 2 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "Tensor A1 Chip",
-      "ANC محسَّن",
-      "11h + 33h",
-      "ترجمة فورية",
-      "Gemini مدمج"
-    ],
-    "tags": [
-      "سماعات ذكية",
-      "سماعات"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-072",
-    "name_ar": "سماعات Anker Soundcore Liberty 4 Pro",
-    "name_en": "Anker Soundcore Liberty 4 Pro",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "price": 129,
-    "original_price": 159,
-    "discount": 19,
-    "rating": 4.6,
-    "reviews": 12345,
-    "stock": 44,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Anker%20Soundcore%20Liberty%204",
-    "description_ar": "سماعات Anker Soundcore Liberty 4 Pro — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "ANC 50dB",
-      "LDAC",
-      "11h + 53h",
-      "IPX4",
-      "شاشة استعراض"
-    ],
-    "tags": [
-      "سماعات ذكية",
-      "سماعات"
-    ],
-    "badge": "قيمة مثالية",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-073",
-    "name_ar": "سماعات Shure Aonic Free 2",
-    "name_en": "Shure Aonic Free 2",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "price": 299,
-    "original_price": 349,
-    "discount": 14,
-    "rating": 4.6,
-    "reviews": 2345,
-    "stock": 81,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Shure%20Aonic%20Free%202",
-    "description_ar": "سماعات Shure Aonic Free 2 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "جودة استوديو",
-      "ANC متقدم",
-      "7h + 28h",
-      "USB-C",
-      "التحكم اللمسي"
-    ],
-    "tags": [
-      "سماعات ذكية",
-      "سماعات"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-074",
-    "name_ar": "سماعات JBL Tour Pro 3",
-    "name_en": "JBL Tour Pro 3",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "price": 249,
-    "original_price": 299,
-    "discount": 17,
-    "rating": 4.6,
-    "reviews": 5432,
-    "stock": 40,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=JBL%20Tour%20Pro%203",
-    "description_ar": "سماعات JBL Tour Pro 3 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "شاشة لمس على الحافظة",
-      "ANC Pro",
-      "10h + 40h",
-      "Hi-Res Audio",
-      "ChatGPT"
-    ],
-    "tags": [
-      "سماعات ذكية",
-      "سماعات"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-075",
-    "name_ar": "سماعات Technics EAH-AZ100",
-    "name_en": "Technics EAH-AZ100",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "price": 299,
-    "original_price": 349,
-    "discount": 14,
-    "rating": 4.7,
-    "reviews": 1876,
-    "stock": 59,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Technics%20EAH-AZ100",
-    "description_ar": "سماعات Technics EAH-AZ100 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "ANC AI",
-      "Jitter-less Wireless",
-      "10h + 25h",
-      "USB-C",
-      "IPX4"
-    ],
-    "tags": [
-      "سماعات ذكية",
-      "سماعات"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-076",
-    "name_ar": "جهاز iPad Pro M4 13 بوصة",
-    "name_en": "iPad Pro M4 13-inch",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 1299,
-    "original_price": 1499,
-    "discount": 13,
-    "rating": 4.9,
-    "reviews": 23456,
-    "stock": 67,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=iPad%20Pro%20M4%2013-inch",
-    "description_ar": "جهاز iPad Pro M4 13 بوصة — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "M4 Chip Ultra Thin",
-      "OLED Tandem",
-      "Apple Intelligence",
-      "120Hz ProMotion",
-      "USB4 40Gbps"
-    ],
-    "tags": [
-      "إنتاجية",
-      "جهاز"
-    ],
-    "badge": "الأكثر مبيعاً",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": true,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-077",
-    "name_ar": "تابلت Samsung Galaxy Tab S10 Ultra",
-    "name_en": "Samsung Galaxy Tab S10 Ultra",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 1299,
-    "original_price": 1499,
-    "discount": 13,
-    "rating": 4.8,
-    "reviews": 12345,
-    "stock": 58,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Samsung%20Galaxy%20Tab%20S10%20Ul",
-    "description_ar": "تابلت Samsung Galaxy Tab S10 Ultra — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "Snapdragon 8 Gen 3",
-      "شاشة AMOLED 14.6\"",
-      "S Pen مدمج",
-      "DeX Mode",
-      "12000mAh"
-    ],
-    "tags": [
-      "إنتاجية",
-      "تابلت"
-    ],
-    "badge": "مميز",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": true,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-078",
-    "name_ar": "ماوس Logitech MX Master 3S",
-    "name_en": "Logitech MX Master 3S",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 99,
-    "original_price": 119,
-    "discount": 17,
-    "rating": 4.9,
-    "reviews": 45678,
-    "stock": 30,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Logitech%20MX%20Master%203S",
-    "description_ar": "ماوس Logitech MX Master 3S — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "8000 DPI",
-      "عجلة ذكية MagSpeed",
-      "7 أزرار قابلة برمجة",
-      "70 يوم بطارية",
-      "Bolt receiver"
-    ],
-    "tags": [
-      "إنتاجية",
-      "ماوس"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-079",
-    "name_ar": "لوحة مفاتيح Logitech MX Keys S Plus",
-    "name_en": "Logitech MX Keys S Plus",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 149,
-    "original_price": 179,
-    "discount": 17,
-    "rating": 4.8,
-    "reviews": 23456,
-    "stock": 40,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Logitech%20MX%20Keys%20S%20Plus",
-    "description_ar": "لوحة مفاتيح Logitech MX Keys S Plus — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "إضاءة Smart Backlight",
-      "مفاتيح Smart Actions",
-      "5 أجهزة",
-      "10 أيام بطارية",
-      "Flow"
-    ],
-    "tags": [
-      "إنتاجية",
-      "لوحة"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-080",
-    "name_ar": "لوحة مفاتيح Keychron Q6 Max",
-    "name_en": "Keychron Q6 Max Wireless",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 299,
-    "original_price": 349,
-    "discount": 14,
-    "rating": 4.8,
-    "reviews": 8765,
-    "stock": 29,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Keychron%20Q6%20Max%20Wireless",
-    "description_ar": "لوحة مفاتيح Keychron Q6 Max — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "مفاتيح ميكانيكية",
-      "QMK/VIA",
-      "Gasket Mount",
-      "Bluetooth 5.1",
-      "5000mAh"
-    ],
-    "tags": [
-      "إنتاجية",
-      "لوحة"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-081",
-    "name_ar": "جهاز Elgato Stream Deck Neo",
-    "name_en": "Elgato Stream Deck Neo",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 99,
-    "original_price": 119,
-    "discount": 17,
-    "rating": 4.7,
-    "reviews": 6543,
-    "stock": 21,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Elgato%20Stream%20Deck%20Neo",
-    "description_ar": "جهاز Elgato Stream Deck Neo — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "8 مفاتيح LCD",
-      "2 شاشة Info",
-      "تحكم بكل شيء",
-      "تكامل واسع",
-      "USB-C"
-    ],
-    "tags": [
-      "إنتاجية",
-      "جهاز"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-082",
-    "name_ar": "قلم Apple Pencil Pro",
-    "name_en": "Apple Pencil Pro",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 129,
-    "original_price": 149,
-    "discount": 13,
-    "rating": 4.8,
-    "reviews": 21345,
-    "stock": 57,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Apple%20Pencil%20Pro",
-    "description_ar": "قلم Apple Pencil Pro — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "Squeeze + Double Tap",
-      "حركة دوران",
-      "Barrel Roll",
-      "شحن مغناطيسي",
-      "تأخير 9ms"
-    ],
-    "tags": [
-      "إنتاجية",
-      "قلم"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-083",
-    "name_ar": "شاحن Anker 737 GaNPrime 120W",
-    "name_en": "Anker 737 GaNPrime 120W",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 89,
-    "original_price": 109,
-    "discount": 18,
-    "rating": 4.8,
-    "reviews": 34567,
-    "stock": 77,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Anker%20737%20GaNPrime%20120W",
-    "description_ar": "شاحن Anker 737 GaNPrime 120W — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "120W إجمالي",
-      "3 منافذ",
-      "GaN III",
-      "شحن 0→80% بـ 43 دقيقة",
-      "USB-C + USB-A"
-    ],
-    "tags": [
-      "إنتاجية",
-      "شاحن"
-    ],
-    "badge": "قيمة مثالية",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-084",
-    "name_ar": "شاشة Samsung Odyssey OLED G9",
-    "name_en": "Samsung Odyssey OLED G9 49\"",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 1299,
-    "original_price": 1499,
-    "discount": 13,
-    "rating": 4.7,
-    "reviews": 3456,
-    "stock": 76,
-    "image": "https://image-us.samsung.com/SamsungUS/home/computing/monitors/gaming/odyssey-oled-g9-750.jpg",
-    "description_ar": "شاشة Samsung Odyssey OLED G9 — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "OLED 49\" QHD",
-      "240Hz",
-      "0.03ms GtG",
-      "DisplayHDR True Black 400",
-      "AMD FreeSync"
-    ],
-    "tags": [
-      "إنتاجية",
-      "شاشة"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-085",
-    "name_ar": "لوح رسم Wacom Intuos Pro L",
-    "name_en": "Wacom Intuos Pro Large",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 449,
-    "original_price": 499,
-    "discount": 10,
-    "rating": 4.8,
-    "reviews": 8765,
-    "stock": 69,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Wacom%20Intuos%20Pro%20Large",
-    "description_ar": "لوح رسم Wacom Intuos Pro L — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "8192 مستوى ضغط",
-      "Pro Pen 3",
-      "Bluetooth 5.0",
-      "Touch Multi",
-      "ExpressKey Remote"
-    ],
-    "tags": [
-      "إنتاجية",
-      "لوح"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-086",
-    "name_ar": "جهاز Steam Deck OLED 1 تيرابايت",
-    "name_en": "Steam Deck OLED 1TB",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 649,
-    "original_price": 749,
-    "discount": 13,
-    "rating": 4.8,
-    "reviews": 12345,
-    "stock": 68,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Steam%20Deck%20OLED%201TB",
-    "description_ar": "جهاز Steam Deck OLED 1 تيرابايت — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "OLED HDR 90Hz",
-      "AMD APU Zen2+RDNA2",
-      "بطارية 50% أطول",
-      "1TB NVMe",
-      "WiFi 6E"
-    ],
-    "tags": [
-      "إنتاجية",
-      "جهاز"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-087",
-    "name_ar": "محطة شحن Anker MagGo اللاسلكي",
-    "name_en": "Anker MagGo Wireless Charging Station",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 79,
-    "original_price": 99,
-    "discount": 20,
-    "rating": 4.7,
-    "reviews": 23456,
-    "stock": 81,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Anker%20MagGo%20Wireless%20Char",
-    "description_ar": "محطة شحن Anker MagGo اللاسلكي — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "MagSafe 15W",
-      "3-in-1 Charging",
-      "iPhone+Watch+AirPods",
-      "20W adaptor",
-      "قابل للطي"
-    ],
-    "tags": [
-      "إنتاجية",
-      "محطة"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-088",
-    "name_ar": "شاشة LG UltraWide 34 بوصة",
-    "name_en": "LG UltraWide 34\" 5K2K",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 999,
-    "original_price": 1199,
-    "discount": 17,
-    "rating": 4.7,
-    "reviews": 4321,
-    "stock": 43,
-    "image": "https://www.lg.com/us/images/monitors/md07500471/gallery/DZ-01.jpg",
-    "description_ar": "شاشة LG UltraWide 34 بوصة — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "5K2K 5120x2160",
-      "IPS",
-      "Thunderbolt 4",
-      "KVM مدمج",
-      "Ergo Stand"
-    ],
-    "tags": [
-      "إنتاجية",
-      "شاشة"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-089",
-    "name_ar": "سماعات Jabra Evolve2 85",
-    "name_en": "Jabra Evolve2 85 ANC",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 449,
-    "original_price": 529,
-    "discount": 15,
-    "rating": 4.6,
-    "reviews": 3210,
-    "stock": 90,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Jabra%20Evolve2%2085%20ANC",
-    "description_ar": "سماعات Jabra Evolve2 85 — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "ANC أفضل للعمل",
-      "Busylight مدمج",
-      "37h بطارية",
-      "UC Certified",
-      "8 ميكروفون"
-    ],
-    "tags": [
-      "إنتاجية",
-      "سماعات"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-090",
-    "name_ar": "حامل Twelve South HiRise 3 Deluxe",
-    "name_en": "Twelve South HiRise 3 Deluxe",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 99,
-    "original_price": 119,
-    "discount": 17,
-    "rating": 4.7,
-    "reviews": 5432,
-    "stock": 87,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Twelve%20South%20HiRise%203%20Del",
-    "description_ar": "حامل Twelve South HiRise 3 Deluxe — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
-    "features_ar": [
-      "شحن MagSafe 15W",
-      "حامل لاب توب",
-      "Ergo Posture",
-      "iPhone + Mac",
-      "ارتفاع قابل تعديل"
-    ],
-    "tags": [
-      "إنتاجية",
-      "حامل"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "fill_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-091",
     "name_ar": "خاتم RingConn Gen 2 Air",
     "name_en": "RingConn Gen 2 Air Ring",
     "category": "health",
@@ -2890,9 +1194,9 @@
     "discount": 20,
     "rating": 4.5,
     "reviews": 3210,
-    "stock": 57,
+    "stock": 21,
     "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=RingConn+Gen+2+Air+R",
-    "description_ar": "خاتم RingConn Gen 2 Air — من أفضل منتجات صحة ذكية.",
+    "description_ar": "خاتم RingConn Gen 2 Air — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "10 أيام",
       "بدون اشتراك",
@@ -2908,75 +1212,43 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "auto_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
-    "id": "NPH-092",
-    "name_ar": "جهاز iPad Pro M4 13 بوصة",
-    "name_en": "Apple iPad Pro M4 13 inch",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 1299,
-    "original_price": 1499,
-    "discount": 13,
-    "rating": 4.9,
-    "reviews": 23456,
-    "stock": 92,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Apple+iPad+Pro+M4+13",
-    "description_ar": "جهاز iPad Pro M4 13 بوصة — من أفضل منتجات إنتاجية.",
+    "id": "NPH-039",
+    "name_ar": "سوار شاومي Smart Band 9 Pro",
+    "name_en": "Xiaomi Smart Band 9 Pro",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 79,
+    "original_price": 99,
+    "discount": 20,
+    "rating": 4.6,
+    "reviews": 15432,
+    "stock": 64,
+    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Xiaomi+Smart+Band+9+",
+    "description_ar": "سوار شاومي Smart Band 9 Pro — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
-      "M4 Chip",
-      "OLED Tandem",
-      "Apple Intelligence",
-      "120Hz",
-      "USB4"
+      "AMOLED 1.74\"",
+      "GPS",
+      "21 يوم",
+      "150 رياضة",
+      "SpO2"
     ],
     "tags": [
-      "إنتاجية",
-      "جهاز"
+      "صحة ذكية",
+      "سوار"
     ],
-    "badge": "الأكثر مبيعاً",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": true,
-    "added_by": "auto_bot",
-    "added_at": "2026-03-10"
-  },
-  {
-    "id": "NPH-093",
-    "name_ar": "ماوس Logitech MX Master 3S",
-    "name_en": "Logitech MX Master 3S Mouse",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 99,
-    "original_price": 119,
-    "discount": 17,
-    "rating": 4.9,
-    "reviews": 45678,
-    "stock": 47,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Logitech+MX+Master+3",
-    "description_ar": "ماوس Logitech MX Master 3S — من أفضل منتجات إنتاجية.",
-    "features_ar": [
-      "8000 DPI",
-      "MagSpeed عجلة",
-      "7 أزرار",
-      "70 يوم",
-      "Bolt"
-    ],
-    "tags": [
-      "إنتاجية",
-      "ماوس"
-    ],
-    "badge": "",
+    "badge": "اقتصادي",
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "auto_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
-    "id": "NPH-094",
+    "id": "NPH-040",
     "name_ar": "عصابة Muse 2 للتأمل",
     "name_en": "Muse 2 Brain Sensing Headband",
     "category": "health",
@@ -2986,9 +1258,9 @@
     "discount": 17,
     "rating": 4.5,
     "reviews": 2876,
-    "stock": 42,
+    "stock": 71,
     "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Muse+2+Brain+Sensing",
-    "description_ar": "عصابة Muse 2 للتأمل — من أفضل منتجات صحة ذكية.",
+    "description_ar": "عصابة Muse 2 للتأمل — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "EEG 7 مستشعرات",
       "تأمل موجَّه",
@@ -3004,11 +1276,107 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "auto_bot",
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   },
   {
-    "id": "NPH-095",
+    "id": "NPH-041",
+    "name_ar": "خاتم سامسونج Galaxy Ring",
+    "name_en": "Samsung Galaxy Ring",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 399,
+    "original_price": 449,
+    "discount": 11,
+    "rating": 4.6,
+    "reviews": 4321,
+    "stock": 64,
+    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Samsung+Galaxy+Ring",
+    "description_ar": "خاتم سامسونج Galaxy Ring — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "تيتانيوم خفيف",
+      "7 أيام",
+      "Samsung Health",
+      "AI نوم",
+      "IP68"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "خاتم"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-042",
+    "name_ar": "جهاز Polar Verity Sense",
+    "name_en": "Polar Verity Sense Monitor",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 89,
+    "original_price": 109,
+    "discount": 18,
+    "rating": 4.7,
+    "reviews": 5678,
+    "stock": 34,
+    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Polar+Verity+Sense+M",
+    "description_ar": "جهاز Polar Verity Sense — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "HR دقيق",
+      "ذراع",
+      "30h بطارية",
+      "Bluetooth + ANT+",
+      "IP67"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "جهاز"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-043",
+    "name_ar": "سوار Biostrap EVO الصحي",
+    "name_en": "Biostrap EVO Health Band",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 199,
+    "original_price": 249,
+    "discount": 20,
+    "rating": 4.4,
+    "reviews": 1234,
+    "stock": 25,
+    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Biostrap+EVO+Health+",
+    "description_ar": "سوار Biostrap EVO الصحي — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "HRV دقيق",
+      "SpO2 مستمر",
+      "نوم",
+      "طبي",
+      "IP67"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "سوار"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-044",
     "name_ar": "جهاز Garmin Index لضغط الدم",
     "name_en": "Garmin Index BPM Monitor",
     "category": "health",
@@ -3018,9 +1386,9 @@
     "discount": 17,
     "rating": 4.5,
     "reviews": 3456,
-    "stock": 100,
+    "stock": 28,
     "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Garmin+Index+BPM+Mon",
-    "description_ar": "جهاز Garmin Index لضغط الدم — من أفضل منتجات صحة ذكية.",
+    "description_ar": "جهاز Garmin Index لضغط الدم — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "ضغط الدم",
       "Bluetooth 5.0",
@@ -3036,7 +1404,1479 @@
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "auto_bot",
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-045",
+    "name_ar": "ميزان Withings Body Scan",
+    "name_en": "Withings Body Scan Scale",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.7,
+    "reviews": 876,
+    "stock": 35,
+    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Withings+Body+Scan+S",
+    "description_ar": "ميزان Withings Body Scan — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "تركيب جسم",
+      "ECG قدم",
+      "عصب وعائي",
+      "تطبيق صحي",
+      "WiFi"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "ميزان"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-046",
+    "name_ar": "مكبر Amazon Echo Show 10",
+    "name_en": "Amazon Echo Show 10 3rd Gen",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 249,
+    "original_price": 299,
+    "discount": 17,
+    "rating": 4.7,
+    "reviews": 23456,
+    "stock": 23,
+    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Amazon+Echo+Show+10+",
+    "description_ar": "مكبر Amazon Echo Show 10 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "شاشة HD 10\"",
+      "يتابعك تلقائياً",
+      "كاميرا 13MP",
+      "Alexa",
+      "مكبر 3\""
+    ],
+    "tags": [
+      "منزل ذكي",
+      "مكبر"
+    ],
+    "badge": "الأكثر مبيعاً",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": true,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-047",
+    "name_ar": "مكبر Apple HomePod الجيل 2",
+    "name_en": "Apple HomePod 2nd Generation",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.7,
+    "reviews": 12345,
+    "stock": 79,
+    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Apple+HomePod+2nd+Ge",
+    "description_ar": "مكبر Apple HomePod الجيل 2 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "Spatial Audio",
+      "S7 Chip",
+      "تحكم منزل",
+      "Siri",
+      "صوت استثنائي"
+    ],
+    "tags": [
+      "منزل ذكي",
+      "مكبر"
+    ],
+    "badge": "مميز",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": true,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-048",
+    "name_ar": "شاشة Google Nest Hub Max",
+    "name_en": "Google Nest Hub Max Display",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 229,
+    "original_price": 279,
+    "discount": 18,
+    "rating": 4.6,
+    "reviews": 15432,
+    "stock": 98,
+    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Google+Nest+Hub+Max+",
+    "description_ar": "شاشة Google Nest Hub Max — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "شاشة 10\"",
+      "كاميرا Duo",
+      "Google Photos",
+      "Assistant",
+      "Full-range"
+    ],
+    "tags": [
+      "منزل ذكي",
+      "شاشة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-049",
+    "name_ar": "طقم إضاءة Philips Hue الذكية",
+    "name_en": "Philips Hue Color Starter Kit",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 199,
+    "original_price": 249,
+    "discount": 20,
+    "rating": 4.7,
+    "reviews": 34567,
+    "stock": 23,
+    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Philips+Hue+Color+St",
+    "description_ar": "طقم إضاءة Philips Hue الذكية — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "16M لون",
+      "تحكم صوتي",
+      "Hue Bridge",
+      "تطبيق",
+      "موسيقى"
+    ],
+    "tags": [
+      "منزل ذكي",
+      "طقم"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-050",
+    "name_ar": "جرس Ring Video Doorbell Pro 2",
+    "name_en": "Ring Video Doorbell Pro 2",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 249,
+    "original_price": 299,
+    "discount": 17,
+    "rating": 4.5,
+    "reviews": 43210,
+    "stock": 98,
+    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Ring+Video+Doorbell+",
+    "description_ar": "جرس Ring Video Doorbell Pro 2 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "1536p HD+",
+      "Bird's Eye View",
+      "تنبيه ذكي",
+      "Alexa",
+      "3D"
+    ],
+    "tags": [
+      "منزل ذكي",
+      "جرس"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-051",
+    "name_ar": "منظم حرارة Nest الجيل 4",
+    "name_en": "Google Nest Learning Thermostat",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 279,
+    "original_price": 329,
+    "discount": 15,
+    "rating": 4.7,
+    "reviews": 28765,
+    "stock": 66,
+    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Google+Nest+Learning",
+    "description_ar": "منظم حرارة Nest الجيل 4 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "تعلم جدولك",
+      "توفير 15%",
+      "يحس بتواجدك",
+      "OLED",
+      "Google Home"
+    ],
+    "tags": [
+      "منزل ذكي",
+      "منظم"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-052",
+    "name_ar": "مكبر Amazon Echo Dot الجيل 5",
+    "name_en": "Amazon Echo Dot 5th Gen",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 49,
+    "original_price": 59,
+    "discount": 17,
+    "rating": 4.7,
+    "reviews": 98765,
+    "stock": 91,
+    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Amazon+Echo+Dot+5th+",
+    "description_ar": "مكبر Amazon Echo Dot الجيل 5 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "Alexa",
+      "صوت أوضح 2x",
+      "Smart Home",
+      "ساعة LED",
+      "مزامنة"
+    ],
+    "tags": [
+      "منزل ذكي",
+      "مكبر"
+    ],
+    "badge": "قيمة مثالية",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-053",
+    "name_ar": "كاميرا Arlo Pro 5S أمان",
+    "name_en": "Arlo Pro 5S Security Camera",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 249,
+    "original_price": 299,
+    "discount": 17,
+    "rating": 4.6,
+    "reviews": 8765,
+    "stock": 85,
+    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Arlo+Pro+5S+Security",
+    "description_ar": "كاميرا Arlo Pro 5S أمان — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "2K + HDR",
+      "ألوان ليلية",
+      "160°",
+      "6 أشهر بطارية",
+      "Alexa"
+    ],
+    "tags": [
+      "منزل ذكي",
+      "كاميرا"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-054",
+    "name_ar": "قفل ذكي Yale Assure Lock 2",
+    "name_en": "Yale Assure Lock 2 Plus",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 329,
+    "original_price": 379,
+    "discount": 13,
+    "rating": 4.5,
+    "reviews": 4321,
+    "stock": 59,
+    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Yale+Assure+Lock+2+P",
+    "description_ar": "قفل ذكي Yale Assure Lock 2 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "Matter + Z-Wave",
+      "بصمة + رمز",
+      "AES-128",
+      "Yale Access",
+      "تنبيهات"
+    ],
+    "tags": [
+      "منزل ذكي",
+      "قفل"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-055",
+    "name_ar": "مكنسة iRobot Roomba j9+",
+    "name_en": "iRobot Roomba j9 Plus",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 799,
+    "original_price": 999,
+    "discount": 20,
+    "rating": 4.7,
+    "reviews": 6543,
+    "stock": 58,
+    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=iRobot+Roomba+j9+Plu",
+    "description_ar": "مكنسة iRobot Roomba j9+ — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "تفريغ 60 يوم",
+      "تجنب عوائق AI",
+      "خريطة ذكية",
+      "Alexa",
+      "شحن تلقائي"
+    ],
+    "tags": [
+      "منزل ذكي",
+      "مكنسة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-056",
+    "name_ar": "إضاءة Nanoleaf Shapes سداسية",
+    "name_en": "Nanoleaf Shapes Hexagons Kit",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 199,
+    "original_price": 249,
+    "discount": 20,
+    "rating": 4.5,
+    "reviews": 12345,
+    "stock": 95,
+    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Nanoleaf+Shapes+Hexa",
+    "description_ar": "إضاءة Nanoleaf Shapes سداسية — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "16M لون",
+      "موسيقى تفاعلية",
+      "لمس",
+      "Thread",
+      "تصميم حر"
+    ],
+    "tags": [
+      "منزل ذكي",
+      "إضاءة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-057",
+    "name_ar": "مكبر Sonos Era 300",
+    "name_en": "Sonos Era 300 Speaker",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 449,
+    "original_price": 499,
+    "discount": 10,
+    "rating": 4.7,
+    "reviews": 3456,
+    "stock": 87,
+    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Sonos+Era+300+Speake",
+    "description_ar": "مكبر Sonos Era 300 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "Spatial Audio",
+      "Dolby Atmos",
+      "6 مكبرات",
+      "S2 App",
+      "بدون اشتراك"
+    ],
+    "tags": [
+      "منزل ذكي",
+      "مكبر"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-058",
+    "name_ar": "منظم Ecobee Smart Premium",
+    "name_en": "Ecobee Smart Thermostat Premium",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 249,
+    "original_price": 299,
+    "discount": 17,
+    "rating": 4.7,
+    "reviews": 21345,
+    "stock": 68,
+    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Ecobee+Smart+Thermos",
+    "description_ar": "منظم Ecobee Smart Premium — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "Alexa مدمج",
+      "درجة حرارة غرفة",
+      "توفير 23%",
+      "SmartSensor",
+      "ENERGY STAR"
+    ],
+    "tags": [
+      "منزل ذكي",
+      "منظم"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-059",
+    "name_ar": "مركز Samsung SmartThings",
+    "name_en": "Samsung SmartThings Hub",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 129,
+    "original_price": 149,
+    "discount": 13,
+    "rating": 4.5,
+    "reviews": 5432,
+    "stock": 60,
+    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Samsung+SmartThings+",
+    "description_ar": "مركز Samsung SmartThings — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "Zigbee + Z-Wave + WiFi",
+      "تحكم مركزي",
+      "روتين تلقائي",
+      "أمان محلي",
+      "شامل"
+    ],
+    "tags": [
+      "منزل ذكي",
+      "مركز"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-060",
+    "name_ar": "نظام Eufy Security HomeBase 3",
+    "name_en": "Eufy Security HomeBase 3",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.6,
+    "reviews": 4321,
+    "stock": 25,
+    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Eufy+Security+HomeBa",
+    "description_ar": "نظام Eufy Security HomeBase 3 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "16GB محلي",
+      "Triple Band WiFi",
+      "BionicMind AI",
+      "8K",
+      "بدون اشتراك"
+    ],
+    "tags": [
+      "منزل ذكي",
+      "نظام"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-061",
+    "name_ar": "سماعات AirPods Pro الجيل 2",
+    "name_en": "Apple AirPods Pro 2 USB-C",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 249,
+    "original_price": 279,
+    "discount": 11,
+    "rating": 4.9,
+    "reviews": 54321,
+    "stock": 87,
+    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Apple+AirPods+Pro+2+",
+    "description_ar": "سماعات AirPods Pro الجيل 2 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "ANC H2 Chip",
+      "Adaptive Audio",
+      "صوت مكاني",
+      "IP68",
+      "6h+30h"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
+    ],
+    "badge": "الأكثر مبيعاً",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": true,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-062",
+    "name_ar": "سماعات Sony WF-1000XM5",
+    "name_en": "Sony WF-1000XM5 Earbuds",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 279,
+    "original_price": 329,
+    "discount": 15,
+    "rating": 4.8,
+    "reviews": 23456,
+    "stock": 66,
+    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Sony+WF-1000XM5+Earb",
+    "description_ar": "سماعات Sony WF-1000XM5 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "أفضل ANC",
+      "V2 Processor",
+      "360 صوت",
+      "LDAC",
+      "8h+24h"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
+    ],
+    "badge": "مميز",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": true,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-063",
+    "name_ar": "سماعات Bose QuietComfort Ultra",
+    "name_en": "Bose QuietComfort Ultra Earbuds",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.8,
+    "reviews": 15432,
+    "stock": 27,
+    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Bose+QuietComfort+Ul",
+    "description_ar": "سماعات Bose QuietComfort Ultra — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "Immersive Audio",
+      "CustomTune ANC",
+      "6h+24h",
+      "USB-C",
+      "IP54"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-064",
+    "name_ar": "سماعات Samsung Galaxy Buds 3 Pro",
+    "name_en": "Samsung Galaxy Buds 3 Pro",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 249,
+    "original_price": 299,
+    "discount": 17,
+    "rating": 4.7,
+    "reviews": 12345,
+    "stock": 71,
+    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Samsung+Galaxy+Buds+",
+    "description_ar": "سماعات Samsung Galaxy Buds 3 Pro — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "ANC AI",
+      "Blade Design",
+      "IP57",
+      "360° Audio",
+      "6h+30h"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-065",
+    "name_ar": "سماعات Apple AirPods 4 ANC",
+    "name_en": "Apple AirPods 4 with ANC",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 179,
+    "original_price": 199,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 32145,
+    "stock": 40,
+    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Apple+AirPods+4+with",
+    "description_ar": "سماعات Apple AirPods 4 ANC — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "H2 ANC",
+      "Open-ear",
+      "USB-C",
+      "5h+30h",
+      "IP54"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-066",
+    "name_ar": "سماعات Sony WH-1000XM5 فوق الأذن",
+    "name_en": "Sony WH-1000XM5 Headphones",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 349,
+    "original_price": 399,
+    "discount": 13,
+    "rating": 4.8,
+    "reviews": 45678,
+    "stock": 86,
+    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Sony+WH-1000XM5+Head",
+    "description_ar": "سماعات Sony WH-1000XM5 فوق الأذن — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "ANC AI",
+      "30h بطارية",
+      "Multi-point",
+      "LDAC HiRes",
+      "فولد"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-067",
+    "name_ar": "سماعات Nothing Ear 3",
+    "name_en": "Nothing Ear 3 Wireless",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 149,
+    "original_price": 179,
+    "discount": 17,
+    "rating": 4.6,
+    "reviews": 8765,
+    "stock": 48,
+    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Nothing+Ear+3+Wirele",
+    "description_ar": "سماعات Nothing Ear 3 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "تصميم شفاف",
+      "ANC 45dB",
+      "8.5h+40h",
+      "IP55",
+      "ChatGPT"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-068",
+    "name_ar": "سماعات Jabra Evolve2 Buds",
+    "name_en": "Jabra Evolve2 Buds Pro",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 249,
+    "original_price": 299,
+    "discount": 17,
+    "rating": 4.5,
+    "reviews": 4321,
+    "stock": 79,
+    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Jabra+Evolve2+Buds+P",
+    "description_ar": "سماعات Jabra Evolve2 Buds — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "للمهنيين",
+      "ANC AI",
+      "Jabra AI",
+      "6h+33h",
+      "UC certified"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-069",
+    "name_ar": "سماعات Beats Studio Buds+",
+    "name_en": "Beats Studio Buds Plus",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 169,
+    "original_price": 199,
+    "discount": 15,
+    "rating": 4.6,
+    "reviews": 6543,
+    "stock": 51,
+    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Beats+Studio+Buds+Pl",
+    "description_ar": "سماعات Beats Studio Buds+ — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "ANC 36dB",
+      "Transparency",
+      "IP54",
+      "9h+36h",
+      "Android+iOS"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-070",
+    "name_ar": "سماعات Sennheiser MTW4",
+    "name_en": "Sennheiser Momentum True Wireless 4",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 279,
+    "original_price": 329,
+    "discount": 15,
+    "rating": 4.7,
+    "reviews": 3456,
+    "stock": 90,
+    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Sennheiser+Momentum+",
+    "description_ar": "سماعات Sennheiser MTW4 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "Hi-Fi صوت",
+      "ANC Adaptive",
+      "7h+28h",
+      "aptX Lossless",
+      "IP54"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-071",
+    "name_ar": "سماعات Google Pixel Buds Pro 2",
+    "name_en": "Google Pixel Buds Pro 2",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 229,
+    "original_price": 259,
+    "discount": 12,
+    "rating": 4.7,
+    "reviews": 8765,
+    "stock": 86,
+    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Google+Pixel+Buds+Pr",
+    "description_ar": "سماعات Google Pixel Buds Pro 2 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "Tensor A1",
+      "ANC محسَّن",
+      "11h+33h",
+      "ترجمة فورية",
+      "Gemini"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-072",
+    "name_ar": "سماعات Anker Soundcore Liberty 4",
+    "name_en": "Anker Soundcore Liberty 4 Pro",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 129,
+    "original_price": 159,
+    "discount": 19,
+    "rating": 4.6,
+    "reviews": 12345,
+    "stock": 58,
+    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Anker+Soundcore+Libe",
+    "description_ar": "سماعات Anker Soundcore Liberty 4 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "ANC 50dB",
+      "LDAC",
+      "11h+53h",
+      "IPX4",
+      "شاشة"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
+    ],
+    "badge": "قيمة مثالية",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-073",
+    "name_ar": "سماعات JBL Tour Pro 3",
+    "name_en": "JBL Tour Pro 3 Earbuds",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 249,
+    "original_price": 299,
+    "discount": 17,
+    "rating": 4.6,
+    "reviews": 5432,
+    "stock": 34,
+    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=JBL+Tour+Pro+3+Earbu",
+    "description_ar": "سماعات JBL Tour Pro 3 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "شاشة لمس",
+      "ANC Pro",
+      "10h+40h",
+      "Hi-Res",
+      "ChatGPT"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-074",
+    "name_ar": "سماعات Shure Aonic Free 2",
+    "name_en": "Shure Aonic Free 2",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.6,
+    "reviews": 2345,
+    "stock": 45,
+    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Shure+Aonic+Free+2",
+    "description_ar": "سماعات Shure Aonic Free 2 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "جودة استوديو",
+      "ANC",
+      "7h+28h",
+      "USB-C",
+      "لمس"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-075",
+    "name_ar": "سماعات Technics EAH-AZ100",
+    "name_en": "Technics EAH-AZ100 Earbuds",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.7,
+    "reviews": 1876,
+    "stock": 90,
+    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Technics+EAH-AZ100+E",
+    "description_ar": "سماعات Technics EAH-AZ100 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "ANC AI",
+      "Jitter-less",
+      "10h+25h",
+      "USB-C",
+      "IPX4"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-076",
+    "name_ar": "جهاز iPad Pro M4 13 بوصة",
+    "name_en": "Apple iPad Pro M4 13 inch",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 1299,
+    "original_price": 1499,
+    "discount": 13,
+    "rating": 4.9,
+    "reviews": 23456,
+    "stock": 51,
+    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Apple+iPad+Pro+M4+13",
+    "description_ar": "جهاز iPad Pro M4 13 بوصة — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "M4 Chip",
+      "OLED Tandem",
+      "Apple Intelligence",
+      "120Hz",
+      "USB4"
+    ],
+    "tags": [
+      "إنتاجية",
+      "جهاز"
+    ],
+    "badge": "الأكثر مبيعاً",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": true,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-077",
+    "name_ar": "تابلت Samsung Galaxy Tab S10 Ultra",
+    "name_en": "Samsung Galaxy Tab S10 Ultra",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 1299,
+    "original_price": 1499,
+    "discount": 13,
+    "rating": 4.8,
+    "reviews": 12345,
+    "stock": 88,
+    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Samsung+Galaxy+Tab+S",
+    "description_ar": "تابلت Samsung Galaxy Tab S10 Ultra — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "Snapdragon 8 Gen 3",
+      "AMOLED 14.6\"",
+      "S Pen",
+      "DeX",
+      "12000mAh"
+    ],
+    "tags": [
+      "إنتاجية",
+      "تابلت"
+    ],
+    "badge": "مميز",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": true,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-078",
+    "name_ar": "ماوس Logitech MX Master 3S",
+    "name_en": "Logitech MX Master 3S Mouse",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 99,
+    "original_price": 119,
+    "discount": 17,
+    "rating": 4.9,
+    "reviews": 45678,
+    "stock": 79,
+    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Logitech+MX+Master+3",
+    "description_ar": "ماوس Logitech MX Master 3S — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "8000 DPI",
+      "MagSpeed عجلة",
+      "7 أزرار",
+      "70 يوم",
+      "Bolt"
+    ],
+    "tags": [
+      "إنتاجية",
+      "ماوس"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-079",
+    "name_ar": "لوحة Logitech MX Keys S Plus",
+    "name_en": "Logitech MX Keys S Plus Keyboard",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 149,
+    "original_price": 179,
+    "discount": 17,
+    "rating": 4.8,
+    "reviews": 23456,
+    "stock": 50,
+    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Logitech+MX+Keys+S+P",
+    "description_ar": "لوحة Logitech MX Keys S Plus — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "Smart Backlight",
+      "Smart Actions",
+      "5 أجهزة",
+      "10 أيام",
+      "Flow"
+    ],
+    "tags": [
+      "إنتاجية",
+      "لوحة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-080",
+    "name_ar": "لوحة Keychron Q6 Max",
+    "name_en": "Keychron Q6 Max Wireless Keyboard",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.8,
+    "reviews": 8765,
+    "stock": 70,
+    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Keychron+Q6+Max+Wire",
+    "description_ar": "لوحة Keychron Q6 Max — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "مفاتيح ميكانيكية",
+      "QMK/VIA",
+      "Gasket Mount",
+      "BT 5.1",
+      "5000mAh"
+    ],
+    "tags": [
+      "إنتاجية",
+      "لوحة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-081",
+    "name_ar": "جهاز Elgato Stream Deck Neo",
+    "name_en": "Elgato Stream Deck Neo Panel",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 99,
+    "original_price": 119,
+    "discount": 17,
+    "rating": 4.7,
+    "reviews": 6543,
+    "stock": 94,
+    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Elgato+Stream+Deck+N",
+    "description_ar": "جهاز Elgato Stream Deck Neo — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "8 مفاتيح LCD",
+      "شاشتا Info",
+      "تكامل واسع",
+      "USB-C",
+      "كل شيء"
+    ],
+    "tags": [
+      "إنتاجية",
+      "جهاز"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-082",
+    "name_ar": "قلم Apple Pencil Pro",
+    "name_en": "Apple Pencil Pro Stylus",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 129,
+    "original_price": 149,
+    "discount": 13,
+    "rating": 4.8,
+    "reviews": 21345,
+    "stock": 72,
+    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Apple+Pencil+Pro+Sty",
+    "description_ar": "قلم Apple Pencil Pro — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "Squeeze + Double Tap",
+      "دوران",
+      "Barrel Roll",
+      "شحن مغناطيسي",
+      "9ms"
+    ],
+    "tags": [
+      "إنتاجية",
+      "قلم"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-083",
+    "name_ar": "شاحن Anker 737 GaNPrime 120W",
+    "name_en": "Anker 737 GaNPrime 120W Charger",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 89,
+    "original_price": 109,
+    "discount": 18,
+    "rating": 4.8,
+    "reviews": 34567,
+    "stock": 66,
+    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Anker+737+GaNPrime+1",
+    "description_ar": "شاحن Anker 737 GaNPrime 120W — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "120W",
+      "3 منافذ",
+      "GaN III",
+      "43 دقيقة 80%",
+      "USB-C+A"
+    ],
+    "tags": [
+      "إنتاجية",
+      "شاحن"
+    ],
+    "badge": "قيمة مثالية",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-084",
+    "name_ar": "شاشة Samsung Odyssey OLED G9",
+    "name_en": "Samsung Odyssey OLED G9 Monitor",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 1299,
+    "original_price": 1499,
+    "discount": 13,
+    "rating": 4.7,
+    "reviews": 3456,
+    "stock": 61,
+    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Samsung+Odyssey+OLED",
+    "description_ar": "شاشة Samsung Odyssey OLED G9 — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "OLED 49\" QHD",
+      "240Hz",
+      "0.03ms",
+      "HDR True Black",
+      "FreeSync"
+    ],
+    "tags": [
+      "إنتاجية",
+      "شاشة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-085",
+    "name_ar": "لوح رسم Wacom Intuos Pro L",
+    "name_en": "Wacom Intuos Pro Large Tablet",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 449,
+    "original_price": 499,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 8765,
+    "stock": 28,
+    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Wacom+Intuos+Pro+Lar",
+    "description_ar": "لوح رسم Wacom Intuos Pro L — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "8192 ضغط",
+      "Pro Pen 3",
+      "BT 5.0",
+      "Touch Multi",
+      "ExpressKey"
+    ],
+    "tags": [
+      "إنتاجية",
+      "لوح"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-086",
+    "name_ar": "جهاز Steam Deck OLED 1 تيرابايت",
+    "name_en": "Steam Deck OLED 1TB Gaming",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 649,
+    "original_price": 749,
+    "discount": 13,
+    "rating": 4.8,
+    "reviews": 12345,
+    "stock": 99,
+    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Steam+Deck+OLED+1TB+",
+    "description_ar": "جهاز Steam Deck OLED 1 تيرابايت — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "OLED HDR 90Hz",
+      "AMD APU",
+      "بطارية +50%",
+      "1TB NVMe",
+      "WiFi 6E"
+    ],
+    "tags": [
+      "إنتاجية",
+      "جهاز"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-087",
+    "name_ar": "محطة شحن Anker MagGo اللاسلكي",
+    "name_en": "Anker MagGo 3-in-1 Wireless Charger",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 79,
+    "original_price": 99,
+    "discount": 20,
+    "rating": 4.7,
+    "reviews": 23456,
+    "stock": 73,
+    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Anker+MagGo+3-in-1+W",
+    "description_ar": "محطة شحن Anker MagGo اللاسلكي — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "MagSafe 15W",
+      "3-in-1",
+      "iPhone+Watch+AirPods",
+      "20W",
+      "قابل للطي"
+    ],
+    "tags": [
+      "إنتاجية",
+      "محطة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-088",
+    "name_ar": "شاشة LG UltraWide 34 بوصة",
+    "name_en": "LG UltraWide 34 5K2K Monitor",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 999,
+    "original_price": 1199,
+    "discount": 17,
+    "rating": 4.7,
+    "reviews": 4321,
+    "stock": 37,
+    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=LG+UltraWide+34+5K2K",
+    "description_ar": "شاشة LG UltraWide 34 بوصة — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "5K2K 5120x2160",
+      "IPS",
+      "Thunderbolt 4",
+      "KVM",
+      "Ergo Stand"
+    ],
+    "tags": [
+      "إنتاجية",
+      "شاشة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-089",
+    "name_ar": "سماعات Jabra Evolve2 85",
+    "name_en": "Jabra Evolve2 85 ANC Headset",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 449,
+    "original_price": 529,
+    "discount": 15,
+    "rating": 4.6,
+    "reviews": 3210,
+    "stock": 27,
+    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Jabra+Evolve2+85+ANC",
+    "description_ar": "سماعات Jabra Evolve2 85 — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "ANC للعمل",
+      "Busylight",
+      "37h",
+      "UC Certified",
+      "8 ميكروفون"
+    ],
+    "tags": [
+      "إنتاجية",
+      "سماعات"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-090",
+    "name_ar": "حامل Twelve South HiRise 3",
+    "name_en": "Twelve South HiRise 3 Deluxe",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 99,
+    "original_price": 119,
+    "discount": 17,
+    "rating": 4.7,
+    "reviews": 5432,
+    "stock": 89,
+    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Twelve+South+HiRise+",
+    "description_ar": "حامل Twelve South HiRise 3 — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "MagSafe 15W",
+      "حامل لاب توب",
+      "Ergo",
+      "iPhone+Mac",
+      "قابل تعديل"
+    ],
+    "tags": [
+      "إنتاجية",
+      "حامل"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v4",
     "added_at": "2026-03-10"
   }
 ]
