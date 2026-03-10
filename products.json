@@ -4142,5 +4142,165 @@
     "featured": false,
     "added_by": "auto_bot",
     "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-723",
+    "name_ar": "ساعة كوروس Apex 2 Pro",
+    "name_en": "Coros Apex 2 Pro",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "price": 499,
+    "original_price": 599,
+    "discount": 17,
+    "rating": 4.8,
+    "reviews": 2345,
+    "stock": 25,
+    "image": "https://www.coros.com/images/products/APEX2PRO/Black/overview-2.jpg",
+    "description_ar": "ساعة كوروس Apex 2 Pro — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "GPS متعدد التردد",
+      "75 ساعة GPS",
+      "خرائط توبو",
+      "Blood Lactate",
+      "شحن سريع"
+    ],
+    "tags": [
+      "ساعات ذكية",
+      "ساعة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-724",
+    "name_ar": "نظارة Vuzix Z100 الذكية",
+    "name_en": "Vuzix Z100 Smart Glasses",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "price": 699,
+    "original_price": 799,
+    "discount": 13,
+    "rating": 4.3,
+    "reviews": 543,
+    "stock": 43,
+    "image": "https://www.vuzix.com/cdn/shop/products/z100-smartglasses-product.jpg",
+    "description_ar": "نظارة Vuzix Z100 الذكية — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "Waveguide AR",
+      "Qualcomm AR1",
+      "8 ساعات بطارية",
+      "Android 11",
+      "Hands-free"
+    ],
+    "tags": [
+      "نظارات ذكية",
+      "نظارة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-725",
+    "name_ar": "جهاز Elgato Stream Deck Neo",
+    "name_en": "Elgato Stream Deck Neo",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 99,
+    "original_price": 119,
+    "discount": 17,
+    "rating": 4.7,
+    "reviews": 6543,
+    "stock": 63,
+    "image": "https://asset.msi.com/resize/image/global/product/product_17_20240404111451_e3c437d0b7cce07c.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png",
+    "description_ar": "جهاز Elgato Stream Deck Neo — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "8 مفاتيح LCD",
+      "2 شاشة Info",
+      "تحكم بكل شيء",
+      "تكامل واسع",
+      "USB-C"
+    ],
+    "tags": [
+      "إنتاجية",
+      "جهاز"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-726",
+    "name_ar": "لوحة مفاتيح Keychron Q6 Max",
+    "name_en": "Keychron Q6 Max Wireless",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.8,
+    "reviews": 8765,
+    "stock": 47,
+    "image": "https://cdn.shopify.com/s/files/1/0059/0630/1017/files/Keychron-Q6-Max-QMK-wireless-mechanical-keyboard-750.jpg",
+    "description_ar": "لوحة مفاتيح Keychron Q6 Max — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "مفاتيح ميكانيكية",
+      "QMK/VIA",
+      "Gasket Mount",
+      "Bluetooth 5.1",
+      "5000mAh"
+    ],
+    "tags": [
+      "إنتاجية",
+      "لوحة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-727",
+    "name_ar": "نظارة Meta Ray-Ban Skyler الذكية",
+    "name_en": "Meta Ray-Ban Skyler",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "price": 349,
+    "original_price": 399,
+    "discount": 13,
+    "rating": 4.5,
+    "reviews": 3210,
+    "stock": 55,
+    "image": "https://www.meta.com/quest/content/dam/ray-ban-meta/pages/home/skyler-product.jpg",
+    "description_ar": "نظارة Meta Ray-Ban Skyler الذكية — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "كاميرا 12MP Ultra Wide",
+      "AI المساعد",
+      "مكبرات مفتوحة",
+      "Bluetooth 5.3",
+      "6 ساعات"
+    ],
+    "tags": [
+      "نظارات ذكية",
+      "نظارة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
   }
 ]
