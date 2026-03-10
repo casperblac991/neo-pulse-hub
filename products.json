@@ -4782,5 +4782,165 @@
     "featured": false,
     "added_by": "auto_bot",
     "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-743",
+    "name_ar": "نظارة XREAL Air 2 Pro",
+    "name_en": "XREAL Air 2 Pro",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "price": 449,
+    "original_price": 499,
+    "discount": 10,
+    "rating": 4.6,
+    "reviews": 3210,
+    "stock": 71,
+    "image": "https://www.xreal.com/wp-content/uploads/2023/11/XREAL_Air2Pro_Product-800x800.jpg",
+    "description_ar": "نظارة XREAL Air 2 Pro — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "شاشة 330\" افتراضية",
+      "120Hz Refresh",
+      "Electrochromic Dimming",
+      "USB-C",
+      "72g خفيف"
+    ],
+    "tags": [
+      "نظارات ذكية",
+      "نظارة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-744",
+    "name_ar": "ساعة Withings ScanWatch Nova",
+    "name_en": "Withings ScanWatch Nova",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 499,
+    "original_price": 599,
+    "discount": 17,
+    "rating": 4.7,
+    "reviews": 2345,
+    "stock": 49,
+    "image": "https://www.withings.com/sites/default/files/styles/full_hd/public/2023-01/ScanWatch-Nova-product.jpg",
+    "description_ar": "ساعة Withings ScanWatch Nova — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "تصميم ساعة كلاسيكي",
+      "ECG",
+      "30 يوم بطارية",
+      "SpO2",
+      "نوم متقدم"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "ساعة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-745",
+    "name_ar": "خاتم Ultrahuman Ring AIR",
+    "name_en": "Ultrahuman Ring AIR",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 349,
+    "original_price": 399,
+    "discount": 13,
+    "rating": 4.7,
+    "reviews": 5432,
+    "stock": 49,
+    "image": "https://www.ultrahuman.com/ring-air/images/ultrahuman-ring-air-bionic-gold.jpg",
+    "description_ar": "خاتم Ultrahuman Ring AIR — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "خاتم ذكي بدون اشتراك",
+      "تتبع نوم AI",
+      "Metabolic Score",
+      "سبعة أيام بطارية",
+      "IP68"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "خاتم"
+    ],
+    "badge": "مميز",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": true,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-746",
+    "name_ar": "جهاز Polar Verity Sense",
+    "name_en": "Polar Verity Sense",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 89,
+    "original_price": 109,
+    "discount": 18,
+    "rating": 4.7,
+    "reviews": 5678,
+    "stock": 35,
+    "image": "https://www.polar.com/cdn-cgi/image/f=auto,q=85,w=750/sites/default/files/product-photos/polar-verity-sense.jpg",
+    "description_ar": "جهاز Polar Verity Sense — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "HR دقة عالية",
+      "يُثبَّت على الذراع",
+      "30 ساعة بطارية",
+      "Bluetooth + ANT+",
+      "IP67"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "جهاز"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-747",
+    "name_ar": "ساعة سامسونج Galaxy Watch 7",
+    "name_en": "Samsung Galaxy Watch 7 44mm",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.8,
+    "reviews": 8765,
+    "stock": 98,
+    "image": "https://image-us.samsung.com/SamsungUS/home/mobile/galaxy-watch/all-galaxy-watches/07102024/GW7-Green-Front-750.jpg",
+    "description_ar": "ساعة سامسونج Galaxy Watch 7 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "معالج Exynos W1000",
+      "تتبع نوم AI",
+      "بطارية 40 ساعة",
+      "مقاومة MIL-STD-810",
+      "تتبع اللياقة"
+    ],
+    "tags": [
+      "ساعات ذكية",
+      "ساعة"
+    ],
+    "badge": "مميز",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": true,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
   }
 ]
