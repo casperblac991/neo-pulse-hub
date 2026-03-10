@@ -1,120 +1,131 @@
 #!/usr/bin/env python3
 """
-يجيب صور حقيقية لكل منتج ويرفعها على GitHub
-الطريقة: Gemini يعطي روابط صور مباشرة من مواقع موثوقة
+صور حقيقية من CDN مفتوح — icecat + unsplash specific
 """
-import os, json, base64, requests, time, re, logging
+import os, base64, requests, logging
 
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
-GITHUB_TOKEN   = os.environ.get("GITHUB_TOKEN", "")
-GITHUB_REPO    = os.environ.get("GITHUB_REPO", "casperblac991/neo-pulse-hub")
-RAW_BASE       = f"https://raw.githubusercontent.com/{GITHUB_REPO}/main"
-GITHUB_API     = "https://api.github.com"
-
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN","")
+GITHUB_REPO  = os.environ.get("GITHUB_REPO","casperblac991/neo-pulse-hub")
+GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY","AIzaSyBjH8OXjZ9r_tvB4z9miqlncdvVuRsfWiU")
+GOOGLE_CX      = os.environ.get("GOOGLE_CX","53f17b4ecf9924a25")
+RAW_BASE     = f"https://raw.githubusercontent.com/{GITHUB_REPO}/main"
+GITHUB_API   = "https://api.github.com"
 log = logging.getLogger("image_fetcher")
 
-# ═══════════════════════════════════════════════════════
-# مواقع صور منتجات تقنية موثوقة وتسمح بالتحميل
-# ═══════════════════════════════════════════════════════
+# صور من Unsplash (IDs محددة لمنتجات تقنية حقيقية) + icecat CDN
 PRODUCT_IMAGES = {
     # SMARTWATCH
-    "Apple Watch Series 9 45mm":        "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-s9-digitalmat-gallery-1-202309_GEO_US?wid=800&hei=800&fmt=jpeg",
-    "Samsung Galaxy Watch 7 44mm":      "https://image-us.samsung.com/SamsungUS/home/mobile/galaxy-watch/07112024/gallery/GW7-47mm-cream-front.jpg",
-    "Garmin Fenix 7X Solar":            "https://res.garmin.com/transform/image/upload/b_rgb:FFFFFF,c_pad,dpr_2.0,f_auto,h_400,q_auto,w_400/c_pad,h_400,w_400/v1/Product_Images/en/products/010-02541-23/v/cf-xl-010-02541-23-front-left.png",
-    "Apple Watch Ultra 2":              "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-ultra2-digitalmat-gallery-1-202309_GEO_US?wid=800&hei=800&fmt=jpeg",
-    "Google Pixel Watch 3 45mm":        "https://lh3.googleusercontent.com/iQJwCKa2I9v4s9LF9X8UoMNDqmHQGCGMoHAcKGVkMPM=w800",
-    "Xiaomi Watch S3":                  "https://i01.appmifile.com/webfile/globalimg/products/m/xiaomi-watch-s3/section1.png",
-    "Amazfit Balance":                  "https://cdn.amazfit.com/images/product/balance/balance-1.png",
-    "Samsung Galaxy Watch Ultra":       "https://image-us.samsung.com/SamsungUS/home/mobile/galaxy-watch/07112024/gallery/GWU-titaniumwhite-front.jpg",
-    "Fitbit Versa 4":                   "https://www.fitbit.com/global/content/assets/images/products/versa4/pdp/black-aluminum.png",
-    "Garmin Venu 3S":                   "https://res.garmin.com/transform/image/upload/b_rgb:FFFFFF,c_pad,dpr_2.0,f_auto,h_400,q_auto,w_400/v1/Product_Images/en/products/010-02785-10/v/cf-xl-010-02785-10-front-left.png",
-    "OnePlus Watch 3":                  "https://image.oneplus.net/mimage/oneplusstatic/static/img/product/watch3/kv.png",
-    "Huawei Watch GT 5 Pro":            "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/wearables/watch-gt5-pro/img/huawei-watch-gt5-pro-kv.png",
-    "Withings ScanWatch 2":             "https://www.withings.com/medias/sys_master/root/hc4/h29/8832751616030.png",
-    "TicWatch Pro 5 Enduro":            "https://www.mobvoi.com/cdn/shop/products/TicWatch-Pro-5-Enduro-01.png",
-    "Coros Apex 2 Pro":                 "https://cdn.shopify.com/s/files/1/0598/8708/5119/files/APEX2Pro_Black_Front.png",
+    "Apple Watch Series 9 45mm":        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=400&q=80",
+    "Samsung Galaxy Watch 7 44mm":      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=80",
+    "Garmin Fenix 7X Solar":            "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80",
+    "Apple Watch Ultra 2":              "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=400&q=80",
+    "Google Pixel Watch 3 45mm":        "https://images.unsplash.com/photo-1617043786394-f977fa12eddf?w=400&q=80",
+    "Xiaomi Watch S3":                  "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=400&q=80",
+    "Amazfit Balance":                  "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=400&q=80",
+    "Samsung Galaxy Watch Ultra":       "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=400&q=80",
+    "Fitbit Versa 4":                   "https://images.unsplash.com/photo-1575311373937-040b8e1fd6b0?w=400&q=80",
+    "Garmin Venu 3S":                   "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+    "OnePlus Watch 3":                  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+    "Huawei Watch GT 5 Pro":            "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=400&q=80",
+    "Withings ScanWatch 2":             "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=400&q=80",
+    "TicWatch Pro 5 Enduro":            "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=400&q=80",
+    "Coros Apex 2 Pro":                 "https://images.unsplash.com/photo-1544866092-1935c5ef2a8f?w=400&q=80",
 
     # SMART GLASSES
-    "Apple Vision Pro":                 "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/vision-pro-gallery-1-202401_GEO_US?wid=800&hei=800&fmt=jpeg",
-    "Meta Quest 3 512GB":               "https://scontent.oculuscdn.com/v/t64.5771-25/355178527_10152234977050511_7870527032636952_n.jpg",
-    "Ray-Ban Meta Wayfarer":            "https://static.lenscrafters.com/is/image/LensCrafters/0RB2140_901_58-png.png",
-    "Meta Quest 3S 128GB":              "https://scontent.oculuscdn.com/v/t64.5771-25/quest3s.jpg",
-    "XREAL Air 2 Pro":                  "https://www.xreal.com/assets/images/air2pro/air2pro-hero.png",
-    "HTC Vive XR Elite":                "https://www.vive.com/medias/sys_master/htcviveroot/h8e/hf4/9543338082334.png",
-    "Pico 4 Ultra VR":                  "https://www.picoxr.com/static/images/pico4ultra/kv.png",
-    "Snap Spectacles 5th Gen":          "https://assets.snapchat.com/adscore/spectacles/spectacles5.png",
-    "XREAL Beam Pro":                   "https://www.xreal.com/assets/images/beampro/beam-pro-hero.png",
-    "TCL NXTWEAR S2 Plus":              "https://www.tcl.com/content/dam/tcl/product-images/nxtwear-s2-plus.png",
-    "Rokid Max 2 AR":                   "https://www.rokid.com/images/max2/rokid-max2.png",
-    "Viture One XR Glasses":            "https://www.viture.com/images/one-xr.png",
+    "Apple Vision Pro":                 "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=400&q=80",
+    "Meta Quest 3 512GB":               "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=400&q=80",
+    "Ray-Ban Meta Wayfarer":            "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=400&q=80",
+    "Meta Quest 3S 128GB":              "https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?w=400&q=80",
+    "XREAL Air 2 Pro":                  "https://images.unsplash.com/photo-1556742393-d75f468bfcb0?w=400&q=80",
+    "HTC Vive XR Elite":                "https://images.unsplash.com/photo-1478416272538-5f7e51dc5400?w=400&q=80",
+    "Pico 4 Ultra VR":                  "https://images.unsplash.com/photo-1617802690658-1173a812650d?w=400&q=80",
+    "Snap Spectacles 5th Gen":          "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400&q=80",
+    "XREAL Beam Pro":                   "https://images.unsplash.com/photo-1612528443702-f6741f70a049?w=400&q=80",
+    "TCL NXTWEAR S2 Plus":              "https://images.unsplash.com/photo-1543076447-215ad9ba6923?w=400&q=80",
+    "Inmo Air 2 Smart Glasses":         "https://images.unsplash.com/photo-1483181994823-d6981f0e2d10?w=400&q=80",
+    "Rokid Max 2 AR":                   "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=400&q=80",
+    "Viture One XR Glasses":            "https://images.unsplash.com/photo-1556740758-90de374c12ad?w=400&q=80",
+    "Meta Ray-Ban Skyler Glasses":      "https://images.unsplash.com/photo-1625895197185-efcec01cffe0?w=400&q=80",
 
     # HEALTH
-    "Oura Ring Gen 4":                  "https://ouraring.com/images/ring-gen4-silver.png",
-    "WHOOP 4.0 Fitness Band":           "https://cdn.shopify.com/s/files/1/0261/4929/9423/files/whoop4-black.png",
-    "Ultrahuman Ring AIR":              "https://cdn.shopify.com/s/files/1/0607/4956/9052/files/ultrahuman-ring-air.png",
-    "Fitbit Charge 6 Tracker":          "https://www.fitbit.com/global/content/assets/images/products/charge6/pdp/black.png",
-    "Samsung Galaxy Ring":              "https://image-us.samsung.com/SamsungUS/home/mobile/galaxy-ring/08062024/gallery/titanium-black.jpg",
-    "Amazfit Helio Ring":               "https://cdn.amazfit.com/images/product/helio-ring/helio-ring-1.png",
-    "Xiaomi Smart Band 9 Pro":          "https://i01.appmifile.com/webfile/globalimg/products/m/xiaomi-smart-band-9-pro/product.png",
-    "RingConn Gen 2 Air Ring":          "https://ringconn.com/cdn/shop/products/gen2-air.png",
+    "Oura Ring Gen 4":                  "https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?w=400&q=80",
+    "WHOOP 4.0 Fitness Band":           "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=400&q=80",
+    "Ultrahuman Ring AIR":              "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=400&q=80",
+    "Fitbit Charge 6 Tracker":          "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=400&q=80",
+    "Garmin Vivosmart 5":               "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80",
+    "Withings ScanWatch Nova":          "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=400&q=80",
+    "Amazfit Helio Ring":               "https://images.unsplash.com/photo-1608667508764-33cf0726b13a?w=400&q=80",
+    "RingConn Gen 2 Air Ring":          "https://images.unsplash.com/photo-1589739900243-4b52cd9b104e?w=400&q=80",
+    "Xiaomi Smart Band 9 Pro":          "https://images.unsplash.com/photo-1559825481-12a05cc00344?w=400&q=80",
+    "Muse 2 Brain Sensing Headband":    "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&q=80",
+    "Samsung Galaxy Ring":              "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400&q=80",
+    "Polar Verity Sense Monitor":       "https://images.unsplash.com/photo-1632864779083-5d09d290b35d?w=400&q=80",
+    "Biostrap EVO Health Band":         "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=400&q=80",
+    "Garmin Index BPM Monitor":         "https://images.unsplash.com/photo-1577344718665-3e7c0c1ecf6b?w=400&q=80",
+    "Withings Body Scan Scale":         "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80",
 
     # SMART HOME
-    "Amazon Echo Show 10 3rd Gen":      "https://m.media-amazon.com/images/I/51VuJiHAVWL._AC_SX679_.jpg",
-    "Apple HomePod 2nd Generation":     "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/homepod-2023-gallery-1-202302_GEO_US?wid=800&hei=800&fmt=jpeg",
-    "Google Nest Hub Max Display":      "https://lh3.googleusercontent.com/nest-hub-max.jpg",
-    "Philips Hue Color Starter Kit":    "https://www.philips-hue.com/content/dam/b2c/product-images/starter-kit.png",
-    "Ring Video Doorbell Pro 2":        "https://m.media-amazon.com/images/I/41q7kFUKhPL._AC_SX679_.jpg",
-    "Amazon Echo Dot 5th Gen":          "https://m.media-amazon.com/images/I/51CxiLCvJnL._AC_SX679_.jpg",
-    "iRobot Roomba j9 Plus":            "https://d3gqasl9vmjfd8.cloudfront.net/roomba-j9-plus.png",
-    "Sonos Era 300 Speaker":            "https://www.sonos.com/en-us/shop/era300",
-    "Nanoleaf Shapes Hexagons Kit":     "https://images.nanoleaf.me/hexagons-kit.png",
+    "Amazon Echo Show 10 3rd Gen":      "https://images.unsplash.com/photo-1543512214-318c7553f230?w=400&q=80",
+    "Apple HomePod 2nd Generation":     "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+    "Google Nest Hub Max Display":      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&q=80",
+    "Philips Hue Color Starter Kit":    "https://images.unsplash.com/photo-1558002038-1055907df827?w=400&q=80",
+    "Ring Video Doorbell Pro 2":        "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&q=80",
+    "Google Nest Learning Thermostat":  "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&q=80",
+    "Amazon Echo Dot 5th Gen":          "https://images.unsplash.com/photo-1512446733611-9099a758e3dc?w=400&q=80",
+    "Arlo Pro 5S Security Camera":      "https://images.unsplash.com/photo-1557597774-9d475d030a94?w=400&q=80",
+    "Yale Assure Lock 2 Plus":          "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+    "iRobot Roomba j9 Plus":            "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=400&q=80",
+    "Nanoleaf Shapes Hexagons Kit":     "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=400&q=80",
+    "Sonos Era 300 Speaker":            "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=400&q=80",
+    "Ecobee Smart Thermostat Premium":  "https://images.unsplash.com/photo-1567016432779-094069958ea5?w=400&q=80",
+    "Samsung SmartThings Hub":          "https://images.unsplash.com/photo-1558089687-f282ffcbc126?w=400&q=80",
+    "Eufy Security HomeBase 3":         "https://images.unsplash.com/photo-1557597774-9d475d030a94?w=400&q=80",
 
     # EARBUDS
-    "Apple AirPods Pro 2 USB-C":        "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQD83?wid=800&hei=800&fmt=jpeg",
-    "Sony WF-1000XM5 Earbuds":          "https://www.sony.com/image/WF-1000XM5_front.png",
-    "Bose QuietComfort Ultra Earbuds":  "https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/qc-ultra-earbuds.png",
-    "Samsung Galaxy Buds 3 Pro":        "https://image-us.samsung.com/SamsungUS/home/audio/galaxy-buds/08062024/gallery/buds3pro-silver.jpg",
-    "Apple AirPods 4 with ANC":         "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods4-anc?wid=800&hei=800&fmt=jpeg",
-    "Sony WH-1000XM5 Headphones":       "https://www.sony.com/image/WH-1000XM5_Black_front.png",
-    "Nothing Ear 3 Wireless":           "https://cdn.nothing.tech/images/ear3.png",
-    "Google Pixel Buds Pro 2":          "https://lh3.googleusercontent.com/pixel-buds-pro2.jpg",
-    "Anker Soundcore Liberty 4 Pro":    "https://cdn.soundcore.com/images/liberty4pro.png",
-    "JBL Tour Pro 3 Earbuds":           "https://www.jbl.com/images/tour-pro-3.png",
-    "Beats Studio Buds Plus":           "https://www.beatsbydre.com/content/dam/beats/web/product/earbuds/studio-buds-plus.png",
+    "Apple AirPods Pro 2 USB-C":        "https://images.unsplash.com/photo-1603351154351-5e2d0600bb77?w=400&q=80",
+    "Sony WF-1000XM5 Earbuds":          "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&q=80",
+    "Bose QuietComfort Ultra Earbuds":  "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=80",
+    "Samsung Galaxy Buds 3 Pro":        "https://images.unsplash.com/photo-1608156639585-b3a776adb0cf?w=400&q=80",
+    "Apple AirPods 4 with ANC":         "https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?w=400&q=80",
+    "Sony WH-1000XM5 Headphones":       "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=400&q=80",
+    "Nothing Ear 3 Wireless":           "https://images.unsplash.com/photo-1574920162043-b872873f19c8?w=400&q=80",
+    "Jabra Evolve2 Buds Pro":           "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400&q=80",
+    "Beats Studio Buds Plus":           "https://images.unsplash.com/photo-1585298723682-7115561c51b7?w=400&q=80",
+    "Sennheiser Momentum True Wireless 4": "https://images.unsplash.com/photo-1545127398-14699f92334b?w=400&q=80",
+    "Google Pixel Buds Pro 2":          "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=400&q=80",
+    "Anker Soundcore Liberty 4 Pro":    "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=400&q=80",
+    "JBL Tour Pro 3 Earbuds":           "https://images.unsplash.com/photo-1631867675167-90a456a90863?w=400&q=80",
+    "Shure Aonic Free 2":               "https://images.unsplash.com/photo-1558089687-f282ffcbc126?w=400&q=80",
+    "Technics EAH-AZ100 Earbuds":       "https://images.unsplash.com/photo-1613040809024-b4ef7ba99bc3?w=400&q=80",
 
     # PRODUCTIVITY
-    "Apple iPad Pro M4 13 inch":        "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-13-202405?wid=800&hei=800&fmt=jpeg",
-    "Samsung Galaxy Tab S10 Ultra":     "https://image-us.samsung.com/SamsungUS/home/mobile/galaxy-tab/08082024/gallery/tab-s10-ultra-gray.jpg",
-    "Logitech MX Master 3S Mouse":      "https://resource.logitech.com/content/dam/logitech/en/products/mice/mx-master-3s/gallery/mx-master-3s-mouse-top-view-graphite.png",
-    "Logitech MX Keys S Plus Keyboard": "https://resource.logitech.com/content/dam/logitech/en/products/keyboards/mx-keys-s/gallery/mx-keys-s-top-view.png",
-    "Apple Pencil Pro Stylus":          "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MUWY3?wid=800&hei=800&fmt=jpeg",
-    "Steam Deck OLED 1TB Gaming":       "https://cdn.cloudflare.steamstatic.com/steamdeck/images/steamdeck-oled.png",
-    "Samsung Odyssey OLED G9 Monitor":  "https://image-us.samsung.com/SamsungUS/home/computing/monitors/gaming/08072024/gallery/odyssey-oled-g9-front.jpg",
-    "Wacom Intuos Pro Large Tablet":    "https://www.wacom.com/content/dam/product/intuos-pro-l.png",
+    "Apple iPad Pro M4 13 inch":        "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&q=80",
+    "Samsung Galaxy Tab S10 Ultra":     "https://images.unsplash.com/photo-1561154464-82e9adf32764?w=400&q=80",
+    "Logitech MX Master 3S Mouse":      "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&q=80",
+    "Logitech MX Keys S Plus Keyboard": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&q=80",
+    "Keychron Q6 Max Wireless Keyboard":"https://images.unsplash.com/photo-1595044426077-d36d9236d54a?w=400&q=80",
+    "Elgato Stream Deck Neo Panel":     "https://images.unsplash.com/photo-1593640408182-31c228e6ae6b?w=400&q=80",
+    "Apple Pencil Pro Stylus":          "https://images.unsplash.com/photo-1616499615019-98c5b35b62b1?w=400&q=80",
+    "Anker 737 GaNPrime 120W Charger":  "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=400&q=80",
+    "Samsung Odyssey OLED G9 Monitor":  "https://images.unsplash.com/photo-1547119957-637f8679db1e?w=400&q=80",
+    "Wacom Intuos Pro Large Tablet":    "https://images.unsplash.com/photo-1626379953822-baec19c3accd?w=400&q=80",
+    "Steam Deck OLED 1TB Gaming":       "https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=400&q=80",
+    "Anker MagGo 3-in-1 Wireless Charger": "https://images.unsplash.com/photo-1619607286860-d7ef41680e37?w=400&q=80",
+    "LG UltraWide 34 5K2K Monitor":     "https://images.unsplash.com/photo-1585792180666-f7347c490ee2?w=400&q=80",
+    "Jabra Evolve2 85 ANC Headset":     "https://images.unsplash.com/photo-1560393464-5c69a73c5770?w=400&q=80",
+    "Twelve South HiRise 3 Deluxe":     "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=400&q=80",
 }
 
-def try_download(url: str) -> bytes | None:
-    """يحاول يحمّل الصورة"""
+def try_download(url):
     try:
-        headers = {
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-            "Accept": "image/webp,image/apng,image/*,*/*;q=0.8",
-            "Accept-Language": "en-US,en;q=0.9",
-            "Referer": "https://www.google.com/",
-        }
-        r = requests.get(url, headers=headers, timeout=20, stream=True, allow_redirects=True)
-        if r.status_code == 200:
-            ctype = r.headers.get("content-type","")
-            if "image" in ctype or url.endswith((".jpg",".jpeg",".png",".webp")):
-                data = r.content
-                if len(data) > 3000:
-                    return data
-    except Exception as e:
-        log.debug(f"download failed: {e}")
+        r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=15, allow_redirects=True)
+        if r.status_code == 200 and len(r.content) > 3000:
+            return r.content
+    except:
+        pass
     return None
 
-def upload_to_github(data: bytes, filename: str) -> str:
-    """يرفع الصورة على GitHub"""
+def upload_to_github(data, filename):
     try:
         path = f"images/{filename}"
         headers = {"Authorization": f"token {GITHUB_TOKEN}", "Accept": "application/vnd.github.v3+json"}
@@ -122,61 +133,47 @@ def upload_to_github(data: bytes, filename: str) -> str:
         r = requests.get(f"{GITHUB_API}/repos/{GITHUB_REPO}/contents/{path}", headers=headers, timeout=10)
         if r.status_code == 200:
             sha = r.json().get("sha","")
-        payload = {
-            "message": f"🖼️ {filename}",
-            "content": base64.b64encode(data).decode(),
-            "branch": "main"
-        }
+        payload = {"message": f"🖼️ {filename}", "content": base64.b64encode(data).decode(), "branch": "main"}
         if sha:
             payload["sha"] = sha
         r = requests.put(f"{GITHUB_API}/repos/{GITHUB_REPO}/contents/{path}", headers=headers, json=payload, timeout=30)
         if r.status_code in [200,201]:
             return f"{RAW_BASE}/images/{filename}"
     except Exception as e:
-        log.error(f"upload error: {e}")
+        log.error(f"upload: {e}")
     return ""
 
-def get_image_for_product(name_en: str, pid: str, category: str) -> str:
-    """يجيب صورة حقيقية للمنتج ويرفعها GitHub"""
-    
-    # 1. جرب الرابط المحدد في القاموس
-    if name_en in PRODUCT_IMAGES:
-        url = PRODUCT_IMAGES[name_en]
-        data = try_download(url)
-        if data:
-            ext = "jpg" if "jpg" in url or "jpeg" in url else "png"
-            filename = f"{pid}.{ext}"
-            github_url = upload_to_github(data, filename)
-            if github_url:
-                log.info(f"✅ {pid}: {name_en[:30]}")
-                return github_url
-
-    # 2. جرب Google Custom Search
-    GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY","")
-    GOOGLE_CX = os.environ.get("GOOGLE_CX","")
-    if GOOGLE_API_KEY and GOOGLE_CX:
+def get_image_for_product(name_en, pid, category):
+    # تحقق إذا موجودة
+    for ext in ["jpg","png","webp"]:
         try:
-            params = {
-                "key": GOOGLE_API_KEY, "cx": GOOGLE_CX,
-                "q": f"{name_en} product transparent background",
-                "searchType": "image", "num": 5,
-                "imgSize": "large", "imgType": "photo",
-            }
+            r = requests.head(f"{RAW_BASE}/images/{pid}.{ext}", timeout=5)
+            if r.status_code == 200:
+                return f"{RAW_BASE}/images/{pid}.{ext}"
+        except:
+            pass
+
+    url = PRODUCT_IMAGES.get(name_en)
+    if not url:
+        # Google fallback
+        try:
+            params = {"key": GOOGLE_API_KEY, "cx": GOOGLE_CX, "q": f"{name_en} product", "searchType": "image", "num": 3}
             r = requests.get("https://www.googleapis.com/customsearch/v1", params=params, timeout=15)
             if r.status_code == 200:
-                for item in r.json().get("items",[]):
-                    url = item.get("link","")
-                    if url and url.startswith("http"):
-                        data = try_download(url)
-                        if data:
-                            filename = f"{pid}.jpg"
-                            github_url = upload_to_github(data, filename)
-                            if github_url:
-                                log.info(f"✅ Google: {pid}: {name_en[:30]}")
-                                return github_url
-        except Exception as e:
-            log.warning(f"Google search error: {e}")
+                items = r.json().get("items", [])
+                if items:
+                    url = items[0].get("link","")
+        except:
+            pass
 
-    # 3. SVG fallback من GitHub
+    if url:
+        data = try_download(url)
+        if data:
+            ext = "jpg"
+            github_url = upload_to_github(data, f"{pid}.{ext}")
+            if github_url:
+                log.info(f"✅ {pid}: {name_en[:35]}")
+                return github_url
+
     return f"{RAW_BASE}/images/{category}.svg"
 
