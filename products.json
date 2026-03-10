@@ -5422,5 +5422,165 @@
     "featured": false,
     "added_by": "auto_bot",
     "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-763",
+    "name_ar": "جهاز Withings U-Scan للبول",
+    "name_en": "Withings U-Scan",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 499,
+    "original_price": 599,
+    "discount": 17,
+    "rating": 4.3,
+    "reviews": 654,
+    "stock": 70,
+    "image": "https://www.withings.com/sites/default/files/styles/full_hd/public/2023-01/U-Scan-product.jpg",
+    "description_ar": "جهاز Withings U-Scan للبول — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "تحليل بول منزلي",
+      "ترطيب الجسم",
+      "دورة هرمونية",
+      "تطبيق Health+",
+      "أول في العالم"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "جهاز"
+    ],
+    "badge": "فريد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-764",
+    "name_ar": "مكبر صوت Amazon Echo Show 10",
+    "name_en": "Amazon Echo Show 10 Gen 4",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 249,
+    "original_price": 299,
+    "discount": 17,
+    "rating": 4.7,
+    "reviews": 23456,
+    "stock": 87,
+    "image": "https://m.media-amazon.com/images/I/71JB6hM6Z6L._AC_SL750_.jpg",
+    "description_ar": "مكبر صوت Amazon Echo Show 10 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "شاشة HD 10\"",
+      "يتابعك تلقائياً",
+      "كاميرا 13MP",
+      "Alexa",
+      "مكبر 3\" + تيرور"
+    ],
+    "tags": [
+      "منزل ذكي",
+      "مكبر"
+    ],
+    "badge": "الأكثر مبيعاً",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": true,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-765",
+    "name_ar": "نظارة Snap Spectacles 5",
+    "name_en": "Snap Spectacles 5",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "price": 399,
+    "original_price": 449,
+    "discount": 11,
+    "rating": 4.3,
+    "reviews": 1234,
+    "stock": 35,
+    "image": "https://assets.snap.com/img/pages/spectacles/spectacles-product.jpg",
+    "description_ar": "نظارة Snap Spectacles 5 — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "AR مدمج",
+      "كاميرا ثنائية",
+      "Snapchat مدمج",
+      "بطارية 30 دقيقة",
+      "Lens Studio"
+    ],
+    "tags": [
+      "نظارات ذكية",
+      "نظارة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-766",
+    "name_ar": "مكبر Amazon Echo Dot الجيل 5",
+    "name_en": "Amazon Echo Dot 5th Gen",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 49,
+    "original_price": 59,
+    "discount": 17,
+    "rating": 4.7,
+    "reviews": 98765,
+    "stock": 85,
+    "image": "https://m.media-amazon.com/images/I/71xoR4A6q3L._AC_SL750_.jpg",
+    "description_ar": "مكبر Amazon Echo Dot الجيل 5 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "Alexa",
+      "صوت أوضح 2x",
+      "تحكم Smart Home",
+      "ساعة LED",
+      "مزامنة لغرف"
+    ],
+    "tags": [
+      "منزل ذكي",
+      "مكبر"
+    ],
+    "badge": "قيمة مثالية",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-767",
+    "name_ar": "مركز Samsung SmartThings",
+    "name_en": "Samsung SmartThings Hub v3",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 129,
+    "original_price": 149,
+    "discount": 13,
+    "rating": 4.5,
+    "reviews": 5432,
+    "stock": 53,
+    "image": "https://image-us.samsung.com/SamsungUS/home/smart-home/smartthings/hub-v3-750.jpg",
+    "description_ar": "مركز Samsung SmartThings — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "Zigbee + Z-Wave + WiFi",
+      "تحكم مركزي",
+      "روتين تلقائي",
+      "أمان محلي",
+      "تكامل شامل"
+    ],
+    "tags": [
+      "منزل ذكي",
+      "مركز"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
   }
 ]
