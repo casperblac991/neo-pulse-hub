@@ -195,6 +195,62 @@ async def cmd_add(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
             parse_mode=ParseMode.MARKDOWN
         )
 
+async def cmd_fill(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+    """يملأ المتجر كاملاً بـ 90 منتج مع صور حقيقية"""
+    if ADMIN_ID and update.effective_user.id != ADMIN_ID:
+        return await update.message.reply_text("🚫 هذا البوت للمدير فقط.")
+    await update.message.reply_text("⏳ جاري ملء المتجر بـ 90 منتج حقيقي مع صور رسمية...")
+    try:
+        import smart_supplier_bot as ssb
+        products = ssb.fill_store()
+        await update.message.reply_text(
+            f"✅ *تم ملء المتجر بنجاح!*\n\n"
+            f"⌚ ساعات: 15\n🥽 نظارات: 15\n💪 صحة: 15\n"
+            f"🏠 منزل: 15\n🎧 سماعات: 15\n💼 إنتاجية: 15\n\n"
+            f"*إجمالي: {len(products)} منتج* بصور رسمية 🎯\n"
+            f"🌐 https://neo-pulse-hub.it.com/products.html",
+            parse_mode="Markdown"
+        )
+    except Exception as e:
+        await update.message.reply_text(f"❌ خطأ: {e}")
+
+async def cmd_auto(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+    """يضيف منتجات جديدة تلقائياً: /auto أو /auto 10"""
+    if ADMIN_ID and update.effective_user.id != ADMIN_ID:
+        return await update.message.reply_text("🚫 هذا البوت للمدير فقط.")
+    count = 5
+    if ctx.args:
+        try:
+            count = min(int(ctx.args[0]), 20)
+        except:
+            pass
+    await update.message.reply_text(f"🔍 جاري إضافة {count} منتجات حقيقية...")
+    try:
+        import smart_supplier_bot as ssb
+        added = ssb.auto_add_products(count)
+        if added:
+            names = "\n".join([f"• {p['name_ar']}" for p in added])
+            await update.message.reply_text(
+                f"✅ *تمت إضافة {len(added)} منتجات:*\n\n{names}",
+                parse_mode="Markdown"
+            )
+        else:
+            await update.message.reply_text("ℹ️ كل المنتجات موجودة أصلاً.")
+    except Exception as e:
+        await update.message.reply_text(f"❌ خطأ: {e}")
+
+async def cmd_fix_images(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+    """يصلح صور المنتجات الحالية"""
+    if ADMIN_ID and update.effective_user.id != ADMIN_ID:
+        return await update.message.reply_text("🚫 هذا البوت للمدير فقط.")
+    await update.message.reply_text("🖼️ جاري تصليح الصور...")
+    try:
+        import smart_supplier_bot as ssb
+        ssb.fix_images()
+        await update.message.reply_text("✅ تم تصليح الصور!")
+    except Exception as e:
+        await update.message.reply_text(f"❌ خطأ: {e}")
+
 async def cmd_restock(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     """تحديث مخزون منتج: /restock NPH-001 50"""
     if len(ctx.args) >= 2:
@@ -529,11 +585,14 @@ async def daily_inventory_report(ctx: ContextTypes.DEFAULT_TYPE):
 def _register_handlers(app):
     """يُستخدم في Webhook mode"""
     from telegram.ext import CommandHandler, MessageHandler, CallbackQueryHandler, filters
-    app.add_handler(CommandHandler("start",   cmd_start))
-    app.add_handler(CommandHandler("stock",   cmd_stock))
-    app.add_handler(CommandHandler("add",     cmd_add))
-    app.add_handler(CommandHandler("restock", cmd_restock))
-    app.add_handler(CommandHandler("price",   cmd_price))
+    app.add_handler(CommandHandler("start",      cmd_start))
+    app.add_handler(CommandHandler("stock",      cmd_stock))
+    app.add_handler(CommandHandler("add",        cmd_add))
+    app.add_handler(CommandHandler("restock",    cmd_restock))
+    app.add_handler(CommandHandler("price",      cmd_price))
+    app.add_handler(CommandHandler("fill",       cmd_fill))
+    app.add_handler(CommandHandler("auto",       cmd_auto))
+    app.add_handler(CommandHandler("fix_images", cmd_fix_images))
     app.add_handler(CallbackQueryHandler(handle_callback))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
 
