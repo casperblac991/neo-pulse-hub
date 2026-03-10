@@ -670,7 +670,17 @@ def main():
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
 
     print(f"✅ Customer Bot running! Token: {TOKEN[:10]}...")
-    app.run_polling(allowed_updates=["message","callback_query"], drop_pending_updates=True)
+    for attempt in range(10):
+        try:
+            app.run_polling(allowed_updates=["message","callback_query"], drop_pending_updates=True)
+            break
+        except Exception as e:
+            if "Conflict" in str(e):
+                import time
+                print(f"⚠️ Customer Conflict, retry {attempt+1}/10 in 10s...")
+                time.sleep(10)
+            else:
+                raise
 
 if __name__ == "__main__":
     main()
