@@ -3662,5 +3662,165 @@
     "featured": false,
     "added_by": "auto_bot",
     "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-708",
+    "name_ar": "خاتم سامسونج Galaxy Ring",
+    "name_en": "Samsung Galaxy Ring",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 399,
+    "original_price": 449,
+    "discount": 11,
+    "rating": 4.6,
+    "reviews": 4321,
+    "stock": 59,
+    "image": "https://image-us.samsung.com/SamsungUS/home/mobile/galaxy-ring/07102024/GalaxyRing-Black-750.jpg",
+    "description_ar": "خاتم سامسونج Galaxy Ring — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "تيتانيوم خفيف",
+      "7 أيام بطارية",
+      "Samsung Health",
+      "تتبع نوم AI",
+      "IP68 ماء"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "خاتم"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-709",
+    "name_ar": "ساعة أبل Watch Ultra 2",
+    "name_en": "Apple Watch Ultra 2",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "price": 799,
+    "original_price": 899,
+    "discount": 11,
+    "rating": 4.9,
+    "reviews": 4321,
+    "stock": 50,
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQDY3ref_VW_34FR+watch-ultra2-titanium-natural-nc-10b_VW_34FR_WF_CO?wid=750&hei=750",
+    "description_ar": "ساعة أبل Watch Ultra 2 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "هيكل تيتانيوم",
+      "بطارية 60 ساعة",
+      "صوت إنذار 86dB",
+      "مقاومة 100م",
+      "GPS دقة عالية"
+    ],
+    "tags": [
+      "ساعات ذكية",
+      "ساعة"
+    ],
+    "badge": "حصري",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": true,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-710",
+    "name_ar": "سماعات Beats Studio Buds+",
+    "name_en": "Beats Studio Buds+",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 169,
+    "original_price": 199,
+    "discount": 15,
+    "rating": 4.6,
+    "reviews": 6543,
+    "stock": 26,
+    "image": "https://www.beatsbydre.com/content/dam/beats/web/product/earbuds/studio-buds-plus/transparent-product.jpg",
+    "description_ar": "سماعات Beats Studio Buds+ — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "ANC 36dB",
+      "Transparency Mode",
+      "IP54",
+      "9h + 36h",
+      "Android + iOS"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-711",
+    "name_ar": "سوار Garmin Vivosmart 5",
+    "name_en": "Garmin Vivosmart 5",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 149,
+    "original_price": 179,
+    "discount": 17,
+    "rating": 4.5,
+    "reviews": 6543,
+    "stock": 78,
+    "image": "https://static.garmin.com/en/products/010-02645-10/v/cf-lg@2x.jpg",
+    "description_ar": "سوار Garmin Vivosmart 5 — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "OLED صغير",
+      "7 أيام بطارية",
+      "Body Battery",
+      "HRV Status",
+      "مقاوم للماء 5ATM"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "سوار"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-712",
+    "name_ar": "حامل Twelve South HiRise 3 Deluxe",
+    "name_en": "Twelve South HiRise 3 Deluxe",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 99,
+    "original_price": 119,
+    "discount": 17,
+    "rating": 4.7,
+    "reviews": 5432,
+    "stock": 71,
+    "image": "https://twelvestores.com/cdn/shop/products/hirise3deluxe-product-750.jpg",
+    "description_ar": "حامل Twelve South HiRise 3 Deluxe — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "شحن MagSafe 15W",
+      "حامل لاب توب",
+      "Ergo Posture",
+      "iPhone + Mac",
+      "ارتفاع قابل تعديل"
+    ],
+    "tags": [
+      "إنتاجية",
+      "حامل"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
   }
 ]
