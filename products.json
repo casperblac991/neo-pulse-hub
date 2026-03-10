@@ -4462,5 +4462,165 @@
     "featured": false,
     "added_by": "auto_bot",
     "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-733",
+    "name_ar": "سماعات Anker Soundcore Liberty 4 Pro",
+    "name_en": "Anker Soundcore Liberty 4 Pro",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 129,
+    "original_price": 159,
+    "discount": 19,
+    "rating": 4.6,
+    "reviews": 12345,
+    "stock": 65,
+    "image": "https://m.media-amazon.com/images/I/71nqFJCFSaL._AC_SL750_.jpg",
+    "description_ar": "سماعات Anker Soundcore Liberty 4 Pro — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "ANC 50dB",
+      "LDAC",
+      "11h + 53h",
+      "IPX4",
+      "شاشة استعراض"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
+    ],
+    "badge": "قيمة مثالية",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-734",
+    "name_ar": "جهاز Steam Deck OLED 1 تيرابايت",
+    "name_en": "Steam Deck OLED 1TB",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 649,
+    "original_price": 749,
+    "discount": 13,
+    "rating": 4.8,
+    "reviews": 12345,
+    "stock": 59,
+    "image": "https://cdn.cloudflare.steamstatic.com/steamdeck/images/steamdeck-oled-hero.jpg",
+    "description_ar": "جهاز Steam Deck OLED 1 تيرابايت — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "OLED HDR 90Hz",
+      "AMD APU Zen2+RDNA2",
+      "بطارية 50% أطول",
+      "1TB NVMe",
+      "WiFi 6E"
+    ],
+    "tags": [
+      "إنتاجية",
+      "جهاز"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-735",
+    "name_ar": "سماعات AirPods Pro الجيل 2",
+    "name_en": "Apple AirPods Pro 2nd Gen USB-C",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 249,
+    "original_price": 279,
+    "discount": 11,
+    "rating": 4.9,
+    "reviews": 54321,
+    "stock": 55,
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQTP3?wid=750&hei=750",
+    "description_ar": "سماعات AirPods Pro الجيل 2 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "ANC H2 Chip",
+      "Adaptive Audio",
+      "صوت مكاني",
+      "IP68",
+      "6h + 30h case"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
+    ],
+    "badge": "الأكثر مبيعاً",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": true,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-736",
+    "name_ar": "منظم حرارة Nest الجيل 4",
+    "name_en": "Google Nest Learning Thermostat 4",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 279,
+    "original_price": 329,
+    "discount": 15,
+    "rating": 4.7,
+    "reviews": 28765,
+    "stock": 25,
+    "image": "https://lh3.googleusercontent.com/nest-thermostat-4th-gen-750.jpg",
+    "description_ar": "منظم حرارة Nest الجيل 4 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "تعلم جدولك تلقائياً",
+      "توفير 15% طاقة",
+      "يُحس بتواجدك",
+      "شاشة OLED",
+      "Google Home"
+    ],
+    "tags": [
+      "منزل ذكي",
+      "منظم"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-737",
+    "name_ar": "ساعة تيكووتش Pro 5 Enduro",
+    "name_en": "TicWatch Pro 5 Enduro",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "price": 399,
+    "original_price": 449,
+    "discount": 11,
+    "rating": 4.6,
+    "reviews": 1234,
+    "stock": 35,
+    "image": "https://www.mobvoi.com/cdn/shop/files/TicWatch_Pro_5_Enduro_Black.jpg",
+    "description_ar": "ساعة تيكووتش Pro 5 Enduro — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "Snapdragon W5+ Gen 1",
+      "شاشة مزدوجة",
+      "80 ساعة بطارية",
+      "Wear OS 3.5",
+      "MIL-STD-810H"
+    ],
+    "tags": [
+      "ساعات ذكية",
+      "ساعة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
   }
 ]
