@@ -11,8 +11,8 @@
     "rating": 4.9,
     "reviews": 3245,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=400",
-    "description_ar": "ساعة أبل Watch Series 9 — شاشة Retina دائمة التشغيل. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?apple+watch+series+9",
+    "description_ar": "ساعة أبل Watch Series 9 — شاشة Retina دائمة التشغيل. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "شاشة AMOLED",
       "مقاومة للماء",
@@ -22,8 +22,7 @@
     ],
     "tags": [
       "ساعات ذكية",
-      "ساعة",
-      "تقنية"
+      "ساعة"
     ],
     "badge": "الأكثر مبيعاً",
     "active": true,
@@ -41,8 +40,8 @@
     "rating": 4.7,
     "reviews": 2100,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400",
-    "description_ar": "ساعة سامسونج Galaxy Watch 6 — إطار دوار مع تتبع صحي متقدم. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?samsung+galaxy+watch",
+    "description_ar": "ساعة سامسونج Galaxy Watch 6 — إطار دوار مع تتبع صحي متقدم. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "شاشة AMOLED",
       "مقاومة للماء",
@@ -52,8 +51,7 @@
     ],
     "tags": [
       "ساعات ذكية",
-      "ساعة",
-      "تقنية"
+      "ساعة"
     ],
     "badge": "جديد",
     "active": true,
@@ -71,8 +69,8 @@
     "rating": 4.6,
     "reviews": 1567,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400",
-    "description_ar": "ساعة هواوي Watch GT 4 — بطارية 14 يوم وتتبع GPS. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?huawei+smartwatch",
+    "description_ar": "ساعة هواوي Watch GT 4 — بطارية 14 يوم وتتبع GPS. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "شاشة AMOLED",
       "مقاومة للماء",
@@ -82,8 +80,7 @@
     ],
     "tags": [
       "ساعات ذكية",
-      "ساعة",
-      "تقنية"
+      "ساعة"
     ],
     "badge": "",
     "active": true,
@@ -92,7 +89,7 @@
   {
     "id": "NPH-004",
     "name_ar": "ساعة شاومي Mi Watch S3",
-    "name_en": "Xiaomi Mi Watch S3",
+    "name_en": "Xiaomi Mi Watch",
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
     "price": 129,
@@ -101,8 +98,8 @@
     "rating": 4.5,
     "reviews": 987,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=400",
-    "description_ar": "ساعة شاومي Mi Watch S3 — شاشة AMOLED وتتبع 100 رياضة. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?xiaomi+smart+watch",
+    "description_ar": "ساعة شاومي Mi Watch S3 — شاشة AMOLED وتتبع 100 رياضة. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "شاشة AMOLED",
       "مقاومة للماء",
@@ -112,8 +109,7 @@
     ],
     "tags": [
       "ساعات ذكية",
-      "ساعة",
-      "تقنية"
+      "ساعة"
     ],
     "badge": "",
     "active": true,
@@ -131,8 +127,8 @@
     "rating": 4.8,
     "reviews": 1823,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?w=400",
-    "description_ar": "ساعة غارمن Fenix 7 — للرياضيين المحترفين GPS متعدد. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?garmin+fenix+watch",
+    "description_ar": "ساعة غارمن Fenix 7 — للرياضيين المحترفين GPS متعدد. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "شاشة AMOLED",
       "مقاومة للماء",
@@ -142,8 +138,7 @@
     ],
     "tags": [
       "ساعات ذكية",
-      "ساعة",
-      "تقنية"
+      "ساعة"
     ],
     "badge": "",
     "active": true,
@@ -161,8 +156,8 @@
     "rating": 4.4,
     "reviews": 1234,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=400",
-    "description_ar": "ساعة فيتبيت Sense 2 — تتبع الإجهاد وجودة النوم. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?fitbit+smartwatch",
+    "description_ar": "ساعة فيتبيت Sense 2 — تتبع الإجهاد وجودة النوم. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "شاشة AMOLED",
       "مقاومة للماء",
@@ -172,8 +167,7 @@
     ],
     "tags": [
       "ساعات ذكية",
-      "ساعة",
-      "تقنية"
+      "ساعة"
     ],
     "badge": "",
     "active": true,
@@ -191,8 +185,8 @@
     "rating": 4.5,
     "reviews": 756,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=400",
-    "description_ar": "ساعة تيكووتش Pro 5 — Wear OS مع بطارية مزدوجة. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?ticwatch+smartwatch",
+    "description_ar": "ساعة تيكووتش Pro 5 — Wear OS مع بطارية مزدوجة. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "شاشة AMOLED",
       "مقاومة للماء",
@@ -202,8 +196,7 @@
     ],
     "tags": [
       "ساعات ذكية",
-      "ساعة",
-      "تقنية"
+      "ساعة"
     ],
     "badge": "",
     "active": true,
@@ -221,8 +214,8 @@
     "rating": 4.4,
     "reviews": 543,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400",
-    "description_ar": "ساعة أونور Watch GS 4 — تصميم رفيع وخفيف الوزن. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?honor+smartwatch",
+    "description_ar": "ساعة أونور Watch GS 4 — تصميم رفيع وخفيف الوزن. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "شاشة AMOLED",
       "مقاومة للماء",
@@ -232,8 +225,7 @@
     ],
     "tags": [
       "ساعات ذكية",
-      "ساعة",
-      "تقنية"
+      "ساعة"
     ],
     "badge": "",
     "active": true,
@@ -251,8 +243,8 @@
     "rating": 4.5,
     "reviews": 1102,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1617043786394-f977fa12eddf?w=400",
-    "description_ar": "ساعة Amazfit GTR 4 — GPS مدمج وبطارية 14 يوم. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?amazfit+gtr+smartwatch",
+    "description_ar": "ساعة Amazfit GTR 4 — GPS مدمج وبطارية 14 يوم. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "شاشة AMOLED",
       "مقاومة للماء",
@@ -262,8 +254,7 @@
     ],
     "tags": [
       "ساعات ذكية",
-      "ساعة",
-      "تقنية"
+      "ساعة"
     ],
     "badge": "",
     "active": true,
@@ -272,7 +263,7 @@
   {
     "id": "NPH-010",
     "name_ar": "ساعة Polar Vantage V3",
-    "name_en": "Polar Vantage V3",
+    "name_en": "Polar Vantage",
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
     "price": 499,
@@ -281,8 +272,8 @@
     "rating": 4.7,
     "reviews": 654,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?w=400",
-    "description_ar": "ساعة Polar Vantage V3 — للرياضيين الاحترافيين. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?polar+sports+watch",
+    "description_ar": "ساعة Polar Vantage V3 — للرياضيين الاحترافيين. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "شاشة AMOLED",
       "مقاومة للماء",
@@ -292,8 +283,7 @@
     ],
     "tags": [
       "ساعات ذكية",
-      "ساعة",
-      "تقنية"
+      "ساعة"
     ],
     "badge": "",
     "active": true,
@@ -311,8 +301,8 @@
     "rating": 4.4,
     "reviews": 876,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=400",
-    "description_ar": "ساعة فيتبيت Versa 4 — Alexa مدمجة مع GPS. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?fitbit+versa+watch",
+    "description_ar": "ساعة فيتبيت Versa 4 — Alexa مدمجة مع GPS. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "شاشة AMOLED",
       "مقاومة للماء",
@@ -322,8 +312,7 @@
     ],
     "tags": [
       "ساعات ذكية",
-      "ساعة",
-      "تقنية"
+      "ساعة"
     ],
     "badge": "",
     "active": true,
@@ -341,8 +330,8 @@
     "rating": 4.6,
     "reviews": 432,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400",
-    "description_ar": "ساعة Suunto Race — GPS متعدد الأنظمة للعدائين. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?suunto+running+watch",
+    "description_ar": "ساعة Suunto Race — GPS متعدد الأنظمة للعدائين. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "شاشة AMOLED",
       "مقاومة للماء",
@@ -352,8 +341,7 @@
     ],
     "tags": [
       "ساعات ذكية",
-      "ساعة",
-      "تقنية"
+      "ساعة"
     ],
     "badge": "",
     "active": true,
@@ -371,8 +359,8 @@
     "rating": 4.8,
     "reviews": 987,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=400",
-    "description_ar": "ساعة سامسونج Galaxy Watch Ultra — تيتانيوم للمغامرين. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?samsung+watch+ultra",
+    "description_ar": "ساعة سامسونج Galaxy Watch Ultra — تيتانيوم للمغامرين. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "شاشة AMOLED",
       "مقاومة للماء",
@@ -382,8 +370,7 @@
     ],
     "tags": [
       "ساعات ذكية",
-      "ساعة",
-      "تقنية"
+      "ساعة"
     ],
     "badge": "جديد",
     "active": true,
@@ -401,8 +388,8 @@
     "rating": 4.7,
     "reviews": 2341,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400",
-    "description_ar": "ساعة أبل Watch SE 2 — أبل واتش بسعر مناسب. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?apple+watch+se",
+    "description_ar": "ساعة أبل Watch SE 2 — أبل واتش بسعر مناسب. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "شاشة AMOLED",
       "مقاومة للماء",
@@ -412,8 +399,7 @@
     ],
     "tags": [
       "ساعات ذكية",
-      "ساعة",
-      "تقنية"
+      "ساعة"
     ],
     "badge": "",
     "active": true,
@@ -422,7 +408,7 @@
   {
     "id": "NPH-015",
     "name_ar": "ساعة Withings ScanWatch 2",
-    "name_en": "Withings ScanWatch 2",
+    "name_en": "Withings ScanWatch",
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
     "price": 299,
@@ -431,8 +417,8 @@
     "rating": 4.5,
     "reviews": 543,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1617043786394-f977fa12eddf?w=400",
-    "description_ar": "ساعة Withings ScanWatch 2 — تصميم كلاسيكي مع تتبع صحي. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?withings+scanwatch",
+    "description_ar": "ساعة Withings ScanWatch 2 — تصميم كلاسيكي مع تتبع صحي. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "شاشة AMOLED",
       "مقاومة للماء",
@@ -442,8 +428,7 @@
     ],
     "tags": [
       "ساعات ذكية",
-      "ساعة",
-      "تقنية"
+      "ساعة"
     ],
     "badge": "",
     "active": true,
@@ -461,8 +446,8 @@
     "rating": 4.3,
     "reviews": 765,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=400",
-    "description_ar": "ساعة Fossil Gen 6 — Wear OS بتصميم كلاسيكي. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?fossil+smartwatch",
+    "description_ar": "ساعة Fossil Gen 6 — Wear OS بتصميم كلاسيكي. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "شاشة AMOLED",
       "مقاومة للماء",
@@ -472,8 +457,7 @@
     ],
     "tags": [
       "ساعات ذكية",
-      "ساعة",
-      "تقنية"
+      "ساعة"
     ],
     "badge": "",
     "active": true,
@@ -482,7 +466,7 @@
   {
     "id": "NPH-017",
     "name_ar": "ساعة Coros Pace 3",
-    "name_en": "Coros Pace 3",
+    "name_en": "Coros Pace",
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
     "price": 229,
@@ -491,8 +475,8 @@
     "rating": 4.6,
     "reviews": 432,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?w=400",
-    "description_ar": "ساعة Coros Pace 3 — خفيفة للعدائين بطارية 17 يوم. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?coros+running+watch",
+    "description_ar": "ساعة Coros Pace 3 — خفيفة للعدائين بطارية 17 يوم. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "شاشة AMOLED",
       "مقاومة للماء",
@@ -502,8 +486,7 @@
     ],
     "tags": [
       "ساعات ذكية",
-      "ساعة",
-      "تقنية"
+      "ساعة"
     ],
     "badge": "",
     "active": true,
@@ -512,7 +495,7 @@
   {
     "id": "NPH-018",
     "name_ar": "ساعة Amazfit Bip 5",
-    "name_en": "Amazfit Bip 5",
+    "name_en": "Amazfit Bip",
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
     "price": 79,
@@ -521,8 +504,8 @@
     "rating": 4.2,
     "reviews": 1234,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1617043786394-f977fa12eddf?w=400",
-    "description_ar": "ساعة Amazfit Bip 5 — أقل سعراً مع شاشة كبيرة. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?amazfit+bip+watch",
+    "description_ar": "ساعة Amazfit Bip 5 — أقل سعراً مع شاشة كبيرة. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "شاشة AMOLED",
       "مقاومة للماء",
@@ -532,8 +515,7 @@
     ],
     "tags": [
       "ساعات ذكية",
-      "ساعة",
-      "تقنية"
+      "ساعة"
     ],
     "badge": "",
     "active": true,
@@ -541,8 +523,8 @@
   },
   {
     "id": "NPH-019",
-    "name_ar": "ساعة Mobvoi TicWatch E3",
-    "name_en": "Mobvoi TicWatch E3",
+    "name_ar": "ساعة TicWatch E3",
+    "name_en": "TicWatch E3",
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
     "price": 149,
@@ -551,8 +533,8 @@
     "rating": 4.3,
     "reviews": 543,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400",
-    "description_ar": "ساعة Mobvoi TicWatch E3 — Wear OS ميزانية محدودة. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?wear+os+smartwatch",
+    "description_ar": "ساعة TicWatch E3 — Wear OS ميزانية محدودة. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "شاشة AMOLED",
       "مقاومة للماء",
@@ -562,8 +544,7 @@
     ],
     "tags": [
       "ساعات ذكية",
-      "ساعة",
-      "تقنية"
+      "ساعة"
     ],
     "badge": "",
     "active": true,
@@ -571,7 +552,7 @@
   },
   {
     "id": "NPH-020",
-    "name_ar": "ساعة سامسونج Galaxy Fit 3",
+    "name_ar": "سوار سامسونج Galaxy Fit 3",
     "name_en": "Samsung Galaxy Fit 3",
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
@@ -581,8 +562,8 @@
     "rating": 4.2,
     "reviews": 876,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=400",
-    "description_ar": "ساعة سامسونج Galaxy Fit 3 — سوار لياقة اقتصادي. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?samsung+fitness+band",
+    "description_ar": "سوار سامسونج Galaxy Fit 3 — سوار لياقة اقتصادي. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "شاشة AMOLED",
       "مقاومة للماء",
@@ -592,8 +573,7 @@
     ],
     "tags": [
       "ساعات ذكية",
-      "ساعة",
-      "تقنية"
+      "سوار"
     ],
     "badge": "",
     "active": true,
@@ -602,7 +582,7 @@
   {
     "id": "NPH-021",
     "name_ar": "نظارة Ray-Ban Meta الذكية",
-    "name_en": "Ray-Ban Meta Smart Glasses",
+    "name_en": "Ray-Ban Meta",
     "category": "smart-glasses",
     "category_ar": "نظارات ذكية",
     "price": 329,
@@ -611,8 +591,8 @@
     "rating": 4.6,
     "reviews": 1234,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1473496169904-658ba7574b0d?w=400",
-    "description_ar": "نظارة Ray-Ban Meta الذكية — كاميرا 12MP وصوت مدمج. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?rayban+smart+glasses",
+    "description_ar": "نظارة Ray-Ban Meta الذكية — كاميرا 12MP وصوت مدمج. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "عرض AR",
       "كاميرا مدمجة",
@@ -622,8 +602,7 @@
     ],
     "tags": [
       "نظارات ذكية",
-      "نظارة",
-      "تقنية"
+      "نظارة"
     ],
     "badge": "الأكثر مبيعاً",
     "active": true,
@@ -641,8 +620,8 @@
     "rating": 4.8,
     "reviews": 987,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1625314897518-bb4fe6e95229?w=400",
-    "description_ar": "نظارة Apple Vision Pro — أول حاسوب مكاني من Apple. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?apple+vision+pro+headset",
+    "description_ar": "نظارة Apple Vision Pro — أول حاسوب مكاني من Apple. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "عرض AR",
       "كاميرا مدمجة",
@@ -652,8 +631,7 @@
     ],
     "tags": [
       "نظارات ذكية",
-      "نظارة",
-      "تقنية"
+      "نظارة"
     ],
     "badge": "جديد",
     "active": true,
@@ -671,8 +649,8 @@
     "rating": 4.7,
     "reviews": 2341,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=400",
-    "description_ar": "نظارة Meta Quest 3 — VR/AR متكامل. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?meta+quest+vr+headset",
+    "description_ar": "نظارة Meta Quest 3 — VR/AR متكامل. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "عرض AR",
       "كاميرا مدمجة",
@@ -682,8 +660,7 @@
     ],
     "tags": [
       "نظارات ذكية",
-      "نظارة",
-      "تقنية"
+      "نظارة"
     ],
     "badge": "",
     "active": true,
@@ -701,8 +678,8 @@
     "rating": 4.5,
     "reviews": 876,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1473496169904-658ba7574b0d?w=400",
-    "description_ar": "نظارة Xreal Air 2 — شاشة OLED ضخمة مرئية. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?xreal+ar+glasses",
+    "description_ar": "نظارة Xreal Air 2 — شاشة OLED ضخمة مرئية. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "عرض AR",
       "كاميرا مدمجة",
@@ -712,8 +689,7 @@
     ],
     "tags": [
       "نظارات ذكية",
-      "نظارة",
-      "تقنية"
+      "نظارة"
     ],
     "badge": "",
     "active": true,
@@ -731,8 +707,8 @@
     "rating": 4.4,
     "reviews": 543,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1625314897518-bb4fe6e95229?w=400",
-    "description_ar": "نظارة Rokid Max — دقة Micro-OLED عالية. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?rokid+ar+glasses",
+    "description_ar": "نظارة Rokid Max — دقة Micro-OLED عالية. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "عرض AR",
       "كاميرا مدمجة",
@@ -742,8 +718,7 @@
     ],
     "tags": [
       "نظارات ذكية",
-      "نظارة",
-      "تقنية"
+      "نظارة"
     ],
     "badge": "",
     "active": true,
@@ -751,8 +726,8 @@
   },
   {
     "id": "NPH-026",
-    "name_ar": "نظارة TCL NXTWEAR S+",
-    "name_en": "TCL NXTWEAR S+",
+    "name_ar": "نظارة TCL NXTWEAR",
+    "name_en": "TCL NXTWEAR",
     "category": "smart-glasses",
     "category_ar": "نظارات ذكية",
     "price": 349,
@@ -761,8 +736,8 @@
     "rating": 4.3,
     "reviews": 432,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=400",
-    "description_ar": "نظارة TCL NXTWEAR S+ — شاشة Full HD مرئية. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?tcl+nxtwear+glasses",
+    "description_ar": "نظارة TCL NXTWEAR — شاشة Full HD مرئية. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "عرض AR",
       "كاميرا مدمجة",
@@ -772,8 +747,7 @@
     ],
     "tags": [
       "نظارات ذكية",
-      "نظارة",
-      "تقنية"
+      "نظارة"
     ],
     "badge": "",
     "active": true,
@@ -791,8 +765,8 @@
     "rating": 4.4,
     "reviews": 234,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1473496169904-658ba7574b0d?w=400",
-    "description_ar": "نظارة Vuzix Blade 2 — AR للشركات والمحترفين. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?vuzix+smart+glasses",
+    "description_ar": "نظارة Vuzix Blade 2 — AR للشركات والمحترفين. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "عرض AR",
       "كاميرا مدمجة",
@@ -802,8 +776,7 @@
     ],
     "tags": [
       "نظارات ذكية",
-      "نظارة",
-      "تقنية"
+      "نظارة"
     ],
     "badge": "",
     "active": true,
@@ -811,126 +784,6 @@
   },
   {
     "id": "NPH-028",
-    "name_ar": "نظارة Epson Moverio BT-45",
-    "name_en": "Epson Moverio BT-45",
-    "category": "smart-glasses",
-    "category_ar": "نظارات ذكية",
-    "price": 899,
-    "original_price": 999,
-    "discount": 10,
-    "rating": 4.3,
-    "reviews": 187,
-    "stock": 50,
-    "image": "https://images.unsplash.com/photo-1625314897518-bb4fe6e95229?w=400",
-    "description_ar": "نظارة Epson Moverio BT-45 — AR شفاف للتطبيقات الصناعية. منتج تقني متميز بجودة عالية وسعر تنافسي.",
-    "features_ar": [
-      "عرض AR",
-      "كاميرا مدمجة",
-      "اتصال بالهاتف",
-      "تصميم عصري",
-      "صوت مدمج"
-    ],
-    "tags": [
-      "نظارات ذكية",
-      "نظارة",
-      "تقنية"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14"
-  },
-  {
-    "id": "NPH-029",
-    "name_ar": "نظارة Snap Spectacles 4",
-    "name_en": "Snap Spectacles 4",
-    "category": "smart-glasses",
-    "category_ar": "نظارات ذكية",
-    "price": 299,
-    "original_price": 349,
-    "discount": 14,
-    "rating": 4.2,
-    "reviews": 654,
-    "stock": 50,
-    "image": "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=400",
-    "description_ar": "نظارة Snap Spectacles 4 — AR مع كاميرات مزدوجة. منتج تقني متميز بجودة عالية وسعر تنافسي.",
-    "features_ar": [
-      "عرض AR",
-      "كاميرا مدمجة",
-      "اتصال بالهاتف",
-      "تصميم عصري",
-      "صوت مدمج"
-    ],
-    "tags": [
-      "نظارات ذكية",
-      "نظارة",
-      "تقنية"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14"
-  },
-  {
-    "id": "NPH-030",
-    "name_ar": "نظارة Lenovo ThinkReality A3",
-    "name_en": "Lenovo ThinkReality A3",
-    "category": "smart-glasses",
-    "category_ar": "نظارات ذكية",
-    "price": 1499,
-    "original_price": 1699,
-    "discount": 12,
-    "rating": 4.5,
-    "reviews": 123,
-    "stock": 50,
-    "image": "https://images.unsplash.com/photo-1473496169904-658ba7574b0d?w=400",
-    "description_ar": "نظارة Lenovo ThinkReality A3 — AR للاستخدام المؤسسي. منتج تقني متميز بجودة عالية وسعر تنافسي.",
-    "features_ar": [
-      "عرض AR",
-      "كاميرا مدمجة",
-      "اتصال بالهاتف",
-      "تصميم عصري",
-      "صوت مدمج"
-    ],
-    "tags": [
-      "نظارات ذكية",
-      "نظارة",
-      "تقنية"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14"
-  },
-  {
-    "id": "NPH-031",
-    "name_ar": "نظارة HTC Vive XR Elite",
-    "name_en": "HTC Vive XR Elite",
-    "category": "smart-glasses",
-    "category_ar": "نظارات ذكية",
-    "price": 1099,
-    "original_price": 1299,
-    "discount": 15,
-    "rating": 4.6,
-    "reviews": 432,
-    "stock": 50,
-    "image": "https://images.unsplash.com/photo-1625314897518-bb4fe6e95229?w=400",
-    "description_ar": "نظارة HTC Vive XR Elite — VR/AR خفيفة الوزن. منتج تقني متميز بجودة عالية وسعر تنافسي.",
-    "features_ar": [
-      "عرض AR",
-      "كاميرا مدمجة",
-      "اتصال بالهاتف",
-      "تصميم عصري",
-      "صوت مدمج"
-    ],
-    "tags": [
-      "نظارات ذكية",
-      "نظارة",
-      "تقنية"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14"
-  },
-  {
-    "id": "NPH-032",
     "name_ar": "نظارة Pico 4 Ultra",
     "name_en": "Pico 4 Ultra",
     "category": "smart-glasses",
@@ -941,8 +794,8 @@
     "rating": 4.5,
     "reviews": 765,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=400",
-    "description_ar": "نظارة Pico 4 Ultra — VR مستقلة عالية الأداء. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?pico+vr+headset",
+    "description_ar": "نظارة Pico 4 Ultra — VR مستقلة عالية الأداء. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "عرض AR",
       "كاميرا مدمجة",
@@ -952,17 +805,74 @@
     ],
     "tags": [
       "نظارات ذكية",
-      "نظارة",
-      "تقنية"
+      "نظارة"
     ],
     "badge": "جديد",
     "active": true,
     "shipping_days": "7-14"
   },
   {
-    "id": "NPH-033",
+    "id": "NPH-029",
+    "name_ar": "نظارة HTC Vive XR Elite",
+    "name_en": "HTC Vive XR Elite",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "price": 1099,
+    "original_price": 1299,
+    "discount": 15,
+    "rating": 4.6,
+    "reviews": 432,
+    "stock": 50,
+    "image": "https://source.unsplash.com/400x300/?htc+vive+vr+headset",
+    "description_ar": "نظارة HTC Vive XR Elite — VR/AR خفيفة الوزن. منتج تقني متميز بجودة عالية.",
+    "features_ar": [
+      "عرض AR",
+      "كاميرا مدمجة",
+      "اتصال بالهاتف",
+      "تصميم عصري",
+      "صوت مدمج"
+    ],
+    "tags": [
+      "نظارات ذكية",
+      "نظارة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14"
+  },
+  {
+    "id": "NPH-030",
+    "name_ar": "نظارة Snap Spectacles",
+    "name_en": "Snap Spectacles",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.2,
+    "reviews": 654,
+    "stock": 50,
+    "image": "https://source.unsplash.com/400x300/?snap+spectacles+ar",
+    "description_ar": "نظارة Snap Spectacles — AR مع كاميرات مزدوجة. منتج تقني متميز بجودة عالية.",
+    "features_ar": [
+      "عرض AR",
+      "كاميرا مدمجة",
+      "اتصال بالهاتف",
+      "تصميم عصري",
+      "صوت مدمج"
+    ],
+    "tags": [
+      "نظارات ذكية",
+      "نظارة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14"
+  },
+  {
+    "id": "NPH-031",
     "name_ar": "نظارة Solos AirGo 3",
-    "name_en": "Solos AirGo 3",
+    "name_en": "Solos AirGo",
     "category": "smart-glasses",
     "category_ar": "نظارات ذكية",
     "price": 149,
@@ -971,8 +881,8 @@
     "rating": 4.1,
     "reviews": 345,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1473496169904-658ba7574b0d?w=400",
-    "description_ar": "نظارة Solos AirGo 3 — نظارات رياضية ذكية. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?solos+sports+glasses",
+    "description_ar": "نظارة Solos AirGo 3 — نظارات رياضية ذكية. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "عرض AR",
       "كاميرا مدمجة",
@@ -982,17 +892,16 @@
     ],
     "tags": [
       "نظارات ذكية",
-      "نظارة",
-      "تقنية"
+      "نظارة"
     ],
     "badge": "",
     "active": true,
     "shipping_days": "7-14"
   },
   {
-    "id": "NPH-034",
-    "name_ar": "نظارة Amazon Echo Frames 3",
-    "name_en": "Amazon Echo Frames 3",
+    "id": "NPH-032",
+    "name_ar": "نظارة Amazon Echo Frames",
+    "name_en": "Amazon Echo Frames",
     "category": "smart-glasses",
     "category_ar": "نظارات ذكية",
     "price": 269,
@@ -1001,8 +910,8 @@
     "rating": 4.2,
     "reviews": 543,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1625314897518-bb4fe6e95229?w=400",
-    "description_ar": "نظارة Amazon Echo Frames 3 — Alexa في نظارتك. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?amazon+echo+frames+glasses",
+    "description_ar": "نظارة Amazon Echo Frames — Alexa في نظارتك. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "عرض AR",
       "كاميرا مدمجة",
@@ -1012,17 +921,16 @@
     ],
     "tags": [
       "نظارات ذكية",
-      "نظارة",
-      "تقنية"
+      "نظارة"
     ],
     "badge": "",
     "active": true,
     "shipping_days": "7-14"
   },
   {
-    "id": "NPH-035",
+    "id": "NPH-033",
     "name_ar": "نظارة Bose Frames Tempo",
-    "name_en": "Bose Frames Tempo",
+    "name_en": "Bose Frames",
     "category": "smart-glasses",
     "category_ar": "نظارات ذكية",
     "price": 249,
@@ -1031,8 +939,8 @@
     "rating": 4.4,
     "reviews": 432,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=400",
-    "description_ar": "نظارة Bose Frames Tempo — نظارات رياضية بصوت بوز. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?bose+audio+sunglasses",
+    "description_ar": "نظارة Bose Frames Tempo — نظارات رياضية بصوت بوز. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "عرض AR",
       "كاميرا مدمجة",
@@ -1042,47 +950,16 @@
     ],
     "tags": [
       "نظارات ذكية",
-      "نظارة",
-      "تقنية"
+      "نظارة"
     ],
     "badge": "",
     "active": true,
     "shipping_days": "7-14"
   },
   {
-    "id": "NPH-036",
-    "name_ar": "نظارة North Focals 2",
-    "name_en": "North Focals 2",
-    "category": "smart-glasses",
-    "category_ar": "نظارات ذكية",
-    "price": 599,
-    "original_price": 699,
-    "discount": 14,
-    "rating": 4.3,
-    "reviews": 234,
-    "stock": 50,
-    "image": "https://images.unsplash.com/photo-1473496169904-658ba7574b0d?w=400",
-    "description_ar": "نظارة North Focals 2 — عرض يومي أمامك. منتج تقني متميز بجودة عالية وسعر تنافسي.",
-    "features_ar": [
-      "عرض AR",
-      "كاميرا مدمجة",
-      "اتصال بالهاتف",
-      "تصميم عصري",
-      "صوت مدمج"
-    ],
-    "tags": [
-      "نظارات ذكية",
-      "نظارة",
-      "تقنية"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14"
-  },
-  {
-    "id": "NPH-037",
+    "id": "NPH-034",
     "name_ar": "نظارة Xiaomi Wireless AR",
-    "name_en": "Xiaomi Wireless AR",
+    "name_en": "Xiaomi AR",
     "category": "smart-glasses",
     "category_ar": "نظارات ذكية",
     "price": 599,
@@ -1091,8 +968,8 @@
     "rating": 4.5,
     "reviews": 543,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1625314897518-bb4fe6e95229?w=400",
-    "description_ar": "نظارة Xiaomi Wireless AR — AR لاسلكي من شاومي. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?xiaomi+wireless+glasses",
+    "description_ar": "نظارة Xiaomi Wireless AR — AR لاسلكي من شاومي. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "عرض AR",
       "كاميرا مدمجة",
@@ -1102,15 +979,159 @@
     ],
     "tags": [
       "نظارات ذكية",
-      "نظارة",
-      "تقنية"
+      "نظارة"
     ],
     "badge": "جديد",
     "active": true,
     "shipping_days": "7-14"
   },
   {
+    "id": "NPH-035",
+    "name_ar": "نظارة Oppo Air Glass 3",
+    "name_en": "Oppo Air Glass",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "price": 399,
+    "original_price": 449,
+    "discount": 11,
+    "rating": 4.3,
+    "reviews": 345,
+    "stock": 50,
+    "image": "https://source.unsplash.com/400x300/?oppo+smart+glasses",
+    "description_ar": "نظارة Oppo Air Glass 3 — AR خفيفة يومية. منتج تقني متميز بجودة عالية.",
+    "features_ar": [
+      "عرض AR",
+      "كاميرا مدمجة",
+      "اتصال بالهاتف",
+      "تصميم عصري",
+      "صوت مدمج"
+    ],
+    "tags": [
+      "نظارات ذكية",
+      "نظارة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14"
+  },
+  {
+    "id": "NPH-036",
+    "name_ar": "نظارة Google Glass Enterprise",
+    "name_en": "Google Glass",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "price": 999,
+    "original_price": 1199,
+    "discount": 17,
+    "rating": 4.4,
+    "reviews": 187,
+    "stock": 50,
+    "image": "https://source.unsplash.com/400x300/?google+glass+enterprise",
+    "description_ar": "نظارة Google Glass Enterprise — AR للمصانع والمستشفيات. منتج تقني متميز بجودة عالية.",
+    "features_ar": [
+      "عرض AR",
+      "كاميرا مدمجة",
+      "اتصال بالهاتف",
+      "تصميم عصري",
+      "صوت مدمج"
+    ],
+    "tags": [
+      "نظارات ذكية",
+      "نظارة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14"
+  },
+  {
+    "id": "NPH-037",
+    "name_ar": "نظارة Epson Moverio BT-45",
+    "name_en": "Epson Moverio",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "price": 899,
+    "original_price": 999,
+    "discount": 10,
+    "rating": 4.3,
+    "reviews": 187,
+    "stock": 50,
+    "image": "https://source.unsplash.com/400x300/?epson+moverio+smart+glasses",
+    "description_ar": "نظارة Epson Moverio BT-45 — AR شفاف للتطبيقات الصناعية. منتج تقني متميز بجودة عالية.",
+    "features_ar": [
+      "عرض AR",
+      "كاميرا مدمجة",
+      "اتصال بالهاتف",
+      "تصميم عصري",
+      "صوت مدمج"
+    ],
+    "tags": [
+      "نظارات ذكية",
+      "نظارة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14"
+  },
+  {
     "id": "NPH-038",
+    "name_ar": "نظارة Lenovo ThinkReality",
+    "name_en": "Lenovo ThinkReality",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "price": 1499,
+    "original_price": 1699,
+    "discount": 12,
+    "rating": 4.5,
+    "reviews": 123,
+    "stock": 50,
+    "image": "https://source.unsplash.com/400x300/?lenovo+ar+glasses",
+    "description_ar": "نظارة Lenovo ThinkReality — AR للاستخدام المؤسسي. منتج تقني متميز بجودة عالية.",
+    "features_ar": [
+      "عرض AR",
+      "كاميرا مدمجة",
+      "اتصال بالهاتف",
+      "تصميم عصري",
+      "صوت مدمج"
+    ],
+    "tags": [
+      "نظارات ذكية",
+      "نظارة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14"
+  },
+  {
+    "id": "NPH-039",
+    "name_ar": "نظارة North Focals",
+    "name_en": "North Focals",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "price": 599,
+    "original_price": 699,
+    "discount": 14,
+    "rating": 4.3,
+    "reviews": 234,
+    "stock": 50,
+    "image": "https://source.unsplash.com/400x300/?north+focals+smart+glasses",
+    "description_ar": "نظارة North Focals — عرض يومي أمامك. منتج تقني متميز بجودة عالية.",
+    "features_ar": [
+      "عرض AR",
+      "كاميرا مدمجة",
+      "اتصال بالهاتف",
+      "تصميم عصري",
+      "صوت مدمج"
+    ],
+    "tags": [
+      "نظارات ذكية",
+      "نظارة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14"
+  },
+  {
+    "id": "NPH-040",
     "name_ar": "نظارة Sony Spatial Reality",
     "name_en": "Sony Spatial Reality",
     "category": "smart-glasses",
@@ -1121,8 +1142,8 @@
     "rating": 4.4,
     "reviews": 234,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=400",
-    "description_ar": "نظارة Sony Spatial Reality — عرض مكاني ثلاثي الأبعاد. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?sony+xr+headset",
+    "description_ar": "نظارة Sony Spatial Reality — عرض مكاني ثلاثي الأبعاد. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "عرض AR",
       "كاميرا مدمجة",
@@ -1132,68 +1153,7 @@
     ],
     "tags": [
       "نظارات ذكية",
-      "نظارة",
-      "تقنية"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14"
-  },
-  {
-    "id": "NPH-039",
-    "name_ar": "نظارة Oppo Air Glass 3",
-    "name_en": "Oppo Air Glass 3",
-    "category": "smart-glasses",
-    "category_ar": "نظارات ذكية",
-    "price": 399,
-    "original_price": 449,
-    "discount": 11,
-    "rating": 4.3,
-    "reviews": 345,
-    "stock": 50,
-    "image": "https://images.unsplash.com/photo-1473496169904-658ba7574b0d?w=400",
-    "description_ar": "نظارة Oppo Air Glass 3 — AR خفيفة يومية. منتج تقني متميز بجودة عالية وسعر تنافسي.",
-    "features_ar": [
-      "عرض AR",
-      "كاميرا مدمجة",
-      "اتصال بالهاتف",
-      "تصميم عصري",
-      "صوت مدمج"
-    ],
-    "tags": [
-      "نظارات ذكية",
-      "نظارة",
-      "تقنية"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14"
-  },
-  {
-    "id": "NPH-040",
-    "name_ar": "نظارة Google Glass Enterprise 2",
-    "name_en": "Google Glass Enterprise 2",
-    "category": "smart-glasses",
-    "category_ar": "نظارات ذكية",
-    "price": 999,
-    "original_price": 1199,
-    "discount": 17,
-    "rating": 4.4,
-    "reviews": 187,
-    "stock": 50,
-    "image": "https://images.unsplash.com/photo-1625314897518-bb4fe6e95229?w=400",
-    "description_ar": "نظارة Google Glass Enterprise 2 — AR للمصانع والمستشفيات. منتج تقني متميز بجودة عالية وسعر تنافسي.",
-    "features_ar": [
-      "عرض AR",
-      "كاميرا مدمجة",
-      "اتصال بالهاتف",
-      "تصميم عصري",
-      "صوت مدمج"
-    ],
-    "tags": [
-      "نظارات ذكية",
-      "نظارة",
-      "تقنية"
+      "نظارة"
     ],
     "badge": "",
     "active": true,
@@ -1211,8 +1171,8 @@
     "rating": 4.7,
     "reviews": 2345,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1589810635657-232948472d98?w=400",
-    "description_ar": "خاتم Oura Ring Gen 3 — تتبع النوم والصحة 24/7. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?oura+ring+smart+ring",
+    "description_ar": "خاتم Oura Ring Gen 3 — تتبع النوم والصحة 24/7. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "دقة طبية",
       "تطبيق ذكي",
@@ -1222,8 +1182,7 @@
     ],
     "tags": [
       "صحة ذكية",
-      "خاتم",
-      "تقنية"
+      "خاتم"
     ],
     "badge": "الأكثر مبيعاً",
     "active": true,
@@ -1241,8 +1200,8 @@
     "rating": 4.6,
     "reviews": 1234,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400",
-    "description_ar": "ميزان Withings Body Comp — تحليل تكوين الجسم كاملاً. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?smart+scale+body+composition",
+    "description_ar": "ميزان Withings Body Comp — تحليل تكوين الجسم كاملاً. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "دقة طبية",
       "تطبيق ذكي",
@@ -1252,8 +1211,7 @@
     ],
     "tags": [
       "صحة ذكية",
-      "ميزان",
-      "تقنية"
+      "ميزان"
     ],
     "badge": "",
     "active": true,
@@ -1271,8 +1229,8 @@
     "rating": 4.5,
     "reviews": 1876,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=400",
-    "description_ar": "سوار Fitbit Charge 6 — GPS مع تتبع نشاط متقدم. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?fitbit+charge+fitness+tracker",
+    "description_ar": "سوار Fitbit Charge 6 — GPS مع تتبع نشاط متقدم. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "دقة طبية",
       "تطبيق ذكي",
@@ -1282,8 +1240,7 @@
     ],
     "tags": [
       "صحة ذكية",
-      "سوار",
-      "تقنية"
+      "سوار"
     ],
     "badge": "",
     "active": true,
@@ -1291,7 +1248,7 @@
   },
   {
     "id": "NPH-044",
-    "name_ar": "جهاز Garmin Index S2",
+    "name_ar": "ميزان Garmin Index S2",
     "name_en": "Garmin Index S2",
     "category": "health",
     "category_ar": "صحة ذكية",
@@ -1301,8 +1258,8 @@
     "rating": 4.4,
     "reviews": 765,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400",
-    "description_ar": "جهاز Garmin Index S2 — ميزان ذكي بـ WiFi. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?garmin+smart+scale",
+    "description_ar": "ميزان Garmin Index S2 — ميزان ذكي بـ WiFi. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "دقة طبية",
       "تطبيق ذكي",
@@ -1312,8 +1269,7 @@
     ],
     "tags": [
       "صحة ذكية",
-      "جهاز",
-      "تقنية"
+      "ميزان"
     ],
     "badge": "",
     "active": true,
@@ -1322,7 +1278,7 @@
   {
     "id": "NPH-045",
     "name_ar": "جهاز Omron قياس الضغط",
-    "name_en": "Omron Blood Pressure Monitor",
+    "name_en": "Omron Blood Pressure",
     "category": "health",
     "category_ar": "صحة ذكية",
     "price": 89,
@@ -1331,8 +1287,8 @@
     "rating": 4.7,
     "reviews": 3456,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400",
-    "description_ar": "جهاز Omron قياس الضغط — دقة طبية مع تطبيق ذكي. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?blood+pressure+monitor+device",
+    "description_ar": "جهاز Omron قياس الضغط — دقة طبية مع تطبيق ذكي. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "دقة طبية",
       "تطبيق ذكي",
@@ -1342,8 +1298,7 @@
     ],
     "tags": [
       "صحة ذكية",
-      "جهاز",
-      "تقنية"
+      "جهاز"
     ],
     "badge": "",
     "active": true,
@@ -1351,66 +1306,6 @@
   },
   {
     "id": "NPH-046",
-    "name_ar": "جهاز Withings ScanWatch Light",
-    "name_en": "Withings ScanWatch Light",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 129,
-    "original_price": 149,
-    "discount": 13,
-    "rating": 4.5,
-    "reviews": 876,
-    "stock": 50,
-    "image": "https://images.unsplash.com/photo-1617043786394-f977fa12eddf?w=400",
-    "description_ar": "جهاز Withings ScanWatch Light — تخطيط قلب وقياس أكسجين. منتج تقني متميز بجودة عالية وسعر تنافسي.",
-    "features_ar": [
-      "دقة طبية",
-      "تطبيق ذكي",
-      "مزامنة فورية",
-      "تتبع 24 ساعة",
-      "تقارير تفصيلية"
-    ],
-    "tags": [
-      "صحة ذكية",
-      "جهاز",
-      "تقنية"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14"
-  },
-  {
-    "id": "NPH-047",
-    "name_ar": "جهاز Masimo W1",
-    "name_en": "Masimo W1",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 199,
-    "original_price": 239,
-    "discount": 17,
-    "rating": 4.6,
-    "reviews": 543,
-    "stock": 50,
-    "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400",
-    "description_ar": "جهاز Masimo W1 — مراقبة طبية دقيقة. منتج تقني متميز بجودة عالية وسعر تنافسي.",
-    "features_ar": [
-      "دقة طبية",
-      "تطبيق ذكي",
-      "مزامنة فورية",
-      "تتبع 24 ساعة",
-      "تقارير تفصيلية"
-    ],
-    "tags": [
-      "صحة ذكية",
-      "جهاز",
-      "تقنية"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14"
-  },
-  {
-    "id": "NPH-048",
     "name_ar": "حزام Whoop 4.0",
     "name_en": "Whoop 4.0",
     "category": "health",
@@ -1421,8 +1316,8 @@
     "rating": 4.5,
     "reviews": 1234,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=400",
-    "description_ar": "حزام Whoop 4.0 — تعافي ونوم للرياضيين. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?whoop+fitness+band",
+    "description_ar": "حزام Whoop 4.0 — تعافي ونوم للرياضيين. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "دقة طبية",
       "تطبيق ذكي",
@@ -1432,87 +1327,26 @@
     ],
     "tags": [
       "صحة ذكية",
-      "حزام",
-      "تقنية"
+      "حزام"
     ],
     "badge": "",
     "active": true,
     "shipping_days": "7-14"
   },
   {
-    "id": "NPH-049",
-    "name_ar": "جهاز Dexcom G7",
-    "name_en": "Dexcom G7",
+    "id": "NPH-047",
+    "name_ar": "خاتم RingConn Gen 2",
+    "name_en": "RingConn Smart Ring",
     "category": "health",
     "category_ar": "صحة ذكية",
-    "price": 299,
-    "original_price": 349,
-    "discount": 14,
-    "rating": 4.8,
-    "reviews": 987,
-    "stock": 50,
-    "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400",
-    "description_ar": "جهاز Dexcom G7 — مراقبة سكر بلا وخز. منتج تقني متميز بجودة عالية وسعر تنافسي.",
-    "features_ar": [
-      "دقة طبية",
-      "تطبيق ذكي",
-      "مزامنة فورية",
-      "تتبع 24 ساعة",
-      "تقارير تفصيلية"
-    ],
-    "tags": [
-      "صحة ذكية",
-      "جهاز",
-      "تقنية"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14"
-  },
-  {
-    "id": "NPH-050",
-    "name_ar": "سماعة طبية Eko DUO",
-    "name_en": "Eko DUO",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 349,
-    "original_price": 399,
-    "discount": 13,
-    "rating": 4.6,
-    "reviews": 345,
-    "stock": 50,
-    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400",
-    "description_ar": "سماعة طبية Eko DUO — سماعة طبية ذكية. منتج تقني متميز بجودة عالية وسعر تنافسي.",
-    "features_ar": [
-      "دقة طبية",
-      "تطبيق ذكي",
-      "مزامنة فورية",
-      "تتبع 24 ساعة",
-      "تقارير تفصيلية"
-    ],
-    "tags": [
-      "صحة ذكية",
-      "سماعة",
-      "تقنية"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14"
-  },
-  {
-    "id": "NPH-051",
-    "name_ar": "جهاز Biostrap Evo",
-    "name_en": "Biostrap Evo",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 149,
-    "original_price": 179,
+    "price": 199,
+    "original_price": 239,
     "discount": 17,
-    "rating": 4.3,
+    "rating": 4.6,
     "reviews": 543,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=400",
-    "description_ar": "جهاز Biostrap Evo — تحليل نوم احترافي. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?smart+ring+health+tracker",
+    "description_ar": "خاتم RingConn Gen 2 — خاتم صحي متقدم. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "دقة طبية",
       "تطبيق ذكي",
@@ -1522,137 +1356,16 @@
     ],
     "tags": [
       "صحة ذكية",
-      "جهاز",
-      "تقنية"
+      "خاتم"
     ],
     "badge": "",
     "active": true,
     "shipping_days": "7-14"
   },
   {
-    "id": "NPH-052",
-    "name_ar": "نظارة Muse S Headband",
-    "name_en": "Muse S Headband",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 349,
-    "original_price": 399,
-    "discount": 13,
-    "rating": 4.4,
-    "reviews": 432,
-    "stock": 50,
-    "image": "https://images.unsplash.com/photo-1589810635657-232948472d98?w=400",
-    "description_ar": "نظارة Muse S Headband — تأمل وتتبع نشاط الدماغ. منتج تقني متميز بجودة عالية وسعر تنافسي.",
-    "features_ar": [
-      "دقة طبية",
-      "تطبيق ذكي",
-      "مزامنة فورية",
-      "تتبع 24 ساعة",
-      "تقارير تفصيلية"
-    ],
-    "tags": [
-      "صحة ذكية",
-      "نظارة",
-      "تقنية"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14"
-  },
-  {
-    "id": "NPH-053",
-    "name_ar": "جهاز Nix Biosensor",
-    "name_en": "Nix Biosensor",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 129,
-    "original_price": 149,
-    "discount": 13,
-    "rating": 4.2,
-    "reviews": 234,
-    "stock": 50,
-    "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400",
-    "description_ar": "جهاز Nix Biosensor — قياس الترطيب لدى الرياضيين. منتج تقني متميز بجودة عالية وسعر تنافسي.",
-    "features_ar": [
-      "دقة طبية",
-      "تطبيق ذكي",
-      "مزامنة فورية",
-      "تتبع 24 ساعة",
-      "تقارير تفصيلية"
-    ],
-    "tags": [
-      "صحة ذكية",
-      "جهاز",
-      "تقنية"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14"
-  },
-  {
-    "id": "NPH-054",
-    "name_ar": "حزام Polar H10",
-    "name_en": "Polar H10",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 99,
-    "original_price": 119,
-    "discount": 17,
-    "rating": 4.8,
-    "reviews": 1234,
-    "stock": 50,
-    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400",
-    "description_ar": "حزام Polar H10 — أدق جهاز لقياس القلب. منتج تقني متميز بجودة عالية وسعر تنافسي.",
-    "features_ar": [
-      "دقة طبية",
-      "تطبيق ذكي",
-      "مزامنة فورية",
-      "تتبع 24 ساعة",
-      "تقارير تفصيلية"
-    ],
-    "tags": [
-      "صحة ذكية",
-      "حزام",
-      "تقنية"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14"
-  },
-  {
-    "id": "NPH-055",
-    "name_ar": "جهاز Tempdrop",
-    "name_en": "Tempdrop",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 159,
-    "original_price": 189,
-    "discount": 16,
-    "rating": 4.5,
-    "reviews": 345,
-    "stock": 50,
-    "image": "https://images.unsplash.com/photo-1589810635657-232948472d98?w=400",
-    "description_ar": "جهاز Tempdrop — تتبع درجة حرارة الجسم. منتج تقني متميز بجودة عالية وسعر تنافسي.",
-    "features_ar": [
-      "دقة طبية",
-      "تطبيق ذكي",
-      "مزامنة فورية",
-      "تتبع 24 ساعة",
-      "تقارير تفصيلية"
-    ],
-    "tags": [
-      "صحة ذكية",
-      "جهاز",
-      "تقنية"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14"
-  },
-  {
-    "id": "NPH-056",
+    "id": "NPH-048",
     "name_ar": "ميزان Eufy Smart Scale P3",
-    "name_en": "Eufy Smart Scale P3",
+    "name_en": "Eufy Smart Scale",
     "category": "health",
     "category_ar": "صحة ذكية",
     "price": 59,
@@ -1661,8 +1374,8 @@
     "rating": 4.5,
     "reviews": 2341,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400",
-    "description_ar": "ميزان Eufy Smart Scale P3 — 16 قياساً للجسم. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?eufy+smart+scale",
+    "description_ar": "ميزان Eufy Smart Scale P3 — 16 قياساً للجسم. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "دقة طبية",
       "تطبيق ذكي",
@@ -1672,75 +1385,14 @@
     ],
     "tags": [
       "صحة ذكية",
-      "ميزان",
-      "تقنية"
+      "ميزان"
     ],
     "badge": "",
     "active": true,
     "shipping_days": "7-14"
   },
   {
-    "id": "NPH-057",
-    "name_ar": "جهاز SleepOn Go2Sleep",
-    "name_en": "SleepOn Go2Sleep",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 79,
-    "original_price": 99,
-    "discount": 20,
-    "rating": 4.2,
-    "reviews": 543,
-    "stock": 50,
-    "image": "https://images.unsplash.com/photo-1589810635657-232948472d98?w=400",
-    "description_ar": "جهاز SleepOn Go2Sleep — خاتم تتبع النوم. منتج تقني متميز بجودة عالية وسعر تنافسي.",
-    "features_ar": [
-      "دقة طبية",
-      "تطبيق ذكي",
-      "مزامنة فورية",
-      "تتبع 24 ساعة",
-      "تقارير تفصيلية"
-    ],
-    "tags": [
-      "صحة ذكية",
-      "جهاز",
-      "تقنية"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14"
-  },
-  {
-    "id": "NPH-058",
-    "name_ar": "جهاز Heads Up Health",
-    "name_en": "Heads Up Health",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 199,
-    "original_price": 239,
-    "discount": 17,
-    "rating": 4.4,
-    "reviews": 234,
-    "stock": 50,
-    "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400",
-    "description_ar": "جهاز Heads Up Health — لوحة صحية متكاملة. منتج تقني متميز بجودة عالية وسعر تنافسي.",
-    "features_ar": [
-      "دقة طبية",
-      "تطبيق ذكي",
-      "مزامنة فورية",
-      "تتبع 24 ساعة",
-      "تقارير تفصيلية"
-    ],
-    "tags": [
-      "صحة ذكية",
-      "جهاز",
-      "تقنية"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14"
-  },
-  {
-    "id": "NPH-059",
+    "id": "NPH-049",
     "name_ar": "جهاز AliveCor KardiaMobile",
     "name_en": "AliveCor KardiaMobile",
     "category": "health",
@@ -1751,8 +1403,8 @@
     "rating": 4.6,
     "reviews": 876,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400",
-    "description_ar": "جهاز AliveCor KardiaMobile — تخطيط قلب محمول معتمد FDA. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?portable+ecg+device",
+    "description_ar": "جهاز AliveCor KardiaMobile — تخطيط قلب محمول معتمد FDA. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "دقة طبية",
       "تطبيق ذكي",
@@ -1762,17 +1414,277 @@
     ],
     "tags": [
       "صحة ذكية",
-      "جهاز",
-      "تقنية"
+      "جهاز"
     ],
     "badge": "",
     "active": true,
     "shipping_days": "7-14"
   },
   {
-    "id": "NPH-060",
+    "id": "NPH-050",
+    "name_ar": "حزام Polar H10",
+    "name_en": "Polar H10",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 99,
+    "original_price": 119,
+    "discount": 17,
+    "rating": 4.8,
+    "reviews": 1234,
+    "stock": 50,
+    "image": "https://source.unsplash.com/400x300/?polar+heart+rate+chest+strap",
+    "description_ar": "حزام Polar H10 — أدق جهاز لقياس القلب. منتج تقني متميز بجودة عالية.",
+    "features_ar": [
+      "دقة طبية",
+      "تطبيق ذكي",
+      "مزامنة فورية",
+      "تتبع 24 ساعة",
+      "تقارير تفصيلية"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "حزام"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14"
+  },
+  {
+    "id": "NPH-051",
+    "name_ar": "جهاز Withings ScanWatch Light",
+    "name_en": "Withings ScanWatch",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 129,
+    "original_price": 149,
+    "discount": 13,
+    "rating": 4.5,
+    "reviews": 876,
+    "stock": 50,
+    "image": "https://source.unsplash.com/400x300/?withings+health+smartwatch",
+    "description_ar": "جهاز Withings ScanWatch Light — تخطيط قلب وقياس أكسجين. منتج تقني متميز بجودة عالية.",
+    "features_ar": [
+      "دقة طبية",
+      "تطبيق ذكي",
+      "مزامنة فورية",
+      "تتبع 24 ساعة",
+      "تقارير تفصيلية"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "جهاز"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14"
+  },
+  {
+    "id": "NPH-052",
+    "name_ar": "جهاز Masimo W1",
+    "name_en": "Masimo Wrist",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 199,
+    "original_price": 239,
+    "discount": 17,
+    "rating": 4.6,
+    "reviews": 543,
+    "stock": 50,
+    "image": "https://source.unsplash.com/400x300/?masimo+medical+wearable",
+    "description_ar": "جهاز Masimo W1 — مراقبة طبية دقيقة. منتج تقني متميز بجودة عالية.",
+    "features_ar": [
+      "دقة طبية",
+      "تطبيق ذكي",
+      "مزامنة فورية",
+      "تتبع 24 ساعة",
+      "تقارير تفصيلية"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "جهاز"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14"
+  },
+  {
+    "id": "NPH-053",
+    "name_ar": "سماعة طبية Eko DUO",
+    "name_en": "Eko DUO",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 349,
+    "original_price": 399,
+    "discount": 13,
+    "rating": 4.6,
+    "reviews": 345,
+    "stock": 50,
+    "image": "https://source.unsplash.com/400x300/?digital+stethoscope+smart",
+    "description_ar": "سماعة طبية Eko DUO — سماعة طبية ذكية. منتج تقني متميز بجودة عالية.",
+    "features_ar": [
+      "دقة طبية",
+      "تطبيق ذكي",
+      "مزامنة فورية",
+      "تتبع 24 ساعة",
+      "تقارير تفصيلية"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "سماعة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14"
+  },
+  {
+    "id": "NPH-054",
+    "name_ar": "جهاز Dexcom G7",
+    "name_en": "Dexcom G7",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.8,
+    "reviews": 987,
+    "stock": 50,
+    "image": "https://source.unsplash.com/400x300/?continuous+glucose+monitor",
+    "description_ar": "جهاز Dexcom G7 — مراقبة سكر بلا وخز. منتج تقني متميز بجودة عالية.",
+    "features_ar": [
+      "دقة طبية",
+      "تطبيق ذكي",
+      "مزامنة فورية",
+      "تتبع 24 ساعة",
+      "تقارير تفصيلية"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "جهاز"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14"
+  },
+  {
+    "id": "NPH-055",
+    "name_ar": "حزام Biostrap Evo",
+    "name_en": "Biostrap Evo",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 149,
+    "original_price": 179,
+    "discount": 17,
+    "rating": 4.3,
+    "reviews": 543,
+    "stock": 50,
+    "image": "https://source.unsplash.com/400x300/?biostrap+fitness+tracker",
+    "description_ar": "حزام Biostrap Evo — تحليل نوم احترافي. منتج تقني متميز بجودة عالية.",
+    "features_ar": [
+      "دقة طبية",
+      "تطبيق ذكي",
+      "مزامنة فورية",
+      "تتبع 24 ساعة",
+      "تقارير تفصيلية"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "حزام"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14"
+  },
+  {
+    "id": "NPH-056",
+    "name_ar": "شريط Muse S Headband",
+    "name_en": "Muse S Headband",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 349,
+    "original_price": 399,
+    "discount": 13,
+    "rating": 4.4,
+    "reviews": 432,
+    "stock": 50,
+    "image": "https://source.unsplash.com/400x300/?muse+meditation+headband",
+    "description_ar": "شريط Muse S Headband — تأمل وتتبع نشاط الدماغ. منتج تقني متميز بجودة عالية.",
+    "features_ar": [
+      "دقة طبية",
+      "تطبيق ذكي",
+      "مزامنة فورية",
+      "تتبع 24 ساعة",
+      "تقارير تفصيلية"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "شريط"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14"
+  },
+  {
+    "id": "NPH-057",
+    "name_ar": "جهاز Nix Biosensor",
+    "name_en": "Nix Biosensor",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 129,
+    "original_price": 149,
+    "discount": 13,
+    "rating": 4.2,
+    "reviews": 234,
+    "stock": 50,
+    "image": "https://source.unsplash.com/400x300/?nix+hydration+biosensor",
+    "description_ar": "جهاز Nix Biosensor — قياس الترطيب لدى الرياضيين. منتج تقني متميز بجودة عالية.",
+    "features_ar": [
+      "دقة طبية",
+      "تطبيق ذكي",
+      "مزامنة فورية",
+      "تتبع 24 ساعة",
+      "تقارير تفصيلية"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "جهاز"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14"
+  },
+  {
+    "id": "NPH-058",
+    "name_ar": "جهاز SleepOn Go2Sleep",
+    "name_en": "SleepOn Go2Sleep",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 79,
+    "original_price": 99,
+    "discount": 20,
+    "rating": 4.2,
+    "reviews": 543,
+    "stock": 50,
+    "image": "https://source.unsplash.com/400x300/?sleep+tracker+ring",
+    "description_ar": "جهاز SleepOn Go2Sleep — خاتم تتبع النوم. منتج تقني متميز بجودة عالية.",
+    "features_ar": [
+      "دقة طبية",
+      "تطبيق ذكي",
+      "مزامنة فورية",
+      "تتبع 24 ساعة",
+      "تقارير تفصيلية"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "جهاز"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14"
+  },
+  {
+    "id": "NPH-059",
     "name_ar": "حزام Hexoskin Smart",
-    "name_en": "Hexoskin Smart",
+    "name_en": "Hexoskin Smart Shirt",
     "category": "health",
     "category_ar": "صحة ذكية",
     "price": 199,
@@ -1781,8 +1693,8 @@
     "rating": 4.3,
     "reviews": 234,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=400",
-    "description_ar": "حزام Hexoskin Smart — قميص ذكي لمراقبة الصحة. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?smart+fitness+shirt",
+    "description_ar": "حزام Hexoskin Smart — قميص ذكي لمراقبة الصحة. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "دقة طبية",
       "تطبيق ذكي",
@@ -1792,8 +1704,36 @@
     ],
     "tags": [
       "صحة ذكية",
-      "حزام",
-      "تقنية"
+      "حزام"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14"
+  },
+  {
+    "id": "NPH-060",
+    "name_ar": "جهاز Tempdrop",
+    "name_en": "Tempdrop",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 159,
+    "original_price": 189,
+    "discount": 16,
+    "rating": 4.5,
+    "reviews": 345,
+    "stock": 50,
+    "image": "https://source.unsplash.com/400x300/?tempdrop+body+thermometer",
+    "description_ar": "جهاز Tempdrop — تتبع درجة حرارة الجسم. منتج تقني متميز بجودة عالية.",
+    "features_ar": [
+      "دقة طبية",
+      "تطبيق ذكي",
+      "مزامنة فورية",
+      "تتبع 24 ساعة",
+      "تقارير تفصيلية"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "جهاز"
     ],
     "badge": "",
     "active": true,
@@ -1811,8 +1751,8 @@
     "rating": 4.8,
     "reviews": 1234,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
-    "description_ar": "روبوت Roborock S8 Pro Ultra — كنس وغسيل مع تفريغ تلقائي. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?roborock+robot+vacuum",
+    "description_ar": "روبوت Roborock S8 Pro Ultra — كنس وغسيل مع تفريغ تلقائي. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "تحكم صوتي",
       "واي فاي مدمج",
@@ -1822,8 +1762,7 @@
     ],
     "tags": [
       "منزل ذكي",
-      "روبوت",
-      "تقنية"
+      "روبوت"
     ],
     "badge": "الأكثر مبيعاً",
     "active": true,
@@ -1841,8 +1780,8 @@
     "rating": 4.7,
     "reviews": 2345,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1512446816042-444d641267d4?w=400",
-    "description_ar": "مكبر Amazon Echo Studio — صوت 3D مع Alexa. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?amazon+echo+speaker",
+    "description_ar": "مكبر Amazon Echo Studio — صوت 3D مع Alexa. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "تحكم صوتي",
       "واي فاي مدمج",
@@ -1852,8 +1791,7 @@
     ],
     "tags": [
       "منزل ذكي",
-      "مكبر",
-      "تقنية"
+      "مكبر"
     ],
     "badge": "",
     "active": true,
@@ -1861,8 +1799,8 @@
   },
   {
     "id": "NPH-063",
-    "name_ar": "ثرموستات Google Nest Learning",
-    "name_en": "Google Nest Learning",
+    "name_ar": "ثرموستات Google Nest",
+    "name_en": "Google Nest Thermostat",
     "category": "smart-home",
     "category_ar": "منزل ذكي",
     "price": 249,
@@ -1871,8 +1809,8 @@
     "rating": 4.6,
     "reviews": 1876,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1558002038-1ad4e1b40f43?w=400",
-    "description_ar": "ثرموستات Google Nest Learning — يتعلم جدولك ويوفر الطاقة. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?google+nest+thermostat",
+    "description_ar": "ثرموستات Google Nest — يتعلم جدولك ويوفر الطاقة. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "تحكم صوتي",
       "واي فاي مدمج",
@@ -1882,8 +1820,7 @@
     ],
     "tags": [
       "منزل ذكي",
-      "ثرموستات",
-      "تقنية"
+      "ثرموستات"
     ],
     "badge": "",
     "active": true,
@@ -1891,8 +1828,8 @@
   },
   {
     "id": "NPH-064",
-    "name_ar": "قفل August Smart Lock Pro",
-    "name_en": "August Smart Lock Pro",
+    "name_ar": "قفل August Smart Lock",
+    "name_en": "August Smart Lock",
     "category": "smart-home",
     "category_ar": "منزل ذكي",
     "price": 199,
@@ -1901,8 +1838,8 @@
     "rating": 4.5,
     "reviews": 987,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1558002038-1ad4e1b40f43?w=400",
-    "description_ar": "قفل August Smart Lock Pro — قفل ذكي مع Alexa. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?smart+door+lock",
+    "description_ar": "قفل August Smart Lock — قفل ذكي مع Alexa. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "تحكم صوتي",
       "واي فاي مدمج",
@@ -1912,8 +1849,7 @@
     ],
     "tags": [
       "منزل ذكي",
-      "قفل",
-      "تقنية"
+      "قفل"
     ],
     "badge": "",
     "active": true,
@@ -1931,8 +1867,8 @@
     "rating": 4.6,
     "reviews": 1234,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=400",
-    "description_ar": "كاميرا Arlo Pro 5S — 4K مع رؤية ليلية ملونة. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?arlo+security+camera",
+    "description_ar": "كاميرا Arlo Pro 5S — 4K مع رؤية ليلية ملونة. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "تحكم صوتي",
       "واي فاي مدمج",
@@ -1942,8 +1878,7 @@
     ],
     "tags": [
       "منزل ذكي",
-      "كاميرا",
-      "تقنية"
+      "كاميرا"
     ],
     "badge": "",
     "active": true,
@@ -1951,8 +1886,8 @@
   },
   {
     "id": "NPH-066",
-    "name_ar": "مصباح Philips Hue Starter Kit",
-    "name_en": "Philips Hue Starter Kit",
+    "name_ar": "إضاءة Philips Hue",
+    "name_en": "Philips Hue",
     "category": "smart-home",
     "category_ar": "منزل ذكي",
     "price": 149,
@@ -1961,8 +1896,8 @@
     "rating": 4.7,
     "reviews": 3456,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1558002038-1ad4e1b40f43?w=400",
-    "description_ar": "مصباح Philips Hue Starter Kit — إضاءة ذكية 16 مليون لون. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?philips+hue+smart+bulb",
+    "description_ar": "إضاءة Philips Hue — إضاءة ذكية 16 مليون لون. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "تحكم صوتي",
       "واي فاي مدمج",
@@ -1972,8 +1907,7 @@
     ],
     "tags": [
       "منزل ذكي",
-      "مصباح",
-      "تقنية"
+      "إضاءة"
     ],
     "badge": "",
     "active": true,
@@ -1991,8 +1925,8 @@
     "rating": 4.5,
     "reviews": 2341,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1512446816042-444d641267d4?w=400",
-    "description_ar": "جهاز Apple HomePod mini — سيري مع صوت رائع. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?apple+homepod+mini",
+    "description_ar": "جهاز Apple HomePod mini — سيري مع صوت رائع. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "تحكم صوتي",
       "واي فاي مدمج",
@@ -2002,8 +1936,7 @@
     ],
     "tags": [
       "منزل ذكي",
-      "جهاز",
-      "تقنية"
+      "جهاز"
     ],
     "badge": "",
     "active": true,
@@ -2012,7 +1945,7 @@
   {
     "id": "NPH-068",
     "name_ar": "روبوت iRobot Roomba j9+",
-    "name_en": "iRobot Roomba j9+",
+    "name_en": "iRobot Roomba j9",
     "category": "smart-home",
     "category_ar": "منزل ذكي",
     "price": 799,
@@ -2021,8 +1954,8 @@
     "rating": 4.7,
     "reviews": 876,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
-    "description_ar": "روبوت iRobot Roomba j9+ — تجنب العوائق بالذكاء الاصطناعي. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?irobot+roomba+vacuum",
+    "description_ar": "روبوت iRobot Roomba j9+ — تجنب العوائق بالذكاء الاصطناعي. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "تحكم صوتي",
       "واي فاي مدمج",
@@ -2032,8 +1965,7 @@
     ],
     "tags": [
       "منزل ذكي",
-      "روبوت",
-      "تقنية"
+      "روبوت"
     ],
     "badge": "",
     "active": true,
@@ -2041,8 +1973,8 @@
   },
   {
     "id": "NPH-069",
-    "name_ar": "جهاز Ring Video Doorbell Pro 2",
-    "name_en": "Ring Video Doorbell Pro 2",
+    "name_ar": "جرس Ring Video Doorbell",
+    "name_en": "Ring Video Doorbell",
     "category": "smart-home",
     "category_ar": "منزل ذكي",
     "price": 249,
@@ -2051,8 +1983,8 @@
     "rating": 4.5,
     "reviews": 1567,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=400",
-    "description_ar": "جهاز Ring Video Doorbell Pro 2 — جرس ذكي 3D بالذكاء. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?ring+video+doorbell",
+    "description_ar": "جرس Ring Video Doorbell — جرس ذكي بالذكاء الاصطناعي. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "تحكم صوتي",
       "واي فاي مدمج",
@@ -2062,8 +1994,7 @@
     ],
     "tags": [
       "منزل ذكي",
-      "جهاز",
-      "تقنية"
+      "جرس"
     ],
     "badge": "",
     "active": true,
@@ -2071,18 +2002,18 @@
   },
   {
     "id": "NPH-070",
-    "name_ar": "جهاز Samsung SmartThings Hub",
-    "name_en": "Samsung SmartThings Hub",
+    "name_ar": "مكبر Sonos Era 300",
+    "name_en": "Sonos Era 300",
     "category": "smart-home",
     "category_ar": "منزل ذكي",
-    "price": 129,
-    "original_price": 149,
-    "discount": 13,
-    "rating": 4.4,
-    "reviews": 765,
+    "price": 449,
+    "original_price": 499,
+    "discount": 10,
+    "rating": 4.7,
+    "reviews": 876,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1558002038-1ad4e1b40f43?w=400",
-    "description_ar": "جهاز Samsung SmartThings Hub — مركز المنزل الذكي. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?sonos+speaker",
+    "description_ar": "مكبر Sonos Era 300 — صوت مكاني Dolby Atmos. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "تحكم صوتي",
       "واي فاي مدمج",
@@ -2092,8 +2023,7 @@
     ],
     "tags": [
       "منزل ذكي",
-      "جهاز",
-      "تقنية"
+      "مكبر"
     ],
     "badge": "",
     "active": true,
@@ -2111,8 +2041,8 @@
     "rating": 4.5,
     "reviews": 987,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1558002038-1ad4e1b40f43?w=400",
-    "description_ar": "مكيف Sensibo Sky — تحكم ذكي بالمكيف. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?sensibo+ac+controller",
+    "description_ar": "مكيف Sensibo Sky — تحكم ذكي بالمكيف. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "تحكم صوتي",
       "واي فاي مدمج",
@@ -2122,8 +2052,7 @@
     ],
     "tags": [
       "منزل ذكي",
-      "مكيف",
-      "تقنية"
+      "مكيف"
     ],
     "badge": "",
     "active": true,
@@ -2141,8 +2070,8 @@
     "rating": 4.6,
     "reviews": 654,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=400",
-    "description_ar": "كاميرا Eufy S3 Pro — 4K بدون اشتراك شهري. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?eufy+security+camera",
+    "description_ar": "كاميرا Eufy S3 Pro — 4K بدون اشتراك شهري. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "تحكم صوتي",
       "واي فاي مدمج",
@@ -2152,8 +2081,7 @@
     ],
     "tags": [
       "منزل ذكي",
-      "كاميرا",
-      "تقنية"
+      "كاميرا"
     ],
     "badge": "",
     "active": true,
@@ -2161,7 +2089,7 @@
   },
   {
     "id": "NPH-073",
-    "name_ar": "جهاز Meross Smart Plug",
+    "name_ar": "فيشة Meross Smart Plug",
     "name_en": "Meross Smart Plug",
     "category": "smart-home",
     "category_ar": "منزل ذكي",
@@ -2171,8 +2099,8 @@
     "rating": 4.4,
     "reviews": 3456,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1558002038-1ad4e1b40f43?w=400",
-    "description_ar": "جهاز Meross Smart Plug — فيشة ذكية مع قياس الطاقة. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?smart+plug+wifi",
+    "description_ar": "فيشة Meross Smart Plug — فيشة ذكية مع قياس الطاقة. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "تحكم صوتي",
       "واي فاي مدمج",
@@ -2182,8 +2110,7 @@
     ],
     "tags": [
       "منزل ذكي",
-      "جهاز",
-      "تقنية"
+      "فيشة"
     ],
     "badge": "",
     "active": true,
@@ -2191,38 +2118,8 @@
   },
   {
     "id": "NPH-074",
-    "name_ar": "مكبر Sonos Era 300",
-    "name_en": "Sonos Era 300",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "price": 449,
-    "original_price": 499,
-    "discount": 10,
-    "rating": 4.7,
-    "reviews": 876,
-    "stock": 50,
-    "image": "https://images.unsplash.com/photo-1512446816042-444d641267d4?w=400",
-    "description_ar": "مكبر Sonos Era 300 — صوت مكاني Dolby Atmos. منتج تقني متميز بجودة عالية وسعر تنافسي.",
-    "features_ar": [
-      "تحكم صوتي",
-      "واي فاي مدمج",
-      "تطبيق ذكي",
-      "توفير الطاقة",
-      "تحكم عن بعد"
-    ],
-    "tags": [
-      "منزل ذكي",
-      "مكبر",
-      "تقنية"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14"
-  },
-  {
-    "id": "NPH-075",
-    "name_ar": "جهاز Dyson Purifier Hot+Cool",
-    "name_en": "Dyson Purifier Hot+Cool",
+    "name_ar": "جهاز Dyson Purifier",
+    "name_en": "Dyson Purifier Hot Cool",
     "category": "smart-home",
     "category_ar": "منزل ذكي",
     "price": 649,
@@ -2231,8 +2128,8 @@
     "rating": 4.6,
     "reviews": 1234,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1558002038-1ad4e1b40f43?w=400",
-    "description_ar": "جهاز Dyson Purifier Hot+Cool — تنقية وتكييف وتدفئة. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?dyson+air+purifier",
+    "description_ar": "جهاز Dyson Purifier — تنقية وتكييف وتدفئة. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "تحكم صوتي",
       "واي فاي مدمج",
@@ -2242,15 +2139,14 @@
     ],
     "tags": [
       "منزل ذكي",
-      "جهاز",
-      "تقنية"
+      "جهاز"
     ],
     "badge": "",
     "active": true,
     "shipping_days": "7-14"
   },
   {
-    "id": "NPH-076",
+    "id": "NPH-075",
     "name_ar": "شاشة Amazon Echo Show 10",
     "name_en": "Amazon Echo Show 10",
     "category": "smart-home",
@@ -2261,8 +2157,8 @@
     "rating": 4.5,
     "reviews": 987,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1512446816042-444d641267d4?w=400",
-    "description_ar": "شاشة Amazon Echo Show 10 — تتبعك تلقائياً مع Alexa. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?amazon+echo+show+screen",
+    "description_ar": "شاشة Amazon Echo Show 10 — تتبعك تلقائياً مع Alexa. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "تحكم صوتي",
       "واي فاي مدمج",
@@ -2272,17 +2168,16 @@
     ],
     "tags": [
       "منزل ذكي",
-      "شاشة",
-      "تقنية"
+      "شاشة"
     ],
     "badge": "",
     "active": true,
     "shipping_days": "7-14"
   },
   {
-    "id": "NPH-077",
-    "name_ar": "روبوت Ecovacs Deebot T20 Omni",
-    "name_en": "Ecovacs Deebot T20 Omni",
+    "id": "NPH-076",
+    "name_ar": "روبوت Ecovacs Deebot T20",
+    "name_en": "Ecovacs Deebot T20",
     "category": "smart-home",
     "category_ar": "منزل ذكي",
     "price": 799,
@@ -2291,8 +2186,8 @@
     "rating": 4.6,
     "reviews": 765,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
-    "description_ar": "روبوت Ecovacs Deebot T20 Omni — كنس غسيل تفريغ وملء تلقائي. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?ecovacs+deebot+vacuum",
+    "description_ar": "روبوت Ecovacs Deebot T20 — كنس غسيل تفريغ تلقائي. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "تحكم صوتي",
       "واي فاي مدمج",
@@ -2302,16 +2197,15 @@
     ],
     "tags": [
       "منزل ذكي",
-      "روبوت",
-      "تقنية"
+      "روبوت"
     ],
     "badge": "",
     "active": true,
     "shipping_days": "7-14"
   },
   {
-    "id": "NPH-078",
-    "name_ar": "جهاز Nest Doorbell Battery",
+    "id": "NPH-077",
+    "name_ar": "جرس Nest Doorbell",
     "name_en": "Nest Doorbell Battery",
     "category": "smart-home",
     "category_ar": "منزل ذكي",
@@ -2321,8 +2215,8 @@
     "rating": 4.4,
     "reviews": 876,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=400",
-    "description_ar": "جهاز Nest Doorbell Battery — جرس ذكي بلا أسلاك. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?nest+doorbell",
+    "description_ar": "جرس Nest Doorbell — جرس ذكي بلا أسلاك. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "تحكم صوتي",
       "واي فاي مدمج",
@@ -2332,8 +2226,36 @@
     ],
     "tags": [
       "منزل ذكي",
-      "جهاز",
-      "تقنية"
+      "جرس"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14"
+  },
+  {
+    "id": "NPH-078",
+    "name_ar": "مركز Samsung SmartThings",
+    "name_en": "Samsung SmartThings",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 129,
+    "original_price": 149,
+    "discount": 13,
+    "rating": 4.4,
+    "reviews": 765,
+    "stock": 50,
+    "image": "https://source.unsplash.com/400x300/?samsung+smarthings+hub",
+    "description_ar": "مركز Samsung SmartThings — مركز المنزل الذكي. منتج تقني متميز بجودة عالية.",
+    "features_ar": [
+      "تحكم صوتي",
+      "واي فاي مدمج",
+      "تطبيق ذكي",
+      "توفير الطاقة",
+      "تحكم عن بعد"
+    ],
+    "tags": [
+      "منزل ذكي",
+      "مركز"
     ],
     "badge": "",
     "active": true,
@@ -2341,8 +2263,8 @@
   },
   {
     "id": "NPH-079",
-    "name_ar": "مكيف Tado Smart AC Control",
-    "name_en": "Tado Smart AC Control",
+    "name_ar": "مكيف Tado Smart",
+    "name_en": "Tado Smart AC",
     "category": "smart-home",
     "category_ar": "منزل ذكي",
     "price": 79,
@@ -2351,8 +2273,8 @@
     "rating": 4.3,
     "reviews": 543,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1558002038-1ad4e1b40f43?w=400",
-    "description_ar": "مكيف Tado Smart AC Control — توفير 31% في فاتورة الكهرباء. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?tado+smart+thermostat",
+    "description_ar": "مكيف Tado Smart — توفير 31% في فاتورة الكهرباء. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "تحكم صوتي",
       "واي فاي مدمج",
@@ -2362,8 +2284,7 @@
     ],
     "tags": [
       "منزل ذكي",
-      "مكيف",
-      "تقنية"
+      "مكيف"
     ],
     "badge": "",
     "active": true,
@@ -2371,7 +2292,7 @@
   },
   {
     "id": "NPH-080",
-    "name_ar": "جهاز Aqara Hub M3",
+    "name_ar": "مركز Aqara Hub M3",
     "name_en": "Aqara Hub M3",
     "category": "smart-home",
     "category_ar": "منزل ذكي",
@@ -2381,8 +2302,8 @@
     "rating": 4.5,
     "reviews": 654,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1558002038-1ad4e1b40f43?w=400",
-    "description_ar": "جهاز Aqara Hub M3 — مركز مع Matter وThread. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?aqara+smart+home+hub",
+    "description_ar": "مركز Aqara Hub M3 — مركز مع Matter وThread. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "تحكم صوتي",
       "واي فاي مدمج",
@@ -2392,8 +2313,7 @@
     ],
     "tags": [
       "منزل ذكي",
-      "جهاز",
-      "تقنية"
+      "مركز"
     ],
     "badge": "جديد",
     "active": true,
@@ -2411,8 +2331,8 @@
     "rating": 4.9,
     "reviews": 3456,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
-    "description_ar": "سماعات سوني WH-1000XM5 — أفضل إلغاء ضوضاء. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?sony+wh1000xm5+headphones",
+    "description_ar": "سماعات سوني WH-1000XM5 — أفضل إلغاء ضوضاء. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إلغاء الضوضاء",
       "بطارية طويلة",
@@ -2422,8 +2342,7 @@
     ],
     "tags": [
       "سماعات ذكية",
-      "سماعات",
-      "تقنية"
+      "سماعات"
     ],
     "badge": "الأكثر مبيعاً",
     "active": true,
@@ -2441,8 +2360,8 @@
     "rating": 4.8,
     "reviews": 2341,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400",
-    "description_ar": "سماعات Bose QuietComfort Ultra — صوت مكاني مع إلغاء ضوضاء. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?bose+quietcomfort+headphones",
+    "description_ar": "سماعات Bose QuietComfort Ultra — صوت مكاني مع إلغاء ضوضاء. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إلغاء الضوضاء",
       "بطارية طويلة",
@@ -2452,8 +2371,7 @@
     ],
     "tags": [
       "سماعات ذكية",
-      "سماعات",
-      "تقنية"
+      "سماعات"
     ],
     "badge": "",
     "active": true,
@@ -2471,8 +2389,8 @@
     "rating": 4.8,
     "reviews": 4321,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=400",
-    "description_ar": "سماعات Apple AirPods Pro 2 — أفضل سماعات أبل. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?apple+airpods+pro+earbuds",
+    "description_ar": "سماعات Apple AirPods Pro 2 — أفضل سماعات أبل. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إلغاء الضوضاء",
       "بطارية طويلة",
@@ -2482,8 +2400,7 @@
     ],
     "tags": [
       "سماعات ذكية",
-      "سماعات",
-      "تقنية"
+      "سماعات"
     ],
     "badge": "",
     "active": true,
@@ -2501,8 +2418,8 @@
     "rating": 4.7,
     "reviews": 1876,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
-    "description_ar": "سماعات Samsung Galaxy Buds3 Pro — صوت Hi-Fi مع ANC. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?samsung+galaxy+buds+earbuds",
+    "description_ar": "سماعات Samsung Galaxy Buds3 Pro — صوت Hi-Fi مع ANC. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إلغاء الضوضاء",
       "بطارية طويلة",
@@ -2512,8 +2429,7 @@
     ],
     "tags": [
       "سماعات ذكية",
-      "سماعات",
-      "تقنية"
+      "سماعات"
     ],
     "badge": "جديد",
     "active": true,
@@ -2531,8 +2447,8 @@
     "rating": 4.7,
     "reviews": 987,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400",
-    "description_ar": "سماعات Sennheiser Momentum 4 — صوت احترافي 60 ساعة. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?sennheiser+momentum+headphones",
+    "description_ar": "سماعات Sennheiser Momentum 4 — صوت احترافي 60 ساعة. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إلغاء الضوضاء",
       "بطارية طويلة",
@@ -2542,8 +2458,7 @@
     ],
     "tags": [
       "سماعات ذكية",
-      "سماعات",
-      "تقنية"
+      "سماعات"
     ],
     "badge": "",
     "active": true,
@@ -2561,8 +2476,8 @@
     "rating": 4.6,
     "reviews": 654,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
-    "description_ar": "سماعات Jabra Evolve2 85 — للاجتماعات المهنية. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?jabra+evolve+headset",
+    "description_ar": "سماعات Jabra Evolve2 85 — للاجتماعات المهنية. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إلغاء الضوضاء",
       "بطارية طويلة",
@@ -2572,8 +2487,7 @@
     ],
     "tags": [
       "سماعات ذكية",
-      "سماعات",
-      "تقنية"
+      "سماعات"
     ],
     "badge": "",
     "active": true,
@@ -2591,8 +2505,8 @@
     "rating": 4.4,
     "reviews": 2341,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400",
-    "description_ar": "سماعات Anker Soundcore Q45 — ANC بسعر ممتاز. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?anker+soundcore+headphones",
+    "description_ar": "سماعات Anker Soundcore Q45 — ANC بسعر ممتاز. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إلغاء الضوضاء",
       "بطارية طويلة",
@@ -2602,8 +2516,7 @@
     ],
     "tags": [
       "سماعات ذكية",
-      "سماعات",
-      "تقنية"
+      "سماعات"
     ],
     "badge": "",
     "active": true,
@@ -2621,8 +2534,8 @@
     "rating": 4.8,
     "reviews": 1876,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=400",
-    "description_ar": "سماعات Sony WF-1000XM5 — أفضل سماعة لاسلكية صغيرة. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?sony+wf+earbuds",
+    "description_ar": "سماعات Sony WF-1000XM5 — أفضل سماعة لاسلكية صغيرة. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إلغاء الضوضاء",
       "بطارية طويلة",
@@ -2632,8 +2545,7 @@
     ],
     "tags": [
       "سماعات ذكية",
-      "سماعات",
-      "تقنية"
+      "سماعات"
     ],
     "badge": "",
     "active": true,
@@ -2641,38 +2553,8 @@
   },
   {
     "id": "NPH-089",
-    "name_ar": "سماعات Jabra Evolve2 Buds",
-    "name_en": "Jabra Evolve2 Buds",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "price": 249,
-    "original_price": 299,
-    "discount": 17,
-    "rating": 4.5,
-    "reviews": 876,
-    "stock": 50,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
-    "description_ar": "سماعات Jabra Evolve2 Buds — للمهنيين مع ANC. منتج تقني متميز بجودة عالية وسعر تنافسي.",
-    "features_ar": [
-      "إلغاء الضوضاء",
-      "بطارية طويلة",
-      "صوت Hi-Fi",
-      "تصميم مريح",
-      "مقاوم للماء"
-    ],
-    "tags": [
-      "سماعات ذكية",
-      "سماعات",
-      "تقنية"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14"
-  },
-  {
-    "id": "NPH-090",
     "name_ar": "سماعات Marshall Monitor III",
-    "name_en": "Marshall Monitor III ANC",
+    "name_en": "Marshall Monitor III",
     "category": "earbuds",
     "category_ar": "سماعات ذكية",
     "price": 249,
@@ -2681,8 +2563,8 @@
     "rating": 4.6,
     "reviews": 654,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400",
-    "description_ar": "سماعات Marshall Monitor III — روك أند رول مع ANC. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?marshall+headphones",
+    "description_ar": "سماعات Marshall Monitor III — روك أند رول مع ANC. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إلغاء الضوضاء",
       "بطارية طويلة",
@@ -2692,15 +2574,14 @@
     ],
     "tags": [
       "سماعات ذكية",
-      "سماعات",
-      "تقنية"
+      "سماعات"
     ],
     "badge": "",
     "active": true,
     "shipping_days": "7-14"
   },
   {
-    "id": "NPH-091",
+    "id": "NPH-090",
     "name_ar": "سماعات Beats Studio Pro",
     "name_en": "Beats Studio Pro",
     "category": "earbuds",
@@ -2711,8 +2592,8 @@
     "rating": 4.5,
     "reviews": 1234,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
-    "description_ar": "سماعات Beats Studio Pro — صوت Beats مع ANC. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?beats+studio+headphones",
+    "description_ar": "سماعات Beats Studio Pro — صوت Beats مع ANC. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إلغاء الضوضاء",
       "بطارية طويلة",
@@ -2722,15 +2603,14 @@
     ],
     "tags": [
       "سماعات ذكية",
-      "سماعات",
-      "تقنية"
+      "سماعات"
     ],
     "badge": "",
     "active": true,
     "shipping_days": "7-14"
   },
   {
-    "id": "NPH-092",
+    "id": "NPH-091",
     "name_ar": "سماعات Nothing Ear 2",
     "name_en": "Nothing Ear 2",
     "category": "earbuds",
@@ -2741,8 +2621,8 @@
     "rating": 4.4,
     "reviews": 1567,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=400",
-    "description_ar": "سماعات Nothing Ear 2 — تصميم شفاف فريد. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?nothing+ear+earbuds+transparent",
+    "description_ar": "سماعات Nothing Ear 2 — تصميم شفاف فريد. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إلغاء الضوضاء",
       "بطارية طويلة",
@@ -2752,17 +2632,16 @@
     ],
     "tags": [
       "سماعات ذكية",
-      "سماعات",
-      "تقنية"
+      "سماعات"
     ],
     "badge": "",
     "active": true,
     "shipping_days": "7-14"
   },
   {
-    "id": "NPH-093",
-    "name_ar": "سماعات Shure Aonic 50 Gen 2",
-    "name_en": "Shure Aonic 50 Gen 2",
+    "id": "NPH-092",
+    "name_ar": "سماعات Shure Aonic 50",
+    "name_en": "Shure Aonic 50",
     "category": "earbuds",
     "category_ar": "سماعات ذكية",
     "price": 299,
@@ -2771,8 +2650,8 @@
     "rating": 4.7,
     "reviews": 543,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400",
-    "description_ar": "سماعات Shure Aonic 50 Gen 2 — جودة استوديو محمولة. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?shure+aonic+headphones",
+    "description_ar": "سماعات Shure Aonic 50 — جودة استوديو محمولة. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إلغاء الضوضاء",
       "بطارية طويلة",
@@ -2782,45 +2661,14 @@
     ],
     "tags": [
       "سماعات ذكية",
-      "سماعات",
-      "تقنية"
+      "سماعات"
     ],
     "badge": "",
     "active": true,
     "shipping_days": "7-14"
   },
   {
-    "id": "NPH-094",
-    "name_ar": "سماعات Technics EAH-A800",
-    "name_en": "Technics EAH-A800",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "price": 349,
-    "original_price": 399,
-    "discount": 13,
-    "rating": 4.6,
-    "reviews": 432,
-    "stock": 50,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
-    "description_ar": "سماعات Technics EAH-A800 — صوت Hi-Fi مع ANC متقدم. منتج تقني متميز بجودة عالية وسعر تنافسي.",
-    "features_ar": [
-      "إلغاء الضوضاء",
-      "بطارية طويلة",
-      "صوت Hi-Fi",
-      "تصميم مريح",
-      "مقاوم للماء"
-    ],
-    "tags": [
-      "سماعات ذكية",
-      "سماعات",
-      "تقنية"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14"
-  },
-  {
-    "id": "NPH-095",
+    "id": "NPH-093",
     "name_ar": "سماعات JBL Tour One M2",
     "name_en": "JBL Tour One M2",
     "category": "earbuds",
@@ -2831,8 +2679,8 @@
     "rating": 4.5,
     "reviews": 765,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400",
-    "description_ar": "سماعات JBL Tour One M2 — 50 ساعة مع ANC. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?jbl+tour+headphones",
+    "description_ar": "سماعات JBL Tour One M2 — 50 ساعة مع ANC. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إلغاء الضوضاء",
       "بطارية طويلة",
@@ -2842,16 +2690,15 @@
     ],
     "tags": [
       "سماعات ذكية",
-      "سماعات",
-      "تقنية"
+      "سماعات"
     ],
     "badge": "",
     "active": true,
     "shipping_days": "7-14"
   },
   {
-    "id": "NPH-096",
-    "name_ar": "سماعات Bose QuietComfort Earbuds II",
+    "id": "NPH-094",
+    "name_ar": "سماعات Bose QC Earbuds II",
     "name_en": "Bose QC Earbuds II",
     "category": "earbuds",
     "category_ar": "سماعات ذكية",
@@ -2861,8 +2708,8 @@
     "rating": 4.7,
     "reviews": 1234,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=400",
-    "description_ar": "سماعات Bose QuietComfort Earbuds II — أفضل ANC في سماعة صغيرة. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?bose+quietcomfort+earbuds",
+    "description_ar": "سماعات Bose QC Earbuds II — أفضل ANC في سماعة صغيرة. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إلغاء الضوضاء",
       "بطارية طويلة",
@@ -2872,8 +2719,65 @@
     ],
     "tags": [
       "سماعات ذكية",
-      "سماعات",
-      "تقنية"
+      "سماعات"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14"
+  },
+  {
+    "id": "NPH-095",
+    "name_ar": "سماعات Jabra Evolve2 Buds",
+    "name_en": "Jabra Evolve2 Buds",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 249,
+    "original_price": 299,
+    "discount": 17,
+    "rating": 4.5,
+    "reviews": 876,
+    "stock": 50,
+    "image": "https://source.unsplash.com/400x300/?jabra+evolve+buds",
+    "description_ar": "سماعات Jabra Evolve2 Buds — للمهنيين مع ANC. منتج تقني متميز بجودة عالية.",
+    "features_ar": [
+      "إلغاء الضوضاء",
+      "بطارية طويلة",
+      "صوت Hi-Fi",
+      "تصميم مريح",
+      "مقاوم للماء"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14"
+  },
+  {
+    "id": "NPH-096",
+    "name_ar": "سماعات Technics EAH-A800",
+    "name_en": "Technics EAH-A800",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 349,
+    "original_price": 399,
+    "discount": 13,
+    "rating": 4.6,
+    "reviews": 432,
+    "stock": 50,
+    "image": "https://source.unsplash.com/400x300/?technics+headphones",
+    "description_ar": "سماعات Technics EAH-A800 — صوت Hi-Fi مع ANC متقدم. منتج تقني متميز بجودة عالية.",
+    "features_ar": [
+      "إلغاء الضوضاء",
+      "بطارية طويلة",
+      "صوت Hi-Fi",
+      "تصميم مريح",
+      "مقاوم للماء"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
     ],
     "badge": "",
     "active": true,
@@ -2881,37 +2785,7 @@
   },
   {
     "id": "NPH-097",
-    "name_ar": "سماعات Devialet Gemini II",
-    "name_en": "Devialet Gemini II",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "price": 299,
-    "original_price": 349,
-    "discount": 14,
-    "rating": 4.5,
-    "reviews": 345,
-    "stock": 50,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
-    "description_ar": "سماعات Devialet Gemini II — فرنسية الصنع صوت استثنائي. منتج تقني متميز بجودة عالية وسعر تنافسي.",
-    "features_ar": [
-      "إلغاء الضوضاء",
-      "بطارية طويلة",
-      "صوت Hi-Fi",
-      "تصميم مريح",
-      "مقاوم للماء"
-    ],
-    "tags": [
-      "سماعات ذكية",
-      "سماعات",
-      "تقنية"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14"
-  },
-  {
-    "id": "NPH-098",
-    "name_ar": "سماعات Audio-Technica ATH-M50xBT2",
+    "name_ar": "سماعات Audio-Technica M50xBT2",
     "name_en": "Audio-Technica ATH-M50xBT2",
     "category": "earbuds",
     "category_ar": "سماعات ذكية",
@@ -2921,8 +2795,8 @@
     "rating": 4.6,
     "reviews": 876,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400",
-    "description_ar": "سماعات Audio-Technica ATH-M50xBT2 — المعيار الاحترافي لاسلكياً. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?audio+technica+m50+headphones",
+    "description_ar": "سماعات Audio-Technica M50xBT2 — المعيار الاحترافي لاسلكياً. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إلغاء الضوضاء",
       "بطارية طويلة",
@@ -2932,15 +2806,14 @@
     ],
     "tags": [
       "سماعات ذكية",
-      "سماعات",
-      "تقنية"
+      "سماعات"
     ],
     "badge": "",
     "active": true,
     "shipping_days": "7-14"
   },
   {
-    "id": "NPH-099",
+    "id": "NPH-098",
     "name_ar": "سماعات Edifier W820NB Plus",
     "name_en": "Edifier W820NB Plus",
     "category": "earbuds",
@@ -2951,8 +2824,8 @@
     "rating": 4.3,
     "reviews": 1234,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
-    "description_ar": "سماعات Edifier W820NB Plus — ANC بسعر لا يصدق. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?edifier+wireless+headphones",
+    "description_ar": "سماعات Edifier W820NB Plus — ANC بسعر لا يصدق. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إلغاء الضوضاء",
       "بطارية طويلة",
@@ -2962,8 +2835,36 @@
     ],
     "tags": [
       "سماعات ذكية",
-      "سماعات",
-      "تقنية"
+      "سماعات"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14"
+  },
+  {
+    "id": "NPH-099",
+    "name_ar": "سماعات Devialet Gemini II",
+    "name_en": "Devialet Gemini II",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.5,
+    "reviews": 345,
+    "stock": 50,
+    "image": "https://source.unsplash.com/400x300/?devialet+earbuds",
+    "description_ar": "سماعات Devialet Gemini II — فرنسية الصنع صوت استثنائي. منتج تقني متميز بجودة عالية.",
+    "features_ar": [
+      "إلغاء الضوضاء",
+      "بطارية طويلة",
+      "صوت Hi-Fi",
+      "تصميم مريح",
+      "مقاوم للماء"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
     ],
     "badge": "",
     "active": true,
@@ -2981,8 +2882,8 @@
     "rating": 4.4,
     "reviews": 432,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400",
-    "description_ar": "سماعات Cleer Alpha — ANC مع مساعد صوتي. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?cleer+alpha+headphones",
+    "description_ar": "سماعات Cleer Alpha — ANC مع مساعد صوتي. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إلغاء الضوضاء",
       "بطارية طويلة",
@@ -2992,8 +2893,7 @@
     ],
     "tags": [
       "سماعات ذكية",
-      "سماعات",
-      "تقنية"
+      "سماعات"
     ],
     "badge": "",
     "active": true,
@@ -3011,8 +2911,8 @@
     "rating": 4.7,
     "reviews": 876,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400",
-    "description_ar": "مترجم Timekettle W4 — ترجمة فورية 40 لغة. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?timekettle+translator+earbuds",
+    "description_ar": "مترجم Timekettle W4 — ترجمة فورية 40 لغة. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إنتاجية عالية",
       "اتصال سلس",
@@ -3022,8 +2922,7 @@
     ],
     "tags": [
       "إنتاجية",
-      "مترجم",
-      "تقنية"
+      "مترجم"
     ],
     "badge": "الأكثر مبيعاً",
     "active": true,
@@ -3041,8 +2940,8 @@
     "rating": 4.6,
     "reviews": 1234,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400",
-    "description_ar": "جهاز Remarkable 2 — لوح كتابة ورقي رقمي. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?remarkable+2+e-ink+tablet",
+    "description_ar": "جهاز Remarkable 2 — لوح كتابة ورقي رقمي. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إنتاجية عالية",
       "اتصال سلس",
@@ -3052,8 +2951,7 @@
     ],
     "tags": [
       "إنتاجية",
-      "جهاز",
-      "تقنية"
+      "جهاز"
     ],
     "badge": "",
     "active": true,
@@ -3071,8 +2969,8 @@
     "rating": 4.8,
     "reviews": 2345,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400",
-    "description_ar": "قلم Apple Pencil Pro — أفضل قلم رقمي لآيباد. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?apple+pencil+stylus+ipad",
+    "description_ar": "قلم Apple Pencil Pro — أفضل قلم رقمي لآيباد. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إنتاجية عالية",
       "اتصال سلس",
@@ -3082,8 +2980,7 @@
     ],
     "tags": [
       "إنتاجية",
-      "قلم",
-      "تقنية"
+      "قلم"
     ],
     "badge": "",
     "active": true,
@@ -3101,8 +2998,8 @@
     "rating": 4.8,
     "reviews": 3456,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400",
-    "description_ar": "ماوس Logitech MX Master 3S — أفضل ماوس للإنتاجية. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?logitech+mx+master+mouse",
+    "description_ar": "ماوس Logitech MX Master 3S — أفضل ماوس للإنتاجية. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إنتاجية عالية",
       "اتصال سلس",
@@ -3112,8 +3009,7 @@
     ],
     "tags": [
       "إنتاجية",
-      "ماوس",
-      "تقنية"
+      "ماوس"
     ],
     "badge": "",
     "active": true,
@@ -3131,8 +3027,8 @@
     "rating": 4.7,
     "reviews": 2341,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=400",
-    "description_ar": "لوحة مفاتيح Logitech MX Keys S — لوحة مفاتيح احترافية. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?logitech+mx+keys+keyboard",
+    "description_ar": "لوحة مفاتيح Logitech MX Keys S — لوحة مفاتيح احترافية. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إنتاجية عالية",
       "اتصال سلس",
@@ -3142,8 +3038,7 @@
     ],
     "tags": [
       "إنتاجية",
-      "لوحة",
-      "تقنية"
+      "لوحة"
     ],
     "badge": "",
     "active": true,
@@ -3161,8 +3056,8 @@
     "rating": 4.8,
     "reviews": 1876,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=400",
-    "description_ar": "جهاز Steam Deck OLED — ألعاب PC في راحة يدك. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?steam+deck+gaming+handheld",
+    "description_ar": "جهاز Steam Deck OLED — ألعاب PC في راحة يدك. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إنتاجية عالية",
       "اتصال سلس",
@@ -3172,8 +3067,7 @@
     ],
     "tags": [
       "إنتاجية",
-      "جهاز",
-      "تقنية"
+      "جهاز"
     ],
     "badge": "",
     "active": true,
@@ -3191,8 +3085,8 @@
     "rating": 4.6,
     "reviews": 654,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400",
-    "description_ar": "شاشة LG UltraFine 27 — 4K للمصممين والمهندسين. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?lg+ultrafine+monitor",
+    "description_ar": "شاشة LG UltraFine 27 — 4K للمصممين والمهندسين. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إنتاجية عالية",
       "اتصال سلس",
@@ -3202,8 +3096,7 @@
     ],
     "tags": [
       "إنتاجية",
-      "شاشة",
-      "تقنية"
+      "شاشة"
     ],
     "badge": "",
     "active": true,
@@ -3211,7 +3104,7 @@
   },
   {
     "id": "NPH-108",
-    "name_ar": "جهاز Anker PowerConf S500",
+    "name_ar": "مكبر Anker PowerConf S500",
     "name_en": "Anker PowerConf S500",
     "category": "productivity",
     "category_ar": "إنتاجية",
@@ -3221,8 +3114,8 @@
     "rating": 4.6,
     "reviews": 543,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400",
-    "description_ar": "جهاز Anker PowerConf S500 — مكبر اجتماعات ذكي. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?anker+speakerphone+conference",
+    "description_ar": "مكبر Anker PowerConf S500 — مكبر اجتماعات ذكي. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إنتاجية عالية",
       "اتصال سلس",
@@ -3232,8 +3125,7 @@
     ],
     "tags": [
       "إنتاجية",
-      "جهاز",
-      "تقنية"
+      "مكبر"
     ],
     "badge": "",
     "active": true,
@@ -3251,8 +3143,8 @@
     "rating": 4.5,
     "reviews": 876,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400",
-    "description_ar": "قلم Samsung S Pen Pro — بلوتوث وإيماءات هوائية. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?samsung+s+pen+stylus",
+    "description_ar": "قلم Samsung S Pen Pro — بلوتوث وإيماءات هوائية. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إنتاجية عالية",
       "اتصال سلس",
@@ -3262,8 +3154,7 @@
     ],
     "tags": [
       "إنتاجية",
-      "قلم",
-      "تقنية"
+      "قلم"
     ],
     "badge": "",
     "active": true,
@@ -3271,8 +3162,8 @@
   },
   {
     "id": "NPH-110",
-    "name_ar": "جهاز Elgato Stream Deck +",
-    "name_en": "Elgato Stream Deck +",
+    "name_ar": "جهاز Elgato Stream Deck+",
+    "name_en": "Elgato Stream Deck+",
     "category": "productivity",
     "category_ar": "إنتاجية",
     "price": 199,
@@ -3281,8 +3172,8 @@
     "rating": 4.7,
     "reviews": 1234,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400",
-    "description_ar": "جهاز Elgato Stream Deck + — أتمتة سير العمل. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?elgato+stream+deck+controller",
+    "description_ar": "جهاز Elgato Stream Deck+ — أتمتة سير العمل. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إنتاجية عالية",
       "اتصال سلس",
@@ -3292,8 +3183,7 @@
     ],
     "tags": [
       "إنتاجية",
-      "جهاز",
-      "تقنية"
+      "جهاز"
     ],
     "badge": "",
     "active": true,
@@ -3301,37 +3191,7 @@
   },
   {
     "id": "NPH-111",
-    "name_ar": "ماوس Microsoft Surface Arc",
-    "name_en": "Microsoft Surface Arc",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 79,
-    "original_price": 99,
-    "discount": 20,
-    "rating": 4.3,
-    "reviews": 765,
-    "stock": 50,
-    "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400",
-    "description_ar": "ماوس Microsoft Surface Arc — تصميم فريد قابل للطي. منتج تقني متميز بجودة عالية وسعر تنافسي.",
-    "features_ar": [
-      "إنتاجية عالية",
-      "اتصال سلس",
-      "تصميم مريح",
-      "دعم متعدد الأجهزة",
-      "تقنية حديثة"
-    ],
-    "tags": [
-      "إنتاجية",
-      "ماوس",
-      "تقنية"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14"
-  },
-  {
-    "id": "NPH-112",
-    "name_ar": "جهاز Wacom Intuos Pro M",
+    "name_ar": "لوح Wacom Intuos Pro M",
     "name_en": "Wacom Intuos Pro M",
     "category": "productivity",
     "category_ar": "إنتاجية",
@@ -3341,8 +3201,8 @@
     "rating": 4.7,
     "reviews": 987,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400",
-    "description_ar": "جهاز Wacom Intuos Pro M — الأفضل للمصممين والرسامين. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?wacom+intuos+pro+drawing+tablet",
+    "description_ar": "لوح Wacom Intuos Pro M — الأفضل للمصممين والرسامين. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إنتاجية عالية",
       "اتصال سلس",
@@ -3352,76 +3212,15 @@
     ],
     "tags": [
       "إنتاجية",
-      "جهاز",
-      "تقنية"
+      "لوح"
     ],
     "badge": "",
     "active": true,
     "shipping_days": "7-14"
   },
   {
-    "id": "NPH-113",
-    "name_ar": "جهاز Jabra PanaCast 50",
-    "name_en": "Jabra PanaCast 50",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 999,
-    "original_price": 1199,
-    "discount": 17,
-    "rating": 4.6,
-    "reviews": 234,
-    "stock": 50,
-    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400",
-    "description_ar": "جهاز Jabra PanaCast 50 — كاميرا اجتماعات 180 درجة. منتج تقني متميز بجودة عالية وسعر تنافسي.",
-    "features_ar": [
-      "إنتاجية عالية",
-      "اتصال سلس",
-      "تصميم مريح",
-      "دعم متعدد الأجهزة",
-      "تقنية حديثة"
-    ],
-    "tags": [
-      "إنتاجية",
-      "جهاز",
-      "تقنية"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14"
-  },
-  {
-    "id": "NPH-114",
-    "name_ar": "حامل Twelve South HiRise 3",
-    "name_en": "Twelve South HiRise 3",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 79,
-    "original_price": 99,
-    "discount": 20,
-    "rating": 4.5,
-    "reviews": 543,
-    "stock": 50,
-    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400",
-    "description_ar": "حامل Twelve South HiRise 3 — حامل مع شحن لاسلكي. منتج تقني متميز بجودة عالية وسعر تنافسي.",
-    "features_ar": [
-      "إنتاجية عالية",
-      "اتصال سلس",
-      "تصميم مريح",
-      "دعم متعدد الأجهزة",
-      "تقنية حديثة"
-    ],
-    "tags": [
-      "إنتاجية",
-      "حامل",
-      "تقنية"
-    ],
-    "badge": "",
-    "active": true,
-    "shipping_days": "7-14"
-  },
-  {
-    "id": "NPH-115",
-    "name_ar": "جهاز Anker 737 PowerBank",
+    "id": "NPH-112",
+    "name_ar": "بنك Anker 737 PowerBank",
     "name_en": "Anker 737 PowerBank",
     "category": "productivity",
     "category_ar": "إنتاجية",
@@ -3431,8 +3230,8 @@
     "rating": 4.7,
     "reviews": 2341,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400",
-    "description_ar": "جهاز Anker 737 PowerBank — 25600mAh شحن سريع 140W. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?anker+powerbank+portable+charger",
+    "description_ar": "بنك Anker 737 PowerBank — 25600mAh شحن سريع 140W. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إنتاجية عالية",
       "اتصال سلس",
@@ -3442,15 +3241,14 @@
     ],
     "tags": [
       "إنتاجية",
-      "جهاز",
-      "تقنية"
+      "بنك"
     ],
     "badge": "",
     "active": true,
     "shipping_days": "7-14"
   },
   {
-    "id": "NPH-116",
+    "id": "NPH-113",
     "name_ar": "لوحة مفاتيح Keychron Q1 Pro",
     "name_en": "Keychron Q1 Pro",
     "category": "productivity",
@@ -3461,8 +3259,8 @@
     "rating": 4.8,
     "reviews": 1234,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=400",
-    "description_ar": "لوحة مفاتيح Keychron Q1 Pro — ميكانيكية مخصصة للغاية. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?keychron+mechanical+keyboard",
+    "description_ar": "لوحة مفاتيح Keychron Q1 Pro — ميكانيكية مخصصة للغاية. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إنتاجية عالية",
       "اتصال سلس",
@@ -3472,27 +3270,26 @@
     ],
     "tags": [
       "إنتاجية",
-      "لوحة",
-      "تقنية"
+      "لوحة"
     ],
     "badge": "",
     "active": true,
     "shipping_days": "7-14"
   },
   {
-    "id": "NPH-117",
-    "name_ar": "جهاز Astro A50 X Headset",
-    "name_en": "Astro A50 X Headset",
+    "id": "NPH-114",
+    "name_ar": "ماوس Microsoft Surface Arc",
+    "name_en": "Microsoft Surface Arc",
     "category": "productivity",
     "category_ar": "إنتاجية",
-    "price": 299,
-    "original_price": 349,
-    "discount": 14,
-    "rating": 4.6,
+    "price": 79,
+    "original_price": 99,
+    "discount": 20,
+    "rating": 4.3,
     "reviews": 765,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400",
-    "description_ar": "جهاز Astro A50 X Headset — سماعة ألعاب احترافية. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?microsoft+surface+arc+mouse",
+    "description_ar": "ماوس Microsoft Surface Arc — تصميم فريد قابل للطي. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إنتاجية عالية",
       "اتصال سلس",
@@ -3502,15 +3299,14 @@
     ],
     "tags": [
       "إنتاجية",
-      "جهاز",
-      "تقنية"
+      "ماوس"
     ],
     "badge": "",
     "active": true,
     "shipping_days": "7-14"
   },
   {
-    "id": "NPH-118",
+    "id": "NPH-115",
     "name_ar": "شاشة Samsung Odyssey OLED G9",
     "name_en": "Samsung Odyssey OLED G9",
     "category": "productivity",
@@ -3521,8 +3317,8 @@
     "rating": 4.8,
     "reviews": 432,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400",
-    "description_ar": "شاشة Samsung Odyssey OLED G9 — شاشة ألعاب OLED 49 بوصة. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?samsung+odyssey+oled+monitor",
+    "description_ar": "شاشة Samsung Odyssey OLED G9 — شاشة ألعاب OLED 49 بوصة. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إنتاجية عالية",
       "اتصال سلس",
@@ -3532,16 +3328,73 @@
     ],
     "tags": [
       "إنتاجية",
-      "شاشة",
-      "تقنية"
+      "شاشة"
     ],
     "badge": "",
     "active": true,
     "shipping_days": "7-14"
   },
   {
-    "id": "NPH-119",
-    "name_ar": "جهاز Ugee 16 Pro Tablet",
+    "id": "NPH-116",
+    "name_ar": "سماعة Astro A50 X",
+    "name_en": "Astro A50 X Headset",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.6,
+    "reviews": 765,
+    "stock": 50,
+    "image": "https://source.unsplash.com/400x300/?astro+a50+gaming+headset",
+    "description_ar": "سماعة Astro A50 X — سماعة ألعاب احترافية. منتج تقني متميز بجودة عالية.",
+    "features_ar": [
+      "إنتاجية عالية",
+      "اتصال سلس",
+      "تصميم مريح",
+      "دعم متعدد الأجهزة",
+      "تقنية حديثة"
+    ],
+    "tags": [
+      "إنتاجية",
+      "سماعة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14"
+  },
+  {
+    "id": "NPH-117",
+    "name_ar": "كاميرا Jabra PanaCast 50",
+    "name_en": "Jabra PanaCast 50",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 999,
+    "original_price": 1199,
+    "discount": 17,
+    "rating": 4.6,
+    "reviews": 234,
+    "stock": 50,
+    "image": "https://source.unsplash.com/400x300/?jabra+panacast+conference+camera",
+    "description_ar": "كاميرا Jabra PanaCast 50 — كاميرا اجتماعات 180 درجة. منتج تقني متميز بجودة عالية.",
+    "features_ar": [
+      "إنتاجية عالية",
+      "اتصال سلس",
+      "تصميم مريح",
+      "دعم متعدد الأجهزة",
+      "تقنية حديثة"
+    ],
+    "tags": [
+      "إنتاجية",
+      "كاميرا"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14"
+  },
+  {
+    "id": "NPH-118",
+    "name_ar": "لوح Ugee 16 Pro",
     "name_en": "Ugee 16 Pro Tablet",
     "category": "productivity",
     "category_ar": "إنتاجية",
@@ -3551,8 +3404,8 @@
     "rating": 4.5,
     "reviews": 543,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400",
-    "description_ar": "جهاز Ugee 16 Pro Tablet — لوح رسم 15.6 بوصة. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?ugee+drawing+tablet",
+    "description_ar": "لوح Ugee 16 Pro — لوح رسم 15.6 بوصة. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إنتاجية عالية",
       "اتصال سلس",
@@ -3562,16 +3415,15 @@
     ],
     "tags": [
       "إنتاجية",
-      "جهاز",
-      "تقنية"
+      "لوح"
     ],
     "badge": "",
     "active": true,
     "shipping_days": "7-14"
   },
   {
-    "id": "NPH-120",
-    "name_ar": "ميزان Nanoleaf Lines",
+    "id": "NPH-119",
+    "name_ar": "إضاءة Nanoleaf Lines",
     "name_en": "Nanoleaf Lines",
     "category": "productivity",
     "category_ar": "إنتاجية",
@@ -3581,8 +3433,8 @@
     "rating": 4.5,
     "reviews": 876,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1558002038-1ad4e1b40f43?w=400",
-    "description_ar": "ميزان Nanoleaf Lines — إضاءة خطية ذكية تفاعلية. منتج تقني متميز بجودة عالية وسعر تنافسي.",
+    "image": "https://source.unsplash.com/400x300/?nanoleaf+lines+smart+light",
+    "description_ar": "إضاءة Nanoleaf Lines — إضاءة خطية ذكية تفاعلية. منتج تقني متميز بجودة عالية.",
     "features_ar": [
       "إنتاجية عالية",
       "اتصال سلس",
@@ -3592,8 +3444,36 @@
     ],
     "tags": [
       "إنتاجية",
-      "ميزان",
-      "تقنية"
+      "إضاءة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14"
+  },
+  {
+    "id": "NPH-120",
+    "name_ar": "حامل Twelve South HiRise 3",
+    "name_en": "Twelve South HiRise",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 79,
+    "original_price": 99,
+    "discount": 20,
+    "rating": 4.5,
+    "reviews": 543,
+    "stock": 50,
+    "image": "https://source.unsplash.com/400x300/?twelve+south+hirise+stand",
+    "description_ar": "حامل Twelve South HiRise 3 — حامل مع شحن لاسلكي. منتج تقني متميز بجودة عالية.",
+    "features_ar": [
+      "إنتاجية عالية",
+      "اتصال سلس",
+      "تصميم مريح",
+      "دعم متعدد الأجهزة",
+      "تقنية حديثة"
+    ],
+    "tags": [
+      "إنتاجية",
+      "حامل"
     ],
     "badge": "",
     "active": true,
