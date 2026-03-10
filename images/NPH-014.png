@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title data-vue-meta="true">Mobvoi.com – TicNote AI Notetaker, TicWatch, Treadmills | Official Site</title>
+        <meta data-vue-meta="true" name="description" content="Mobvoi is a leading AI company offering the TicNote AI Notetaker with recording, transcription, summarization; TicWatch; and smart treadmills. Discover cutting-edge AI and wearable technology on the official Mobvoi website."><meta data-vue-meta="true" property="og:title" content="Mobvoi.com – TicNote AI Notetaker, TicWatch, Treadmills | Official Site"><meta data-vue-meta="true" property="og:description" content="Mobvoi is a leading AI company offering the TicNote AI Notetaker with recording, transcription, summarization; TicWatch; and smart treadmills. Discover cutting-edge AI and wearable technology on the official Mobvoi website."><meta data-vue-meta="true" property="og:image" content="https://growth-cdn.ticwear.com/ticbuy/img/facebook-share-ticnote.png"><meta data-vue-meta="true" name="twitter:title" content="Mobvoi.com – TicNote AI Notetaker, TicWatch, Treadmills | Official Site"><meta data-vue-meta="true" name="twitter:description" content="Mobvoi is a leading AI company offering the TicNote AI Notetaker with recording, transcription, summarization; TicWatch; and smart treadmills. Discover cutting-edge AI and wearable technology on the official Mobvoi website."><meta data-vue-meta="true" name="twitter:image" content="https://growth-cdn.ticwear.com/ticbuy/img/facebook-share-ticnote.png"><meta data-vue-meta="true" name="keywords" content="TicWatch Smartwatch, Mobvoi AI wearable technology, TicHome Mini Smart speaker, Ticpods Free Wireless earbuds">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="telephone=no" name="format-detection">
+        <meta content="email=no" name="format-detection">
+        <meta property="fb:app_id" content="1540846852884295">
+        <meta property="og:url" content="https://www.mobvoi.com" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary">
+        <meta http-equiv="cache-control" content="max-age=0" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta name="google-site-verification" content="ufBdh5h9s079IqTxohVObJArrrBuYDkQXKZdA8Hul-0" />
+        <link rel="shortcut icon" href="/favicon.ico?v=3.0" type="image/x-icon" />
+        <script src="https://growth-cdn.ticwear.com/ticbuy/js/ip-redirectv-v1.js?v=13"></script>
+        <script src="https://growth-cdn.ticwear.com/ticbuy/js/google-base-code.js"></script>
+        <!-- YAHOO埋码 -->
+        <script type="application/javascript">(function(w,d,t,r,u){w[u]=w[u]||[];w[u].push({'projectId':'10000','properties':{'pixelId':'10180689'}});var s=d.createElement(t);s.src=r;s.async=true;s.onload=s.onreadystatechange=function(){var y,rs=this.readyState,c=w[u];if(rs&&rs!="complete"&&rs!="loaded"){return}try{y=YAHOO.ywa.I13N.fireBeacon;w[u]=[];w[u].push=function(p){y([p])};y(c)}catch(e){}};var scr=d.getElementsByTagName(t)[0],par=scr.parentNode;par.insertBefore(s,scr)})(window,document,"script","https://s.yimg.com/wi/ytc.js","dotq");</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-64695573-24"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-64695573-24', { 'send_page_view': false });
+</script>
+<!-- Google tag (gtag.js) GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M9P7SP0KN1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M9P7SP0KN1');
+</script>
+<script>
+    window.addEventListener('load',function(){
+            if(window.location.href.includes('/thankyou')){
+                var currency_array = document.querySelector('[class="sfBold line-con total-line price"]').innerText.split(" ");
+                var currency = currency_array[currency_array.length - 1];
+                var item_list_detail = [];
+                var item_name = document.querySelectorAll('[class="name"]');
+                var item_quantity = document.querySelectorAll('[class="product-quantity"]');
+                var item_price = document.querySelectorAll('[class="price"]');
+                for(i = 0; i < item_name.length; i++){        
+                    item_list_detail.push({
+                        'id': item_name[i].innerText,
+                        'name': item_name[i].innerText,
+                        'quantity': item_quantity[i].innerText.replace(/[^0-9.]/g,''),
+                        'price': item_price[i].innerText.replace(/[^0-9.]/g,'')
+                    });
+                }
+                    gtag('event', 'purchase',{
+                        "send_to": 'UA-64695573-24',
+                        "transaction_id": document.querySelector('[class="name sfBold"]').innerText.replace(/[^\d.]/g,""),
+                        "value": document.querySelector('[class="sfBold line-con total-line price"]').innerText.replace(/[^\d.]/g,""),
+                        "currency": 'USD',
+                        "items": item_list_detail
+                    });
+            }
+        })
+    </script>
+    
+    <script>
+    window.addEventListener('load',function(){
+            if(window.location.href.includes('/thankyou')){
+                var currency_array = document.querySelector('[class="sfBold line-con total-line price"]').innerText.split(" ");
+                var currency = currency_array[currency_array.length - 1]
+                var item_list_detail = [];
+                var item_name = document.querySelectorAll('[class="name"]');
+                var item_quantity = document.querySelectorAll('[class="product-quantity"]');
+                var item_price = document.querySelectorAll('[class="price"]');
+                for(i = 0; i < item_name.length; i++){        
+                    item_list_detail.push({
+                        'item_id': item_name[i].innerText,
+                        'item_name': item_name[i].innerText,
+                        'quantity': item_quantity[i].innerText.replace(/[^0-9.]/g,''),
+                        'price': item_price[i].innerText.replace(/[^0-9.]/g,'')
+                    });
+                }
+                gtag('event', 'purchase',{
+                    "send_to": 'G-M9P7SP0KN1',
+                    "transaction_id": document.querySelector('[class="name sfBold"]').innerText.replace(/[^\d.]/g,""),
+                    "value": document.querySelector('[class="sfBold line-con total-line price"]').innerText.replace(/[^\d.]/g,""),
+                    "currency": 'USD',
+                    "items": item_list_detail
+                });
+            }
+            setTimeout(function(){
+                gtag('event','view_time_5s',{'send_to':'G-M9P7SP0KN1'});
+            }, 5000);
+            setTimeout(function(){
+                gtag('event','view_time_15s',{'send_to':'G-M9P7SP0KN1'});
+            }, 15000);
+            setTimeout(function(){
+                gtag('event','view_time_30s',{'send_to':'G-M9P7SP0KN1'});
+            }, 30000);
+            setTimeout(function(){
+                gtag('event','view_time_50s',{'send_to':'G-M9P7SP0KN1'});
+            }, 50000);
+            setTimeout(function(){
+                gtag('event','view_time_over60s',{'send_to':'G-M9P7SP0KN1'});
+            }, 60000);
+        })
+    </script>
+        <!-- // Begin Impact Pixel Code -->
+        <script type="text/javascript">
+        (function(a,b,c,d,e,f,g){e['ire_o']=c;e[c]=e[c]||function(){(e[c].a=e[c].a||[]).push(arguments)};f=d.createElement(b);g=d.getElementsByTagName(b)[0];f.async=1;f.src=a;g.parentNode.insertBefore(f,g);})('https://utt.impactcdn.com/A6413390-5e59-49fc-b6ad-9b48bd6e009c1.js','script','ire',document,window);
+        </script>
+        <!-- // End of Impact Pixel Code -->
+
+        <script type="text/javascript">
+            // agent
+            __loadScript('https://growth-cdn.ticwear.com/ticbuy/js/mobvoi-agent.js');
+        </script>
+        <!-- 群发短信平台 -->
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-MJCSV5R');
+        </script>
+    <link href="https://growth-cdn.ticwear.com/ticbuy-prd/./css/2026-03-03/vendors.6e39e936c78974f4e3c6.css?6e39e936c78974f4e3c6" rel="stylesheet"><link href="https://growth-cdn.ticwear.com/ticbuy-prd/./css/2026-03-03/index.6e39e936c78974f4e3c6.css?6e39e936c78974f4e3c6" rel="stylesheet"><style data-vue-ssr-id="f82369ba:0">
+.header {
+  font-size: 0;
+}
+.header-buy-btn {
+    background: #3487dc;
+    font-size: 15px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    position: relative;
+    float: left;
+    width: 60px;
+    color: #fff;
+    border-radius: 20px;
+    display: block;
+    margin-right: 0;
+}
+.header-buy-btn .buy-btn {
+    color: #fff;
+}
+.header .site-map {
+    width: auto;
+    text-align: center;
+}
+.header .site-map .site-select-icon {
+    display: inline-block;
+    font-size: 14px;
+    color: #000;
+}
+.header .site-map .site-select-icon:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 23px;
+    background: url('https://growth-cdn.ticwear.com/ticbuy/img/global-location-icon.0.svg') no-repeat center;
+    vertical-align: middle;
+    margin-right: 3px;
+    margin-top: -3px;
+}
+.cart-icon a {
+    position: relative;
+}
+@media screen and (max-width: 800px) {
+.header-buy-btn {
+        display: none;
+}
+.header .site-map {
+        width: auto;
+        float: right;
+}
+.header .site-map .site-select-icon {
+        font-size: 13px;
+}
+.header .site-map .site-select-icon:before {
+        width: 15px;
+        height: 20px;
+        background-size: 15px auto;
+        margin-top: -2px;
+}
+}
+</style><style data-vue-ssr-id="2c1172b8:0">
+.site-pick {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 61px;
+    z-index: 10;
+    width: 100%;
+    max-height: 100vh;
+    overflow: auto;
+    background-color: #fff;
+}
+.site-pick .site-all-continent {
+    max-width: 1180px;
+    margin: 30px auto;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+.site-pick img {
+    width: 17px;
+    vertical-align: middle;
+}
+.site-pick .site-continent {
+    clear: both;
+    overflow: hidden;
+}
+.site-pick .continent-name {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 29px;
+    margin-top: 50px;
+}
+.site-pick .country-language {
+    float: right;
+    margin-right: 15px;
+    width: 70px;
+    text-align: left;
+}
+.site-pick .site-country li {
+    width: 32%;
+    height: 48px;
+    line-height: 48px;
+    background-color: rgba(0,0,0,0.04);
+    float: left;
+    margin-right: 2%;
+    font-size: 14px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.site-pick .site-country li a {
+    display: block;
+    width: 100%;
+    color: rgba(0,0,0,0.4);
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.site-pick .site-country li:nth-child(3n) {
+    margin-right: 0;
+}
+.site-pick .country-name {
+    color: rgba(0,0,0,0.9);
+    display: inline-block;
+    width: 150px;
+    line-height: 15px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.site-pick .country-currency {
+    float: right;
+    width: 70px;
+    text-align: right;
+}
+.site-pick-tip {
+    font-size: 25px;
+    text-align: center;
+    padding: 50px 0 0;
+    color: #333;
+}
+@media screen and (max-width: 1200px) {
+.site-pick .country-name {
+        width: 105px;
+}
+.site-pick .country-currency {
+        width: 60px;
+}
+.site-pick .country-language {
+        width: 50px;
+}
+.site-pick .site-country li {
+        font-size: 12px;
+}
+}
+@media screen and (max-width: 950px) {
+.site-pick {
+        top: 48px;
+        max-height: calc(100vh - 48px);
+}
+.site-pick-tip {
+        font-size: 18px;
+        padding: 50px 0 20px;
+}
+.site-pick .site-all-continent {
+        margin: 0;
+        padding: 0 10px;
+}
+.site-pick .continent-name {
+        font-size: 13px;
+        margin-bottom: 16px;
+        margin-top: 30px;
+}
+.site-pick .site-country li {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        margin-right: 0;
+        margin-bottom: 10px;
+        float: none;
+        font-size: 12px;
+}
+.site-pick .site-country li a {
+        padding: 0 10px;
+}
+.site-pick img {
+        width: 13px;
+}
+.site-pick .country-name {
+        width: 40%;
+        margin-left: 0;
+}
+.site-pick .country-language,
+    .site-pick .country-currency {
+        width: 60px;
+}
+}
+@media screen and (max-width: 330px) {
+.site-pick .country-name {
+        width: 35%;
+}
+}
+</style><style data-vue-ssr-id="42cd3aea:0">
+.banner-loading {
+        position: relative;
+}
+.banner-loading img {
+        position: absolute;
+        width: auto;
+        left: 50%;
+        margin-left: -20px;
+        top: 50%;
+        margin-top: -10px;
+}
+    /* banner 文字 适配 */
+.bannerimg-url {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+}
+.index-banner-img .banner-word {
+        max-width: 6rem;
+}
+.index-banner-img .word-label {
+        width: .82rem;
+        height: .35rem;
+        background-color: #0091FF;
+        font-size: .21rem;
+        line-height: .35rem;
+        text-align: center;
+        border-radius: .05rem;
+        text-transform: capitalize;
+}
+.index-banner-img .word-title {
+        width: auto;
+        height: .4rem;
+        margin: .4rem 0 .2rem;
+}
+.index-banner-img .word-title img {
+        width: auto;
+        height: 100%;
+        display: inherit;
+}
+.index-banner-img .word-sub-title {
+        font-size: .24rem;
+        line-height: .29rem;
+        margin-bottom: .1rem;
+}
+.index-banner-img .word-content {
+        font-size: .21rem;
+        line-height: .36rem;
+}
+.index-banner-img .btn-more {
+        display: block;
+        width: 2.4rem;
+        height: .64rem;
+        line-height: .64rem;
+        font-size: .21rem;
+        color: inherit;
+        box-sizing: border-box;
+        text-align: center;
+        margin-top: .7rem;
+        border: 1px solid #fff;
+        text-transform: capitalize;
+}
+.index-banner-img .btn-more:hover {
+        background: rgba(35,36,39,0.75);
+}
+.index-banner-img .btn-more.white:hover {
+        background: rgba(255,255,255,0.2);
+}
+.swiper-button-prev,
+    .swiper-button-next {
+        width: .5rem;
+        height: .5rem;
+        background: url('https://growth-cdn.ticwear.com/ticbuy/img/index-banner-prev-button.0.png') no-repeat center;
+        background-size: 100% auto;
+        cursor: pointer;
+}
+.swiper-button-prev:hover,
+    .swiper-button-next:hover {
+        background-image: url('https://growth-cdn.ticwear.com/ticbuy/img/index-banner-prev-button-hover.0.png');
+}
+.swiper-button-prev {
+        left: .28rem;
+}
+.swiper-button-next {
+        transform: rotate(180deg);
+        right: .28rem;
+}
+.swiper-button-prev:after,
+    .swiper-button-next:after {
+        display: none;
+}
+.swiper-pagination {
+        position: absolute;
+        bottom: .4rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+}
+.swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background: rgba(255,255,255,0.3);
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0 .1rem;
+        opacity: 1;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background: rgba(255,255,255,1);
+}
+    /* mode left */
+.banner-word-mode-left {
+        height: auto;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        margin-left: 19%;
+        z-index: 20;
+}
+    /* mode top center */
+.banner-word-mode-topCenter {
+        height: 33%;
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        transform: translate(-50%, 0);
+        text-align: center;
+        z-index: 20;
+}
+.banner-word-mode-topCenter .btn-more {
+        border-color:#fff;
+        margin: 22px auto 0 auto;
+}
+    /* mode right */
+.banner-word-mode-right {
+        height: auto;
+        width: 40%;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        z-index: 20;
+}
+
+/* banner mode mobile */
+@media screen and (max-width: 800px) {
+.owl-carousel .owl-stage-outer,
+    .owl-carousel .owl-stage,
+    .owl-carousel.owl-drag .owl-item {
+        height: 100%;
+}
+.index-banner-container {
+        min-height: 0;
+        height: 133vw;
+        max-height: initial;
+}
+.index-banner-container .index-banner-img {
+        background-size: 100% auto;
+        height: 100%;
+        padding-top: 0;
+        position: relative;
+}
+.index-banner-container .index-banner-img a.bannerimg-url {
+        display: block;
+        width: 100%;
+        height: 100%;
+}
+.index-banner-img .word-label {
+        position: absolute;
+        top: .31rem;
+        left: 0;
+}
+.index-banner-img .banner-word-mode-mobile-usual {
+        text-align: center;
+        margin: .6rem auto;
+}
+.index-banner-img .word-title {
+        height: .35rem;
+}
+.index-banner-img .word-title img {
+        margin: 0 auto;
+}
+.index-banner-img .word-sub-title {
+        font-size: .3rem;
+        line-height: .36rem;
+        margin: .3rem 0 .2rem;
+}
+.index-banner-img .word-content {
+        font-size: .21rem;
+        line-height: .36rem;
+}
+.index-banner-img .btn-more {
+        margin: .4rem auto 0;
+}
+.swiper-button-prev, .swiper-button-next {
+        display: none;
+}
+.pagination-wrapper {
+        height: .21rem;
+        background: rgba(255,255,255,0.2);
+        border-radius: .8rem;
+        padding: 0 .28rem 0 .24rem;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        transform: translateX(-50%);
+        left: 50%;
+        bottom: .2rem;
+        position: absolute;
+        z-index: 2;
+}
+.swiper-pagination {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        position: initial;
+        left: 0;
+        transform: none;
+}
+.swiper-pagination-bullet {
+        width: 5px;
+        height: 5px;
+        display: inline-block;
+        margin: 0 .15rem 0 0;
+        opacity: 1;
+}
+.pagination-wrapper .next-slide-btn {
+        display: block;
+        width: 0;
+        height: 0;
+        border-top: .06rem solid transparent;
+        border-left: .1rem solid #fff;
+        border-bottom: .06rem solid transparent;
+        background: none;
+        margin: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0.18rem;
+        position: absolute;
+        left: auto;
+        z-index: 99;
+}
+}
+</style><style data-vue-ssr-id="2439ffb9:0">
+.spinner[data-v-984022ee] {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spinner>div[data-v-984022ee] {
+    display: inline-block;
+    width: 37px;
+}
+</style><style data-vue-ssr-id="72377686:0">
+.subscribe[data-v-8a7b8212]{width:5.3rem;height:3.75rem;background-image:url("https://growth-cdn.ticwear.com/ticbuy/img/subscribe.0.png");background-size:100% 100%;position:fixed;bottom:0.2rem;right:0.2rem;z-index:9999
+}
+.subscribe .close[data-v-8a7b8212]{width:0.32rem;height:0.32rem;float:right;margin-top:0.34rem;margin-right:0.34rem;cursor:pointer
+}
+.subscribe h2[data-v-8a7b8212]{font-size:0.32rem;font-weight:bold;color:#FFFFFF;line-height:0.38rem;margin-top:0.73rem;text-align:center
+}
+.subscribe .desc[data-v-8a7b8212]{font-size:0.18rem;font-weight:400;color:#FFFFFF;line-height:0.21rem;text-align:center;margin-top:0.12rem
+}
+.subscribe input[data-v-8a7b8212]{display:block;width:3.74rem;height:0.48rem;font-size:0.18rem;background:#FFFFFF;border-radius:1px;font-family:SFProText-Bold, SFProText;font-weight:bold;border:1px solid rgba(0,0,0,0.2);margin:auto;margin-top:0.45rem;padding-left:0.21rem;box-sizing:border-box;margin-bottom:0.08rem
+}
+.subscribe .tips[data-v-8a7b8212]{font-size:0.16rem;font-weight:400;color:#FF5C5C;line-height:0.19rem;padding-left:.98rem
+}
+.subscribe button[data-v-8a7b8212]{width:3.74rem;height:0.48rem;background:#0091FF;font-weight:bold;color:#FFFFFF;font-size:0.18rem;border:none;display:block;margin:auto;margin-top:0.2rem;cursor:pointer
+}
+@media screen and (max-width: 800px){
+.subscribe[data-v-8a7b8212]{width:5.7rem;height:4.15rem;background-image:url("https://growth-cdn.ticwear.com/ticbuy/img/subscribe-mobile.0.png");background-size:100% 100%;position:fixed;bottom:inherit;top:40%;right:0;left:0;margin:auto
+}
+.subscribe .close[data-v-8a7b8212]{position:absolute;top:0;right:0
+}
+.subscribe .logo[data-v-8a7b8212]{width:1.32rem;height:0.36rem;margin-top:0.46rem
+}
+.subscribe h2[data-v-8a7b8212]{margin-top:0;padding-top:0.93rem
+}
+.subscribe button[data-v-8a7b8212]{margin-top:0.2rem
+}
+}
+</style></head>
+    <body>
+        <!-- 群发短信平台 -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJCSV5R" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3TXQJ3"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <div id="app" data-server-rendered="true" class="template-wrapper"><div class="header"><div class="holiday-deals-header tip-module-header"><div id="tipHeader" class="holiday-inner"><ul></ul> <div class="black-five"><a href="/pages/sale">CURATED GEARS</a></div> <a href="javascript:void(0)" class="close-btn"></a></div></div> <div class="main-header-wrapper"><div class="custom-header-logo clearfix"><a href="/"><img src="https://growth-cdn.ticwear.com/ticbuy/img/common-logo.0.svg" alt></a></div> <ul class="custom-header-action"><!----> <li class="cart-icon"><a href="/cart" class="_cart-icon-link"><img src="" alt> <!----></a></li> <li class="site-map ticwatchpro-site-map"><a href="javascript:void(0)" class="sfBold site-select-icon">US</a></li> <!----></ul> <div id="weglot_here"></div> <!----> <a href="javascript:void(0)" class="closeSitePick"></a></div> <!----> <div class="site-pick"><div class="sfBold site-pick-tip">Choose your country or region</div> <div class="site-all-continent"><!----> <!----> <!----> <!----> <!----></div></div></div> <div class="app-content"><div data="true" class="index-page"><h1 class="hide-seo">Mobvoi TicWatch Smartwatch</h1> <h2 class="hide-seo">product</h2><h2 class="hide-seo">support</h2><h2 class="hide-seo">about us</h2> <div class="swiper-container index-banner-container"><div class="swiper-wrapper"></div> <div class="pagination-wrapper"><div class="swiper-pagination"></div> <i class="next-slide-btn"></i></div></div> <div class="spinner" data-v-984022ee><div data-v-984022ee><img src="https://growth-cdn.ticwear.com/ticbuy/img/loading.0.gif" data-v-984022ee></div></div> <div class="subscribe" style="display:none;" data-v-8a7b8212><img src="https://growth-cdn.ticwear.com/ticbuy/img/subscribe-close.0.png" alt class="close" data-v-8a7b8212> <h2 class="title" data-v-8a7b8212>BE THE FIRST TO KNOW</h2> <div class="desc" data-v-8a7b8212>about new releases, special offers, and more</div> <input type="text" placeholder="EMAIL ADDRESS" value="" data-v-8a7b8212> <div class="tips" style="display:none;" data-v-8a7b8212>Please enter a valid email address.</div> <button data-v-8a7b8212>JOIN THE LIST</button></div></div></div> <div id="footer" class="footer-bg"><div class="footer-url en-footer"><dl><dt>Products &amp; Services<i class="plus-minus vertical-line"></i><i class="plus-minus horizontal-line"></i></dt> <div class="dd-con"><dd><a href="http://developer.chumenwenwen.com/en">Mobvoi developers</a></dd> <dd><a href="http://ticdesign.chumenwenwen.com/en">TicDesign</a></dd> <dd><a href="javascript:void(0)">Mobvoi app</a></dd> <dd><a href="javascript:void(0)">Ticwear Global app</a></dd> <dd><a href="/pages/limited-warranty">Warranty &amp; Service policies</a></dd> <!----> <dd><a href="/pages/terms-of-service">Terms of service</a></dd> <dd><a href="/pages/privacy-policy">Privacy policy</a></dd> <dd><a href="/pages/cookie-policy">Cookie policy</a></dd></div></dl> <dl class="referral-dl"><div class="dd-con"><dl class="diabetes-dl"><dt>Healthcare</dt> <div class="dd-con"><dd><a href="/pages/diabetes">Diabetes case</a></dd> <dd><a href="/activity/breast-cancer-awareness">BCAM case</a></dd> <dd><a href="/pages/wheelchair-power-assist">Wheelchair Power Assist case</a></dd></div></dl></div></dl> <dl class="diabetes-footer-mobile"><dt>Healthcare<i class="plus-minus vertical-line"></i><i class="plus-minus horizontal-line"></i></dt> <div class="dd-con"><dd><a href="/pages/diabetes">Diabetes case</a></dd> <dd><a href="/activity/breast-cancer-awareness">BCAM case</a></dd></div></dl> <dl class="aboutus"><dt>About us<i class="plus-minus vertical-line"></i><i class="plus-minus horizontal-line"></i></dt> <div class="dd-con"><dd><a href="/pages/about-us">About us</a></dd> <dd><a href="/pages/about-us#contactUs">Contact us</a></dd> <dd><a href="/blog">Blog</a></dd> <!----> <!----> <!----></div></dl> <!----> <!----> <dl class="footer-share"><dt>Follow us<i class="plus-minus vertical-line"></i><i class="plus-minus horizontal-line"></i></dt> <div class="share-btn dd-con"><a target="_blank" href="https://www.facebook.com/MobvoiTicWatch" class="share-buttons-item share-facebook"></a> <a target="_blank" href="https://www.instagram.com/mobvoi/" class="share-buttons-item share-instagram"></a> <a target="_blank" href="https://twitter.com/Mobvoi_Official" class="share-buttons-item share-twitter"></a> <a target="_blank" href="https://www.youtube.com/channel/UC0wuGXvmz6YcgUFnLgQuCbw/" class="share-buttons-item share-youtube"></a> <a target="_blank" href="https://www.pinterest.com/mobvoi0175/" class="share-buttons-item share-pinterest"></a></div></dl></div> <div class="footer-copyright footer-bg"><div class="footer-text sfLight">
+            Copyright © <span id="thisYear sfLight"></span> HK SMARTMV LIMITED. All rights reserved.
+            <!----> <!----></div></div> <a href="javascript:void(0)" class="page-top-btn _page-top-btn"><img src="https://growth-cdn.ticwear.com/ticbuy/img/page-top-arrow-icon.0.png"></a> <div class="help-btn" style="display:;">Help</div> <div class="help-window" style="display:none;"><div class="top"><span>Help</span> <a href="javascript:void(0)" class="help-close">-</a></div> <p>Please contact official after-sales email: support@mobvoi.com.</p></div></div></div>
+
+        <script type="text/javascript" src="https://growth-cdn.ticwear.com/ticbuy/js/jquery-3.1.0.min.js?v=1"></script>
+        <script type="text/javascript" src="https://growth-cdn.ticwear.com/ticbuy/js/swiper.min.js"></script>
+        <!-- Start of ticwatch Zendesk Widget script -->
+        <!-- <script>
+            zendeskWidget();
+            function zendeskWidget() {
+                const key = '5a7fc89e-b4f3-49f3-985a-a4b1497c9f1c';
+                const options = { 'id': 'ze-snippet' };
+                __loadScript('https://static.zdassets.com/ekr/snippet.js?key=' + key, options);
+                // zendesk customization
+                window.zESettings = {
+                    webWidget: {
+                        color: { theme: '#000000' },
+                        offset: { horizontal: '0', vertical: '75px' }
+                    }
+                };
+            }
+        </script> -->
+        <!-- End of ticwatch Zendesk Widget script -->
+    <script type="text/javascript" src="https://growth-cdn.ticwear.com/ticbuy-prd/./js/2026-03-03/vendors.6e39e936c78974f4e3c6.js?6e39e936c78974f4e3c6"></script><script type="text/javascript" src="https://growth-cdn.ticwear.com/ticbuy-prd/./js/2026-03-03/index.6e39e936c78974f4e3c6.js?6e39e936c78974f4e3c6"></script></body>
+</html>
