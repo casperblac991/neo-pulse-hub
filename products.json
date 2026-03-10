@@ -5102,5 +5102,165 @@
     "featured": true,
     "added_by": "auto_bot",
     "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-753",
+    "name_ar": "مكبر Apple HomePod الجيل 2",
+    "name_en": "Apple HomePod 2nd Gen",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.7,
+    "reviews": 12345,
+    "stock": 63,
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/homepod-2nd-gen-og-202302?wid=750",
+    "description_ar": "مكبر Apple HomePod الجيل 2 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "Spatial Audio",
+      "S7 Chip",
+      "تحكم في المنزل",
+      "Siri",
+      "جودة صوت استثنائية"
+    ],
+    "tags": [
+      "منزل ذكي",
+      "مكبر"
+    ],
+    "badge": "مميز",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": true,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-754",
+    "name_ar": "ساعة ون بلس Watch 3",
+    "name_en": "OnePlus Watch 3",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "price": 329,
+    "original_price": 379,
+    "discount": 13,
+    "rating": 4.6,
+    "reviews": 2134,
+    "stock": 77,
+    "image": "https://oasis.opstatics.com/content/dam/one-plus/id/product-page/accessories/oneplus-watch-3/overview/kv-pic.jpg",
+    "description_ar": "ساعة ون بلس Watch 3 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "Wear OS 4",
+      "بطارية 100 ساعة",
+      "شحن 80% بـ 30 دقيقة",
+      "GPS Dual-band",
+      "مقاومة 5ATM"
+    ],
+    "tags": [
+      "ساعات ذكية",
+      "ساعة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-755",
+    "name_ar": "نظارة Viture One XR",
+    "name_en": "Viture One XR",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "price": 439,
+    "original_price": 499,
+    "discount": 12,
+    "rating": 4.4,
+    "reviews": 765,
+    "stock": 72,
+    "image": "https://www.viture.com/cdn/shop/files/viture-one-xr-product-black.jpg",
+    "description_ar": "نظارة Viture One XR — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "شاشة 135\" افتراضية",
+      "Electrochromic",
+      "Cinema Mode",
+      "2K Resolution",
+      "77g"
+    ],
+    "tags": [
+      "نظارات ذكية",
+      "نظارة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-756",
+    "name_ar": "ساعة هواوي Watch GT 5 Pro",
+    "name_en": "Huawei Watch GT 5 Pro",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "price": 349,
+    "original_price": 399,
+    "discount": 13,
+    "rating": 4.7,
+    "reviews": 4567,
+    "stock": 92,
+    "image": "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/wearables/watch-gt5-pro/imgs/kv/watch-gt5pro-titanium.jpg",
+    "description_ar": "ساعة هواوي Watch GT 5 Pro — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "هيكل تيتانيوم",
+      "بطارية 14 يوم",
+      "تتبع صحي شامل",
+      "GPS مزدوج",
+      "خرائط داخلية"
+    ],
+    "tags": [
+      "ساعات ذكية",
+      "ساعة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-757",
+    "name_ar": "سماعات Jabra Evolve2 85",
+    "name_en": "Jabra Evolve2 85 ANC",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 449,
+    "original_price": 529,
+    "discount": 15,
+    "rating": 4.6,
+    "reviews": 3210,
+    "stock": 44,
+    "image": "https://www.jabra.com/~/media/MainImages/Evolve2-85/jabra-evolve2-85-product-titanium.jpg",
+    "description_ar": "سماعات Jabra Evolve2 85 — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "ANC أفضل للعمل",
+      "Busylight مدمج",
+      "37h بطارية",
+      "UC Certified",
+      "8 ميكروفون"
+    ],
+    "tags": [
+      "إنتاجية",
+      "سماعات"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
   }
 ]
