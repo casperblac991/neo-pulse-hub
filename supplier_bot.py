@@ -243,11 +243,11 @@ async def cmd_fix_images(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     """يصلح صور المنتجات الحالية"""
     if ADMIN_ID and update.effective_user.id != ADMIN_ID:
         return await update.message.reply_text("🚫 هذا البوت للمدير فقط.")
-    await update.message.reply_text("🖼️ جاري تصليح الصور...")
+    await update.message.reply_text("🖼️ جاري البحث عن صور حقيقية من Google Images لكل المنتجات...\n\nيأخذ بضع دقائق ☕")
     try:
         import smart_supplier_bot as ssb
-        ssb.fix_images()
-        await update.message.reply_text("✅ تم تصليح الصور!")
+        ssb.fix_all_images()
+        await update.message.reply_text("✅ تم تصليح كل الصور بصور حقيقية من Google Images!")
     except Exception as e:
         await update.message.reply_text(f"❌ خطأ: {e}")
 
