@@ -11,7 +11,7 @@
     "rating": 4.9,
     "reviews": 12430,
     "stock": 41,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Apple+Watch+Series+9",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "ساعة أبل Watch Series 9 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "شاشة Retina دائمة التشغيل",
@@ -43,7 +43,7 @@
     "rating": 4.8,
     "reviews": 8765,
     "stock": 88,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Samsung+Galaxy+Watch",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "ساعة سامسونج Galaxy Watch 7 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "معالج Exynos W1000",
@@ -75,7 +75,7 @@
     "rating": 4.8,
     "reviews": 5432,
     "stock": 35,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Garmin+Fenix+7X+Sola",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "ساعة غارمن Fenix 7X Solar — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "شحن شمسي",
@@ -107,7 +107,7 @@
     "rating": 4.9,
     "reviews": 4321,
     "stock": 28,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Apple+Watch+Ultra+2",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "ساعة أبل Watch Ultra 2 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "هيكل تيتانيوم",
@@ -139,7 +139,7 @@
     "rating": 4.7,
     "reviews": 3210,
     "stock": 23,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Google+Pixel+Watch+3",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "ساعة غوغل Pixel Watch 3 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Wear OS 4",
@@ -171,7 +171,7 @@
     "rating": 4.5,
     "reviews": 6543,
     "stock": 99,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Xiaomi+Watch+S3",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-006.png",
     "description_ar": "ساعة شاومي Watch S3 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "شاشة AMOLED 1.43\"",
@@ -203,7 +203,7 @@
     "rating": 4.6,
     "reviews": 2876,
     "stock": 28,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Amazfit+Balance",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "ساعة أمازفيت Balance — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Zepp OS 3.0",
@@ -235,7 +235,7 @@
     "rating": 4.8,
     "reviews": 1987,
     "stock": 73,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Samsung+Galaxy+Watch",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "ساعة سامسونج Galaxy Watch Ultra — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "هيكل تيتانيوم",
@@ -267,7 +267,7 @@
     "rating": 4.5,
     "reviews": 9876,
     "stock": 43,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Fitbit+Versa+4",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-009.png",
     "description_ar": "ساعة فيتبيت Versa 4 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Alexa مدمج",
@@ -299,7 +299,7 @@
     "rating": 4.7,
     "reviews": 3456,
     "stock": 80,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Garmin+Venu+3S",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "ساعة غارمن Venu 3S — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "شاشة AMOLED",
@@ -331,7 +331,7 @@
     "rating": 4.6,
     "reviews": 2134,
     "stock": 52,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=OnePlus+Watch+3",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "ساعة ون بلس Watch 3 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Wear OS 4",
@@ -363,7 +363,7 @@
     "rating": 4.7,
     "reviews": 4567,
     "stock": 65,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Huawei+Watch+GT+5+Pr",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "ساعة هواوي Watch GT 5 Pro — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "هيكل تيتانيوم",
@@ -395,7 +395,7 @@
     "rating": 4.6,
     "reviews": 1876,
     "stock": 70,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Withings+ScanWatch+2",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "ساعة ويذينغز ScanWatch 2 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "تخطيط قلب ECG",
@@ -427,7 +427,7 @@
     "rating": 4.6,
     "reviews": 1234,
     "stock": 51,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=TicWatch+Pro+5+Endur",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-014.png",
     "description_ar": "ساعة تيكووتش Pro 5 Enduro — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Snapdragon W5+",
@@ -459,7 +459,7 @@
     "rating": 4.8,
     "reviews": 2345,
     "stock": 75,
-    "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Coros+Apex+2+Pro",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "ساعة كوروس Apex 2 Pro — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "GPS متعدد",
@@ -491,7 +491,7 @@
     "rating": 4.8,
     "reviews": 4532,
     "stock": 22,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Apple+Vision+Pro",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "نظارة Apple Vision Pro — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "شاشة micro-OLED 4K",
@@ -523,7 +523,7 @@
     "rating": 4.8,
     "reviews": 15432,
     "stock": 43,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Meta+Quest+3+512GB",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "نظارة Meta Quest 3 — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Snapdragon XR2 Gen 2",
@@ -555,7 +555,7 @@
     "rating": 4.5,
     "reviews": 8765,
     "stock": 67,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Ray-Ban+Meta+Wayfare",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "نظارة Ray-Ban Meta الذكية — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "كاميرا 12MP",
@@ -587,7 +587,7 @@
     "rating": 4.7,
     "reviews": 6543,
     "stock": 62,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Meta+Quest+3S+128GB",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "نظارة Meta Quest 3S — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Snapdragon XR2 Gen 2",
@@ -619,7 +619,7 @@
     "rating": 4.6,
     "reviews": 3210,
     "stock": 29,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=XREAL+Air+2+Pro",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "نظارة XREAL Air 2 Pro — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "شاشة 330\" افتراضية",
@@ -651,7 +651,7 @@
     "rating": 4.6,
     "reviews": 1876,
     "stock": 82,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=HTC+Vive+XR+Elite",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "نظارة HTC Vive XR Elite — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Snapdragon XR2 Gen 1",
@@ -683,7 +683,7 @@
     "rating": 4.5,
     "reviews": 2345,
     "stock": 93,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Pico+4+Ultra+VR",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-022.png",
     "description_ar": "نظارة Pico 4 Ultra — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Snapdragon XR2 Gen 2",
@@ -715,7 +715,7 @@
     "rating": 4.3,
     "reviews": 1234,
     "stock": 21,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Snap+Spectacles+5th+",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-023.png",
     "description_ar": "نظارة Snap Spectacles الجيل 5 — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "AR مدمج",
@@ -747,7 +747,7 @@
     "rating": 4.5,
     "reviews": 1543,
     "stock": 50,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=XREAL+Beam+Pro",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "نظارة XREAL Beam Pro — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Spatial Computing",
@@ -779,7 +779,7 @@
     "rating": 4.3,
     "reviews": 543,
     "stock": 28,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Vuzix+Z100+AR+Glasse",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "نظارة Vuzix Z100 الذكية — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Waveguide AR",
@@ -811,7 +811,7 @@
     "rating": 4.4,
     "reviews": 876,
     "stock": 67,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=TCL+NXTWEAR+S2+Plus",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "نظارة TCL NXTWEAR S2 Plus — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "105\" افتراضية",
@@ -843,7 +843,7 @@
     "rating": 4.2,
     "reviews": 654,
     "stock": 30,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Inmo+Air+2+Smart+Gla",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "نظارة Inmo Air 2 الذكية — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "ChatGPT مدمج",
@@ -875,7 +875,7 @@
     "rating": 4.5,
     "reviews": 987,
     "stock": 71,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Rokid+Max+2+AR",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "نظارة Rokid Max 2 — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Micro-OLED 1080p",
@@ -907,7 +907,7 @@
     "rating": 4.4,
     "reviews": 765,
     "stock": 40,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Viture+One+XR+Glasse",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-029.png",
     "description_ar": "نظارة Viture One XR — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "135\" افتراضية",
@@ -939,7 +939,7 @@
     "rating": 4.5,
     "reviews": 3210,
     "stock": 97,
-    "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Meta+Ray-Ban+Skyler+",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "نظارة Meta Ray-Ban Skyler — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "كاميرا 12MP Ultra Wide",
@@ -971,7 +971,7 @@
     "rating": 4.8,
     "reviews": 18765,
     "stock": 100,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Oura+Ring+Gen+4",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "خاتم Oura Ring الجيل 4 — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "تتبع نوم دقيق",
@@ -1003,7 +1003,7 @@
     "rating": 4.6,
     "reviews": 8765,
     "stock": 59,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=WHOOP+4.0+Fitness+Ba",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "حزام WHOOP 4.0 — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Strain Tracking",
@@ -1035,7 +1035,7 @@
     "rating": 4.7,
     "reviews": 5432,
     "stock": 91,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Ultrahuman+Ring+AIR",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "خاتم Ultrahuman Ring AIR — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "بدون اشتراك",
@@ -1067,7 +1067,7 @@
     "rating": 4.6,
     "reviews": 12345,
     "stock": 62,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Fitbit+Charge+6+Trac",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-034.png",
     "description_ar": "سوار Fitbit Charge 6 — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "ECG",
@@ -1099,7 +1099,7 @@
     "rating": 4.5,
     "reviews": 6543,
     "stock": 60,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Garmin+Vivosmart+5",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "سوار Garmin Vivosmart 5 — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "OLED",
@@ -1131,7 +1131,7 @@
     "rating": 4.7,
     "reviews": 2345,
     "stock": 72,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Withings+ScanWatch+N",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "ساعة Withings ScanWatch Nova — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "ECG",
@@ -1163,7 +1163,7 @@
     "rating": 4.5,
     "reviews": 1876,
     "stock": 90,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Amazfit+Helio+Ring",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "خاتم أمازفيت Helio Ring — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "تيتانيوم",
@@ -1195,7 +1195,7 @@
     "rating": 4.5,
     "reviews": 3210,
     "stock": 29,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=RingConn+Gen+2+Air+R",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "خاتم RingConn Gen 2 Air — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "10 أيام",
@@ -1227,7 +1227,7 @@
     "rating": 4.6,
     "reviews": 15432,
     "stock": 39,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Xiaomi+Smart+Band+9+",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-039.png",
     "description_ar": "سوار شاومي Smart Band 9 Pro — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "AMOLED 1.74\"",
@@ -1259,7 +1259,7 @@
     "rating": 4.5,
     "reviews": 2876,
     "stock": 55,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Muse+2+Brain+Sensing",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "عصابة Muse 2 للتأمل — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "EEG 7 مستشعرات",
@@ -1291,7 +1291,7 @@
     "rating": 4.6,
     "reviews": 4321,
     "stock": 53,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Samsung+Galaxy+Ring",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "خاتم سامسونج Galaxy Ring — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "تيتانيوم خفيف",
@@ -1323,7 +1323,7 @@
     "rating": 4.7,
     "reviews": 5678,
     "stock": 61,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Polar+Verity+Sense+M",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "جهاز Polar Verity Sense — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "HR دقيق",
@@ -1355,7 +1355,7 @@
     "rating": 4.4,
     "reviews": 1234,
     "stock": 20,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Biostrap+EVO+Health+",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "سوار Biostrap EVO الصحي — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "HRV دقيق",
@@ -1387,7 +1387,7 @@
     "rating": 4.5,
     "reviews": 3456,
     "stock": 84,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Garmin+Index+BPM+Mon",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "جهاز Garmin Index لضغط الدم — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "ضغط الدم",
@@ -1419,7 +1419,7 @@
     "rating": 4.7,
     "reviews": 876,
     "stock": 51,
-    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Withings+Body+Scan+S",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "ميزان Withings Body Scan — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "تركيب جسم",
@@ -1451,7 +1451,7 @@
     "rating": 4.7,
     "reviews": 23456,
     "stock": 36,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Amazon+Echo+Show+10+",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "مكبر Amazon Echo Show 10 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "شاشة HD 10\"",
@@ -1483,7 +1483,7 @@
     "rating": 4.7,
     "reviews": 12345,
     "stock": 83,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Apple+HomePod+2nd+Ge",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "مكبر Apple HomePod الجيل 2 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Spatial Audio",
@@ -1515,7 +1515,7 @@
     "rating": 4.6,
     "reviews": 15432,
     "stock": 65,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Google+Nest+Hub+Max+",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "شاشة Google Nest Hub Max — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "شاشة 10\"",
@@ -1547,7 +1547,7 @@
     "rating": 4.7,
     "reviews": 34567,
     "stock": 42,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Philips+Hue+Color+St",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "طقم إضاءة Philips Hue الذكية — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "16M لون",
@@ -1579,7 +1579,7 @@
     "rating": 4.5,
     "reviews": 43210,
     "stock": 60,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Ring+Video+Doorbell+",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "جرس Ring Video Doorbell Pro 2 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "1536p HD+",
@@ -1611,7 +1611,7 @@
     "rating": 4.7,
     "reviews": 28765,
     "stock": 86,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Google+Nest+Learning",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "منظم حرارة Nest الجيل 4 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "تعلم جدولك",
@@ -1643,7 +1643,7 @@
     "rating": 4.7,
     "reviews": 98765,
     "stock": 46,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Amazon+Echo+Dot+5th+",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "مكبر Amazon Echo Dot الجيل 5 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Alexa",
@@ -1675,7 +1675,7 @@
     "rating": 4.6,
     "reviews": 8765,
     "stock": 48,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Arlo+Pro+5S+Security",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "كاميرا Arlo Pro 5S أمان — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "2K + HDR",
@@ -1707,7 +1707,7 @@
     "rating": 4.5,
     "reviews": 4321,
     "stock": 72,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Yale+Assure+Lock+2+P",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "قفل ذكي Yale Assure Lock 2 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Matter + Z-Wave",
@@ -1739,7 +1739,7 @@
     "rating": 4.7,
     "reviews": 6543,
     "stock": 55,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=iRobot+Roomba+j9+Plu",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "مكنسة iRobot Roomba j9+ — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "تفريغ 60 يوم",
@@ -1771,7 +1771,7 @@
     "rating": 4.5,
     "reviews": 12345,
     "stock": 93,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Nanoleaf+Shapes+Hexa",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "إضاءة Nanoleaf Shapes سداسية — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "16M لون",
@@ -1803,7 +1803,7 @@
     "rating": 4.7,
     "reviews": 3456,
     "stock": 98,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Sonos+Era+300+Speake",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "مكبر Sonos Era 300 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Spatial Audio",
@@ -1835,7 +1835,7 @@
     "rating": 4.7,
     "reviews": 21345,
     "stock": 41,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Ecobee+Smart+Thermos",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "منظم Ecobee Smart Premium — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Alexa مدمج",
@@ -1867,7 +1867,7 @@
     "rating": 4.5,
     "reviews": 5432,
     "stock": 80,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Samsung+SmartThings+",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "مركز Samsung SmartThings — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Zigbee + Z-Wave + WiFi",
@@ -1899,7 +1899,7 @@
     "rating": 4.6,
     "reviews": 4321,
     "stock": 54,
-    "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Eufy+Security+HomeBa",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "نظام Eufy Security HomeBase 3 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "16GB محلي",
@@ -1931,7 +1931,7 @@
     "rating": 4.9,
     "reviews": 54321,
     "stock": 81,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Apple+AirPods+Pro+2+",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-061.jpg",
     "description_ar": "سماعات AirPods Pro الجيل 2 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "ANC H2 Chip",
@@ -1963,7 +1963,7 @@
     "rating": 4.8,
     "reviews": 23456,
     "stock": 24,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Sony+WF-1000XM5+Earb",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "سماعات Sony WF-1000XM5 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "أفضل ANC",
@@ -1995,7 +1995,7 @@
     "rating": 4.8,
     "reviews": 15432,
     "stock": 71,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Bose+QuietComfort+Ul",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "سماعات Bose QuietComfort Ultra — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Immersive Audio",
@@ -2027,7 +2027,7 @@
     "rating": 4.7,
     "reviews": 12345,
     "stock": 33,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Samsung+Galaxy+Buds+",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "سماعات Samsung Galaxy Buds 3 Pro — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "ANC AI",
@@ -2059,7 +2059,7 @@
     "rating": 4.8,
     "reviews": 32145,
     "stock": 75,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Apple+AirPods+4+with",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "سماعات Apple AirPods 4 ANC — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "H2 ANC",
@@ -2091,7 +2091,7 @@
     "rating": 4.8,
     "reviews": 45678,
     "stock": 56,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Sony+WH-1000XM5+Head",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "سماعات Sony WH-1000XM5 فوق الأذن — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "ANC AI",
@@ -2123,7 +2123,7 @@
     "rating": 4.6,
     "reviews": 8765,
     "stock": 63,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Nothing+Ear+3+Wirele",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "سماعات Nothing Ear 3 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "تصميم شفاف",
@@ -2155,7 +2155,7 @@
     "rating": 4.5,
     "reviews": 4321,
     "stock": 82,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Jabra+Evolve2+Buds+P",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "سماعات Jabra Evolve2 Buds — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "للمهنيين",
@@ -2187,7 +2187,7 @@
     "rating": 4.6,
     "reviews": 6543,
     "stock": 41,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Beats+Studio+Buds+Pl",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "سماعات Beats Studio Buds+ — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "ANC 36dB",
@@ -2219,7 +2219,7 @@
     "rating": 4.7,
     "reviews": 3456,
     "stock": 80,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Sennheiser+Momentum+",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "سماعات Sennheiser MTW4 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Hi-Fi صوت",
@@ -2251,7 +2251,7 @@
     "rating": 4.7,
     "reviews": 8765,
     "stock": 43,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Google+Pixel+Buds+Pr",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "سماعات Google Pixel Buds Pro 2 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Tensor A1",
@@ -2283,7 +2283,7 @@
     "rating": 4.6,
     "reviews": 12345,
     "stock": 36,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Anker+Soundcore+Libe",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "سماعات Anker Soundcore Liberty 4 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "ANC 50dB",
@@ -2315,7 +2315,7 @@
     "rating": 4.6,
     "reviews": 5432,
     "stock": 87,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=JBL+Tour+Pro+3+Earbu",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "سماعات JBL Tour Pro 3 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "شاشة لمس",
@@ -2347,7 +2347,7 @@
     "rating": 4.6,
     "reviews": 2345,
     "stock": 75,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Shure+Aonic+Free+2",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "سماعات Shure Aonic Free 2 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "جودة استوديو",
@@ -2379,7 +2379,7 @@
     "rating": 4.7,
     "reviews": 1876,
     "stock": 58,
-    "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Technics+EAH-AZ100+E",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "سماعات Technics EAH-AZ100 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "ANC AI",
@@ -2411,7 +2411,7 @@
     "rating": 4.9,
     "reviews": 23456,
     "stock": 88,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Apple+iPad+Pro+M4+13",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "جهاز iPad Pro M4 13 بوصة — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "M4 Chip",
@@ -2443,7 +2443,7 @@
     "rating": 4.8,
     "reviews": 12345,
     "stock": 74,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Samsung+Galaxy+Tab+S",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "تابلت Samsung Galaxy Tab S10 Ultra — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Snapdragon 8 Gen 3",
@@ -2475,7 +2475,7 @@
     "rating": 4.9,
     "reviews": 45678,
     "stock": 73,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Logitech+MX+Master+3",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-078.png",
     "description_ar": "ماوس Logitech MX Master 3S — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "8000 DPI",
@@ -2507,7 +2507,7 @@
     "rating": 4.8,
     "reviews": 23456,
     "stock": 69,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Logitech+MX+Keys+S+P",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "لوحة Logitech MX Keys S Plus — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Smart Backlight",
@@ -2539,7 +2539,7 @@
     "rating": 4.8,
     "reviews": 8765,
     "stock": 85,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Keychron+Q6+Max+Wire",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "لوحة Keychron Q6 Max — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "مفاتيح ميكانيكية",
@@ -2571,7 +2571,7 @@
     "rating": 4.7,
     "reviews": 6543,
     "stock": 62,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Elgato+Stream+Deck+N",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "جهاز Elgato Stream Deck Neo — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "8 مفاتيح LCD",
@@ -2603,7 +2603,7 @@
     "rating": 4.8,
     "reviews": 21345,
     "stock": 52,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Apple+Pencil+Pro+Sty",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "قلم Apple Pencil Pro — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "Squeeze + Double Tap",
@@ -2635,7 +2635,7 @@
     "rating": 4.8,
     "reviews": 34567,
     "stock": 34,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Anker+737+GaNPrime+1",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "شاحن Anker 737 GaNPrime 120W — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "120W",
@@ -2667,7 +2667,7 @@
     "rating": 4.7,
     "reviews": 3456,
     "stock": 20,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Samsung+Odyssey+OLED",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "شاشة Samsung Odyssey OLED G9 — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "OLED 49\" QHD",
@@ -2699,7 +2699,7 @@
     "rating": 4.8,
     "reviews": 8765,
     "stock": 62,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Wacom+Intuos+Pro+Lar",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "لوح رسم Wacom Intuos Pro L — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "8192 ضغط",
@@ -2731,7 +2731,7 @@
     "rating": 4.8,
     "reviews": 12345,
     "stock": 72,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Steam+Deck+OLED+1TB+",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "جهاز Steam Deck OLED 1 تيرابايت — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "OLED HDR 90Hz",
@@ -2763,7 +2763,7 @@
     "rating": 4.7,
     "reviews": 23456,
     "stock": 31,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Anker+MagGo+3-in-1+W",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "محطة شحن Anker MagGo اللاسلكي — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "MagSafe 15W",
@@ -2795,7 +2795,7 @@
     "rating": 4.7,
     "reviews": 4321,
     "stock": 47,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=LG+UltraWide+34+5K2K",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "شاشة LG UltraWide 34 بوصة — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "5K2K 5120x2160",
@@ -2827,7 +2827,7 @@
     "rating": 4.6,
     "reviews": 3210,
     "stock": 86,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Jabra+Evolve2+85+ANC",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "سماعات Jabra Evolve2 85 — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "ANC للعمل",
@@ -2859,7 +2859,7 @@
     "rating": 4.7,
     "reviews": 5432,
     "stock": 83,
-    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Twelve+South+HiRise+",
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
     "description_ar": "حامل Twelve South HiRise 3 — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
       "MagSafe 15W",
