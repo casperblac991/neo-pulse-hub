@@ -2878,5 +2878,165 @@
     "featured": false,
     "added_by": "fill_bot",
     "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-091",
+    "name_ar": "خاتم RingConn Gen 2 Air",
+    "name_en": "RingConn Gen 2 Air Ring",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 199,
+    "original_price": 249,
+    "discount": 20,
+    "rating": 4.5,
+    "reviews": 3210,
+    "stock": 57,
+    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=RingConn+Gen+2+Air+R",
+    "description_ar": "خاتم RingConn Gen 2 Air — من أفضل منتجات صحة ذكية.",
+    "features_ar": [
+      "10 أيام",
+      "بدون اشتراك",
+      "نوم",
+      "SpO2",
+      "متعدد"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "خاتم"
+    ],
+    "badge": "قيمة مثالية",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-092",
+    "name_ar": "جهاز iPad Pro M4 13 بوصة",
+    "name_en": "Apple iPad Pro M4 13 inch",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 1299,
+    "original_price": 1499,
+    "discount": 13,
+    "rating": 4.9,
+    "reviews": 23456,
+    "stock": 92,
+    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Apple+iPad+Pro+M4+13",
+    "description_ar": "جهاز iPad Pro M4 13 بوصة — من أفضل منتجات إنتاجية.",
+    "features_ar": [
+      "M4 Chip",
+      "OLED Tandem",
+      "Apple Intelligence",
+      "120Hz",
+      "USB4"
+    ],
+    "tags": [
+      "إنتاجية",
+      "جهاز"
+    ],
+    "badge": "الأكثر مبيعاً",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": true,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-093",
+    "name_ar": "ماوس Logitech MX Master 3S",
+    "name_en": "Logitech MX Master 3S Mouse",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 99,
+    "original_price": 119,
+    "discount": 17,
+    "rating": 4.9,
+    "reviews": 45678,
+    "stock": 47,
+    "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Logitech+MX+Master+3",
+    "description_ar": "ماوس Logitech MX Master 3S — من أفضل منتجات إنتاجية.",
+    "features_ar": [
+      "8000 DPI",
+      "MagSpeed عجلة",
+      "7 أزرار",
+      "70 يوم",
+      "Bolt"
+    ],
+    "tags": [
+      "إنتاجية",
+      "ماوس"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-094",
+    "name_ar": "عصابة Muse 2 للتأمل",
+    "name_en": "Muse 2 Brain Sensing Headband",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 249,
+    "original_price": 299,
+    "discount": 17,
+    "rating": 4.5,
+    "reviews": 2876,
+    "stock": 42,
+    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Muse+2+Brain+Sensing",
+    "description_ar": "عصابة Muse 2 للتأمل — من أفضل منتجات صحة ذكية.",
+    "features_ar": [
+      "EEG 7 مستشعرات",
+      "تأمل موجَّه",
+      "تتبع تنفس",
+      "نبضات القلب",
+      "تطبيق"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "عصابة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-095",
+    "name_ar": "جهاز Garmin Index لضغط الدم",
+    "name_en": "Garmin Index BPM Monitor",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 149,
+    "original_price": 179,
+    "discount": 17,
+    "rating": 4.5,
+    "reviews": 3456,
+    "stock": 100,
+    "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Garmin+Index+BPM+Mon",
+    "description_ar": "جهاز Garmin Index لضغط الدم — من أفضل منتجات صحة ذكية.",
+    "features_ar": [
+      "ضغط الدم",
+      "Bluetooth 5.0",
+      "Garmin Connect",
+      "دقيق",
+      "40 قياس"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "جهاز"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
   }
 ]
