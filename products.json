@@ -4302,5 +4302,165 @@
     "featured": false,
     "added_by": "auto_bot",
     "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-728",
+    "name_ar": "سماعات Google Pixel Buds Pro 2",
+    "name_en": "Google Pixel Buds Pro 2",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 229,
+    "original_price": 259,
+    "discount": 12,
+    "rating": 4.7,
+    "reviews": 8765,
+    "stock": 42,
+    "image": "https://lh3.googleusercontent.com/pixel-buds-pro-2-matte-hazel-750.jpg",
+    "description_ar": "سماعات Google Pixel Buds Pro 2 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "Tensor A1 Chip",
+      "ANC محسَّن",
+      "11h + 33h",
+      "ترجمة فورية",
+      "Gemini مدمج"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-729",
+    "name_ar": "سماعات Sony WH-1000XM5 فوق الأذن",
+    "name_en": "Sony WH-1000XM5 Over-Ear",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 349,
+    "original_price": 399,
+    "discount": 13,
+    "rating": 4.8,
+    "reviews": 45678,
+    "stock": 29,
+    "image": "https://www.sony.com/image/b2f0e91f56e6a25291f48ccfada82b5c?fmt=pjpeg&wid=750",
+    "description_ar": "سماعات Sony WH-1000XM5 فوق الأذن — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "ANC صناعي AI",
+      "30 ساعة بطارية",
+      "Multi-point",
+      "LDAC HiRes",
+      "فولد مدمج"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-730",
+    "name_ar": "سماعات Shure Aonic Free 2",
+    "name_en": "Shure Aonic Free 2",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.6,
+    "reviews": 2345,
+    "stock": 97,
+    "image": "https://pubs.shure.com/content/dam/shure/products/earphones/aonic-free-2-product.jpg",
+    "description_ar": "سماعات Shure Aonic Free 2 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "جودة استوديو",
+      "ANC متقدم",
+      "7h + 28h",
+      "USB-C",
+      "التحكم اللمسي"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-731",
+    "name_ar": "ساعة أمازفيت Balance",
+    "name_en": "Amazfit Balance",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "price": 229,
+    "original_price": 269,
+    "discount": 15,
+    "rating": 4.6,
+    "reviews": 2876,
+    "stock": 47,
+    "image": "https://de.amazfit.com/wp-content/uploads/2023/09/amazfit-balance-ivory.jpg",
+    "description_ar": "ساعة أمازفيت Balance — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "Zepp OS 3.0",
+      "14 أيام بطارية",
+      "تتبع صحي AI",
+      "شاشة AMOLED",
+      "GPS L1+L5"
+    ],
+    "tags": [
+      "ساعات ذكية",
+      "ساعة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-732",
+    "name_ar": "محطة شحن Anker MagGo اللاسلكي",
+    "name_en": "Anker MagGo Wireless Charging Station",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 79,
+    "original_price": 99,
+    "discount": 20,
+    "rating": 4.7,
+    "reviews": 23456,
+    "stock": 97,
+    "image": "https://m.media-amazon.com/images/I/61PfEAnJPLL._AC_SL750_.jpg",
+    "description_ar": "محطة شحن Anker MagGo اللاسلكي — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "MagSafe 15W",
+      "3-in-1 Charging",
+      "iPhone+Watch+AirPods",
+      "20W adaptor",
+      "قابل للطي"
+    ],
+    "tags": [
+      "إنتاجية",
+      "محطة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
   }
 ]
