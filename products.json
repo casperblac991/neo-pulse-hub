@@ -10,7 +10,7 @@
     "discount": 11,
     "rating": 4.9,
     "reviews": 12430,
-    "stock": 76,
+    "stock": 41,
     "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Apple+Watch+Series+9",
     "description_ar": "ساعة أبل Watch Series 9 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -42,7 +42,7 @@
     "discount": 14,
     "rating": 4.8,
     "reviews": 8765,
-    "stock": 90,
+    "stock": 88,
     "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Samsung+Galaxy+Watch",
     "description_ar": "ساعة سامسونج Galaxy Watch 7 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -74,7 +74,7 @@
     "discount": 13,
     "rating": 4.8,
     "reviews": 5432,
-    "stock": 100,
+    "stock": 35,
     "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Garmin+Fenix+7X+Sola",
     "description_ar": "ساعة غارمن Fenix 7X Solar — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -106,7 +106,7 @@
     "discount": 11,
     "rating": 4.9,
     "reviews": 4321,
-    "stock": 21,
+    "stock": 28,
     "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Apple+Watch+Ultra+2",
     "description_ar": "ساعة أبل Watch Ultra 2 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -138,7 +138,7 @@
     "discount": 13,
     "rating": 4.7,
     "reviews": 3210,
-    "stock": 33,
+    "stock": 23,
     "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Google+Pixel+Watch+3",
     "description_ar": "ساعة غوغل Pixel Watch 3 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -170,7 +170,7 @@
     "discount": 18,
     "rating": 4.5,
     "reviews": 6543,
-    "stock": 34,
+    "stock": 99,
     "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Xiaomi+Watch+S3",
     "description_ar": "ساعة شاومي Watch S3 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -202,7 +202,7 @@
     "discount": 15,
     "rating": 4.6,
     "reviews": 2876,
-    "stock": 73,
+    "stock": 28,
     "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Amazfit+Balance",
     "description_ar": "ساعة أمازفيت Balance — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -234,7 +234,7 @@
     "discount": 13,
     "rating": 4.8,
     "reviews": 1987,
-    "stock": 20,
+    "stock": 73,
     "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Samsung+Galaxy+Watch",
     "description_ar": "ساعة سامسونج Galaxy Watch Ultra — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -266,7 +266,7 @@
     "discount": 25,
     "rating": 4.5,
     "reviews": 9876,
-    "stock": 76,
+    "stock": 43,
     "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Fitbit+Versa+4",
     "description_ar": "ساعة فيتبيت Versa 4 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -298,7 +298,7 @@
     "discount": 10,
     "rating": 4.7,
     "reviews": 3456,
-    "stock": 78,
+    "stock": 80,
     "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Garmin+Venu+3S",
     "description_ar": "ساعة غارمن Venu 3S — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -330,7 +330,7 @@
     "discount": 13,
     "rating": 4.6,
     "reviews": 2134,
-    "stock": 97,
+    "stock": 52,
     "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=OnePlus+Watch+3",
     "description_ar": "ساعة ون بلس Watch 3 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -362,7 +362,7 @@
     "discount": 13,
     "rating": 4.7,
     "reviews": 4567,
-    "stock": 96,
+    "stock": 65,
     "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Huawei+Watch+GT+5+Pr",
     "description_ar": "ساعة هواوي Watch GT 5 Pro — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -394,7 +394,7 @@
     "discount": 14,
     "rating": 4.6,
     "reviews": 1876,
-    "stock": 58,
+    "stock": 70,
     "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Withings+ScanWatch+2",
     "description_ar": "ساعة ويذينغز ScanWatch 2 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -426,7 +426,7 @@
     "discount": 11,
     "rating": 4.6,
     "reviews": 1234,
-    "stock": 35,
+    "stock": 51,
     "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=TicWatch+Pro+5+Endur",
     "description_ar": "ساعة تيكووتش Pro 5 Enduro — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -458,7 +458,7 @@
     "discount": 17,
     "rating": 4.8,
     "reviews": 2345,
-    "stock": 28,
+    "stock": 75,
     "image": "https://placehold.co/400x400/1e3a5f/ffffff?text=Coros+Apex+2+Pro",
     "description_ar": "ساعة كوروس Apex 2 Pro — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -490,7 +490,7 @@
     "discount": 13,
     "rating": 4.8,
     "reviews": 4532,
-    "stock": 34,
+    "stock": 22,
     "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Apple+Vision+Pro",
     "description_ar": "نظارة Apple Vision Pro — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -522,7 +522,7 @@
     "discount": 13,
     "rating": 4.8,
     "reviews": 15432,
-    "stock": 44,
+    "stock": 43,
     "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Meta+Quest+3+512GB",
     "description_ar": "نظارة Meta Quest 3 — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -554,7 +554,7 @@
     "discount": 13,
     "rating": 4.5,
     "reviews": 8765,
-    "stock": 46,
+    "stock": 67,
     "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Ray-Ban+Meta+Wayfare",
     "description_ar": "نظارة Ray-Ban Meta الذكية — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -586,7 +586,7 @@
     "discount": 14,
     "rating": 4.7,
     "reviews": 6543,
-    "stock": 53,
+    "stock": 62,
     "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Meta+Quest+3S+128GB",
     "description_ar": "نظارة Meta Quest 3S — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -618,7 +618,7 @@
     "discount": 10,
     "rating": 4.6,
     "reviews": 3210,
-    "stock": 74,
+    "stock": 29,
     "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=XREAL+Air+2+Pro",
     "description_ar": "نظارة XREAL Air 2 Pro — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -650,7 +650,7 @@
     "discount": 17,
     "rating": 4.6,
     "reviews": 1876,
-    "stock": 40,
+    "stock": 82,
     "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=HTC+Vive+XR+Elite",
     "description_ar": "نظارة HTC Vive XR Elite — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -714,7 +714,7 @@
     "discount": 11,
     "rating": 4.3,
     "reviews": 1234,
-    "stock": 89,
+    "stock": 21,
     "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Snap+Spectacles+5th+",
     "description_ar": "نظارة Snap Spectacles الجيل 5 — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -746,7 +746,7 @@
     "discount": 14,
     "rating": 4.5,
     "reviews": 1543,
-    "stock": 53,
+    "stock": 50,
     "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=XREAL+Beam+Pro",
     "description_ar": "نظارة XREAL Beam Pro — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -778,7 +778,7 @@
     "discount": 13,
     "rating": 4.3,
     "reviews": 543,
-    "stock": 33,
+    "stock": 28,
     "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Vuzix+Z100+AR+Glasse",
     "description_ar": "نظارة Vuzix Z100 الذكية — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -810,7 +810,7 @@
     "discount": 12,
     "rating": 4.4,
     "reviews": 876,
-    "stock": 83,
+    "stock": 67,
     "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=TCL+NXTWEAR+S2+Plus",
     "description_ar": "نظارة TCL NXTWEAR S2 Plus — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -842,7 +842,7 @@
     "discount": 11,
     "rating": 4.2,
     "reviews": 654,
-    "stock": 95,
+    "stock": 30,
     "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Inmo+Air+2+Smart+Gla",
     "description_ar": "نظارة Inmo Air 2 الذكية — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -874,7 +874,7 @@
     "discount": 13,
     "rating": 4.5,
     "reviews": 987,
-    "stock": 60,
+    "stock": 71,
     "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Rokid+Max+2+AR",
     "description_ar": "نظارة Rokid Max 2 — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -906,7 +906,7 @@
     "discount": 12,
     "rating": 4.4,
     "reviews": 765,
-    "stock": 21,
+    "stock": 40,
     "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Viture+One+XR+Glasse",
     "description_ar": "نظارة Viture One XR — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -938,7 +938,7 @@
     "discount": 13,
     "rating": 4.5,
     "reviews": 3210,
-    "stock": 57,
+    "stock": 97,
     "image": "https://placehold.co/400x400/2d1b4e/ffffff?text=Meta+Ray-Ban+Skyler+",
     "description_ar": "نظارة Meta Ray-Ban Skyler — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -970,7 +970,7 @@
     "discount": 13,
     "rating": 4.8,
     "reviews": 18765,
-    "stock": 21,
+    "stock": 100,
     "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Oura+Ring+Gen+4",
     "description_ar": "خاتم Oura Ring الجيل 4 — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1002,7 +1002,7 @@
     "discount": 14,
     "rating": 4.6,
     "reviews": 8765,
-    "stock": 100,
+    "stock": 59,
     "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=WHOOP+4.0+Fitness+Ba",
     "description_ar": "حزام WHOOP 4.0 — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1034,7 +1034,7 @@
     "discount": 13,
     "rating": 4.7,
     "reviews": 5432,
-    "stock": 54,
+    "stock": 91,
     "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Ultrahuman+Ring+AIR",
     "description_ar": "خاتم Ultrahuman Ring AIR — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1066,7 +1066,7 @@
     "discount": 20,
     "rating": 4.6,
     "reviews": 12345,
-    "stock": 47,
+    "stock": 62,
     "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Fitbit+Charge+6+Trac",
     "description_ar": "سوار Fitbit Charge 6 — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1098,7 +1098,7 @@
     "discount": 17,
     "rating": 4.5,
     "reviews": 6543,
-    "stock": 23,
+    "stock": 60,
     "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Garmin+Vivosmart+5",
     "description_ar": "سوار Garmin Vivosmart 5 — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1130,7 +1130,7 @@
     "discount": 17,
     "rating": 4.7,
     "reviews": 2345,
-    "stock": 51,
+    "stock": 72,
     "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Withings+ScanWatch+N",
     "description_ar": "ساعة Withings ScanWatch Nova — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1162,7 +1162,7 @@
     "discount": 14,
     "rating": 4.5,
     "reviews": 1876,
-    "stock": 93,
+    "stock": 90,
     "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Amazfit+Helio+Ring",
     "description_ar": "خاتم أمازفيت Helio Ring — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1194,7 +1194,7 @@
     "discount": 20,
     "rating": 4.5,
     "reviews": 3210,
-    "stock": 79,
+    "stock": 29,
     "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=RingConn+Gen+2+Air+R",
     "description_ar": "خاتم RingConn Gen 2 Air — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1226,7 +1226,7 @@
     "discount": 20,
     "rating": 4.6,
     "reviews": 15432,
-    "stock": 57,
+    "stock": 39,
     "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Xiaomi+Smart+Band+9+",
     "description_ar": "سوار شاومي Smart Band 9 Pro — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1258,7 +1258,7 @@
     "discount": 17,
     "rating": 4.5,
     "reviews": 2876,
-    "stock": 79,
+    "stock": 55,
     "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Muse+2+Brain+Sensing",
     "description_ar": "عصابة Muse 2 للتأمل — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1290,7 +1290,7 @@
     "discount": 11,
     "rating": 4.6,
     "reviews": 4321,
-    "stock": 66,
+    "stock": 53,
     "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Samsung+Galaxy+Ring",
     "description_ar": "خاتم سامسونج Galaxy Ring — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1322,7 +1322,7 @@
     "discount": 18,
     "rating": 4.7,
     "reviews": 5678,
-    "stock": 60,
+    "stock": 61,
     "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Polar+Verity+Sense+M",
     "description_ar": "جهاز Polar Verity Sense — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1354,7 +1354,7 @@
     "discount": 20,
     "rating": 4.4,
     "reviews": 1234,
-    "stock": 100,
+    "stock": 20,
     "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Biostrap+EVO+Health+",
     "description_ar": "سوار Biostrap EVO الصحي — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1386,7 +1386,7 @@
     "discount": 17,
     "rating": 4.5,
     "reviews": 3456,
-    "stock": 97,
+    "stock": 84,
     "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Garmin+Index+BPM+Mon",
     "description_ar": "جهاز Garmin Index لضغط الدم — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1418,7 +1418,7 @@
     "discount": 14,
     "rating": 4.7,
     "reviews": 876,
-    "stock": 99,
+    "stock": 51,
     "image": "https://placehold.co/400x400/0f3d2e/ffffff?text=Withings+Body+Scan+S",
     "description_ar": "ميزان Withings Body Scan — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1450,7 +1450,7 @@
     "discount": 17,
     "rating": 4.7,
     "reviews": 23456,
-    "stock": 45,
+    "stock": 36,
     "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Amazon+Echo+Show+10+",
     "description_ar": "مكبر Amazon Echo Show 10 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1482,7 +1482,7 @@
     "discount": 14,
     "rating": 4.7,
     "reviews": 12345,
-    "stock": 48,
+    "stock": 83,
     "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Apple+HomePod+2nd+Ge",
     "description_ar": "مكبر Apple HomePod الجيل 2 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1514,7 +1514,7 @@
     "discount": 18,
     "rating": 4.6,
     "reviews": 15432,
-    "stock": 66,
+    "stock": 65,
     "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Google+Nest+Hub+Max+",
     "description_ar": "شاشة Google Nest Hub Max — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1546,7 +1546,7 @@
     "discount": 20,
     "rating": 4.7,
     "reviews": 34567,
-    "stock": 51,
+    "stock": 42,
     "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Philips+Hue+Color+St",
     "description_ar": "طقم إضاءة Philips Hue الذكية — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1578,7 +1578,7 @@
     "discount": 17,
     "rating": 4.5,
     "reviews": 43210,
-    "stock": 33,
+    "stock": 60,
     "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Ring+Video+Doorbell+",
     "description_ar": "جرس Ring Video Doorbell Pro 2 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1610,7 +1610,7 @@
     "discount": 15,
     "rating": 4.7,
     "reviews": 28765,
-    "stock": 44,
+    "stock": 86,
     "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Google+Nest+Learning",
     "description_ar": "منظم حرارة Nest الجيل 4 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1642,7 +1642,7 @@
     "discount": 17,
     "rating": 4.7,
     "reviews": 98765,
-    "stock": 74,
+    "stock": 46,
     "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Amazon+Echo+Dot+5th+",
     "description_ar": "مكبر Amazon Echo Dot الجيل 5 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1674,7 +1674,7 @@
     "discount": 17,
     "rating": 4.6,
     "reviews": 8765,
-    "stock": 56,
+    "stock": 48,
     "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Arlo+Pro+5S+Security",
     "description_ar": "كاميرا Arlo Pro 5S أمان — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1706,7 +1706,7 @@
     "discount": 13,
     "rating": 4.5,
     "reviews": 4321,
-    "stock": 68,
+    "stock": 72,
     "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Yale+Assure+Lock+2+P",
     "description_ar": "قفل ذكي Yale Assure Lock 2 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1738,7 +1738,7 @@
     "discount": 20,
     "rating": 4.7,
     "reviews": 6543,
-    "stock": 84,
+    "stock": 55,
     "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=iRobot+Roomba+j9+Plu",
     "description_ar": "مكنسة iRobot Roomba j9+ — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1770,7 +1770,7 @@
     "discount": 20,
     "rating": 4.5,
     "reviews": 12345,
-    "stock": 57,
+    "stock": 93,
     "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Nanoleaf+Shapes+Hexa",
     "description_ar": "إضاءة Nanoleaf Shapes سداسية — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1802,7 +1802,7 @@
     "discount": 10,
     "rating": 4.7,
     "reviews": 3456,
-    "stock": 99,
+    "stock": 98,
     "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Sonos+Era+300+Speake",
     "description_ar": "مكبر Sonos Era 300 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1834,7 +1834,7 @@
     "discount": 17,
     "rating": 4.7,
     "reviews": 21345,
-    "stock": 33,
+    "stock": 41,
     "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Ecobee+Smart+Thermos",
     "description_ar": "منظم Ecobee Smart Premium — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1866,7 +1866,7 @@
     "discount": 13,
     "rating": 4.5,
     "reviews": 5432,
-    "stock": 34,
+    "stock": 80,
     "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Samsung+SmartThings+",
     "description_ar": "مركز Samsung SmartThings — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1898,7 +1898,7 @@
     "discount": 14,
     "rating": 4.6,
     "reviews": 4321,
-    "stock": 38,
+    "stock": 54,
     "image": "https://placehold.co/400x400/1a2f4e/ffffff?text=Eufy+Security+HomeBa",
     "description_ar": "نظام Eufy Security HomeBase 3 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1930,7 +1930,7 @@
     "discount": 11,
     "rating": 4.9,
     "reviews": 54321,
-    "stock": 63,
+    "stock": 81,
     "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Apple+AirPods+Pro+2+",
     "description_ar": "سماعات AirPods Pro الجيل 2 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1962,7 +1962,7 @@
     "discount": 15,
     "rating": 4.8,
     "reviews": 23456,
-    "stock": 98,
+    "stock": 24,
     "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Sony+WF-1000XM5+Earb",
     "description_ar": "سماعات Sony WF-1000XM5 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -1994,7 +1994,7 @@
     "discount": 14,
     "rating": 4.8,
     "reviews": 15432,
-    "stock": 24,
+    "stock": 71,
     "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Bose+QuietComfort+Ul",
     "description_ar": "سماعات Bose QuietComfort Ultra — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2026,7 +2026,7 @@
     "discount": 17,
     "rating": 4.7,
     "reviews": 12345,
-    "stock": 58,
+    "stock": 33,
     "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Samsung+Galaxy+Buds+",
     "description_ar": "سماعات Samsung Galaxy Buds 3 Pro — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2058,7 +2058,7 @@
     "discount": 10,
     "rating": 4.8,
     "reviews": 32145,
-    "stock": 47,
+    "stock": 75,
     "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Apple+AirPods+4+with",
     "description_ar": "سماعات Apple AirPods 4 ANC — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2090,7 +2090,7 @@
     "discount": 13,
     "rating": 4.8,
     "reviews": 45678,
-    "stock": 73,
+    "stock": 56,
     "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Sony+WH-1000XM5+Head",
     "description_ar": "سماعات Sony WH-1000XM5 فوق الأذن — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2122,7 +2122,7 @@
     "discount": 17,
     "rating": 4.6,
     "reviews": 8765,
-    "stock": 60,
+    "stock": 63,
     "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Nothing+Ear+3+Wirele",
     "description_ar": "سماعات Nothing Ear 3 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2154,7 +2154,7 @@
     "discount": 17,
     "rating": 4.5,
     "reviews": 4321,
-    "stock": 51,
+    "stock": 82,
     "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Jabra+Evolve2+Buds+P",
     "description_ar": "سماعات Jabra Evolve2 Buds — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2186,7 +2186,7 @@
     "discount": 15,
     "rating": 4.6,
     "reviews": 6543,
-    "stock": 64,
+    "stock": 41,
     "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Beats+Studio+Buds+Pl",
     "description_ar": "سماعات Beats Studio Buds+ — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2218,7 +2218,7 @@
     "discount": 15,
     "rating": 4.7,
     "reviews": 3456,
-    "stock": 93,
+    "stock": 80,
     "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Sennheiser+Momentum+",
     "description_ar": "سماعات Sennheiser MTW4 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2250,7 +2250,7 @@
     "discount": 12,
     "rating": 4.7,
     "reviews": 8765,
-    "stock": 77,
+    "stock": 43,
     "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Google+Pixel+Buds+Pr",
     "description_ar": "سماعات Google Pixel Buds Pro 2 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2282,7 +2282,7 @@
     "discount": 19,
     "rating": 4.6,
     "reviews": 12345,
-    "stock": 40,
+    "stock": 36,
     "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Anker+Soundcore+Libe",
     "description_ar": "سماعات Anker Soundcore Liberty 4 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2314,7 +2314,7 @@
     "discount": 17,
     "rating": 4.6,
     "reviews": 5432,
-    "stock": 62,
+    "stock": 87,
     "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=JBL+Tour+Pro+3+Earbu",
     "description_ar": "سماعات JBL Tour Pro 3 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2346,7 +2346,7 @@
     "discount": 14,
     "rating": 4.6,
     "reviews": 2345,
-    "stock": 29,
+    "stock": 75,
     "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Shure+Aonic+Free+2",
     "description_ar": "سماعات Shure Aonic Free 2 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2378,7 +2378,7 @@
     "discount": 14,
     "rating": 4.7,
     "reviews": 1876,
-    "stock": 67,
+    "stock": 58,
     "image": "https://placehold.co/400x400/3d1a1a/ffffff?text=Technics+EAH-AZ100+E",
     "description_ar": "سماعات Technics EAH-AZ100 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2410,7 +2410,7 @@
     "discount": 13,
     "rating": 4.9,
     "reviews": 23456,
-    "stock": 75,
+    "stock": 88,
     "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Apple+iPad+Pro+M4+13",
     "description_ar": "جهاز iPad Pro M4 13 بوصة — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2442,7 +2442,7 @@
     "discount": 13,
     "rating": 4.8,
     "reviews": 12345,
-    "stock": 25,
+    "stock": 74,
     "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Samsung+Galaxy+Tab+S",
     "description_ar": "تابلت Samsung Galaxy Tab S10 Ultra — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2474,7 +2474,7 @@
     "discount": 17,
     "rating": 4.9,
     "reviews": 45678,
-    "stock": 44,
+    "stock": 73,
     "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Logitech+MX+Master+3",
     "description_ar": "ماوس Logitech MX Master 3S — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2506,7 +2506,7 @@
     "discount": 17,
     "rating": 4.8,
     "reviews": 23456,
-    "stock": 27,
+    "stock": 69,
     "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Logitech+MX+Keys+S+P",
     "description_ar": "لوحة Logitech MX Keys S Plus — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2538,7 +2538,7 @@
     "discount": 14,
     "rating": 4.8,
     "reviews": 8765,
-    "stock": 61,
+    "stock": 85,
     "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Keychron+Q6+Max+Wire",
     "description_ar": "لوحة Keychron Q6 Max — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2570,7 +2570,7 @@
     "discount": 17,
     "rating": 4.7,
     "reviews": 6543,
-    "stock": 22,
+    "stock": 62,
     "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Elgato+Stream+Deck+N",
     "description_ar": "جهاز Elgato Stream Deck Neo — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2602,7 +2602,7 @@
     "discount": 13,
     "rating": 4.8,
     "reviews": 21345,
-    "stock": 43,
+    "stock": 52,
     "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Apple+Pencil+Pro+Sty",
     "description_ar": "قلم Apple Pencil Pro — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2634,7 +2634,7 @@
     "discount": 18,
     "rating": 4.8,
     "reviews": 34567,
-    "stock": 37,
+    "stock": 34,
     "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Anker+737+GaNPrime+1",
     "description_ar": "شاحن Anker 737 GaNPrime 120W — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2666,7 +2666,7 @@
     "discount": 13,
     "rating": 4.7,
     "reviews": 3456,
-    "stock": 34,
+    "stock": 20,
     "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Samsung+Odyssey+OLED",
     "description_ar": "شاشة Samsung Odyssey OLED G9 — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2698,7 +2698,7 @@
     "discount": 10,
     "rating": 4.8,
     "reviews": 8765,
-    "stock": 71,
+    "stock": 62,
     "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Wacom+Intuos+Pro+Lar",
     "description_ar": "لوح رسم Wacom Intuos Pro L — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2730,7 +2730,7 @@
     "discount": 13,
     "rating": 4.8,
     "reviews": 12345,
-    "stock": 100,
+    "stock": 72,
     "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Steam+Deck+OLED+1TB+",
     "description_ar": "جهاز Steam Deck OLED 1 تيرابايت — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2762,7 +2762,7 @@
     "discount": 20,
     "rating": 4.7,
     "reviews": 23456,
-    "stock": 94,
+    "stock": 31,
     "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Anker+MagGo+3-in-1+W",
     "description_ar": "محطة شحن Anker MagGo اللاسلكي — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2794,7 +2794,7 @@
     "discount": 17,
     "rating": 4.7,
     "reviews": 4321,
-    "stock": 80,
+    "stock": 47,
     "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=LG+UltraWide+34+5K2K",
     "description_ar": "شاشة LG UltraWide 34 بوصة — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2826,7 +2826,7 @@
     "discount": 15,
     "rating": 4.6,
     "reviews": 3210,
-    "stock": 78,
+    "stock": 86,
     "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Jabra+Evolve2+85+ANC",
     "description_ar": "سماعات Jabra Evolve2 85 — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
@@ -2858,7 +2858,7 @@
     "discount": 17,
     "rating": 4.7,
     "reviews": 5432,
-    "stock": 93,
+    "stock": 83,
     "image": "https://placehold.co/400x400/2d2a1a/ffffff?text=Twelve+South+HiRise+",
     "description_ar": "حامل Twelve South HiRise 3 — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
     "features_ar": [
