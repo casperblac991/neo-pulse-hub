@@ -35,19 +35,17 @@ def start_auto_populate_scheduler():
                         f"🤖 *تقرير يومي — Auto Bot*\n\n"
                         f"تمت إضافة {len(added)} منتجات:\n{names}\n\n"
                         f"🌐 https://neo-pulse-hub.it.com/products.html",
-                        token=os.environ.get("SUPPLIER_BOT_TOKEN","")
+                        token=os.environ.get("SUPPLIER_BOT_TOKEN", "")
                     )
             except Exception as e:
                 log.error(f"daily_auto_populate error: {e}")
 
         scheduler = BackgroundScheduler(timezone=pytz.UTC)
-        # كل يوم 03:00 UTC
         scheduler.add_job(
             daily_auto_populate,
             CronTrigger(hour=3, minute=0),
             id="daily_populate", replace_existing=True
         )
-        # تشغيل فوري عند بدء السيرفر
         scheduler.add_job(
             daily_auto_populate,
             "date",
@@ -85,6 +83,14 @@ def run_supplier():
     except Exception as e:
         log.error("Supplier error: " + str(e))
 
+def run_webhook():
+    try:
+        import webhook_server as ws
+        log.info("Starting Webhook/Flask Server...")
+        ws.main()
+    except Exception as e:
+        log.error("Webhook error: " + str(e))
+
 
 if __name__ == "__main__":
     log.info("🚀 NEO PULSE HUB Starting...")
@@ -96,11 +102,13 @@ if __name__ == "__main__":
         threading.Thread(target=run_admin,          name="Admin",    daemon=True),
         threading.Thread(target=run_recommendation, name="Reco",     daemon=True),
         threading.Thread(target=run_supplier,       name="Supplier", daemon=True),
+        threading.Thread(target=run_webhook,        name="Webhook",  daemon=True),
     ]
     for t in threads:
         t.start()
         log.info("Started: " + t.name)
 
+    # Customer bot في الخيط الرئيسي
     try:
         import customer_bot as cb
         log.info("Starting Customer Bot in main thread...")
