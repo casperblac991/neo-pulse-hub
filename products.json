@@ -3982,5 +3982,165 @@
     "featured": false,
     "added_by": "auto_bot",
     "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-718",
+    "name_ar": "سماعات Technics EAH-AZ100",
+    "name_en": "Technics EAH-AZ100",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.7,
+    "reviews": 1876,
+    "stock": 77,
+    "image": "https://www.technics.com/content/dam/files/product-images/EAH-AZ100-product.jpg",
+    "description_ar": "سماعات Technics EAH-AZ100 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "ANC AI",
+      "Jitter-less Wireless",
+      "10h + 25h",
+      "USB-C",
+      "IPX4"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-719",
+    "name_ar": "ساعة أبل Watch Series 9",
+    "name_en": "Apple Watch Series 9 45mm",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "price": 399,
+    "original_price": 449,
+    "discount": 11,
+    "rating": 4.9,
+    "reviews": 12430,
+    "stock": 31,
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQDY3ref_VW_34FR+watch-45-alum-starlight-nc-10b_VW_34FR_WF_CO?wid=750&hei=750&trim=1",
+    "description_ar": "ساعة أبل Watch Series 9 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "شاشة Retina دائمة التشغيل",
+      "GPS + Cellular",
+      "مقاوم للماء 50م",
+      "تتبع صحي شامل",
+      "بطارية 18 ساعة"
+    ],
+    "tags": [
+      "ساعات ذكية",
+      "ساعة"
+    ],
+    "badge": "الأكثر مبيعاً",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": true,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-720",
+    "name_ar": "نظارة XREAL Beam Pro",
+    "name_en": "XREAL Beam Pro",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "price": 599,
+    "original_price": 699,
+    "discount": 14,
+    "rating": 4.5,
+    "reviews": 1543,
+    "stock": 59,
+    "image": "https://www.xreal.com/wp-content/uploads/2024/05/XREAL-Beam-Pro-Black-750.jpg",
+    "description_ar": "نظارة XREAL Beam Pro — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "Spatial Computing",
+      "Dual cameras",
+      "Android 13",
+      "3D Capture",
+      "5000mAh بطارية"
+    ],
+    "tags": [
+      "نظارات ذكية",
+      "نظارة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-721",
+    "name_ar": "سماعات Nothing Ear 3",
+    "name_en": "Nothing Ear (3)",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 149,
+    "original_price": 179,
+    "discount": 17,
+    "rating": 4.6,
+    "reviews": 8765,
+    "stock": 86,
+    "image": "https://cdn.nothing.tech/content/uploads/2024/03/nothing-ear-3-product.jpg",
+    "description_ar": "سماعات Nothing Ear 3 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "تصميم شفاف أيقوني",
+      "ANC 45dB",
+      "بطارية 8.5h + 40h",
+      "IP55",
+      "ChatGPT مدمج"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-722",
+    "name_ar": "نظارة Meta Quest 3S",
+    "name_en": "Meta Quest 3S",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.7,
+    "reviews": 6543,
+    "stock": 60,
+    "image": "https://about.fb.com/wp-content/uploads/2024/09/Quest3S_White.jpg",
+    "description_ar": "نظارة Meta Quest 3S — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "Snapdragon XR2 Gen 2",
+      "Mixed Reality",
+      "128GB Storage",
+      "بطارية معززة",
+      "أخف بـ 50%"
+    ],
+    "tags": [
+      "نظارات ذكية",
+      "نظارة"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
   }
 ]
