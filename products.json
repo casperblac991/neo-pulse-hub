@@ -5262,5 +5262,165 @@
     "featured": false,
     "added_by": "auto_bot",
     "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-758",
+    "name_ar": "ساعة ويذينغز ScanWatch 2",
+    "name_en": "Withings ScanWatch 2",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.6,
+    "reviews": 1876,
+    "stock": 82,
+    "image": "https://www.withings.com/sites/default/files/styles/full_hd/public/2022-12/ScanWatch2-product.jpg",
+    "description_ar": "ساعة ويذينغز ScanWatch 2 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "تخطيط قلب ECG",
+      "أكسجين الدم SpO2",
+      "30 يوم بطارية",
+      "تصميم كلاسيكي",
+      "FDA Cleared"
+    ],
+    "tags": [
+      "ساعات ذكية",
+      "ساعة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-759",
+    "name_ar": "شاشة LG UltraWide 34 بوصة",
+    "name_en": "LG UltraWide 34\" 5K2K",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 999,
+    "original_price": 1199,
+    "discount": 17,
+    "rating": 4.7,
+    "reviews": 4321,
+    "stock": 59,
+    "image": "https://www.lg.com/us/images/monitors/md07500471/gallery/DZ-01.jpg",
+    "description_ar": "شاشة LG UltraWide 34 بوصة — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "5K2K 5120x2160",
+      "IPS",
+      "Thunderbolt 4",
+      "KVM مدمج",
+      "Ergo Stand"
+    ],
+    "tags": [
+      "إنتاجية",
+      "شاشة"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-760",
+    "name_ar": "سماعات Sennheiser Momentum TW4",
+    "name_en": "Sennheiser Momentum True Wireless 4",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 279,
+    "original_price": 329,
+    "discount": 15,
+    "rating": 4.7,
+    "reviews": 3456,
+    "stock": 64,
+    "image": "https://en-us.sennheiser.com/content/dam/sennheiser-cdn/store/product-images/momentum-tw4-graphite.png",
+    "description_ar": "سماعات Sennheiser Momentum TW4 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "صوت Hi-Fi استثنائي",
+      "ANC Adaptive",
+      "7h + 28h",
+      "aptX Lossless",
+      "IP54"
+    ],
+    "tags": [
+      "سماعات ذكية",
+      "سماعات"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-761",
+    "name_ar": "حزام WHOOP 4.0",
+    "name_en": "Whoop 4.0 Band",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 239,
+    "original_price": 279,
+    "discount": 14,
+    "rating": 4.6,
+    "reviews": 8765,
+    "stock": 92,
+    "image": "https://cdn.shopify.com/s/files/1/0310/9895/files/WHOOP_4_0_Black_Band_750.jpg",
+    "description_ar": "حزام WHOOP 4.0 — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "Strain Tracking",
+      "Recovery Score",
+      "HRV متقدم",
+      "بطارية 5 أيام",
+      "لا شاشة = دقة أعلى"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "حزام"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
+  },
+  {
+    "id": "NPH-762",
+    "name_ar": "خاتم أمازفيت Helio Ring",
+    "name_en": "Amazfit Helio Ring",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.5,
+    "reviews": 1876,
+    "stock": 58,
+    "image": "https://de.amazfit.com/wp-content/uploads/2024/04/amazfit-helio-ring-product.jpg",
+    "description_ar": "خاتم أمازفيت Helio Ring — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "features_ar": [
+      "تيتانيوم Ti-Al",
+      "تتبع صحي شامل",
+      "بطارية 4 أيام",
+      "Zepp Health App",
+      "IP68"
+    ],
+    "tags": [
+      "صحة ذكية",
+      "خاتم"
+    ],
+    "badge": "",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "auto_bot",
+    "added_at": "2026-03-10"
   }
 ]
