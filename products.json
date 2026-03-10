@@ -10,26 +10,33 @@
     "discount": 11,
     "rating": 4.9,
     "reviews": 12430,
-    "stock": 41,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-001.jpg",
-    "description_ar": "ساعة أبل Watch Series 9 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 33,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smartwatch.svg",
+    "description_ar": "ساعة أبل Watch Series 9 — من أفضل منتجات ساعات ذكية.",
     "features_ar": [
-      "شاشة Retina دائمة التشغيل",
-      "GPS + Cellular",
+      "شاشة Retina",
+      "GPS+Cellular",
       "مقاوم للماء 50م",
-      "تتبع صحي شامل",
-      "بطارية 18 ساعة"
+      "تتبع صحي",
+      "18 ساعة"
     ],
     "tags": [
-      "ساعات ذكية",
-      "ساعة"
+      "ساعات ذكية"
     ],
-    "badge": "الأكثر مبيعاً",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "الأكثر مبيعاً"
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": true,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "ساعة أبل Watch Series 9",
+      "en": "Apple Watch Series 9 45mm"
+    },
+    "category_en": "Smartwatch"
   },
   {
     "id": "NPH-002",
@@ -42,26 +49,33 @@
     "discount": 14,
     "rating": 4.8,
     "reviews": 8765,
-    "stock": 88,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-002.jpg",
-    "description_ar": "ساعة سامسونج Galaxy Watch 7 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 98,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smartwatch.svg",
+    "description_ar": "ساعة سامسونج Galaxy Watch 7 — من أفضل منتجات ساعات ذكية.",
     "features_ar": [
-      "معالج Exynos W1000",
-      "تتبع نوم AI",
-      "بطارية 40 ساعة",
-      "مقاومة MIL-STD-810",
-      "تتبع اللياقة"
+      "Exynos W1000",
+      "نوم AI",
+      "40 ساعة",
+      "MIL-STD-810",
+      "لياقة"
     ],
     "tags": [
-      "ساعات ذكية",
-      "ساعة"
+      "ساعات ذكية"
     ],
-    "badge": "مميز",
+    "badge": {
+      "ar": "مميز",
+      "en": "مميز"
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": true,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "ساعة سامسونج Galaxy Watch 7",
+      "en": "Samsung Galaxy Watch 7 44mm"
+    },
+    "category_en": "Smartwatch"
   },
   {
     "id": "NPH-003",
@@ -74,26 +88,33 @@
     "discount": 13,
     "rating": 4.8,
     "reviews": 5432,
-    "stock": 35,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-003.jpg",
-    "description_ar": "ساعة غارمن Fenix 7X Solar — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 48,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smartwatch.svg",
+    "description_ar": "ساعة غارمن Fenix 7X Solar — من أفضل منتجات ساعات ذكية.",
     "features_ar": [
       "شحن شمسي",
-      "GPS متعدد التردد",
-      "بطارية 37 يوم",
-      "خرائط توبو مدمجة",
-      "مناسب للمغامرات"
+      "GPS متعدد",
+      "37 يوم",
+      "خرائط توبو",
+      "مغامرات"
     ],
     "tags": [
-      "ساعات ذكية",
-      "ساعة"
+      "ساعات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "ساعة غارمن Fenix 7X Solar",
+      "en": "Garmin Fenix 7X Solar"
+    },
+    "category_en": "Smartwatch"
   },
   {
     "id": "NPH-004",
@@ -106,26 +127,33 @@
     "discount": 11,
     "rating": 4.9,
     "reviews": 4321,
-    "stock": 28,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-004.jpg",
-    "description_ar": "ساعة أبل Watch Ultra 2 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 44,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smartwatch.svg",
+    "description_ar": "ساعة أبل Watch Ultra 2 — من أفضل منتجات ساعات ذكية.",
     "features_ar": [
-      "هيكل تيتانيوم",
-      "بطارية 60 ساعة",
-      "صوت إنذار 86dB",
-      "مقاومة 100م",
-      "GPS دقة عالية"
+      "تيتانيوم",
+      "60 ساعة",
+      "86dB",
+      "100م",
+      "GPS دقيق"
     ],
     "tags": [
-      "ساعات ذكية",
-      "ساعة"
+      "ساعات ذكية"
     ],
-    "badge": "حصري",
+    "badge": {
+      "ar": "حصري",
+      "en": "حصري"
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": true,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "ساعة أبل Watch Ultra 2",
+      "en": "Apple Watch Ultra 2"
+    },
+    "category_en": "Smartwatch"
   },
   {
     "id": "NPH-005",
@@ -138,26 +166,33 @@
     "discount": 13,
     "rating": 4.7,
     "reviews": 3210,
-    "stock": 23,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-005.jpg",
-    "description_ar": "ساعة غوغل Pixel Watch 3 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 47,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smartwatch.svg",
+    "description_ar": "ساعة غوغل Pixel Watch 3 — من أفضل منتجات ساعات ذكية.",
     "features_ar": [
       "Wear OS 4",
-      "تتبع قلب متقدم",
-      "شاشة AMOLED",
+      "AMOLED",
       "Google Wallet",
-      "بطارية 24 ساعة"
+      "24 ساعة",
+      "ECG"
     ],
     "tags": [
-      "ساعات ذكية",
-      "ساعة"
+      "ساعات ذكية"
     ],
-    "badge": "جديد",
+    "badge": {
+      "ar": "جديد",
+      "en": "جديد"
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "ساعة غوغل Pixel Watch 3",
+      "en": "Google Pixel Watch 3 45mm"
+    },
+    "category_en": "Smartwatch"
   },
   {
     "id": "NPH-006",
@@ -170,26 +205,33 @@
     "discount": 18,
     "rating": 4.5,
     "reviews": 6543,
-    "stock": 99,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-006.png",
-    "description_ar": "ساعة شاومي Watch S3 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 75,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smartwatch.svg",
+    "description_ar": "ساعة شاومي Watch S3 — من أفضل منتجات ساعات ذكية.",
     "features_ar": [
-      "شاشة AMOLED 1.43\"",
-      "12 أيام بطارية",
-      "GPS مدمج",
-      "150 وضع رياضي",
+      "AMOLED 1.43",
+      "12 أيام",
+      "GPS",
+      "150 رياضة",
       "5ATM"
     ],
     "tags": [
-      "ساعات ذكية",
-      "ساعة"
+      "ساعات ذكية"
     ],
-    "badge": "قيمة مثالية",
+    "badge": {
+      "ar": "قيمة مثالية",
+      "en": "قيمة مثالية"
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "ساعة شاومي Watch S3",
+      "en": "Xiaomi Watch S3"
+    },
+    "category_en": "Smartwatch"
   },
   {
     "id": "NPH-007",
@@ -202,26 +244,33 @@
     "discount": 15,
     "rating": 4.6,
     "reviews": 2876,
-    "stock": 28,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-007.jpg",
-    "description_ar": "ساعة أمازفيت Balance — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 100,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smartwatch.svg",
+    "description_ar": "ساعة أمازفيت Balance — من أفضل منتجات ساعات ذكية.",
     "features_ar": [
-      "Zepp OS 3.0",
-      "14 أيام بطارية",
-      "تتبع صحي AI",
-      "شاشة AMOLED",
+      "Zepp OS 3",
+      "14 أيام",
+      "AI صحي",
+      "AMOLED",
       "GPS L1+L5"
     ],
     "tags": [
-      "ساعات ذكية",
-      "ساعة"
+      "ساعات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "ساعة أمازفيت Balance",
+      "en": "Amazfit Balance"
+    },
+    "category_en": "Smartwatch"
   },
   {
     "id": "NPH-008",
@@ -234,26 +283,33 @@
     "discount": 13,
     "rating": 4.8,
     "reviews": 1987,
-    "stock": 73,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-008.jpg",
-    "description_ar": "ساعة سامسونج Galaxy Watch Ultra — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 70,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smartwatch.svg",
+    "description_ar": "ساعة سامسونج Galaxy Watch Ultra — من أفضل منتجات ساعات ذكية.",
     "features_ar": [
-      "هيكل تيتانيوم",
-      "بطارية 60 ساعة",
-      "MIL-STD-810X",
+      "تيتانيوم",
+      "60 ساعة",
+      "MIL-STD",
       "10ATM",
-      "GPS Dual"
+      "GPS مزدوج"
     ],
     "tags": [
-      "ساعات ذكية",
-      "ساعة"
+      "ساعات ذكية"
     ],
-    "badge": "جديد",
+    "badge": {
+      "ar": "جديد",
+      "en": "جديد"
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "ساعة سامسونج Galaxy Watch Ultra",
+      "en": "Samsung Galaxy Watch Ultra"
+    },
+    "category_en": "Smartwatch"
   },
   {
     "id": "NPH-009",
@@ -266,26 +322,33 @@
     "discount": 25,
     "rating": 4.5,
     "reviews": 9876,
-    "stock": 43,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-009.png",
-    "description_ar": "ساعة فيتبيت Versa 4 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 34,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smartwatch.svg",
+    "description_ar": "ساعة فيتبيت Versa 4 — من أفضل منتجات ساعات ذكية.",
     "features_ar": [
-      "Alexa مدمج",
+      "Alexa",
       "GPS",
-      "6 أيام بطارية",
-      "تتبع النوم",
-      "40+ وضع تمرين"
+      "6 أيام",
+      "نوم",
+      "40 تمرين"
     ],
     "tags": [
-      "ساعات ذكية",
-      "ساعة"
+      "ساعات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "ساعة فيتبيت Versa 4",
+      "en": "Fitbit Versa 4"
+    },
+    "category_en": "Smartwatch"
   },
   {
     "id": "NPH-010",
@@ -298,26 +361,33 @@
     "discount": 10,
     "rating": 4.7,
     "reviews": 3456,
-    "stock": 80,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-010.jpg",
-    "description_ar": "ساعة غارمن Venu 3S — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 47,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smartwatch.svg",
+    "description_ar": "ساعة غارمن Venu 3S — من أفضل منتجات ساعات ذكية.",
     "features_ar": [
-      "شاشة AMOLED",
-      "استجابة جسم AI",
+      "AMOLED",
+      "AI جسم",
       "Body Battery",
-      "تتبع سكر الدم",
+      "سكر دم",
       "GPS"
     ],
     "tags": [
-      "ساعات ذكية",
-      "ساعة"
+      "ساعات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "ساعة غارمن Venu 3S",
+      "en": "Garmin Venu 3S"
+    },
+    "category_en": "Smartwatch"
   },
   {
     "id": "NPH-011",
@@ -330,26 +400,33 @@
     "discount": 13,
     "rating": 4.6,
     "reviews": 2134,
-    "stock": 52,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-011.jpg",
-    "description_ar": "ساعة ون بلس Watch 3 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 96,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smartwatch.svg",
+    "description_ar": "ساعة ون بلس Watch 3 — من أفضل منتجات ساعات ذكية.",
     "features_ar": [
       "Wear OS 4",
-      "100 ساعة بطارية",
-      "شحن 80% بـ 30 دقيقة",
-      "GPS Dual",
+      "100 ساعة",
+      "شحن سريع",
+      "GPS مزدوج",
       "5ATM"
     ],
     "tags": [
-      "ساعات ذكية",
-      "ساعة"
+      "ساعات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "ساعة ون بلس Watch 3",
+      "en": "OnePlus Watch 3"
+    },
+    "category_en": "Smartwatch"
   },
   {
     "id": "NPH-012",
@@ -362,26 +439,33 @@
     "discount": 13,
     "rating": 4.7,
     "reviews": 4567,
-    "stock": 65,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-012.jpg",
-    "description_ar": "ساعة هواوي Watch GT 5 Pro — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 91,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smartwatch.svg",
+    "description_ar": "ساعة هواوي Watch GT 5 Pro — من أفضل منتجات ساعات ذكية.",
     "features_ar": [
-      "هيكل تيتانيوم",
-      "بطارية 14 يوم",
-      "تتبع صحي شامل",
+      "تيتانيوم",
+      "14 يوم",
+      "صحي شامل",
       "GPS مزدوج",
       "خرائط"
     ],
     "tags": [
-      "ساعات ذكية",
-      "ساعة"
+      "ساعات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "ساعة هواوي Watch GT 5 Pro",
+      "en": "Huawei Watch GT 5 Pro"
+    },
+    "category_en": "Smartwatch"
   },
   {
     "id": "NPH-013",
@@ -394,26 +478,33 @@
     "discount": 14,
     "rating": 4.6,
     "reviews": 1876,
-    "stock": 70,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-013.jpg",
-    "description_ar": "ساعة ويذينغز ScanWatch 2 — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 37,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smartwatch.svg",
+    "description_ar": "ساعة ويذينغز ScanWatch 2 — من أفضل منتجات ساعات ذكية.",
     "features_ar": [
-      "تخطيط قلب ECG",
+      "ECG",
       "SpO2",
-      "30 يوم بطارية",
-      "تصميم كلاسيكي",
+      "30 يوم",
+      "كلاسيكي",
       "FDA"
     ],
     "tags": [
-      "ساعات ذكية",
-      "ساعة"
+      "ساعات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "ساعة ويذينغز ScanWatch 2",
+      "en": "Withings ScanWatch 2"
+    },
+    "category_en": "Smartwatch"
   },
   {
     "id": "NPH-014",
@@ -426,26 +517,33 @@
     "discount": 11,
     "rating": 4.6,
     "reviews": 1234,
-    "stock": 51,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-014.png",
-    "description_ar": "ساعة تيكووتش Pro 5 Enduro — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 49,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smartwatch.svg",
+    "description_ar": "ساعة تيكووتش Pro 5 Enduro — من أفضل منتجات ساعات ذكية.",
     "features_ar": [
       "Snapdragon W5+",
-      "شاشة مزدوجة",
-      "80 ساعة بطارية",
+      "مزدوج",
+      "80 ساعة",
       "Wear OS",
       "MIL-STD"
     ],
     "tags": [
-      "ساعات ذكية",
-      "ساعة"
+      "ساعات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "ساعة تيكووتش Pro 5 Enduro",
+      "en": "TicWatch Pro 5 Enduro"
+    },
+    "category_en": "Smartwatch"
   },
   {
     "id": "NPH-015",
@@ -458,26 +556,33 @@
     "discount": 17,
     "rating": 4.8,
     "reviews": 2345,
-    "stock": 75,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-015.jpg",
-    "description_ar": "ساعة كوروس Apex 2 Pro — من أفضل منتجات ساعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 91,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smartwatch.svg",
+    "description_ar": "ساعة كوروس Apex 2 Pro — من أفضل منتجات ساعات ذكية.",
     "features_ar": [
       "GPS متعدد",
-      "75 ساعة GPS",
-      "خرائط توبو",
+      "75 ساعة",
+      "توبو",
       "شحن سريع",
       "تيتانيوم"
     ],
     "tags": [
-      "ساعات ذكية",
-      "ساعة"
+      "ساعات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "ساعة كوروس Apex 2 Pro",
+      "en": "Coros Apex 2 Pro"
+    },
+    "category_en": "Smartwatch"
   },
   {
     "id": "NPH-016",
@@ -490,26 +595,33 @@
     "discount": 13,
     "rating": 4.8,
     "reviews": 4532,
-    "stock": 22,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-016.jpg",
-    "description_ar": "نظارة Apple Vision Pro — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 42,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-glasses.svg",
+    "description_ar": "نظارة Apple Vision Pro — من أفضل منتجات نظارات ذكية.",
     "features_ar": [
-      "شاشة micro-OLED 4K",
+      "micro-OLED 4K",
       "visionOS",
       "R1 Chip",
-      "كاميرات 3D",
+      "3D كاميرا",
       "انغماس كامل"
     ],
     "tags": [
-      "نظارات ذكية",
-      "نظارة"
+      "نظارات ذكية"
     ],
-    "badge": "حصري",
+    "badge": {
+      "ar": "حصري",
+      "en": "حصري"
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": true,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "نظارة Apple Vision Pro",
+      "en": "Apple Vision Pro"
+    },
+    "category_en": "Smart Glasses"
   },
   {
     "id": "NPH-017",
@@ -522,26 +634,33 @@
     "discount": 13,
     "rating": 4.8,
     "reviews": 15432,
-    "stock": 43,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-017.jpg",
-    "description_ar": "نظارة Meta Quest 3 — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 24,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-glasses.svg",
+    "description_ar": "نظارة Meta Quest 3 — من أفضل منتجات نظارات ذكية.",
     "features_ar": [
       "Snapdragon XR2 Gen 2",
       "Mixed Reality",
-      "عدسات Pancake",
-      "بطارية 2.2h",
-      "Meta Store"
+      "Pancake",
+      "Meta Store",
+      "2.2h"
     ],
     "tags": [
-      "نظارات ذكية",
-      "نظارة"
+      "نظارات ذكية"
     ],
-    "badge": "الأكثر مبيعاً",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "الأكثر مبيعاً"
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": true,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "نظارة Meta Quest 3",
+      "en": "Meta Quest 3 512GB"
+    },
+    "category_en": "Smart Glasses"
   },
   {
     "id": "NPH-018",
@@ -554,26 +673,33 @@
     "discount": 13,
     "rating": 4.5,
     "reviews": 8765,
-    "stock": 67,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-018.jpg",
-    "description_ar": "نظارة Ray-Ban Meta الذكية — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 69,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-glasses.svg",
+    "description_ar": "نظارة Ray-Ban Meta الذكية — من أفضل منتجات نظارات ذكية.",
     "features_ar": [
       "كاميرا 12MP",
-      "مكبرات مفتوحة",
-      "Bluetooth 5.3",
+      "مفتوحة",
+      "BT 5.3",
       "Meta AI",
       "4 ساعات"
     ],
     "tags": [
-      "نظارات ذكية",
-      "نظارة"
+      "نظارات ذكية"
     ],
-    "badge": "مميز",
+    "badge": {
+      "ar": "مميز",
+      "en": "مميز"
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": true,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "نظارة Ray-Ban Meta الذكية",
+      "en": "Ray-Ban Meta Wayfarer"
+    },
+    "category_en": "Smart Glasses"
   },
   {
     "id": "NPH-019",
@@ -586,26 +712,33 @@
     "discount": 14,
     "rating": 4.7,
     "reviews": 6543,
-    "stock": 62,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-019.jpg",
-    "description_ar": "نظارة Meta Quest 3S — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 36,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-glasses.svg",
+    "description_ar": "نظارة Meta Quest 3S — من أفضل منتجات نظارات ذكية.",
     "features_ar": [
-      "Snapdragon XR2 Gen 2",
+      "XR2 Gen 2",
       "Mixed Reality",
       "128GB",
-      "أخف بـ 50%",
+      "أخف",
       "Meta Store"
     ],
     "tags": [
-      "نظارات ذكية",
-      "نظارة"
+      "نظارات ذكية"
     ],
-    "badge": "جديد",
+    "badge": {
+      "ar": "جديد",
+      "en": "جديد"
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "نظارة Meta Quest 3S",
+      "en": "Meta Quest 3S 128GB"
+    },
+    "category_en": "Smart Glasses"
   },
   {
     "id": "NPH-020",
@@ -618,26 +751,33 @@
     "discount": 10,
     "rating": 4.6,
     "reviews": 3210,
-    "stock": 29,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-020.jpg",
-    "description_ar": "نظارة XREAL Air 2 Pro — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 84,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-glasses.svg",
+    "description_ar": "نظارة XREAL Air 2 Pro — من أفضل منتجات نظارات ذكية.",
     "features_ar": [
-      "شاشة 330\" افتراضية",
+      "330 بوصة",
       "120Hz",
       "Electrochromic",
       "USB-C",
       "72g"
     ],
     "tags": [
-      "نظارات ذكية",
-      "نظارة"
+      "نظارات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "نظارة XREAL Air 2 Pro",
+      "en": "XREAL Air 2 Pro"
+    },
+    "category_en": "Smart Glasses"
   },
   {
     "id": "NPH-021",
@@ -650,26 +790,33 @@
     "discount": 17,
     "rating": 4.6,
     "reviews": 1876,
-    "stock": 82,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-021.jpg",
-    "description_ar": "نظارة HTC Vive XR Elite — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 73,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-glasses.svg",
+    "description_ar": "نظارة HTC Vive XR Elite — من أفضل منتجات نظارات ذكية.",
     "features_ar": [
-      "Snapdragon XR2 Gen 1",
-      "4K+ عرض",
-      "Viveport Infinity",
+      "XR2 Gen 1",
+      "4K+",
+      "Viveport",
       "قابل للخلع",
       "2h"
     ],
     "tags": [
-      "نظارات ذكية",
-      "نظارة"
+      "نظارات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "نظارة HTC Vive XR Elite",
+      "en": "HTC Vive XR Elite"
+    },
+    "category_en": "Smart Glasses"
   },
   {
     "id": "NPH-022",
@@ -682,26 +829,33 @@
     "discount": 14,
     "rating": 4.5,
     "reviews": 2345,
-    "stock": 93,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-022.png",
-    "description_ar": "نظارة Pico 4 Ultra — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 30,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-glasses.svg",
+    "description_ar": "نظارة Pico 4 Ultra — من أفضل منتجات نظارات ذكية.",
     "features_ar": [
-      "Snapdragon XR2 Gen 2",
+      "XR2 Gen 2",
       "Spatial Video",
       "Hand Tracking",
-      "3GB RAM",
+      "3GB",
       "3h"
     ],
     "tags": [
-      "نظارات ذكية",
-      "نظارة"
+      "نظارات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "نظارة Pico 4 Ultra",
+      "en": "Pico 4 Ultra VR"
+    },
+    "category_en": "Smart Glasses"
   },
   {
     "id": "NPH-023",
@@ -714,26 +868,33 @@
     "discount": 11,
     "rating": 4.3,
     "reviews": 1234,
-    "stock": 21,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-023.png",
-    "description_ar": "نظارة Snap Spectacles الجيل 5 — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 39,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-glasses.svg",
+    "description_ar": "نظارة Snap Spectacles الجيل 5 — من أفضل منتجات نظارات ذكية.",
     "features_ar": [
-      "AR مدمج",
+      "AR",
       "كاميرا ثنائية",
-      "Snapchat مدمج",
+      "Snapchat",
       "Lens Studio",
       "30 دقيقة"
     ],
     "tags": [
-      "نظارات ذكية",
-      "نظارة"
+      "نظارات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "نظارة Snap Spectacles الجيل 5",
+      "en": "Snap Spectacles 5th Gen"
+    },
+    "category_en": "Smart Glasses"
   },
   {
     "id": "NPH-024",
@@ -746,26 +907,33 @@
     "discount": 14,
     "rating": 4.5,
     "reviews": 1543,
-    "stock": 50,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-024.jpg",
-    "description_ar": "نظارة XREAL Beam Pro — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 66,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-glasses.svg",
+    "description_ar": "نظارة XREAL Beam Pro — من أفضل منتجات نظارات ذكية.",
     "features_ar": [
       "Spatial Computing",
-      "كاميرتين",
+      "كاميرتان",
       "Android 13",
-      "3D Capture",
+      "3D",
       "5000mAh"
     ],
     "tags": [
-      "نظارات ذكية",
-      "نظارة"
+      "نظارات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "نظارة XREAL Beam Pro",
+      "en": "XREAL Beam Pro"
+    },
+    "category_en": "Smart Glasses"
   },
   {
     "id": "NPH-025",
@@ -778,26 +946,33 @@
     "discount": 13,
     "rating": 4.3,
     "reviews": 543,
-    "stock": 28,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
-    "description_ar": "نظارة Vuzix Z100 الذكية — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 44,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-glasses.svg",
+    "description_ar": "نظارة Vuzix Z100 الذكية — من أفضل منتجات نظارات ذكية.",
     "features_ar": [
       "Waveguide AR",
-      "Qualcomm AR1",
-      "8h بطارية",
+      "AR1",
+      "8h",
       "Android 11",
       "Hands-free"
     ],
     "tags": [
-      "نظارات ذكية",
-      "نظارة"
+      "نظارات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "نظارة Vuzix Z100 الذكية",
+      "en": "Vuzix Z100 AR Glasses"
+    },
+    "category_en": "Smart Glasses"
   },
   {
     "id": "NPH-026",
@@ -810,26 +985,33 @@
     "discount": 12,
     "rating": 4.4,
     "reviews": 876,
-    "stock": 67,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-026.jpg",
-    "description_ar": "نظارة TCL NXTWEAR S2 Plus — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 53,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-glasses.svg",
+    "description_ar": "نظارة TCL NXTWEAR S2 Plus — من أفضل منتجات نظارات ذكية.",
     "features_ar": [
-      "105\" افتراضية",
-      "1080p Full HD",
+      "105 بوصة",
+      "1080p",
       "USB-C",
       "72g",
       "120Hz"
     ],
     "tags": [
-      "نظارات ذكية",
-      "نظارة"
+      "نظارات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "نظارة TCL NXTWEAR S2 Plus",
+      "en": "TCL NXTWEAR S2 Plus"
+    },
+    "category_en": "Smart Glasses"
   },
   {
     "id": "NPH-027",
@@ -842,26 +1024,33 @@
     "discount": 11,
     "rating": 4.2,
     "reviews": 654,
-    "stock": 30,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
-    "description_ar": "نظارة Inmo Air 2 الذكية — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 78,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-glasses.svg",
+    "description_ar": "نظارة Inmo Air 2 الذكية — من أفضل منتجات نظارات ذكية.",
     "features_ar": [
-      "ChatGPT مدمج",
-      "ترجمة فورية",
+      "ChatGPT",
+      "ترجمة",
       "27g",
-      "9h بطارية",
+      "9h",
       "Waveguide"
     ],
     "tags": [
-      "نظارات ذكية",
-      "نظارة"
+      "نظارات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "نظارة Inmo Air 2 الذكية",
+      "en": "Inmo Air 2 Smart Glasses"
+    },
+    "category_en": "Smart Glasses"
   },
   {
     "id": "NPH-028",
@@ -874,9 +1063,9 @@
     "discount": 13,
     "rating": 4.5,
     "reviews": 987,
-    "stock": 71,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-028.jpg",
-    "description_ar": "نظارة Rokid Max 2 — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 49,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-glasses.svg",
+    "description_ar": "نظارة Rokid Max 2 — من أفضل منتجات نظارات ذكية.",
     "features_ar": [
       "Micro-OLED 1080p",
       "120Hz",
@@ -885,15 +1074,22 @@
       "USB-C"
     ],
     "tags": [
-      "نظارات ذكية",
-      "نظارة"
+      "نظارات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "نظارة Rokid Max 2",
+      "en": "Rokid Max 2 AR"
+    },
+    "category_en": "Smart Glasses"
   },
   {
     "id": "NPH-029",
@@ -906,26 +1102,33 @@
     "discount": 12,
     "rating": 4.4,
     "reviews": 765,
-    "stock": 40,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-029.png",
-    "description_ar": "نظارة Viture One XR — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 85,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-glasses.svg",
+    "description_ar": "نظارة Viture One XR — من أفضل منتجات نظارات ذكية.",
     "features_ar": [
-      "135\" افتراضية",
+      "135 بوصة",
       "Electrochromic",
-      "Cinema Mode",
+      "Cinema",
       "2K",
       "77g"
     ],
     "tags": [
-      "نظارات ذكية",
-      "نظارة"
+      "نظارات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "نظارة Viture One XR",
+      "en": "Viture One XR Glasses"
+    },
+    "category_en": "Smart Glasses"
   },
   {
     "id": "NPH-030",
@@ -938,26 +1141,33 @@
     "discount": 13,
     "rating": 4.5,
     "reviews": 3210,
-    "stock": 97,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-030.jpg",
-    "description_ar": "نظارة Meta Ray-Ban Skyler — من أفضل منتجات نظارات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 99,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-glasses.svg",
+    "description_ar": "نظارة Meta Ray-Ban Skyler — من أفضل منتجات نظارات ذكية.",
     "features_ar": [
-      "كاميرا 12MP Ultra Wide",
-      "AI مساعد",
-      "Bluetooth 5.3",
+      "12MP Ultra Wide",
+      "AI",
+      "BT 5.3",
       "6h",
       "مفتوحة"
     ],
     "tags": [
-      "نظارات ذكية",
-      "نظارة"
+      "نظارات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "نظارة Meta Ray-Ban Skyler",
+      "en": "Meta Ray-Ban Skyler Glasses"
+    },
+    "category_en": "Smart Glasses"
   },
   {
     "id": "NPH-031",
@@ -970,26 +1180,33 @@
     "discount": 13,
     "rating": 4.8,
     "reviews": 18765,
-    "stock": 100,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-031.jpg",
-    "description_ar": "خاتم Oura Ring الجيل 4 — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 68,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/health.svg",
+    "description_ar": "خاتم Oura Ring الجيل 4 — من أفضل منتجات صحة ذكية.",
     "features_ar": [
-      "تتبع نوم دقيق",
-      "Readiness Score",
-      "8 أيام بطارية",
-      "Blood Oxygen",
+      "نوم دقيق",
+      "Readiness",
+      "8 أيام",
+      "SpO2",
       "Ring AI"
     ],
     "tags": [
-      "صحة ذكية",
-      "خاتم"
+      "صحة ذكية"
     ],
-    "badge": "الأكثر مبيعاً",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "الأكثر مبيعاً"
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": true,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "خاتم Oura Ring الجيل 4",
+      "en": "Oura Ring Gen 4"
+    },
+    "category_en": "Health"
   },
   {
     "id": "NPH-032",
@@ -1002,26 +1219,33 @@
     "discount": 14,
     "rating": 4.6,
     "reviews": 8765,
-    "stock": 59,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-032.jpg",
-    "description_ar": "حزام WHOOP 4.0 — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 44,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/health.svg",
+    "description_ar": "حزام WHOOP 4.0 — من أفضل منتجات صحة ذكية.",
     "features_ar": [
-      "Strain Tracking",
-      "Recovery Score",
-      "HRV متقدم",
-      "5 أيام بطارية",
-      "دقة عالية"
+      "Strain",
+      "Recovery",
+      "HRV",
+      "5 أيام",
+      "دقيق"
     ],
     "tags": [
-      "صحة ذكية",
-      "حزام"
+      "صحة ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "حزام WHOOP 4.0",
+      "en": "WHOOP 4.0 Fitness Band"
+    },
+    "category_en": "Health"
   },
   {
     "id": "NPH-033",
@@ -1034,26 +1258,33 @@
     "discount": 13,
     "rating": 4.7,
     "reviews": 5432,
-    "stock": 91,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-033.jpg",
-    "description_ar": "خاتم Ultrahuman Ring AIR — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 30,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/health.svg",
+    "description_ar": "خاتم Ultrahuman Ring AIR — من أفضل منتجات صحة ذكية.",
     "features_ar": [
       "بدون اشتراك",
       "AI نوم",
-      "Metabolic Score",
+      "Metabolic",
       "7 أيام",
       "IP68"
     ],
     "tags": [
-      "صحة ذكية",
-      "خاتم"
+      "صحة ذكية"
     ],
-    "badge": "مميز",
+    "badge": {
+      "ar": "مميز",
+      "en": "مميز"
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": true,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "خاتم Ultrahuman Ring AIR",
+      "en": "Ultrahuman Ring AIR"
+    },
+    "category_en": "Health"
   },
   {
     "id": "NPH-034",
@@ -1066,26 +1297,33 @@
     "discount": 20,
     "rating": 4.6,
     "reviews": 12345,
-    "stock": 62,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-034.png",
-    "description_ar": "سوار Fitbit Charge 6 — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 45,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/health.svg",
+    "description_ar": "سوار Fitbit Charge 6 — من أفضل منتجات صحة ذكية.",
     "features_ar": [
       "ECG",
       "Google Maps",
-      "YouTube Music",
+      "YouTube",
       "7 أيام",
       "GPS"
     ],
     "tags": [
-      "صحة ذكية",
-      "سوار"
+      "صحة ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "سوار Fitbit Charge 6",
+      "en": "Fitbit Charge 6 Tracker"
+    },
+    "category_en": "Health"
   },
   {
     "id": "NPH-035",
@@ -1098,26 +1336,33 @@
     "discount": 17,
     "rating": 4.5,
     "reviews": 6543,
-    "stock": 60,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-035.jpg",
-    "description_ar": "سوار Garmin Vivosmart 5 — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 89,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/health.svg",
+    "description_ar": "سوار Garmin Vivosmart 5 — من أفضل منتجات صحة ذكية.",
     "features_ar": [
       "OLED",
       "7 أيام",
       "Body Battery",
-      "HRV Status",
+      "HRV",
       "5ATM"
     ],
     "tags": [
-      "صحة ذكية",
-      "سوار"
+      "صحة ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "سوار Garmin Vivosmart 5",
+      "en": "Garmin Vivosmart 5"
+    },
+    "category_en": "Health"
   },
   {
     "id": "NPH-036",
@@ -1130,26 +1375,33 @@
     "discount": 17,
     "rating": 4.7,
     "reviews": 2345,
-    "stock": 72,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-036.jpg",
-    "description_ar": "ساعة Withings ScanWatch Nova — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 27,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/health.svg",
+    "description_ar": "ساعة Withings ScanWatch Nova — من أفضل منتجات صحة ذكية.",
     "features_ar": [
       "ECG",
-      "30 يوم بطارية",
+      "30 يوم",
       "SpO2",
-      "تصميم كلاسيكي",
+      "كلاسيكي",
       "FDA"
     ],
     "tags": [
-      "صحة ذكية",
-      "ساعة"
+      "صحة ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "ساعة Withings ScanWatch Nova",
+      "en": "Withings ScanWatch Nova"
+    },
+    "category_en": "Health"
   },
   {
     "id": "NPH-037",
@@ -1162,26 +1414,33 @@
     "discount": 14,
     "rating": 4.5,
     "reviews": 1876,
-    "stock": 90,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-037.jpg",
-    "description_ar": "خاتم أمازفيت Helio Ring — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 25,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/health.svg",
+    "description_ar": "خاتم أمازفيت Helio Ring — من أفضل منتجات صحة ذكية.",
     "features_ar": [
       "تيتانيوم",
-      "صحة شاملة",
+      "صحة",
       "4 أيام",
-      "Zepp Health",
+      "Zepp",
       "IP68"
     ],
     "tags": [
-      "صحة ذكية",
-      "خاتم"
+      "صحة ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "خاتم أمازفيت Helio Ring",
+      "en": "Amazfit Helio Ring"
+    },
+    "category_en": "Health"
   },
   {
     "id": "NPH-038",
@@ -1194,9 +1453,9 @@
     "discount": 20,
     "rating": 4.5,
     "reviews": 3210,
-    "stock": 29,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-038.jpg",
-    "description_ar": "خاتم RingConn Gen 2 Air — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 44,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/health.svg",
+    "description_ar": "خاتم RingConn Gen 2 Air — من أفضل منتجات صحة ذكية.",
     "features_ar": [
       "10 أيام",
       "بدون اشتراك",
@@ -1205,15 +1464,22 @@
       "متعدد"
     ],
     "tags": [
-      "صحة ذكية",
-      "خاتم"
+      "صحة ذكية"
     ],
-    "badge": "قيمة مثالية",
+    "badge": {
+      "ar": "قيمة مثالية",
+      "en": "قيمة مثالية"
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "خاتم RingConn Gen 2 Air",
+      "en": "RingConn Gen 2 Air Ring"
+    },
+    "category_en": "Health"
   },
   {
     "id": "NPH-039",
@@ -1226,26 +1492,33 @@
     "discount": 20,
     "rating": 4.6,
     "reviews": 15432,
-    "stock": 39,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-039.png",
-    "description_ar": "سوار شاومي Smart Band 9 Pro — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 55,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/health.svg",
+    "description_ar": "سوار شاومي Smart Band 9 Pro — من أفضل منتجات صحة ذكية.",
     "features_ar": [
-      "AMOLED 1.74\"",
+      "AMOLED",
       "GPS",
       "21 يوم",
       "150 رياضة",
       "SpO2"
     ],
     "tags": [
-      "صحة ذكية",
-      "سوار"
+      "صحة ذكية"
     ],
-    "badge": "اقتصادي",
+    "badge": {
+      "ar": "اقتصادي",
+      "en": "اقتصادي"
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "سوار شاومي Smart Band 9 Pro",
+      "en": "Xiaomi Smart Band 9 Pro"
+    },
+    "category_en": "Health"
   },
   {
     "id": "NPH-040",
@@ -1258,26 +1531,33 @@
     "discount": 17,
     "rating": 4.5,
     "reviews": 2876,
-    "stock": 55,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-040.jpg",
-    "description_ar": "عصابة Muse 2 للتأمل — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 75,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/health.svg",
+    "description_ar": "عصابة Muse 2 للتأمل — من أفضل منتجات صحة ذكية.",
     "features_ar": [
-      "EEG 7 مستشعرات",
-      "تأمل موجَّه",
-      "تتبع تنفس",
-      "نبضات القلب",
+      "EEG 7",
+      "تأمل",
+      "تنفس",
+      "قلب",
       "تطبيق"
     ],
     "tags": [
-      "صحة ذكية",
-      "عصابة"
+      "صحة ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "عصابة Muse 2 للتأمل",
+      "en": "Muse 2 Brain Sensing Headband"
+    },
+    "category_en": "Health"
   },
   {
     "id": "NPH-041",
@@ -1290,26 +1570,33 @@
     "discount": 11,
     "rating": 4.6,
     "reviews": 4321,
-    "stock": 53,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-041.jpg",
-    "description_ar": "خاتم سامسونج Galaxy Ring — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 33,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/health.svg",
+    "description_ar": "خاتم سامسونج Galaxy Ring — من أفضل منتجات صحة ذكية.",
     "features_ar": [
-      "تيتانيوم خفيف",
+      "تيتانيوم",
       "7 أيام",
       "Samsung Health",
-      "AI نوم",
+      "AI",
       "IP68"
     ],
     "tags": [
-      "صحة ذكية",
-      "خاتم"
+      "صحة ذكية"
     ],
-    "badge": "جديد",
+    "badge": {
+      "ar": "جديد",
+      "en": "جديد"
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "خاتم سامسونج Galaxy Ring",
+      "en": "Samsung Galaxy Ring"
+    },
+    "category_en": "Health"
   },
   {
     "id": "NPH-042",
@@ -1322,26 +1609,33 @@
     "discount": 18,
     "rating": 4.7,
     "reviews": 5678,
-    "stock": 61,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
-    "description_ar": "جهاز Polar Verity Sense — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 85,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/health.svg",
+    "description_ar": "جهاز Polar Verity Sense — من أفضل منتجات صحة ذكية.",
     "features_ar": [
       "HR دقيق",
       "ذراع",
-      "30h بطارية",
-      "Bluetooth + ANT+",
+      "30h",
+      "BT+ANT+",
       "IP67"
     ],
     "tags": [
-      "صحة ذكية",
-      "جهاز"
+      "صحة ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "جهاز Polar Verity Sense",
+      "en": "Polar Verity Sense Monitor"
+    },
+    "category_en": "Health"
   },
   {
     "id": "NPH-043",
@@ -1354,26 +1648,33 @@
     "discount": 20,
     "rating": 4.4,
     "reviews": 1234,
-    "stock": 20,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-043.jpg",
-    "description_ar": "سوار Biostrap EVO الصحي — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 74,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/health.svg",
+    "description_ar": "سوار Biostrap EVO الصحي — من أفضل منتجات صحة ذكية.",
     "features_ar": [
       "HRV دقيق",
-      "SpO2 مستمر",
+      "SpO2",
       "نوم",
       "طبي",
       "IP67"
     ],
     "tags": [
-      "صحة ذكية",
-      "سوار"
+      "صحة ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "سوار Biostrap EVO الصحي",
+      "en": "Biostrap EVO Health Band"
+    },
+    "category_en": "Health"
   },
   {
     "id": "NPH-044",
@@ -1386,26 +1687,33 @@
     "discount": 17,
     "rating": 4.5,
     "reviews": 3456,
-    "stock": 84,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-044.jpg",
-    "description_ar": "جهاز Garmin Index لضغط الدم — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 48,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/health.svg",
+    "description_ar": "جهاز Garmin Index لضغط الدم — من أفضل منتجات صحة ذكية.",
     "features_ar": [
-      "ضغط الدم",
-      "Bluetooth 5.0",
+      "ضغط دم",
+      "BT 5.0",
       "Garmin Connect",
       "دقيق",
       "40 قياس"
     ],
     "tags": [
-      "صحة ذكية",
-      "جهاز"
+      "صحة ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "جهاز Garmin Index لضغط الدم",
+      "en": "Garmin Index BPM Monitor"
+    },
+    "category_en": "Health"
   },
   {
     "id": "NPH-045",
@@ -1418,30 +1726,37 @@
     "discount": 14,
     "rating": 4.7,
     "reviews": 876,
-    "stock": 51,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-045.jpg",
-    "description_ar": "ميزان Withings Body Scan — من أفضل منتجات صحة ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 77,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/health.svg",
+    "description_ar": "ميزان Withings Body Scan — من أفضل منتجات صحة ذكية.",
     "features_ar": [
       "تركيب جسم",
       "ECG قدم",
-      "عصب وعائي",
-      "تطبيق صحي",
+      "عصب",
+      "صحي",
       "WiFi"
     ],
     "tags": [
-      "صحة ذكية",
-      "ميزان"
+      "صحة ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "ميزان Withings Body Scan",
+      "en": "Withings Body Scan Scale"
+    },
+    "category_en": "Health"
   },
   {
     "id": "NPH-046",
-    "name_ar": "مكبر Amazon Echo Show 10",
+    "name_ar": "شاشة Amazon Echo Show 10",
     "name_en": "Amazon Echo Show 10 3rd Gen",
     "category": "smart-home",
     "category_ar": "منزل ذكي",
@@ -1450,26 +1765,33 @@
     "discount": 17,
     "rating": 4.7,
     "reviews": 23456,
-    "stock": 36,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-046.jpg",
-    "description_ar": "مكبر Amazon Echo Show 10 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 37,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-home.svg",
+    "description_ar": "شاشة Amazon Echo Show 10 — من أفضل منتجات منزل ذكي.",
     "features_ar": [
-      "شاشة HD 10\"",
-      "يتابعك تلقائياً",
-      "كاميرا 13MP",
+      "HD 10 بوصة",
+      "يتابعك",
+      "13MP",
       "Alexa",
-      "مكبر 3\""
+      "مكبر 3 بوصة"
     ],
     "tags": [
-      "منزل ذكي",
-      "مكبر"
+      "منزل ذكي"
     ],
-    "badge": "الأكثر مبيعاً",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "الأكثر مبيعاً"
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": true,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "شاشة Amazon Echo Show 10",
+      "en": "Amazon Echo Show 10 3rd Gen"
+    },
+    "category_en": "Smart Home"
   },
   {
     "id": "NPH-047",
@@ -1482,26 +1804,33 @@
     "discount": 14,
     "rating": 4.7,
     "reviews": 12345,
-    "stock": 83,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-047.jpg",
-    "description_ar": "مكبر Apple HomePod الجيل 2 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 84,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-home.svg",
+    "description_ar": "مكبر Apple HomePod الجيل 2 — من أفضل منتجات منزل ذكي.",
     "features_ar": [
       "Spatial Audio",
-      "S7 Chip",
-      "تحكم منزل",
+      "S7",
+      "تحكم",
       "Siri",
-      "صوت استثنائي"
+      "صوت"
     ],
     "tags": [
-      "منزل ذكي",
-      "مكبر"
+      "منزل ذكي"
     ],
-    "badge": "مميز",
+    "badge": {
+      "ar": "مميز",
+      "en": "مميز"
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": true,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "مكبر Apple HomePod الجيل 2",
+      "en": "Apple HomePod 2nd Generation"
+    },
+    "category_en": "Smart Home"
   },
   {
     "id": "NPH-048",
@@ -1514,30 +1843,37 @@
     "discount": 18,
     "rating": 4.6,
     "reviews": 15432,
-    "stock": 65,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-048.jpg",
-    "description_ar": "شاشة Google Nest Hub Max — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 50,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-home.svg",
+    "description_ar": "شاشة Google Nest Hub Max — من أفضل منتجات منزل ذكي.",
     "features_ar": [
-      "شاشة 10\"",
+      "10 بوصة",
       "كاميرا Duo",
-      "Google Photos",
+      "Photos",
       "Assistant",
       "Full-range"
     ],
     "tags": [
-      "منزل ذكي",
-      "شاشة"
+      "منزل ذكي"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "شاشة Google Nest Hub Max",
+      "en": "Google Nest Hub Max Display"
+    },
+    "category_en": "Smart Home"
   },
   {
     "id": "NPH-049",
-    "name_ar": "طقم إضاءة Philips Hue الذكية",
+    "name_ar": "طقم إضاءة Philips Hue",
     "name_en": "Philips Hue Color Starter Kit",
     "category": "smart-home",
     "category_ar": "منزل ذكي",
@@ -1546,26 +1882,33 @@
     "discount": 20,
     "rating": 4.7,
     "reviews": 34567,
-    "stock": 42,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-049.jpg",
-    "description_ar": "طقم إضاءة Philips Hue الذكية — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 61,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-home.svg",
+    "description_ar": "طقم إضاءة Philips Hue — من أفضل منتجات منزل ذكي.",
     "features_ar": [
       "16M لون",
-      "تحكم صوتي",
-      "Hue Bridge",
+      "صوتي",
+      "Bridge",
       "تطبيق",
       "موسيقى"
     ],
     "tags": [
-      "منزل ذكي",
-      "طقم"
+      "منزل ذكي"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "طقم إضاءة Philips Hue",
+      "en": "Philips Hue Color Starter Kit"
+    },
+    "category_en": "Smart Home"
   },
   {
     "id": "NPH-050",
@@ -1578,26 +1921,33 @@
     "discount": 17,
     "rating": 4.5,
     "reviews": 43210,
-    "stock": 60,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
-    "description_ar": "جرس Ring Video Doorbell Pro 2 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 45,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-home.svg",
+    "description_ar": "جرس Ring Video Doorbell Pro 2 — من أفضل منتجات منزل ذكي.",
     "features_ar": [
-      "1536p HD+",
-      "Bird's Eye View",
-      "تنبيه ذكي",
+      "1536p",
+      "Bird's Eye",
+      "ذكي",
       "Alexa",
       "3D"
     ],
     "tags": [
-      "منزل ذكي",
-      "جرس"
+      "منزل ذكي"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "جرس Ring Video Doorbell Pro 2",
+      "en": "Ring Video Doorbell Pro 2"
+    },
+    "category_en": "Smart Home"
   },
   {
     "id": "NPH-051",
@@ -1610,26 +1960,33 @@
     "discount": 15,
     "rating": 4.7,
     "reviews": 28765,
-    "stock": 86,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-051.jpg",
-    "description_ar": "منظم حرارة Nest الجيل 4 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 22,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-home.svg",
+    "description_ar": "منظم حرارة Nest الجيل 4 — من أفضل منتجات منزل ذكي.",
     "features_ar": [
-      "تعلم جدولك",
-      "توفير 15%",
-      "يحس بتواجدك",
+      "يتعلم",
+      "15% توفير",
+      "يحسك",
       "OLED",
       "Google Home"
     ],
     "tags": [
-      "منزل ذكي",
-      "منظم"
+      "منزل ذكي"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "منظم حرارة Nest الجيل 4",
+      "en": "Google Nest Learning Thermostat"
+    },
+    "category_en": "Smart Home"
   },
   {
     "id": "NPH-052",
@@ -1642,30 +1999,37 @@
     "discount": 17,
     "rating": 4.7,
     "reviews": 98765,
-    "stock": 46,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
-    "description_ar": "مكبر Amazon Echo Dot الجيل 5 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 91,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-home.svg",
+    "description_ar": "مكبر Amazon Echo Dot الجيل 5 — من أفضل منتجات منزل ذكي.",
     "features_ar": [
       "Alexa",
-      "صوت أوضح 2x",
+      "2x أوضح",
       "Smart Home",
-      "ساعة LED",
+      "LED",
       "مزامنة"
     ],
     "tags": [
-      "منزل ذكي",
-      "مكبر"
+      "منزل ذكي"
     ],
-    "badge": "قيمة مثالية",
+    "badge": {
+      "ar": "قيمة مثالية",
+      "en": "قيمة مثالية"
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "مكبر Amazon Echo Dot الجيل 5",
+      "en": "Amazon Echo Dot 5th Gen"
+    },
+    "category_en": "Smart Home"
   },
   {
     "id": "NPH-053",
-    "name_ar": "كاميرا Arlo Pro 5S أمان",
+    "name_ar": "كاميرا Arlo Pro 5S",
     "name_en": "Arlo Pro 5S Security Camera",
     "category": "smart-home",
     "category_ar": "منزل ذكي",
@@ -1674,26 +2038,33 @@
     "discount": 17,
     "rating": 4.6,
     "reviews": 8765,
-    "stock": 48,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
-    "description_ar": "كاميرا Arlo Pro 5S أمان — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 45,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-home.svg",
+    "description_ar": "كاميرا Arlo Pro 5S — من أفضل منتجات منزل ذكي.",
     "features_ar": [
-      "2K + HDR",
+      "2K HDR",
       "ألوان ليلية",
       "160°",
-      "6 أشهر بطارية",
+      "6 أشهر",
       "Alexa"
     ],
     "tags": [
-      "منزل ذكي",
-      "كاميرا"
+      "منزل ذكي"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "كاميرا Arlo Pro 5S",
+      "en": "Arlo Pro 5S Security Camera"
+    },
+    "category_en": "Smart Home"
   },
   {
     "id": "NPH-054",
@@ -1706,26 +2077,33 @@
     "discount": 13,
     "rating": 4.5,
     "reviews": 4321,
-    "stock": 72,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-054.jpg",
-    "description_ar": "قفل ذكي Yale Assure Lock 2 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 70,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-home.svg",
+    "description_ar": "قفل ذكي Yale Assure Lock 2 — من أفضل منتجات منزل ذكي.",
     "features_ar": [
-      "Matter + Z-Wave",
-      "بصمة + رمز",
+      "Matter",
+      "بصمة+رمز",
       "AES-128",
       "Yale Access",
       "تنبيهات"
     ],
     "tags": [
-      "منزل ذكي",
-      "قفل"
+      "منزل ذكي"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "قفل ذكي Yale Assure Lock 2",
+      "en": "Yale Assure Lock 2 Plus"
+    },
+    "category_en": "Smart Home"
   },
   {
     "id": "NPH-055",
@@ -1738,30 +2116,37 @@
     "discount": 20,
     "rating": 4.7,
     "reviews": 6543,
-    "stock": 55,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-055.jpg",
-    "description_ar": "مكنسة iRobot Roomba j9+ — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 69,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-home.svg",
+    "description_ar": "مكنسة iRobot Roomba j9+ — من أفضل منتجات منزل ذكي.",
     "features_ar": [
-      "تفريغ 60 يوم",
-      "تجنب عوائق AI",
-      "خريطة ذكية",
+      "60 يوم",
+      "تجنب AI",
+      "خريطة",
       "Alexa",
       "شحن تلقائي"
     ],
     "tags": [
-      "منزل ذكي",
-      "مكنسة"
+      "منزل ذكي"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "مكنسة iRobot Roomba j9+",
+      "en": "iRobot Roomba j9 Plus"
+    },
+    "category_en": "Smart Home"
   },
   {
     "id": "NPH-056",
-    "name_ar": "إضاءة Nanoleaf Shapes سداسية",
+    "name_ar": "إضاءة Nanoleaf سداسية",
     "name_en": "Nanoleaf Shapes Hexagons Kit",
     "category": "smart-home",
     "category_ar": "منزل ذكي",
@@ -1770,26 +2155,33 @@
     "discount": 20,
     "rating": 4.5,
     "reviews": 12345,
-    "stock": 93,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-056.jpg",
-    "description_ar": "إضاءة Nanoleaf Shapes سداسية — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 43,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-home.svg",
+    "description_ar": "إضاءة Nanoleaf سداسية — من أفضل منتجات منزل ذكي.",
     "features_ar": [
       "16M لون",
-      "موسيقى تفاعلية",
+      "موسيقى",
       "لمس",
       "Thread",
-      "تصميم حر"
+      "حر"
     ],
     "tags": [
-      "منزل ذكي",
-      "إضاءة"
+      "منزل ذكي"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "إضاءة Nanoleaf سداسية",
+      "en": "Nanoleaf Shapes Hexagons Kit"
+    },
+    "category_en": "Smart Home"
   },
   {
     "id": "NPH-057",
@@ -1802,26 +2194,33 @@
     "discount": 10,
     "rating": 4.7,
     "reviews": 3456,
-    "stock": 98,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-057.jpg",
-    "description_ar": "مكبر Sonos Era 300 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 73,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-home.svg",
+    "description_ar": "مكبر Sonos Era 300 — من أفضل منتجات منزل ذكي.",
     "features_ar": [
       "Spatial Audio",
       "Dolby Atmos",
       "6 مكبرات",
-      "S2 App",
+      "S2",
       "بدون اشتراك"
     ],
     "tags": [
-      "منزل ذكي",
-      "مكبر"
+      "منزل ذكي"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "مكبر Sonos Era 300",
+      "en": "Sonos Era 300 Speaker"
+    },
+    "category_en": "Smart Home"
   },
   {
     "id": "NPH-058",
@@ -1834,26 +2233,33 @@
     "discount": 17,
     "rating": 4.7,
     "reviews": 21345,
-    "stock": 41,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-058.jpg",
-    "description_ar": "منظم Ecobee Smart Premium — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 38,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-home.svg",
+    "description_ar": "منظم Ecobee Smart Premium — من أفضل منتجات منزل ذكي.",
     "features_ar": [
       "Alexa مدمج",
-      "درجة حرارة غرفة",
-      "توفير 23%",
+      "غرفة",
+      "23% توفير",
       "SmartSensor",
       "ENERGY STAR"
     ],
     "tags": [
-      "منزل ذكي",
-      "منظم"
+      "منزل ذكي"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "منظم Ecobee Smart Premium",
+      "en": "Ecobee Smart Thermostat Premium"
+    },
+    "category_en": "Smart Home"
   },
   {
     "id": "NPH-059",
@@ -1866,26 +2272,33 @@
     "discount": 13,
     "rating": 4.5,
     "reviews": 5432,
-    "stock": 80,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-059.jpg",
-    "description_ar": "مركز Samsung SmartThings — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 73,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-home.svg",
+    "description_ar": "مركز Samsung SmartThings — من أفضل منتجات منزل ذكي.",
     "features_ar": [
-      "Zigbee + Z-Wave + WiFi",
-      "تحكم مركزي",
-      "روتين تلقائي",
-      "أمان محلي",
+      "Zigbee+Z-Wave+WiFi",
+      "مركزي",
+      "تلقائي",
+      "أمان",
       "شامل"
     ],
     "tags": [
-      "منزل ذكي",
-      "مركز"
+      "منزل ذكي"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "مركز Samsung SmartThings",
+      "en": "Samsung SmartThings Hub"
+    },
+    "category_en": "Smart Home"
   },
   {
     "id": "NPH-060",
@@ -1898,26 +2311,33 @@
     "discount": 14,
     "rating": 4.6,
     "reviews": 4321,
-    "stock": 54,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
-    "description_ar": "نظام Eufy Security HomeBase 3 — من أفضل منتجات منزل ذكي في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 27,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-home.svg",
+    "description_ar": "نظام Eufy Security HomeBase 3 — من أفضل منتجات منزل ذكي.",
     "features_ar": [
       "16GB محلي",
-      "Triple Band WiFi",
-      "BionicMind AI",
+      "Triple Band",
+      "AI",
       "8K",
       "بدون اشتراك"
     ],
     "tags": [
-      "منزل ذكي",
-      "نظام"
+      "منزل ذكي"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "نظام Eufy Security HomeBase 3",
+      "en": "Eufy Security HomeBase 3"
+    },
+    "category_en": "Smart Home"
   },
   {
     "id": "NPH-061",
@@ -1930,26 +2350,33 @@
     "discount": 11,
     "rating": 4.9,
     "reviews": 54321,
-    "stock": 81,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-061.jpg",
-    "description_ar": "سماعات AirPods Pro الجيل 2 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 25,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/earbuds.svg",
+    "description_ar": "سماعات AirPods Pro الجيل 2 — من أفضل منتجات سماعات ذكية.",
     "features_ar": [
-      "ANC H2 Chip",
-      "Adaptive Audio",
-      "صوت مكاني",
+      "ANC H2",
+      "Adaptive",
+      "Spatial",
       "IP68",
       "6h+30h"
     ],
     "tags": [
-      "سماعات ذكية",
-      "سماعات"
+      "سماعات ذكية"
     ],
-    "badge": "الأكثر مبيعاً",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "الأكثر مبيعاً"
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": true,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "سماعات AirPods Pro الجيل 2",
+      "en": "Apple AirPods Pro 2 USB-C"
+    },
+    "category_en": "Earbuds"
   },
   {
     "id": "NPH-062",
@@ -1962,26 +2389,33 @@
     "discount": 15,
     "rating": 4.8,
     "reviews": 23456,
-    "stock": 24,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-062.jpg",
-    "description_ar": "سماعات Sony WF-1000XM5 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 85,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/earbuds.svg",
+    "description_ar": "سماعات Sony WF-1000XM5 — من أفضل منتجات سماعات ذكية.",
     "features_ar": [
       "أفضل ANC",
-      "V2 Processor",
-      "360 صوت",
+      "V2",
+      "360",
       "LDAC",
       "8h+24h"
     ],
     "tags": [
-      "سماعات ذكية",
-      "سماعات"
+      "سماعات ذكية"
     ],
-    "badge": "مميز",
+    "badge": {
+      "ar": "مميز",
+      "en": "مميز"
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": true,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "سماعات Sony WF-1000XM5",
+      "en": "Sony WF-1000XM5 Earbuds"
+    },
+    "category_en": "Earbuds"
   },
   {
     "id": "NPH-063",
@@ -1994,26 +2428,33 @@
     "discount": 14,
     "rating": 4.8,
     "reviews": 15432,
-    "stock": 71,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-063.jpg",
-    "description_ar": "سماعات Bose QuietComfort Ultra — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 32,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/earbuds.svg",
+    "description_ar": "سماعات Bose QuietComfort Ultra — من أفضل منتجات سماعات ذكية.",
     "features_ar": [
-      "Immersive Audio",
-      "CustomTune ANC",
+      "Immersive",
+      "CustomTune",
       "6h+24h",
       "USB-C",
       "IP54"
     ],
     "tags": [
-      "سماعات ذكية",
-      "سماعات"
+      "سماعات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "سماعات Bose QuietComfort Ultra",
+      "en": "Bose QuietComfort Ultra Earbuds"
+    },
+    "category_en": "Earbuds"
   },
   {
     "id": "NPH-064",
@@ -2026,26 +2467,33 @@
     "discount": 17,
     "rating": 4.7,
     "reviews": 12345,
-    "stock": 33,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
-    "description_ar": "سماعات Samsung Galaxy Buds 3 Pro — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 92,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/earbuds.svg",
+    "description_ar": "سماعات Samsung Galaxy Buds 3 Pro — من أفضل منتجات سماعات ذكية.",
     "features_ar": [
       "ANC AI",
-      "Blade Design",
+      "Blade",
       "IP57",
-      "360° Audio",
+      "360°",
       "6h+30h"
     ],
     "tags": [
-      "سماعات ذكية",
-      "سماعات"
+      "سماعات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "سماعات Samsung Galaxy Buds 3 Pro",
+      "en": "Samsung Galaxy Buds 3 Pro"
+    },
+    "category_en": "Earbuds"
   },
   {
     "id": "NPH-065",
@@ -2058,9 +2506,9 @@
     "discount": 10,
     "rating": 4.8,
     "reviews": 32145,
-    "stock": 75,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-065.jpg",
-    "description_ar": "سماعات Apple AirPods 4 ANC — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 45,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/earbuds.svg",
+    "description_ar": "سماعات Apple AirPods 4 ANC — من أفضل منتجات سماعات ذكية.",
     "features_ar": [
       "H2 ANC",
       "Open-ear",
@@ -2069,15 +2517,22 @@
       "IP54"
     ],
     "tags": [
-      "سماعات ذكية",
-      "سماعات"
+      "سماعات ذكية"
     ],
-    "badge": "جديد",
+    "badge": {
+      "ar": "جديد",
+      "en": "جديد"
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "سماعات Apple AirPods 4 ANC",
+      "en": "Apple AirPods 4 with ANC"
+    },
+    "category_en": "Earbuds"
   },
   {
     "id": "NPH-066",
@@ -2090,26 +2545,33 @@
     "discount": 13,
     "rating": 4.8,
     "reviews": 45678,
-    "stock": 56,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-066.jpg",
-    "description_ar": "سماعات Sony WH-1000XM5 فوق الأذن — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 26,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/earbuds.svg",
+    "description_ar": "سماعات Sony WH-1000XM5 فوق الأذن — من أفضل منتجات سماعات ذكية.",
     "features_ar": [
       "ANC AI",
-      "30h بطارية",
+      "30h",
       "Multi-point",
-      "LDAC HiRes",
+      "LDAC",
       "فولد"
     ],
     "tags": [
-      "سماعات ذكية",
-      "سماعات"
+      "سماعات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "سماعات Sony WH-1000XM5 فوق الأذن",
+      "en": "Sony WH-1000XM5 Headphones"
+    },
+    "category_en": "Earbuds"
   },
   {
     "id": "NPH-067",
@@ -2122,26 +2584,33 @@
     "discount": 17,
     "rating": 4.6,
     "reviews": 8765,
-    "stock": 63,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-067.jpg",
-    "description_ar": "سماعات Nothing Ear 3 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 29,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/earbuds.svg",
+    "description_ar": "سماعات Nothing Ear 3 — من أفضل منتجات سماعات ذكية.",
     "features_ar": [
-      "تصميم شفاف",
+      "شفاف",
       "ANC 45dB",
       "8.5h+40h",
       "IP55",
       "ChatGPT"
     ],
     "tags": [
-      "سماعات ذكية",
-      "سماعات"
+      "سماعات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "سماعات Nothing Ear 3",
+      "en": "Nothing Ear 3 Wireless"
+    },
+    "category_en": "Earbuds"
   },
   {
     "id": "NPH-068",
@@ -2154,26 +2623,33 @@
     "discount": 17,
     "rating": 4.5,
     "reviews": 4321,
-    "stock": 82,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-068.jpg",
-    "description_ar": "سماعات Jabra Evolve2 Buds — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 42,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/earbuds.svg",
+    "description_ar": "سماعات Jabra Evolve2 Buds — من أفضل منتجات سماعات ذكية.",
     "features_ar": [
-      "للمهنيين",
+      "مهني",
       "ANC AI",
-      "Jabra AI",
       "6h+33h",
-      "UC certified"
+      "UC",
+      "Jabra AI"
     ],
     "tags": [
-      "سماعات ذكية",
-      "سماعات"
+      "سماعات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "سماعات Jabra Evolve2 Buds",
+      "en": "Jabra Evolve2 Buds Pro"
+    },
+    "category_en": "Earbuds"
   },
   {
     "id": "NPH-069",
@@ -2186,9 +2662,9 @@
     "discount": 15,
     "rating": 4.6,
     "reviews": 6543,
-    "stock": 41,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-069.jpg",
-    "description_ar": "سماعات Beats Studio Buds+ — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 74,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/earbuds.svg",
+    "description_ar": "سماعات Beats Studio Buds+ — من أفضل منتجات سماعات ذكية.",
     "features_ar": [
       "ANC 36dB",
       "Transparency",
@@ -2197,15 +2673,22 @@
       "Android+iOS"
     ],
     "tags": [
-      "سماعات ذكية",
-      "سماعات"
+      "سماعات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "سماعات Beats Studio Buds+",
+      "en": "Beats Studio Buds Plus"
+    },
+    "category_en": "Earbuds"
   },
   {
     "id": "NPH-070",
@@ -2218,26 +2701,33 @@
     "discount": 15,
     "rating": 4.7,
     "reviews": 3456,
-    "stock": 80,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-070.jpg",
-    "description_ar": "سماعات Sennheiser MTW4 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 89,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/earbuds.svg",
+    "description_ar": "سماعات Sennheiser MTW4 — من أفضل منتجات سماعات ذكية.",
     "features_ar": [
-      "Hi-Fi صوت",
+      "Hi-Fi",
       "ANC Adaptive",
       "7h+28h",
-      "aptX Lossless",
+      "aptX",
       "IP54"
     ],
     "tags": [
-      "سماعات ذكية",
-      "سماعات"
+      "سماعات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "سماعات Sennheiser MTW4",
+      "en": "Sennheiser Momentum True Wireless 4"
+    },
+    "category_en": "Earbuds"
   },
   {
     "id": "NPH-071",
@@ -2250,26 +2740,33 @@
     "discount": 12,
     "rating": 4.7,
     "reviews": 8765,
-    "stock": 43,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-071.jpg",
-    "description_ar": "سماعات Google Pixel Buds Pro 2 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 85,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/earbuds.svg",
+    "description_ar": "سماعات Google Pixel Buds Pro 2 — من أفضل منتجات سماعات ذكية.",
     "features_ar": [
       "Tensor A1",
-      "ANC محسَّن",
+      "ANC",
       "11h+33h",
-      "ترجمة فورية",
+      "ترجمة",
       "Gemini"
     ],
     "tags": [
-      "سماعات ذكية",
-      "سماعات"
+      "سماعات ذكية"
     ],
-    "badge": "جديد",
+    "badge": {
+      "ar": "جديد",
+      "en": "جديد"
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "سماعات Google Pixel Buds Pro 2",
+      "en": "Google Pixel Buds Pro 2"
+    },
+    "category_en": "Earbuds"
   },
   {
     "id": "NPH-072",
@@ -2282,9 +2779,9 @@
     "discount": 19,
     "rating": 4.6,
     "reviews": 12345,
-    "stock": 36,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-072.jpg",
-    "description_ar": "سماعات Anker Soundcore Liberty 4 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 48,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/earbuds.svg",
+    "description_ar": "سماعات Anker Soundcore Liberty 4 — من أفضل منتجات سماعات ذكية.",
     "features_ar": [
       "ANC 50dB",
       "LDAC",
@@ -2293,15 +2790,22 @@
       "شاشة"
     ],
     "tags": [
-      "سماعات ذكية",
-      "سماعات"
+      "سماعات ذكية"
     ],
-    "badge": "قيمة مثالية",
+    "badge": {
+      "ar": "قيمة مثالية",
+      "en": "قيمة مثالية"
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "سماعات Anker Soundcore Liberty 4",
+      "en": "Anker Soundcore Liberty 4 Pro"
+    },
+    "category_en": "Earbuds"
   },
   {
     "id": "NPH-073",
@@ -2314,9 +2818,9 @@
     "discount": 17,
     "rating": 4.6,
     "reviews": 5432,
-    "stock": 87,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-073.jpg",
-    "description_ar": "سماعات JBL Tour Pro 3 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 20,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/earbuds.svg",
+    "description_ar": "سماعات JBL Tour Pro 3 — من أفضل منتجات سماعات ذكية.",
     "features_ar": [
       "شاشة لمس",
       "ANC Pro",
@@ -2325,15 +2829,22 @@
       "ChatGPT"
     ],
     "tags": [
-      "سماعات ذكية",
-      "سماعات"
+      "سماعات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "سماعات JBL Tour Pro 3",
+      "en": "JBL Tour Pro 3 Earbuds"
+    },
+    "category_en": "Earbuds"
   },
   {
     "id": "NPH-074",
@@ -2346,26 +2857,33 @@
     "discount": 14,
     "rating": 4.6,
     "reviews": 2345,
-    "stock": 75,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-074.jpg",
-    "description_ar": "سماعات Shure Aonic Free 2 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 88,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/earbuds.svg",
+    "description_ar": "سماعات Shure Aonic Free 2 — من أفضل منتجات سماعات ذكية.",
     "features_ar": [
-      "جودة استوديو",
+      "استوديو",
       "ANC",
       "7h+28h",
       "USB-C",
       "لمس"
     ],
     "tags": [
-      "سماعات ذكية",
-      "سماعات"
+      "سماعات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "سماعات Shure Aonic Free 2",
+      "en": "Shure Aonic Free 2"
+    },
+    "category_en": "Earbuds"
   },
   {
     "id": "NPH-075",
@@ -2378,9 +2896,9 @@
     "discount": 14,
     "rating": 4.7,
     "reviews": 1876,
-    "stock": 58,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-075.jpg",
-    "description_ar": "سماعات Technics EAH-AZ100 — من أفضل منتجات سماعات ذكية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 39,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/earbuds.svg",
+    "description_ar": "سماعات Technics EAH-AZ100 — من أفضل منتجات سماعات ذكية.",
     "features_ar": [
       "ANC AI",
       "Jitter-less",
@@ -2389,15 +2907,22 @@
       "IPX4"
     ],
     "tags": [
-      "سماعات ذكية",
-      "سماعات"
+      "سماعات ذكية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "سماعات Technics EAH-AZ100",
+      "en": "Technics EAH-AZ100 Earbuds"
+    },
+    "category_en": "Earbuds"
   },
   {
     "id": "NPH-076",
@@ -2410,26 +2935,33 @@
     "discount": 13,
     "rating": 4.9,
     "reviews": 23456,
-    "stock": 88,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-076.jpg",
-    "description_ar": "جهاز iPad Pro M4 13 بوصة — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 27,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/productivity.svg",
+    "description_ar": "جهاز iPad Pro M4 13 بوصة — من أفضل منتجات إنتاجية.",
     "features_ar": [
-      "M4 Chip",
+      "M4",
       "OLED Tandem",
       "Apple Intelligence",
       "120Hz",
       "USB4"
     ],
     "tags": [
-      "إنتاجية",
-      "جهاز"
+      "إنتاجية"
     ],
-    "badge": "الأكثر مبيعاً",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "الأكثر مبيعاً"
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": true,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "جهاز iPad Pro M4 13 بوصة",
+      "en": "Apple iPad Pro M4 13 inch"
+    },
+    "category_en": "Productivity"
   },
   {
     "id": "NPH-077",
@@ -2442,26 +2974,33 @@
     "discount": 13,
     "rating": 4.8,
     "reviews": 12345,
-    "stock": 74,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-077.jpg",
-    "description_ar": "تابلت Samsung Galaxy Tab S10 Ultra — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 38,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/productivity.svg",
+    "description_ar": "تابلت Samsung Galaxy Tab S10 Ultra — من أفضل منتجات إنتاجية.",
     "features_ar": [
       "Snapdragon 8 Gen 3",
-      "AMOLED 14.6\"",
+      "AMOLED 14.6",
       "S Pen",
       "DeX",
       "12000mAh"
     ],
     "tags": [
-      "إنتاجية",
-      "تابلت"
+      "إنتاجية"
     ],
-    "badge": "مميز",
+    "badge": {
+      "ar": "مميز",
+      "en": "مميز"
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": true,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "تابلت Samsung Galaxy Tab S10 Ultra",
+      "en": "Samsung Galaxy Tab S10 Ultra"
+    },
+    "category_en": "Productivity"
   },
   {
     "id": "NPH-078",
@@ -2474,26 +3013,33 @@
     "discount": 17,
     "rating": 4.9,
     "reviews": 45678,
-    "stock": 73,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-078.png",
-    "description_ar": "ماوس Logitech MX Master 3S — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 68,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/productivity.svg",
+    "description_ar": "ماوس Logitech MX Master 3S — من أفضل منتجات إنتاجية.",
     "features_ar": [
       "8000 DPI",
-      "MagSpeed عجلة",
+      "MagSpeed",
       "7 أزرار",
       "70 يوم",
       "Bolt"
     ],
     "tags": [
-      "إنتاجية",
-      "ماوس"
+      "إنتاجية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "ماوس Logitech MX Master 3S",
+      "en": "Logitech MX Master 3S Mouse"
+    },
+    "category_en": "Productivity"
   },
   {
     "id": "NPH-079",
@@ -2506,9 +3052,9 @@
     "discount": 17,
     "rating": 4.8,
     "reviews": 23456,
-    "stock": 69,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-079.jpg",
-    "description_ar": "لوحة Logitech MX Keys S Plus — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 81,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/productivity.svg",
+    "description_ar": "لوحة Logitech MX Keys S Plus — من أفضل منتجات إنتاجية.",
     "features_ar": [
       "Smart Backlight",
       "Smart Actions",
@@ -2517,15 +3063,22 @@
       "Flow"
     ],
     "tags": [
-      "إنتاجية",
-      "لوحة"
+      "إنتاجية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "لوحة Logitech MX Keys S Plus",
+      "en": "Logitech MX Keys S Plus Keyboard"
+    },
+    "category_en": "Productivity"
   },
   {
     "id": "NPH-080",
@@ -2538,26 +3091,33 @@
     "discount": 14,
     "rating": 4.8,
     "reviews": 8765,
-    "stock": 85,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-080.jpg",
-    "description_ar": "لوحة Keychron Q6 Max — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 73,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/productivity.svg",
+    "description_ar": "لوحة Keychron Q6 Max — من أفضل منتجات إنتاجية.",
     "features_ar": [
-      "مفاتيح ميكانيكية",
+      "ميكانيكي",
       "QMK/VIA",
-      "Gasket Mount",
+      "Gasket",
       "BT 5.1",
       "5000mAh"
     ],
     "tags": [
-      "إنتاجية",
-      "لوحة"
+      "إنتاجية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "لوحة Keychron Q6 Max",
+      "en": "Keychron Q6 Max Wireless Keyboard"
+    },
+    "category_en": "Productivity"
   },
   {
     "id": "NPH-081",
@@ -2570,26 +3130,33 @@
     "discount": 17,
     "rating": 4.7,
     "reviews": 6543,
-    "stock": 62,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
-    "description_ar": "جهاز Elgato Stream Deck Neo — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 44,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/productivity.svg",
+    "description_ar": "جهاز Elgato Stream Deck Neo — من أفضل منتجات إنتاجية.",
     "features_ar": [
-      "8 مفاتيح LCD",
-      "شاشتا Info",
-      "تكامل واسع",
+      "8 LCD",
+      "شاشتان",
+      "تكامل",
       "USB-C",
-      "كل شيء"
+      "شامل"
     ],
     "tags": [
-      "إنتاجية",
-      "جهاز"
+      "إنتاجية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "جهاز Elgato Stream Deck Neo",
+      "en": "Elgato Stream Deck Neo Panel"
+    },
+    "category_en": "Productivity"
   },
   {
     "id": "NPH-082",
@@ -2602,26 +3169,33 @@
     "discount": 13,
     "rating": 4.8,
     "reviews": 21345,
-    "stock": 52,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
-    "description_ar": "قلم Apple Pencil Pro — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 31,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/productivity.svg",
+    "description_ar": "قلم Apple Pencil Pro — من أفضل منتجات إنتاجية.",
     "features_ar": [
-      "Squeeze + Double Tap",
+      "Squeeze+Tap",
       "دوران",
       "Barrel Roll",
-      "شحن مغناطيسي",
+      "مغناطيسي",
       "9ms"
     ],
     "tags": [
-      "إنتاجية",
-      "قلم"
+      "إنتاجية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "قلم Apple Pencil Pro",
+      "en": "Apple Pencil Pro Stylus"
+    },
+    "category_en": "Productivity"
   },
   {
     "id": "NPH-083",
@@ -2634,26 +3208,33 @@
     "discount": 18,
     "rating": 4.8,
     "reviews": 34567,
-    "stock": 34,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-083.jpg",
-    "description_ar": "شاحن Anker 737 GaNPrime 120W — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 35,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/productivity.svg",
+    "description_ar": "شاحن Anker 737 GaNPrime 120W — من أفضل منتجات إنتاجية.",
     "features_ar": [
       "120W",
       "3 منافذ",
       "GaN III",
-      "43 دقيقة 80%",
+      "43 دقيقة",
       "USB-C+A"
     ],
     "tags": [
-      "إنتاجية",
-      "شاحن"
+      "إنتاجية"
     ],
-    "badge": "قيمة مثالية",
+    "badge": {
+      "ar": "قيمة مثالية",
+      "en": "قيمة مثالية"
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "شاحن Anker 737 GaNPrime 120W",
+      "en": "Anker 737 GaNPrime 120W Charger"
+    },
+    "category_en": "Productivity"
   },
   {
     "id": "NPH-084",
@@ -2666,26 +3247,33 @@
     "discount": 13,
     "rating": 4.7,
     "reviews": 3456,
-    "stock": 20,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-084.jpg",
-    "description_ar": "شاشة Samsung Odyssey OLED G9 — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 89,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/productivity.svg",
+    "description_ar": "شاشة Samsung Odyssey OLED G9 — من أفضل منتجات إنتاجية.",
     "features_ar": [
-      "OLED 49\" QHD",
+      "OLED 49 QHD",
       "240Hz",
       "0.03ms",
-      "HDR True Black",
+      "HDR",
       "FreeSync"
     ],
     "tags": [
-      "إنتاجية",
-      "شاشة"
+      "إنتاجية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "شاشة Samsung Odyssey OLED G9",
+      "en": "Samsung Odyssey OLED G9 Monitor"
+    },
+    "category_en": "Productivity"
   },
   {
     "id": "NPH-085",
@@ -2698,26 +3286,33 @@
     "discount": 10,
     "rating": 4.8,
     "reviews": 8765,
-    "stock": 62,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-085.jpg",
-    "description_ar": "لوح رسم Wacom Intuos Pro L — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 86,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/productivity.svg",
+    "description_ar": "لوح رسم Wacom Intuos Pro L — من أفضل منتجات إنتاجية.",
     "features_ar": [
       "8192 ضغط",
       "Pro Pen 3",
       "BT 5.0",
-      "Touch Multi",
+      "Touch",
       "ExpressKey"
     ],
     "tags": [
-      "إنتاجية",
-      "لوح"
+      "إنتاجية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "لوح رسم Wacom Intuos Pro L",
+      "en": "Wacom Intuos Pro Large Tablet"
+    },
+    "category_en": "Productivity"
   },
   {
     "id": "NPH-086",
@@ -2730,26 +3325,33 @@
     "discount": 13,
     "rating": 4.8,
     "reviews": 12345,
-    "stock": 72,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-086.jpg",
-    "description_ar": "جهاز Steam Deck OLED 1 تيرابايت — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 68,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/productivity.svg",
+    "description_ar": "جهاز Steam Deck OLED 1 تيرابايت — من أفضل منتجات إنتاجية.",
     "features_ar": [
       "OLED HDR 90Hz",
       "AMD APU",
-      "بطارية +50%",
+      "50% أكثر",
       "1TB NVMe",
       "WiFi 6E"
     ],
     "tags": [
-      "إنتاجية",
-      "جهاز"
+      "إنتاجية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "جهاز Steam Deck OLED 1 تيرابايت",
+      "en": "Steam Deck OLED 1TB Gaming"
+    },
+    "category_en": "Productivity"
   },
   {
     "id": "NPH-087",
@@ -2762,9 +3364,9 @@
     "discount": 20,
     "rating": 4.7,
     "reviews": 23456,
-    "stock": 31,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/.svg",
-    "description_ar": "محطة شحن Anker MagGo اللاسلكي — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 84,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/productivity.svg",
+    "description_ar": "محطة شحن Anker MagGo اللاسلكي — من أفضل منتجات إنتاجية.",
     "features_ar": [
       "MagSafe 15W",
       "3-in-1",
@@ -2773,15 +3375,22 @@
       "قابل للطي"
     ],
     "tags": [
-      "إنتاجية",
-      "محطة"
+      "إنتاجية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "محطة شحن Anker MagGo اللاسلكي",
+      "en": "Anker MagGo 3-in-1 Wireless Charger"
+    },
+    "category_en": "Productivity"
   },
   {
     "id": "NPH-088",
@@ -2794,26 +3403,33 @@
     "discount": 17,
     "rating": 4.7,
     "reviews": 4321,
-    "stock": 47,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-088.jpg",
-    "description_ar": "شاشة LG UltraWide 34 بوصة — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 27,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/productivity.svg",
+    "description_ar": "شاشة LG UltraWide 34 بوصة — من أفضل منتجات إنتاجية.",
     "features_ar": [
-      "5K2K 5120x2160",
+      "5K2K",
       "IPS",
       "Thunderbolt 4",
       "KVM",
       "Ergo Stand"
     ],
     "tags": [
-      "إنتاجية",
-      "شاشة"
+      "إنتاجية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "شاشة LG UltraWide 34 بوصة",
+      "en": "LG UltraWide 34 5K2K Monitor"
+    },
+    "category_en": "Productivity"
   },
   {
     "id": "NPH-089",
@@ -2826,26 +3442,33 @@
     "discount": 15,
     "rating": 4.6,
     "reviews": 3210,
-    "stock": 86,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-089.jpg",
-    "description_ar": "سماعات Jabra Evolve2 85 — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 28,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/productivity.svg",
+    "description_ar": "سماعات Jabra Evolve2 85 — من أفضل منتجات إنتاجية.",
     "features_ar": [
-      "ANC للعمل",
+      "ANC عمل",
       "Busylight",
       "37h",
-      "UC Certified",
+      "UC",
       "8 ميكروفون"
     ],
     "tags": [
-      "إنتاجية",
-      "سماعات"
+      "إنتاجية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "سماعات Jabra Evolve2 85",
+      "en": "Jabra Evolve2 85 ANC Headset"
+    },
+    "category_en": "Productivity"
   },
   {
     "id": "NPH-090",
@@ -2858,25 +3481,32 @@
     "discount": 17,
     "rating": 4.7,
     "reviews": 5432,
-    "stock": 83,
-    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/NPH-090.jpg",
-    "description_ar": "حامل Twelve South HiRise 3 — من أفضل منتجات إنتاجية في السوق. جودة عالية وأداء استثنائي.",
+    "stock": 82,
+    "image": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/productivity.svg",
+    "description_ar": "حامل Twelve South HiRise 3 — من أفضل منتجات إنتاجية.",
     "features_ar": [
       "MagSafe 15W",
-      "حامل لاب توب",
+      "لاب توب",
       "Ergo",
       "iPhone+Mac",
-      "قابل تعديل"
+      "تعديل"
     ],
     "tags": [
-      "إنتاجية",
-      "حامل"
+      "إنتاجية"
     ],
-    "badge": "",
+    "badge": {
+      "ar": "",
+      "en": ""
+    },
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
-    "added_by": "smart_bot_v4",
-    "added_at": "2026-03-10"
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "name": {
+      "ar": "حامل Twelve South HiRise 3",
+      "en": "Twelve South HiRise 3 Deluxe"
+    },
+    "category_en": "Productivity"
   }
 ]
