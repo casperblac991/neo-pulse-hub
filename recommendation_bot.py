@@ -472,6 +472,14 @@ async def _send_product_card(chat_id: int, ctx, p: dict, prefix: str = ""):
 # MAIN
 # ══════════════════════════════════════════════════════════════════
 
+def _register_handlers(app):
+    """يُستخدم في Webhook mode"""
+    from telegram.ext import CommandHandler, MessageHandler, CallbackQueryHandler, filters
+    app.add_handler(CommandHandler("start",   cmd_start))
+    app.add_handler(CommandHandler("compare", cmd_compare))
+    app.add_handler(CallbackQueryHandler(handle_callback))
+    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
+
 def main():
     if not TOKEN:
         print("❌ RECO_BOT_TOKEN or TELEGRAM_TOKEN missing!")
