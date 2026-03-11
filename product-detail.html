@@ -74,7 +74,8 @@ nav{position:sticky;top:0;z-index:200;display:flex;align-items:center;justify-co
 .toast.show{transform:translateY(0);opacity:1}
 @media(max-width:768px){.product-layout{grid-template-columns:1fr}.nav-links{display:none}}
 @media(max-width:480px){.main{padding:2rem 1rem 4rem}.action-row{flex-direction:column}}
-  </style>
+  .lang-switch{display:flex;gap:5px}.lang-btn{background:rgba(59,130,246,.1);border:1px solid rgba(99,179,237,.25);color:#e2e8f0;padding:.25rem .8rem;border-radius:50px;font-size:.8rem;font-weight:600;cursor:pointer;transition:all .3s}.lang-btn.active{background:linear-gradient(135deg,#3b82f6,#7c3aed);color:#fff;border-color:transparent}
+</style>
 </head>
 <body>
 <div class="bg-grid"></div>
@@ -116,6 +117,17 @@ nav{position:sticky;top:0;z-index:200;display:flex;align-items:center;justify-co
 <div class="toast" id="toast"><span id="toastIcon"></span><span id="toastText" style="font-size:.9rem;font-weight:600"></span></div>
 
 <script>
+function changeLang(l) {
+  lang = l;
+  localStorage.setItem('nph_lang', l);
+  document.documentElement.setAttribute('dir', l === 'ar' ? 'rtl' : 'ltr');
+  const ar = document.getElementById('langAr');
+  const en = document.getElementById('langEn');
+  if(ar) ar.classList.toggle('active', l === 'ar');
+  if(en) en.classList.toggle('active', l === 'en');
+  if(typeof renderProduct === 'function') renderProduct();
+}
+
 let product = null, qty = 1;
 let allProducts = [];
 let cart = JSON.parse(localStorage.getItem('nph_cart') || '[]');
@@ -245,6 +257,9 @@ function showToast(icon, text) {
 }
 
 window.addEventListener('load', init);
+
+// checkout link
+function goToCheckout(id, qty) { window.location.href = 'checkout.html?id='+id+'&qty='+(qty||1); }
 </script>
 </body>
 </html>
