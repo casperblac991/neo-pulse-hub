@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>اتصل بنا | NEO PULSE HUB</title>
+  <title id="pageTitle">اتصل بنا | NEO PULSE HUB</title>
   <meta name="description" content="تواصل مع فريق NEO PULSE HUB — خدمة عملاء، دعم فني، أو استفسار عن منتج.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -148,7 +148,7 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:1.5r
 </div>
 
 <div class="page-hero">
-  <div class="tag">تواصل معنا</div>
+  <div class="tag" data-i18n="contact_title">تواصل معنا</div>
   <h1 class="page-title">كيف يمكننا مساعدتك؟</h1>
   <p class="page-sub">فريقنا جاهز للإجابة على جميع استفساراتك</p>
 </div>
@@ -169,7 +169,7 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:1.5r
       <div class="info-card">
         <div class="info-icon purple">📧</div>
         <div>
-          <div class="info-label">البريد الإلكتروني</div>
+          <div class="info-label" data-i18n="contact_email_label">البريد الإلكتروني</div>
           <div class="info-value">support@neo-pulse-hub.it.com</div>
           <div class="info-sub">رد خلال 24 ساعة</div>
         </div>
@@ -288,6 +288,48 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:1.5r
 // ═══ LANG SYSTEM ═══
 let lang = localStorage.getItem('nph_lang') || 'ar';
 
+
+const PAGE_T = {
+  ar: {
+    pageTitle: 'اتصل بنا | NEO PULSE HUB',
+    contact_title: 'تواصل معنا',
+    contact_sub: 'نحن هنا للمساعدة',
+    contact_instant: 'الدعم الفوري',
+    contact_email_label: 'البريد الإلكتروني',
+    contact_hours_label: 'ساعات العمل',
+    contact_form_title: 'أرسل لنا رسالة',
+    contact_name: 'اسمك',
+    contact_email: 'بريدك الإلكتروني',
+    contact_subject: 'الموضوع',
+    contact_message: 'رسالتك',
+    contact_send: 'إرسال الرسالة ⚡',
+  },
+  en: {
+    pageTitle: 'Contact Us | NEO PULSE HUB',
+    contact_title: 'Get in Touch',
+    contact_sub: 'We're here to help',
+    contact_instant: 'Instant Support',
+    contact_email_label: 'Email',
+    contact_hours_label: 'Working Hours',
+    contact_form_title: 'Send Us a Message',
+    contact_name: 'Your Name',
+    contact_email: 'Your Email',
+    contact_subject: 'Subject',
+    contact_message: 'Your Message',
+    contact_send: 'Send Message ⚡',
+  }
+};
+
+// تطبيق ترجمات الصفحة
+function applyPageTranslations(l) {
+  const t = PAGE_T[l] || PAGE_T.ar;
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const k = el.dataset.i18n;
+    if (t[k]) el.textContent = t[k];
+    else if (T_NAV[l] && T_NAV[l][k]) el.textContent = T_NAV[l][k];
+  });
+  if (t.pageTitle) document.title = t.pageTitle;
+}
 const T_NAV = {
   ar: { nav_home:'الرئيسية', nav_products:'المنتجات', nav_about:'من نحن', nav_contact:'اتصل بنا', nav_cart:'🛒 السلة' },
   en: { nav_home:'Home', nav_products:'Products', nav_about:'About', nav_contact:'Contact', nav_cart:'🛒 Cart' }
@@ -302,10 +344,7 @@ function changeLang(l) {
   const en = document.getElementById('langEn');
   if(ar) { ar.classList.toggle('active', l==='ar'); }
   if(en) { en.classList.toggle('active', l==='en'); }
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const k = el.dataset.i18n;
-    if(T_NAV[l] && T_NAV[l][k]) el.textContent = T_NAV[l][k];
-  });
+  applyPageTranslations(l);
 }
 
 function updateCartBadge() {
