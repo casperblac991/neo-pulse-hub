@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>من نحن | NEO PULSE HUB</title>
+  <meta name="description" content="تعرف على قصة NEO PULSE HUB — متجر منتجات الذكاء الاصطناعي والتقنية الذكية.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+:root{--bg:#020510;--surface:#0a0d1a;--surface2:#0f1423;--border:rgba(99,179,237,.12);--border2:rgba(99,179,237,.25);--blue:#3b82f6;--blue2:#60a5fa;--purple:#7c3aed;--purple2:#a855f7;--cyan:#06b6d4;--cyan2:#22d3ee;--green:#10b981;--gold:#f59e0b;--text:#e2e8f0;--muted:rgba(226,232,240,.55);--r:12px;--r2:20px;--rp:50px;--ease:.3s cubic-bezier(.4,0,.2,1)}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.8}
+a{color:inherit;text-decoration:none}button{cursor:pointer;border:none;background:none;font-family:inherit}
+.bg-grid{position:fixed;inset:0;z-index:-2;background-image:linear-gradient(rgba(59,130,246,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,.04) 1px,transparent 1px);background-size:60px 60px}
+.bg-grad{position:fixed;inset:0;z-index:-1;background:radial-gradient(ellipse 70% 50% at 15% 15%,rgba(124,58,237,.1),transparent 60%),radial-gradient(ellipse 50% 40% at 85% 85%,rgba(6,182,212,.07),transparent 60%)}
+nav{position:sticky;top:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:.9rem 2.5rem;gap:1rem;background:rgba(2,5,16,.9);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.nav-logo{font-family:'Orbitron',sans-serif;font-size:1.05rem;font-weight:700;background:linear-gradient(135deg,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.nav-links{display:flex;gap:.2rem;list-style:none}
+.nav-links a{font-size:.85rem;font-weight:500;color:var(--muted);padding:.35rem .8rem;border-radius:var(--rp);transition:color var(--ease),background var(--ease)}
+.nav-links a:hover,.nav-links a.active{color:var(--cyan2);background:rgba(6,182,212,.08)}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:6px;background:rgba(59,130,246,.08);border:1px solid var(--border);border-radius:8px}
+.hamburger span{display:block;width:20px;height:2px;background:var(--blue2);border-radius:2px;transition:all var(--ease)}
+.mobile-drawer{display:none;position:fixed;top:61px;inset:0;z-index:199;background:rgba(2,5,16,.97);backdrop-filter:blur(20px);flex-direction:column;align-items:center;justify-content:center;gap:1.5rem;padding:2rem;opacity:0;pointer-events:none;transition:opacity var(--ease)}
+.mobile-drawer.open{display:flex!important;opacity:1;pointer-events:all}
+.mobile-drawer a{font-size:1.3rem;font-weight:700;color:var(--muted);transition:color var(--ease)}
+.mobile-drawer a:hover{color:var(--cyan2)}
+/* Hero */
+.page-hero{padding:6rem 2rem 4rem;text-align:center;position:relative}
+.page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 50% 0%,rgba(59,130,246,.08),transparent 70%);pointer-events:none}
+.tag{display:inline-block;font-size:.73rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan2);border:1px solid rgba(6,182,212,.3);background:rgba(6,182,212,.06);padding:.25rem .9rem;border-radius:var(--rp);margin-bottom:1rem}
+.page-title{font-family:'Orbitron',sans-serif;font-size:clamp(1.8rem,4vw,3rem);font-weight:900;background:linear-gradient(135deg,#fff,var(--blue2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:1rem}
+.page-sub{color:var(--muted);font-size:1rem;max-width:580px;margin:0 auto}
+/* Main */
+.main{max-width:1100px;margin:0 auto;padding:0 2rem 5rem}
+/* Story */
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;padding:3rem 0}
+.story-text h2{font-family:'Orbitron',sans-serif;font-size:1.5rem;font-weight:700;background:linear-gradient(135deg,#fff,var(--blue2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:1rem}
+.story-text p{color:var(--muted);font-size:.95rem;margin-bottom:1rem;line-height:1.9}
+.story-visual{background:var(--surface);border:1px solid var(--border2);border-radius:var(--r2);padding:2.5rem;display:flex;flex-direction:column;gap:1.2rem;position:relative;overflow:hidden}
+.story-visual::before{content:'NEO\APULSE';font-family:'Orbitron',sans-serif;font-size:6rem;font-weight:900;color:rgba(59,130,246,.04);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);white-space:pre;text-align:center;pointer-events:none}
+.stat-row{display:flex;align-items:center;gap:1rem}
+.stat-icon{width:44px;height:44px;border-radius:var(--r);background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.2);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
+.stat-info-num{font-family:'Orbitron',sans-serif;font-size:1.4rem;font-weight:700;background:linear-gradient(135deg,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.stat-info-label{font-size:.8rem;color:var(--muted)}
+/* Values */
+.values-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.3rem;margin:2rem 0}
+.value-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:1.8rem 1.5rem;transition:all var(--ease);position:relative;overflow:hidden}
+.value-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--blue),var(--cyan2),transparent);opacity:0;transition:opacity var(--ease)}
+.value-card:hover{border-color:var(--border2);transform:translateY(-4px)}
+.value-card:hover::after{opacity:1}
+.value-icon{font-size:2rem;margin-bottom:1rem}
+.value-title{font-size:1rem;font-weight:700;margin-bottom:.5rem}
+.value-desc{font-size:.87rem;color:var(--muted);line-height:1.8}
+/* Team */
+.section-title{font-family:'Orbitron',sans-serif;font-size:1.5rem;font-weight:700;background:linear-gradient(135deg,#fff,var(--blue2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-align:center;margin-bottom:2rem}
+.timeline{position:relative;padding-right:2rem}
+.timeline::before{content:'';position:absolute;right:0;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--blue),var(--purple),var(--cyan2))}
+.timeline-item{position:relative;padding-right:2rem;margin-bottom:2rem}
+.timeline-item::before{content:'';position:absolute;right:-7px;top:4px;width:14px;height:14px;border-radius:50%;background:var(--blue2);border:2px solid var(--bg);box-shadow:0 0 10px rgba(59,130,246,.5)}
+.timeline-year{font-family:'Orbitron',sans-serif;font-size:.78rem;font-weight:700;color:var(--blue2);margin-bottom:.3rem}
+.timeline-title{font-size:.95rem;font-weight:700;margin-bottom:.3rem}
+.timeline-desc{font-size:.85rem;color:var(--muted)}
+/* CTA */
+.cta-box{background:linear-gradient(135deg,rgba(59,130,246,.1),rgba(124,58,237,.08));border:1px solid var(--border2);border-radius:var(--r2);padding:3rem 2rem;text-align:center;margin-top:3rem}
+.cta-title{font-family:'Orbitron',sans-serif;font-size:1.5rem;font-weight:700;color:#fff;margin-bottom:.7rem}
+.cta-sub{color:var(--muted);margin-bottom:2rem}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:.85rem 2rem;border-radius:var(--rp);font-weight:700;font-size:.95rem;font-family:'Cairo',sans-serif;transition:all var(--ease);cursor:pointer;border:none}
+.btn-primary{background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;box-shadow:0 0 20px rgba(59,130,246,.3)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(59,130,246,.5)}
+.btn-outline{background:rgba(6,182,212,.06);border:1px solid rgba(6,182,212,.3);color:var(--cyan2)}
+.btn-outline:hover{background:rgba(6,182,212,.12);transform:translateY(-2px)}
+/* Footer */
+footer{background:var(--surface);border-top:1px solid var(--border);padding:2rem;text-align:center}
+.footer-copy{font-size:.78rem;color:rgba(226,232,240,.3)}
+/* Reveal */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:768px){nav{padding:.9rem 1.2rem}.nav-links{display:none}.hamburger{display:flex}.story-grid{grid-template-columns:1fr}.main{padding:0 1rem 4rem}}
+  /* Nav */
+    nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:.9rem 2.5rem;gap:1rem;background:rgba(2,5,16,.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+    .nav-logo{font-family:'Orbitron',sans-serif;font-size:1.1rem;font-weight:700;letter-spacing:.08em;background:linear-gradient(135deg,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;white-space:nowrap}
+    .nav-links{display:flex;align-items:center;gap:.2rem;list-style:none}
+    .nav-links a{font-size:.85rem;font-weight:500;color:var(--muted);padding:.35rem .8rem;border-radius:var(--rp);transition:color var(--ease),background var(--ease)}
+    .nav-links a:hover,.nav-links a.active{color:var(--cyan2);background:rgba(6,182,212,.08)}
+    .lang-switch{display:flex;gap:5px}
+    .lang-btn{background:rgba(59,130,246,.1);border:1px solid var(--border2);color:var(--text);padding:.25rem .8rem;border-radius:var(--rp);font-size:.8rem;font-weight:600;cursor:pointer;transition:all var(--ease)}
+    .lang-btn.active{background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;border-color:transparent}
+    .lang-btn:hover:not(.active){background:rgba(59,130,246,.2)}
+    .nav-cart{position:relative;display:flex;align-items:center;gap:6px;font-size:.85rem;font-weight:600;color:var(--text);background:rgba(59,130,246,.1);border:1px solid var(--border2);border-radius:var(--rp);padding:.4rem 1rem;transition:all var(--ease);cursor:pointer}
+    .nav-cart:hover{background:rgba(59,130,246,.2);box-shadow:var(--glow-b);color:var(--blue2)}
+    .cart-count{position:absolute;top:-6px;right:-6px;background:var(--purple);color:#fff;font-size:.65rem;font-weight:700;width:18px;height:18px;border-radius:50%;display:none;align-items:center;justify-content:center}
+    .hamburger{display:none;flex-direction:column;gap:5px;padding:6px;background:rgba(59,130,246,.08);border:1px solid var(--border);border-radius:8px}
+    .hamburger span{display:block;width:20px;height:2px;background:var(--blue2);border-radius:2px;transition:all var(--ease)}
+    .mobile-drawer{position:fixed;top:61px;inset:0;z-index:199;background:rgba(2,5,16,.97);backdrop-filter:blur(20px);flex-direction:column;align-items:center;justify-content:center;gap:1.5rem;padding:2rem;opacity:0;pointer-events:none;transition:opacity var(--ease);display:none}
+    .mobile-drawer.open{display:flex!important;opacity:1;pointer-events:all}
+    .mobile-drawer a,.mobile-drawer button{font-size:1.2rem;font-weight:700;color:var(--muted);transition:color var(--ease)}
+    .mobile-drawer a:hover{color:var(--cyan2)}
+    /* Lang */
+    .lang-switch{display:flex;gap:5px}.lang-btn{background:rgba(59,130,246,.1);border:1px solid rgba(99,179,237,.25);color:#e2e8f0;padding:.25rem .8rem;border-radius:50px;font-size:.8rem;font-weight:600;cursor:pointer;transition:all .3s}.lang-btn.active{background:linear-gradient(135deg,#3b82f6,#7c3aed);color:#fff;border-color:transparent}
+    .cart-count{position:absolute;top:-6px;right:-6px;background:#7c3aed;color:#fff;font-size:.65rem;font-weight:700;width:18px;height:18px;border-radius:50%;display:none;align-items:center;justify-content:center}
+    .hamburger{display:none;flex-direction:column;gap:5px;padding:6px;background:rgba(59,130,246,.08);border:1px solid rgba(99,179,237,.12);border-radius:8px}
+    .hamburger span{display:block;width:20px;height:2px;background:#60a5fa;border-radius:2px}
+    .mobile-drawer{position:fixed;top:61px;inset:0;z-index:199;background:rgba(2,5,16,.97);backdrop-filter:blur(20px);flex-direction:column;align-items:center;justify-content:center;gap:1.5rem;padding:2rem;display:none}
+    .mobile-drawer.open{display:flex!important}
+    @media(max-width:768px){.nav-links{display:none}.hamburger{display:flex}}
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="bg-grad"></div>
+
+<nav>
+  <a href="index.html" class="nav-logo">NEO PULSE HUB</a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-i18n="nav_home" class="active">الرئيسية</a></li>
+    <li><a href="products.html" data-i18n="nav_products">المنتجات</a></li>
+    <li><a href="about.html" data-i18n="nav_about">من نحن</a></li>
+    <li><a href="contact.html" data-i18n="nav_contact">اتصل بنا</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:.8rem">
+    <div class="lang-switch">
+      <button class="lang-btn active" id="langAr" onclick="changeLang('ar')">عربي</button>
+      <button class="lang-btn" id="langEn" onclick="changeLang('en')">EN</button>
+    </div>
+    <button class="nav-cart" onclick="openCart()">
+      <span data-i18n="nav_cart">🛒 السلة</span>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-drawer" id="mobileDrawer">
+  <a href="index.html" data-i18n="nav_home" onclick="closeMenu()">🏠 الرئيسية</a>
+  <a href="products.html" data-i18n="nav_products" onclick="closeMenu()">🛍️ المنتجات</a>
+  <a href="about.html" data-i18n="nav_about" onclick="closeMenu()">ℹ️ من نحن</a>
+  <a href="contact.html" data-i18n="nav_contact" onclick="closeMenu()">📞 اتصل بنا</a>
+  <button class="btn btn-primary" onclick="openCart();closeMenu()" data-i18n="nav_cart">🛒 السلة</button>
+</div>
+<div class="mobile-drawer" id="mobileDrawer">
+  <a href="index.html" onclick="closeMenu()">🏠 الرئيسية</a>
+  <a href="products.html" onclick="closeMenu()">🛍️ المنتجات</a>
+  <a href="about.html" onclick="closeMenu()">ℹ️ من نحن</a>
+  <a href="contact.html" onclick="closeMenu()">📞 اتصل بنا</a>
+</div>
+
+<!-- HERO -->
+<div class="page-hero">
+  <div class="tag">من نحن</div>
+  <h1 class="page-title">قصة NEO PULSE HUB</h1>
+  <p class="page-sub">رحلتنا في جعل تقنية الذكاء الاصطناعي في متناول الجميع</p>
+</div>
+
+<main class="main">
+
+  <!-- STORY -->
+  <div class="story-grid reveal">
+    <div class="story-text">
+      <h2>لماذا NEO PULSE HUB؟</h2>
+      <p>لاحظنا أن عالم التقنية الذكية يتطور بسرعة هائلة، لكن كثيراً من الناس لا يعرفون من أين يبدأون أو ما هي المنتجات الأنسب لهم.</p>
+      <p>أنشأنا NEO PULSE HUB ليكون وجهتك الموثوقة لمنتجات الذكاء الاصطناعي — مكان واحد، منتجات مختارة بعناية، ومساعد ذكي يساعدك تختار.</p>
+      <p>رؤيتنا بسيطة: <strong style="color:var(--blue2)">نجعل مستقبل التقنية في متناول يدك اليوم.</strong></p>
+    </div>
+    <div class="story-visual">
+      <div class="stat-row">
+        <div class="stat-icon">🛍️</div>
+        <div><div class="stat-info-num">15+</div><div class="stat-info-label">منتج ذكي مختار</div></div>
+      </div>
+      <div class="stat-row">
+        <div class="stat-icon">⭐</div>
+        <div><div class="stat-info-num">4.8</div><div class="stat-info-label">متوسط تقييم المنتجات</div></div>
+      </div>
+      <div class="stat-row">
+        <div class="stat-icon">🚚</div>
+        <div><div class="stat-info-num">20+</div><div class="stat-info-label">دولة نشحن إليها</div></div>
+      </div>
+      <div class="stat-row">
+        <div class="stat-icon">🤖</div>
+        <div><div class="stat-info-num">24/7</div><div class="stat-info-label">دعم AI متواصل</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VALUES -->
+  <div style="margin:3rem 0">
+    <h2 class="section-title reveal">قيمنا</h2>
+    <div class="values-grid">
+      <div class="value-card reveal">
+        <div class="value-icon">🎯</div>
+        <div class="value-title">الجودة أولاً</div>
+        <div class="value-desc">نختار كل منتج بعناية شديدة. إذا لم نكن راضين عنه بأنفسنا، لن نعرضه للبيع.</div>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-icon">🤖</div>
+        <div class="value-title">التقنية في خدمتك</div>
+        <div class="value-desc">بوت AI يساعدك تختار المنتج الأنسب بدل أن تضيع ساعات في البحث.</div>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-icon">🛡️</div>
+        <div class="value-title">الشفافية والثقة</div>
+        <div class="value-desc">أسعار واضحة، ضمان حقيقي، وسياسة إرجاع بلا تعقيدات. ثقتك هي أساس عملنا.</div>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-icon">🌍</div>
+        <div class="value-title">لكل مكان</div>
+        <div class="value-desc">نشحن لأكثر من 20 دولة. واجهة عربية كاملة لأن لغتنا تستحق أفضل تجربة.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROADMAP -->
+  <div style="margin:3rem 0" class="reveal">
+    <h2 class="section-title">رحلتنا</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-year">2025 — البداية</div>
+        <div class="timeline-title">فكرة NEO PULSE HUB</div>
+        <div class="timeline-desc">لاحظنا فجوة كبيرة في سوق منتجات AI للعرب — فقررنا سدّها.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">أوائل 2026 — البناء</div>
+        <div class="timeline-title">إطلاق المتجر والبوتات</div>
+        <div class="timeline-desc">بناء الموقع، اختيار 15 منتج مميز، وإطلاق بوت AI لخدمة العملاء.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2026 — النمو</div>
+        <div class="timeline-title">التوسع والتطوير</div>
+        <div class="timeline-desc">إضافة موردين جدد، نظام عروض حصرية، وتطبيق موبايل.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">المستقبل — الطموح</div>
+        <div class="timeline-title">منصة AI العربية الأولى</div>
+        <div class="timeline-desc">نهدف أن نكون المرجع العربي الأول لكل ما يتعلق بمنتجات الذكاء الاصطناعي.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-box reveal">
+    <div class="cta-title">انضم لمجتمع NEO PULSE</div>
+    <p class="cta-sub">ابدأ تجربة التسوق الذكي اليوم</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a href="products.html" class="btn btn-primary">🛍️ تسوق الآن</a>
+      <a href="contact.html" class="btn btn-outline">📞 تواصل معنا</a>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p class="footer-copy">© 2026 NEO PULSE HUB — جميع الحقوق محفوظة | neo-pulse-hub.it.com</p>
+</footer>
+
+<script>
+// ═══ LANG SYSTEM ═══
+let lang = localStorage.getItem('nph_lang') || 'ar';
+
+const T_NAV = {
+  ar: { nav_home:'الرئيسية', nav_products:'المنتجات', nav_about:'من نحن', nav_contact:'اتصل بنا', nav_cart:'🛒 السلة' },
+  en: { nav_home:'Home', nav_products:'Products', nav_about:'About', nav_contact:'Contact', nav_cart:'🛒 Cart' }
+};
+
+function changeLang(l) {
+  lang = l;
+  localStorage.setItem('nph_lang', l);
+  document.documentElement.setAttribute('dir', l === 'ar' ? 'rtl' : 'ltr');
+  document.documentElement.setAttribute('lang', l);
+  const ar = document.getElementById('langAr');
+  const en = document.getElementById('langEn');
+  if(ar) { ar.classList.toggle('active', l==='ar'); }
+  if(en) { en.classList.toggle('active', l==='en'); }
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const k = el.dataset.i18n;
+    if(T_NAV[l] && T_NAV[l][k]) el.textContent = T_NAV[l][k];
+  });
+}
+
+function updateCartBadge() {
+  const cart = JSON.parse(localStorage.getItem('nph_cart') || '[]');
+  const total = cart.reduce((s,i) => s+(i.qty||1), 0);
+  const el = document.getElementById('cartCount');
+  if(el) { el.textContent = total; el.style.display = total > 0 ? 'flex' : 'none'; }
+}
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);} });
+},{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+function toggleMenu(){const h=document.getElementById('hamburger'),d=document.getElementById('mobileDrawer');h.classList.toggle('open');d.classList.toggle('open');document.body.style.overflow=d.classList.contains('open')?'hidden':'';}
+function closeMenu(){document.getElementById('hamburger').classList.remove('open');document.getElementById('mobileDrawer').classList.remove('open');document.body.style.overflow='';}
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  changeLang(lang);
+  updateCartBadge();
+});
+</script>
+</body>
+</html>
