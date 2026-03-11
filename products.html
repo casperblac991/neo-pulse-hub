@@ -95,6 +95,10 @@ nav{position:sticky;top:0;z-index:200;display:flex;align-items:center;justify-co
   </ul>
   <div style="display:flex;align-items:center;gap:.8rem">
     <button class="nav-cart" onclick="openCart()">🛒 السلة<span class="cart-count" id="cartCount"></span></button>
+    <div class="lang-switch" style="display:flex;gap:5px">
+            <button class="lang-btn" id="langAr" onclick="changeLang('ar')">عربي</button>
+      <button class="lang-btn" id="langEn" onclick="changeLang('en')">EN</button>
+    </div>
     <button class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
   </div>
 </nav>
@@ -153,6 +157,21 @@ nav{position:sticky;top:0;z-index:200;display:flex;align-items:center;justify-co
 <div class="toast" id="toast"><span id="toastIcon"></span><span id="toastText"></span></div>
 
 <script>
+let lang = localStorage.getItem('nph_lang') || 'ar';
+
+function changeLang(l) {
+  lang = l;
+  localStorage.setItem('nph_lang', l);
+  document.documentElement.setAttribute('dir', l === 'ar' ? 'rtl' : 'ltr');
+  document.documentElement.setAttribute('lang', l);
+  const ar = document.getElementById('langAr');
+  const en = document.getElementById('langEn');
+  if(ar) ar.classList.toggle('active', l === 'ar');
+  if(en) en.classList.toggle('active', l === 'en');
+  renderProducts();
+  renderCartUI();
+}
+
 let allProducts = [], filteredProducts = [];
 let activeCategory = 'all', maxPrice = 700, sortBy = 'rating';
 let cart = JSON.parse(localStorage.getItem('nph_cart') || '[]');
@@ -209,8 +228,8 @@ function applyFilters() {
   filteredProducts = allProducts.filter(p => {
     const matchCat  = activeCategory === 'all' || p.category === activeCategory;
     const matchPrice = p.price <= maxPrice;
-    const matchQ = !q || p.name_ar.toLowerCase().includes(q) ||
-                   (p.category_ar||'').includes(q) ||
+    const matchQ = !q || (lang==='en' ? (p.name_en||p.name_ar) : p.name_ar).toLowerCase().includes(q) ||
+                   ((lang==='en' ? (p.category_en||p.category_ar||'') : (p.category_ar||''))||'').includes(q) ||
                    (p.tags||[]).some(t=>t.includes(q));
     return matchCat && matchPrice && matchQ;
   });
@@ -237,14 +256,14 @@ function renderProducts() {
     return `
     <div class="product-card" style="animation-delay:${i*0.04}s" onclick="goProduct('${p.id}')">
       <div class="product-img">
-        <img src="${p.image}" alt="${p.name_ar}" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x400/1e3a5f/ffffff?text='+encodeURIComponent(p.name_ar||'Product')">
+        <img src="${p.image}" alt="${(lang==='en' ? (p.name_en||p.name_ar) : p.name_ar)}" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x400/1e3a5f/ffffff?text='+encodeURIComponent((lang==='en' ? (p.name_en||p.name_ar) : p.name_ar)||'Product')">
         ${p.badge ? `<span class="badge">${p.badge}</span>` : ''}
         ${p.discount ? `<span class="discount-tag">-${p.discount}%</span>` : ''}
         ${outOfStock ? `<div class="out-of-stock"><span>نفد المخزون</span></div>` : ''}
       </div>
       <div class="product-body">
-        <div class="product-cat">${p.category_ar||''}</div>
-        <div class="product-name">${p.name_ar}</div>
+        <div class="product-cat">${(lang==='en' ? (p.category_en||p.category_ar||'') : (p.category_ar||''))||''}</div>
+        <div class="product-name">${(lang==='en' ? (p.name_en||p.name_ar) : p.name_ar)}</div>
         <div class="stars-row">
           <span class="stars">${'★'.repeat(Math.floor(p.rating||4))}</span>
           <span class="rev">${p.rating} (${p.reviews||0})</span>
@@ -290,7 +309,7 @@ function addToCart(e, id) {
   else cart.push({...p, qty:1});
   localStorage.setItem('nph_cart', JSON.stringify(cart));
   updateCartUI(); renderProducts();
-  showToast('✅', `${p.name_ar} أُضيف للسلة`);
+  showToast('✅', `${(lang==='en' ? (p.name_en||p.name_ar) : p.name_ar)} أُضيف للسلة`);
 }
 
 function updateCartUI() {
