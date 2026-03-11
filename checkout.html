@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الدفع الآمن | NEO PULSE HUB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;900&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <style>
+:root{--bg:#020510;--surface:#0a0d1a;--surface2:#0f1423;--border:rgba(99,179,237,.15);--blue:#3b82f6;--blue2:#60a5fa;--purple:#7c3aed;--cyan2:#22d3ee;--green:#10b981;--gold:#f59e0b;--text:#e2e8f0;--muted:rgba(226,232,240,.55);--r:14px;--r2:22px;--rp:50px}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column}
+.bg-grid{position:fixed;inset:0;z-index:-1;background-image:linear-gradient(rgba(59,130,246,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,.04) 1px,transparent 1px);background-size:60px 60px}
+nav{display:flex;align-items:center;justify-content:space-between;padding:.9rem 2rem;border-bottom:1px solid var(--border);background:rgba(2,5,16,.9);backdrop-filter:blur(20px)}
+.logo{font-family:'Orbitron',sans-serif;font-size:1rem;font-weight:700;background:linear-gradient(135deg,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.secure-badge{display:flex;align-items:center;gap:.4rem;font-size:.78rem;color:var(--green);background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.2);border-radius:var(--rp);padding:.3rem .8rem}
+main{flex:1;display:flex;align-items:center;justify-content:center;padding:2rem 1rem}
+.checkout-grid{display:grid;grid-template-columns:1fr 420px;gap:2rem;max-width:960px;width:100%}
+.order-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:1.8rem}
+.card-title{font-size:.72rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--blue2);margin-bottom:1.2rem}
+.product-row{display:flex;gap:1rem;align-items:flex-start;margin-bottom:1.2rem;padding-bottom:1.2rem;border-bottom:1px solid var(--border)}
+.product-img{width:80px;height:80px;border-radius:var(--r);overflow:hidden;background:var(--surface2);flex-shrink:0}
+.product-img img{width:100%;height:100%;object-fit:cover}
+.product-info h3{font-size:.95rem;font-weight:700;margin-bottom:.3rem}
+.product-info .cat{font-size:.72rem;color:var(--cyan2);text-transform:uppercase}
+.product-info .features{font-size:.78rem;color:var(--muted);margin-top:.4rem}
+.qty-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:.8rem}
+.qty-label{font-size:.85rem;color:var(--muted)}
+.qty-ctrl{display:flex;align-items:center;gap:.5rem;background:var(--surface2);border:1px solid var(--border);border-radius:var(--rp);padding:.15rem}
+.qty-btn{width:28px;height:28px;border-radius:50%;border:none;background:none;color:var(--text);font-size:1rem;cursor:pointer;transition:background .2s}
+.qty-btn:hover{background:rgba(59,130,246,.15);color:var(--blue2)}
+.qty-num{min-width:28px;text-align:center;font-weight:700}
+.price-breakdown{background:var(--surface2);border-radius:var(--r);padding:1rem;margin-bottom:1.2rem}
+.price-line{display:flex;justify-content:space-between;font-size:.88rem;margin-bottom:.4rem}
+.price-line.total{font-size:1.05rem;font-weight:800;border-top:1px solid var(--border);padding-top:.7rem;margin-top:.5rem}
+.price-line.total .val{background:linear-gradient(135deg,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-family:'Orbitron',sans-serif}
+.trust-badges{display:grid;grid-template-columns:1fr 1fr;gap:.5rem}
+.trust-item{display:flex;align-items:center;gap:.4rem;font-size:.75rem;color:var(--muted);background:rgba(59,130,246,.04);border:1px solid var(--border);border-radius:.6rem;padding:.5rem .7rem}
+/* Payment card */
+.payment-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:1.8rem;position:sticky;top:1.5rem}
+.paypal-logo{text-align:center;margin-bottom:1.5rem}
+.paypal-logo img{height:40px}
+.paypal-logo-text{font-size:1.5rem;font-weight:900;color:#003087;letter-spacing:-1px}
+.paypal-logo-text span{color:#009cde}
+.pay-btn{display:block;width:100%;text-align:center;background:linear-gradient(135deg,#003087,#009cde);color:#fff;border:none;border-radius:var(--rp);padding:1.1rem;font-size:1.05rem;font-weight:800;cursor:pointer;font-family:'Cairo',sans-serif;text-decoration:none;transition:all .3s;margin-bottom:1rem;box-shadow:0 4px 20px rgba(0,156,222,.4)}
+.pay-btn:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,156,222,.6)}
+.pay-btn.loading{opacity:.7;pointer-events:none}
+.or-divider{display:flex;align-items:center;gap:.7rem;margin-bottom:1rem;color:var(--muted);font-size:.8rem}
+.or-divider::before,.or-divider::after{content:'';flex:1;height:1px;background:var(--border)}
+.info-text{font-size:.78rem;color:var(--muted);text-align:center;line-height:1.7;margin-bottom:1rem}
+.ssl-row{display:flex;align-items:center;justify-content:center;gap:.4rem;font-size:.75rem;color:var(--green)}
+.step-indicator{display:flex;align-items:center;gap:.3rem;margin-bottom:1.5rem}
+.step{display:flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;font-size:.72rem;font-weight:700}
+.step.done{background:var(--green);color:#fff}
+.step.active{background:var(--blue);color:#fff}
+.step.todo{background:var(--surface2);color:var(--muted);border:1px solid var(--border)}
+.step-line{flex:1;height:1px;background:var(--border)}
+@media(max-width:768px){.checkout-grid{grid-template-columns:1fr}.payment-card{position:static}}
+  </style>
+</head>
+<body>
+<div class="bg-grid"></div>
+
+<nav>
+  <a href="index.html" class="logo">NEO PULSE HUB</a>
+  <div style="display:flex;align-items:center;gap:1rem">
+    <div class="secure-badge">🔒 دفع آمن ومشفر</div>
+    <div style="display:flex;gap:5px">
+      <button id="langAr" onclick="changeLang('ar')" style="background:rgba(59,130,246,.1);border:1px solid rgba(99,179,237,.25);color:#e2e8f0;padding:.2rem .7rem;border-radius:50px;font-size:.8rem;font-weight:600;cursor:pointer">عربي</button>
+      <button id="langEn" onclick="changeLang('en')" style="background:rgba(59,130,246,.1);border:1px solid rgba(99,179,237,.25);color:#e2e8f0;padding:.2rem .7rem;border-radius:50px;font-size:.8rem;font-weight:600;cursor:pointer">EN</button>
+    </div>
+    <a href="products.html" style="color:rgba(226,232,240,.6);font-size:.85rem">← متابعة التسوق</a>
+  </div>
+</nav>
+
+<main>
+  <div class="checkout-grid">
+    <!-- ORDER SUMMARY -->
+    <div class="order-card">
+      <div class="card-title">📦 ملخص الطلب</div>
+
+      <div class="step-indicator">
+        <div class="step done">1</div>
+        <div class="step-line"></div>
+        <div class="step active">2</div>
+        <div class="step-line"></div>
+        <div class="step todo">3</div>
+      </div>
+
+      <div class="product-row" id="productRow">
+        <div class="product-img">
+          <img id="productImg" src="" alt="المنتج" onerror="this.src='https://via.placeholder.com/80x80/0a0d1a/60a5fa?text=NPH'">
+        </div>
+        <div class="product-info">
+          <div class="cat" id="productCat">—</div>
+          <h3 id="productName">جاري التحميل...</h3>
+          <div class="features" id="productFeatures"></div>
+        </div>
+      </div>
+
+      <div class="qty-row">
+        <span class="qty-label">الكمية:</span>
+        <div class="qty-ctrl">
+          <button class="qty-btn" onclick="changeQty(-1)">−</button>
+          <span class="qty-num" id="qtyNum">1</span>
+          <button class="qty-btn" onclick="changeQty(1)">+</button>
+        </div>
+      </div>
+
+      <div class="price-breakdown">
+        <div class="price-line">
+          <span>سعر الوحدة</span>
+          <span id="unitPrice">—</span>
+        </div>
+        <div class="price-line">
+          <span>الكمية</span>
+          <span id="qtyDisplay">× 1</span>
+        </div>
+        <div class="price-line">
+          <span>الشحن</span>
+          <span style="color:var(--green)">مجاني فوق $150</span>
+        </div>
+        <div class="price-line total">
+          <span>💰 الإجمالي</span>
+          <span class="val" id="totalPrice">$0.00</span>
+        </div>
+      </div>
+
+      <div class="trust-badges">
+        <div class="trust-item">🛡️ ضمان 12 شهر</div>
+        <div class="trust-item">🔄 إرجاع 30 يوم</div>
+        <div class="trust-item">🚚 شحن عالمي</div>
+        <div class="trust-item">💬 دعم 24/7</div>
+      </div>
+    </div>
+
+    <!-- PAYMENT -->
+    <div class="payment-card">
+      <div class="card-title">💳 طريقة الدفع</div>
+
+      <div class="paypal-logo">
+        <div class="paypal-logo-text">Pay<span>Pal</span></div>
+      </div>
+
+      <a href="#" id="paypalBtn" class="pay-btn" onclick="goPayPal(event)">
+        💳 ادفع الآن عبر PayPal
+      </a>
+
+      <div class="or-divider">أو</div>
+
+      <a href="#" id="paypalMeBtn" class="pay-btn" style="background:linear-gradient(135deg,#00457c,#0070ba);font-size:.9rem"
+         onclick="goPayPalMe(event)">
+        📲 PayPal.me مباشرة
+      </a>
+
+      <p class="info-text">
+        ستنتقل لموقع PayPal الآمن لإتمام الدفع.<br>
+        يمكنك الدفع بـ Visa/Mastercard أيضاً.<br>
+        حساب PayPal المستقبِل: <strong>Saidchaik@gmail.com</strong>
+      </p>
+
+      <div class="ssl-row">🔒 SSL 256-bit — دفع مشفر 100%</div>
+    </div>
+  </div>
+</main>
+
+<script>
+function changeLang(l) {
+  localStorage.setItem('nph_lang', l);
+  document.documentElement.setAttribute('dir', l === 'ar' ? 'rtl' : 'ltr');
+  document.getElementById('langAr').style.background = l==='ar' ? 'linear-gradient(135deg,#3b82f6,#7c3aed)' : 'rgba(59,130,246,.1)';
+  document.getElementById('langEn').style.background = l==='en' ? 'linear-gradient(135deg,#3b82f6,#7c3aed)' : 'rgba(59,130,246,.1)';
+}
+// تطبيق اللغة عند التحميل
+const _lang = localStorage.getItem('nph_lang') || 'ar';
+document.addEventListener('DOMContentLoaded', () => changeLang(_lang));
+
+const PAYPAL_EMAIL = "Saidchaik@gmail.com";
+const CURRENCY     = "USD";
+const SITE_URL     = window.location.origin;
+
+let product = null;
+let qty = 1;
+
+// قراءة السلة من localStorage
+let cartItems = JSON.parse(localStorage.getItem('nph_cart') || '[]');
+
+async function init() {
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+  qty = parseInt(params.get("qty") || "1");
+
+  try {
+    const r = await fetch('https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/products.json');
+    const products = await r.json();
+    product = products.find(p => p.id === id);
+    // إذا ما في id في URL، استخدم أول منتج في السلة
+    if (!product && cartItems.length > 0) {
+      product = products.find(p => p.id === cartItems[0].id);
+      qty = cartItems[0].qty || 1;
+    }
+  } catch {}
+
+  if (!product) {
+    document.getElementById("productName").textContent = "منتج غير موجود";
+    return;
+  }
+
+  // Populate
+  document.title = `الدفع: ${product.name_ar} | NEO PULSE HUB`;
+  document.getElementById("productName").textContent = product.name_ar;
+  document.getElementById("productCat").textContent  = product.category_ar || "";
+  document.getElementById("productImg").src = product.image || "";
+
+  if (product.features_ar && product.features_ar.length) {
+    document.getElementById("productFeatures").textContent =
+      product.features_ar.slice(0, 2).join(" • ");
+  }
+
+  updatePrices();
+}
+
+function changeQty(delta) {
+  qty = Math.max(1, Math.min(10, qty + delta));
+  document.getElementById("qtyNum").textContent = qty;
+  updatePrices();
+}
+
+function updatePrices() {
+  if (!product) return;
+  const total = (product.price * qty).toFixed(2);
+  document.getElementById("unitPrice").textContent  = `$${product.price}`;
+  document.getElementById("qtyDisplay").textContent = `× ${qty}`;
+  document.getElementById("totalPrice").textContent = `$${total}`;
+
+  // Update PayPal button text
+  document.getElementById("paypalBtn").textContent = `💳 ادفع $${total} الآن عبر PayPal`;
+}
+
+function buildPayPalUrl() {
+  if (!product) return "#";
+  const total = (product.price * qty).toFixed(2);
+  const params = new URLSearchParams({
+    cmd:           "_xclick",
+    business:      PAYPAL_EMAIL,
+    item_name:     product.name_ar.substring(0, 127),
+    item_number:   product.id,
+    amount:        total,
+    currency_code: CURRENCY,
+    return:        `${SITE_URL}/thanks.html?id=${product.id}&total=${total}`,
+    cancel_return: `${SITE_URL}/products.html`,
+    no_note:       "1",
+    no_shipping:   "2",
+  });
+  return `https://www.paypal.com/cgi-bin/webscr?${params.toString()}`;
+}
+
+function buildPayPalMeUrl() {
+  if (!product) return "#";
+  const total    = (product.price * qty).toFixed(2);
+  const username = PAYPAL_EMAIL.split("@")[0];
+  return `https://www.paypal.me/${username}/${total}${CURRENCY}`;
+}
+
+function goPayPal(e) {
+  e.preventDefault();
+  const url = buildPayPalUrl();
+  window.open(url, "_blank");
+  // Log to analytics
+  setTimeout(() => { window.location.href = url; }, 300);
+}
+
+function goPayPalMe(e) {
+  e.preventDefault();
+  window.open(buildPayPalMeUrl(), "_blank");
+}
+
+window.addEventListener("load", init);
+</script>
+</body>
+</html>
