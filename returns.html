@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <script>
+  // تطبيق اللغة فوراً قبل رسم الصفحة — يمنع الوميض
+  (function(){
+    var l = localStorage.getItem('nph_lang') || 'ar';
+    document.documentElement.setAttribute('lang', l);
+    document.documentElement.setAttribute('dir', l === 'en' ? 'ltr' : 'rtl');
+  })();
+</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سياسة الإرجاع | NEO PULSE HUB</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#020510;--surface:#0a0d1a;--border:rgba(99,179,237,.12);--border2:rgba(99,179,237,.28);--blue:#3b82f6;--blue2:#60a5fa;--purple:#7c3aed;--cyan2:#22d3ee;--green:#10b981;--red:#ef4444;--gold:#f59e0b;--text:#e2e8f0;--muted:rgba(226,232,240,.55);--r:12px;--r2:20px;--rp:50px;--ease:.3s cubic-bezier(.4,0,.2,1)}
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+    body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.8}
+    a{color:inherit;text-decoration:none}button{cursor:pointer;border:none;background:none;font-family:inherit}
+    .bg-grid{position:fixed;inset:0;z-index:-2;background-image:linear-gradient(rgba(59,130,246,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,.04) 1px,transparent 1px);background-size:60px 60px}
+    .bg-grad{position:fixed;inset:0;z-index:-1;background:radial-gradient(ellipse 80% 50% at 70% 20%,rgba(124,58,237,.1),transparent 60%)}
+    nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:.9rem 2.5rem;background:rgba(2,5,16,.9);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+    .nav-logo{font-family:'Orbitron',sans-serif;font-size:1.05rem;font-weight:700;background:linear-gradient(135deg,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .nav-links{display:flex;align-items:center;gap:.2rem;list-style:none}
+    .nav-links a{font-size:.85rem;color:var(--muted);padding:.35rem .8rem;border-radius:var(--rp);transition:all var(--ease)}
+    .nav-links a:hover{color:var(--cyan2);background:rgba(6,182,212,.08)}
+    .lang-switch{display:flex;gap:5px}
+    .lang-btn{background:rgba(59,130,246,.1);border:1px solid var(--border2);color:var(--text);padding:.25rem .8rem;border-radius:var(--rp);font-size:.8rem;font-weight:600;transition:all var(--ease)}
+    .lang-btn.active{background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;border-color:transparent}
+    .nav-cart{display:flex;align-items:center;gap:6px;font-size:.85rem;font-weight:600;background:rgba(59,130,246,.1);border:1px solid var(--border2);border-radius:var(--rp);padding:.4rem 1rem;position:relative}
+    .cart-count{position:absolute;top:-6px;right:-6px;background:var(--purple);color:#fff;font-size:.65rem;font-weight:700;width:18px;height:18px;border-radius:50%;display:none;align-items:center;justify-content:center}
+    .hamburger{display:none;flex-direction:column;gap:5px;padding:6px;background:rgba(59,130,246,.08);border:1px solid var(--border);border-radius:8px}
+    .hamburger span{display:block;width:20px;height:2px;background:var(--blue2);border-radius:2px}
+    .mobile-drawer{position:fixed;top:61px;inset:0;z-index:199;background:rgba(2,5,16,.97);backdrop-filter:blur(20px);flex-direction:column;align-items:center;justify-content:center;gap:1.5rem;display:none}
+    .mobile-drawer.open{display:flex!important}
+    .mobile-drawer a{font-size:1.2rem;font-weight:700;color:var(--muted)}
+    .page-hero{padding:7rem 2rem 3rem;text-align:center;border-bottom:1px solid var(--border);background:linear-gradient(180deg,rgba(124,58,237,.06),transparent)}
+    .hero-icon{font-size:3.5rem;margin-bottom:1rem}
+    .page-title{font-family:'Orbitron',sans-serif;font-size:clamp(1.5rem,3.5vw,2.5rem);font-weight:900;background:linear-gradient(135deg,#fff,var(--blue2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.6rem}
+    .page-sub{color:var(--muted);font-size:.95rem}
+    .content{max-width:820px;margin:0 auto;padding:3rem 2rem 5rem}
+    .cards-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin-bottom:3rem}
+    .info-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:1.5rem;text-align:center;transition:all var(--ease)}
+    .info-card:hover{border-color:var(--border2);transform:translateY(-3px)}
+    .info-card .ic-icon{font-size:2rem;margin-bottom:.6rem}
+    .info-card .ic-val{font-family:'Orbitron',sans-serif;font-size:1.3rem;font-weight:700;background:linear-gradient(135deg,var(--green),#059669);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .info-card .ic-label{font-size:.8rem;color:var(--muted);margin-top:.3rem}
+    .policy-section{margin-bottom:2.5rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);overflow:hidden}
+    .policy-section-header{display:flex;align-items:center;gap:.8rem;padding:1.2rem 1.5rem;background:rgba(59,130,246,.06);border-bottom:1px solid var(--border)}
+    .policy-section-header .icon{font-size:1.4rem}
+    .policy-section-header h2{font-size:1rem;font-weight:700;color:#fff}
+    .policy-section-body{padding:1.5rem}
+    .policy-section-body p{color:var(--muted);font-size:.92rem;margin-bottom:.8rem;line-height:1.9}
+    .policy-section-body p:last-child{margin-bottom:0}
+    .alert{display:flex;gap:.8rem;padding:1rem 1.2rem;border-radius:var(--r);margin-bottom:1rem;font-size:.88rem}
+    .alert-green{background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.2);color:var(--green)}
+    .alert-red{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);color:var(--red)}
+    .alert-warn{background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.2);color:var(--gold)}
+    /* STEPS */
+    .steps-list{display:flex;flex-direction:column;gap:.8rem;margin-top:.5rem}
+    .step-item{display:flex;align-items:flex-start;gap:1rem;padding:1rem;background:rgba(59,130,246,.04);border:1px solid var(--border);border-radius:var(--r)}
+    .step-num{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;font-weight:700;font-size:.85rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .step-text{font-size:.9rem;color:var(--muted);padding-top:.3rem}
+    /* ELIGIBLE */
+    .two-cols{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:.5rem}
+    .eligible-box{border-radius:var(--r);padding:1rem}
+    .eligible-box.yes{background:rgba(16,185,129,.06);border:1px solid rgba(16,185,129,.2)}
+    .eligible-box.no{background:rgba(239,68,68,.06);border:1px solid rgba(239,68,68,.2)}
+    .eligible-box h4{font-size:.85rem;font-weight:700;margin-bottom:.5rem}
+    .eligible-box.yes h4{color:var(--green)}
+    .eligible-box.no h4{color:var(--red)}
+    .eligible-box li{font-size:.82rem;color:var(--muted);margin-bottom:.3rem;margin-right:1rem}
+    html[dir="ltr"] .eligible-box li{margin-right:0;margin-left:1rem}
+    .cta-box{background:linear-gradient(135deg,rgba(16,185,129,.08),rgba(59,130,246,.06));border:1px solid var(--border2);border-radius:var(--r2);padding:2rem;text-align:center;margin-top:2rem}
+    .cta-box h3{font-family:'Orbitron',sans-serif;font-size:1.1rem;margin-bottom:.5rem;color:#fff}
+    .cta-box p{color:var(--muted);font-size:.88rem;margin-bottom:1.2rem}
+    .btn{display:inline-flex;align-items:center;gap:6px;padding:.75rem 1.8rem;border-radius:var(--rp);font-weight:700;font-size:.9rem;font-family:'Cairo',sans-serif;transition:all var(--ease);cursor:pointer;border:none;text-decoration:none}
+    .btn-primary{background:linear-gradient(135deg,var(--green),#059669);color:#fff}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(16,185,129,.4)}
+    .btns{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}
+    footer{background:var(--surface);border-top:1px solid var(--border);padding:2.5rem 2rem 1.5rem}
+    .footer-inner{max-width:1100px;margin:0 auto}
+    .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:2rem;margin-bottom:2rem}
+    .footer-col h4{font-size:.85rem;font-weight:700;color:#fff;margin-bottom:.8rem}
+    .footer-col a{display:block;font-size:.82rem;color:var(--muted);margin-bottom:.4rem;transition:color var(--ease)}
+    .footer-col a:hover{color:var(--cyan2)}
+    .footer-bottom{border-top:1px solid var(--border);padding-top:1rem;text-align:center;font-size:.75rem;color:rgba(226,232,240,.25)}
+    @media(max-width:768px){nav{padding:.9rem 1.2rem}.nav-links{display:none}.hamburger{display:flex}.two-cols{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<div class="bg-grid"></div><div class="bg-grad"></div>
+<nav>
+  <a href="index.html" class="nav-logo">NEO PULSE HUB</a>
+  <ul class="nav-links">
+    <li><a href="index.html" id="nav_home">الرئيسية</a></li>
+    <li><a href="products.html" id="nav_products">المنتجات</a></li>
+    <li><a href="about.html" id="nav_about">من نحن</a></li>
+    <li><a href="contact.html" id="nav_contact">اتصل بنا</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:.8rem">
+    <div class="lang-switch">
+      <button class="lang-btn active" id="langAr" onclick="changeLang('ar')">عربي</button>
+      <button class="lang-btn" id="langEn" onclick="changeLang('en')">EN</button>
+    </div>
+    <a href="index.html" class="nav-cart"><span id="nav_cart">🛒 السلة</span><span class="cart-count" id="cartCount">0</span></a>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-drawer" id="mobileDrawer">
+  <a href="index.html" onclick="closeMenu()" id="m_home">🏠 الرئيسية</a>
+  <a href="products.html" onclick="closeMenu()" id="m_products">🛍️ المنتجات</a>
+  <a href="about.html" onclick="closeMenu()" id="m_about">ℹ️ من نحن</a>
+  <a href="contact.html" onclick="closeMenu()" id="m_contact">📞 اتصل بنا</a>
+</div>
+
+<div class="page-hero">
+  <div class="hero-icon">↩️</div>
+  <h1 class="page-title" id="pg_title">سياسة الإرجاع والاسترداد</h1>
+  <p class="page-sub" id="pg_sub">ضمان رضاك التام — إرجاع سهل خلال 30 يوماً</p>
+</div>
+
+<div class="content">
+  <div class="cards-row">
+    <div class="info-card"><div class="ic-icon">📅</div><div class="ic-val">30</div><div class="ic-label" id="s1l">يوم لحق الإرجاع</div></div>
+    <div class="info-card"><div class="ic-icon">💰</div><div class="ic-val">100%</div><div class="ic-label" id="s2l">استرداد كامل</div></div>
+    <div class="info-card"><div class="ic-icon">⚡</div><div class="ic-val">7</div><div class="ic-label" id="s3l">أيام لمعالجة الاسترداد</div></div>
+    <div class="info-card"><div class="ic-icon">🛡️</div><div class="ic-val">24/7</div><div class="ic-label" id="s4l">دعم الإرجاع</div></div>
+  </div>
+
+  <!-- ELIGIBLE -->
+  <div class="policy-section">
+    <div class="policy-section-header"><span class="icon">✅</span><h2 id="sec1_title">متى يحق لك الإرجاع؟</h2></div>
+    <div class="policy-section-body">
+      <div class="two-cols">
+        <div class="eligible-box yes">
+          <h4 id="yes_title">✅ مقبول الإرجاع</h4>
+          <ul id="yes_list">
+            <li>المنتج تالف عند الاستلام</li>
+            <li>المنتج لا يطابق الوصف</li>
+            <li>استلام منتج خاطئ</li>
+            <li>عيب مصنعي</li>
+            <li>المنتج لم يعمل من البداية</li>
+          </ul>
+        </div>
+        <div class="eligible-box no">
+          <h4 id="no_title">❌ غير مقبول الإرجاع</h4>
+          <ul id="no_list">
+            <li>تغيير الرأي بعد الاستخدام</li>
+            <li>تلف ناتج عن سوء الاستخدام</li>
+            <li>فقدان ملحقات أو عبوة أصلية</li>
+            <li>مرور أكثر من 30 يوماً</li>
+            <li>منتجات بها علامات استخدام واضحة</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOW TO RETURN -->
+  <div class="policy-section">
+    <div class="policy-section-header"><span class="icon">📋</span><h2 id="sec2_title">كيفية طلب الإرجاع</h2></div>
+    <div class="policy-section-body">
+      <div class="steps-list">
+        <div class="step-item"><div class="step-num">1</div><div class="step-text" id="step1">تواصل مع فريق الدعم عبر @NeoPulseBot على تيليجرام أو عبر البريد Saidchaik@gmail.com خلال 30 يوماً من الاستلام.</div></div>
+        <div class="step-item"><div class="step-num">2</div><div class="step-text" id="step2">أرسل رقم طلبك وصوراً واضحة للمنتج تُبيّن سبب الإرجاع. سيُراجع الطلب خلال 24 ساعة.</div></div>
+        <div class="step-item"><div class="step-num">3</div><div class="step-text" id="step3">بعد الموافقة، ستتلقى تعليمات الشحن. يُرجع المنتج في عبوته الأصلية مع جميع ملحقاته.</div></div>
+        <div class="step-item"><div class="step-num">4</div><div class="step-text" id="step4">بعد استلام المنتج والتحقق منه، يُعاد المبلغ لحسابك خلال 5-7 أيام عمل.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REFUND -->
+  <div class="policy-section">
+    <div class="policy-section-header"><span class="icon">💳</span><h2 id="sec3_title">الاسترداد المالي</h2></div>
+    <div class="policy-section-body">
+      <div class="alert alert-green">✅ <span id="sec3_alert">المبالغ تُرد لنفس وسيلة الدفع المستخدمة عند الشراء.</span></div>
+      <p id="sec3_p1">يُعالج الاسترداد خلال 5-7 أيام عمل من تأكيد استلام المنتج المُرجع. ستصلك رسالة تأكيد فور معالجة الاسترداد.</p>
+      <p id="sec3_p2">في حالة الدفع عبر PayPal، قد يستغرق ظهور المبلغ في حسابك 3-5 أيام عمل إضافية حسب سياسة PayPal.</p>
+      <div class="alert alert-warn">⚠️ <span id="sec3_warn">تكاليف الشحن غير مستردة إلا في حالات التلف أو الخطأ من جانبنا.</span></div>
+    </div>
+  </div>
+
+  <!-- EXCHANGE -->
+  <div class="policy-section">
+    <div class="policy-section-header"><span class="icon">🔄</span><h2 id="sec4_title">الاستبدال</h2></div>
+    <div class="policy-section-body">
+      <p id="sec4_p1">إذا كنت تفضل استبدال المنتج بدلاً من الاسترداد، يسعدنا ذلك! فقط أخبر فريق الدعم بالمنتج الذي تريد الاستبدال إليه وسنرتب الأمر لك.</p>
+      <p id="sec4_p2">الاستبدال متاح للمنتجات من نفس الفئة أو بقيمة مساوية. في حال كان المنتج الجديد أعلى سعراً، تُدفع الفرق فقط.</p>
+    </div>
+  </div>
+
+  <div class="cta-box">
+    <h3 id="cta_title">هل تريد إرجاع منتج؟</h3>
+    <p id="cta_sub">فريقنا جاهز لمساعدتك — عملية سهلة وسريعة</p>
+    <div class="btns">
+      <a href="https://t.me/NeoPulseBot" target="_blank" class="btn btn-primary" id="cta_tg">✈️ ابدأ طلب الإرجاع</a>
+      <a href="contact.html" class="btn" style="background:rgba(6,182,212,.1);border:1px solid rgba(6,182,212,.3);color:var(--cyan2)" id="cta_contact">📧 راسلنا</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-col"><h4 id="fc1_title">NEO PULSE HUB</h4><a href="about.html" id="fc1_about">من نحن</a><a href="contact.html" id="fc1_contact">اتصل بنا</a><a href="products.html" id="fc1_products">المنتجات</a></div>
+      <div class="footer-col"><h4 id="fc2_title">السياسات</h4><a href="shipping.html" id="fc2_ship">سياسة الشحن</a><a href="returns.html" id="fc2_return">سياسة الإرجاع</a><a href="privacy.html" id="fc2_privacy">سياسة الخصوصية</a><a href="terms.html" id="fc2_terms">الشروط والأحكام</a></div>
+      <div class="footer-col"><h4 id="fc3_title">الدعم</h4><a href="https://t.me/NeoPulseBot" target="_blank">@NeoPulseBot</a><a href="mailto:Saidchaik@gmail.com">Saidchaik@gmail.com</a><a href="faq.html" id="fc3_faq">الأسئلة الشائعة</a></div>
+    </div>
+    <div class="footer-bottom" id="footer_copy">© 2026 NEO PULSE HUB — جميع الحقوق محفوظة</div>
+  </div>
+</footer>
+
+<script>
+const T = {
+  ar:{
+    title:'سياسة الإرجاع | NEO PULSE HUB',
+    nav_home:'الرئيسية',nav_products:'المنتجات',nav_about:'من نحن',nav_contact:'اتصل بنا',nav_cart:'🛒 السلة',
+    m_home:'🏠 الرئيسية',m_products:'🛍️ المنتجات',m_about:'ℹ️ من نحن',m_contact:'📞 اتصل بنا',
+    pg_title:'سياسة الإرجاع والاسترداد',pg_sub:'ضمان رضاك التام — إرجاع سهل خلال 30 يوماً',
+    s1l:'يوم لحق الإرجاع',s2l:'استرداد كامل',s3l:'أيام لمعالجة الاسترداد',s4l:'دعم الإرجاع',
+    sec1_title:'متى يحق لك الإرجاع؟',
+    yes_title:'✅ مقبول الإرجاع',no_title:'❌ غير مقبول الإرجاع',
+    sec2_title:'كيفية طلب الإرجاع',
+    step1:'تواصل مع فريق الدعم عبر @NeoPulseBot أو Saidchaik@gmail.com خلال 30 يوماً من الاستلام.',
+    step2:'أرسل رقم طلبك وصوراً واضحة للمنتج. سيُراجع الطلب خلال 24 ساعة.',
+    step3:'بعد الموافقة، ستتلقى تعليمات الشحن. يُرجع المنتج في عبوته الأصلية.',
+    step4:'بعد استلام المنتج والتحقق منه، يُعاد المبلغ خلال 5-7 أيام عمل.',
+    sec3_title:'الاسترداد المالي',
+    sec3_alert:'المبالغ تُرد لنفس وسيلة الدفع المستخدمة عند الشراء.',
+    sec3_p1:'يُعالج الاسترداد خلال 5-7 أيام عمل من تأكيد استلام المنتج المُرجع.',
+    sec3_p2:'في حالة الدفع عبر PayPal، قد يستغرق ظهور المبلغ 3-5 أيام إضافية.',
+    sec3_warn:'تكاليف الشحن غير مستردة إلا في حالات التلف أو الخطأ من جانبنا.',
+    sec4_title:'الاستبدال',
+    sec4_p1:'إذا كنت تفضل استبدال المنتج بدلاً من الاسترداد، يسعدنا ذلك!',
+    sec4_p2:'الاستبدال متاح للمنتجات من نفس الفئة أو بقيمة مساوية.',
+    cta_title:'هل تريد إرجاع منتج؟',cta_sub:'فريقنا جاهز لمساعدتك — عملية سهلة وسريعة',
+    cta_tg:'✈️ ابدأ طلب الإرجاع',cta_contact:'📧 راسلنا',
+    fc1_title:'NEO PULSE HUB',fc1_about:'من نحن',fc1_contact:'اتصل بنا',fc1_products:'المنتجات',
+    fc2_title:'السياسات',fc2_ship:'سياسة الشحن',fc2_return:'سياسة الإرجاع',fc2_privacy:'سياسة الخصوصية',fc2_terms:'الشروط والأحكام',
+    fc3_title:'الدعم',fc3_faq:'الأسئلة الشائعة',
+    footer_copy:'© 2026 NEO PULSE HUB — جميع الحقوق محفوظة',
+  },
+  en:{
+    title:'Return Policy | NEO PULSE HUB',
+    nav_home:'Home',nav_products:'Products',nav_about:'About',nav_contact:'Contact',nav_cart:'🛒 Cart',
+    m_home:'🏠 Home',m_products:'🛍️ Products',m_about:'ℹ️ About',m_contact:'📞 Contact',
+    pg_title:'Return & Refund Policy',pg_sub:'Your satisfaction guaranteed — easy returns within 30 days',
+    s1l:'Days to Return',s2l:'Full Refund',s3l:'Days to Process Refund',s4l:'Return Support',
+    sec1_title:'When Are Returns Accepted?',
+    yes_title:'✅ Accepted Returns',no_title:'❌ Not Accepted',
+    sec2_title:'How to Request a Return',
+    step1:'Contact our support team via @NeoPulseBot on Telegram or Saidchaik@gmail.com within 30 days of receiving your order.',
+    step2:'Send your order number and clear photos of the product showing the reason for return. We will review within 24 hours.',
+    step3:'After approval, you will receive shipping instructions. Return the product in its original packaging with all accessories.',
+    step4:'After receiving and inspecting the product, your refund will be processed within 5-7 business days.',
+    sec3_title:'Refund Process',
+    sec3_alert:'Refunds are issued to the same payment method used for the original purchase.',
+    sec3_p1:'Refunds are processed within 5-7 business days after we confirm receipt of the returned product.',
+    sec3_p2:'For PayPal payments, it may take an additional 3-5 business days for the amount to appear in your account.',
+    sec3_warn:'Shipping costs are non-refundable unless the return is due to damage or an error on our part.',
+    sec4_title:'Exchange',
+    sec4_p1:'If you prefer an exchange instead of a refund, we are happy to help!',
+    sec4_p2:'Exchanges are available for products in the same category or of equal value.',
+    cta_title:'Want to Return a Product?',cta_sub:'Our team is ready — easy and fast process',
+    cta_tg:'✈️ Start Return Request',cta_contact:'📧 Email Us',
+    fc1_title:'NEO PULSE HUB',fc1_about:'About Us',fc1_contact:'Contact',fc1_products:'Products',
+    fc2_title:'Policies',fc2_ship:'Shipping Policy',fc2_return:'Return Policy',fc2_privacy:'Privacy Policy',fc2_terms:'Terms & Conditions',
+    fc3_title:'Support',fc3_faq:'FAQ',
+    footer_copy:'© 2026 NEO PULSE HUB — All Rights Reserved',
+  }
+};
+let lang = localStorage.getItem('nph_lang') || 'ar';
+function applyLang(l) {
+  lang=l; localStorage.setItem('nph_lang',l);
+  document.documentElement.setAttribute('dir',l==='ar'?'rtl':'ltr');
+  document.documentElement.setAttribute('lang',l);
+  document.getElementById('langAr').classList.toggle('active',l==='ar');
+  document.getElementById('langEn').classList.toggle('active',l==='en');
+  document.title=T[l].title;
+  Object.keys(T[l]).forEach(id=>{const el=document.getElementById(id);if(el)el.textContent=T[l][id];});
+  const cnt=JSON.parse(localStorage.getItem('nph_cart')||'[]').reduce((s,i)=>s+(i.qty||1),0);
+  const cc=document.getElementById('cartCount');
+  if(cc){cc.textContent=cnt;cc.style.display=cnt>0?'flex':'none';}
+}
+function changeLang(l){applyLang(l);}
+function toggleMenu(){document.getElementById('mobileDrawer').classList.toggle('open');}
+function closeMenu(){document.getElementById('mobileDrawer').classList.remove('open');}
+document.addEventListener('DOMContentLoaded',()=>applyLang(lang));
+</script>
+</body>
+</html>
