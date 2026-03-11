@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>المنتجات | NEO PULSE HUB</title>
+  <title id="pageTitle">المنتجات | NEO PULSE HUB</title>
   <meta name="description" content="تسوق أحدث منتجات الذكاء الاصطناعي — ساعات ذكية، نظارات AR، أجهزة صحة، منزل ذكي.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -88,13 +88,13 @@ nav{position:sticky;top:0;z-index:200;display:flex;align-items:center;justify-co
 <nav>
   <a href="index.html" class="nav-logo">NEO PULSE HUB</a>
   <ul class="nav-links">
-    <li><a href="index.html">الرئيسية</a></li>
+    <li><a href="index.html" id="nav_home_t">الرئيسية</a></li>
     <li><a href="products.html" class="active">المنتجات</a></li>
     <li><a href="about.html">من نحن</a></li>
     <li><a href="contact.html">اتصل بنا</a></li>
   </ul>
   <div style="display:flex;align-items:center;gap:.8rem">
-    <button class="nav-cart" onclick="openCart()">🛒 السلة<span class="cart-count" id="cartCount"></span></button>
+    <button class="nav-cart" onclick="openCart()" id="nav_cart_t">🛒 السلة<span class="cart-count" id="cartCount"></span></button>
     <div class="lang-switch" style="display:flex;gap:5px">
             <button class="lang-btn" id="langAr" onclick="changeLang('ar')">عربي</button>
       <button class="lang-btn" id="langEn" onclick="changeLang('en')">EN</button>
@@ -110,8 +110,8 @@ nav{position:sticky;top:0;z-index:200;display:flex;align-items:center;justify-co
 </div>
 
 <div class="page-header">
-  <h1 class="page-title">كل المنتجات</h1>
-  <p class="page-sub">اكتشف أحدث منتجات الذكاء الاصطناعي والتقنية الذكية</p>
+  <h1 class="page-title" id="pg_title">كل المنتجات</h1>
+  <p class="page-sub" id="pg_sub">اكتشف أحدث منتجات الذكاء الاصطناعي والتقنية الذكية</p>
 </div>
 
 <div class="catalog-layout">
@@ -128,16 +128,16 @@ nav{position:sticky;top:0;z-index:200;display:flex;align-items:center;justify-co
       <button class="filter-btn" onclick="setFilter('productivity',this)">💼 الإنتاجية <span class="filter-count" id="count-productivity">4</span></button>
     </div>
     <div class="sidebar-card">
-      <div class="sidebar-title">السعر (دولار)</div>
+      <div class="sidebar-title" id="lbl_price">السعر (دولار)</div>
       <input type="range" class="price-range" id="priceRange" min="0" max="700" value="700" oninput="filterByPrice(this.value)">
       <div class="price-labels"><span>$0</span><span id="priceLabel">$700</span></div>
     </div>
     <div class="sidebar-card">
-      <div class="sidebar-title">الفرز</div>
-      <button class="filter-btn" onclick="sortProducts('price-asc',this)">💲 الأقل سعراً</button>
-      <button class="filter-btn" onclick="sortProducts('price-desc',this)">💎 الأعلى سعراً</button>
-      <button class="filter-btn active" onclick="sortProducts('rating',this)">⭐ الأعلى تقييماً</button>
-      <button class="filter-btn" onclick="sortProducts('discount',this)">🏷️ الأكبر خصماً</button>
+      <div class="sidebar-title" id="lbl_sort">الفرز</div>
+      <button class="filter-btn" onclick="sortProducts('price-asc',this)">💲 <span id="sort_asc">الأقل سعراً</span></button>
+      <button class="filter-btn" onclick="sortProducts('price-desc',this)">💎 <span id="sort_desc">الأعلى سعراً</span></button>
+      <button class="filter-btn active" onclick="sortProducts('rating',this)">⭐ <span id="sort_rating">الأعلى تقييماً</span></button>
+      <button class="filter-btn" onclick="sortProducts('discount',this)">🏷️ <span id="sort_disc">الأكبر خصماً</span></button>
     </div>
   </aside>
 
@@ -168,7 +168,38 @@ function changeLang(l) {
   const en = document.getElementById('langEn');
   if(ar) ar.classList.toggle('active', l === 'ar');
   if(en) en.classList.toggle('active', l === 'en');
-  renderProducts();
+
+  // ترجمة نصوص الـ UI
+  const UI = {
+    ar: {
+      pageTitle:'المنتجات | NEO PULSE HUB',
+      pg_title:'كل المنتجات', pg_sub:'اكتشف أحدث منتجات الذكاء الاصطناعي والتقنية الذكية',
+      cat_all:'🌐 جميع المنتجات', cat_sw:'⌚ ساعات ذكية', cat_sg:'🥽 نظارات ذكية',
+      cat_h:'❤️ الصحة الذكية', cat_sh:'🏠 المنزل الذكي', cat_e:'🎧 سماعات', cat_p:'💼 الإنتاجية',
+      lbl_price:'السعر (دولار)', lbl_sort:'الفرز',
+      sort_asc:'الأقل سعراً', sort_desc:'الأعلى سعراً', sort_rating:'الأعلى تقييماً', sort_disc:'الأكبر خصماً',
+      nav_cart_t:'🛒 السلة',
+    },
+    en: {
+      pageTitle:'Products | NEO PULSE HUB',
+      pg_title:'All Products', pg_sub:'Discover the latest AI and smart tech products',
+      cat_all:'🌐 All Products', cat_sw:'⌚ Smart Watches', cat_sg:'🥽 Smart Glasses',
+      cat_h:'❤️ Health Tech', cat_sh:'🏠 Smart Home', cat_e:'🎧 Earbuds', cat_p:'💼 Productivity',
+      lbl_price:'Price (USD)', lbl_sort:'Sort by',
+      sort_asc:'Lowest Price', sort_desc:'Highest Price', sort_rating:'Top Rated', sort_disc:'Biggest Discount',
+      nav_cart_t:'🛒 Cart',
+    }
+  };
+  const ui = UI[l] || UI.ar;
+  Object.keys(ui).forEach(id => {
+    if (id === 'pageTitle') { document.title = ui[id]; return; }
+    const el = document.getElementById(id);
+    if (el) el.textContent = ui[id];
+  });
+  // أعد الرسم فقط لو المنتجات محملة
+  if (typeof allProducts !== 'undefined' && allProducts.length > 0) {
+    applyFilters();
+  }
   renderCartUI();
 }
 
@@ -177,6 +208,15 @@ let activeCategory = 'all', maxPrice = 700, sortBy = 'rating';
 let cart = JSON.parse(localStorage.getItem('nph_cart') || '[]');
 
 async function init() {
+  // تطبيق اللغة المحفوظة (UI فقط — قبل تحميل المنتجات)
+  lang = localStorage.getItem('nph_lang') || 'ar';
+  document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+  document.documentElement.setAttribute('lang', lang);
+  const ar = document.getElementById('langAr');
+  const en = document.getElementById('langEn');
+  if(ar) ar.classList.toggle('active', lang === 'ar');
+  if(en) en.classList.toggle('active', lang === 'en');
+  
   // Read URL params
   const params = new URLSearchParams(window.location.search);
   if (params.get('cat')) { activeCategory = params.get('cat'); }
@@ -241,13 +281,13 @@ function applyFilters() {
   if (sortBy === 'discount')   filteredProducts.sort((a,b) => b.discount - a.discount);
 
   renderProducts();
-  document.getElementById('resultsCount').textContent = `${filteredProducts.length} منتج`;
+  document.getElementById('resultsCount').textContent = `${filteredProducts.length} ${lang==='en'?'products':'منتج'}`;
 }
 
 function renderProducts() {
   const grid = document.getElementById('productsGrid');
   if (filteredProducts.length === 0) {
-    grid.innerHTML = `<div class="no-results" style="grid-column:1/-1"><div class="icon">🔍</div><p>لا توجد منتجات مطابقة للبحث</p></div>`;
+    grid.innerHTML = `<div class="no-results" style="grid-column:1/-1"><div class="icon">🔍</div><p>${lang==='en'?'No products match your search':'لا توجد منتجات مطابقة للبحث'}</p></div>`;
     return;
   }
   grid.innerHTML = filteredProducts.map((p, i) => {
@@ -259,7 +299,7 @@ function renderProducts() {
         <img src="${p.image}" alt="${(lang==='en' ? (p.name_en||p.name_ar) : p.name_ar)}" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x400/1e3a5f/ffffff?text='+encodeURIComponent((lang==='en' ? (p.name_en||p.name_ar) : p.name_ar)||'Product')">
         ${p.badge ? `<span class="badge">${p.badge}</span>` : ''}
         ${p.discount ? `<span class="discount-tag">-${p.discount}%</span>` : ''}
-        ${outOfStock ? `<div class="out-of-stock"><span>نفد المخزون</span></div>` : ''}
+        ${outOfStock ? `<div class="out-of-stock"><span>${lang==='en'?'Out of Stock':'نفد المخزون'}</span></div>` : ''}
       </div>
       <div class="product-body">
         <div class="product-cat">${(lang==='en' ? (p.category_en||p.category_ar||'') : (p.category_ar||''))||''}</div>
@@ -458,6 +498,16 @@ function setPlaceholder(imgEl, category) {
   imgEl.onerror = null;
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+  // طبق اللغة على الـ nav فوراً قبل init
+  document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+  document.documentElement.setAttribute('lang', lang);
+  const ar = document.getElementById('langAr');
+  const en = document.getElementById('langEn');
+  if(ar) ar.classList.toggle('active', lang === 'ar');
+  if(en) en.classList.toggle('active', lang === 'en');
+  init();
+});
 </script>
 </body>
 </html>
