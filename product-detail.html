@@ -128,6 +128,7 @@ function changeLang(l) {
   if(typeof renderProduct === 'function') renderProduct();
 }
 
+let lang = localStorage.getItem('nph_lang') || 'ar';
 let product = null, qty = 1;
 let allProducts = [];
 let cart = JSON.parse(localStorage.getItem('nph_cart') || '[]');
@@ -138,14 +139,22 @@ async function init() {
   if (!id) { window.location.href = 'products.html'; return; }
 
   try {
-    const r = await fetch('products.json');
+    // جرب relative أولاً (GitHub Pages)
+    let r = await fetch('./products.json').catch(() => null);
+    if (!r || !r.ok) {
+      // fallback للـ raw GitHub
+      r = await fetch('https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/products.json');
+    }
     allProducts = await r.json();
-  } catch { allProducts = []; }
+  } catch(e) { 
+    console.error('Products load error:', e);
+    allProducts = []; 
+  }
 
   product = allProducts.find(p => p.id === id);
   if (!product) { window.location.href = 'products.html'; return; }
 
-  document.title = `${product.name_ar} | NEO PULSE HUB`;
+  document.title = `${lang==='en' ? (product.name_en||product.name_ar) : product.name_ar} | NEO PULSE HUB`;
   document.getElementById('breadProduct').textContent = product.name_ar;
   renderProduct();
   renderRelated();
@@ -159,11 +168,11 @@ function renderProduct() {
       ${product.badge ? `<span class="badge">${product.badge}</span>` : ''}
     </div>
     <div class="product-info">
-      <div class="product-cat">${product.category_ar || ''}</div>
-      <h1 class="product-name">${product.name_ar}</h1>
+      <div class="product-cat">${lang==='en' ? (product.category_en||product.category_ar||'') : (product.category_ar||'')}</div>
+      <h1 class="product-name">${lang==='en' ? (product.name_en||product.name_ar) : product.name_ar}</h1>
       <div class="stars-row">
         <span class="stars">${'★'.repeat(Math.floor(product.rating || 4))}${'☆'.repeat(5 - Math.floor(product.rating || 4))}</span>
-        <span class="rev">${product.rating} من 5 (${product.reviews || 0} تقييم)</span>
+        <span class="rev">${product.rating} ${lang==='en'?'out of':'من'} 5 (${product.reviews||0} ${lang==='en'?'reviews':'تقييم'})</span>
       </div>
       <div class="price-box">
         <span class="price-big">$${product.price}</span>
@@ -172,8 +181,8 @@ function renderProduct() {
       </div>
       <div class="stock-indicator">
         <span class="stock-dot"></span>
-        <span style="color:var(--green);font-weight:600">${product.stock > 10 ? 'متوفر' : `باقي ${product.stock} فقط!`}</span>
-        <span style="color:var(--muted);font-size:.8rem">• شحن ${product.shipping_days} يوم عمل</span>
+        <span style="color:var(--green);font-weight:600">${product.stock > 10 ? (lang==='en'?'In Stock':'متوفر') : (lang==='en'?`Only ${product.stock} left!`:`باقي ${product.stock} فقط!`)}</span>
+        <span style="color:var(--muted);font-size:.8rem">• ${lang==='en'?'Ships in':'شحن'} ${product.shipping_days||3} ${lang==='en'?'days':'يوم عمل'}</span>
       </div>
       <div class="qty-row">
         <span class="qty-label">الكمية:</span>
@@ -185,9 +194,9 @@ function renderProduct() {
       </div>
       <div class="action-row">
         <button class="btn btn-primary" id="cartBtn" onclick="addToCart()">
-          ${inCart ? '✅ في السلة' : '🛒 أضف للسلة'}
+          ${inCart ? '✅ '+(lang==='en'?'In Cart':'في السلة') : '🛒 '+(lang==='en'?'Add to Cart':'أضف للسلة')}
         </button>
-        <button class="btn btn-outline" onclick="buyNow()">⚡ اشتر الآن</button>
+        <button class="btn btn-outline" onclick="buyNow()">⚡ ${lang==='en'?'Buy Now':'اشتر الآن'}</button>
       </div>
       ${product.features_ar ? `
       <ul class="features-list">
@@ -258,8 +267,10 @@ function showToast(icon, text) {
 
 window.addEventListener('load', init);
 
-// checkout link
-function goToCheckout(id, qty) { window.location.href = 'checkout.html?id='+id+'&qty='+(qty||1); }
+function buyNow() {
+  if (!product) return;
+  window.location.href = `checkout.html?id=${product.id}&qty=${qty}`;
+}
 </script>
 </body>
 </html>
