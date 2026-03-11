@@ -238,13 +238,13 @@ function renderProducts() {
     <div class="product-card" style="animation-delay:${i*0.04}s" onclick="goProduct('${p.id}')">
       <div class="product-img">
         <img src="${p.image}" alt="${p.name_ar}" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x400/1e3a5f/ffffff?text='+encodeURIComponent(p.name_ar||'Product')">
-        ${(p.badge?.ar||p.badge) ? `<span class="badge">${p.badge?.ar||p.badge}</span>` : ''}
+        ${p.badge ? `<span class="badge">${p.badge}</span>` : ''}
         ${p.discount ? `<span class="discount-tag">-${p.discount}%</span>` : ''}
         ${outOfStock ? `<div class="out-of-stock"><span>نفد المخزون</span></div>` : ''}
       </div>
       <div class="product-body">
-        <div class="product-cat">${lang==="en" ? (p.category_en||p.category_ar||"") : (p.category_ar||"")}</div>
-        <div class="product-name">${p.name?.[lang] || p.name_ar || p.name_en || ""}</div>
+        <div class="product-cat">${p.category_ar||''}</div>
+        <div class="product-name">${p.name_ar}</div>
         <div class="stars-row">
           <span class="stars">${'★'.repeat(Math.floor(p.rating||4))}</span>
           <span class="rev">${p.rating} (${p.reviews||0})</span>
