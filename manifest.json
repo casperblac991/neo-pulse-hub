@@ -1,0 +1,48 @@
+{
+  "name": "NEO PULSE HUB — متجر الأجهزة الذكية",
+  "short_name": "NEO PULSE HUB",
+  "description": "متجر الأجهزة الذكية والتقنية المتطورة — ساعات ذكية، نظارات AR، أجهزة صحة",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#020510",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "lang": "ar",
+  "dir": "rtl",
+  "categories": ["shopping", "technology"],
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://neo-pulse-hub.it.com/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "المنتجات",
+      "short_name": "Products",
+      "url": "/products.html",
+      "icons": [{"src": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/favicon.png", "sizes": "96x96"}]
+    },
+    {
+      "name": "تتبع الطلب",
+      "short_name": "Track",
+      "url": "/track.html",
+      "icons": [{"src": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/favicon.png", "sizes": "96x96"}]
+    }
+  ]
+}
