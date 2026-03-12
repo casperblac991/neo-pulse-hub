@@ -50,20 +50,40 @@ def save_lead(uid, prefs):
         pass
 
 def ask_gemini(prompt: str) -> str:
-    if not GEMINI_API_KEY:
-        return None
+    key = (os.environ.get("GEMINI_API_KEY") or
+           os.environ.get("GOOGLE_API_KEY") or "")
+    if not key:
+        log.error("GEMINI_API_KEY missing!")
+        return ""
     import requests as _r
+    url = ("https://generativelanguage.googleapis.com/v1beta/models/"
+           "gemini-2.5-flash:generateContent?key=" + key)
+    body = {
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {
+            "temperature": 0.7,
+            "maxOutputTokens": 2000,
+            "thinkingConfig": {"thinkingBudget": 0}
+        }
+    }
     try:
-        url = (f"https://generativelanguage.googleapis.com/v1beta/models/"
-               f"gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}")
-        body = {"contents": [{"parts": [{"text": prompt}]}],
-                "generationConfig": {"temperature": 0.8, "maxOutputTokens": 600}}
-        data = _r.post(url, json=body, timeout=15).json()
-        return (data.get("candidates", [{}])[0]
-                    .get("content", {}).get("parts", [{}])[0]
-                    .get("text", None))
+        resp = _r.post(url, json=body, timeout=30)
+        if resp.status_code != 200:
+            log.error(f"Gemini HTTP {resp.status_code}: {resp.text[:150]}")
+            return ""
+        data = resp.json()
+        candidates = data.get("candidates", [])
+        if not candidates:
+            log.error(f"Gemini no candidates: {str(data)[:150]}")
+            return ""
+        parts = candidates[0].get("content", {}).get("parts", [])
+        if not parts:
+            log.error(f"Gemini empty parts. finishReason: {candidates[0].get('finishReason')}")
+            return ""
+        return parts[0].get("text", "")
     except Exception as e:
-        log.error(f"Gemini: {e}"); return None
+        log.error(f"Gemini exception: {e}")
+        return ""
 
 def get_recommendations(budget=None, category=None, query=None):
     products = load_products()
