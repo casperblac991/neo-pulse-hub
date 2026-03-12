@@ -20,7 +20,8 @@ except ImportError:
     pass
 
 ADMIN_BOT_TOKEN = os.environ.get("ADMIN_BOT_TOKEN", "")
-GEMINI_API_KEY  = os.environ.get("GEMINI_API_KEY", "")
+GEMINI_API_KEY  = (os.environ.get("GEMINI_API_KEY") or
+                   os.environ.get("GOOGLE_API_KEY") or "")
 ADMIN_USER_ID   = int(os.environ.get("ADMIN_USER_ID", "0"))
 BASE_DIR        = os.path.dirname(os.path.abspath(__file__))
 PRODUCTS_FILE   = os.path.join(BASE_DIR, "products.json")
@@ -51,7 +52,7 @@ def ask_gemini(prompt: str) -> str:
     import requests as _r
     try:
         url = (f"https://generativelanguage.googleapis.com/v1beta/models/"
-               f"gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}")
+               f"gemini-2.5-flash:generateContent?key={GEMINI_API_KEY}")
         body = {"contents": [{"parts": [{"text": prompt}]}],
                 "generationConfig": {"temperature": 0.7, "maxOutputTokens": 800}}
         data = _r.post(url, json=body, timeout=15).json()
