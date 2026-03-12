@@ -212,6 +212,71 @@ def build_flask_app():
         return jsonify({"ok": True})
 
     # ── Health check ─────────────────────────────────────────────
+    # ── /api/order — استقبال طلب جديد وإشعار الأدمين ─────────────
+    @app.route("/api/order", methods=["POST"])
+    def api_order():
+        try:
+            data = request.get_json(silent=True) or {}
+            order_id   = data.get("order_id", "")
+            product_id = data.get("product_id", "")
+            product    = data.get("product", "غير محدد")
+            qty        = data.get("qty", 1)
+            total      = data.get("total", 0)
+            lang       = data.get("lang", "ar")
+
+            # حفظ في orders.json على GitHub عبر github_sync
+            try:
+                import json as _json2
+                orders_path = os.path.join(os.path.dirname(__file__), "orders.json")
+                with open(orders_path, "r", encoding="utf-8") as f:
+                    orders_data = _json2.load(f)
+                orders_data.setdefault("orders", [])
+                orders_data.setdefault("total_revenue", 0)
+                orders_data.setdefault("total_orders", 0)
+                orders_data["orders"].insert(0, {
+                    "id": order_id,
+                    "product_id": product_id,
+                    "product": product,
+                    "qty": qty,
+                    "total": total,
+                    "status": "confirmed",
+                    "date": __import__("datetime").datetime.utcnow().isoformat()
+                })
+                orders_data["total_orders"] += 1
+                if total:
+                    orders_data["total_revenue"] = round(orders_data["total_revenue"] + float(total), 2)
+                with open(orders_path, "w", encoding="utf-8") as f:
+                    _json2.dump(orders_data, f, ensure_ascii=False, indent=2)
+            except Exception as e:
+                log.error(f"orders.json save error: {e}")
+
+            # إشعار تيليجرام للأدمين
+            admin_token = TOKENS.get("admin", "") or os.environ.get("ADMIN_BOT_TOKEN", "")
+            admin_id    = os.environ.get("ADMIN_USER_ID", "6790340715")
+            if admin_token and admin_id:
+                try:
+                    msg = (
+                        f"🛒 *طلب جديد!*\n\n"
+                        f"📦 المنتج: {product}\n"
+                        f"🆔 رقم المنتج: {product_id}\n"
+                        f"🔢 الكمية: {qty}\n"
+                        f"💰 المبلغ: ${total}\n"
+                        f"🏷️ رقم الطلب: {order_id}\n"
+                        f"🌐 اللغة: {lang}"
+                    )
+                    requests.post(
+                        f"https://api.telegram.org/bot{admin_token}/sendMessage",
+                        json={"chat_id": admin_id, "text": msg, "parse_mode": "Markdown"},
+                        timeout=8
+                    )
+                except Exception as e:
+                    log.error(f"Telegram notify error: {e}")
+
+            return jsonify({"ok": True, "order_id": order_id})
+        except Exception as e:
+            log.error(f"api_order error: {e}")
+            return jsonify({"ok": False, "error": str(e)}), 500
+
     @app.route("/", methods=["GET"])
     @app.route("/health", methods=["GET"])
     def health():
