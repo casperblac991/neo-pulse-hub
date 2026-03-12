@@ -311,20 +311,36 @@ def build_flask_app():
         import requests as _r
         key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY") or ""
         if not key:
-            env_keys = [k for k in os.environ if "GEMINI" in k or "GOOGLE" in k or "API" in k]
-            return {"error": "NO GEMINI KEY", "found_keys": env_keys}, 400
-        url = ("https://generativelanguage.googleapis.com/v1beta/models/"
-               "gemini-1.5-flash:generateContent?key=" + key)
-        try:
-            r = _r.post(url,
-                json={"contents":[{"parts":[{"text":"say: OK"}]}],
-                      "generationConfig":{"maxOutputTokens":10}},
-                timeout=10)
-            return {"http_status": r.status_code,
-                    "key_prefix": key[:8] + "...",
-                    "gemini_response": r.text[:300]}
-        except Exception as e:
-            return {"error": str(e)}, 500
+            return {"error": "NO GEMINI KEY"}, 400
+        # اختبر كل الموديلات
+        models = [
+            "gemini-2.5-flash",
+            "gemini-2.5-flash-preview-04-17",
+            "gemini-2.0-flash",
+            "gemini-2.0-flash-lite",
+            "gemini-1.5-flash-latest",
+            "gemini-1.5-flash-8b",
+        ]
+        results = {}
+        for model in models:
+            try:
+                url = (f"https://generativelanguage.googleapis.com/v1beta/models/"
+                       f"{model}:generateContent?key={key}")
+                r = _r.post(url,
+                    json={"contents":[{"parts":[{"text":"say hi"}]}],
+                          "generationConfig":{"maxOutputTokens":20}},
+                    timeout=8)
+                if r.status_code == 200:
+                    data = r.json()
+                    parts = (data.get("candidates",[{}])[0]
+                                 .get("content",{}).get("parts",[{}]))
+                    text = parts[0].get("text","(empty parts)") if parts else "(no parts)"
+                    results[model] = "✅ " + text[:50]
+                else:
+                    results[model] = f"❌ {r.status_code}"
+            except Exception as e:
+                results[model] = f"❌ {str(e)[:50]}"
+        return {"key_prefix": key[:8]+"...", "models": results}
 
     return app
 
