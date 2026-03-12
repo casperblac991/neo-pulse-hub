@@ -121,6 +121,25 @@ def ask_gemini(prompt: str) -> str:
         log.error(f"Gemini exception: {e}")
         return ""
 
+
+CATEGORIES = [
+    {"id": "smartwatch",    "ar": "ساعات ذكية",    "en": "Smart Watches"},
+    {"id": "smart-glasses", "ar": "نظارات ذكية",   "en": "Smart Glasses"},
+    {"id": "health",        "ar": "صحة ولياقة",    "en": "Health & Fitness"},
+    {"id": "smart-home",    "ar": "منزل ذكي",      "en": "Smart Home"},
+    {"id": "earbuds",       "ar": "سماعات ذكية",   "en": "Smart Earbuds"},
+    {"id": "productivity",  "ar": "إنتاجية",       "en": "Productivity"},
+]
+
+PRODUCT_IMAGES = {
+    "smartwatch":    "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=600&q=80",
+    "smart-glasses": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=600&q=80",
+    "health":        "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&q=80",
+    "smart-home":    "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+    "earbuds":       "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&q=80",
+    "productivity":  "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&q=80",
+}
+
 def generate_product_with_ai(category):
     """يستخدم Gemini لتوليد بيانات منتج جديد"""
     cat_ar = category.get("ar", "")
