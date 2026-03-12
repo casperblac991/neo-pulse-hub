@@ -74,25 +74,40 @@ def upsert_lead(tg_user):
     save_json(LEADS_FILE, data)
 
 def ask_gemini(prompt: str) -> str:
-    if not GEMINI_API_KEY:
-        return "❌ خدمة الذكاء الاصطناعي غير متاحة حالياً."
+    key = (os.environ.get("GEMINI_API_KEY") or
+           os.environ.get("GOOGLE_API_KEY") or "")
+    if not key:
+        log.error("GEMINI_API_KEY missing!")
+        return ""
     import requests as _r
-    try:
-        url = (f"https://generativelanguage.googleapis.com/v1beta/models/"
-               f"gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}")
-        body = {
-            "contents": [{"parts": [{"text": prompt}]}],
-            "generationConfig": {"temperature": 0.7, "maxOutputTokens": 500}
+    url = ("https://generativelanguage.googleapis.com/v1beta/models/"
+           "gemini-2.5-flash:generateContent?key=" + key)
+    body = {
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {
+            "temperature": 0.7,
+            "maxOutputTokens": 2000,
+            "thinkingConfig": {"thinkingBudget": 0}
         }
-        resp = _r.post(url, json=body, timeout=15)
+    }
+    try:
+        resp = _r.post(url, json=body, timeout=30)
+        if resp.status_code != 200:
+            log.error(f"Gemini HTTP {resp.status_code}: {resp.text[:150]}")
+            return ""
         data = resp.json()
-        return (data.get("candidates", [{}])[0]
-                    .get("content", {})
-                    .get("parts", [{}])[0]
-                    .get("text", "⚠️ لا توجد إجابة."))
+        candidates = data.get("candidates", [])
+        if not candidates:
+            log.error(f"Gemini no candidates: {str(data)[:150]}")
+            return ""
+        parts = candidates[0].get("content", {}).get("parts", [])
+        if not parts:
+            log.error(f"Gemini empty parts. finishReason: {candidates[0].get('finishReason')}")
+            return ""
+        return parts[0].get("text", "")
     except Exception as e:
-        log.error(f"Gemini: {e}")
-        return "⚠️ حدث خطأ. حاول مرة أخرى."
+        log.error(f"Gemini exception: {e}")
+        return ""
 
 def build_prompt(user_msg: str, uid: int) -> str:
     products = load_products()
