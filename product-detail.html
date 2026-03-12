@@ -1,276 +1,623 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>تفاصيل المنتج | NEO PULSE HUB</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BVV5SDM5P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BVV5SDM5P');
+</script>
+<script>
+(function(){
+  var l = localStorage.getItem('nph_lang') || 'ar';
+  document.documentElement.setAttribute('lang', l);
+  document.documentElement.setAttribute('dir', l === 'en' ? 'ltr' : 'rtl');
+})();
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="تفاصيل المنتج — NEO PULSE HUB متجر الأجهزة الذكية">
+<title>تفاصيل المنتج | NEO PULSE HUB</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
 :root{--bg:#020510;--surface:#0a0d1a;--surface2:#0f1423;--border:rgba(99,179,237,.12);--border2:rgba(99,179,237,.25);--blue:#3b82f6;--blue2:#60a5fa;--purple:#7c3aed;--cyan2:#22d3ee;--green:#10b981;--gold:#f59e0b;--text:#e2e8f0;--muted:rgba(226,232,240,.55);--r:12px;--r2:20px;--rp:50px;--ease:.3s cubic-bezier(.4,0,.2,1)}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
 body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.7}
 a{color:inherit;text-decoration:none}button{cursor:pointer;border:none;background:none;font-family:inherit}
 .bg-grid{position:fixed;inset:0;z-index:-1;background-image:linear-gradient(rgba(59,130,246,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,.03) 1px,transparent 1px);background-size:60px 60px}
-nav{position:sticky;top:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:.9rem 2.5rem;gap:1rem;background:rgba(2,5,16,.9);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
-.nav-logo{font-family:'Orbitron',sans-serif;font-size:1.05rem;font-weight:700;background:linear-gradient(135deg,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+nav{position:sticky;top:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:.9rem 2.5rem;gap:1rem;background:rgba(2,5,16,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.nav-logo{font-family:'Orbitron',sans-serif;font-size:1.05rem;font-weight:700;background:linear-gradient(135deg,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;flex-shrink:0}
 .nav-links{display:flex;gap:.2rem;list-style:none}
 .nav-links a{font-size:.85rem;color:var(--muted);padding:.35rem .8rem;border-radius:var(--rp);transition:color var(--ease),background var(--ease)}
 .nav-links a:hover{color:var(--cyan2);background:rgba(6,182,212,.08)}
-.nav-cart{display:flex;align-items:center;gap:6px;font-size:.85rem;font-weight:600;color:var(--text);background:rgba(59,130,246,.1);border:1px solid var(--border2);border-radius:var(--rp);padding:.4rem 1rem;transition:all var(--ease)}
+.nav-right{display:flex;align-items:center;gap:.6rem;flex-shrink:0}
+.nav-cart{display:flex;align-items:center;gap:6px;font-size:.85rem;font-weight:600;color:var(--text);background:rgba(59,130,246,.1);border:1px solid var(--border2);border-radius:var(--rp);padding:.4rem 1rem;transition:all var(--ease);white-space:nowrap}
 .nav-cart:hover{background:rgba(59,130,246,.2);color:var(--blue2)}
+.lang-switch{display:flex;background:var(--surface2);border:1px solid var(--border);border-radius:var(--rp);overflow:hidden}
+.lang-btn{padding:.3rem .8rem;font-size:.8rem;font-weight:600;color:var(--muted);transition:all var(--ease)}
+.lang-btn.active{background:var(--blue);color:#fff}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:.4rem;border-radius:6px}
+.hamburger span{display:block;width:20px;height:2px;background:var(--blue2);border-radius:2px}
+.mobile-drawer{display:none;position:fixed;top:61px;inset:0;z-index:190;background:rgba(2,5,16,.97);flex-direction:column;align-items:center;justify-content:center;gap:1.8rem}
+.mobile-drawer.open{display:flex}
+.mobile-drawer a{font-size:1.3rem;font-weight:700;color:var(--muted);transition:color var(--ease)}
+.mobile-drawer a:hover{color:var(--cyan2)}
 .main{max-width:1100px;margin:0 auto;padding:3rem 1.5rem 5rem}
-.breadcrumb{display:flex;align-items:center;gap:.5rem;font-size:.82rem;color:var(--muted);margin-bottom:2rem}
+.breadcrumb{display:flex;align-items:center;gap:.5rem;font-size:.82rem;color:var(--muted);margin-bottom:2rem;flex-wrap:wrap}
 .breadcrumb a:hover{color:var(--cyan2)}
-.breadcrumb span{color:rgba(99,179,237,.3)}
+.sep{color:rgba(99,179,237,.3)}
 .product-layout{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-bottom:3rem}
 .img-box{border-radius:var(--r2);overflow:hidden;background:var(--surface2);border:1px solid var(--border);aspect-ratio:1;display:flex;align-items:center;justify-content:center;position:relative}
 .img-box img{width:100%;height:100%;object-fit:cover}
 .badge{position:absolute;top:1rem;right:1rem;background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;font-size:.78rem;font-weight:700;padding:.25rem .8rem;border-radius:var(--rp)}
-.product-info{}
 .product-cat{font-size:.72rem;color:var(--cyan2);font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.6rem}
 .product-name{font-size:clamp(1.3rem,2.5vw,1.9rem);font-weight:900;line-height:1.25;margin-bottom:.8rem}
-.stars-row{display:flex;align-items:center;gap:.5rem;margin-bottom:1.2rem}
+.stars-row{display:flex;align-items:center;gap:.5rem;margin-bottom:1.2rem;flex-wrap:wrap}
 .stars{color:var(--gold);font-size:1rem}
 .rev{font-size:.82rem;color:var(--muted)}
-.price-box{display:flex;align-items:baseline;gap.8rem;margin-bottom:1.5rem;flex-wrap:wrap;gap:.8rem}
+.price-box{display:flex;align-items:baseline;gap:.8rem;margin-bottom:1.5rem;flex-wrap:wrap}
 .price-big{font-family:'Orbitron',sans-serif;font-size:2rem;font-weight:700;background:linear-gradient(135deg,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .orig-price{font-size:1rem;color:var(--muted);text-decoration:line-through}
 .discount-pill{background:rgba(239,68,68,.15);border:1px solid rgba(239,68,68,.3);color:#f87171;font-size:.8rem;font-weight:700;padding:.2rem .7rem;border-radius:var(--rp)}
-.stock-indicator{display:flex;align-items:center;gap:.5rem;font-size:.85rem;margin-bottom:1.5rem}
-.stock-dot{width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulse 1.5s infinite}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.stock-indicator{display:flex;align-items:center;gap:.5rem;font-size:.85rem;margin-bottom:1.5rem;flex-wrap:wrap}
+.stock-dot{width:8px;height:8px;border-radius:50%;background:var(--green);animation:blink 1.5s infinite;flex-shrink:0}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
 .qty-row{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem}
 .qty-label{font-size:.85rem;color:var(--muted)}
-.qty-control{display:flex;align-items:center;gap:.5rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--rp);padding:.2rem}
-.qty-btn{width:30px;height:30px;border-radius:50%;color:var(--text);font-size:1rem;display:flex;align-items:center;justify-content:center;transition:background var(--ease);cursor:pointer;border:none;background:transparent}
-.qty-btn:hover{background:rgba(59,130,246,.15);color:var(--blue2)}
-.qty-num{min-width:30px;text-align:center;font-weight:700;font-size:.95rem}
-.action-row{display:flex;gap:.8rem;flex-wrap:wrap;margin-bottom:2rem}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:.85rem 2rem;border-radius:var(--rp);font-weight:700;font-size:.95rem;font-family:'Cairo',sans-serif;transition:all var(--ease);cursor:pointer;border:none}
-.btn-primary{background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;box-shadow:0 0 20px rgba(59,130,246,.3);flex:1}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(59,130,246,.5)}
-.btn-outline{background:rgba(6,182,212,.06);border:1px solid rgba(6,182,212,.3);color:var(--cyan2)}
-.btn-outline:hover{background:rgba(6,182,212,.12);transform:translateY(-2px)}
-.features-list{list-style:none;display:flex;flex-direction:column;gap:.6rem}
-.features-list li{display:flex;align-items:center;gap:.7rem;font-size:.9rem;color:var(--muted)}
-.features-list li::before{content:'✦';color:var(--blue2);font-size:.7rem;flex-shrink:0}
-.trust-row{display:flex;gap:1rem;flex-wrap:wrap;padding:1.2rem;background:var(--surface2);border:1px solid var(--border);border-radius:var(--r);margin-top:1.5rem}
-.trust-item{display:flex;align-items:center;gap:.4rem;font-size:.78rem;color:var(--muted)}
-.desc-section{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:2rem;margin-bottom:1.5rem}
-.desc-title{font-size:1rem;font-weight:700;color:var(--blue2);margin-bottom:1rem;display:flex;align-items:center;gap:.5rem}
-.desc-text{font-size:.9rem;color:var(--muted);line-height:1.85}
-.related-title{font-family:'Orbitron',sans-serif;font-size:1.2rem;font-weight:700;background:linear-gradient(135deg,#fff,var(--blue2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:1.5rem}
-.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem}
+.qty-control{display:flex;align-items:center;gap:.5rem;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--rp);padding:.2rem .4rem}
+.qty-btn{width:28px;height:28px;border-radius:50%;background:rgba(59,130,246,.1);color:var(--blue2);font-size:1.1rem;font-weight:700;display:flex;align-items:center;justify-content:center;transition:background var(--ease)}
+.qty-btn:hover{background:rgba(59,130,246,.25)}
+.qty-num{min-width:2rem;text-align:center;font-weight:700;font-size:1rem}
+.action-row{display:flex;gap:.8rem;margin-bottom:1.5rem;flex-wrap:wrap}
+.btn{padding:.75rem 1.8rem;border-radius:var(--rp);font-size:.95rem;font-weight:700;transition:all var(--ease)}
+.btn-primary{background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;flex:1;min-width:140px}
+.btn-primary:hover{opacity:.88;transform:translateY(-1px)}
+.btn-outline{border:1px solid var(--border2);color:var(--blue2);background:rgba(59,130,246,.06)}
+.btn-outline:hover{background:rgba(59,130,246,.15)}
+.features-list{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem}
+.features-list li{background:rgba(59,130,246,.08);border:1px solid var(--border);border-radius:var(--rp);font-size:.8rem;padding:.2rem .75rem;color:var(--muted)}
+.trust-row{display:flex;flex-wrap:wrap;gap:.5rem}
+.trust-item{font-size:.78rem;color:var(--muted);background:var(--surface2);border:1px solid var(--border);border-radius:var(--rp);padding:.25rem .7rem}
+.desc-section{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:1.8rem;margin-bottom:2.5rem}
+.desc-title{font-size:1rem;font-weight:700;color:var(--blue2);margin-bottom:1rem}
+.desc-text{color:var(--muted);font-size:.92rem;line-height:1.9}
+.related-title{font-size:1.1rem;font-weight:800;margin-bottom:1.2rem}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem}
 .related-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);overflow:hidden;cursor:pointer;transition:all var(--ease)}
 .related-card:hover{border-color:var(--border2);transform:translateY(-3px)}
-.related-img{height:140px;overflow:hidden;background:var(--surface2)}
-.related-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
-.related-card:hover .related-img img{transform:scale(1.05)}
-.related-body{padding:.9rem}
-.related-name{font-size:.85rem;font-weight:700;margin-bottom:.4rem}
-.related-price{font-family:'Orbitron',sans-serif;font-size:.9rem;font-weight:700;background:linear-gradient(135deg,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.toast{position:fixed;bottom:2rem;right:2rem;z-index:999;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--r);padding:.9rem 1.4rem;display:flex;align-items:center;gap:.7rem;box-shadow:0 10px 30px rgba(0,0,0,.5);transform:translateY(80px);opacity:0;transition:all var(--ease);pointer-events:none}
-.toast.show{transform:translateY(0);opacity:1}
-@media(max-width:768px){.product-layout{grid-template-columns:1fr}.nav-links{display:none}}
-@media(max-width:480px){.main{padding:2rem 1rem 4rem}.action-row{flex-direction:column}}
-  .lang-switch{display:flex;gap:5px}.lang-btn{background:rgba(59,130,246,.1);border:1px solid rgba(99,179,237,.25);color:#e2e8f0;padding:.25rem .8rem;border-radius:50px;font-size:.8rem;font-weight:600;cursor:pointer;transition:all .3s}.lang-btn.active{background:linear-gradient(135deg,#3b82f6,#7c3aed);color:#fff;border-color:transparent}
+.related-card img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+.rc-info{padding:.75rem}
+.rc-name{font-size:.82rem;font-weight:600;margin-bottom:.3rem}
+.rc-price{font-family:'Orbitron',sans-serif;font-size:.85rem;color:var(--blue2)}
+.toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%) translateY(30px);background:var(--surface);border:1px solid var(--border2);border-radius:var(--rp);padding:.7rem 1.5rem;display:flex;align-items:center;gap:.6rem;font-size:.9rem;font-weight:600;z-index:500;opacity:0;transition:all var(--ease);pointer-events:none;white-space:nowrap}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+footer{background:var(--surface);border-top:1px solid var(--border);padding:2.5rem 2rem 1.5rem;margin-top:3rem}
+.fi{max-width:1100px;margin:0 auto}
+.fg{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-bottom:2rem}
+.fc h4{font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue2);margin-bottom:.9rem}
+.fc a{display:block;font-size:.84rem;color:var(--muted);margin-bottom:.45rem;transition:color var(--ease)}
+.fc a:hover{color:var(--cyan2)}
+.fb{font-size:.78rem;color:rgba(226,232,240,.3);text-align:center;padding-top:1.2rem;border-top:1px solid var(--border)}
+@media(max-width:768px){.product-layout{grid-template-columns:1fr}.nav-links{display:none}.hamburger{display:flex}}
+@media(max-width:600px){.fg{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <div class="bg-grid"></div>
+
 <nav>
   <a href="index.html" class="nav-logo">NEO PULSE HUB</a>
   <ul class="nav-links">
-    <li><a href="index.html">الرئيسية</a></li>
-    <li><a href="products.html">المنتجات</a></li>
-    <li><a href="about.html">من نحن</a></li>
-    <li><a href="contact.html">اتصل بنا</a></li>
+    <li><a href="index.html" id="nav_home">الرئيسية</a></li>
+    <li><a href="products.html" id="nav_products">المنتجات</a></li>
+    <li><a href="about.html" id="nav_about">من نحن</a></li>
+    <li><a href="contact.html" id="nav_contact">اتصل بنا</a></li>
   </ul>
-  <button class="nav-cart" onclick="openCart()">🛒 السلة</button>
+  <div class="nav-right">
+    <div class="lang-switch">
+      <button class="lang-btn active" id="langAr" onclick="changeLang('ar')">عربي</button>
+      <button class="lang-btn" id="langEn" onclick="changeLang('en')">EN</button>
+    </div>
+    <a href="checkout.html" class="nav-cart" id="cartLink"><span id="nav_cart">&#x1F6D2; السلة</span></a>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
+
+<div class="mobile-drawer" id="mobileDrawer">
+  <a href="index.html" onclick="closeMenu()" id="m_home">&#x1F3E0; الرئيسية</a>
+  <a href="products.html" onclick="closeMenu()" id="m_products">&#x1F6CD; المنتجات</a>
+  <a href="about.html" onclick="closeMenu()" id="m_about">&#x2139; من نحن</a>
+  <a href="contact.html" onclick="closeMenu()" id="m_contact">&#x1F4DE; اتصل بنا</a>
+</div>
 
 <main class="main">
   <div class="breadcrumb">
-    <a href="index.html">الرئيسية</a>
-    <span>›</span>
-    <a href="products.html">المنتجات</a>
-    <span>›</span>
-    <span id="breadProduct">المنتج</span>
+    <a href="index.html" id="bc_home">الرئيسية</a>
+    <span class="sep">&#x203A;</span>
+    <a href="products.html" id="bc_products">المنتجات</a>
+    <span class="sep">&#x203A;</span>
+    <span id="breadProduct">...</span>
   </div>
-
   <div class="product-layout" id="productLayout">
-    <div style="text-align:center;padding:4rem;color:var(--muted)">⏳ جاري التحميل...</div>
+    <div style="text-align:center;padding:4rem;color:var(--muted);grid-column:1/-1" id="loading_text">&#x23F3; جاري التحميل...</div>
   </div>
-
   <div class="desc-section" id="descSection" style="display:none">
-    <div class="desc-title">📋 وصف المنتج</div>
+    <div class="desc-title" id="desc_title">&#x1F4CB; وصف المنتج</div>
     <div class="desc-text" id="descText"></div>
   </div>
-
   <div id="relatedSection" style="display:none">
-    <div class="related-title">منتجات مشابهة</div>
+    <div class="related-title" id="related_title">منتجات مشابهة</div>
     <div class="related-grid" id="relatedGrid"></div>
   </div>
 </main>
 
-<div class="toast" id="toast"><span id="toastIcon"></span><span id="toastText" style="font-size:.9rem;font-weight:600"></span></div>
+<div class="toast" id="toast">
+  <span id="toastIcon"></span>
+  <span id="toastText" style="font-size:.9rem;font-weight:600"></span>
+</div>
+
+<footer>
+  <div class="fi">
+    <div class="fg">
+      <div class="fc">
+        <h4 id="fc1_title">NEO PULSE HUB</h4>
+        <a href="about.html" id="fc1_about">من نحن</a>
+        <a href="contact.html" id="fc1_contact">اتصل بنا</a>
+        <a href="products.html" id="fc1_products">المنتجات</a>
+      </div>
+      <div class="fc">
+        <h4 id="fc2_title">السياسات</h4>
+        <a href="shipping.html" id="fc2_ship">سياسة الشحن</a>
+        <a href="returns.html" id="fc2_return">سياسة الإرجاع</a>
+        <a href="privacy.html" id="fc2_privacy">سياسة الخصوصية</a>
+        <a href="terms.html" id="fc2_terms">الشروط والأحكام</a>
+      </div>
+      <div class="fc">
+        <h4 id="fc3_title">الدعم</h4>
+        <a href="https://t.me/NeoPulseBot" target="_blank">@NeoPulseBot</a>
+        <a href="mailto:Saidchaik@gmail.com">Saidchaik@gmail.com</a>
+        <a href="faq.html" id="fc3_faq">الأسئلة الشائعة</a>
+      </div>
+    </div>
+    <div class="fb" id="footer_copy">&#xA9; 2026 NEO PULSE HUB &#x2014; جميع الحقوق محفوظة</div>
+  </div>
+</footer>
 
 <script>
-function changeLang(l) {
-  lang = l;
-  localStorage.setItem('nph_lang', l);
-  document.documentElement.setAttribute('dir', l === 'ar' ? 'rtl' : 'ltr');
-  const ar = document.getElementById('langAr');
-  const en = document.getElementById('langEn');
-  if(ar) ar.classList.toggle('active', l === 'ar');
-  if(en) en.classList.toggle('active', l === 'en');
-  if(typeof renderProduct === 'function') renderProduct();
-}
-
-let lang = localStorage.getItem('nph_lang') || 'ar';
-let product = null, qty = 1;
-let allProducts = [];
-let cart = JSON.parse(localStorage.getItem('nph_cart') || '[]');
-
-async function init() {
-  const params = new URLSearchParams(window.location.search);
-  const id = params.get('id');
-  if (!id) { window.location.href = 'products.html'; return; }
-
-  try {
-    // جرب relative أولاً (GitHub Pages)
-    let r = await fetch('./products.json').catch(() => null);
-    if (!r || !r.ok) {
-      // fallback للـ raw GitHub
-      r = await fetch('https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/products.json');
-    }
-    allProducts = await r.json();
-  } catch(e) { 
-    console.error('Products load error:', e);
-    allProducts = []; 
+var T = {
+  ar: {
+    title_suffix: 'تفاصيل المنتج',
+    loading_text: 'جاري التحميل...',
+    desc_title: 'وصف المنتج',
+    related_title: 'منتجات مشابهة',
+    qty_label: 'الكمية:',
+    add_cart: 'أضف للسلة',
+    in_cart: 'في السلة',
+    buy_now: 'اشتر الآن',
+    in_stock: 'متوفر',
+    ships_in: 'شحن خلال',
+    days: 'أيام',
+    reviews: 'تقييم',
+    out_of: 'من',
+    discount_text: 'خصم',
+    warranty: 'ضمان',
+    months: 'شهر',
+    t1: 'إرجاع 30 يوم',
+    t2: 'دفع آمن',
+    t3: 'شحن سريع',
+    nav_home: 'الرئيسية',
+    nav_products: 'المنتجات',
+    nav_about: 'من نحن',
+    nav_contact: 'اتصل بنا',
+    nav_cart: 'السلة',
+    m_home: 'الرئيسية',
+    m_products: 'المنتجات',
+    m_about: 'من نحن',
+    m_contact: 'اتصل بنا',
+    bc_home: 'الرئيسية',
+    bc_products: 'المنتجات',
+    fc1_title: 'NEO PULSE HUB',
+    fc1_about: 'من نحن',
+    fc1_contact: 'اتصل بنا',
+    fc1_products: 'المنتجات',
+    fc2_title: 'السياسات',
+    fc2_ship: 'سياسة الشحن',
+    fc2_return: 'سياسة الإرجاع',
+    fc2_privacy: 'سياسة الخصوصية',
+    fc2_terms: 'الشروط والأحكام',
+    fc3_title: 'الدعم',
+    fc3_faq: 'الأسئلة الشائعة',
+    footer_copy: 'جميع الحقوق محفوظة 2026',
+    toast_added: 'تمت الإضافة للسلة',
+    toast_already: 'المنتج موجود في السلة',
+    only_left: 'باقي فقط'
+  },
+  en: {
+    title_suffix: 'Product Details',
+    loading_text: 'Loading...',
+    desc_title: 'Product Description',
+    related_title: 'Related Products',
+    qty_label: 'Quantity:',
+    add_cart: 'Add to Cart',
+    in_cart: 'In Cart',
+    buy_now: 'Buy Now',
+    in_stock: 'In Stock',
+    ships_in: 'Ships in',
+    days: 'days',
+    reviews: 'reviews',
+    out_of: 'out of',
+    discount_text: 'OFF',
+    warranty: 'Warranty',
+    months: 'mo',
+    t1: '30-Day Returns',
+    t2: 'Secure Payment',
+    t3: 'Fast Shipping',
+    nav_home: 'Home',
+    nav_products: 'Products',
+    nav_about: 'About',
+    nav_contact: 'Contact',
+    nav_cart: 'Cart',
+    m_home: 'Home',
+    m_products: 'Products',
+    m_about: 'About',
+    m_contact: 'Contact',
+    bc_home: 'Home',
+    bc_products: 'Products',
+    fc1_title: 'NEO PULSE HUB',
+    fc1_about: 'About Us',
+    fc1_contact: 'Contact',
+    fc1_products: 'Products',
+    fc2_title: 'Policies',
+    fc2_ship: 'Shipping Policy',
+    fc2_return: 'Return Policy',
+    fc2_privacy: 'Privacy Policy',
+    fc2_terms: 'Terms & Conditions',
+    fc3_title: 'Support',
+    fc3_faq: 'FAQ',
+    footer_copy: 'All Rights Reserved 2026',
+    toast_added: 'Added to cart',
+    toast_already: 'Already in cart',
+    only_left: 'Only'
   }
+};
 
-  product = allProducts.find(p => p.id === id);
-  if (!product) { window.location.href = 'products.html'; return; }
+var lang = 'ar';
+var product = null;
+var qty = 1;
+var allProducts = [];
 
-  document.title = `${lang==='en' ? (product.name_en||product.name_ar) : product.name_ar} | NEO PULSE HUB`;
-  document.getElementById('breadProduct').textContent = product.name_ar;
-  renderProduct();
-  renderRelated();
+function safeStorage(action, key, val) {
+  try {
+    if (action === 'get') return localStorage.getItem(key);
+    if (action === 'set') localStorage.setItem(key, val);
+  } catch(e) {}
+  return null;
 }
+
+function getCart() {
+  try {
+    var c = safeStorage('get', 'nph_cart');
+    return c ? JSON.parse(c) : [];
+  } catch(e) { return []; }
+}
+
+function saveCart(c) {
+  try { safeStorage('set', 'nph_cart', JSON.stringify(c)); } catch(e) {}
+}
+
+function applyLang(l) {
+  lang = l;
+  safeStorage('set', 'nph_lang', l);
+  document.documentElement.setAttribute('dir', l === 'ar' ? 'rtl' : 'ltr');
+  document.documentElement.setAttribute('lang', l);
+  var arBtn = document.getElementById('langAr');
+  var enBtn = document.getElementById('langEn');
+  if (arBtn) arBtn.className = 'lang-btn' + (l === 'ar' ? ' active' : '');
+  if (enBtn) enBtn.className = 'lang-btn' + (l === 'en' ? ' active' : '');
+  var tObj = T[l];
+  var keys = Object.keys(tObj);
+  for (var i = 0; i < keys.length; i++) {
+    var el = document.getElementById(keys[i]);
+    if (el) el.textContent = tObj[keys[i]];
+  }
+  updateCartBadge();
+  if (product) {
+    renderProduct();
+    renderRelated();
+  }
+}
+
+function changeLang(l) { applyLang(l); }
+
+function updateCartBadge() {
+  var cart = getCart();
+  var el = document.getElementById('nav_cart');
+  if (el) {
+    var base = T[lang].nav_cart;
+    el.textContent = cart.length > 0 ? base + ' (' + cart.length + ')' : base;
+  }
+}
+
+function toggleMenu() {
+  var d = document.getElementById('mobileDrawer');
+  if (d) {
+    if (d.className.indexOf('open') > -1) {
+      d.className = 'mobile-drawer';
+    } else {
+      d.className = 'mobile-drawer open';
+    }
+  }
+}
+
+function closeMenu() {
+  var d = document.getElementById('mobileDrawer');
+  if (d) d.className = 'mobile-drawer';
+}
+
+function showToast(icon, msg) {
+  var t = document.getElementById('toast');
+  var ti = document.getElementById('toastIcon');
+  var tt = document.getElementById('toastText');
+  if (!t) return;
+  if (ti) ti.textContent = icon;
+  if (tt) tt.textContent = msg;
+  t.className = 'toast show';
+  setTimeout(function() { t.className = 'toast'; }, 2500);
+}
+
+function changeQty(delta) {
+  qty = qty + delta;
+  if (qty < 1) qty = 1;
+  if (product && qty > product.stock) qty = product.stock;
+  var el = document.getElementById('qtyNum');
+  if (el) el.textContent = qty;
+}
+
+function addToCart() {
+  if (!product) return;
+  var cart = getCart();
+  var t = T[lang];
+  var found = false;
+  for (var i = 0; i < cart.length; i++) {
+    if (cart[i].id === product.id) { found = true; break; }
+  }
+  if (found) {
+    showToast('!', t.toast_already);
+    return;
+  }
+  cart.push({
+    id: product.id,
+    name_ar: product.name_ar,
+    name_en: product.name_en || product.name_ar,
+    price: product.price,
+    image: product.image,
+    qty: qty
+  });
+  saveCart(cart);
+  updateCartBadge();
+  var pname = lang === 'en' ? (product.name_en || product.name_ar) : product.name_ar;
+  showToast('OK', t.toast_added + ': ' + pname);
+  var btn = document.getElementById('cartBtn');
+  if (btn) btn.textContent = t.in_cart;
+}
+
+function buyNow() {
+  if (!product) return;
+  addToCart();
+  setTimeout(function() {
+    window.location.href = 'checkout.html?id=' + product.id + '&qty=' + qty;
+  }, 300);
+}
+
+function el(id) { return document.getElementById(id); }
 
 function renderProduct() {
-  const inCart = cart.some(c => c.id === product.id);
-  document.getElementById('productLayout').innerHTML = `
-    <div class="img-box">
-      <img src="${product.image}" alt="${product.name_ar}">
-      ${product.badge ? `<span class="badge">${product.badge}</span>` : ''}
-    </div>
-    <div class="product-info">
-      <div class="product-cat">${lang==='en' ? (product.category_en||product.category_ar||'') : (product.category_ar||'')}</div>
-      <h1 class="product-name">${lang==='en' ? (product.name_en||product.name_ar) : product.name_ar}</h1>
-      <div class="stars-row">
-        <span class="stars">${'★'.repeat(Math.floor(product.rating || 4))}${'☆'.repeat(5 - Math.floor(product.rating || 4))}</span>
-        <span class="rev">${product.rating} ${lang==='en'?'out of':'من'} 5 (${product.reviews||0} ${lang==='en'?'reviews':'تقييم'})</span>
-      </div>
-      <div class="price-box">
-        <span class="price-big">$${product.price}</span>
-        ${product.original_price ? `<span class="orig-price">$${product.original_price}</span>` : ''}
-        ${product.discount ? `<span class="discount-pill">خصم ${product.discount}%</span>` : ''}
-      </div>
-      <div class="stock-indicator">
-        <span class="stock-dot"></span>
-        <span style="color:var(--green);font-weight:600">${product.stock > 10 ? (lang==='en'?'In Stock':'متوفر') : (lang==='en'?`Only ${product.stock} left!`:`باقي ${product.stock} فقط!`)}</span>
-        <span style="color:var(--muted);font-size:.8rem">• ${lang==='en'?'Ships in':'شحن'} ${product.shipping_days||3} ${lang==='en'?'days':'يوم عمل'}</span>
-      </div>
-      <div class="qty-row">
-        <span class="qty-label">الكمية:</span>
-        <div class="qty-control">
-          <button class="qty-btn" onclick="changeQty(-1)">−</button>
-          <span class="qty-num" id="qtyNum">1</span>
-          <button class="qty-btn" onclick="changeQty(1)">+</button>
-        </div>
-      </div>
-      <div class="action-row">
-        <button class="btn btn-primary" id="cartBtn" onclick="addToCart()">
-          ${inCart ? '✅ '+(lang==='en'?'In Cart':'في السلة') : '🛒 '+(lang==='en'?'Add to Cart':'أضف للسلة')}
-        </button>
-        <button class="btn btn-outline" onclick="buyNow()">⚡ ${lang==='en'?'Buy Now':'اشتر الآن'}</button>
-      </div>
-      ${product.features_ar ? `
-      <ul class="features-list">
-        ${product.features_ar.map(f => `<li>${f}</li>`).join('')}
-      </ul>` : ''}
-      <div class="trust-row">
-        <span class="trust-item">🛡️ ضمان ${product.rating > 4.5 ? '24' : '12'} شهر</span>
-        <span class="trust-item">🔄 إرجاع 30 يوم</span>
-        <span class="trust-item">🔒 دفع آمن</span>
-        <span class="trust-item">🚚 شحن سريع</span>
-      </div>
-    </div>`;
+  var layout = el('productLayout');
+  if (!layout || !product) return;
 
-  if (product.description_ar) {
-    document.getElementById('descSection').style.display = 'block';
-    document.getElementById('descText').textContent = product.description_ar;
+  var t = T[lang];
+  var cart = getCart();
+  var inCart = false;
+  for (var i = 0; i < cart.length; i++) {
+    if (cart[i].id === product.id) { inCart = true; break; }
+  }
+
+  var pname = lang === 'en' ? (product.name_en || product.name_ar) : product.name_ar;
+  var pcat  = lang === 'en' ? (product.category_en || product.category_ar || '') : (product.category_ar || '');
+  var pdesc = lang === 'en' ? (product.description_en || product.description_ar || '') : (product.description_ar || '');
+  var pbadge = lang === 'en' ? (product.badge_en || product.badge || '') : (product.badge || '');
+  var features = lang === 'en' ? (product.features_en || product.features_ar || []) : (product.features_ar || []);
+
+  document.title = pname + ' | NEO PULSE HUB';
+  var bread = el('breadProduct');
+  if (bread) bread.textContent = pname;
+
+  var rf = Math.floor(product.rating || 4);
+  var stars = '';
+  for (var s = 0; s < rf; s++) stars += '\u2605';
+  for (var s = rf; s < 5; s++) stars += '\u2606';
+
+  var stockHtml = product.stock > 10
+    ? '<span style="color:var(--green);font-weight:600">' + t.in_stock + '</span>'
+    : '<span style="color:#f87171;font-weight:600">' + t.only_left + ' ' + product.stock + '</span>';
+
+  var origHtml = product.original_price
+    ? '<span class="orig-price">$' + product.original_price + '</span>' : '';
+
+  var discHtml = product.discount
+    ? '<span class="discount-pill">' + product.discount + '% ' + t.discount_text + '</span>' : '';
+
+  var badgeHtml = pbadge
+    ? '<span class="badge">' + pbadge + '</span>' : '';
+
+  var featHtml = '';
+  if (features.length) {
+    featHtml = '<ul class="features-list">';
+    for (var f = 0; f < features.length; f++) {
+      featHtml += '<li>' + features[f] + '</li>';
+    }
+    featHtml += '</ul>';
+  }
+
+  var warranty = product.rating > 4.5 ? 24 : 12;
+
+  var html = '<div class="img-box">'
+    + '<img src="' + product.image + '" alt="' + pname + '" onerror="this.src=\'https://placehold.co/400x400/0a0d1a/60a5fa?text=IMG\'">'
+    + badgeHtml + '</div>'
+    + '<div class="product-info">'
+    + '<div class="product-cat">' + pcat + '</div>'
+    + '<h1 class="product-name">' + pname + '</h1>'
+    + '<div class="stars-row"><span class="stars">' + stars + '</span>'
+    + '<span class="rev">' + product.rating + ' ' + t.out_of + ' 5 (' + (product.reviews || 0) + ' ' + t.reviews + ')</span></div>'
+    + '<div class="price-box">'
+    + '<span class="price-big">$' + product.price + '</span>' + origHtml + discHtml
+    + '</div>'
+    + '<div class="stock-indicator">'
+    + '<span class="stock-dot"></span>' + stockHtml
+    + '<span style="color:var(--muted);font-size:.8rem">&nbsp;&#x2022;&nbsp;' + t.ships_in + ' ' + (product.shipping_days || 3) + ' ' + t.days + '</span>'
+    + '</div>'
+    + '<div class="qty-row"><span class="qty-label">' + t.qty_label + '</span>'
+    + '<div class="qty-control">'
+    + '<button class="qty-btn" onclick="changeQty(-1)">&#x2212;</button>'
+    + '<span class="qty-num" id="qtyNum">' + qty + '</span>'
+    + '<button class="qty-btn" onclick="changeQty(1)">&#x002B;</button>'
+    + '</div></div>'
+    + '<div class="action-row">'
+    + '<button class="btn btn-primary" id="cartBtn" onclick="addToCart()">'
+    + (inCart ? t.in_cart : t.add_cart) + '</button>'
+    + '<button class="btn btn-outline" onclick="buyNow()">\u26A1 ' + t.buy_now + '</button>'
+    + '</div>'
+    + featHtml
+    + '<div class="trust-row">'
+    + '<span class="trust-item">&#x1F6E1; ' + t.warranty + ' ' + warranty + ' ' + t.months + '</span>'
+    + '<span class="trust-item">&#x1F504; ' + t.t1 + '</span>'
+    + '<span class="trust-item">&#x1F512; ' + t.t2 + '</span>'
+    + '<span class="trust-item">&#x1F69A; ' + t.t3 + '</span>'
+    + '</div></div>';
+
+  layout.innerHTML = html;
+
+  if (pdesc) {
+    var ds = el('descSection');
+    var dt = el('descText');
+    var dtl = el('desc_title');
+    if (ds) ds.style.display = 'block';
+    if (dt) dt.textContent = pdesc;
+    if (dtl) dtl.textContent = t.desc_title;
   }
 }
 
 function renderRelated() {
-  const related = allProducts.filter(p => p.category === product.category && p.id !== product.id).slice(0, 4);
+  var related = [];
+  for (var i = 0; i < allProducts.length; i++) {
+    var p = allProducts[i];
+    if (p.active === false) continue;
+    if (p.category === product.category && p.id !== product.id) {
+      related.push(p);
+      if (related.length >= 4) break;
+    }
+  }
   if (!related.length) return;
-  document.getElementById('relatedSection').style.display = 'block';
-  document.getElementById('relatedGrid').innerHTML = related.map(p => `
-    <div class="related-card" onclick="window.location.href='product-detail.html?id=${p.id}'">
-      <div class="related-img"><img src="${p.image}" alt="${p.name_ar}" loading="lazy"></div>
-      <div class="related-body">
-        <div class="related-name">${p.name_ar}</div>
-        <div class="related-price">$${p.price}</div>
-      </div>
-    </div>`).join('');
+
+  var section = el('relatedSection');
+  var grid = el('relatedGrid');
+  var rtEl = el('related_title');
+  if (!section || !grid) return;
+
+  section.style.display = 'block';
+  if (rtEl) rtEl.textContent = T[lang].related_title;
+
+  var html = '';
+  for (var i = 0; i < related.length; i++) {
+    var p = related[i];
+    var n = lang === 'en' ? (p.name_en || p.name_ar) : p.name_ar;
+    html += '<div class="related-card" onclick="location.href=\'product-detail.html?id=' + p.id + '\'">'
+      + '<img src="' + p.image + '" alt="' + n + '" loading="lazy"'
+      + ' onerror="this.src=\'https://placehold.co/200x200/0a0d1a/60a5fa?text=IMG\'">'
+      + '<div class="rc-info">'
+      + '<div class="rc-name">' + n + '</div>'
+      + '<div class="rc-price">$' + p.price + '</div>'
+      + '</div></div>';
+  }
+  grid.innerHTML = html;
 }
 
-function changeQty(delta) {
-  qty = Math.max(1, Math.min(10, qty + delta));
-  document.getElementById('qtyNum').textContent = qty;
+function loadProduct() {
+  var params = new URLSearchParams(window.location.search);
+  var id = params.get('id');
+  if (!id) {
+    window.location.href = 'products.html';
+    return;
+  }
+
+  var loadEl = el('loading_text');
+
+  function onData(data) {
+    allProducts = data;
+    product = null;
+    for (var i = 0; i < allProducts.length; i++) {
+      if (allProducts[i].id === id) { product = allProducts[i]; break; }
+    }
+    if (!product) {
+      window.location.href = 'products.html';
+      return;
+    }
+    renderProduct();
+    renderRelated();
+  }
+
+  function tryUrl(idx, urls) {
+    if (idx >= urls.length) {
+      if (loadEl) loadEl.textContent = 'فشل تحميل المنتج';
+      return;
+    }
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', urls[idx]);
+    xhr.onload = function() {
+      if (xhr.status >= 200 && xhr.status < 300) {
+        try {
+          onData(JSON.parse(xhr.responseText));
+        } catch(e) {
+          tryUrl(idx + 1, urls);
+        }
+      } else {
+        tryUrl(idx + 1, urls);
+      }
+    };
+    xhr.onerror = function() { tryUrl(idx + 1, urls); };
+    xhr.send();
+  }
+
+  tryUrl(0, [
+    './products.json',
+    'https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/products.json'
+  ]);
 }
 
-function addToCart() {
-  const ex = cart.find(c => c.id === product.id);
-  if (ex) ex.qty = (ex.qty || 1) + qty;
-  else cart.push({...product, qty});
-  localStorage.setItem('nph_cart', JSON.stringify(cart));
-  document.getElementById('cartBtn').textContent = '✅ في السلة';
-  showToast('✅', `أُضيف ${qty} × ${product.name_ar} للسلة`);
+function init() {
+  var storedLang = safeStorage('get', 'nph_lang') || 'ar';
+  lang = storedLang;
+  document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+  document.documentElement.setAttribute('lang', lang);
+  var arBtn = el('langAr');
+  var enBtn = el('langEn');
+  if (arBtn) arBtn.className = 'lang-btn' + (lang === 'ar' ? ' active' : '');
+  if (enBtn) enBtn.className = 'lang-btn' + (lang === 'en' ? ' active' : '');
+  var tObj = T[lang];
+  var keys = Object.keys(tObj);
+  for (var i = 0; i < keys.length; i++) {
+    var elem = el(keys[i]);
+    if (elem) elem.textContent = tObj[keys[i]];
+  }
+  updateCartBadge();
+  loadProduct();
 }
 
-function buyNow() {
-  addToCart();
-  showToast('⚡', 'سيتوفر خيار الدفع قريباً!');
-}
-
-function openCart() {
-  if (!cart.length) { showToast('🛒', 'سلتك فارغة!'); return; }
-  const total = cart.reduce((s, i) => s + i.price * (i.qty || 1), 0);
-  alert(`🛒 السلة:\n\n${cart.map(i=>`• ${i.name_ar} x${i.qty||1} = $${(i.price*(i.qty||1)).toFixed(2)}`).join('\n')}\n\n💰 الإجمالي: $${total.toFixed(2)}`);
-}
-
-let toastTimer;
-function showToast(icon, text) {
-  const t = document.getElementById('toast');
-  document.getElementById('toastIcon').textContent = icon + ' ';
-  document.getElementById('toastText').textContent = text;
-  t.classList.add('show');
-  clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => t.classList.remove('show'), 3000);
-}
-
-window.addEventListener('load', init);
-
-function buyNow() {
-  if (!product) return;
-  window.location.href = `checkout.html?id=${product.id}&qty=${qty}`;
-}
+window.onload = function() { init(); };
 </script>
 </body>
 </html>
