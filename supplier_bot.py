@@ -118,69 +118,72 @@ PRODUCT_IMAGES = {
     "productivity":  "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&q=80",
 }
 
-def generate_product_with_ai(category: dict) -> dict | None:
-    """يستخدم Gemini لتوليد بيانات منتج جديد — نسخة محسّنة"""
+def generate_product_with_ai(category):
+    """يستخدم Gemini لتوليد بيانات منتج جديد"""
+    cat_ar = category.get("ar", "")
+    cat_en = category.get("en", "")
     prompt = (
-        f'أنت خبير منتجات تقنية. أنشئ منتجاً واقعياً جديداً لفئة "{category["ar"]}" \'
-        f'لمتجر أجهزة ذكية.\n'
-        'أجب بـ JSON فقط، بدون أي نص قبله أو بعده، بهذا الشكل:\n'
-        '{"name_ar":"اسم بالعربية","name_en":"English Name",'
-        '"price":199,"original_price":249,"discount":17,'
-        '"rating":4.7,"reviews":1500,'
-        '"description_ar":"وصف جذاب بالعربية",'
-        '"description_en":"Attractive description in English",'
+        "Generate a realistic tech product for category: " + cat_en + "\n"
+        "Respond with ONLY valid JSON, no extra text, no markdown:\n"
+        "{"
+        '"name_ar":"اسم المنتج بالعربية",'
+        '"name_en":"Product Name in English",'
+        '"price":199,'
+        '"original_price":249,'
+        '"discount":17,'
+        '"rating":4.7,'
+        '"reviews":1500,'
+        '"description_ar":"وصف تسويقي جذاب بالعربية جملتان",'
+        '"description_en":"Two sentences marketing description in English",'
         '"features_ar":["ميزة 1","ميزة 2","ميزة 3","ميزة 4"],'
         '"features_en":["Feature 1","Feature 2","Feature 3","Feature 4"],'
-        '"badge":"جديد","badge_en":"New","shipping_days":5}\n'
-        f'الفئة: {category["ar"]} | السعر بين $50 و$500 | اسم واقعي وجذاب.'
+        '"badge":"جديد",'
+        '"badge_en":"New",'
+        '"shipping_days":5'
+        "}\n"
+        "Rules: price between 50-500 USD, realistic product name, category: " + cat_ar
     )
 
     raw = ask_gemini(prompt)
     if not raw:
-        log.warning(f"Gemini returned empty for {category['ar']}")
+        log.warning("Gemini returned empty for " + cat_ar)
         return None
 
-    # تنظيف الاستجابة
+    import re as _re
+    # تنظيف markdown
     cleaned = raw.strip()
-    # إزالة markdown code blocks
-    cleaned = __import__('re').sub(r'```(?:json)?\s*', '', cleaned).strip()
-    cleaned = cleaned.strip('`').strip()
+    cleaned = _re.sub(r"```(?:json)?\s*", "", cleaned).strip()
+    cleaned = cleaned.strip("`").strip()
 
     # استخرج JSON
-    import re as _re
-    match = _re.search(r'\{[\s\S]*\}', cleaned)
+    match = _re.search(r"\{[\s\S]*\}", cleaned)
     if not match:
-        # حاول بدون closing brace (JSON مقطوع)
-        match = _re.search(r'\{[\s\S]+', cleaned)
+        match = _re.search(r"\{[\s\S]+", cleaned)
         if not match:
-            log.warning(f"No JSON found in Gemini response: {raw[:150]}")
+            log.warning("No JSON in response: " + raw[:100])
             return None
 
     fragment = match.group()
-    # إصلاح JSON مقطوع أو ناقص
     try:
-        data = json.loads(fragment)
-        return data
-    except json.JSONDecodeError:
-        # أغلق string مفتوح
+        return json.loads(fragment)
+    except Exception:
+        # إصلاح JSON ناقص
         if fragment.count('"') % 2 == 1:
             fragment += '"'
-        # أغلق array مفتوح
-        open_arr  = fragment.count('[')
-        close_arr = fragment.count(']')
+        open_arr  = fragment.count("[")
+        close_arr = fragment.count("]")
         if open_arr > close_arr:
-            fragment += ']' * (open_arr - close_arr)
-        # أغلق object مفتوح
-        open_b  = fragment.count('{')
-        close_b = fragment.count('}')
+            fragment += "]" * (open_arr - close_arr)
+        open_b  = fragment.count("{")
+        close_b = fragment.count("}")
         if open_b > close_b:
-            fragment += '}' * (open_b - close_b)
+            fragment += "}" * (open_b - close_b)
         try:
-            data = json.loads(fragment)
-            return data
+            return json.loads(fragment)
         except Exception as e:
-            log.error(f"JSON parse failed ({category['ar']}): {e} | raw: {raw[:150]}")
+            log.error("JSON parse failed " + cat_ar + ": " + str(e))
             return None
+
 
 def create_product(data: dict, category: dict, new_id: str) -> dict:
     """يبني المنتج الكامل"""
