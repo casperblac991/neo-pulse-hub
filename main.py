@@ -314,7 +314,7 @@ def build_flask_app():
             env_keys = [k for k in os.environ if "GEMINI" in k or "GOOGLE" in k or "API" in k]
             return {"error": "NO GEMINI KEY", "found_keys": env_keys}, 400
         url = ("https://generativelanguage.googleapis.com/v1beta/models/"
-               "gemini-2.5-flash:generateContent?key=" + key)
+               "gemini-1.5-flash:generateContent?key=" + key)
         try:
             r = _r.post(url,
                 json={"contents":[{"parts":[{"text":"say: OK"}]}],
