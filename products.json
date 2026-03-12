@@ -3926,5 +3926,87 @@
     "shipping_days": 3,
     "added_at": "2026-03-12T22:52:04.270959",
     "added_by": "auto_ai"
+  },
+  {
+    "id": "NPH-099",
+    "name_ar": "ساعة الترا الذكية 3 برو",
+    "name_en": "Ultra Smartwatch 3 Pro",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "Smart Watches",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.6,
+    "reviews": 2100,
+    "stock": 77,
+    "image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=600&q=80",
+    "badge": "الأكثر مبيعاً",
+    "badge_en": "Best Seller",
+    "active": true,
+    "featured": false,
+    "description_ar": "تتبع صحتك ونشاطك البدني بدقة عالية مع تصميم أنيق وشاشة AMOLED فائقة الوضوح. ابقَ متصلاً بالعالم من حولك بذكاء وراحة لا مثيل لها.",
+    "description_en": "Track your health and fitness with high precision, all wrapped in a sleek design with a stunning AMOLED display. Stay connected to your world with unparalleled intelligence and comfort.",
+    "features_ar": [
+      "شاشة AMOLED ساطعة",
+      "مراقبة متقدمة لمعدل ضربات القلب",
+      "بطارية تدوم لأيام",
+      "مقاومة للماء حتى 50 متر"
+    ],
+    "features_en": [
+      "Bright AMOLED Display",
+      "Advanced Heart Rate Monitoring",
+      "Multi-Day Battery Life",
+      "50-Meter Water Resistance"
+    ],
+    "tags": [
+      "smartwatch",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 3,
+    "added_at": "2026-03-12T22:59:31.683575",
+    "added_by": "auto_ai"
+  },
+  {
+    "id": "NPH-100",
+    "name_ar": "نظارات ريلم فيو الذكية",
+    "name_en": "RealView Smart Glasses",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "category_en": "Smart Glasses",
+    "price": 349,
+    "original_price": 399,
+    "discount": 12,
+    "rating": 4.5,
+    "reviews": 850,
+    "stock": 16,
+    "image": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=600&q=80",
+    "badge": "الأكثر مبيعاً",
+    "badge_en": "Best Seller",
+    "active": true,
+    "featured": false,
+    "description_ar": "نظارات ريلم فيو الذكية تدمج بسلاسة التكنولوجيا في حياتك اليومية، لتقدم لك تجربة واقع معزز غامرة. استمتع بعرض معلومات مفيدة مباشرة أمام عينيك دون الحاجة إلى حمل هاتفك.",
+    "description_en": "RealView Smart Glasses seamlessly integrate technology into your daily life, offering an immersive augmented reality experience. Enjoy useful information displayed directly in your line of sight without needing to hold your phone.",
+    "features_ar": [
+      "شاشة عرض Micro-LED شفافة",
+      "كاميرا مدمجة بدقة 12 ميجابكسل",
+      "مساعد صوتي مدمج",
+      "بطارية تدوم 8 ساعات"
+    ],
+    "features_en": [
+      "Transparent Micro-LED Display",
+      "Integrated 12MP Camera",
+      "Built-in Voice Assistant",
+      "8-Hour Battery Life"
+    ],
+    "tags": [
+      "smart-glasses",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 3,
+    "added_at": "2026-03-12T22:59:33.271048",
+    "added_by": "auto_ai"
   }
 ]
