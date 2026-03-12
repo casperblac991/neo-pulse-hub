@@ -77,15 +77,21 @@ def start_scheduler():
         def daily_job():
             log.info("⏰ Daily auto-populate...")
             try:
-                added = ssb.auto_add_products(count=5)
+                import supplier_bot as sb_auto
+                added = sb_auto.auto_add_products(count=5)
                 log.info(f"✅ Added {len(added)} products")
                 admin_id = int(os.environ.get("ADMIN_USER_ID", "0"))
-                tok = os.environ.get("SUPPLIER_BOT_TOKEN", "")
-                if admin_id and added and tok:
+                admin_tok = os.environ.get("ADMIN_BOT_TOKEN", "")
+                if admin_id and added and admin_tok:
                     names = "\n".join([f"• {p['name_ar']}" for p in added])
-                    ssb.send(admin_id,
-                        f"🤖 *تقرير يومي*\n\nأُضيف {len(added)} منتجات:\n{names}",
-                        token=tok)
+                    import requests as _rq
+                    _rq.post(
+                        f"https://api.telegram.org/bot{admin_tok}/sendMessage",
+                        json={"chat_id": admin_id,
+                              "text": f"🤖 *تقرير يومي*\n\nأُضيف {len(added)} منتجات:\n{names}",
+                              "parse_mode": "Markdown"},
+                        timeout=8
+                    )
             except Exception as e:
                 log.error(f"daily_job error: {e}")
 
