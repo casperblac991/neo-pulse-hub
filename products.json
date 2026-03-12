@@ -3803,5 +3803,128 @@
     "shipping_days": 5,
     "added_at": "2026-03-12T22:51:03.060771",
     "added_by": "auto_ai"
+  },
+  {
+    "id": "NPH-096",
+    "name_ar": "ساعة فيتنس برو الذكية",
+    "name_en": "Fitness Pro Smartwatch",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "Smart Watches",
+    "price": 229,
+    "original_price": 279,
+    "discount": 18,
+    "rating": 4.5,
+    "reviews": 2100,
+    "stock": 64,
+    "image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=600&q=80",
+    "badge": "الأكثر مبيعاً",
+    "badge_en": "Best Seller",
+    "active": true,
+    "featured": false,
+    "description_ar": "تتبع لياقتك وصحتك بدقة لا مثيل لها مع ساعة فيتنس برو الذكية. تصميم أنيق وميزات متقدمة لمساعدتك على تحقيق أهدافك الصحية.",
+    "description_en": "Track your fitness and health with unparalleled accuracy with the Fitness Pro Smartwatch. Elegant design and advanced features to help you achieve your health goals.",
+    "features_ar": [
+      "تتبع معدل ضربات القلب على مدار 24 ساعة",
+      "مراقبة النوم المتقدمة",
+      "تحديد المواقع العالمي (GPS) مدمج",
+      "مقاومة للماء حتى 50 مترًا"
+    ],
+    "features_en": [
+      "24/7 Heart Rate Tracking",
+      "Advanced Sleep Monitoring",
+      "Built-in GPS",
+      "50-Meter Water Resistance"
+    ],
+    "tags": [
+      "smartwatch",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 4,
+    "added_at": "2026-03-12T22:52:00.331533",
+    "added_by": "auto_ai"
+  },
+  {
+    "id": "NPH-097",
+    "name_ar": "نظارات سبيكتروم الذكية",
+    "name_en": "Spectrum Smart Glasses",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "category_en": "Smart Glasses",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.5,
+    "reviews": 850,
+    "stock": 96,
+    "image": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=600&q=80",
+    "badge": "حصري",
+    "badge_en": "Exclusive",
+    "active": true,
+    "featured": false,
+    "description_ar": "اكتشف العالم من منظور جديد مع نظارات سبيكتروم الذكية، المدمجة بتقنية الواقع المعزز لتجربة بصرية لا مثيل لها. استمتع بالاتصال الدائم والملاحة بدون استخدام اليدين، كل ذلك بتصميم أنيق ومريح.",
+    "description_en": "Experience the world from a new perspective with Spectrum Smart Glasses, integrated with augmented reality technology for an unparalleled visual experience. Enjoy constant connectivity and hands-free navigation, all in a sleek and comfortable design.",
+    "features_ar": [
+      "شاشة عرض ثلاثية الأبعاد للواقع المعزز",
+      "مكالمات صوتية واضحة بتقنية إلغاء الضوضاء",
+      "بطارية تدوم طويلاً (حتى 8 ساعات)",
+      "تصميم خفيف الوزن ومقاوم للماء"
+    ],
+    "features_en": [
+      "3D Augmented Reality Display",
+      "Clear Voice Calls with Noise Cancellation",
+      "Long-lasting Battery (up to 8 hours)",
+      "Lightweight and Water-Resistant Design"
+    ],
+    "tags": [
+      "smart-glasses",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 7,
+    "added_at": "2026-03-12T22:52:02.225355",
+    "added_by": "auto_ai"
+  },
+  {
+    "id": "NPH-098",
+    "name_ar": "ميرا لايف - مراقب النوم الذكي",
+    "name_en": "MiraLife - Smart Sleep Monitor",
+    "category": "health",
+    "category_ar": "صحة ولياقة",
+    "category_en": "Health & Fitness",
+    "price": 179,
+    "original_price": 209,
+    "discount": 14,
+    "rating": 4.5,
+    "reviews": 850,
+    "stock": 16,
+    "image": "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&q=80",
+    "badge": "الأكثر مبيعاً",
+    "badge_en": "Best Seller",
+    "active": true,
+    "featured": false,
+    "description_ar": "جهاز ميرا لايف لمراقبة النوم يوفر تحليلاً دقيقاً لأنماط نومك، ويقدم نصائح مخصصة لتحسين جودته. استيقظ منتعشًا ومليئًا بالطاقة كل يوم مع فهم أعمق لراحة جسمك.",
+    "description_en": "The MiraLife Smart Sleep Monitor provides precise analysis of your sleep patterns, offering personalized advice to enhance its quality. Wake up refreshed and energized daily with a deeper understanding of your body's rest.",
+    "features_ar": [
+      "تتبع مراحل النوم (خفيف، عميق، حركة العين السريعة)",
+      "مراقبة معدل ضربات القلب والتنفس أثناء النوم",
+      "تحليل جودة النوم وتقديم تقارير يومية/أسبوعية",
+      "نصائح مخصصة لتحسين بيئة النوم والعادات"
+    ],
+    "features_en": [
+      "Sleep stage tracking (light, deep, REM)",
+      "Heart rate and respiration monitoring during sleep",
+      "Sleep quality analysis with daily/weekly reports",
+      "Personalized recommendations for improving sleep environment and habits"
+    ],
+    "tags": [
+      "health",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 3,
+    "added_at": "2026-03-12T22:52:04.270959",
+    "added_by": "auto_ai"
   }
 ]
