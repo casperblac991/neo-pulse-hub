@@ -55,7 +55,7 @@ def ask_gemini(prompt: str) -> str:
     import requests as _r
     try:
         url = (f"https://generativelanguage.googleapis.com/v1beta/models/"
-               f"gemini-2.5-flash:generateContent?key={GEMINI_API_KEY}")
+               f"gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}")
         body = {"contents": [{"parts": [{"text": prompt}]}],
                 "generationConfig": {"temperature": 0.8, "maxOutputTokens": 600}}
         data = _r.post(url, json=body, timeout=15).json()
