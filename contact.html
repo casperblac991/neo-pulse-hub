@@ -1,8 +1,40 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BVV5SDM5P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BVV5SDM5P');
+</script>
   <meta charset="UTF-8">
+  <script>
+  // تطبيق اللغة فوراً قبل رسم الصفحة — يمنع الوميض
+  (function(){
+    var l = localStorage.getItem('nph_lang') || 'ar';
+    document.documentElement.setAttribute('lang', l);
+    document.documentElement.setAttribute('dir', l === 'en' ? 'ltr' : 'rtl');
+  })();
+</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="تواصل مع NEO PULSE HUB — دعم 24/7 عبر تيليجرام أو البريد الإلكتروني.">
+  <meta name="keywords" content="تواصل معنا، دعم عملاء، NEO PULSE HUB">
+  <meta name="description:en" content="Contact NEO PULSE HUB — 24/7 support via Telegram or email.">
+  <link rel="canonical" href="https://neo-pulse-hub.it.com/contact.html">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="اتصل بنا | NEO PULSE HUB">
+  <meta property="og:description" content="تواصل مع NEO PULSE HUB — دعم 24/7 عبر تيليجرام أو البريد الإلكتروني.">
+  <meta property="og:url" content="https://neo-pulse-hub.it.com/contact.html">
+  <meta property="og:image" content="https://neo-pulse-hub.it.com/images/NPH-001.png">
+  <meta property="og:site_name" content="NEO PULSE HUB">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="اتصل بنا | NEO PULSE HUB">
+  <meta name="twitter:description" content="تواصل مع NEO PULSE HUB — دعم 24/7 عبر تيليجرام أو البريد الإلكتروني.">
+  <meta name="twitter:image" content="https://neo-pulse-hub.it.com/images/NPH-001.png">
   <title>اتصل بنا | NEO PULSE HUB</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
@@ -206,7 +238,10 @@ const T = {
   }
 };
 
-let lang = localStorage.getItem('nph_lang') || 'ar';
+// اقرأ اللغة من URL أولاً، ثم localStorage، ثم 'ar' كـ default
+const _urlLang = new URLSearchParams(window.location.search).get('lang');
+if (_urlLang === 'ar' || _urlLang === 'en') localStorage.setItem('nph_lang', _urlLang);
+let lang = _urlLang || localStorage.getItem('nph_lang') || 'ar';
 
 function applyLang(l) {
   lang = l;
@@ -277,5 +312,18 @@ function closeMenu() {
 
 document.addEventListener('DOMContentLoaded', () => applyLang(lang));
 </script>
+
+<footer style="background:#0a0d1a;border-top:1px solid rgba(99,179,237,.12);padding:1.5rem 2rem;margin-top:auto">
+  <div style="max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:space-between;align-items:center">
+    <div style="display:flex;flex-wrap:wrap;gap:1rem">
+      <a href="shipping.html" id="f_ship" style="font-size:.78rem;color:rgba(226,232,240,.4);text-decoration:none;transition:color .3s" onmouseover="this.style.color='#22d3ee'" onmouseout="this.style.color='rgba(226,232,240,.4)'">سياسة الشحن</a>
+      <a href="returns.html" id="f_return" style="font-size:.78rem;color:rgba(226,232,240,.4);text-decoration:none" onmouseover="this.style.color='#22d3ee'" onmouseout="this.style.color='rgba(226,232,240,.4)'">سياسة الإرجاع</a>
+      <a href="privacy.html" id="f_privacy" style="font-size:.78rem;color:rgba(226,232,240,.4);text-decoration:none" onmouseover="this.style.color='#22d3ee'" onmouseout="this.style.color='rgba(226,232,240,.4)'">الخصوصية</a>
+      <a href="terms.html" id="f_terms" style="font-size:.78rem;color:rgba(226,232,240,.4);text-decoration:none" onmouseover="this.style.color='#22d3ee'" onmouseout="this.style.color='rgba(226,232,240,.4)'">الشروط</a>
+      <a href="faq.html" id="f_faq" style="font-size:.78rem;color:rgba(226,232,240,.4);text-decoration:none" onmouseover="this.style.color='#22d3ee'" onmouseout="this.style.color='rgba(226,232,240,.4)'">FAQ</a>
+    </div>
+    <span id="f_copy" style="font-size:.73rem;color:rgba(226,232,240,.2)">© 2026 NEO PULSE HUB</span>
+  </div>
+</footer>
 </body>
 </html>
