@@ -86,53 +86,40 @@ def push_to_github(products):
 
 # ── Gemini ─────────────────────────────────────────────────────
 def ask_gemini(prompt: str) -> str:
-    if not GEMINI_API_KEY:
-        log.error("GEMINI_API_KEY is MISSING in environment variables!")
+    key = (os.environ.get("GEMINI_API_KEY") or
+           os.environ.get("GOOGLE_API_KEY") or "")
+    if not key:
+        log.error("GEMINI_API_KEY missing!")
         return ""
     import requests as _r
+    url = ("https://generativelanguage.googleapis.com/v1beta/models/"
+           "gemini-2.5-flash:generateContent?key=" + key)
+    body = {
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {
+            "temperature": 0.7,
+            "maxOutputTokens": 2000,
+            "thinkingConfig": {"thinkingBudget": 0}
+        }
+    }
     try:
-        url = (f"https://generativelanguage.googleapis.com/v1beta/models/"
-               f"gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}")
-        body = {"contents": [{"parts": [{"text": prompt}]}],
-                "generationConfig": {"temperature": 0.7, "maxOutputTokens": 2000}}
-        resp = _r.post(url, json=body, timeout=20)
+        resp = _r.post(url, json=body, timeout=30)
         if resp.status_code != 200:
-            log.error(f"Gemini HTTP {resp.status_code}: {resp.text[:200]}")
+            log.error(f"Gemini HTTP {resp.status_code}: {resp.text[:150]}")
             return ""
         data = resp.json()
-        # فحص safety blocks
         candidates = data.get("candidates", [])
         if not candidates:
-            reason = data.get("promptFeedback", {}).get("blockReason", "unknown")
-            log.error(f"Gemini no candidates, blockReason: {reason}")
+            log.error(f"Gemini no candidates: {str(data)[:150]}")
             return ""
-        text = (candidates[0].get("content", {})
-                              .get("parts", [{}])[0]
-                              .get("text", ""))
-        if not text:
-            log.error(f"Gemini empty text. Full response: {str(data)[:200]}")
-        return text
+        parts = candidates[0].get("content", {}).get("parts", [])
+        if not parts:
+            log.error(f"Gemini empty parts. finishReason: {candidates[0].get('finishReason')}")
+            return ""
+        return parts[0].get("text", "")
     except Exception as e:
         log.error(f"Gemini exception: {e}")
         return ""
-
-CATEGORIES = [
-    {"id": "smartwatch",    "ar": "ساعات ذكية",    "en": "Smart Watches"},
-    {"id": "smart-glasses", "ar": "نظارات ذكية",   "en": "Smart Glasses"},
-    {"id": "health",        "ar": "صحة ولياقة",    "en": "Health & Fitness"},
-    {"id": "smart-home",    "ar": "منزل ذكي",      "en": "Smart Home"},
-    {"id": "earbuds",       "ar": "سماعات ذكية",   "en": "Smart Earbuds"},
-    {"id": "productivity",  "ar": "إنتاجية",       "en": "Productivity"},
-]
-
-PRODUCT_IMAGES = {
-    "smartwatch":    "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=600&q=80",
-    "smart-glasses": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=600&q=80",
-    "health":        "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&q=80",
-    "smart-home":    "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-    "earbuds":       "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&q=80",
-    "productivity":  "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&q=80",
-}
 
 def generate_product_with_ai(category):
     """يستخدم Gemini لتوليد بيانات منتج جديد"""
