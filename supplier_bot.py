@@ -22,7 +22,8 @@ except ImportError:
     pass
 
 SUPPLIER_BOT_TOKEN = os.environ.get("SUPPLIER_BOT_TOKEN", "")
-GEMINI_API_KEY     = os.environ.get("GEMINI_API_KEY", "")
+GEMINI_API_KEY     = (os.environ.get("GEMINI_API_KEY") or
+                      os.environ.get("GOOGLE_API_KEY") or "")
 ADMIN_USER_ID      = int(os.environ.get("ADMIN_USER_ID", "0"))
 GITHUB_TOKEN       = os.environ.get("GITHUB_TOKEN", "")
 GITHUB_REPO        = os.environ.get("GITHUB_REPO", "casperblac991/neo-pulse-hub")
@@ -86,19 +87,34 @@ def push_to_github(products):
 # ── Gemini ─────────────────────────────────────────────────────
 def ask_gemini(prompt: str) -> str:
     if not GEMINI_API_KEY:
+        log.error("GEMINI_API_KEY is MISSING in environment variables!")
         return ""
     import requests as _r
     try:
         url = (f"https://generativelanguage.googleapis.com/v1beta/models/"
-               f"gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}")
+               f"gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}")
         body = {"contents": [{"parts": [{"text": prompt}]}],
-                "generationConfig": {"temperature": 0.7, "maxOutputTokens": 1500}}
-        data = _r.post(url, json=body, timeout=20).json()
-        return (data.get("candidates", [{}])[0]
-                    .get("content", {}).get("parts", [{}])[0]
-                    .get("text", ""))
+                "generationConfig": {"temperature": 0.7, "maxOutputTokens": 2000}}
+        resp = _r.post(url, json=body, timeout=20)
+        if resp.status_code != 200:
+            log.error(f"Gemini HTTP {resp.status_code}: {resp.text[:200]}")
+            return ""
+        data = resp.json()
+        # فحص safety blocks
+        candidates = data.get("candidates", [])
+        if not candidates:
+            reason = data.get("promptFeedback", {}).get("blockReason", "unknown")
+            log.error(f"Gemini no candidates, blockReason: {reason}")
+            return ""
+        text = (candidates[0].get("content", {})
+                              .get("parts", [{}])[0]
+                              .get("text", ""))
+        if not text:
+            log.error(f"Gemini empty text. Full response: {str(data)[:200]}")
+        return text
     except Exception as e:
-        log.error(f"Gemini: {e}"); return ""
+        log.error(f"Gemini exception: {e}")
+        return ""
 
 CATEGORIES = [
     {"id": "smartwatch",    "ar": "ساعات ذكية",    "en": "Smart Watches"},
