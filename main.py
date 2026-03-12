@@ -306,33 +306,32 @@ def build_flask_app():
     except Exception as e:
         log.warning(f"webhook_server merge: {e}")
 
+    @app.route("/test-gemini")
+    def test_gemini():
+        import requests as _r
+        key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY") or ""
+        if not key:
+            env_keys = [k for k in os.environ if "GEMINI" in k or "GOOGLE" in k or "API" in k]
+            return {"error": "NO GEMINI KEY", "found_keys": env_keys}, 400
+        url = ("https://generativelanguage.googleapis.com/v1beta/models/"
+               "gemini-2.5-flash:generateContent?key=" + key)
+        try:
+            r = _r.post(url,
+                json={"contents":[{"parts":[{"text":"say: OK"}]}],
+                      "generationConfig":{"maxOutputTokens":10}},
+                timeout=10)
+            return {"http_status": r.status_code,
+                    "key_prefix": key[:8] + "...",
+                    "gemini_response": r.text[:300]}
+        except Exception as e:
+            return {"error": str(e)}, 500
+
     return app
 
 
 # ══════════════════════════════════════════════════════════════════
 # MAIN
 # ══════════════════════════════════════════════════════════════════
-
-
-@app.route("/test-gemini")
-def test_gemini():
-    import os, requests as _r
-    key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY") or ""
-    if not key:
-        env_keys = [k for k in os.environ if "GEMINI" in k or "GOOGLE" in k or "API" in k]
-        return {"error": "NO GEMINI KEY", "found_keys": env_keys}, 400
-    url = ("https://generativelanguage.googleapis.com/v1beta/models/"
-           "gemini-2.5-flash:generateContent?key=" + key)
-    try:
-        r = _r.post(url,
-            json={"contents":[{"parts":[{"text":"say: OK"}]}],
-                  "generationConfig":{"maxOutputTokens":10}},
-            timeout=10)
-        return {"http_status": r.status_code,
-                "key_prefix": key[:8] + "...",
-                "gemini_response": r.text[:300]}
-    except Exception as e:
-        return {"error": str(e)}, 500
 
 
 if __name__ == "__main__":
