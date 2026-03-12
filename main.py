@@ -328,7 +328,7 @@ def build_flask_app():
                        f"{model}:generateContent?key={key}")
                 r = _r.post(url,
                     json={"contents":[{"parts":[{"text":"say hi"}]}],
-                          "generationConfig":{"maxOutputTokens":20}},
+                          "generationConfig":{"maxOutputTokens":20,"thinkingConfig":{"thinkingBudget":0}}},
                     timeout=8)
                 if r.status_code == 200:
                     data = r.json()
