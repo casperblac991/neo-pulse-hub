@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BVV5SDM5P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BVV5SDM5P');
+</script>
   <meta charset="UTF-8">
   <script>
   // تطبيق اللغة فوراً قبل رسم الصفحة — يمنع الوميض
@@ -11,6 +19,22 @@
   })();
 </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="سياسة الإرجاع — 30 يوماً، استرداد كامل للمنتجات المعيبة.">
+  <meta name="keywords" content="سياسة الإرجاع، استرداد المبلغ، 30 يوم">
+  <meta name="description:en" content="Return Policy — 30 days, full refund for defective products at NEO PULSE HUB.">
+  <link rel="canonical" href="https://neo-pulse-hub.it.com/returns.html">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="سياسة الإرجاع | NEO PULSE HUB">
+  <meta property="og:description" content="سياسة الإرجاع — 30 يوماً، استرداد كامل للمنتجات المعيبة.">
+  <meta property="og:url" content="https://neo-pulse-hub.it.com/returns.html">
+  <meta property="og:image" content="https://neo-pulse-hub.it.com/images/NPH-001.png">
+  <meta property="og:site_name" content="NEO PULSE HUB">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="سياسة الإرجاع | NEO PULSE HUB">
+  <meta name="twitter:description" content="سياسة الإرجاع — 30 يوماً، استرداد كامل للمنتجات المعيبة.">
+  <meta name="twitter:image" content="https://neo-pulse-hub.it.com/images/NPH-001.png">
   <title>سياسة الإرجاع | NEO PULSE HUB</title>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
   <style>
@@ -222,6 +246,8 @@ const T = {
     s1l:'يوم لحق الإرجاع',s2l:'استرداد كامل',s3l:'أيام لمعالجة الاسترداد',s4l:'دعم الإرجاع',
     sec1_title:'متى يحق لك الإرجاع؟',
     yes_title:'✅ مقبول الإرجاع',no_title:'❌ غير مقبول الإرجاع',
+    yes_list_html:'<li>المنتج تالف عند الاستلام</li><li>المنتج لا يطابق الوصف</li><li>استلام منتج خاطئ</li><li>عيب مصنعي</li><li>المنتج لم يعمل من البداية</li>',
+    no_list_html:'<li>تغيير الرأي بعد الاستخدام</li><li>تلف ناتج عن سوء الاستخدام</li><li>فقدان ملحقات أو عبوة أصلية</li><li>مرور أكثر من 30 يوماً</li><li>منتجات بها علامات استخدام واضحة</li>',
     sec2_title:'كيفية طلب الإرجاع',
     step1:'تواصل مع فريق الدعم عبر @NeoPulseBot أو Saidchaik@gmail.com خلال 30 يوماً من الاستلام.',
     step2:'أرسل رقم طلبك وصوراً واضحة للمنتج. سيُراجع الطلب خلال 24 ساعة.',
@@ -250,6 +276,8 @@ const T = {
     s1l:'Days to Return',s2l:'Full Refund',s3l:'Days to Process Refund',s4l:'Return Support',
     sec1_title:'When Are Returns Accepted?',
     yes_title:'✅ Accepted Returns',no_title:'❌ Not Accepted',
+    yes_list_html:'<li>Product arrived damaged</li><li>Product does not match description</li><li>Wrong product received</li><li>Manufacturing defect</li><li>Product did not work from the start</li>',
+    no_list_html:'<li>Change of mind after use</li><li>Damage from misuse</li><li>Missing accessories or original packaging</li><li>More than 30 days have passed</li><li>Products with visible signs of use</li>',
     sec2_title:'How to Request a Return',
     step1:'Contact our support team via @NeoPulseBot on Telegram or Saidchaik@gmail.com within 30 days of receiving your order.',
     step2:'Send your order number and clear photos of the product showing the reason for return. We will review within 24 hours.',
@@ -271,7 +299,10 @@ const T = {
     footer_copy:'© 2026 NEO PULSE HUB — All Rights Reserved',
   }
 };
-let lang = localStorage.getItem('nph_lang') || 'ar';
+// اقرأ اللغة من URL أولاً، ثم localStorage، ثم 'ar' كـ default
+const _urlLang = new URLSearchParams(window.location.search).get('lang');
+if (_urlLang === 'ar' || _urlLang === 'en') localStorage.setItem('nph_lang', _urlLang);
+let lang = _urlLang || localStorage.getItem('nph_lang') || 'ar';
 function applyLang(l) {
   lang=l; localStorage.setItem('nph_lang',l);
   document.documentElement.setAttribute('dir',l==='ar'?'rtl':'ltr');
@@ -280,6 +311,12 @@ function applyLang(l) {
   document.getElementById('langEn').classList.toggle('active',l==='en');
   document.title=T[l].title;
   Object.keys(T[l]).forEach(id=>{const el=document.getElementById(id);if(el)el.textContent=T[l][id];});
+  // قوائم تحتاج innerHTML
+  ['yes_list','no_list'].forEach(id => {
+    const key = id + '_html';
+    const el = document.getElementById(id);
+    if (el && T[l][key]) el.innerHTML = T[l][key];
+  });
   const cnt=JSON.parse(localStorage.getItem('nph_cart')||'[]').reduce((s,i)=>s+(i.qty||1),0);
   const cc=document.getElementById('cartCount');
   if(cc){cc.textContent=cnt;cc.style.display=cnt>0?'flex':'none';}
