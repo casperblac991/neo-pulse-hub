@@ -3598,5 +3598,212 @@
       "Adjustable"
     ],
     "description_en": "The Twelve South HiRise 3 Deluxe is a premium productivity device designed to boost your workflow and creative output. Featuring MagSafe 15W, Laptop Mode, Ergo, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $99, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-091",
+    "name_ar": "ساعة أورا الذكية",
+    "name_en": "Aura Smartwatch",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "Smart Watches",
+    "price": 279,
+    "original_price": 329,
+    "discount": 15,
+    "rating": 4.6,
+    "reviews": 2100,
+    "stock": 39,
+    "image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=600&q=80",
+    "badge": "الأكثر مبيعاً",
+    "badge_en": "Bestseller",
+    "active": true,
+    "featured": false,
+    "description_ar": "تتبع صحتك ونشاطك بذكاء وأناقة مع ساعة أورا الذكية. استمتع بعمر بطارية طويل وتصميم مقاوم للماء يلائم أسلوب حياتك النشط.",
+    "description_en": "Track your health and activity intelligently and stylishly with the Aura Smartwatch. Enjoy long battery life and a water-resistant design that fits your active lifestyle.",
+    "features_ar": [
+      "شاشة AMOLED عالية الدقة",
+      "تتبع معدل ضربات القلب والأكسجين في الدم",
+      "مقاومة للماء حتى 50 متر",
+      "عمر بطارية يصل إلى 10 أيام"
+    ],
+    "features_en": [
+      "High-resolution AMOLED Display",
+      "Heart Rate & Blood Oxygen Tracking",
+      "Water Resistant up to 50 Meters",
+      "Up to 10-Day Battery Life"
+    ],
+    "tags": [
+      "smartwatch",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 4,
+    "added_at": "2026-03-12T22:32:58.977830",
+    "added_by": "auto_ai"
+  },
+  {
+    "id": "NPH-092",
+    "name_ar": "نظارات أورا الذكية",
+    "name_en": "Aura Smart Glasses",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "category_en": "Smart Glasses",
+    "price": 349,
+    "original_price": 399,
+    "discount": 12,
+    "rating": 4.5,
+    "reviews": 870,
+    "stock": 100,
+    "image": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=600&q=80",
+    "badge": "حصري",
+    "badge_en": "Exclusive",
+    "active": true,
+    "featured": false,
+    "description_ar": "تدمج نظارات أورا الذكية التكنولوجيا بسلاسة في حياتك اليومية، لتوفر لك وصولاً سريعًا للمعلومات دون الحاجة لاستخدام اليدين. استمتع بتجربة تفاعلية وغامرة مع الحفاظ على الأناقة والراحة.",
+    "description_en": "Aura Smart Glasses seamlessly integrate technology into your daily life, providing hands-free access to information. Enjoy an interactive and immersive experience while maintaining style and comfort.",
+    "features_ar": [
+      "شاشة عرض شفافة بتقنية Micro-LED",
+      "تحكم صوتي بالذكاء الاصطناعي",
+      "مكالمات صوتية وموسيقى عالية الجودة",
+      "تصميم خفيف الوزن ومقاوم للماء",
+      "بطارية تدوم طويلاً"
+    ],
+    "features_en": [
+      "Transparent Micro-LED Display",
+      "AI Voice Control",
+      "High-Quality Audio Calls & Music",
+      "Lightweight, Water-Resistant Design",
+      "Long-Lasting Battery Life"
+    ],
+    "tags": [
+      "smart-glasses",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 7,
+    "added_at": "2026-03-12T22:33:01.068685",
+    "added_by": "auto_ai"
+  },
+  {
+    "id": "NPH-093",
+    "name_ar": "ميرا لايف - متتبع النوم الذكي",
+    "name_en": "MiraLife - Smart Sleep Tracker",
+    "category": "health",
+    "category_ar": "صحة ولياقة",
+    "category_en": "Health & Fitness",
+    "price": 149,
+    "original_price": 179,
+    "discount": 17,
+    "rating": 4.7,
+    "reviews": 1500,
+    "stock": 21,
+    "image": "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&q=80",
+    "badge": "جديد",
+    "badge_en": "New",
+    "active": true,
+    "featured": false,
+    "description_ar": "تتبع أنماط نومك بدقة وحسّن جودته مع ميرا لايف. استيقظ منتعشًا ومفعمًا بالطاقة كل يوم.",
+    "description_en": "Accurately track your sleep patterns and improve its quality with MiraLife. Wake up refreshed and energized every day.",
+    "features_ar": [
+      "تحليل مراحل النوم العميق والخفيف والريم",
+      "اقتراحات شخصية لتحسين جودة النوم",
+      "تنبيهات ذكية للاستيقاظ في الوقت الأمثل",
+      "مراقبة معدل ضربات القلب أثناء النوم"
+    ],
+    "features_en": [
+      "Deep, light, and REM sleep stage analysis",
+      "Personalized suggestions for sleep quality improvement",
+      "Smart alarms for optimal wake-up times",
+      "In-sleep heart rate monitoring"
+    ],
+    "tags": [
+      "health",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 5,
+    "added_at": "2026-03-12T22:33:02.971404",
+    "added_by": "auto_ai"
+  },
+  {
+    "id": "NPH-094",
+    "name_ar": "مساعد المنزل الذكي Aura",
+    "name_en": "Aura Smart Home Assistant",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "category_en": "Smart Home",
+    "price": 199,
+    "original_price": 249,
+    "discount": 20,
+    "rating": 4.6,
+    "reviews": 1200,
+    "stock": 54,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+    "badge": "حصري",
+    "badge_en": "Exclusive",
+    "active": true,
+    "featured": false,
+    "description_ar": "اكتشف مستوى جديدًا من الراحة والأمان مع Aura، مساعد المنزل الذكي المتكامل. يتحكم Aura بجميع أجهزتك الذكية بفعالية، ويوفر لك تجربة منزلية سلسة وممتعة.",
+    "description_en": "Discover a new level of convenience and security with Aura, your integrated smart home assistant. Aura efficiently controls all your smart devices, providing you with a seamless and enjoyable home experience.",
+    "features_ar": [
+      "تحكم صوتي متعدد اللغات",
+      "تكامل واسع مع أجهزة Zigbee و Wi-Fi",
+      "شاشة لمس عالية الدقة مقاس 7 بوصات",
+      "مستشعر بيئي مدمج لرصد الجودة"
+    ],
+    "features_en": [
+      "Multi-language voice control",
+      "Broad integration with Zigbee and Wi-Fi devices",
+      "High-resolution 7-inch touchscreen display",
+      "Built-in environmental sensor for quality monitoring"
+    ],
+    "tags": [
+      "smart-home",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 3,
+    "added_at": "2026-03-12T22:33:05.244848",
+    "added_by": "auto_ai"
+  },
+  {
+    "id": "NPH-095",
+    "name_ar": "سماعات أورورا الذكية",
+    "name_en": "Aurora Smart Earbuds",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "category_en": "Smart Earbuds",
+    "price": 179,
+    "original_price": 200,
+    "discount": 10,
+    "rating": 4.5,
+    "reviews": 850,
+    "stock": 46,
+    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&q=80",
+    "badge": "الأكثر مبيعاً",
+    "badge_en": "Best Seller",
+    "active": true,
+    "featured": false,
+    "description_ar": "تجربة صوتية غامرة مع إلغاء ضوضاء متكيف ووضوح مكالمات لا مثيل له. تصميم أنيق ومريح يوفر ثباتًا طوال اليوم لرفيقك الصوتي المثالي.",
+    "description_en": "Immersive audio experience with adaptive noise cancellation and unparalleled call clarity. Sleek, comfortable design ensures all-day stability for your perfect audio companion.",
+    "features_ar": [
+      "إلغاء الضوضاء التكيفي",
+      "صوت محيطي ثلاثي الأبعاد",
+      "بطارية تدوم 30 ساعة مع علبة الشحن",
+      "مقاومة للماء والعرق بمعيار IPX5"
+    ],
+    "features_en": [
+      "Adaptive Noise Cancellation",
+      "3D Spatial Audio",
+      "30-Hour Battery Life with Charging Case",
+      "IPX5 Water and Sweat Resistance"
+    ],
+    "tags": [
+      "earbuds",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 3,
+    "added_at": "2026-03-12T22:33:06.825627",
+    "added_by": "auto_ai"
   }
 ]
