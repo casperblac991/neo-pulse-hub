@@ -92,7 +92,7 @@ def ask_gemini(prompt: str) -> str:
         url = (f"https://generativelanguage.googleapis.com/v1beta/models/"
                f"gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}")
         body = {"contents": [{"parts": [{"text": prompt}]}],
-                "generationConfig": {"temperature": 0.9, "maxOutputTokens": 1000}}
+                "generationConfig": {"temperature": 0.7, "maxOutputTokens": 1500}}
         data = _r.post(url, json=body, timeout=20).json()
         return (data.get("candidates", [{}])[0]
                     .get("content", {}).get("parts", [{}])[0]
@@ -119,43 +119,68 @@ PRODUCT_IMAGES = {
 }
 
 def generate_product_with_ai(category: dict) -> dict | None:
-    """يستخدم Gemini لتوليد بيانات منتج جديد"""
-    prompt = f"""أنت خبير منتجات تقنية. أنشئ منتجاً واقعياً جديداً لفئة "{category['ar']}" لمتجر أجهزة ذكية.
-أجب بـ JSON فقط بهذا الشكل بدون أي نص إضافي:
-{{
-  "name_ar": "اسم المنتج بالعربية",
-  "name_en": "Product Name in English",
-  "price": 199,
-  "original_price": 249,
-  "discount": 20,
-  "rating": 4.7,
-  "reviews": 1234,
-  "description_ar": "وصف تسويقي جذاب بالعربية (جملتان)",
-  "description_en": "Marketing description in English (2 sentences)",
-  "features_ar": ["ميزة 1", "ميزة 2", "ميزة 3", "ميزة 4"],
-  "features_en": ["Feature 1", "Feature 2", "Feature 3", "Feature 4"],
-  "badge": "جديد",
-  "badge_en": "New",
-  "shipping_days": 5
-}}
-تأكد أن السعر بين $50 و$500 وأن المنتج له اسم واقعي وجذاب."""
+    """يستخدم Gemini لتوليد بيانات منتج جديد — نسخة محسّنة"""
+    prompt = (
+        f'أنت خبير منتجات تقنية. أنشئ منتجاً واقعياً جديداً لفئة "{category["ar"]}" \'
+        f'لمتجر أجهزة ذكية.\n'
+        'أجب بـ JSON فقط، بدون أي نص قبله أو بعده، بهذا الشكل:\n'
+        '{"name_ar":"اسم بالعربية","name_en":"English Name",'
+        '"price":199,"original_price":249,"discount":17,'
+        '"rating":4.7,"reviews":1500,'
+        '"description_ar":"وصف جذاب بالعربية",'
+        '"description_en":"Attractive description in English",'
+        '"features_ar":["ميزة 1","ميزة 2","ميزة 3","ميزة 4"],'
+        '"features_en":["Feature 1","Feature 2","Feature 3","Feature 4"],'
+        '"badge":"جديد","badge_en":"New","shipping_days":5}\n'
+        f'الفئة: {category["ar"]} | السعر بين $50 و$500 | اسم واقعي وجذاب.'
+    )
 
     raw = ask_gemini(prompt)
     if not raw:
+        log.warning(f"Gemini returned empty for {category['ar']}")
         return None
+
+    # تنظيف الاستجابة
+    cleaned = raw.strip()
+    # إزالة markdown code blocks
+    cleaned = __import__('re').sub(r'```(?:json)?\s*', '', cleaned).strip()
+    cleaned = cleaned.strip('`').strip()
 
     # استخرج JSON
-    import re
-    match = re.search(r'\{[\s\S]+\}', raw)
+    import re as _re
+    match = _re.search(r'\{[\s\S]*\}', cleaned)
     if not match:
-        return None
+        # حاول بدون closing brace (JSON مقطوع)
+        match = _re.search(r'\{[\s\S]+', cleaned)
+        if not match:
+            log.warning(f"No JSON found in Gemini response: {raw[:150]}")
+            return None
 
+    fragment = match.group()
+    # إصلاح JSON مقطوع أو ناقص
     try:
-        data = json.loads(match.group())
+        data = json.loads(fragment)
         return data
-    except:
-        log.error(f"JSON parse failed: {raw[:200]}")
-        return None
+    except json.JSONDecodeError:
+        # أغلق string مفتوح
+        if fragment.count('"') % 2 == 1:
+            fragment += '"'
+        # أغلق array مفتوح
+        open_arr  = fragment.count('[')
+        close_arr = fragment.count(']')
+        if open_arr > close_arr:
+            fragment += ']' * (open_arr - close_arr)
+        # أغلق object مفتوح
+        open_b  = fragment.count('{')
+        close_b = fragment.count('}')
+        if open_b > close_b:
+            fragment += '}' * (open_b - close_b)
+        try:
+            data = json.loads(fragment)
+            return data
+        except Exception as e:
+            log.error(f"JSON parse failed ({category['ar']}): {e} | raw: {raw[:150]}")
+            return None
 
 def create_product(data: dict, category: dict, new_id: str) -> dict:
     """يبني المنتج الكامل"""
