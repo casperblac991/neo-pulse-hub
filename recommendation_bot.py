@@ -1,20 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-╔══════════════════════════════════════════════════════════════════╗
-║   BOT 3: بوت التوصيات الذكية v2.0                             ║
-║   AI Recommendation Engine                                      ║
-║                                                                  ║
-║   الوظائف:                                                      ║
-║   ✅ توصيات مخصصة بالـ AI بناءً على احتياجات الزبون           ║
-║   ✅ مقارنة بين منتجين                                         ║
-║   ✅ "مثل هذا المنتج ولكن بسعر أقل"                            ║
-║   ✅ توصيات بالميزانية                                          ║
-║   ✅ حفظ تفضيلات المستخدم                                      ║
-╚══════════════════════════════════════════════════════════════════╝
+NEO PULSE HUB — Recommendation Bot v2.0
+✅ RECO_BOT_TOKEN (صح)
+✅ _register_handlers (للـ webhook)
+✅ توصيات AI بـ Gemini
+✅ فلترة بالميزانية والفئة
 """
-
-import os, logging
+import os, json, logging
+from pathlib import Path
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import (Application, CommandHandler, MessageHandler,
                            CallbackQueryHandler, filters, ContextTypes)
@@ -25,484 +19,243 @@ try:
 except ImportError:
     pass
 
-import sys; sys.path.insert(0, os.path.dirname(__file__))
-from shared_db import (upsert_user, update_user, get_user, get_products,
-                        get_product, get_featured_products, get_products_by_category,
-                        add_to_cart, track_event, init_db)
-from ai_engine import (recommend_products, extract_budget, generate_mini_report,
-                        _call as ai_call)
+RECO_BOT_TOKEN = os.environ.get("RECO_BOT_TOKEN", "")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
+BASE_DIR       = os.path.dirname(os.path.abspath(__file__))
+PRODUCTS_FILE  = os.path.join(BASE_DIR, "products.json")
+LEADS_FILE     = os.path.join(BASE_DIR, "leads.json")
 
-TOKEN    = os.environ.get("RECO_BOT_TOKEN") or os.environ.get("TELEGRAM_TOKEN","")
-ADMIN_ID = int(os.environ.get("ADMIN_USER_ID","0"))
-SITE_URL = os.environ.get("SITE_URL","https://neo-pulse-hub.it.com")
-PAYPAL   = os.environ.get("PAYPAL_EMAIL","Saidchaik@gmail.com")
-
-logging.basicConfig(format="%(asctime)s | %(name)s | %(levelname)s | %(message)s",
-    level=logging.INFO, handlers=[logging.StreamHandler(),
-    logging.FileHandler("recommendation_bot.log", encoding="utf-8")])
 log = logging.getLogger("recommendation_bot")
 
-_awaiting: dict = {}
-_sessions: dict = {}  # user quiz sessions
+_user_state = {}  # {uid: {"budget": None, "category": None, "step": "start"}}
 
-# ══════════════════════════════════════════════════════════════════
-# KEYBOARDS
-# ══════════════════════════════════════════════════════════════════
+def load_products():
+    try:
+        p = Path(PRODUCTS_FILE)
+        return json.loads(p.read_text(encoding="utf-8")) if p.exists() else []
+    except:
+        return []
 
-def kb_main():
+def save_lead(uid, prefs):
+    try:
+        p = Path(LEADS_FILE)
+        data = json.loads(p.read_text(encoding="utf-8")) if p.exists() else {"users": []}
+        for u in data.get("users", []):
+            if int(u.get("id", 0)) == uid:
+                u["preferences"] = prefs
+                p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+                return
+    except:
+        pass
+
+def ask_gemini(prompt: str) -> str:
+    if not GEMINI_API_KEY:
+        return None
+    import requests as _r
+    try:
+        url = (f"https://generativelanguage.googleapis.com/v1beta/models/"
+               f"gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}")
+        body = {"contents": [{"parts": [{"text": prompt}]}],
+                "generationConfig": {"temperature": 0.8, "maxOutputTokens": 600}}
+        data = _r.post(url, json=body, timeout=15).json()
+        return (data.get("candidates", [{}])[0]
+                    .get("content", {}).get("parts", [{}])[0]
+                    .get("text", None))
+    except Exception as e:
+        log.error(f"Gemini: {e}"); return None
+
+def get_recommendations(budget=None, category=None, query=None):
+    products = load_products()
+    filtered = [p for p in products if p.get("active", True)]
+
+    if budget:
+        filtered = [p for p in filtered if p.get("price", 999) <= budget]
+    if category and category != "all":
+        filtered = [p for p in filtered if p.get("category") == category]
+    if query:
+        q = query.lower()
+        filtered = [p for p in filtered
+                    if q in (p.get("name_ar","") + p.get("name_en","") +
+                             p.get("description_ar","")).lower()]
+
+    return sorted(filtered, key=lambda x: (x.get("rating",0) * 0.6 +
+                                            (x.get("discount",0)/100) * 0.4), reverse=True)[:5]
+
+def format_products(products, lang="ar"):
+    if not products:
+        return "😔 لم أجد منتجات تناسب معاييرك."
+    lines = []
+    for i, p in enumerate(products, 1):
+        name  = p.get("name_ar", "")
+        price = p.get("price", 0)
+        orig  = p.get("original_price", 0)
+        disc  = p.get("discount", 0)
+        rat   = p.get("rating", 0)
+        pid   = p.get("id", "")
+        url   = f"https://neo-pulse-hub.it.com/product-detail.html?id={pid}"
+        discount_txt = f" | 🔥 خصم {disc}%" if disc else ""
+        orig_txt     = f" ~~${orig}~~" if orig else ""
+        lines.append(
+            f"{i}. *{name}*\n"
+            f"   💰 ${price}{orig_txt}{discount_txt}\n"
+            f"   ⭐ {rat}/5 | [عرض المنتج]({url})"
+        )
+    return "\n\n".join(lines)
+
+def kb_categories():
     return InlineKeyboardMarkup([
-        [InlineKeyboardButton("🎯 احصل على توصية",     callback_data="start_quiz"),
-         InlineKeyboardButton("💰 حسب الميزانية",      callback_data="by_budget")],
-        [InlineKeyboardButton("🔄 قارن منتجين",        callback_data="compare"),
-         InlineKeyboardButton("🔍 مثله ولكن أرخص",    callback_data="cheaper_alt")],
-        [InlineKeyboardButton("⭐ الأعلى تقييماً",      callback_data="top_rated"),
-         InlineKeyboardButton("🔥 الأكثر مبيعاً",      callback_data="best_sellers")],
-        [InlineKeyboardButton("🌐 زيارة المتجر",        url=SITE_URL)],
+        [InlineKeyboardButton("⌚ ساعات ذكية",  callback_data="cat_smartwatch"),
+         InlineKeyboardButton("🕶️ نظارات AR",   callback_data="cat_smart-glasses")],
+        [InlineKeyboardButton("💪 صحة ولياقة", callback_data="cat_health"),
+         InlineKeyboardButton("🏠 منزل ذكي",   callback_data="cat_smart-home")],
+        [InlineKeyboardButton("🎧 سماعات",      callback_data="cat_earbuds"),
+         InlineKeyboardButton("💼 إنتاجية",     callback_data="cat_productivity")],
+        [InlineKeyboardButton("🌟 الكل",        callback_data="cat_all")]
     ])
 
-def kb_categories_quiz():
+def kb_budget():
     return InlineKeyboardMarkup([
-        [InlineKeyboardButton("⌚ ساعة ذكية",           callback_data="quiz_cat_smartwatch"),
-         InlineKeyboardButton("🥽 نظارات/VR",           callback_data="quiz_cat_smart-glasses")],
-        [InlineKeyboardButton("❤️ صحة ولياقة",          callback_data="quiz_cat_health"),
-         InlineKeyboardButton("🏠 منزل ذكي",            callback_data="quiz_cat_smart-home")],
-        [InlineKeyboardButton("🎧 سماعات",              callback_data="quiz_cat_earbuds"),
-         InlineKeyboardButton("💼 إنتاجية",             callback_data="quiz_cat_productivity")],
-        [InlineKeyboardButton("🤷 لا أعرف — AI يختار", callback_data="quiz_cat_any")],
+        [InlineKeyboardButton("تحت $100",  callback_data="bud_100"),
+         InlineKeyboardButton("تحت $200",  callback_data="bud_200")],
+        [InlineKeyboardButton("تحت $300",  callback_data="bud_300"),
+         InlineKeyboardButton("تحت $500",  callback_data="bud_500")],
+        [InlineKeyboardButton("أي ميزانية", callback_data="bud_0")]
     ])
-
-def kb_budget_quiz():
-    budgets = [
-        ("أقل من $50",   "bdg_50"),
-        ("$50 - $100",   "bdg_100"),
-        ("$100 - $200",  "bdg_200"),
-        ("$200 - $500",  "bdg_500"),
-        ("فوق $500",     "bdg_1000"),
-    ]
-    return InlineKeyboardMarkup([[InlineKeyboardButton(n, callback_data=d)] for n,d in budgets] +
-                                 [[InlineKeyboardButton("🔙 رجوع", callback_data="back_main")]])
-
-def kb_use_case():
-    return InlineKeyboardMarkup([
-        [InlineKeyboardButton("🏋️ رياضة",      callback_data="use_sport"),
-         InlineKeyboardButton("💼 عمل",         callback_data="use_work")],
-        [InlineKeyboardButton("🏠 المنزل",       callback_data="use_home"),
-         InlineKeyboardButton("📱 ترفيه",        callback_data="use_fun")],
-        [InlineKeyboardButton("🎁 هدية",         callback_data="use_gift"),
-         InlineKeyboardButton("❤️ صحة",          callback_data="use_health")],
-    ])
-
-def kb_product_reco(p: dict):
-    from urllib.parse import urlencode
-    params = urlencode({
-        "cmd":"_xclick","business":PAYPAL,
-        "item_name":p.get("name_ar","")[:127],
-        "amount":str(p["price"]),"currency_code":"USD",
-        "return":f"{SITE_URL}/thanks.html","cancel_return":f"{SITE_URL}/products.html",
-        "no_note":"1","no_shipping":"2",
-    })
-    paypal_url = f"https://www.paypal.com/cgi-bin/webscr?{params}"
-    return InlineKeyboardMarkup([
-        [InlineKeyboardButton(f"🛒 أضف للسلة",       callback_data=f"radd_{p['id']}")],
-        [InlineKeyboardButton(f"💳 اشتر ${p['price']}", url=paypal_url)],
-        [InlineKeyboardButton("📊 تقرير مفصل",        callback_data=f"rpt_{p['id']}"),
-         InlineKeyboardButton("🔄 اقتراح بديل",       callback_data=f"alt_{p['id']}")],
-        [InlineKeyboardButton("🔙 توصية أخرى",        callback_data="back_main")],
-    ])
-
-# ══════════════════════════════════════════════════════════════════
-# QUIZ STATE MACHINE
-# ══════════════════════════════════════════════════════════════════
-
-class QuizSession:
-    def __init__(self, user_id):
-        self.user_id  = user_id
-        self.category = None
-        self.budget   = None
-        self.use_case = None
-        self.free_text= None
-
-    def is_complete(self):
-        return self.category is not None and self.budget is not None
-
-    def to_query(self) -> str:
-        parts = []
-        if self.category: parts.append(f"فئة: {self.category}")
-        if self.budget:   parts.append(f"ميزانية: ${self.budget}")
-        if self.use_case: parts.append(f"الاستخدام: {self.use_case}")
-        if self.free_text:parts.append(self.free_text)
-        return " | ".join(parts)
-
-# ══════════════════════════════════════════════════════════════════
-# HANDLERS
-# ══════════════════════════════════════════════════════════════════
 
 async def cmd_start(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
-    user = update.effective_user
-    upsert_user(user)
-    name = user.first_name or "صديقي"
+    uid = update.effective_user.id
+    _user_state[uid] = {"step": "category"}
     await update.message.reply_text(
-        f"🎯 أهلاً *{name}*!\n\n"
-        f"أنا بوت التوصيات الذكي لـ *NEO PULSE HUB*.\n\n"
-        f"أساعدك تختار المنتج الأنسب بالذكاء الاصطناعي.\n"
-        f"فقط أخبرني ما تحتاج وسأجد لك المثالي! 🤖",
-        parse_mode=ParseMode.MARKDOWN, reply_markup=kb_main()
+        "🛍️ *مرحباً في نظام التوصيات الذكي!*\n\n"
+        "سأساعدك في اختيار المنتج المثالي.\n\n"
+        "أولاً: ما الفئة التي تهمك؟",
+        parse_mode=ParseMode.MARKDOWN, reply_markup=kb_categories()
     )
 
-async def cmd_compare(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
-    _awaiting[update.effective_user.id] = "compare_1"
-    await update.message.reply_text(
-        "🔄 *مقارنة منتجين*\n\nأرسل اسم المنتج الأول:",
-        parse_mode=ParseMode.MARKDOWN
-    )
+async def cmd_recommend(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+    await cmd_start(update, ctx)
 
 async def handle_message(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
-    user = update.effective_user
+    uid  = update.effective_user.id
     text = update.message.text.strip()
-    uid  = user.id
-    upsert_user(user)
 
-    state = _awaiting.pop(uid, None)
+    await update.message.chat.send_action(ChatAction.TYPING)
 
-    if state == "free_reco":
-        return await _do_full_reco(update, ctx, text)
+    state = _user_state.get(uid, {})
+    budget   = state.get("budget")
+    category = state.get("category")
 
-    elif state == "by_budget_text":
-        budget = extract_budget(text) or float(text.replace("$","").strip() or "100")
-        return await _reco_by_budget(update, ctx, budget)
+    # بحث مباشر بـ AI
+    products = get_recommendations(budget=budget, category=category, query=text)
 
-    elif state == "compare_1":
-        _awaiting[uid] = "compare_2"
-        ctx.user_data["compare_p1"] = text
-        await update.message.reply_text("👍 الآن أرسل اسم المنتج الثاني:")
+    if products and GEMINI_API_KEY:
+        prod_summary = "\n".join([
+            f"- {p.get('name_ar','')} | ${p.get('price',0)} | ⭐{p.get('rating',0)}"
+            for p in products
+        ])
+        prompt = f"""أنت مستشار تسوق ذكي لمتجر NEO PULSE HUB.
+طلب العميل: {text}
+الميزانية: {f'تحت ${budget}' if budget else 'غير محددة'}
+الفئة: {category or 'كل الفئات'}
 
-    elif state == "compare_2":
-        p1 = ctx.user_data.pop("compare_p1","")
-        p2 = text
-        await _do_compare(update, ctx, p1, p2)
+المنتجات المتاحة:
+{prod_summary}
 
-    elif state and state.startswith("quiz_free_"):
-        session = _sessions.get(uid, QuizSession(uid))
-        session.free_text = text
-        _sessions[uid]    = session
-        await _do_quiz_reco(update, ctx, session)
-
+اكتب توصية شخصية ودودة ومختصرة (3 جمل) لهذه المنتجات. اذكر أبرز ميزة لكل منتج."""
+        ai_note = ask_gemini(prompt)
     else:
-        # Free text — treat as recommendation query
-        await _do_full_reco(update, ctx, text)
+        ai_note = None
 
-async def handle_callback(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
-    query = update.callback_query
-    await query.answer()
-    uid  = query.from_user.id
-    d    = query.data
-    upsert_user(query.from_user)
-
-    if d == "back_main":
-        await query.edit_message_text(
-            "🎯 *بوت التوصيات الذكي*\nاختر نوع التوصية:",
-            parse_mode=ParseMode.MARKDOWN, reply_markup=kb_main()
-        )
-
-    elif d == "start_quiz":
-        _sessions[uid] = QuizSession(uid)
-        await query.edit_message_text(
-            "🎯 *اختار فئة المنتج:*",
-            parse_mode=ParseMode.MARKDOWN, reply_markup=kb_categories_quiz()
-        )
-
-    elif d.startswith("quiz_cat_"):
-        cat = d.replace("quiz_cat_","")
-        session = _sessions.setdefault(uid, QuizSession(uid))
-        session.category = None if cat == "any" else cat
-        _sessions[uid] = session
-        await query.edit_message_text(
-            "💰 *ما ميزانيتك؟*",
-            parse_mode=ParseMode.MARKDOWN, reply_markup=kb_budget_quiz()
-        )
-
-    elif d.startswith("bdg_"):
-        bdg_map = {"bdg_50":50,"bdg_100":100,"bdg_200":200,"bdg_500":500,"bdg_1000":1000}
-        session = _sessions.setdefault(uid, QuizSession(uid))
-        session.budget = bdg_map.get(d, 200)
-        _sessions[uid] = session
-        await query.edit_message_text(
-            "🎯 *ما هو الاستخدام الرئيسي؟*",
-            parse_mode=ParseMode.MARKDOWN, reply_markup=kb_use_case()
-        )
-
-    elif d.startswith("use_"):
-        use_map = {"use_sport":"رياضة","use_work":"عمل","use_home":"منزل",
-                   "use_fun":"ترفيه","use_gift":"هدية","use_health":"صحة"}
-        session = _sessions.setdefault(uid, QuizSession(uid))
-        session.use_case = use_map.get(d,"")
-        _sessions[uid]   = session
-
-        await query.edit_message_text("⏳ *AI يختار أفضل منتج لك...*", parse_mode=ParseMode.MARKDOWN)
-        await _do_quiz_reco(query, ctx, session)
-
-    elif d == "by_budget":
-        await query.edit_message_text(
-            "💰 *أرسل ميزانيتك بالدولار:*\n\nمثال: _150_ أو _أقل من 200 دولار_",
-            parse_mode=ParseMode.MARKDOWN
-        )
-        _awaiting[uid] = "by_budget_text"
-
-    elif d == "compare":
-        _awaiting[uid] = "compare_1"
-        await query.edit_message_text(
-            "🔄 *مقارنة منتجين*\n\nأرسل اسم المنتج الأول:",
-            parse_mode=ParseMode.MARKDOWN
-        )
-
-    elif d == "cheaper_alt":
-        _awaiting[uid] = "free_reco"
-        await query.edit_message_text(
-            "🔍 *أرسل اسم المنتج الذي تريد بديلاً أرخص منه:*",
-            parse_mode=ParseMode.MARKDOWN
-        )
-
-    elif d == "top_rated":
-        products = sorted(get_products(), key=lambda x: x.get("rating",0), reverse=True)[:3]
-        await query.delete_message()
-        for p in products:
-            await _send_product_card(query.message.chat_id, ctx, p)
-
-    elif d == "best_sellers":
-        products = sorted(get_products(), key=lambda x: x.get("reviews",0), reverse=True)[:3]
-        await query.delete_message()
-        for p in products:
-            await _send_product_card(query.message.chat_id, ctx, p)
-
-    elif d.startswith("radd_"):
-        pid  = d.replace("radd_","")
-        cart = add_to_cart(uid, pid)
-        p    = get_product(pid)
-        await query.answer(f"✅ أُضيف: {p.get('name_ar','') if p else pid}")
-
-    elif d.startswith("rpt_"):
-        pid = d.replace("rpt_","")
-        p   = get_product(pid)
-        if not p: return await query.answer("المنتج غير موجود",show_alert=True)
-        await query.edit_message_text("⏳ AI يولد التقرير...", parse_mode=ParseMode.MARKDOWN)
-        report = generate_mini_report(p)
-        await query.edit_message_text(
-            f"📊 *تقرير: {p.get('name_ar','')}*\n\n{report}",
-            parse_mode=ParseMode.MARKDOWN,
-            reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("🛒 أضف للسلة",callback_data=f"radd_{pid}")],
-                [InlineKeyboardButton("🔙 رجوع",     callback_data="back_main")]
-            ])
-        )
-
-    elif d.startswith("alt_"):
-        pid = d.replace("alt_","")
-        p   = get_product(pid)
-        if not p: return
-        await query.edit_message_text("🔍 AI يبحث عن بديل...", parse_mode=ParseMode.MARKDOWN)
-        products    = [x for x in get_products() if x["id"] != pid]
-        alt_query   = f"مثل {p.get('name_ar','')} ولكن بسعر أقل من ${p['price']}"
-        alt_ids     = recommend_products(alt_query, products, p["price"]*0.9)
-        alt_product = get_product(alt_ids[0]) if alt_ids else None
-        if alt_product:
-            await query.delete_message()
-            await _send_product_card(query.message.chat_id, ctx, alt_product,
-                                      prefix=f"💡 *بديل لـ {p.get('name_ar','')}:*\n\n")
-        else:
-            await query.edit_message_text("❌ لم أجد بديلاً مناسباً.", reply_markup=kb_main())
-
-# ══════════════════════════════════════════════════════════════════
-# CORE LOGIC
-# ══════════════════════════════════════════════════════════════════
-
-async def _do_full_reco(update: Update, ctx: ContextTypes.DEFAULT_TYPE, query: str):
-    loading = await update.message.reply_text(
-        "🤖 *أحلل طلبك...*", parse_mode=ParseMode.MARKDOWN
-    )
-    await update.message.chat.send_action(ChatAction.TYPING)
-    products = get_products()
-    budget   = extract_budget(query)
-    if budget:
-        products = [p for p in products if p.get("price",9999) <= budget * 1.2]
-
-    ids  = recommend_products(query, products, budget)
-    recs = [get_product(pid) for pid in ids if get_product(pid)]
-    if not recs:
-        recs = sorted(products, key=lambda x: x.get("rating",0), reverse=True)[:3]
-
-    await loading.delete()
-    for p in recs[:3]:
-        await _send_product_card(update.message.chat_id, ctx, p)
-
-    # Save preference
-    update_user(update.effective_user.id, {"last_query": query})
-    track_event("recommendation", {"query": query, "user_id": update.effective_user.id})
-
-async def _reco_by_budget(update, ctx, budget: float):
-    loading = await update.message.reply_text(
-        f"💰 *أبحث في المنتجات ضمن ${budget}...*", parse_mode=ParseMode.MARKDOWN
-    )
-    products = [p for p in get_products() if p.get("price",9999) <= budget]
-    products = sorted(products, key=lambda x: x.get("rating",0), reverse=True)[:3]
-    await loading.delete()
-    if not products:
-        return await update.message.reply_text(
-            f"❌ لا توجد منتجات بأقل من ${budget} حالياً.",
-            reply_markup=kb_main()
-        )
-    for p in products:
-        await _send_product_card(update.message.chat_id, ctx, p)
-
-async def _do_quiz_reco(source, ctx, session: QuizSession):
-    chat_id = (source.message.chat_id if hasattr(source,"message") else source.chat_id
-               if hasattr(source,"chat_id") else None)
-    if not chat_id: return
-
-    query   = session.to_query()
-    products = get_products()
-    if session.category:
-        filtered = get_products_by_category(session.category)
-        if filtered: products = filtered
-    if session.budget:
-        products = [p for p in products if p.get("price",9999) <= session.budget * 1.1]
-
-    ids  = recommend_products(query, products, session.budget)
-    recs = [get_product(pid) for pid in ids if get_product(pid)]
-    if not recs:
-        recs = sorted(products, key=lambda x: x.get("rating",0), reverse=True)[:2]
-
-    # Send intro
-    intro = ai_call(
-        f"اكتب جملة ترحيب قصيرة (جملة واحدة) لتقديم توصية:\n"
-        f"الفئة: {session.category or 'متنوعة'}, الميزانية: ${session.budget}, الاستخدام: {session.use_case}",
-        temperature=0.7, max_tokens=80
-    )
-    try:
-        if hasattr(source,"edit_message_text"):
-            await source.edit_message_text(f"🎯 {intro}", parse_mode=ParseMode.MARKDOWN)
-        else:
-            await ctx.bot.send_message(chat_id=chat_id, text=f"🎯 {intro}", parse_mode=ParseMode.MARKDOWN)
-    except: pass
-
-    for p in recs[:2]:
-        await _send_product_card(chat_id, ctx, p)
-
-    _sessions.pop(session.user_id, None)
-
-async def _do_compare(update: Update, ctx: ContextTypes.DEFAULT_TYPE, p1_name: str, p2_name: str):
-    loading = await update.message.reply_text("⏳ *AI يقارن المنتجين...*", parse_mode=ParseMode.MARKDOWN)
-    await update.message.chat.send_action(ChatAction.TYPING)
-
-    p1_list = search_products_local(p1_name)
-    p2_list = search_products_local(p2_name)
-    p1 = p1_list[0] if p1_list else None
-    p2 = p2_list[0] if p2_list else None
-
-    if not p1 or not p2:
-        await loading.delete()
-        return await update.message.reply_text(
-            "❌ لم أجد أحد المنتجين. تأكد من الأسماء.",
-            reply_markup=kb_main()
-        )
-
-    comparison = ai_call(
-        f"""قارن بين هذين المنتجين بالعربية في جدول مختصر:
-المنتج 1: {p1.get('name_ar','')} — ${p1['price']} — تقييم {p1.get('rating',0)}/5
-المزايا: {', '.join(p1.get('features_ar',[])[:3])}
-
-المنتج 2: {p2.get('name_ar','')} — ${p2['price']} — تقييم {p2.get('rating',0)}/5
-المزايا: {', '.join(p2.get('features_ar',[])[:3])}
-
-أجب بـ: أوجه التشابه، الفروق الرئيسية، من الأفضل ولماذا، التوصية النهائية.""",
-        temperature=0.5, max_tokens=500
-    )
-
-    await loading.delete()
-    from urllib.parse import urlencode
-    def plink(p):
-        params = urlencode({"cmd":"_xclick","business":PAYPAL,
-            "item_name":p.get("name_ar","")[:127],"amount":str(p["price"]),"currency_code":"USD",
-            "return":f"{SITE_URL}/thanks.html","cancel_return":f"{SITE_URL}/products.html",
-            "no_note":"1","no_shipping":"2"})
-        return f"https://www.paypal.com/cgi-bin/webscr?{params}"
+    msg = format_products(products)
+    if ai_note:
+        msg = f"🤖 *رأي المساعد الذكي:*\n{ai_note}\n\n━━━━━━━━━━━━━━\n\n{msg}"
 
     await update.message.reply_text(
-        f"🔄 *مقارنة: {p1.get('name_ar','')} vs {p2.get('name_ar','')}*\n\n{comparison}",
-        parse_mode=ParseMode.MARKDOWN,
+        msg, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton(f"💳 {p1.get('name_ar','')[:20]} ${p1['price']}", url=plink(p1))],
-            [InlineKeyboardButton(f"💳 {p2.get('name_ar','')[:20]} ${p2['price']}", url=plink(p2))],
-            [InlineKeyboardButton("🔄 مقارنة أخرى", callback_data="compare"),
-             InlineKeyboardButton("🔙 رجوع", callback_data="back_main")],
+            [InlineKeyboardButton("🔍 بحث جديد", callback_data="restart")],
+            [InlineKeyboardButton("🛍️ تصفح الكل", url="https://neo-pulse-hub.it.com/products.html")]
         ])
     )
 
-def search_products_local(query: str) -> list:
-    from shared_db import search_products
-    return search_products(query)
+async def handle_callback(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+    q   = update.callback_query
+    await q.answer()
+    d   = q.data
+    uid = update.effective_user.id
 
-async def _send_product_card(chat_id: int, ctx, p: dict, prefix: str = ""):
-    text = (
-        f"{prefix}"
-        f"🛍️ *{p.get('name_ar','')}*\n"
-        f"_{p.get('category_ar','')} • {p.get('brand','')}_\n\n"
-        f"💰 *${p['price']}*"
-        + (f" ~~${p.get('original_price',0)}~~ (-{p.get('discount',0)}%)" if p.get("original_price") else "") + "\n"
-        f"⭐ {p.get('rating',0)}/5 ({p.get('reviews',0):,} تقييم)\n"
-        f"📦 المخزون: {p.get('stock',0)} | 🚚 {p.get('shipping_days','7-14')} يوم\n\n"
-        f"🔑 {' • '.join(p.get('features_ar',[])[:3])}\n\n"
-        f"_{p.get('description_ar','')}_"
-    )
-    kb = kb_product_reco(p)
-    try:
-        if p.get("image"):
-            await ctx.bot.send_photo(chat_id=chat_id, photo=p["image"],
-                                      caption=text[:1024], parse_mode=ParseMode.MARKDOWN, reply_markup=kb)
-        else:
-            await ctx.bot.send_message(chat_id=chat_id, text=text,
-                                        parse_mode=ParseMode.MARKDOWN, reply_markup=kb)
-    except Exception as e:
-        log.error(f"send card: {e}")
-        try:
-            await ctx.bot.send_message(chat_id=chat_id, text=text,
-                                        parse_mode=ParseMode.MARKDOWN, reply_markup=kb)
-        except: pass
+    if d.startswith("cat_"):
+        cat = d[4:]
+        _user_state[uid] = {"step": "budget", "category": cat if cat != "all" else None}
+        cat_name = {
+            "smartwatch": "ساعات ذكية", "smart-glasses": "نظارات AR",
+            "health": "صحة ولياقة", "smart-home": "منزل ذكي",
+            "earbuds": "سماعات", "productivity": "إنتاجية", "all": "الكل"
+        }.get(cat, cat)
+        await q.edit_message_text(
+            f"✅ اخترت: *{cat_name}*\n\nما هي ميزانيتك؟",
+            parse_mode=ParseMode.MARKDOWN, reply_markup=kb_budget()
+        )
 
-# ══════════════════════════════════════════════════════════════════
-# MAIN
-# ══════════════════════════════════════════════════════════════════
+    elif d.startswith("bud_"):
+        budget = int(d[4:]) or None
+        state  = _user_state.get(uid, {})
+        state["budget"] = budget
+        state["step"]   = "results"
+        _user_state[uid] = state
 
+        category = state.get("category")
+        products = get_recommendations(budget=budget, category=category)
+
+        ai_note = None
+        if products and GEMINI_API_KEY:
+            prod_summary = "\n".join([
+                f"- {p.get('name_ar','')} | ${p.get('price',0)} | ⭐{p.get('rating',0)}"
+                for p in products
+            ])
+            prompt = f"""أنت مستشار تسوق لمتجر NEO PULSE HUB.
+الفئة: {category or 'كل الفئات'} | الميزانية: {f'تحت ${budget}' if budget else 'مفتوحة'}
+المنتجات:
+{prod_summary}
+اكتب توصية شخصية مختصرة وجذابة (جملتان) لهذه المنتجات بالعربية."""
+            ai_note = ask_gemini(prompt)
+
+        msg = format_products(products)
+        if ai_note:
+            msg = f"🤖 *{ai_note}*\n\n━━━━━━━━━━━━━━\n\n{msg}"
+
+        await q.edit_message_text(
+            f"🌟 *أفضل التوصيات لك:*\n\n{msg}",
+            parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton("🔍 بحث جديد", callback_data="restart")],
+                [InlineKeyboardButton("🛍️ تصفح الكل", url="https://neo-pulse-hub.it.com/products.html")]
+            ])
+        )
+        save_lead(uid, {"budget": budget, "category": category})
+
+    elif d == "restart":
+        _user_state[uid] = {"step": "category"}
+        await q.edit_message_text(
+            "🔍 *بحث جديد*\n\nاختر الفئة:",
+            parse_mode=ParseMode.MARKDOWN, reply_markup=kb_categories()
+        )
+
+async def error_handler(update, ctx: ContextTypes.DEFAULT_TYPE):
+    log.error(f"Reco bot error: {ctx.error}")
+
+# ✅ يُستدعى من main.py
 def _register_handlers(app):
-    """يُستخدم في Webhook mode"""
-    from telegram.ext import CommandHandler, MessageHandler, CallbackQueryHandler, filters
-    app.add_handler(CommandHandler("start",   cmd_start))
-    app.add_handler(CommandHandler("compare", cmd_compare))
+    app.add_handler(CommandHandler("start",     cmd_start))
+    app.add_handler(CommandHandler("recommend", cmd_recommend))
     app.add_handler(CallbackQueryHandler(handle_callback))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
-
-def main():
-    if not TOKEN:
-        print("❌ RECO_BOT_TOKEN or TELEGRAM_TOKEN missing!")
-        return
-    init_db()
-    print("🎯 Recommendation Bot starting...")
-    app = Application.builder().token(TOKEN).build()
-    app.add_handler(CommandHandler("start",   cmd_start))
-    app.add_handler(CommandHandler("compare", cmd_compare))
-    app.add_handler(CallbackQueryHandler(handle_callback))
-    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
-    print("✅ Recommendation Bot running!")
-    for attempt in range(10):
-        try:
-            app.run_polling(allowed_updates=["message","callback_query"], drop_pending_updates=True)
-            break
-        except Exception as e:
-            if "Conflict" in str(e):
-                import time
-                print(f"⚠️ Reco Conflict, retry {attempt+1}/10 in 10s...")
-                time.sleep(10)
-            else:
-                raise
+    app.add_error_handler(error_handler)
 
 if __name__ == "__main__":
-    main()
+    if not RECO_BOT_TOKEN:
+        print("❌ RECO_BOT_TOKEN missing!"); exit(1)
+    app = Application.builder().token(RECO_BOT_TOKEN).build()
+    _register_handlers(app)
+    print("🛍️ Recommendation Bot running...")
+    app.run_polling(drop_pending_updates=True)
