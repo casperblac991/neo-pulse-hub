@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Block internal/dynamic paths
+Disallow: /bots/
+Disallow: /*.py$
+Disallow: /admin_bot.py
+Disallow: /webhook_server.py
+Disallow: /shared_db.py
+
+# Sitemap
+Sitemap: https://neo-pulse-hub.it.com/sitemap.xml
