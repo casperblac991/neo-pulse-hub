@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BVV5SDM5P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BVV5SDM5P');
+</script>
   <meta charset="UTF-8">
+  <script>
+  // تطبيق اللغة فوراً قبل رسم الصفحة — يمنع الوميض
+  (function(){
+    var l = localStorage.getItem('nph_lang') || 'ar';
+    document.documentElement.setAttribute('lang', l);
+    document.documentElement.setAttribute('dir', l === 'en' ? 'ltr' : 'rtl');
+  })();
+</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="تسوق أحدث منتجات التقنية الذكية — 90 منتج: ساعات ذكية، نظارات AR، سماعات، صحة، منزل ذكي.">
+  <meta name="keywords" content="منتجات ذكية، ساعات ذكية، نظارات AR، أجهزة صحة، سماعات، منزل ذكي">
+  <link rel="canonical" href="https://neo-pulse-hub.it.com/products.html">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="المنتجات | NEO PULSE HUB">
+  <meta property="og:description" content="تسوق أحدث منتجات التقنية الذكية — 90 منتج: ساعات ذكية، نظارات AR، سماعات، صحة، منزل ذكي.">
+  <meta property="og:url" content="https://neo-pulse-hub.it.com/products.html">
+  <meta property="og:image" content="https://neo-pulse-hub.it.com/images/NPH-001.png">
+  <meta property="og:site_name" content="NEO PULSE HUB">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="المنتجات | NEO PULSE HUB">
+  <meta name="twitter:description" content="تسوق أحدث منتجات التقنية الذكية — 90 منتج: ساعات ذكية، نظارات AR، سماعات، صحة، منزل ذكي.">
+  <meta name="twitter:image" content="https://neo-pulse-hub.it.com/images/NPH-001.png">
   <title id="pageTitle">المنتجات | NEO PULSE HUB</title>
-  <meta name="description" content="تسوق أحدث منتجات الذكاء الاصطناعي — ساعات ذكية، نظارات AR، أجهزة صحة، منزل ذكي.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
   <style>
@@ -48,7 +78,6 @@ nav{position:sticky;top:0;z-index:200;display:flex;align-items:center;justify-co
 .search-input{width:100%;background:var(--surface);border:1px solid var(--border);color:var(--text);border-radius:var(--rp);padding:.7rem 1.2rem .7rem 2.8rem;font-size:.9rem;font-family:'Cairo',sans-serif;outline:none;transition:border-color var(--ease)}
 .search-input:focus{border-color:var(--blue2)}
 .search-icon{position:absolute;right:1rem;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none}
-.sort-select{background:var(--surface);border:1px solid var(--border);color:var(--text);border-radius:var(--rp);padding:.7rem 1.2rem;font-size:.85rem;font-family:'Cairo',sans-serif;outline:none;cursor:pointer}
 .results-count{font-size:.85rem;color:var(--muted);white-space:nowrap}
 .products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.3rem}
 .product-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);overflow:hidden;transition:all var(--ease);cursor:pointer;position:relative;animation:fadeIn .4s ease both}
@@ -88,25 +117,25 @@ nav{position:sticky;top:0;z-index:200;display:flex;align-items:center;justify-co
 <nav>
   <a href="index.html" class="nav-logo">NEO PULSE HUB</a>
   <ul class="nav-links">
-    <li><a href="index.html" id="nav_home_t">الرئيسية</a></li>
-    <li><a href="products.html" class="active">المنتجات</a></li>
-    <li><a href="about.html">من نحن</a></li>
-    <li><a href="contact.html">اتصل بنا</a></li>
+    <li><a href="index.html" id="nav_home">الرئيسية</a></li>
+    <li><a href="products.html" class="active" id="nav_products">المنتجات</a></li>
+    <li><a href="about.html" id="nav_about">من نحن</a></li>
+    <li><a href="contact.html" id="nav_contact">اتصل بنا</a></li>
   </ul>
   <div style="display:flex;align-items:center;gap:.8rem">
-    <button class="nav-cart" onclick="openCart()" id="nav_cart_t">🛒 السلة<span class="cart-count" id="cartCount"></span></button>
+    <button class="nav-cart" onclick="openCart()" id="nav_cart">🛒 السلة<span class="cart-count" id="cartCount"></span></button>
     <div class="lang-switch" style="display:flex;gap:5px">
-            <button class="lang-btn" id="langAr" onclick="changeLang('ar')">عربي</button>
+      <button class="lang-btn active" id="langAr" onclick="changeLang('ar')">عربي</button>
       <button class="lang-btn" id="langEn" onclick="changeLang('en')">EN</button>
     </div>
     <button class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <div class="mobile-drawer" id="mobileDrawer">
-  <a href="index.html" onclick="closeMenu()">🏠 الرئيسية</a>
-  <a href="products.html" onclick="closeMenu()">🛍️ المنتجات</a>
-  <a href="about.html" onclick="closeMenu()">ℹ️ من نحن</a>
-  <a href="contact.html" onclick="closeMenu()">📞 اتصل بنا</a>
+  <a href="index.html" onclick="closeMenu()" id="m_home">🏠 الرئيسية</a>
+  <a href="products.html" onclick="closeMenu()" id="m_products">🛍️ المنتجات</a>
+  <a href="about.html" onclick="closeMenu()" id="m_about">ℹ️ من نحن</a>
+  <a href="contact.html" onclick="closeMenu()" id="m_contact">📞 اتصل بنا</a>
 </div>
 
 <div class="page-header">
@@ -118,14 +147,14 @@ nav{position:sticky;top:0;z-index:200;display:flex;align-items:center;justify-co
   <!-- SIDEBAR -->
   <aside class="sidebar">
     <div class="sidebar-card">
-      <div class="sidebar-title">الفئات</div>
-      <button class="filter-btn active" onclick="setFilter('all',this)">🌐 جميع المنتجات <span class="filter-count" id="count-all">15</span></button>
-      <button class="filter-btn" onclick="setFilter('smartwatch',this)">⌚ ساعات ذكية <span class="filter-count" id="count-smartwatch">2</span></button>
-      <button class="filter-btn" onclick="setFilter('smart-glasses',this)">🥽 نظارات ذكية <span class="filter-count" id="count-smart-glasses">2</span></button>
-      <button class="filter-btn" onclick="setFilter('health',this)">❤️ الصحة الذكية <span class="filter-count" id="count-health">3</span></button>
-      <button class="filter-btn" onclick="setFilter('smart-home',this)">🏠 المنزل الذكي <span class="filter-count" id="count-smart-home">3</span></button>
-      <button class="filter-btn" onclick="setFilter('earbuds',this)">🎧 سماعات <span class="filter-count" id="count-earbuds">1</span></button>
-      <button class="filter-btn" onclick="setFilter('productivity',this)">💼 الإنتاجية <span class="filter-count" id="count-productivity">4</span></button>
+      <div class="sidebar-title" id="lbl_cats">الفئات</div>
+      <button class="filter-btn active" onclick="setFilter('all',this)" id="cat_all">🌐 جميع المنتجات <span class="filter-count" id="count-all">30</span></button>
+      <button class="filter-btn" onclick="setFilter('smartwatch',this)" id="cat_sw">⌚ ساعات ذكية <span class="filter-count" id="count-smartwatch">5</span></button>
+      <button class="filter-btn" onclick="setFilter('smart-glasses',this)" id="cat_sg">🥽 نظارات ذكية <span class="filter-count" id="count-smart-glasses">5</span></button>
+      <button class="filter-btn" onclick="setFilter('health',this)" id="cat_h">❤️ الصحة الذكية <span class="filter-count" id="count-health">5</span></button>
+      <button class="filter-btn" onclick="setFilter('smart-home',this)" id="cat_sh">🏠 المنزل الذكي <span class="filter-count" id="count-smart-home">5</span></button>
+      <button class="filter-btn" onclick="setFilter('earbuds',this)" id="cat_e">🎧 سماعات <span class="filter-count" id="count-earbuds">5</span></button>
+      <button class="filter-btn" onclick="setFilter('productivity',this)" id="cat_p">💼 الإنتاجية <span class="filter-count" id="count-productivity">5</span></button>
     </div>
     <div class="sidebar-card">
       <div class="sidebar-title" id="lbl_price">السعر (دولار)</div>
@@ -148,178 +177,346 @@ nav{position:sticky;top:0;z-index:200;display:flex;align-items:center;justify-co
         <span class="search-icon">🔍</span>
         <input class="search-input" id="searchInput" type="text" placeholder="ابحث عن منتج..." oninput="applyFilters()">
       </div>
-      <span class="results-count" id="resultsCount">15 منتج</span>
+      <span class="results-count" id="resultsCount">30 منتج</span>
     </div>
     <div class="products-grid" id="productsGrid"></div>
+    <div id="loadMoreBtn" style="display:none;text-align:center;margin:2rem 0"></div>
   </main>
 </div>
 
 <div class="toast" id="toast"><span id="toastIcon"></span><span id="toastText"></span></div>
 
 <script>
-let lang = localStorage.getItem('nph_lang') || 'ar';
+// ============================================
+// المنتجات المحلية (30 منتج حقيقي)
+// ============================================
+const INLINE_PRODUCTS = [{"id": "NPH-001", "name_ar": "ساعة أبل Watch Series 9", "name_en": "Apple Watch Series 9 45mm", "category": "smartwatch", "category_ar": "ساعات ذكية", "category_en": "Smartwatch", "price": 399, "original_price": 449, "discount": 11, "rating": 4.9, "reviews": 12430, "image": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=600&q=80", "badge_ar": "الأكثر مبيعاً", "badge_en": "Best Seller", "in_stock": true, "featured": true},
+  {"id": "NPH-002", "name_ar": "ساعة سامسونج Galaxy Watch 7", "name_en": "Samsung Galaxy Watch 7 44mm", "category": "smartwatch", "category_ar": "ساعات ذكية", "category_en": "Smartwatch", "price": 299, "original_price": 349, "discount": 14, "rating": 4.8, "reviews": 8765, "image": "https://images.unsplash.com/photo-1541643600914-78b084683702?w=600&q=80", "badge_ar": "مميز", "badge_en": "Featured", "in_stock": true, "featured": false},
+  {"id": "NPH-003", "name_ar": "ساعة غارمن Fenix 7X Solar", "name_en": "Garmin Fenix 7X Solar", "category": "smartwatch", "category_ar": "ساعات ذكية", "category_en": "Smartwatch", "price": 699, "original_price": 799, "discount": 13, "rating": 4.8, "reviews": 5432, "image": "https://images.unsplash.com/photo-1617043786394-f977fa12eddf?w=600&q=80", "badge_ar": "الأكثر مبيعاً", "badge_en": "Best Seller", "in_stock": true, "featured": false},
+  {"id": "NPH-006", "name_ar": "ساعة شاومي Watch S3", "name_en": "Xiaomi Watch S3", "category": "smartwatch", "category_ar": "ساعات ذكية", "category_en": "Smartwatch", "price": 139, "original_price": 169, "discount": 18, "rating": 4.5, "reviews": 6543, "image": "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?w=600&q=80", "badge_ar": "قيمة مثالية", "badge_en": "Great Value", "in_stock": true, "featured": false},
+  {"id": "NPH-009", "name_ar": "ساعة فيتبيت Versa 4", "name_en": "Fitbit Versa 4", "category": "smartwatch", "category_ar": "ساعات ذكية", "category_en": "Smartwatch", "price": 149, "original_price": 199, "discount": 25, "rating": 4.5, "reviews": 9876, "image": "https://images.unsplash.com/photo-1620625515032-6ed0c1790c75?w=600&q=80", "badge_ar": "خصم خاص", "badge_en": "Special Offer", "in_stock": true, "featured": false},
+  {"id": "NPH-016", "name_ar": "نظارة Apple Vision Pro", "name_en": "Apple Vision Pro", "category": "smart-glasses", "category_ar": "نظارات ذكية", "category_en": "Smart Glasses", "price": 3499, "original_price": 3999, "discount": 13, "rating": 4.8, "reviews": 4532, "image": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=600&q=80", "badge_ar": "حصري", "badge_en": "Exclusive", "in_stock": true, "featured": true},
+  {"id": "NPH-017", "name_ar": "نظارة Meta Quest 3", "name_en": "Meta Quest 3 512GB", "category": "smart-glasses", "category_ar": "نظارات ذكية", "category_en": "Smart Glasses", "price": 649, "original_price": 699, "discount": 13, "rating": 4.8, "reviews": 15432, "image": "https://images.unsplash.com/photo-1577803645773-f96470509666?w=600&q=80", "badge_ar": "الأكثر مبيعاً", "badge_en": "Best Seller", "in_stock": true, "featured": false},
+  {"id": "NPH-018", "name_ar": "نظارة Ray-Ban Meta الذكية", "name_en": "Ray-Ban Meta Wayfarer", "category": "smart-glasses", "category_ar": "نظارات ذكية", "category_en": "Smart Glasses", "price": 329, "original_price": 379, "discount": 13, "rating": 4.5, "reviews": 8765, "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=600&q=80", "badge_ar": "مميز", "badge_en": "Featured", "in_stock": true, "featured": false},
+  {"id": "NPH-019", "name_ar": "نظارة Meta Quest 3S", "name_en": "Meta Quest 3S 128GB", "category": "smart-glasses", "category_ar": "نظارات ذكية", "category_en": "Smart Glasses", "price": 299, "original_price": 349, "discount": 14, "rating": 4.7, "reviews": 6543, "image": "https://images.unsplash.com/photo-1584543178269-0e3a22b95827?w=600&q=80", "badge_ar": "جديد", "badge_en": "New", "in_stock": true, "featured": false},
+  {"id": "NPH-020", "name_ar": "نظارة XREAL Air 2 Pro", "name_en": "XREAL Air 2 Pro", "category": "smart-glasses", "category_ar": "نظارات ذكية", "category_en": "Smart Glasses", "price": 449, "original_price": 499, "discount": 10, "rating": 4.6, "reviews": 3210, "image": "https://images.unsplash.com/photo-1603400521630-9f2de124b33b?w=600&q=80", "badge_ar": "جديد", "badge_en": "New", "in_stock": true, "featured": false},
+  {"id": "NPH-031", "name_ar": "خاتم Oura Ring الجيل 4", "name_en": "Oura Ring Gen 4", "category": "health", "category_ar": "صحة ذكية", "category_en": "Health", "price": 349, "original_price": 399, "discount": 13, "rating": 4.8, "reviews": 18765, "image": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=600&q=80", "badge_ar": "الأكثر مبيعاً", "badge_en": "Best Seller", "in_stock": true, "featured": true},
+  {"id": "NPH-032", "name_ar": "حزام WHOOP 4.0", "name_en": "WHOOP 4.0 Fitness Band", "category": "health", "category_ar": "صحة ذكية", "category_en": "Health", "price": 239, "original_price": 279, "discount": 14, "rating": 4.6, "reviews": 8765, "image": "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=600&q=80", "badge_ar": "جديد", "badge_en": "New", "in_stock": true, "featured": false},
+  {"id": "NPH-034", "name_ar": "سوار Fitbit Charge 6", "name_en": "Fitbit Charge 6 Tracker", "category": "health", "category_ar": "صحة ذكية", "category_en": "Health", "price": 159, "original_price": 199, "discount": 20, "rating": 4.6, "reviews": 12345, "image": "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=600&q=80", "badge_ar": "خصم خاص", "badge_en": "Special Offer", "in_stock": true, "featured": false},
+  {"id": "NPH-035", "name_ar": "سوار Garmin Vivosmart 5", "name_en": "Garmin Vivosmart 5", "category": "health", "category_ar": "صحة ذكية", "category_en": "Health", "price": 149, "original_price": 179, "discount": 17, "rating": 4.5, "reviews": 6543, "image": "https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?w=600&q=80", "badge_ar": "جديد", "badge_en": "New", "in_stock": true, "featured": false},
+  {"id": "NPH-039", "name_ar": "سوار شاومي Smart Band 9 Pro", "name_en": "Xiaomi Smart Band 9 Pro", "category": "health", "category_ar": "صحة ذكية", "category_en": "Health", "price": 79, "original_price": 99, "discount": 20, "rating": 4.6, "reviews": 15432, "image": "https://images.unsplash.com/photo-1594882645560-3e93f0b74e31?w=600&q=80", "badge_ar": "اقتصادي", "badge_en": "Budget Friendly", "in_stock": true, "featured": false},
+  {"id": "NPH-046", "name_ar": "شاشة Amazon Echo Show 10", "name_en": "Amazon Echo Show 10 3rd Gen", "category": "smart-home", "category_ar": "منزل ذكي", "category_en": "Smart Home", "price": 249, "original_price": 299, "discount": 17, "rating": 4.7, "reviews": 23456, "image": "https://images.unsplash.com/photo-1567721913486-6585f069b332?w=600&q=80", "badge_ar": "الأكثر مبيعاً", "badge_en": "Best Seller", "in_stock": true, "featured": true},
+  {"id": "NPH-049", "name_ar": "طقم إضاءة Philips Hue", "name_en": "Philips Hue Color Starter Kit", "category": "smart-home", "category_ar": "منزل ذكي", "category_en": "Smart Home", "price": 199, "original_price": 249, "discount": 20, "rating": 4.7, "reviews": 34567, "image": "https://images.unsplash.com/photo-1558002038-1055907df827?w=600&q=80", "badge_ar": "خصم خاص", "badge_en": "Special Offer", "in_stock": true, "featured": false},
+  {"id": "NPH-050", "name_ar": "جرس Ring Video Doorbell Pro 2", "name_en": "Ring Video Doorbell Pro 2", "category": "smart-home", "category_ar": "منزل ذكي", "category_en": "Smart Home", "price": 249, "original_price": 299, "discount": 17, "rating": 4.5, "reviews": 43210, "image": "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?w=600&q=80", "badge_ar": "جديد", "badge_en": "New", "in_stock": true, "featured": false},
+  {"id": "NPH-051", "name_ar": "منظم حرارة Nest الجيل 4", "name_en": "Google Nest Learning Thermostat", "category": "smart-home", "category_ar": "منزل ذكي", "category_en": "Smart Home", "price": 279, "original_price": 329, "discount": 15, "rating": 4.7, "reviews": 28765, "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80", "badge_ar": "جديد", "badge_en": "New", "in_stock": true, "featured": false},
+  {"id": "NPH-052", "name_ar": "مكبر Amazon Echo Dot الجيل 5", "name_en": "Amazon Echo Dot 5th Gen", "category": "smart-home", "category_ar": "منزل ذكي", "category_en": "Smart Home", "price": 49, "original_price": 59, "discount": 17, "rating": 4.7, "reviews": 98765, "image": "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&q=80", "badge_ar": "قيمة مثالية", "badge_en": "Great Value", "in_stock": true, "featured": false},
+  {"id": "NPH-061", "name_ar": "سماعات AirPods Pro الجيل 2", "name_en": "Apple AirPods Pro 2 USB-C", "category": "earbuds", "category_ar": "سماعات ذكية", "category_en": "Earbuds", "price": 249, "original_price": 279, "discount": 11, "rating": 4.9, "reviews": 54321, "image": "https://images.unsplash.com/photo-1491927570842-0261e477d937?w=600&q=80", "badge_ar": "الأكثر مبيعاً", "badge_en": "Best Seller", "in_stock": true, "featured": true},
+  {"id": "NPH-062", "name_ar": "سماعات Sony WF-1000XM5", "name_en": "Sony WF-1000XM5 Earbuds", "category": "earbuds", "category_ar": "سماعات ذكية", "category_en": "Earbuds", "price": 279, "original_price": 329, "discount": 15, "rating": 4.8, "reviews": 23456, "image": "https://images.unsplash.com/photo-1585565804112-f201f68c48b4?w=600&q=80", "badge_ar": "مميز", "badge_en": "Featured", "in_stock": true, "featured": false},
+  {"id": "NPH-063", "name_ar": "سماعات Bose QuietComfort Ultra", "name_en": "Bose QuietComfort Ultra Earbuds", "category": "earbuds", "category_ar": "سماعات ذكية", "category_en": "Earbuds", "price": 299, "original_price": 349, "discount": 14, "rating": 4.8, "reviews": 15432, "image": "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=600&q=80", "badge_ar": "الأكثر مبيعاً", "badge_en": "Best Seller", "in_stock": true, "featured": false},
+  {"id": "NPH-065", "name_ar": "سماعات Apple AirPods 4 ANC", "name_en": "Apple AirPods 4 with ANC", "category": "earbuds", "category_ar": "سماعات ذكية", "category_en": "Earbuds", "price": 179, "original_price": 199, "discount": 10, "rating": 4.8, "reviews": 32145, "image": "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=600&q=80", "badge_ar": "جديد", "badge_en": "New", "in_stock": true, "featured": false},
+  {"id": "NPH-066", "name_ar": "سماعات Sony WH-1000XM5 فوق الأذن", "name_en": "Sony WH-1000XM5 Headphones", "category": "earbuds", "category_ar": "سماعات ذكية", "category_en": "Earbuds", "price": 349, "original_price": 399, "discount": 13, "rating": 4.8, "reviews": 45678, "image": "https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?w=600&q=80", "badge_ar": "الأكثر مبيعاً", "badge_en": "Best Seller", "in_stock": true, "featured": false},
+  {"id": "NPH-076", "name_ar": "جهاز iPad Pro M4 13 بوصة", "name_en": "Apple iPad Pro M4 13 inch", "category": "productivity", "category_ar": "إنتاجية", "category_en": "Productivity", "price": 1299, "original_price": 1399, "discount": 13, "rating": 4.9, "reviews": 23456, "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&q=80", "badge_ar": "الأكثر مبيعاً", "badge_en": "Best Seller", "in_stock": true, "featured": true},
+  {"id": "NPH-078", "name_ar": "ماوس Logitech MX Master 3S", "name_en": "Logitech MX Master 3S Mouse", "category": "productivity", "category_ar": "إنتاجية", "category_en": "Productivity", "price": 99, "original_price": 119, "discount": 17, "rating": 4.9, "reviews": 45678, "image": "https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?w=600&q=80", "badge_ar": "الأكثر مبيعاً", "badge_en": "Best Seller", "in_stock": true, "featured": false},
+  {"id": "NPH-079", "name_ar": "لوحة Logitech MX Keys S Plus", "name_en": "Logitech MX Keys S Plus Keyboard", "category": "productivity", "category_ar": "إنتاجية", "category_en": "Productivity", "price": 149, "original_price": 179, "discount": 17, "rating": 4.8, "reviews": 23456, "image": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&q=80", "badge_ar": "الأكثر مبيعاً", "badge_en": "Best Seller", "in_stock": true, "featured": false},
+  {"id": "NPH-083", "name_ar": "شاحن Anker 737 GaNPrime 120W", "name_en": "Anker 737 GaNPrime 120W Charger", "category": "productivity", "category_ar": "إنتاجية", "category_en": "Productivity", "price": 89, "original_price": 109, "discount": 18, "rating": 4.8, "reviews": 34567, "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&q=80", "badge_ar": "قيمة مثالية", "badge_en": "Great Value", "in_stock": true, "featured": false},
+  {"id": "NPH-087", "name_ar": "محطة شحن Anker MagGo اللاسلكي", "name_en": "Anker MagGo 3-in-1 Wireless Charger", "category": "productivity", "category_ar": "إنتاجية", "category_en": "Productivity", "price": 79, "original_price": 99, "discount": 20, "rating": 4.7, "reviews": 23456, "image": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&q=80", "badge_ar": "خصم خاص", "badge_en": "Special Offer", "in_stock": true, "featured": false}];
 
+// ============================================
+// المتغيرات العامة
+// ============================================
+let lang = localStorage.getItem('nph_lang') || 'ar';
+let allProducts = [];
+let filteredProducts = [];
+let activeCategory = 'all';
+let maxPrice = 700;
+let sortBy = 'rating';
+let cart = JSON.parse(localStorage.getItem('nph_cart') || '[]');
+let countersRan = false;
+
+// ============================================
+// دالة تغيير اللغة (محدثة)
+// ============================================
 function changeLang(l) {
   lang = l;
   localStorage.setItem('nph_lang', l);
   document.documentElement.setAttribute('dir', l === 'ar' ? 'rtl' : 'ltr');
   document.documentElement.setAttribute('lang', l);
-  const ar = document.getElementById('langAr');
-  const en = document.getElementById('langEn');
-  if(ar) ar.classList.toggle('active', l === 'ar');
-  if(en) en.classList.toggle('active', l === 'en');
+  
+  // تحديث أزرار اللغة
+  const arBtn = document.getElementById('langAr');
+  const enBtn = document.getElementById('langEn');
+  if(arBtn) arBtn.classList.toggle('active', l === 'ar');
+  if(enBtn) enBtn.classList.toggle('active', l === 'en');
 
-  // ترجمة نصوص الـ UI
+  // نصوص الواجهة
   const UI = {
     ar: {
-      pageTitle:'المنتجات | NEO PULSE HUB',
-      pg_title:'كل المنتجات', pg_sub:'اكتشف أحدث منتجات الذكاء الاصطناعي والتقنية الذكية',
-      cat_all:'🌐 جميع المنتجات', cat_sw:'⌚ ساعات ذكية', cat_sg:'🥽 نظارات ذكية',
-      cat_h:'❤️ الصحة الذكية', cat_sh:'🏠 المنزل الذكي', cat_e:'🎧 سماعات', cat_p:'💼 الإنتاجية',
-      lbl_price:'السعر (دولار)', lbl_sort:'الفرز',
-      sort_asc:'الأقل سعراً', sort_desc:'الأعلى سعراً', sort_rating:'الأعلى تقييماً', sort_disc:'الأكبر خصماً',
-      nav_cart_t:'🛒 السلة',
+      pageTitle: 'المنتجات | NEO PULSE HUB',
+      pg_title: 'كل المنتجات',
+      pg_sub: 'اكتشف أحدث منتجات الذكاء الاصطناعي والتقنية الذكية',
+      lbl_cats: 'الفئات',
+      cat_all: '🌐 جميع المنتجات',
+      cat_sw: '⌚ ساعات ذكية',
+      cat_sg: '🥽 نظارات ذكية',
+      cat_h: '❤️ الصحة الذكية',
+      cat_sh: '🏠 المنزل الذكي',
+      cat_e: '🎧 سماعات',
+      cat_p: '💼 الإنتاجية',
+      lbl_price: 'السعر (دولار)',
+      lbl_sort: 'الفرز',
+      sort_asc: 'الأقل سعراً',
+      sort_desc: 'الأعلى سعراً',
+      sort_rating: 'الأعلى تقييماً',
+      sort_disc: 'الأكبر خصماً',
+      nav_home: 'الرئيسية',
+      nav_products: 'المنتجات',
+      nav_about: 'من نحن',
+      nav_contact: 'اتصل بنا',
+      nav_cart: '🛒 السلة',
+      m_home: '🏠 الرئيسية',
+      m_products: '🛍️ المنتجات',
+      m_about: 'ℹ️ من نحن',
+      m_contact: '📞 اتصل بنا',
+      f_ship: 'سياسة الشحن',
+      f_return: 'سياسة الإرجاع',
+      f_privacy: 'الخصوصية',
+      f_terms: 'الشروط',
+      f_faq: 'FAQ',
+      f_copy: '© 2026 NEO PULSE HUB — جميع الحقوق محفوظة',
+      search_placeholder: 'ابحث عن منتج...',
+      results_suffix: 'منتج',
+      add_to_cart: '+',
+      out_of_stock: 'نفد المخزون',
+      no_results: 'لا توجد منتجات مطابقة للبحث',
+      cart_empty: 'سلتك فارغة!',
+      added_toast: 'أُضيف للسلة'
     },
     en: {
-      pageTitle:'Products | NEO PULSE HUB',
-      pg_title:'All Products', pg_sub:'Discover the latest AI and smart tech products',
-      cat_all:'🌐 All Products', cat_sw:'⌚ Smart Watches', cat_sg:'🥽 Smart Glasses',
-      cat_h:'❤️ Health Tech', cat_sh:'🏠 Smart Home', cat_e:'🎧 Earbuds', cat_p:'💼 Productivity',
-      lbl_price:'Price (USD)', lbl_sort:'Sort by',
-      sort_asc:'Lowest Price', sort_desc:'Highest Price', sort_rating:'Top Rated', sort_disc:'Biggest Discount',
-      nav_cart_t:'🛒 Cart',
+      pageTitle: 'Products | NEO PULSE HUB',
+      pg_title: 'All Products',
+      pg_sub: 'Discover the latest AI and smart tech products',
+      lbl_cats: 'Categories',
+      cat_all: '🌐 All Products',
+      cat_sw: '⌚ Smart Watches',
+      cat_sg: '🥽 Smart Glasses',
+      cat_h: '❤️ Health Tech',
+      cat_sh: '🏠 Smart Home',
+      cat_e: '🎧 Earbuds',
+      cat_p: '💼 Productivity',
+      lbl_price: 'Price (USD)',
+      lbl_sort: 'Sort by',
+      sort_asc: 'Lowest Price',
+      sort_desc: 'Highest Price',
+      sort_rating: 'Top Rated',
+      sort_disc: 'Biggest Discount',
+      nav_home: 'Home',
+      nav_products: 'Products',
+      nav_about: 'About',
+      nav_contact: 'Contact',
+      nav_cart: '🛒 Cart',
+      m_home: '🏠 Home',
+      m_products: '🛍️ Products',
+      m_about: 'ℹ️ About',
+      m_contact: '📞 Contact',
+      f_ship: 'Shipping Policy',
+      f_return: 'Return Policy',
+      f_privacy: 'Privacy',
+      f_terms: 'Terms',
+      f_faq: 'FAQ',
+      f_copy: '© 2026 NEO PULSE HUB — All Rights Reserved',
+      search_placeholder: 'Search products...',
+      results_suffix: 'products',
+      add_to_cart: '+',
+      out_of_stock: 'Out of Stock',
+      no_results: 'No products match your search',
+      cart_empty: 'Your cart is empty!',
+      added_toast: 'Added to cart'
     }
   };
+
   const ui = UI[l] || UI.ar;
-  Object.keys(ui).forEach(id => {
-    if (id === 'pageTitle') { document.title = ui[id]; return; }
-    const el = document.getElementById(id);
-    if (el) el.textContent = ui[id];
-  });
-  // أعد الرسم فقط لو المنتجات محملة
-  if (typeof allProducts !== 'undefined' && allProducts.length > 0) {
+  
+  // تحديث عنوان الصفحة
+  document.title = ui.pageTitle;
+  
+  // تحديث النصوص الثابتة
+  document.getElementById('pg_title').textContent = ui.pg_title;
+  document.getElementById('pg_sub').textContent = ui.pg_sub;
+  document.getElementById('lbl_cats').textContent = ui.lbl_cats;
+  document.getElementById('cat_all').innerHTML = `${ui.cat_all} <span class="filter-count" id="count-all">${allProducts.length}</span>`;
+  document.getElementById('cat_sw').innerHTML = `${ui.cat_sw} <span class="filter-count" id="count-smartwatch">${allProducts.filter(p => p.category === 'smartwatch').length}</span>`;
+  document.getElementById('cat_sg').innerHTML = `${ui.cat_sg} <span class="filter-count" id="count-smart-glasses">${allProducts.filter(p => p.category === 'smart-glasses').length}</span>`;
+  document.getElementById('cat_h').innerHTML = `${ui.cat_h} <span class="filter-count" id="count-health">${allProducts.filter(p => p.category === 'health').length}</span>`;
+  document.getElementById('cat_sh').innerHTML = `${ui.cat_sh} <span class="filter-count" id="count-smart-home">${allProducts.filter(p => p.category === 'smart-home').length}</span>`;
+  document.getElementById('cat_e').innerHTML = `${ui.cat_e} <span class="filter-count" id="count-earbuds">${allProducts.filter(p => p.category === 'earbuds').length}</span>`;
+  document.getElementById('cat_p').innerHTML = `${ui.cat_p} <span class="filter-count" id="count-productivity">${allProducts.filter(p => p.category === 'productivity').length}</span>`;
+  document.getElementById('lbl_price').textContent = ui.lbl_price;
+  document.getElementById('lbl_sort').textContent = ui.lbl_sort;
+  document.getElementById('sort_asc').textContent = ui.sort_asc;
+  document.getElementById('sort_desc').textContent = ui.sort_desc;
+  document.getElementById('sort_rating').textContent = ui.sort_rating;
+  document.getElementById('sort_disc').textContent = ui.sort_disc;
+  document.getElementById('nav_home').textContent = ui.nav_home;
+  document.getElementById('nav_products').textContent = ui.nav_products;
+  document.getElementById('nav_about').textContent = ui.nav_about;
+  document.getElementById('nav_contact').textContent = ui.nav_contact;
+  document.getElementById('nav_cart').innerHTML = `${ui.nav_cart}<span class="cart-count" id="cartCount"></span>`;
+  document.getElementById('m_home').textContent = ui.m_home;
+  document.getElementById('m_products').textContent = ui.m_products;
+  document.getElementById('m_about').textContent = ui.m_about;
+  document.getElementById('m_contact').textContent = ui.m_contact;
+  document.getElementById('f_ship').textContent = ui.f_ship;
+  document.getElementById('f_return').textContent = ui.f_return;
+  document.getElementById('f_privacy').textContent = ui.f_privacy;
+  document.getElementById('f_terms').textContent = ui.f_terms;
+  document.getElementById('f_faq').textContent = ui.f_faq;
+  document.getElementById('f_copy').textContent = ui.f_copy;
+  document.querySelector('.search-input').placeholder = ui.search_placeholder;
+  
+  // إعادة عرض المنتجات
+  if (allProducts.length > 0) {
     applyFilters();
   }
-  renderCartUI();
-}
-
-let allProducts = [], filteredProducts = [];
-let activeCategory = 'all', maxPrice = 700, sortBy = 'rating';
-let cart = JSON.parse(localStorage.getItem('nph_cart') || '[]');
-
-async function init() {
-  // تطبيق اللغة المحفوظة (UI فقط — قبل تحميل المنتجات)
-  lang = localStorage.getItem('nph_lang') || 'ar';
-  document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
-  document.documentElement.setAttribute('lang', lang);
-  const ar = document.getElementById('langAr');
-  const en = document.getElementById('langEn');
-  if(ar) ar.classList.toggle('active', lang === 'ar');
-  if(en) en.classList.toggle('active', lang === 'en');
-  
-  // Read URL params
-  const params = new URLSearchParams(window.location.search);
-  if (params.get('cat')) { activeCategory = params.get('cat'); }
-
-  try {
-    const PRODUCTS_URL = 'https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/products.json?t=' + Date.now();
-    const r = await fetch(PRODUCTS_URL);
-    if (!r.ok) throw new Error('HTTP ' + r.status);
-    const text = await r.text();
-    // نظّف SVG base64 إذا موجود
-    const cleaned = text.replace(/"image"\s*:\s*"data:image\/svg[^"]*"/g, '"image": ""');
-    allProducts = JSON.parse(cleaned);
-    // استبدل الصور الفارغة بـ SVG محلي
-    allProducts.forEach(p => {
-      if (!p.image || p.image === '') {
-        p.image = getCategorySVG(p.category);
-      }
-    });
-    console.log('✅ Loaded', allProducts.length, 'products');
-  } catch(e) {
-    console.error('❌ Error:', e);
-    allProducts = getFallbackProducts();
-  }
-  applyFilters();
   updateCartUI();
-  updateCategoryCounts();
+}
 
-  // Activate correct category button
-  if (activeCategory !== 'all') {
-    document.querySelectorAll('.filter-btn').forEach(b => {
-      b.classList.remove('active');
-      if (b.getAttribute('onclick') && b.getAttribute('onclick').includes(`'${activeCategory}'`)) b.classList.add('active');
-    });
+// ============================================
+// تحميل المنتجات (باستخدام البيانات المحلية)
+// ============================================
+function loadProducts() {
+  try {
+    allProducts = INLINE_PRODUCTS.map(p => ({
+      ...p,
+      name_ar: p.name_ar,
+      name_en: p.name_en,
+      category_ar: p.category_ar,
+      category_en: p.category_en,
+      badge_ar: p.badge_ar,
+      badge_en: p.badge_en,
+      in_stock: true
+    }));
+    
+    console.log('✅ تم تحميل', allProducts.length, 'منتج محلي');
+    
+    // تحديث أعداد الفئات
+    document.getElementById('count-all').textContent = allProducts.length;
+    document.getElementById('count-smartwatch').textContent = allProducts.filter(p => p.category === 'smartwatch').length;
+    document.getElementById('count-smart-glasses').textContent = allProducts.filter(p => p.category === 'smart-glasses').length;
+    document.getElementById('count-health').textContent = allProducts.filter(p => p.category === 'health').length;
+    document.getElementById('count-smart-home').textContent = allProducts.filter(p => p.category === 'smart-home').length;
+    document.getElementById('count-earbuds').textContent = allProducts.filter(p => p.category === 'earbuds').length;
+    document.getElementById('count-productivity').textContent = allProducts.filter(p => p.category === 'productivity').length;
+    
+    // تطبيق الفلتر الأول
+    applyFilters();
+    
+  } catch(e) {
+    console.error('❌ خطأ في تحميل المنتجات:', e);
+    allProducts = [];
   }
 }
 
-function updateCategoryCounts() {
-  const cats = ['smartwatch','smart-glasses','health','smart-home','earbuds','productivity'];
-  cats.forEach(c => {
-    const el = document.getElementById('count-' + c);
-    if (el) el.textContent = allProducts.filter(p => p.category === c).length;
-  });
-  const all = document.getElementById('count-all');
-  if (all) all.textContent = allProducts.length;
-}
-
+// ============================================
+// تطبيق الفلاتر والبحث
+// ============================================
 function applyFilters() {
   const q = (document.getElementById('searchInput')?.value || '').trim().toLowerCase();
+  
   filteredProducts = allProducts.filter(p => {
-    const matchCat  = activeCategory === 'all' || p.category === activeCategory;
+    const matchCat = activeCategory === 'all' || p.category === activeCategory;
     const matchPrice = p.price <= maxPrice;
-    const matchQ = !q || (lang==='en' ? (p.name_en||p.name_ar) : p.name_ar).toLowerCase().includes(q) ||
-                   ((lang==='en' ? (p.category_en||p.category_ar||'') : (p.category_ar||''))||'').includes(q) ||
-                   (p.tags||[]).some(t=>t.includes(q));
+    const name = lang === 'en' ? (p.name_en || '').toLowerCase() : (p.name_ar || '').toLowerCase();
+    const matchQ = !q || name.includes(q);
     return matchCat && matchPrice && matchQ;
   });
 
-  // Sort
-  if (sortBy === 'price-asc')  filteredProducts.sort((a,b) => a.price - b.price);
+  // تطبيق الترتيب
+  if (sortBy === 'price-asc') filteredProducts.sort((a,b) => a.price - b.price);
   if (sortBy === 'price-desc') filteredProducts.sort((a,b) => b.price - a.price);
-  if (sortBy === 'rating')     filteredProducts.sort((a,b) => b.rating - a.rating);
-  if (sortBy === 'discount')   filteredProducts.sort((a,b) => b.discount - a.discount);
+  if (sortBy === 'rating') filteredProducts.sort((a,b) => b.rating - a.rating);
+  if (sortBy === 'discount') filteredProducts.sort((a,b) => b.discount - a.discount);
 
   renderProducts();
-  document.getElementById('resultsCount').textContent = `${filteredProducts.length} ${lang==='en'?'products':'منتج'}`;
+  
+  const ui = lang === 'en' ? { results_suffix: 'products' } : { results_suffix: 'منتج' };
+  document.getElementById('resultsCount').textContent = `${filteredProducts.length} ${ui.results_suffix}`;
 }
 
+// ============================================
+// عرض المنتجات
+// ============================================
 function renderProducts() {
   const grid = document.getElementById('productsGrid');
+  if (!grid) return;
+  
   if (filteredProducts.length === 0) {
-    grid.innerHTML = `<div class="no-results" style="grid-column:1/-1"><div class="icon">🔍</div><p>${lang==='en'?'No products match your search':'لا توجد منتجات مطابقة للبحث'}</p></div>`;
+    const noResultsText = lang === 'en' ? 'No products match your search' : 'لا توجد منتجات مطابقة للبحث';
+    grid.innerHTML = `<div class="no-results" style="grid-column:1/-1"><div class="icon">🔍</div><p>${noResultsText}</p></div>`;
+    document.getElementById('loadMoreBtn').style.display = 'none';
     return;
   }
-  grid.innerHTML = filteredProducts.map((p, i) => {
+  
+  // عرض أول 20 منتج فقط (باقي المنتجات عند الضغط على "عرض المزيد")
+  const page = window._productsPage || 1;
+  const perPage = 20;
+  const visible = filteredProducts.slice(0, page * perPage);
+  
+  grid.innerHTML = visible.map((p, i) => {
     const inCart = cart.some(c => c.id === p.id);
-    const outOfStock = (p.stock || 99) === 0;
+    const name = lang === 'en' ? (p.name_en || p.name_ar) : p.name_ar;
+    const category = lang === 'en' ? (p.category_en || p.category_ar) : p.category_ar;
+    const badge = lang === 'en' ? (p.badge_en || p.badge_ar) : p.badge_ar;
+    const addBtnText = inCart ? '✓' : (lang === 'en' ? '+' : '+');
+    const outOfStockText = lang === 'en' ? 'Out of Stock' : 'نفد المخزون';
+    
     return `
     <div class="product-card" style="animation-delay:${i*0.04}s" onclick="goProduct('${p.id}')">
       <div class="product-img">
-        <img src="${p.image}" alt="${(lang==='en' ? (p.name_en||p.name_ar) : p.name_ar)}" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x400/1e3a5f/ffffff?text='+encodeURIComponent((lang==='en' ? (p.name_en||p.name_ar) : p.name_ar)||'Product')">
-        ${p.badge ? `<span class="badge">${p.badge}</span>` : ''}
+        <img src="${p.image}" alt="${name}" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x400/1e3a5f/ffffff?text='+encodeURIComponent('${name}')">
+        ${badge ? `<span class="badge">${badge}</span>` : ''}
         ${p.discount ? `<span class="discount-tag">-${p.discount}%</span>` : ''}
-        ${outOfStock ? `<div class="out-of-stock"><span>${lang==='en'?'Out of Stock':'نفد المخزون'}</span></div>` : ''}
+        ${!p.in_stock ? `<div class="out-of-stock"><span>${outOfStockText}</span></div>` : ''}
       </div>
       <div class="product-body">
-        <div class="product-cat">${(lang==='en' ? (p.category_en||p.category_ar||'') : (p.category_ar||''))||''}</div>
-        <div class="product-name">${(lang==='en' ? (p.name_en||p.name_ar) : p.name_ar)}</div>
+        <div class="product-cat">${category || ''}</div>
+        <div class="product-name">${name}</div>
         <div class="stars-row">
-          <span class="stars">${'★'.repeat(Math.floor(p.rating||4))}</span>
-          <span class="rev">${p.rating} (${p.reviews||0})</span>
+          <span class="stars">${'★'.repeat(Math.floor(p.rating || 4))}</span>
+          <span class="rev">${p.rating} (${p.reviews || 0})</span>
         </div>
         <div class="price-row">
           <div>
             <div class="price">$${p.price}</div>
             ${p.original_price ? `<div class="orig">$${p.original_price}</div>` : ''}
           </div>
-          ${!outOfStock ? `<button class="cart-btn ${inCart?'added':''}" onclick="addToCart(event,'${p.id}')">${inCart?'✅ أُضيف':'🛒 أضف'}</button>` : ''}
+          <button class="cart-btn ${inCart ? 'added' : ''}" onclick="event.stopPropagation();addToCart('${p.id}')">${addBtnText}</button>
         </div>
       </div>
     </div>`;
   }).join('');
+  
+  // زر "عرض المزيد"
+  const loadMoreBtn = document.getElementById('loadMoreBtn');
+  if (visible.length < filteredProducts.length) {
+    const loadMoreText = lang === 'en' ? 'Load More' : 'عرض المزيد';
+    loadMoreBtn.innerHTML = `<button onclick="loadMoreProducts()" style="background:linear-gradient(135deg,var(--blue),var(--purple));color:white;border:none;padding:.8rem 2.5rem;border-radius:50px;font-size:1rem;cursor:pointer;font-weight:700">${loadMoreText} (${filteredProducts.length - visible.length})</button>`;
+    loadMoreBtn.style.display = 'block';
+  } else {
+    loadMoreBtn.style.display = 'none';
+  }
 }
 
+// ============================================
+// تحميل المزيد من المنتجات
+// ============================================
+function loadMoreProducts() {
+  window._productsPage = (window._productsPage || 1) + 1;
+  renderProducts();
+}
+
+// ============================================
+// تعيين الفئة النشطة
+// ============================================
 function setFilter(cat, btn) {
   activeCategory = cat;
   document.querySelectorAll('.sidebar .filter-btn').forEach(b => b.classList.remove('active'));
@@ -327,6 +524,9 @@ function setFilter(cat, btn) {
   applyFilters();
 }
 
+// ============================================
+// ترتيب المنتجات
+// ============================================
 function sortProducts(by, btn) {
   sortBy = by;
   document.querySelectorAll('.sidebar-card:last-child .filter-btn').forEach(b => b.classList.remove('active'));
@@ -334,39 +534,82 @@ function sortProducts(by, btn) {
   applyFilters();
 }
 
+// ============================================
+// تصفية حسب السعر
+// ============================================
 function filterByPrice(val) {
   maxPrice = parseInt(val);
   document.getElementById('priceLabel').textContent = '$' + val;
   applyFilters();
 }
 
-function addToCart(e, id) {
-  e.stopPropagation();
+// ============================================
+// إضافة إلى السلة
+// ============================================
+function addToCart(id) {
   const p = allProducts.find(x => x.id === id);
   if (!p) return;
+  
   const ex = cart.find(c => c.id === id);
-  if (ex) ex.qty = (ex.qty||1) + 1;
-  else cart.push({...p, qty:1});
+  if (ex) {
+    ex.qty = (ex.qty || 1) + 1;
+  } else {
+    cart.push({...p, qty: 1});
+  }
+  
   localStorage.setItem('nph_cart', JSON.stringify(cart));
-  updateCartUI(); renderProducts();
-  showToast('✅', `${(lang==='en' ? (p.name_en||p.name_ar) : p.name_ar)} أُضيف للسلة`);
+  updateCartUI();
+  renderProducts();
+  
+  const name = lang === 'en' ? (p.name_en || p.name_ar) : p.name_ar;
+  const toastText = lang === 'en' ? 'Added to cart' : 'أُضيف للسلة';
+  showToast('✅', `${name} — ${toastText}`);
 }
 
+// ============================================
+// تحديث واجهة السلة
+// ============================================
 function updateCartUI() {
-  const total = cart.reduce((s,i) => s + (i.qty||1), 0);
+  const total = cart.reduce((s, i) => s + (i.qty || 1), 0);
   const badge = document.getElementById('cartCount');
-  if (badge) { badge.textContent = total; badge.style.display = total > 0 ? 'flex' : 'none'; }
+  if (badge) {
+    badge.textContent = total;
+    badge.style.display = total > 0 ? 'flex' : 'none';
+  }
 }
 
+// ============================================
+// فتح السلة
+// ============================================
 function openCart() {
-  if (!cart.length) { showToast('🛒','سلتك فارغة!'); return; }
-  const items = cart.map(i=>`• ${i.name_ar} x${i.qty||1} = $${(i.price*(i.qty||1)).toFixed(2)}`).join('\n');
-  const total = cart.reduce((s,i) => s+i.price*(i.qty||1), 0);
-  alert(`🛒 السلة:\n\n${items}\n\n💰 الإجمالي: $${total.toFixed(2)}`);
+  if (!cart.length) {
+    const emptyText = lang === 'en' ? 'Your cart is empty!' : 'سلتك فارغة!';
+    showToast('🛒', emptyText);
+    return;
+  }
+  
+  const items = cart.map(i => {
+    const name = lang === 'en' ? (i.name_en || i.name_ar) : i.name_ar;
+    return `• ${name} x${i.qty || 1} = $${(i.price * (i.qty || 1)).toFixed(2)}`;
+  }).join('\n');
+  
+  const total = cart.reduce((s, i) => s + i.price * (i.qty || 1), 0);
+  const cartTitle = lang === 'en' ? 'Cart' : 'السلة';
+  const totalText = lang === 'en' ? 'Total' : 'الإجمالي';
+  
+  alert(`${cartTitle}:\n\n${items}\n\n💰 ${totalText}: $${total.toFixed(2)}`);
 }
 
-function goProduct(id) { window.location.href = `product-detail.html?id=${id}`; }
+// ============================================
+// الذهاب لصفحة المنتج
+// ============================================
+function goProduct(id) {
+  window.location.href = `product-detail.html?id=${id}`;
+}
 
+// ============================================
+// عرض رسالة Toast
+// ============================================
 let toastTimer;
 function showToast(icon, text) {
   const t = document.getElementById('toast');
@@ -377,137 +620,75 @@ function showToast(icon, text) {
   toastTimer = setTimeout(() => t.classList.remove('show'), 2800);
 }
 
+// ============================================
+// قائمة الهاتف
+// ============================================
 function toggleMenu() {
-  const h = document.getElementById('hamburger'), d = document.getElementById('mobileDrawer');
-  h.classList.toggle('open'); d.classList.toggle('open');
+  const h = document.getElementById('hamburger');
+  const d = document.getElementById('mobileDrawer');
+  h.classList.toggle('open');
+  d.classList.toggle('open');
   document.body.style.overflow = d.classList.contains('open') ? 'hidden' : '';
 }
+
 function closeMenu() {
   document.getElementById('hamburger').classList.remove('open');
   document.getElementById('mobileDrawer').classList.remove('open');
   document.body.style.overflow = '';
 }
 
-function getFallbackProducts() { return []; }
-
-function getCategorySVG(category) {
-  const svgs = {
-    "smartwatch":    "data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='200' height='200' fill='%230f1923'/%3E%3Crect x='75' y='30' width='50' height='8' rx='4' fill='%23333'/%3E%3Crect x='75' y='162' width='50' height='8' rx='4' fill='%23333'/%3E%3Crect x='60' y='50' width='80' height='100' rx='20' fill='%231a2a3a' stroke='%233b82f6' stroke-width='2'/%3E%3Crect x='68' y='58' width='64' height='84' rx='14' fill='%230a0f1a'/%3E%3Ctext x='100' y='105' text-anchor='middle' fill='%2360a5fa' font-size='18' font-family='Arial' font-weight='bold'%3E10:08%3C/text%3E%3C/svg%3E",
-    "smart-glasses": "data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='200' height='200' fill='%230f0a1a'/%3E%3Cellipse cx='65' cy='100' rx='42' ry='32' fill='%231a0f2e' stroke='%237c3aed' stroke-width='2'/%3E%3Cellipse cx='135' cy='100' rx='42' ry='32' fill='%231a0f2e' stroke='%237c3aed' stroke-width='2'/%3E%3Crect x='107' y='92' width='26' height='16' rx='4' fill='%232d1b4e'/%3E%3Ccircle cx='65' cy='100' r='5' fill='%237c3aed'/%3E%3Ccircle cx='135' cy='100' r='5' fill='%237c3aed'/%3E%3C/svg%3E",
-    "health":        "data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='200' height='200' fill='%230a1a0f'/%3E%3Ccircle cx='100' cy='100' r='65' fill='%230f2a1a' stroke='%2310b981' stroke-width='2'/%3E%3Cpolyline points='50,100 70,100 80,75 95,125 110,85 120,100 150,100' fill='none' stroke='%2310b981' stroke-width='2.5'/%3E%3Ctext x='100' y='75' text-anchor='middle' fill='%2334d399' font-size='20' font-family='Arial' font-weight='bold'%3E72%3C/text%3E%3C/svg%3E",
-    "smart-home":    "data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='200' height='200' fill='%230a0f1a'/%3E%3Cpolygon points='100,30 170,90 30,90' fill='%231a2a4a' stroke='%233b82f6' stroke-width='2'/%3E%3Crect x='50' y='90' width='100' height='80' fill='%231a2a4a' stroke='%233b82f6' stroke-width='1.5'/%3E%3Crect x='85' y='130' width='30' height='40' rx='3' fill='%230a1525'/%3E%3Ccircle cx='72' cy='112' r='5' fill='%233b82f6'/%3E%3C/svg%3E",
-    "earbuds":       "data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='200' height='200' fill='%231a0a0a'/%3E%3Crect x='60' y='60' width='80' height='80' rx='20' fill='%232a1010' stroke='%23ef4444' stroke-width='1.5'/%3E%3Cellipse cx='80' cy='100' rx='12' ry='16' fill='%231a0a0a' stroke='%23ef4444' stroke-width='1.5'/%3E%3Cellipse cx='120' cy='100' rx='12' ry='16' fill='%231a0a0a' stroke='%23ef4444' stroke-width='1.5'/%3E%3Ccircle cx='80' cy='100' r='5' fill='%23ef4444'/%3E%3Ccircle cx='120' cy='100' r='5' fill='%23ef4444'/%3E%3C/svg%3E",
-    "productivity":  "data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='200' height='200' fill='%230f0f0a'/%3E%3Crect x='25' y='40' width='150' height='100' rx='8' fill='%231a1a0f' stroke='%23f59e0b' stroke-width='1.5'/%3E%3Crect x='33' y='48' width='134' height='84' rx='4' fill='%230a0a05'/%3E%3Crect x='40' y='60' width='60' height='5' rx='2' fill='%23f59e0b'/%3E%3Crect x='40' y='72' width='40' height='4' rx='2' fill='%2378716c'/%3E%3Crect x='75' y='148' width='50' height='8' rx='4' fill='%232a2a15'/%3E%3C/svg%3E",
-  };
-  return svgs[category] || svgs["smartwatch"];
-}
-window.addEventListener('load', init);
-
-// ═══════════════════════════════════════════════
-// Google Image Fallback
-// ═══════════════════════════════════════════════
-const GOOGLE_API_KEY = "AIzaSyBjH8OXjZ9r_tvB4z9miqlncdvVuRsfWiU";
-const GOOGLE_CX      = "53f17b4ecf9924a25";
-const imgCache = {};
-
-
-async function loadProductImage(imgEl, productName, category) {
-  // أولاً: جرب Google Custom Search
-  if (productName) {
-    try {
-      const q = encodeURIComponent(productName + " smartwatch earbuds product photo -site:pinterest.com");
-      const url = `https://www.googleapis.com/customsearch/v1?key=${GOOGLE_API_KEY}&cx=${GOOGLE_CX}&searchType=image&q=${q}&num=5&imgSize=medium&imgType=photo`;
-      const res = await fetch(url);
-      if (res.ok) {
-        const data = await res.json();
-        const items = (data.items || []);
-        for (const item of items) {
-          const link = item.link || "";
-          // تحقق من أن الرابط صورة حقيقية
-          if (link && link.startsWith("http") && 
-              (link.includes(".jpg") || link.includes(".jpeg") || link.includes(".png") || link.includes(".webp"))) {
-            imgEl.src = link;
-            imgEl.onerror = () => setPlaceholder(imgEl, category);
-            return;
-          }
-        }
-        // إذا ما لقينا jpg مباشر، خذ أول نتيجة
-        if (items[0]?.link) {
-          imgEl.src = items[0].link;
-          imgEl.onerror = () => setPlaceholder(imgEl, category);
-          return;
-        }
-      }
-    } catch(e) { /* fallback */ }
-  }
-  // ثانياً: SVG احترافي
-  setPlaceholder(imgEl, category);
-}
-
-async function fetchGoogleImage(imgEl, productName, category) {
-  if (!productName) return setPlaceholder(imgEl, category);
-  
-  // تحقق من الكاش
-  if (imgCache[productName]) {
-    imgEl.src = imgCache[productName];
-    return;
-  }
-
-  try {
-    const q = encodeURIComponent(productName + " product");
-    const url = `https://www.googleapis.com/customsearch/v1?key=${GOOGLE_API_KEY}&cx=${GOOGLE_CX}&searchType=image&q=${q}&num=3&imgSize=large`;
-    const res = await fetch(url);
-    const data = await res.json();
-    const items = data.items || [];
-    
-    for (const item of items) {
-      const link = item.link || "";
-      if (link && (link.endsWith(".jpg") || link.endsWith(".jpeg") || link.endsWith(".png") || link.endsWith(".webp") || link.includes("image"))) {
-        imgCache[productName] = link;
-        imgEl.src = link;
-        imgEl.onerror = () => setPlaceholder(imgEl, category);
-        return;
-      }
-    }
-    
-    // أول نتيجة إذا ما لقينا
-    if (items[0]?.link) {
-      imgCache[productName] = items[0].link;
-      imgEl.src = items[0].link;
-      imgEl.onerror = () => setPlaceholder(imgEl, category);
-      return;
-    }
-  } catch(e) {
-    console.log("Google image error:", e);
-  }
-  
-  setPlaceholder(imgEl, category);
-}
-
-function setPlaceholder(imgEl, category) {
-  // استخدم SVG محلي من GitHub
-  const svgMap = {
-    "smartwatch":    "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smartwatch.svg",
-    "smart-glasses": "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-glasses.svg",
-    "health":        "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/health.svg",
-    "smart-home":    "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/smart-home.svg",
-    "earbuds":       "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/earbuds.svg",
-    "productivity":  "https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/images/productivity.svg",
-  };
-  imgEl.src = svgMap[category] || svgMap["smartwatch"];
-  imgEl.onerror = null;
-}
-
+// ============================================
+// تهيئة الصفحة
+// ============================================
 document.addEventListener('DOMContentLoaded', () => {
-  // طبق اللغة على الـ nav فوراً قبل init
-  document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
-  document.documentElement.setAttribute('lang', lang);
-  const ar = document.getElementById('langAr');
-  const en = document.getElementById('langEn');
-  if(ar) ar.classList.toggle('active', lang === 'ar');
-  if(en) en.classList.toggle('active', lang === 'en');
-  init();
+  // قراءة اللغة من URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const urlLang = urlParams.get('lang');
+  if (urlLang === 'ar' || urlLang === 'en') {
+    lang = urlLang;
+    localStorage.setItem('nph_lang', lang);
+  }
+  
+  // تحميل المنتجات
+  loadProducts();
+  
+  // تطبيق اللغة
+  changeLang(lang);
+  
+  // تحديث السلة
+  updateCartUI();
+  
+  // قراءة معامل الفئة من URL
+  if (urlParams.get('cat')) {
+    const cat = urlParams.get('cat');
+    const catBtn = document.querySelector(`.filter-btn[onclick*="'${cat}'"]`);
+    if (catBtn) {
+      setFilter(cat, catBtn);
+    }
+  }
+  
+  // إغلاق القائمة عند النقر خارجها
+  document.addEventListener('click', (e) => {
+    const drawer = document.getElementById('mobileDrawer');
+    const hamburger = document.getElementById('hamburger');
+    if (drawer.classList.contains('open') && !drawer.contains(e.target) && !hamburger.contains(e.target)) {
+      closeMenu();
+    }
+  });
 });
 </script>
+
+<footer style="background:#0a0d1a;border-top:1px solid rgba(99,179,237,.12);padding:1.5rem 2rem;margin-top:auto">
+  <div style="max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:space-between;align-items:center">
+    <div style="display:flex;flex-wrap:wrap;gap:1rem">
+      <a href="shipping.html" id="f_ship" style="font-size:.78rem;color:rgba(226,232,240,.4);text-decoration:none;transition:color .3s" onmouseover="this.style.color='#22d3ee'" onmouseout="this.style.color='rgba(226,232,240,.4)'">سياسة الشحن</a>
+      <a href="returns.html" id="f_return" style="font-size:.78rem;color:rgba(226,232,240,.4);text-decoration:none" onmouseover="this.style.color='#22d3ee'" onmouseout="this.style.color='rgba(226,232,240,.4)'">سياسة الإرجاع</a>
+      <a href="privacy.html" id="f_privacy" style="font-size:.78rem;color:rgba(226,232,240,.4);text-decoration:none" onmouseover="this.style.color='#22d3ee'" onmouseout="this.style.color='rgba(226,232,240,.4)'">الخصوصية</a>
+      <a href="terms.html" id="f_terms" style="font-size:.78rem;color:rgba(226,232,240,.4);text-decoration:none" onmouseover="this.style.color='#22d3ee'" onmouseout="this.style.color='rgba(226,232,240,.4)'">الشروط</a>
+      <a href="faq.html" id="f_faq" style="font-size:.78rem;color:rgba(226,232,240,.4);text-decoration:none" onmouseover="this.style.color='#22d3ee'" onmouseout="this.style.color='rgba(226,232,240,.4)'">FAQ</a>
+    </div>
+    <span id="f_copy" style="font-size:.73rem;color:rgba(226,232,240,.2)">© 2026 NEO PULSE HUB</span>
+  </div>
+</footer>
 </body>
 </html>
