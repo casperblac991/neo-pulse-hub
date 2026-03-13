@@ -375,18 +375,28 @@ def auto_add_products(count: int = 3) -> list:
         push_to_github(products)
     return added
 
-def refresh_store(keep_per_cat: int = 12, add_per_cat: int = 3) -> dict:
+def load_pool() -> list:
+    """يحمّل قاعدة المنتجات الجاهزة"""
+    try:
+        pool_file = os.path.join(BASE_DIR, "products_pool.json")
+        p = Path(pool_file)
+        return json.loads(p.read_text(encoding="utf-8")) if p.exists() else []
+    except Exception as e:
+        log.error(f"load_pool: {e}"); return []
+
+def refresh_store(keep_per_cat: int = 14, add_per_cat: int = 1) -> dict:
     """
-    يجدد المتجر كل 6 ساعات:
-    1. يحتفظ بأفضل keep_per_cat منتج من كل فئة
-    2. يحذف الباقي
-    3. يضيف add_per_cat منتج جديد لكل فئة بصور جديدة
+    يجدد المتجر بسرعة:
+    1. يحتفظ بأفضل keep_per_cat من كل فئة
+    2. يضيف منتجات من Pool الجاهز (بدون Gemini — فوري!)
     """
     products = load_products()
-    log.info(f"🔄 Refresh start — {len(products)} products")
+    pool = load_pool()
+    log.info(f"🔄 Refresh: {len(products)} products, pool: {len(pool)}")
 
     new_store = []
     deleted_count = 0
+    used_pool_ids = {p.get("id","") for p in products}
 
     for cat in CATEGORIES:
         cat_prods = [p for p in products if p.get("category") == cat["id"]]
@@ -397,27 +407,39 @@ def refresh_store(keep_per_cat: int = 12, add_per_cat: int = 3) -> dict:
         kept = cat_prods[:keep_per_cat]
         deleted_count += len(cat_prods) - len(kept)
         new_store.extend(kept)
-        log.info(f"  {cat['ar']}: kept {len(kept)}, removed {len(cat_prods)-len(kept)}")
-
-    import re
-    existing_ids = {p.get("id", "") for p in new_store}
-    nums = [int(m.group(1)) for p in existing_ids
-            if (m := re.match(r'NPH-(\d+)', p))]
-    next_num = max(nums, default=100) + 1
 
     added_products = []
     for cat in CATEGORIES:
         for j in range(add_per_cat):
-            new_id = f"NPH-{next_num:03d}"
-            next_num += 1
-            log.info(f"  New {new_id} — {cat['ar']}")
-            data = generate_product_with_ai(cat)
-            if data:
-                product = create_product(data, cat, new_id)
-                new_store.append(product)
-                added_products.append(product)
-                log.info(f"  ✅ {product['name_ar']}")
-            time.sleep(10)
+            # ابحث في Pool عن منتج غير مستخدم من هذه الفئة
+            pool_items = [p for p in pool
+                         if p.get("category") == cat["id"]
+                         and p.get("id","") not in used_pool_ids]
+            if pool_items:
+                chosen = random.choice(pool_items)
+                # جيب صورة Unsplash جديدة
+                chosen = dict(chosen)
+                chosen["image"] = fetch_image(cat["id"], chosen.get("name_en",""))
+                chosen["added_at"] = datetime.now().isoformat()
+                new_store.append(chosen)
+                added_products.append(chosen)
+                used_pool_ids.add(chosen["id"])
+                log.info(f"  ✅ Pool: {chosen['name_ar']}")
+            else:
+                # Pool فارغ — استخدم Gemini كـ fallback
+                log.info(f"  Pool empty for {cat['ar']}, using Gemini...")
+                import re
+                existing_ids = {p.get("id","") for p in new_store}
+                nums = [int(m.group(1)) for p in existing_ids
+                        if (m := re.match(r'NPH-(\d+)', p))]
+                next_num = max(nums, default=100) + 1
+                new_id = f"NPH-{next_num:03d}"
+                data = generate_product_with_ai(cat)
+                if data:
+                    product = create_product(data, cat, new_id)
+                    new_store.append(product)
+                    added_products.append(product)
+                    log.info(f"  ✅ AI: {product['name_ar']}")
 
     save_products(new_store)
     push_to_github(new_store)
