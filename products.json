@@ -401,6 +401,47 @@
     "description_en": "The Google Pixel Watch 3 45mm is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Wear OS 4, AMOLED, Google Wallet, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $349, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
+    "id": "NPH-P201",
+    "name_ar": "ساعة أوميغا الذكية X1",
+    "name_en": "Omega Smart X1",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "Smart Watches",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.7,
+    "reviews": 3200,
+    "stock": 73,
+    "image": "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=600&q=80",
+    "badge": "جديد",
+    "badge_en": "New",
+    "active": true,
+    "featured": false,
+    "description_ar": "ساعة ذكية أنيقة بتقنيات متطورة",
+    "description_en": "Elegant smartwatch with advanced tech",
+    "features_ar": [
+      "شاشة AMOLED",
+      "مقاومة للماء 5ATM",
+      "GPS دقيق",
+      "بطارية 7 أيام"
+    ],
+    "features_en": [
+      "AMOLED display",
+      "5ATM water resistant",
+      "Precise GPS",
+      "7-day battery"
+    ],
+    "tags": [
+      "smartwatch",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 6,
+    "added_at": "2026-03-13T12:16:55.029960",
+    "added_by": "pool_v1"
+  },
+  {
     "id": "NPH-007",
     "name_ar": "ساعة أمازفيت Balance",
     "name_en": "Amazfit Balance",
@@ -481,84 +522,45 @@
     "description_en": "The Coros Apex 2 Pro is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring GPS متعدد, 75 Hours, Topo, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $499, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
-    "id": "NPH-008",
-    "name_ar": "ساعة سامسونج Galaxy Watch Ultra",
-    "name_en": "Samsung Galaxy Watch Ultra",
+    "id": "NPH-091",
+    "name_ar": "المدار الفضي",
+    "name_en": "Aura Orbital",
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
-    "price": 649,
-    "original_price": 749,
-    "discount": 13,
+    "category_en": "Smart Watches",
+    "price": 379,
+    "original_price": 429,
+    "discount": 12,
     "rating": 4.8,
-    "reviews": 1987,
-    "stock": 70,
-    "image": "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=400&q=80",
-    "description_ar": "ساعة سامسونج Galaxy Watch Ultra — من أفضل منتجات ساعات ذكية.",
+    "reviews": 2100,
+    "stock": 21,
+    "image": "https://images.unsplash.com/photo-1703793493856-027fd21e7d23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTQ1Njd8MHwxfHNlYXJjaHw0fHxBdXJhJTIwT3JiaXRhbHxlbnwxfDJ8fHwxNzczNDA0MjM4fDA&ixlib=rb-4.1.0&q=80&w=1080&w=600&q=80",
+    "badge": "حصري",
+    "badge_en": "Exclusive",
+    "active": true,
+    "featured": false,
+    "description_ar": "تجربة ذكية لا مثيل لها على معصمك، تجمع بين الأناقة الفائقة والابتكار التكنولوجي. ارتقِ بيومك مع المدة الطويلة للبطارية وتتبع الصحة الشامل.",
+    "description_en": "An unparalleled smart experience on your wrist, blending supreme elegance with technological innovation. Elevate your day with extended battery life and comprehensive health tracking.",
     "features_ar": [
-      "تيتانيوم",
-      "60 ساعة",
-      "MIL-STD",
-      "10ATM",
-      "GPS مزدوج"
+      "شاشة AMOLED دائمة التشغيل",
+      "تتبع متقدم لمعدل ضربات القلب والأكسجين في الدم",
+      "مقاومة للماء حتى 50 مترًا",
+      "GPS مدمج ومكالمات بلوتوث"
+    ],
+    "features_en": [
+      "Always-On AMOLED Display",
+      "Advanced Heart Rate & Blood Oxygen Tracking",
+      "50-Meter Water Resistance",
+      "Built-in GPS & Bluetooth Calling"
     ],
     "tags": [
-      "ساعات ذكية"
+      "smartwatch",
+      "smart",
+      "tech"
     ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smartwatch",
-    "features_en": [
-      "Titanium",
-      "60 Hours",
-      "MIL-STD",
-      "10ATM",
-      "Dual-Band GPS"
-    ],
-    "description_en": "The Samsung Galaxy Watch Ultra is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Titanium, 60 Hours, MIL-STD, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $649, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-011",
-    "name_ar": "ساعة ون بلس Watch 3",
-    "name_en": "OnePlus Watch 3",
-    "category": "smartwatch",
-    "category_ar": "ساعات ذكية",
-    "price": 329,
-    "original_price": 379,
-    "discount": 13,
-    "rating": 4.6,
-    "reviews": 2134,
-    "stock": 96,
-    "image": "https://images.unsplash.com/photo-1604671801908-6f0c6a092c05?w=400&q=80",
-    "description_ar": "ساعة ون بلس Watch 3 — من أفضل منتجات ساعات ذكية.",
-    "features_ar": [
-      "Wear OS 4",
-      "100 ساعة",
-      "شحن سريع",
-      "GPS مزدوج",
-      "5ATM"
-    ],
-    "tags": [
-      "ساعات ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smartwatch",
-    "features_en": [
-      "Wear OS 4",
-      "100 Hours",
-      "Fast Charging",
-      "Dual-Band GPS",
-      "5ATM"
-    ],
-    "description_en": "The OnePlus Watch 3 is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Wear OS 4, 100 Hours, Fast Charging, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $329, it's one of the top choices in its category at NEO PULSE HUB."
+    "shipping_days": 3,
+    "added_at": "2026-03-13T12:17:18.687917",
+    "added_by": "auto_ai_v3"
   },
   {
     "id": "NPH-017",
@@ -1363,6 +1365,47 @@
     "description_en": "The Garmin Vivosmart 5 is a premium health device designed to track and monitor your wellness in real time. Featuring OLED, 7 Days, Body Battery, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $149, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
+    "id": "NPH-P220",
+    "name_ar": "جهاز هيلث كور",
+    "name_en": "HealthCore Pro",
+    "category": "health",
+    "category_ar": "صحة ولياقة",
+    "category_en": "Health & Fitness",
+    "price": 199,
+    "original_price": 239,
+    "discount": 17,
+    "rating": 4.8,
+    "reviews": 5600,
+    "stock": 55,
+    "image": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=600&q=80",
+    "badge": "مميز",
+    "badge_en": "Featured",
+    "active": true,
+    "featured": false,
+    "description_ar": "رعاية صحية متكاملة",
+    "description_en": "Complete health care",
+    "features_ar": [
+      "ضغط الدم",
+      "سكر الدم",
+      "ECG",
+      "تقرير يومي"
+    ],
+    "features_en": [
+      "Blood pressure",
+      "Blood sugar",
+      "ECG",
+      "Daily report"
+    ],
+    "tags": [
+      "health",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 3,
+    "added_at": "2026-03-13T12:16:55.766900",
+    "added_by": "pool_v1"
+  },
+  {
     "id": "NPH-042",
     "name_ar": "جهاز Polar Verity Sense",
     "name_en": "Polar Verity Sense Monitor",
@@ -1643,46 +1686,6 @@
     "description_en": "The Withings ScanWatch Nova is a premium health device designed to track and monitor your wellness in real time. Featuring ECG, 30 Days, SpO2, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $499, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
-    "id": "NPH-037",
-    "name_ar": "خاتم أمازفيت Helio Ring",
-    "name_en": "Amazfit Helio Ring",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 299,
-    "original_price": 349,
-    "discount": 14,
-    "rating": 4.5,
-    "reviews": 1876,
-    "stock": 25,
-    "image": "https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?w=400&q=80",
-    "description_ar": "خاتم أمازفيت Helio Ring — من أفضل منتجات صحة ذكية.",
-    "features_ar": [
-      "تيتانيوم",
-      "صحة",
-      "4 أيام",
-      "Zepp",
-      "IP68"
-    ],
-    "tags": [
-      "صحة ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Health",
-    "features_en": [
-      "Titanium",
-      "Health",
-      "4 Days",
-      "Zepp",
-      "IP68"
-    ],
-    "description_en": "The Amazfit Helio Ring is a premium health device designed to track and monitor your wellness in real time. Featuring Titanium, Health, 4 Days, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $299, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
     "id": "NPH-052",
     "name_ar": "مكبر Amazon Echo Dot الجيل 5",
     "name_en": "Amazon Echo Dot 5th Gen",
@@ -1881,6 +1884,47 @@
       "3 Ports"
     ],
     "description_en": "The Amazon Echo Show 10 3rd Gen is a premium smart home device designed to automate and control your home intelligently. Featuring HD 10 بوصة, Auto-Follow, 13MP, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $249, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-P231",
+    "name_ar": "مقبس سمارت بلاق",
+    "name_en": "SmartPlug Pro",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "category_en": "Smart Home",
+    "price": 39,
+    "original_price": 49,
+    "discount": 20,
+    "rating": 4.6,
+    "reviews": 22000,
+    "stock": 65,
+    "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80",
+    "badge": "الأكثر مبيعاً",
+    "badge_en": "Best Seller",
+    "active": true,
+    "featured": false,
+    "description_ar": "تحكم في أجهزتك من أي مكان",
+    "description_en": "Control your devices from anywhere",
+    "features_ar": [
+      "تحكم عن بعد",
+      "قياس طاقة",
+      "جدولة ذكية",
+      "صوتي"
+    ],
+    "features_en": [
+      "Remote control",
+      "Energy monitor",
+      "Smart schedule",
+      "Voice control"
+    ],
+    "tags": [
+      "smart-home",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 7,
+    "added_at": "2026-03-13T12:16:56.300584",
+    "added_by": "pool_v1"
   },
   {
     "id": "NPH-058",
@@ -2202,46 +2246,6 @@
       "Comprehensive"
     ],
     "description_en": "The Samsung SmartThings Hub is a premium smart home device designed to automate and control your home intelligently. Featuring Zigbee+Z-Wave+WiFi, Hub, Automatic, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $129, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-060",
-    "name_ar": "نظام Eufy Security HomeBase 3",
-    "name_en": "Eufy Security HomeBase 3",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "price": 299,
-    "original_price": 349,
-    "discount": 14,
-    "rating": 4.6,
-    "reviews": 4321,
-    "stock": 27,
-    "image": "https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?w=400&q=80",
-    "description_ar": "نظام Eufy Security HomeBase 3 — من أفضل منتجات منزل ذكي.",
-    "features_ar": [
-      "16GB محلي",
-      "Triple Band",
-      "AI",
-      "8K",
-      "بدون اشتراك"
-    ],
-    "tags": [
-      "منزل ذكي"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smart Home",
-    "features_en": [
-      "16GB",
-      "Triple Band",
-      "AI",
-      "8K",
-      "No Subscription"
-    ],
-    "description_en": "The Eufy Security HomeBase 3 is a premium smart home device designed to automate and control your home intelligently. Featuring 16GB محلي, Triple Band, AI, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $299, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
     "id": "NPH-061",
@@ -2645,6 +2649,47 @@
     "description_en": "The Nothing Ear 3 Wireless is a premium earbuds designed to deliver immersive sound wherever you go. Featuring Transparent, ANC 45dB, 8.5h+40h, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $149, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
+    "id": "NPH-P245",
+    "name_ar": "سماعة ميني بودز",
+    "name_en": "Mini Pods",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "category_en": "Smart Earbuds",
+    "price": 79,
+    "original_price": 99,
+    "discount": 20,
+    "rating": 4.3,
+    "reviews": 7800,
+    "stock": 27,
+    "image": "https://images.unsplash.com/photo-1613040809024-b4ef7ba99bc3?w=600&q=80",
+    "badge": "اقتصادي",
+    "badge_en": "Value",
+    "active": true,
+    "featured": false,
+    "description_ar": "الأفضل لميزانيتك",
+    "description_en": "Best for your budget",
+    "features_ar": [
+      "سعر ممتاز",
+      "صوت جيد",
+      "5 ساعات",
+      "حالة شحن"
+    ],
+    "features_en": [
+      "Great value",
+      "Good sound",
+      "5 hours",
+      "Charging case"
+    ],
+    "tags": [
+      "earbuds",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 4,
+    "added_at": "2026-03-13T12:16:56.857554",
+    "added_by": "pool_v1"
+  },
+  {
     "id": "NPH-069",
     "name_ar": "سماعات Beats Studio Buds+",
     "name_en": "Beats Studio Buds Plus",
@@ -2763,46 +2808,6 @@
       "Jabra AI"
     ],
     "description_en": "The Jabra Evolve2 Buds Pro is a premium earbuds designed to deliver immersive sound wherever you go. Featuring Professional, ANC AI, 6h+33h, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $249, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-070",
-    "name_ar": "سماعات Sennheiser MTW4",
-    "name_en": "Sennheiser Momentum True Wireless 4",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "price": 279,
-    "original_price": 329,
-    "discount": 15,
-    "rating": 4.7,
-    "reviews": 3456,
-    "stock": 89,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=80",
-    "description_ar": "سماعات Sennheiser MTW4 — من أفضل منتجات سماعات ذكية.",
-    "features_ar": [
-      "Hi-Fi",
-      "ANC Adaptive",
-      "7h+28h",
-      "aptX",
-      "IP54"
-    ],
-    "tags": [
-      "سماعات ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Earbuds",
-    "features_en": [
-      "Hi-Fi",
-      "ANC Adaptive",
-      "7h+28h",
-      "aptX",
-      "IP54"
-    ],
-    "description_en": "The Sennheiser Momentum True Wireless 4 is a premium earbuds designed to deliver immersive sound wherever you go. Featuring Hi-Fi, ANC Adaptive, 7h+28h, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $279, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
     "id": "NPH-078",
@@ -3326,251 +3331,6 @@
     "description_en": "The Twelve South HiRise 3 Deluxe is a premium productivity device designed to boost your workflow and creative output. Featuring MagSafe 15W, Laptop Mode, Ergo, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $99, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
-    "id": "NPH-088",
-    "name_ar": "شاشة LG UltraWide 34 بوصة",
-    "name_en": "LG UltraWide 34 5K2K Monitor",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 999,
-    "original_price": 1199,
-    "discount": 17,
-    "rating": 4.7,
-    "reviews": 4321,
-    "stock": 27,
-    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400&q=80",
-    "description_ar": "شاشة LG UltraWide 34 بوصة — من أفضل منتجات إنتاجية.",
-    "features_ar": [
-      "5K2K",
-      "IPS",
-      "Thunderbolt 4",
-      "KVM",
-      "Ergo Stand"
-    ],
-    "tags": [
-      "إنتاجية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Productivity",
-    "features_en": [
-      "5K2K",
-      "IPS",
-      "Thunderbolt 4",
-      "KVM",
-      "Ergo Stand"
-    ],
-    "description_en": "The LG UltraWide 34 5K2K Monitor is a premium productivity device designed to boost your workflow and creative output. Featuring 5K2K, IPS, Thunderbolt 4, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $999, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-P201",
-    "name_ar": "ساعة أوميغا الذكية X1",
-    "name_en": "Omega Smart X1",
-    "category": "smartwatch",
-    "category_ar": "ساعات ذكية",
-    "category_en": "Smart Watches",
-    "price": 299,
-    "original_price": 349,
-    "discount": 14,
-    "rating": 4.7,
-    "reviews": 3200,
-    "stock": 73,
-    "image": "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=600&q=80",
-    "badge": "جديد",
-    "badge_en": "New",
-    "active": true,
-    "featured": false,
-    "description_ar": "ساعة ذكية أنيقة بتقنيات متطورة",
-    "description_en": "Elegant smartwatch with advanced tech",
-    "features_ar": [
-      "شاشة AMOLED",
-      "مقاومة للماء 5ATM",
-      "GPS دقيق",
-      "بطارية 7 أيام"
-    ],
-    "features_en": [
-      "AMOLED display",
-      "5ATM water resistant",
-      "Precise GPS",
-      "7-day battery"
-    ],
-    "tags": [
-      "smartwatch",
-      "smart",
-      "tech"
-    ],
-    "shipping_days": 6,
-    "added_at": "2026-03-13T12:16:55.029960",
-    "added_by": "pool_v1"
-  },
-  {
-    "id": "NPH-P217",
-    "name_ar": "نظارة ليت فريم",
-    "name_en": "LiteFrame",
-    "category": "smart-glasses",
-    "category_ar": "نظارات ذكية",
-    "category_en": "Smart Glasses",
-    "price": 179,
-    "original_price": 209,
-    "discount": 14,
-    "rating": 4.3,
-    "reviews": 650,
-    "stock": 63,
-    "image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600&q=80",
-    "badge": "جديد",
-    "badge_en": "New",
-    "active": true,
-    "featured": false,
-    "description_ar": "أناقة تقنية بسيطة",
-    "description_en": "Simple tech elegance",
-    "features_ar": [
-      "تصميم كلاسيك",
-      "إشعارات هادئة",
-      "بطارية يوم",
-      "خفيفة جداً"
-    ],
-    "features_en": [
-      "Classic design",
-      "Quiet notifications",
-      "1-day battery",
-      "Very light"
-    ],
-    "tags": [
-      "smart-glasses",
-      "smart",
-      "tech"
-    ],
-    "shipping_days": 7,
-    "added_at": "2026-03-13T12:16:55.450584",
-    "added_by": "pool_v1"
-  },
-  {
-    "id": "NPH-P220",
-    "name_ar": "جهاز هيلث كور",
-    "name_en": "HealthCore Pro",
-    "category": "health",
-    "category_ar": "صحة ولياقة",
-    "category_en": "Health & Fitness",
-    "price": 199,
-    "original_price": 239,
-    "discount": 17,
-    "rating": 4.8,
-    "reviews": 5600,
-    "stock": 55,
-    "image": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=600&q=80",
-    "badge": "مميز",
-    "badge_en": "Featured",
-    "active": true,
-    "featured": false,
-    "description_ar": "رعاية صحية متكاملة",
-    "description_en": "Complete health care",
-    "features_ar": [
-      "ضغط الدم",
-      "سكر الدم",
-      "ECG",
-      "تقرير يومي"
-    ],
-    "features_en": [
-      "Blood pressure",
-      "Blood sugar",
-      "ECG",
-      "Daily report"
-    ],
-    "tags": [
-      "health",
-      "smart",
-      "tech"
-    ],
-    "shipping_days": 3,
-    "added_at": "2026-03-13T12:16:55.766900",
-    "added_by": "pool_v1"
-  },
-  {
-    "id": "NPH-P231",
-    "name_ar": "مقبس سمارت بلاق",
-    "name_en": "SmartPlug Pro",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "category_en": "Smart Home",
-    "price": 39,
-    "original_price": 49,
-    "discount": 20,
-    "rating": 4.6,
-    "reviews": 22000,
-    "stock": 65,
-    "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80",
-    "badge": "الأكثر مبيعاً",
-    "badge_en": "Best Seller",
-    "active": true,
-    "featured": false,
-    "description_ar": "تحكم في أجهزتك من أي مكان",
-    "description_en": "Control your devices from anywhere",
-    "features_ar": [
-      "تحكم عن بعد",
-      "قياس طاقة",
-      "جدولة ذكية",
-      "صوتي"
-    ],
-    "features_en": [
-      "Remote control",
-      "Energy monitor",
-      "Smart schedule",
-      "Voice control"
-    ],
-    "tags": [
-      "smart-home",
-      "smart",
-      "tech"
-    ],
-    "shipping_days": 7,
-    "added_at": "2026-03-13T12:16:56.300584",
-    "added_by": "pool_v1"
-  },
-  {
-    "id": "NPH-P245",
-    "name_ar": "سماعة ميني بودز",
-    "name_en": "Mini Pods",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "category_en": "Smart Earbuds",
-    "price": 79,
-    "original_price": 99,
-    "discount": 20,
-    "rating": 4.3,
-    "reviews": 7800,
-    "stock": 27,
-    "image": "https://images.unsplash.com/photo-1613040809024-b4ef7ba99bc3?w=600&q=80",
-    "badge": "اقتصادي",
-    "badge_en": "Value",
-    "active": true,
-    "featured": false,
-    "description_ar": "الأفضل لميزانيتك",
-    "description_en": "Best for your budget",
-    "features_ar": [
-      "سعر ممتاز",
-      "صوت جيد",
-      "5 ساعات",
-      "حالة شحن"
-    ],
-    "features_en": [
-      "Great value",
-      "Good sound",
-      "5 hours",
-      "Charging case"
-    ],
-    "tags": [
-      "earbuds",
-      "smart",
-      "tech"
-    ],
-    "shipping_days": 4,
-    "added_at": "2026-03-13T12:16:56.857554",
-    "added_by": "pool_v1"
-  },
-  {
     "id": "NPH-P249",
     "name_ar": "قلم سمارت بن X",
     "name_en": "SmartPen X",
@@ -3610,87 +3370,5 @@
     "shipping_days": 6,
     "added_at": "2026-03-13T12:16:57.396688",
     "added_by": "pool_v1"
-  },
-  {
-    "id": "NPH-091",
-    "name_ar": "المدار الفضي",
-    "name_en": "Aura Orbital",
-    "category": "smartwatch",
-    "category_ar": "ساعات ذكية",
-    "category_en": "Smart Watches",
-    "price": 379,
-    "original_price": 429,
-    "discount": 12,
-    "rating": 4.8,
-    "reviews": 2100,
-    "stock": 21,
-    "image": "https://images.unsplash.com/photo-1703793493856-027fd21e7d23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTQ1Njd8MHwxfHNlYXJjaHw0fHxBdXJhJTIwT3JiaXRhbHxlbnwxfDJ8fHwxNzczNDA0MjM4fDA&ixlib=rb-4.1.0&q=80&w=1080&w=600&q=80",
-    "badge": "حصري",
-    "badge_en": "Exclusive",
-    "active": true,
-    "featured": false,
-    "description_ar": "تجربة ذكية لا مثيل لها على معصمك، تجمع بين الأناقة الفائقة والابتكار التكنولوجي. ارتقِ بيومك مع المدة الطويلة للبطارية وتتبع الصحة الشامل.",
-    "description_en": "An unparalleled smart experience on your wrist, blending supreme elegance with technological innovation. Elevate your day with extended battery life and comprehensive health tracking.",
-    "features_ar": [
-      "شاشة AMOLED دائمة التشغيل",
-      "تتبع متقدم لمعدل ضربات القلب والأكسجين في الدم",
-      "مقاومة للماء حتى 50 مترًا",
-      "GPS مدمج ومكالمات بلوتوث"
-    ],
-    "features_en": [
-      "Always-On AMOLED Display",
-      "Advanced Heart Rate & Blood Oxygen Tracking",
-      "50-Meter Water Resistance",
-      "Built-in GPS & Bluetooth Calling"
-    ],
-    "tags": [
-      "smartwatch",
-      "smart",
-      "tech"
-    ],
-    "shipping_days": 3,
-    "added_at": "2026-03-13T12:17:18.687917",
-    "added_by": "auto_ai_v3"
-  },
-  {
-    "id": "NPH-092",
-    "name_ar": "سوارا لوكس",
-    "name_en": "Swara Luxe",
-    "category": "smartwatch",
-    "category_ar": "ساعات ذكية",
-    "category_en": "Smart Watches",
-    "price": 379,
-    "original_price": 429,
-    "discount": 11,
-    "rating": 4.8,
-    "reviews": 2100,
-    "stock": 28,
-    "image": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=600&q=80",
-    "badge": "حصري",
-    "badge_en": "Exclusive",
-    "active": true,
-    "featured": false,
-    "description_ar": "ساعة Swara Luxe الذكية، قمة الأناقة والابتكار. ارتقِ بأسلوب حياتك مع تقنيات متطورة وتصميم فاخر.",
-    "description_en": "The Swara Luxe smartwatch, a pinnacle of elegance and innovation. Elevate your lifestyle with advanced technology and luxurious design.",
-    "features_ar": [
-      "شاشة AMOLED كريستالية",
-      "مراقبة صحية متكاملة (ECG، SpO2)",
-      "بطارية تدوم لأيام",
-      "مقاومة للماء حتى 5ATM"
-    ],
-    "features_en": [
-      "Crystal-clear AMOLED Display",
-      "Comprehensive Health Monitoring (ECG, SpO2)",
-      "Multi-day Battery Life",
-      "5ATM Water Resistance"
-    ],
-    "tags": [
-      "smartwatch",
-      "smart",
-      "tech"
-    ],
-    "shipping_days": 4,
-    "added_at": "2026-03-13T17:38:16.862558",
-    "added_by": "auto_ai_v3"
   }
 ]
