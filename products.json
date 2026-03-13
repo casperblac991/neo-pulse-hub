@@ -3610,5 +3610,46 @@
     "shipping_days": 6,
     "added_at": "2026-03-13T12:16:57.396688",
     "added_by": "pool_v1"
+  },
+  {
+    "id": "NPH-091",
+    "name_ar": "المدار الفضي",
+    "name_en": "Aura Orbital",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "Smart Watches",
+    "price": 379,
+    "original_price": 429,
+    "discount": 12,
+    "rating": 4.8,
+    "reviews": 2100,
+    "stock": 21,
+    "image": "https://images.unsplash.com/photo-1703793493856-027fd21e7d23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTQ1Njd8MHwxfHNlYXJjaHw0fHxBdXJhJTIwT3JiaXRhbHxlbnwxfDJ8fHwxNzczNDA0MjM4fDA&ixlib=rb-4.1.0&q=80&w=1080&w=600&q=80",
+    "badge": "حصري",
+    "badge_en": "Exclusive",
+    "active": true,
+    "featured": false,
+    "description_ar": "تجربة ذكية لا مثيل لها على معصمك، تجمع بين الأناقة الفائقة والابتكار التكنولوجي. ارتقِ بيومك مع المدة الطويلة للبطارية وتتبع الصحة الشامل.",
+    "description_en": "An unparalleled smart experience on your wrist, blending supreme elegance with technological innovation. Elevate your day with extended battery life and comprehensive health tracking.",
+    "features_ar": [
+      "شاشة AMOLED دائمة التشغيل",
+      "تتبع متقدم لمعدل ضربات القلب والأكسجين في الدم",
+      "مقاومة للماء حتى 50 مترًا",
+      "GPS مدمج ومكالمات بلوتوث"
+    ],
+    "features_en": [
+      "Always-On AMOLED Display",
+      "Advanced Heart Rate & Blood Oxygen Tracking",
+      "50-Meter Water Resistance",
+      "Built-in GPS & Bluetooth Calling"
+    ],
+    "tags": [
+      "smartwatch",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 3,
+    "added_at": "2026-03-13T12:17:18.687917",
+    "added_by": "auto_ai_v3"
   }
 ]
