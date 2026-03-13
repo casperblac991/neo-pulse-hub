@@ -3370,5 +3370,251 @@
     "shipping_days": 6,
     "added_at": "2026-03-13T12:16:57.396688",
     "added_by": "pool_v1"
+  },
+  {
+    "id": "NPH-P207",
+    "name_ar": "ساعة إيكو ألفا 2",
+    "name_en": "Echo Alpha 2",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "Smart Watches",
+    "price": 289,
+    "original_price": 339,
+    "discount": 15,
+    "rating": 4.7,
+    "reviews": 4100,
+    "stock": 42,
+    "image": "https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?w=600&q=80",
+    "badge": "جديد",
+    "badge_en": "New",
+    "active": true,
+    "featured": false,
+    "description_ar": "الساعة الذكية من الجيل القادم",
+    "description_en": "Next generation smartwatch",
+    "features_ar": [
+      "مساعد ذكي",
+      "ترجمة فورية",
+      "قياس إجهاد",
+      "واي فاي"
+    ],
+    "features_en": [
+      "AI assistant",
+      "Instant translation",
+      "Stress tracking",
+      "Wi-Fi"
+    ],
+    "tags": [
+      "smartwatch",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 4,
+    "added_at": "2026-03-13T19:22:25.310049",
+    "added_by": "pool_v1"
+  },
+  {
+    "id": "NPH-P217",
+    "name_ar": "نظارة ليت فريم",
+    "name_en": "LiteFrame",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "category_en": "Smart Glasses",
+    "price": 179,
+    "original_price": 209,
+    "discount": 14,
+    "rating": 4.3,
+    "reviews": 650,
+    "stock": 63,
+    "image": "https://images.unsplash.com/photo-1577803645773-f96470509666?w=600&q=80",
+    "badge": "جديد",
+    "badge_en": "New",
+    "active": true,
+    "featured": false,
+    "description_ar": "أناقة تقنية بسيطة",
+    "description_en": "Simple tech elegance",
+    "features_ar": [
+      "تصميم كلاسيك",
+      "إشعارات هادئة",
+      "بطارية يوم",
+      "خفيفة جداً"
+    ],
+    "features_en": [
+      "Classic design",
+      "Quiet notifications",
+      "1-day battery",
+      "Very light"
+    ],
+    "tags": [
+      "smart-glasses",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 7,
+    "added_at": "2026-03-13T19:22:25.492674",
+    "added_by": "pool_v1"
+  },
+  {
+    "id": "NPH-P221",
+    "name_ar": "خاتم ويلنس Ring",
+    "name_en": "Wellness Ring",
+    "category": "health",
+    "category_ar": "صحة ولياقة",
+    "category_en": "Health & Fitness",
+    "price": 279,
+    "original_price": 329,
+    "discount": 15,
+    "rating": 4.9,
+    "reviews": 12000,
+    "stock": 30,
+    "image": "https://images.unsplash.com/photo-1635002964051-740c5f7f14ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTQ1Njd8MHwxfHNlYXJjaHwyfHxXZWxsbmVzcyUyMFJpbmd8ZW58MXwyfHx8MTc3MzQyOTc0Nnww&ixlib=rb-4.1.0&q=80&w=1080&w=600&q=80",
+    "badge": "الأفضل",
+    "badge_en": "Top Pick",
+    "active": true,
+    "featured": false,
+    "description_ar": "صغير لكن قوي جداً",
+    "description_en": "Small but incredibly powerful",
+    "features_ar": [
+      "خفيف 4 جرام",
+      "شحن 7 أيام",
+      "درجة حرارة",
+      "إجهاد"
+    ],
+    "features_en": [
+      "4g weight",
+      "7-day charge",
+      "Temperature",
+      "Stress"
+    ],
+    "tags": [
+      "health",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 4,
+    "added_at": "2026-03-13T19:22:26.114948",
+    "added_by": "pool_v1"
+  },
+  {
+    "id": "NPH-P238",
+    "name_ar": "مرآة فيت ميرور",
+    "name_en": "FitMirror",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "category_en": "Smart Home",
+    "price": 799,
+    "original_price": 999,
+    "discount": 20,
+    "rating": 4.9,
+    "reviews": 3400,
+    "stock": 69,
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80",
+    "badge": "فاخر",
+    "badge_en": "Luxury",
+    "active": true,
+    "featured": false,
+    "description_ar": "صالة رياضية في غرفتك",
+    "description_en": "A gym in your room",
+    "features_ar": [
+      "شاشة 43 إنش",
+      "تمارين تفاعلية",
+      "مدرب افتراضي",
+      "واجهة ذكية"
+    ],
+    "features_en": [
+      "43 inch display",
+      "Interactive workouts",
+      "Virtual trainer",
+      "Smart interface"
+    ],
+    "tags": [
+      "smart-home",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 7,
+    "added_at": "2026-03-13T19:22:26.591407",
+    "added_by": "pool_v1"
+  },
+  {
+    "id": "NPH-P240",
+    "name_ar": "سماعة بيس بومر",
+    "name_en": "BassBoomer Pro",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "category_en": "Smart Earbuds",
+    "price": 179,
+    "original_price": 219,
+    "discount": 18,
+    "rating": 4.7,
+    "reviews": 9800,
+    "stock": 68,
+    "image": "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=600&q=80",
+    "badge": "مميز",
+    "badge_en": "Featured",
+    "active": true,
+    "featured": false,
+    "description_ar": "اشعر بكل نغمة",
+    "description_en": "Feel every beat",
+    "features_ar": [
+      "باس قوي",
+      "ايجابية صوتية",
+      "8 ساعات",
+      "مقاوم للماء"
+    ],
+    "features_en": [
+      "Powerful bass",
+      "Spatial audio",
+      "8 hours",
+      "Waterproof"
+    ],
+    "tags": [
+      "earbuds",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 7,
+    "added_at": "2026-03-13T19:22:27.111410",
+    "added_by": "pool_v1"
+  },
+  {
+    "id": "NPH-P253",
+    "name_ar": "هاب سمارت هاب 12",
+    "name_en": "SmartHub 12",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "category_en": "Productivity Tech",
+    "price": 89,
+    "original_price": 109,
+    "discount": 18,
+    "rating": 4.6,
+    "reviews": 11000,
+    "stock": 71,
+    "image": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=600&q=80",
+    "badge": "ضروري",
+    "badge_en": "Essential",
+    "active": true,
+    "featured": false,
+    "description_ar": "وصّل كل شيء",
+    "description_en": "Connect everything",
+    "features_ar": [
+      "12 منفذ",
+      "شحن 100W",
+      "HDMI 4K",
+      "قارئ بطاقة"
+    ],
+    "features_en": [
+      "12 ports",
+      "100W charging",
+      "4K HDMI",
+      "Card reader"
+    ],
+    "tags": [
+      "productivity",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 5,
+    "added_at": "2026-03-13T19:22:27.675870",
+    "added_by": "pool_v1"
   }
 ]
