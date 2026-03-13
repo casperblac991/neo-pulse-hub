@@ -3653,85 +3653,44 @@
     "added_by": "auto_ai_v3"
   },
   {
-    "id": "NPH-092",
-    "name_ar": "أورا إكس برو",
-    "name_en": "Aura X Pro",
-    "category": "smartwatch",
-    "category_ar": "ساعات ذكية",
-    "category_en": "Smart Watches",
-    "price": 379,
-    "original_price": 429,
-    "discount": 11,
+    "id": "NPH-094",
+    "name_ar": "أورا هيلث: المحلل الذكي",
+    "name_en": "Aura Health: The Smart Analyzer",
+    "category": "health",
+    "category_ar": "صحة ولياقة",
+    "category_en": "Health & Fitness",
+    "price": 349,
+    "original_price": 399,
+    "discount": 12,
     "rating": 4.8,
     "reviews": 2100,
-    "stock": 60,
-    "image": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=600&q=80",
-    "badge": "حصري",
-    "badge_en": "Exclusive",
+    "stock": 34,
+    "image": "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=600&q=80",
+    "badge": "الأكثر مبيعاً",
+    "badge_en": "Best Seller",
     "active": true,
     "featured": false,
-    "description_ar": "اختبر مستقبل اللياقة والتواصل على معصمك. ساعة ذكية تجمع بين الأناقة الفائقة والأداء الذي لا مثيل له.",
-    "description_en": "Experience the future of fitness and connectivity on your wrist. A smartwatch blending unparalleled elegance with unmatched performance.",
+    "description_ar": "جهاز تحليل شامل للصحة واللياقة البدنية يوفر رؤى دقيقة ومخصصة. ارتقِ بمستوى صحتك مع بيانات فورية وتوصيات ذكية.",
+    "description_en": "A comprehensive health and fitness analyzer providing precise, personalized insights. Elevate your well-being with real-time data and intelligent recommendations.",
     "features_ar": [
-      "شاشة AMOLED كريستالية 1.5 بوصة",
-      "تتبع متقدم للصحة واللياقة البدنية على مدار 24 ساعة",
-      "عمر بطارية يصل إلى 7 أيام بشحنة واحدة",
-      "مقاومة للماء حتى 5ATM"
+      "تحليل تكوين الجسم (الدهون، العضلات، الماء)",
+      "تتبع معدل ضربات القلب وتقلباته (HRV)",
+      "تحليل جودة النوم ومراحلها",
+      "توصيات غذائية ومخططات تمرين مخصصة"
     ],
     "features_en": [
-      "1.5-inch Crystal AMOLED Display",
-      "Advanced 24/7 Health & Fitness Tracking",
-      "Up to 7 Days Battery Life on a Single Charge",
-      "5ATM Water Resistance"
+      "Body Composition Analysis (Fat, Muscle, Water)",
+      "Heart Rate and Heart Rate Variability (HRV) Tracking",
+      "Sleep Quality and Stage Analysis",
+      "Personalized Nutrition and Workout Plans"
     ],
     "tags": [
-      "smartwatch",
-      "smart",
-      "tech"
-    ],
-    "shipping_days": 3,
-    "added_at": "2026-03-13T13:28:33.634044",
-    "added_by": "auto_ai_v3"
-  },
-  {
-    "id": "NPH-093",
-    "name_ar": "نظارات الواقع المعزز فاليانت",
-    "name_en": "Valiant AR Glasses",
-    "category": "smart-glasses",
-    "category_ar": "نظارات ذكية",
-    "category_en": "Smart Glasses AR",
-    "price": 399,
-    "original_price": 449,
-    "discount": 11,
-    "rating": 4.6,
-    "reviews": 2300,
-    "stock": 40,
-    "image": "https://images.unsplash.com/photo-1629904853716-f0bc54eea481?w=600&q=80",
-    "badge": "حصري",
-    "badge_en": "Exclusive",
-    "active": true,
-    "featured": false,
-    "description_ar": "اكتشف عالمًا جديدًا من التفاعل مع نظارات فاليانت AR. تصميم أنيق وتقنيات متطورة تضع المستقبل بين يديك.",
-    "description_en": "Experience a new dimension of interaction with Valiant AR Glasses. Sleek design and advanced technology put the future at your fingertips.",
-    "features_ar": [
-      "شاشات OLED عالية الدقة",
-      "تتبع بصري متقدم",
-      "بطارية تدوم طويلاً",
-      "تصميم خفيف الوزن ومريح"
-    ],
-    "features_en": [
-      "High-resolution OLED displays",
-      "Advanced eye-tracking",
-      "Long-lasting battery life",
-      "Lightweight and comfortable design"
-    ],
-    "tags": [
-      "smart-glasses",
+      "health",
       "smart",
       "tech"
     ],
     "shipping_days": 7,
-    "added_at": "2026-03-13T13:30:16.752025",
+    "added_at": "2026-03-13T14:36:41.172506",
     "added_by": "auto_ai_v3"
   }
 ]
