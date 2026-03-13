@@ -3653,44 +3653,44 @@
     "added_by": "auto_ai_v3"
   },
   {
-    "id": "NPH-094",
-    "name_ar": "أورا هيلث: المحلل الذكي",
-    "name_en": "Aura Health: The Smart Analyzer",
-    "category": "health",
-    "category_ar": "صحة ولياقة",
-    "category_en": "Health & Fitness",
-    "price": 349,
-    "original_price": 399,
-    "discount": 12,
+    "id": "NPH-092",
+    "name_ar": "سوارا لوكس",
+    "name_en": "Swara Luxe",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "Smart Watches",
+    "price": 379,
+    "original_price": 429,
+    "discount": 11,
     "rating": 4.8,
     "reviews": 2100,
-    "stock": 34,
-    "image": "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=600&q=80",
-    "badge": "الأكثر مبيعاً",
-    "badge_en": "Best Seller",
+    "stock": 28,
+    "image": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=600&q=80",
+    "badge": "حصري",
+    "badge_en": "Exclusive",
     "active": true,
     "featured": false,
-    "description_ar": "جهاز تحليل شامل للصحة واللياقة البدنية يوفر رؤى دقيقة ومخصصة. ارتقِ بمستوى صحتك مع بيانات فورية وتوصيات ذكية.",
-    "description_en": "A comprehensive health and fitness analyzer providing precise, personalized insights. Elevate your well-being with real-time data and intelligent recommendations.",
+    "description_ar": "ساعة Swara Luxe الذكية، قمة الأناقة والابتكار. ارتقِ بأسلوب حياتك مع تقنيات متطورة وتصميم فاخر.",
+    "description_en": "The Swara Luxe smartwatch, a pinnacle of elegance and innovation. Elevate your lifestyle with advanced technology and luxurious design.",
     "features_ar": [
-      "تحليل تكوين الجسم (الدهون، العضلات، الماء)",
-      "تتبع معدل ضربات القلب وتقلباته (HRV)",
-      "تحليل جودة النوم ومراحلها",
-      "توصيات غذائية ومخططات تمرين مخصصة"
+      "شاشة AMOLED كريستالية",
+      "مراقبة صحية متكاملة (ECG، SpO2)",
+      "بطارية تدوم لأيام",
+      "مقاومة للماء حتى 5ATM"
     ],
     "features_en": [
-      "Body Composition Analysis (Fat, Muscle, Water)",
-      "Heart Rate and Heart Rate Variability (HRV) Tracking",
-      "Sleep Quality and Stage Analysis",
-      "Personalized Nutrition and Workout Plans"
+      "Crystal-clear AMOLED Display",
+      "Comprehensive Health Monitoring (ECG, SpO2)",
+      "Multi-day Battery Life",
+      "5ATM Water Resistance"
     ],
     "tags": [
-      "health",
+      "smartwatch",
       "smart",
       "tech"
     ],
-    "shipping_days": 7,
-    "added_at": "2026-03-13T14:36:41.172506",
+    "shipping_days": 4,
+    "added_at": "2026-03-13T17:38:16.862558",
     "added_by": "auto_ai_v3"
   }
 ]
