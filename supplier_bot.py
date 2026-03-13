@@ -49,6 +49,33 @@ def save_products(products):
     except Exception as e:
         log.error(f"save_products: {e}"); return False
 
+def push_to_github(products):
+    """يرفع products.json على GitHub"""
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        log.warning("GitHub credentials missing"); return False
+    import requests as _r, base64
+    try:
+        api = f"https://api.github.com/repos/{GITHUB_REPO}/contents/products.json"
+        headers = {"Authorization": f"token {GITHUB_TOKEN}",
+                   "Accept": "application/vnd.github.v3+json"}
+        r = _r.get(api, headers=headers, timeout=10)
+        sha = r.json().get("sha", "") if r.status_code == 200 else ""
+        content = json.dumps(products, ensure_ascii=False, indent=2)
+        encoded = base64.b64encode(content.encode("utf-8")).decode("utf-8")
+        payload = {
+            "message": f"🔄 Auto-refresh — {datetime.now().strftime('%Y-%m-%d %H:%M')}",
+            "content": encoded, "branch": "main"
+        }
+        if sha:
+            payload["sha"] = sha
+        r2 = _r.put(api, headers=headers, json=payload, timeout=20)
+        if r2.status_code in (200, 201):
+            log.info("✅ GitHub pushed OK"); return True
+        log.error(f"GitHub push {r2.status_code}: {r2.text[:100]}")
+        return False
+    except Exception as e:
+        log.error(f"push_to_github: {e}"); return False
+
 
 CATEGORIES = [
     {"id": "smartwatch",    "ar": "ساعات ذكية",  "en": "Smart Watches"},
@@ -241,7 +268,7 @@ def ask_gemini(prompt: str) -> str:
         try:
             resp = _r.post(url, json=body, timeout=30)
             if resp.status_code == 429:
-                wait = 20 * (attempt + 1)
+                wait = 30 * (attempt + 1)
                 log.warning(f"Rate limit, wait {wait}s")
                 time.sleep(wait); continue
             if resp.status_code != 200:
@@ -340,7 +367,7 @@ def auto_add_products(count: int = 5) -> list:
             products.append(product)
             added.append(product)
             log.info(f"✅ {product['name_ar']}")
-            time.sleep(3)
+            time.sleep(8)
         else:
             log.warning(f"Failed: {cat['ar']}")
     if added:
@@ -390,7 +417,7 @@ def refresh_store(keep_per_cat: int = 12, add_per_cat: int = 3) -> dict:
                 new_store.append(product)
                 added_products.append(product)
                 log.info(f"  ✅ {product['name_ar']}")
-            time.sleep(4)
+            time.sleep(8)
 
     save_products(new_store)
     push_to_github(new_store)
@@ -474,7 +501,7 @@ async def cmd_refresh(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
         "⏳ 3-5 دقائق...",
         parse_mode=ParseMode.MARKDOWN
     )
-    result = refresh_store(keep_per_cat=12, add_per_cat=3)
+    result = refresh_store(keep_per_cat=13, add_per_cat=2)
     new_names = "\n".join([
         f"• {p['name_ar']} — ${p['price']}"
         for p in result.get("new_products", [])[:8]
