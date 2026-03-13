@@ -349,7 +349,7 @@ def create_product(data: dict, category: dict, new_id: str) -> dict:
         "added_by": "auto_ai_v3"
     }
 
-def auto_add_products(count: int = 5) -> list:
+def auto_add_products(count: int = 3) -> list:
     products = load_products()
     import re
     existing_ids = {p.get("id", "") for p in products}
@@ -367,7 +367,7 @@ def auto_add_products(count: int = 5) -> list:
             products.append(product)
             added.append(product)
             log.info(f"✅ {product['name_ar']}")
-            time.sleep(8)
+            time.sleep(10)
         else:
             log.warning(f"Failed: {cat['ar']}")
     if added:
@@ -417,7 +417,7 @@ def refresh_store(keep_per_cat: int = 12, add_per_cat: int = 3) -> dict:
                 new_store.append(product)
                 added_products.append(product)
                 log.info(f"  ✅ {product['name_ar']}")
-            time.sleep(8)
+            time.sleep(10)
 
     save_products(new_store)
     push_to_github(new_store)
@@ -475,7 +475,7 @@ async def cmd_start(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
 async def cmd_add(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     if not is_admin(update.effective_user.id): return
     args = ctx.args
-    count = min(int(args[0]) if args and args[0].isdigit() else 3, 6)
+    count = min(int(args[0]) if args and args[0].isdigit() else 3, 3)
     msg = await update.message.reply_text(
         f"🤖 جاري توليد {count} منتجات... (دقيقة تقريباً)"
     )
@@ -501,7 +501,7 @@ async def cmd_refresh(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
         "⏳ 3-5 دقائق...",
         parse_mode=ParseMode.MARKDOWN
     )
-    result = refresh_store(keep_per_cat=13, add_per_cat=2)
+    result = refresh_store(keep_per_cat=14, add_per_cat=1)
     new_names = "\n".join([
         f"• {p['name_ar']} — ${p['price']}"
         for p in result.get("new_products", [])[:8]
