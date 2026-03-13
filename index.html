@@ -245,7 +245,7 @@
       <a href="#features" class="btn btn-outline"><span data-i18n="discover">⚡ اكتشف المميزات</span></a>
     </div>
     <div class="hero-stats">
-      <div><div class="hero-stat-num" id="stat0" data-target="15">0</div><div class="hero-stat-label" data-i18n="stat_products">منتج ذكي</div></div>
+      <div><div class="hero-stat-num" id="stat0" data-target="90">0</div><div class="hero-stat-label" data-i18n="stat_products">منتج ذكي</div></div>
       <div><div class="hero-stat-num" id="stat1" data-target="500">0</div><div class="hero-stat-label" data-i18n="stat_customers">عميل سعيد</div></div>
       <div><div class="hero-stat-num" id="stat2" data-target="98">0</div><div class="hero-stat-label" data-i18n="stat_satisfaction">% رضا العملاء</div></div>
       <div><div class="hero-stat-num" id="stat3" data-target="24">0</div><div class="hero-stat-label" data-i18n="stat_support">دعم / 7</div></div>
@@ -491,6 +491,16 @@ async function loadProducts() {
     updateCategoryCounts();
     renderFeatured();
     updateProductSchema();
+    countersRan = false;
+    // حدّث العداد بالأرقام الحقيقية
+    const stat0el = document.getElementById('stat0');
+    if (stat0el) stat0el.dataset.target = PRODUCTS.length;
+    const stat1el = document.getElementById('stat1');
+    if (stat1el) {
+      const totalReviews = PRODUCTS.reduce((s,p)=>s+(p.reviews||0),0);
+      stat1el.dataset.target = Math.max(500, Math.round(totalReviews/100)*100);
+    }
+    animateCounters();
   } catch(e) {
     console.error('Products load error:', e);
     PRODUCTS = FALLBACK_PRODUCTS;
@@ -716,7 +726,7 @@ function goCheckout() {
 function animateCounters() {
   if (countersRan) return;
   countersRan = true;
-  [['stat0',15,'+'],[' stat1',500,'+'],[' stat2',98,'%'],[' stat3',24,'+']].forEach(([id,target,sfx]) => {
+  [['stat0', PRODUCTS.length, '+'],['stat1', Math.max(500, PRODUCTS.reduce((s,p)=>s+p.reviews,0)/1000|0), '+'],['stat2', 98, '%'],['stat3', 24, '+']].forEach(([id,target,sfx]) => {
     const el = document.getElementById(id.trim());
     if (!el) return;
     let cur = 0; const step = target/60;
