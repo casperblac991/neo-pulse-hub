@@ -32,6 +32,24 @@ PRODUCTS_FILE       = os.path.join(BASE_DIR, "products.json")
 
 log = logging.getLogger("supplier_bot")
 
+# ── Data ────────────────────────────────────────────────────────
+def load_products():
+    try:
+        p = Path(PRODUCTS_FILE)
+        return json.loads(p.read_text(encoding="utf-8")) if p.exists() else []
+    except Exception as e:
+        log.error(f"load_products: {e}"); return []
+
+def save_products(products):
+    try:
+        Path(PRODUCTS_FILE).write_text(
+            json.dumps(products, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+        return True
+    except Exception as e:
+        log.error(f"save_products: {e}"); return False
+
+
 CATEGORIES = [
     {"id": "smartwatch",    "ar": "ساعات ذكية",  "en": "Smart Watches"},
     {"id": "smart-glasses", "ar": "نظارات ذكية", "en": "Smart Glasses AR"},
