@@ -40,6 +40,46 @@
     "description_en": "The Apple Watch Series 9 45mm is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Retina Display, GPS+Cellular, Water Resistant 50m, it delivers exceptional performance for everyday use. With a 4.9★ rating and competitive pricing at $399, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
+    "id": "NPH-009",
+    "name_ar": "ساعة فيتبيت Versa 4",
+    "name_en": "Fitbit Versa 4",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "price": 149,
+    "original_price": 199,
+    "discount": 25,
+    "rating": 4.5,
+    "reviews": 9876,
+    "stock": 34,
+    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd6b0?w=400&q=80",
+    "description_ar": "ساعة فيتبيت Versa 4 — من أفضل منتجات ساعات ذكية.",
+    "features_ar": [
+      "Alexa",
+      "GPS",
+      "6 أيام",
+      "نوم",
+      "40 تمرين"
+    ],
+    "tags": [
+      "ساعات ذكية"
+    ],
+    "badge": "خصم خاص",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Smartwatch",
+    "features_en": [
+      "Alexa",
+      "GPS",
+      "6 Days",
+      "Sleep",
+      "40 Workouts"
+    ],
+    "description_en": "The Fitbit Versa 4 is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Alexa, GPS, 6 Days, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $149, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
     "id": "NPH-002",
     "name_ar": "ساعة سامسونج Galaxy Watch 7",
     "name_en": "Samsung Galaxy Watch 7 44mm",
@@ -78,126 +118,6 @@
       "Fitness"
     ],
     "description_en": "The Samsung Galaxy Watch 7 44mm is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Exynos W1000, AI Sleep, 40 Hours, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $299, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-003",
-    "name_ar": "ساعة غارمن Fenix 7X Solar",
-    "name_en": "Garmin Fenix 7X Solar",
-    "category": "smartwatch",
-    "category_ar": "ساعات ذكية",
-    "price": 699,
-    "original_price": 799,
-    "discount": 13,
-    "rating": 4.8,
-    "reviews": 5432,
-    "stock": 48,
-    "image": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80",
-    "description_ar": "ساعة غارمن Fenix 7X Solar — من أفضل منتجات ساعات ذكية.",
-    "features_ar": [
-      "شحن شمسي",
-      "GPS متعدد",
-      "37 يوم",
-      "خرائط توبو",
-      "مغامرات"
-    ],
-    "tags": [
-      "ساعات ذكية"
-    ],
-    "badge": "الأكثر مبيعاً",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smartwatch",
-    "features_en": [
-      "Solar Charging",
-      "Multi-Band GPS",
-      "37 Days",
-      "Topo Maps",
-      "Outdoor"
-    ],
-    "description_en": "The Garmin Fenix 7X Solar is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Solar Charging, GPS متعدد, 37 Days, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $699, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-004",
-    "name_ar": "ساعة أبل Watch Ultra 2",
-    "name_en": "Apple Watch Ultra 2",
-    "category": "smartwatch",
-    "category_ar": "ساعات ذكية",
-    "price": 799,
-    "original_price": 899,
-    "discount": 11,
-    "rating": 4.9,
-    "reviews": 4321,
-    "stock": 44,
-    "image": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=400&q=80",
-    "description_ar": "ساعة أبل Watch Ultra 2 — من أفضل منتجات ساعات ذكية.",
-    "features_ar": [
-      "تيتانيوم",
-      "60 ساعة",
-      "86dB",
-      "100م",
-      "GPS دقيق"
-    ],
-    "tags": [
-      "ساعات ذكية"
-    ],
-    "badge": "حصري",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": true,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smartwatch",
-    "features_en": [
-      "Titanium",
-      "60 Hours",
-      "86dB",
-      "100m Rating",
-      "Precision GPS"
-    ],
-    "description_en": "The Apple Watch Ultra 2 is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Titanium, 60 Hours, 86dB, it delivers exceptional performance for everyday use. With a 4.9★ rating and competitive pricing at $799, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-005",
-    "name_ar": "ساعة غوغل Pixel Watch 3",
-    "name_en": "Google Pixel Watch 3 45mm",
-    "category": "smartwatch",
-    "category_ar": "ساعات ذكية",
-    "price": 349,
-    "original_price": 399,
-    "discount": 13,
-    "rating": 4.7,
-    "reviews": 3210,
-    "stock": 47,
-    "image": "https://images.unsplash.com/photo-1617625802912-cde586faf331?w=400&q=80",
-    "description_ar": "ساعة غوغل Pixel Watch 3 — من أفضل منتجات ساعات ذكية.",
-    "features_ar": [
-      "Wear OS 4",
-      "AMOLED",
-      "Google Wallet",
-      "24 ساعة",
-      "ECG"
-    ],
-    "tags": [
-      "ساعات ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smartwatch",
-    "features_en": [
-      "Wear OS 4",
-      "AMOLED",
-      "Google Wallet",
-      "24 Hours",
-      "ECG"
-    ],
-    "description_en": "The Google Pixel Watch 3 45mm is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Wear OS 4, AMOLED, Google Wallet, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $349, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
     "id": "NPH-006",
@@ -240,70 +160,30 @@
     "description_en": "The Xiaomi Watch S3 is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring AMOLED 1.43, 12 Days, GPS, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $139, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
-    "id": "NPH-007",
-    "name_ar": "ساعة أمازفيت Balance",
-    "name_en": "Amazfit Balance",
+    "id": "NPH-003",
+    "name_ar": "ساعة غارمن Fenix 7X Solar",
+    "name_en": "Garmin Fenix 7X Solar",
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
-    "price": 229,
-    "original_price": 269,
-    "discount": 15,
-    "rating": 4.6,
-    "reviews": 2876,
-    "stock": 100,
-    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=80",
-    "description_ar": "ساعة أمازفيت Balance — من أفضل منتجات ساعات ذكية.",
-    "features_ar": [
-      "Zepp OS 3",
-      "14 أيام",
-      "AI صحي",
-      "AMOLED",
-      "GPS L1+L5"
-    ],
-    "tags": [
-      "ساعات ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smartwatch",
-    "features_en": [
-      "Zepp OS 3",
-      "14 Days",
-      "AI Health",
-      "AMOLED",
-      "GPS L1+L5"
-    ],
-    "description_en": "The Amazfit Balance is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Zepp OS 3, 14 Days, AI Health, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $229, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-008",
-    "name_ar": "ساعة سامسونج Galaxy Watch Ultra",
-    "name_en": "Samsung Galaxy Watch Ultra",
-    "category": "smartwatch",
-    "category_ar": "ساعات ذكية",
-    "price": 649,
-    "original_price": 749,
+    "price": 699,
+    "original_price": 799,
     "discount": 13,
     "rating": 4.8,
-    "reviews": 1987,
-    "stock": 70,
-    "image": "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=400&q=80",
-    "description_ar": "ساعة سامسونج Galaxy Watch Ultra — من أفضل منتجات ساعات ذكية.",
+    "reviews": 5432,
+    "stock": 48,
+    "image": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80",
+    "description_ar": "ساعة غارمن Fenix 7X Solar — من أفضل منتجات ساعات ذكية.",
     "features_ar": [
-      "تيتانيوم",
-      "60 ساعة",
-      "MIL-STD",
-      "10ATM",
-      "GPS مزدوج"
+      "شحن شمسي",
+      "GPS متعدد",
+      "37 يوم",
+      "خرائط توبو",
+      "مغامرات"
     ],
     "tags": [
       "ساعات ذكية"
     ],
-    "badge": "جديد",
+    "badge": "الأكثر مبيعاً",
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
@@ -311,133 +191,13 @@
     "added_at": "2026-03-10",
     "category_en": "Smartwatch",
     "features_en": [
-      "Titanium",
-      "60 Hours",
-      "MIL-STD",
-      "10ATM",
-      "Dual-Band GPS"
+      "Solar Charging",
+      "Multi-Band GPS",
+      "37 Days",
+      "Topo Maps",
+      "Outdoor"
     ],
-    "description_en": "The Samsung Galaxy Watch Ultra is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Titanium, 60 Hours, MIL-STD, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $649, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-009",
-    "name_ar": "ساعة فيتبيت Versa 4",
-    "name_en": "Fitbit Versa 4",
-    "category": "smartwatch",
-    "category_ar": "ساعات ذكية",
-    "price": 149,
-    "original_price": 199,
-    "discount": 25,
-    "rating": 4.5,
-    "reviews": 9876,
-    "stock": 34,
-    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd6b0?w=400&q=80",
-    "description_ar": "ساعة فيتبيت Versa 4 — من أفضل منتجات ساعات ذكية.",
-    "features_ar": [
-      "Alexa",
-      "GPS",
-      "6 أيام",
-      "نوم",
-      "40 تمرين"
-    ],
-    "tags": [
-      "ساعات ذكية"
-    ],
-    "badge": "خصم خاص",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smartwatch",
-    "features_en": [
-      "Alexa",
-      "GPS",
-      "6 Days",
-      "Sleep",
-      "40 Workouts"
-    ],
-    "description_en": "The Fitbit Versa 4 is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Alexa, GPS, 6 Days, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $149, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-010",
-    "name_ar": "ساعة غارمن Venu 3S",
-    "name_en": "Garmin Venu 3S",
-    "category": "smartwatch",
-    "category_ar": "ساعات ذكية",
-    "price": 449,
-    "original_price": 499,
-    "discount": 10,
-    "rating": 4.7,
-    "reviews": 3456,
-    "stock": 47,
-    "image": "https://images.unsplash.com/photo-1533139143976-30918502365b?w=400&q=80",
-    "description_ar": "ساعة غارمن Venu 3S — من أفضل منتجات ساعات ذكية.",
-    "features_ar": [
-      "AMOLED",
-      "AI جسم",
-      "Body Battery",
-      "سكر دم",
-      "GPS"
-    ],
-    "tags": [
-      "ساعات ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smartwatch",
-    "features_en": [
-      "AMOLED",
-      "AI Body",
-      "Body Battery",
-      "Blood Sugar",
-      "GPS"
-    ],
-    "description_en": "The Garmin Venu 3S is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring AMOLED, AI Body, Body Battery, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $449, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-011",
-    "name_ar": "ساعة ون بلس Watch 3",
-    "name_en": "OnePlus Watch 3",
-    "category": "smartwatch",
-    "category_ar": "ساعات ذكية",
-    "price": 329,
-    "original_price": 379,
-    "discount": 13,
-    "rating": 4.6,
-    "reviews": 2134,
-    "stock": 96,
-    "image": "https://images.unsplash.com/photo-1604671801908-6f0c6a092c05?w=400&q=80",
-    "description_ar": "ساعة ون بلس Watch 3 — من أفضل منتجات ساعات ذكية.",
-    "features_ar": [
-      "Wear OS 4",
-      "100 ساعة",
-      "شحن سريع",
-      "GPS مزدوج",
-      "5ATM"
-    ],
-    "tags": [
-      "ساعات ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smartwatch",
-    "features_en": [
-      "Wear OS 4",
-      "100 Hours",
-      "Fast Charging",
-      "Dual-Band GPS",
-      "5ATM"
-    ],
-    "description_en": "The OnePlus Watch 3 is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Wear OS 4, 100 Hours, Fast Charging, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $329, it's one of the top choices in its category at NEO PULSE HUB."
+    "description_en": "The Garmin Fenix 7X Solar is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Solar Charging, GPS متعدد, 37 Days, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $699, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
     "id": "NPH-012",
@@ -480,65 +240,65 @@
     "description_en": "The Huawei Watch GT 5 Pro is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Titanium, 14 Days, Full Health, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $349, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
-    "id": "NPH-013",
-    "name_ar": "ساعة ويذينغز ScanWatch 2",
-    "name_en": "Withings ScanWatch 2",
+    "id": "NPH-004",
+    "name_ar": "ساعة أبل Watch Ultra 2",
+    "name_en": "Apple Watch Ultra 2",
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
-    "price": 299,
-    "original_price": 349,
-    "discount": 14,
-    "rating": 4.6,
-    "reviews": 1876,
-    "stock": 37,
-    "image": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80",
-    "description_ar": "ساعة ويذينغز ScanWatch 2 — من أفضل منتجات ساعات ذكية.",
+    "price": 799,
+    "original_price": 899,
+    "discount": 11,
+    "rating": 4.9,
+    "reviews": 4321,
+    "stock": 44,
+    "image": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=400&q=80",
+    "description_ar": "ساعة أبل Watch Ultra 2 — من أفضل منتجات ساعات ذكية.",
     "features_ar": [
-      "ECG",
-      "SpO2",
-      "30 يوم",
-      "كلاسيكي",
-      "FDA"
+      "تيتانيوم",
+      "60 ساعة",
+      "86dB",
+      "100م",
+      "GPS دقيق"
     ],
     "tags": [
       "ساعات ذكية"
     ],
-    "badge": "جديد",
+    "badge": "حصري",
     "active": true,
     "shipping_days": "7-14",
-    "featured": false,
+    "featured": true,
     "added_by": "smart_bot_v5",
     "added_at": "2026-03-10",
     "category_en": "Smartwatch",
     "features_en": [
-      "ECG",
-      "SpO2",
-      "30 Days",
-      "Classic",
-      "FDA"
+      "Titanium",
+      "60 Hours",
+      "86dB",
+      "100m Rating",
+      "Precision GPS"
     ],
-    "description_en": "The Withings ScanWatch 2 is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring ECG, SpO2, 30 Days, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $299, it's one of the top choices in its category at NEO PULSE HUB."
+    "description_en": "The Apple Watch Ultra 2 is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Titanium, 60 Hours, 86dB, it delivers exceptional performance for everyday use. With a 4.9★ rating and competitive pricing at $799, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
-    "id": "NPH-014",
-    "name_ar": "ساعة تيكووتش Pro 5 Enduro",
-    "name_en": "TicWatch Pro 5 Enduro",
+    "id": "NPH-010",
+    "name_ar": "ساعة غارمن Venu 3S",
+    "name_en": "Garmin Venu 3S",
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
-    "price": 399,
-    "original_price": 449,
-    "discount": 11,
-    "rating": 4.6,
-    "reviews": 1234,
-    "stock": 49,
-    "image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=400&q=80",
-    "description_ar": "ساعة تيكووتش Pro 5 Enduro — من أفضل منتجات ساعات ذكية.",
+    "price": 449,
+    "original_price": 499,
+    "discount": 10,
+    "rating": 4.7,
+    "reviews": 3456,
+    "stock": 47,
+    "image": "https://images.unsplash.com/photo-1533139143976-30918502365b?w=400&q=80",
+    "description_ar": "ساعة غارمن Venu 3S — من أفضل منتجات ساعات ذكية.",
     "features_ar": [
-      "Snapdragon W5+",
-      "مزدوج",
-      "80 ساعة",
-      "Wear OS",
-      "MIL-STD"
+      "AMOLED",
+      "AI جسم",
+      "Body Battery",
+      "سكر دم",
+      "GPS"
     ],
     "tags": [
       "ساعات ذكية"
@@ -551,13 +311,93 @@
     "added_at": "2026-03-10",
     "category_en": "Smartwatch",
     "features_en": [
-      "Snapdragon W5+",
-      "Dual",
-      "80 Hours",
-      "Wear OS",
-      "MIL-STD"
+      "AMOLED",
+      "AI Body",
+      "Body Battery",
+      "Blood Sugar",
+      "GPS"
     ],
-    "description_en": "The TicWatch Pro 5 Enduro is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Snapdragon W5+, Dual, 80 Hours, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $399, it's one of the top choices in its category at NEO PULSE HUB."
+    "description_en": "The Garmin Venu 3S is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring AMOLED, AI Body, Body Battery, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $449, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-005",
+    "name_ar": "ساعة غوغل Pixel Watch 3",
+    "name_en": "Google Pixel Watch 3 45mm",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "price": 349,
+    "original_price": 399,
+    "discount": 13,
+    "rating": 4.7,
+    "reviews": 3210,
+    "stock": 47,
+    "image": "https://images.unsplash.com/photo-1617625802912-cde586faf331?w=400&q=80",
+    "description_ar": "ساعة غوغل Pixel Watch 3 — من أفضل منتجات ساعات ذكية.",
+    "features_ar": [
+      "Wear OS 4",
+      "AMOLED",
+      "Google Wallet",
+      "24 ساعة",
+      "ECG"
+    ],
+    "tags": [
+      "ساعات ذكية"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Smartwatch",
+    "features_en": [
+      "Wear OS 4",
+      "AMOLED",
+      "Google Wallet",
+      "24 Hours",
+      "ECG"
+    ],
+    "description_en": "The Google Pixel Watch 3 45mm is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Wear OS 4, AMOLED, Google Wallet, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $349, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-007",
+    "name_ar": "ساعة أمازفيت Balance",
+    "name_en": "Amazfit Balance",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "price": 229,
+    "original_price": 269,
+    "discount": 15,
+    "rating": 4.6,
+    "reviews": 2876,
+    "stock": 100,
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=80",
+    "description_ar": "ساعة أمازفيت Balance — من أفضل منتجات ساعات ذكية.",
+    "features_ar": [
+      "Zepp OS 3",
+      "14 أيام",
+      "AI صحي",
+      "AMOLED",
+      "GPS L1+L5"
+    ],
+    "tags": [
+      "ساعات ذكية"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Smartwatch",
+    "features_en": [
+      "Zepp OS 3",
+      "14 Days",
+      "AI Health",
+      "AMOLED",
+      "GPS L1+L5"
+    ],
+    "description_en": "The Amazfit Balance is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Zepp OS 3, 14 Days, AI Health, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $229, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
     "id": "NPH-015",
@@ -600,44 +440,124 @@
     "description_en": "The Coros Apex 2 Pro is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring GPS متعدد, 75 Hours, Topo, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $499, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
-    "id": "NPH-016",
-    "name_ar": "نظارة Apple Vision Pro",
-    "name_en": "Apple Vision Pro",
-    "category": "smart-glasses",
-    "category_ar": "نظارات ذكية",
-    "price": 3499,
-    "original_price": 3999,
+    "id": "NPH-008",
+    "name_ar": "ساعة سامسونج Galaxy Watch Ultra",
+    "name_en": "Samsung Galaxy Watch Ultra",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "price": 649,
+    "original_price": 749,
     "discount": 13,
     "rating": 4.8,
-    "reviews": 4532,
-    "stock": 42,
-    "image": "https://images.unsplash.com/photo-1678574691375-c3f76bcaa668?w=400&q=80",
-    "description_ar": "نظارة Apple Vision Pro — من أفضل منتجات نظارات ذكية.",
+    "reviews": 1987,
+    "stock": 70,
+    "image": "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=400&q=80",
+    "description_ar": "ساعة سامسونج Galaxy Watch Ultra — من أفضل منتجات ساعات ذكية.",
     "features_ar": [
-      "micro-OLED 4K",
-      "visionOS",
-      "R1 Chip",
-      "3D كاميرا",
-      "انغماس كامل"
+      "تيتانيوم",
+      "60 ساعة",
+      "MIL-STD",
+      "10ATM",
+      "GPS مزدوج"
     ],
     "tags": [
-      "نظارات ذكية"
+      "ساعات ذكية"
     ],
-    "badge": "حصري",
+    "badge": "جديد",
     "active": true,
     "shipping_days": "7-14",
-    "featured": true,
+    "featured": false,
     "added_by": "smart_bot_v5",
     "added_at": "2026-03-10",
-    "category_en": "Smart Glasses",
+    "category_en": "Smartwatch",
     "features_en": [
-      "micro-OLED 4K",
-      "visionOS",
-      "R1 Chip",
-      "3D Camera",
-      "Full Immersion"
+      "Titanium",
+      "60 Hours",
+      "MIL-STD",
+      "10ATM",
+      "Dual-Band GPS"
     ],
-    "description_en": "The Apple Vision Pro is a premium smart glasses designed to see the world enhanced with AR technology. Featuring micro-OLED 4K, visionOS, R1 Chip, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $3499, it's one of the top choices in its category at NEO PULSE HUB."
+    "description_en": "The Samsung Galaxy Watch Ultra is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Titanium, 60 Hours, MIL-STD, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $649, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-011",
+    "name_ar": "ساعة ون بلس Watch 3",
+    "name_en": "OnePlus Watch 3",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "price": 329,
+    "original_price": 379,
+    "discount": 13,
+    "rating": 4.6,
+    "reviews": 2134,
+    "stock": 96,
+    "image": "https://images.unsplash.com/photo-1604671801908-6f0c6a092c05?w=400&q=80",
+    "description_ar": "ساعة ون بلس Watch 3 — من أفضل منتجات ساعات ذكية.",
+    "features_ar": [
+      "Wear OS 4",
+      "100 ساعة",
+      "شحن سريع",
+      "GPS مزدوج",
+      "5ATM"
+    ],
+    "tags": [
+      "ساعات ذكية"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Smartwatch",
+    "features_en": [
+      "Wear OS 4",
+      "100 Hours",
+      "Fast Charging",
+      "Dual-Band GPS",
+      "5ATM"
+    ],
+    "description_en": "The OnePlus Watch 3 is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Wear OS 4, 100 Hours, Fast Charging, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $329, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-013",
+    "name_ar": "ساعة ويذينغز ScanWatch 2",
+    "name_en": "Withings ScanWatch 2",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.6,
+    "reviews": 1876,
+    "stock": 37,
+    "image": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80",
+    "description_ar": "ساعة ويذينغز ScanWatch 2 — من أفضل منتجات ساعات ذكية.",
+    "features_ar": [
+      "ECG",
+      "SpO2",
+      "30 يوم",
+      "كلاسيكي",
+      "FDA"
+    ],
+    "tags": [
+      "ساعات ذكية"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Smartwatch",
+    "features_en": [
+      "ECG",
+      "SpO2",
+      "30 Days",
+      "Classic",
+      "FDA"
+    ],
+    "description_en": "The Withings ScanWatch 2 is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring ECG, SpO2, 30 Days, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $299, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
     "id": "NPH-017",
@@ -760,6 +680,46 @@
     "description_en": "The Meta Quest 3S 128GB is a premium smart glasses designed to see the world enhanced with AR technology. Featuring XR2 Gen 2, Mixed Reality, 128GB, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $299, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
+    "id": "NPH-016",
+    "name_ar": "نظارة Apple Vision Pro",
+    "name_en": "Apple Vision Pro",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "price": 3499,
+    "original_price": 3999,
+    "discount": 13,
+    "rating": 4.8,
+    "reviews": 4532,
+    "stock": 42,
+    "image": "https://images.unsplash.com/photo-1678574691375-c3f76bcaa668?w=400&q=80",
+    "description_ar": "نظارة Apple Vision Pro — من أفضل منتجات نظارات ذكية.",
+    "features_ar": [
+      "micro-OLED 4K",
+      "visionOS",
+      "R1 Chip",
+      "3D كاميرا",
+      "انغماس كامل"
+    ],
+    "tags": [
+      "نظارات ذكية"
+    ],
+    "badge": "حصري",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": true,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Smart Glasses",
+    "features_en": [
+      "micro-OLED 4K",
+      "visionOS",
+      "R1 Chip",
+      "3D Camera",
+      "Full Immersion"
+    ],
+    "description_en": "The Apple Vision Pro is a premium smart glasses designed to see the world enhanced with AR technology. Featuring micro-OLED 4K, visionOS, R1 Chip, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $3499, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
     "id": "NPH-020",
     "name_ar": "نظارة XREAL Air 2 Pro",
     "name_en": "XREAL Air 2 Pro",
@@ -798,366 +758,6 @@
       "72g"
     ],
     "description_en": "The XREAL Air 2 Pro is a premium smart glasses designed to see the world enhanced with AR technology. Featuring 330-inch, 120Hz, Electrochromic, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $449, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-021",
-    "name_ar": "نظارة HTC Vive XR Elite",
-    "name_en": "HTC Vive XR Elite",
-    "category": "smart-glasses",
-    "category_ar": "نظارات ذكية",
-    "price": 999,
-    "original_price": 1199,
-    "discount": 17,
-    "rating": 4.6,
-    "reviews": 1876,
-    "stock": 73,
-    "image": "https://images.unsplash.com/photo-1635372722656-389f87a9416b?w=400&q=80",
-    "description_ar": "نظارة HTC Vive XR Elite — من أفضل منتجات نظارات ذكية.",
-    "features_ar": [
-      "XR2 Gen 1",
-      "4K+",
-      "Viveport",
-      "قابل للخلع",
-      "2h"
-    ],
-    "tags": [
-      "نظارات ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smart Glasses",
-    "features_en": [
-      "XR2 Gen 1",
-      "4K+",
-      "Viveport",
-      "Detachable",
-      "2h"
-    ],
-    "description_en": "The HTC Vive XR Elite is a premium smart glasses designed to see the world enhanced with AR technology. Featuring XR2 Gen 1, 4K+, Viveport, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $999, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-022",
-    "name_ar": "نظارة Pico 4 Ultra",
-    "name_en": "Pico 4 Ultra VR",
-    "category": "smart-glasses",
-    "category_ar": "نظارات ذكية",
-    "price": 599,
-    "original_price": 699,
-    "discount": 14,
-    "rating": 4.5,
-    "reviews": 2345,
-    "stock": 30,
-    "image": "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=400&q=80",
-    "description_ar": "نظارة Pico 4 Ultra — من أفضل منتجات نظارات ذكية.",
-    "features_ar": [
-      "XR2 Gen 2",
-      "Spatial Video",
-      "Hand Tracking",
-      "3GB",
-      "3h"
-    ],
-    "tags": [
-      "نظارات ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smart Glasses",
-    "features_en": [
-      "XR2 Gen 2",
-      "Spatial Video",
-      "Hand Tracking",
-      "3GB",
-      "3h"
-    ],
-    "description_en": "The Pico 4 Ultra VR is a premium smart glasses designed to see the world enhanced with AR technology. Featuring XR2 Gen 2, Spatial Video, Hand Tracking, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $599, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-023",
-    "name_ar": "نظارة Snap Spectacles الجيل 5",
-    "name_en": "Snap Spectacles 5th Gen",
-    "category": "smart-glasses",
-    "category_ar": "نظارات ذكية",
-    "price": 399,
-    "original_price": 449,
-    "discount": 11,
-    "rating": 4.3,
-    "reviews": 1234,
-    "stock": 39,
-    "image": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=400&q=80",
-    "description_ar": "نظارة Snap Spectacles الجيل 5 — من أفضل منتجات نظارات ذكية.",
-    "features_ar": [
-      "AR",
-      "كاميرا ثنائية",
-      "Snapchat",
-      "Lens Studio",
-      "30 دقيقة"
-    ],
-    "tags": [
-      "نظارات ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smart Glasses",
-    "features_en": [
-      "AR",
-      "Dual Camera",
-      "Snapchat",
-      "Lens Studio",
-      "30 Min"
-    ],
-    "description_en": "The Snap Spectacles 5th Gen is a premium smart glasses designed to see the world enhanced with AR technology. Featuring AR, Dual Camera, Snapchat, it delivers exceptional performance for everyday use. With a 4.3★ rating and competitive pricing at $399, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-024",
-    "name_ar": "نظارة XREAL Beam Pro",
-    "name_en": "XREAL Beam Pro",
-    "category": "smart-glasses",
-    "category_ar": "نظارات ذكية",
-    "price": 599,
-    "original_price": 699,
-    "discount": 14,
-    "rating": 4.5,
-    "reviews": 1543,
-    "stock": 66,
-    "image": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=400&q=80",
-    "description_ar": "نظارة XREAL Beam Pro — من أفضل منتجات نظارات ذكية.",
-    "features_ar": [
-      "Spatial Computing",
-      "كاميرتان",
-      "Android 13",
-      "3D",
-      "5000mAh"
-    ],
-    "tags": [
-      "نظارات ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smart Glasses",
-    "features_en": [
-      "Spatial Computing",
-      "Dual Cameras",
-      "Android 13",
-      "3D",
-      "5000mAh"
-    ],
-    "description_en": "The XREAL Beam Pro is a premium smart glasses designed to see the world enhanced with AR technology. Featuring Spatial Computing, Dual Cameras, Android 13, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $599, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-025",
-    "name_ar": "نظارة Vuzix Z100 الذكية",
-    "name_en": "Vuzix Z100 AR Glasses",
-    "category": "smart-glasses",
-    "category_ar": "نظارات ذكية",
-    "price": 699,
-    "original_price": 799,
-    "discount": 13,
-    "rating": 4.3,
-    "reviews": 543,
-    "stock": 44,
-    "image": "https://images.unsplash.com/photo-1635372722656-389f87a9416b?w=400&q=80",
-    "description_ar": "نظارة Vuzix Z100 الذكية — من أفضل منتجات نظارات ذكية.",
-    "features_ar": [
-      "Waveguide AR",
-      "AR1",
-      "8h",
-      "Android 11",
-      "Hands-free"
-    ],
-    "tags": [
-      "نظارات ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smart Glasses",
-    "features_en": [
-      "Waveguide AR",
-      "AR1",
-      "8h",
-      "Android 11",
-      "Hands-free"
-    ],
-    "description_en": "The Vuzix Z100 AR Glasses is a premium smart glasses designed to see the world enhanced with AR technology. Featuring Waveguide AR, AR1, 8h, it delivers exceptional performance for everyday use. With a 4.3★ rating and competitive pricing at $699, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-026",
-    "name_ar": "نظارة TCL NXTWEAR S2 Plus",
-    "name_en": "TCL NXTWEAR S2 Plus",
-    "category": "smart-glasses",
-    "category_ar": "نظارات ذكية",
-    "price": 379,
-    "original_price": 429,
-    "discount": 12,
-    "rating": 4.4,
-    "reviews": 876,
-    "stock": 53,
-    "image": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=400&q=80",
-    "description_ar": "نظارة TCL NXTWEAR S2 Plus — من أفضل منتجات نظارات ذكية.",
-    "features_ar": [
-      "105 بوصة",
-      "1080p",
-      "USB-C",
-      "72g",
-      "120Hz"
-    ],
-    "tags": [
-      "نظارات ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smart Glasses",
-    "features_en": [
-      "105-inch",
-      "1080p",
-      "USB-C",
-      "72g",
-      "120Hz"
-    ],
-    "description_en": "The TCL NXTWEAR S2 Plus is a premium smart glasses designed to see the world enhanced with AR technology. Featuring 105-inch, 1080p, USB-C, it delivers exceptional performance for everyday use. With a 4.4★ rating and competitive pricing at $379, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-027",
-    "name_ar": "نظارة Inmo Air 2 الذكية",
-    "name_en": "Inmo Air 2 Smart Glasses",
-    "category": "smart-glasses",
-    "category_ar": "نظارات ذكية",
-    "price": 399,
-    "original_price": 449,
-    "discount": 11,
-    "rating": 4.2,
-    "reviews": 654,
-    "stock": 78,
-    "image": "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=400&q=80",
-    "description_ar": "نظارة Inmo Air 2 الذكية — من أفضل منتجات نظارات ذكية.",
-    "features_ar": [
-      "ChatGPT",
-      "ترجمة",
-      "27g",
-      "9h",
-      "Waveguide"
-    ],
-    "tags": [
-      "نظارات ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smart Glasses",
-    "features_en": [
-      "ChatGPT",
-      "Translation",
-      "27g",
-      "9h",
-      "Waveguide"
-    ],
-    "description_en": "The Inmo Air 2 Smart Glasses is a premium smart glasses designed to see the world enhanced with AR technology. Featuring ChatGPT, Translation, 27g, it delivers exceptional performance for everyday use. With a 4.2★ rating and competitive pricing at $399, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-028",
-    "name_ar": "نظارة Rokid Max 2",
-    "name_en": "Rokid Max 2 AR",
-    "category": "smart-glasses",
-    "category_ar": "نظارات ذكية",
-    "price": 549,
-    "original_price": 629,
-    "discount": 13,
-    "rating": 4.5,
-    "reviews": 987,
-    "stock": 49,
-    "image": "https://images.unsplash.com/photo-1635372722656-389f87a9416b?w=400&q=80",
-    "description_ar": "نظارة Rokid Max 2 — من أفضل منتجات نظارات ذكية.",
-    "features_ar": [
-      "Micro-OLED 1080p",
-      "120Hz",
-      "4700nit",
-      "Spatial Audio",
-      "USB-C"
-    ],
-    "tags": [
-      "نظارات ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smart Glasses",
-    "features_en": [
-      "Micro-OLED 1080p",
-      "120Hz",
-      "4700nit",
-      "Spatial Audio",
-      "USB-C"
-    ],
-    "description_en": "The Rokid Max 2 AR is a premium smart glasses designed to see the world enhanced with AR technology. Featuring Micro-OLED 1080p, 120Hz, 4700nit, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $549, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-029",
-    "name_ar": "نظارة Viture One XR",
-    "name_en": "Viture One XR Glasses",
-    "category": "smart-glasses",
-    "category_ar": "نظارات ذكية",
-    "price": 439,
-    "original_price": 499,
-    "discount": 12,
-    "rating": 4.4,
-    "reviews": 765,
-    "stock": 85,
-    "image": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=400&q=80",
-    "description_ar": "نظارة Viture One XR — من أفضل منتجات نظارات ذكية.",
-    "features_ar": [
-      "135 بوصة",
-      "Electrochromic",
-      "Cinema",
-      "2K",
-      "77g"
-    ],
-    "tags": [
-      "نظارات ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smart Glasses",
-    "features_en": [
-      "135-inch",
-      "Electrochromic",
-      "Cinema",
-      "2K",
-      "77g"
-    ],
-    "description_en": "The Viture One XR Glasses is a premium smart glasses designed to see the world enhanced with AR technology. Featuring 135-inch, Electrochromic, Cinema, it delivers exceptional performance for everyday use. With a 4.4★ rating and competitive pricing at $439, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
     "id": "NPH-030",
@@ -1200,6 +800,326 @@
     "description_en": "The Meta Ray-Ban Skyler Glasses is a premium smart glasses designed to see the world enhanced with AR technology. Featuring 12MP Ultra Wide, AI, BT 5.3, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $349, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
+    "id": "NPH-022",
+    "name_ar": "نظارة Pico 4 Ultra",
+    "name_en": "Pico 4 Ultra VR",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "price": 599,
+    "original_price": 699,
+    "discount": 14,
+    "rating": 4.5,
+    "reviews": 2345,
+    "stock": 30,
+    "image": "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=400&q=80",
+    "description_ar": "نظارة Pico 4 Ultra — من أفضل منتجات نظارات ذكية.",
+    "features_ar": [
+      "XR2 Gen 2",
+      "Spatial Video",
+      "Hand Tracking",
+      "3GB",
+      "3h"
+    ],
+    "tags": [
+      "نظارات ذكية"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Smart Glasses",
+    "features_en": [
+      "XR2 Gen 2",
+      "Spatial Video",
+      "Hand Tracking",
+      "3GB",
+      "3h"
+    ],
+    "description_en": "The Pico 4 Ultra VR is a premium smart glasses designed to see the world enhanced with AR technology. Featuring XR2 Gen 2, Spatial Video, Hand Tracking, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $599, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-021",
+    "name_ar": "نظارة HTC Vive XR Elite",
+    "name_en": "HTC Vive XR Elite",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "price": 999,
+    "original_price": 1199,
+    "discount": 17,
+    "rating": 4.6,
+    "reviews": 1876,
+    "stock": 73,
+    "image": "https://images.unsplash.com/photo-1635372722656-389f87a9416b?w=400&q=80",
+    "description_ar": "نظارة HTC Vive XR Elite — من أفضل منتجات نظارات ذكية.",
+    "features_ar": [
+      "XR2 Gen 1",
+      "4K+",
+      "Viveport",
+      "قابل للخلع",
+      "2h"
+    ],
+    "tags": [
+      "نظارات ذكية"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Smart Glasses",
+    "features_en": [
+      "XR2 Gen 1",
+      "4K+",
+      "Viveport",
+      "Detachable",
+      "2h"
+    ],
+    "description_en": "The HTC Vive XR Elite is a premium smart glasses designed to see the world enhanced with AR technology. Featuring XR2 Gen 1, 4K+, Viveport, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $999, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-024",
+    "name_ar": "نظارة XREAL Beam Pro",
+    "name_en": "XREAL Beam Pro",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "price": 599,
+    "original_price": 699,
+    "discount": 14,
+    "rating": 4.5,
+    "reviews": 1543,
+    "stock": 66,
+    "image": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=400&q=80",
+    "description_ar": "نظارة XREAL Beam Pro — من أفضل منتجات نظارات ذكية.",
+    "features_ar": [
+      "Spatial Computing",
+      "كاميرتان",
+      "Android 13",
+      "3D",
+      "5000mAh"
+    ],
+    "tags": [
+      "نظارات ذكية"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Smart Glasses",
+    "features_en": [
+      "Spatial Computing",
+      "Dual Cameras",
+      "Android 13",
+      "3D",
+      "5000mAh"
+    ],
+    "description_en": "The XREAL Beam Pro is a premium smart glasses designed to see the world enhanced with AR technology. Featuring Spatial Computing, Dual Cameras, Android 13, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $599, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-023",
+    "name_ar": "نظارة Snap Spectacles الجيل 5",
+    "name_en": "Snap Spectacles 5th Gen",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "price": 399,
+    "original_price": 449,
+    "discount": 11,
+    "rating": 4.3,
+    "reviews": 1234,
+    "stock": 39,
+    "image": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=400&q=80",
+    "description_ar": "نظارة Snap Spectacles الجيل 5 — من أفضل منتجات نظارات ذكية.",
+    "features_ar": [
+      "AR",
+      "كاميرا ثنائية",
+      "Snapchat",
+      "Lens Studio",
+      "30 دقيقة"
+    ],
+    "tags": [
+      "نظارات ذكية"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Smart Glasses",
+    "features_en": [
+      "AR",
+      "Dual Camera",
+      "Snapchat",
+      "Lens Studio",
+      "30 Min"
+    ],
+    "description_en": "The Snap Spectacles 5th Gen is a premium smart glasses designed to see the world enhanced with AR technology. Featuring AR, Dual Camera, Snapchat, it delivers exceptional performance for everyday use. With a 4.3★ rating and competitive pricing at $399, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-028",
+    "name_ar": "نظارة Rokid Max 2",
+    "name_en": "Rokid Max 2 AR",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "price": 549,
+    "original_price": 629,
+    "discount": 13,
+    "rating": 4.5,
+    "reviews": 987,
+    "stock": 49,
+    "image": "https://images.unsplash.com/photo-1635372722656-389f87a9416b?w=400&q=80",
+    "description_ar": "نظارة Rokid Max 2 — من أفضل منتجات نظارات ذكية.",
+    "features_ar": [
+      "Micro-OLED 1080p",
+      "120Hz",
+      "4700nit",
+      "Spatial Audio",
+      "USB-C"
+    ],
+    "tags": [
+      "نظارات ذكية"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Smart Glasses",
+    "features_en": [
+      "Micro-OLED 1080p",
+      "120Hz",
+      "4700nit",
+      "Spatial Audio",
+      "USB-C"
+    ],
+    "description_en": "The Rokid Max 2 AR is a premium smart glasses designed to see the world enhanced with AR technology. Featuring Micro-OLED 1080p, 120Hz, 4700nit, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $549, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-026",
+    "name_ar": "نظارة TCL NXTWEAR S2 Plus",
+    "name_en": "TCL NXTWEAR S2 Plus",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "price": 379,
+    "original_price": 429,
+    "discount": 12,
+    "rating": 4.4,
+    "reviews": 876,
+    "stock": 53,
+    "image": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=400&q=80",
+    "description_ar": "نظارة TCL NXTWEAR S2 Plus — من أفضل منتجات نظارات ذكية.",
+    "features_ar": [
+      "105 بوصة",
+      "1080p",
+      "USB-C",
+      "72g",
+      "120Hz"
+    ],
+    "tags": [
+      "نظارات ذكية"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Smart Glasses",
+    "features_en": [
+      "105-inch",
+      "1080p",
+      "USB-C",
+      "72g",
+      "120Hz"
+    ],
+    "description_en": "The TCL NXTWEAR S2 Plus is a premium smart glasses designed to see the world enhanced with AR technology. Featuring 105-inch, 1080p, USB-C, it delivers exceptional performance for everyday use. With a 4.4★ rating and competitive pricing at $379, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-029",
+    "name_ar": "نظارة Viture One XR",
+    "name_en": "Viture One XR Glasses",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "price": 439,
+    "original_price": 499,
+    "discount": 12,
+    "rating": 4.4,
+    "reviews": 765,
+    "stock": 85,
+    "image": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=400&q=80",
+    "description_ar": "نظارة Viture One XR — من أفضل منتجات نظارات ذكية.",
+    "features_ar": [
+      "135 بوصة",
+      "Electrochromic",
+      "Cinema",
+      "2K",
+      "77g"
+    ],
+    "tags": [
+      "نظارات ذكية"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Smart Glasses",
+    "features_en": [
+      "135-inch",
+      "Electrochromic",
+      "Cinema",
+      "2K",
+      "77g"
+    ],
+    "description_en": "The Viture One XR Glasses is a premium smart glasses designed to see the world enhanced with AR technology. Featuring 135-inch, Electrochromic, Cinema, it delivers exceptional performance for everyday use. With a 4.4★ rating and competitive pricing at $439, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-027",
+    "name_ar": "نظارة Inmo Air 2 الذكية",
+    "name_en": "Inmo Air 2 Smart Glasses",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "price": 399,
+    "original_price": 449,
+    "discount": 11,
+    "rating": 4.2,
+    "reviews": 654,
+    "stock": 78,
+    "image": "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=400&q=80",
+    "description_ar": "نظارة Inmo Air 2 الذكية — من أفضل منتجات نظارات ذكية.",
+    "features_ar": [
+      "ChatGPT",
+      "ترجمة",
+      "27g",
+      "9h",
+      "Waveguide"
+    ],
+    "tags": [
+      "نظارات ذكية"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Smart Glasses",
+    "features_en": [
+      "ChatGPT",
+      "Translation",
+      "27g",
+      "9h",
+      "Waveguide"
+    ],
+    "description_en": "The Inmo Air 2 Smart Glasses is a premium smart glasses designed to see the world enhanced with AR technology. Featuring ChatGPT, Translation, 27g, it delivers exceptional performance for everyday use. With a 4.2★ rating and competitive pricing at $399, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
     "id": "NPH-031",
     "name_ar": "خاتم Oura Ring الجيل 4",
     "name_en": "Oura Ring Gen 4",
@@ -1240,30 +1160,30 @@
     "description_en": "The Oura Ring Gen 4 is a premium health device designed to track and monitor your wellness in real time. Featuring Advanced Sleep, Readiness, 8 Days, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $349, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
-    "id": "NPH-032",
-    "name_ar": "حزام WHOOP 4.0",
-    "name_en": "WHOOP 4.0 Fitness Band",
+    "id": "NPH-039",
+    "name_ar": "سوار شاومي Smart Band 9 Pro",
+    "name_en": "Xiaomi Smart Band 9 Pro",
     "category": "health",
     "category_ar": "صحة ذكية",
-    "price": 239,
-    "original_price": 279,
-    "discount": 14,
+    "price": 79,
+    "original_price": 99,
+    "discount": 20,
     "rating": 4.6,
-    "reviews": 8765,
-    "stock": 44,
+    "reviews": 15432,
+    "stock": 55,
     "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd6b0?w=400&q=80",
-    "description_ar": "حزام WHOOP 4.0 — من أفضل منتجات صحة ذكية.",
+    "description_ar": "سوار شاومي Smart Band 9 Pro — من أفضل منتجات صحة ذكية.",
     "features_ar": [
-      "Strain",
-      "Recovery",
-      "HRV",
-      "5 أيام",
-      "دقيق"
+      "AMOLED",
+      "GPS",
+      "21 يوم",
+      "150 رياضة",
+      "SpO2"
     ],
     "tags": [
       "صحة ذكية"
     ],
-    "badge": "جديد",
+    "badge": "اقتصادي",
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
@@ -1271,53 +1191,13 @@
     "added_at": "2026-03-10",
     "category_en": "Health",
     "features_en": [
-      "Strain",
-      "Recovery",
-      "HRV",
-      "5 Days",
-      "Precise"
+      "AMOLED",
+      "GPS",
+      "21 Days",
+      "150 Sports",
+      "SpO2"
     ],
-    "description_en": "The WHOOP 4.0 Fitness Band is a premium health device designed to track and monitor your wellness in real time. Featuring Strain, Recovery, HRV, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $239, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-033",
-    "name_ar": "خاتم Ultrahuman Ring AIR",
-    "name_en": "Ultrahuman Ring AIR",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 349,
-    "original_price": 399,
-    "discount": 13,
-    "rating": 4.7,
-    "reviews": 5432,
-    "stock": 30,
-    "image": "https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?w=400&q=80",
-    "description_ar": "خاتم Ultrahuman Ring AIR — من أفضل منتجات صحة ذكية.",
-    "features_ar": [
-      "بدون اشتراك",
-      "AI نوم",
-      "Metabolic",
-      "7 أيام",
-      "IP68"
-    ],
-    "tags": [
-      "صحة ذكية"
-    ],
-    "badge": "مميز",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": true,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Health",
-    "features_en": [
-      "No Subscription",
-      "AI Sleep",
-      "Metabolic",
-      "7 Days",
-      "IP68"
-    ],
-    "description_en": "The Ultrahuman Ring AIR is a premium health device designed to track and monitor your wellness in real time. Featuring No Subscription, AI Sleep, Metabolic, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $349, it's one of the top choices in its category at NEO PULSE HUB."
+    "description_en": "The Xiaomi Smart Band 9 Pro is a premium health device designed to track and monitor your wellness in real time. Featuring AMOLED, GPS, 21 Days, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $79, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
     "id": "NPH-034",
@@ -1360,6 +1240,46 @@
     "description_en": "The Fitbit Charge 6 Tracker is a premium health device designed to track and monitor your wellness in real time. Featuring ECG, Google Maps, YouTube, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $159, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
+    "id": "NPH-032",
+    "name_ar": "حزام WHOOP 4.0",
+    "name_en": "WHOOP 4.0 Fitness Band",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 239,
+    "original_price": 279,
+    "discount": 14,
+    "rating": 4.6,
+    "reviews": 8765,
+    "stock": 44,
+    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd6b0?w=400&q=80",
+    "description_ar": "حزام WHOOP 4.0 — من أفضل منتجات صحة ذكية.",
+    "features_ar": [
+      "Strain",
+      "Recovery",
+      "HRV",
+      "5 أيام",
+      "دقيق"
+    ],
+    "tags": [
+      "صحة ذكية"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Health",
+    "features_en": [
+      "Strain",
+      "Recovery",
+      "HRV",
+      "5 Days",
+      "Precise"
+    ],
+    "description_en": "The WHOOP 4.0 Fitness Band is a premium health device designed to track and monitor your wellness in real time. Featuring Strain, Recovery, HRV, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $239, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
     "id": "NPH-035",
     "name_ar": "سوار Garmin Vivosmart 5",
     "name_en": "Garmin Vivosmart 5",
@@ -1398,6 +1318,246 @@
       "5ATM"
     ],
     "description_en": "The Garmin Vivosmart 5 is a premium health device designed to track and monitor your wellness in real time. Featuring OLED, 7 Days, Body Battery, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $149, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-042",
+    "name_ar": "جهاز Polar Verity Sense",
+    "name_en": "Polar Verity Sense Monitor",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 89,
+    "original_price": 109,
+    "discount": 18,
+    "rating": 4.7,
+    "reviews": 5678,
+    "stock": 85,
+    "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&q=80",
+    "description_ar": "جهاز Polar Verity Sense — من أفضل منتجات صحة ذكية.",
+    "features_ar": [
+      "HR دقيق",
+      "ذراع",
+      "30h",
+      "BT+ANT+",
+      "IP67"
+    ],
+    "tags": [
+      "صحة ذكية"
+    ],
+    "badge": "خصم خاص",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Health",
+    "features_en": [
+      "Precision HR",
+      "Arm",
+      "30h",
+      "BT+ANT+",
+      "IP67"
+    ],
+    "description_en": "The Polar Verity Sense Monitor is a premium health device designed to track and monitor your wellness in real time. Featuring HR دقيق, Arm, 30h, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $89, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-033",
+    "name_ar": "خاتم Ultrahuman Ring AIR",
+    "name_en": "Ultrahuman Ring AIR",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 349,
+    "original_price": 399,
+    "discount": 13,
+    "rating": 4.7,
+    "reviews": 5432,
+    "stock": 30,
+    "image": "https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?w=400&q=80",
+    "description_ar": "خاتم Ultrahuman Ring AIR — من أفضل منتجات صحة ذكية.",
+    "features_ar": [
+      "بدون اشتراك",
+      "AI نوم",
+      "Metabolic",
+      "7 أيام",
+      "IP68"
+    ],
+    "tags": [
+      "صحة ذكية"
+    ],
+    "badge": "مميز",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": true,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Health",
+    "features_en": [
+      "No Subscription",
+      "AI Sleep",
+      "Metabolic",
+      "7 Days",
+      "IP68"
+    ],
+    "description_en": "The Ultrahuman Ring AIR is a premium health device designed to track and monitor your wellness in real time. Featuring No Subscription, AI Sleep, Metabolic, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $349, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-041",
+    "name_ar": "خاتم سامسونج Galaxy Ring",
+    "name_en": "Samsung Galaxy Ring",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 399,
+    "original_price": 449,
+    "discount": 11,
+    "rating": 4.6,
+    "reviews": 4321,
+    "stock": 33,
+    "image": "https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?w=400&q=80",
+    "description_ar": "خاتم سامسونج Galaxy Ring — من أفضل منتجات صحة ذكية.",
+    "features_ar": [
+      "تيتانيوم",
+      "7 أيام",
+      "Samsung Health",
+      "AI",
+      "IP68"
+    ],
+    "tags": [
+      "صحة ذكية"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Health",
+    "features_en": [
+      "Titanium",
+      "7 Days",
+      "Samsung Health",
+      "AI",
+      "IP68"
+    ],
+    "description_en": "The Samsung Galaxy Ring is a premium health device designed to track and monitor your wellness in real time. Featuring Titanium, 7 Days, Samsung Health, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $399, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-044",
+    "name_ar": "جهاز Garmin Index لضغط الدم",
+    "name_en": "Garmin Index BPM Monitor",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 149,
+    "original_price": 179,
+    "discount": 17,
+    "rating": 4.5,
+    "reviews": 3456,
+    "stock": 48,
+    "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&q=80",
+    "description_ar": "جهاز Garmin Index لضغط الدم — من أفضل منتجات صحة ذكية.",
+    "features_ar": [
+      "ضغط دم",
+      "BT 5.0",
+      "Garmin Connect",
+      "دقيق",
+      "40 قياس"
+    ],
+    "tags": [
+      "صحة ذكية"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Health",
+    "features_en": [
+      "Blood Pressure",
+      "BT 5.0",
+      "Garmin Connect",
+      "Precise",
+      "40 Metrics"
+    ],
+    "description_en": "The Garmin Index BPM Monitor is a premium health device designed to track and monitor your wellness in real time. Featuring Blood Pressure, BT 5.0, Garmin Connect, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $149, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-038",
+    "name_ar": "خاتم RingConn Gen 2 Air",
+    "name_en": "RingConn Gen 2 Air Ring",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 199,
+    "original_price": 249,
+    "discount": 20,
+    "rating": 4.5,
+    "reviews": 3210,
+    "stock": 44,
+    "image": "https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?w=400&q=80",
+    "description_ar": "خاتم RingConn Gen 2 Air — من أفضل منتجات صحة ذكية.",
+    "features_ar": [
+      "10 أيام",
+      "بدون اشتراك",
+      "نوم",
+      "SpO2",
+      "متعدد"
+    ],
+    "tags": [
+      "صحة ذكية"
+    ],
+    "badge": "قيمة مثالية",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Health",
+    "features_en": [
+      "10 Days",
+      "No Subscription",
+      "Sleep",
+      "SpO2",
+      "Multi"
+    ],
+    "description_en": "The RingConn Gen 2 Air Ring is a premium health device designed to track and monitor your wellness in real time. Featuring 10 Days, No Subscription, Sleep, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $199, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-040",
+    "name_ar": "عصابة Muse 2 للتأمل",
+    "name_en": "Muse 2 Brain Sensing Headband",
+    "category": "health",
+    "category_ar": "صحة ذكية",
+    "price": 249,
+    "original_price": 299,
+    "discount": 17,
+    "rating": 4.5,
+    "reviews": 2876,
+    "stock": 75,
+    "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&q=80",
+    "description_ar": "عصابة Muse 2 للتأمل — من أفضل منتجات صحة ذكية.",
+    "features_ar": [
+      "EEG 7",
+      "تأمل",
+      "تنفس",
+      "قلب",
+      "تطبيق"
+    ],
+    "tags": [
+      "صحة ذكية"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Health",
+    "features_en": [
+      "EEG 7",
+      "Meditation",
+      "Breathing",
+      "Heart Rate",
+      "App"
+    ],
+    "description_en": "The Muse 2 Brain Sensing Headband is a premium health device designed to track and monitor your wellness in real time. Featuring EEG 7, Meditation, Breathing, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $249, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
     "id": "NPH-036",
@@ -1480,206 +1640,6 @@
     "description_en": "The Amazfit Helio Ring is a premium health device designed to track and monitor your wellness in real time. Featuring Titanium, Health, 4 Days, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $299, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
-    "id": "NPH-038",
-    "name_ar": "خاتم RingConn Gen 2 Air",
-    "name_en": "RingConn Gen 2 Air Ring",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 199,
-    "original_price": 249,
-    "discount": 20,
-    "rating": 4.5,
-    "reviews": 3210,
-    "stock": 44,
-    "image": "https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?w=400&q=80",
-    "description_ar": "خاتم RingConn Gen 2 Air — من أفضل منتجات صحة ذكية.",
-    "features_ar": [
-      "10 أيام",
-      "بدون اشتراك",
-      "نوم",
-      "SpO2",
-      "متعدد"
-    ],
-    "tags": [
-      "صحة ذكية"
-    ],
-    "badge": "قيمة مثالية",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Health",
-    "features_en": [
-      "10 Days",
-      "No Subscription",
-      "Sleep",
-      "SpO2",
-      "Multi"
-    ],
-    "description_en": "The RingConn Gen 2 Air Ring is a premium health device designed to track and monitor your wellness in real time. Featuring 10 Days, No Subscription, Sleep, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $199, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-039",
-    "name_ar": "سوار شاومي Smart Band 9 Pro",
-    "name_en": "Xiaomi Smart Band 9 Pro",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 79,
-    "original_price": 99,
-    "discount": 20,
-    "rating": 4.6,
-    "reviews": 15432,
-    "stock": 55,
-    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd6b0?w=400&q=80",
-    "description_ar": "سوار شاومي Smart Band 9 Pro — من أفضل منتجات صحة ذكية.",
-    "features_ar": [
-      "AMOLED",
-      "GPS",
-      "21 يوم",
-      "150 رياضة",
-      "SpO2"
-    ],
-    "tags": [
-      "صحة ذكية"
-    ],
-    "badge": "اقتصادي",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Health",
-    "features_en": [
-      "AMOLED",
-      "GPS",
-      "21 Days",
-      "150 Sports",
-      "SpO2"
-    ],
-    "description_en": "The Xiaomi Smart Band 9 Pro is a premium health device designed to track and monitor your wellness in real time. Featuring AMOLED, GPS, 21 Days, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $79, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-040",
-    "name_ar": "عصابة Muse 2 للتأمل",
-    "name_en": "Muse 2 Brain Sensing Headband",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 249,
-    "original_price": 299,
-    "discount": 17,
-    "rating": 4.5,
-    "reviews": 2876,
-    "stock": 75,
-    "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&q=80",
-    "description_ar": "عصابة Muse 2 للتأمل — من أفضل منتجات صحة ذكية.",
-    "features_ar": [
-      "EEG 7",
-      "تأمل",
-      "تنفس",
-      "قلب",
-      "تطبيق"
-    ],
-    "tags": [
-      "صحة ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Health",
-    "features_en": [
-      "EEG 7",
-      "Meditation",
-      "Breathing",
-      "Heart Rate",
-      "App"
-    ],
-    "description_en": "The Muse 2 Brain Sensing Headband is a premium health device designed to track and monitor your wellness in real time. Featuring EEG 7, Meditation, Breathing, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $249, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-041",
-    "name_ar": "خاتم سامسونج Galaxy Ring",
-    "name_en": "Samsung Galaxy Ring",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 399,
-    "original_price": 449,
-    "discount": 11,
-    "rating": 4.6,
-    "reviews": 4321,
-    "stock": 33,
-    "image": "https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?w=400&q=80",
-    "description_ar": "خاتم سامسونج Galaxy Ring — من أفضل منتجات صحة ذكية.",
-    "features_ar": [
-      "تيتانيوم",
-      "7 أيام",
-      "Samsung Health",
-      "AI",
-      "IP68"
-    ],
-    "tags": [
-      "صحة ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Health",
-    "features_en": [
-      "Titanium",
-      "7 Days",
-      "Samsung Health",
-      "AI",
-      "IP68"
-    ],
-    "description_en": "The Samsung Galaxy Ring is a premium health device designed to track and monitor your wellness in real time. Featuring Titanium, 7 Days, Samsung Health, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $399, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-042",
-    "name_ar": "جهاز Polar Verity Sense",
-    "name_en": "Polar Verity Sense Monitor",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 89,
-    "original_price": 109,
-    "discount": 18,
-    "rating": 4.7,
-    "reviews": 5678,
-    "stock": 85,
-    "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&q=80",
-    "description_ar": "جهاز Polar Verity Sense — من أفضل منتجات صحة ذكية.",
-    "features_ar": [
-      "HR دقيق",
-      "ذراع",
-      "30h",
-      "BT+ANT+",
-      "IP67"
-    ],
-    "tags": [
-      "صحة ذكية"
-    ],
-    "badge": "خصم خاص",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Health",
-    "features_en": [
-      "Precision HR",
-      "Arm",
-      "30h",
-      "BT+ANT+",
-      "IP67"
-    ],
-    "description_en": "The Polar Verity Sense Monitor is a premium health device designed to track and monitor your wellness in real time. Featuring HR دقيق, Arm, 30h, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $89, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
     "id": "NPH-043",
     "name_ar": "سوار Biostrap EVO الصحي",
     "name_en": "Biostrap EVO Health Band",
@@ -1718,326 +1678,6 @@
       "IP67"
     ],
     "description_en": "The Biostrap EVO Health Band is a premium health device designed to track and monitor your wellness in real time. Featuring HRV دقيق, SpO2, Sleep, it delivers exceptional performance for everyday use. With a 4.4★ rating and competitive pricing at $199, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-044",
-    "name_ar": "جهاز Garmin Index لضغط الدم",
-    "name_en": "Garmin Index BPM Monitor",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 149,
-    "original_price": 179,
-    "discount": 17,
-    "rating": 4.5,
-    "reviews": 3456,
-    "stock": 48,
-    "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&q=80",
-    "description_ar": "جهاز Garmin Index لضغط الدم — من أفضل منتجات صحة ذكية.",
-    "features_ar": [
-      "ضغط دم",
-      "BT 5.0",
-      "Garmin Connect",
-      "دقيق",
-      "40 قياس"
-    ],
-    "tags": [
-      "صحة ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Health",
-    "features_en": [
-      "Blood Pressure",
-      "BT 5.0",
-      "Garmin Connect",
-      "Precise",
-      "40 Metrics"
-    ],
-    "description_en": "The Garmin Index BPM Monitor is a premium health device designed to track and monitor your wellness in real time. Featuring Blood Pressure, BT 5.0, Garmin Connect, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $149, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-045",
-    "name_ar": "ميزان Withings Body Scan",
-    "name_en": "Withings Body Scan Scale",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 299,
-    "original_price": 349,
-    "discount": 14,
-    "rating": 4.7,
-    "reviews": 876,
-    "stock": 77,
-    "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&q=80",
-    "description_ar": "ميزان Withings Body Scan — من أفضل منتجات صحة ذكية.",
-    "features_ar": [
-      "تركيب جسم",
-      "ECG قدم",
-      "عصب",
-      "صحي",
-      "WiFi"
-    ],
-    "tags": [
-      "صحة ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Health",
-    "features_en": [
-      "Body Composition",
-      "ECG + Foot",
-      "Neural",
-      "Health",
-      "WiFi"
-    ],
-    "description_en": "The Withings Body Scan Scale is a premium health device designed to track and monitor your wellness in real time. Featuring Body Composition, ECG قدم, Neural, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $299, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-046",
-    "name_ar": "شاشة Amazon Echo Show 10",
-    "name_en": "Amazon Echo Show 10 3rd Gen",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "price": 249,
-    "original_price": 299,
-    "discount": 17,
-    "rating": 4.7,
-    "reviews": 23456,
-    "stock": 37,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "description_ar": "شاشة Amazon Echo Show 10 — من أفضل منتجات منزل ذكي.",
-    "features_ar": [
-      "HD 10 بوصة",
-      "يتابعك",
-      "13MP",
-      "Alexa",
-      "مكبر 3 بوصة"
-    ],
-    "tags": [
-      "منزل ذكي"
-    ],
-    "badge": "الأكثر مبيعاً",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": true,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smart Home",
-    "features_en": [
-      "10-inch HD",
-      "Auto-Follow",
-      "13MP",
-      "Alexa",
-      "3 Ports"
-    ],
-    "description_en": "The Amazon Echo Show 10 3rd Gen is a premium smart home device designed to automate and control your home intelligently. Featuring HD 10 بوصة, Auto-Follow, 13MP, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $249, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-047",
-    "name_ar": "مكبر Apple HomePod الجيل 2",
-    "name_en": "Apple HomePod 2nd Generation",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "price": 299,
-    "original_price": 349,
-    "discount": 14,
-    "rating": 4.7,
-    "reviews": 12345,
-    "stock": 84,
-    "image": "https://images.unsplash.com/photo-1543512214-318c7553f230?w=400&q=80",
-    "description_ar": "مكبر Apple HomePod الجيل 2 — من أفضل منتجات منزل ذكي.",
-    "features_ar": [
-      "Spatial Audio",
-      "S7",
-      "تحكم",
-      "Siri",
-      "صوت"
-    ],
-    "tags": [
-      "منزل ذكي"
-    ],
-    "badge": "مميز",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": true,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smart Home",
-    "features_en": [
-      "Spatial Audio",
-      "S7",
-      "Control",
-      "Siri",
-      "Audio"
-    ],
-    "description_en": "The Apple HomePod 2nd Generation is a premium smart home device designed to automate and control your home intelligently. Featuring Spatial Audio, S7, Control, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $299, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-048",
-    "name_ar": "شاشة Google Nest Hub Max",
-    "name_en": "Google Nest Hub Max Display",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "price": 229,
-    "original_price": 279,
-    "discount": 18,
-    "rating": 4.6,
-    "reviews": 15432,
-    "stock": 50,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "description_ar": "شاشة Google Nest Hub Max — من أفضل منتجات منزل ذكي.",
-    "features_ar": [
-      "10 بوصة",
-      "كاميرا Duo",
-      "Photos",
-      "Assistant",
-      "Full-range"
-    ],
-    "tags": [
-      "منزل ذكي"
-    ],
-    "badge": "خصم خاص",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smart Home",
-    "features_en": [
-      "10-inch",
-      "Duo Camera",
-      "Photos",
-      "Assistant",
-      "Full-range"
-    ],
-    "description_en": "The Google Nest Hub Max Display is a premium smart home device designed to automate and control your home intelligently. Featuring 10-inch, كاميرا Duo, Photos, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $229, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-049",
-    "name_ar": "طقم إضاءة Philips Hue",
-    "name_en": "Philips Hue Color Starter Kit",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "price": 199,
-    "original_price": 249,
-    "discount": 20,
-    "rating": 4.7,
-    "reviews": 34567,
-    "stock": 61,
-    "image": "https://images.unsplash.com/photo-1558618047-f4c4d46f4e5e?w=400&q=80",
-    "description_ar": "طقم إضاءة Philips Hue — من أفضل منتجات منزل ذكي.",
-    "features_ar": [
-      "16M لون",
-      "صوتي",
-      "Bridge",
-      "تطبيق",
-      "موسيقى"
-    ],
-    "tags": [
-      "منزل ذكي"
-    ],
-    "badge": "خصم خاص",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smart Home",
-    "features_en": [
-      "16M",
-      "Voice",
-      "Bridge",
-      "App",
-      "Music"
-    ],
-    "description_en": "The Philips Hue Color Starter Kit is a premium smart home device designed to automate and control your home intelligently. Featuring 16M لون, Voice, Bridge, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $199, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-050",
-    "name_ar": "جرس Ring Video Doorbell Pro 2",
-    "name_en": "Ring Video Doorbell Pro 2",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "price": 249,
-    "original_price": 299,
-    "discount": 17,
-    "rating": 4.5,
-    "reviews": 43210,
-    "stock": 45,
-    "image": "https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?w=400&q=80",
-    "description_ar": "جرس Ring Video Doorbell Pro 2 — من أفضل منتجات منزل ذكي.",
-    "features_ar": [
-      "1536p",
-      "Bird's Eye",
-      "ذكي",
-      "Alexa",
-      "3D"
-    ],
-    "tags": [
-      "منزل ذكي"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smart Home",
-    "features_en": [
-      "1536p",
-      "Bird's Eye",
-      "Smart",
-      "Alexa",
-      "3D"
-    ],
-    "description_en": "The Ring Video Doorbell Pro 2 is a premium smart home device designed to automate and control your home intelligently. Featuring 1536p, Bird's Eye, Smart, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $249, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-051",
-    "name_ar": "منظم حرارة Nest الجيل 4",
-    "name_en": "Google Nest Learning Thermostat",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "price": 279,
-    "original_price": 329,
-    "discount": 15,
-    "rating": 4.7,
-    "reviews": 28765,
-    "stock": 22,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "description_ar": "منظم حرارة Nest الجيل 4 — من أفضل منتجات منزل ذكي.",
-    "features_ar": [
-      "يتعلم",
-      "15% توفير",
-      "يحسك",
-      "OLED",
-      "Google Home"
-    ],
-    "tags": [
-      "منزل ذكي"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smart Home",
-    "features_en": [
-      "Self-Learning",
-      "15% Savings",
-      "Motion Detection",
-      "OLED",
-      "Google Home"
-    ],
-    "description_en": "The Google Nest Learning Thermostat is a premium smart home device designed to automate and control your home intelligently. Featuring Self-Learning, 15% Savings, Motion Detection, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $279, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
     "id": "NPH-052",
@@ -2080,25 +1720,25 @@
     "description_en": "The Amazon Echo Dot 5th Gen is a premium smart home device designed to automate and control your home intelligently. Featuring Alexa, 2x Brighter, Smart Home, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $49, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
-    "id": "NPH-053",
-    "name_ar": "كاميرا Arlo Pro 5S",
-    "name_en": "Arlo Pro 5S Security Camera",
+    "id": "NPH-050",
+    "name_ar": "جرس Ring Video Doorbell Pro 2",
+    "name_en": "Ring Video Doorbell Pro 2",
     "category": "smart-home",
     "category_ar": "منزل ذكي",
     "price": 249,
     "original_price": 299,
     "discount": 17,
-    "rating": 4.6,
-    "reviews": 8765,
+    "rating": 4.5,
+    "reviews": 43210,
     "stock": 45,
     "image": "https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?w=400&q=80",
-    "description_ar": "كاميرا Arlo Pro 5S — من أفضل منتجات منزل ذكي.",
+    "description_ar": "جرس Ring Video Doorbell Pro 2 — من أفضل منتجات منزل ذكي.",
     "features_ar": [
-      "2K HDR",
-      "ألوان ليلية",
-      "160°",
-      "6 أشهر",
-      "Alexa"
+      "1536p",
+      "Bird's Eye",
+      "ذكي",
+      "Alexa",
+      "3D"
     ],
     "tags": [
       "منزل ذكي"
@@ -2111,74 +1751,34 @@
     "added_at": "2026-03-10",
     "category_en": "Smart Home",
     "features_en": [
-      "2K HDR",
-      "Night Colors",
-      "160°",
-      "6 Months",
-      "Alexa"
+      "1536p",
+      "Bird's Eye",
+      "Smart",
+      "Alexa",
+      "3D"
     ],
-    "description_en": "The Arlo Pro 5S Security Camera is a premium smart home device designed to automate and control your home intelligently. Featuring 2K HDR, Night Colors, 160°, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $249, it's one of the top choices in its category at NEO PULSE HUB."
+    "description_en": "The Ring Video Doorbell Pro 2 is a premium smart home device designed to automate and control your home intelligently. Featuring 1536p, Bird's Eye, Smart, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $249, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
-    "id": "NPH-054",
-    "name_ar": "قفل ذكي Yale Assure Lock 2",
-    "name_en": "Yale Assure Lock 2 Plus",
+    "id": "NPH-049",
+    "name_ar": "طقم إضاءة Philips Hue",
+    "name_en": "Philips Hue Color Starter Kit",
     "category": "smart-home",
     "category_ar": "منزل ذكي",
-    "price": 329,
-    "original_price": 379,
-    "discount": 13,
-    "rating": 4.5,
-    "reviews": 4321,
-    "stock": 70,
-    "image": "https://images.unsplash.com/photo-1558618047-f4c4d46f4e5e?w=400&q=80",
-    "description_ar": "قفل ذكي Yale Assure Lock 2 — من أفضل منتجات منزل ذكي.",
-    "features_ar": [
-      "Matter",
-      "بصمة+رمز",
-      "AES-128",
-      "Yale Access",
-      "تنبيهات"
-    ],
-    "tags": [
-      "منزل ذكي"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smart Home",
-    "features_en": [
-      "Matter",
-      "Fingerprint+PIN",
-      "AES-128",
-      "Yale Access",
-      "Alerts"
-    ],
-    "description_en": "The Yale Assure Lock 2 Plus is a premium smart home device designed to automate and control your home intelligently. Featuring Matter, Fingerprint+PIN, AES-128, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $329, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-055",
-    "name_ar": "مكنسة iRobot Roomba j9+",
-    "name_en": "iRobot Roomba j9 Plus",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "price": 799,
-    "original_price": 999,
+    "price": 199,
+    "original_price": 249,
     "discount": 20,
     "rating": 4.7,
-    "reviews": 6543,
-    "stock": 69,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "description_ar": "مكنسة iRobot Roomba j9+ — من أفضل منتجات منزل ذكي.",
+    "reviews": 34567,
+    "stock": 61,
+    "image": "https://images.unsplash.com/photo-1558618047-f4c4d46f4e5e?w=400&q=80",
+    "description_ar": "طقم إضاءة Philips Hue — من أفضل منتجات منزل ذكي.",
     "features_ar": [
-      "60 يوم",
-      "تجنب AI",
-      "خريطة",
-      "Alexa",
-      "شحن تلقائي"
+      "16M لون",
+      "صوتي",
+      "Bridge",
+      "تطبيق",
+      "موسيقى"
     ],
     "tags": [
       "منزل ذكي"
@@ -2191,13 +1791,213 @@
     "added_at": "2026-03-10",
     "category_en": "Smart Home",
     "features_en": [
-      "60 Days",
-      "AI Obstacle Avoidance",
-      "Maps",
-      "Alexa",
-      "Auto-Charging"
+      "16M",
+      "Voice",
+      "Bridge",
+      "App",
+      "Music"
     ],
-    "description_en": "The iRobot Roomba j9 Plus is a premium smart home device designed to automate and control your home intelligently. Featuring 60 Days, AI Obstacle Avoidance, Maps, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $799, it's one of the top choices in its category at NEO PULSE HUB."
+    "description_en": "The Philips Hue Color Starter Kit is a premium smart home device designed to automate and control your home intelligently. Featuring 16M لون, Voice, Bridge, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $199, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-051",
+    "name_ar": "منظم حرارة Nest الجيل 4",
+    "name_en": "Google Nest Learning Thermostat",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 279,
+    "original_price": 329,
+    "discount": 15,
+    "rating": 4.7,
+    "reviews": 28765,
+    "stock": 22,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+    "description_ar": "منظم حرارة Nest الجيل 4 — من أفضل منتجات منزل ذكي.",
+    "features_ar": [
+      "يتعلم",
+      "15% توفير",
+      "يحسك",
+      "OLED",
+      "Google Home"
+    ],
+    "tags": [
+      "منزل ذكي"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Smart Home",
+    "features_en": [
+      "Self-Learning",
+      "15% Savings",
+      "Motion Detection",
+      "OLED",
+      "Google Home"
+    ],
+    "description_en": "The Google Nest Learning Thermostat is a premium smart home device designed to automate and control your home intelligently. Featuring Self-Learning, 15% Savings, Motion Detection, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $279, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-046",
+    "name_ar": "شاشة Amazon Echo Show 10",
+    "name_en": "Amazon Echo Show 10 3rd Gen",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 249,
+    "original_price": 299,
+    "discount": 17,
+    "rating": 4.7,
+    "reviews": 23456,
+    "stock": 37,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+    "description_ar": "شاشة Amazon Echo Show 10 — من أفضل منتجات منزل ذكي.",
+    "features_ar": [
+      "HD 10 بوصة",
+      "يتابعك",
+      "13MP",
+      "Alexa",
+      "مكبر 3 بوصة"
+    ],
+    "tags": [
+      "منزل ذكي"
+    ],
+    "badge": "الأكثر مبيعاً",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": true,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Smart Home",
+    "features_en": [
+      "10-inch HD",
+      "Auto-Follow",
+      "13MP",
+      "Alexa",
+      "3 Ports"
+    ],
+    "description_en": "The Amazon Echo Show 10 3rd Gen is a premium smart home device designed to automate and control your home intelligently. Featuring HD 10 بوصة, Auto-Follow, 13MP, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $249, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-058",
+    "name_ar": "منظم Ecobee Smart Premium",
+    "name_en": "Ecobee Smart Thermostat Premium",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 249,
+    "original_price": 299,
+    "discount": 17,
+    "rating": 4.7,
+    "reviews": 21345,
+    "stock": 38,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+    "description_ar": "منظم Ecobee Smart Premium — من أفضل منتجات منزل ذكي.",
+    "features_ar": [
+      "Alexa مدمج",
+      "غرفة",
+      "23% توفير",
+      "SmartSensor",
+      "ENERGY STAR"
+    ],
+    "tags": [
+      "منزل ذكي"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Smart Home",
+    "features_en": [
+      "Alexa",
+      "Room",
+      "23% Savings",
+      "SmartSensor",
+      "ENERGY STAR"
+    ],
+    "description_en": "The Ecobee Smart Thermostat Premium is a premium smart home device designed to automate and control your home intelligently. Featuring Alexa مدمج, Room, 23% Savings, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $249, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-048",
+    "name_ar": "شاشة Google Nest Hub Max",
+    "name_en": "Google Nest Hub Max Display",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 229,
+    "original_price": 279,
+    "discount": 18,
+    "rating": 4.6,
+    "reviews": 15432,
+    "stock": 50,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+    "description_ar": "شاشة Google Nest Hub Max — من أفضل منتجات منزل ذكي.",
+    "features_ar": [
+      "10 بوصة",
+      "كاميرا Duo",
+      "Photos",
+      "Assistant",
+      "Full-range"
+    ],
+    "tags": [
+      "منزل ذكي"
+    ],
+    "badge": "خصم خاص",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Smart Home",
+    "features_en": [
+      "10-inch",
+      "Duo Camera",
+      "Photos",
+      "Assistant",
+      "Full-range"
+    ],
+    "description_en": "The Google Nest Hub Max Display is a premium smart home device designed to automate and control your home intelligently. Featuring 10-inch, كاميرا Duo, Photos, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $229, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-047",
+    "name_ar": "مكبر Apple HomePod الجيل 2",
+    "name_en": "Apple HomePod 2nd Generation",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.7,
+    "reviews": 12345,
+    "stock": 84,
+    "image": "https://images.unsplash.com/photo-1543512214-318c7553f230?w=400&q=80",
+    "description_ar": "مكبر Apple HomePod الجيل 2 — من أفضل منتجات منزل ذكي.",
+    "features_ar": [
+      "Spatial Audio",
+      "S7",
+      "تحكم",
+      "Siri",
+      "صوت"
+    ],
+    "tags": [
+      "منزل ذكي"
+    ],
+    "badge": "مميز",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": true,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Smart Home",
+    "features_en": [
+      "Spatial Audio",
+      "S7",
+      "Control",
+      "Siri",
+      "Audio"
+    ],
+    "description_en": "The Apple HomePod 2nd Generation is a premium smart home device designed to automate and control your home intelligently. Featuring Spatial Audio, S7, Control, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $299, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
     "id": "NPH-056",
@@ -2240,65 +2040,25 @@
     "description_en": "The Nanoleaf Shapes Hexagons Kit is a premium smart home device designed to automate and control your home intelligently. Featuring 16M لون, Music, Touch, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $199, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
-    "id": "NPH-057",
-    "name_ar": "مكبر Sonos Era 300",
-    "name_en": "Sonos Era 300 Speaker",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "price": 449,
-    "original_price": 499,
-    "discount": 10,
-    "rating": 4.7,
-    "reviews": 3456,
-    "stock": 73,
-    "image": "https://images.unsplash.com/photo-1543512214-318c7553f230?w=400&q=80",
-    "description_ar": "مكبر Sonos Era 300 — من أفضل منتجات منزل ذكي.",
-    "features_ar": [
-      "Spatial Audio",
-      "Dolby Atmos",
-      "6 مكبرات",
-      "S2",
-      "بدون اشتراك"
-    ],
-    "tags": [
-      "منزل ذكي"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smart Home",
-    "features_en": [
-      "Spatial Audio",
-      "Dolby Atmos",
-      "6 Speakers",
-      "S2",
-      "No Subscription"
-    ],
-    "description_en": "The Sonos Era 300 Speaker is a premium smart home device designed to automate and control your home intelligently. Featuring Spatial Audio, Dolby Atmos, 6 Speakers, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $449, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-058",
-    "name_ar": "منظم Ecobee Smart Premium",
-    "name_en": "Ecobee Smart Thermostat Premium",
+    "id": "NPH-053",
+    "name_ar": "كاميرا Arlo Pro 5S",
+    "name_en": "Arlo Pro 5S Security Camera",
     "category": "smart-home",
     "category_ar": "منزل ذكي",
     "price": 249,
     "original_price": 299,
     "discount": 17,
-    "rating": 4.7,
-    "reviews": 21345,
-    "stock": 38,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    "description_ar": "منظم Ecobee Smart Premium — من أفضل منتجات منزل ذكي.",
+    "rating": 4.6,
+    "reviews": 8765,
+    "stock": 45,
+    "image": "https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?w=400&q=80",
+    "description_ar": "كاميرا Arlo Pro 5S — من أفضل منتجات منزل ذكي.",
     "features_ar": [
-      "Alexa مدمج",
-      "غرفة",
-      "23% توفير",
-      "SmartSensor",
-      "ENERGY STAR"
+      "2K HDR",
+      "ألوان ليلية",
+      "160°",
+      "6 أشهر",
+      "Alexa"
     ],
     "tags": [
       "منزل ذكي"
@@ -2311,13 +2071,53 @@
     "added_at": "2026-03-10",
     "category_en": "Smart Home",
     "features_en": [
-      "Alexa",
-      "Room",
-      "23% Savings",
-      "SmartSensor",
-      "ENERGY STAR"
+      "2K HDR",
+      "Night Colors",
+      "160°",
+      "6 Months",
+      "Alexa"
     ],
-    "description_en": "The Ecobee Smart Thermostat Premium is a premium smart home device designed to automate and control your home intelligently. Featuring Alexa مدمج, Room, 23% Savings, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $249, it's one of the top choices in its category at NEO PULSE HUB."
+    "description_en": "The Arlo Pro 5S Security Camera is a premium smart home device designed to automate and control your home intelligently. Featuring 2K HDR, Night Colors, 160°, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $249, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-055",
+    "name_ar": "مكنسة iRobot Roomba j9+",
+    "name_en": "iRobot Roomba j9 Plus",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 799,
+    "original_price": 999,
+    "discount": 20,
+    "rating": 4.7,
+    "reviews": 6543,
+    "stock": 69,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+    "description_ar": "مكنسة iRobot Roomba j9+ — من أفضل منتجات منزل ذكي.",
+    "features_ar": [
+      "60 يوم",
+      "تجنب AI",
+      "خريطة",
+      "Alexa",
+      "شحن تلقائي"
+    ],
+    "tags": [
+      "منزل ذكي"
+    ],
+    "badge": "خصم خاص",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Smart Home",
+    "features_en": [
+      "60 Days",
+      "AI Obstacle Avoidance",
+      "Maps",
+      "Alexa",
+      "Auto-Charging"
+    ],
+    "description_en": "The iRobot Roomba j9 Plus is a premium smart home device designed to automate and control your home intelligently. Featuring 60 Days, AI Obstacle Avoidance, Maps, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $799, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
     "id": "NPH-059",
@@ -2400,6 +2200,46 @@
     "description_en": "The Eufy Security HomeBase 3 is a premium smart home device designed to automate and control your home intelligently. Featuring 16GB محلي, Triple Band, AI, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $299, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
+    "id": "NPH-054",
+    "name_ar": "قفل ذكي Yale Assure Lock 2",
+    "name_en": "Yale Assure Lock 2 Plus",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "price": 329,
+    "original_price": 379,
+    "discount": 13,
+    "rating": 4.5,
+    "reviews": 4321,
+    "stock": 70,
+    "image": "https://images.unsplash.com/photo-1558618047-f4c4d46f4e5e?w=400&q=80",
+    "description_ar": "قفل ذكي Yale Assure Lock 2 — من أفضل منتجات منزل ذكي.",
+    "features_ar": [
+      "Matter",
+      "بصمة+رمز",
+      "AES-128",
+      "Yale Access",
+      "تنبيهات"
+    ],
+    "tags": [
+      "منزل ذكي"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Smart Home",
+    "features_en": [
+      "Matter",
+      "Fingerprint+PIN",
+      "AES-128",
+      "Yale Access",
+      "Alerts"
+    ],
+    "description_en": "The Yale Assure Lock 2 Plus is a premium smart home device designed to automate and control your home intelligently. Featuring Matter, Fingerprint+PIN, AES-128, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $329, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
     "id": "NPH-061",
     "name_ar": "سماعات AirPods Pro الجيل 2",
     "name_en": "Apple AirPods Pro 2 USB-C",
@@ -2438,6 +2278,86 @@
       "6h+30h"
     ],
     "description_en": "The Apple AirPods Pro 2 USB-C is a premium earbuds designed to deliver immersive sound wherever you go. Featuring ANC H2, Adaptive, Spatial, it delivers exceptional performance for everyday use. With a 4.9★ rating and competitive pricing at $249, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-066",
+    "name_ar": "سماعات Sony WH-1000XM5 فوق الأذن",
+    "name_en": "Sony WH-1000XM5 Headphones",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 349,
+    "original_price": 399,
+    "discount": 13,
+    "rating": 4.8,
+    "reviews": 45678,
+    "stock": 26,
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=80",
+    "description_ar": "سماعات Sony WH-1000XM5 فوق الأذن — من أفضل منتجات سماعات ذكية.",
+    "features_ar": [
+      "ANC AI",
+      "30h",
+      "Multi-point",
+      "LDAC",
+      "فولد"
+    ],
+    "tags": [
+      "سماعات ذكية"
+    ],
+    "badge": "الأكثر مبيعاً",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Earbuds",
+    "features_en": [
+      "ANC AI",
+      "30h",
+      "Multi-point",
+      "LDAC",
+      "Fold"
+    ],
+    "description_en": "The Sony WH-1000XM5 Headphones is a premium earbuds designed to deliver immersive sound wherever you go. Featuring ANC AI, 30h, Multi-point, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $349, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-065",
+    "name_ar": "سماعات Apple AirPods 4 ANC",
+    "name_en": "Apple AirPods 4 with ANC",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 179,
+    "original_price": 199,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 32145,
+    "stock": 45,
+    "image": "https://images.unsplash.com/photo-1588423771073-b8903fead85b?w=400&q=80",
+    "description_ar": "سماعات Apple AirPods 4 ANC — من أفضل منتجات سماعات ذكية.",
+    "features_ar": [
+      "H2 ANC",
+      "Open-ear",
+      "USB-C",
+      "5h+30h",
+      "IP54"
+    ],
+    "tags": [
+      "سماعات ذكية"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Earbuds",
+    "features_en": [
+      "H2 ANC",
+      "Open-ear",
+      "USB-C",
+      "5h+30h",
+      "IP54"
+    ],
+    "description_en": "The Apple AirPods 4 with ANC is a premium earbuds designed to deliver immersive sound wherever you go. Featuring H2 ANC, Open-ear, USB-C, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $179, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
     "id": "NPH-062",
@@ -2560,110 +2480,30 @@
     "description_en": "The Samsung Galaxy Buds 3 Pro is a premium earbuds designed to deliver immersive sound wherever you go. Featuring ANC AI, Blade, IP57, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $249, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
-    "id": "NPH-065",
-    "name_ar": "سماعات Apple AirPods 4 ANC",
-    "name_en": "Apple AirPods 4 with ANC",
+    "id": "NPH-072",
+    "name_ar": "سماعات Anker Soundcore Liberty 4",
+    "name_en": "Anker Soundcore Liberty 4 Pro",
     "category": "earbuds",
     "category_ar": "سماعات ذكية",
-    "price": 179,
-    "original_price": 199,
-    "discount": 10,
-    "rating": 4.8,
-    "reviews": 32145,
-    "stock": 45,
-    "image": "https://images.unsplash.com/photo-1588423771073-b8903fead85b?w=400&q=80",
-    "description_ar": "سماعات Apple AirPods 4 ANC — من أفضل منتجات سماعات ذكية.",
-    "features_ar": [
-      "H2 ANC",
-      "Open-ear",
-      "USB-C",
-      "5h+30h",
-      "IP54"
-    ],
-    "tags": [
-      "سماعات ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Earbuds",
-    "features_en": [
-      "H2 ANC",
-      "Open-ear",
-      "USB-C",
-      "5h+30h",
-      "IP54"
-    ],
-    "description_en": "The Apple AirPods 4 with ANC is a premium earbuds designed to deliver immersive sound wherever you go. Featuring H2 ANC, Open-ear, USB-C, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $179, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-066",
-    "name_ar": "سماعات Sony WH-1000XM5 فوق الأذن",
-    "name_en": "Sony WH-1000XM5 Headphones",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "price": 349,
-    "original_price": 399,
-    "discount": 13,
-    "rating": 4.8,
-    "reviews": 45678,
-    "stock": 26,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=80",
-    "description_ar": "سماعات Sony WH-1000XM5 فوق الأذن — من أفضل منتجات سماعات ذكية.",
-    "features_ar": [
-      "ANC AI",
-      "30h",
-      "Multi-point",
-      "LDAC",
-      "فولد"
-    ],
-    "tags": [
-      "سماعات ذكية"
-    ],
-    "badge": "الأكثر مبيعاً",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Earbuds",
-    "features_en": [
-      "ANC AI",
-      "30h",
-      "Multi-point",
-      "LDAC",
-      "Fold"
-    ],
-    "description_en": "The Sony WH-1000XM5 Headphones is a premium earbuds designed to deliver immersive sound wherever you go. Featuring ANC AI, 30h, Multi-point, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $349, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-067",
-    "name_ar": "سماعات Nothing Ear 3",
-    "name_en": "Nothing Ear 3 Wireless",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "price": 149,
-    "original_price": 179,
-    "discount": 17,
+    "price": 129,
+    "original_price": 159,
+    "discount": 19,
     "rating": 4.6,
-    "reviews": 8765,
-    "stock": 29,
+    "reviews": 12345,
+    "stock": 48,
     "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&q=80",
-    "description_ar": "سماعات Nothing Ear 3 — من أفضل منتجات سماعات ذكية.",
+    "description_ar": "سماعات Anker Soundcore Liberty 4 — من أفضل منتجات سماعات ذكية.",
     "features_ar": [
-      "شفاف",
-      "ANC 45dB",
-      "8.5h+40h",
-      "IP55",
-      "ChatGPT"
+      "ANC 50dB",
+      "LDAC",
+      "11h+53h",
+      "IPX4",
+      "شاشة"
     ],
     "tags": [
       "سماعات ذكية"
     ],
-    "badge": "جديد",
+    "badge": "قيمة مثالية",
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
@@ -2671,133 +2511,13 @@
     "added_at": "2026-03-10",
     "category_en": "Earbuds",
     "features_en": [
-      "Transparent",
-      "ANC 45dB",
-      "8.5h+40h",
-      "IP55",
-      "ChatGPT"
+      "ANC 50dB",
+      "LDAC",
+      "11h+53h",
+      "IPX4",
+      "Display"
     ],
-    "description_en": "The Nothing Ear 3 Wireless is a premium earbuds designed to deliver immersive sound wherever you go. Featuring Transparent, ANC 45dB, 8.5h+40h, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $149, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-068",
-    "name_ar": "سماعات Jabra Evolve2 Buds",
-    "name_en": "Jabra Evolve2 Buds Pro",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "price": 249,
-    "original_price": 299,
-    "discount": 17,
-    "rating": 4.5,
-    "reviews": 4321,
-    "stock": 42,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=80",
-    "description_ar": "سماعات Jabra Evolve2 Buds — من أفضل منتجات سماعات ذكية.",
-    "features_ar": [
-      "مهني",
-      "ANC AI",
-      "6h+33h",
-      "UC",
-      "Jabra AI"
-    ],
-    "tags": [
-      "سماعات ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Earbuds",
-    "features_en": [
-      "Professional",
-      "ANC AI",
-      "6h+33h",
-      "UC",
-      "Jabra AI"
-    ],
-    "description_en": "The Jabra Evolve2 Buds Pro is a premium earbuds designed to deliver immersive sound wherever you go. Featuring Professional, ANC AI, 6h+33h, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $249, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-069",
-    "name_ar": "سماعات Beats Studio Buds+",
-    "name_en": "Beats Studio Buds Plus",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "price": 169,
-    "original_price": 199,
-    "discount": 15,
-    "rating": 4.6,
-    "reviews": 6543,
-    "stock": 74,
-    "image": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=400&q=80",
-    "description_ar": "سماعات Beats Studio Buds+ — من أفضل منتجات سماعات ذكية.",
-    "features_ar": [
-      "ANC 36dB",
-      "Transparency",
-      "IP54",
-      "9h+36h",
-      "Android+iOS"
-    ],
-    "tags": [
-      "سماعات ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Earbuds",
-    "features_en": [
-      "ANC 36dB",
-      "Transparency",
-      "IP54",
-      "9h+36h",
-      "Android+iOS"
-    ],
-    "description_en": "The Beats Studio Buds Plus is a premium earbuds designed to deliver immersive sound wherever you go. Featuring ANC 36dB, Transparency, IP54, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $169, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-070",
-    "name_ar": "سماعات Sennheiser MTW4",
-    "name_en": "Sennheiser Momentum True Wireless 4",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "price": 279,
-    "original_price": 329,
-    "discount": 15,
-    "rating": 4.7,
-    "reviews": 3456,
-    "stock": 89,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=80",
-    "description_ar": "سماعات Sennheiser MTW4 — من أفضل منتجات سماعات ذكية.",
-    "features_ar": [
-      "Hi-Fi",
-      "ANC Adaptive",
-      "7h+28h",
-      "aptX",
-      "IP54"
-    ],
-    "tags": [
-      "سماعات ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Earbuds",
-    "features_en": [
-      "Hi-Fi",
-      "ANC Adaptive",
-      "7h+28h",
-      "aptX",
-      "IP54"
-    ],
-    "description_en": "The Sennheiser Momentum True Wireless 4 is a premium earbuds designed to deliver immersive sound wherever you go. Featuring Hi-Fi, ANC Adaptive, 7h+28h, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $279, it's one of the top choices in its category at NEO PULSE HUB."
+    "description_en": "The Anker Soundcore Liberty 4 Pro is a premium earbuds designed to deliver immersive sound wherever you go. Featuring ANC 50dB, LDAC, 11h+53h, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $129, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
     "id": "NPH-071",
@@ -2840,30 +2560,30 @@
     "description_en": "The Google Pixel Buds Pro 2 is a premium earbuds designed to deliver immersive sound wherever you go. Featuring Tensor A1, ANC, 11h+33h, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $229, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
-    "id": "NPH-072",
-    "name_ar": "سماعات Anker Soundcore Liberty 4",
-    "name_en": "Anker Soundcore Liberty 4 Pro",
+    "id": "NPH-067",
+    "name_ar": "سماعات Nothing Ear 3",
+    "name_en": "Nothing Ear 3 Wireless",
     "category": "earbuds",
     "category_ar": "سماعات ذكية",
-    "price": 129,
-    "original_price": 159,
-    "discount": 19,
+    "price": 149,
+    "original_price": 179,
+    "discount": 17,
     "rating": 4.6,
-    "reviews": 12345,
-    "stock": 48,
+    "reviews": 8765,
+    "stock": 29,
     "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&q=80",
-    "description_ar": "سماعات Anker Soundcore Liberty 4 — من أفضل منتجات سماعات ذكية.",
+    "description_ar": "سماعات Nothing Ear 3 — من أفضل منتجات سماعات ذكية.",
     "features_ar": [
-      "ANC 50dB",
-      "LDAC",
-      "11h+53h",
-      "IPX4",
-      "شاشة"
+      "شفاف",
+      "ANC 45dB",
+      "8.5h+40h",
+      "IP55",
+      "ChatGPT"
     ],
     "tags": [
       "سماعات ذكية"
     ],
-    "badge": "قيمة مثالية",
+    "badge": "جديد",
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
@@ -2871,13 +2591,53 @@
     "added_at": "2026-03-10",
     "category_en": "Earbuds",
     "features_en": [
-      "ANC 50dB",
-      "LDAC",
-      "11h+53h",
-      "IPX4",
-      "Display"
+      "Transparent",
+      "ANC 45dB",
+      "8.5h+40h",
+      "IP55",
+      "ChatGPT"
     ],
-    "description_en": "The Anker Soundcore Liberty 4 Pro is a premium earbuds designed to deliver immersive sound wherever you go. Featuring ANC 50dB, LDAC, 11h+53h, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $129, it's one of the top choices in its category at NEO PULSE HUB."
+    "description_en": "The Nothing Ear 3 Wireless is a premium earbuds designed to deliver immersive sound wherever you go. Featuring Transparent, ANC 45dB, 8.5h+40h, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $149, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-069",
+    "name_ar": "سماعات Beats Studio Buds+",
+    "name_en": "Beats Studio Buds Plus",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 169,
+    "original_price": 199,
+    "discount": 15,
+    "rating": 4.6,
+    "reviews": 6543,
+    "stock": 74,
+    "image": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=400&q=80",
+    "description_ar": "سماعات Beats Studio Buds+ — من أفضل منتجات سماعات ذكية.",
+    "features_ar": [
+      "ANC 36dB",
+      "Transparency",
+      "IP54",
+      "9h+36h",
+      "Android+iOS"
+    ],
+    "tags": [
+      "سماعات ذكية"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Earbuds",
+    "features_en": [
+      "ANC 36dB",
+      "Transparency",
+      "IP54",
+      "9h+36h",
+      "Android+iOS"
+    ],
+    "description_en": "The Beats Studio Buds Plus is a premium earbuds designed to deliver immersive sound wherever you go. Featuring ANC 36dB, Transparency, IP54, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $169, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
     "id": "NPH-073",
@@ -2920,6 +2680,86 @@
     "description_en": "The JBL Tour Pro 3 Earbuds is a premium earbuds designed to deliver immersive sound wherever you go. Featuring Touchscreen, ANC Pro, 10h+40h, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $249, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
+    "id": "NPH-068",
+    "name_ar": "سماعات Jabra Evolve2 Buds",
+    "name_en": "Jabra Evolve2 Buds Pro",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 249,
+    "original_price": 299,
+    "discount": 17,
+    "rating": 4.5,
+    "reviews": 4321,
+    "stock": 42,
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=80",
+    "description_ar": "سماعات Jabra Evolve2 Buds — من أفضل منتجات سماعات ذكية.",
+    "features_ar": [
+      "مهني",
+      "ANC AI",
+      "6h+33h",
+      "UC",
+      "Jabra AI"
+    ],
+    "tags": [
+      "سماعات ذكية"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Earbuds",
+    "features_en": [
+      "Professional",
+      "ANC AI",
+      "6h+33h",
+      "UC",
+      "Jabra AI"
+    ],
+    "description_en": "The Jabra Evolve2 Buds Pro is a premium earbuds designed to deliver immersive sound wherever you go. Featuring Professional, ANC AI, 6h+33h, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $249, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-070",
+    "name_ar": "سماعات Sennheiser MTW4",
+    "name_en": "Sennheiser Momentum True Wireless 4",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "price": 279,
+    "original_price": 329,
+    "discount": 15,
+    "rating": 4.7,
+    "reviews": 3456,
+    "stock": 89,
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=80",
+    "description_ar": "سماعات Sennheiser MTW4 — من أفضل منتجات سماعات ذكية.",
+    "features_ar": [
+      "Hi-Fi",
+      "ANC Adaptive",
+      "7h+28h",
+      "aptX",
+      "IP54"
+    ],
+    "tags": [
+      "سماعات ذكية"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Earbuds",
+    "features_en": [
+      "Hi-Fi",
+      "ANC Adaptive",
+      "7h+28h",
+      "aptX",
+      "IP54"
+    ],
+    "description_en": "The Sennheiser Momentum True Wireless 4 is a premium earbuds designed to deliver immersive sound wherever you go. Featuring Hi-Fi, ANC Adaptive, 7h+28h, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $279, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
     "id": "NPH-074",
     "name_ar": "سماعات Shure Aonic Free 2",
     "name_en": "Shure Aonic Free 2",
@@ -2958,126 +2798,6 @@
       "Touch"
     ],
     "description_en": "The Shure Aonic Free 2 is a premium earbuds designed to deliver immersive sound wherever you go. Featuring Studio, ANC, 7h+28h, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $299, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-075",
-    "name_ar": "سماعات Technics EAH-AZ100",
-    "name_en": "Technics EAH-AZ100 Earbuds",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "price": 299,
-    "original_price": 349,
-    "discount": 14,
-    "rating": 4.7,
-    "reviews": 1876,
-    "stock": 39,
-    "image": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=400&q=80",
-    "description_ar": "سماعات Technics EAH-AZ100 — من أفضل منتجات سماعات ذكية.",
-    "features_ar": [
-      "ANC AI",
-      "Jitter-less",
-      "10h+25h",
-      "USB-C",
-      "IPX4"
-    ],
-    "tags": [
-      "سماعات ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Earbuds",
-    "features_en": [
-      "ANC AI",
-      "Jitter-less",
-      "10h+25h",
-      "USB-C",
-      "IPX4"
-    ],
-    "description_en": "The Technics EAH-AZ100 Earbuds is a premium earbuds designed to deliver immersive sound wherever you go. Featuring ANC AI, Jitter-less, 10h+25h, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $299, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-076",
-    "name_ar": "جهاز iPad Pro M4 13 بوصة",
-    "name_en": "Apple iPad Pro M4 13 inch",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 1299,
-    "original_price": 1499,
-    "discount": 13,
-    "rating": 4.9,
-    "reviews": 23456,
-    "stock": 27,
-    "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&q=80",
-    "description_ar": "جهاز iPad Pro M4 13 بوصة — من أفضل منتجات إنتاجية.",
-    "features_ar": [
-      "M4",
-      "OLED Tandem",
-      "Apple Intelligence",
-      "120Hz",
-      "USB4"
-    ],
-    "tags": [
-      "إنتاجية"
-    ],
-    "badge": "الأكثر مبيعاً",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": true,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Productivity",
-    "features_en": [
-      "M4",
-      "OLED Tandem",
-      "Apple Intelligence",
-      "120Hz",
-      "USB4"
-    ],
-    "description_en": "The Apple iPad Pro M4 13 inch is a premium productivity device designed to boost your workflow and creative output. Featuring M4, OLED Tandem, Apple Intelligence, it delivers exceptional performance for everyday use. With a 4.9★ rating and competitive pricing at $1299, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-077",
-    "name_ar": "تابلت Samsung Galaxy Tab S10 Ultra",
-    "name_en": "Samsung Galaxy Tab S10 Ultra",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 1299,
-    "original_price": 1499,
-    "discount": 13,
-    "rating": 4.8,
-    "reviews": 12345,
-    "stock": 38,
-    "image": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=400&q=80",
-    "description_ar": "تابلت Samsung Galaxy Tab S10 Ultra — من أفضل منتجات إنتاجية.",
-    "features_ar": [
-      "Snapdragon 8 Gen 3",
-      "AMOLED 14.6",
-      "S Pen",
-      "DeX",
-      "12000mAh"
-    ],
-    "tags": [
-      "إنتاجية"
-    ],
-    "badge": "مميز",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": true,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Productivity",
-    "features_en": [
-      "Snapdragon 8 Gen 3",
-      "AMOLED 14.6",
-      "S Pen",
-      "DeX",
-      "12000mAh"
-    ],
-    "description_en": "The Samsung Galaxy Tab S10 Ultra is a premium productivity device designed to boost your workflow and creative output. Featuring Snapdragon 8 Gen 3, AMOLED 14.6, S Pen, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $1299, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
     "id": "NPH-078",
@@ -3120,166 +2840,6 @@
     "description_en": "The Logitech MX Master 3S Mouse is a premium productivity device designed to boost your workflow and creative output. Featuring 8000 DPI, MagSpeed, 7 Buttons, it delivers exceptional performance for everyday use. With a 4.9★ rating and competitive pricing at $99, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
-    "id": "NPH-079",
-    "name_ar": "لوحة Logitech MX Keys S Plus",
-    "name_en": "Logitech MX Keys S Plus Keyboard",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 149,
-    "original_price": 179,
-    "discount": 17,
-    "rating": 4.8,
-    "reviews": 23456,
-    "stock": 81,
-    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&q=80",
-    "description_ar": "لوحة Logitech MX Keys S Plus — من أفضل منتجات إنتاجية.",
-    "features_ar": [
-      "Smart Backlight",
-      "Smart Actions",
-      "5 أجهزة",
-      "10 أيام",
-      "Flow"
-    ],
-    "tags": [
-      "إنتاجية"
-    ],
-    "badge": "الأكثر مبيعاً",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Productivity",
-    "features_en": [
-      "Smart Backlight",
-      "Smart Actions",
-      "5 Devices",
-      "10 Days",
-      "Flow"
-    ],
-    "description_en": "The Logitech MX Keys S Plus Keyboard is a premium productivity device designed to boost your workflow and creative output. Featuring Smart Backlight, Smart Actions, 5 Devices, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $149, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-080",
-    "name_ar": "لوحة Keychron Q6 Max",
-    "name_en": "Keychron Q6 Max Wireless Keyboard",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 299,
-    "original_price": 349,
-    "discount": 14,
-    "rating": 4.8,
-    "reviews": 8765,
-    "stock": 73,
-    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&q=80",
-    "description_ar": "لوحة Keychron Q6 Max — من أفضل منتجات إنتاجية.",
-    "features_ar": [
-      "ميكانيكي",
-      "QMK/VIA",
-      "Gasket",
-      "BT 5.1",
-      "5000mAh"
-    ],
-    "tags": [
-      "إنتاجية"
-    ],
-    "badge": "الأكثر مبيعاً",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Productivity",
-    "features_en": [
-      "Mechanical",
-      "QMK/VIA",
-      "Gasket",
-      "BT 5.1",
-      "5000mAh"
-    ],
-    "description_en": "The Keychron Q6 Max Wireless Keyboard is a premium productivity device designed to boost your workflow and creative output. Featuring Mechanical, QMK/VIA, Gasket, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $299, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-081",
-    "name_ar": "جهاز Elgato Stream Deck Neo",
-    "name_en": "Elgato Stream Deck Neo Panel",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 99,
-    "original_price": 119,
-    "discount": 17,
-    "rating": 4.7,
-    "reviews": 6543,
-    "stock": 44,
-    "image": "https://images.unsplash.com/photo-1593640408182-31c228e8e1d3?w=400&q=80",
-    "description_ar": "جهاز Elgato Stream Deck Neo — من أفضل منتجات إنتاجية.",
-    "features_ar": [
-      "8 LCD",
-      "شاشتان",
-      "تكامل",
-      "USB-C",
-      "شامل"
-    ],
-    "tags": [
-      "إنتاجية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Productivity",
-    "features_en": [
-      "8 LCD",
-      "Dual Screen",
-      "Integration",
-      "USB-C",
-      "Comprehensive"
-    ],
-    "description_en": "The Elgato Stream Deck Neo Panel is a premium productivity device designed to boost your workflow and creative output. Featuring 8 LCD, Dual Screen, Integration, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $99, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-082",
-    "name_ar": "قلم Apple Pencil Pro",
-    "name_en": "Apple Pencil Pro Stylus",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 129,
-    "original_price": 149,
-    "discount": 13,
-    "rating": 4.8,
-    "reviews": 21345,
-    "stock": 31,
-    "image": "https://images.unsplash.com/photo-1585338107527-9451b39c8e98?w=400&q=80",
-    "description_ar": "قلم Apple Pencil Pro — من أفضل منتجات إنتاجية.",
-    "features_ar": [
-      "Squeeze+Tap",
-      "دوران",
-      "Barrel Roll",
-      "مغناطيسي",
-      "9ms"
-    ],
-    "tags": [
-      "إنتاجية"
-    ],
-    "badge": "الأكثر مبيعاً",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Productivity",
-    "features_en": [
-      "Squeeze+Tap",
-      "360° Rotation",
-      "Barrel Roll",
-      "Magnetic",
-      "9ms"
-    ],
-    "description_en": "The Apple Pencil Pro Stylus is a premium productivity device designed to boost your workflow and creative output. Featuring Squeeze+Tap, 360° Rotation, Barrel Roll, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $129, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
     "id": "NPH-083",
     "name_ar": "شاحن Anker 737 GaNPrime 120W",
     "name_en": "Anker 737 GaNPrime 120W Charger",
@@ -3320,65 +2880,65 @@
     "description_en": "The Anker 737 GaNPrime 120W Charger is a premium productivity device designed to boost your workflow and creative output. Featuring 120W, 3 Ports, GaN III, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $89, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
-    "id": "NPH-084",
-    "name_ar": "شاشة Samsung Odyssey OLED G9",
-    "name_en": "Samsung Odyssey OLED G9 Monitor",
+    "id": "NPH-076",
+    "name_ar": "جهاز iPad Pro M4 13 بوصة",
+    "name_en": "Apple iPad Pro M4 13 inch",
     "category": "productivity",
     "category_ar": "إنتاجية",
     "price": 1299,
     "original_price": 1499,
     "discount": 13,
-    "rating": 4.7,
-    "reviews": 3456,
-    "stock": 89,
-    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400&q=80",
-    "description_ar": "شاشة Samsung Odyssey OLED G9 — من أفضل منتجات إنتاجية.",
+    "rating": 4.9,
+    "reviews": 23456,
+    "stock": 27,
+    "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&q=80",
+    "description_ar": "جهاز iPad Pro M4 13 بوصة — من أفضل منتجات إنتاجية.",
     "features_ar": [
-      "OLED 49 QHD",
-      "240Hz",
-      "0.03ms",
-      "HDR",
-      "FreeSync"
+      "M4",
+      "OLED Tandem",
+      "Apple Intelligence",
+      "120Hz",
+      "USB4"
     ],
     "tags": [
       "إنتاجية"
     ],
-    "badge": "جديد",
+    "badge": "الأكثر مبيعاً",
     "active": true,
     "shipping_days": "7-14",
-    "featured": false,
+    "featured": true,
     "added_by": "smart_bot_v5",
     "added_at": "2026-03-10",
     "category_en": "Productivity",
     "features_en": [
-      "OLED 49 QHD",
-      "240Hz",
-      "0.03ms",
-      "HDR",
-      "FreeSync"
+      "M4",
+      "OLED Tandem",
+      "Apple Intelligence",
+      "120Hz",
+      "USB4"
     ],
-    "description_en": "The Samsung Odyssey OLED G9 Monitor is a premium productivity device designed to boost your workflow and creative output. Featuring OLED 49 QHD, 240Hz, 0.03ms, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $1299, it's one of the top choices in its category at NEO PULSE HUB."
+    "description_en": "The Apple iPad Pro M4 13 inch is a premium productivity device designed to boost your workflow and creative output. Featuring M4, OLED Tandem, Apple Intelligence, it delivers exceptional performance for everyday use. With a 4.9★ rating and competitive pricing at $1299, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
-    "id": "NPH-085",
-    "name_ar": "لوح رسم Wacom Intuos Pro L",
-    "name_en": "Wacom Intuos Pro Large Tablet",
+    "id": "NPH-079",
+    "name_ar": "لوحة Logitech MX Keys S Plus",
+    "name_en": "Logitech MX Keys S Plus Keyboard",
     "category": "productivity",
     "category_ar": "إنتاجية",
-    "price": 449,
-    "original_price": 499,
-    "discount": 10,
+    "price": 149,
+    "original_price": 179,
+    "discount": 17,
     "rating": 4.8,
-    "reviews": 8765,
-    "stock": 86,
-    "image": "https://images.unsplash.com/photo-1593640408182-31c228e8e1d3?w=400&q=80",
-    "description_ar": "لوح رسم Wacom Intuos Pro L — من أفضل منتجات إنتاجية.",
+    "reviews": 23456,
+    "stock": 81,
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&q=80",
+    "description_ar": "لوحة Logitech MX Keys S Plus — من أفضل منتجات إنتاجية.",
     "features_ar": [
-      "8192 ضغط",
-      "Pro Pen 3",
-      "BT 5.0",
-      "Touch",
-      "ExpressKey"
+      "Smart Backlight",
+      "Smart Actions",
+      "5 أجهزة",
+      "10 أيام",
+      "Flow"
     ],
     "tags": [
       "إنتاجية"
@@ -3391,53 +2951,13 @@
     "added_at": "2026-03-10",
     "category_en": "Productivity",
     "features_en": [
-      "8192",
-      "Pro Pen 3",
-      "BT 5.0",
-      "Touch",
-      "ExpressKey"
+      "Smart Backlight",
+      "Smart Actions",
+      "5 Devices",
+      "10 Days",
+      "Flow"
     ],
-    "description_en": "The Wacom Intuos Pro Large Tablet is a premium productivity device designed to boost your workflow and creative output. Featuring 8192 ضغط, Pro Pen 3, BT 5.0, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $449, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-086",
-    "name_ar": "جهاز Steam Deck OLED 1 تيرابايت",
-    "name_en": "Steam Deck OLED 1TB Gaming",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 649,
-    "original_price": 749,
-    "discount": 13,
-    "rating": 4.8,
-    "reviews": 12345,
-    "stock": 68,
-    "image": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=400&q=80",
-    "description_ar": "جهاز Steam Deck OLED 1 تيرابايت — من أفضل منتجات إنتاجية.",
-    "features_ar": [
-      "OLED HDR 90Hz",
-      "AMD APU",
-      "50% أكثر",
-      "1TB NVMe",
-      "WiFi 6E"
-    ],
-    "tags": [
-      "إنتاجية"
-    ],
-    "badge": "الأكثر مبيعاً",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Productivity",
-    "features_en": [
-      "OLED HDR 90Hz",
-      "AMD APU",
-      "50% More",
-      "1TB NVMe",
-      "WiFi 6E"
-    ],
-    "description_en": "The Steam Deck OLED 1TB Gaming is a premium productivity device designed to boost your workflow and creative output. Featuring OLED HDR 90Hz, AMD APU, 50% More, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $649, it's one of the top choices in its category at NEO PULSE HUB."
+    "description_en": "The Logitech MX Keys S Plus Keyboard is a premium productivity device designed to boost your workflow and creative output. Featuring Smart Backlight, Smart Actions, 5 Devices, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $149, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
     "id": "NPH-087",
@@ -3480,30 +3000,30 @@
     "description_en": "The Anker MagGo 3-in-1 Wireless Charger is a premium productivity device designed to boost your workflow and creative output. Featuring MagSafe 15W, 3-in-1, iPhone+Watch+AirPods, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $79, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
-    "id": "NPH-088",
-    "name_ar": "شاشة LG UltraWide 34 بوصة",
-    "name_en": "LG UltraWide 34 5K2K Monitor",
+    "id": "NPH-082",
+    "name_ar": "قلم Apple Pencil Pro",
+    "name_en": "Apple Pencil Pro Stylus",
     "category": "productivity",
     "category_ar": "إنتاجية",
-    "price": 999,
-    "original_price": 1199,
-    "discount": 17,
-    "rating": 4.7,
-    "reviews": 4321,
-    "stock": 27,
-    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400&q=80",
-    "description_ar": "شاشة LG UltraWide 34 بوصة — من أفضل منتجات إنتاجية.",
+    "price": 129,
+    "original_price": 149,
+    "discount": 13,
+    "rating": 4.8,
+    "reviews": 21345,
+    "stock": 31,
+    "image": "https://images.unsplash.com/photo-1585338107527-9451b39c8e98?w=400&q=80",
+    "description_ar": "قلم Apple Pencil Pro — من أفضل منتجات إنتاجية.",
     "features_ar": [
-      "5K2K",
-      "IPS",
-      "Thunderbolt 4",
-      "KVM",
-      "Ergo Stand"
+      "Squeeze+Tap",
+      "دوران",
+      "Barrel Roll",
+      "مغناطيسي",
+      "9ms"
     ],
     "tags": [
       "إنتاجية"
     ],
-    "badge": "جديد",
+    "badge": "الأكثر مبيعاً",
     "active": true,
     "shipping_days": "7-14",
     "featured": false,
@@ -3511,34 +3031,194 @@
     "added_at": "2026-03-10",
     "category_en": "Productivity",
     "features_en": [
-      "5K2K",
-      "IPS",
-      "Thunderbolt 4",
-      "KVM",
-      "Ergo Stand"
+      "Squeeze+Tap",
+      "360° Rotation",
+      "Barrel Roll",
+      "Magnetic",
+      "9ms"
     ],
-    "description_en": "The LG UltraWide 34 5K2K Monitor is a premium productivity device designed to boost your workflow and creative output. Featuring 5K2K, IPS, Thunderbolt 4, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $999, it's one of the top choices in its category at NEO PULSE HUB."
+    "description_en": "The Apple Pencil Pro Stylus is a premium productivity device designed to boost your workflow and creative output. Featuring Squeeze+Tap, 360° Rotation, Barrel Roll, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $129, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
-    "id": "NPH-089",
-    "name_ar": "سماعات Jabra Evolve2 85",
-    "name_en": "Jabra Evolve2 85 ANC Headset",
+    "id": "NPH-077",
+    "name_ar": "تابلت Samsung Galaxy Tab S10 Ultra",
+    "name_en": "Samsung Galaxy Tab S10 Ultra",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 1299,
+    "original_price": 1499,
+    "discount": 13,
+    "rating": 4.8,
+    "reviews": 12345,
+    "stock": 38,
+    "image": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=400&q=80",
+    "description_ar": "تابلت Samsung Galaxy Tab S10 Ultra — من أفضل منتجات إنتاجية.",
+    "features_ar": [
+      "Snapdragon 8 Gen 3",
+      "AMOLED 14.6",
+      "S Pen",
+      "DeX",
+      "12000mAh"
+    ],
+    "tags": [
+      "إنتاجية"
+    ],
+    "badge": "مميز",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": true,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Productivity",
+    "features_en": [
+      "Snapdragon 8 Gen 3",
+      "AMOLED 14.6",
+      "S Pen",
+      "DeX",
+      "12000mAh"
+    ],
+    "description_en": "The Samsung Galaxy Tab S10 Ultra is a premium productivity device designed to boost your workflow and creative output. Featuring Snapdragon 8 Gen 3, AMOLED 14.6, S Pen, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $1299, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-086",
+    "name_ar": "جهاز Steam Deck OLED 1 تيرابايت",
+    "name_en": "Steam Deck OLED 1TB Gaming",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 649,
+    "original_price": 749,
+    "discount": 13,
+    "rating": 4.8,
+    "reviews": 12345,
+    "stock": 68,
+    "image": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=400&q=80",
+    "description_ar": "جهاز Steam Deck OLED 1 تيرابايت — من أفضل منتجات إنتاجية.",
+    "features_ar": [
+      "OLED HDR 90Hz",
+      "AMD APU",
+      "50% أكثر",
+      "1TB NVMe",
+      "WiFi 6E"
+    ],
+    "tags": [
+      "إنتاجية"
+    ],
+    "badge": "الأكثر مبيعاً",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Productivity",
+    "features_en": [
+      "OLED HDR 90Hz",
+      "AMD APU",
+      "50% More",
+      "1TB NVMe",
+      "WiFi 6E"
+    ],
+    "description_en": "The Steam Deck OLED 1TB Gaming is a premium productivity device designed to boost your workflow and creative output. Featuring OLED HDR 90Hz, AMD APU, 50% More, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $649, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-080",
+    "name_ar": "لوحة Keychron Q6 Max",
+    "name_en": "Keychron Q6 Max Wireless Keyboard",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.8,
+    "reviews": 8765,
+    "stock": 73,
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&q=80",
+    "description_ar": "لوحة Keychron Q6 Max — من أفضل منتجات إنتاجية.",
+    "features_ar": [
+      "ميكانيكي",
+      "QMK/VIA",
+      "Gasket",
+      "BT 5.1",
+      "5000mAh"
+    ],
+    "tags": [
+      "إنتاجية"
+    ],
+    "badge": "الأكثر مبيعاً",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Productivity",
+    "features_en": [
+      "Mechanical",
+      "QMK/VIA",
+      "Gasket",
+      "BT 5.1",
+      "5000mAh"
+    ],
+    "description_en": "The Keychron Q6 Max Wireless Keyboard is a premium productivity device designed to boost your workflow and creative output. Featuring Mechanical, QMK/VIA, Gasket, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $299, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-085",
+    "name_ar": "لوح رسم Wacom Intuos Pro L",
+    "name_en": "Wacom Intuos Pro Large Tablet",
     "category": "productivity",
     "category_ar": "إنتاجية",
     "price": 449,
-    "original_price": 529,
-    "discount": 15,
-    "rating": 4.6,
-    "reviews": 3210,
-    "stock": 28,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=80",
-    "description_ar": "سماعات Jabra Evolve2 85 — من أفضل منتجات إنتاجية.",
+    "original_price": 499,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 8765,
+    "stock": 86,
+    "image": "https://images.unsplash.com/photo-1593640408182-31c228e8e1d3?w=400&q=80",
+    "description_ar": "لوح رسم Wacom Intuos Pro L — من أفضل منتجات إنتاجية.",
     "features_ar": [
-      "ANC عمل",
-      "Busylight",
-      "37h",
-      "UC",
-      "8 ميكروفون"
+      "8192 ضغط",
+      "Pro Pen 3",
+      "BT 5.0",
+      "Touch",
+      "ExpressKey"
+    ],
+    "tags": [
+      "إنتاجية"
+    ],
+    "badge": "الأكثر مبيعاً",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Productivity",
+    "features_en": [
+      "8192",
+      "Pro Pen 3",
+      "BT 5.0",
+      "Touch",
+      "ExpressKey"
+    ],
+    "description_en": "The Wacom Intuos Pro Large Tablet is a premium productivity device designed to boost your workflow and creative output. Featuring 8192 ضغط, Pro Pen 3, BT 5.0, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $449, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-081",
+    "name_ar": "جهاز Elgato Stream Deck Neo",
+    "name_en": "Elgato Stream Deck Neo Panel",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 99,
+    "original_price": 119,
+    "discount": 17,
+    "rating": 4.7,
+    "reviews": 6543,
+    "stock": 44,
+    "image": "https://images.unsplash.com/photo-1593640408182-31c228e8e1d3?w=400&q=80",
+    "description_ar": "جهاز Elgato Stream Deck Neo — من أفضل منتجات إنتاجية.",
+    "features_ar": [
+      "8 LCD",
+      "شاشتان",
+      "تكامل",
+      "USB-C",
+      "شامل"
     ],
     "tags": [
       "إنتاجية"
@@ -3551,13 +3231,13 @@
     "added_at": "2026-03-10",
     "category_en": "Productivity",
     "features_en": [
-      "Work ANC",
-      "Busylight",
-      "37h",
-      "UC",
-      "8 Microphones"
+      "8 LCD",
+      "Dual Screen",
+      "Integration",
+      "USB-C",
+      "Comprehensive"
     ],
-    "description_en": "The Jabra Evolve2 85 ANC Headset is a premium productivity device designed to boost your workflow and creative output. Featuring Work ANC, Busylight, 37h, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $449, it's one of the top choices in its category at NEO PULSE HUB."
+    "description_en": "The Elgato Stream Deck Neo Panel is a premium productivity device designed to boost your workflow and creative output. Featuring 8 LCD, Dual Screen, Integration, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $99, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
     "id": "NPH-090",
@@ -3600,85 +3280,329 @@
     "description_en": "The Twelve South HiRise 3 Deluxe is a premium productivity device designed to boost your workflow and creative output. Featuring MagSafe 15W, Laptop Mode, Ergo, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $99, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
-    "id": "NPH-093",
-    "name_ar": "ميرا لايف بود",
-    "name_en": "Mira LifePod",
-    "category": "health",
-    "category_ar": "صحة ولياقة",
-    "category_en": "Health & Fitness",
-    "price": 279,
-    "original_price": 329,
-    "discount": 15,
-    "rating": 4.5,
-    "reviews": 850,
-    "stock": 22,
-    "image": "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&q=80",
+    "id": "NPH-088",
+    "name_ar": "شاشة LG UltraWide 34 بوصة",
+    "name_en": "LG UltraWide 34 5K2K Monitor",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 999,
+    "original_price": 1199,
+    "discount": 17,
+    "rating": 4.7,
+    "reviews": 4321,
+    "stock": 27,
+    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400&q=80",
+    "description_ar": "شاشة LG UltraWide 34 بوصة — من أفضل منتجات إنتاجية.",
+    "features_ar": [
+      "5K2K",
+      "IPS",
+      "Thunderbolt 4",
+      "KVM",
+      "Ergo Stand"
+    ],
+    "tags": [
+      "إنتاجية"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Productivity",
+    "features_en": [
+      "5K2K",
+      "IPS",
+      "Thunderbolt 4",
+      "KVM",
+      "Ergo Stand"
+    ],
+    "description_en": "The LG UltraWide 34 5K2K Monitor is a premium productivity device designed to boost your workflow and creative output. Featuring 5K2K, IPS, Thunderbolt 4, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $999, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-084",
+    "name_ar": "شاشة Samsung Odyssey OLED G9",
+    "name_en": "Samsung Odyssey OLED G9 Monitor",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "price": 1299,
+    "original_price": 1499,
+    "discount": 13,
+    "rating": 4.7,
+    "reviews": 3456,
+    "stock": 89,
+    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400&q=80",
+    "description_ar": "شاشة Samsung Odyssey OLED G9 — من أفضل منتجات إنتاجية.",
+    "features_ar": [
+      "OLED 49 QHD",
+      "240Hz",
+      "0.03ms",
+      "HDR",
+      "FreeSync"
+    ],
+    "tags": [
+      "إنتاجية"
+    ],
+    "badge": "جديد",
+    "active": true,
+    "shipping_days": "7-14",
+    "featured": false,
+    "added_by": "smart_bot_v5",
+    "added_at": "2026-03-10",
+    "category_en": "Productivity",
+    "features_en": [
+      "OLED 49 QHD",
+      "240Hz",
+      "0.03ms",
+      "HDR",
+      "FreeSync"
+    ],
+    "description_en": "The Samsung Odyssey OLED G9 Monitor is a premium productivity device designed to boost your workflow and creative output. Featuring OLED 49 QHD, 240Hz, 0.03ms, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $1299, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-P203",
+    "name_ar": "ساعة فيتا فلو 3",
+    "name_en": "VitaFlow 3",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "Smart Watches",
+    "price": 199,
+    "original_price": 239,
+    "discount": 17,
+    "rating": 4.8,
+    "reviews": 5400,
+    "stock": 48,
+    "image": "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=600&q=80",
     "badge": "الأكثر مبيعاً",
     "badge_en": "Best Seller",
     "active": true,
     "featured": false,
-    "description_ar": "ميرا لايف بود هو جهاز تتبع صحي ذكي يراقب مؤشراتك الحيوية بدقة على مدار الساعة. يوفر لك رؤى مخصصة لتحسين لياقتك البدنية وصحتك العامة.",
-    "description_en": "The Mira LifePod is a smart health tracker that accurately monitors your vital signs 24/7. It provides personalized insights to help you improve your fitness and overall well-being.",
+    "description_ar": "راقب صحتك بدقة عالية",
+    "description_en": "Monitor your health with precision",
     "features_ar": [
-      "مراقبة مستمرة لمعدل ضربات القلب",
-      "تتبع جودة النوم المتقدم",
-      "تحليل مستوى الأكسجين في الدم",
-      "تذكيرات مخصصة للنشاط والمياه"
+      "ضغط الدم",
+      "أكسجين الدم",
+      "مقاوم للماء",
+      "شاشة لمس"
     ],
     "features_en": [
-      "Continuous Heart Rate Monitoring",
-      "Advanced Sleep Quality Tracking",
-      "Blood Oxygen Level Analysis",
-      "Personalized Activity and Water Reminders"
+      "Blood pressure",
+      "Blood oxygen",
+      "Waterproof",
+      "Touch screen"
+    ],
+    "tags": [
+      "smartwatch",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 4,
+    "added_at": "2026-03-13T10:50:47.580305",
+    "added_by": "pool_v1"
+  },
+  {
+    "id": "NPH-P212",
+    "name_ar": "نظارة أوبتيك فلو",
+    "name_en": "Optic Flow",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "category_en": "Smart Glasses",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.6,
+    "reviews": 1900,
+    "stock": 37,
+    "image": "https://images.unsplash.com/photo-1542219550-37153d387c27?w=600&q=80",
+    "badge": "مميز",
+    "badge_en": "Featured",
+    "active": true,
+    "featured": false,
+    "description_ar": "عالمك بمنظور جديد",
+    "description_en": "Your world from a new perspective",
+    "features_ar": [
+      "ترجمة فورية",
+      "خرائط مدمجة",
+      "عمر 8 ساعات",
+      "إطار خفيف"
+    ],
+    "features_en": [
+      "Instant translation",
+      "Built-in maps",
+      "8h battery",
+      "Light frame"
+    ],
+    "tags": [
+      "smart-glasses",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 4,
+    "added_at": "2026-03-13T10:50:48.021623",
+    "added_by": "pool_v1"
+  },
+  {
+    "id": "NPH-P228",
+    "name_ar": "جهاز إيكو هيلث",
+    "name_en": "EcoHealth Plus",
+    "category": "health",
+    "category_ar": "صحة ولياقة",
+    "category_en": "Health & Fitness",
+    "price": 219,
+    "original_price": 259,
+    "discount": 16,
+    "rating": 4.8,
+    "reviews": 6700,
+    "stock": 71,
+    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80",
+    "badge": "الأكثر مبيعاً",
+    "badge_en": "Best Seller",
+    "active": true,
+    "featured": false,
+    "description_ar": "الحل الصحي الشامل",
+    "description_en": "The complete health solution",
+    "features_ar": [
+      "شامل ومتكامل",
+      "مقاوم للماء",
+      "نظام Android",
+      "واجهة عربية"
+    ],
+    "features_en": [
+      "All-in-one",
+      "Waterproof",
+      "Android system",
+      "Arabic interface"
     ],
     "tags": [
       "health",
       "smart",
       "tech"
     ],
-    "shipping_days": 4,
-    "added_at": "2026-03-12T23:15:39.547380",
-    "added_by": "auto_ai"
+    "shipping_days": 3,
+    "added_at": "2026-03-13T10:50:48.521174",
+    "added_by": "pool_v1"
   },
   {
-    "id": "NPH-094",
-    "name_ar": "المساعد المنزلي الذكي هوم جارد",
-    "name_en": "HomeGuard Smart Home Assistant",
+    "id": "NPH-P235",
+    "name_ar": "روبوت كنس روومبا X",
+    "name_en": "CleanBot X",
     "category": "smart-home",
     "category_ar": "منزل ذكي",
     "category_en": "Smart Home",
-    "price": 279,
-    "original_price": 329,
-    "discount": 15,
-    "rating": 4.6,
-    "reviews": 1200,
-    "stock": 43,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-    "badge": "الأكثر مبيعاً",
-    "badge_en": "Best Seller",
+    "price": 299,
+    "original_price": 379,
+    "discount": 21,
+    "rating": 4.8,
+    "reviews": 11000,
+    "stock": 26,
+    "image": "https://images.unsplash.com/photo-1567721913486-6585f069b332?w=600&q=80",
+    "badge": "مميز",
+    "badge_en": "Featured",
     "active": true,
     "featured": false,
-    "description_ar": "المساعد المنزلي الذكي HomeGuard يوفر لك راحة البال من خلال مراقبة منزلك وتأمين بياناتك. استمتع بتحكم سلس في أجهزتك الذكية مع نظام أمان متقدم.",
-    "description_en": "The HomeGuard Smart Home Assistant offers peace of mind by monitoring your home and securing your data. Enjoy seamless control over your smart devices with an advanced security system.",
+    "description_ar": "منزل نظيف بلا جهد",
+    "description_en": "Clean home without effort",
     "features_ar": [
-      "مراقبة صوتية ومرئية للمنزل بدقة عالية",
-      "تكامل سلس مع أجهزة Zigbee و Wi-Fi",
-      "كشف الحركة والأصوات غير العادية مع تنبيهات فورية",
-      "بطارية احتياطية طويلة الأمد لضمان الأداء المستمر"
+      "خريطة ذكية",
+      "تجنب عوائق",
+      "شحن تلقائي",
+      "تطبيق ذكي"
     ],
     "features_en": [
-      "High-definition audio and video home monitoring",
-      "Seamless integration with Zigbee and Wi-Fi devices",
-      "Motion and unusual sound detection with instant alerts",
-      "Long-lasting backup battery for continuous operation"
+      "Smart mapping",
+      "Obstacle avoidance",
+      "Auto-charge",
+      "Smart app"
     ],
     "tags": [
       "smart-home",
       "smart",
       "tech"
     ],
-    "shipping_days": 3,
-    "added_at": "2026-03-12T23:15:41.623770",
-    "added_by": "auto_ai"
+    "shipping_days": 4,
+    "added_at": "2026-03-13T10:50:48.937513",
+    "added_by": "pool_v1"
+  },
+  {
+    "id": "NPH-P246",
+    "name_ar": "سماعة أولترا كلير",
+    "name_en": "UltraClear",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "category_en": "Smart Earbuds",
+    "price": 259,
+    "original_price": 319,
+    "discount": 19,
+    "rating": 4.8,
+    "reviews": 8900,
+    "stock": 59,
+    "image": "https://images.unsplash.com/photo-1560393464-5c69a73c5770?w=600&q=80",
+    "badge": "وضوح",
+    "badge_en": "Clarity",
+    "active": true,
+    "featured": false,
+    "description_ar": "وضوح لا مثيل له في المكالمات",
+    "description_en": "Unmatched call clarity",
+    "features_ar": [
+      "ميكروفون 6",
+      "مكالمات HD",
+      "إلغاء ضوضاء",
+      "شاشة LED"
+    ],
+    "features_en": [
+      "6 mics",
+      "HD calls",
+      "Noise cancellation",
+      "LED display"
+    ],
+    "tags": [
+      "earbuds",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 6,
+    "added_at": "2026-03-13T10:50:49.373939",
+    "added_by": "pool_v1"
+  },
+  {
+    "id": "NPH-P257",
+    "name_ar": "كاميرا ويب كريستال",
+    "name_en": "CrystalCam 4K",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "category_en": "Productivity Tech",
+    "price": 159,
+    "original_price": 199,
+    "discount": 20,
+    "rating": 4.8,
+    "reviews": 9200,
+    "stock": 25,
+    "image": "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=600&q=80",
+    "badge": "احترافي",
+    "badge_en": "Pro",
+    "active": true,
+    "featured": false,
+    "description_ar": "اجتماعاتك باحترافية",
+    "description_en": "Professional meetings",
+    "features_ar": [
+      "4K/60fps",
+      "إضاءة ذكية",
+      "خلفية وهمية",
+      "ميكروفون مدمج"
+    ],
+    "features_en": [
+      "4K/60fps",
+      "Smart lighting",
+      "Virtual background",
+      "Built-in mic"
+    ],
+    "tags": [
+      "productivity",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 7,
+    "added_at": "2026-03-13T10:50:49.892092",
+    "added_by": "pool_v1"
   }
 ]
