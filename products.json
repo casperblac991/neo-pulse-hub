@@ -200,6 +200,47 @@
     "description_en": "The Garmin Fenix 7X Solar is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Solar Charging, GPS متعدد, 37 Days, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $699, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
+    "id": "NPH-P203",
+    "name_ar": "ساعة فيتا فلو 3",
+    "name_en": "VitaFlow 3",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "Smart Watches",
+    "price": 199,
+    "original_price": 239,
+    "discount": 17,
+    "rating": 4.8,
+    "reviews": 5400,
+    "stock": 48,
+    "image": "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=600&q=80",
+    "badge": "الأكثر مبيعاً",
+    "badge_en": "Best Seller",
+    "active": true,
+    "featured": false,
+    "description_ar": "راقب صحتك بدقة عالية",
+    "description_en": "Monitor your health with precision",
+    "features_ar": [
+      "ضغط الدم",
+      "أكسجين الدم",
+      "مقاوم للماء",
+      "شاشة لمس"
+    ],
+    "features_en": [
+      "Blood pressure",
+      "Blood oxygen",
+      "Waterproof",
+      "Touch screen"
+    ],
+    "tags": [
+      "smartwatch",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 4,
+    "added_at": "2026-03-13T10:50:47.580305",
+    "added_by": "pool_v1"
+  },
+  {
     "id": "NPH-012",
     "name_ar": "ساعة هواوي Watch GT 5 Pro",
     "name_en": "Huawei Watch GT 5 Pro",
@@ -520,46 +561,6 @@
     "description_en": "The OnePlus Watch 3 is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Wear OS 4, 100 Hours, Fast Charging, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $329, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
-    "id": "NPH-013",
-    "name_ar": "ساعة ويذينغز ScanWatch 2",
-    "name_en": "Withings ScanWatch 2",
-    "category": "smartwatch",
-    "category_ar": "ساعات ذكية",
-    "price": 299,
-    "original_price": 349,
-    "discount": 14,
-    "rating": 4.6,
-    "reviews": 1876,
-    "stock": 37,
-    "image": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80",
-    "description_ar": "ساعة ويذينغز ScanWatch 2 — من أفضل منتجات ساعات ذكية.",
-    "features_ar": [
-      "ECG",
-      "SpO2",
-      "30 يوم",
-      "كلاسيكي",
-      "FDA"
-    ],
-    "tags": [
-      "ساعات ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smartwatch",
-    "features_en": [
-      "ECG",
-      "SpO2",
-      "30 Days",
-      "Classic",
-      "FDA"
-    ],
-    "description_en": "The Withings ScanWatch 2 is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring ECG, SpO2, 30 Days, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $299, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
     "id": "NPH-017",
     "name_ar": "نظارة Meta Quest 3",
     "name_en": "Meta Quest 3 512GB",
@@ -840,6 +841,47 @@
     "description_en": "The Pico 4 Ultra VR is a premium smart glasses designed to see the world enhanced with AR technology. Featuring XR2 Gen 2, Spatial Video, Hand Tracking, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $599, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
+    "id": "NPH-P212",
+    "name_ar": "نظارة أوبتيك فلو",
+    "name_en": "Optic Flow",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "category_en": "Smart Glasses",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.6,
+    "reviews": 1900,
+    "stock": 37,
+    "image": "https://images.unsplash.com/photo-1542219550-37153d387c27?w=600&q=80",
+    "badge": "مميز",
+    "badge_en": "Featured",
+    "active": true,
+    "featured": false,
+    "description_ar": "عالمك بمنظور جديد",
+    "description_en": "Your world from a new perspective",
+    "features_ar": [
+      "ترجمة فورية",
+      "خرائط مدمجة",
+      "عمر 8 ساعات",
+      "إطار خفيف"
+    ],
+    "features_en": [
+      "Instant translation",
+      "Built-in maps",
+      "8h battery",
+      "Light frame"
+    ],
+    "tags": [
+      "smart-glasses",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 4,
+    "added_at": "2026-03-13T10:50:48.021623",
+    "added_by": "pool_v1"
+  },
+  {
     "id": "NPH-021",
     "name_ar": "نظارة HTC Vive XR Elite",
     "name_en": "HTC Vive XR Elite",
@@ -1080,46 +1122,6 @@
     "description_en": "The Viture One XR Glasses is a premium smart glasses designed to see the world enhanced with AR technology. Featuring 135-inch, Electrochromic, Cinema, it delivers exceptional performance for everyday use. With a 4.4★ rating and competitive pricing at $439, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
-    "id": "NPH-027",
-    "name_ar": "نظارة Inmo Air 2 الذكية",
-    "name_en": "Inmo Air 2 Smart Glasses",
-    "category": "smart-glasses",
-    "category_ar": "نظارات ذكية",
-    "price": 399,
-    "original_price": 449,
-    "discount": 11,
-    "rating": 4.2,
-    "reviews": 654,
-    "stock": 78,
-    "image": "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=400&q=80",
-    "description_ar": "نظارة Inmo Air 2 الذكية — من أفضل منتجات نظارات ذكية.",
-    "features_ar": [
-      "ChatGPT",
-      "ترجمة",
-      "27g",
-      "9h",
-      "Waveguide"
-    ],
-    "tags": [
-      "نظارات ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smart Glasses",
-    "features_en": [
-      "ChatGPT",
-      "Translation",
-      "27g",
-      "9h",
-      "Waveguide"
-    ],
-    "description_en": "The Inmo Air 2 Smart Glasses is a premium smart glasses designed to see the world enhanced with AR technology. Featuring ChatGPT, Translation, 27g, it delivers exceptional performance for everyday use. With a 4.2★ rating and competitive pricing at $399, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
     "id": "NPH-031",
     "name_ar": "خاتم Oura Ring الجيل 4",
     "name_en": "Oura Ring Gen 4",
@@ -1278,6 +1280,47 @@
       "Precise"
     ],
     "description_en": "The WHOOP 4.0 Fitness Band is a premium health device designed to track and monitor your wellness in real time. Featuring Strain, Recovery, HRV, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $239, it's one of the top choices in its category at NEO PULSE HUB."
+  },
+  {
+    "id": "NPH-P228",
+    "name_ar": "جهاز إيكو هيلث",
+    "name_en": "EcoHealth Plus",
+    "category": "health",
+    "category_ar": "صحة ولياقة",
+    "category_en": "Health & Fitness",
+    "price": 219,
+    "original_price": 259,
+    "discount": 16,
+    "rating": 4.8,
+    "reviews": 6700,
+    "stock": 71,
+    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80",
+    "badge": "الأكثر مبيعاً",
+    "badge_en": "Best Seller",
+    "active": true,
+    "featured": false,
+    "description_ar": "الحل الصحي الشامل",
+    "description_en": "The complete health solution",
+    "features_ar": [
+      "شامل ومتكامل",
+      "مقاوم للماء",
+      "نظام Android",
+      "واجهة عربية"
+    ],
+    "features_en": [
+      "All-in-one",
+      "Waterproof",
+      "Android system",
+      "Arabic interface"
+    ],
+    "tags": [
+      "health",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 3,
+    "added_at": "2026-03-13T10:50:48.521174",
+    "added_by": "pool_v1"
   },
   {
     "id": "NPH-035",
@@ -1640,46 +1683,6 @@
     "description_en": "The Amazfit Helio Ring is a premium health device designed to track and monitor your wellness in real time. Featuring Titanium, Health, 4 Days, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $299, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
-    "id": "NPH-043",
-    "name_ar": "سوار Biostrap EVO الصحي",
-    "name_en": "Biostrap EVO Health Band",
-    "category": "health",
-    "category_ar": "صحة ذكية",
-    "price": 199,
-    "original_price": 249,
-    "discount": 20,
-    "rating": 4.4,
-    "reviews": 1234,
-    "stock": 74,
-    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd6b0?w=400&q=80",
-    "description_ar": "سوار Biostrap EVO الصحي — من أفضل منتجات صحة ذكية.",
-    "features_ar": [
-      "HRV دقيق",
-      "SpO2",
-      "نوم",
-      "طبي",
-      "IP67"
-    ],
-    "tags": [
-      "صحة ذكية"
-    ],
-    "badge": "خصم خاص",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Health",
-    "features_en": [
-      "Advanced HRV",
-      "SpO2",
-      "Sleep",
-      "Medical",
-      "IP67"
-    ],
-    "description_en": "The Biostrap EVO Health Band is a premium health device designed to track and monitor your wellness in real time. Featuring HRV دقيق, SpO2, Sleep, it delivers exceptional performance for everyday use. With a 4.4★ rating and competitive pricing at $199, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
     "id": "NPH-052",
     "name_ar": "مكبر Amazon Echo Dot الجيل 5",
     "name_en": "Amazon Echo Dot 5th Gen",
@@ -2040,6 +2043,47 @@
     "description_en": "The Nanoleaf Shapes Hexagons Kit is a premium smart home device designed to automate and control your home intelligently. Featuring 16M لون, Music, Touch, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $199, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
+    "id": "NPH-P235",
+    "name_ar": "روبوت كنس روومبا X",
+    "name_en": "CleanBot X",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "category_en": "Smart Home",
+    "price": 299,
+    "original_price": 379,
+    "discount": 21,
+    "rating": 4.8,
+    "reviews": 11000,
+    "stock": 26,
+    "image": "https://images.unsplash.com/photo-1567721913486-6585f069b332?w=600&q=80",
+    "badge": "مميز",
+    "badge_en": "Featured",
+    "active": true,
+    "featured": false,
+    "description_ar": "منزل نظيف بلا جهد",
+    "description_en": "Clean home without effort",
+    "features_ar": [
+      "خريطة ذكية",
+      "تجنب عوائق",
+      "شحن تلقائي",
+      "تطبيق ذكي"
+    ],
+    "features_en": [
+      "Smart mapping",
+      "Obstacle avoidance",
+      "Auto-charge",
+      "Smart app"
+    ],
+    "tags": [
+      "smart-home",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 4,
+    "added_at": "2026-03-13T10:50:48.937513",
+    "added_by": "pool_v1"
+  },
+  {
     "id": "NPH-053",
     "name_ar": "كاميرا Arlo Pro 5S",
     "name_en": "Arlo Pro 5S Security Camera",
@@ -2198,46 +2242,6 @@
       "No Subscription"
     ],
     "description_en": "The Eufy Security HomeBase 3 is a premium smart home device designed to automate and control your home intelligently. Featuring 16GB محلي, Triple Band, AI, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $299, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-054",
-    "name_ar": "قفل ذكي Yale Assure Lock 2",
-    "name_en": "Yale Assure Lock 2 Plus",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "price": 329,
-    "original_price": 379,
-    "discount": 13,
-    "rating": 4.5,
-    "reviews": 4321,
-    "stock": 70,
-    "image": "https://images.unsplash.com/photo-1558618047-f4c4d46f4e5e?w=400&q=80",
-    "description_ar": "قفل ذكي Yale Assure Lock 2 — من أفضل منتجات منزل ذكي.",
-    "features_ar": [
-      "Matter",
-      "بصمة+رمز",
-      "AES-128",
-      "Yale Access",
-      "تنبيهات"
-    ],
-    "tags": [
-      "منزل ذكي"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smart Home",
-    "features_en": [
-      "Matter",
-      "Fingerprint+PIN",
-      "AES-128",
-      "Yale Access",
-      "Alerts"
-    ],
-    "description_en": "The Yale Assure Lock 2 Plus is a premium smart home device designed to automate and control your home intelligently. Featuring Matter, Fingerprint+PIN, AES-128, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $329, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
     "id": "NPH-061",
@@ -2520,6 +2524,47 @@
     "description_en": "The Anker Soundcore Liberty 4 Pro is a premium earbuds designed to deliver immersive sound wherever you go. Featuring ANC 50dB, LDAC, 11h+53h, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $129, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
+    "id": "NPH-P246",
+    "name_ar": "سماعة أولترا كلير",
+    "name_en": "UltraClear",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "category_en": "Smart Earbuds",
+    "price": 259,
+    "original_price": 319,
+    "discount": 19,
+    "rating": 4.8,
+    "reviews": 8900,
+    "stock": 59,
+    "image": "https://images.unsplash.com/photo-1560393464-5c69a73c5770?w=600&q=80",
+    "badge": "وضوح",
+    "badge_en": "Clarity",
+    "active": true,
+    "featured": false,
+    "description_ar": "وضوح لا مثيل له في المكالمات",
+    "description_en": "Unmatched call clarity",
+    "features_ar": [
+      "ميكروفون 6",
+      "مكالمات HD",
+      "إلغاء ضوضاء",
+      "شاشة LED"
+    ],
+    "features_en": [
+      "6 mics",
+      "HD calls",
+      "Noise cancellation",
+      "LED display"
+    ],
+    "tags": [
+      "earbuds",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 6,
+    "added_at": "2026-03-13T10:50:49.373939",
+    "added_by": "pool_v1"
+  },
+  {
     "id": "NPH-071",
     "name_ar": "سماعات Google Pixel Buds Pro 2",
     "name_en": "Google Pixel Buds Pro 2",
@@ -2758,46 +2803,6 @@
       "IP54"
     ],
     "description_en": "The Sennheiser Momentum True Wireless 4 is a premium earbuds designed to deliver immersive sound wherever you go. Featuring Hi-Fi, ANC Adaptive, 7h+28h, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $279, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-074",
-    "name_ar": "سماعات Shure Aonic Free 2",
-    "name_en": "Shure Aonic Free 2",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "price": 299,
-    "original_price": 349,
-    "discount": 14,
-    "rating": 4.6,
-    "reviews": 2345,
-    "stock": 88,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=80",
-    "description_ar": "سماعات Shure Aonic Free 2 — من أفضل منتجات سماعات ذكية.",
-    "features_ar": [
-      "استوديو",
-      "ANC",
-      "7h+28h",
-      "USB-C",
-      "لمس"
-    ],
-    "tags": [
-      "سماعات ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Earbuds",
-    "features_en": [
-      "Studio",
-      "ANC",
-      "7h+28h",
-      "USB-C",
-      "Touch"
-    ],
-    "description_en": "The Shure Aonic Free 2 is a premium earbuds designed to deliver immersive sound wherever you go. Featuring Studio, ANC, 7h+28h, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $299, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
     "id": "NPH-078",
@@ -3120,6 +3125,47 @@
     "description_en": "The Steam Deck OLED 1TB Gaming is a premium productivity device designed to boost your workflow and creative output. Featuring OLED HDR 90Hz, AMD APU, 50% More, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $649, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
+    "id": "NPH-P257",
+    "name_ar": "كاميرا ويب كريستال",
+    "name_en": "CrystalCam 4K",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "category_en": "Productivity Tech",
+    "price": 159,
+    "original_price": 199,
+    "discount": 20,
+    "rating": 4.8,
+    "reviews": 9200,
+    "stock": 25,
+    "image": "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=600&q=80",
+    "badge": "احترافي",
+    "badge_en": "Pro",
+    "active": true,
+    "featured": false,
+    "description_ar": "اجتماعاتك باحترافية",
+    "description_en": "Professional meetings",
+    "features_ar": [
+      "4K/60fps",
+      "إضاءة ذكية",
+      "خلفية وهمية",
+      "ميكروفون مدمج"
+    ],
+    "features_en": [
+      "4K/60fps",
+      "Smart lighting",
+      "Virtual background",
+      "Built-in mic"
+    ],
+    "tags": [
+      "productivity",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 7,
+    "added_at": "2026-03-13T10:50:49.892092",
+    "added_by": "pool_v1"
+  },
+  {
     "id": "NPH-080",
     "name_ar": "لوحة Keychron Q6 Max",
     "name_en": "Keychron Q6 Max Wireless Keyboard",
@@ -3320,158 +3366,118 @@
     "description_en": "The LG UltraWide 34 5K2K Monitor is a premium productivity device designed to boost your workflow and creative output. Featuring 5K2K, IPS, Thunderbolt 4, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $999, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
-    "id": "NPH-084",
-    "name_ar": "شاشة Samsung Odyssey OLED G9",
-    "name_en": "Samsung Odyssey OLED G9 Monitor",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 1299,
-    "original_price": 1499,
-    "discount": 13,
-    "rating": 4.7,
-    "reviews": 3456,
-    "stock": 89,
-    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400&q=80",
-    "description_ar": "شاشة Samsung Odyssey OLED G9 — من أفضل منتجات إنتاجية.",
-    "features_ar": [
-      "OLED 49 QHD",
-      "240Hz",
-      "0.03ms",
-      "HDR",
-      "FreeSync"
-    ],
-    "tags": [
-      "إنتاجية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Productivity",
-    "features_en": [
-      "OLED 49 QHD",
-      "240Hz",
-      "0.03ms",
-      "HDR",
-      "FreeSync"
-    ],
-    "description_en": "The Samsung Odyssey OLED G9 Monitor is a premium productivity device designed to boost your workflow and creative output. Featuring OLED 49 QHD, 240Hz, 0.03ms, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $1299, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-P203",
-    "name_ar": "ساعة فيتا فلو 3",
-    "name_en": "VitaFlow 3",
+    "id": "NPH-P201",
+    "name_ar": "ساعة أوميغا الذكية X1",
+    "name_en": "Omega Smart X1",
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
     "category_en": "Smart Watches",
-    "price": 199,
-    "original_price": 239,
-    "discount": 17,
-    "rating": 4.8,
-    "reviews": 5400,
-    "stock": 48,
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.7,
+    "reviews": 3200,
+    "stock": 73,
     "image": "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=600&q=80",
-    "badge": "الأكثر مبيعاً",
-    "badge_en": "Best Seller",
+    "badge": "جديد",
+    "badge_en": "New",
     "active": true,
     "featured": false,
-    "description_ar": "راقب صحتك بدقة عالية",
-    "description_en": "Monitor your health with precision",
+    "description_ar": "ساعة ذكية أنيقة بتقنيات متطورة",
+    "description_en": "Elegant smartwatch with advanced tech",
     "features_ar": [
-      "ضغط الدم",
-      "أكسجين الدم",
-      "مقاوم للماء",
-      "شاشة لمس"
+      "شاشة AMOLED",
+      "مقاومة للماء 5ATM",
+      "GPS دقيق",
+      "بطارية 7 أيام"
     ],
     "features_en": [
-      "Blood pressure",
-      "Blood oxygen",
-      "Waterproof",
-      "Touch screen"
+      "AMOLED display",
+      "5ATM water resistant",
+      "Precise GPS",
+      "7-day battery"
     ],
     "tags": [
       "smartwatch",
       "smart",
       "tech"
     ],
-    "shipping_days": 4,
-    "added_at": "2026-03-13T10:50:47.580305",
+    "shipping_days": 6,
+    "added_at": "2026-03-13T12:16:55.029960",
     "added_by": "pool_v1"
   },
   {
-    "id": "NPH-P212",
-    "name_ar": "نظارة أوبتيك فلو",
-    "name_en": "Optic Flow",
+    "id": "NPH-P217",
+    "name_ar": "نظارة ليت فريم",
+    "name_en": "LiteFrame",
     "category": "smart-glasses",
     "category_ar": "نظارات ذكية",
     "category_en": "Smart Glasses",
-    "price": 299,
-    "original_price": 349,
+    "price": 179,
+    "original_price": 209,
     "discount": 14,
-    "rating": 4.6,
-    "reviews": 1900,
-    "stock": 37,
-    "image": "https://images.unsplash.com/photo-1542219550-37153d387c27?w=600&q=80",
-    "badge": "مميز",
-    "badge_en": "Featured",
+    "rating": 4.3,
+    "reviews": 650,
+    "stock": 63,
+    "image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600&q=80",
+    "badge": "جديد",
+    "badge_en": "New",
     "active": true,
     "featured": false,
-    "description_ar": "عالمك بمنظور جديد",
-    "description_en": "Your world from a new perspective",
+    "description_ar": "أناقة تقنية بسيطة",
+    "description_en": "Simple tech elegance",
     "features_ar": [
-      "ترجمة فورية",
-      "خرائط مدمجة",
-      "عمر 8 ساعات",
-      "إطار خفيف"
+      "تصميم كلاسيك",
+      "إشعارات هادئة",
+      "بطارية يوم",
+      "خفيفة جداً"
     ],
     "features_en": [
-      "Instant translation",
-      "Built-in maps",
-      "8h battery",
-      "Light frame"
+      "Classic design",
+      "Quiet notifications",
+      "1-day battery",
+      "Very light"
     ],
     "tags": [
       "smart-glasses",
       "smart",
       "tech"
     ],
-    "shipping_days": 4,
-    "added_at": "2026-03-13T10:50:48.021623",
+    "shipping_days": 7,
+    "added_at": "2026-03-13T12:16:55.450584",
     "added_by": "pool_v1"
   },
   {
-    "id": "NPH-P228",
-    "name_ar": "جهاز إيكو هيلث",
-    "name_en": "EcoHealth Plus",
+    "id": "NPH-P220",
+    "name_ar": "جهاز هيلث كور",
+    "name_en": "HealthCore Pro",
     "category": "health",
     "category_ar": "صحة ولياقة",
     "category_en": "Health & Fitness",
-    "price": 219,
-    "original_price": 259,
-    "discount": 16,
+    "price": 199,
+    "original_price": 239,
+    "discount": 17,
     "rating": 4.8,
-    "reviews": 6700,
-    "stock": 71,
-    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80",
-    "badge": "الأكثر مبيعاً",
-    "badge_en": "Best Seller",
+    "reviews": 5600,
+    "stock": 55,
+    "image": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=600&q=80",
+    "badge": "مميز",
+    "badge_en": "Featured",
     "active": true,
     "featured": false,
-    "description_ar": "الحل الصحي الشامل",
-    "description_en": "The complete health solution",
+    "description_ar": "رعاية صحية متكاملة",
+    "description_en": "Complete health care",
     "features_ar": [
-      "شامل ومتكامل",
-      "مقاوم للماء",
-      "نظام Android",
-      "واجهة عربية"
+      "ضغط الدم",
+      "سكر الدم",
+      "ECG",
+      "تقرير يومي"
     ],
     "features_en": [
-      "All-in-one",
-      "Waterproof",
-      "Android system",
-      "Arabic interface"
+      "Blood pressure",
+      "Blood sugar",
+      "ECG",
+      "Daily report"
     ],
     "tags": [
       "health",
@@ -3479,130 +3485,130 @@
       "tech"
     ],
     "shipping_days": 3,
-    "added_at": "2026-03-13T10:50:48.521174",
+    "added_at": "2026-03-13T12:16:55.766900",
     "added_by": "pool_v1"
   },
   {
-    "id": "NPH-P235",
-    "name_ar": "روبوت كنس روومبا X",
-    "name_en": "CleanBot X",
+    "id": "NPH-P231",
+    "name_ar": "مقبس سمارت بلاق",
+    "name_en": "SmartPlug Pro",
     "category": "smart-home",
     "category_ar": "منزل ذكي",
     "category_en": "Smart Home",
-    "price": 299,
-    "original_price": 379,
-    "discount": 21,
-    "rating": 4.8,
-    "reviews": 11000,
-    "stock": 26,
-    "image": "https://images.unsplash.com/photo-1567721913486-6585f069b332?w=600&q=80",
-    "badge": "مميز",
-    "badge_en": "Featured",
+    "price": 39,
+    "original_price": 49,
+    "discount": 20,
+    "rating": 4.6,
+    "reviews": 22000,
+    "stock": 65,
+    "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80",
+    "badge": "الأكثر مبيعاً",
+    "badge_en": "Best Seller",
     "active": true,
     "featured": false,
-    "description_ar": "منزل نظيف بلا جهد",
-    "description_en": "Clean home without effort",
+    "description_ar": "تحكم في أجهزتك من أي مكان",
+    "description_en": "Control your devices from anywhere",
     "features_ar": [
-      "خريطة ذكية",
-      "تجنب عوائق",
-      "شحن تلقائي",
-      "تطبيق ذكي"
+      "تحكم عن بعد",
+      "قياس طاقة",
+      "جدولة ذكية",
+      "صوتي"
     ],
     "features_en": [
-      "Smart mapping",
-      "Obstacle avoidance",
-      "Auto-charge",
-      "Smart app"
+      "Remote control",
+      "Energy monitor",
+      "Smart schedule",
+      "Voice control"
     ],
     "tags": [
       "smart-home",
       "smart",
       "tech"
     ],
-    "shipping_days": 4,
-    "added_at": "2026-03-13T10:50:48.937513",
+    "shipping_days": 7,
+    "added_at": "2026-03-13T12:16:56.300584",
     "added_by": "pool_v1"
   },
   {
-    "id": "NPH-P246",
-    "name_ar": "سماعة أولترا كلير",
-    "name_en": "UltraClear",
+    "id": "NPH-P245",
+    "name_ar": "سماعة ميني بودز",
+    "name_en": "Mini Pods",
     "category": "earbuds",
     "category_ar": "سماعات ذكية",
     "category_en": "Smart Earbuds",
-    "price": 259,
-    "original_price": 319,
-    "discount": 19,
-    "rating": 4.8,
-    "reviews": 8900,
-    "stock": 59,
-    "image": "https://images.unsplash.com/photo-1560393464-5c69a73c5770?w=600&q=80",
-    "badge": "وضوح",
-    "badge_en": "Clarity",
+    "price": 79,
+    "original_price": 99,
+    "discount": 20,
+    "rating": 4.3,
+    "reviews": 7800,
+    "stock": 27,
+    "image": "https://images.unsplash.com/photo-1613040809024-b4ef7ba99bc3?w=600&q=80",
+    "badge": "اقتصادي",
+    "badge_en": "Value",
     "active": true,
     "featured": false,
-    "description_ar": "وضوح لا مثيل له في المكالمات",
-    "description_en": "Unmatched call clarity",
+    "description_ar": "الأفضل لميزانيتك",
+    "description_en": "Best for your budget",
     "features_ar": [
-      "ميكروفون 6",
-      "مكالمات HD",
-      "إلغاء ضوضاء",
-      "شاشة LED"
+      "سعر ممتاز",
+      "صوت جيد",
+      "5 ساعات",
+      "حالة شحن"
     ],
     "features_en": [
-      "6 mics",
-      "HD calls",
-      "Noise cancellation",
-      "LED display"
+      "Great value",
+      "Good sound",
+      "5 hours",
+      "Charging case"
     ],
     "tags": [
       "earbuds",
       "smart",
       "tech"
     ],
-    "shipping_days": 6,
-    "added_at": "2026-03-13T10:50:49.373939",
+    "shipping_days": 4,
+    "added_at": "2026-03-13T12:16:56.857554",
     "added_by": "pool_v1"
   },
   {
-    "id": "NPH-P257",
-    "name_ar": "كاميرا ويب كريستال",
-    "name_en": "CrystalCam 4K",
+    "id": "NPH-P249",
+    "name_ar": "قلم سمارت بن X",
+    "name_en": "SmartPen X",
     "category": "productivity",
     "category_ar": "إنتاجية",
     "category_en": "Productivity Tech",
-    "price": 159,
-    "original_price": 199,
-    "discount": 20,
-    "rating": 4.8,
-    "reviews": 9200,
-    "stock": 25,
-    "image": "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=600&q=80",
-    "badge": "احترافي",
-    "badge_en": "Pro",
+    "price": 149,
+    "original_price": 179,
+    "discount": 17,
+    "rating": 4.7,
+    "reviews": 4500,
+    "stock": 57,
+    "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&q=80",
+    "badge": "مميز",
+    "badge_en": "Featured",
     "active": true,
     "featured": false,
-    "description_ar": "اجتماعاتك باحترافية",
-    "description_en": "Professional meetings",
+    "description_ar": "اكتب بذكاء",
+    "description_en": "Write smart",
     "features_ar": [
-      "4K/60fps",
-      "إضاءة ذكية",
-      "خلفية وهمية",
-      "ميكروفون مدمج"
+      "تسجيل صوتي",
+      "رقمنة خط",
+      "ترجمة فورية",
+      "بلوتوث 5"
     ],
     "features_en": [
-      "4K/60fps",
-      "Smart lighting",
-      "Virtual background",
-      "Built-in mic"
+      "Audio recording",
+      "Handwriting digitize",
+      "Instant translation",
+      "Bluetooth 5"
     ],
     "tags": [
       "productivity",
       "smart",
       "tech"
     ],
-    "shipping_days": 7,
-    "added_at": "2026-03-13T10:50:49.892092",
+    "shipping_days": 6,
+    "added_at": "2026-03-13T12:16:57.396688",
     "added_by": "pool_v1"
   }
 ]
