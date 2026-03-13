@@ -72,37 +72,48 @@ def start_scheduler():
     try:
         from apscheduler.schedulers.background import BackgroundScheduler
         from apscheduler.triggers.cron import CronTrigger
-        import pytz, smart_supplier_bot as ssb
+        from apscheduler.triggers.interval import IntervalTrigger
+        import pytz
 
-        def daily_job():
-            log.info("⏰ Daily auto-populate...")
+        def refresh_job():
+            """تجديد المتجر كل 6 ساعات — يحذف القديم ويضيف الجديد"""
+            log.info("🔄 Auto store refresh starting...")
             try:
-                import supplier_bot as sb_auto
-                added = sb_auto.auto_add_products(count=5)
-                log.info(f"✅ Added {len(added)} products")
-                admin_id = int(os.environ.get("ADMIN_USER_ID", "0"))
-                admin_tok = os.environ.get("ADMIN_BOT_TOKEN", "")
-                if admin_id and added and admin_tok:
-                    names = "\n".join([f"• {p['name_ar']}" for p in added])
-                    import requests as _rq
-                    _rq.post(
-                        f"https://api.telegram.org/bot{admin_tok}/sendMessage",
-                        json={"chat_id": admin_id,
-                              "text": f"🤖 *تقرير يومي*\n\nأُضيف {len(added)} منتجات:\n{names}",
-                              "parse_mode": "Markdown"},
-                        timeout=8
-                    )
+                import supplier_bot as sb
+                result = sb.refresh_store(keep_per_cat=12, add_per_cat=3)
+                log.info(f"✅ Refresh done: +{result['added']} -{result['deleted']}")
+                sb.notify_admin_refresh(result)
             except Exception as e:
-                log.error(f"daily_job error: {e}")
+                log.error(f"refresh_job error: {e}")
 
-        s = BackgroundScheduler(timezone=pytz.UTC)
-        s.add_job(daily_job, CronTrigger(hour=3, minute=0), id="daily", replace_existing=True)
-        s.add_job(daily_job, "date", id="startup")
+        def startup_job():
+            """عند الإقلاع — أضف منتجات إذا كان العدد قليلاً"""
+            log.info("⚡ Startup check...")
+            try:
+                import supplier_bot as sb
+                products = sb.load_products()
+                if len(products) < 80:
+                    log.info(f"Only {len(products)} products — adding more...")
+                    added = sb.auto_add_products(count=6)
+                    log.info(f"✅ Startup added {len(added)} products")
+            except Exception as e:
+                log.error(f"startup_job error: {e}")
+
+        tz = pytz.UTC
+        s = BackgroundScheduler(timezone=tz)
+
+        # تشغيل فوري عند الإقلاع
+        from datetime import datetime, timedelta
+        start_time = datetime.now(tz) + timedelta(seconds=10)
+        s.add_job(startup_job, "date", run_date=start_time, id="startup")
+
+        # تجديد كل 6 ساعات: 00:00, 06:00, 12:00, 18:00 UTC
+        s.add_job(refresh_job, CronTrigger(hour="0,6,12,18", minute=0, timezone=tz), id="refresh_6h")
+
         s.start()
-        log.info("✅ Scheduler started")
+        log.info("✅ Scheduler started — refresh every 6 hours")
     except Exception as e:
-        log.error(f"Scheduler error: {e}")
-
+        log.error(f"start_scheduler: {e}")
 
 # ══════════════════════════════════════════════════════════════════
 # STEP 3 — Flask app يستقبل Webhooks + API
