@@ -80,6 +80,47 @@
     "description_en": "The Fitbit Versa 4 is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Alexa, GPS, 6 Days, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $149, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
+    "id": "NPH-P204",
+    "name_ar": "ساعة زينيث ألترا",
+    "name_en": "Zenith Ultra",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "Smart Watches",
+    "price": 379,
+    "original_price": 429,
+    "discount": 12,
+    "rating": 4.9,
+    "reviews": 8900,
+    "stock": 33,
+    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&q=80",
+    "badge": "برميوم",
+    "badge_en": "Premium",
+    "active": true,
+    "featured": false,
+    "description_ar": "الأفضل في فئتها بلا منازع",
+    "description_en": "The undisputed best in class",
+    "features_ar": [
+      "تيتانيوم",
+      "GPS ثلاثي",
+      "اتصال LTE",
+      "عمر بطارية 10 أيام"
+    ],
+    "features_en": [
+      "Titanium build",
+      "Triple GPS",
+      "LTE connectivity",
+      "10-day battery"
+    ],
+    "tags": [
+      "smartwatch",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 6,
+    "added_at": "2026-03-13T19:32:29.795929",
+    "added_by": "pool_v1"
+  },
+  {
     "id": "NPH-002",
     "name_ar": "ساعة سامسونج Galaxy Watch 7",
     "name_en": "Samsung Galaxy Watch 7 44mm",
@@ -523,46 +564,6 @@
     "description_en": "The Amazfit Balance is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Zepp OS 3, 14 Days, AI Health, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $229, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
-    "id": "NPH-015",
-    "name_ar": "ساعة كوروس Apex 2 Pro",
-    "name_en": "Coros Apex 2 Pro",
-    "category": "smartwatch",
-    "category_ar": "ساعات ذكية",
-    "price": 499,
-    "original_price": 599,
-    "discount": 17,
-    "rating": 4.8,
-    "reviews": 2345,
-    "stock": 91,
-    "image": "https://images.unsplash.com/photo-1617625802912-cde586faf331?w=400&q=80",
-    "description_ar": "ساعة كوروس Apex 2 Pro — من أفضل منتجات ساعات ذكية.",
-    "features_ar": [
-      "GPS متعدد",
-      "75 ساعة",
-      "توبو",
-      "شحن سريع",
-      "تيتانيوم"
-    ],
-    "tags": [
-      "ساعات ذكية"
-    ],
-    "badge": "الأكثر مبيعاً",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smartwatch",
-    "features_en": [
-      "Multi-Band GPS",
-      "75 Hours",
-      "Topo",
-      "Fast Charging",
-      "Titanium"
-    ],
-    "description_en": "The Coros Apex 2 Pro is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring GPS متعدد, 75 Hours, Topo, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $499, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
     "id": "NPH-017",
     "name_ar": "نظارة Meta Quest 3",
     "name_en": "Meta Quest 3 512GB",
@@ -964,6 +965,47 @@
     "description_en": "The XREAL Beam Pro is a premium smart glasses designed to see the world enhanced with AR technology. Featuring Spatial Computing, Dual Cameras, Android 13, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $599, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
+    "id": "NPH-P213",
+    "name_ar": "نظارة سمارت شيد",
+    "name_en": "SmartShade",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "category_en": "Smart Glasses",
+    "price": 249,
+    "original_price": 289,
+    "discount": 14,
+    "rating": 4.5,
+    "reviews": 1200,
+    "stock": 80,
+    "image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600&q=80",
+    "badge": "رياضي",
+    "badge_en": "Sport",
+    "active": true,
+    "featured": false,
+    "description_ar": "للرياضيين المحترفين",
+    "description_en": "For professional athletes",
+    "features_ar": [
+      "حماية UV",
+      "تتبع رياضي",
+      "موسيقى مدمجة",
+      "مقاوم للعرق"
+    ],
+    "features_en": [
+      "UV protection",
+      "Sport tracking",
+      "Built-in music",
+      "Sweat resistant"
+    ],
+    "tags": [
+      "smart-glasses",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 5,
+    "added_at": "2026-03-13T19:32:30.191221",
+    "added_by": "pool_v1"
+  },
+  {
     "id": "NPH-023",
     "name_ar": "نظارة Snap Spectacles الجيل 5",
     "name_en": "Snap Spectacles 5th Gen",
@@ -1082,46 +1124,6 @@
       "120Hz"
     ],
     "description_en": "The TCL NXTWEAR S2 Plus is a premium smart glasses designed to see the world enhanced with AR technology. Featuring 105-inch, 1080p, USB-C, it delivers exceptional performance for everyday use. With a 4.4★ rating and competitive pricing at $379, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-029",
-    "name_ar": "نظارة Viture One XR",
-    "name_en": "Viture One XR Glasses",
-    "category": "smart-glasses",
-    "category_ar": "نظارات ذكية",
-    "price": 439,
-    "original_price": 499,
-    "discount": 12,
-    "rating": 4.4,
-    "reviews": 765,
-    "stock": 85,
-    "image": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=400&q=80",
-    "description_ar": "نظارة Viture One XR — من أفضل منتجات نظارات ذكية.",
-    "features_ar": [
-      "135 بوصة",
-      "Electrochromic",
-      "Cinema",
-      "2K",
-      "77g"
-    ],
-    "tags": [
-      "نظارات ذكية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Smart Glasses",
-    "features_en": [
-      "135-inch",
-      "Electrochromic",
-      "Cinema",
-      "2K",
-      "77g"
-    ],
-    "description_en": "The Viture One XR Glasses is a premium smart glasses designed to see the world enhanced with AR technology. Featuring 135-inch, Electrochromic, Cinema, it delivers exceptional performance for everyday use. With a 4.4★ rating and competitive pricing at $439, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
     "id": "NPH-031",
@@ -3334,251 +3336,6 @@
     "description_en": "The Elgato Stream Deck Neo Panel is a premium productivity device designed to boost your workflow and creative output. Featuring 8 LCD, Dual Screen, Integration, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $99, it's one of the top choices in its category at NEO PULSE HUB."
   },
   {
-    "id": "NPH-090",
-    "name_ar": "حامل Twelve South HiRise 3",
-    "name_en": "Twelve South HiRise 3 Deluxe",
-    "category": "productivity",
-    "category_ar": "إنتاجية",
-    "price": 99,
-    "original_price": 119,
-    "discount": 17,
-    "rating": 4.7,
-    "reviews": 5432,
-    "stock": 82,
-    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400&q=80",
-    "description_ar": "حامل Twelve South HiRise 3 — من أفضل منتجات إنتاجية.",
-    "features_ar": [
-      "MagSafe 15W",
-      "لاب توب",
-      "Ergo",
-      "iPhone+Mac",
-      "تعديل"
-    ],
-    "tags": [
-      "إنتاجية"
-    ],
-    "badge": "جديد",
-    "active": true,
-    "shipping_days": "7-14",
-    "featured": false,
-    "added_by": "smart_bot_v5",
-    "added_at": "2026-03-10",
-    "category_en": "Productivity",
-    "features_en": [
-      "MagSafe 15W",
-      "Laptop Mode",
-      "Ergo",
-      "iPhone+Mac",
-      "Adjustable"
-    ],
-    "description_en": "The Twelve South HiRise 3 Deluxe is a premium productivity device designed to boost your workflow and creative output. Featuring MagSafe 15W, Laptop Mode, Ergo, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $99, it's one of the top choices in its category at NEO PULSE HUB."
-  },
-  {
-    "id": "NPH-P204",
-    "name_ar": "ساعة زينيث ألترا",
-    "name_en": "Zenith Ultra",
-    "category": "smartwatch",
-    "category_ar": "ساعات ذكية",
-    "category_en": "Smart Watches",
-    "price": 379,
-    "original_price": 429,
-    "discount": 12,
-    "rating": 4.9,
-    "reviews": 8900,
-    "stock": 33,
-    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&q=80",
-    "badge": "برميوم",
-    "badge_en": "Premium",
-    "active": true,
-    "featured": false,
-    "description_ar": "الأفضل في فئتها بلا منازع",
-    "description_en": "The undisputed best in class",
-    "features_ar": [
-      "تيتانيوم",
-      "GPS ثلاثي",
-      "اتصال LTE",
-      "عمر بطارية 10 أيام"
-    ],
-    "features_en": [
-      "Titanium build",
-      "Triple GPS",
-      "LTE connectivity",
-      "10-day battery"
-    ],
-    "tags": [
-      "smartwatch",
-      "smart",
-      "tech"
-    ],
-    "shipping_days": 6,
-    "added_at": "2026-03-13T19:32:29.795929",
-    "added_by": "pool_v1"
-  },
-  {
-    "id": "NPH-P213",
-    "name_ar": "نظارة سمارت شيد",
-    "name_en": "SmartShade",
-    "category": "smart-glasses",
-    "category_ar": "نظارات ذكية",
-    "category_en": "Smart Glasses",
-    "price": 249,
-    "original_price": 289,
-    "discount": 14,
-    "rating": 4.5,
-    "reviews": 1200,
-    "stock": 80,
-    "image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600&q=80",
-    "badge": "رياضي",
-    "badge_en": "Sport",
-    "active": true,
-    "featured": false,
-    "description_ar": "للرياضيين المحترفين",
-    "description_en": "For professional athletes",
-    "features_ar": [
-      "حماية UV",
-      "تتبع رياضي",
-      "موسيقى مدمجة",
-      "مقاوم للعرق"
-    ],
-    "features_en": [
-      "UV protection",
-      "Sport tracking",
-      "Built-in music",
-      "Sweat resistant"
-    ],
-    "tags": [
-      "smart-glasses",
-      "smart",
-      "tech"
-    ],
-    "shipping_days": 5,
-    "added_at": "2026-03-13T19:32:30.191221",
-    "added_by": "pool_v1"
-  },
-  {
-    "id": "NPH-P226",
-    "name_ar": "جهاز ريلاكس برو",
-    "name_en": "Relax Pro",
-    "category": "health",
-    "category_ar": "صحة ولياقة",
-    "category_en": "Health & Fitness",
-    "price": 119,
-    "original_price": 149,
-    "discount": 20,
-    "rating": 4.5,
-    "reviews": 2100,
-    "stock": 22,
-    "image": "https://images.unsplash.com/photo-1578226359593-3b100f7ba59b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTQ1Njd8MHwxfHNlYXJjaHwxfHxSZWxheCUyMFByb3xlbnwxfDJ8fHwxNzczNDMwMzUwfDA&ixlib=rb-4.1.0&q=80&w=1080&w=600&q=80",
-    "badge": "إجهاد",
-    "badge_en": "Stress",
-    "active": true,
-    "featured": false,
-    "description_ar": "استرخِ بتقنية متطورة",
-    "description_en": "Relax with advanced tech",
-    "features_ar": [
-      "قياس إجهاد",
-      "تنفس موجّه",
-      "تأمل ذكي",
-      "نوم أفضل"
-    ],
-    "features_en": [
-      "Stress measurement",
-      "Guided breathing",
-      "Smart meditation",
-      "Better sleep"
-    ],
-    "tags": [
-      "health",
-      "smart",
-      "tech"
-    ],
-    "shipping_days": 3,
-    "added_at": "2026-03-13T19:32:30.819186",
-    "added_by": "pool_v1"
-  },
-  {
-    "id": "NPH-P237",
-    "name_ar": "موزع واي فاي ميش",
-    "name_en": "MeshNet Pro",
-    "category": "smart-home",
-    "category_ar": "منزل ذكي",
-    "category_en": "Smart Home",
-    "price": 249,
-    "original_price": 299,
-    "discount": 17,
-    "rating": 4.6,
-    "reviews": 5200,
-    "stock": 42,
-    "image": "https://images.unsplash.com/photo-1505843513577-22bb7d21e455?w=600&q=80",
-    "badge": "شبكة",
-    "badge_en": "Network",
-    "active": true,
-    "featured": false,
-    "description_ar": "إنترنت قوي في كل غرفة",
-    "description_en": "Strong internet in every room",
-    "features_ar": [
-      "تغطية 300م²",
-      "واي فاي 6E",
-      "أمان متقدم",
-      "تحكم أبوي"
-    ],
-    "features_en": [
-      "300m² coverage",
-      "Wi-Fi 6E",
-      "Advanced security",
-      "Parental control"
-    ],
-    "tags": [
-      "smart-home",
-      "smart",
-      "tech"
-    ],
-    "shipping_days": 3,
-    "added_at": "2026-03-13T19:32:31.310202",
-    "added_by": "pool_v1"
-  },
-  {
-    "id": "NPH-P243",
-    "name_ar": "سماعة سبورت رن",
-    "name_en": "SportRun Pro",
-    "category": "earbuds",
-    "category_ar": "سماعات ذكية",
-    "category_en": "Smart Earbuds",
-    "price": 119,
-    "original_price": 149,
-    "discount": 20,
-    "rating": 4.5,
-    "reviews": 5400,
-    "stock": 31,
-    "image": "https://images.unsplash.com/photo-1608156639585-b3a032ef9689?w=600&q=80",
-    "badge": "رياضي",
-    "badge_en": "Sport",
-    "active": true,
-    "featured": false,
-    "description_ar": "صُنعت للركض",
-    "description_en": "Built for running",
-    "features_ar": [
-      "مقاوم للعرق",
-      "GPS مدمج",
-      "تتبع رياضي",
-      "خطاف أذن"
-    ],
-    "features_en": [
-      "Sweat resistant",
-      "Built-in GPS",
-      "Sport tracking",
-      "Ear hook"
-    ],
-    "tags": [
-      "earbuds",
-      "smart",
-      "tech"
-    ],
-    "shipping_days": 4,
-    "added_at": "2026-03-13T19:32:31.941263",
-    "added_by": "pool_v1"
-  },
-  {
     "id": "NPH-P256",
     "name_ar": "طابعة بوكيت برينت",
     "name_en": "PocketPrint Mini",
@@ -3620,126 +3377,249 @@
     "added_by": "pool_v1"
   },
   {
-    "id": "NPH-091",
-    "name_ar": "أورا إيليت",
-    "name_en": "Aura Elite",
+    "id": "NPH-P209",
+    "name_ar": "ساعة سيمفوني ليت",
+    "name_en": "Symphony Lite",
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
     "category_en": "Smart Watches",
-    "price": 379,
-    "original_price": 429,
-    "discount": 12,
-    "rating": 4.8,
-    "reviews": 2100,
-    "stock": 59,
-    "image": "https://images.unsplash.com/photo-1620625515032-6ed0c1790c75?w=600&q=80",
-    "badge": "حصري",
-    "badge_en": "Exclusive",
+    "price": 149,
+    "original_price": 179,
+    "discount": 17,
+    "rating": 4.4,
+    "reviews": 950,
+    "stock": 55,
+    "image": "https://images.unsplash.com/photo-1630989809082-9e2f671d56db?w=600&q=80",
+    "badge": "اقتصادي",
+    "badge_en": "Value",
     "active": true,
     "featured": false,
-    "description_ar": "اختبر مستقبل التكنولوجيا القابلة للارتداء مع Aura Elite، ساعة ذكية تجمع بين الأناقة الفائقة والأداء الذي لا مثيل له. مصممة لتواكب إيقاع حياتك، فهي شريكك المثالي للصحة والاتصال.",
-    "description_en": "Experience the future of wearable technology with the Aura Elite, a smartwatch that blends exquisite style with unparalleled performance. Designed to keep pace with your life, it's your ultimate partner for health and connectivity.",
+    "description_ar": "ذكاء بسعر مناسب",
+    "description_en": "Smart at an affordable price",
     "features_ar": [
-      "شاشة LTPO AMOLED متطورة",
-      "تتبع شامل للصحة (معدل ضربات القلب، الأكسجين، النوم، الإجهاد)",
-      "عمر بطارية يصل إلى 7 أيام مع الشحن السريع",
-      "مقاومة للماء حتى 5ATM ومقاومة للغبار IP68"
+      "خفيفة الوزن",
+      "بطارية 14 يوم",
+      "خطوات وسعرات",
+      "إشعارات"
     ],
     "features_en": [
-      "Advanced LTPO AMOLED Display",
-      "Comprehensive Health Tracking (HR, SpO2, Sleep, Stress)",
-      "Up to 7-Day Battery Life with Fast Charging",
-      "5ATM Water Resistance & IP68 Dustproof"
+      "Lightweight",
+      "14-day battery",
+      "Steps & calories",
+      "Notifications"
     ],
     "tags": [
       "smartwatch",
       "smart",
       "tech"
     ],
-    "shipping_days": 4,
-    "added_at": "2026-03-14T12:14:38.070803",
-    "added_by": "auto_ai_v3"
+    "shipping_days": 6,
+    "added_at": "2026-03-14T16:27:46.589571",
+    "added_by": "pool_v1"
   },
   {
-    "id": "NPH-092",
-    "name_ar": "نظارات الواقع المعزز أورا",
-    "name_en": "Aura AR Glasses",
+    "id": "NPH-P214",
+    "name_ar": "نظارة إيكو لوك",
+    "name_en": "EchoLook Pro",
     "category": "smart-glasses",
     "category_ar": "نظارات ذكية",
-    "category_en": "Smart Glasses AR",
-    "price": 399,
-    "original_price": 449,
-    "discount": 11,
-    "rating": 4.6,
-    "reviews": 2300,
-    "stock": 27,
-    "image": "https://images.unsplash.com/photo-1577803645773-f96470509666?w=600&q=80",
-    "badge": "حصري",
-    "badge_en": "Exclusive",
+    "category_en": "Smart Glasses",
+    "price": 349,
+    "original_price": 399,
+    "discount": 13,
+    "rating": 4.8,
+    "reviews": 4200,
+    "stock": 41,
+    "image": "https://images.unsplash.com/photo-1629904853716-f0bc54eea481?w=600&q=80",
+    "badge": "برميوم",
+    "badge_en": "Premium",
     "active": true,
     "featured": false,
-    "description_ar": "ارتقِ بتجربتك اليومية مع رؤية رقمية سلسة. تواصل، استكشف، وابتكر دون عناء مع Aura.",
-    "description_en": "Elevate your daily experience with seamless digital vision. Connect, explore, and create effortlessly with Aura.",
+    "description_ar": "المستقبل أمام عينيك",
+    "description_en": "The future before your eyes",
     "features_ar": [
-      "شاشات OLED مدمجة عالية الدقة",
-      "تتبع حركة الرأس واليدين بدقة",
-      "تصميم خفيف الوزن ومريح",
-      "بطارية تدوم طويلاً تصل إلى 8 ساعات"
+      "مساعد صوتي",
+      "واقع مختلط",
+      "شاشة شفافة",
+      "شحن لاسلكي"
     ],
     "features_en": [
-      "High-resolution integrated OLED displays",
-      "Precise head and hand tracking",
-      "Lightweight and comfortable design",
-      "Long-lasting battery up to 8 hours"
+      "Voice assistant",
+      "Mixed reality",
+      "Transparent display",
+      "Wireless charging"
     ],
     "tags": [
       "smart-glasses",
       "smart",
       "tech"
     ],
-    "shipping_days": 7,
-    "added_at": "2026-03-14T12:14:51.110748",
-    "added_by": "auto_ai_v3"
+    "shipping_days": 4,
+    "added_at": "2026-03-14T16:27:47.087852",
+    "added_by": "pool_v1"
   },
   {
-    "id": "NPH-093",
-    "name_ar": "أورا هيلث: تراكر الصحة الذكي",
-    "name_en": "Aura Health: Smart Health Tracker",
+    "id": "NPH-P224",
+    "name_ar": "جهاز ميد تراك",
+    "name_en": "MedTrack",
     "category": "health",
     "category_ar": "صحة ولياقة",
     "category_en": "Health & Fitness",
-    "price": 299,
-    "original_price": 349,
+    "price": 239,
+    "original_price": 279,
     "discount": 14,
-    "rating": 4.8,
-    "reviews": 2100,
-    "stock": 16,
-    "image": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=600&q=80",
-    "badge": "الأكثر مبيعاً",
-    "badge_en": "Bestseller",
+    "rating": 4.7,
+    "reviews": 3800,
+    "stock": 20,
+    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80",
+    "badge": "طبي",
+    "badge_en": "Medical",
     "active": true,
     "featured": false,
-    "description_ar": "تتبع صحتك بدقة غير مسبوقة مع أورا هيلث، رفيقك الذكي لحياة أكثر نشاطًا وصحة. استمتع بتحليلات مفصلة وأنماط نوم محسّنة، كل ذلك في تصميم أنيق ومريح.",
-    "description_en": "Track your health with unprecedented accuracy using Aura Health, your smart companion for a more active and healthier life. Enjoy detailed analytics and improved sleep patterns, all in a sleek and comfortable design.",
+    "description_ar": "رعايتك الطبية الذكية",
+    "description_en": "Your smart medical care",
     "features_ar": [
-      "مراقبة متقدمة لمعدل ضربات القلب و HRV",
-      "تحليل شامل للنوم مع مراحل النوم",
-      "تتبع النشاط اليومي والسعرات الحرارية المحروقة",
-      "مقاومة للماء حتى 50 مترًا مع عمر بطارية طويل"
+      "تنبيه دواء",
+      "متابعة طبيب",
+      "بيانات مشاركة",
+      "طوارئ SOS"
     ],
     "features_en": [
-      "Advanced Heart Rate and HRV Monitoring",
-      "Comprehensive Sleep Analysis with Sleep Stages",
-      "Daily Activity and Calorie Burn Tracking",
-      "Water Resistant up to 50M with Extended Battery Life"
+      "Medicine alert",
+      "Doctor follow-up",
+      "Data sharing",
+      "Emergency SOS"
     ],
     "tags": [
       "health",
       "smart",
       "tech"
     ],
+    "shipping_days": 7,
+    "added_at": "2026-03-14T16:27:47.862447",
+    "added_by": "pool_v1"
+  },
+  {
+    "id": "NPH-P230",
+    "name_ar": "كاميرا سيكيور فيو",
+    "name_en": "SecureView 4K",
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "category_en": "Smart Home",
+    "price": 129,
+    "original_price": 159,
+    "discount": 19,
+    "rating": 4.7,
+    "reviews": 8900,
+    "stock": 51,
+    "image": "https://images.unsplash.com/photo-1505843513577-22bb7d21e455?w=600&q=80",
+    "badge": "مميز",
+    "badge_en": "Featured",
+    "active": true,
+    "featured": false,
+    "description_ar": "أمان منزلك على راحة يدك",
+    "description_en": "Your home security in your palm",
+    "features_ar": [
+      "دقة 4K",
+      "رؤية ليلية",
+      "كشف حركة",
+      "تخزين سحابي"
+    ],
+    "features_en": [
+      "4K resolution",
+      "Night vision",
+      "Motion detection",
+      "Cloud storage"
+    ],
+    "tags": [
+      "smart-home",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 5,
+    "added_at": "2026-03-14T16:27:48.310184",
+    "added_by": "pool_v1"
+  },
+  {
+    "id": "NPH-P248",
+    "name_ar": "سماعة كريستال X",
+    "name_en": "Crystal X Pro",
+    "category": "earbuds",
+    "category_ar": "سماعات ذكية",
+    "category_en": "Smart Earbuds",
+    "price": 339,
+    "original_price": 399,
+    "discount": 15,
+    "rating": 4.9,
+    "reviews": 5100,
+    "stock": 69,
+    "image": "https://images.unsplash.com/photo-1631867675167-90a456a90863?w=600&q=80",
+    "badge": "الأفضل",
+    "badge_en": "Top Pick",
+    "active": true,
+    "featured": false,
+    "description_ar": "قمة في الصوت",
+    "description_en": "The pinnacle of sound",
+    "features_ar": [
+      "صوت بلوريات",
+      "ANC فائق",
+      "45 ساعة",
+      "مقاوم للماء IP68"
+    ],
+    "features_en": [
+      "Crystal sound",
+      "Supreme ANC",
+      "45 hours",
+      "IP68 waterproof"
+    ],
+    "tags": [
+      "earbuds",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 6,
+    "added_at": "2026-03-14T16:27:48.886934",
+    "added_by": "pool_v1"
+  },
+  {
+    "id": "NPH-P252",
+    "name_ar": "شاشة بورتابل ديسبلي",
+    "name_en": "PortaDisplay 15",
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "category_en": "Productivity Tech",
+    "price": 299,
+    "original_price": 359,
+    "discount": 17,
+    "rating": 4.8,
+    "reviews": 3200,
+    "stock": 73,
+    "image": "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=600&q=80",
+    "badge": "محمول",
+    "badge_en": "Portable",
+    "active": true,
+    "featured": false,
+    "description_ar": "شاشة ثانية في حقيبتك",
+    "description_en": "Second screen in your bag",
+    "features_ar": [
+      "15.6 إنش",
+      "4K OLED",
+      "USB-C",
+      "1 كيلو فقط"
+    ],
+    "features_en": [
+      "15.6 inch",
+      "4K OLED",
+      "USB-C",
+      "Only 1kg"
+    ],
+    "tags": [
+      "productivity",
+      "smart",
+      "tech"
+    ],
     "shipping_days": 3,
-    "added_at": "2026-03-14T12:15:03.661484",
-    "added_by": "auto_ai_v3"
+    "added_at": "2026-03-14T16:27:49.500166",
+    "added_by": "pool_v1"
   }
 ]
