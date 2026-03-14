@@ -3616,5 +3616,128 @@
     "shipping_days": 5,
     "added_at": "2026-03-14T10:57:25.283044",
     "added_by": "pool_v1"
+  },
+  {
+    "id": "NPH-092",
+    "name_ar": "المدار الرقمي",
+    "name_en": "Aura Orbital Smartwatch",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "Smart Watches",
+    "price": 379,
+    "original_price": 429,
+    "discount": 12,
+    "rating": 4.8,
+    "reviews": 2300,
+    "stock": 67,
+    "image": "https://images.unsplash.com/photo-1461141346587-763ab02bced9?w=600&q=80",
+    "badge": "حصري",
+    "badge_en": "Exclusive",
+    "active": true,
+    "featured": false,
+    "description_ar": "استمتع بتجربة ذكية لا مثيل لها مع تصميم أنيق وتقنيات متطورة. رفيقك المثالي للحياة العصرية، يواكب كل نبضة.",
+    "description_en": "Experience unparalleled smart technology with an elegant design and advanced features. Your perfect companion for modern life, tracking every beat.",
+    "features_ar": [
+      "شاشة AMOLED دائمة التشغيل",
+      "مراقبة متقدمة للصحة واللياقة البدنية",
+      "GPS مدمج ومقاومة للماء حتى 5ATM",
+      "بطارية تدوم لأيام مع الشحن السريع"
+    ],
+    "features_en": [
+      "Always-On AMOLED Display",
+      "Advanced Health & Fitness Tracking",
+      "Built-in GPS & 5ATM Water Resistance",
+      "Multi-Day Battery Life with Fast Charging"
+    ],
+    "tags": [
+      "smartwatch",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 3,
+    "added_at": "2026-03-14T10:57:34.915622",
+    "added_by": "auto_ai_v3"
+  },
+  {
+    "id": "NPH-093",
+    "name_ar": "نظارات أورا الذكية للواقع المعزز",
+    "name_en": "Aura AR Smart Glasses",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "category_en": "Smart Glasses AR",
+    "price": 399,
+    "original_price": 449,
+    "discount": 11,
+    "rating": 4.6,
+    "reviews": 980,
+    "stock": 38,
+    "image": "https://images.unsplash.com/photo-1560343776-97e7d202ff0e?w=600&q=80",
+    "badge": "حصري",
+    "badge_en": "Exclusive",
+    "active": true,
+    "featured": false,
+    "description_ar": "استشعر المستقبل اليوم مع أورا، النظارات الذكية التي تدمج العالم الرقمي بواقعك بسلاسة. تصميم أنيق وتقنية متطورة لتجربة لا مثيل لها.",
+    "description_en": "Experience the future today with Aura, smart glasses that seamlessly blend the digital world with your reality. Elegant design and advanced technology for an unparalleled experience.",
+    "features_ar": [
+      "شاشة عرض شفافة بتقنية OLED",
+      "تتبع حركة العين للتحكم البديهي",
+      "مساعد صوتي مدمج مع ترجمة فورية",
+      "بطارية تدوم طوال اليوم وشحن سريع"
+    ],
+    "features_en": [
+      "Transparent OLED display",
+      "Eye-tracking for intuitive control",
+      "Integrated voice assistant with real-time translation",
+      "All-day battery life with fast charging"
+    ],
+    "tags": [
+      "smart-glasses",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 7,
+    "added_at": "2026-03-14T10:57:47.180072",
+    "added_by": "auto_ai_v3"
+  },
+  {
+    "id": "NPH-094",
+    "name_ar": "أورا هيلث: مسار اللياقة",
+    "name_en": "Aura Health: Fitness Tracker Pro",
+    "category": "health",
+    "category_ar": "صحة ولياقة",
+    "category_en": "Health & Fitness",
+    "price": 279,
+    "original_price": 329,
+    "discount": 15,
+    "rating": 4.8,
+    "reviews": 2100,
+    "stock": 41,
+    "image": "https://images.unsplash.com/photo-1549476464-37392f717541?w=600&q=80",
+    "badge": "الأكثر مبيعاً",
+    "badge_en": "Best Seller",
+    "active": true,
+    "featured": false,
+    "description_ar": "ارتقِ برحلتك الصحية مع تتبع دقيق وميزات ذكية، مصمم ليلهمك كل يوم. اكتشف إمكاناتك الكاملة مع مساعدك الشخصي للصحة واللياقة.",
+    "description_en": "Elevate your health journey with precision tracking and smart features, designed to inspire you daily. Unlock your full potential with your personal health and fitness companion.",
+    "features_ar": [
+      "تتبع معدل ضربات القلب على مدار الساعة",
+      "تحليل النوم المتقدم مع مراحل النوم",
+      "تتبع الأنشطة المتعددة والتعرف التلقائي",
+      "شاشة AMOLED عالية الدقة ومقاومة للماء"
+    ],
+    "features_en": [
+      "24/7 Heart Rate Monitoring",
+      "Advanced Sleep Analysis with Sleep Stages",
+      "Multi-Sport Tracking & Auto-Recognition",
+      "High-Resolution AMOLED Display & Water-Resistant"
+    ],
+    "tags": [
+      "health",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 4,
+    "added_at": "2026-03-14T10:57:59.655113",
+    "added_by": "auto_ai_v3"
   }
 ]
