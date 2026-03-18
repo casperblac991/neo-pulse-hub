@@ -839,6 +839,46 @@ window.addEventListener('DOMContentLoaded', () => {
     if (d.classList.contains('open') && !d.contains(e.target) && !h.contains(e.target)) closeMenu();
   });
 });
+
+// ========== CJ API Integration (مع متغيرات البيئة) ==========
+// محاولة قراءة المفاتيح من Environment Variables في Render
+// المتجر الثابت لا يستطيع قراءة process.env مباشرة، لذلك نستخدم قيماً افتراضية
+const CJ_API_KEY = '65ed5a163cb443958148ddb8cd07b02a';
+const CJ_EMAIL = 'CJ5247816@api';
+
+async function loadCJProducts() {
+    try {
+        console.log('جاري جلب المنتجات من CJ...');
+        
+        const response = await fetch('https://developers.cjdropshipping.com/api2.0/v1/product/list', {
+            headers: {
+                'CJ-Access-Token': CJ_API_KEY,
+                'Email': CJ_EMAIL
+            }
+        });
+        
+        if (!response.ok) {
+            throw new Error('فشل الاتصال بـ CJ');
+        }
+        
+        const data = await response.json();
+        console.log('منتجات CJ:', data);
+        
+        if (data && data.data) {
+            localStorage.setItem('cj_products', JSON.stringify(data.data));
+            console.log(`✅ تم حفظ ${data.data.length} منتج من CJ`);
+        }
+        
+        return data.data || [];
+    } catch (error) {
+        console.error('❌ خطأ في جلب منتجات CJ:', error);
+        return [];
+    }
+}
+
+// شغل الدالة بعد تحميل الصفحة
+setTimeout(loadCJProducts, 2000);
+// ========== نهاية كود CJ ==========
 </script>
 
 <footer style="background:#0a0d1a;border-top:1px solid rgba(99,179,237,.12);padding:1.5rem 2rem;margin-top:auto">
