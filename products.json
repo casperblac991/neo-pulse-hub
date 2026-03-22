@@ -3744,5 +3744,128 @@
     "shipping_days": 4,
     "added_at": "2026-03-15T19:16:03.741309",
     "added_by": "auto_ai_v3"
+  },
+  {
+    "id": "NPH-091",
+    "name_ar": "المدار برو",
+    "name_en": "Orbit Pro",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "Smart Watches",
+    "price": 399,
+    "original_price": 449,
+    "discount": 11,
+    "rating": 4.8,
+    "reviews": 2100,
+    "stock": 71,
+    "image": "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=600&q=80",
+    "badge": "حصري",
+    "badge_en": "Exclusive",
+    "active": true,
+    "featured": false,
+    "description_ar": "عِش تجربة اللياقة الذكية بأسلوب لم يسبق له مثيل، تتبع كل نبضة، كل خطوة، وكل لحظة بدقة متناهية. ارتقِ بيومك مع التصميم الأنيق والأداء الفائق الذي يواكب إيقاع حياتك.",
+    "description_en": "Experience intelligent fitness like never before, tracking every beat, every step, and every moment with ultimate precision. Elevate your day with a sleek design and superior performance that keeps pace with your life.",
+    "features_ar": [
+      "شاشة AMOLED دائمة التشغيل",
+      "تتبع متقدم لمعدل ضربات القلب والأكسجين في الدم",
+      "عمر بطارية يصل إلى 7 أيام",
+      "مقاومة للماء حتى 50 مترًا"
+    ],
+    "features_en": [
+      "Always-On AMOLED Display",
+      "Advanced Heart Rate & Blood Oxygen Tracking",
+      "Up to 7-Day Battery Life",
+      "50-Meter Water Resistance"
+    ],
+    "tags": [
+      "smartwatch",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 3,
+    "added_at": "2026-03-22T17:49:28.923661",
+    "added_by": "auto_ai_v3"
+  },
+  {
+    "id": "NPH-092",
+    "name_ar": "نظارات أورورا لايت الذكية",
+    "name_en": "Aurora Lite Smart Glasses",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "category_en": "Smart Glasses AR",
+    "price": 399,
+    "original_price": 449,
+    "discount": 11,
+    "rating": 4.6,
+    "reviews": 2100,
+    "stock": 60,
+    "image": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=600&q=80",
+    "badge": "حصري",
+    "badge_en": "Exclusive",
+    "active": true,
+    "featured": false,
+    "description_ar": "استمتع بتجربة واقع معزز سلسة وأنيقة مع نظارات أورورا لايت. تصميم خفيف الوزن ومريح يندمج بسلاسة مع حياتك اليومية.",
+    "description_en": "Experience seamless and stylish augmented reality with Aurora Lite Smart Glasses. Lightweight and comfortable design integrates effortlessly into your daily life.",
+    "features_ar": [
+      "شاشات OLED شفافة بدقة HD",
+      "تحكم صوتي بالذكاء الاصطناعي",
+      "تصوير وتسجيل فيديو 1080p",
+      "عمر بطارية يصل إلى 8 ساعات"
+    ],
+    "features_en": [
+      "Transparent HD OLED Displays",
+      "AI Voice Control",
+      "1080p Photo & Video Capture",
+      "Up to 8-Hour Battery Life"
+    ],
+    "tags": [
+      "smart-glasses",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 7,
+    "added_at": "2026-03-22T17:49:41.504802",
+    "added_by": "auto_ai_v3"
+  },
+  {
+    "id": "NPH-093",
+    "name_ar": "أورا هيلث: محفز اللياقة الذكي",
+    "name_en": "Aura Health: Smart Fitness Enhancer",
+    "category": "health",
+    "category_ar": "صحة ولياقة",
+    "category_en": "Health & Fitness",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.6,
+    "reviews": 2100,
+    "stock": 18,
+    "image": "https://images.unsplash.com/photo-1607962837359-5e7e89f86776?w=600&q=80",
+    "badge": "الأكثر مبيعاً",
+    "badge_en": "Bestseller",
+    "active": true,
+    "featured": false,
+    "description_ar": "جهاز Aura Health يقدم لك تجربة لياقة بدنية متكاملة ومخصصة، لتحسين أدائك اليومي. استشعر الفرق مع تتبع دقيق ومساعدات تدريب ذكية.",
+    "description_en": "Aura Health offers a complete and personalized fitness experience, enhancing your daily performance. Feel the difference with precise tracking and intelligent training aids.",
+    "features_ar": [
+      "تحليل شامل للتركيب الجسماني (دهون، عضلات، ماء)",
+      "تتبع معدل ضربات القلب و HRV (تقلب معدل ضربات القلب) على مدار الساعة",
+      "برامج تدريب مخصصة بالذكاء الاصطناعي",
+      "مقاومة للماء والعرق، تصميم نحيف ومريح"
+    ],
+    "features_en": [
+      "Comprehensive Body Composition Analysis (Fat, Muscle, Water)",
+      "24/7 Heart Rate and HRV (Heart Rate Variability) Tracking",
+      "AI-Powered Personalized Training Programs",
+      "Water and Sweat Resistant, Slim and Comfortable Design"
+    ],
+    "tags": [
+      "health",
+      "smart",
+      "tech"
+    ],
+    "shipping_days": 3,
+    "added_at": "2026-03-22T17:49:54.363762",
+    "added_by": "auto_ai_v3"
   }
 ]
