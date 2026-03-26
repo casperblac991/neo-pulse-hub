@@ -1,20 +1,12 @@
 const express = require('express');
 const fs = require('fs');
 const fetch = require('node-fetch');
-const path = require('path');
 const app = express();
 
 app.use(express.json());
-app.use(express.static(path.join(__dirname))); // لخدمة ملفات HTML
 
 // ═══════════════════════════════════════════════════════════
-// 📌 قراءة المتغيرات البيئية (خزّنها في Render)
-// ═══════════════════════════════════════════════════════════
-const CJ_API_KEY = process.env.CJ_API_KEY;
-const CJ_EMAIL = process.env.CJ_EMAIL;
-
-// ═══════════════════════════════════════════════════════════
-// 📌 API: جلب المنتجات المخزنة
+// 📌 API: جلب المنتجات المخزنة (يستخدمه المتجر)
 // ═══════════════════════════════════════════════════════════
 app.get('/api/products', (req, res) => {
   try {
@@ -36,8 +28,8 @@ app.post('/api/order', async (req, res) => {
     const response = await fetch('https://developers.cjdropshipping.com/api2.0/v1/order/create', {
       method: 'POST',
       headers: {
-        'CJ-Access-Token': CJ_API_KEY,
-        'Email': CJ_EMAIL,
+        'CJ-Access-Token': process.env.CJ_API_KEY,
+        'Email': process.env.CJ_EMAIL,
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(orderData)
@@ -45,30 +37,50 @@ app.post('/api/order', async (req, res) => {
     const result = await response.json();
     res.json(result);
   } catch (error) {
+    console.error('❌ Order error:', error);
     res.status(500).json({ error: 'Order failed' });
   }
 });
 
 // ═══════════════════════════════════════════════════════════
-// 📌 تحديث المنتجات من CJ كل 6 ساعات
+// 📌 تحديث المنتجات من CJ API (كل 6 ساعات)
 // ═══════════════════════════════════════════════════════════
 async function updateProducts() {
+  console.log('🔄 Fetching products from CJ API...');
   try {
+    // استخدام POST مع body (كما هو موثق في CJ API)
     const response = await fetch('https://developers.cjdropshipping.com/api2.0/v1/product/list', {
+      method: 'POST',
       headers: {
-        'CJ-Access-Token': CJ_API_KEY,
-        'Email': CJ_EMAIL
-      }
+        'CJ-Access-Token': process.env.CJ_API_KEY,
+        'Email': process.env.CJ_EMAIL,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        pageNum: 1,
+        pageSize: 20,
+        category: "Consumer Electronics" // الفئة الرئيسية للمنتجات التقنية
+      })
     });
+    
     const data = await response.json();
-    fs.writeFileSync('./products.json', JSON.stringify(data.data || [], null, 2));
-    console.log('✅ Products updated');
+    
+    if (data && data.data && data.data.length > 0) {
+      fs.writeFileSync('./products.json', JSON.stringify(data.data, null, 2));
+      console.log(`✅ Products updated: ${data.data.length} products`);
+    } else {
+      console.log('⚠️ No products found in response:', data);
+      fs.writeFileSync('./products.json', JSON.stringify([], null, 2));
+    }
   } catch (error) {
     console.error('❌ Update failed:', error);
   }
 }
 
+// تشغيل التحديث أول مرة
 updateProducts();
+
+// ثم كل 6 ساعات
 setInterval(updateProducts, 6 * 60 * 60 * 1000);
 
 // ═══════════════════════════════════════════════════════════
