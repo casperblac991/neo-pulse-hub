@@ -409,12 +409,12 @@
 'use strict';
 
 // ══════════════════════════════════════════
-// PRODUCTS - بيانات المنتجات المحلية (30 منتج حقيقي)
+// PRODUCTS - بيانات المنتجات المحلية (احتياطي)
 // ══════════════════════════════════════════
-const INLINE_PRODUCTS = [{"id": "NPH-001", "name": {"ar": "ساعة أبل Watch Series 9", "en": "Apple Watch Series 9 45mm"}, "category": "smartwatch", "category_ar": "ساعات ذكية", "category_en": "Smartwatch", "price": 399, "original_price": 449, "discount": 11, "rating": 4.9, "reviews": 12430, "image": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=600&q=80", "badge": "الأكثر مبيعاً", "in_stock": true, "featured": true, "description": {"ar": "ساعة أبل Watch Series 9 — من أفضل منتجات ساعات ذكية.", "en": "The Apple Watch Series 9 45mm is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Retina Display, GPS+Cellular, Water Resistant 50m, it delivers exceptional performance for everyday use. With a 4.9★ rating and competitive pricing at $399, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-009", "name": {"ar": "ساعة فيتبيت Versa 4", "en": "Fitbit Versa 4"}, "category": "smartwatch", "category_ar": "ساعات ذكية", "category_en": "Smartwatch", "price": 149, "original_price": 199, "discount": 25, "rating": 4.5, "reviews": 9876, "image": "https://images.unsplash.com/photo-1620625515032-6ed0c1790c75?w=600&q=80", "badge": "خصم خاص", "in_stock": true, "featured": false, "description": {"ar": "ساعة فيتبيت Versa 4 — من أفضل منتجات ساعات ذكية.", "en": "The Fitbit Versa 4 is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Alexa, GPS, 6 Days, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $149, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-002", "name": {"ar": "ساعة سامسونج Galaxy Watch 7", "en": "Samsung Galaxy Watch 7 44mm"}, "category": "smartwatch", "category_ar": "ساعات ذكية", "category_en": "Smartwatch", "price": 299, "original_price": 349, "discount": 14, "rating": 4.8, "reviews": 8765, "image": "https://images.unsplash.com/photo-1541643600914-78b084683702?w=600&q=80", "badge": "مميز", "in_stock": true, "featured": false, "description": {"ar": "ساعة سامسونج Galaxy Watch 7 — من أفضل منتجات ساعات ذكية.", "en": "The Samsung Galaxy Watch 7 44mm is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Exynos W1000, AI Sleep, 40 Hours, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $299, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-006", "name": {"ar": "ساعة شاومي Watch S3", "en": "Xiaomi Watch S3"}, "category": "smartwatch", "category_ar": "ساعات ذكية", "category_en": "Smartwatch", "price": 139, "original_price": 169, "discount": 18, "rating": 4.5, "reviews": 6543, "image": "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?w=600&q=80", "badge": "قيمة مثالية", "in_stock": true, "featured": false, "description": {"ar": "ساعة شاومي Watch S3 — من أفضل منتجات ساعات ذكية.", "en": "The Xiaomi Watch S3 is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring AMOLED 1.43, 12 Days, GPS, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $139, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-003", "name": {"ar": "ساعة غارمن Fenix 7X Solar", "en": "Garmin Fenix 7X Solar"}, "category": "smartwatch", "category_ar": "ساعات ذكية", "category_en": "Smartwatch", "price": 299, "original_price": 343, "discount": 13, "rating": 4.8, "reviews": 5432, "image": "https://images.unsplash.com/photo-1617043786394-f977fa12eddf?w=600&q=80", "badge": "الأكثر مبيعاً", "in_stock": true, "featured": false, "description": {"ar": "ساعة غارمن Fenix 7X Solar — من أفضل منتجات ساعات ذكية.", "en": "The Garmin Fenix 7X Solar is a premium smartwatch designed to monitor health, track fitness, and stay connected. Featuring Solar Charging, GPS متعدد, 37 Days, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $699, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-017", "name": {"ar": "نظارة Meta Quest 3", "en": "Meta Quest 3 512GB"}, "category": "smart-glasses", "category_ar": "نظارات ذكية", "category_en": "Smart Glasses", "price": 299, "original_price": 343, "discount": 13, "rating": 4.8, "reviews": 15432, "image": "https://images.unsplash.com/photo-1577803645773-f96470509666?w=600&q=80", "badge": "الأكثر مبيعاً", "in_stock": true, "featured": true, "description": {"ar": "نظارة Meta Quest 3 — من أفضل منتجات نظارات ذكية.", "en": "The Meta Quest 3 512GB is a premium smart glasses designed to see the world enhanced with AR technology. Featuring Snapdragon XR2 Gen 2, Mixed Reality, Pancake, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $649, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-018", "name": {"ar": "نظارة Ray-Ban Meta الذكية", "en": "Ray-Ban Meta Wayfarer"}, "category": "smart-glasses", "category_ar": "نظارات ذكية", "category_en": "Smart Glasses", "price": 329, "original_price": 379, "discount": 13, "rating": 4.5, "reviews": 8765, "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=600&q=80", "badge": "مميز", "in_stock": true, "featured": false, "description": {"ar": "نظارة Ray-Ban Meta الذكية — من أفضل منتجات نظارات ذكية.", "en": "The Ray-Ban Meta Wayfarer is a premium smart glasses designed to see the world enhanced with AR technology. Featuring 12MP Camera, Open-ear, BT 5.3, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $329, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-019", "name": {"ar": "نظارة Meta Quest 3S", "en": "Meta Quest 3S 128GB"}, "category": "smart-glasses", "category_ar": "نظارات ذكية", "category_en": "Smart Glasses", "price": 299, "original_price": 349, "discount": 14, "rating": 4.7, "reviews": 6543, "image": "https://images.unsplash.com/photo-1584543178269-0e3a22b95827?w=600&q=80", "badge": "جديد", "in_stock": true, "featured": false, "description": {"ar": "نظارة Meta Quest 3S — من أفضل منتجات نظارات ذكية.", "en": "The Meta Quest 3S 128GB is a premium smart glasses designed to see the world enhanced with AR technology. Featuring XR2 Gen 2, Mixed Reality, 128GB, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $299, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-016", "name": {"ar": "نظارة Apple Vision Pro", "en": "Apple Vision Pro"}, "category": "smart-glasses", "category_ar": "نظارات ذكية", "category_en": "Smart Glasses", "price": 399, "original_price": 458, "discount": 13, "rating": 4.8, "reviews": 4532, "image": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=600&q=80", "badge": "حصري", "in_stock": true, "featured": false, "description": {"ar": "نظارة Apple Vision Pro — من أفضل منتجات نظارات ذكية.", "en": "The Apple Vision Pro is a premium smart glasses designed to see the world enhanced with AR technology. Featuring micro-OLED 4K, visionOS, R1 Chip, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $3499, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-020", "name": {"ar": "نظارة XREAL Air 2 Pro", "en": "XREAL Air 2 Pro"}, "category": "smart-glasses", "category_ar": "نظارات ذكية", "category_en": "Smart Glasses", "price": 449, "original_price": 499, "discount": 10, "rating": 4.6, "reviews": 3210, "image": "https://images.unsplash.com/photo-1603400521630-9f2de124b33b?w=600&q=80", "badge": "جديد", "in_stock": true, "featured": false, "description": {"ar": "نظارة XREAL Air 2 Pro — من أفضل منتجات نظارات ذكية.", "en": "The XREAL Air 2 Pro is a premium smart glasses designed to see the world enhanced with AR technology. Featuring 330-inch, 120Hz, Electrochromic, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $449, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-031", "name": {"ar": "خاتم Oura Ring الجيل 4", "en": "Oura Ring Gen 4"}, "category": "health", "category_ar": "صحة ذكية", "category_en": "Health", "price": 349, "original_price": 399, "discount": 13, "rating": 4.8, "reviews": 18765, "image": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=600&q=80", "badge": "الأكثر مبيعاً", "in_stock": true, "featured": true, "description": {"ar": "خاتم Oura Ring الجيل 4 — من أفضل منتجات صحة ذكية.", "en": "The Oura Ring Gen 4 is a premium health device designed to track and monitor your wellness in real time. Featuring Advanced Sleep, Readiness, 8 Days, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $349, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-039", "name": {"ar": "سوار شاومي Smart Band 9 Pro", "en": "Xiaomi Smart Band 9 Pro"}, "category": "health", "category_ar": "صحة ذكية", "category_en": "Health", "price": 79, "original_price": 99, "discount": 20, "rating": 4.6, "reviews": 15432, "image": "https://images.unsplash.com/photo-1594882645560-3e93f0b74e31?w=600&q=80", "badge": "اقتصادي", "in_stock": true, "featured": false, "description": {"ar": "سوار شاومي Smart Band 9 Pro — من أفضل منتجات صحة ذكية.", "en": "The Xiaomi Smart Band 9 Pro is a premium health device designed to track and monitor your wellness in real time. Featuring AMOLED, GPS, 21 Days, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $79, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-034", "name": {"ar": "سوار Fitbit Charge 6", "en": "Fitbit Charge 6 Tracker"}, "category": "health", "category_ar": "صحة ذكية", "category_en": "Health", "price": 159, "original_price": 199, "discount": 20, "rating": 4.6, "reviews": 12345, "image": "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=600&q=80", "badge": "خصم خاص", "in_stock": true, "featured": false, "description": {"ar": "سوار Fitbit Charge 6 — من أفضل منتجات صحة ذكية.", "en": "The Fitbit Charge 6 Tracker is a premium health device designed to track and monitor your wellness in real time. Featuring ECG, Google Maps, YouTube, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $159, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-032", "name": {"ar": "حزام WHOOP 4.0", "en": "WHOOP 4.0 Fitness Band"}, "category": "health", "category_ar": "صحة ذكية", "category_en": "Health", "price": 239, "original_price": 279, "discount": 14, "rating": 4.6, "reviews": 8765, "image": "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=600&q=80", "badge": "جديد", "in_stock": true, "featured": false, "description": {"ar": "حزام WHOOP 4.0 — من أفضل منتجات صحة ذكية.", "en": "The WHOOP 4.0 Fitness Band is a premium health device designed to track and monitor your wellness in real time. Featuring Strain, Recovery, HRV, it delivers exceptional performance for everyday use. With a 4.6★ rating and competitive pricing at $239, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-035", "name": {"ar": "سوار Garmin Vivosmart 5", "en": "Garmin Vivosmart 5"}, "category": "health", "category_ar": "صحة ذكية", "category_en": "Health", "price": 149, "original_price": 179, "discount": 17, "rating": 4.5, "reviews": 6543, "image": "https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?w=600&q=80", "badge": "جديد", "in_stock": true, "featured": false, "description": {"ar": "سوار Garmin Vivosmart 5 — من أفضل منتجات صحة ذكية.", "en": "The Garmin Vivosmart 5 is a premium health device designed to track and monitor your wellness in real time. Featuring OLED, 7 Days, Body Battery, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $149, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-052", "name": {"ar": "مكبر Amazon Echo Dot الجيل 5", "en": "Amazon Echo Dot 5th Gen"}, "category": "smart-home", "category_ar": "منزل ذكي", "category_en": "Smart Home", "price": 49, "original_price": 59, "discount": 17, "rating": 4.7, "reviews": 98765, "image": "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&q=80", "badge": "قيمة مثالية", "in_stock": true, "featured": true, "description": {"ar": "مكبر Amazon Echo Dot الجيل 5 — من أفضل منتجات منزل ذكي.", "en": "The Amazon Echo Dot 5th Gen is a premium smart home device designed to automate and control your home intelligently. Featuring Alexa, 2x Brighter, Smart Home, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $49, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-050", "name": {"ar": "جرس Ring Video Doorbell Pro 2", "en": "Ring Video Doorbell Pro 2"}, "category": "smart-home", "category_ar": "منزل ذكي", "category_en": "Smart Home", "price": 249, "original_price": 299, "discount": 17, "rating": 4.5, "reviews": 43210, "image": "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?w=600&q=80", "badge": "جديد", "in_stock": true, "featured": false, "description": {"ar": "جرس Ring Video Doorbell Pro 2 — من أفضل منتجات منزل ذكي.", "en": "The Ring Video Doorbell Pro 2 is a premium smart home device designed to automate and control your home intelligently. Featuring 1536p, Bird's Eye, Smart, it delivers exceptional performance for everyday use. With a 4.5★ rating and competitive pricing at $249, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-049", "name": {"ar": "طقم إضاءة Philips Hue", "en": "Philips Hue Color Starter Kit"}, "category": "smart-home", "category_ar": "منزل ذكي", "category_en": "Smart Home", "price": 199, "original_price": 249, "discount": 20, "rating": 4.7, "reviews": 34567, "image": "https://images.unsplash.com/photo-1558002038-1055907df827?w=600&q=80", "badge": "خصم خاص", "in_stock": true, "featured": false, "description": {"ar": "طقم إضاءة Philips Hue — من أفضل منتجات منزل ذكي.", "en": "The Philips Hue Color Starter Kit is a premium smart home device designed to automate and control your home intelligently. Featuring 16M لون, Voice, Bridge, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $199, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-051", "name": {"ar": "منظم حرارة Nest الجيل 4", "en": "Google Nest Learning Thermostat"}, "category": "smart-home", "category_ar": "منزل ذكي", "category_en": "Smart Home", "price": 279, "original_price": 329, "discount": 15, "rating": 4.7, "reviews": 28765, "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80", "badge": "جديد", "in_stock": true, "featured": false, "description": {"ar": "منظم حرارة Nest الجيل 4 — من أفضل منتجات منزل ذكي.", "en": "The Google Nest Learning Thermostat is a premium smart home device designed to automate and control your home intelligently. Featuring Self-Learning, 15% Savings, Motion Detection, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $279, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-046", "name": {"ar": "شاشة Amazon Echo Show 10", "en": "Amazon Echo Show 10 3rd Gen"}, "category": "smart-home", "category_ar": "منزل ذكي", "category_en": "Smart Home", "price": 249, "original_price": 299, "discount": 17, "rating": 4.7, "reviews": 23456, "image": "https://images.unsplash.com/photo-1567721913486-6585f069b332?w=600&q=80", "badge": "الأكثر مبيعاً", "in_stock": true, "featured": false, "description": {"ar": "شاشة Amazon Echo Show 10 — من أفضل منتجات منزل ذكي.", "en": "The Amazon Echo Show 10 3rd Gen is a premium smart home device designed to automate and control your home intelligently. Featuring HD 10 بوصة, Auto-Follow, 13MP, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $249, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-061", "name": {"ar": "سماعات AirPods Pro الجيل 2", "en": "Apple AirPods Pro 2 USB-C"}, "category": "earbuds", "category_ar": "سماعات ذكية", "category_en": "Earbuds", "price": 249, "original_price": 279, "discount": 11, "rating": 4.9, "reviews": 54321, "image": "https://images.unsplash.com/photo-1491927570842-0261e477d937?w=600&q=80", "badge": "الأكثر مبيعاً", "in_stock": true, "featured": true, "description": {"ar": "سماعات AirPods Pro الجيل 2 — من أفضل منتجات سماعات ذكية.", "en": "The Apple AirPods Pro 2 USB-C is a premium earbuds designed to deliver immersive sound wherever you go. Featuring ANC H2, Adaptive, Spatial, it delivers exceptional performance for everyday use. With a 4.9★ rating and competitive pricing at $249, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-066", "name": {"ar": "سماعات Sony WH-1000XM5 فوق الأذن", "en": "Sony WH-1000XM5 Headphones"}, "category": "earbuds", "category_ar": "سماعات ذكية", "category_en": "Earbuds", "price": 349, "original_price": 399, "discount": 13, "rating": 4.8, "reviews": 45678, "image": "https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?w=600&q=80", "badge": "الأكثر مبيعاً", "in_stock": true, "featured": false, "description": {"ar": "سماعات Sony WH-1000XM5 فوق الأذن — من أفضل منتجات سماعات ذكية.", "en": "The Sony WH-1000XM5 Headphones is a premium earbuds designed to deliver immersive sound wherever you go. Featuring ANC AI, 30h, Multi-point, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $349, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-065", "name": {"ar": "سماعات Apple AirPods 4 ANC", "en": "Apple AirPods 4 with ANC"}, "category": "earbuds", "category_ar": "سماعات ذكية", "category_en": "Earbuds", "price": 179, "original_price": 199, "discount": 10, "rating": 4.8, "reviews": 32145, "image": "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=600&q=80", "badge": "جديد", "in_stock": true, "featured": false, "description": {"ar": "سماعات Apple AirPods 4 ANC — من أفضل منتجات سماعات ذكية.", "en": "The Apple AirPods 4 with ANC is a premium earbuds designed to deliver immersive sound wherever you go. Featuring H2 ANC, Open-ear, USB-C, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $179, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-062", "name": {"ar": "سماعات Sony WF-1000XM5", "en": "Sony WF-1000XM5 Earbuds"}, "category": "earbuds", "category_ar": "سماعات ذكية", "category_en": "Earbuds", "price": 279, "original_price": 329, "discount": 15, "rating": 4.8, "reviews": 23456, "image": "https://images.unsplash.com/photo-1585565804112-f201f68c48b4?w=600&q=80", "badge": "مميز", "in_stock": true, "featured": false, "description": {"ar": "سماعات Sony WF-1000XM5 — من أفضل منتجات سماعات ذكية.", "en": "The Sony WF-1000XM5 Earbuds is a premium earbuds designed to deliver immersive sound wherever you go. Featuring Best-in-class ANC, V2, 360, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $279, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-063", "name": {"ar": "سماعات Bose QuietComfort Ultra", "en": "Bose QuietComfort Ultra Earbuds"}, "category": "earbuds", "category_ar": "سماعات ذكية", "category_en": "Earbuds", "price": 299, "original_price": 349, "discount": 14, "rating": 4.8, "reviews": 15432, "image": "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=600&q=80", "badge": "الأكثر مبيعاً", "in_stock": true, "featured": false, "description": {"ar": "سماعات Bose QuietComfort Ultra — من أفضل منتجات سماعات ذكية.", "en": "The Bose QuietComfort Ultra Earbuds is a premium earbuds designed to deliver immersive sound wherever you go. Featuring Immersive, CustomTune, 6h+24h, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $299, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-078", "name": {"ar": "ماوس Logitech MX Master 3S", "en": "Logitech MX Master 3S Mouse"}, "category": "productivity", "category_ar": "إنتاجية", "category_en": "Productivity", "price": 99, "original_price": 119, "discount": 17, "rating": 4.9, "reviews": 45678, "image": "https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?w=600&q=80", "badge": "الأكثر مبيعاً", "in_stock": true, "featured": true, "description": {"ar": "ماوس Logitech MX Master 3S — من أفضل منتجات إنتاجية.", "en": "The Logitech MX Master 3S Mouse is a premium productivity device designed to boost your workflow and creative output. Featuring 8000 DPI, MagSpeed, 7 Buttons, it delivers exceptional performance for everyday use. With a 4.9★ rating and competitive pricing at $99, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-083", "name": {"ar": "شاحن Anker 737 GaNPrime 120W", "en": "Anker 737 GaNPrime 120W Charger"}, "category": "productivity", "category_ar": "إنتاجية", "category_en": "Productivity", "price": 89, "original_price": 109, "discount": 18, "rating": 4.8, "reviews": 34567, "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&q=80", "badge": "قيمة مثالية", "in_stock": true, "featured": false, "description": {"ar": "شاحن Anker 737 GaNPrime 120W — من أفضل منتجات إنتاجية.", "en": "The Anker 737 GaNPrime 120W Charger is a premium productivity device designed to boost your workflow and creative output. Featuring 120W, 3 Ports, GaN III, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $89, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-076", "name": {"ar": "جهاز iPad Pro M4 13 بوصة", "en": "Apple iPad Pro M4 13 inch"}, "category": "productivity", "category_ar": "إنتاجية", "category_en": "Productivity", "price": 399, "original_price": 458, "discount": 13, "rating": 4.9, "reviews": 23456, "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&q=80", "badge": "الأكثر مبيعاً", "in_stock": true, "featured": false, "description": {"ar": "جهاز iPad Pro M4 13 بوصة — من أفضل منتجات إنتاجية.", "en": "The Apple iPad Pro M4 13 inch is a premium productivity device designed to boost your workflow and creative output. Featuring M4, OLED Tandem, Apple Intelligence, it delivers exceptional performance for everyday use. With a 4.9★ rating and competitive pricing at $1299, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-079", "name": {"ar": "لوحة Logitech MX Keys S Plus", "en": "Logitech MX Keys S Plus Keyboard"}, "category": "productivity", "category_ar": "إنتاجية", "category_en": "Productivity", "price": 149, "original_price": 179, "discount": 17, "rating": 4.8, "reviews": 23456, "image": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&q=80", "badge": "الأكثر مبيعاً", "in_stock": true, "featured": false, "description": {"ar": "لوحة Logitech MX Keys S Plus — من أفضل منتجات إنتاجية.", "en": "The Logitech MX Keys S Plus Keyboard is a premium productivity device designed to boost your workflow and creative output. Featuring Smart Backlight, Smart Actions, 5 Devices, it delivers exceptional performance for everyday use. With a 4.8★ rating and competitive pricing at $149, it's one of the top choices in its category at NEO PULSE HUB."}}, {"id": "NPH-087", "name": {"ar": "محطة شحن Anker MagGo اللاسلكي", "en": "Anker MagGo 3-in-1 Wireless Charger"}, "category": "productivity", "category_ar": "إنتاجية", "category_en": "Productivity", "price": 79, "original_price": 99, "discount": 20, "rating": 4.7, "reviews": 23456, "image": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&q=80", "badge": "خصم خاص", "in_stock": true, "featured": false, "description": {"ar": "محطة شحن Anker MagGo اللاسلكي — من أفضل منتجات إنتاجية.", "en": "The Anker MagGo 3-in-1 Wireless Charger is a premium productivity device designed to boost your workflow and creative output. Featuring MagSafe 15W, 3-in-1, iPhone+Watch+AirPods, it delivers exceptional performance for everyday use. With a 4.7★ rating and competitive pricing at $79, it's one of the top choices in its category at NEO PULSE HUB."}}];
+const INLINE_PRODUCTS = [{"id": "NPH-001", "name": {"ar": "ساعة أبل Watch Series 9", "en": "Apple Watch Series 9 45mm"}, "category": "smartwatch", "category_ar": "ساعات ذكية", "category_en": "Smartwatch", "price": 399, "original_price": 449, "discount": 11, "rating": 4.9, "reviews": 12430, "image": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=600&q=80", "badge": "الأكثر مبيعاً", "in_stock": true, "featured": true}];
 
 // ══════════════════════════════════════════
-// TRANSLATIONS (all 67 keys + cart UI keys)
+// TRANSLATIONS (مختصر للاختصار - نفس المحتوى السابق)
 // ══════════════════════════════════════════
 const T = {
   ar:{
@@ -479,42 +479,26 @@ let PRODUCTS = [];
 function applyLang(l) {
   lang = l;
   localStorage.setItem('nph_lang', l);
-  
-  // تحديث روابط nav لتحمل اللغة في URL
   document.querySelectorAll('a[href^="products.html"], a[href^="about.html"], a[href^="contact.html"]').forEach(a => {
     const base = a.href.split('?')[0];
     const params = new URLSearchParams(a.href.split('?')[1] || '');
     params.set('lang', l);
     a.href = base.split('/').pop() + '?' + params.toString();
   });
-
-  // تحديث عنوان الصفحة
   document.title = T[l].site_title;
-
-  // تحديث اتجاه الصفحة
   document.documentElement.setAttribute('dir', l === 'ar' ? 'rtl' : 'ltr');
   document.documentElement.setAttribute('lang', l);
-
-  // تحديث Meta Description
   document.getElementById('metaDescription').content = T[l].hero_desc;
-
-  // تحديث جميع النصوص
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const k = el.dataset.i18n;
     if (T[l][k] !== undefined) el.textContent = T[l][k];
   });
-
-  // تحديث الـ placeholders
   document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
     const k = el.dataset.i18nPlaceholder;
     if (T[l][k] !== undefined) el.placeholder = T[l][k];
   });
-
-  // تحديث أزرار اللغة
   document.getElementById('langAr').classList.toggle('active', l === 'ar');
   document.getElementById('langEn').classList.toggle('active', l === 'en');
-
-  // إعادة عرض المحتوى الديناميكي
   renderFeatured();
   renderCartItems();
   updateCounts();
@@ -523,56 +507,43 @@ function applyLang(l) {
 function changeLang(l) { applyLang(l); }
 
 // ══════════════════════════════════════════
-// تحميل المنتجات (معدل - الأولوية للمنتجات المحلية)
+// جلب المنتجات من Backend (CJ API)
 // ══════════════════════════════════════════
-function loadProducts() {
+async function loadProductsFromBackend() {
   try {
-    // أولاً: استخدم المنتجات المحلية مباشرة (مضمونة 100%)
-    let data = INLINE_PRODUCTS;
-    
-    // ثانياً: حاول تحميل بيانات إضافية من GitHub (اختياري - لا يؤثر على ظهور المنتجات)
-    fetch('https://raw.githubusercontent.com/casperblac991/neo-pulse-hub/main/products.json')
-      .then(r => r.ok ? r.json() : null)
-      .then(gitData => {
-        if (gitData && Array.isArray(gitData) && gitData.length > 0) {
-          console.log('تم تحميل بيانات محدثة من GitHub');
-          PRODUCTS = processProducts(gitData);
-          updateAll();
-        }
-      })
-      .catch(() => console.log('استمرار باستخدام المنتجات المحلية'));
-    
-    // معالجة المنتجات المحلية وعرضها فوراً
-    PRODUCTS = processProducts(data);
-    updateAll();
-    
-  } catch(e) {
-    console.error('خطأ في تحميل المنتجات:', e);
-    PRODUCTS = processProducts(INLINE_PRODUCTS);
-    updateAll();
+    const response = await fetch('/api/products');
+    const products = await response.json();
+    if (products && products.length > 0) {
+      PRODUCTS = products;
+      console.log(`✅ Loaded ${products.length} products from CJ API`);
+    } else {
+      PRODUCTS = INLINE_PRODUCTS;
+      console.log('⚠️ No products from API, using local products');
+    }
+  } catch (error) {
+    console.error('❌ Failed to load from backend:', error);
+    PRODUCTS = INLINE_PRODUCTS;
   }
+  updateAll();
+}
+
+function loadProducts() {
+  loadProductsFromBackend();
 }
 
 function processProducts(data) {
-  return data
-    .filter(p => p.active !== false)
-    .map(p => ({
-      ...p,
-      name: { ar: p.name_ar || p.name?.ar || '', en: p.name_en || p.name?.en || '' },
-      badge: typeof p.badge === 'string' 
-        ? { ar: p.badge, en: p.badge } 
-        : (p.badge || { ar: '', en: '' }),
-      description: { ar: p.description_ar || '', en: p.description_en || p.description_ar || '' },
-      in_stock: (p.stock || 0) > 0,
-    }));
+  return data.map(p => ({
+    ...p,
+    name: { ar: p.name_ar || p.name?.ar || p.name || '', en: p.name_en || p.name?.en || p.name || '' },
+    badge: typeof p.badge === 'string' ? { ar: p.badge, en: p.badge } : (p.badge || { ar: '', en: '' }),
+    in_stock: true
+  }));
 }
 
 function updateAll() {
   updateCategoryCounts();
   renderFeatured();
   updateCategoryDisplays();
-  
-  // تحديث العدادات
   countersRan = false;
   const stat0el = document.getElementById('stat0');
   if (stat0el) stat0el.dataset.target = PRODUCTS.length;
@@ -594,7 +565,6 @@ function updateCategoryDisplays() {
     'earbuds': PRODUCTS.filter(p => p.category === 'earbuds').length,
     'productivity': PRODUCTS.filter(p => p.category === 'productivity').length
   };
-  
   Object.entries(counts).forEach(([cat, count]) => {
     const el = document.getElementById(`cnt-${cat}`);
     if (el) el.textContent = count + sfx;
@@ -605,19 +575,12 @@ function updateCategoryCounts() {
   updateCategoryDisplays();
 }
 
-// ══════════════════════════════════════════
-// RENDER PRODUCTS
-// ══════════════════════════════════════════
 function renderFeatured() {
   const grid = document.getElementById('productsGrid');
   if (!grid) return;
-  
-  // عرض المنتجات featured=true أولاً، ثم الأعلى تقييماً
   let featured = PRODUCTS.filter(p => p.featured);
   if (featured.length < 6) {
-    const extras = PRODUCTS.filter(p => !p.featured)
-      .sort((a,b) => (b.rating||0)-(a.rating||0))
-      .slice(0, 6 - featured.length);
+    const extras = PRODUCTS.filter(p => !p.featured).sort((a,b) => (b.rating||0)-(a.rating||0)).slice(0, 6 - featured.length);
     featured = [...featured, ...extras];
   }
   grid.innerHTML = featured.slice(0,6).map(productHTML).join('');
@@ -625,10 +588,10 @@ function renderFeatured() {
 
 function productHTML(p) {
   const inCart = cart.some(c => c.id === p.id);
-  const name   = p.name[lang];
-  const cat    = lang === 'ar' ? p.category_ar : p.category_en;
-  const badge  = p.badge && p.badge[lang];
-  const stars  = '★'.repeat(Math.floor(p.rating));
+  const name = p.name[lang];
+  const cat = lang === 'ar' ? p.category_ar : p.category_en;
+  const badge = p.badge && p.badge[lang];
+  const stars = '★'.repeat(Math.floor(p.rating || 4.5));
   const addTxt = inCart ? T[lang].added_btn : T[lang].add_btn;
   return `<div class="product-card" onclick="goProduct('${p.id}')">
     <div class="product-img">
@@ -639,7 +602,7 @@ function productHTML(p) {
     <div class="product-body">
       <div class="product-cat">${cat}</div>
       <div class="product-name">${name}</div>
-      <div class="product-rating"><span class="stars">${stars}</span><span class="rating-num">${p.rating} (${p.reviews.toLocaleString()})</span></div>
+      <div class="product-rating"><span class="stars">${stars}</span><span class="rating-num">${p.rating || 4.5} (${(p.reviews || 100).toLocaleString()})</span></div>
       <div class="product-price-row">
         <div><div class="product-price">$${p.price}</div>${p.original_price?`<div class="product-original">$${p.original_price}</div>`:''}</div>
         <button class="add-cart-btn ${inCart?'added':''}" onclick="addToCart(event,'${p.id}')">${addTxt}</button>
@@ -652,40 +615,44 @@ function goProduct(id) { window.location.href = `product-detail.html?id=${id}`; 
 function goCategory(c) { window.location.href = `products.html?cat=${c}`; }
 
 // ══════════════════════════════════════════
-// CART
+// CART (نفس الكود السابق)
 // ══════════════════════════════════════════
 function saveCart() { localStorage.setItem('nph_cart', JSON.stringify(cart)); }
-
 function addToCart(e, id) {
   e.stopPropagation();
   const p = PRODUCTS.find(x => x.id === id);
   if (!p) return;
   const ex = cart.find(c => c.id === id);
-  if (ex) ex.qty = (ex.qty||1) + 1; else cart.push({...p, qty:1});
-  saveCart(); updateCartBadge(); renderFeatured(); renderCartItems();
+  if (ex) ex.qty = (ex.qty||1) + 1;
+  else cart.push({...p, qty: 1});
+  saveCart();
+  updateCartBadge();
+  renderFeatured();
+  renderCartItems();
   showToast('✅', `${p.name[lang]} — ${T[lang].added_toast}`);
 }
-
 function removeFromCart(id) {
   cart = cart.filter(c => c.id !== id);
-  saveCart(); updateCartBadge(); renderCartItems(); renderFeatured();
+  saveCart();
+  updateCartBadge();
+  renderCartItems();
+  renderFeatured();
   showToast('🗑️', T[lang].removed_toast);
 }
-
 function changeQty(id, delta) {
   const item = cart.find(c => c.id === id);
   if (!item) return;
   item.qty = Math.max(1, (item.qty||1) + delta);
-  saveCart(); updateCartBadge(); renderCartItems();
+  saveCart();
+  updateCartBadge();
+  renderCartItems();
 }
-
 function updateCartBadge() {
   const total = cart.reduce((s,i) => s+(i.qty||1), 0);
   const el = document.getElementById('cartCount');
   el.textContent = total;
   el.style.display = total > 0 ? 'flex' : 'none';
 }
-
 function openCart() {
   document.getElementById('cartOverlay').classList.add('open');
   document.getElementById('cartDrawer').classList.add('open');
@@ -697,14 +664,14 @@ function closeCart() {
   document.getElementById('cartDrawer').classList.remove('open');
   document.body.style.overflow = '';
 }
-
 function renderCartItems() {
   const container = document.getElementById('cartItems');
-  const footer    = document.getElementById('cartFooter');
+  const footer = document.getElementById('cartFooter');
   const t = T[lang];
   if (!cart.length) {
     container.innerHTML = `<div class="cart-empty"><div class="icon">🛒</div><p>${t.cart_empty}</p><small style="color:var(--muted)">${t.cart_empty_sub}</small></div>`;
-    footer.style.display = 'none'; return;
+    footer.style.display = 'none';
+    return;
   }
   const total = cart.reduce((s,i) => s + i.price*(i.qty||1), 0);
   container.innerHTML = cart.map(item => {
@@ -723,22 +690,20 @@ function renderCartItems() {
       <span class="cart-item-remove" onclick="removeFromCart('${item.id}')">🗑️</span>
     </div>`;
   }).join('');
-  document.getElementById('cartTotal').textContent   = `$${total.toFixed(2)}`;
-  document.getElementById('totalLabel').textContent  = t.cart_total;
+  document.getElementById('cartTotal').textContent = `$${total.toFixed(2)}`;
+  document.getElementById('totalLabel').textContent = t.cart_total;
   document.getElementById('checkoutBtn').textContent = t.cart_checkout;
   document.getElementById('continueLabel').textContent = t.cart_continue;
   footer.style.display = 'block';
 }
-
-// FIX 3: Real PayPal checkout — works for single and multi-item carts
 function goCheckout() {
   const PAYPAL = 'Saidchaik@gmail.com';
-  const total  = cart.reduce((s,i) => s + i.price*(i.qty||1), 0).toFixed(2);
+  const total = cart.reduce((s,i) => s + i.price*(i.qty||1), 0).toFixed(2);
   if (cart.length === 1) {
     window.location.href = `checkout.html?id=${cart[0].id}&qty=${cart[0].qty||1}`;
   } else {
     const desc = cart.map(i => `${i.name?.[lang]||i.name_ar} x${i.qty||1}`).join(', ');
-    const url  = 'https://www.paypal.com/cgi-bin/webscr?' + new URLSearchParams({
+    const url = 'https://www.paypal.com/cgi-bin/webscr?' + new URLSearchParams({
       cmd:'_xclick', business:PAYPAL,
       item_name: desc.substring(0,127),
       amount: total, currency_code:'USD',
@@ -751,12 +716,12 @@ function goCheckout() {
 }
 
 // ══════════════════════════════════════════
-// COUNTERS
+// بقية الدوال (Counters, Search, Newsletter, Menu, Chat, Toast, Observers, Init)
 // ══════════════════════════════════════════
 function animateCounters() {
   if (countersRan) return;
   countersRan = true;
-  [['stat0', PRODUCTS.length, '+'],['stat1', Math.max(500, PRODUCTS.reduce((s,p)=>s+p.reviews,0)/1000|0), '+'],['stat2', 98, '%'],['stat3', 24, '+']].forEach(([id,target,sfx]) => {
+  [['stat0', PRODUCTS.length, '+'],['stat1', Math.max(500, PRODUCTS.reduce((s,p)=>s+(p.reviews||0),0)/1000|0), '+'],['stat2', 98, '%'],['stat3', 24, '+']].forEach(([id,target,sfx]) => {
     const el = document.getElementById(id.trim());
     if (!el) return;
     let cur = 0; const step = target/60;
@@ -767,32 +732,17 @@ function animateCounters() {
     }, 16);
   });
 }
-
-function updateCounts() {
-  updateCategoryDisplays();
-}
-
-// ══════════════════════════════════════════
-// SEARCH
-// ══════════════════════════════════════════
+function updateCounts() { updateCategoryDisplays(); }
 function openSearch() {
   const q = prompt(T[lang].search_prompt, lang==='ar'?'ساعة ذكية':'smart watch');
   if (q && q.trim()) window.location.href = `products.html?search=${encodeURIComponent(q.trim())}`;
 }
-
-// ══════════════════════════════════════════
-// NEWSLETTER
-// ══════════════════════════════════════════
 function subscribeEmail() {
   const v = document.getElementById('emailInput').value.trim();
   if (!v || !v.includes('@') || !v.includes('.')) { showToast('⚠️', T[lang].subscribe_err); return; }
   showToast('🎉', T[lang].subscribe_ok);
   document.getElementById('emailInput').value = '';
 }
-
-// ══════════════════════════════════════════
-// NAV / MENU
-// ══════════════════════════════════════════
 function toggleMenu() {
   const h=document.getElementById('hamburger'), d=document.getElementById('mobileDrawer');
   h.classList.toggle('open'); d.classList.toggle('open');
@@ -803,15 +753,7 @@ function closeMenu() {
   document.getElementById('mobileDrawer').classList.remove('open');
   document.body.style.overflow = '';
 }
-
-// ══════════════════════════════════════════
-// CHAT
-// ══════════════════════════════════════════
 function toggleChat() { document.getElementById('chatBubble').classList.toggle('show'); }
-
-// ══════════════════════════════════════════
-// TOAST
-// ══════════════════════════════════════════
 let _tt;
 function showToast(icon, text) {
   const t = document.getElementById('toast');
@@ -821,19 +763,13 @@ function showToast(icon, text) {
   _tt = setTimeout(() => t.classList.remove('show'), 3000);
 }
 
-// ══════════════════════════════════════════
-// OBSERVERS
-// ══════════════════════════════════════════
 const ro = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){e.target.classList.add('visible');ro.unobserve(e.target);}}),{threshold:.08});
 const co = new IntersectionObserver(([e]) => { if(e.isIntersecting){animateCounters();co.disconnect();}},{threshold:.3});
 
-// ══════════════════════════════════════════
-// INIT
-// ══════════════════════════════════════════
 window.addEventListener('DOMContentLoaded', () => {
   applyLang(lang);
   updateCartBadge();
-  loadProducts(); // هذا السطر هو المفتاح - الآن سيتم تحميل المنتجات فوراً
+  loadProducts();
   setTimeout(() => document.querySelectorAll('.reveal').forEach(el => ro.observe(el)), 100);
   const hs = document.querySelector('.hero-stats');
   if (hs) co.observe(hs);
