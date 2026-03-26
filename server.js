@@ -48,7 +48,6 @@ app.post('/api/order', async (req, res) => {
 async function updateProducts() {
   console.log('🔄 Fetching products from CJ API...');
   try {
-    // استخدام POST مع body (كما هو موثق في CJ API)
     const response = await fetch('https://developers.cjdropshipping.com/api2.0/v1/product/list', {
       method: 'POST',
       headers: {
@@ -59,7 +58,7 @@ async function updateProducts() {
       body: JSON.stringify({
         pageNum: 1,
         pageSize: 20,
-        category: "Consumer Electronics" // الفئة الرئيسية للمنتجات التقنية
+        category: "Consumer Electronics"
       })
     });
     
@@ -69,7 +68,7 @@ async function updateProducts() {
       fs.writeFileSync('./products.json', JSON.stringify(data.data, null, 2));
       console.log(`✅ Products updated: ${data.data.length} products`);
     } else {
-      console.log('⚠️ No products found in response:', data);
+      console.log('⚠️ No products found:', data);
       fs.writeFileSync('./products.json', JSON.stringify([], null, 2));
     }
   } catch (error) {
@@ -84,7 +83,7 @@ updateProducts();
 setInterval(updateProducts, 6 * 60 * 60 * 1000);
 
 // ═══════════════════════════════════════════════════════════
-// 📌 تشغيل الخادم
+// 📌 تشغيل الخادم (مع ربطه بـ 0.0.0.0)
 // ═══════════════════════════════════════════════════════════
 const PORT = process.env.PORT || 10000;
-app.listen(PORT, () => console.log(`🚀 Server on port ${PORT}`));
+app.listen(PORT, '0.0.0.0', () => console.log(`🚀 Server on port ${PORT}`));
