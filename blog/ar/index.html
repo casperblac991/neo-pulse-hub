@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدونة NEO PULSE HUB | مراجعات ومقارنات</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Cairo',sans-serif;background:#020510;color:#e2e8f0;line-height:1.7}
+        a{color:inherit;text-decoration:none}
+        nav{position:sticky;top:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;background:rgba(2,5,16,.9);backdrop-filter:blur(20px);border-bottom:1px solid rgba(99,179,237,.12)}
+        .logo{font-size:1.2rem;font-weight:700;background:linear-gradient(135deg,#60a5fa,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+        .nav-links{display:flex;gap:1.5rem}
+        .nav-links a{color:#e2e8f0;opacity:.7;transition:opacity .3s}
+        .nav-links a:hover{opacity:1}
+        .blog-header{text-align:center;padding:4rem 2rem 2rem}
+        .blog-header h1{font-size:2.5rem;background:linear-gradient(135deg,#fff,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+        .blog-header p{color:#94a3b8;margin-top:.5rem}
+        .blog-grid{max-width:1200px;margin:0 auto;padding:2rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:2rem}
+        .card{background:#0a0d1a;border:1px solid rgba(99,179,237,.12);border-radius:16px;overflow:hidden;transition:transform .3s}
+        .card:hover{transform:translateY(-4px);border-color:rgba(99,179,237,.3)}
+        .card-img{height:200px;overflow:hidden}
+        .card-img img{width:100%;height:100%;object-fit:cover}
+        .card-content{padding:1.5rem}
+        .card-category{color:#22d3ee;font-size:.8rem;font-weight:600;text-transform:uppercase}
+        .card h3{font-size:1.2rem;margin:.5rem 0;color:#fff}
+        .card-meta{color:#64748b;font-size:.8rem;margin-bottom:1rem}
+        .card p{color:#94a3b8;font-size:.9rem;margin-bottom:1rem}
+        .read-more{color:#22d3ee;font-weight:600}
+        footer{text-align:center;padding:2rem;border-top:1px solid rgba(99,179,237,.12);margin-top:3rem;color:#64748b}
+        @media(max-width:768px){.blog-grid{grid-template-columns:1fr}}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/index.html" class="logo">NEO PULSE HUB</a>
+        <div class="nav-links">
+            <a href="/index.html">الرئيسية</a>
+            <a href="/products.html">المنتجات</a>
+            <a href="/blog/ar/">المدونة</a>
+            <a href="/about.html">من نحن</a>
+            <a href="/contact.html">اتصل بنا</a>
+            <a href="/blog/en/">English</a>
+        </div>
+    </nav>
+
+    <div class="blog-header">
+        <h1>📝 مدونة NEO PULSE HUB</h1>
+        <p>مراجعات شاملة، مقارنات، وأدلة شراء لأحدث منتجات التقنية والذكاء الاصطناعي</p>
+    </div>
+
+    <div class="blog-grid">
+        <div class="card">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=400&q=80" alt="Apple Watch"></div>
+            <div class="card-content">
+                <div class="card-category">📱 ساعات ذكية</div>
+                <h3>مراجعة ساعة أبل Watch Series 9</h3>
+                <div class="card-meta">📅 28 مارس 2026 | ⏱️ 6 دقائق</div>
+                <p>مراجعة شاملة لساعة أبل Series 9، مقارنة مع سامسونج وشاومي، تحليل المميزات والعيوب.</p>
+                <a href="review-apple-watch.html" class="read-more">اقرأ المراجعة →</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?w=400&q=80" alt="Earbuds"></div>
+            <div class="card-content">
+                <div class="card-category">🎧 سماعات</div>
+                <h3>مقارنة: أفضل 5 سماعات لاسلكية 2026</h3>
+                <div class="card-meta">📅 25 مارس 2026 | ⏱️ 8 دقائق</div>
+                <p>مقارنة شاملة بين AirPods Pro 2، Sony WF-1000XM5، Bose Ultra، وغيرها.</p>
+                <a href="review-earbuds.html" class="read-more">اقرأ المقارنة →</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1577803645773-f96470509666?w=400&q=80" alt="Smart Glasses"></div>
+            <div class="card-content">
+                <div class="card-category">🥽 نظارات ذكية</div>
+                <h3>Meta Quest 3 vs Apple Vision Pro</h3>
+                <div class="card-meta">📅 20 مارس 2026 | ⏱️ 10 دقائق</div>
+                <p>مقارنة تفصيلية بين أغلى نظارتين في السوق، المميزات والعيوب وأيهما تختار.</p>
+                <a href="review-glasses.html" class="read-more">اقرأ المقارنة →</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 NEO PULSE HUB — جميع الحقوق محفوظة</p>
+    </footer>
+</body>
+</html>
