@@ -213,6 +213,8 @@
   <ul class="nav-links">
     <li><a href="index.html" data-i18n="nav_home" class="active">الرئيسية</a></li>
     <li><a href="products.html" data-i18n="nav_products">المنتجات</a></li>
+    <li><a href="blog/ar/" data-i18n="nav_blog_ar">📝 المدونة (عربي)</a></li>
+    <li><a href="blog/en/" data-i18n="nav_blog_en">📝 Blog (English)</a></li>
     <li><a href="about.html" data-i18n="nav_about">من نحن</a></li>
     <li><a href="contact.html" data-i18n="nav_contact">اتصل بنا</a></li>
   </ul>
@@ -231,6 +233,8 @@
 <div class="mobile-drawer" id="mobileDrawer">
   <a href="index.html" data-i18n="nav_home" onclick="closeMenu()">🏠 الرئيسية</a>
   <a href="products.html" data-i18n="nav_products" onclick="closeMenu()">🛍️ المنتجات</a>
+  <a href="blog/ar/" data-i18n="nav_blog_ar" onclick="closeMenu()">📝 المدونة (عربي)</a>
+  <a href="blog/en/" data-i18n="nav_blog_en" onclick="closeMenu()">📝 Blog (English)</a>
   <a href="about.html" data-i18n="nav_about" onclick="closeMenu()">ℹ️ من نحن</a>
   <a href="contact.html" data-i18n="nav_contact" onclick="closeMenu()">📞 اتصل بنا</a>
   <button class="btn btn-primary" onclick="openCart();closeMenu()" data-i18n="nav_cart">🛒 السلة</button>
@@ -414,11 +418,11 @@
 const INLINE_PRODUCTS = [{"id": "NPH-001", "name": {"ar": "ساعة أبل Watch Series 9", "en": "Apple Watch Series 9 45mm"}, "category": "smartwatch", "category_ar": "ساعات ذكية", "category_en": "Smartwatch", "price": 399, "original_price": 449, "discount": 11, "rating": 4.9, "reviews": 12430, "image": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=600&q=80", "badge": "الأكثر مبيعاً", "in_stock": true, "featured": true}];
 
 // ══════════════════════════════════════════
-// TRANSLATIONS (مختصر للاختصار - نفس المحتوى السابق)
+// TRANSLATIONS (مختصر للاختصار)
 // ══════════════════════════════════════════
 const T = {
   ar:{
-    site_title:"NEO PULSE HUB | مستقبل التقنية بين يديك",nav_home:"الرئيسية",nav_products:"المنتجات",nav_about:"من نحن",nav_contact:"اتصل بنا",nav_cart:"🛒 السلة",
+    site_title:"NEO PULSE HUB | مستقبل التقنية بين يديك",nav_home:"الرئيسية",nav_products:"المنتجات",nav_blog_ar:"📝 المدونة (عربي)",nav_blog_en:"📝 Blog (English)",nav_about:"من نحن",nav_contact:"اتصل بنا",nav_cart:"🛒 السلة",
     hero_badge:"🤖 منتجات الذكاء الاصطناعي — متاحة الآن",hero_subtitle:"مستقبل التقنية بين يديك",hero_desc:"متجرك المتخصص لأحدث منتجات الذكاء الاصطناعي والتقنية الذكية. من الساعات الذكية إلى نظارات AR — كل ما تحتاجه لتعيش المستقبل اليوم.",
     shop_now:"🛍️ تسوق الآن",search_btn:"🔍 بحث متقدم",discover:"⚡ اكتشف المميزات",
     stat_products:"منتج ذكي",stat_customers:"عميل سعيد",stat_satisfaction:"% رضا العملاء",stat_support:"دعم / 7",
@@ -441,7 +445,7 @@ const T = {
     cnt_suffix:" منتج"
   },
   en:{
-    site_title:"NEO PULSE HUB | Future of Tech in Your Hands",nav_home:"Home",nav_products:"Products",nav_about:"About",nav_contact:"Contact",nav_cart:"🛒 Cart",
+    site_title:"NEO PULSE HUB | Future of Tech in Your Hands",nav_home:"Home",nav_products:"Products",nav_blog_ar:"📝 Blog (Arabic)",nav_blog_en:"📝 Blog (English)",nav_about:"About",nav_contact:"Contact",nav_cart:"🛒 Cart",
     hero_badge:"🤖 AI Products — Available Now",hero_subtitle:"The Future of Tech in Your Hands",hero_desc:"Your specialized store for the latest AI products and smart technology. From smartwatches to AR glasses — everything you need to live the future today.",
     shop_now:"🛍️ Shop Now",search_btn:"🔍 Advanced Search",discover:"⚡ Discover Features",
     stat_products:"Smart Products",stat_customers:"Happy Customers",stat_satisfaction:"% Satisfaction",stat_support:"Support / 7",
