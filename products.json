@@ -3636,4 +3636,91 @@
     "added_at": "2026-03-22T18:00:09.919698",
     "added_by": "pool_v1"
   }
-]
+][
+  {
+    "id": "NPH-001",
+    "name": { "ar": "ساعة أبل Watch Series 9", "en": "Apple Watch Series 9" },
+    "price": 399,
+    "original_price": 449,
+    "discount": 11,
+    "rating": 4.9,
+    "reviews": 12430,
+    "image": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=600&q=80",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "Smartwatch",
+    "badge": "الأكثر مبيعاً",
+    "in_stock": true,
+    "featured": true,
+    "amazon_link": "https://amzn.to/41yZK01"
+  },
+  {
+    "id": "NPH-002",
+    "name": { "ar": "سماعات سوني WH-1000XM5", "en": "Sony WH-1000XM5" },
+    "price": 349,
+    "original_price": 399,
+    "discount": 13,
+    "rating": 4.8,
+    "reviews": 45678,
+    "image": "https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?w=600&q=80",
+    "category": "earbuds",
+    "category_ar": "سماعات",
+    "category_en": "Earbuds",
+    "badge": "الأكثر مبيعاً",
+    "in_stock": true,
+    "featured": true,
+    "amazon_link": "https://amzn.to/4iFfHox"
+  },
+  {
+    "id": "NPH-003",
+    "name": { "ar": "ساعة سامسونج Galaxy Watch 7", "en": "Samsung Galaxy Watch 7" },
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.8,
+    "reviews": 8765,
+    "image": "https://images.unsplash.com/photo-1541643600914-78b084683702?w=600&q=80",
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "Smartwatch",
+    "badge": "مميز",
+    "in_stock": true,
+    "featured": true,
+    "amazon_link": "https://amzn.to/4iMbjP4"
+  },
+  {
+    "id": "NPH-004",
+    "name": { "ar": "نظارة ميتا كويست 3", "en": "Meta Quest 3" },
+    "price": 649,
+    "original_price": 749,
+    "discount": 13,
+    "rating": 4.8,
+    "reviews": 15432,
+    "image": "https://images.unsplash.com/photo-1577803645773-f96470509666?w=600&q=80",
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "category_en": "Smart Glasses",
+    "badge": "الأكثر مبيعاً",
+    "in_stock": true,
+    "featured": true,
+    "amazon_link": "https://amzn.to/4iFgHox"
+  },
+  {
+    "id": "NPH-005",
+    "name": { "ar": "سماعات أبل AirPods Pro 2", "en": "Apple AirPods Pro 2" },
+    "price": 249,
+    "original_price": 279,
+    "discount": 11,
+    "rating": 4.9,
+    "reviews": 54321,
+    "image": "https://images.unsplash.com/photo-1491927570842-0261e477d937?w=600&q=80",
+    "category": "earbuds",
+    "category_ar": "سماعات",
+    "category_en": "Earbuds",
+    "badge": "الأكثر مبيعاً",
+    "in_stock": true,
+    "featured": true,
+    "amazon_link": "https://amzn.to/4iN7uZa"
+  }
+    ]
+    
