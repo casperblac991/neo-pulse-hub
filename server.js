@@ -1,30 +1,59 @@
-// Complete Groq AI backend implementation
-
 const express = require('express');
 const bodyParser = require('body-parser');
-const { GroqAI } = require('groq-ai');
+const cors = require('cors');
+const { GroqClient } = require('groq-sdk');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
+// Middleware
+app.use(cors());
 app.use(bodyParser.json());
 
-// Initialize Groq AI
-const groqAI = new GroqAI({
-    apiKey: 'YOUR_API_KEY', // Replace with your Groq AI API Key
+// Initialize Groq API client
+const groqClient = new GroqClient({
+    projectId: 'your_project_id',
+    dataset: 'your_dataset'
 });
 
-// Define routes
-app.post('/api/groq', async (req, res) => {
-    try {
-        const { query } = req.body;
-        const response = await groqAI.query(query);
-        res.json(response);
-    } catch (error) {
-        res.status(500).send(error.message);
-    }
+// Health check endpoint
+app.get('/health', (req, res) => {
+    res.json({ status: 'healthy' });
+});
+
+// Chat endpoint
+app.post('/chat', async (req, res) => {
+    const { message } = req.body;
+    const response = await groqClient.chat(message);
+    res.json(response);
+});
+
+// Recommendations endpoint
+app.get('/recommendations', async (req, res) => {
+    const recommendations = await groqClient.getRecommendations();
+    res.json(recommendations);
+});
+
+// Orders endpoint
+app.post('/orders', async (req, res) => {
+    const orderData = req.body;
+    const result = await groqClient.createOrder(orderData);
+    res.json(result);
+});
+
+// Newsletter subscription endpoint
+app.post('/subscribe', async (req, res) => {
+    const { email } = req.body;
+    const result = await groqClient.subscribeToNewsletter(email);
+    res.json(result);
+});
+
+// Analytics endpoint
+app.get('/analytics', async (req, res) => {
+    const analyticsData = await groqClient.getAnalytics();
+    res.json(analyticsData);
 });
 
 app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+    console.log(`Server running on port ${port}`);
 });
