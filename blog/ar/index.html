@@ -2,45 +2,240 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<title>المدونة</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المدونة | NEO PULSE HUB</title>
+<meta name="description" content="مدونة NEO PULSE HUB - مراجعات وأخبار التقنية الذكية">
+<!-- نفس الخطوط من الموقع الرئيسي -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&family=Poppins:wght@300;400;500;600;700;900&family=Orbitron:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+/* ========== نفس الـ CSS من الموقع الرئيسي ========== */
+:root{--bg:#020510;--surface:#0a0d1a;--surface2:#0f1423;--border:rgba(99,179,237,.12);--border2:rgba(99,179,237,.25);--blue:#3b82f6;--blue2:#60a5fa;--purple:#7c3aed;--purple2:#a855f7;--cyan:#06b6d4;--cyan2:#22d3ee;--green:#10b981;--red:#ef4444;--gold:#f59e0b;--text:#e2e8f0;--muted:rgba(226,232,240,.55);--r:12px;--r2:20px;--rp:50px;--ease:.3s cubic-bezier(.4,0,.2,1);--glow-b:0 0 30px rgba(59,130,246,.35);--glow-p:0 0 30px rgba(124,58,237,.35);--glow-c:0 0 30px rgba(6,182,212,.35)}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'Cairo','Poppins',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.7}
+a{color:inherit;text-decoration:none}button{cursor:pointer;border:none;background:none;font-family:inherit}img{max-width:100%;display:block}
+.bg-grid{position:fixed;inset:0;z-index:-3;background-image:linear-gradient(rgba(59,130,246,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,.04) 1px,transparent 1px);background-size:60px 60px}
+.bg-grad{position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse 80% 50% at 20% 20%,rgba(124,58,237,.12),transparent 60%),radial-gradient(ellipse 60% 40% at 80% 80%,rgba(6,182,212,.08),transparent 60%)}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:.9rem 2.5rem;gap:1rem;background:rgba(2,5,16,.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.nav-logo{font-family:'Orbitron',sans-serif;font-size:1.1rem;font-weight:700;letter-spacing:.08em;background:linear-gradient(135deg,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;white-space:nowrap}
+.nav-links{display:flex;align-items:center;gap:.2rem;list-style:none}
+.nav-links a{font-size:.85rem;font-weight:500;color:var(--muted);padding:.35rem .8rem;border-radius:var(--rp);transition:color var(--ease),background var(--ease)}
+.nav-links a:hover,.nav-links a.active{color:var(--cyan2);background:rgba(6,182,212,.08)}
+.lang-switch{display:flex;gap:5px}
+.lang-btn{background:rgba(59,130,246,.1);border:1px solid var(--border2);color:var(--text);padding:.25rem .8rem;border-radius:var(--rp);font-size:.8rem;font-weight:600;cursor:pointer;transition:all var(--ease)}
+.lang-btn.active{background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;border-color:transparent}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:6px;background:rgba(59,130,246,.08);border:1px solid var(--border);border-radius:8px}
+.hamburger span{display:block;width:20px;height:2px;background:var(--blue2);border-radius:2px}
+.mobile-drawer{position:fixed;top:61px;inset:0;z-index:199;background:rgba(2,5,16,.97);backdrop-filter:blur(20px);flex-direction:column;align-items:center;justify-content:center;gap:1.5rem;padding:2rem;opacity:0;pointer-events:none;transition:opacity var(--ease);display:none}
+.mobile-drawer.open{display:flex!important;opacity:1;pointer-events:all}
+.mobile-drawer a{font-size:1.2rem;font-weight:700;color:var(--muted)}
+.mobile-drawer a:hover{color:var(--cyan2)}
+.hero{min-height:50vh;display:flex;align-items:center;justify-content:center;padding:8rem 2rem 4rem;position:relative;overflow:hidden}
+.hero-content{text-align:center;max-width:900px;position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.3);color:var(--blue2);font-size:.82rem;font-weight:600;padding:.35rem 1.1rem;border-radius:var(--rp);margin-bottom:1.5rem}
+.hero-badge .dot{width:7px;height:7px;border-radius:50%;background:var(--cyan2);animation:blink 1.5s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
+.hero-title{font-family:'Orbitron',sans-serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:900;background:linear-gradient(135deg,#fff,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:1rem}
+.hero-desc{font-size:1rem;color:var(--muted);max-width:600px;margin:0 auto}
+.section{padding:4rem 2rem}.section-inner{max-width:1200px;margin:0 auto}
+.section-header{text-align:center;margin-bottom:3rem}
+.section-tag{display:inline-block;font-size:.73rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan2);border:1px solid rgba(6,182,212,.3);background:rgba(6,182,212,.06);padding:.25rem .9rem;border-radius:var(--rp);margin-bottom:1rem}
+.section-title{font-family:'Orbitron',sans-serif;font-size:clamp(1.4rem,3vw,2rem);font-weight:700;background:linear-gradient(135deg,#fff,var(--blue2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+/* تنسيق بطاقات المدونة */
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:2rem}
+.blog-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);overflow:hidden;transition:all var(--ease)}
+.blog-card:hover{transform:translateY(-6px);border-color:var(--border2);box-shadow:var(--glow-b)}
+.blog-card-img{height:200px;overflow:hidden}
+.blog-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.blog-card:hover .blog-card-img img{transform:scale(1.05)}
+.blog-card-body{padding:1.5rem}
+.blog-category{display:inline-block;font-size:.7rem;font-weight:700;color:var(--cyan2);background:rgba(6,182,212,.1);padding:.2rem .8rem;border-radius:var(--rp);margin-bottom:.8rem}
+.blog-title{font-size:1.1rem;font-weight:700;margin-bottom:.8rem;line-height:1.4}
+.blog-title a{transition:color var(--ease)}
+.blog-title a:hover{color:var(--cyan2)}
+.blog-excerpt{color:var(--muted);font-size:.85rem;margin-bottom:1rem;line-height:1.6}
+.blog-meta{display:flex;align-items:center;gap:1rem;font-size:.7rem;color:var(--muted);border-top:1px solid var(--border);padding-top:1rem;margin-top:.5rem}
+.blog-read-more{color:var(--cyan2);font-weight:600;font-size:.8rem;display:inline-flex;align-items:center;gap:4px;margin-top:.5rem}
+footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem 2rem 1.5rem}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:2.5rem}
+.footer-brand-name{font-family:'Orbitron',sans-serif;font-size:1rem;font-weight:700;background:linear-gradient(135deg,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.7rem}
+.footer-brand-desc{font-size:.85rem;color:var(--muted);line-height:1.7;max-width:280px}
+.footer-col-title{font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue2);margin-bottom:1rem}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+.footer-links a{font-size:.85rem;color:var(--muted);transition:color var(--ease)}
+.footer-links a:hover{color:var(--cyan2)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;padding-top:1.5rem;border-top:1px solid var(--border)}
+.footer-copy{font-size:.78rem;color:rgba(226,232,240,.3)}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:1024px){.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:768px){nav{padding:.9rem 1.2rem}.nav-links{display:none}.hamburger{display:flex}.blog-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
+<div class="bg-grid"></div>
+<div class="bg-grad"></div>
 
-<h1>📝 المدونة</h1>
+<!-- شريط التنقل -->
+<nav>
+  <a href="../../index.html" class="nav-logo">NEO PULSE HUB</a>
+  <ul class="nav-links">
+    <li><a href="../../index.html">الرئيسية</a></li>
+    <li><a href="../../products.html">المنتجات</a></li>
+    <li><a href="index.html" class="active">📝 المدونة</a></li>
+    <li><a href="../../about.html">من نحن</a></li>
+    <li><a href="../../contact.html">اتصل بنا</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:.8rem">
+    <div class="lang-switch">
+      <button class="lang-btn active" onclick="window.location.href='index.html'">عربي</button>
+      <button class="lang-btn" onclick="window.location.href='../en/index.html'">EN</button>
+    </div>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
 
-<ul>
+<!-- القائمة الجانبية للهواتف -->
+<div class="mobile-drawer" id="mobileDrawer">
+  <a href="../../index.html" onclick="closeMenu()">🏠 الرئيسية</a>
+  <a href="../../products.html" onclick="closeMenu()">🛍️ المنتجات</a>
+  <a href="index.html" onclick="closeMenu()">📝 المدونة</a>
+  <a href="../../about.html" onclick="closeMenu()">ℹ️ من نحن</a>
+  <a href="../../contact.html" onclick="closeMenu()">📞 اتصل بنا</a>
+</div>
 
-<li><a href="./apple-watch-series-9-review.html">Apple Watch Series 9</a></li>
+<!-- هيدر المدونة -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge"><span class="dot"></span><span>📝 أحدث المقالات والمراجعات</span></div>
+    <h1 class="hero-title">مدونة NEO PULSE HUB</h1>
+    <p class="hero-desc">مراجعات شاملة، مقارنات، وأخبار تقنية - كل ما تحتاجه لاختيار أفضل منتج ذكي</p>
+  </div>
+</section>
 
-<li><a href="./sony-wh-1000XM5-review.html">Sony WH-1000XM5</a></li>
+<!-- قائمة المقالات -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-tag">المقالات</div>
+      <h2 class="section-title">أحدث المراجعات</h2>
+    </div>
+    <div class="blog-grid" id="blogGrid">
+      <!-- سيتم إضافة المقالات بواسطة JavaScript -->
+    </div>
+  </div>
+</section>
 
-<li><a href="./fitbit-Charge-6-review.html">Fitbit Charge 6</a></li>
+<!-- الفوتر -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">NEO PULSE HUB</div>
+        <p class="footer-brand-desc">دليلك الموثوق لأفضل منتجات التقنية الذكية والذكاء الاصطناعي.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">روابط سريعة</div>
+        <ul class="footer-links">
+          <li><a href="../../index.html">الرئيسية</a></li>
+          <li><a href="../../products.html">المنتجات</a></li>
+          <li><a href="index.html">المدونة</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">قانوني</div>
+        <ul class="footer-links">
+          <li><a href="../../privacy.html">سياسة الخصوصية</a></li>
+          <li><a href="../../terms.html">الشروط والأحكام</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">تواصل معنا</div>
+        <ul class="footer-links">
+          <li><a href="https://t.me/NeoPulseBot" target="_blank">🤖 بوت تيليجرام</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 NEO PULSE HUB — جميع الحقوق محفوظة</span>
+    </div>
+  </div>
+</footer>
 
-<li><a href="./amazon-Echo-Show-10-review.html">Echo Show 10</a></li>
+<script>
+// قائمة المقالات (نفس الروابط الموجودة لديك)
+const articles = [
+  { title: "Apple Watch Series 9", file: "apple-watch-series-9-review.html", category: "⌚ ساعات ذكية", excerpt: "مراجعة شاملة لأحدث ساعة ذكية من Apple مع ميزات صحية متطورة." },
+  { title: "Sony WH-1000XM5", file: "sony-wh-1000XM5-review.html", category: "🎧 سماعات", excerpt: "تجربة عزل الضوضاء وجودة الصوت في أفضل سماعات Sony." },
+  { title: "Fitbit Charge 6", file: "fitbit-Charge-6-review.html", category: "❤️ الصحة الذكية", excerpt: "تتبع دقيق للصحة واللياقة البدنية مع ميزات متطورة." },
+  { title: "Echo Show 10", file: "amazon-Echo-Show-10-review.html", category: "🏠 المنزل الذكي", excerpt: "شاشة ذكية تدور معك وتتحكم بمنزلك بالصوت." },
+  { title: "RayBan Smart Glasses", file: "meta-rayban-smart-glasses-review.html", category: "🥽 نظارات ذكية", excerpt: "نظارات شمسية ذكية تصور وتشغل الموسيقى." },
+  { title: "Oura Ring", file: "oura-ring-gen3-review.html", category: "❤️ الصحة الذكية", excerpt: "خاتم ذكي لمراقبة النوم والنشاط بدقة عالية." },
+  { title: "Nest Thermostat", file: "google-nest-thermostat-review.html", category: "🏠 المنزل الذكي", excerpt: "منظم حرارة ذكي يوفر الطاقة ويتعلم عاداتك." },
+  { title: "Garmin Venu 3", file: "garmin-venu-3-review.html", category: "⌚ ساعات ذكية", excerpt: "ساعة رياضية متطورة مع شاشة AMOLED وميزات صحية." },
+  { title: "MX Master 3S", file: "logitech-mx-master-3S-review.html", category: "💼 إنتاجية", excerpt: "فأرة احترافية للمصممين والمبرمجين." },
+  { title: "Xiaomi Band 8 Pro", file: "xiaomi-mi-band-8-pro.html", category: "⌚ ساعات ذكية", excerpt: "سوار ذكي بمواصفات ممتازة وسعر اقتصادي." },
+  { title: "Philips Hue", file: "philips-hue-starter-kit-review.html", category: "🏠 المنزل الذكي", excerpt: "أضواء ذكية تغير الأجواء حسب رغبتك." },
+  { title: "Galaxy Buds2 Pro", file: "samsung-galaxy-buds2-pro-review.html", category: "🎧 سماعات", excerpt: "سماعات أذن لاسلكية مع عزل صوت متطور." },
+  { title: "Galaxy Watch 6", file: "samsung-galaxy-watch-6-Classic-review.html", category: "⌚ ساعات ذكية", excerpt: "ساعة سامسونج الدائرية بتصميم كلاسيكي وميزات صحية." },
+  { title: "دليل المنزل الذكي", file: "smart-home-guide.html", category: "🏠 المنزل الذكي", excerpt: "دليل شامل لتحويل منزلك إلى منزل ذكي." },
+  { title: "تقنيات 2026", file: "tech-trends-2026.html", category: "📱 أخبار تقنية", excerpt: "أهم التقنيات التي ستغير العالم في 2026." }
+];
 
-<li><a href="./meta-rayban-smart-glasses-review.html">RayBan Smart Glasses</a></li>
+// عرض المقالات في الشبكة
+function renderBlog() {
+  const grid = document.getElementById('blogGrid');
+  if (!grid) return;
+  
+  grid.innerHTML = articles.map(article => `
+    <div class="blog-card">
+      <div class="blog-card-body">
+        <span class="blog-category">${article.category}</span>
+        <h3 class="blog-title"><a href="${article.file}">${article.title}</a></h3>
+        <p class="blog-excerpt">${article.excerpt}</p>
+        <div class="blog-meta">
+          <span>📖 مقالة</span>
+        </div>
+        <a href="${article.file}" class="blog-read-more">اقرأ المزيد ←</a>
+      </div>
+    </div>
+  `).join('');
+}
 
-<li><a href="./oura-ring-gen3-review.html">Oura Ring</a></li>
+// وظائف القائمة
+function toggleMenu() {
+  const d = document.getElementById('mobileDrawer');
+  const h = document.getElementById('hamburger');
+  if (d.classList.contains('open')) {
+    d.classList.remove('open');
+    document.body.style.overflow = '';
+  } else {
+    d.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+}
+function closeMenu() {
+  document.getElementById('mobileDrawer')?.classList.remove('open');
+  document.body.style.overflow = '';
+}
 
-<li><a href="./google-nest-thermostat-review.html">Nest Thermostat</a></li>
+// تأثير ظهور العناصر
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
 
-<li><a href="./garmin-venu-3-review.html">Garmin Venu 3</a></li>
-
-<li><a href="./logitech-mx-master-3S-review.html">MX Master 3S</a></li>
-
-<li><a href="./xiaomi-mi-band-8-pro.html">Xiaomi Band 8 Pro</a></li>
-
-<li><a href="./philips-hue-starter-kit-review.html">Philips Hue</a></li>
-
-<li><a href="./samsung-galaxy-buds2-pro-review.html">Galaxy Buds2 Pro</a></li>
-
-<li><a href="./samsung-galaxy-watch-6-Classic-review.html">Galaxy Watch 6</a></li>
-
-<li><a href="./smart-home-guide.html">دليل المنزل الذكي</a></li>
-
-<li><a href="./tech-trends-2026.html">تقنيات 2026</a></li>
-
-</ul>
-
+window.addEventListener('DOMContentLoaded', () => {
+  renderBlog();
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  
+  // إغلاق القائمة عند الضغط خارجها
+  document.addEventListener('click', (e) => {
+    const d = document.getElementById('mobileDrawer');
+    const h = document.getElementById('hamburger');
+    if (d && d.classList.contains('open') && !d.contains(e.target) && !h.contains(e.target)) closeMenu();
+  });
+});
+</script>
 </body>
 </html>
