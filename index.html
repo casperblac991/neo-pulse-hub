@@ -315,13 +315,19 @@ html[dir="rtl"] .toast{left:2rem} html[dir="ltr"] .toast{right:2rem}
   </div>
 </footer>
 
-<div class="chat-widget">
-  <div class="chat-bubble" id="chatBubble">
-    <p data-i18n="chat_greeting">👋 مرحباً! هل تحتاج مساعدة في اختيار منتج؟</p>
-    <a href="https://t.me/NeoPulseBot" target="_blank" rel="noopener" data-i18n="chat_btn">🤖 تحدث مع مساعد AI</a>
+<!-- شات بوت ذكي يعمل داخل الموقع -->
+<div id="chatWindow" style="display:none; position:fixed; bottom:80px; right:20px; width:350px; height:500px; background:#0a0d1a; border:1px solid #3b82f6; border-radius:16px; z-index:1000; display:flex; flex-direction:column; box-shadow:0 0 20px rgba(59,130,246,.3);">
+  <div style="background:linear-gradient(135deg,#3b82f6,#7c3aed); padding:12px; border-radius:16px 16px 0 0; display:flex; justify-content:space-between; align-items:center;">
+    <span style="font-weight:bold;">🤖 مساعد NEO PULSE</span>
+    <button onclick="toggleChatWindow()" style="background:none; border:none; color:white; font-size:20px; cursor:pointer;">✕</button>
   </div>
-  <button class="chat-btn" onclick="toggleChat()" aria-label="AI Chat">🤖</button>
+  <div id="chatMessages" style="flex:1; overflow-y:auto; padding:12px; display:flex; flex-direction:column; gap:8px;"></div>
+  <div style="padding:12px; border-top:1px solid rgba(59,130,246,.3); display:flex; gap:8px;">
+    <input type="text" id="chatInput" placeholder="اكتب سؤالك عن المنتجات..." style="flex:1; padding:10px; border-radius:25px; border:1px solid #3b82f6; background:#0f1423; color:#fff;">
+    <button onclick="sendChat()" style="background:linear-gradient(135deg,#3b82f6,#7c3aed); border:none; border-radius:25px; padding:10px 20px; color:white; cursor:pointer;">إرسال</button>
+  </div>
 </div>
+<button onclick="toggleChatWindow()" style="position:fixed; bottom:20px; right:20px; width:55px; height:55px; border-radius:50%; background:linear-gradient(135deg,#3b82f6,#7c3aed); border:none; font-size:1.5rem; cursor:pointer; box-shadow:0 4px 15px rgba(59,130,246,.4); z-index:1000;">🤖</button>
 
 <div class="toast" id="toast" role="alert" aria-live="polite">
   <span class="toast-icon" id="toastIcon">✅</span>
@@ -396,9 +402,49 @@ let lang = localStorage.getItem('nph_lang') || 'ar';
 let PRODUCTS = [];
 let currentFilter = 'featured';
 
-// ============================================
-// 🤖 ربط المدير الذكي مع الموقع
-// ============================================
+// شات بوت الموقع
+function toggleChatWindow() {
+  const win = document.getElementById('chatWindow');
+  if (win.style.display === 'none' || win.style.display === '') {
+    win.style.display = 'flex';
+  } else {
+    win.style.display = 'none';
+  }
+}
+
+async function sendChat() {
+  const input = document.getElementById('chatInput');
+  const msg = input.value.trim();
+  if (!msg) return;
+  
+  const messagesDiv = document.getElementById('chatMessages');
+  messagesDiv.innerHTML += `<div style="text-align:right; margin:5px; padding:8px 12px; background:#3b82f6; border-radius:18px; align-self:flex-end; max-width:80%; word-wrap:break-word;">${msg}</div>`;
+  input.value = '';
+  messagesDiv.scrollTop = messagesDiv.scrollHeight;
+  
+  const loadingId = 'loading-' + Date.now();
+  messagesDiv.innerHTML += `<div id="${loadingId}" style="margin:5px; padding:8px 12px; background:#1e1e2e; border-radius:18px; align-self:flex-start; max-width:80%;"><span style="color:#60a5fa;">🤖</span> <span class="typing-dots">...</span></div>`;
+  messagesDiv.scrollTop = messagesDiv.scrollHeight;
+  
+  try {
+    const response = await fetch(`${MANAGER_URL}/api/chat`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: msg })
+    });
+    const data = await response.json();
+    const loadingEl = document.getElementById(loadingId);
+    if (loadingEl) {
+      loadingEl.innerHTML = `<span style="color:#60a5fa;">🤖</span> ${data.answer || 'عذراً، حدث خطأ'}`;
+    }
+  } catch (error) {
+    const loadingEl = document.getElementById(loadingId);
+    if (loadingEl) {
+      loadingEl.innerHTML = `<span style="color:#60a5fa;">🤖</span> عذراً، حدث خطأ في الاتصال`;
+    }
+  }
+  messagesDiv.scrollTop = messagesDiv.scrollHeight;
+}
 
 async function callManager(endpoint, data = {}) {
   try {
@@ -419,36 +465,14 @@ async function sendMessageToAI(message, userId = 'guest') {
     const result = await callManager('/api/chat', { message, userId });
     return result.answer || 'عذراً، حدث خطأ في الرد';
   } catch (error) {
-    console.error('AI Error:', error);
     return 'عذراً، حدث خطأ في الاتصال. حاول مرة أخرى.';
   }
 }
 
-async function getRecommendations(preferences, budget) {
-  const result = await callManager('/api/recommend', { preferences, budget });
-  return result.recommendations || [];
-}
-
-async function compareProducts(product1Id, product2Id) {
-  const result = await callManager('/api/compare', { product1Id, product2Id });
-  return result.comparison;
-}
-
-async function getDeals() {
-  const result = await callManager('/api/deals');
-  return result.deals || [];
-}
-
 window.sendToAI = sendMessageToAI;
-window.getRecommendations = getRecommendations;
-window.compareProducts = compareProducts;
-window.getDeals = getDeals;
-
-console.log('✅ NEO PULSE MANAGER connected to', MANAGER_URL);
 
 async function loadProducts() {
   const grid = document.getElementById('productsGrid');
-  
   try {
     const res = await fetch(`products.json?t=${Date.now()}`);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -465,7 +489,6 @@ async function loadProducts() {
     }
     return;
   }
-  
   updateCounts();
   renderProducts();
 }
@@ -574,7 +597,6 @@ function closeMenu() {
   document.getElementById('mobileDrawer').classList.remove('open');
   document.body.style.overflow = '';
 }
-function toggleChat() { document.getElementById('chatBubble').classList.toggle('show'); }
 
 function subscribeEmail() {
   const v = document.getElementById('emailInput').value.trim();
@@ -631,14 +653,6 @@ window.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   }, 100);
-  
-  setTimeout(() => {
-    document.getElementById('chatBubble').classList.add('show');
-  }, 6000);
-  
-  setTimeout(() => {
-    document.getElementById('chatBubble').classList.remove('show');
-  }, 11000);
   
   document.addEventListener('click', (e) => {
     const drawer = document.getElementById('mobileDrawer');
