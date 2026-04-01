@@ -114,6 +114,30 @@ async function generateReport(products) {
 }
 
 // ============================================
+// نقطة نشر تقرير (API) - المهمة اللي ناقصة
+// ============================================
+app.post('/api/post-report', async (req, res) => {
+  try {
+    let products = [];
+    const pPath = path.join(__dirname, 'products.json');
+    if (fs.existsSync(pPath)) {
+      products = JSON.parse(fs.readFileSync(pPath, 'utf8'));
+    } else {
+      return res.json({ success: false, error: 'products.json غير موجود' });
+    }
+    
+    const content = await generateReport(products);
+    const now = new Date();
+    const title = `تقرير منتجات - ${now.toLocaleDateString('ar-EG')}`;
+    const result = await saveToBlog(content, title);
+    
+    res.json({ success: true, message: '✅ تم نشر التقرير في المدونة', url: result.url });
+  } catch(e) {
+    res.json({ success: false, error: e.message });
+  }
+});
+
+// ============================================
 // شات بوت
 // ============================================
 app.post('/api/chat', async (req, res) => {
@@ -145,24 +169,6 @@ app.post('/api/chat', async (req, res) => {
     } catch(e) { console.log(e); }
   }
   res.json({ success: true, answer });
-});
-
-// ============================================
-// نقطة نشر تقرير (API)
-// ============================================
-app.post('/api/post-report', async (req, res) => {
-  try {
-    let products = [];
-    const pPath = path.join(__dirname, 'products.json');
-    if (fs.existsSync(pPath)) products = JSON.parse(fs.readFileSync(pPath, 'utf8'));
-    const content = await generateReport(products);
-    const now = new Date();
-    const title = `تقرير منتجات - ${now.toLocaleDateString('ar-EG')}`;
-    const result = await saveToBlog(content, title);
-    res.json({ success: true, message: '✅ تم نشر التقرير في المدونة', url: result.url });
-  } catch(e) {
-    res.json({ success: false, error: e.message });
-  }
 });
 
 // ============================================
