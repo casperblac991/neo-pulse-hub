@@ -1,193 +1,103 @@
+// server.js - تشغيل المدير مع API
 const express = require('express');
-const fs = require('fs');
-const fetch = require('node-fetch');
-const path = require('path');
+const cors = require('cors');
+const { NeoPulseManager } = require('./bot-manager');
+
 const app = express();
-
-// Middleware
+app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname)));
 
-// ═══════════════════════════════════════════════════════════
-// 📌 المتغيرات البيئية
-// ═══════════════════════════════════════════════════════════
-const GROQ_API_KEY = process.env.GROQ_API_KEY; // مفتاح xAI
-const CJ_API_KEY = process.env.CJ_API_KEY;
-const CJ_EMAIL = process.env.CJ_EMAIL;
+// تحميل المنتجات
+const products = require('./products.json');
 
-// ═══════════════════════════════════════════════════════════
-// 📌 Health Check
-// ═══════════════════════════════════════════════════════════
-app.get('/health', (req, res) => {
-    res.json({ status: 'healthy', service: 'NEO PULSE HUB API' });
+// إعدادات المدير
+const manager = new NeoPulseManager({
+  apiUrl: process.env.API_URL || 'https://neo-pulse-api.onrender.com',
+  adminEmail: process.env.ADMIN_EMAIL || 'admin@neo-pulse-hub.it.com',
+  products: products,
+  contentUpdateInterval: 6 * 60 * 60 * 1000,
+  syncInterval: 24 * 60 * 60 * 1000
 });
 
-// ═══════════════════════════════════════════════════════════
-// 📌 جلب المنتجات (يستخدمه المتجر)
-// ═══════════════════════════════════════════════════════════
-app.get('/api/products', (req, res) => {
-    try {
-        const products = JSON.parse(fs.readFileSync('./products.json', 'utf8'));
-        res.json(products);
-    } catch (error) {
-        res.json([]);
-    }
-});
+// تشغيل المدير
+manager.start();
 
-// ═══════════════════════════════════════════════════════════
-// 📌 تحديث المنتجات من CJ API (كل 6 ساعات)
-// ═══════════════════════════════════════════════════════════
-async function updateProductsFromCJ() {
-    if (!CJ_API_KEY || !CJ_EMAIL) {
-        console.log('⚠️ CJ API keys not set, skipping update');
-        return;
-    }
-    
-    try {
-        const response = await fetch('https://developers.cjdropshipping.com/api2.0/v1/product/list', {
-            method: 'POST',
-            headers: {
-                'CJ-Access-Token': CJ_API_KEY,
-                'Email': CJ_EMAIL,
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ pageNum: 1, pageSize: 20 })
-        });
-        
-        const data = await response.json();
-        
-        if (data && data.data && data.data.length > 0) {
-            fs.writeFileSync('./products.json', JSON.stringify(data.data, null, 2));
-            console.log(`✅ Updated ${data.data.length} products from CJ`);
-        }
-    } catch (error) {
-        console.error('❌ CJ update failed:', error);
-    }
-}
+// ============================================
+// API Endpoints
+// ============================================
 
-// تشغيل التحديث أول مرة
-setTimeout(updateProductsFromCJ, 5000);
-// كل 6 ساعات
-setInterval(updateProductsFromCJ, 6 * 60 * 60 * 1000);
-
-// ═══════════════════════════════════════════════════════════
-// 📌 بوت Groq (xAI) - محادثة ذكية
-// ═══════════════════════════════════════════════════════════
+// 1. شات بوت (موجود)
 app.post('/api/chat', async (req, res) => {
-    const { message } = req.body;
-    
-    if (!message) {
-        return res.status(400).json({ error: 'الرجاء إرسال رسالة' });
-    }
-    
-    if (!GROQ_API_KEY) {
-        return res.status(500).json({ error: 'API key not configured' });
-    }
-    
-    try {
-        const response = await fetch('https://api.x.ai/v1/chat/completions', {
-            method: 'POST',
-            headers: {
-                'Authorization': `Bearer ${GROQ_API_KEY}`,
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                model: 'grok-4-1-fast',
-                messages: [
-                    { role: 'system', content: 'أنت مساعد ذكي لمتجر NEO PULSE HUB المتخصص في منتجات الذكاء الاصطناعي والتقنية. أجب بالعربية بلطف واحترافية.' },
-                    { role: 'user', content: message }
-                ],
-                temperature: 0.7,
-                max_tokens: 500
-            })
-        });
-        
-        const data = await response.json();
-        const reply = data.choices?.[0]?.message?.content || 'عذراً، لم أستطع الرد حالياً';
-        
-        res.json({ reply });
-        
-    } catch (error) {
-        console.error('❌ Groq API error:', error);
-        res.status(500).json({ error: 'حدث خطأ في الخادم' });
-    }
+  const { message, userId, userData } = req.body;
+  const response = await manager.customerBot.handleMessage(userId, message, userData);
+  manager.analyticsBot.trackQuestion(message);
+  res.json({ success: true, answer: response });
 });
 
-// ═══════════════════════════════════════════════════════════
-// 📌 توصيات المنتجات (من متجرك)
-// ═══════════════════════════════════════════════════════════
-app.get('/api/recommendations', (req, res) => {
-    try {
-        let products = [];
-        try {
-            products = JSON.parse(fs.readFileSync('./products.json', 'utf8'));
-        } catch(e) {}
-        
-        const recommendations = products.sort((a,b) => (b.rating||0) - (a.rating||0)).slice(0, 5);
-        res.json(recommendations);
-        
-    } catch (error) {
-        res.status(500).json({ error: 'فشل جلب التوصيات' });
-    }
+// 2. توليد مقال
+app.post('/api/generate-article', async (req, res) => {
+  const { topic, language } = req.body;
+  const article = await manager.contentBot.generateArticle({ title: topic }, language);
+  res.json({ success: true, article });
 });
 
-// ═══════════════════════════════════════════════════════════
-// 📌 الاشتراك في النشرة البريدية
-// ═══════════════════════════════════════════════════════════
-app.post('/api/subscribe', (req, res) => {
-    const { email } = req.body;
-    
-    if (!email || !email.includes('@')) {
-        return res.status(400).json({ error: 'بريد إلكتروني غير صحيح' });
-    }
-    
-    // حفظ البريد (مؤقتاً في ملف)
-    let subscribers = [];
-    try {
-        subscribers = JSON.parse(fs.readFileSync('./subscribers.json', 'utf8'));
-    } catch(e) {}
-    
-    if (!subscribers.includes(email)) {
-        subscribers.push(email);
-        fs.writeFileSync('./subscribers.json', JSON.stringify(subscribers, null, 2));
-    }
-    
-    res.json({ success: true, message: 'تم الاشتراك بنجاح' });
+// 3. توليد مراجعة منتج
+app.post('/api/generate-review', async (req, res) => {
+  const { productId, language } = req.body;
+  const product = products.find(p => p.id === productId);
+  if (!product) {
+    return res.status(404).json({ success: false, error: 'Product not found' });
+  }
+  const review = await manager.contentBot.generateProductReview(product, language);
+  res.json({ success: true, review });
 });
 
-// ═══════════════════════════════════════════════════════════
-// 📌 إنشاء طلب (للتكامل مع CJ أو Amazon)
-// ═══════════════════════════════════════════════════════════
-app.post('/api/order', async (req, res) => {
-    const orderData = req.body;
-    console.log('📦 New order received:', orderData);
-    
-    // هنا تضيف كود إرسال الطلب لـ CJ أو Amazon
-    res.json({ success: true, orderId: Date.now() });
+// 4. توصيات منتجات
+app.post('/api/recommend', async (req, res) => {
+  const { preferences, budget } = req.body;
+  const recommendations = manager.salesBot.recommendProducts(preferences, budget);
+  res.json({ success: true, recommendations });
 });
 
-// ═══════════════════════════════════════════════════════════
-// 📌 تحليلات بسيطة
-// ═══════════════════════════════════════════════════════════
+// 5. مقارنة منتجين
+app.post('/api/compare', async (req, res) => {
+  const { product1Id, product2Id } = req.body;
+  const comparison = manager.salesBot.compareProducts(product1Id, product2Id);
+  res.json({ success: true, comparison });
+});
+
+// 6. العروض
+app.get('/api/deals', (req, res) => {
+  const deals = manager.salesBot.getDeals();
+  res.json({ success: true, deals });
+});
+
+// 7. تحليلات
 app.get('/api/analytics', (req, res) => {
-    let products = [];
-    try {
-        products = JSON.parse(fs.readFileSync('./products.json', 'utf8'));
-    } catch(e) {}
-    
-    res.json({
-        products_count: products.length,
-        subscribers_count: 0,
-        status: 'active'
-    });
+  const report = manager.analyticsBot.generateReport();
+  res.json({ success: true, report });
 });
 
-// ═══════════════════════════════════════════════════════════
-// 📌 تشغيل الخادم
-// ═══════════════════════════════════════════════════════════
-const PORT = process.env.PORT || 10000;
-app.listen(PORT, '0.0.0.0', () => {
-    console.log(`🚀 Server running on port ${PORT}`);
-    console.log(`✅ Health check: http://localhost:${PORT}/health`);
-    console.log(`✅ Products API: http://localhost:${PORT}/api/products`);
+// 8. حالة المدير
+app.get('/api/status', (req, res) => {
+  const status = manager.getStatus();
+  res.json({ success: true, status });
+});
+
+// 9. مزامنة يدوية
+app.post('/api/sync', async (req, res) => {
+  const result = await manager.syncBot.syncProductsFromAmazon();
+  res.json({ success: true, result });
+});
+
+// 10. تقرير فوري
+app.get('/api/report', async (req, res) => {
+  const result = await manager.reportBot.sendDailyReport();
+  res.json({ success: true, result });
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`🚀 NEO PULSE HUB AI Manager running on port ${PORT}`);
+  console.log(`📊 Status: ${JSON.stringify(manager.getStatus(), null, 2)}`);
 });
