@@ -90,8 +90,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .cat-card:hover{border-color:var(--border2);transform:translateY(-4px);box-shadow:var(--glow-b)}.cat-card:hover::before{opacity:1}
 .cat-icon{font-size:2rem;margin-bottom:.6rem}.cat-name{font-size:.88rem;font-weight:600}.cat-count{font-size:.75rem;color:var(--muted);margin-top:3px}
 .products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem}
-
-/* ── AFFILIATE PRODUCT CARD (no cart, just Buy Now) ── */
 .product-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);overflow:hidden;transition:all var(--ease);cursor:default}
 .product-card:hover{border-color:var(--border2);transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,.4),var(--glow-b)}
 .product-img{position:relative;height:220px;overflow:hidden;background:var(--surface2)}
@@ -107,7 +105,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .product-price-row{display:flex;align-items:center;justify-content:space-between;gap:.5rem;flex-wrap:wrap}
 .product-price{font-family:'Orbitron',sans-serif;font-size:1.2rem;font-weight:700;background:linear-gradient(135deg,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .product-original{font-size:.82rem;color:var(--muted);text-decoration:line-through}
-/* Buy buttons */
 .buy-btns{display:flex;gap:6px;margin-top:.9rem}
 .buy-btn{flex:1;display:flex;align-items:center;justify-content:center;gap:5px;padding:.5rem .6rem;border-radius:var(--rp);font-size:.78rem;font-weight:700;cursor:pointer;transition:all var(--ease);border:none;font-family:inherit;text-decoration:none;color:#fff}
 .buy-amazon{background:linear-gradient(135deg,#ff9900,#e47911)}
@@ -115,7 +112,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .buy-ali{background:linear-gradient(135deg,#e62e04,#ff4d1a)}
 .buy-ali:hover{box-shadow:0 4px 16px rgba(230,46,4,.5);transform:translateY(-1px)}
 .commission-badge{display:inline-flex;align-items:center;gap:3px;font-size:.68rem;color:var(--green);background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.2);border-radius:999px;padding:.15rem .5rem;margin-top:.5rem}
-
 .features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem}
 .feature-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:2rem 1.5rem;position:relative;overflow:hidden;transition:all var(--ease)}
 .feature-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--blue),var(--cyan2),transparent);opacity:0;transition:opacity var(--ease)}
@@ -155,7 +151,6 @@ html[dir="rtl"] .chat-bubble{left:0} html[dir="ltr"] .chat-bubble{right:0}
 .toast{position:fixed;bottom:2rem;z-index:999;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--r);padding:1rem 1.5rem;display:flex;align-items:center;gap:.75rem;box-shadow:0 10px 30px rgba(0,0,0,.5);transform:translateY(100px);opacity:0;transition:all var(--ease);pointer-events:none}
 html[dir="rtl"] .toast{left:2rem} html[dir="ltr"] .toast{right:2rem}
 .toast.show{transform:translateY(0);opacity:1}.toast-icon{font-size:1.2rem}.toast-text{font-size:.9rem;font-weight:600}
-/* affiliate disclaimer */
 .affiliate-note{text-align:center;font-size:.78rem;color:var(--muted);padding:.6rem 1rem;background:rgba(59,130,246,.04);border-top:1px solid var(--border)}
 @media(max-width:1024px){.footer-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:768px){nav{padding:.9rem 1.2rem}.nav-links{display:none}.hamburger{display:flex}.hero-btns{flex-direction:column;align-items:center}.hero-stats{gap:1.5rem}.newsletter-form{flex-direction:column}.footer-grid{grid-template-columns:1fr;gap:1.5rem}.footer-bottom{flex-direction:column;text-align:center}}
@@ -165,7 +160,6 @@ html[dir="rtl"] .toast{left:2rem} html[dir="ltr"] .toast{right:2rem}
 <body>
 <div class="bg-grid"></div><div class="bg-grad"></div><div class="scanline"></div>
 
-<!-- NAV -->
 <nav>
   <a href="index.html" class="nav-logo">NEO PULSE HUB</a>
   <ul class="nav-links">
@@ -191,7 +185,6 @@ html[dir="rtl"] .toast{left:2rem} html[dir="ltr"] .toast{right:2rem}
   <a href="contact.html" onclick="closeMenu()">📞 اتصل بنا</a>
 </div>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-orb hero-orb-1"></div><div class="hero-orb hero-orb-2"></div>
   <div class="hero-content">
@@ -212,7 +205,6 @@ html[dir="rtl"] .toast{left:2rem} html[dir="ltr"] .toast{right:2rem}
   </div>
 </section>
 
-<!-- CATEGORIES -->
 <section class="section" style="padding-top:2rem">
   <div class="section-inner">
     <div class="section-header reveal">
@@ -231,7 +223,6 @@ html[dir="rtl"] .toast{left:2rem} html[dir="ltr"] .toast{right:2rem}
   </div>
 </section>
 
-<!-- PRODUCTS -->
 <section class="section" id="products">
   <div class="section-inner">
     <div class="section-header reveal">
@@ -247,7 +238,6 @@ html[dir="rtl"] .toast{left:2rem} html[dir="ltr"] .toast{right:2rem}
   </div>
 </section>
 
-<!-- FEATURES -->
 <section class="section" id="features">
   <div class="section-inner">
     <div class="section-header reveal">
@@ -266,7 +256,6 @@ html[dir="rtl"] .toast{left:2rem} html[dir="ltr"] .toast{right:2rem}
   </div>
 </section>
 
-<!-- NEWSLETTER -->
 <section class="newsletter-section">
   <div class="newsletter-inner">
     <h2 class="newsletter-title" data-i18n="newsletter_title">انضم لمجتمع NEO PULSE</h2>
@@ -278,7 +267,6 @@ html[dir="rtl"] .toast{left:2rem} html[dir="ltr"] .toast{right:2rem}
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-inner">
     <div class="footer-grid">
@@ -327,7 +315,6 @@ html[dir="rtl"] .toast{left:2rem} html[dir="ltr"] .toast{right:2rem}
   </div>
 </footer>
 
-<!-- CHAT -->
 <div class="chat-widget">
   <div class="chat-bubble" id="chatBubble">
     <p data-i18n="chat_greeting">👋 مرحباً! هل تحتاج مساعدة في اختيار منتج؟</p>
@@ -336,7 +323,6 @@ html[dir="rtl"] .toast{left:2rem} html[dir="ltr"] .toast{right:2rem}
   <button class="chat-btn" onclick="toggleChat()" aria-label="AI Chat">🤖</button>
 </div>
 
-<!-- TOAST -->
 <div class="toast" id="toast" role="alert" aria-live="polite">
   <span class="toast-icon" id="toastIcon">✅</span>
   <span class="toast-text" id="toastText"></span>
@@ -345,129 +331,155 @@ html[dir="rtl"] .toast{left:2rem} html[dir="ltr"] .toast{right:2rem}
 <script>
 'use strict';
 
-// ══════════════════════════════════════════
-// TRANSLATIONS
-// ══════════════════════════════════════════
+const AMAZON_TAG = 'neopulsehub-20';
+const MANAGER_URL = 'https://neo-pulse-manager.onrender.com';
+const API_BASE = '';
+
 const T = {
-  ar:{
-    nav_home:"الرئيسية",nav_products:"المنتجات",nav_blog_ar:"📝 المدونة",nav_about:"من نحن",nav_contact:"اتصل بنا",
-    hero_badge:"🤖 منتجات الذكاء الاصطناعي — متاحة الآن",hero_subtitle:"مستقبل التقنية بين يديك",
+  ar: {
+    nav_home:"الرئيسية", nav_products:"المنتجات", nav_blog_ar:"📝 المدونة", nav_about:"من نحن", nav_contact:"اتصل بنا",
+    hero_badge:"🤖 منتجات الذكاء الاصطناعي — متاحة الآن", hero_subtitle:"مستقبل التقنية بين يديك",
     hero_desc:"متجرك المتخصص لأحدث منتجات الذكاء الاصطناعي والتقنية الذكية. اشترِ من أمازون بأفضل الأسعار.",
-    shop_now:"تسوق الآن",see_featured:"المنتجات المميزة",
-    stat_products:"منتج ذكي",stat_customers:"عميل سعيد",stat_satisfaction:"رضا العملاء",stat_commission:"عمولة مضمونة",
-    categories_tag:"الفئات",categories_title:"تسوق حسب الفئة",categories_sub:"اختر من أحدث فئات التقنية الذكية",
-    cat_smartwatch:"ساعات ذكية",cat_glasses:"نظارات ذكية",cat_health:"الصحة الذكية",cat_smarthome:"المنزل الذكي",cat_earbuds:"سماعات ذكية",cat_productivity:"الإنتاجية",
-    products_tag:"المنتجات",products_title:"المنتجات المميزة",products_sub:"اشترِ من أمازون وAliExpress بضمان وشحن سريع",
+    shop_now:"تسوق الآن", see_featured:"المنتجات المميزة",
+    stat_products:"منتج ذكي", stat_customers:"عميل سعيد", stat_satisfaction:"رضا العملاء", stat_commission:"عمولة مضمونة",
+    categories_tag:"الفئات", categories_title:"تسوق حسب الفئة", categories_sub:"اختر من أحدث فئات التقنية الذكية",
+    cat_smartwatch:"ساعات ذكية", cat_glasses:"نظارات ذكية", cat_health:"الصحة الذكية", cat_smarthome:"المنزل الذكي", cat_earbuds:"سماعات ذكية", cat_productivity:"الإنتاجية",
+    products_tag:"المنتجات", products_title:"المنتجات المميزة", products_sub:"اشترِ من أمازون وAliExpress بضمان وشحن سريع",
     view_all:"عرض جميع المنتجات ←",
-    features_tag:"لماذا نحن",features_title:"مميزات NEO PULSE HUB",features_sub:"تجربة تسوق مستقبلية مدعومة بالذكاء الاصطناعي",
-    f1t:"أمازون الأصيل 100%",f1d:"جميع المنتجات مرتبطة بأمازون الرسمي. ضمان المصنع وسياسة إرجاع 30 يوم.",
-    f2t:"أفضل الأسعار",f2d:"نجمع لك أفضل العروض من أمازون وAliExpress في مكان واحد.",
-    f3t:"مقارنات AI ذكية",f3d:"مراجعات وتحليلات مدعومة بالذكاء الاصطناعي تساعدك على الاختيار.",
-    f4t:"شحن عالمي سريع",f4d:"شحن أمازون العالمي السريع مع تتبع لحظي للطلب.",
-    f5t:"محتوى تعليمي حصري",f5d:"مدونة متخصصة بمقالات عربية وإنجليزية عن أحدث منتجات التقنية.",
-    f6t:"تحديث يومي للمنتجات",f6d:"قائمة المنتجات تُحدَّث يومياً لتشمل أحدث الإصدارات والعروض.",
-    newsletter_title:"انضم لمجتمع NEO PULSE",newsletter_sub:"اشترك وكن أول من يعلم بالمنتجات الجديدة والعروض الحصرية",newsletter_btn:"اشترك ⚡",
+    features_tag:"لماذا نحن", features_title:"مميزات NEO PULSE HUB", features_sub:"تجربة تسوق مستقبلية مدعومة بالذكاء الاصطناعي",
+    f1t:"أمازون الأصيل 100%", f1d:"جميع المنتجات مرتبطة بأمازون الرسمي. ضمان المصنع وسياسة إرجاع 30 يوم.",
+    f2t:"أفضل الأسعار", f2d:"نجمع لك أفضل العروض من أمازون وAliExpress في مكان واحد.",
+    f3t:"مقارنات AI ذكية", f3d:"مراجعات وتحليلات مدعومة بالذكاء الاصطناعي تساعدك على الاختيار.",
+    f4t:"شحن عالمي سريع", f4d:"شحن أمازون العالمي السريع مع تتبع لحظي للطلب.",
+    f5t:"محتوى تعليمي حصري", f5d:"مدونة متخصصة بمقالات عربية وإنجليزية عن أحدث منتجات التقنية.",
+    f6t:"تحديث يومي للمنتجات", f6d:"قائمة المنتجات تُحدَّث يومياً لتشمل أحدث الإصدارات والعروض.",
+    newsletter_title:"انضم لمجتمع NEO PULSE", newsletter_sub:"اشترك وكن أول من يعلم بالمنتجات الجديدة والعروض الحصرية", newsletter_btn:"اشترك ⚡",
     footer_desc:"دليلك الموثوق لأفضل منتجات التقنية الذكية. نختار لك الأفضل من أمازون وAliExpress.",
-    footer_store:"الفئات",footer_about:"من نحن",footer_contact:"اتصل بنا",footer_support:"قانوني",footer_copy:"© 2026 NEO PULSE HUB — جميع الحقوق محفوظة",
-    chat_greeting:"👋 مرحباً! هل تحتاج مساعدة في اختيار منتج؟",chat_btn:"🤖 تحدث مع مساعد AI",
-    buy_amazon:"🛒 أمازون",buy_ali:"🔥 AliExpress",
+    footer_store:"الفئات", footer_about:"من نحن", footer_contact:"اتصل بنا", footer_support:"قانوني", footer_copy:"© 2026 NEO PULSE HUB — جميع الحقوق محفوظة",
+    chat_greeting:"👋 مرحباً! هل تحتاج مساعدة في اختيار منتج؟", chat_btn:"🤖 تحدث مع مساعد AI",
+    buy_amazon:"🛒 أمازون", buy_ali:"🔥 AliExpress",
     affiliate_note:"⚠️ بعض الروابط روابط أفلييت — نحصل على عمولة صغيرة بدون تكلفة إضافية عليك",
-    subscribe_ok:"تم الاشتراك! 🎉",subscribe_err:"يرجى إدخال بريد إلكتروني صحيح",
+    subscribe_ok:"تم الاشتراك! 🎉", subscribe_err:"يرجى إدخال بريد إلكتروني صحيح",
+    load_error:"⚠️ تعذر تحميل المنتجات، يرجى تحديث الصفحة",
     cnt_suffix:" منتجات"
   },
-  en:{
-    nav_home:"Home",nav_products:"Products",nav_blog_ar:"📝 Blog",nav_about:"About",nav_contact:"Contact",
-    hero_badge:"🤖 AI Products — Available Now",hero_subtitle:"The Future of Tech in Your Hands",
+  en: {
+    nav_home:"Home", nav_products:"Products", nav_blog_ar:"📝 Blog", nav_about:"About", nav_contact:"Contact",
+    hero_badge:"🤖 AI Products — Available Now", hero_subtitle:"The Future of Tech in Your Hands",
     hero_desc:"Your specialized store for the latest AI products and smart technology. Buy from Amazon at the best prices.",
-    shop_now:"Shop Now",see_featured:"Featured Products",
-    stat_products:"Smart Products",stat_customers:"Happy Customers",stat_satisfaction:"Satisfaction Rate",stat_commission:"Guaranteed Commission",
-    categories_tag:"Categories",categories_title:"Shop by Category",categories_sub:"Choose from the latest smart tech categories",
-    cat_smartwatch:"Smart Watches",cat_glasses:"Smart Glasses",cat_health:"Smart Health",cat_smarthome:"Smart Home",cat_earbuds:"Smart Earbuds",cat_productivity:"Productivity",
-    products_tag:"Products",products_title:"Featured Products",products_sub:"Buy from Amazon & AliExpress with warranty and fast shipping",
+    shop_now:"Shop Now", see_featured:"Featured Products",
+    stat_products:"Smart Products", stat_customers:"Happy Customers", stat_satisfaction:"Satisfaction Rate", stat_commission:"Guaranteed Commission",
+    categories_tag:"Categories", categories_title:"Shop by Category", categories_sub:"Choose from the latest smart tech categories",
+    cat_smartwatch:"Smart Watches", cat_glasses:"Smart Glasses", cat_health:"Smart Health", cat_smarthome:"Smart Home", cat_earbuds:"Smart Earbuds", cat_productivity:"Productivity",
+    products_tag:"Products", products_title:"Featured Products", products_sub:"Buy from Amazon & AliExpress with warranty and fast shipping",
     view_all:"View All Products →",
-    features_tag:"Why Us",features_title:"NEO PULSE HUB Features",features_sub:"Futuristic shopping experience powered by AI",
-    f1t:"100% Genuine Amazon",f1d:"All products linked to official Amazon. Manufacturer warranty and 30-day return policy.",
-    f2t:"Best Prices",f2d:"We gather the best deals from Amazon and AliExpress in one place to save your time and money.",
-    f3t:"Smart AI Comparisons",f3d:"AI-powered reviews and analysis to help you choose the best for your needs.",
-    f4t:"Fast Global Shipping",f4d:"Amazon's fast global shipping available for most products with real-time order tracking.",
-    f5t:"Exclusive Educational Content",f5d:"Specialized blog with Arabic and English articles about the latest tech products.",
-    f6t:"Daily Product Updates",f6d:"Product list updated daily to include the latest releases and available deals.",
-    newsletter_title:"Join NEO PULSE Community",newsletter_sub:"Subscribe and be first to know about new products and exclusive offers",newsletter_btn:"Subscribe ⚡",
+    features_tag:"Why Us", features_title:"NEO PULSE HUB Features", features_sub:"Futuristic shopping experience powered by AI",
+    f1t:"100% Genuine Amazon", f1d:"All products linked to official Amazon. Manufacturer warranty and 30-day return policy.",
+    f2t:"Best Prices", f2d:"We gather the best deals from Amazon and AliExpress in one place to save your time and money.",
+    f3t:"Smart AI Comparisons", f3d:"AI-powered reviews and analysis to help you choose the best for your needs.",
+    f4t:"Fast Global Shipping", f4d:"Amazon's fast global shipping available for most products with real-time order tracking.",
+    f5t:"Exclusive Educational Content", f5d:"Specialized blog with Arabic and English articles about the latest tech products.",
+    f6t:"Daily Product Updates", f6d:"Product list updated daily to include the latest releases and available deals.",
+    newsletter_title:"Join NEO PULSE Community", newsletter_sub:"Subscribe and be first to know about new products and exclusive offers", newsletter_btn:"Subscribe ⚡",
     footer_desc:"Your trusted guide for the best smart tech products. We pick the best from Amazon and AliExpress.",
-    footer_store:"Categories",footer_about:"About Us",footer_contact:"Contact Us",footer_support:"Legal",footer_copy:"© 2026 NEO PULSE HUB — All Rights Reserved",
-    chat_greeting:"👋 Hello! Need help choosing a product?",chat_btn:"🤖 Chat with AI Assistant",
-    buy_amazon:"🛒 Amazon",buy_ali:"🔥 AliExpress",
+    footer_store:"Categories", footer_about:"About Us", footer_contact:"Contact Us", footer_support:"Legal", footer_copy:"© 2026 NEO PULSE HUB — All Rights Reserved",
+    chat_greeting:"👋 Hello! Need help choosing a product?", chat_btn:"🤖 Chat with AI Assistant",
+    buy_amazon:"🛒 Amazon", buy_ali:"🔥 AliExpress",
     affiliate_note:"⚠️ Some links are affiliate links — we earn a small commission at no extra cost to you",
-    subscribe_ok:"Subscribed! 🎉",subscribe_err:"Please enter a valid email address",
+    subscribe_ok:"Subscribed! 🎉", subscribe_err:"Please enter a valid email address",
+    load_error:"⚠️ Failed to load products, please refresh",
     cnt_suffix:" products"
   }
 };
 
-// ══════════════════════════════════════════
-// ⚙️ AFFILIATE CONFIG — ضع TAG الخاص بك هنا
-// ══════════════════════════════════════════
-const AMAZON_TAG = 'YOUR_AMAZON_TAG'; // ← استبدل بـ tag أمازون الخاص بك
-
-// ══════════════════════════════════════════
-// المتغيرات
-// ══════════════════════════════════════════
 let lang = localStorage.getItem('nph_lang') || 'ar';
 let PRODUCTS = [];
 let currentFilter = 'featured';
 
-// ══════════════════════════════════════════
-// i18n
-// ══════════════════════════════════════════
-function applyLang(l) {
-  lang = l;
-  localStorage.setItem('nph_lang', l);
-  document.documentElement.setAttribute('dir', l === 'ar' ? 'rtl' : 'ltr');
-  document.documentElement.setAttribute('lang', l);
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const k = el.dataset.i18n;
-    if (T[l][k] !== undefined) el.textContent = T[l][k];
-  });
-  document.getElementById('langAr').classList.toggle('active', l === 'ar');
-  document.getElementById('langEn').classList.toggle('active', l === 'en');
-  renderProducts();
-  updateCounts();
-}
-function changeLang(l) { applyLang(l); }
+// ============================================
+// 🤖 ربط المدير الذكي مع الموقع
+// ============================================
 
-// ══════════════════════════════════════════
-// جلب المنتجات من products.json (محلي)
-// ══════════════════════════════════════════
-async function loadProducts() {
+async function callManager(endpoint, data = {}) {
   try {
-    const res = await fetch('products.json');
-    if (!res.ok) throw new Error('fetch failed');
-    PRODUCTS = await res.json();
-    console.log(`✅ Loaded ${PRODUCTS.length} products from products.json`);
-  } catch (e) {
-    console.warn('⚠️ Could not load products.json, using fallback');
-    PRODUCTS = getFallbackProducts();
+    const response = await fetch(`${MANAGER_URL}${endpoint}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    return await response.json();
+  } catch (error) {
+    console.error('Manager error:', error);
+    return { success: false, error: error.message };
   }
+}
+
+async function sendMessageToAI(message, userId = 'guest') {
+  try {
+    const result = await callManager('/api/chat', { message, userId });
+    return result.answer || 'عذراً، حدث خطأ في الرد';
+  } catch (error) {
+    console.error('AI Error:', error);
+    return 'عذراً، حدث خطأ في الاتصال. حاول مرة أخرى.';
+  }
+}
+
+async function getRecommendations(preferences, budget) {
+  const result = await callManager('/api/recommend', { preferences, budget });
+  return result.recommendations || [];
+}
+
+async function compareProducts(product1Id, product2Id) {
+  const result = await callManager('/api/compare', { product1Id, product2Id });
+  return result.comparison;
+}
+
+async function getDeals() {
+  const result = await callManager('/api/deals');
+  return result.deals || [];
+}
+
+window.sendToAI = sendMessageToAI;
+window.getRecommendations = getRecommendations;
+window.compareProducts = compareProducts;
+window.getDeals = getDeals;
+
+console.log('✅ NEO PULSE MANAGER connected to', MANAGER_URL);
+
+async function loadProducts() {
+  const grid = document.getElementById('productsGrid');
+  
+  try {
+    const res = await fetch(`products.json?t=${Date.now()}`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    PRODUCTS = await res.json();
+    console.log(`✅ Loaded ${PRODUCTS.length} products`);
+  } catch (apiError) {
+    console.error('❌ Failed to load products:', apiError);
+    if(grid) {
+      grid.innerHTML = `<div style="padding:3rem; text-align:center; color:var(--red); border:1px solid var(--border); border-radius:var(--r2); background:var(--surface)">
+        <div style="font-size:3rem; margin-bottom:1rem">⚠️</div>
+        <h3 style="margin-bottom:0.5rem">${T[lang].load_error}</h3>
+        <button onclick="location.reload()" class="btn btn-outline" style="margin-top:1rem">🔄 إعادة المحاولة</button>
+      </div>`;
+    }
+    return;
+  }
+  
   updateCounts();
   renderProducts();
 }
 
-function getFallbackProducts() {
-  return [
-    {id:"NPH-001",name:{ar:"ساعة أبل Watch Series 9",en:"Apple Watch Series 9 45mm"},category:"smartwatch",category_ar:"ساعات ذكية",category_en:"Smart Watch",price:399,original_price:449,discount:11,rating:4.9,reviews:12430,image:"https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=600&q=80",badge:{ar:"الأكثر مبيعاً",en:"Best Seller"},featured:true,affiliate_amazon:"https://www.amazon.com/dp/B0CHX8SZQS?tag="+AMAZON_TAG,affiliate_aliexpress:"https://s.click.aliexpress.com/e/_smartwatch1"},
-    {id:"NPH-003",name:{ar:"نظارات Meta Ray-Ban الذكية",en:"Meta Ray-Ban Smart Glasses Gen 2"},category:"smart-glasses",category_ar:"نظارات ذكية",category_en:"Smart Glasses",price:299,original_price:329,discount:9,rating:4.5,reviews:5640,image:"https://images.unsplash.com/photo-1574482620811-1aa16ffe3c82?w=600&q=80",badge:{ar:"الأكثر طلباً",en:"Most Wanted"},featured:true,affiliate_amazon:"https://www.amazon.com/dp/B0CJNM6TMP?tag="+AMAZON_TAG,affiliate_aliexpress:"https://s.click.aliexpress.com/e/_metarayban"}
-  ];
-}
-
-// ══════════════════════════════════════════
-// Render Products
-// ══════════════════════════════════════════
 function renderProducts() {
   const grid = document.getElementById('productsGrid');
   if (!grid || !PRODUCTS.length) return;
+  
   let list = currentFilter === 'featured'
     ? PRODUCTS.filter(p => p.featured).concat(PRODUCTS.filter(p => !p.featured)).slice(0,6)
     : PRODUCTS.filter(p => p.category === currentFilter);
+    
   if (!list.length) list = PRODUCTS.slice(0,6);
+  
   grid.innerHTML = list.map(productCard).join('');
 }
 
@@ -476,9 +488,16 @@ function productCard(p) {
   const cat = lang === 'ar' ? (p.category_ar||'') : (p.category_en||'');
   const badge = p.badge?.[lang] || '';
   const stars = '★'.repeat(Math.floor(p.rating||4.5)) + '☆'.repeat(5-Math.floor(p.rating||4.5));
-  // بناء رابط أمازون مع TAG الصحيح
-  const amazonLink = (p.affiliate_amazon||'#').replace('YOUR_AMAZON_TAG', AMAZON_TAG);
+  
+  let amazonLink = p.affiliate_amazon || '#';
+  if (amazonLink.includes('YOUR_AMAZON_TAG')) {
+    amazonLink = amazonLink.replace('YOUR_AMAZON_TAG', AMAZON_TAG);
+  } else if (!amazonLink.includes('tag=')) {
+    amazonLink += (amazonLink.includes('?') ? '&' : '?') + `tag=${AMAZON_TAG}`;
+  }
+  
   const aliLink = p.affiliate_aliexpress || '#';
+  
   return `<div class="product-card">
     <div class="product-img">
       <img src="${p.image}" alt="${name}" loading="lazy" onerror="this.src='https://placehold.co/400x220/0a0d1a/60a5fa?text=NPH'">
@@ -496,32 +515,14 @@ function productCard(p) {
         </div>
       </div>
       <div class="buy-btns">
-        <a href="${amazonLink}" target="_blank" rel="noopener sponsored" class="buy-btn buy-amazon" onclick="trackClick('amazon','${p.id}')">${T[lang].buy_amazon}</a>
-        ${aliLink !== '#' ? `<a href="${aliLink}" target="_blank" rel="noopener sponsored" class="buy-btn buy-ali" onclick="trackClick('ali','${p.id}')">${T[lang].buy_ali}</a>` : ''}
+        <a href="${amazonLink}" target="_blank" rel="noopener sponsored nofollow" class="buy-btn buy-amazon" onclick="trackClick('amazon','${p.id}')">${T[lang].buy_amazon}</a>
+        ${aliLink !== '#' ? `<a href="${aliLink}" target="_blank" rel="noopener sponsored nofollow" class="buy-btn buy-ali" onclick="trackClick('ali','${p.id}')">${T[lang].buy_ali}</a>` : ''}
       </div>
       <div class="commission-badge">✅ ${lang==='ar'?'عمولة على كل شراء':'Commission on every purchase'}</div>
     </div>
   </div>`;
 }
 
-function filterProducts(cat) {
-  currentFilter = cat;
-  document.getElementById('productsTitle').textContent = T[lang]['cat_'+{smartwatch:'smartwatch','smart-glasses':'glasses',health:'health','smart-home':'smarthome',earbuds:'earbuds',productivity:'productivity'}[cat]] || T[lang].products_title;
-  renderProducts();
-  document.getElementById('products').scrollIntoView({behavior:'smooth'});
-}
-
-function updateCounts() {
-  const cats = ['smartwatch','smart-glasses','health','smart-home','earbuds','productivity'];
-  cats.forEach(c => {
-    const el = document.getElementById('cnt-'+c);
-    if(el) el.textContent = PRODUCTS.filter(p=>p.category===c).length + (lang==='ar'?' منتجات':' products');
-  });
-}
-
-// ══════════════════════════════════════════
-// Analytics — تتبع النقرات على الأفلييت
-// ══════════════════════════════════════════
 function trackClick(platform, productId) {
   if (typeof gtag === 'function') {
     gtag('event', 'affiliate_click', {
@@ -533,9 +534,36 @@ function trackClick(platform, productId) {
   console.log(`📊 Affiliate click: ${platform} → ${productId}`);
 }
 
-// ══════════════════════════════════════════
-// UI helpers
-// ══════════════════════════════════════════
+function applyLang(l) {
+  lang = l;
+  localStorage.setItem('nph_lang', l);
+  document.documentElement.setAttribute('dir', l === 'ar' ? 'rtl' : 'ltr');
+  document.documentElement.setAttribute('lang', l);
+  
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const k = el.dataset.i18n;
+    if (T[l][k] !== undefined) el.textContent = T[l][k];
+  });
+  
+  document.getElementById('langAr').classList.toggle('active', l === 'ar');
+  document.getElementById('langEn').classList.toggle('active', l === 'en');
+  
+  if(PRODUCTS.length) renderProducts();
+}
+
+function changeLang(l) { applyLang(l); }
+
+function updateCounts() {
+  const cats = ['smartwatch','smart-glasses','health','smart-home','earbuds','productivity'];
+  cats.forEach(c => {
+    const el = document.getElementById('cnt-'+c);
+    if(el) {
+      const count = PRODUCTS.filter(p=>p.category===c).length;
+      el.textContent = count + (lang==='ar' ? ' منتجات' : ' products');
+    }
+  });
+}
+
 function toggleMenu() {
   const h=document.getElementById('hamburger'), d=document.getElementById('mobileDrawer');
   h.classList.toggle('open'); d.classList.toggle('open');
@@ -547,42 +575,87 @@ function closeMenu() {
   document.body.style.overflow = '';
 }
 function toggleChat() { document.getElementById('chatBubble').classList.toggle('show'); }
+
 function subscribeEmail() {
   const v = document.getElementById('emailInput').value.trim();
   if (!v || !v.includes('@') || !v.includes('.')) { showToast('⚠️', T[lang].subscribe_err); return; }
   showToast('🎉', T[lang].subscribe_ok);
   document.getElementById('emailInput').value = '';
+  
+  fetch(`${API_BASE}/api/subscribe`, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({email: v})
+  }).catch(e => console.log('Subscribe API error', e));
 }
+
 let _tt;
 function showToast(icon, text) {
   const t = document.getElementById('toast');
   document.getElementById('toastIcon').textContent = icon;
   document.getElementById('toastText').textContent = text;
-  t.classList.add('show'); clearTimeout(_tt);
+  t.classList.add('show'); 
+  clearTimeout(_tt);
   _tt = setTimeout(() => t.classList.remove('show'), 3000);
 }
 
-// ══════════════════════════════════════════
-// Intersection Observers
-// ══════════════════════════════════════════
-const ro = new IntersectionObserver(es => es.forEach(e => {
-  if(e.isIntersecting){ e.target.classList.add('visible'); ro.unobserve(e.target); }
-}),{threshold:.08});
+function filterProducts(cat) {
+  currentFilter = cat;
+  const titles = {
+    smartwatch: 'cat_smartwatch',
+    'smart-glasses': 'cat_glasses',
+    health: 'cat_health',
+    'smart-home': 'cat_smarthome',
+    earbuds: 'cat_earbuds',
+    productivity: 'cat_productivity'
+  };
+  const titleKey = titles[cat] || 'products_title';
+  document.getElementById('productsTitle').textContent = T[lang][titleKey] || T[lang].products_title;
+  renderProducts();
+  document.getElementById('products').scrollIntoView({behavior:'smooth'});
+}
 
-// ══════════════════════════════════════════
-// INIT
-// ══════════════════════════════════════════
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.08 });
+
 window.addEventListener('DOMContentLoaded', () => {
   applyLang(lang);
   loadProducts();
-  setTimeout(() => document.querySelectorAll('.reveal').forEach(el => ro.observe(el)), 100);
-  setTimeout(() => document.getElementById('chatBubble').classList.add('show'), 6000);
-  setTimeout(() => document.getElementById('chatBubble').classList.remove('show'), 11000);
-  document.addEventListener('click', e => {
-    const d=document.getElementById('mobileDrawer'), h=document.getElementById('hamburger');
-    if (d.classList.contains('open') && !d.contains(e.target) && !h.contains(e.target)) closeMenu();
+  
+  setTimeout(() => {
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+  }, 100);
+  
+  setTimeout(() => {
+    document.getElementById('chatBubble').classList.add('show');
+  }, 6000);
+  
+  setTimeout(() => {
+    document.getElementById('chatBubble').classList.remove('show');
+  }, 11000);
+  
+  document.addEventListener('click', (e) => {
+    const drawer = document.getElementById('mobileDrawer');
+    const hamburger = document.getElementById('hamburger');
+    if (drawer.classList.contains('open') && !drawer.contains(e.target) && !hamburger.contains(e.target)) {
+      closeMenu();
+    }
   });
 });
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js?v=2')
+      .then(reg => console.log('✅ SW registered:', reg.scope))
+      .catch(err => console.log('❌ SW registration failed:', err));
+  });
+}
 </script>
 </body>
 </html>
