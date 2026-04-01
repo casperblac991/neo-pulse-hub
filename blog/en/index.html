@@ -1,92 +1,281 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEO PULSE HUB Blog | Reviews & Comparisons</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        *{margin:0;padding:0;box-sizing:border-box}
-        body{font-family:'Poppins',sans-serif;background:#020510;color:#e2e8f0;line-height:1.7}
-        a{color:inherit;text-decoration:none}
-        nav{position:sticky;top:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;background:rgba(2,5,16,.9);backdrop-filter:blur(20px);border-bottom:1px solid rgba(99,179,237,.12)}
-        .logo{font-size:1.2rem;font-weight:700;background:linear-gradient(135deg,#60a5fa,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-        .nav-links{display:flex;gap:1.5rem}
-        .nav-links a{color:#e2e8f0;opacity:.7;transition:opacity .3s}
-        .nav-links a:hover{opacity:1}
-        .blog-header{text-align:center;padding:4rem 2rem 2rem}
-        .blog-header h1{font-size:2.5rem;background:linear-gradient(135deg,#fff,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-        .blog-header p{color:#94a3b8;margin-top:.5rem}
-        .blog-grid{max-width:1200px;margin:0 auto;padding:2rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:2rem}
-        .card{background:#0a0d1a;border:1px solid rgba(99,179,237,.12);border-radius:16px;overflow:hidden;transition:transform .3s}
-        .card:hover{transform:translateY(-4px);border-color:rgba(99,179,237,.3)}
-        .card-img{height:200px;overflow:hidden}
-        .card-img img{width:100%;height:100%;object-fit:cover}
-        .card-content{padding:1.5rem}
-        .card-category{color:#22d3ee;font-size:.8rem;font-weight:600;text-transform:uppercase}
-        .card h3{font-size:1.2rem;margin:.5rem 0;color:#fff}
-        .card-meta{color:#64748b;font-size:.8rem;margin-bottom:1rem}
-        .card p{color:#94a3b8;font-size:.9rem;margin-bottom:1rem}
-        .read-more{color:#22d3ee;font-weight:600}
-        footer{text-align:center;padding:2rem;border-top:1px solid rgba(99,179,237,.12);margin-top:3rem;color:#64748b}
-        @media(max-width:768px){.blog-grid{grid-template-columns:1fr}}
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مدونة NEO PULSE HUB | مراجعات وتقارير تقنية</title>
+<meta name="description" content="أحدث المراجعات والتقارير التقنية: ساعات ذكية، سماعات، منزل ذكي، وأفضل المنتجات لعام 2026.">
+<meta name="keywords" content="مراجعة, ساعة ذكية, سماعات, منزل ذكي, تقنية, NEO PULSE HUB">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Cairo',sans-serif;background:#020510;color:#e2e8f0;line-height:1.6}
+.container{max-width:1200px;margin:0 auto;padding:2rem}
+h1{color:#3b82f6;font-size:2rem;margin-bottom:0.5rem}
+.subtitle{color:#6b6b8a;margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid #1e1e2e}
+.section-title{color:#06b6d4;margin:2rem 0 1rem;font-size:1.5rem;border-right:3px solid #06b6d4;padding-right:1rem}
+.posts-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.5rem}
+.post-card{background:#0a0d1a;border:1px solid #1e1e2e;border-radius:16px;overflow:hidden;transition:all 0.3s}
+.post-card:hover{border-color:#3b82f6;transform:translateY(-4px);box-shadow:0 10px 25px rgba(59,130,246,.2)}
+.post-card-header{padding:1rem;background:linear-gradient(135deg,rgba(59,130,246,.1),rgba(124,58,237,.1))}
+.post-card-header h3{color:#fff;font-size:1.1rem}
+.post-card-body{padding:1rem}
+.post-card-body p{color:#94a3b8;font-size:0.9rem;margin-bottom:1rem}
+.post-date{color:#6b6b8a;font-size:0.75rem;margin-bottom:0.5rem}
+.post-category{display:inline-block;background:rgba(59,130,246,.2);color:#3b82f6;border-radius:50px;padding:0.2rem 0.8rem;font-size:0.7rem;margin-bottom:0.5rem}
+.read-more{color:#06b6d4;text-decoration:none;font-size:0.85rem;font-weight:bold}
+.read-more:hover{color:#3b82f6}
+hr{border-color:#1e1e2e;margin:2rem 0}
+.footer-links{text-align:center;margin-top:2rem;padding-top:1rem;border-top:1px solid #1e1e2e}
+.footer-links a{color:#06b6d4;text-decoration:none;margin:0 0.5rem}
+</style>
 </head>
 <body>
-    <nav>
-        <a href="/index.html" class="logo">NEO PULSE HUB</a>
-        <div class="nav-links">
-            <a href="/index.html">Home</a>
-            <a href="/products.html">Products</a>
-            <a href="/blog/en/">Blog</a>
-            <a href="/about.html">About</a>
-            <a href="/contact.html">Contact</a>
-            <a href="/blog/ar/">العربية</a>
-        </div>
-    </nav>
+<div class="container">
+<h1>📝 مدونة NEO PULSE HUB</h1>
+<p class="subtitle">أحدث المراجعات والتقارير التقنية - دليلك لأفضل المنتجات الذكية</p>
 
-    <div class="blog-header">
-        <h1>📝 NEO PULSE HUB Blog</h1>
-        <p>Comprehensive reviews, comparisons, and buying guides for the latest tech products</p>
-    </div>
-
-    <div class="blog-grid">
-        <div class="card">
-            <div class="card-img"><img src="https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=400&q=80" alt="Apple Watch"></div>
-            <div class="card-content">
-                <div class="card-category">📱 Smartwatches</div>
-                <h3>Apple Watch Series 9 Review</h3>
-                <div class="card-meta">📅 Mar 28, 2026 | ⏱️ 6 min read</div>
-                <p>Comprehensive review of Apple Watch Series 9, comparison with Samsung and Xiaomi.</p>
-                <a href="review-apple-watch.html" class="read-more">Read Review →</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-img"><img src="https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?w=400&q=80" alt="Earbuds"></div>
-            <div class="card-content">
-                <div class="card-category">🎧 Earbuds</div>
-                <h3>Top 5 Wireless Earbuds 2026</h3>
-                <div class="card-meta">📅 Mar 25, 2026 | ⏱️ 8 min read</div>
-                <p>Comparison of AirPods Pro 2, Sony WF-1000XM5, Bose Ultra, and more.</p>
-                <a href="review-earbuds.html" class="read-more">Read Comparison →</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-img"><img src="https://images.unsplash.com/photo-1577803645773-f96470509666?w=400&q=80" alt="Smart Glasses"></div>
-            <div class="card-content">
-                <div class="card-category">🥽 Smart Glasses</div>
-                <h3>Meta Quest 3 vs Apple Vision Pro</h3>
-                <div class="card-meta">📅 Mar 20, 2026 | ⏱️ 10 min read</div>
-                <p>Detailed comparison of the two most expensive smart glasses on the market.</p>
-                <a href="review-glasses.html" class="read-more">Read Comparison →</a>
-            </div>
+<!-- ========== ساعات ذكية ========== -->
+<h2 class="section-title">⌚ ساعات ذكية</h2>
+<div class="posts-grid">
+    <div class="post-card">
+        <div class="post-card-header"><h3>Apple Watch Series 9</h3></div>
+        <div class="post-card-body">
+            <div class="post-date">📅 1 أبريل 2026</div>
+            <div class="post-category">⌚ ساعة ذكية</div>
+            <p>مراجعة شاملة لأحدث ساعات Apple Watch Series 9: شاشة Always-On، مستشعرات صحية متقدمة، وأداء قوي.</p>
+            <a href="/blog/ar/apple-watch-series-9-review.html" class="read-more">اقرأ المراجعة ←</a>
         </div>
     </div>
+    <div class="post-card">
+        <div class="post-card-header"><h3>Samsung Galaxy Watch 6 Classic</h3></div>
+        <div class="post-card-body">
+            <div class="post-date">📅 1 أبريل 2026</div>
+            <div class="post-category">⌚ ساعة ذكية</div>
+            <p>ساعة سامسونج الذكية بتصميم كلاسيكي وإطار دوار، مع ميزات صحية متطورة وبطارية تدوم 40 ساعة.</p>
+            <a href="/blog/ar/samsung-galaxy-watch-6-Classic-review.html" class="read-more">اقرأ المراجعة ←</a>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-header"><h3>Google Pixel Watch 2</h3></div>
+        <div class="post-card-body">
+            <div class="post-date">📅 1 أبريل 2026</div>
+            <div class="post-category">⌚ ساعة ذكية</div>
+            <p>أفضل ساعة لمستخدمي Android مع مساعد Gemini المدمج، مستشعرات دقيقة، وتصميم أنيق.</p>
+            <a href="/blog/ar/google-pixel-watch-2-review.html" class="read-more">اقرأ المراجعة ←</a>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-header"><h3>Garmin Venu 3</h3></div>
+        <div class="post-card-body">
+            <div class="post-date">📅 1 أبريل 2026</div>
+            <div class="post-category">⌚ ساعة رياضية</div>
+            <p>ساعة رياضية متطورة مع شاشة AMOLED، GPS دقيق، وبطارية تدوم 14 يومًا.</p>
+            <a href="/blog/ar/garmin-venu-3-review.html" class="read-more">اقرأ المراجعة ←</a>
+        </div>
+    </div>
+</div>
 
-    <footer>
-        <p>© 2026 NEO PULSE HUB — All Rights Reserved</p>
-    </footer>
+<!-- ========== سماعات ========== -->
+<h2 class="section-title">🎧 سماعات</h2>
+<div class="posts-grid">
+    <div class="post-card">
+        <div class="post-card-header"><h3>AirPods Pro 2</h3></div>
+        <div class="post-card-body">
+            <div class="post-date">📅 1 أبريل 2026</div>
+            <div class="post-category">🎧 سماعات</div>
+            <p>أفضل سماعات لاسلكية لمستخدمي آيفون مع إلغاء ضوضاء فعال وصوت مكاني.</p>
+            <a href="/blog/ar/airpode-pro-2-review.html" class="read-more">اقرأ المراجعة ←</a>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-header"><h3>Sony WH-1000XM5</h3></div>
+        <div class="post-card-body">
+            <div class="post-date">📅 1 أبريل 2026</div>
+            <div class="post-category">🎧 سماعات</div>
+            <p>أفضل سماعات إلغاء ضوضاء في العالم مع 30 ساعة بطارية وصوت Hi-Res Audio.</p>
+            <a href="/blog/ar/sony-wh-1000XM5-review.html" class="read-more">اقرأ المراجعة ←</a>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-header"><h3>Samsung Galaxy Buds2 Pro</h3></div>
+        <div class="post-card-body">
+            <div class="post-date">📅 1 أبريل 2026</div>
+            <div class="post-category">🎧 سماعات</div>
+            <p>سماعات سامسونج اللاسلكية مع إلغاء ضوضاء فعال وصوت Hi-Fi 24bit.</p>
+            <a href="/blog/ar/samsung-galaxy-buds2-pro-review.html" class="read-more">اقرأ المراجعة ←</a>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-header"><h3>Anker Soundcore Liberty 4 NC</h3></div>
+        <div class="post-card-body">
+            <div class="post-date">📅 1 أبريل 2026</div>
+            <div class="post-category">🎧 سماعات</div>
+            <p>سماعات لاسلكية مع إلغاء ضوضاء قوي وبطارية 50 ساعة بسعر منافس.</p>
+            <a href="/blog/ar/anker-soundcore-liberty-4n-review.html" class="read-more">اقرأ المراجعة ←</a>
+        </div>
+    </div>
+</div>
+
+<!-- ========== منزل ذكي ========== -->
+<h2 class="section-title">🏠 منزل ذكي</h2>
+<div class="posts-grid">
+    <div class="post-card">
+        <div class="post-card-header"><h3>Amazon Echo Show 10</h3></div>
+        <div class="post-card-body">
+            <div class="post-date">📅 1 أبريل 2026</div>
+            <div class="post-category">🏠 منزل ذكي</div>
+            <p>شاشة ذكية بشاشة دوارة 10 بوصة تتابعك تلقائيًا مع Alexa.</p>
+            <a href="/blog/ar/amazon-Echo-Show-10-review.html" class="read-more">اقرأ المراجعة ←</a>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-header"><h3>Amazon Fire TV Stick 4K Max</h3></div>
+        <div class="post-card-body">
+            <div class="post-date">📅 1 أبريل 2026</div>
+            <div class="post-category">🏠 منزل ذكي</div>
+            <p>أفضل جهاز ستريمنغ بدقة 4K مع Wi-Fi 6E ودعم Dolby Vision.</p>
+            <a href="/blog/ar/amazon-fire-tv-stick-4k-max-review.html" class="read-more">اقرأ المراجعة ←</a>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-header"><h3>Google Nest Thermostat</h3></div>
+        <div class="post-card-body">
+            <div class="post-date">📅 1 أبريل 2026</div>
+            <div class="post-category">🏠 منزل ذكي</div>
+            <p>ترموستات ذكي يتعلم عاداتك ويوفر حتى 15% من فاتورة الكهرباء.</p>
+            <a href="/blog/ar/google-nest-thermostat-review.html" class="read-more">اقرأ المراجعة ←</a>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-header"><h3>Philips Hue Starter Kit</h3></div>
+        <div class="post-card-body">
+            <div class="post-date">📅 1 أبريل 2026</div>
+            <div class="post-category">🏠 منزل ذكي</div>
+            <p>إضاءة ذكية مع 16 مليون لون وتحكم بالصوت والهاتف.</p>
+            <a href="/blog/ar/philips-hue-starter-kit-review.html" class="read-more">اقرأ المراجعة ←</a>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-header"><h3>Nanoleaf Shapes</h3></div>
+        <div class="post-card-body">
+            <div class="post-date">📅 1 أبريل 2026</div>
+            <div class="post-category">🏠 منزل ذكي</div>
+            <p>ألواح إضاءة ذكية قابلة للتخصيص مع 16 مليون لون وتفاعل مع الموسيقى.</p>
+            <a href="/blog/ar/nanoleaf-shapes-review.html" class="read-more">اقرأ المراجعة ←</a>
+        </div>
+    </div>
+</div>
+
+<!-- ========== الصحة الذكية ========== -->
+<h2 class="section-title">❤️ الصحة الذكية</h2>
+<div class="posts-grid">
+    <div class="post-card">
+        <div class="post-card-header"><h3>Fitbit Charge 6</h3></div>
+        <div class="post-card-body">
+            <div class="post-date">📅 1 أبريل 2026</div>
+            <div class="post-category">❤️ صحة ذكية</div>
+            <p>أفضل متتبع لياقة مع GPS مدمج، ECG، ومراقبة دقيقة لمعدل ضربات القلب.</p>
+            <a href="/blog/ar/fitbit-charge-6-review.html" class="read-more">اقرأ المراجعة ←</a>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-header"><h3>Oura Ring Gen 3</h3></div>
+        <div class="post-card-body">
+            <div class="post-date">📅 1 أبريل 2026</div>
+            <div class="post-category">❤️ صحة ذكية</div>
+            <p>خاتم ذكي يتتبع النوم والنشاط والصحة بدقة استثنائية بدون شاشة.</p>
+            <a href="/blog/ar/oura-ring-gen3-review.html" class="read-more">اقرأ المراجعة ←</a>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-header"><h3>Withings Body Scan</h3></div>
+        <div class="post-card-body">
+            <div class="post-date">📅 1 أبريل 2026</div>
+            <div class="post-category">❤️ صحة ذكية</div>
+            <p>ميزان ذكي متطور يقيس صحة القلب والجسم بدقة طبية.</p>
+            <a href="/blog/ar/withings-body-scan-review.html" class="read-more">اقرأ المراجعة ←</a>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-header"><h3>Xiaomi Mi Band 8 Pro</h3></div>
+        <div class="post-card-body">
+            <div class="post-date">📅 1 أبريل 2026</div>
+            <div class="post-category">❤️ صحة ذكية</div>
+            <p>سوار ذكي بمواصفات ممتازة وسعر اقتصادي مع شاشة AMOLED وGPS.</p>
+            <a href="/blog/ar/xiaomi-mi-band-8-pro.html" class="read-more">اقرأ المراجعة ←</a>
+        </div>
+    </div>
+</div>
+
+<!-- ========== نظارات ذكية ========== -->
+<h2 class="section-title">🥽 نظارات ذكية</h2>
+<div class="posts-grid">
+    <div class="post-card">
+        <div class="post-card-header"><h3>Ray-Ban Meta Smart Glasses</h3></div>
+        <div class="post-card-body">
+            <div class="post-date">📅 1 أبريل 2026</div>
+            <div class="post-category">🥽 نظارات ذكية</div>
+            <p>نظارات ذكية بكاميرا 12MP وصوت عالي الجودة ومساعد AI مدمج.</p>
+            <a href="/blog/ar/meta-rayban-smart-glasses-review.html" class="read-more">اقرأ المراجعة ←</a>
+        </div>
+    </div>
+</div>
+
+<!-- ========== إنتاجية ========== -->
+<h2 class="section-title">💼 إنتاجية</h2>
+<div class="posts-grid">
+    <div class="post-card">
+        <div class="post-card-header"><h3>Logitech MX Master 3S</h3></div>
+        <div class="post-card-body">
+            <div class="post-date">📅 1 أبريل 2026</div>
+            <div class="post-category">💼 إنتاجية</div>
+            <p>أفضل ماوس لاسلكي للمحترفين مع عجلة تمرير MagSpeed وبطارية 70 يومًا.</p>
+            <a href="/blog/ar/logitech-mx-master-3s-review.html" class="read-more">اقرأ المراجعة ←</a>
+        </div>
+    </div>
+</div>
+
+<!-- ========== أدلة ومقالات ========== -->
+<h2 class="section-title">📚 أدلة ومقالات</h2>
+<div class="posts-grid">
+    <div class="post-card">
+        <div class="post-card-header"><h3>دليل المنزل الذكي الشامل 2025</h3></div>
+        <div class="post-card-body">
+            <div class="post-date">📅 1 أبريل 2026</div>
+            <div class="post-category">📚 دليل</div>
+            <p>كل ما تحتاج معرفته عن المنزل الذكي: الأجهزة، التركيب، والأسعار.</p>
+            <a href="/blog/ar/smart-home-complete-guide-2025.html" class="read-more">اقرأ الدليل ←</a>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-header"><h3>دليل المنزل الذكي للمبتدئين</h3></div>
+        <div class="post-card-body">
+            <div class="post-date">📅 1 أبريل 2026</div>
+            <div class="post-category">📚 دليل</div>
+            <p>كيف تبدأ مع المنزل الذكي: الخطوات الأولى والأجهزة الأساسية.</p>
+            <a href="/blog/ar/smart-home-guide.html" class="read-more">اقرأ الدليل ←</a>
+        </div>
+    </div>
+    <div class="post-card">
+        <div class="post-card-header"><h3>أحدث تقنيات 2026</h3></div>
+        <div class="post-card-body">
+            <div class="post-date">📅 1 أبريل 2026</div>
+            <div class="post-category">📚 مقال</div>
+            <p>أهم التقنيات التي ستغير العالم في 2026: الذكاء الاصطناعي، الواقع المعزز، والمزيد.</p>
+            <a href="/blog/ar/tech-trends-2026.html" class="read-more">اقرأ المقال ←</a>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="footer-links">
+    <a href="/">🏠 الرئيسية</a> |
+    <a href="/products.html">🛍️ المنتجات</a> |
+    <a href="/blog/ar">📝 المدونة</a> |
+    <a href="/about.html">ℹ️ من نحن</a> |
+    <a href="/contact.html">📞 اتصل بنا</a>
+</div>
+</div>
 </body>
 </html>
