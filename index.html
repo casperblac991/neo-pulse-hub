@@ -27,6 +27,22 @@
 <meta property="og:image" content="https://neo-pulse-hub.it.com/og-image.png">
 <meta property="og:url" content="https://neo-pulse-hub.it.com">
 <link rel="canonical" href="https://neo-pulse-hub.it.com">
+
+<!-- Schema.org Structured Data (SEO) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "NEO PULSE HUB",
+  "url": "https://neo-pulse-hub.it.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://neo-pulse-hub.it.com/products.html?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&family=Poppins:wght@300;400;500;600;700;900&family=Orbitron:wght@400;500;600;700;900&display=swap" rel="stylesheet">
@@ -36,7 +52,7 @@
 body{font-family:'Cairo','Poppins',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.7}
 a{color:inherit;text-decoration:none}button{cursor:pointer;border:none;background:none;font-family:inherit}img{max-width:100%;display:block}
 .bg-grid{position:fixed;inset:0;z-index:-3;background-image:linear-gradient(rgba(59,130,246,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,.04) 1px,transparent 1px);background-size:60px 60px}
-.bg-grad{position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse 80% 50% at 20% 20%,rgba(124,58,237,.12),transparent 60%),radial-gradient(ellipse 60% 40% at 80% 80%,rgba(6,182,212,.08),transparent 60%)}
+.bg-grad{position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse 80% 50% at 20% 20%,rgba(124,58,237,.12),transparent 60%),radial-gradient(ellipse 60% 40% at 80% 80%,rgba(6,182,212,.08),transparent 60%); pointer-events: none;}
 .scanline{position:fixed;inset:0;z-index:-1;pointer-events:none;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,.03) 2px,rgba(0,0,0,.03) 4px);opacity:.4}
 nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:.9rem 2.5rem;gap:1rem;background:rgba(2,5,16,.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
 .nav-logo{font-family:'Orbitron',sans-serif;font-size:1.1rem;font-weight:700;letter-spacing:.08em;background:linear-gradient(135deg,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;white-space:nowrap}
@@ -56,7 +72,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .mobile-drawer a,.mobile-drawer button{font-size:1.2rem;font-weight:700;color:var(--muted);transition:color var(--ease)}
 .mobile-drawer a:hover{color:var(--cyan2)}
 .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:6rem 2rem 4rem;position:relative;overflow:hidden}
-.hero-orb{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none}
+.hero-orb{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none;will-change: transform;} /* Performance Fix */
 .hero-orb-1{width:600px;height:600px;background:rgba(124,58,237,.15);top:-200px;left:-200px;animation:float1 8s ease-in-out infinite}
 .hero-orb-2{width:500px;height:500px;background:rgba(6,182,212,.1);bottom:-150px;right:-150px;animation:float2 10s ease-in-out infinite}
 @keyframes float1{0%,100%{transform:translate(0,0)}50%{transform:translate(40px,30px)}}
@@ -90,28 +106,28 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .cat-card:hover{border-color:var(--border2);transform:translateY(-4px);box-shadow:var(--glow-b)}.cat-card:hover::before{opacity:1}
 .cat-icon{font-size:2rem;margin-bottom:.6rem}.cat-name{font-size:.88rem;font-weight:600}.cat-count{font-size:.75rem;color:var(--muted);margin-top:3px}
 .products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem}
-.product-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);overflow:hidden;transition:all var(--ease);cursor:default}
+.product-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);overflow:hidden;transition:all var(--ease);cursor:default; display:flex; flex-direction: column;}
 .product-card:hover{border-color:var(--border2);transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,.4),var(--glow-b)}
-.product-img{position:relative;height:220px;overflow:hidden;background:var(--surface2)}
+.product-img{position:relative;height:220px;overflow:hidden;background:var(--surface2); flex-shrink: 0;}
 .product-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
 .product-card:hover .product-img img{transform:scale(1.05)}
 .product-badge{position:absolute;top:.75rem;right:.75rem;background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;font-size:.72rem;font-weight:700;padding:.2rem .7rem;border-radius:var(--rp)}
 .product-discount{position:absolute;top:.75rem;left:.75rem;background:rgba(239,68,68,.9);color:#fff;font-size:.72rem;font-weight:700;padding:.2rem .7rem;border-radius:var(--rp)}
-.product-body{padding:1.25rem}
+.product-body{padding:1.25rem; flex-grow: 1; display:flex; flex-direction: column;}
 .product-cat{font-size:.72rem;color:var(--cyan2);font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.4rem}
-.product-name{font-size:1rem;font-weight:700;margin-bottom:.6rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.product-name{font-size:1rem;font-weight:700;margin-bottom:.6rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden; flex-grow: 1;}
 .product-rating{display:flex;align-items:center;gap:.4rem;margin-bottom:.8rem}
 .stars{color:var(--gold);font-size:.85rem}.rating-num{font-size:.8rem;color:var(--muted)}
-.product-price-row{display:flex;align-items:center;justify-content:space-between;gap:.5rem;flex-wrap:wrap}
+.product-price-row{display:flex;align-items:center;justify-content:space-between;gap:.5rem;flex-wrap:wrap; margin-bottom: 0.5rem;}
 .product-price{font-family:'Orbitron',sans-serif;font-size:1.2rem;font-weight:700;background:linear-gradient(135deg,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .product-original{font-size:.82rem;color:var(--muted);text-decoration:line-through}
-.buy-btns{display:flex;gap:6px;margin-top:.9rem}
-.buy-btn{flex:1;display:flex;align-items:center;justify-content:center;gap:5px;padding:.5rem .6rem;border-radius:var(--rp);font-size:.78rem;font-weight:700;cursor:pointer;transition:all var(--ease);border:none;font-family:inherit;text-decoration:none;color:#fff}
+.buy-btns{display:flex;gap:6px; margin-top: auto;}
+.buy-btn{flex:1;display:flex;align-items:center;justify-content:center;gap:5px;padding:.6rem .8rem;border-radius:var(--rp);font-size:.78rem;font-weight:700;cursor:pointer;transition:all var(--ease);border:none;font-family:inherit;text-decoration:none;color:#fff; white-space: nowrap;}
 .buy-amazon{background:linear-gradient(135deg,#ff9900,#e47911)}
 .buy-amazon:hover{box-shadow:0 4px 16px rgba(255,153,0,.5);transform:translateY(-1px)}
 .buy-ali{background:linear-gradient(135deg,#e62e04,#ff4d1a)}
 .buy-ali:hover{box-shadow:0 4px 16px rgba(230,46,4,.5);transform:translateY(-1px)}
-.commission-badge{display:inline-flex;align-items:center;gap:3px;font-size:.68rem;color:var(--green);background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.2);border-radius:999px;padding:.15rem .5rem;margin-top:.5rem}
+.commission-badge{display:inline-flex;align-items:center;gap:3px;font-size:.68rem;color:var(--green);background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.2);border-radius:999px;padding:.15rem .5rem;margin-top:.8rem; align-self: flex-start;}
 .features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem}
 .feature-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:2rem 1.5rem;position:relative;overflow:hidden;transition:all var(--ease)}
 .feature-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--blue),var(--cyan2),transparent);opacity:0;transition:opacity var(--ease)}
@@ -153,7 +169,11 @@ html[dir="rtl"] .toast{left:2rem} html[dir="ltr"] .toast{right:2rem}
 .toast.show{transform:translateY(0);opacity:1}.toast-icon{font-size:1.2rem}.toast-text{font-size:.9rem;font-weight:600}
 .affiliate-note{text-align:center;font-size:.78rem;color:var(--muted);padding:.6rem 1rem;background:rgba(59,130,246,.04);border-top:1px solid var(--border)}
 @media(max-width:1024px){.footer-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:768px){nav{padding:.9rem 1.2rem}.nav-links{display:none}.hamburger{display:flex}.hero-btns{flex-direction:column;align-items:center}.hero-stats{gap:1.5rem}.newsletter-form{flex-direction:column}.footer-grid{grid-template-columns:1fr;gap:1.5rem}.footer-bottom{flex-direction:column;text-align:center}}
+@media(max-width:768px){nav{padding:.9rem 1.2rem}.nav-links{display:none}.hamburger{display:flex}.hero-btns{flex-direction:column;align-items:center}.hero-stats{gap:1.5rem}.newsletter-form{flex-direction:column}.footer-grid{grid-template-columns:1fr;gap:1.5rem}.footer-bottom{flex-direction:column;text-align:center}
+  /* Chat Mobile Fix */
+  .chat-widget{bottom:1rem}
+  html[dir="rtl"] .chat-widget{left:1rem} html[dir="ltr"] .chat-widget{right:1rem}
+}
 @media(max-width:480px){.section{padding:3.5rem 1rem}.products-grid{grid-template-columns:1fr}.categories-grid{grid-template-columns:repeat(2,1fr)}.buy-btns{flex-direction:column}}
 </style>
 </head>
@@ -161,7 +181,7 @@ html[dir="rtl"] .toast{left:2rem} html[dir="ltr"] .toast{right:2rem}
 <div class="bg-grid"></div><div class="bg-grad"></div><div class="scanline"></div>
 
 <nav>
-  <a href="index.html" class="nav-logo">NEO PULSE HUB</a>
+  <a href="index.html" class="nav-logo" aria-label="NEO PULSE HUB Home">NEO PULSE HUB</a>
   <ul class="nav-links">
     <li><a href="index.html" data-i18n="nav_home" class="active">الرئيسية</a></li>
     <li><a href="products.html" data-i18n="nav_products">المنتجات</a></li>
@@ -171,13 +191,13 @@ html[dir="rtl"] .toast{left:2rem} html[dir="ltr"] .toast{right:2rem}
   </ul>
   <div style="display:flex;align-items:center;gap:.8rem">
     <div class="lang-switch">
-      <button class="lang-btn active" id="langAr" onclick="changeLang('ar')">عربي</button>
-      <button class="lang-btn" id="langEn" onclick="changeLang('en')">EN</button>
+      <button class="lang-btn active" id="langAr" onclick="changeLang('ar')" aria-label="Switch to Arabic">عربي</button>
+      <button class="lang-btn" id="langEn" onclick="changeLang('en')" aria-label="Switch to English">EN</button>
     </div>
-    <button class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
-<div class="mobile-drawer" id="mobileDrawer">
+<div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
   <a href="index.html" onclick="closeMenu()">🏠 الرئيسية</a>
   <a href="products.html" onclick="closeMenu()">🛍️ المنتجات</a>
   <a href="blog/ar/" onclick="closeMenu()">📝 المدونة</a>
@@ -213,12 +233,12 @@ html[dir="rtl"] .toast{left:2rem} html[dir="ltr"] .toast{right:2rem}
       <p class="section-sub" data-i18n="categories_sub">اختر من أحدث فئات التقنية الذكية</p>
     </div>
     <div class="categories-grid reveal">
-      <div class="cat-card" onclick="filterProducts('smartwatch')"><div class="cat-icon">⌚</div><div class="cat-name" data-i18n="cat_smartwatch">ساعات ذكية</div><div class="cat-count" id="cnt-smartwatch">5 منتجات</div></div>
-      <div class="cat-card" onclick="filterProducts('smart-glasses')"><div class="cat-icon">🥽</div><div class="cat-name" data-i18n="cat_glasses">نظارات ذكية</div><div class="cat-count" id="cnt-smart-glasses">3 منتجات</div></div>
-      <div class="cat-card" onclick="filterProducts('health')"><div class="cat-icon">❤️</div><div class="cat-name" data-i18n="cat_health">الصحة الذكية</div><div class="cat-count" id="cnt-health">7 منتجات</div></div>
-      <div class="cat-card" onclick="filterProducts('smart-home')"><div class="cat-icon">🏠</div><div class="cat-name" data-i18n="cat_smarthome">المنزل الذكي</div><div class="cat-count" id="cnt-smart-home">6 منتجات</div></div>
-      <div class="cat-card" onclick="filterProducts('earbuds')"><div class="cat-icon">🎧</div><div class="cat-name" data-i18n="cat_earbuds">سماعات ذكية</div><div class="cat-count" id="cnt-earbuds">5 منتجات</div></div>
-      <div class="cat-card" onclick="filterProducts('productivity')"><div class="cat-icon">💼</div><div class="cat-name" data-i18n="cat_productivity">الإنتاجية</div><div class="cat-count" id="cnt-productivity">5 منتجات</div></div>
+      <div class="cat-card" onclick="filterProducts('smartwatch')" role="button" tabindex="0"><div class="cat-icon">⌚</div><div class="cat-name" data-i18n="cat_smartwatch">ساعات ذكية</div><div class="cat-count" id="cnt-smartwatch">5 منتجات</div></div>
+      <div class="cat-card" onclick="filterProducts('smart-glasses')" role="button" tabindex="0"><div class="cat-icon">🥽</div><div class="cat-name" data-i18n="cat_glasses">نظارات ذكية</div><div class="cat-count" id="cnt-smart-glasses">3 منتجات</div></div>
+      <div class="cat-card" onclick="filterProducts('health')" role="button" tabindex="0"><div class="cat-icon">❤️</div><div class="cat-name" data-i18n="cat_health">الصحة الذكية</div><div class="cat-count" id="cnt-health">7 منتجات</div></div>
+      <div class="cat-card" onclick="filterProducts('smart-home')" role="button" tabindex="0"><div class="cat-icon">🏠</div><div class="cat-name" data-i18n="cat_smarthome">المنزل الذكي</div><div class="cat-count" id="cnt-smart-home">6 منتجات</div></div>
+      <div class="cat-card" onclick="filterProducts('earbuds')" role="button" tabindex="0"><div class="cat-icon">🎧</div><div class="cat-name" data-i18n="cat_earbuds">سماعات ذكية</div><div class="cat-count" id="cnt-earbuds">5 منتجات</div></div>
+      <div class="cat-card" onclick="filterProducts('productivity')" role="button" tabindex="0"><div class="cat-icon">💼</div><div class="cat-name" data-i18n="cat_productivity">الإنتاجية</div><div class="cat-count" id="cnt-productivity">5 منتجات</div></div>
     </div>
   </div>
 </section>
@@ -261,7 +281,7 @@ html[dir="rtl"] .toast{left:2rem} html[dir="ltr"] .toast{right:2rem}
     <h2 class="newsletter-title" data-i18n="newsletter_title">انضم لمجتمع NEO PULSE</h2>
     <p class="newsletter-sub" data-i18n="newsletter_sub">اشترك وكن أول من يعلم بالمنتجات الجديدة والعروض الحصرية</p>
     <div class="newsletter-form">
-      <input class="newsletter-input" type="email" id="emailInput" placeholder="بريدك الإلكتروني...">
+      <input class="newsletter-input" type="email" id="emailInput" placeholder="بريدك الإلكتروني..." aria-label="Email Address">
       <button class="btn btn-primary" onclick="subscribeEmail()"><span data-i18n="newsletter_btn">اشترك ⚡</span></button>
     </div>
   </div>
@@ -319,7 +339,7 @@ html[dir="rtl"] .toast{left:2rem} html[dir="ltr"] .toast{right:2rem}
 <div id="chatWindow" style="display:none; position:fixed; bottom:80px; right:20px; width:350px; height:500px; background:#0a0d1a; border:1px solid #3b82f6; border-radius:16px; z-index:1000; display:flex; flex-direction:column; box-shadow:0 0 20px rgba(59,130,246,.3);">
   <div style="background:linear-gradient(135deg,#3b82f6,#7c3aed); padding:12px; border-radius:16px 16px 0 0; display:flex; justify-content:space-between; align-items:center;">
     <span style="font-weight:bold;">🤖 مساعد NEO PULSE</span>
-    <button onclick="toggleChatWindow()" style="background:none; border:none; color:white; font-size:20px; cursor:pointer;">✕</button>
+    <button onclick="toggleChatWindow()" style="background:none; border:none; color:white; font-size:20px; cursor:pointer;" aria-label="Close Chat">✕</button>
   </div>
   <div id="chatMessages" style="flex:1; overflow-y:auto; padding:12px; display:flex; flex-direction:column; gap:8px;"></div>
   <div style="padding:12px; border-top:1px solid rgba(59,130,246,.3); display:flex; gap:8px;">
@@ -327,7 +347,7 @@ html[dir="rtl"] .toast{left:2rem} html[dir="ltr"] .toast{right:2rem}
     <button onclick="sendChat()" style="background:linear-gradient(135deg,#3b82f6,#7c3aed); border:none; border-radius:25px; padding:10px 20px; color:white; cursor:pointer;">إرسال</button>
   </div>
 </div>
-<button onclick="toggleChatWindow()" style="position:fixed; bottom:20px; right:20px; width:55px; height:55px; border-radius:50%; background:linear-gradient(135deg,#3b82f6,#7c3aed); border:none; font-size:1.5rem; cursor:pointer; box-shadow:0 4px 15px rgba(59,130,246,.4); z-index:1000;">🤖</button>
+<button onclick="toggleChatWindow()" style="position:fixed; bottom:20px; right:20px; width:55px; height:55px; border-radius:50%; background:linear-gradient(135deg,#3b82f6,#7c3aed); border:none; font-size:1.5rem; cursor:pointer; box-shadow:0 4px 15px rgba(59,130,246,.4); z-index:1000;" aria-label="Open Chat">🤖</button>
 
 <div class="toast" id="toast" role="alert" aria-live="polite">
   <span class="toast-icon" id="toastIcon">✅</span>
@@ -340,6 +360,17 @@ html[dir="rtl"] .toast{left:2rem} html[dir="ltr"] .toast{right:2rem}
 const AMAZON_TAG = 'neopulsehub-20';
 const MANAGER_URL = 'https://neo-pulse-manager.onrender.com';
 const API_BASE = '';
+
+// Security: XSS Prevention Function
+function escapeHtml(text) {
+  if (typeof text !== 'string') return text;
+  return text
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
 
 const T = {
   ar: {
@@ -405,11 +436,8 @@ let currentFilter = 'featured';
 // شات بوت الموقع
 function toggleChatWindow() {
   const win = document.getElementById('chatWindow');
-  if (win.style.display === 'none' || win.style.display === '') {
-    win.style.display = 'flex';
-  } else {
-    win.style.display = 'none';
-  }
+  const isVisible = win.style.display === 'flex';
+  win.style.display = isVisible ? 'none' : 'flex';
 }
 
 async function sendChat() {
@@ -418,7 +446,10 @@ async function sendChat() {
   if (!msg) return;
   
   const messagesDiv = document.getElementById('chatMessages');
-  messagesDiv.innerHTML += `<div style="text-align:right; margin:5px; padding:8px 12px; background:#3b82f6; border-radius:18px; align-self:flex-end; max-width:80%; word-wrap:break-word;">${msg}</div>`;
+  const safeMsg = escapeHtml(msg);
+  
+  // User message (Sanitized)
+  messagesDiv.innerHTML += `<div style="text-align:right; margin:5px; padding:8px 12px; background:#3b82f6; border-radius:18px; align-self:flex-end; max-width:80%; word-wrap:break-word;">${safeMsg}</div>`;
   input.value = '';
   messagesDiv.scrollTop = messagesDiv.scrollHeight;
   
@@ -435,12 +466,13 @@ async function sendChat() {
     const data = await response.json();
     const loadingEl = document.getElementById(loadingId);
     if (loadingEl) {
-      loadingEl.innerHTML = `<span style="color:#60a5fa;">🤖</span> ${data.answer || 'عذراً، حدث خطأ'}`;
+      // Bot message (Sanitized)
+      loadingEl.innerHTML = `<span style="color:#60a5fa;">🤖</span> ${escapeHtml(data.answer || 'عذراً، حدث خطأ')}`;
     }
   } catch (error) {
     const loadingEl = document.getElementById(loadingId);
     if (loadingEl) {
-      loadingEl.innerHTML = `<span style="color:#60a5fa;">🤖</span> عذراً، حدث خطأ في الاتصال`;
+      loadingEl.innerHTML = `<span style="color:#60a5fa;">🤖</span> ${escapeHtml('عذراً، حدث خطأ في الاتصال')}`;
     }
   }
   messagesDiv.scrollTop = messagesDiv.scrollHeight;
@@ -483,7 +515,7 @@ async function loadProducts() {
     if(grid) {
       grid.innerHTML = `<div style="padding:3rem; text-align:center; color:var(--red); border:1px solid var(--border); border-radius:var(--r2); background:var(--surface)">
         <div style="font-size:3rem; margin-bottom:1rem">⚠️</div>
-        <h3 style="margin-bottom:0.5rem">${T[lang].load_error}</h3>
+        <h3 style="margin-bottom:0.5rem">${escapeHtml(T[lang].load_error)}</h3>
         <button onclick="location.reload()" class="btn btn-outline" style="margin-top:1rem">🔄 إعادة المحاولة</button>
       </div>`;
     }
@@ -503,13 +535,15 @@ function renderProducts() {
     
   if (!list.length) list = PRODUCTS.slice(0,6);
   
+  // Security: Using map and join is safer than += in loop, but escaping individual fields is crucial
   grid.innerHTML = list.map(productCard).join('');
 }
 
 function productCard(p) {
-  const name = p.name?.[lang] || p.name?.ar || '';
-  const cat = lang === 'ar' ? (p.category_ar||'') : (p.category_en||'');
-  const badge = p.badge?.[lang] || '';
+  // Security: Escaping dynamic data
+  const name = escapeHtml(p.name?.[lang] || p.name?.ar || 'Product Name');
+  const cat = escapeHtml(lang === 'ar' ? (p.category_ar||'') : (p.category_en||''));
+  const badge = escapeHtml(p.badge?.[lang] || '');
   const stars = '★'.repeat(Math.floor(p.rating||4.5)) + '☆'.repeat(5-Math.floor(p.rating||4.5));
   
   let amazonLink = p.affiliate_amazon || '#';
@@ -523,23 +557,23 @@ function productCard(p) {
   
   return `<div class="product-card">
     <div class="product-img">
-      <img src="${p.image}" alt="${name}" loading="lazy" onerror="this.src='https://placehold.co/400x220/0a0d1a/60a5fa?text=NPH'">
+      <img src="${escapeHtml(p.image)}" alt="${name}" loading="lazy" onerror="this.src='https://placehold.co/400x220/0a0d1a/60a5fa?text=NPH'">
       ${badge ? `<span class="product-badge">${badge}</span>` : ''}
-      ${p.discount ? `<span class="product-discount">-${p.discount}%</span>` : ''}
+      ${p.discount ? `<span class="product-discount">-${escapeHtml(p.discount)}%</span>` : ''}
     </div>
     <div class="product-body">
       <div class="product-cat">${cat}</div>
-      <div class="product-name">${name}</div>
+      <div class="product-name" title="${name}">${name}</div>
       <div class="product-rating"><span class="stars">${stars}</span><span class="rating-num">${p.rating||4.5} (${(p.reviews||100).toLocaleString()})</span></div>
       <div class="product-price-row">
         <div>
-          <div class="product-price">$${p.price}</div>
-          ${p.original_price ? `<div class="product-original">$${p.original_price}</div>` : ''}
+          <div class="product-price">$${escapeHtml(p.price)}</div>
+          ${p.original_price ? `<div class="product-original">$${escapeHtml(p.original_price)}</div>` : ''}
         </div>
       </div>
       <div class="buy-btns">
-        <a href="${amazonLink}" target="_blank" rel="noopener sponsored nofollow" class="buy-btn buy-amazon" onclick="trackClick('amazon','${p.id}')">${T[lang].buy_amazon}</a>
-        ${aliLink !== '#' ? `<a href="${aliLink}" target="_blank" rel="noopener sponsored nofollow" class="buy-btn buy-ali" onclick="trackClick('ali','${p.id}')">${T[lang].buy_ali}</a>` : ''}
+        <a href="${escapeHtml(amazonLink)}" target="_blank" rel="noopener sponsored nofollow" class="buy-btn buy-amazon" onclick="trackClick('amazon','${escapeHtml(p.id)}')">${escapeHtml(T[lang].buy_amazon)}</a>
+        ${aliLink !== '#' ? `<a href="${escapeHtml(aliLink)}" target="_blank" rel="noopener sponsored nofollow" class="buy-btn buy-ali" onclick="trackClick('ali','${escapeHtml(p.id)}')">${escapeHtml(T[lang].buy_ali)}</a>` : ''}
       </div>
       <div class="commission-badge">✅ ${lang==='ar'?'عمولة على كل شراء':'Commission on every purchase'}</div>
     </div>
@@ -632,7 +666,13 @@ function filterProducts(cat) {
     productivity: 'cat_productivity'
   };
   const titleKey = titles[cat] || 'products_title';
-  document.getElementById('productsTitle').textContent = T[lang][titleKey] || T[lang].products_title;
+  const newTitle = T[lang][titleKey] || T[lang].products_title;
+  
+  // Dynamic SEO Update
+  document.getElementById('productsTitle').textContent = newTitle;
+  document.title = `${newTitle} | NEO PULSE HUB`;
+  document.getElementById('metaDescription').setAttribute('content', `استكشف أفضل ${newTitle} في NEO PULSE HUB. تشكيلة واسعة من منتجات الذكاء الاصطناعي بأسعار منافسة.`);
+
   renderProducts();
   document.getElementById('products').scrollIntoView({behavior:'smooth'});
 }
