@@ -138,22 +138,22 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
 .footer-links a{font-size:.85rem;color:var(--muted);transition:color var(--ease)}.footer-links a:hover{color:var(--cyan2)}
 .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;padding-top:1.5rem;border-top:1px solid var(--border)}
 .footer-copy{font-size:.78rem;color:rgba(226,232,240,.3)}
-.chat-widget{position:fixed;bottom:2rem;z-index:300}
-html[dir="rtl"] .chat-widget{left:2rem} html[dir="ltr"] .chat-widget{right:2rem}
+/* شات بوت داخلي */
+.chat-widget{position:fixed;bottom:2rem;right:2rem;z-index:300}
 .chat-btn{width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--purple));display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 4px 20px rgba(59,130,246,.5);transition:all var(--ease);cursor:pointer;border:none}
 .chat-btn:hover{transform:scale(1.1)}
-.chat-bubble{position:absolute;bottom:72px;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--r2);padding:1.2rem;min-width:260px;display:none;box-shadow:0 10px 30px rgba(0,0,0,.5)}
-html[dir="rtl"] .chat-bubble{left:0} html[dir="ltr"] .chat-bubble{right:0}
+.chat-bubble{position:absolute;bottom:72px;right:0;width:300px;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--r2);padding:1rem;box-shadow:0 10px 30px rgba(0,0,0,.5);display:none}
 .chat-bubble.show{display:block;animation:fadeUp .3s ease}
-.chat-bubble p{font-size:.9rem;margin-bottom:.8rem}
-.chat-bubble a{display:block;background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;text-align:center;padding:.6rem 1rem;border-radius:var(--rp);font-size:.85rem;font-weight:700}
+#chatMessages{height:200px;overflow-y:auto;margin-bottom:10px;font-size:13px;background:#0f1423;border-radius:12px;padding:8px}
+#chatMessages div{margin:5px 0}
+#chatInput{flex:1;padding:8px;border-radius:50px;border:none;background:#1e1e2e;color:#fff;outline:none}
+.send-btn{background:#3b82f6;border:none;border-radius:50px;padding:8px 16px;color:white;cursor:pointer}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:translateY(0)}
-.toast{position:fixed;bottom:2rem;z-index:999;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--r);padding:1rem 1.5rem;display:flex;align-items:center;gap:.75rem;box-shadow:0 10px 30px rgba(0,0,0,.5);transform:translateY(100px);opacity:0;transition:all var(--ease);pointer-events:none}
-html[dir="rtl"] .toast{left:2rem} html[dir="ltr"] .toast{right:2rem}
+.toast{position:fixed;bottom:2rem;left:2rem;z-index:999;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--r);padding:1rem 1.5rem;display:flex;align-items:center;gap:.75rem;box-shadow:0 10px 30px rgba(0,0,0,.5);transform:translateY(100px);opacity:0;transition:all var(--ease);pointer-events:none}
 .toast.show{transform:translateY(0);opacity:1}.toast-icon{font-size:1.2rem}.toast-text{font-size:.9rem;font-weight:600}
 .affiliate-note{text-align:center;font-size:.78rem;color:var(--muted);padding:.6rem 1rem;background:rgba(59,130,246,.04);border-top:1px solid var(--border)}
 @media(max-width:1024px){.footer-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:768px){nav{padding:.9rem 1.2rem}.nav-links{display:none}.hamburger{display:flex}.hero-btns{flex-direction:column;align-items:center}.hero-stats{gap:1.5rem}.newsletter-form{flex-direction:column}.footer-grid{grid-template-columns:1fr;gap:1.5rem}.footer-bottom{flex-direction:column;text-align:center}}
+@media(max-width:768px){nav{padding:.9rem 1.2rem}.nav-links{display:none}.hamburger{display:flex}.hero-btns{flex-direction:column;align-items:center}.hero-stats{gap:1.5rem}.newsletter-form{flex-direction:column}.footer-grid{grid-template-columns:1fr;gap:1.5rem}.footer-bottom{flex-direction:column;text-align:center}.chat-bubble{width:280px;right:0;left:auto}}
 @media(max-width:480px){.section{padding:3.5rem 1rem}.products-grid{grid-template-columns:1fr}.categories-grid{grid-template-columns:repeat(2,1fr)}.buy-btns{flex-direction:column}}
 </style>
 </head>
@@ -213,12 +213,12 @@ html[dir="rtl"] .toast{left:2rem} html[dir="ltr"] .toast{right:2rem}
       <p class="section-sub" data-i18n="categories_sub">اختر من أحدث فئات التقنية الذكية</p>
     </div>
     <div class="categories-grid reveal">
-      <div class="cat-card" onclick="filterProducts('smartwatch')"><div class="cat-icon">⌚</div><div class="cat-name" data-i18n="cat_smartwatch">ساعات ذكية</div><div class="cat-count" id="cnt-smartwatch">8 منتجات</div></div>
-      <div class="cat-card" onclick="filterProducts('smart-glasses')"><div class="cat-icon">🥽</div><div class="cat-name" data-i18n="cat_glasses">نظارات وكاميرات</div><div class="cat-count" id="cnt-smart-glasses">5 منتجات</div></div>
-      <div class="cat-card" onclick="filterProducts('health')"><div class="cat-icon">❤️</div><div class="cat-name" data-i18n="cat_health">الصحة الذكية</div><div class="cat-count" id="cnt-health">7 منتجات</div></div>
-      <div class="cat-card" onclick="filterProducts('smart-home')"><div class="cat-icon">🏠</div><div class="cat-name" data-i18n="cat_smarthome">المنزل الذكي</div><div class="cat-count" id="cnt-smart-home">12 منتجات</div></div>
-      <div class="cat-card" onclick="filterProducts('earbuds')"><div class="cat-icon">🎧</div><div class="cat-name" data-i18n="cat_earbuds">سماعات ذكية</div><div class="cat-count" id="cnt-earbuds">9 منتجات</div></div>
-      <div class="cat-card" onclick="filterProducts('productivity')"><div class="cat-icon">💼</div><div class="cat-name" data-i18n="cat_productivity">الإنتاجية</div><div class="cat-count" id="cnt-productivity">9 منتجات</div></div>
+      <div class="cat-card" onclick="filterProducts('smartwatch')"><div class="cat-icon">⌚</div><div class="cat-name" data-i18n="cat_smartwatch">ساعات ذكية</div><div class="cat-count" id="cnt-smartwatch">8</div></div>
+      <div class="cat-card" onclick="filterProducts('smart-glasses')"><div class="cat-icon">🥽</div><div class="cat-name" data-i18n="cat_glasses">نظارات وكاميرات</div><div class="cat-count" id="cnt-smart-glasses">5</div></div>
+      <div class="cat-card" onclick="filterProducts('health')"><div class="cat-icon">❤️</div><div class="cat-name" data-i18n="cat_health">الصحة الذكية</div><div class="cat-count" id="cnt-health">7</div></div>
+      <div class="cat-card" onclick="filterProducts('smart-home')"><div class="cat-icon">🏠</div><div class="cat-name" data-i18n="cat_smarthome">المنزل الذكي</div><div class="cat-count" id="cnt-smart-home">12</div></div>
+      <div class="cat-card" onclick="filterProducts('earbuds')"><div class="cat-icon">🎧</div><div class="cat-name" data-i18n="cat_earbuds">سماعات ذكية</div><div class="cat-count" id="cnt-earbuds">9</div></div>
+      <div class="cat-card" onclick="filterProducts('productivity')"><div class="cat-icon">💼</div><div class="cat-name" data-i18n="cat_productivity">الإنتاجية</div><div class="cat-count" id="cnt-productivity">9</div></div>
     </div>
   </div>
 </section>
@@ -247,11 +247,11 @@ html[dir="rtl"] .toast{left:2rem} html[dir="ltr"] .toast{right:2rem}
     </div>
     <div class="features-grid">
       <div class="feature-card reveal"><div class="feature-icon">🛡️</div><div class="feature-title" data-i18n="f1t">أمازون الأصيل 100%</div><div class="feature-desc" data-i18n="f1d">جميع المنتجات مرتبطة بأمازون الرسمي. ضمان المصنع وسياسة إرجاع 30 يوم.</div></div>
-      <div class="feature-card reveal"><div class="feature-icon">💰</div><div class="feature-title" data-i18n="f2t">أفضل الأسعار</div><div class="feature-desc" data-i18n="f2d">نجمع لك أفضل العروض من أمازون في مكان واحد لتوفير وقتك وأموالك.</div></div>
-      <div class="feature-card reveal"><div class="feature-icon">🤖</div><div class="feature-title" data-i18n="f3t">مقارنات AI ذكية</div><div class="feature-desc" data-i18n="f3d">مراجعات وتحليلات مدعومة بالذكاء الاصطناعي تساعدك على اختيار الأنسب لاحتياجاتك.</div></div>
-      <div class="feature-card reveal"><div class="feature-icon">📦</div><div class="feature-title" data-i18n="f4t">شحن عالمي سريع</div><div class="feature-desc" data-i18n="f4d">شحن أمازون العالمي السريع متاح لمعظم المنتجات مع تتبع لحظي للطلب.</div></div>
-      <div class="feature-card reveal"><div class="feature-icon">📝</div><div class="feature-title" data-i18n="f5t">محتوى تعليمي حصري</div><div class="feature-desc" data-i18n="f5d">مدونة متخصصة بمقالات عربية وإنجليزية عن أحدث منتجات التقنية والذكاء الاصطناعي.</div></div>
-      <div class="feature-card reveal"><div class="feature-icon">⚡</div><div class="feature-title" data-i18n="f6t">تحديث يومي للمنتجات</div><div class="feature-desc" data-i18n="f6d">قائمة المنتجات تُحدَّث يومياً لتشمل أحدث الإصدارات والعروض المتاحة.</div></div>
+      <div class="feature-card reveal"><div class="feature-icon">💰</div><div class="feature-title" data-i18n="f2t">أفضل الأسعار</div><div class="feature-desc" data-i18n="f2d">نجمع لك أفضل العروض من أمازون في مكان واحد.</div></div>
+      <div class="feature-card reveal"><div class="feature-icon">🤖</div><div class="feature-title" data-i18n="f3t">مقارنات AI ذكية</div><div class="feature-desc" data-i18n="f3d">مراجعات وتحليلات مدعومة بالذكاء الاصطناعي تساعدك على الاختيار.</div></div>
+      <div class="feature-card reveal"><div class="feature-icon">📦</div><div class="feature-title" data-i18n="f4t">شحن عالمي سريع</div><div class="feature-desc" data-i18n="f4d">شحن أمازون العالمي السريع مع تتبع لحظي للطلب.</div></div>
+      <div class="feature-card reveal"><div class="feature-icon">📝</div><div class="feature-title" data-i18n="f5t">محتوى تعليمي حصري</div><div class="feature-desc" data-i18n="f5d">مدونة متخصصة بمقالات عربية وإنجليزية عن أحدث منتجات التقنية.</div></div>
+      <div class="feature-card reveal"><div class="feature-icon">⚡</div><div class="feature-title" data-i18n="f6t">تحديث يومي للمنتجات</div><div class="feature-desc" data-i18n="f6d">قائمة المنتجات تُحدَّث يومياً لتشمل أحدث الإصدارات والعروض.</div></div>
     </div>
   </div>
 </section>
@@ -315,10 +315,20 @@ html[dir="rtl"] .toast{left:2rem} html[dir="ltr"] .toast{right:2rem}
   </div>
 </footer>
 
+<!-- شات بوت داخلي -->
 <div class="chat-widget">
   <div class="chat-bubble" id="chatBubble">
-    <p data-i18n="chat_greeting">👋 مرحباً! هل تحتاج مساعدة في اختيار منتج؟</p>
-    <a href="https://t.me/NeoPulseBot" target="_blank" rel="noopener" data-i18n="chat_btn">🤖 تحدث مع مساعد AI</a>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+      <span style="font-weight: bold;">🤖 مساعد NEO PULSE</span>
+      <button onclick="toggleChat()" style="background: none; border: none; color: #fff; font-size: 18px; cursor: pointer;">✕</button>
+    </div>
+    <div id="chatMessages">
+      <div style="color: #60a5fa;">🤖 مرحباً! كيف يمكنني مساعدتك اليوم؟</div>
+    </div>
+    <div style="display: flex; gap: 8px; margin-top: 10px;">
+      <input type="text" id="chatInput" placeholder="اكتب سؤالك...">
+      <button class="send-btn" onclick="sendChatMessage()">إرسال</button>
+    </div>
   </div>
   <button class="chat-btn" onclick="toggleChat()" aria-label="AI Chat">🤖</button>
 </div>
@@ -333,7 +343,10 @@ html[dir="rtl"] .toast{left:2rem} html[dir="ltr"] .toast{right:2rem}
 
 const AMAZON_TAG = 'neopulsehub-20';
 const MANAGER_URL = 'https://neo-pulse-manager.onrender.com';
-const API_BASE = '';
+
+let lang = localStorage.getItem('nph_lang') || 'ar';
+let PRODUCTS = [];
+let currentFilter = 'featured';
 
 const T = {
   ar: {
@@ -392,443 +405,102 @@ const T = {
   }
 };
 
-let lang = localStorage.getItem('nph_lang') || 'ar';
-let PRODUCTS = [];
-let currentFilter = 'featured';
+// شات بوت داخلي
+function toggleChat() {
+  const bubble = document.getElementById('chatBubble');
+  if (bubble) bubble.classList.toggle('show');
+}
 
-async function callManager(endpoint, data = {}) {
+async function sendChatMessage() {
+  const input = document.getElementById('chatInput');
+  const message = input.value.trim();
+  if (!message) return;
+  
+  const messagesDiv = document.getElementById('chatMessages');
+  messagesDiv.innerHTML += `<div style="text-align: right; margin: 5px 0; padding: 6px 10px; background: rgba(59,130,246,.2); border-radius: 10px;">👤 ${message}</div>`;
+  input.value = '';
+  messagesDiv.scrollTop = messagesDiv.scrollHeight;
+  
+  const loadingId = 'loading-' + Date.now();
+  messagesDiv.innerHTML += `<div id="${loadingId}" style="margin: 5px 0; padding: 6px 10px; background: rgba(96,165,250,.1); border-radius: 10px;"><span style="color:#60a5fa;">🤖</span> جاري الرد...</div>`;
+  messagesDiv.scrollTop = messagesDiv.scrollHeight;
+  
   try {
-    const response = await fetch(`${MANAGER_URL}${endpoint}`, {
+    const response = await fetch(`${MANAGER_URL}/api/chat`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data)
+      body: JSON.stringify({ message: message })
     });
-    return await response.json();
-  } catch (error) {
-    console.error('Manager error:', error);
-    return { success: false, error: error.message };
-  }
-}
-
-async function sendMessageToAI(message, userId = 'guest') {
-  try {
-    const result = await callManager('/api/chat', { message, userId });
-    return result.answer || 'عذراً، حدث خطأ في الرد';
-  } catch (error) {
-    console.error('AI Error:', error);
-    return 'عذراً، حدث خطأ في الاتصال. حاول مرة أخرى.';
-  }
-}
-
-window.sendToAI = sendMessageToAI;
-
-// 50 منتج كامل
-async function loadProducts() {
-  const grid = document.getElementById('productsGrid');
-  
-  PRODUCTS = [
-    {
-      "id": "NPH-001", "name": { "ar": "Apple Watch Series 9 - 45 ملم", "en": "Apple Watch Series 9 45mm GPS" },
-      "category": "smartwatch", "category_ar": "ساعات ذكية", "category_en": "Smart Watches",
-      "price": 399, "original_price": 449, "discount": 11, "rating": 4.8, "reviews": 12430,
-      "image": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=600&q=80",
-      "badge": { "ar": "الأكثر مبيعاً", "en": "Best Seller" }, "featured": true,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0CHX8SZQS?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-002", "name": { "ar": "سامسونج Galaxy Watch 6 Classic - 47 ملم", "en": "Samsung Galaxy Watch 6 Classic 47mm" },
-      "category": "smartwatch", "category_ar": "ساعات ذكية", "category_en": "Smart Watches",
-      "price": 299, "original_price": 349, "discount": 14, "rating": 4.7, "reviews": 8920,
-      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80",
-      "badge": { "ar": "جديد", "en": "New" }, "featured": true,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0C797YFCF?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-003", "name": { "ar": "نظارات Ray-Ban Meta الذكية", "en": "Ray-Ban Meta Smart Glasses Gen 2" },
-      "category": "smart-glasses", "category_ar": "نظارات ذكية", "category_en": "Smart Glasses",
-      "price": 299, "original_price": 329, "discount": 9, "rating": 4.5, "reviews": 5640,
-      "image": "https://images.unsplash.com/photo-1574482620811-1aa16ffe3c82?w=600&q=80",
-      "badge": { "ar": "الأكثر طلباً", "en": "Most Wanted" }, "featured": true,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0CJNM6TMP?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-004", "name": { "ar": "Fitbit Charge 6 - متتبع اللياقة", "en": "Fitbit Charge 6 Fitness Tracker" },
-      "category": "health", "category_ar": "الصحة الذكية", "category_en": "Smart Health",
-      "price": 149, "original_price": 179, "discount": 17, "rating": 4.6, "reviews": 15200,
-      "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&q=80",
-      "badge": { "ar": "خصم 17%", "en": "17% OFF" }, "featured": true,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0CDW4RJKT?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-005", "name": { "ar": "AirPods Pro الجيل الثاني", "en": "Apple AirPods Pro 2nd Generation" },
-      "category": "earbuds", "category_ar": "سماعات ذكية", "category_en": "Smart Earbuds",
-      "price": 249, "original_price": 279, "discount": 11, "rating": 4.9, "reviews": 28900,
-      "image": "https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?w=600&q=80",
-      "badge": { "ar": "الأفضل تقييماً", "en": "Top Rated" }, "featured": true,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0BDHWDR12?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-006", "name": { "ar": "Amazon Echo Show 10 - شاشة ذكية", "en": "Amazon Echo Show 10 Smart Display" },
-      "category": "smart-home", "category_ar": "المنزل الذكي", "category_en": "Smart Home",
-      "price": 249, "original_price": 279, "discount": 11, "rating": 4.7, "reviews": 9870,
-      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-      "badge": { "ar": "أمازون", "en": "Amazon" }, "featured": true,
-      "affiliate_amazon": "https://www.amazon.com/dp/B07VHZ41L8?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-007", "name": { "ar": "Garmin Venu 3 - ساعة رياضية", "en": "Garmin Venu 3 GPS Smartwatch" },
-      "category": "smartwatch", "category_ar": "ساعات ذكية", "category_en": "Smart Watches",
-      "price": 449, "original_price": 499, "discount": 10, "rating": 4.8, "reviews": 4320,
-      "image": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=600&q=80",
-      "badge": { "ar": "رياضي", "en": "Sports" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0CD8JBGV4?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-008", "name": { "ar": "Sony WH-1000XM5 - سماعات لاسلكية", "en": "Sony WH-1000XM5 Wireless Headphones" },
-      "category": "earbuds", "category_ar": "سماعات ذكية", "category_en": "Smart Earbuds",
-      "price": 349, "original_price": 399, "discount": 13, "rating": 4.8, "reviews": 18560,
-      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80",
-      "badge": { "ar": "سوني", "en": "Sony" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B09XS7JWHH?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-009", "name": { "ar": "Withings Body+ - ميزان ذكي", "en": "Withings Body+ Smart Scale WiFi" },
-      "category": "health", "category_ar": "الصحة الذكية", "category_en": "Smart Health",
-      "price": 99, "original_price": 129, "discount": 23, "rating": 4.5, "reviews": 7840,
-      "image": "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=600&q=80",
-      "badge": { "ar": "خصم 23%", "en": "23% OFF" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B071XW4C5Q?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-010", "name": { "ar": "Google Nest Thermostat - ترموستات ذكي", "en": "Google Nest Smart Thermostat" },
-      "category": "smart-home", "category_ar": "المنزل الذكي", "category_en": "Smart Home",
-      "price": 129, "original_price": 149, "discount": 13, "rating": 4.6, "reviews": 11200,
-      "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80",
-      "badge": { "ar": "جوجل", "en": "Google" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B09QYVQX7Z?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-011", "name": { "ar": "Amazfit GTR 4 - ساعة ذكية", "en": "Amazfit GTR 4 Smartwatch GPS" },
-      "category": "smartwatch", "category_ar": "ساعات ذكية", "category_en": "Smart Watches",
-      "price": 149, "original_price": 199, "discount": 25, "rating": 4.4, "reviews": 6780,
-      "image": "https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?w=600&q=80",
-      "badge": { "ar": "قيمة ممتازة", "en": "Great Value" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0B8V7CNPK?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-012", "name": { "ar": "Oura Ring Gen 3 - خاتم ذكي", "en": "Oura Ring Gen 3 Smart Ring" },
-      "category": "health", "category_ar": "الصحة الذكية", "category_en": "Smart Health",
-      "price": 299, "original_price": 349, "discount": 14, "rating": 4.3, "reviews": 3450,
-      "image": "https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?w=600&q=80",
-      "badge": { "ar": "ابتكار", "en": "Innovation" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B09KVJLQ1J?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-013", "name": { "ar": "Samsung Galaxy Buds2 Pro - سماعات لاسلكية", "en": "Samsung Galaxy Buds2 Pro Wireless Earbuds" },
-      "category": "earbuds", "category_ar": "سماعات ذكية", "category_en": "Smart Earbuds",
-      "price": 179, "original_price": 229, "discount": 22, "rating": 4.6, "reviews": 13450,
-      "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&q=80",
-      "badge": { "ar": "خصم 22%", "en": "22% OFF" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0B2HKQTY2?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-014", "name": { "ar": "TP-Link Kasa - مقبس ذكي 4 قطع", "en": "TP-Link Kasa Smart Plug 4-Pack" },
-      "category": "smart-home", "category_ar": "المنزل الذكي", "category_en": "Smart Home",
-      "price": 39, "original_price": 59, "discount": 34, "rating": 4.7, "reviews": 22100,
-      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-      "badge": { "ar": "صفقة اليوم", "en": "Deal" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B07RCNB2L3?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-015", "name": { "ar": "Beats Studio Pro - سماعات احترافية", "en": "Beats Studio Pro Wireless Headphones" },
-      "category": "earbuds", "category_ar": "سماعات ذكية", "category_en": "Smart Earbuds",
-      "price": 299, "original_price": 349, "discount": 14, "rating": 4.5, "reviews": 7820,
-      "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&q=80",
-      "badge": { "ar": "بيتس", "en": "Beats" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0C4BWMD4F?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-016", "name": { "ar": "Xiaomi Mi Band 8 Pro - سوار ذكي", "en": "Xiaomi Smart Band 8 Pro" },
-      "category": "health", "category_ar": "الصحة الذكية", "category_en": "Smart Health",
-      "price": 59, "original_price": 79, "discount": 25, "rating": 4.4, "reviews": 34200,
-      "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&q=80",
-      "badge": { "ar": "الأرخص", "en": "Best Budget" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0CG4H4Y4T?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-017", "name": { "ar": "Logitech MX Master 3S - ماوس لاسلكي", "en": "Logitech MX Master 3S Wireless Mouse" },
-      "category": "productivity", "category_ar": "الإنتاجية", "category_en": "Productivity",
-      "price": 99, "original_price": 119, "discount": 17, "rating": 4.9, "reviews": 16780,
-      "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=600&q=80",
-      "badge": { "ar": "للمحترفين", "en": "Pro" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B09HM94VDS?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-018", "name": { "ar": "Philips Hue - إضاءة ذكية Starter Kit", "en": "Philips Hue Smart Lighting Starter Kit" },
-      "category": "smart-home", "category_ar": "المنزل الذكي", "category_en": "Smart Home",
-      "price": 179, "original_price": 219, "discount": 18, "rating": 4.6, "reviews": 8920,
-      "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=600&q=80",
-      "badge": { "ar": "إضاءة ذكية", "en": "Smart Light" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B07PHKCL7D?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-019", "name": { "ar": "Whoop 4.0 - متتبع صحة متقدم", "en": "Whoop 4.0 Health Performance Tracker" },
-      "category": "health", "category_ar": "الصحة الذكية", "category_en": "Smart Health",
-      "price": 239, "original_price": 269, "discount": 11, "rating": 4.2, "reviews": 4560,
-      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80",
-      "badge": { "ar": "رياضي متقدم", "en": "Advanced Athlete" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B09HK3TRSL?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-020", "name": { "ar": "Keychron K2 Pro - لوحة مفاتيح ميكانيكية", "en": "Keychron K2 Pro Mechanical Keyboard" },
-      "category": "productivity", "category_ar": "الإنتاجية", "category_en": "Productivity",
-      "price": 109, "original_price": 129, "discount": 16, "rating": 4.8, "reviews": 9340,
-      "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600&q=80",
-      "badge": { "ar": "ميكانيكي", "en": "Mechanical" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B09ZWB1FGN?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-021", "name": { "ar": "Ring Video Doorbell 4 - جرس باب ذكي", "en": "Ring Video Doorbell 4" },
-      "category": "smart-home", "category_ar": "المنزل الذكي", "category_en": "Smart Home",
-      "price": 179, "original_price": 219, "discount": 18, "rating": 4.5, "reviews": 19870,
-      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-      "badge": { "ar": "أمان منزلي", "en": "Home Security" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B08N5NQ69J?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-022", "name": { "ar": "Tile Mate 4-Pack - متتبع بلوتوث", "en": "Tile Mate Bluetooth Tracker 4-Pack" },
-      "category": "productivity", "category_ar": "الإنتاجية", "category_en": "Productivity",
-      "price": 69, "original_price": 89, "discount": 22, "rating": 4.4, "reviews": 28400,
-      "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80",
-      "badge": { "ar": "لا تضيع أشياءك", "en": "Never Lose Things" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B09B2R44GF?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-023", "name": { "ar": "Polar H10 - حزام مراقبة ضربات القلب", "en": "Polar H10 Heart Rate Monitor Chest Strap" },
-      "category": "health", "category_ar": "الصحة الذكية", "category_en": "Smart Health",
-      "price": 89, "original_price": 109, "discount": 18, "rating": 4.7, "reviews": 12300,
-      "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80",
-      "badge": { "ar": "دقة طبية", "en": "Medical Grade" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B01N9UWXIP?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-024", "name": { "ar": "Anker Soundcore Liberty 4 NC - سماعات", "en": "Anker Soundcore Liberty 4 NC Earbuds" },
-      "category": "earbuds", "category_ar": "سماعات ذكية", "category_en": "Smart Earbuds",
-      "price": 79, "original_price": 99, "discount": 20, "rating": 4.5, "reviews": 11890,
-      "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&q=80",
-      "badge": { "ar": "قيمة مذهلة", "en": "Amazing Value" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0BS4LNVMY?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-025", "name": { "ar": "iPad Pro M4 - 11 بوصة", "en": "Apple iPad Pro M4 11-inch WiFi" },
-      "category": "productivity", "category_ar": "الإنتاجية", "category_en": "Productivity",
-      "price": 999, "original_price": 1099, "discount": 9, "rating": 4.8, "reviews": 5670,
-      "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=600&q=80",
-      "badge": { "ar": "M4 Chip", "en": "M4 Chip" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0D3J9XDMQ?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-026", "name": { "ar": "Eufy Security SoloCam C3 - كاميرا ذكية", "en": "Eufy Security SoloCam C3 Wireless" },
-      "category": "smart-home", "category_ar": "المنزل الذكي", "category_en": "Smart Home",
-      "price": 99, "original_price": 129, "discount": 23, "rating": 4.4, "reviews": 7230,
-      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-      "badge": { "ar": "كاميرا AI", "en": "AI Camera" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0BNY98CHN?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-027", "name": { "ar": "Meta Quest 3S - نظارات الواقع المختلط", "en": "Meta Quest 3S VR Headset 128GB" },
-      "category": "smart-glasses", "category_ar": "نظارات ذكية", "category_en": "Smart Glasses",
-      "price": 299, "original_price": 349, "discount": 14, "rating": 4.6, "reviews": 8910,
-      "image": "https://images.unsplash.com/photo-1626379953822-baec19c3accd?w=600&q=80",
-      "badge": { "ar": "VR متقدم", "en": "Advanced VR" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0CXHPZL71?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-028", "name": { "ar": "Jabra Evolve2 85 - سماعة رأس للعمل", "en": "Jabra Evolve2 85 Professional Headset" },
-      "category": "productivity", "category_ar": "الإنتاجية", "category_en": "Productivity",
-      "price": 379, "original_price": 449, "discount": 16, "rating": 4.7, "reviews": 4320,
-      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80",
-      "badge": { "ar": "للعمل", "en": "Office Pro" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B09BDNCWY3?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-029", "name": { "ar": "SwitchBot Lock - قفل ذكي بصمة", "en": "SwitchBot Smart Lock Pro Fingerprint" },
-      "category": "smart-home", "category_ar": "المنزل الذكي", "category_en": "Smart Home",
-      "price": 139, "original_price": 169, "discount": 18, "rating": 4.4, "reviews": 5670,
-      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-      "badge": { "ar": "أمان ذكي", "en": "Smart Security" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0BZGM87PJ?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-030", "name": { "ar": "Withings ScanWatch 2 - ساعة طبية معتمدة", "en": "Withings ScanWatch 2 Medical Smartwatch" },
-      "category": "health", "category_ar": "الصحة الذكية", "category_en": "Smart Health",
-      "price": 349, "original_price": 399, "discount": 13, "rating": 4.6, "reviews": 3210,
-      "image": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=600&q=80",
-      "badge": { "ar": "طبي معتمد", "en": "Medical Grade" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0CF3GFMHW?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-031", "name": { "ar": "DJI Mini 4 Pro - طائرة درون ميني", "en": "DJI Mini 4 Pro Compact Drone" },
-      "category": "smart-glasses", "category_ar": "كاميرات وطائرات", "category_en": "Drones & Cameras",
-      "price": 759, "original_price": 899, "discount": 16, "rating": 4.8, "reviews": 2340,
-      "image": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&q=80",
-      "badge": { "ar": "طيار محترف", "en": "Pro Drone" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0C4FL89KJ?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-032", "name": { "ar": "Kindle Scribe - قارئ كتب إلكتروني بقلم", "en": "Kindle Scribe E-reader with Stylus" },
-      "category": "productivity", "category_ar": "الإنتاجية", "category_en": "Productivity",
-      "price": 309, "original_price": 369, "discount": 16, "rating": 4.5, "reviews": 8900,
-      "image": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&q=80",
-      "badge": { "ar": "للقراء", "en": "For Readers" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B09SJRN2WX?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-033", "name": { "ar": "Roborock S8 Pro Ultra - مكنسة روبوت", "en": "Roborock S8 Pro Ultra Robot Vacuum" },
-      "category": "smart-home", "category_ar": "المنزل الذكي", "category_en": "Smart Home",
-      "price": 1199, "original_price": 1399, "discount": 14, "rating": 4.7, "reviews": 4560,
-      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-      "badge": { "ar": "أفضل تنظيف", "en": "Best Cleaning" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0C1J3XK5H?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-034", "name": { "ar": "Samsung Galaxy Tab S9 Ultra", "en": "Samsung Galaxy Tab S9 Ultra" },
-      "category": "productivity", "category_ar": "الإنتاجية", "category_en": "Productivity",
-      "price": 1099, "original_price": 1199, "discount": 8, "rating": 4.6, "reviews": 6780,
-      "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=600&q=80",
-      "badge": { "ar": "شاشة عملاقة", "en": "Giant Screen" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0C9S3CCZV?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-035", "name": { "ar": "Bose QuietComfort Ultra - سماعات لاسلكية", "en": "Bose QuietComfort Ultra Earbuds" },
-      "category": "earbuds", "category_ar": "سماعات ذكية", "category_en": "Smart Earbuds",
-      "price": 299, "original_price": 349, "discount": 14, "rating": 4.4, "reviews": 5430,
-      "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&q=80",
-      "badge": { "ar": "صوت مكاني", "en": "Spatial Audio" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0CCZ2K33P?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-036", "name": { "ar": "Apple Watch Ultra 2 - للمغامرات", "en": "Apple Watch Ultra 2 GPS + Cellular" },
-      "category": "smartwatch", "category_ar": "ساعات ذكية", "category_en": "Smart Watches",
-      "price": 799, "original_price": 899, "discount": 11, "rating": 4.9, "reviews": 9870,
-      "image": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=600&q=80",
-      "badge": { "ar": "مقاوم للصدمات", "en": "Rugged" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0CM5JV468?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-037", "name": { "ar": "Sonos Era 300 - سبيكر ذكي", "en": "Sonos Era 300 Smart Speaker" },
-      "category": "smart-home", "category_ar": "المنزل الذكي", "category_en": "Smart Home",
-      "price": 449, "original_price": 499, "discount": 10, "rating": 4.7, "reviews": 3210,
-      "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&q=80",
-      "badge": { "ar": "صوت محيطي", "en": "Surround Sound" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0BWFGKZL7?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-038", "name": { "ar": "Razer BlackWidow V4 - لوحة مفاتيح ألعاب", "en": "Razer BlackWidow V4 Gaming Keyboard" },
-      "category": "productivity", "category_ar": "الإنتاجية والألعاب", "category_en": "Productivity & Gaming",
-      "price": 169, "original_price": 199, "discount": 15, "rating": 4.6, "reviews": 7650,
-      "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600&q=80",
-      "badge": { "ar": "للألعاب", "en": "Gaming" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0C2RGSHJG?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-039", "name": { "ar": "Wyze Cam Pan v3 - كاميرا مراقبة", "en": "Wyze Cam Pan v3 Security Camera" },
-      "category": "smart-home", "category_ar": "المنزل الذكي", "category_en": "Smart Home",
-      "price": 39, "original_price": 59, "discount": 34, "rating": 4.5, "reviews": 19200,
-      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-      "badge": { "ar": "سعر ممتاز", "en": "Best Price" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0BN2ZSL4N?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-040", "name": { "ar": "Sennheiser Momentum 4 - سماعات فوق الأذن", "en": "Sennheiser Momentum 4 Wireless" },
-      "category": "earbuds", "category_ar": "سماعات ذكية", "category_en": "Smart Earbuds",
-      "price": 249, "original_price": 299, "discount": 17, "rating": 4.6, "reviews": 8120,
-      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80",
-      "badge": { "ar": "بطارية 60 ساعة", "en": "60h Battery" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0B1HMTRCN?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-041", "name": { "ar": "DJI Pocket 3 - كاميرا محمولة", "en": "DJI Pocket 3 Handheld Gimbal Camera" },
-      "category": "smart-glasses", "category_ar": "كاميرات ذكية", "category_en": "Smart Cameras",
-      "price": 519, "original_price": 619, "discount": 16, "rating": 4.8, "reviews": 4530,
-      "image": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=600&q=80",
-      "badge": { "ar": "يوتيوبرز", "en": "Vloggers" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0CM5JV468?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-042", "name": { "ar": "Ember Mug 2 - كوب ذكي حافظ للحرارة", "en": "Ember Temperature Control Smart Mug 2" },
-      "category": "productivity", "category_ar": "الإنتاجية", "category_en": "Productivity",
-      "price": 129, "original_price": 149, "discount": 13, "rating": 4.3, "reviews": 11200,
-      "image": "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=600&q=80",
-      "badge": { "ar": "قهوة ساخنة دائماً", "en": "Always Hot" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B08F7PT5S3?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-043", "name": { "ar": "Nanoleaf Shapes - ألواح إضاءة ذكية", "en": "Nanoleaf Shapes Hexagon Smart Panels" },
-      "category": "smart-home", "category_ar": "المنزل الذكي", "category_en": "Smart Home",
-      "price": 199, "original_price": 239, "discount": 17, "rating": 4.4, "reviews": 5670,
-      "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=600&q=80",
-      "badge": { "ar": "ديكور ذكي", "en": "Smart Decor" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B08PZK3LZ3?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-044", "name": { "ar": "Garmin Dash Cam Mini 2 - كاميرا سيارة", "en": "Garmin Dash Cam Mini 2" },
-      "category": "smart-home", "category_ar": "المنزل والسيارة", "category_en": "Home & Car Tech",
-      "price": 129, "original_price": 149, "discount": 13, "rating": 4.6, "reviews": 14500,
-      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-      "badge": { "ar": "أمان سيارتك", "en": "Car Security" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B09WN2G2F3?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-045", "name": { "ar": "Nothing Ear (2) - سماعات شفافة", "en": "Nothing Ear (2) True Wireless Earbuds" },
-      "category": "earbuds", "category_ar": "سماعات ذكية", "category_en": "Smart Earbuds",
-      "price": 149, "original_price": 179, "discount": 17, "rating": 4.5, "reviews": 6340,
-      "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&q=80",
-      "badge": { "ar": "تصميم فريد", "en": "Unique Design" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0C1H23Y5L?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-046", "name": { "ar": "Apple Magic Keyboard لـ iPad Pro", "en": "Apple Magic Keyboard for iPad Pro M4" },
-      "category": "productivity", "category_ar": "الإنتاجية", "category_en": "Productivity",
-      "price": 299, "original_price": 349, "discount": 14, "rating": 4.7, "reviews": 7890,
-      "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600&q=80",
-      "badge": { "ar": "لوحة مفاتيح آبل", "en": "Apple Keyboard" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0D3J9XDMQ?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-047", "name": { "ar": "Awair Element - مراقب جودة الهواء", "en": "Awair Element 2nd Gen Air Quality Monitor" },
-      "category": "smart-home", "category_ar": "المنزل الذكي", "category_en": "Smart Home",
-      "price": 149, "original_price": 179, "discount": 17, "rating": 4.5, "reviews": 4320,
-      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-      "badge": { "ar": "صحة الهواء", "en": "Air Health" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B09T5LZK7J?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-048", "name": { "ar": "Samsung T7 Shield - قرص صلب خارجي 2TB", "en": "Samsung T7 Shield Portable SSD 2TB" },
-      "category": "productivity", "category_ar": "الإنتاجية", "category_en": "Productivity",
-      "price": 159, "original_price": 189, "discount": 16, "rating": 4.8, "reviews": 32100,
-      "image": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=600&q=80",
-      "badge": { "ar": "سعة 2 تيرابايت", "en": "2TB Storage" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0B3SZL5QF?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-049", "name": { "ar": "Marshall Stanmore III - سبيكر كلاسيكي", "en": "Marshall Stanmore III Bluetooth Speaker" },
-      "category": "smart-home", "category_ar": "المنزل الذكي", "category_en": "Smart Home",
-      "price": 379, "original_price": 429, "discount": 12, "rating": 4.8, "reviews": 6540,
-      "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&q=80",
-      "badge": { "ar": "صوت كلاسيكي", "en": "Classic Sound" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0BW1T37SN?tag=neopulsehub-20"
-    },
-    {
-      "id": "NPH-050", "name": { "ar": "Framework Laptop 13 - لابتوب قابل للإصلاح", "en": "Framework Laptop 13 DIY Edition" },
-      "category": "productivity", "category_ar": "الإنتاجية", "category_en": "Productivity",
-      "price": 849, "original_price": 999, "discount": 15, "rating": 4.6, "reviews": 3210,
-      "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&q=80",
-      "badge": { "ar": "صديق البيئة", "en": "Eco-Friendly" }, "featured": false,
-      "affiliate_amazon": "https://www.amazon.com/dp/B0C3S4K7Y5?tag=neopulsehub-20"
+    const data = await response.json();
+    const loadingEl = document.getElementById(loadingId);
+    if (loadingEl) {
+      loadingEl.innerHTML = `<span style="color:#60a5fa;">🤖</span> ${data.answer || 'عذراً، حدث خطأ'}`;
     }
-  ];
-  
+  } catch (error) {
+    const loadingEl = document.getElementById(loadingId);
+    if (loadingEl) {
+      loadingEl.innerHTML = `<span style="color:#ef4444;">🤖</span> عذراً، حدث خطأ في الاتصال`;
+    }
+  }
+  messagesDiv.scrollTop = messagesDiv.scrollHeight;
+}
+
+// 50 منتج
+const PRODUCTS_LIST = [
+  { "id": "NPH-001", "name": { "ar": "Apple Watch Series 9 - 45 ملم", "en": "Apple Watch Series 9 45mm GPS" }, "category": "smartwatch", "category_ar": "ساعات ذكية", "category_en": "Smart Watches", "price": 399, "original_price": 449, "discount": 11, "rating": 4.8, "reviews": 12430, "image": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=600&q=80", "badge": { "ar": "الأكثر مبيعاً", "en": "Best Seller" }, "featured": true, "affiliate_amazon": "https://www.amazon.com/dp/B0CHX8SZQS?tag=neopulsehub-20" },
+  { "id": "NPH-002", "name": { "ar": "سامسونج Galaxy Watch 6 Classic - 47 ملم", "en": "Samsung Galaxy Watch 6 Classic 47mm" }, "category": "smartwatch", "category_ar": "ساعات ذكية", "category_en": "Smart Watches", "price": 299, "original_price": 349, "discount": 14, "rating": 4.7, "reviews": 8920, "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80", "badge": { "ar": "جديد", "en": "New" }, "featured": true, "affiliate_amazon": "https://www.amazon.com/dp/B0C797YFCF?tag=neopulsehub-20" },
+  { "id": "NPH-003", "name": { "ar": "نظارات Ray-Ban Meta الذكية", "en": "Ray-Ban Meta Smart Glasses Gen 2" }, "category": "smart-glasses", "category_ar": "نظارات ذكية", "category_en": "Smart Glasses", "price": 299, "original_price": 329, "discount": 9, "rating": 4.5, "reviews": 5640, "image": "https://images.unsplash.com/photo-1574482620811-1aa16ffe3c82?w=600&q=80", "badge": { "ar": "الأكثر طلباً", "en": "Most Wanted" }, "featured": true, "affiliate_amazon": "https://www.amazon.com/dp/B0CJNM6TMP?tag=neopulsehub-20" },
+  { "id": "NPH-004", "name": { "ar": "Fitbit Charge 6 - متتبع اللياقة", "en": "Fitbit Charge 6 Fitness Tracker" }, "category": "health", "category_ar": "الصحة الذكية", "category_en": "Smart Health", "price": 149, "original_price": 179, "discount": 17, "rating": 4.6, "reviews": 15200, "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&q=80", "badge": { "ar": "خصم 17%", "en": "17% OFF" }, "featured": true, "affiliate_amazon": "https://www.amazon.com/dp/B0CDW4RJKT?tag=neopulsehub-20" },
+  { "id": "NPH-005", "name": { "ar": "AirPods Pro الجيل الثاني", "en": "Apple AirPods Pro 2nd Generation" }, "category": "earbuds", "category_ar": "سماعات ذكية", "category_en": "Smart Earbuds", "price": 249, "original_price": 279, "discount": 11, "rating": 4.9, "reviews": 28900, "image": "https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?w=600&q=80", "badge": { "ar": "الأفضل تقييماً", "en": "Top Rated" }, "featured": true, "affiliate_amazon": "https://www.amazon.com/dp/B0BDHWDR12?tag=neopulsehub-20" },
+  { "id": "NPH-006", "name": { "ar": "Amazon Echo Show 10 - شاشة ذكية", "en": "Amazon Echo Show 10 Smart Display" }, "category": "smart-home", "category_ar": "المنزل الذكي", "category_en": "Smart Home", "price": 249, "original_price": 279, "discount": 11, "rating": 4.7, "reviews": 9870, "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80", "badge": { "ar": "أمازون", "en": "Amazon" }, "featured": true, "affiliate_amazon": "https://www.amazon.com/dp/B07VHZ41L8?tag=neopulsehub-20" },
+  { "id": "NPH-007", "name": { "ar": "Garmin Venu 3 - ساعة رياضية", "en": "Garmin Venu 3 GPS Smartwatch" }, "category": "smartwatch", "category_ar": "ساعات ذكية", "category_en": "Smart Watches", "price": 449, "original_price": 499, "discount": 10, "rating": 4.8, "reviews": 4320, "image": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=600&q=80", "badge": { "ar": "رياضي", "en": "Sports" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B0CD8JBGV4?tag=neopulsehub-20" },
+  { "id": "NPH-008", "name": { "ar": "Sony WH-1000XM5 - سماعات لاسلكية", "en": "Sony WH-1000XM5 Wireless Headphones" }, "category": "earbuds", "category_ar": "سماعات ذكية", "category_en": "Smart Earbuds", "price": 349, "original_price": 399, "discount": 13, "rating": 4.8, "reviews": 18560, "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80", "badge": { "ar": "سوني", "en": "Sony" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B09XS7JWHH?tag=neopulsehub-20" },
+  { "id": "NPH-009", "name": { "ar": "Withings Body+ - ميزان ذكي", "en": "Withings Body+ Smart Scale WiFi" }, "category": "health", "category_ar": "الصحة الذكية", "category_en": "Smart Health", "price": 99, "original_price": 129, "discount": 23, "rating": 4.5, "reviews": 7840, "image": "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=600&q=80", "badge": { "ar": "خصم 23%", "en": "23% OFF" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B071XW4C5Q?tag=neopulsehub-20" },
+  { "id": "NPH-010", "name": { "ar": "Google Nest Thermostat - ترموستات ذكي", "en": "Google Nest Smart Thermostat" }, "category": "smart-home", "category_ar": "المنزل الذكي", "category_en": "Smart Home", "price": 129, "original_price": 149, "discount": 13, "rating": 4.6, "reviews": 11200, "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80", "badge": { "ar": "جوجل", "en": "Google" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B09QYVQX7Z?tag=neopulsehub-20" },
+  { "id": "NPH-011", "name": { "ar": "Amazfit GTR 4 - ساعة ذكية", "en": "Amazfit GTR 4 Smartwatch GPS" }, "category": "smartwatch", "category_ar": "ساعات ذكية", "category_en": "Smart Watches", "price": 149, "original_price": 199, "discount": 25, "rating": 4.4, "reviews": 6780, "image": "https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?w=600&q=80", "badge": { "ar": "قيمة ممتازة", "en": "Great Value" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B0B8V7CNPK?tag=neopulsehub-20" },
+  { "id": "NPH-012", "name": { "ar": "Oura Ring Gen 3 - خاتم ذكي", "en": "Oura Ring Gen 3 Smart Ring" }, "category": "health", "category_ar": "الصحة الذكية", "category_en": "Smart Health", "price": 299, "original_price": 349, "discount": 14, "rating": 4.3, "reviews": 3450, "image": "https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?w=600&q=80", "badge": { "ar": "ابتكار", "en": "Innovation" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B09KVJLQ1J?tag=neopulsehub-20" },
+  { "id": "NPH-013", "name": { "ar": "Samsung Galaxy Buds2 Pro - سماعات لاسلكية", "en": "Samsung Galaxy Buds2 Pro Wireless Earbuds" }, "category": "earbuds", "category_ar": "سماعات ذكية", "category_en": "Smart Earbuds", "price": 179, "original_price": 229, "discount": 22, "rating": 4.6, "reviews": 13450, "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&q=80", "badge": { "ar": "خصم 22%", "en": "22% OFF" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B0B2HKQTY2?tag=neopulsehub-20" },
+  { "id": "NPH-014", "name": { "ar": "TP-Link Kasa - مقبس ذكي 4 قطع", "en": "TP-Link Kasa Smart Plug 4-Pack" }, "category": "smart-home", "category_ar": "المنزل الذكي", "category_en": "Smart Home", "price": 39, "original_price": 59, "discount": 34, "rating": 4.7, "reviews": 22100, "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80", "badge": { "ar": "صفقة اليوم", "en": "Deal" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B07RCNB2L3?tag=neopulsehub-20" },
+  { "id": "NPH-015", "name": { "ar": "Beats Studio Pro - سماعات احترافية", "en": "Beats Studio Pro Wireless Headphones" }, "category": "earbuds", "category_ar": "سماعات ذكية", "category_en": "Smart Earbuds", "price": 299, "original_price": 349, "discount": 14, "rating": 4.5, "reviews": 7820, "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&q=80", "badge": { "ar": "بيتس", "en": "Beats" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B0C4BWMD4F?tag=neopulsehub-20" },
+  { "id": "NPH-016", "name": { "ar": "Xiaomi Mi Band 8 Pro - سوار ذكي", "en": "Xiaomi Smart Band 8 Pro" }, "category": "health", "category_ar": "الصحة الذكية", "category_en": "Smart Health", "price": 59, "original_price": 79, "discount": 25, "rating": 4.4, "reviews": 34200, "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&q=80", "badge": { "ar": "الأرخص", "en": "Best Budget" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B0CG4H4Y4T?tag=neopulsehub-20" },
+  { "id": "NPH-017", "name": { "ar": "Logitech MX Master 3S - ماوس لاسلكي", "en": "Logitech MX Master 3S Wireless Mouse" }, "category": "productivity", "category_ar": "الإنتاجية", "category_en": "Productivity", "price": 99, "original_price": 119, "discount": 17, "rating": 4.9, "reviews": 16780, "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=600&q=80", "badge": { "ar": "للمحترفين", "en": "Pro" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B09HM94VDS?tag=neopulsehub-20" },
+  { "id": "NPH-018", "name": { "ar": "Philips Hue - إضاءة ذكية Starter Kit", "en": "Philips Hue Smart Lighting Starter Kit" }, "category": "smart-home", "category_ar": "المنزل الذكي", "category_en": "Smart Home", "price": 179, "original_price": 219, "discount": 18, "rating": 4.6, "reviews": 8920, "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=600&q=80", "badge": { "ar": "إضاءة ذكية", "en": "Smart Light" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B07PHKCL7D?tag=neopulsehub-20" },
+  { "id": "NPH-019", "name": { "ar": "Whoop 4.0 - متتبع صحة متقدم", "en": "Whoop 4.0 Health Performance Tracker" }, "category": "health", "category_ar": "الصحة الذكية", "category_en": "Smart Health", "price": 239, "original_price": 269, "discount": 11, "rating": 4.2, "reviews": 4560, "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80", "badge": { "ar": "رياضي متقدم", "en": "Advanced Athlete" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B09HK3TRSL?tag=neopulsehub-20" },
+  { "id": "NPH-020", "name": { "ar": "Keychron K2 Pro - لوحة مفاتيح ميكانيكية", "en": "Keychron K2 Pro Mechanical Keyboard" }, "category": "productivity", "category_ar": "الإنتاجية", "category_en": "Productivity", "price": 109, "original_price": 129, "discount": 16, "rating": 4.8, "reviews": 9340, "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600&q=80", "badge": { "ar": "ميكانيكي", "en": "Mechanical" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B09ZWB1FGN?tag=neopulsehub-20" },
+  { "id": "NPH-021", "name": { "ar": "Ring Video Doorbell 4 - جرس باب ذكي", "en": "Ring Video Doorbell 4" }, "category": "smart-home", "category_ar": "المنزل الذكي", "category_en": "Smart Home", "price": 179, "original_price": 219, "discount": 18, "rating": 4.5, "reviews": 19870, "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80", "badge": { "ar": "أمان منزلي", "en": "Home Security" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B08N5NQ69J?tag=neopulsehub-20" },
+  { "id": "NPH-022", "name": { "ar": "Tile Mate 4-Pack - متتبع بلوتوث", "en": "Tile Mate Bluetooth Tracker 4-Pack" }, "category": "productivity", "category_ar": "الإنتاجية", "category_en": "Productivity", "price": 69, "original_price": 89, "discount": 22, "rating": 4.4, "reviews": 28400, "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80", "badge": { "ar": "لا تضيع أشياءك", "en": "Never Lose Things" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B09B2R44GF?tag=neopulsehub-20" },
+  { "id": "NPH-023", "name": { "ar": "Polar H10 - حزام مراقبة ضربات القلب", "en": "Polar H10 Heart Rate Monitor Chest Strap" }, "category": "health", "category_ar": "الصحة الذكية", "category_en": "Smart Health", "price": 89, "original_price": 109, "discount": 18, "rating": 4.7, "reviews": 12300, "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80", "badge": { "ar": "دقة طبية", "en": "Medical Grade" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B01N9UWXIP?tag=neopulsehub-20" },
+  { "id": "NPH-024", "name": { "ar": "Anker Soundcore Liberty 4 NC - سماعات", "en": "Anker Soundcore Liberty 4 NC Earbuds" }, "category": "earbuds", "category_ar": "سماعات ذكية", "category_en": "Smart Earbuds", "price": 79, "original_price": 99, "discount": 20, "rating": 4.5, "reviews": 11890, "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&q=80", "badge": { "ar": "قيمة مذهلة", "en": "Amazing Value" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B0BS4LNVMY?tag=neopulsehub-20" },
+  { "id": "NPH-025", "name": { "ar": "iPad Pro M4 - 11 بوصة", "en": "Apple iPad Pro M4 11-inch WiFi" }, "category": "productivity", "category_ar": "الإنتاجية", "category_en": "Productivity", "price": 999, "original_price": 1099, "discount": 9, "rating": 4.8, "reviews": 5670, "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=600&q=80", "badge": { "ar": "M4 Chip", "en": "M4 Chip" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B0D3J9XDMQ?tag=neopulsehub-20" },
+  { "id": "NPH-026", "name": { "ar": "Eufy Security SoloCam C3 - كاميرا ذكية", "en": "Eufy Security SoloCam C3 Wireless" }, "category": "smart-home", "category_ar": "المنزل الذكي", "category_en": "Smart Home", "price": 99, "original_price": 129, "discount": 23, "rating": 4.4, "reviews": 7230, "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80", "badge": { "ar": "كاميرا AI", "en": "AI Camera" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B0BNY98CHN?tag=neopulsehub-20" },
+  { "id": "NPH-027", "name": { "ar": "Meta Quest 3S - نظارات الواقع المختلط", "en": "Meta Quest 3S VR Headset 128GB" }, "category": "smart-glasses", "category_ar": "نظارات ذكية", "category_en": "Smart Glasses", "price": 299, "original_price": 349, "discount": 14, "rating": 4.6, "reviews": 8910, "image": "https://images.unsplash.com/photo-1626379953822-baec19c3accd?w=600&q=80", "badge": { "ar": "VR متقدم", "en": "Advanced VR" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B0CXHPZL71?tag=neopulsehub-20" },
+  { "id": "NPH-028", "name": { "ar": "Jabra Evolve2 85 - سماعة رأس للعمل", "en": "Jabra Evolve2 85 Professional Headset" }, "category": "productivity", "category_ar": "الإنتاجية", "category_en": "Productivity", "price": 379, "original_price": 449, "discount": 16, "rating": 4.7, "reviews": 4320, "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80", "badge": { "ar": "للعمل", "en": "Office Pro" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B09BDNCWY3?tag=neopulsehub-20" },
+  { "id": "NPH-029", "name": { "ar": "SwitchBot Lock - قفل ذكي بصمة", "en": "SwitchBot Smart Lock Pro Fingerprint" }, "category": "smart-home", "category_ar": "المنزل الذكي", "category_en": "Smart Home", "price": 139, "original_price": 169, "discount": 18, "rating": 4.4, "reviews": 5670, "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80", "badge": { "ar": "أمان ذكي", "en": "Smart Security" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B0BZGM87PJ?tag=neopulsehub-20" },
+  { "id": "NPH-030", "name": { "ar": "Withings ScanWatch 2 - ساعة طبية معتمدة", "en": "Withings ScanWatch 2 Medical Smartwatch" }, "category": "health", "category_ar": "الصحة الذكية", "category_en": "Smart Health", "price": 349, "original_price": 399, "discount": 13, "rating": 4.6, "reviews": 3210, "image": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=600&q=80", "badge": { "ar": "طبي معتمد", "en": "Medical Grade" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B0CF3GFMHW?tag=neopulsehub-20" },
+  { "id": "NPH-031", "name": { "ar": "DJI Mini 4 Pro - طائرة درون ميني", "en": "DJI Mini 4 Pro Compact Drone" }, "category": "smart-glasses", "category_ar": "كاميرات وطائرات", "category_en": "Drones & Cameras", "price": 759, "original_price": 899, "discount": 16, "rating": 4.8, "reviews": 2340, "image": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&q=80", "badge": { "ar": "طيار محترف", "en": "Pro Drone" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B0C4FL89KJ?tag=neopulsehub-20" },
+  { "id": "NPH-032", "name": { "ar": "Kindle Scribe - قارئ كتب إلكتروني بقلم", "en": "Kindle Scribe E-reader with Stylus" }, "category": "productivity", "category_ar": "الإنتاجية", "category_en": "Productivity", "price": 309, "original_price": 369, "discount": 16, "rating": 4.5, "reviews": 8900, "image": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&q=80", "badge": { "ar": "للقراء", "en": "For Readers" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B09SJRN2WX?tag=neopulsehub-20" },
+  { "id": "NPH-033", "name": { "ar": "Roborock S8 Pro Ultra - مكنسة روبوت", "en": "Roborock S8 Pro Ultra Robot Vacuum" }, "category": "smart-home", "category_ar": "المنزل الذكي", "category_en": "Smart Home", "price": 1199, "original_price": 1399, "discount": 14, "rating": 4.7, "reviews": 4560, "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80", "badge": { "ar": "أفضل تنظيف", "en": "Best Cleaning" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B0C1J3XK5H?tag=neopulsehub-20" },
+  { "id": "NPH-034", "name": { "ar": "Samsung Galaxy Tab S9 Ultra", "en": "Samsung Galaxy Tab S9 Ultra" }, "category": "productivity", "category_ar": "الإنتاجية", "category_en": "Productivity", "price": 1099, "original_price": 1199, "discount": 8, "rating": 4.6, "reviews": 6780, "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=600&q=80", "badge": { "ar": "شاشة عملاقة", "en": "Giant Screen" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B0C9S3CCZV?tag=neopulsehub-20" },
+  { "id": "NPH-035", "name": { "ar": "Bose QuietComfort Ultra - سماعات لاسلكية", "en": "Bose QuietComfort Ultra Earbuds" }, "category": "earbuds", "category_ar": "سماعات ذكية", "category_en": "Smart Earbuds", "price": 299, "original_price": 349, "discount": 14, "rating": 4.4, "reviews": 5430, "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&q=80", "badge": { "ar": "صوت مكاني", "en": "Spatial Audio" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B0CCZ2K33P?tag=neopulsehub-20" },
+  { "id": "NPH-036", "name": { "ar": "Apple Watch Ultra 2 - للمغامرات", "en": "Apple Watch Ultra 2 GPS + Cellular" }, "category": "smartwatch", "category_ar": "ساعات ذكية", "category_en": "Smart Watches", "price": 799, "original_price": 899, "discount": 11, "rating": 4.9, "reviews": 9870, "image": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=600&q=80", "badge": { "ar": "مقاوم للصدمات", "en": "Rugged" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B0CM5JV468?tag=neopulsehub-20" },
+  { "id": "NPH-037", "name": { "ar": "Sonos Era 300 - سبيكر ذكي", "en": "Sonos Era 300 Smart Speaker" }, "category": "smart-home", "category_ar": "المنزل الذكي", "category_en": "Smart Home", "price": 449, "original_price": 499, "discount": 10, "rating": 4.7, "reviews": 3210, "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&q=80", "badge": { "ar": "صوت محيطي", "en": "Surround Sound" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B0BWFGKZL7?tag=neopulsehub-20" },
+  { "id": "NPH-038", "name": { "ar": "Razer BlackWidow V4 - لوحة مفاتيح ألعاب", "en": "Razer BlackWidow V4 Gaming Keyboard" }, "category": "productivity", "category_ar": "الإنتاجية والألعاب", "category_en": "Productivity & Gaming", "price": 169, "original_price": 199, "discount": 15, "rating": 4.6, "reviews": 7650, "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600&q=80", "badge": { "ar": "للألعاب", "en": "Gaming" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B0C2RGSHJG?tag=neopulsehub-20" },
+  { "id": "NPH-039", "name": { "ar": "Wyze Cam Pan v3 - كاميرا مراقبة", "en": "Wyze Cam Pan v3 Security Camera" }, "category": "smart-home", "category_ar": "المنزل الذكي", "category_en": "Smart Home", "price": 39, "original_price": 59, "discount": 34, "rating": 4.5, "reviews": 19200, "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80", "badge": { "ar": "سعر ممتاز", "en": "Best Price" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B0BN2ZSL4N?tag=neopulsehub-20" },
+  { "id": "NPH-040", "name": { "ar": "Sennheiser Momentum 4 - سماعات فوق الأذن", "en": "Sennheiser Momentum 4 Wireless" }, "category": "earbuds", "category_ar": "سماعات ذكية", "category_en": "Smart Earbuds", "price": 249, "original_price": 299, "discount": 17, "rating": 4.6, "reviews": 8120, "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80", "badge": { "ar": "بطارية 60 ساعة", "en": "60h Battery" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B0B1HMTRCN?tag=neopulsehub-20" },
+  { "id": "NPH-041", "name": { "ar": "DJI Pocket 3 - كاميرا محمولة", "en": "DJI Pocket 3 Handheld Gimbal Camera" }, "category": "smart-glasses", "category_ar": "كاميرات ذكية", "category_en": "Smart Cameras", "price": 519, "original_price": 619, "discount": 16, "rating": 4.8, "reviews": 4530, "image": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=600&q=80", "badge": { "ar": "يوتيوبرز", "en": "Vloggers" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B0CM5JV468?tag=neopulsehub-20" },
+  { "id": "NPH-042", "name": { "ar": "Ember Mug 2 - كوب ذكي حافظ للحرارة", "en": "Ember Temperature Control Smart Mug 2" }, "category": "productivity", "category_ar": "الإنتاجية", "category_en": "Productivity", "price": 129, "original_price": 149, "discount": 13, "rating": 4.3, "reviews": 11200, "image": "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=600&q=80", "badge": { "ar": "قهوة ساخنة دائماً", "en": "Always Hot" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B08F7PT5S3?tag=neopulsehub-20" },
+  { "id": "NPH-043", "name": { "ar": "Nanoleaf Shapes - ألواح إضاءة ذكية", "en": "Nanoleaf Shapes Hexagon Smart Panels" }, "category": "smart-home", "category_ar": "المنزل الذكي", "category_en": "Smart Home", "price": 199, "original_price": 239, "discount": 17, "rating": 4.4, "reviews": 5670, "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=600&q=80", "badge": { "ar": "ديكور ذكي", "en": "Smart Decor" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B08PZK3LZ3?tag=neopulsehub-20" },
+  { "id": "NPH-044", "name": { "ar": "Garmin Dash Cam Mini 2 - كاميرا سيارة", "en": "Garmin Dash Cam Mini 2" }, "category": "smart-home", "category_ar": "المنزل والسيارة", "category_en": "Home & Car Tech", "price": 129, "original_price": 149, "discount": 13, "rating": 4.6, "reviews": 14500, "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80", "badge": { "ar": "أمان سيارتك", "en": "Car Security" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B09WN2G2F3?tag=neopulsehub-20" },
+  { "id": "NPH-045", "name": { "ar": "Nothing Ear (2) - سماعات شفافة", "en": "Nothing Ear (2) True Wireless Earbuds" }, "category": "earbuds", "category_ar": "سماعات ذكية", "category_en": "Smart Earbuds", "price": 149, "original_price": 179, "discount": 17, "rating": 4.5, "reviews": 6340, "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&q=80", "badge": { "ar": "تصميم فريد", "en": "Unique Design" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B0C1H23Y5L?tag=neopulsehub-20" },
+  { "id": "NPH-046", "name": { "ar": "Apple Magic Keyboard لـ iPad Pro", "en": "Apple Magic Keyboard for iPad Pro M4" }, "category": "productivity", "category_ar": "الإنتاجية", "category_en": "Productivity", "price": 299, "original_price": 349, "discount": 14, "rating": 4.7, "reviews": 7890, "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600&q=80", "badge": { "ar": "لوحة مفاتيح آبل", "en": "Apple Keyboard" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B0D3J9XDMQ?tag=neopulsehub-20" },
+  { "id": "NPH-047", "name": { "ar": "Awair Element - مراقب جودة الهواء", "en": "Awair Element 2nd Gen Air Quality Monitor" }, "category": "smart-home", "category_ar": "المنزل الذكي", "category_en": "Smart Home", "price": 149, "original_price": 179, "discount": 17, "rating": 4.5, "reviews": 4320, "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80", "badge": { "ar": "صحة الهواء", "en": "Air Health" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B09T5LZK7J?tag=neopulsehub-20" },
+  { "id": "NPH-048", "name": { "ar": "Samsung T7 Shield - قرص صلب خارجي 2TB", "en": "Samsung T7 Shield Portable SSD 2TB" }, "category": "productivity", "category_ar": "الإنتاجية", "category_en": "Productivity", "price": 159, "original_price": 189, "discount": 16, "rating": 4.8, "reviews": 32100, "image": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=600&q=80", "badge": { "ar": "سعة 2 تيرابايت", "en": "2TB Storage" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B0B3SZL5QF?tag=neopulsehub-20" },
+  { "id": "NPH-049", "name": { "ar": "Marshall Stanmore III - سبيكر كلاسيكي", "en": "Marshall Stanmore III Bluetooth Speaker" }, "category": "smart-home", "category_ar": "المنزل الذكي", "category_en": "Smart Home", "price": 379, "original_price": 429, "discount": 12, "rating": 4.8, "reviews": 6540, "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&q=80", "badge": { "ar": "صوت كلاسيكي", "en": "Classic Sound" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B0BW1T37SN?tag=neopulsehub-20" },
+  { "id": "NPH-050", "name": { "ar": "Framework Laptop 13 - لابتوب قابل للإصلاح", "en": "Framework Laptop 13 DIY Edition" }, "category": "productivity", "category_ar": "الإنتاجية", "category_en": "Productivity", "price": 849, "original_price": 999, "discount": 15, "rating": 4.6, "reviews": 3210, "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&q=80", "badge": { "ar": "صديق البيئة", "en": "Eco-Friendly" }, "featured": false, "affiliate_amazon": "https://www.amazon.com/dp/B0C3S4K7Y5?tag=neopulsehub-20" }
+];
+
+function loadProducts() {
+  PRODUCTS = PRODUCTS_LIST;
   updateCounts();
   renderProducts();
 }
@@ -889,7 +561,6 @@ function trackClick(platform, productId) {
       value: 1
     });
   }
-  console.log(`📊 Affiliate click: ${platform} → ${productId}`);
 }
 
 function applyLang(l) {
@@ -921,7 +592,7 @@ function updateCounts() {
     const el = document.getElementById('cnt-'+c);
     if(el) {
       const count = PRODUCTS.filter(p=>p.category===c).length;
-      el.textContent = count + (lang==='ar' ? ' منتجات' : ' products');
+      el.textContent = count;
     }
   });
 }
@@ -934,6 +605,7 @@ function toggleMenu() {
     document.body.style.overflow = d.classList.contains('open') ? 'hidden' : '';
   }
 }
+
 function closeMenu() {
   const h=document.getElementById('hamburger'), d=document.getElementById('mobileDrawer');
   if(h && d) {
@@ -941,10 +613,6 @@ function closeMenu() {
     d.classList.remove('open');
     document.body.style.overflow = '';
   }
-}
-function toggleChat() { 
-  const bubble = document.getElementById('chatBubble');
-  if(bubble) bubble.classList.toggle('show');
 }
 
 function subscribeEmail() {
@@ -1001,16 +669,6 @@ window.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   }, 100);
-  
-  setTimeout(() => {
-    const bubble = document.getElementById('chatBubble');
-    if(bubble) bubble.classList.add('show');
-  }, 6000);
-  
-  setTimeout(() => {
-    const bubble = document.getElementById('chatBubble');
-    if(bubble) bubble.classList.remove('show');
-  }, 11000);
   
   document.addEventListener('click', (e) => {
     const drawer = document.getElementById('mobileDrawer');
