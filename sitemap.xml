@@ -3,67 +3,67 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://neo-pulse-hub.it.com/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/products.html</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/about.html</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/contact.html</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/blog.html</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/faq.html</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/shipping.html</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/returns.html</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/privacy.html</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/terms.html</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-001</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -73,7 +73,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-002</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -83,7 +83,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-003</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -93,7 +93,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-004</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -103,7 +103,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-005</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -113,7 +113,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-006</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -123,7 +123,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-007</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -133,7 +133,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-008</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -143,7 +143,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-009</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -153,7 +153,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-010</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -163,7 +163,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-011</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -173,7 +173,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-012</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -183,7 +183,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-013</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -193,7 +193,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-014</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -203,7 +203,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-015</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -213,7 +213,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-016</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -223,7 +223,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-017</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -233,7 +233,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-018</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -243,7 +243,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-019</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -253,7 +253,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-020</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -263,7 +263,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-021</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -273,7 +273,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-022</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -283,7 +283,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-023</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -293,7 +293,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-024</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -303,7 +303,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-025</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -313,7 +313,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-026</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -323,7 +323,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-027</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -333,7 +333,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-028</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -343,7 +343,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-029</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -353,7 +353,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-030</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -363,7 +363,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-031</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -373,7 +373,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-032</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -383,7 +383,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-033</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -393,7 +393,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-034</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -403,7 +403,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-035</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -413,7 +413,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-036</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -423,7 +423,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-037</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -433,7 +433,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-038</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -443,7 +443,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-039</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -453,7 +453,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-040</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -463,7 +463,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-041</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -473,7 +473,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-042</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -483,7 +483,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-043</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -493,7 +493,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-044</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -503,7 +503,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-045</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -513,7 +513,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-046</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -523,7 +523,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-047</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -533,7 +533,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-048</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -543,7 +543,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-049</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -553,7 +553,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-050</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -563,7 +563,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-051</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -573,7 +573,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-052</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -583,7 +583,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-053</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -593,7 +593,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-054</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -603,7 +603,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-055</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -613,7 +613,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-056</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -623,7 +623,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-057</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -633,7 +633,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-058</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -643,7 +643,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-059</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -653,7 +653,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-060</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -663,7 +663,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-061</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -673,7 +673,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-062</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -683,7 +683,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-063</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -693,7 +693,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-064</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -703,7 +703,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-065</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -713,7 +713,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-066</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -723,7 +723,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-067</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -733,7 +733,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-068</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -743,7 +743,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-069</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -753,7 +753,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-070</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -763,7 +763,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-071</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -773,7 +773,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-072</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -783,7 +783,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-073</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -793,7 +793,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-074</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -803,7 +803,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-075</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -813,7 +813,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-076</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -823,7 +823,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-077</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -833,7 +833,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-078</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -843,7 +843,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-079</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -853,7 +853,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-080</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -863,7 +863,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-081</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -873,7 +873,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-082</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -883,7 +883,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-083</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -893,7 +893,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-084</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -903,7 +903,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-085</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -913,7 +913,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-086</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -923,7 +923,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-087</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -933,7 +933,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-088</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -943,7 +943,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-089</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -953,7 +953,7 @@
   </url>
   <url>
     <loc>https://neo-pulse-hub.it.com/product-detail.html?id=NPH-090</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
