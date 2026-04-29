@@ -3,17 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>المنتجات الحقيقية | NEO PULSE HUB</title>
+    <title>المنتجات | NEO PULSE HUB</title>
     <style>
-        :root {
-            --bg: #020510;
-            --surface: #0a0d1a;
-            --border: rgba(99, 179, 237, 0.12);
-            --blue: #3b82f6;
-            --cyan: #22d3ee;
-            --text: #e2e8f0;
-        }
-        
         * {
             margin: 0;
             padding: 0;
@@ -21,9 +12,9 @@
         }
         
         body {
-            font-family: 'Cairo', sans-serif;
-            background: var(--bg);
-            color: var(--text);
+            font-family: 'Cairo', 'Segoe UI', sans-serif;
+            background: #020510;
+            color: #e2e8f0;
         }
         
         .container {
@@ -32,39 +23,91 @@
             padding: 2rem;
         }
         
-        h1 {
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .header h1 {
             font-size: 2.5rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--blue), #7c3aed);
+            background: linear-gradient(135deg, #3b82f6, #7c3aed);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         
-        .update-info {
-            background: rgba(34, 211, 238, 0.1);
-            border: 1px solid var(--cyan);
-            padding: 1rem;
-            border-radius: 8px;
+        .language-toggle {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .lang-btn {
+            padding: 0.5rem 1rem;
+            background: rgba(59, 130, 246, 0.2);
+            border: 1px solid #3b82f6;
+            color: #3b82f6;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .lang-btn.active {
+            background: #3b82f6;
+            color: white;
+        }
+        
+        .sidebar {
+            display: flex;
+            gap: 2rem;
             margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .categories {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .category-btn {
+            padding: 0.7rem 1.5rem;
+            background: rgba(99, 179, 237, 0.1);
+            border: 1px solid rgba(99, 179, 237, 0.3);
+            color: #22d3ee;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
             font-size: 0.9rem;
+        }
+        
+        .category-btn:hover,
+        .category-btn.active {
+            background: #3b82f6;
+            border-color: #3b82f6;
+            color: white;
         }
         
         .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 2rem;
+            margin-top: 2rem;
         }
         
         .product-card {
-            background: var(--surface);
-            border: 1px solid var(--border);
+            background: rgba(10, 13, 26, 0.8);
+            border: 1px solid rgba(99, 179, 237, 0.2);
             border-radius: 12px;
             overflow: hidden;
             transition: all 0.3s;
+            position: relative;
         }
         
         .product-card:hover {
-            border-color: var(--blue);
+            border-color: #3b82f6;
             transform: translateY(-8px);
             box-shadow: 0 15px 40px rgba(59, 130, 246, 0.2);
         }
@@ -77,6 +120,7 @@
             align-items: center;
             justify-content: center;
             overflow: hidden;
+            position: relative;
         }
         
         .product-image img {
@@ -85,20 +129,40 @@
             object-fit: contain;
         }
         
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #ef4444;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+        
+        .badge.featured {
+            background: #8b5cf6;
+        }
+        
         .product-info {
             padding: 1.5rem;
         }
         
-        .product-name {
-            font-size: 1.1rem;
-            color: var(--cyan);
+        .product-category {
+            font-size: 0.75rem;
+            color: rgba(226, 232, 240, 0.6);
+            text-transform: uppercase;
+            letter-spacing: 1px;
             margin-bottom: 0.5rem;
         }
         
-        .product-source {
-            font-size: 0.8rem;
-            color: rgba(226, 232, 240, 0.5);
+        .product-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #22d3ee;
             margin-bottom: 0.5rem;
+            line-height: 1.3;
         }
         
         .product-rating {
@@ -109,181 +173,785 @@
             font-size: 0.9rem;
         }
         
-        .product-price {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--cyan);
+        .stars {
+            color: #fbbf24;
+        }
+        
+        .price-section {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
             margin-bottom: 1rem;
         }
         
-        .buy-button {
-            background: linear-gradient(135deg, var(--blue), #7c3aed);
+        .price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #22d3ee;
+        }
+        
+        .original-price {
+            font-size: 0.9rem;
+            color: rgba(226, 232, 240, 0.5);
+            text-decoration: line-through;
+        }
+        
+        .discount {
+            background: #ef4444;
             color: white;
-            padding: 0.8rem 1.5rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+        
+        .buy-button {
+            width: 100%;
+            padding: 0.8rem;
+            background: linear-gradient(135deg, #3b82f6, #7c3aed);
+            color: white;
+            border: none;
             border-radius: 8px;
-            text-decoration: none;
-            text-align: center;
             font-weight: 600;
-            display: block;
+            cursor: pointer;
             transition: all 0.3s;
+            font-size: 0.95rem;
         }
         
         .buy-button:hover {
-            transform: scale(1.05);
+            transform: scale(1.02);
             box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+        }
+        
+        .stock-info {
+            font-size: 0.8rem;
+            color: rgba(226, 232, 240, 0.5);
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .products-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 1rem;
+            }
+            
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
     </style>
 </head>
 <body>
 <div class="container">
-    <h1>🛍️ المنتجات الحقيقية المحدثة</h1>
-    <div class="update-info">
-        ✅ تم التحديث: 2026-04-29 19:11:28
-        <br>
-        📊 عدد المنتجات: 8
-        <br>
-        🔄 التحديث التالي: خلال 6 ساعات
+    <div class="header">
+        <h1>🛍️ المنتجات</h1>
+        <div class="language-toggle">
+            <button class="lang-btn active" onclick="switchLanguage('ar')">العربية</button>
+            <button class="lang-btn" onclick="switchLanguage('en')">English</button>
+        </div>
     </div>
     
-    <div class="products-grid">
-
-        <div class="product-card">
-            <div class="product-image">
-                <img src="https://www.apple.com/iphone-15/images/overview/hero/iphone15_pro_max__fv0oy9b2rlaa_large.jpg" alt="iPhone 15 Pro Max">
-            </div>
-            <div class="product-info">
-                <div class="product-source">📌 Apple Official</div>
-                <h3 class="product-name">iPhone 15 Pro Max</h3>
-                <div class="product-rating">
-                    <span>⭐⭐⭐⭐</span>
-                    <span>4.8/5</span>
-                    <span>(15,234 تقييم)</span>
-                </div>
-                <div class="product-price">$1199.99</div>
-                <a href="https://www.amazon.com/dp/B0CQSW5P6N?tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
-            </div>
+    <div class="sidebar">
+        <div class="categories">
+            <button class="category-btn active" onclick="filterCategory('all')">جميع المنتجات (58)</button>
+            <button class="category-btn" onclick="filterCategory('0')">ساعات ذكية (10)</button>
+            <button class="category-btn" onclick="filterCategory('1')">نظارات ذكية (8)</button>
+            <button class="category-btn" onclick="filterCategory('2')">صحة ولياقة (10)</button>
+            <button class="category-btn" onclick="filterCategory('3')">منزل ذكي (10)</button>
+            <button class="category-btn" onclick="filterCategory('4')">سماعات ذكية (10)</button>
+            <button class="category-btn" onclick="filterCategory('5')">إنتاجية (10)</button>
         </div>
-
-        <div class="product-card">
+    </div>
+    
+    <div class="products-grid" id="productsGrid">
+        <div class="product-card" data-category="ساعات ذكية">
             <div class="product-image">
-                <img src="https://images.samsung.com/is/image/samsung/assets/us/2024/smartphones/01-galaxy-s24-ultra/hero/01-s24-ultra-hero-highlights-1600x1200.jpg" alt="Samsung Galaxy S24 Ultra">
+                <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=600&q=80" alt="ساعة أوميغا الذكية X1">
+                <span class="badge ">جديد</span>
             </div>
             <div class="product-info">
-                <div class="product-source">📌 Samsung Official</div>
-                <h3 class="product-name">Samsung Galaxy S24 Ultra</h3>
+                <div class="product-category">ساعات ذكية</div>
+                <h3 class="product-name">ساعة أوميغا الذكية X1</h3>
                 <div class="product-rating">
-                    <span>⭐⭐⭐⭐</span>
+                    <span class="stars">⭐⭐⭐⭐</span>
                     <span>4.7/5</span>
-                    <span>(12,456 تقييم)</span>
+                    <span>(3,200)</span>
                 </div>
-                <div class="product-price">$1299.99</div>
-                <a href="https://www.amazon.com/dp/B0BDHZZ4LT?tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="price-section">
+                    <span class="price">$299</span>
+                    <span class="discount">-14%</span>
+                    <span class="original-price">$349</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=Omega Smart X1&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 73 وحدة</div>
             </div>
         </div>
-
-        <div class="product-card">
+        <div class="product-card" data-category="ساعات ذكية">
             <div class="product-image">
-                <img src="https://www.apple.com/macbook-pro/images/overview/hero/16-inch__fv0oy9b2rlaa_large.jpg" alt="MacBook Pro 16" M3 Max">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80" alt="ساعة نيو تايم برو">
+                <span class="badge ">مميز</span>
             </div>
             <div class="product-info">
-                <div class="product-source">📌 Apple Official</div>
-                <h3 class="product-name">MacBook Pro 16" M3 Max</h3>
+                <div class="product-category">ساعات ذكية</div>
+                <h3 class="product-name">ساعة نيو تايم برو</h3>
                 <div class="product-rating">
-                    <span>⭐⭐⭐⭐</span>
-                    <span>4.9/5</span>
-                    <span>(8,765 تقييم)</span>
-                </div>
-                <div class="product-price">$3499.99</div>
-                <a href="https://www.amazon.com/dp/B07BVFVR9L?tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <div class="product-image">
-                <img src="https://www.sony.com/image/wh1000xm5_hero_large.jpg" alt="Sony WH-1000XM5 Headphones">
-            </div>
-            <div class="product-info">
-                <div class="product-source">📌 Sony Official</div>
-                <h3 class="product-name">Sony WH-1000XM5 Headphones</h3>
-                <div class="product-rating">
-                    <span>⭐⭐⭐⭐</span>
-                    <span>4.8/5</span>
-                    <span>(24,567 تقييم)</span>
-                </div>
-                <div class="product-price">$399.99</div>
-                <a href="https://www.amazon.com/dp/B0CQSW5P6N?tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <div class="product-image">
-                <img src="https://www.apple.com/ipad-pro/images/overview/hero/ipad_pro_12_9__fv0oy9b2rlaa_large.jpg" alt="iPad Pro 12.9" M2">
-            </div>
-            <div class="product-info">
-                <div class="product-source">📌 Apple Official</div>
-                <h3 class="product-name">iPad Pro 12.9" M2</h3>
-                <div class="product-rating">
-                    <span>⭐⭐⭐⭐</span>
-                    <span>4.7/5</span>
-                    <span>(9,876 تقييم)</span>
-                </div>
-                <div class="product-price">$1099.99</div>
-                <a href="https://www.amazon.com/dp/B0BVFVR9L?tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <div class="product-image">
-                <img src="https://lh3.googleusercontent.com/pixel8pro_hero.jpg" alt="Google Pixel 8 Pro">
-            </div>
-            <div class="product-info">
-                <div class="product-source">📌 Google Official</div>
-                <h3 class="product-name">Google Pixel 8 Pro</h3>
-                <div class="product-rating">
-                    <span>⭐⭐⭐⭐</span>
+                    <span class="stars">⭐⭐⭐⭐</span>
                     <span>4.6/5</span>
-                    <span>(7,654 تقييم)</span>
+                    <span>(2,100)</span>
                 </div>
-                <div class="product-price">$999.99</div>
-                <a href="https://www.amazon.com/dp/B0CQSW5P6N?tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="price-section">
+                    <span class="price">$249</span>
+                    <span class="discount">-17%</span>
+                    <span class="original-price">$299</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=NeoTime Pro&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 54 وحدة</div>
             </div>
         </div>
-
-        <div class="product-card">
+        <div class="product-card" data-category="ساعات ذكية">
             <div class="product-image">
-                <img src="https://www.dell.com/xps15_hero.jpg" alt="Dell XPS 15 (2024)">
+                <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=600&q=80" alt="ساعة فيتا فلو 3">
+                <span class="badge ">الأكثر مبيعاً</span>
             </div>
             <div class="product-info">
-                <div class="product-source">📌 Dell Official</div>
-                <h3 class="product-name">Dell XPS 15 (2024)</h3>
+                <div class="product-category">ساعات ذكية</div>
+                <h3 class="product-name">ساعة فيتا فلو 3</h3>
                 <div class="product-rating">
-                    <span>⭐⭐⭐⭐</span>
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.8/5</span>
+                    <span>(5,400)</span>
+                </div>
+                <div class="price-section">
+                    <span class="price">$199</span>
+                    <span class="discount">-17%</span>
+                    <span class="original-price">$239</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=VitaFlow 3&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 48 وحدة</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="ساعات ذكية">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=600&q=80" alt="ساعة زينيث ألترا">
+                <span class="badge ">برميوم</span>
+            </div>
+            <div class="product-info">
+                <div class="product-category">ساعات ذكية</div>
+                <h3 class="product-name">ساعة زينيث ألترا</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.9/5</span>
+                    <span>(8,900)</span>
+                </div>
+                <div class="price-section">
+                    <span class="price">$379</span>
+                    <span class="discount">-12%</span>
+                    <span class="original-price">$429</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=Zenith Ultra&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 33 وحدة</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="ساعات ذكية">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1544117519-31a4b719223d?w=600&q=80" alt="ساعة بولس سبورت X">
+                <span class="badge ">رياضي</span>
+            </div>
+            <div class="product-info">
+                <div class="product-category">ساعات ذكية</div>
+                <h3 class="product-name">ساعة بولس سبورت X</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
                     <span>4.5/5</span>
-                    <span>(5,432 تقييم)</span>
+                    <span>(1,800)</span>
                 </div>
-                <div class="product-price">$1799.99</div>
-                <a href="https://www.amazon.com/dp/B0BDHZZ4LT?tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="price-section">
+                    <span class="price">$169</span>
+                    <span class="discount">-15%</span>
+                    <span class="original-price">$199</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=Pulse Sport X&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 57 وحدة</div>
             </div>
         </div>
-
-        <div class="product-card">
+        <div class="product-card" data-category="ساعات ذكية">
             <div class="product-image">
-                <img src="https://images.samsung.com/galaxy-watch-6-classic.jpg" alt="Samsung Galaxy Watch 6 Classic">
+                <img src="https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=600&q=80" alt="ساعة لونا كلاسيك">
+                <span class="badge ">كلاسيك</span>
             </div>
             <div class="product-info">
-                <div class="product-source">📌 Samsung Official</div>
-                <h3 class="product-name">Samsung Galaxy Watch 6 Classic</h3>
+                <div class="product-category">ساعات ذكية</div>
+                <h3 class="product-name">ساعة لونا كلاسيك</h3>
                 <div class="product-rating">
-                    <span>⭐⭐⭐⭐</span>
-                    <span>4.7/5</span>
-                    <span>(8,765 تقييم)</span>
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.6/5</span>
+                    <span>(2,700)</span>
                 </div>
-                <div class="product-price">$399.99</div>
-                <a href="https://www.amazon.com/dp/B07BVFVR9L?tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="price-section">
+                    <span class="price">$219</span>
+                    <span class="discount">-15%</span>
+                    <span class="original-price">$259</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=Luna Classic&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 72 وحدة</div>
             </div>
         </div>
-
+        <div class="product-card" data-category="ساعات ذكية">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=600&q=80" alt="ساعة إيكو ألفا 2">
+                <span class="badge ">جديد</span>
+            </div>
+            <div class="product-info">
+                <div class="product-category">ساعات ذكية</div>
+                <h3 class="product-name">ساعة إيكو ألفا 2</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.7/5</span>
+                    <span>(4,100)</span>
+                </div>
+                <div class="price-section">
+                    <span class="price">$289</span>
+                    <span class="discount">-15%</span>
+                    <span class="original-price">$339</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=Echo Alpha 2&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 42 وحدة</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="ساعات ذكية">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?w=600&q=80" alt="ساعة أركتيك بلس">
+                <span class="badge ">مميز</span>
+            </div>
+            <div class="product-info">
+                <div class="product-category">ساعات ذكية</div>
+                <h3 class="product-name">ساعة أركتيك بلس</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.8/5</span>
+                    <span>(3,600)</span>
+                </div>
+                <div class="price-section">
+                    <span class="price">$329</span>
+                    <span class="discount">-15%</span>
+                    <span class="original-price">$389</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=Arctic Plus&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 52 وحدة</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="ساعات ذكية">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1617043786394-f977fa12eddf?w=600&q=80" alt="ساعة سيمفوني ليت">
+                <span class="badge ">اقتصادي</span>
+            </div>
+            <div class="product-info">
+                <div class="product-category">ساعات ذكية</div>
+                <h3 class="product-name">ساعة سيمفوني ليت</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.4/5</span>
+                    <span>(950)</span>
+                </div>
+                <div class="price-section">
+                    <span class="price">$149</span>
+                    <span class="discount">-17%</span>
+                    <span class="original-price">$179</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=Symphony Lite&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 55 وحدة</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="ساعات ذكية">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1630989809082-9e2f671d56db?w=600&q=80" alt="ساعة كوانتم X7">
+                <span class="badge ">الأفضل</span>
+            </div>
+            <div class="product-info">
+                <div class="product-category">ساعات ذكية</div>
+                <h3 class="product-name">ساعة كوانتم X7</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.9/5</span>
+                    <span>(12,000)</span>
+                </div>
+                <div class="price-section">
+                    <span class="price">$449</span>
+                    <span class="discount">-10%</span>
+                    <span class="original-price">$499</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=Quantum X7&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 69 وحدة</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="نظارات ذكية">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=600&q=80" alt="نظارة فيجن برو X">
+                <span class="badge ">جديد</span>
+            </div>
+            <div class="product-info">
+                <div class="product-category">نظارات ذكية</div>
+                <h3 class="product-name">نظارة فيجن برو X</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.7/5</span>
+                    <span>(2,800)</span>
+                </div>
+                <div class="price-section">
+                    <span class="price">$399</span>
+                    <span class="discount">-11%</span>
+                    <span class="original-price">$449</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=Vision Pro X&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 54 وحدة</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="نظارات ذكية">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=600&q=80" alt="نظارة أوبتيك فلو">
+                <span class="badge ">مميز</span>
+            </div>
+            <div class="product-info">
+                <div class="product-category">نظارات ذكية</div>
+                <h3 class="product-name">نظارة أوبتيك فلو</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.6/5</span>
+                    <span>(1,900)</span>
+                </div>
+                <div class="price-section">
+                    <span class="price">$299</span>
+                    <span class="discount">-14%</span>
+                    <span class="original-price">$349</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=Optic Flow&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 37 وحدة</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="نظارات ذكية">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1603400521630-9f2de124b33b?w=600&q=80" alt="نظارة سمارت شيد">
+                <span class="badge ">رياضي</span>
+            </div>
+            <div class="product-info">
+                <div class="product-category">نظارات ذكية</div>
+                <h3 class="product-name">نظارة سمارت شيد</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.5/5</span>
+                    <span>(1,200)</span>
+                </div>
+                <div class="price-section">
+                    <span class="price">$249</span>
+                    <span class="discount">-14%</span>
+                    <span class="original-price">$289</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=SmartShade&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 80 وحدة</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="نظارات ذكية">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1577803645773-f96470509666?w=600&q=80" alt="نظارة إيكو لوك">
+                <span class="badge ">برميوم</span>
+            </div>
+            <div class="product-info">
+                <div class="product-category">نظارات ذكية</div>
+                <h3 class="product-name">نظارة إيكو لوك</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.8/5</span>
+                    <span>(4,200)</span>
+                </div>
+                <div class="price-section">
+                    <span class="price">$349</span>
+                    <span class="discount">-13%</span>
+                    <span class="original-price">$399</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=EchoLook Pro&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 41 وحدة</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="نظارات ذكية">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&q=80" alt="نظارة نيو لنس 2">
+                <span class="badge ">اقتصادي</span>
+            </div>
+            <div class="product-info">
+                <div class="product-category">نظارات ذكية</div>
+                <h3 class="product-name">نظارة نيو لنس 2</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.4/5</span>
+                    <span>(800)</span>
+                </div>
+                <div class="price-section">
+                    <span class="price">$199</span>
+                    <span class="discount">-17%</span>
+                    <span class="original-price">$239</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=NeoLens 2&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 34 وحدة</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="نظارات ذكية">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600&q=80" alt="نظارة هولو فيو">
+                <span class="badge ">حصري</span>
+            </div>
+            <div class="product-info">
+                <div class="product-category">نظارات ذكية</div>
+                <h3 class="product-name">نظارة هولو فيو</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.9/5</span>
+                    <span>(6,700)</span>
+                </div>
+                <div class="price-section">
+                    <span class="price">$499</span>
+                    <span class="discount">-14%</span>
+                    <span class="original-price">$579</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=HoloView&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 31 وحدة</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="نظارات ذكية">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1542219550-37153d387c27?w=600&q=80" alt="نظارة ليت فريم">
+                <span class="badge ">جديد</span>
+            </div>
+            <div class="product-info">
+                <div class="product-category">نظارات ذكية</div>
+                <h3 class="product-name">نظارة ليت فريم</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.3/5</span>
+                    <span>(650)</span>
+                </div>
+                <div class="price-section">
+                    <span class="price">$179</span>
+                    <span class="discount">-14%</span>
+                    <span class="original-price">$209</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=LiteFrame&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 63 وحدة</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="نظارات ذكية">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1501159599894-155982264a55?w=600&q=80" alt="نظارة ديب سايت">
+                <span class="badge ">متطور</span>
+            </div>
+            <div class="product-info">
+                <div class="product-category">نظارات ذكية</div>
+                <h3 class="product-name">نظارة ديب سايت</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.8/5</span>
+                    <span>(3,300)</span>
+                </div>
+                <div class="price-section">
+                    <span class="price">$429</span>
+                    <span class="discount">-14%</span>
+                    <span class="original-price">$499</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=DeepSight&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 72 وحدة</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="صحة ولياقة">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&q=80" alt="سوار فيتا تراك 5">
+                <span class="badge ">الأكثر مبيعاً</span>
+            </div>
+            <div class="product-info">
+                <div class="product-category">صحة ولياقة</div>
+                <h3 class="product-name">سوار فيتا تراك 5</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.7/5</span>
+                    <span>(8,900)</span>
+                </div>
+                <div class="price-section">
+                    <span class="price">$129</span>
+                    <span class="discount">-19%</span>
+                    <span class="original-price">$159</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=VitaTrack 5&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 59 وحدة</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="صحة ولياقة">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?w=600&q=80" alt="جهاز هيلث كور">
+                <span class="badge ">مميز</span>
+            </div>
+            <div class="product-info">
+                <div class="product-category">صحة ولياقة</div>
+                <h3 class="product-name">جهاز هيلث كور</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.8/5</span>
+                    <span>(5,600)</span>
+                </div>
+                <div class="price-section">
+                    <span class="price">$199</span>
+                    <span class="discount">-17%</span>
+                    <span class="original-price">$239</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=HealthCore Pro&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 55 وحدة</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="صحة ولياقة">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?w=600&q=80" alt="خاتم ويلنس Ring">
+                <span class="badge ">الأفضل</span>
+            </div>
+            <div class="product-info">
+                <div class="product-category">صحة ولياقة</div>
+                <h3 class="product-name">خاتم ويلنس Ring</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.9/5</span>
+                    <span>(12,000)</span>
+                </div>
+                <div class="price-section">
+                    <span class="price">$279</span>
+                    <span class="discount">-15%</span>
+                    <span class="original-price">$329</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=Wellness Ring&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 30 وحدة</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="صحة ولياقة">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1510771463146-e89e6e86560e?w=600&q=80" alt="ميزان ذكي بودي X">
+                <span class="badge ">جديد</span>
+            </div>
+            <div class="product-info">
+                <div class="product-category">صحة ولياقة</div>
+                <h3 class="product-name">ميزان ذكي بودي X</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.6/5</span>
+                    <span>(4,200)</span>
+                </div>
+                <div class="price-section">
+                    <span class="price">$89</span>
+                    <span class="discount">-18%</span>
+                    <span class="original-price">$109</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=Body X Scale&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 40 وحدة</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="صحة ولياقة">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&q=80" alt="جهاز نبض سمارت">
+                <span class="badge ">رياضي</span>
+            </div>
+            <div class="product-info">
+                <div class="product-category">صحة ولياقة</div>
+                <h3 class="product-name">جهاز نبض سمارت</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.5/5</span>
+                    <span>(2,300)</span>
+                </div>
+                <div class="price-section">
+                    <span class="price">$159</span>
+                    <span class="discount">-16%</span>
+                    <span class="original-price">$189</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=Smart Pulse&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 23 وحدة</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="صحة ولياقة">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1549476464-37392f717541?w=600&q=80" alt="جهاز ميد تراك">
+                <span class="badge ">طبي</span>
+            </div>
+            <div class="product-info">
+                <div class="product-category">صحة ولياقة</div>
+                <h3 class="product-name">جهاز ميد تراك</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.7/5</span>
+                    <span>(3,800)</span>
+                </div>
+                <div class="price-section">
+                    <span class="price">$239</span>
+                    <span class="discount">-14%</span>
+                    <span class="original-price">$279</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=MedTrack&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 20 وحدة</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="صحة ولياقة">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=600&q=80" alt="سماعة بيو ليسن">
+                <span class="badge ">مبتكر</span>
+            </div>
+            <div class="product-info">
+                <div class="product-category">صحة ولياقة</div>
+                <h3 class="product-name">سماعة بيو ليسن</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.6/5</span>
+                    <span>(1,700)</span>
+                </div>
+                <div class="price-section">
+                    <span class="price">$179</span>
+                    <span class="discount">-18%</span>
+                    <span class="original-price">$219</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=BioListen&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 41 وحدة</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="صحة ولياقة">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80" alt="جهاز ريلاكس برو">
+                <span class="badge ">إجهاد</span>
+            </div>
+            <div class="product-info">
+                <div class="product-category">صحة ولياقة</div>
+                <h3 class="product-name">جهاز ريلاكس برو</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.5/5</span>
+                    <span>(2,100)</span>
+                </div>
+                <div class="price-section">
+                    <span class="price">$119</span>
+                    <span class="discount">-20%</span>
+                    <span class="original-price">$149</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=Relax Pro&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 22 وحدة</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="صحة ولياقة">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1607962837359-5e7e89f86776?w=600&q=80" alt="حزام أكتيف فيت">
+                <span class="badge ">اقتصادي</span>
+            </div>
+            <div class="product-info">
+                <div class="product-category">صحة ولياقة</div>
+                <h3 class="product-name">حزام أكتيف فيت</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.4/5</span>
+                    <span>(980)</span>
+                </div>
+                <div class="price-section">
+                    <span class="price">$99</span>
+                    <span class="discount">-17%</span>
+                    <span class="original-price">$119</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=ActiveFit Band&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 53 وحدة</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="صحة ولياقة">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1434682772747-f16d3ea162c3?w=600&q=80" alt="جهاز إيكو هيلث">
+                <span class="badge ">الأكثر مبيعاً</span>
+            </div>
+            <div class="product-info">
+                <div class="product-category">صحة ولياقة</div>
+                <h3 class="product-name">جهاز إيكو هيلث</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.8/5</span>
+                    <span>(6,700)</span>
+                </div>
+                <div class="price-section">
+                    <span class="price">$219</span>
+                    <span class="discount">-16%</span>
+                    <span class="original-price">$259</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=EcoHealth Plus&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 71 وحدة</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="منزل ذكي">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80" alt="مكبر إيكو نوفا">
+                <span class="badge ">الأكثر مبيعاً</span>
+            </div>
+            <div class="product-info">
+                <div class="product-category">منزل ذكي</div>
+                <h3 class="product-name">مكبر إيكو نوفا</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.8/5</span>
+                    <span>(15,000)</span>
+                </div>
+                <div class="price-section">
+                    <span class="price">$149</span>
+                    <span class="discount">-17%</span>
+                    <span class="original-price">$179</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=Echo Nova&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 26 وحدة</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="منزل ذكي">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1558002038-1055907df827?w=600&q=80" alt="كاميرا سيكيور فيو">
+                <span class="badge ">مميز</span>
+            </div>
+            <div class="product-info">
+                <div class="product-category">منزل ذكي</div>
+                <h3 class="product-name">كاميرا سيكيور فيو</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span>4.7/5</span>
+                    <span>(8,900)</span>
+                </div>
+                <div class="price-section">
+                    <span class="price">$129</span>
+                    <span class="discount">-19%</span>
+                    <span class="original-price">$159</span>
+                </div>
+                <a href="https://www.amazon.com/s?k=SecureView 4K&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <div class="stock-info">المخزون: 51 وحدة</div>
+            </div>
+        </div>
     </div>
 </div>
+
+<script>
+function filterCategory(category) {
+    const cards = document.querySelectorAll('.product-card');
+    const buttons = document.querySelectorAll('.category-btn');
+    
+    buttons.forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+    
+    cards.forEach(card => {
+        if (category === 'all') {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'block';
+        }
+    });
+}
+
+function switchLanguage(lang) {
+    const buttons = document.querySelectorAll('.lang-btn');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+    alert('تم تبديل اللغة إلى: ' + (lang === 'ar' ? 'العربية' : 'الإنجليزية'));
+}
+</script>
 </body>
 </html>
