@@ -1,0 +1,74 @@
+[
+  {
+    "id": "AI-1777499279-760",
+    "name": {
+      "ar": "ساعة أبل الذكية سيريس 8",
+      "en": "Apple Watch Series 8"
+    },
+    "price": "$399",
+    "rating": 4.8,
+    "category": "smartwatch",
+    "image": "https://source.unsplash.com/600x400/?smartwatch",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+Watch+Series+8"
+  },
+  {
+    "id": "AI-1777499279-192",
+    "name": {
+      "ar": "سامسونج جالكسي واتش 5",
+      "en": "Samsung Galaxy Watch 5"
+    },
+    "price": "$279",
+    "rating": 4.6,
+    "category": "smartwatch",
+    "image": "https://source.unsplash.com/600x400/?smartwatch",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Galaxy+Watch+5"
+  },
+  {
+    "id": "AI-1777499282-503",
+    "name": {
+      "ar": "سماعات أبل إيربودز برو",
+      "en": "Apple AirPods Pro"
+    },
+    "price": 249.0,
+    "rating": 4.8,
+    "category": "earbuds",
+    "image": "https://source.unsplash.com/600x400/?earbuds",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+AirPods+Pro"
+  },
+  {
+    "id": "AI-1777499282-753",
+    "name": {
+      "ar": "سماعات سوني WF-1000XM4",
+      "en": "Sony WF-1000XM4"
+    },
+    "price": 279.99,
+    "rating": 4.7,
+    "category": "earbuds",
+    "image": "https://source.unsplash.com/600x400/?earbuds",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Sony+WF-1000XM4"
+  },
+  {
+    "id": "AI-1777499286-873",
+    "name": {
+      "ar": "أمازون إيكو دوت (الجيل الخامس)",
+      "en": "Amazon Echo Dot (5th Gen)"
+    },
+    "price": "$49.99",
+    "rating": 4.7,
+    "category": "smart-home",
+    "image": "https://source.unsplash.com/600x400/?smart-home",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Amazon+Echo+Dot+(5th+Gen)"
+  },
+  {
+    "id": "AI-1777499286-493",
+    "name": {
+      "ar": "مقبس ذكي من TP-Link كينيتك",
+      "en": "TP-Link Kasa Smart Plug"
+    },
+    "price": "$19.99",
+    "rating": 4.6,
+    "category": "smart-home",
+    "image": "https://source.unsplash.com/600x400/?smart-home",
+    "affiliate_amazon": "https://www.amazon.com/s?k=TP-Link+Kasa+Smart+Plug"
+  }
+]
