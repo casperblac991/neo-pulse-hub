@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المنتجات الحقيقية | NEO PULSE HUB</title>
+    <style>
+        :root {
+            --bg: #020510;
+            --surface: #0a0d1a;
+            --border: rgba(99, 179, 237, 0.12);
+            --blue: #3b82f6;
+            --cyan: #22d3ee;
+            --text: #e2e8f0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--blue), #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .update-info {
+            background: rgba(34, 211, 238, 0.1);
+            border: 1px solid var(--cyan);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .product-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+        
+        .product-card:hover {
+            border-color: var(--blue);
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(59, 130, 246, 0.2);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background: rgba(59, 130, 246, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .product-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        
+        .product-info {
+            padding: 1.5rem;
+        }
+        
+        .product-name {
+            font-size: 1.1rem;
+            color: var(--cyan);
+            margin-bottom: 0.5rem;
+        }
+        
+        .product-source {
+            font-size: 0.8rem;
+            color: rgba(226, 232, 240, 0.5);
+            margin-bottom: 0.5rem;
+        }
+        
+        .product-rating {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .product-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--cyan);
+            margin-bottom: 1rem;
+        }
+        
+        .buy-button {
+            background: linear-gradient(135deg, var(--blue), #7c3aed);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 600;
+            display: block;
+            transition: all 0.3s;
+        }
+        
+        .buy-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🛍️ المنتجات الحقيقية المحدثة</h1>
+    <div class="update-info">
+        ✅ تم التحديث: 2026-04-29 19:11:28
+        <br>
+        📊 عدد المنتجات: 8
+        <br>
+        🔄 التحديث التالي: خلال 6 ساعات
+    </div>
+    
+    <div class="products-grid">
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://www.apple.com/iphone-15/images/overview/hero/iphone15_pro_max__fv0oy9b2rlaa_large.jpg" alt="iPhone 15 Pro Max">
+            </div>
+            <div class="product-info">
+                <div class="product-source">📌 Apple Official</div>
+                <h3 class="product-name">iPhone 15 Pro Max</h3>
+                <div class="product-rating">
+                    <span>⭐⭐⭐⭐</span>
+                    <span>4.8/5</span>
+                    <span>(15,234 تقييم)</span>
+                </div>
+                <div class="product-price">$1199.99</div>
+                <a href="https://www.amazon.com/dp/B0CQSW5P6N?tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://images.samsung.com/is/image/samsung/assets/us/2024/smartphones/01-galaxy-s24-ultra/hero/01-s24-ultra-hero-highlights-1600x1200.jpg" alt="Samsung Galaxy S24 Ultra">
+            </div>
+            <div class="product-info">
+                <div class="product-source">📌 Samsung Official</div>
+                <h3 class="product-name">Samsung Galaxy S24 Ultra</h3>
+                <div class="product-rating">
+                    <span>⭐⭐⭐⭐</span>
+                    <span>4.7/5</span>
+                    <span>(12,456 تقييم)</span>
+                </div>
+                <div class="product-price">$1299.99</div>
+                <a href="https://www.amazon.com/dp/B0BDHZZ4LT?tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://www.apple.com/macbook-pro/images/overview/hero/16-inch__fv0oy9b2rlaa_large.jpg" alt="MacBook Pro 16" M3 Max">
+            </div>
+            <div class="product-info">
+                <div class="product-source">📌 Apple Official</div>
+                <h3 class="product-name">MacBook Pro 16" M3 Max</h3>
+                <div class="product-rating">
+                    <span>⭐⭐⭐⭐</span>
+                    <span>4.9/5</span>
+                    <span>(8,765 تقييم)</span>
+                </div>
+                <div class="product-price">$3499.99</div>
+                <a href="https://www.amazon.com/dp/B07BVFVR9L?tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://www.sony.com/image/wh1000xm5_hero_large.jpg" alt="Sony WH-1000XM5 Headphones">
+            </div>
+            <div class="product-info">
+                <div class="product-source">📌 Sony Official</div>
+                <h3 class="product-name">Sony WH-1000XM5 Headphones</h3>
+                <div class="product-rating">
+                    <span>⭐⭐⭐⭐</span>
+                    <span>4.8/5</span>
+                    <span>(24,567 تقييم)</span>
+                </div>
+                <div class="product-price">$399.99</div>
+                <a href="https://www.amazon.com/dp/B0CQSW5P6N?tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://www.apple.com/ipad-pro/images/overview/hero/ipad_pro_12_9__fv0oy9b2rlaa_large.jpg" alt="iPad Pro 12.9" M2">
+            </div>
+            <div class="product-info">
+                <div class="product-source">📌 Apple Official</div>
+                <h3 class="product-name">iPad Pro 12.9" M2</h3>
+                <div class="product-rating">
+                    <span>⭐⭐⭐⭐</span>
+                    <span>4.7/5</span>
+                    <span>(9,876 تقييم)</span>
+                </div>
+                <div class="product-price">$1099.99</div>
+                <a href="https://www.amazon.com/dp/B0BVFVR9L?tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://lh3.googleusercontent.com/pixel8pro_hero.jpg" alt="Google Pixel 8 Pro">
+            </div>
+            <div class="product-info">
+                <div class="product-source">📌 Google Official</div>
+                <h3 class="product-name">Google Pixel 8 Pro</h3>
+                <div class="product-rating">
+                    <span>⭐⭐⭐⭐</span>
+                    <span>4.6/5</span>
+                    <span>(7,654 تقييم)</span>
+                </div>
+                <div class="product-price">$999.99</div>
+                <a href="https://www.amazon.com/dp/B0CQSW5P6N?tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://www.dell.com/xps15_hero.jpg" alt="Dell XPS 15 (2024)">
+            </div>
+            <div class="product-info">
+                <div class="product-source">📌 Dell Official</div>
+                <h3 class="product-name">Dell XPS 15 (2024)</h3>
+                <div class="product-rating">
+                    <span>⭐⭐⭐⭐</span>
+                    <span>4.5/5</span>
+                    <span>(5,432 تقييم)</span>
+                </div>
+                <div class="product-price">$1799.99</div>
+                <a href="https://www.amazon.com/dp/B0BDHZZ4LT?tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://images.samsung.com/galaxy-watch-6-classic.jpg" alt="Samsung Galaxy Watch 6 Classic">
+            </div>
+            <div class="product-info">
+                <div class="product-source">📌 Samsung Official</div>
+                <h3 class="product-name">Samsung Galaxy Watch 6 Classic</h3>
+                <div class="product-rating">
+                    <span>⭐⭐⭐⭐</span>
+                    <span>4.7/5</span>
+                    <span>(8,765 تقييم)</span>
+                </div>
+                <div class="product-price">$399.99</div>
+                <a href="https://www.amazon.com/dp/B07BVFVR9L?tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
