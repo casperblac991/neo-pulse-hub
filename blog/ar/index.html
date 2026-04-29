@@ -1,78 +1,240 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>مدونة NEO PULSE HUB | مراجعات وتقارير تقنية</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Cairo',sans-serif;background:#020510;color:#e2e8f0}
-.container{max-width:1200px;margin:0 auto;padding:2rem}
-h1{color:#3b82f6}
-.section-title{color:#06b6d4;margin:2rem 0 1rem;border-right:3px solid #06b6d4;padding-right:1rem}
-.posts-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem}
-.post-card{background:#0a0d1a;border:1px solid #1e1e2e;border-radius:16px;padding:1rem}
-.post-card:hover{border-color:#3b82f6}
-.post-category{display:inline-block;background:rgba(59,130,246,.2);color:#3b82f6;border-radius:50px;padding:0.2rem 0.8rem;font-size:0.7rem}
-.read-more{color:#06b6d4;text-decoration:none}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مدونة NEO PULSE HUB | مراجعات منتجات تقنية</title>
+  <meta name="description" content="مدونة NEO PULSE HUB - مراجعات شاملة وأدلة شراء لأفضل المنتجات التقنية الذكية">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #020510;
+      --surface: #0a0d1a;
+      --border: rgba(99, 179, 237, 0.12);
+      --blue: #3b82f6;
+      --purple: #7c3aed;
+      --cyan: #22d3ee;
+      --gold: #f59e0b;
+      --text: #e2e8f0;
+      --muted: rgba(226, 232, 240, 0.55);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin: 3rem 0;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, var(--blue), var(--purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    > p {
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      color: var(--cyan);
+      margin: 3rem 0 1.5rem 0;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .posts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .post-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .post-card:hover {
+      border-color: var(--blue);
+      background: rgba(59, 130, 246, 0.05);
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(59, 130, 246, 0.1);
+    }
+
+    .post-category {
+      display: inline-block;
+      background: rgba(59, 130, 246, 0.1);
+      border: 1px solid var(--blue);
+      color: var(--cyan);
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      margin-bottom: 0.8rem;
+      width: fit-content;
+    }
+
+    .post-card h3 {
+      font-size: 1rem;
+      color: var(--text);
+      margin-bottom: 1rem;
+      line-height: 1.4;
+      flex-grow: 1;
+    }
+
+    .read-more {
+      color: var(--cyan);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+
+    .read-more:hover {
+      color: var(--blue);
+    }
+
+    .footer-links {
+      text-align: center;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+    }
+
+    .footer-links a {
+      color: var(--cyan);
+      text-decoration: none;
+      margin: 0 1rem;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: var(--blue);
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .posts-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
 </head>
 <body>
 <div class="container">
-<h1>📝 مدونة NEO PULSE HUB</h1>
-<p>أحدث المراجعات والتقارير التقنية</p>
+  <header>
+    <h1>📰 مدونة NEO PULSE HUB</h1>
+    <p>مراجعات شاملة وأدلة شراء لأفضل المنتجات التقنية</p>
+  </header>
 
-<h2 class="section-title">⌚ ساعات ذكية</h2>
-<div class="posts-grid">
+  <h2 class="section-title">⌚ ساعات ذكية</h2>
+  <div class="posts-grid">
     <div class="post-card"><div class="post-category">⌚ ساعة ذكية</div><h3>Apple Watch Series 9</h3><a href="apple-watch-series-9-review.html" class="read-more">اقرأ المراجعة ←</a></div>
     <div class="post-card"><div class="post-category">⌚ ساعة ذكية</div><h3>Samsung Galaxy Watch 6 Classic</h3><a href="samsung-galaxy-watch-6-Classic-review.html" class="read-more">اقرأ المراجعة ←</a></div>
     <div class="post-card"><div class="post-category">⌚ ساعة ذكية</div><h3>Google Pixel Watch 2</h3><a href="google-pixel-watch-2-review.html" class="read-more">اقرأ المراجعة ←</a></div>
     <div class="post-card"><div class="post-category">⌚ ساعة ذكية</div><h3>Garmin Venu 3</h3><a href="garmin-venu-3-review.html" class="read-more">اقرأ المراجعة ←</a></div>
-</div>
+    <div class="post-card"><div class="post-category">⌚ ساعة ذكية</div><h3>Amazfit GTR 4</h3><a href="amazfit-gtr-4---ساعة-ذكية-review.html" class="read-more">اقرأ المراجعة ←</a></div>
+    <div class="post-card"><div class="post-category">⌚ ساعة ذكية</div><h3>Xiaomi Mi Band 8 Pro</h3><a href="xiaomi-mi-band-8-pro---سوار-ذكي-review.html" class="read-more">اقرأ المراجعة ←</a></div>
+  </div>
 
-<h2 class="section-title">🎧 سماعات</h2>
-<div class="posts-grid">
+  <h2 class="section-title">🎧 سماعات</h2>
+  <div class="posts-grid">
     <div class="post-card"><div class="post-category">🎧 سماعات</div><h3>AirPods Pro 2</h3><a href="airpode-pro-2-review.html" class="read-more">اقرأ المراجعة ←</a></div>
     <div class="post-card"><div class="post-category">🎧 سماعات</div><h3>Sony WH-1000XM5</h3><a href="sony-wh-1000XM5-review.html" class="read-more">اقرأ المراجعة ←</a></div>
     <div class="post-card"><div class="post-category">🎧 سماعات</div><h3>Samsung Galaxy Buds2 Pro</h3><a href="samsung-galaxy-buds2-pro-review.html" class="read-more">اقرأ المراجعة ←</a></div>
-    <div class="post-card"><div class="post-category">🎧 سماعات</div><h3>Anker Soundcore Liberty 4 NC</h3><a href="anker-soundcore-liberty-4n-review.html" class="read-more">اقرأ المراجعة ←</a></div>
-</div>
+    <div class="post-card"><div class="post-category">🎧 سماعات</div><h3>Anker Soundcore Liberty 4 NC</h3><a href="anker-soundcore-liberty-4-nc-review.html" class="read-more">اقرأ المراجعة ←</a></div>
+  </div>
 
-<h2 class="section-title">🏠 منزل ذكي</h2>
-<div class="posts-grid">
+  <h2 class="section-title">🏠 منزل ذكي</h2>
+  <div class="posts-grid">
     <div class="post-card"><div class="post-category">🏠 منزل ذكي</div><h3>Amazon Echo Show 10</h3><a href="amazon-Echo-Show-10-review.html" class="read-more">اقرأ المراجعة ←</a></div>
     <div class="post-card"><div class="post-category">🏠 منزل ذكي</div><h3>Amazon Fire TV Stick 4K Max</h3><a href="amazon-fire-tv-stick-4k-max-review.html" class="read-more">اقرأ المراجعة ←</a></div>
     <div class="post-card"><div class="post-category">🏠 منزل ذكي</div><h3>Google Nest Thermostat</h3><a href="google-nest-thermostat-review.html" class="read-more">اقرأ المراجعة ←</a></div>
-    <div class="post-card"><div class="post-category">🏠 منزل ذكي</div><h3>Philips Hue</h3><a href="philips-hue-starter-kit-review.html" class="read-more">اقرأ المراجعة ←</a></div>
+    <div class="post-card"><div class="post-category">🏠 منزل ذكي</div><h3>Philips Hue Starter Kit</h3><a href="philips-hue-starter-kit-review.html" class="read-more">اقرأ المراجعة ←</a></div>
     <div class="post-card"><div class="post-category">🏠 منزل ذكي</div><h3>Nanoleaf Shapes</h3><a href="nanoleaf-shapes-review.html" class="read-more">اقرأ المراجعة ←</a></div>
-</div>
+    <div class="post-card"><div class="post-category">🏠 منزل ذكي</div><h3>TP-Link Kasa Smart Plug 4-Pack</h3><a href="tp-link-kasa---مقبس-ذكي-4-قطع-review.html" class="read-more">اقرأ المراجعة ←</a></div>
+  </div>
 
-<h2 class="section-title">❤️ الصحة الذكية</h2>
-<div class="posts-grid">
-    <div class="post-card"><div class="post-category">❤️ صحة ذكية</div><h3>Fitbit Charge 6</h3><a href="Fitbit-Charge-6-review.html" class="read-more">اقرأ المراجعة ←</a></div>
+  <h2 class="section-title">❤️ الصحة الذكية</h2>
+  <div class="posts-grid">
+    <div class="post-card"><div class="post-category">❤️ صحة ذكية</div><h3>Fitbit Charge 6</h3><a href="fitbit-charge-6-review.html" class="read-more">اقرأ المراجعة ←</a></div>
     <div class="post-card"><div class="post-category">❤️ صحة ذكية</div><h3>Oura Ring Gen 3</h3><a href="oura-ring-gen3-review.html" class="read-more">اقرأ المراجعة ←</a></div>
     <div class="post-card"><div class="post-category">❤️ صحة ذكية</div><h3>Withings Body Scan</h3><a href="withings-body-scan-review.html" class="read-more">اقرأ المراجعة ←</a></div>
-    <div class="post-card"><div class="post-category">❤️ صحة ذكية</div><h3>Xiaomi Mi Band 8 Pro</h3><a href="xiaomi-mi-band-8-pro.html" class="read-more">اقرأ المراجعة ←</a></div>
-</div>
+    <div class="post-card"><div class="post-category">❤️ صحة ذكية</div><h3>Tile Mate 4-Pack</h3><a href="tile-mate-4-pack---متتبع-بلوتوث-review.html" class="read-more">اقرأ المراجعة ←</a></div>
+  </div>
 
-<h2 class="section-title">🥽 نظارات ذكية</h2>
-<div class="posts-grid">
-    <div class="post-card"><div class="post-category">🥽 نظارات ذكية</div><h3>Ray-Ban Meta Smart Glasses</h3><a href="meta-rayban-smart-glasses-review.html" class="read-more">اقرأ المراجعة ←</a></div>
-</div>
+  <h2 class="section-title">👓 نظارات ذكية</h2>
+  <div class="posts-grid">
+    <div class="post-card"><div class="post-category">👓 نظارات ذكية</div><h3>Ray-Ban Meta Smart Glasses</h3><a href="meta-rayban-smart-glasses-review.html" class="read-more">اقرأ المراجعة ←</a></div>
+    <div class="post-card"><div class="post-category">👓 نظارات ذكية</div><h3>نظارات Ray-Ban Meta الذكية</h3><a href="نظارات-ray-ban-meta-الذكية-review.html" class="read-more">اقرأ المراجعة ←</a></div>
+  </div>
 
-<h2 class="section-title">💼 إنتاجية</h2>
-<div class="posts-grid">
-    <div class="post-card"><div class="post-category">💼 إنتاجية</div><h3>Logitech MX Master 3S</h3><a href="Logitech-mx-master-3S-review.html" class="read-more">اقرأ المراجعة ←</a></div>
-</div>
+  <h2 class="section-title">💼 إنتاجية</h2>
+  <div class="posts-grid">
+    <div class="post-card"><div class="post-category">💼 إنتاجية</div><h3>Logitech MX Master 3S</h3><a href="logitech-mx-master-3s-review.html" class="read-more">اقرأ المراجعة ←</a></div>
+  </div>
 
-<h2 class="section-title">📚 أدلة ومقالات</h2>
-<div class="posts-grid">
-    <div class="post-card"><div class="post-category">📚 دليل</div><h3>دليل المنزل الذكي 2025</h3><a href="smart-home-complete-guide-2025.html" class="read-more">اقرأ الدليل ←</a></div>
+  <h2 class="section-title">📚 أدلة ومقالات</h2>
+  <div class="posts-grid">
+    <div class="post-card"><div class="post-category">📚 دليل</div><h3>دليل المنزل الذكي الكامل 2025</h3><a href="smart-home-complete-guide-2025.html" class="read-more">اقرأ الدليل ←</a></div>
     <div class="post-card"><div class="post-category">📚 دليل</div><h3>دليل المنزل الذكي للمبتدئين</h3><a href="smart-home-guide.html" class="read-more">اقرأ الدليل ←</a></div>
     <div class="post-card"><div class="post-category">📚 مقال</div><h3>أحدث تقنيات 2026</h3><a href="tech-trends-2026.html" class="read-more">اقرأ المقال ←</a></div>
-</div>
+    <div class="post-card"><div class="post-category">📚 مقال</div><h3>أفضل 5 سماعات لاسلكية 2026</h3><a href="top-5-wireless-earbuds-2026.html" class="read-more">اقرأ المقال ←</a></div>
+  </div>
 
-<div class="footer-links"><a href="/">🏠 الرئيسية</a> | <a href="/products.html">🛍️ المنتجات</a> | <a href="/blog/ar">📝 المدونة</a></div>
+  <div class="footer-links">
+    <a href="/">🏠 الرئيسية</a> | 
+    <a href="/products.html">🛍️ المنتجات</a> | 
+    <a href="/blog/ar">📝 المدونة</a> |
+    <a href="/blog/en">🌍 English</a>
+  </div>
 </div>
 </body>
 </html>
