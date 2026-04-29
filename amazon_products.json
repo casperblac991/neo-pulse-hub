@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Apple Watch Series 9",
+    "asin": "B0CQSW5P6N",
+    "category": "ساعات ذكية",
+    "price": 399.99,
+    "rating": 4.7,
+    "reviews": 2543,
+    "image": "https://m.media-amazon.com/images/I/81YyF-2B5QL._AC_SY679_.jpg",
+    "description": "أحدث ساعة ذكية من أبل مع شاشة Retina وميزات صحية متقدمة"
+  },
+  {
+    "name": "Sony WH-1000XM5 Headphones",
+    "asin": "B0BDHZZ4LT",
+    "category": "سماعات",
+    "price": 399.99,
+    "rating": 4.8,
+    "reviews": 4521,
+    "image": "https://m.media-amazon.com/images/I/71o8Q5XJS5L._AC_SY679_.jpg",
+    "description": "أفضل سماعات إلغاء ضوضاء مع صوت Hi-Res وبطارية 30 ساعة"
+  },
+  {
+    "name": "Philips Hue Smart Lights",
+    "asin": "B07BVFVR9L",
+    "category": "منزل ذكي",
+    "price": 199.99,
+    "rating": 4.6,
+    "reviews": 3214,
+    "image": "https://m.media-amazon.com/images/I/71rr4XxpZZL._AC_SY679_.jpg",
+    "description": "إضاءة ذكية مع 16 مليون لون وتحكم بالصوت"
+  },
+  {
+    "name": "Fitbit Charge 6",
+    "asin": "B0CQSW5P6N",
+    "category": "صحة ذكية",
+    "price": 159.99,
+    "rating": 4.5,
+    "reviews": 2156,
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "description": "متتبع لياقة مع GPS ومستشعرات صحية متقدمة"
+  },
+  {
+    "name": "Ray-Ban Meta Smart Glasses",
+    "asin": "B0BVFVR9L",
+    "category": "نظارات ذكية",
+    "price": 299.99,
+    "rating": 4.4,
+    "reviews": 1876,
+    "image": "https://m.media-amazon.com/images/I/71rr4XxpZZL._AC_SY679_.jpg",
+    "description": "نظارات ذكية مع كاميرا وصوت عالي الجودة"
+  },
+  {
+    "name": "Amazon Echo Show 15",
+    "asin": "B0CQSW5P6N",
+    "category": "منزل ذكي",
+    "price": 249.99,
+    "rating": 4.6,
+    "reviews": 2987,
+    "image": "https://m.media-amazon.com/images/I/71o8Q5XJS5L._AC_SY679_.jpg",
+    "description": "شاشة ذكية كبيرة مع Alexa والتحكم بالمنزل الذكي"
+  },
+  {
+    "name": "Samsung Galaxy Watch 6",
+    "asin": "B0BVFVR9L",
+    "category": "ساعات ذكية",
+    "price": 299.99,
+    "rating": 4.7,
+    "reviews": 3456,
+    "image": "https://m.media-amazon.com/images/I/71rr4XxpZZL._AC_SY679_.jpg",
+    "description": "ساعة ذكية من سامسونج مع تصميم كلاسيكي وإطار دوار"
+  },
+  {
+    "name": "Logitech MX Master 3S",
+    "asin": "B0CQSW5P6N",
+    "category": "إنتاجية",
+    "price": 99.99,
+    "rating": 4.8,
+    "reviews": 2654,
+    "image": "https://m.media-amazon.com/images/I/71o8Q5XJS5L._AC_SY679_.jpg",
+    "description": "أفضل ماوس لاسلكي للمحترفين مع عجلة MagSpeed"
+  }
+]
