@@ -1,7 +1,82 @@
 [
   {
+    "id": "AI-1777507204-261",
+    "name": {
+      "ar": "ساعة أبل الذكية سيريس 8",
+      "en": "Apple Watch Series 8"
+    },
+    "price": "$399",
+    "rating": 4.8,
+    "category": "smartwatch",
+    "image": "https://source.unsplash.com/600x400/?smartwatch",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+Watch+Series+8"
+  },
+  {
+    "id": "AI-1777507204-201",
+    "name": {
+      "ar": "سامسونج جالكسي واتش 5",
+      "en": "Samsung Galaxy Watch 5"
+    },
+    "price": "$279",
+    "rating": 4.6,
+    "category": "smartwatch",
+    "image": "https://source.unsplash.com/600x400/?smartwatch",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Galaxy+Watch+5"
+  },
+  {
+    "id": "AI-1777507207-338",
+    "name": {
+      "ar": "سماعات أبل إيربودز برو",
+      "en": "Apple AirPods Pro"
+    },
+    "price": "$249",
+    "rating": 4.8,
+    "category": "earbuds",
+    "image": "https://source.unsplash.com/600x400/?earbuds",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+AirPods+Pro"
+  },
+  {
+    "id": "AI-1777507207-993",
+    "name": {
+      "ar": "سماعات سوني WF-1000XM4",
+      "en": "Sony WF-1000XM4"
+    },
+    "price": "$279",
+    "rating": 4.7,
+    "category": "earbuds",
+    "image": "https://source.unsplash.com/600x400/?earbuds",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Sony+WF-1000XM4"
+  },
+  {
+    "id": "AI-1777507210-888",
+    "name": {
+      "ar": "أمازون إيكو دوت (الجيل الخامس)",
+      "en": "Amazon Echo Dot (5th Gen)"
+    },
+    "price": "$49.99",
+    "rating": 4.7,
+    "category": "smart-home",
+    "image": "https://source.unsplash.com/600x400/?smart-home",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Amazon+Echo+Dot+(5th+Gen)"
+  },
+  {
+    "id": "AI-1777507210-495",
+    "name": {
+      "ar": "فيليبس هيو وايت وألوان",
+      "en": "Philips Hue White and Color"
+    },
+    "price": "$179.99",
+    "rating": 4.6,
+    "category": "smart-home",
+    "image": "https://source.unsplash.com/600x400/?smart-home",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Philips+Hue+White+and+Color"
+  },
+  {
     "id": "NPH-001",
-    "name": { "ar": "Apple Watch Series 9 - 45 ملم", "en": "Apple Watch Series 9 45mm GPS" },
+    "name": {
+      "ar": "Apple Watch Series 9 - 45 ملم",
+      "en": "Apple Watch Series 9 45mm GPS"
+    },
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
     "category_en": "Smart Watch",
@@ -11,16 +86,25 @@
     "rating": 4.8,
     "reviews": 12430,
     "image": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=600&q=80",
-    "badge": { "ar": "الأكثر مبيعاً", "en": "Best Seller" },
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Best Seller"
+    },
     "featured": true,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B0CHX8SZQS?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "ساعة Apple الأكثر تطوراً مع شاشة Always-On وميزات صحية متقدمة. مقاومة للماء WR50m.", "en": "Apple's most advanced smartwatch with Always-On display and advanced health features. Water resistant WR50m." }
+    "description": {
+      "ar": "ساعة Apple الأكثر تطوراً مع شاشة Always-On وميزات صحية متقدمة. مقاومة للماء WR50m.",
+      "en": "Apple's most advanced smartwatch with Always-On display and advanced health features. Water resistant WR50m."
+    }
   },
   {
     "id": "NPH-002",
-    "name": { "ar": "سامسونج Galaxy Watch 6 Classic - 47 ملم", "en": "Samsung Galaxy Watch 6 Classic 47mm" },
+    "name": {
+      "ar": "سامسونج Galaxy Watch 6 Classic - 47 ملم",
+      "en": "Samsung Galaxy Watch 6 Classic 47mm"
+    },
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
     "category_en": "Smart Watch",
@@ -30,16 +114,25 @@
     "rating": 4.7,
     "reviews": 8920,
     "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80",
-    "badge": { "ar": "جديد", "en": "New" },
+    "badge": {
+      "ar": "جديد",
+      "en": "New"
+    },
     "featured": true,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B0C797YFCF?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "ساعة ذكية أندرويد الأفضل مع إطار دوار كلاسيكي ومراقبة صحية دقيقة.", "en": "Best Android smartwatch with classic rotating bezel and precise health monitoring." }
+    "description": {
+      "ar": "ساعة ذكية أندرويد الأفضل مع إطار دوار كلاسيكي ومراقبة صحية دقيقة.",
+      "en": "Best Android smartwatch with classic rotating bezel and precise health monitoring."
+    }
   },
   {
     "id": "NPH-003",
-    "name": { "ar": "نظارات Ray-Ban Meta الذكية", "en": "Ray-Ban Meta Smart Glasses Gen 2" },
+    "name": {
+      "ar": "نظارات Ray-Ban Meta الذكية",
+      "en": "Ray-Ban Meta Smart Glasses Gen 2"
+    },
     "category": "smart-glasses",
     "category_ar": "نظارات ذكية",
     "category_en": "Smart Glasses",
@@ -49,16 +142,25 @@
     "rating": 4.5,
     "reviews": 5640,
     "image": "https://images.unsplash.com/photo-1574482620811-1aa16ffe3c82?w=600&q=80",
-    "badge": { "ar": "الأكثر طلباً", "en": "Most Wanted" },
+    "badge": {
+      "ar": "الأكثر طلباً",
+      "en": "Most Wanted"
+    },
     "featured": true,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B0CJNM6TMP?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "نظارات ذكية بكاميرا 12MP وصوت عالي الجودة ومساعد AI مدمج. مدة البطارية 4 ساعات.", "en": "Smart glasses with 12MP camera, premium audio, and built-in AI assistant. 4-hour battery life." }
+    "description": {
+      "ar": "نظارات ذكية بكاميرا 12MP وصوت عالي الجودة ومساعد AI مدمج. مدة البطارية 4 ساعات.",
+      "en": "Smart glasses with 12MP camera, premium audio, and built-in AI assistant. 4-hour battery life."
+    }
   },
   {
     "id": "NPH-004",
-    "name": { "ar": "Fitbit Charge 6 - متتبع اللياقة", "en": "Fitbit Charge 6 Fitness Tracker" },
+    "name": {
+      "ar": "Fitbit Charge 6 - متتبع اللياقة",
+      "en": "Fitbit Charge 6 Fitness Tracker"
+    },
     "category": "health",
     "category_ar": "الصحة الذكية",
     "category_en": "Smart Health",
@@ -68,16 +170,25 @@
     "rating": 4.6,
     "reviews": 15200,
     "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&q=80",
-    "badge": { "ar": "خصم 17%", "en": "17% OFF" },
+    "badge": {
+      "ar": "خصم 17%",
+      "en": "17% OFF"
+    },
     "featured": true,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B0CDW4RJKT?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "أفضل متتبع لياقة بدنية مع GPS مدمج ومراقبة معدل ضربات القلب وتتبع النوم المتقدم.", "en": "Best fitness tracker with built-in GPS, heart rate monitoring, and advanced sleep tracking." }
+    "description": {
+      "ar": "أفضل متتبع لياقة بدنية مع GPS مدمج ومراقبة معدل ضربات القلب وتتبع النوم المتقدم.",
+      "en": "Best fitness tracker with built-in GPS, heart rate monitoring, and advanced sleep tracking."
+    }
   },
   {
     "id": "NPH-005",
-    "name": { "ar": "AirPods Pro الجيل الثاني", "en": "Apple AirPods Pro 2nd Generation" },
+    "name": {
+      "ar": "AirPods Pro الجيل الثاني",
+      "en": "Apple AirPods Pro 2nd Generation"
+    },
     "category": "earbuds",
     "category_ar": "سماعات ذكية",
     "category_en": "Smart Earbuds",
@@ -87,16 +198,25 @@
     "rating": 4.9,
     "reviews": 28900,
     "image": "https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?w=600&q=80",
-    "badge": { "ar": "الأفضل تقييماً", "en": "Top Rated" },
+    "badge": {
+      "ar": "الأفضل تقييماً",
+      "en": "Top Rated"
+    },
     "featured": true,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B0BDHWDR12?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "سماعات Apple الأفضل مع إلغاء الضوضاء الفعّال وصوت مكاني ومقاومة للماء.", "en": "Apple's best earbuds with active noise cancellation, spatial audio, and water resistance." }
+    "description": {
+      "ar": "سماعات Apple الأفضل مع إلغاء الضوضاء الفعّال وصوت مكاني ومقاومة للماء.",
+      "en": "Apple's best earbuds with active noise cancellation, spatial audio, and water resistance."
+    }
   },
   {
     "id": "NPH-006",
-    "name": { "ar": "Amazon Echo Show 10 - شاشة ذكية", "en": "Amazon Echo Show 10 Smart Display" },
+    "name": {
+      "ar": "Amazon Echo Show 10 - شاشة ذكية",
+      "en": "Amazon Echo Show 10 Smart Display"
+    },
     "category": "smart-home",
     "category_ar": "المنزل الذكي",
     "category_en": "Smart Home",
@@ -106,16 +226,25 @@
     "rating": 4.7,
     "reviews": 9870,
     "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-    "badge": { "ar": "أمازون", "en": "Amazon" },
+    "badge": {
+      "ar": "أمازون",
+      "en": "Amazon"
+    },
     "featured": true,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B07VHZ41L8?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "شاشة ذكية بشاشة دوارة 10 بوصة تتابعك تلقائياً مع Alexa ومكالمات فيديو.", "en": "Smart display with 10\" rotating screen that follows you automatically, Alexa, and video calls." }
+    "description": {
+      "ar": "شاشة ذكية بشاشة دوارة 10 بوصة تتابعك تلقائياً مع Alexa ومكالمات فيديو.",
+      "en": "Smart display with 10\" rotating screen that follows you automatically, Alexa, and video calls."
+    }
   },
   {
     "id": "NPH-007",
-    "name": { "ar": "Garmin Venu 3 - ساعة رياضية", "en": "Garmin Venu 3 GPS Smartwatch" },
+    "name": {
+      "ar": "Garmin Venu 3 - ساعة رياضية",
+      "en": "Garmin Venu 3 GPS Smartwatch"
+    },
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
     "category_en": "Smart Watch",
@@ -125,16 +254,25 @@
     "rating": 4.8,
     "reviews": 4320,
     "image": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=600&q=80",
-    "badge": { "ar": "رياضي", "en": "Sports" },
+    "badge": {
+      "ar": "رياضي",
+      "en": "Sports"
+    },
     "featured": false,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B0CD8JBGV4?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "ساعة Garmin الرياضية الأحدث مع تتبع GPS دقيق وبطارية تدوم 14 يوم.", "en": "Latest Garmin sports watch with accurate GPS tracking and 14-day battery life." }
+    "description": {
+      "ar": "ساعة Garmin الرياضية الأحدث مع تتبع GPS دقيق وبطارية تدوم 14 يوم.",
+      "en": "Latest Garmin sports watch with accurate GPS tracking and 14-day battery life."
+    }
   },
   {
     "id": "NPH-008",
-    "name": { "ar": "Sony WH-1000XM5 - سماعات لاسلكية", "en": "Sony WH-1000XM5 Wireless Headphones" },
+    "name": {
+      "ar": "Sony WH-1000XM5 - سماعات لاسلكية",
+      "en": "Sony WH-1000XM5 Wireless Headphones"
+    },
     "category": "earbuds",
     "category_ar": "سماعات ذكية",
     "category_en": "Smart Earbuds",
@@ -144,16 +282,25 @@
     "rating": 4.8,
     "reviews": 18560,
     "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80",
-    "badge": { "ar": "سوني", "en": "Sony" },
+    "badge": {
+      "ar": "سوني",
+      "en": "Sony"
+    },
     "featured": false,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B09XS7JWHH?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "أفضل سماعات إلغاء ضوضاء في العالم مع 30 ساعة بطارية وصوت Hi-Res Audio.", "en": "World's best noise-canceling headphones with 30-hour battery and Hi-Res Audio." }
+    "description": {
+      "ar": "أفضل سماعات إلغاء ضوضاء في العالم مع 30 ساعة بطارية وصوت Hi-Res Audio.",
+      "en": "World's best noise-canceling headphones with 30-hour battery and Hi-Res Audio."
+    }
   },
   {
     "id": "NPH-009",
-    "name": { "ar": "Withings Body+ - ميزان ذكي", "en": "Withings Body+ Smart Scale WiFi" },
+    "name": {
+      "ar": "Withings Body+ - ميزان ذكي",
+      "en": "Withings Body+ Smart Scale WiFi"
+    },
     "category": "health",
     "category_ar": "الصحة الذكية",
     "category_en": "Smart Health",
@@ -163,16 +310,25 @@
     "rating": 4.5,
     "reviews": 7840,
     "image": "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=600&q=80",
-    "badge": { "ar": "خصم 23%", "en": "23% OFF" },
+    "badge": {
+      "ar": "خصم 23%",
+      "en": "23% OFF"
+    },
     "featured": false,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B071XW4C5Q?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "ميزان ذكي يقيس الوزن ونسبة الدهون والعضلات وكثافة العظام ويرسلها لهاتفك.", "en": "Smart scale measuring weight, fat, muscle, bone density and syncing to your phone." }
+    "description": {
+      "ar": "ميزان ذكي يقيس الوزن ونسبة الدهون والعضلات وكثافة العظام ويرسلها لهاتفك.",
+      "en": "Smart scale measuring weight, fat, muscle, bone density and syncing to your phone."
+    }
   },
   {
     "id": "NPH-010",
-    "name": { "ar": "Google Nest Thermostat - ترموستات ذكي", "en": "Google Nest Smart Thermostat" },
+    "name": {
+      "ar": "Google Nest Thermostat - ترموستات ذكي",
+      "en": "Google Nest Smart Thermostat"
+    },
     "category": "smart-home",
     "category_ar": "المنزل الذكي",
     "category_en": "Smart Home",
@@ -182,16 +338,25 @@
     "rating": 4.6,
     "reviews": 11200,
     "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80",
-    "badge": { "ar": "جوجل", "en": "Google" },
+    "badge": {
+      "ar": "جوجل",
+      "en": "Google"
+    },
     "featured": false,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B09QYVQX7Z?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "ترموستات ذكي يتعلم عاداتك ويوفر حتى 15% من فاتورة الكهرباء تلقائياً.", "en": "Smart thermostat that learns your habits and saves up to 15% on energy bills automatically." }
+    "description": {
+      "ar": "ترموستات ذكي يتعلم عاداتك ويوفر حتى 15% من فاتورة الكهرباء تلقائياً.",
+      "en": "Smart thermostat that learns your habits and saves up to 15% on energy bills automatically."
+    }
   },
   {
     "id": "NPH-011",
-    "name": { "ar": "Amazfit GTR 4 - ساعة ذكية", "en": "Amazfit GTR 4 Smartwatch GPS" },
+    "name": {
+      "ar": "Amazfit GTR 4 - ساعة ذكية",
+      "en": "Amazfit GTR 4 Smartwatch GPS"
+    },
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
     "category_en": "Smart Watch",
@@ -201,16 +366,25 @@
     "rating": 4.4,
     "reviews": 6780,
     "image": "https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?w=600&q=80",
-    "badge": { "ar": "قيمة ممتازة", "en": "Great Value" },
+    "badge": {
+      "ar": "قيمة ممتازة",
+      "en": "Great Value"
+    },
     "featured": false,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B0B8V7CNPK?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "ساعة ذكية بسعر منافس مع بطارية 14 يوم وGPS مدمج ومراقبة صحة متكاملة.", "en": "Competitive price smartwatch with 14-day battery, built-in GPS, and comprehensive health monitoring." }
+    "description": {
+      "ar": "ساعة ذكية بسعر منافس مع بطارية 14 يوم وGPS مدمج ومراقبة صحة متكاملة.",
+      "en": "Competitive price smartwatch with 14-day battery, built-in GPS, and comprehensive health monitoring."
+    }
   },
   {
     "id": "NPH-012",
-    "name": { "ar": "Oura Ring Gen 3 - خاتم ذكي", "en": "Oura Ring Gen 3 Smart Ring" },
+    "name": {
+      "ar": "Oura Ring Gen 3 - خاتم ذكي",
+      "en": "Oura Ring Gen 3 Smart Ring"
+    },
     "category": "health",
     "category_ar": "الصحة الذكية",
     "category_en": "Smart Health",
@@ -220,16 +394,25 @@
     "rating": 4.3,
     "reviews": 3450,
     "image": "https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?w=600&q=80",
-    "badge": { "ar": "ابتكار", "en": "Innovation" },
+    "badge": {
+      "ar": "ابتكار",
+      "en": "Innovation"
+    },
     "featured": false,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B09KVJLQ1J?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "خاتم ذكي يتتبع النوم والنشاط والصحة بدقة استثنائية بدون شاشة.", "en": "Smart ring tracking sleep, activity, and health with exceptional accuracy without a screen." }
+    "description": {
+      "ar": "خاتم ذكي يتتبع النوم والنشاط والصحة بدقة استثنائية بدون شاشة.",
+      "en": "Smart ring tracking sleep, activity, and health with exceptional accuracy without a screen."
+    }
   },
   {
     "id": "NPH-013",
-    "name": { "ar": "Samsung Galaxy Buds2 Pro - سماعات لاسلكية", "en": "Samsung Galaxy Buds2 Pro Wireless Earbuds" },
+    "name": {
+      "ar": "Samsung Galaxy Buds2 Pro - سماعات لاسلكية",
+      "en": "Samsung Galaxy Buds2 Pro Wireless Earbuds"
+    },
     "category": "earbuds",
     "category_ar": "سماعات ذكية",
     "category_en": "Smart Earbuds",
@@ -239,16 +422,25 @@
     "rating": 4.6,
     "reviews": 13450,
     "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&q=80",
-    "badge": { "ar": "خصم 22%", "en": "22% OFF" },
+    "badge": {
+      "ar": "خصم 22%",
+      "en": "22% OFF"
+    },
     "featured": false,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B0B2HKQTY2?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "سماعات سامسونج اللاسلكية مع إلغاء الضوضاء الفعّال وصوت Hi-Fi 24bit.", "en": "Samsung wireless earbuds with active noise cancellation and 24bit Hi-Fi sound." }
+    "description": {
+      "ar": "سماعات سامسونج اللاسلكية مع إلغاء الضوضاء الفعّال وصوت Hi-Fi 24bit.",
+      "en": "Samsung wireless earbuds with active noise cancellation and 24bit Hi-Fi sound."
+    }
   },
   {
     "id": "NPH-014",
-    "name": { "ar": "TP-Link Kasa - مقبس ذكي 4 قطع", "en": "TP-Link Kasa Smart Plug 4-Pack" },
+    "name": {
+      "ar": "TP-Link Kasa - مقبس ذكي 4 قطع",
+      "en": "TP-Link Kasa Smart Plug 4-Pack"
+    },
     "category": "smart-home",
     "category_ar": "المنزل الذكي",
     "category_en": "Smart Home",
@@ -258,16 +450,25 @@
     "rating": 4.7,
     "reviews": 22100,
     "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-    "badge": { "ar": "صفقة اليوم", "en": "Deal" },
+    "badge": {
+      "ar": "صفقة اليوم",
+      "en": "Deal"
+    },
     "featured": false,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B07RCNB2L3?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "مقابس ذكية تتحكم بها عبر الهاتف وAlexa وGoogle. جدولة التشغيل والإيقاف.", "en": "Smart plugs controlled via phone, Alexa, and Google. Schedule on/off automatically." }
+    "description": {
+      "ar": "مقابس ذكية تتحكم بها عبر الهاتف وAlexa وGoogle. جدولة التشغيل والإيقاف.",
+      "en": "Smart plugs controlled via phone, Alexa, and Google. Schedule on/off automatically."
+    }
   },
   {
     "id": "NPH-015",
-    "name": { "ar": "Beats Studio Pro - سماعات احترافية", "en": "Beats Studio Pro Wireless Headphones" },
+    "name": {
+      "ar": "Beats Studio Pro - سماعات احترافية",
+      "en": "Beats Studio Pro Wireless Headphones"
+    },
     "category": "earbuds",
     "category_ar": "سماعات ذكية",
     "category_en": "Smart Earbuds",
@@ -277,16 +478,25 @@
     "rating": 4.5,
     "reviews": 7820,
     "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&q=80",
-    "badge": { "ar": "بيتس", "en": "Beats" },
+    "badge": {
+      "ar": "بيتس",
+      "en": "Beats"
+    },
     "featured": false,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B0C4BWMD4F?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "سماعات Beats الاحترافية مع ANC وصوت USB-C عالي الدقة وتوافق Apple/Android.", "en": "Professional Beats headphones with ANC, USB-C high-res audio, Apple/Android compatibility." }
+    "description": {
+      "ar": "سماعات Beats الاحترافية مع ANC وصوت USB-C عالي الدقة وتوافق Apple/Android.",
+      "en": "Professional Beats headphones with ANC, USB-C high-res audio, Apple/Android compatibility."
+    }
   },
   {
     "id": "NPH-016",
-    "name": { "ar": "Xiaomi Mi Band 8 Pro - سوار ذكي", "en": "Xiaomi Smart Band 8 Pro" },
+    "name": {
+      "ar": "Xiaomi Mi Band 8 Pro - سوار ذكي",
+      "en": "Xiaomi Smart Band 8 Pro"
+    },
     "category": "health",
     "category_ar": "الصحة الذكية",
     "category_en": "Smart Health",
@@ -296,16 +506,25 @@
     "rating": 4.4,
     "reviews": 34200,
     "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&q=80",
-    "badge": { "ar": "الأرخص", "en": "Best Budget" },
+    "badge": {
+      "ar": "الأرخص",
+      "en": "Best Budget"
+    },
     "featured": false,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B0CG4H4Y4T?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "أفضل متتبع لياقة بدنية بسعر منخفض مع شاشة AMOLED وGPS ومراقبة 150+ رياضة.", "en": "Best budget fitness tracker with AMOLED display, GPS, and monitoring for 150+ sports." }
+    "description": {
+      "ar": "أفضل متتبع لياقة بدنية بسعر منخفض مع شاشة AMOLED وGPS ومراقبة 150+ رياضة.",
+      "en": "Best budget fitness tracker with AMOLED display, GPS, and monitoring for 150+ sports."
+    }
   },
   {
     "id": "NPH-017",
-    "name": { "ar": "Logitech MX Master 3S - ماوس لاسلكي", "en": "Logitech MX Master 3S Wireless Mouse" },
+    "name": {
+      "ar": "Logitech MX Master 3S - ماوس لاسلكي",
+      "en": "Logitech MX Master 3S Wireless Mouse"
+    },
     "category": "productivity",
     "category_ar": "الإنتاجية",
     "category_en": "Productivity",
@@ -315,16 +534,25 @@
     "rating": 4.9,
     "reviews": 16780,
     "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=600&q=80",
-    "badge": { "ar": "للمحترفين", "en": "Pro" },
+    "badge": {
+      "ar": "للمحترفين",
+      "en": "Pro"
+    },
     "featured": false,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B09HM94VDS?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "أفضل ماوس لاسلكي للعمل مع عجلة تمرير صامتة MagSpeed وبطارية 70 يوم.", "en": "Best wireless work mouse with silent MagSpeed scroll wheel and 70-day battery." }
+    "description": {
+      "ar": "أفضل ماوس لاسلكي للعمل مع عجلة تمرير صامتة MagSpeed وبطارية 70 يوم.",
+      "en": "Best wireless work mouse with silent MagSpeed scroll wheel and 70-day battery."
+    }
   },
   {
     "id": "NPH-018",
-    "name": { "ar": "Philips Hue - إضاءة ذكية Starter Kit", "en": "Philips Hue Smart Lighting Starter Kit" },
+    "name": {
+      "ar": "Philips Hue - إضاءة ذكية Starter Kit",
+      "en": "Philips Hue Smart Lighting Starter Kit"
+    },
     "category": "smart-home",
     "category_ar": "المنزل الذكي",
     "category_en": "Smart Home",
@@ -334,16 +562,25 @@
     "rating": 4.6,
     "reviews": 8920,
     "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=600&q=80",
-    "badge": { "ar": "إضاءة ذكية", "en": "Smart Light" },
+    "badge": {
+      "ar": "إضاءة ذكية",
+      "en": "Smart Light"
+    },
     "featured": false,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B07PHKCL7D?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "طقم إضاءة ذكية 3 مصابيح مع Bridge - 16 مليون لون وتحكم بالصوت والهاتف.", "en": "3-bulb smart lighting kit with Bridge - 16 million colors, voice and phone control." }
+    "description": {
+      "ar": "طقم إضاءة ذكية 3 مصابيح مع Bridge - 16 مليون لون وتحكم بالصوت والهاتف.",
+      "en": "3-bulb smart lighting kit with Bridge - 16 million colors, voice and phone control."
+    }
   },
   {
     "id": "NPH-019",
-    "name": { "ar": "Whoop 4.0 - متتبع صحة متقدم", "en": "Whoop 4.0 Health Performance Tracker" },
+    "name": {
+      "ar": "Whoop 4.0 - متتبع صحة متقدم",
+      "en": "Whoop 4.0 Health Performance Tracker"
+    },
     "category": "health",
     "category_ar": "الصحة الذكية",
     "category_en": "Smart Health",
@@ -353,16 +590,25 @@
     "rating": 4.2,
     "reviews": 4560,
     "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80",
-    "badge": { "ar": "رياضي متقدم", "en": "Advanced Athlete" },
+    "badge": {
+      "ar": "رياضي متقدم",
+      "en": "Advanced Athlete"
+    },
     "featured": false,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B09HK3TRSL?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "متتبع أداء رياضي احترافي بدون شاشة مع تحليل التعافي والنوم والإجهاد.", "en": "Professional sports performance tracker without screen with recovery, sleep, and strain analysis." }
+    "description": {
+      "ar": "متتبع أداء رياضي احترافي بدون شاشة مع تحليل التعافي والنوم والإجهاد.",
+      "en": "Professional sports performance tracker without screen with recovery, sleep, and strain analysis."
+    }
   },
   {
     "id": "NPH-020",
-    "name": { "ar": "Keychron K2 Pro - لوحة مفاتيح ميكانيكية", "en": "Keychron K2 Pro Mechanical Keyboard" },
+    "name": {
+      "ar": "Keychron K2 Pro - لوحة مفاتيح ميكانيكية",
+      "en": "Keychron K2 Pro Mechanical Keyboard"
+    },
     "category": "productivity",
     "category_ar": "الإنتاجية",
     "category_en": "Productivity",
@@ -372,16 +618,25 @@
     "rating": 4.8,
     "reviews": 9340,
     "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600&q=80",
-    "badge": { "ar": "ميكانيكي", "en": "Mechanical" },
+    "badge": {
+      "ar": "ميكانيكي",
+      "en": "Mechanical"
+    },
     "featured": false,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B09ZWB1FGN?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "لوحة مفاتيح ميكانيكية لاسلكية مدمجة مع إضاءة RGB وتوافق Mac/Windows/iOS/Android.", "en": "Compact wireless mechanical keyboard with RGB backlight and Mac/Windows/iOS/Android support." }
+    "description": {
+      "ar": "لوحة مفاتيح ميكانيكية لاسلكية مدمجة مع إضاءة RGB وتوافق Mac/Windows/iOS/Android.",
+      "en": "Compact wireless mechanical keyboard with RGB backlight and Mac/Windows/iOS/Android support."
+    }
   },
   {
     "id": "NPH-021",
-    "name": { "ar": "Ring Video Doorbell 4 - جرس باب ذكي", "en": "Ring Video Doorbell 4" },
+    "name": {
+      "ar": "Ring Video Doorbell 4 - جرس باب ذكي",
+      "en": "Ring Video Doorbell 4"
+    },
     "category": "smart-home",
     "category_ar": "المنزل الذكي",
     "category_en": "Smart Home",
@@ -391,16 +646,25 @@
     "rating": 4.5,
     "reviews": 19870,
     "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-    "badge": { "ar": "أمان منزلي", "en": "Home Security" },
+    "badge": {
+      "ar": "أمان منزلي",
+      "en": "Home Security"
+    },
     "featured": false,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B08N5NQ69J?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "جرس باب ذكي بكاميرا 1080HD ومعاينة مسبقة للزوار وكشف حركة ذكي.", "en": "Smart video doorbell with 1080HD camera, visitor preview, and smart motion detection." }
+    "description": {
+      "ar": "جرس باب ذكي بكاميرا 1080HD ومعاينة مسبقة للزوار وكشف حركة ذكي.",
+      "en": "Smart video doorbell with 1080HD camera, visitor preview, and smart motion detection."
+    }
   },
   {
     "id": "NPH-022",
-    "name": { "ar": "Tile Mate 4-Pack - متتبع بلوتوث", "en": "Tile Mate Bluetooth Tracker 4-Pack" },
+    "name": {
+      "ar": "Tile Mate 4-Pack - متتبع بلوتوث",
+      "en": "Tile Mate Bluetooth Tracker 4-Pack"
+    },
     "category": "productivity",
     "category_ar": "الإنتاجية",
     "category_en": "Productivity",
@@ -410,16 +674,25 @@
     "rating": 4.4,
     "reviews": 28400,
     "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80",
-    "badge": { "ar": "لا تضيع أشياءك", "en": "Never Lose Things" },
+    "badge": {
+      "ar": "لا تضيع أشياءك",
+      "en": "Never Lose Things"
+    },
     "featured": false,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B09B2R44GF?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "4 أجهزة تتبع بلوتوث صغيرة لمفاتيحك وحقيبتك وأي شيء تخشى فقدانه.", "en": "4 small Bluetooth trackers for your keys, bag, and anything you're afraid to lose." }
+    "description": {
+      "ar": "4 أجهزة تتبع بلوتوث صغيرة لمفاتيحك وحقيبتك وأي شيء تخشى فقدانه.",
+      "en": "4 small Bluetooth trackers for your keys, bag, and anything you're afraid to lose."
+    }
   },
   {
     "id": "NPH-023",
-    "name": { "ar": "Polar H10 - حزام مراقبة ضربات القلب", "en": "Polar H10 Heart Rate Monitor Chest Strap" },
+    "name": {
+      "ar": "Polar H10 - حزام مراقبة ضربات القلب",
+      "en": "Polar H10 Heart Rate Monitor Chest Strap"
+    },
     "category": "health",
     "category_ar": "الصحة الذكية",
     "category_en": "Smart Health",
@@ -429,16 +702,25 @@
     "rating": 4.7,
     "reviews": 12300,
     "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80",
-    "badge": { "ar": "دقة طبية", "en": "Medical Grade" },
+    "badge": {
+      "ar": "دقة طبية",
+      "en": "Medical Grade"
+    },
     "featured": false,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B01N9UWXIP?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "حزام مراقبة معدل ضربات القلب الأكثر دقة في العالم للرياضيين المحترفين.", "en": "World's most accurate heart rate monitor chest strap for professional athletes." }
+    "description": {
+      "ar": "حزام مراقبة معدل ضربات القلب الأكثر دقة في العالم للرياضيين المحترفين.",
+      "en": "World's most accurate heart rate monitor chest strap for professional athletes."
+    }
   },
   {
     "id": "NPH-024",
-    "name": { "ar": "Anker Soundcore Liberty 4 NC - سماعات", "en": "Anker Soundcore Liberty 4 NC Earbuds" },
+    "name": {
+      "ar": "Anker Soundcore Liberty 4 NC - سماعات",
+      "en": "Anker Soundcore Liberty 4 NC Earbuds"
+    },
     "category": "earbuds",
     "category_ar": "سماعات ذكية",
     "category_en": "Smart Earbuds",
@@ -448,16 +730,25 @@
     "rating": 4.5,
     "reviews": 11890,
     "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&q=80",
-    "badge": { "ar": "قيمة مذهلة", "en": "Amazing Value" },
+    "badge": {
+      "ar": "قيمة مذهلة",
+      "en": "Amazing Value"
+    },
     "featured": false,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B0BS4LNVMY?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "سماعات لاسلكية عالية الجودة مع إلغاء ضوضاء قوي وصوت Hi-Res بسعر منافس.", "en": "High quality wireless earbuds with powerful ANC and Hi-Res audio at a competitive price." }
+    "description": {
+      "ar": "سماعات لاسلكية عالية الجودة مع إلغاء ضوضاء قوي وصوت Hi-Res بسعر منافس.",
+      "en": "High quality wireless earbuds with powerful ANC and Hi-Res audio at a competitive price."
+    }
   },
   {
     "id": "NPH-025",
-    "name": { "ar": "iPad Pro M4 - 11 بوصة", "en": "Apple iPad Pro M4 11-inch WiFi" },
+    "name": {
+      "ar": "iPad Pro M4 - 11 بوصة",
+      "en": "Apple iPad Pro M4 11-inch WiFi"
+    },
     "category": "productivity",
     "category_ar": "الإنتاجية",
     "category_en": "Productivity",
@@ -467,16 +758,25 @@
     "rating": 4.8,
     "reviews": 5670,
     "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=600&q=80",
-    "badge": { "ar": "M4 Chip", "en": "M4 Chip" },
+    "badge": {
+      "ar": "M4 Chip",
+      "en": "M4 Chip"
+    },
     "featured": false,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B0D3J9XDMQ?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "أقوى iPad على الإطلاق بشريحة M4 وشاشة Ultra Retina XDR وكاميرا TrueDepth.", "en": "Most powerful iPad ever with M4 chip, Ultra Retina XDR display, and TrueDepth camera." }
+    "description": {
+      "ar": "أقوى iPad على الإطلاق بشريحة M4 وشاشة Ultra Retina XDR وكاميرا TrueDepth.",
+      "en": "Most powerful iPad ever with M4 chip, Ultra Retina XDR display, and TrueDepth camera."
+    }
   },
   {
     "id": "NPH-026",
-    "name": { "ar": "Eufy Security SoloCam C3 - كاميرا ذكية", "en": "Eufy Security SoloCam C3 Wireless" },
+    "name": {
+      "ar": "Eufy Security SoloCam C3 - كاميرا ذكية",
+      "en": "Eufy Security SoloCam C3 Wireless"
+    },
     "category": "smart-home",
     "category_ar": "المنزل الذكي",
     "category_en": "Smart Home",
@@ -486,16 +786,25 @@
     "rating": 4.4,
     "reviews": 7230,
     "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-    "badge": { "ar": "كاميرا AI", "en": "AI Camera" },
+    "badge": {
+      "ar": "كاميرا AI",
+      "en": "AI Camera"
+    },
     "featured": false,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B0BNY98CHN?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "كاميرا أمنية لاسلكية 4K بذكاء اصطناعي لكشف الأشخاص والحيوانات، لا اشتراك شهري.", "en": "4K wireless security camera with AI for person/animal detection, no monthly subscription." }
+    "description": {
+      "ar": "كاميرا أمنية لاسلكية 4K بذكاء اصطناعي لكشف الأشخاص والحيوانات، لا اشتراك شهري.",
+      "en": "4K wireless security camera with AI for person/animal detection, no monthly subscription."
+    }
   },
   {
     "id": "NPH-027",
-    "name": { "ar": "Meta Quest 3S - نظارات الواقع المختلط", "en": "Meta Quest 3S VR Headset 128GB" },
+    "name": {
+      "ar": "Meta Quest 3S - نظارات الواقع المختلط",
+      "en": "Meta Quest 3S VR Headset 128GB"
+    },
     "category": "smart-glasses",
     "category_ar": "نظارات ذكية",
     "category_en": "Smart Glasses",
@@ -505,16 +814,25 @@
     "rating": 4.6,
     "reviews": 8910,
     "image": "https://images.unsplash.com/photo-1626379953822-baec19c3accd?w=600&q=80",
-    "badge": { "ar": "VR متقدم", "en": "Advanced VR" },
+    "badge": {
+      "ar": "VR متقدم",
+      "en": "Advanced VR"
+    },
     "featured": false,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B0CXHPZL71?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "نظارات الواقع المختلط Meta Quest 3S بشاشة ألوان وأداء ضعف السابق.", "en": "Meta Quest 3S mixed reality headset with color passthrough and 2x performance over previous gen." }
+    "description": {
+      "ar": "نظارات الواقع المختلط Meta Quest 3S بشاشة ألوان وأداء ضعف السابق.",
+      "en": "Meta Quest 3S mixed reality headset with color passthrough and 2x performance over previous gen."
+    }
   },
   {
     "id": "NPH-028",
-    "name": { "ar": "Jabra Evolve2 85 - سماعة رأس للعمل", "en": "Jabra Evolve2 85 Professional Headset" },
+    "name": {
+      "ar": "Jabra Evolve2 85 - سماعة رأس للعمل",
+      "en": "Jabra Evolve2 85 Professional Headset"
+    },
     "category": "productivity",
     "category_ar": "الإنتاجية",
     "category_en": "Productivity",
@@ -524,16 +842,25 @@
     "rating": 4.7,
     "reviews": 4320,
     "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80",
-    "badge": { "ar": "للعمل", "en": "Office Pro" },
+    "badge": {
+      "ar": "للعمل",
+      "en": "Office Pro"
+    },
     "featured": false,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B09BDNCWY3?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "سماعة رأس احترافية للعمل مع 8 ميكروفونات لإلغاء ضوضاء المكتب وبطارية 37 ساعة.", "en": "Professional work headset with 8 microphones for office noise cancellation and 37-hour battery." }
+    "description": {
+      "ar": "سماعة رأس احترافية للعمل مع 8 ميكروفونات لإلغاء ضوضاء المكتب وبطارية 37 ساعة.",
+      "en": "Professional work headset with 8 microphones for office noise cancellation and 37-hour battery."
+    }
   },
   {
     "id": "NPH-029",
-    "name": { "ar": "SwitchBot Lock - قفل ذكي بصمة", "en": "SwitchBot Smart Lock Pro Fingerprint" },
+    "name": {
+      "ar": "SwitchBot Lock - قفل ذكي بصمة",
+      "en": "SwitchBot Smart Lock Pro Fingerprint"
+    },
     "category": "smart-home",
     "category_ar": "المنزل الذكي",
     "category_en": "Smart Home",
@@ -543,16 +870,25 @@
     "rating": 4.4,
     "reviews": 5670,
     "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-    "badge": { "ar": "أمان ذكي", "en": "Smart Security" },
+    "badge": {
+      "ar": "أمان ذكي",
+      "en": "Smart Security"
+    },
     "featured": false,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B0BZGM87PJ?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "قفل ذكي بصمة بسرعة 0.3 ثانية مع تحكم عن بعد وتوافق Alexa/Google.", "en": "Fingerprint smart lock with 0.3-second speed, remote control, and Alexa/Google compatibility." }
+    "description": {
+      "ar": "قفل ذكي بصمة بسرعة 0.3 ثانية مع تحكم عن بعد وتوافق Alexa/Google.",
+      "en": "Fingerprint smart lock with 0.3-second speed, remote control, and Alexa/Google compatibility."
+    }
   },
   {
     "id": "NPH-030",
-    "name": { "ar": "Withings ScanWatch 2 - ساعة طبية معتمدة", "en": "Withings ScanWatch 2 Medical Smartwatch" },
+    "name": {
+      "ar": "Withings ScanWatch 2 - ساعة طبية معتمدة",
+      "en": "Withings ScanWatch 2 Medical Smartwatch"
+    },
     "category": "health",
     "category_ar": "الصحة الذكية",
     "category_en": "Smart Health",
@@ -562,11 +898,17 @@
     "rating": 4.6,
     "reviews": 3210,
     "image": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=600&q=80",
-    "badge": { "ar": "طبي معتمد", "en": "Medical Grade" },
+    "badge": {
+      "ar": "طبي معتمد",
+      "en": "Medical Grade"
+    },
     "featured": false,
     "in_stock": true,
     "affiliate_amazon": "https://www.amazon.com/dp/B0CF3GFMHW?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
-    "description": { "ar": "ساعة طبية معتمدة FDA مع تخطيط القلب ECG وقياس أكسجين الدم وكشف الرجفان الأذيني.", "en": "FDA-cleared medical smartwatch with ECG, SpO2 blood oxygen, and atrial fibrillation detection." }
+    "description": {
+      "ar": "ساعة طبية معتمدة FDA مع تخطيط القلب ECG وقياس أكسجين الدم وكشف الرجفان الأذيني.",
+      "en": "FDA-cleared medical smartwatch with ECG, SpO2 blood oxygen, and atrial fibrillation detection."
+    }
   }
 ]

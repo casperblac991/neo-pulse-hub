@@ -1,0 +1,22 @@
+{
+  "id": "PROD-1777709652464-1",
+  "title": "Premium smart-home Device",
+  "price": 383,
+  "rating": "3.7",
+  "reviews": 3595,
+  "image": "https://via.placeholder.com/300?text=smart-home",
+  "url": "https://amazon.com/s?k=smart-home&tag=neopulsehub-20",
+  "category": "smart-home",
+  "features": [
+    "High quality",
+    "Durable",
+    "Fast shipping",
+    "Great value"
+  ],
+  "descriptions": {
+    "en": "Premium smart-home Device - Premium quality product at $383. Rated 3.7/5 by 3595 customers.",
+    "ar": "Premium smart-home Device - منتج عالي الجودة بسعر $383. تقييم 3.7/5 من 3595 عميل."
+  },
+  "createdAt": "2026-05-02T08:14:28.312Z",
+  "updatedAt": "2026-05-02T08:14:28.312Z"
+}

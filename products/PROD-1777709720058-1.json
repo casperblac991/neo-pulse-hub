@@ -1,0 +1,22 @@
+{
+  "id": "PROD-1777709720058-1",
+  "title": "Premium computers Device",
+  "price": 291,
+  "rating": "4.2",
+  "reviews": 1175,
+  "image": "https://via.placeholder.com/300?text=computers",
+  "url": "https://amazon.com/s?k=computers&tag=neopulsehub-20",
+  "category": "computers",
+  "features": [
+    "High quality",
+    "Durable",
+    "Fast shipping",
+    "Great value"
+  ],
+  "descriptions": {
+    "en": "Premium computers Device - Premium quality product at $291. Rated 4.2/5 by 1175 customers.",
+    "ar": "Premium computers Device - منتج عالي الجودة بسعر $291. تقييم 4.2/5 من 1175 عميل."
+  },
+  "createdAt": "2026-05-02T08:15:43.898Z",
+  "updatedAt": "2026-05-02T08:15:43.898Z"
+}

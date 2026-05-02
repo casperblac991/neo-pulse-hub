@@ -1,0 +1,22 @@
+{
+  "id": "PROD-1777709682336-1",
+  "title": "Premium tech-accessories Device",
+  "price": 486,
+  "rating": "3.7",
+  "reviews": 3798,
+  "image": "https://via.placeholder.com/300?text=tech-accessories",
+  "url": "https://amazon.com/s?k=tech-accessories&tag=neopulsehub-20",
+  "category": "tech-accessories",
+  "features": [
+    "High quality",
+    "Durable",
+    "Fast shipping",
+    "Great value"
+  ],
+  "descriptions": {
+    "en": "Premium tech-accessories Device - Premium quality product at $486. Rated 3.7/5 by 3798 customers.",
+    "ar": "Premium tech-accessories Device - منتج عالي الجودة بسعر $486. تقييم 3.7/5 من 3798 عميل."
+  },
+  "createdAt": "2026-05-02T08:15:20.058Z",
+  "updatedAt": "2026-05-02T08:15:20.058Z"
+}

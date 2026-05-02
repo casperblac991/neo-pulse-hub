@@ -28,3 +28,60 @@ nohup: ignoring input
 2026-04-29 17:38:58,812 | scheduler_integration | INFO |   - Generate Buying Guides (generate_buying_guides)
 2026-04-29 17:38:58,812 | scheduler_integration | INFO | 
 ⏳ Scheduler is running. Press Ctrl+C to stop.
+2026-04-29 20:00:00,001 | apscheduler.executors.default | INFO | Running job "Fetch Amazon Products (trigger: cron[hour='0,6,12,18', minute='0'], next run at: 2026-04-30 06:00:00 UTC)" (scheduled at 2026-04-30 00:00:00+00:00)
+2026-04-29 20:00:00,001 | scheduler_integration | INFO | 🔍 Starting Amazon product fetch...
+2026-04-29 20:00:00,177 | amazon_ai_fetcher | INFO | 🔍 Fetching for category: smartwatch
+2026-04-29 20:00:04,350 | httpx | INFO | HTTP Request: POST https://api.manus.im/api/llm-proxy/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-29 20:00:04,359 | amazon_ai_fetcher | INFO | ✅ Added: ساعة أبل الذكية سيريس 8
+2026-04-29 20:00:04,360 | amazon_ai_fetcher | INFO | ✅ Added: سامسونج جالكسي واتش 5
+2026-04-29 20:00:04,360 | amazon_ai_fetcher | INFO | 🔍 Fetching for category: earbuds
+2026-04-29 20:00:07,226 | httpx | INFO | HTTP Request: POST https://api.manus.im/api/llm-proxy/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-29 20:00:07,227 | amazon_ai_fetcher | INFO | ✅ Added: سماعات أبل إيربودز برو
+2026-04-29 20:00:07,228 | amazon_ai_fetcher | INFO | ✅ Added: سماعات سوني WF-1000XM4
+2026-04-29 20:00:07,228 | amazon_ai_fetcher | INFO | 🔍 Fetching for category: smart-home
+2026-04-29 20:00:10,530 | httpx | INFO | HTTP Request: POST https://api.manus.im/api/llm-proxy/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-29 20:00:10,531 | amazon_ai_fetcher | INFO | ✅ Added: أمازون إيكو دوت (الجيل الخامس)
+2026-04-29 20:00:10,531 | amazon_ai_fetcher | INFO | ✅ Added: فيليبس هيو وايت وألوان
+2026-04-29 20:00:10,531 | scheduler_integration | INFO | ✅ Fetched 6 products from Amazon
+2026-04-29 20:00:10,533 | scheduler_integration | INFO | 💾 Saved 36 products to products.json
+2026-04-29 20:00:10,533 | apscheduler.executors.default | INFO | Job "Fetch Amazon Products (trigger: cron[hour='0,6,12,18', minute='0'], next run at: 2026-04-30 06:00:00 UTC)" executed successfully
+2026-04-30 04:10:13,478 | apscheduler.executors.default | WARNING | Run time of job "Cleanup Old Data (trigger: cron[hour='3', minute='0'], next run at: 2026-05-01 03:00:00 UTC)" was missed by 5:10:13.478664
+2026-04-30 04:10:13,479 | apscheduler.executors.default | WARNING | Run time of job "Fetch Amazon Products (trigger: cron[hour='0,6,12,18', minute='0'], next run at: 2026-04-30 12:00:00 UTC)" was missed by 2:10:13.479496
+2026-04-30 04:10:13,480 | apscheduler.executors.default | INFO | Running job "Publish Social Campaigns (trigger: cron[hour='8,14,20', minute='0'], next run at: 2026-04-30 14:00:00 UTC)" (scheduled at 2026-04-30 08:00:00+00:00)
+2026-04-30 04:10:13,480 | scheduler_integration | INFO | 📢 Starting social media campaigns...
+2026-04-30 04:10:13,488 | social_media_automation | INFO | 📢 Publishing campaign for: Logitech MX Master 3S - ماوس لاسلكي
+2026-04-30 04:10:16,144 | httpx | INFO | HTTP Request: POST https://api.manus.im/api/llm-proxy/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-30 04:10:17,998 | httpx | INFO | HTTP Request: POST https://api.manus.im/api/llm-proxy/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-30 04:10:17,999 | social_media_automation | INFO | ✅ Campaign generated for Logitech MX Master 3S - ماوس لاسلكي
+2026-04-30 04:10:17,999 | social_media_automation | INFO | 📢 Publishing campaign for: Polar H10 - حزام مراقبة ضربات القلب
+2026-04-30 04:10:20,505 | httpx | INFO | HTTP Request: POST https://api.manus.im/api/llm-proxy/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-30 04:10:22,481 | httpx | INFO | HTTP Request: POST https://api.manus.im/api/llm-proxy/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-30 04:10:22,482 | social_media_automation | INFO | ✅ Campaign generated for Polar H10 - حزام مراقبة ضربات القلب
+2026-04-30 04:10:22,482 | social_media_automation | INFO | 📢 Publishing campaign for: iPad Pro M4 - 11 بوصة
+2026-04-30 04:10:24,353 | httpx | INFO | HTTP Request: POST https://api.manus.im/api/llm-proxy/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-30 04:10:26,994 | httpx | INFO | HTTP Request: POST https://api.manus.im/api/llm-proxy/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-30 04:10:26,995 | social_media_automation | INFO | ✅ Campaign generated for iPad Pro M4 - 11 بوصة
+2026-04-30 04:10:26,995 | scheduler_integration | ERROR | ❌ Error in job_publish_social_campaigns: object of type 'int' has no len()
+2026-04-30 04:10:26,995 | apscheduler.executors.default | INFO | Job "Publish Social Campaigns (trigger: cron[hour='8,14,20', minute='0'], next run at: 2026-04-30 14:00:00 UTC)" executed successfully
+2026-05-01 12:46:53,829 | apscheduler.executors.default | WARNING | Run time of job "Publish Daily Article (trigger: cron[hour='10', minute='0'], next run at: 2026-05-02 10:00:00 UTC)" was missed by 6:46:53.829446
+2026-05-01 12:46:53,835 | apscheduler.executors.default | WARNING | Run time of job "Fetch Amazon Products (trigger: cron[hour='0,6,12,18', minute='0'], next run at: 2026-05-01 18:00:00 UTC)" was missed by 4:46:53.835198
+2026-05-01 12:46:53,836 | apscheduler.executors.default | WARNING | Run time of job "Publish Social Campaigns (trigger: cron[hour='8,14,20', minute='0'], next run at: 2026-05-01 20:00:00 UTC)" was missed by 2:46:53.836201
+2026-05-01 12:46:53,837 | apscheduler.executors.default | WARNING | Run time of job "Cleanup Old Data (trigger: cron[hour='3', minute='0'], next run at: 2026-05-02 03:00:00 UTC)" was missed by 13:46:53.837014
+2026-05-02 04:11:31,185 | apscheduler.executors.default | WARNING | Run time of job "Fetch Amazon Products (trigger: cron[hour='0,6,12,18', minute='0'], next run at: 2026-05-02 12:00:00 UTC)" was missed by 2:11:31.173229
+2026-05-02 04:11:31,489 | apscheduler.executors.default | INFO | Running job "Publish Social Campaigns (trigger: cron[hour='8,14,20', minute='0'], next run at: 2026-05-02 14:00:00 UTC)" (scheduled at 2026-05-02 08:00:00+00:00)
+2026-05-02 04:11:31,490 | apscheduler.executors.default | WARNING | Run time of job "Cleanup Old Data (trigger: cron[hour='3', minute='0'], next run at: 2026-05-03 03:00:00 UTC)" was missed by 5:11:31.490057
+2026-05-02 04:11:31,800 | scheduler_integration | INFO | 📢 Starting social media campaigns...
+2026-05-02 04:11:32,025 | social_media_automation | INFO | 📢 Publishing campaign for: TP-Link Kasa - مقبس ذكي 4 قطع
+2026-05-02 04:11:39,049 | httpx | INFO | HTTP Request: POST https://api.manus.im/api/llm-proxy/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-02 04:11:41,653 | httpx | INFO | HTTP Request: POST https://api.manus.im/api/llm-proxy/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-02 04:11:41,654 | social_media_automation | INFO | ✅ Campaign generated for TP-Link Kasa - مقبس ذكي 4 قطع
+2026-05-02 04:11:41,654 | social_media_automation | INFO | 📢 Publishing campaign for: Philips Hue - إضاءة ذكية Starter Kit
+2026-05-02 04:11:46,635 | httpx | INFO | HTTP Request: POST https://api.manus.im/api/llm-proxy/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-02 04:11:48,383 | httpx | INFO | HTTP Request: POST https://api.manus.im/api/llm-proxy/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-02 04:11:48,384 | social_media_automation | INFO | ✅ Campaign generated for Philips Hue - إضاءة ذكية Starter Kit
+2026-05-02 04:11:48,384 | social_media_automation | INFO | 📢 Publishing campaign for: Ring Video Doorbell 4 - جرس باب ذكي
+2026-05-02 04:11:50,072 | httpx | INFO | HTTP Request: POST https://api.manus.im/api/llm-proxy/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-02 04:11:52,167 | httpx | INFO | HTTP Request: POST https://api.manus.im/api/llm-proxy/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-02 04:11:52,169 | social_media_automation | INFO | ✅ Campaign generated for Ring Video Doorbell 4 - جرس باب ذكي
+2026-05-02 04:11:52,169 | scheduler_integration | ERROR | ❌ Error in job_publish_social_campaigns: object of type 'int' has no len()
+2026-05-02 04:11:52,170 | apscheduler.executors.default | INFO | Job "Publish Social Campaigns (trigger: cron[hour='8,14,20', minute='0'], next run at: 2026-05-02 14:00:00 UTC)" executed successfully

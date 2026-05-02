@@ -1,0 +1,46 @@
+[
+  {
+    "timestamp": "2026-05-02T08:16:13.710Z",
+    "status": "error",
+    "details": {
+      "error": "TELEGRAM_BOT_TOKEN environment variable not set",
+      "timestamp": "2026-05-02T08:16:13.709Z"
+    }
+  },
+  {
+    "timestamp": "2026-05-02T08:16:29.395Z",
+    "status": "success",
+    "details": {
+      "postsPublished": 0,
+      "totalAttempts": 5,
+      "results": [
+        {
+          "success": false,
+          "error": "Telegram API error: Bad Request: chat not found",
+          "product": "PROD-1777709682336-1"
+        },
+        {
+          "success": false,
+          "error": "Telegram API error: Bad Request: chat not found",
+          "product": "PROD-1777709652464-1"
+        },
+        {
+          "success": false,
+          "error": "Telegram API error: Bad Request: chat not found",
+          "product": "PROD-1777709668312-1"
+        },
+        {
+          "success": false,
+          "error": "Telegram API error: Bad Request: chat not found",
+          "product": "PROD-1777709720058-1"
+        },
+        {
+          "success": false,
+          "error": "Telegram API error: Bad Request: chat not found",
+          "product": "PROD-1777709621759-1"
+        }
+      ],
+      "timestamp": "2026-05-02T08:16:29.394Z"
+    }
+  }
+]

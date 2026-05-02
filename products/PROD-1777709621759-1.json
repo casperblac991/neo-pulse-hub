@@ -1,0 +1,22 @@
+{
+  "id": "PROD-1777709621759-1",
+  "title": "Premium electronics Device",
+  "price": 418,
+  "rating": "4.5",
+  "reviews": 340,
+  "image": "https://via.placeholder.com/300?text=electronics",
+  "url": "https://amazon.com/s?k=electronics&tag=neopulsehub-20",
+  "category": "electronics",
+  "features": [
+    "High quality",
+    "Durable",
+    "Fast shipping",
+    "Great value"
+  ],
+  "descriptions": {
+    "en": "Premium electronics Device - Premium quality product at $418. Rated 4.5/5 by 340 customers.",
+    "ar": "Premium electronics Device - منتج عالي الجودة بسعر $418. تقييم 4.5/5 من 340 عميل."
+  },
+  "createdAt": "2026-05-02T08:14:12.463Z",
+  "updatedAt": "2026-05-02T08:14:12.464Z"
+}

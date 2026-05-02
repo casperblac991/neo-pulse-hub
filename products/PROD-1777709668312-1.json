@@ -1,0 +1,22 @@
+{
+  "id": "PROD-1777709668312-1",
+  "title": "Premium gadgets Device",
+  "price": 231,
+  "rating": "4.5",
+  "reviews": 2399,
+  "image": "https://via.placeholder.com/300?text=gadgets",
+  "url": "https://amazon.com/s?k=gadgets&tag=neopulsehub-20",
+  "category": "gadgets",
+  "features": [
+    "High quality",
+    "Durable",
+    "Fast shipping",
+    "Great value"
+  ],
+  "descriptions": {
+    "en": "Premium gadgets Device - Premium quality product at $231. Rated 4.5/5 by 2399 customers.",
+    "ar": "Premium gadgets Device - منتج عالي الجودة بسعر $231. تقييم 4.5/5 من 2399 عميل."
+  },
+  "createdAt": "2026-05-02T08:14:42.335Z",
+  "updatedAt": "2026-05-02T08:14:42.336Z"
+}
