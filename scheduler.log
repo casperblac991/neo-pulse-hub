@@ -85,3 +85,6 @@ nohup: ignoring input
 2026-05-02 04:11:52,169 | social_media_automation | INFO | ✅ Campaign generated for Ring Video Doorbell 4 - جرس باب ذكي
 2026-05-02 04:11:52,169 | scheduler_integration | ERROR | ❌ Error in job_publish_social_campaigns: object of type 'int' has no len()
 2026-05-02 04:11:52,170 | apscheduler.executors.default | INFO | Job "Publish Social Campaigns (trigger: cron[hour='8,14,20', minute='0'], next run at: 2026-05-02 14:00:00 UTC)" executed successfully
+2026-05-02 18:18:41,147 | apscheduler.executors.default | WARNING | Run time of job "Publish Daily Article (trigger: cron[hour='10', minute='0'], next run at: 2026-05-03 10:00:00 UTC)" was missed by 12:18:41.146962
+2026-05-02 18:18:41,149 | apscheduler.executors.default | WARNING | Run time of job "Fetch Amazon Products (trigger: cron[hour='0,6,12,18', minute='0'], next run at: 2026-05-03 00:00:00 UTC)" was missed by 4:18:41.149465
+2026-05-02 18:18:41,150 | apscheduler.executors.default | WARNING | Run time of job "Publish Social Campaigns (trigger: cron[hour='8,14,20', minute='0'], next run at: 2026-05-03 08:00:00 UTC)" was missed by 2:18:41.149855

@@ -1,2 +1,0 @@
-import { a as formatUninstallActionLabels, l as resolveUninstallChannelConfigKeys, n as applyPluginUninstallDirectoryRemoval, o as formatUninstallSlotResetPreview, s as planPluginUninstall, t as UNINSTALL_ACTION_LABELS } from "./uninstall-Ce6s855A.js";
-export { UNINSTALL_ACTION_LABELS, applyPluginUninstallDirectoryRemoval, formatUninstallActionLabels, formatUninstallSlotResetPreview, planPluginUninstall, resolveUninstallChannelConfigKeys };
