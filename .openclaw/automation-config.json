@@ -1,0 +1,101 @@
+{
+  "automation": {
+    "enabled": true,
+    "tasks": [
+      {
+        "id": "fetch-products-hourly",
+        "name": "Fetch Products from Amazon",
+        "description": "Fetches new products from Amazon Affiliate API and generates AI descriptions",
+        "enabled": true,
+        "schedule": "0 * * * *",
+        "command": "node /home/ubuntu/neo-pulse-hub/scripts/fetch-products.js",
+        "timeout": 300000,
+        "retries": 3,
+        "onSuccess": {
+          "action": "log",
+          "message": "Products fetched successfully"
+        },
+        "onError": {
+          "action": "notify",
+          "channel": "telegram",
+          "message": "Failed to fetch products"
+        }
+      },
+      {
+        "id": "generate-content-daily",
+        "name": "Generate Blog Content",
+        "description": "Generates comprehensive blog posts about products",
+        "enabled": true,
+        "schedule": "0 8 * * *",
+        "command": "node /home/ubuntu/neo-pulse-hub/scripts/generate-content.js",
+        "timeout": 600000,
+        "retries": 2,
+        "onSuccess": {
+          "action": "log",
+          "message": "Blog posts generated successfully"
+        },
+        "onError": {
+          "action": "notify",
+          "channel": "telegram",
+          "message": "Failed to generate blog posts"
+        }
+      },
+      {
+        "id": "publish-social-daily",
+        "name": "Publish to Social Media",
+        "description": "Publishes marketing campaigns to Telegram",
+        "enabled": true,
+        "schedule": "0 10,14,18 * * *",
+        "command": "TELEGRAM_BOT_TOKEN=8660142682:AAHTnr1x_QeH8BMGGaUz4gBBcogbzj4z_5w TELEGRAM_CHANNEL_ID=@noepulsehub_bot node /home/ubuntu/neo-pulse-hub/scripts/publish-social.js",
+        "timeout": 180000,
+        "retries": 2,
+        "onSuccess": {
+          "action": "log",
+          "message": "Social media posts published"
+        },
+        "onError": {
+          "action": "notify",
+          "channel": "telegram",
+          "message": "Failed to publish social media posts"
+        }
+      },
+      {
+        "id": "sync-github-after-changes",
+        "name": "Sync to GitHub",
+        "description": "Commits and pushes all automation changes to GitHub",
+        "enabled": true,
+        "schedule": "0 */6 * * *",
+        "command": "node /home/ubuntu/neo-pulse-hub/scripts/sync-github.js",
+        "timeout": 120000,
+        "retries": 3,
+        "onSuccess": {
+          "action": "log",
+          "message": "Repository synced to GitHub"
+        },
+        "onError": {
+          "action": "notify",
+          "channel": "telegram",
+          "message": "Failed to sync repository"
+        }
+      }
+    ]
+  },
+  "monitoring": {
+    "enabled": true,
+    "logLevel": "info",
+    "metricsCollection": true,
+    "alerting": {
+      "enabled": true,
+      "channel": "telegram",
+      "errorThreshold": 3
+    }
+  },
+  "environment": {
+    "GROQ_API_KEY": "${GROQ_API_KEY}",
+    "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+    "TELEGRAM_BOT_TOKEN": "${TELEGRAM_BOT_TOKEN}",
+    "TELEGRAM_CHANNEL_ID": "${TELEGRAM_CHANNEL_ID}",
+    "AMAZON_AFFILIATE_TAG": "${AMAZON_AFFILIATE_TAG}",
+    "GITHUB_TOKEN": "${GITHUB_TOKEN}"
+  }
+}
