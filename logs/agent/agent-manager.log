@@ -1,0 +1,5 @@
+{"timestamp":"2026-05-04T14:04:49.829Z","level":"INFO","component":"agent-manager","message":"Starting Neo Pulse Hub AI Agent...","data":{}}
+{"timestamp":"2026-05-04T14:04:49.830Z","level":"INFO","component":"agent-manager","message":"Agent: Neo Pulse Hub AI Agent v1.0.0","data":{}}
+{"timestamp":"2026-05-04T14:04:49.830Z","level":"INFO","component":"agent-manager","message":"Mode: autonomous","data":{}}
+{"timestamp":"2026-05-04T14:04:49.830Z","level":"INFO","component":"agent-manager","message":"Environment: codespaces","data":{}}
+{"timestamp":"2026-05-04T14:04:50.163Z","level":"INFO","component":"agent-manager","message":"Agent started successfully","data":{}}

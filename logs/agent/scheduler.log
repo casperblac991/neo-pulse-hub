@@ -1,0 +1,8 @@
+{"timestamp":"2026-05-04T14:04:49.830Z","level":"INFO","component":"scheduler","message":"Starting task scheduler...","data":{}}
+{"timestamp":"2026-05-04T14:04:50.146Z","level":"INFO","component":"scheduler","message":"Task scheduled: fetch-products (0 6 * * *)","data":{}}
+{"timestamp":"2026-05-04T14:04:50.150Z","level":"INFO","component":"scheduler","message":"Task scheduled: generate-content (0 7 * * *)","data":{}}
+{"timestamp":"2026-05-04T14:04:50.153Z","level":"INFO","component":"scheduler","message":"Task scheduled: publish-social (0 8 * * *)","data":{}}
+{"timestamp":"2026-05-04T14:04:50.156Z","level":"INFO","component":"scheduler","message":"Task scheduled: generate-reports (0 9 * * *)","data":{}}
+{"timestamp":"2026-05-04T14:04:50.160Z","level":"INFO","component":"scheduler","message":"Task scheduled: health-check (*/30 * * * *)","data":{}}
+{"timestamp":"2026-05-04T14:04:50.162Z","level":"INFO","component":"scheduler","message":"Task scheduled: sync-github (0 18 * * *)","data":{}}
+{"timestamp":"2026-05-04T14:04:50.163Z","level":"INFO","component":"scheduler","message":"Scheduled 6 tasks","data":{}}
