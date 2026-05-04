@@ -1,0 +1,228 @@
+{
+  "agent": {
+    "name": "Neo Pulse Hub AI Agent",
+    "version": "1.0.0",
+    "description": "Autonomous AI agent for managing Neo Pulse Hub platform",
+    "mode": "autonomous",
+    "environment": "codespaces"
+  },
+  "capabilities": {
+    "contentGeneration": {
+      "enabled": true,
+      "models": ["gpt-4o", "claude-3"],
+      "languages": ["en", "ar"],
+      "contentTypes": ["blog", "social", "email", "product_description"]
+    },
+    "productManagement": {
+      "enabled": true,
+      "sources": ["amazon", "aliexpress", "ebay"],
+      "updateFrequency": "6h",
+      "categories": ["electronics", "fashion", "home", "sports"]
+    },
+    "socialMediaAutomation": {
+      "enabled": true,
+      "platforms": ["telegram", "twitter", "instagram", "facebook"],
+      "schedulingEnabled": true,
+      "analyticsEnabled": true
+    },
+    "analyticsReporting": {
+      "enabled": true,
+      "metrics": ["traffic", "conversion", "revenue", "engagement"],
+      "reportingFrequency": "daily",
+      "dashboardEnabled": true
+    },
+    "systemMonitoring": {
+      "enabled": true,
+      "healthChecks": "every 30 minutes",
+      "alerting": true,
+      "autoRecovery": true
+    }
+  },
+  "skills": [
+    {
+      "name": "content-generation",
+      "type": "core",
+      "description": "Generate blog posts, social media content, and product descriptions",
+      "enabled": true,
+      "priority": "high"
+    },
+    {
+      "name": "product-fetching",
+      "type": "core",
+      "description": "Fetch and manage products from various sources",
+      "enabled": true,
+      "priority": "high"
+    },
+    {
+      "name": "social-media-management",
+      "type": "core",
+      "description": "Manage social media campaigns and engagement",
+      "enabled": true,
+      "priority": "high"
+    },
+    {
+      "name": "analytics-reporting",
+      "type": "core",
+      "description": "Generate analytics reports and insights",
+      "enabled": true,
+      "priority": "medium"
+    },
+    {
+      "name": "system-monitoring",
+      "type": "core",
+      "description": "Monitor system health and performance",
+      "enabled": true,
+      "priority": "high"
+    },
+    {
+      "name": "github-management",
+      "type": "core",
+      "description": "Manage GitHub repository and commits",
+      "enabled": true,
+      "priority": "medium"
+    },
+    {
+      "name": "email-marketing",
+      "type": "extended",
+      "description": "Create and send email marketing campaigns",
+      "enabled": true,
+      "priority": "medium"
+    },
+    {
+      "name": "seo-optimization",
+      "type": "extended",
+      "description": "Optimize content for search engines",
+      "enabled": true,
+      "priority": "medium"
+    }
+  ],
+  "scheduling": {
+    "timezone": "UTC",
+    "tasks": [
+      {
+        "name": "fetch-products",
+        "schedule": "0 6 * * *",
+        "description": "Fetch new products from Amazon",
+        "priority": "high",
+        "timeout": "30m"
+      },
+      {
+        "name": "generate-content",
+        "schedule": "0 7 * * *",
+        "description": "Generate blog posts and content",
+        "priority": "high",
+        "timeout": "45m"
+      },
+      {
+        "name": "publish-social",
+        "schedule": "0 8 * * *",
+        "description": "Publish to social media",
+        "priority": "high",
+        "timeout": "30m"
+      },
+      {
+        "name": "generate-reports",
+        "schedule": "0 9 * * *",
+        "description": "Generate analytics reports",
+        "priority": "medium",
+        "timeout": "30m"
+      },
+      {
+        "name": "health-check",
+        "schedule": "*/30 * * * *",
+        "description": "Monitor system health",
+        "priority": "high",
+        "timeout": "10m"
+      },
+      {
+        "name": "sync-github",
+        "schedule": "0 18 * * *",
+        "description": "Sync with GitHub repository",
+        "priority": "high",
+        "timeout": "15m"
+      }
+    ]
+  },
+  "integrations": {
+    "apis": [
+      {
+        "name": "amazon",
+        "type": "product_api",
+        "endpoint": "https://api.amazon.com",
+        "authType": "api_key",
+        "enabled": true
+      },
+      {
+        "name": "openai",
+        "type": "llm",
+        "endpoint": "https://api.openai.com/v1",
+        "authType": "api_key",
+        "model": "gpt-4o",
+        "enabled": true
+      },
+      {
+        "name": "telegram",
+        "type": "messaging",
+        "endpoint": "https://api.telegram.org",
+        "authType": "bot_token",
+        "enabled": true
+      },
+      {
+        "name": "github",
+        "type": "repository",
+        "endpoint": "https://api.github.com",
+        "authType": "oauth",
+        "enabled": true
+      },
+      {
+        "name": "google-analytics",
+        "type": "analytics",
+        "endpoint": "https://www.googleapis.com/analytics/v3",
+        "authType": "oauth",
+        "enabled": true
+      }
+    ],
+    "database": {
+      "type": "mysql",
+      "host": "localhost",
+      "port": 3306,
+      "database": "neo_pulse_hub",
+      "authType": "credentials",
+      "enabled": true
+    }
+  },
+  "monitoring": {
+    "logLevel": "info",
+    "logStorage": "/home/ubuntu/logs/agent",
+    "metricsCollection": true,
+    "alerting": {
+      "enabled": true,
+      "channels": ["email", "telegram", "dashboard"]
+    },
+    "healthChecks": {
+      "database": true,
+      "apis": true,
+      "storage": true,
+      "network": true
+    }
+  },
+  "performance": {
+    "maxConcurrentTasks": 5,
+    "taskTimeout": "30m",
+    "retryAttempts": 3,
+    "retryDelay": "5m",
+    "caching": {
+      "enabled": true,
+      "ttl": "24h"
+    }
+  },
+  "security": {
+    "encryptionEnabled": true,
+    "apiKeyRotation": "90d",
+    "auditLogging": true,
+    "rateLimiting": {
+      "enabled": true,
+      "requestsPerMinute": 100
+    }
+  }
+}
