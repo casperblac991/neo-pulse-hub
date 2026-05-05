@@ -71,3 +71,7 @@
 [2026-05-05T17:22:41.620Z] [PID: 39080] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue May 05 2026 12:00:00 GMT-0400 (Eastern Daylight Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
 [2026-05-05T17:22:41.624Z] [PID: 39080] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue May 05 2026 12:30:00 GMT-0400 (Eastern Daylight Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
 [2026-05-05T17:22:41.626Z] [PID: 39080] [32m[NODE-CRON][32m [33m[WARN][0m missed execution at Tue May 05 2026 13:00:00 GMT-0400 (Eastern Daylight Time)! Possible blocking IO or high CPU user at the same process used by node-cron.
+[2026-05-05T17:30:00.010Z] [INFO] [scheduler] Executing scheduled task: health-check - Monitor system health
+[2026-05-05T17:30:00.011Z] [INFO] [task-executor] Starting task: health-check
+[2026-05-05T17:30:00.011Z] [INFO] [task-executor] Performing system health check...
+[2026-05-05T17:30:00.011Z] [INFO] [task-executor] Task completed: health-check
