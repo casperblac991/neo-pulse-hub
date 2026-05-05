@@ -79,3 +79,7 @@
 [2026-05-05T18:00:00.007Z] [INFO] [task-executor] Starting task: health-check
 [2026-05-05T18:00:00.007Z] [INFO] [task-executor] Performing system health check...
 [2026-05-05T18:00:00.007Z] [INFO] [task-executor] Task completed: health-check
+[2026-05-05T18:30:00.007Z] [INFO] [scheduler] Executing scheduled task: health-check - Monitor system health
+[2026-05-05T18:30:00.007Z] [INFO] [task-executor] Starting task: health-check
+[2026-05-05T18:30:00.007Z] [INFO] [task-executor] Performing system health check...
+[2026-05-05T18:30:00.007Z] [INFO] [task-executor] Task completed: health-check

@@ -15359,7 +15359,30 @@ Node.js v24.15.0
 [2026-05-05T18:27:48.356Z] [DEBUG] [orchestrator] [Sync-Manager] [2026-05-05T18:27:48.356Z] [INFO] [sync-manager] STARTING COMPLETE SYNCHRONIZATION
 [2026-05-05T18:27:48.356Z] [INFO] [sync-manager] ================================================================================
 [2026-05-05T18:27:48.356Z] [INFO] [sync-manager] Starting GitHub synchronization...
-27)
+[2026-05-05T18:27:49.708Z] [DEBUG] [orchestrator] [Sync-Manager] [2026-05-05T18:27:49.708Z] [INFO] [sync-manager] GitHub synchronization completed successfully
+[2026-05-05T18:27:49.708Z] [DEBUG] [orchestrator] [Sync-Manager] [2026-05-05T18:27:49.708Z] [INFO] [sync-manager] Starting database synchronization...
+[2026-05-05T18:27:49.708Z] [INFO] [sync-manager] Database synchronization completed
+[2026-05-05T18:27:49.708Z] [INFO] [sync-manager] Starting content synchronization...
+[2026-05-05T18:27:49.708Z] [INFO] [sync-manager] Content synchronization completed
+[2026-05-05T18:27:49.708Z] [INFO] [sync-manager] Starting analytics synchronization...
+[2026-05-05T18:27:49.708Z] [INFO] [sync-manager] Analytics synchronization completed
+[2026-05-05T18:27:49.708Z] [DEBUG] [orchestrator] [Sync-Manager] [2026-05-05T18:27:49.708Z] [INFO] [sync-manager] ================================================================================
+[2026-05-05T18:27:49.708Z] [INFO] [sync-manager] SYNCHRONIZATION SUMMARY
+[2026-05-05T18:27:49.709Z] [DEBUG] [orchestrator] [Sync-Manager] [2026-05-05T18:27:49.708Z] [INFO] [sync-manager] ================================================================================
+[2026-05-05T18:27:49.709Z] [INFO] [sync-manager] GitHub Sync: ✅ SUCCESS
+[2026-05-05T18:27:49.709Z] [DEBUG] [orchestrator] [Sync-Manager] [2026-05-05T18:27:49.709Z] [INFO] [sync-manager] Database Sync: ✅ SUCCESS
+[2026-05-05T18:27:49.709Z] [DEBUG] [orchestrator] [Sync-Manager] [2026-05-05T18:27:49.709Z] [INFO] [sync-manager] Content Sync: ✅ SUCCESS
+[2026-05-05T18:27:49.709Z] [DEBUG] [orchestrator] [Sync-Manager] [2026-05-05T18:27:49.709Z] [INFO] [sync-manager] Analytics Sync: ✅ SUCCESS
+[2026-05-05T18:27:49.709Z] [DEBUG] [orchestrator] [Sync-Manager] [2026-05-05T18:27:49.709Z] [INFO] [sync-manager] ================================================================================
+[2026-05-05T18:27:53.259Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:27:53.261Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52717)
+[2026-05-05T18:27:53.300Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
     at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
     at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
     at Module._load (node:internal/modules/cjs/loader:1262:25)
@@ -15371,8 +15394,1246 @@ Node.js v24.15.0
 }
 
 Node.js v24.15.0
-[2026-05-05T18:27:48.257Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
-[2026-05-05T18:27:48.356Z] [DEBUG] [orchestrator] [Sync-Manager] [2026-05-05T18:27:48.355Z] [INFO] [sync-manager] ================================================================================
-[2026-05-05T18:27:48.356Z] [DEBUG] [orchestrator] [Sync-Manager] [2026-05-05T18:27:48.356Z] [INFO] [sync-manager] STARTING COMPLETE SYNCHRONIZATION
-[2026-05-05T18:27:48.356Z] [INFO] [sync-manager] ================================================================================
-[2026-05-05T18:27:48.356Z] [INFO] [sync-manager] Starting GitHub synchronization...
+[2026-05-05T18:27:53.303Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:27:58.309Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:27:58.311Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52730)
+[2026-05-05T18:27:58.350Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:27:58.353Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:28:03.357Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:28:03.359Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52737)
+[2026-05-05T18:28:03.403Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:28:03.406Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:28:08.411Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:28:08.413Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52753)
+[2026-05-05T18:28:08.446Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:28:08.449Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:28:13.453Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:28:13.455Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52760)
+[2026-05-05T18:28:13.489Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:28:13.491Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:28:18.494Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:28:18.496Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52773)
+[2026-05-05T18:28:18.529Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:28:18.532Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:28:23.538Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:28:23.540Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52780)
+[2026-05-05T18:28:23.575Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:28:23.578Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:28:28.581Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:28:28.583Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52793)
+[2026-05-05T18:28:28.620Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:28:28.623Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:28:33.625Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:28:33.627Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52800)
+[2026-05-05T18:28:33.664Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:28:33.668Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:28:38.673Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:28:38.675Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52813)
+[2026-05-05T18:28:38.708Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:28:38.711Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:28:43.715Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:28:43.717Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52820)
+[2026-05-05T18:28:43.760Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:28:43.763Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:28:48.768Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:28:48.770Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52833)
+[2026-05-05T18:28:48.806Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:28:48.809Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:28:53.815Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:28:53.816Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52840)
+[2026-05-05T18:28:53.854Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:28:53.857Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:28:58.859Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:28:58.861Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52854)
+[2026-05-05T18:28:58.901Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:28:58.904Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:29:03.909Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:29:03.911Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52861)
+[2026-05-05T18:29:03.948Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:29:03.951Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:29:08.952Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:29:08.954Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52874)
+[2026-05-05T18:29:08.993Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:29:08.996Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:29:13.996Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:29:13.998Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52881)
+[2026-05-05T18:29:14.032Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:29:14.035Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:29:19.041Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:29:19.043Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52894)
+[2026-05-05T18:29:19.076Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:29:19.079Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:29:24.081Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:29:24.083Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52901)
+[2026-05-05T18:29:24.123Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:29:24.127Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:29:29.132Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:29:29.134Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52914)
+[2026-05-05T18:29:29.176Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:29:29.178Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:29:34.184Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:29:34.185Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52921)
+[2026-05-05T18:29:34.218Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:29:34.221Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:29:39.222Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:29:39.224Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52934)
+[2026-05-05T18:29:39.257Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:29:39.259Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:29:44.265Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:29:44.268Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52941)
+[2026-05-05T18:29:44.300Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:29:44.303Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:29:49.306Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:29:49.308Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52955)
+[2026-05-05T18:29:49.343Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:29:49.345Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:29:54.346Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:29:54.347Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52962)
+[2026-05-05T18:29:54.378Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:29:54.381Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:29:59.386Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:29:59.388Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52975)
+[2026-05-05T18:29:59.423Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:29:59.426Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:30:00.014Z] [DEBUG] [orchestrator] [OpenClaw-Agent] [2026-05-05T18:30:00.014Z] [INFO] [scheduler] Executing scheduled task: health-check - Monitor system health
+[2026-05-05T18:30:00.014Z] [DEBUG] [orchestrator] [OpenClaw-Agent] [2026-05-05T18:30:00.014Z] [INFO] [task-executor] Starting task: health-check
+[2026-05-05T18:30:00.014Z] [INFO] [task-executor] Performing system health check...
+[2026-05-05T18:30:00.014Z] [DEBUG] [orchestrator] [OpenClaw-Agent] [2026-05-05T18:30:00.014Z] [INFO] [task-executor] Task completed: health-check
+[2026-05-05T18:30:04.428Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:30:04.430Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52982)
+[2026-05-05T18:30:04.464Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:30:04.466Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:30:09.471Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:30:09.473Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 52995)
+[2026-05-05T18:30:09.505Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:30:09.508Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:30:14.512Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:30:14.514Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53002)
+[2026-05-05T18:30:14.550Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:30:14.553Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:30:19.555Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:30:19.557Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53015)
+[2026-05-05T18:30:19.594Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:30:19.597Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:30:24.602Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:30:24.604Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53022)
+[2026-05-05T18:30:24.638Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:30:24.640Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:30:29.644Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:30:29.646Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53035)
+[2026-05-05T18:30:29.692Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:30:29.696Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:30:34.696Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:30:34.698Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53042)
+[2026-05-05T18:30:34.731Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:30:34.734Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:30:39.739Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:30:39.740Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53056)
+[2026-05-05T18:30:39.776Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:30:39.779Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:30:44.781Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:30:44.783Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53063)
+[2026-05-05T18:30:44.818Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:30:44.820Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:30:49.825Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:30:49.827Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53076)
+[2026-05-05T18:30:49.866Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:30:49.868Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:30:54.872Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:30:54.874Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53083)
+[2026-05-05T18:30:54.909Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:30:54.912Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:30:59.912Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:30:59.914Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53096)
+[2026-05-05T18:30:59.949Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:30:59.952Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:31:04.957Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:31:04.959Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53103)
+[2026-05-05T18:31:04.993Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:31:04.996Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:31:09.998Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:31:10.000Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53116)
+[2026-05-05T18:31:10.030Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:31:10.033Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:31:15.038Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:31:15.040Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53123)
+[2026-05-05T18:31:15.071Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:31:15.074Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:31:20.079Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:31:20.081Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53136)
+[2026-05-05T18:31:20.118Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:31:20.121Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:31:25.123Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:31:25.125Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53143)
+[2026-05-05T18:31:25.163Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:31:25.166Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:31:30.172Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:31:30.174Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53157)
+[2026-05-05T18:31:30.209Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:31:30.212Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:31:35.215Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:31:35.217Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53170)
+[2026-05-05T18:31:35.250Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:31:35.253Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:31:40.254Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:31:40.256Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53177)
+[2026-05-05T18:31:40.287Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:31:40.290Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:31:45.295Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:31:45.297Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53190)
+[2026-05-05T18:31:45.330Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:31:45.333Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:31:50.335Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:31:50.337Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53197)
+[2026-05-05T18:31:50.375Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:31:50.378Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:31:55.383Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:31:55.385Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53210)
+[2026-05-05T18:31:55.418Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:31:55.421Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:32:00.425Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:32:00.427Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53217)
+[2026-05-05T18:32:00.460Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:32:00.463Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:32:05.464Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:32:05.466Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53232)
+[2026-05-05T18:32:05.499Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:32:05.502Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:32:10.507Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:32:10.510Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53239)
+[2026-05-05T18:32:10.546Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:32:10.548Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:32:15.553Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:32:15.554Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53252)
+[2026-05-05T18:32:15.588Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:32:15.592Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:32:20.594Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:32:20.596Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53260)
+[2026-05-05T18:32:20.630Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:32:20.634Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:32:25.639Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:32:25.641Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53273)
+[2026-05-05T18:32:25.676Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:32:25.679Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:32:30.683Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:32:30.685Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53280)
+[2026-05-05T18:32:30.723Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:32:30.726Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:32:35.728Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:32:35.730Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53293)
+[2026-05-05T18:32:35.769Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:32:35.772Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:32:40.777Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:32:40.779Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53300)
+[2026-05-05T18:32:40.813Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:32:40.816Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:32:45.819Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T18:32:45.821Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 53313)
+[2026-05-05T18:32:45.863Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T18:32:45.866Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T18:32:46.873Z] [INFO] [orchestrator] System Status Report:
+[2026-05-05T18:32:46.873Z] [INFO] [orchestrator] --------------------------------------------------------------------------------
+[2026-05-05T18:32:46.873Z] [INFO] [orchestrator] OpenClaw-Agent: ✅ RUNNING (PID: 43599)
+[2026-05-05T18:32:46.873Z] [INFO] [orchestrator] Sync-Manager: ✅ RUNNING (PID: 43600)
+[2026-05-05T18:32:46.873Z] [INFO] [orchestrator] Dashboard-Server: ✅ RUNNING (PID: 53313)
+[2026-05-05T18:32:46.873Z] [INFO] [orchestrator] --------------------------------------------------------------------------------
+[2026-05-05T18:32:48.365Z] [DEBUG] [orchestrator] [Sync-Manager] [2026-05-05T18:32:48.364Z] [INFO] [sync-manager] ================================================================================
+[2026-05-05T18:32:48.365Z] [DEBUG] [orchestrator] [Sync-Manager] [2026-05-05T18:32:48.364Z] [INFO] [sync-manager] STARTING COMPLETE SYNCHRONIZATION
+[2026-05-05T18:32:48.365Z] [INFO] [sync-manager] ================================================================================
+[2026-05-05T18:32:48.365Z] [INFO] [sync-manager] Starting GitHub synchronization...
+] [INFO] [orchestrator] System Status Report:
+[2026-05-05T18:32:46.873Z] [INFO] [orchestrator] --------------------------------------------------------------------------------
+[2026-05-05T18:32:46.873Z] [INFO] [orchestrator] OpenClaw-Agent: ✅ RUNNING (PID: 43599)
+[2026-05-05T18:32:46.873Z] [INFO] [orchestrator] Sync-Manager: ✅ RUNNING (PID: 43600)
+[2026-05-05T18:32:46.873Z] [INFO] [orchestrator] Dashboard-Server: ✅ RUNNING (PID: 53313)
+[2026-05-05T18:32:46.873Z] [INFO] [orchestrator] --------------------------------------------------------------------------------
+[2026-05-05T18:32:48.365Z] [DEBUG] [orchestrator] [Sync-Manager] [2026-05-05T18:32:48.364Z] [INFO] [sync-manager] ================================================================================
+[2026-05-05T18:32:48.365Z] [DEBUG] [orchestrator] [Sync-Manager] [2026-05-05T18:32:48.364Z] [INFO] [sync-manager] STARTING COMPLETE SYNCHRONIZATION
+[2026-05-05T18:32:48.365Z] [INFO] [sync-manager] ================================================================================
+[2026-05-05T18:32:48.365Z] [INFO] [sync-manager] Starting GitHub synchronization...
