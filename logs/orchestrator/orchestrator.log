@@ -1,0 +1,53 @@
+[2026-05-05T17:27:46.842Z] [INFO] [orchestrator] ================================================================================
+[2026-05-05T17:27:46.843Z] [INFO] [orchestrator] NEO PULSE HUB - MASTER ORCHESTRATOR
+[2026-05-05T17:27:46.843Z] [INFO] [orchestrator] ================================================================================
+[2026-05-05T17:27:46.843Z] [INFO] [orchestrator] Starting all AI automation services...
+[2026-05-05T17:27:46.843Z] [INFO] [orchestrator] ================================================================================
+[2026-05-05T17:27:46.844Z] [INFO] [orchestrator] Starting OpenClaw-Agent...
+[2026-05-05T17:27:46.848Z] [INFO] [orchestrator] OpenClaw-Agent started successfully (PID: 43599)
+[2026-05-05T17:27:46.848Z] [INFO] [orchestrator] Starting Sync-Manager...
+[2026-05-05T17:27:46.849Z] [INFO] [orchestrator] Sync-Manager started successfully (PID: 43600)
+[2026-05-05T17:27:46.849Z] [INFO] [orchestrator] Starting Dashboard-Server...
+[2026-05-05T17:27:46.851Z] [INFO] [orchestrator] Dashboard-Server started successfully (PID: 43601)
+[2026-05-05T17:27:46.851Z] [INFO] [orchestrator] ================================================================================
+[2026-05-05T17:27:46.851Z] [INFO] [orchestrator] All services started successfully!
+[2026-05-05T17:27:46.851Z] [INFO] [orchestrator] ================================================================================
+[2026-05-05T17:27:46.851Z] [INFO] [orchestrator] System Status:
+[2026-05-05T17:27:46.851Z] [INFO] [orchestrator]   ✅ OpenClaw Agent - Autonomous task execution
+[2026-05-05T17:27:46.851Z] [INFO] [orchestrator]   ✅ Sync Manager - Repository and data synchronization
+[2026-05-05T17:27:46.851Z] [INFO] [orchestrator]   ✅ Dashboard - Real-time monitoring and control
+[2026-05-05T17:27:46.851Z] [INFO] [orchestrator] ================================================================================
+[2026-05-05T17:27:46.884Z] [ERROR] [orchestrator] [Dashboard-Server] node:internal/modules/cjs/loader:1479
+  throw err;
+  ^
+
+Error: Cannot find module '/home/ubuntu/neo-pulse-hub/npm'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
+    at Module._load (node:internal/modules/cjs/loader:1262:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.15.0
+[2026-05-05T17:27:46.887Z] [DEBUG] [orchestrator] [Sync-Manager] [2026-05-05T17:27:46.886Z] [INFO] [sync-manager] Neo Pulse Hub Sync Manager started
+[2026-05-05T17:27:46.887Z] [INFO] [sync-manager] Mode: autonomous
+[2026-05-05T17:27:46.887Z] [INFO] [sync-manager] Sync Interval: 5m
+[2026-05-05T17:27:46.887Z] [INFO] [sync-manager] ================================================================================
+[2026-05-05T17:27:46.888Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T17:27:46.888Z] [DEBUG] [orchestrator] [Sync-Manager] [2026-05-05T17:27:46.887Z] [INFO] [sync-manager] STARTING COMPLETE SYNCHRONIZATION
+[2026-05-05T17:27:46.887Z] [INFO] [sync-manager] ================================================================================
+[2026-05-05T17:27:46.888Z] [INFO] [sync-manager] Starting GitHub synchronization...
+ator] [Sync-Manager] [2026-05-05T17:27:46.886Z] [INFO] [sync-manager] Neo Pulse Hub Sync Manager started
+[2026-05-05T17:27:46.887Z] [INFO] [sync-manager] Mode: autonomous
+[2026-05-05T17:27:46.887Z] [INFO] [sync-manager] Sync Interval: 5m
+[2026-05-05T17:27:46.887Z] [INFO] [sync-manager] ================================================================================
+[2026-05-05T17:27:46.888Z] [WARN] [orchestrator] Dashboard-Server exited with code 1
+[2026-05-05T17:27:46.888Z] [DEBUG] [orchestrator] [Sync-Manager] [2026-05-05T17:27:46.887Z] [INFO] [sync-manager] STARTING COMPLETE SYNCHRONIZATION
+[2026-05-05T17:27:46.887Z] [INFO] [sync-manager] ================================================================================
+[2026-05-05T17:27:46.888Z] [INFO] [sync-manager] Starting GitHub synchronization...

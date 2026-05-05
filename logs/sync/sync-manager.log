@@ -1,0 +1,7 @@
+[2026-05-05T17:27:46.886Z] [INFO] [sync-manager] Neo Pulse Hub Sync Manager started
+[2026-05-05T17:27:46.887Z] [INFO] [sync-manager] Mode: autonomous
+[2026-05-05T17:27:46.887Z] [INFO] [sync-manager] Sync Interval: 5m
+[2026-05-05T17:27:46.887Z] [INFO] [sync-manager] ================================================================================
+[2026-05-05T17:27:46.887Z] [INFO] [sync-manager] STARTING COMPLETE SYNCHRONIZATION
+[2026-05-05T17:27:46.887Z] [INFO] [sync-manager] ================================================================================
+[2026-05-05T17:27:46.888Z] [INFO] [sync-manager] Starting GitHub synchronization...

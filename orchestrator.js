@@ -52,40 +52,40 @@ class Orchestrator {
   startProcess(name, script, args = []) {
     this.logger.info(`Starting ${name}...`);
 
-    const process = spawn('node', [script, ...args], {
+    const childProcess = spawn('node', [script, ...args], {
       cwd: process.cwd(),
       stdio: ['ignore', 'pipe', 'pipe'],
       detached: true,
     });
 
-    process.stdout.on('data', (data) => {
+    childProcess.stdout.on('data', (data) => {
       const message = data.toString().trim();
       if (message) {
         this.logger.debug(`[${name}] ${message}`);
       }
     });
 
-    process.stderr.on('data', (data) => {
+    childProcess.stderr.on('data', (data) => {
       const message = data.toString().trim();
       if (message) {
         this.logger.error(`[${name}] ${message}`);
       }
     });
 
-    process.on('error', (error) => {
+    childProcess.on('error', (error) => {
       this.logger.error(`${name} error: ${error.message}`);
       // Restart the process
       setTimeout(() => this.startProcess(name, script, args), 5000);
     });
 
-    process.on('exit', (code) => {
+    childProcess.on('exit', (code) => {
       this.logger.warn(`${name} exited with code ${code}`);
       // Restart the process
       setTimeout(() => this.startProcess(name, script, args), 5000);
     });
 
-    this.processes[name] = process;
-    this.logger.info(`${name} started successfully (PID: ${process.pid})`);
+    this.processes[name] = childProcess;
+    this.logger.info(`${name} started successfully (PID: ${childProcess.pid})`);
   }
 
   startAllServices() {
