@@ -1,6 +1,7 @@
-const express = require('express');
-const fs = require('fs');
-const fetch = require('node-fetch');
+import express from 'express';
+import fs from 'fs';
+import fetch from 'node-fetch';
+
 const app = express();
 
 app.use(express.json());
@@ -167,3 +168,5 @@ setInterval(refreshProducts, 12 * 60 * 60 * 1000);
 // ═══════════════════════════════════════════════════════════
 const PORT = process.env.PORT || 10000;
 app.listen(PORT, '0.0.0.0', () => console.log(`🚀 Server on port ${PORT}`));
+
+export default app;
