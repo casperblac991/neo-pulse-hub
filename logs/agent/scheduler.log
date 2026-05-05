@@ -6,3 +6,5 @@
 {"timestamp":"2026-05-04T14:04:50.160Z","level":"INFO","component":"scheduler","message":"Task scheduled: health-check (*/30 * * * *)","data":{}}
 {"timestamp":"2026-05-04T14:04:50.162Z","level":"INFO","component":"scheduler","message":"Task scheduled: sync-github (0 18 * * *)","data":{}}
 {"timestamp":"2026-05-04T14:04:50.163Z","level":"INFO","component":"scheduler","message":"Scheduled 6 tasks","data":{}}
+{"timestamp":"2026-05-04T14:30:00.010Z","level":"INFO","component":"scheduler","message":"Executing scheduled task: health-check - Monitor system health","data":{}}
+{"timestamp":"2026-05-04T15:00:00.010Z","level":"INFO","component":"scheduler","message":"Executing scheduled task: health-check - Monitor system health","data":{}}
