@@ -8,7 +8,7 @@
     "price": "$279.99",
     "rating": 4.5,
     "category": "smartwatch",
-    "image": "https://source.unsplash.com/600x400/?smartwatch",
+    "image": "https://images.unsplash.com/photo-1579586337278-3bef81640edd?w=600&q=80",
     "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Galaxy+Watch+5"
   },
   {
@@ -20,7 +20,7 @@
     "price": "$399.00",
     "rating": 4.8,
     "category": "smartwatch",
-    "image": "https://source.unsplash.com/600x400/?smartwatch",
+    "image": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=600&q=80",
     "affiliate_amazon": "https://www.amazon.com/s?k=Apple+Watch+Series+9"
   },
   {
@@ -32,7 +32,7 @@
     "price": "$249",
     "rating": 4.8,
     "category": "earbuds",
-    "image": "https://source.unsplash.com/600x400/?earbuds",
+    "image": "https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?w=600&q=80",
     "affiliate_amazon": "https://www.amazon.com/s?k=Apple+AirPods+Pro"
   },
   {
@@ -44,7 +44,7 @@
     "price": "$279",
     "rating": 4.7,
     "category": "earbuds",
-    "image": "https://source.unsplash.com/600x400/?earbuds",
+    "image": "https://images.unsplash.com/photo-1585565804112-f201f68c48b4?w=600&q=80",
     "affiliate_amazon": "https://www.amazon.com/s?k=Sony+WF-1000XM4"
   },
   {
@@ -56,7 +56,7 @@
     "price": "$49.99",
     "rating": 4.7,
     "category": "smart-home",
-    "image": "https://source.unsplash.com/600x400/?smart-home",
+    "image": "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&q=80",
     "affiliate_amazon": "https://www.amazon.com/s?k=Amazon+Echo+Dot+(5th+Gen)"
   },
   {
@@ -68,7 +68,7 @@
     "price": "$19.99",
     "rating": 4.5,
     "category": "smart-home",
-    "image": "https://source.unsplash.com/600x400/?smart-home",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
     "affiliate_amazon": "https://www.amazon.com/s?k=TP-Link+Kasa+Smart+WiFi+Plug"
   },
   {
@@ -80,7 +80,7 @@
     "price": "$399",
     "rating": 4.8,
     "category": "smartwatch",
-    "image": "https://source.unsplash.com/600x400/?smartwatch",
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80",
     "affiliate_amazon": "https://www.amazon.com/s?k=Apple+Watch+Series+8"
   },
   {
@@ -92,7 +92,7 @@
     "price": "$279",
     "rating": 4.6,
     "category": "smartwatch",
-    "image": "https://source.unsplash.com/600x400/?smartwatch",
+    "image": "https://images.unsplash.com/photo-1579586337278-3bef81640edd?w=600&q=80",
     "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Galaxy+Watch+5"
   },
   {
@@ -104,7 +104,7 @@
     "price": "$249",
     "rating": 4.8,
     "category": "earbuds",
-    "image": "https://source.unsplash.com/600x400/?earbuds",
+    "image": "https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?w=600&q=80",
     "affiliate_amazon": "https://www.amazon.com/s?k=Apple+AirPods+Pro"
   },
   {
@@ -116,7 +116,7 @@
     "price": "$279",
     "rating": 4.7,
     "category": "earbuds",
-    "image": "https://source.unsplash.com/600x400/?earbuds",
+    "image": "https://images.unsplash.com/photo-1585565804112-f201f68c48b4?w=600&q=80",
     "affiliate_amazon": "https://www.amazon.com/s?k=Sony+WF-1000XM4"
   },
   {
@@ -128,7 +128,7 @@
     "price": "$49.99",
     "rating": 4.7,
     "category": "smart-home",
-    "image": "https://source.unsplash.com/600x400/?smart-home",
+    "image": "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&q=80",
     "affiliate_amazon": "https://www.amazon.com/s?k=Amazon+Echo+Dot+(5th+Gen)"
   },
   {
@@ -140,7 +140,7 @@
     "price": "$179.99",
     "rating": 4.6,
     "category": "smart-home",
-    "image": "https://source.unsplash.com/600x400/?smart-home",
+    "image": "https://images.unsplash.com/photo-1558002038-1055907df827?w=600&q=80",
     "affiliate_amazon": "https://www.amazon.com/s?k=Philips+Hue+White+and+Color"
   },
   {
@@ -493,7 +493,7 @@
     "discount": 22,
     "rating": 4.6,
     "reviews": 13450,
-    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&q=80",
+    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8ae?w=600&q=80",
     "badge": {
       "ar": "خصم 22%",
       "en": "22% OFF"
@@ -549,7 +549,7 @@
     "discount": 14,
     "rating": 4.5,
     "reviews": 7820,
-    "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&q=80",
+    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8ae?w=600&q=80",
     "badge": {
       "ar": "بيتس",
       "en": "Beats"
@@ -605,7 +605,7 @@
     "discount": 17,
     "rating": 4.9,
     "reviews": 16780,
-    "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=600&q=80",
+    "image": "https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?w=600&q=80",
     "badge": {
       "ar": "للمحترفين",
       "en": "Pro"
@@ -633,7 +633,7 @@
     "discount": 18,
     "rating": 4.6,
     "reviews": 8920,
-    "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=600&q=80",
+    "image": "https://images.unsplash.com/photo-1558002038-1055907df827?w=600&q=80",
     "badge": {
       "ar": "إضاءة ذكية",
       "en": "Smart Light"
@@ -661,7 +661,7 @@
     "discount": 11,
     "rating": 4.2,
     "reviews": 4560,
-    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80",
+    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&q=80",
     "badge": {
       "ar": "رياضي متقدم",
       "en": "Advanced Athlete"
@@ -689,7 +689,7 @@
     "discount": 16,
     "rating": 4.8,
     "reviews": 9340,
-    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600&q=80",
+    "image": "https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?w=600&q=80",
     "badge": {
       "ar": "ميكانيكي",
       "en": "Mechanical"
@@ -745,7 +745,7 @@
     "discount": 22,
     "rating": 4.4,
     "reviews": 28400,
-    "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80",
+    "image": "https://images.unsplash.com/photo-1585155782467-d51e66e1c44b?w=600&q=80",
     "badge": {
       "ar": "لا تضيع أشياءك",
       "en": "Never Lose Things"
@@ -773,7 +773,7 @@
     "discount": 18,
     "rating": 4.7,
     "reviews": 12300,
-    "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80",
+    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&q=80",
     "badge": {
       "ar": "دقة طبية",
       "en": "Medical Grade"
@@ -801,7 +801,7 @@
     "discount": 20,
     "rating": 4.5,
     "reviews": 11890,
-    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&q=80",
+    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8ae?w=600&q=80",
     "badge": {
       "ar": "قيمة مذهلة",
       "en": "Amazing Value"
@@ -829,7 +829,7 @@
     "discount": 9,
     "rating": 4.8,
     "reviews": 5670,
-    "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=600&q=80",
+    "image": "https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?w=600&q=80",
     "badge": {
       "ar": "M4 Chip",
       "en": "M4 Chip"
@@ -885,7 +885,7 @@
     "discount": 14,
     "rating": 4.6,
     "reviews": 8910,
-    "image": "https://images.unsplash.com/photo-1626379953822-baec19c3accd?w=600&q=80",
+    "image": "https://images.unsplash.com/photo-1577803645773-f96470509666?w=600&q=80",
     "badge": {
       "ar": "VR متقدم",
       "en": "Advanced VR"
@@ -913,7 +913,7 @@
     "discount": 16,
     "rating": 4.7,
     "reviews": 4320,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80",
+    "image": "https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?w=600&q=80",
     "badge": {
       "ar": "للعمل",
       "en": "Office Pro"
@@ -969,7 +969,7 @@
     "discount": 13,
     "rating": 4.6,
     "reviews": 3210,
-    "image": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=600&q=80",
+    "image": "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=600&q=80",
     "badge": {
       "ar": "طبي معتمد",
       "en": "Medical Grade"
