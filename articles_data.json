@@ -159,48 +159,19 @@
       "title": "نظارات Ray-Ban Meta الذكية",
       "file": "نظارات-ray-ban-meta-الذكية-review.html",
       "path": "blog/ar/نظارات-ray-ban-meta-الذكية-review.html"
+    },
+    {
+      "title": "Android Auto - إلكترونيات سيارات - مراجعة تفصيلية وأراء المستخدمين",
+      "file": "Android-Auto---إلكترونيات-سيارات-review.html",
+      "path": "blog/ar/Android-Auto---إلكترونيات-سيارات-review.html",
+      "product_id": "NPH-0640",
+      "product_name": "Android Auto - إلكترونيات سيارات",
+      "category": "car",
+      "date": "2026-06-01",
+      "created_at": "2026-06-01T17:05:33.990710",
+      "affiliate_link": "https://www.amazon.com/s?k=Android+Auto&tag=neopulsehub-20",
+      "rating": 4.8
     }
   ],
-  "en": [
-    {
-      "title": "Amazfit GTR 4 Smartwatch GPS",
-      "file": "amazfit-gtr-4-smartwatch-gps-review.html",
-      "path": "blog/en/amazfit-gtr-4-smartwatch-gps-review.html"
-    },
-    {
-      "title": "Ray-Ban Meta Smart Glasses Gen 2",
-      "file": "ray-ban-meta-smart-glasses-gen-2-review.html",
-      "path": "blog/en/ray-ban-meta-smart-glasses-gen-2-review.html"
-    },
-    {
-      "title": "Apple Watch Series 9 Review",
-      "file": "review-apple-watch.html",
-      "path": "blog/en/review-apple-watch.html"
-    },
-    {
-      "title": "Top 5 Wireless Earbuds 2026",
-      "file": "review-earbuds.html",
-      "path": "blog/en/review-earbuds.html"
-    },
-    {
-      "title": "Meta Quest 3 vs Apple Vision Pro",
-      "file": "review-glasses.html",
-      "path": "blog/en/review-glasses.html"
-    },
-    {
-      "title": "Tile Mate Bluetooth Tracker 4-Pack",
-      "file": "tile-mate-bluetooth-tracker-4-pack-review.html",
-      "path": "blog/en/tile-mate-bluetooth-tracker-4-pack-review.html"
-    },
-    {
-      "title": "TP-Link Kasa Smart Plug 4-Pack",
-      "file": "tp-link-kasa-smart-plug-4-pack-review.html",
-      "path": "blog/en/tp-link-kasa-smart-plug-4-pack-review.html"
-    },
-    {
-      "title": "Xiaomi Smart Band 8 Pro - Full Review",
-      "file": "xiaomi-smart-band-8-pro-review.html",
-      "path": "blog/en/xiaomi-smart-band-8-pro-review.html"
-    }
-  ]
+  "en": []
 }
