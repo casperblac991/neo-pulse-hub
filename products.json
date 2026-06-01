@@ -9,7 +9,8 @@
     "rating": 4.5,
     "category": "smartwatch",
     "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80",
-    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Galaxy+Watch+5"
+    "affiliate_amazon": "https://www.amazon.com/dp/B0B5W8V2L3?tag=neopulsehub-20",
+    "asin": "B0B5W8V2L3"
   },
   {
     "id": "AI-1777896006-109",
@@ -21,7 +22,8 @@
     "rating": 4.8,
     "category": "smartwatch",
     "image": "https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?w=600&q=80",
-    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+Watch+Series+9"
+    "affiliate_amazon": "https://www.amazon.com/dp/B0CHKV4YVM?tag=neopulsehub-20",
+    "asin": "B0CHKV4YVM"
   },
   {
     "id": "AI-1777896009-367",
@@ -33,7 +35,8 @@
     "rating": 4.8,
     "category": "earbuds",
     "image": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=600&q=80",
-    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+AirPods+Pro"
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BDN8TDMQ?tag=neopulsehub-20",
+    "asin": "B0BDN8TDMQ"
   },
   {
     "id": "AI-1777896009-508",
@@ -45,7 +48,8 @@
     "rating": 4.7,
     "category": "earbuds",
     "image": "https://images.unsplash.com/photo-1617043786394-f977fa12eddf?w=600&q=80",
-    "affiliate_amazon": "https://www.amazon.com/s?k=Sony+WF-1000XM4"
+    "affiliate_amazon": "https://www.amazon.com/dp/B085R9JC5V?tag=neopulsehub-20",
+    "asin": "B085R9JC5V"
   },
   {
     "id": "AI-1777896014-208",
@@ -57,7 +61,8 @@
     "rating": 4.7,
     "category": "smart-home",
     "image": "https://images.unsplash.com/photo-1579586337278-3bef81640edd?w=600&q=80",
-    "affiliate_amazon": "https://www.amazon.com/s?k=Amazon+Echo+Dot+(5th+Gen)"
+    "affiliate_amazon": "https://www.amazon.com/dp/B09FH8K2ZB?tag=neopulsehub-20",
+    "asin": "B09FH8K2ZB"
   },
   {
     "id": "AI-1777896014-190",
@@ -69,7 +74,8 @@
     "rating": 4.5,
     "category": "smart-home",
     "image": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=600&q=80",
-    "affiliate_amazon": "https://www.amazon.com/s?k=TP-Link+Kasa+Smart+WiFi+Plug"
+    "affiliate_amazon": "https://www.amazon.com/dp/B07K3PXJWG?tag=neopulsehub-20",
+    "asin": "B07K3PXJWG"
   },
   {
     "id": "AI-1777507204-261",
@@ -81,7 +87,8 @@
     "rating": 4.8,
     "category": "smartwatch",
     "image": "https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?w=600&q=80",
-    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+Watch+Series+8"
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BDJ2VGDH?tag=neopulsehub-20",
+    "asin": "B0BDJ2VGDH"
   },
   {
     "id": "AI-1777507204-201",
@@ -93,7 +100,8 @@
     "rating": 4.6,
     "category": "smartwatch",
     "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=600&q=80",
-    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Galaxy+Watch+5"
+    "affiliate_amazon": "https://www.amazon.com/dp/B0B5W8V2L3?tag=neopulsehub-20",
+    "asin": "B0B5W8V2L3"
   },
   {
     "id": "AI-1777507207-338",
@@ -105,7 +113,8 @@
     "rating": 4.8,
     "category": "earbuds",
     "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80",
-    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+AirPods+Pro"
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BDN8TDMQ?tag=neopulsehub-20",
+    "asin": "B0BDN8TDMQ"
   },
   {
     "id": "AI-1777507207-993",
@@ -117,7 +126,8 @@
     "rating": 4.7,
     "category": "earbuds",
     "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80",
-    "affiliate_amazon": "https://www.amazon.com/s?k=Sony+WF-1000XM4"
+    "affiliate_amazon": "https://www.amazon.com/dp/B085R9JC5V?tag=neopulsehub-20",
+    "asin": "B085R9JC5V"
   },
   {
     "id": "AI-1777507210-888",
@@ -129,7 +139,8 @@
     "rating": 4.7,
     "category": "smart-home",
     "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8ae?w=600&q=80",
-    "affiliate_amazon": "https://www.amazon.com/s?k=Amazon+Echo+Dot+(5th+Gen)"
+    "affiliate_amazon": "https://www.amazon.com/dp/B09FH8K2ZB?tag=neopulsehub-20",
+    "asin": "B09FH8K2ZB"
   },
   {
     "id": "AI-1777507210-495",
@@ -141,7 +152,7 @@
     "rating": 4.6,
     "category": "smart-home",
     "image": "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcc75?w=600&q=80",
-    "affiliate_amazon": "https://www.amazon.com/s?k=Philips+Hue+White+and+Color"
+    "affiliate_amazon": "https://www.amazon.com/s?k=Philips+Hue+White+and+Color&tag=neopulsehub-20"
   },
   {
     "id": "NPH-001",
@@ -164,12 +175,13 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/dp/B0CHX8SZQS?tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0CHKV4YVM?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "ساعة Apple الأكثر تطوراً مع شاشة Always-On وميزات صحية متقدمة. مقاومة للماء WR50m.",
       "en": "Apple's most advanced smartwatch with Always-On display and advanced health features. Water resistant WR50m."
-    }
+    },
+    "asin": "B0CHKV4YVM"
   },
   {
     "id": "NPH-002",
@@ -192,12 +204,13 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/dp/B0C797YFCF?tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0C4FL89KJ?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "ساعة ذكية أندرويد الأفضل مع إطار دوار كلاسيكي ومراقبة صحية دقيقة.",
       "en": "Best Android smartwatch with classic rotating bezel and precise health monitoring."
-    }
+    },
+    "asin": "B0C4FL89KJ"
   },
   {
     "id": "NPH-003",
@@ -248,12 +261,13 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/dp/B0CDW4RJKT?tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09V3KX52B?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "أفضل متتبع لياقة بدنية مع GPS مدمج ومراقبة معدل ضربات القلب وتتبع النوم المتقدم.",
       "en": "Best fitness tracker with built-in GPS, heart rate monitoring, and advanced sleep tracking."
-    }
+    },
+    "asin": "B09V3KX52B"
   },
   {
     "id": "NPH-005",
@@ -276,12 +290,13 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/dp/B0BDHWDR12?tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BDN8TDMQ?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "سماعات Apple الأفضل مع إلغاء الضوضاء الفعّال وصوت مكاني ومقاومة للماء.",
       "en": "Apple's best earbuds with active noise cancellation, spatial audio, and water resistance."
-    }
+    },
+    "asin": "B0BDN8TDMQ"
   },
   {
     "id": "NPH-006",
@@ -304,12 +319,13 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/dp/B07VHZ41L8?tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09V3KX52B?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "شاشة ذكية بشاشة دوارة 10 بوصة تتابعك تلقائياً مع Alexa ومكالمات فيديو.",
       "en": "Smart display with 10\" rotating screen that follows you automatically, Alexa, and video calls."
-    }
+    },
+    "asin": "B09V3KX52B"
   },
   {
     "id": "NPH-007",
@@ -332,12 +348,13 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/dp/B0CD8JBGV4?tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09LM3S1QM?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "ساعة Garmin الرياضية الأحدث مع تتبع GPS دقيق وبطارية تدوم 14 يوم.",
       "en": "Latest Garmin sports watch with accurate GPS tracking and 14-day battery life."
-    }
+    },
+    "asin": "B09LM3S1QM"
   },
   {
     "id": "NPH-008",
@@ -365,7 +382,8 @@
     "description": {
       "ar": "أفضل سماعات إلغاء ضوضاء في العالم مع 30 ساعة بطارية وصوت Hi-Res Audio.",
       "en": "World's best noise-canceling headphones with 30-hour battery and Hi-Res Audio."
-    }
+    },
+    "asin": "B09XS7JWHH"
   },
   {
     "id": "NPH-009",
@@ -388,12 +406,13 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/dp/B071XW4C5Q?tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09LM3S1QM?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "ميزان ذكي يقيس الوزن ونسبة الدهون والعضلات وكثافة العظام ويرسلها لهاتفك.",
       "en": "Smart scale measuring weight, fat, muscle, bone density and syncing to your phone."
-    }
+    },
+    "asin": "B09LM3S1QM"
   },
   {
     "id": "NPH-010",
@@ -416,12 +435,13 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/dp/B09QYVQX7Z?tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B07Y8LRNSP?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "ترموستات ذكي يتعلم عاداتك ويوفر حتى 15% من فاتورة الكهرباء تلقائياً.",
       "en": "Smart thermostat that learns your habits and saves up to 15% on energy bills automatically."
-    }
+    },
+    "asin": "B07Y8LRNSP"
   },
   {
     "id": "NPH-011",
@@ -472,12 +492,13 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/dp/B09KVJLQ1J?tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09JQM3TZ2?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "خاتم ذكي يتتبع النوم والنشاط والصحة بدقة استثنائية بدون شاشة.",
       "en": "Smart ring tracking sleep, activity, and health with exceptional accuracy without a screen."
-    }
+    },
+    "asin": "B09JQM3TZ2"
   },
   {
     "id": "NPH-013",
@@ -528,12 +549,13 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/dp/B07RCNB2L3?tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B07K3PXJWG?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "مقابس ذكية تتحكم بها عبر الهاتف وAlexa وGoogle. جدولة التشغيل والإيقاف.",
       "en": "Smart plugs controlled via phone, Alexa, and Google. Schedule on/off automatically."
-    }
+    },
+    "asin": "B07K3PXJWG"
   },
   {
     "id": "NPH-015",
@@ -612,12 +634,13 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/dp/B09HM94VDS?tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B088TG9NWT?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "أفضل ماوس لاسلكي للعمل مع عجلة تمرير صامتة MagSpeed وبطارية 70 يوم.",
       "en": "Best wireless work mouse with silent MagSpeed scroll wheel and 70-day battery."
-    }
+    },
+    "asin": "B088TG9NWT"
   },
   {
     "id": "NPH-018",
@@ -724,12 +747,13 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/dp/B08N5NQ69J?tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09JQM3TZ2?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "جرس باب ذكي بكاميرا 1080HD ومعاينة مسبقة للزوار وكشف حركة ذكي.",
       "en": "Smart video doorbell with 1080HD camera, visitor preview, and smart motion detection."
-    }
+    },
+    "asin": "B09JQM3TZ2"
   },
   {
     "id": "NPH-022",
@@ -808,12 +832,13 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/dp/B0BS4LNVMY?tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BHHJ5VQB?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "سماعات لاسلكية عالية الجودة مع إلغاء ضوضاء قوي وصوت Hi-Res بسعر منافس.",
       "en": "High quality wireless earbuds with powerful ANC and Hi-Res audio at a competitive price."
-    }
+    },
+    "asin": "B0BHHJ5VQB"
   },
   {
     "id": "NPH-025",
@@ -841,7 +866,8 @@
     "description": {
       "ar": "أقوى iPad على الإطلاق بشريحة M4 وشاشة Ultra Retina XDR وكاميرا TrueDepth.",
       "en": "Most powerful iPad ever with M4 chip, Ultra Retina XDR display, and TrueDepth camera."
-    }
+    },
+    "asin": "B0D3J9XDMQ"
   },
   {
     "id": "NPH-026",
@@ -976,12 +1002,13 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/dp/B0CF3GFMHW?tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09LM3S1QM?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "ساعة طبية معتمدة FDA مع تخطيط القلب ECG وقياس أكسجين الدم وكشف الرجفان الأذيني.",
       "en": "FDA-cleared medical smartwatch with ECG, SpO2 blood oxygen, and atrial fibrillation detection."
-    }
+    },
+    "asin": "B09LM3S1QM"
   },
   {
     "id": "NPH-EXP-0043",
@@ -1005,7 +1032,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+Watch+Ultra+2&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0CM5JV468?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "ساعة أبل واتش ألترا 2 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -1026,7 +1053,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.769951",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B0CM5JV468"
   },
   {
     "id": "NPH-EXP-0044",
@@ -1050,7 +1078,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Galaxy+Watch+7&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0C4FL89KJ?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "ساعة سامسونج جالكسي ووتش 7 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -1071,7 +1099,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.769976",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B0C4FL89KJ"
   },
   {
     "id": "NPH-EXP-0045",
@@ -1095,7 +1124,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin+Fenix+7X+Pro&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BS4LNVMY?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "ساعة Garmin Fenix 7X برو - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -1116,7 +1145,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.769985",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B0BS4LNVMY"
   },
   {
     "id": "NPH-EXP-0046",
@@ -1140,7 +1170,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Fitbit+Sense+2&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09V3KX52B?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "ساعة Fitbit Sense 2 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -1161,7 +1191,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.769995",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B09V3KX52B"
   },
   {
     "id": "NPH-EXP-0047",
@@ -1365,7 +1396,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Galaxy+Watch+6&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0C4FL89KJ?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "ساعة Galaxy Watch 6 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -1386,7 +1417,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770025",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B0C4FL89KJ"
   },
   {
     "id": "NPH-EXP-0052",
@@ -1410,7 +1442,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+Watch+SE+2&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BDL15GKL?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "ساعة Apple Watch SE 2 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -1431,7 +1463,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770036",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B0BDL15GKL"
   },
   {
     "id": "NPH-EXP-0053",
@@ -1455,7 +1488,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+AirPods+Pro+2&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BDN8TDMQ?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "سماعات أبل إيربودز برو 2 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -1476,7 +1509,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770043",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B0BDN8TDMQ"
   },
   {
     "id": "NPH-EXP-0054",
@@ -1545,7 +1579,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Sony+WF-1000XM5&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BWX8VBKC?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "سماعات Sony WF-1000XM5 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -1566,7 +1600,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770057",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B0BWX8VBKC"
   },
   {
     "id": "NPH-EXP-0056",
@@ -1590,7 +1625,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Bose+QuietComfort+Ultra+Earbuds&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BXYCDQPF?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "سماعات Bose QuietComfort Ultra - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -1611,7 +1646,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770066",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B0BXYCDQPF"
   },
   {
     "id": "NPH-EXP-0057",
@@ -1680,7 +1716,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Anker+Soundcore+Space+A40&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BHHJ5VQB?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "سماعات Anker Soundcore Space A40 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -1701,7 +1737,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770078",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B0BHHJ5VQB"
   },
   {
     "id": "NPH-EXP-0059",
@@ -1905,7 +1942,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Sony+WH-1000XM5&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09XS7JWHH?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "سماعات Sony WH-1000XM5 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -1926,7 +1963,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770111",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B09XS7JWHH"
   },
   {
     "id": "NPH-EXP-0064",
@@ -1950,7 +1988,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Bose+QuietComfort+Ultra+Headphones&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BXYCDQPF?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "سماعات Bose QuietComfort Ultra - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -1971,7 +2009,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770123",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B0BXYCDQPF"
   },
   {
     "id": "NPH-EXP-0065",
@@ -1995,7 +2034,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+AirPods+Max&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BDN8TDMQ?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "سماعات Apple AirPods Max - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -2016,7 +2055,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770129",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B0BDN8TDMQ"
   },
   {
     "id": "NPH-EXP-0066",
@@ -2355,7 +2395,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Amazon+Echo+Dot+(5th+Gen)&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09FH8K2ZB?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "مساعد أمازون إيكو دوت 5 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -2376,7 +2416,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770180",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B09FH8K2ZB"
   },
   {
     "id": "NPH-EXP-0074",
@@ -2400,7 +2441,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Google+Nest+Hub+(2nd+Gen)&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09V3KX3YS?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "مساعد جوجل نست هب 2 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -2421,7 +2462,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770190",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B09V3KX3YS"
   },
   {
     "id": "NPH-EXP-0075",
@@ -2445,7 +2487,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Arlo+Pro+4K+Security+Camera&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0B5W8V2L3?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "كاميرا أرلو برو 4K - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -2466,7 +2508,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770198",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B0B5W8V2L3"
   },
   {
     "id": "NPH-EXP-0076",
@@ -2490,7 +2533,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Ring+Video+Doorbell+4&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09JQM3TZ2?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "جرس باب رينج فيديو 4 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -2511,7 +2554,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770204",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B09JQM3TZ2"
   },
   {
     "id": "NPH-EXP-0077",
@@ -2535,7 +2579,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=TP-Link+Kasa+Smart+Plugs&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B07K3PXJWG?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "مقابس TP-Link كاسا الذكية - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -2556,7 +2600,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770212",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B07K3PXJWG"
   },
   {
     "id": "NPH-EXP-0078",
@@ -2715,7 +2760,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Google+Nest+Temperature+Sensor&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09V3KX3YS?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "مقياس حرارة Nest - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -2736,7 +2781,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770238",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B09V3KX3YS"
   },
   {
     "id": "NPH-EXP-0082",
@@ -3165,7 +3211,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Withings+Body+Smart+Scale&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09LM3S1QM?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "ميزان ذكي Withings - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -3186,7 +3232,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770305",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B09LM3S1QM"
   },
   {
     "id": "NPH-EXP-0092",
@@ -3480,7 +3527,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+iPad+Pro+11+inch&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0D3J9XDMQ?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "آيباد أبل برو 11 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -3501,7 +3548,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770361",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B0D3J9XDMQ"
   },
   {
     "id": "NPH-EXP-0099",
@@ -3525,7 +3573,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+iPad+Air+10.9+inch&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0D3J7YHGD?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "آيباد أبل اير 10.9 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -3546,7 +3594,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770366",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B0D3J7YHGD"
   },
   {
     "id": "NPH-EXP-0100",
@@ -3660,7 +3709,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech+MX+Master+3S&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B088TG9NWT?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "كيبورد لوجيتك MX ماستر - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -3681,7 +3730,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770386",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B088TG9NWT"
   },
   {
     "id": "NPH-EXP-0103",
@@ -3705,7 +3755,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=PlayStation+5&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BJHHBDN9?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "جهاز بلاي ستيشن 5 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -3726,7 +3776,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770391",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B0BJHHBDN9"
   },
   {
     "id": "NPH-EXP-0104",
@@ -3750,7 +3801,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Xbox+Series+X&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B08H93ZRK2?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "جهاز Xbox Series X - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -3771,7 +3822,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770402",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B08H93ZRK2"
   },
   {
     "id": "NPH-EXP-0105",
@@ -3795,7 +3847,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Nintendo+Switch+OLED&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09RK4HWZY?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "جهاز نينتندو سويتش اولد - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -3816,7 +3868,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770411",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B09RK4HWZY"
   },
   {
     "id": "NPH-EXP-0106",
@@ -4065,7 +4118,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech+G+Pro+X+Superlight+2&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B08C9M1T1F?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "ماوس جيمينج لوجيتك G Pro - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -4086,7 +4139,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770446",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B08C9M1T1F"
   },
   {
     "id": "NPH-EXP-0112",
@@ -4470,7 +4524,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech+Brio+4K+Webcam&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B088TG9NWT?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "كاميرا ويب لوجيتك Brio 4K - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -4491,7 +4545,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770507",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B088TG9NWT"
   },
   {
     "id": "NPH-EXP-0121",
@@ -4515,7 +4570,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Ring+Indoor+Cam&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09JQM3TZ2?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "كاميرا_ring_indoor - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -4536,7 +4591,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770513",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B09JQM3TZ2"
   },
   {
     "id": "NPH-EXP-0122",
@@ -4560,7 +4616,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Arlo+Essential+Spotlight&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0B5W8V2L3?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "كاميرا ArloEssential - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -4581,7 +4637,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770518",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B0B5W8V2L3"
   },
   {
     "id": "NPH-EXP-0123",
@@ -4740,7 +4797,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Anker+PowerCore+20000&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BHHJ5VQB?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "باور بانك أنكر 20000 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -4761,7 +4818,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770544",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B0BHHJ5VQB"
   },
   {
     "id": "NPH-EXP-0127",
@@ -4875,7 +4933,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Anker+USB-C+Cable+6ft&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BHHJ5VQB?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "كابل USB-C أنكر - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -4896,7 +4954,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770567",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B0BHHJ5VQB"
   },
   {
     "id": "NPH-EXP-0130",
@@ -4965,7 +5024,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=AirPods+Pro+Case&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BDN8TDMQ?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "جراب AirPods برو - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -4986,7 +5045,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770584",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B0BDN8TDMQ"
   },
   {
     "id": "NPH-EXP-0132",
@@ -5415,7 +5475,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Kitchen+iPad+Stand&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0D3J9XDMQ?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "حامل آيباد للمطبخ - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -5436,7 +5496,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770671",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B0D3J9XDMQ"
   },
   {
     "id": "NPH-EXP-0142",
@@ -5685,7 +5746,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin+Forerunner+965&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BS4LNVMY?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "ساعة garmin forerunner - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -5706,7 +5767,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770712",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B0BS4LNVMY"
   },
   {
     "id": "NPH-EXP-0148",
@@ -6000,7 +6062,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin+Drive+52&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BS4LNVMY?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "GPS Garmin Drive - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -6021,7 +6083,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770768",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B0BS4LNVMY"
   },
   {
     "id": "NPH-EXP-0155",
@@ -6405,7 +6468,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin+vívofit+jr.+3&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BS4LNVMY?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "ساعة أطفال Garmin - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -6426,7 +6489,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770823",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B0BS4LNVMY"
   },
   {
     "id": "NPH-EXP-0164",
@@ -6540,7 +6604,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Echo+Dot+Kids+Edition&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09FH8K2ZB?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "مساعد Echo Dot للأطفال - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
@@ -6561,7 +6625,8 @@
       ]
     },
     "added_at": "2026-06-01T16:58:39.770846",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "asin": "B09FH8K2ZB"
   },
   {
     "id": "NPH-EXP-0167",
@@ -6855,7 +6920,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+Watch+Series+9&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0CHKV4YVM?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Apple Watch Series 9 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -6880,7 +6945,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.007255",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0CHKV4YVM"
   },
   {
     "id": "NPH-0174",
@@ -6904,7 +6970,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Galaxy+Watch+6&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0C4FL89KJ?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Samsung Galaxy Watch 6 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -6929,7 +6995,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.007285",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0C4FL89KJ"
   },
   {
     "id": "NPH-0175",
@@ -6953,7 +7020,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin+Venu+3&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09LM3S1QM?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Garmin Venu 3 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -6978,7 +7045,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.007304",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09LM3S1QM"
   },
   {
     "id": "NPH-0176",
@@ -7002,7 +7070,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Fitbit+Charge+6&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09V3KX52B?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Fitbit Charge 6 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -7027,7 +7095,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.007316",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09V3KX52B"
   },
   {
     "id": "NPH-0177",
@@ -8815,7 +8884,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=K50+Smart+Watch&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0C4FL89KJ?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "K50 Smart Watch - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -8840,7 +8909,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.007704",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0C4FL89KJ"
   },
   {
     "id": "NPH-0214",
@@ -9305,7 +9375,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+AirPods+Pro+2&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BDN8TDMQ?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Apple AirPods Pro 2 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -9330,7 +9400,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.007786",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0BDN8TDMQ"
   },
   {
     "id": "NPH-0224",
@@ -9403,7 +9474,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Sony+WF-1000XM5&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BWX8VBKC?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Sony WF-1000XM5 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -9428,7 +9499,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.007804",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0BWX8VBKC"
   },
   {
     "id": "NPH-0226",
@@ -9452,7 +9524,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Bose+QuietComfort+Earbuds+II&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09LMTSBR3?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Bose QuietComfort Earbuds II - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -9477,7 +9549,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.007811",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09LMTSBR3"
   },
   {
     "id": "NPH-0227",
@@ -10089,7 +10162,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Anker+Soundcore+Space+A40&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BHHJ5VQB?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Anker Soundcore Space A40 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -10114,7 +10187,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.007920",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0BHHJ5VQB"
   },
   {
     "id": "NPH-0240",
@@ -10726,7 +10800,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Bose+Sport+Earbuds&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09LMTSBR3?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Bose Sport Earbuds - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -10751,7 +10825,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008019",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09LMTSBR3"
   },
   {
     "id": "NPH-0253",
@@ -10775,7 +10850,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Bose+SoundSport+Free&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09LMTSBR3?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Bose SoundSport Free - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -10800,7 +10875,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008028",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09LMTSBR3"
   },
   {
     "id": "NPH-0254",
@@ -11069,7 +11145,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Amazon+Echo+Buds+2&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09FH8K2ZB?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Amazon Echo Buds 2 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -11094,7 +11170,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008073",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09FH8K2ZB"
   },
   {
     "id": "NPH-0260",
@@ -11118,7 +11195,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Anker+Liberty+3+Pro&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BHHJ5VQB?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Anker Liberty 3 Pro - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -11143,7 +11220,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008080",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0BHHJ5VQB"
   },
   {
     "id": "NPH-0261",
@@ -11706,7 +11784,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Bose+Open+Earbuds&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09LMTSBR3?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Bose Open Earbuds - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -11731,7 +11809,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008178",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09LMTSBR3"
   },
   {
     "id": "NPH-0273",
@@ -11804,7 +11883,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Sony+WH-1000XM5&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09XS7JWHH?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Sony WH-1000XM5 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -11829,7 +11908,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008195",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09XS7JWHH"
   },
   {
     "id": "NPH-0275",
@@ -11853,7 +11933,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Bose+QuietComfort+Ultra&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BXYCDQPF?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Bose QuietComfort Ultra - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -11878,7 +11958,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008202",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0BXYCDQPF"
   },
   {
     "id": "NPH-0276",
@@ -11902,7 +11983,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+AirPods+Max&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BDN8TDMQ?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Apple AirPods Max - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -11927,7 +12008,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008213",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0BDN8TDMQ"
   },
   {
     "id": "NPH-0277",
@@ -12833,7 +12915,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech+Zone+Vibe&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B088TG9NWT?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Logitech Zone Vibe - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -12858,7 +12940,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008368",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B088TG9NWT"
   },
   {
     "id": "NPH-0296",
@@ -12882,7 +12965,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech+G+Pro+X&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B08C9M1T1F?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Logitech G Pro X - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -12907,7 +12990,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008376",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B08C9M1T1F"
   },
   {
     "id": "NPH-0297",
@@ -12931,7 +13015,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech+H540&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B088TG9NWT?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Logitech H540 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -12956,7 +13040,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008385",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B088TG9NWT"
   },
   {
     "id": "NPH-0298",
@@ -13813,7 +13898,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Amazon+Echo+Dot+5&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09FH8K2ZB?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Amazon Echo Dot 5 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -13838,7 +13923,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008521",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09FH8K2ZB"
   },
   {
     "id": "NPH-0316",
@@ -13862,7 +13948,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Amazon+Echo+Show+10&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09V3KX52B?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Amazon Echo Show 10 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -13887,7 +13973,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008528",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09V3KX52B"
   },
   {
     "id": "NPH-0317",
@@ -13911,7 +13998,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Amazon+Echo+Show+8&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09V3KX52B?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Amazon Echo Show 8 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -13936,7 +14023,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008542",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09V3KX52B"
   },
   {
     "id": "NPH-0318",
@@ -13960,7 +14048,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Google+Nest+Hub+2&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09V3KX3YS?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Google Nest Hub 2 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -13985,7 +14073,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008550",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09V3KX3YS"
   },
   {
     "id": "NPH-0319",
@@ -14009,7 +14098,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Google+Nest+Hub+Max&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09V3KX3YS?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Google Nest Hub Max - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -14034,7 +14123,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008559",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09V3KX3YS"
   },
   {
     "id": "NPH-0320",
@@ -14058,7 +14148,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Google+Nest+Mini&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09V3KX3YS?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Google Nest Mini - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -14083,7 +14173,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008565",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09V3KX3YS"
   },
   {
     "id": "NPH-0321",
@@ -14401,7 +14492,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Ring+Video+Doorbell+4&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09JQM3TZ2?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Ring Video Doorbell 4 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -14426,7 +14517,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008641",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09JQM3TZ2"
   },
   {
     "id": "NPH-0328",
@@ -14450,7 +14542,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Ring+Doorbell+Pro+2&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09JQM3TZ2?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Ring Doorbell Pro 2 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -14475,7 +14567,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008651",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09JQM3TZ2"
   },
   {
     "id": "NPH-0329",
@@ -14499,7 +14592,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Ring+Floodlight+Cam&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09JQM3TZ2?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Ring Floodlight Cam - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -14524,7 +14617,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008662",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09JQM3TZ2"
   },
   {
     "id": "NPH-0330",
@@ -14548,7 +14642,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Arlo+Pro+4K&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0B5W8V2L3?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Arlo Pro 4K - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -14573,7 +14667,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008675",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0B5W8V2L3"
   },
   {
     "id": "NPH-0331",
@@ -14597,7 +14692,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Arlo+Essential&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0B5W8V2L3?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Arlo Essential - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -14622,7 +14717,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008681",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0B5W8V2L3"
   },
   {
     "id": "NPH-0332",
@@ -14695,7 +14791,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Wyze+Cam+v3&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B07NYN84L3?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Wyze Cam v3 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -14720,7 +14816,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008701",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B07NYN84L3"
   },
   {
     "id": "NPH-0334",
@@ -14793,7 +14890,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Google+Nest+Cam&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09V3KX3YS?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Google Nest Cam - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -14818,7 +14915,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008714",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09V3KX3YS"
   },
   {
     "id": "NPH-0336",
@@ -14842,7 +14940,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=TP-Link+Kasa+Plug&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B07K3PXJWG?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "TP-Link Kasa Plug - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -14867,7 +14965,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008720",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B07K3PXJWG"
   },
   {
     "id": "NPH-0337",
@@ -14891,7 +14990,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=TP-Link+Kasa+Switch&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B07K3PXJWG?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "TP-Link Kasa Switch - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -14916,7 +15015,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008731",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B07K3PXJWG"
   },
   {
     "id": "NPH-0338",
@@ -14940,7 +15040,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=TP-Link+Tapo+Cam&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B07K3PXJWG?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "TP-Link Tapo Cam - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -14965,7 +15065,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008738",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B07K3PXJWG"
   },
   {
     "id": "NPH-0339",
@@ -15283,7 +15384,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Wyze+Plug&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B07NYN84L3?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Wyze Plug - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -15308,7 +15409,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008789",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B07NYN84L3"
   },
   {
     "id": "NPH-0346",
@@ -15479,7 +15581,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Nest+Thermostat&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B07Y8LRNSP?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Nest Thermostat - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -15504,7 +15606,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008822",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B07Y8LRNSP"
   },
   {
     "id": "NPH-0350",
@@ -15871,7 +15974,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Withings+ScanWatch+2&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09LM3S1QM?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Withings ScanWatch 2 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -15896,7 +15999,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008885",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09LM3S1QM"
   },
   {
     "id": "NPH-0358",
@@ -15920,7 +16024,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Withings+Body+Smart&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09LM3S1QM?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Withings Body Smart - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -15945,7 +16049,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008894",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09LM3S1QM"
   },
   {
     "id": "NPH-0359",
@@ -15969,7 +16074,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Withings+BPM+Connect&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09LM3S1QM?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Withings BPM Connect - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -15994,7 +16099,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008900",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09LM3S1QM"
   },
   {
     "id": "NPH-0360",
@@ -16165,7 +16271,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Fitbit+Aria+Air&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09V3KX52B?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Fitbit Aria Air - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -16190,7 +16296,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008930",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09V3KX52B"
   },
   {
     "id": "NPH-0364",
@@ -16214,7 +16321,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Fitbit+Flex+2&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09V3KX52B?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Fitbit Flex 2 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -16239,7 +16346,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008939",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09V3KX52B"
   },
   {
     "id": "NPH-0365",
@@ -16263,7 +16371,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin+Index+2&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BS4LNVMY?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Garmin Index 2 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -16288,7 +16396,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008948",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0BS4LNVMY"
   },
   {
     "id": "NPH-0366",
@@ -16459,7 +16568,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Oura+Ring+Gen+3&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09JQM3TZ2?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Oura Ring Gen 3 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -16484,7 +16593,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008978",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09JQM3TZ2"
   },
   {
     "id": "NPH-0370",
@@ -16508,7 +16618,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Motiv+Ring&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09JQM3TZ2?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Motiv Ring - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -16533,7 +16643,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008984",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09JQM3TZ2"
   },
   {
     "id": "NPH-0371",
@@ -16557,7 +16668,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Ultrahuman+Ring&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09JQM3TZ2?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Ultrahuman Ring - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -16582,7 +16693,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.008991",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09JQM3TZ2"
   },
   {
     "id": "NPH-0372",
@@ -17488,7 +17600,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Withings+Sleep&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09LM3S1QM?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Withings Sleep - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -17513,7 +17625,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.009143",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09LM3S1QM"
   },
   {
     "id": "NPH-0391",
@@ -18125,7 +18238,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=iPad+Pro+M4&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0D3J9XDMQ?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "iPad Pro M4 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -18150,7 +18263,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.009243",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0D3J9XDMQ"
   },
   {
     "id": "NPH-0404",
@@ -18174,7 +18288,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=iPad+Air+M2&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0D3J7YHGD?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "iPad Air M2 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -18199,7 +18313,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.009252",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0D3J7YHGD"
   },
   {
     "id": "NPH-0405",
@@ -18223,7 +18338,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=iPad+Mini+6&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0D3J9XDMQ?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "iPad Mini 6 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -18248,7 +18363,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.009263",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0D3J9XDMQ"
   },
   {
     "id": "NPH-0406",
@@ -18272,7 +18388,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=iPad+10&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0D3J9XDMQ?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "iPad 10 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -18297,7 +18413,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.009270",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0D3J9XDMQ"
   },
   {
     "id": "NPH-0407",
@@ -19644,7 +19761,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech+Crayon&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B088TG9NWT?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Logitech Crayon - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -19669,7 +19786,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.009492",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B088TG9NWT"
   },
   {
     "id": "NPH-0435",
@@ -19693,7 +19811,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech+MX+Keys&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B07S92LRGM?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Logitech MX Keys - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -19718,7 +19836,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.009499",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B07S92LRGM"
   },
   {
     "id": "NPH-0436",
@@ -19742,7 +19861,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech+MX+Master+3S&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B088TG9NWT?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Logitech MX Master 3S - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -19767,7 +19886,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.009508",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B088TG9NWT"
   },
   {
     "id": "NPH-0437",
@@ -19889,7 +20009,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech+MX+Anywhere+3&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B088TG9NWT?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Logitech MX Anywhere 3 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -19914,7 +20034,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.009536",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B088TG9NWT"
   },
   {
     "id": "NPH-0440",
@@ -20085,7 +20206,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Anker+Hub&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BHHJ5VQB?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Anker Hub - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -20110,7 +20231,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.009562",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0BHHJ5VQB"
   },
   {
     "id": "NPH-0444",
@@ -20428,7 +20550,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=PlayStation+5&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BJHHBDN9?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "PlayStation 5 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -20453,7 +20575,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.009633",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0BJHHBDN9"
   },
   {
     "id": "NPH-0451",
@@ -20477,7 +20600,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Xbox+Series+X&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B08H93ZRK2?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Xbox Series X - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -20502,7 +20625,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.009639",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B08H93ZRK2"
   },
   {
     "id": "NPH-0452",
@@ -20526,7 +20650,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Xbox+Series+S&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B08H93ZRK2?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Xbox Series S - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -20551,7 +20675,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.009648",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B08H93ZRK2"
   },
   {
     "id": "NPH-0453",
@@ -20575,7 +20700,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Nintendo+Switch+OLED&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09RK4HWZY?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Nintendo Switch OLED - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -20600,7 +20725,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.009657",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09RK4HWZY"
   },
   {
     "id": "NPH-0454",
@@ -20624,7 +20750,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Nintendo+Switch+Lite&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09RK4HWZY?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Nintendo Switch Lite - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -20649,7 +20775,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.009663",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09RK4HWZY"
   },
   {
     "id": "NPH-0455",
@@ -21261,7 +21388,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech+G+Pro&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B08C9M1T1F?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Logitech G Pro - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -21286,7 +21413,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.009772",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B08C9M1T1F"
   },
   {
     "id": "NPH-0468",
@@ -21310,7 +21438,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech+G502&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B088TG9NWT?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Logitech G502 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -21335,7 +21463,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.009778",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B088TG9NWT"
   },
   {
     "id": "NPH-0469",
@@ -21555,7 +21684,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech+G915&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B088TG9NWT?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Logitech G915 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -21580,7 +21709,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.009814",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B088TG9NWT"
   },
   {
     "id": "NPH-0474",
@@ -21849,7 +21979,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech+G+Pro+X+Headset&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B08C9M1T1F?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Logitech G Pro X Headset - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -21874,7 +22004,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.009871",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B08C9M1T1F"
   },
   {
     "id": "NPH-0480",
@@ -22094,7 +22225,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Xbox+Elite+Controller&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B08H93ZRK2?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Xbox Elite Controller - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -22119,7 +22250,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.009913",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B08H93ZRK2"
   },
   {
     "id": "NPH-0485",
@@ -23515,7 +23647,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech+Brio+4K&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B088TG9NWT?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Logitech Brio 4K - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -23540,7 +23672,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.010185",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B088TG9NWT"
   },
   {
     "id": "NPH-0514",
@@ -23858,7 +23991,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Ring+Indoor+Cam&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09JQM3TZ2?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Ring Indoor Cam - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -23883,7 +24016,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.010246",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09JQM3TZ2"
   },
   {
     "id": "NPH-0521",
@@ -23907,7 +24041,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Wyze+Cam+v3&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B07NYN84L3?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Wyze Cam v3 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -23932,7 +24066,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.010253",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B07NYN84L3"
   },
   {
     "id": "NPH-0522",
@@ -23956,7 +24091,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+Watch+Band&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0CHKV4YVM?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Apple Watch Band - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -23981,7 +24116,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.010259",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0CHKV4YVM"
   },
   {
     "id": "NPH-0523",
@@ -24054,7 +24190,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin+Band&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BS4LNVMY?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Garmin Band - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -24079,7 +24215,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.010279",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0BS4LNVMY"
   },
   {
     "id": "NPH-0525",
@@ -24103,7 +24240,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=AirPods+Case&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BDN8TDMQ?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "AirPods Case - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -24128,7 +24265,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.010286",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0BDN8TDMQ"
   },
   {
     "id": "NPH-0526",
@@ -24152,7 +24290,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=AirPods+Max+Case&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BDN8TDMQ?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "AirPods Max Case - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -24177,7 +24315,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.010292",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0BDN8TDMQ"
   },
   {
     "id": "NPH-0527",
@@ -24299,7 +24438,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=iPad+Case&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0D3J9XDMQ?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "iPad Case - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -24324,7 +24463,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.010314",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0D3J9XDMQ"
   },
   {
     "id": "NPH-0530",
@@ -26014,7 +26154,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Instant+Pot+Pro&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09KVQNBGY?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Instant Pot Pro - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -26039,7 +26179,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.010603",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09KVQNBGY"
   },
   {
     "id": "NPH-0565",
@@ -26504,7 +26645,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Ninja+Air+Fryer&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B08FWT2QXL?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Ninja Air Fryer - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -26529,7 +26670,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.010687",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B08FWT2QXL"
   },
   {
     "id": "NPH-0575",
@@ -27337,7 +27479,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Instant+Pot+Duo&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B09KVQNBGY?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Instant Pot Duo - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -27362,7 +27504,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.010819",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B09KVQNBGY"
   },
   {
     "id": "NPH-0592",
@@ -27435,7 +27578,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin+Forerunner+965&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BS4LNVMY?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Garmin Forerunner 965 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -27460,7 +27603,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.010832",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0BS4LNVMY"
   },
   {
     "id": "NPH-0594",
@@ -27484,7 +27628,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin+Fenix+7&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BS4LNVMY?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Garmin Fenix 7 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -27509,7 +27653,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.010844",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0BS4LNVMY"
   },
   {
     "id": "NPH-0595",
@@ -27533,7 +27678,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin+Epix+Pro&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BS4LNVMY?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Garmin Epix Pro - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -27558,7 +27703,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.010850",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0BS4LNVMY"
   },
   {
     "id": "NPH-0596",
@@ -27582,7 +27728,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+Watch+Ultra+2&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0CM5JV468?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Apple Watch Ultra 2 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -27607,7 +27753,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.010859",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0CM5JV468"
   },
   {
     "id": "NPH-0597",
@@ -29052,7 +29199,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin+Drive+52&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BS4LNVMY?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Garmin Drive 52 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -29077,7 +29224,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.011094",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0BS4LNVMY"
   },
   {
     "id": "NPH-0627",
@@ -29101,7 +29249,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin+DriveSmart&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BS4LNVMY?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Garmin DriveSmart - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -29126,7 +29274,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.011103",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0BS4LNVMY"
   },
   {
     "id": "NPH-0628",
@@ -29346,7 +29495,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Anker+Roav+Charger&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BHHJ5VQB?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Anker Roav Charger - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -29371,7 +29520,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.011141",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0BHHJ5VQB"
   },
   {
     "id": "NPH-0633",
@@ -31012,7 +31162,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Kids+Smart+Watch&tag=neopulsehub-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0C4FL89KJ?tag=neopulsehub-20",
     "affiliate_aliexpress": "",
     "description": {
       "ar": "Kids Smart Watch - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -31037,7 +31187,8 @@
       ]
     },
     "added_at": "2026-06-01T17:00:12.011414",
-    "added_by": "mega_expansion_v2"
+    "added_by": "mega_expansion_v2",
+    "asin": "B0C4FL89KJ"
   },
   {
     "id": "NPH-0667",
