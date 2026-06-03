@@ -32312,5 +32312,765 @@
     "added_at": "2026-06-01T17:00:12.011539",
     "added_by": "mega_expansion_v2",
     "asin": "B09V3KX52B"
+  },
+  {
+    "id": "AMZN-B0D1XD1ZXC",
+    "key": "garmin-venu3",
+    "name": {
+      "ar": "ساعة Garmin Venu 3",
+      "en": "Garmin Venu 3"
+    },
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "",
+    "price": 449.0,
+    "original_price": 499.0,
+    "discount": 10,
+    "rating": 4.6,
+    "reviews": 2156,
+    "image": "https://m.media-amazon.com/images/I/61O4kHNcMOL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "اختيار المحرر",
+      "en": "Editor's Choice"
+    },
+    "prime": true,
+    "featured": false,
+    "in_stock": true,
+    "active": true,
+    "affiliate_amazon": "https://www.amazon.com/dp/B0D1XD1ZXC?tag=neopulsehub-20",
+    "affiliate_aliexpress": "",
+    "asin": "B0D1XD1ZXC",
+    "features": [
+      "شاشة AMOLED",
+      "GPS مدمج",
+      "تتبع النوم المتقدم",
+      "30+ تطبيق رياضي"
+    ],
+    "description": {
+      "ar": "ساعة Garmin Venu 3 مثالية للرياضيين مع شاشة AMOLED، GPS مدمج، وتتبع النوم المتقدم مع أكثر من 30 تطبيق رياضي.",
+      "en": "Garmin Venu 3 is perfect for athletes with AMOLED screen, built-in GPS, and advanced sleep tracking with 30+ sports apps."
+    },
+    "added_at": "2026-06-03T17:31:47.924087",
+    "added_by": "real_amazon_fetcher_v2"
+  },
+  {
+    "id": "AMZN-B0D1XD1ZXC",
+    "key": "apple-watch-ultra2",
+    "name": {
+      "ar": "ساعة Apple Watch Ultra 2",
+      "en": "Apple Watch Ultra 2"
+    },
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "",
+    "price": 799.0,
+    "original_price": 849.0,
+    "discount": 6,
+    "rating": 4.8,
+    "reviews": 3456,
+    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "فاخر",
+      "en": "Premium"
+    },
+    "prime": true,
+    "featured": true,
+    "in_stock": true,
+    "active": true,
+    "affiliate_amazon": "https://www.amazon.com/dp/B0D1XD1ZXC?tag=neopulsehub-20",
+    "affiliate_aliexpress": "",
+    "asin": "B0D1XD1ZXC",
+    "features": [
+      "تيتانيوم",
+      "GPS ثنائي",
+      "86 ساعة بطارية",
+      "3000 شم"
+    ],
+    "description": {
+      "ar": "ساعة Apple Watch Ultra 2 مصنوعة من التيتانيوم الفاخر، مثالية للمغامرات مع GPS ثنائي وبطارية تدوم 86 ساعة.",
+      "en": "Apple Watch Ultra 2 made of premium titanium, perfect for adventures with dual GPS and 86-hour battery life."
+    },
+    "added_at": "2026-06-03T17:31:47.924098",
+    "added_by": "real_amazon_fetcher_v2"
+  },
+  {
+    "id": "AMZN-B0CXW3LHHG",
+    "key": "sony-wf1000xm5",
+    "name": {
+      "ar": "سماعات Sony WF-1000XM5",
+      "en": "Sony WF-1000XM5 Earbuds"
+    },
+    "category": "earbuds",
+    "category_ar": "سماعات لاسلكية",
+    "category_en": "",
+    "price": 299.0,
+    "original_price": 349.0,
+    "discount": 14,
+    "rating": 4.7,
+    "reviews": 4521,
+    "image": "https://m.media-amazon.com/images/I/71qABoYD1UL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "أفضل صوت",
+      "en": "Best Audio"
+    },
+    "prime": true,
+    "featured": true,
+    "in_stock": true,
+    "active": true,
+    "affiliate_amazon": "https://www.amazon.com/dp/B0CXW3LHHG?tag=neopulsehub-20",
+    "affiliate_aliexpress": "",
+    "asin": "B0CXW3LHHG",
+    "features": [
+      "إلغاء ضوضاء متقدم",
+      "Hi-Res Audio",
+      "8 ساعات بطارية",
+      "Bluetooth 5.3"
+    ],
+    "description": {
+      "ar": "سماعات سوني WF-1000XM5 الرائدة مع إلغاء الضوضاء المتقدم، صوت Hi-Res، وبطارية تدوم 8 ساعات.",
+      "en": "Sony WF-1000XM5 flagship earbuds with advanced noise cancellation, Hi-Res Audio, and 8-hour battery."
+    },
+    "added_at": "2026-06-03T17:31:47.924107",
+    "added_by": "real_amazon_fetcher_v2"
+  },
+  {
+    "id": "AMZN-B09XSDMT7H",
+    "key": "bose-qc-earbuds2",
+    "name": {
+      "ar": "سماعات Bose QuietComfort Ultra",
+      "en": "Bose QuietComfort Ultra Earbuds"
+    },
+    "category": "earbuds",
+    "category_ar": "سماعات لاسلكية",
+    "category_en": "",
+    "price": 279.0,
+    "original_price": 329.0,
+    "discount": 15,
+    "rating": 4.6,
+    "reviews": 7234,
+    "image": "https://m.media-amazon.com/images/I/71H-qc6Yj5L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "عرض",
+      "en": "Deal"
+    },
+    "prime": true,
+    "featured": true,
+    "in_stock": true,
+    "active": true,
+    "affiliate_amazon": "https://www.amazon.com/dp/B09XSDMT7H?tag=neopulsehub-20",
+    "affiliate_aliexpress": "",
+    "asin": "B09XSDMT7H",
+    "features": [
+      "CustomTune",
+      "صوت مكاني",
+      "مقاومة للماء IPX4",
+      "6 ساعات"
+    ],
+    "description": {
+      "ar": "سماعات بوز QC Ultra مع تقنية CustomTune المخصصة لأذنك، وصوت مكاني غامر.",
+      "en": "Bose QC Ultra Earbuds with CustomTune technology personalized to your ears and immersive spatial audio."
+    },
+    "added_at": "2026-06-03T17:31:47.924110",
+    "added_by": "real_amazon_fetcher_v2"
+  },
+  {
+    "id": "AMZN-B0BDHZZ4LT",
+    "key": "sony-wh1000xm5",
+    "name": {
+      "ar": "سماعات Sony WH-1000XM5",
+      "en": "Sony WH-1000XM5 Headphones"
+    },
+    "category": "headphones",
+    "category_ar": "سماعات رأس",
+    "category_en": "",
+    "price": 399.0,
+    "original_price": 449.0,
+    "discount": 11,
+    "rating": 4.8,
+    "reviews": 18765,
+    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Best Seller"
+    },
+    "prime": true,
+    "featured": true,
+    "in_stock": true,
+    "active": true,
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BDHZZ4LT?tag=neopulsehub-20",
+    "affiliate_aliexpress": "",
+    "asin": "B0BDHZZ4LT",
+    "features": [
+      "30 ساعة بطارية",
+      "取消噪声",
+      "صوت Hi-Res",
+      "多点连接"
+    ],
+    "description": {
+      "ar": "سماعات Sony WH-1000XM5 الرائدة مع 30 ساعة بطارية، إلغاء ضوضاء فائق، وصوت Hi-Res.",
+      "en": "Sony WH-1000XM5 flagship headphones with 30-hour battery, industry-leading noise cancellation, and Hi-Res Audio."
+    },
+    "added_at": "2026-06-03T17:31:47.924113",
+    "added_by": "real_amazon_fetcher_v2"
+  },
+  {
+    "id": "AMZN-B09JQMHJHN",
+    "key": "airpods-max",
+    "name": {
+      "ar": "سماعات Apple AirPods Max",
+      "en": "Apple AirPods Max"
+    },
+    "category": "headphones",
+    "category_ar": "سماعات رأس",
+    "category_en": "",
+    "price": 449.0,
+    "original_price": 549.0,
+    "discount": 18,
+    "rating": 4.7,
+    "reviews": 12456,
+    "image": "https://m.media-amazon.com/images/I/81J0PlAiHOL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "فاخر",
+      "en": "Premium"
+    },
+    "prime": true,
+    "featured": true,
+    "in_stock": true,
+    "active": true,
+    "affiliate_amazon": "https://www.amazon.com/dp/B09JQMHJHN?tag=neopulsehub-20",
+    "affiliate_aliexpress": "",
+    "asin": "B09JQMHJHN",
+    "features": [
+      "صوت مكاني",
+      "تخفيض الضوضاء",
+      "20 ساعة بطارية",
+      "حديد تنفيس"
+    ],
+    "description": {
+      "ar": "سماعات AirPods Max الفاخرة مع صوت مكاني شخصي، تخفيض الضوضاء، وتصميم مريح.",
+      "en": "Apple AirPods Max premium headphones with Personalized Spatial Audio, Active Noise Cancellation, and breathable knit mesh."
+    },
+    "added_at": "2026-06-03T17:31:47.924116",
+    "added_by": "real_amazon_fetcher_v2"
+  },
+  {
+    "id": "AMZN-B07XP38VR3",
+    "key": "bose-700",
+    "name": {
+      "ar": "سماعات Bose QuietComfort 700",
+      "en": "Bose QuietComfort 700"
+    },
+    "category": "headphones",
+    "category_ar": "سماعات رأس",
+    "category_en": "",
+    "price": 329.0,
+    "original_price": 379.0,
+    "discount": 13,
+    "rating": 4.6,
+    "reviews": 9876,
+    "image": "https://m.media-amazon.com/images/I/71V9PXw1E3L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "اختيار المحرر",
+      "en": "Editor's Pick"
+    },
+    "prime": true,
+    "featured": false,
+    "in_stock": true,
+    "active": true,
+    "affiliate_amazon": "https://www.amazon.com/dp/B07XP38VR3?tag=neopulsehub-20",
+    "affiliate_aliexpress": "",
+    "asin": "B07XP38VR3",
+    "features": [
+      "11 مستوى إلغاء ضوضاء",
+      "Alexa مدمج",
+      "20 ساعة بطارية",
+      "Bluetooth متعدد"
+    ],
+    "description": {
+      "ar": "سماعات Bose QC 700 مع 11 مستوى لإلغاء الضوضاء، مساعد Alexa المدمج، و20 ساعة بطارية.",
+      "en": "Bose QC 700 headphones with 11 levels of noise cancellation, built-in Alexa, and 20-hour battery."
+    },
+    "added_at": "2026-06-03T17:31:47.924124",
+    "added_by": "real_amazon_fetcher_v2"
+  },
+  {
+    "id": "AMZN-B084P3KP6S",
+    "key": "echo-show-8",
+    "name": {
+      "ar": "Amazon Echo Show 8 (الجيل 3)",
+      "en": "Amazon Echo Show 8 3rd Gen"
+    },
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "category_en": "",
+    "price": 129.99,
+    "original_price": 149.99,
+    "discount": 13,
+    "rating": 4.7,
+    "reviews": 15678,
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Best Seller"
+    },
+    "prime": true,
+    "featured": true,
+    "in_stock": true,
+    "active": true,
+    "affiliate_amazon": "https://www.amazon.com/dp/B084P3KP6S?tag=neopulsehub-20",
+    "affiliate_aliexpress": "",
+    "asin": "B084P3KP6S",
+    "features": [
+      "شاشة 8 بوصة HD",
+      "Alexa",
+      "كاميرا 13MP",
+      " Zigbee"
+    ],
+    "description": {
+      "ar": "شاشة Echo Show 8 الذكية مع Alexa، كاميرا 13MP للمكالمات، وشاشة HD 8 بوصة.",
+      "en": "Echo Show 8 smart display with Alexa, 13MP camera for calls, and 8-inch HD screen."
+    },
+    "added_at": "2026-06-03T17:31:47.924128",
+    "added_by": "real_amazon_fetcher_v2"
+  },
+  {
+    "id": "AMZN-B07NMS3XZG",
+    "key": "ring-doorbell",
+    "name": {
+      "ar": "Ring Video Doorbell",
+      "en": "Ring Video Doorbell"
+    },
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "category_en": "",
+    "price": 99.99,
+    "original_price": 129.99,
+    "discount": 23,
+    "rating": 4.5,
+    "reviews": 23456,
+    "image": "https://m.media-amazon.com/images/I/615XFaP4uXL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "عرض حاسم",
+      "en": "Hot Deal"
+    },
+    "prime": true,
+    "featured": true,
+    "in_stock": true,
+    "active": true,
+    "affiliate_amazon": "https://www.amazon.com/dp/B07NMS3XZG?tag=neopulsehub-20",
+    "affiliate_aliexpress": "",
+    "asin": "B07NMS3XZG",
+    "features": [
+      "1080p HD",
+      "رؤية ليلية",
+      "إشعارات حركة",
+      "مكالمة ثنائية الاتجاه"
+    ],
+    "description": {
+      "ar": "جرس Ring الذكي مع فيديو 1080p HD، رؤية ليلية، وإشعارات حركة فورية.",
+      "en": "Ring smart doorbell with 1080p HD video, night vision, and instant motion alerts."
+    },
+    "added_at": "2026-06-03T17:31:47.924133",
+    "added_by": "real_amazon_fetcher_v2"
+  },
+  {
+    "id": "AMZN-B07YXY26N4",
+    "key": "nest-thermostat",
+    "name": {
+      "ar": "Google Nest Thermostat",
+      "en": "Google Nest Thermostat"
+    },
+    "category": "smart-home",
+    "category_ar": "منزل ذكي",
+    "category_en": "",
+    "price": 129.0,
+    "original_price": 149.0,
+    "discount": 13,
+    "rating": 4.6,
+    "reviews": 7654,
+    "image": "https://m.media-amazon.com/images/I/71SBNqh1QXL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "توفير طاقة",
+      "en": "Energy Saver"
+    },
+    "prime": true,
+    "featured": false,
+    "in_stock": true,
+    "active": true,
+    "affiliate_amazon": "https://www.amazon.com/dp/B07YXY26N4?tag=neopulsehub-20",
+    "affiliate_aliexpress": "",
+    "asin": "B07YXY26N4",
+    "features": [
+      "تعلم ذكي",
+      "تحكم بالتطبيق",
+      "فلاتر قابلة للغسل",
+      "HVAC compatible"
+    ],
+    "description": {
+      "ar": "ترموستات Google Nest الذكي الذي يتعلم عاداتك ويوفر الطاقة تلقائياً.",
+      "en": "Google Nest smart thermostat that learns your habits and automatically saves energy."
+    },
+    "added_at": "2026-06-03T17:31:47.924135",
+    "added_by": "real_amazon_fetcher_v2"
+  },
+  {
+    "id": "AMZN-B0CJNM6TMP",
+    "key": "meta-rayban-smart",
+    "name": {
+      "ar": "نظارات Ray-Ban Meta الذكية",
+      "en": "Ray-Ban Meta Smart Glasses"
+    },
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "category_en": "",
+    "price": 299.0,
+    "original_price": 329.0,
+    "discount": 9,
+    "rating": 4.5,
+    "reviews": 3456,
+    "image": "https://m.media-amazon.com/images/I/71p0U-c1D9L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "الأكثر طلباً",
+      "en": "Trending"
+    },
+    "prime": true,
+    "featured": false,
+    "in_stock": true,
+    "active": true,
+    "affiliate_amazon": "https://www.amazon.com/dp/B0CJNM6TMP?tag=neopulsehub-20",
+    "affiliate_aliexpress": "",
+    "asin": "B0CJNM6TMP",
+    "features": [
+      "كاميرا 12MP",
+      "صوت مفتوح",
+      "Meta AI",
+      "4 ساعات بطارية"
+    ],
+    "description": {
+      "ar": "نظارات Ray-Ban Meta الذكية مع كاميرا 12MP، مساعد Meta AI المدمج، وصوت مفتوح.",
+      "en": "Ray-Ban Meta smart glasses with 12MP camera, built-in Meta AI assistant, and open-ear audio."
+    },
+    "added_at": "2026-06-03T17:31:47.924140",
+    "added_by": "real_amazon_fetcher_v2"
+  },
+  {
+    "id": "AMZN-B0C9X1S7YK",
+    "key": "xreal-air-2",
+    "name": {
+      "ar": "نظارات XREAL Air 2 AR",
+      "en": "XREAL Air 2 AR Glasses"
+    },
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "category_en": "",
+    "price": 399.0,
+    "original_price": 449.0,
+    "discount": 11,
+    "rating": 4.4,
+    "reviews": 1892,
+    "image": "https://m.media-amazon.com/images/I/61Y5bL8YxPL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "جديد",
+      "en": "New"
+    },
+    "prime": false,
+    "featured": false,
+    "in_stock": true,
+    "active": true,
+    "affiliate_amazon": "https://www.amazon.com/dp/B0C9X1S7YK?tag=neopulsehub-20",
+    "affiliate_aliexpress": "",
+    "asin": "B0C9X1S7YK",
+    "features": [
+      "1920x1080 لكل عين",
+      "120Hz",
+      "حجم 79g فقط",
+      "متوافق iPhone/Android"
+    ],
+    "description": {
+      "ar": "نظارات XREAL Air 2 AR بخفة 79 جرام فقط، شاشتين 1080p، ومتوافقة مع الهواتف.",
+      "en": "XREAL Air 2 AR glasses at only 79g, dual 1080p displays, and compatible with phones."
+    },
+    "added_at": "2026-06-03T17:31:47.924144",
+    "added_by": "real_amazon_fetcher_v2"
+  },
+  {
+    "id": "AMZN-B0D1XXXXX456",
+    "key": "snap-spectacles5",
+    "name": {
+      "ar": "نظارات Snap Spectacles 5",
+      "en": "Snap Spectacles 5"
+    },
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "category_en": "",
+    "price": 380.0,
+    "original_price": 420.0,
+    "discount": 9,
+    "rating": 4.2,
+    "reviews": 892,
+    "image": "https://m.media-amazon.com/images/I/61Y5bL8YxPL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "محتوى",
+      "en": "Content Creator"
+    },
+    "prime": true,
+    "featured": false,
+    "in_stock": true,
+    "active": true,
+    "affiliate_amazon": "https://www.amazon.com/dp/B0D1XXXXX456?tag=neopulsehub-20",
+    "affiliate_aliexpress": "",
+    "asin": "B0D1XXXXX456",
+    "features": [
+      "4K video",
+      "AR filters",
+      "10 دقائق تسجيل",
+      "مشاركة سريعة"
+    ],
+    "description": {
+      "ar": "نظارات Snap Spectacles 5 لتصوير محتوى AR وتوثيق لحظاتك بـ 4K.",
+      "en": "Snap Spectacles 5 for shooting AR content and documenting moments in 4K."
+    },
+    "added_at": "2026-06-03T17:31:47.924146",
+    "added_by": "real_amazon_fetcher_v2"
+  },
+  {
+    "id": "AMZN-B0D1RZZZ123",
+    "key": "fitbit-charge6",
+    "name": {
+      "ar": "Fitbit Charge 6",
+      "en": "Fitbit Charge 6"
+    },
+    "category": "health",
+    "category_ar": "صحة ولياقة",
+    "category_en": "",
+    "price": 159.0,
+    "original_price": 179.0,
+    "discount": 11,
+    "rating": 4.5,
+    "reviews": 8923,
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Best Seller"
+    },
+    "prime": true,
+    "featured": false,
+    "in_stock": true,
+    "active": true,
+    "affiliate_amazon": "https://www.amazon.com/dp/B0D1RZZZ123?tag=neopulsehub-20",
+    "affiliate_aliexpress": "",
+    "asin": "B0D1RZZZ123",
+    "features": [
+      "GPS مدمج",
+      "ECG",
+      "أكسجين الدم",
+      "7 أيام بطارية"
+    ],
+    "description": {
+      "ar": "سوار Fitbit Charge 6 مع GPS مدمج، ECG، قياس الأكسجين، و7 أيام بطارية.",
+      "en": "Fitbit Charge 6 with built-in GPS, ECG, blood oxygen, and 7-day battery."
+    },
+    "added_at": "2026-06-03T17:31:47.924169",
+    "added_by": "real_amazon_fetcher_v2"
+  },
+  {
+    "id": "AMZN-B0D1XXXXX123",
+    "key": "whoop-5",
+    "name": {
+      "ar": "WHOOP 5.0",
+      "en": "WHOOP 5.0"
+    },
+    "category": "health",
+    "category_ar": "صحة ولياقة",
+    "category_en": "",
+    "price": 299.0,
+    "original_price": 349.0,
+    "discount": 14,
+    "rating": 4.3,
+    "reviews": 3456,
+    "image": "https://m.media-amazon.com/images/I/61O4kHNcMOL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "احترافي",
+      "en": "Pro"
+    },
+    "prime": true,
+    "featured": false,
+    "in_stock": true,
+    "active": true,
+    "affiliate_amazon": "https://www.amazon.com/dp/B0D1XXXXX123?tag=neopulsehub-20",
+    "affiliate_aliexpress": "",
+    "asin": "B0D1XXXXX123",
+    "features": [
+      "مراقبة 24/7",
+      "Strain Score",
+      "Recovery Score",
+      "تحليل النوم"
+    ],
+    "description": {
+      "ar": "WHOOP 5.0 الاحترافي لمراقبة الأداء الرياضي وتحليل النوم والاستشفاء.",
+      "en": "WHOOP 5.0 professional tracker for monitoring athletic performance, sleep, and recovery."
+    },
+    "added_at": "2026-06-03T17:31:47.924173",
+    "added_by": "real_amazon_fetcher_v2"
+  },
+  {
+    "id": "AMZN-B07YXY26N4",
+    "key": "omron-blood-pressure",
+    "name": {
+      "ar": "OMRON Evolv ضغط الدم",
+      "en": "OMRON Evolv Blood Pressure Monitor"
+    },
+    "category": "health",
+    "category_ar": "صحة ولياقة",
+    "category_en": "",
+    "price": 119.0,
+    "original_price": 139.0,
+    "discount": 14,
+    "rating": 4.7,
+    "reviews": 4567,
+    "image": "https://m.media-amazon.com/images/I/61SBNqh1QXL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "طبي",
+      "en": "Medical"
+    },
+    "prime": true,
+    "featured": true,
+    "in_stock": true,
+    "active": true,
+    "affiliate_amazon": "https://www.amazon.com/dp/B07YXY26N4?tag=neopulsehub-20",
+    "affiliate_aliexpress": "",
+    "asin": "B07YXY26N4",
+    "features": [
+      "FDA cleared",
+      "Bluetooth",
+      "ذاكرة 100 قراءة",
+      "حجم مدمج"
+    ],
+    "description": {
+      "ar": "جهاز OMRON Evolv لقياس ضغط الدم منزلياً مع موافقة FDA وBluetooth.",
+      "en": "OMRON Evolv home blood pressure monitor with FDA clearance and Bluetooth."
+    },
+    "added_at": "2026-06-03T17:31:47.924178",
+    "added_by": "real_amazon_fetcher_v2"
+  },
+  {
+    "id": "AMZN-B0BVN7TS1S",
+    "key": "logitech-mx-master3s",
+    "name": {
+      "ar": "ماوس Logitech MX Master 3S",
+      "en": "Logitech MX Master 3S"
+    },
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "category_en": "",
+    "price": 99.99,
+    "original_price": 119.99,
+    "discount": 16,
+    "rating": 4.8,
+    "reviews": 12345,
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "اختيار المحرر",
+      "en": "Editor's Pick"
+    },
+    "prime": true,
+    "featured": true,
+    "in_stock": true,
+    "active": true,
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BVN7TS1S?tag=neopulsehub-20",
+    "affiliate_aliexpress": "",
+    "asin": "B0BVN7TS1S",
+    "features": [
+      "عجلة MagSpeed",
+      "Quiet Clicks",
+      "70 يوم بطارية",
+      "3 أجهزة"
+    ],
+    "description": {
+      "ar": "ماوس MX Master 3S الاحترافي مع عجلة MagSpeed وسكوت الكليكس و70 يوم بطارية.",
+      "en": "MX Master 3S professional mouse with MagSpeed wheel, Quiet Clicks, and 70-day battery."
+    },
+    "added_at": "2026-06-03T17:31:47.924182",
+    "added_by": "real_amazon_fetcher_v2"
+  },
+  {
+    "id": "AMZN-B0BSHXBP67",
+    "key": "apple-magic-keyboard",
+    "name": {
+      "ar": "لوحة Apple Magic Keyboard",
+      "en": "Apple Magic Keyboard"
+    },
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "category_en": "",
+    "price": 199.0,
+    "original_price": 229.0,
+    "discount": 13,
+    "rating": 4.7,
+    "reviews": 5678,
+    "image": "https://m.media-amazon.com/images/I/71Sdz相关内容继续发展",
+    "badge": {
+      "ar": "أفضل قيمة",
+      "en": "Best Value"
+    },
+    "prime": true,
+    "featured": true,
+    "in_stock": true,
+    "active": true,
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BSHXBP67?tag=neopulsehub-20",
+    "affiliate_aliexpress": "",
+    "asin": "B0BSHXBP67",
+    "features": [
+      "Touch ID",
+      "Lightning",
+      "حجم كامل",
+      " aluminium"
+    ],
+    "description": {
+      "ar": "لوحة مفاتيح Apple Magic Keyboard بحجم كامل مع Touch ID و aluminium.",
+      "en": "Apple Magic Keyboard full-size with Touch ID and aluminium design."
+    },
+    "added_at": "2026-06-03T17:31:47.924187",
+    "added_by": "real_amazon_fetcher_v2"
+  },
+  {
+    "id": "AMZN-B0BVN7TS1S",
+    "key": "logitech-zone-vibe",
+    "name": {
+      "ar": "سماعات Logitech Zone Vibe Wireless",
+      "en": "Logitech Zone Vibe 125"
+    },
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "category_en": "",
+    "price": 89.99,
+    "original_price": 109.99,
+    "discount": 18,
+    "rating": 4.6,
+    "reviews": 2345,
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "عمل",
+      "en": "Work"
+    },
+    "prime": true,
+    "featured": true,
+    "in_stock": true,
+    "active": true,
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BVN7TS1S?tag=neopulsehub-20",
+    "affiliate_aliexpress": "",
+    "asin": "B0BVN7TS1S",
+    "features": [
+      "18 ساعة بطارية",
+      "mic boom قابل للإزالة",
+      "Bluetooth + USB",
+      "كتم سريع"
+    ],
+    "description": {
+      "ar": "سماعات Zone Vibe اللاسلكية المثالية للعمل مع 18 ساعة بطارية وميكروفون.",
+      "en": "Zone Vibe wireless headphones perfect for work with 18-hour battery and mic."
+    },
+    "added_at": "2026-06-03T17:31:47.924190",
+    "added_by": "real_amazon_fetcher_v2"
   }
 ]

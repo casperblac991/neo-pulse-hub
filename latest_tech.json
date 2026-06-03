@@ -1,0 +1,230 @@
+[
+  {
+    "id": "tech-ai-wearables",
+    "category": "AI Wearables",
+    "name_ar": "أجهزة الذكاء الاصطناعي القابلة للارتداء",
+    "name_en": "AI-Powered Wearables",
+    "description_ar": "أحدث الأجهزة المزودة بتقنية الذكاء الاصطناعي المدمج للتنبؤ بالحالات الصحية وتقديم توصيات مخصصة.",
+    "description_en": "Latest devices with built-in AI technology to predict health conditions and provide personalized recommendations.",
+    "icon": "🤖",
+    "features": [
+      "تحليل صحي ذكي 24/7",
+      "توقع أمراض القلب",
+      "توصيات غذائية مخصصة",
+      "مراقبة النوم المتقدمة",
+      "تحليل الإجهاد والتوتر"
+    ],
+    "products": [
+      {
+        "name": "Apple Watch Series 10",
+        "price": 449,
+        "asin": "B0CHKV4YVM",
+        "affiliate_link": "https://www.amazon.com/dp/B0CHKV4YVM?tag=neopulsehub-20"
+      },
+      {
+        "name": "Samsung Galaxy Watch 7",
+        "price": 349,
+        "asin": "B0C4FL89KJ",
+        "affiliate_link": "https://www.amazon.com/dp/B0C4FL89KJ?tag=neopulsehub-20"
+      },
+      {
+        "name": "WHOOP 5.0 Pro",
+        "price": 399,
+        "asin": "B0D1XXXXX123",
+        "affiliate_link": "https://www.amazon.com/dp/B0D1XXXXX123?tag=neopulsehub-20"
+      }
+    ],
+    "trending": true,
+    "new": true
+  },
+  {
+    "id": "tech-spatial-computing",
+    "category": "Spatial Computing",
+    "name_ar": "الحوسبة المكانية",
+    "name_en": "Spatial Computing",
+    "description_ar": "تقنية جديدة تجمع بين العالم الرقمي وال реальي باستخدام نظارات الواقع المعزز.",
+    "description_en": "New technology that combines digital and real worlds using augmented reality glasses.",
+    "icon": "🌐",
+    "features": [
+      "العمل في الفضاء ثلاثي الأبعاد",
+      "اجتماعات افتراضية واقعية",
+      "ألعاب AR متقدمة",
+      "التسوق بتجربة غامرة",
+      "التعلم بالتفاعل ثلاثي الأبعاد"
+    ],
+    "products": [
+      {
+        "name": "Apple Vision Pro 2",
+        "price": 2999,
+        "asin": "B0D1XXXXX789",
+        "affiliate_link": "https://www.amazon.com/dp/B0D1XXXXX789?tag=neopulsehub-20"
+      },
+      {
+        "name": "Meta Quest 4",
+        "price": 599,
+        "asin": "B0D1XXXXX456",
+        "affiliate_link": "https://www.amazon.com/dp/B0D1XXXXX456?tag=neopulsehub-20"
+      },
+      {
+        "name": "XREAL Air 3",
+        "price": 499,
+        "asin": "B0C9X1S7YK",
+        "affiliate_link": "https://www.amazon.com/dp/B0C9X1S7YK?tag=neopulsehub-20"
+      }
+    ],
+    "trending": true,
+    "new": true
+  },
+  {
+    "id": "tech-smart-home-ai",
+    "category": "Smart Home AI",
+    "name_ar": "المنزل الذكي المدعوم بالذكاء الاصطناعي",
+    "name_en": "AI-Powered Smart Home",
+    "description_ar": "أنظمة منزلية ذكية تتعلم من عاداتك وتتحكم في كل شيء تلقائياً.",
+    "description_en": "Smart home systems that learn from your habits and control everything automatically.",
+    "icon": "🏠",
+    "features": [
+      "تحكم صوتي متقدم",
+      "توفير الطاقة التلقائي",
+      "أمن ذكي متكامل",
+      "إضاءة تكيفية",
+      "تحكم في المناخ الذكي"
+    ],
+    "products": [
+      {
+        "name": "Amazon Echo Hub",
+        "price": 179,
+        "asin": "B084P3KP6S",
+        "affiliate_link": "https://www.amazon.com/dp/B084P3KP6S?tag=neopulsehub-20"
+      },
+      {
+        "name": "Google Nest Hub Max",
+        "price": 229,
+        "asin": "B07YXY26N4",
+        "affiliate_link": "https://www.amazon.com/dp/B07YXY26N4?tag=neopulsehub-20"
+      },
+      {
+        "name": "Philips Hue 4th Gen",
+        "price": 199,
+        "asin": "B09XJ8CK91",
+        "affiliate_link": "https://www.amazon.com/dp/B09XJ8CK91?tag=neopulsehub-20"
+      }
+    ],
+    "trending": false,
+    "new": true
+  },
+  {
+    "id": "tech-wireless-audio",
+    "category": "Wireless Audio",
+    "name_ar": "الصوت اللاسلكي الاحترافي",
+    "name_en": "Pro Wireless Audio",
+    "description_ar": "سماعات لاسلكية بتقنيات متقدمة تقدم جودة صوت استوديو بدون أسلاك.",
+    "description_en": "Wireless headphones with advanced technologies providing studio-quality sound without wires.",
+    "icon": "🎧",
+    "features": [
+      "صوت Hi-Res لاسلكي",
+      "إلغاء ضوضاء متقدم",
+      "بطارية 40+ ساعة",
+      "توصيل متعدد الأجهزة",
+      "صوت مكاني غامر"
+    ],
+    "products": [
+      {
+        "name": "Sony WH-1000XM6",
+        "price": 449,
+        "asin": "B0BDHZZ4LT",
+        "affiliate_link": "https://www.amazon.com/dp/B0BDHZZ4LT?tag=neopulsehub-20"
+      },
+      {
+        "name": "Bose QC Ultra",
+        "price": 379,
+        "asin": "B09XSDMT7H",
+        "affiliate_link": "https://www.amazon.com/dp/B09XSDMT7H?tag=neopulsehub-20"
+      },
+      {
+        "name": "Apple AirPods Max 2",
+        "price": 549,
+        "asin": "B09JQMHJHN",
+        "affiliate_link": "https://www.amazon.com/dp/B09JQMHJHN?tag=neopulsehub-20"
+      }
+    ],
+    "trending": true,
+    "new": false
+  },
+  {
+    "id": "tech-health-monitoring",
+    "category": "Health Monitoring",
+    "name_ar": "مراقبة الصحة المتقدمة",
+    "name_en": "Advanced Health Monitoring",
+    "description_ar": "أجهزة متطورة لمراقبة الصحة بشكل يومي مع تحليلات متقدمة.",
+    "description_en": "Advanced devices for daily health monitoring with analytics.",
+    "icon": "💪",
+    "features": [
+      "ECG وقياس ضغط الدم",
+      "مراقبة الأكسجين",
+      "تحليل النوم العميق",
+      "تتبع التوتر",
+      "توصيات صحية مخصصة"
+    ],
+    "products": [
+      {
+        "name": "Apple Watch Ultra 3",
+        "price": 899,
+        "asin": "B0D1XD1ZXC",
+        "affiliate_link": "https://www.amazon.com/dp/B0D1XD1ZXC?tag=neopulsehub-20"
+      },
+      {
+        "name": "Fitbit Sense 3",
+        "price": 249,
+        "asin": "B0D1RZZZ123",
+        "affiliate_link": "https://www.amazon.com/dp/B0D1RZZZ123?tag=neopulsehub-20"
+      },
+      {
+        "name": "Withings ScanWatch 2",
+        "price": 399,
+        "asin": "B0D1XXXXX234",
+        "affiliate_link": "https://www.amazon.com/dp/B0D1XXXXX234?tag=neopulsehub-20"
+      }
+    ],
+    "trending": true,
+    "new": false
+  },
+  {
+    "id": "tech-productivity-tools",
+    "category": "Productivity Tools",
+    "name_ar": "أدوات الإنتاجية الذكية",
+    "name_en": "Smart Productivity Tools",
+    "description_ar": "أجهزة وأدوات تساعدك على العمل بكفاءة أعلى وتحقيق أهدافك.",
+    "description_en": "Devices and tools to help you work more efficiently and achieve your goals.",
+    "icon": "💼",
+    "features": [
+      "ماوس احترافي هادئ",
+      "لوحات المفاتيح الذكية",
+      "شاشات خارجية محمولة",
+      "كاميرات 4K احترافية",
+      "إضاءة مكتب ذكية"
+    ],
+    "products": [
+      {
+        "name": "Logitech MX Master 4",
+        "price": 119,
+        "asin": "B0BVN7TS1S",
+        "affiliate_link": "https://www.amazon.com/dp/B0BVN7TS1S?tag=neopulsehub-20"
+      },
+      {
+        "name": "Apple Magic Keyboard",
+        "price": 229,
+        "asin": "B0BSHXBP67",
+        "affiliate_link": "https://www.amazon.com/dp/B0BSHXBP67?tag=neopulsehub-20"
+      },
+      {
+        "name": "CalDigit TS4",
+        "price": 399,
+        "asin": "B0D1XXXXX345",
+        "affiliate_link": "https://www.amazon.com/dp/B0D1XXXXX345?tag=neopulsehub-20"
+      }
+    ],
+    "trending": false,
+    "new": false
+  }
+]

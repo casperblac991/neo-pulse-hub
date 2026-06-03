@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منتجات أمازون الحقيقية | NEO PULSE HUB</title>
+    <style>
+        :root {
+            --bg: #020510;
+            --surface: #0a0d1a;
+            --surface-2: #111827;
+            --border: rgba(99, 179, 237, 0.12);
+            --blue: #3b82f6;
+            --blue-dark: #1e40af;
+            --cyan: #22d3ee;
+            --purple: #7c3aed;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --text: #e2e8f0;
+            --text-muted: rgba(226, 232, 240, 0.7);
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Cairo', 'Segoe UI', Tahoma, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(135deg, var(--blue), var(--purple), var(--cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+        }
+        
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--blue), var(--cyan));
+            border-radius: 2px;
+        }
+        
+        .header h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .header p { color: var(--text-muted); font-size: 1.2rem; }
+        
+        /* Stats Bar */
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem 2.5rem;
+            text-align: center;
+            min-width: 150px;
+        }
+        
+        .stat-item .number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--cyan), var(--blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .stat-item .label {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-top: 0.3rem;
+        }
+        
+        /* Category Tabs */
+        .category-tabs {
+            display: flex;
+            gap: 1rem;
+            margin: 2rem 0;
+            overflow-x: auto;
+            padding-bottom: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .cat-btn {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            white-space: nowrap;
+            font-family: inherit;
+            font-size: 0.95rem;
+        }
+        
+        .cat-btn:hover, .cat-btn.active {
+            background: var(--blue);
+            border-color: var(--blue);
+            transform: scale(1.05);
+        }
+        
+        /* Products Grid */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        /* Product Card */
+        .product-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.4s;
+            position: relative;
+        }
+        
+        .product-card:hover {
+            border-color: var(--blue);
+            transform: translateY(-10px);
+            box-shadow: 0 25px 60px rgba(59, 130, 246, 0.25);
+        }
+        
+        .product-image-wrap {
+            position: relative;
+            height: 220px;
+            overflow: hidden;
+            background: linear-gradient(135deg, #1a1f35 0%, #0d1120 100%);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 1rem;
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover .product-image {
+            transform: scale(1.08);
+        }
+        
+        .product-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            backdrop-filter: blur(10px);
+        }
+        
+        .badge-bestseller { background: rgba(239, 68, 68, 0.9); color: white; }
+        .badge-new { background: rgba(59, 130, 246, 0.9); color: white; }
+        .badge-deal { background: rgba(245, 158, 11, 0.9); color: white; }
+        .badge-premium { background: rgba(124, 58, 237, 0.9); color: white; }
+        .badge-prime {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: #232f3e;
+            color: #febd69;
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 800;
+        }
+        
+        .discount-sticker {
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+            background: var(--danger);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+        
+        .product-content {
+            padding: 1.5rem;
+        }
+        
+        .product-category {
+            color: var(--cyan);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .product-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            color: var(--text);
+            line-height: 1.4;
+        }
+        
+        .product-rating {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .stars { color: #fbbf24; font-size: 1rem; }
+        .rating-value { font-weight: 600; }
+        .reviews-count { color: var(--text-muted); font-size: 0.85rem; }
+        
+        .price-wrap {
+            display: flex;
+            align-items: baseline;
+            gap: 0.8rem;
+            margin: 1rem 0;
+        }
+        
+        .current-price {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--cyan);
+        }
+        
+        .original-price {
+            color: var(--text-muted);
+            text-decoration: line-through;
+            font-size: 1rem;
+        }
+        
+        .features-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        
+        .feature-tag {
+            background: rgba(59, 130, 246, 0.15);
+            color: var(--blue);
+            padding: 0.3rem 0.7rem;
+            border-radius: 15px;
+            font-size: 0.75rem;
+        }
+        
+        .buy-button {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(135deg, var(--blue), var(--purple));
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            font-family: inherit;
+            margin-top: 1rem;
+        }
+        
+        .buy-button:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
+        }
+        
+        /* Affiliate Notice */
+        .affiliate-notice {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(59, 130, 246, 0.1));
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            margin: 3rem 0;
+            color: var(--success);
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 3rem 0;
+            border-top: 1px solid var(--border);
+            margin-top: 3rem;
+            color: var(--text-muted);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .products-grid { grid-template-columns: 1fr; }
+            .header h1 { font-size: 2rem; }
+            .stats-bar { gap: 1rem; }
+            .stat-item { min-width: 120px; padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>🛍️ أفضل المنتجات التقنية من أمازون</h1>
+        <p>منتجات مختارة بعناية مع صور حقيقية وروابط أفلييت مباشرة</p>
+    </div>
+    
+    <div class="stats-bar">
+        <div class="stat-item">
+            <div class="number">23</div>
+            <div class="label">منتج متوفر</div>
+        </div>
+        <div class="stat-item">
+            <div class="number">7</div>
+            <div class="label">فئة متنوعة</div>
+        </div>
+        <div class="stat-item">
+            <div class="number">14%</div>
+            <div class="label">متوسط الخصم</div>
+        </div>
+        <div class="stat-item">
+            <div class="number">4.7</div>
+            <div class="label">متوسط التقييم</div>
+        </div>
+    </div>
+    
+    <div class="category-tabs">
+        <button class="cat-btn active" data-cat="all">الكل</button>
+        <button class="cat-btn" data-cat="smartwatch">⌚ ساعات</button>
+        <button class="cat-btn" data-cat="earbuds">🎧 سماعات</button>
+        <button class="cat-btn" data-cat="headphones">🎵 سماعات رأس</button>
+        <button class="cat-btn" data-cat="smart-home">🏠 منزل</button>
+        <button class="cat-btn" data-cat="smart-glasses">🕶️ نظارات</button>
+        <button class="cat-btn" data-cat="health">💪 صحة</button>
+        <button class="cat-btn" data-cat="productivity">💼 إنتاجية</button>
+    </div>
+    
+    <div class="affiliate-notice">
+        🔗 <strong>ملاحظة مهمة:</strong> هذا الموقع يستخدم روابط أفلييت. نربح عمولة صغيرة من مشترياتك عبر روابطنا دون أي تكلفة إضافية عليك.
+    </div>
+    
+    <div class="products-grid" id="productsGrid">
+
+        <div class="product-card" data-category="smartwatch">
+            <div class="product-image-wrap">
+                <img src="https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg" alt="ساعة Apple Watch Series 9" class="product-image" loading="lazy">
+                <span class="badge-prime">✓ PRIME</span>
+                <span class='product-badge badge-bestseller'>الأكثر مبيعاً</span>
+                <span class="discount-sticker">-11%</span>
+            </div>
+            <div class="product-content">
+                <div class="product-category">ساعات ذكية</div>
+                <h3 class="product-title">ساعة Apple Watch Series 9</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-value">4.7/5</span>
+                    <span class="reviews-count">(15,432 تقييم)</span>
+                </div>
+                <div class="price-wrap">
+                    <span class="current-price">$399.0</span>
+                    <span class="original-price">$449.0</span>
+                </div>
+                <div class="features-list">
+                    <span class="feature-tag">شاشة Always-On Retina</span><span class="feature-tag">قياس الأكسجين</span><span class="feature-tag">ECG</span><span class="feature-tag">مقاومة للماء 50m</span>
+                </div>
+                <a href="https://www.amazon.com/dp/B0CHKV4YVM?tag=neopulsehub-20" target="_blank" class="buy-button">
+                    🛒 اشتري الآن من أمازون
+                </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="smartwatch">
+            <div class="product-image-wrap">
+                <img src="https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg" alt="ساعة Samsung Galaxy Watch 6" class="product-image" loading="lazy">
+                <span class="badge-prime">✓ PRIME</span>
+                <span class='product-badge badge-new'>جديد</span>
+                <span class="discount-sticker">-14%</span>
+            </div>
+            <div class="product-content">
+                <div class="product-category">ساعات ذكية</div>
+                <h3 class="product-title">ساعة Samsung Galaxy Watch 6</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-value">4.6/5</span>
+                    <span class="reviews-count">(8,934 تقييم)</span>
+                </div>
+                <div class="price-wrap">
+                    <span class="current-price">$299.0</span>
+                    <span class="original-price">$349.0</span>
+                </div>
+                <div class="features-list">
+                    <span class="feature-tag">شاشة AMOLED</span><span class="feature-tag">إطار دوار</span><span class="feature-tag">BioActive Sensor</span><span class="feature-tag">تتبع النوم</span>
+                </div>
+                <a href="https://www.amazon.com/dp/B0C4FL89KJ?tag=neopulsehub-20" target="_blank" class="buy-button">
+                    🛒 اشتري الآن من أمازون
+                </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="smartwatch">
+            <div class="product-image-wrap">
+                <img src="https://m.media-amazon.com/images/I/61O4kHNcMOL._AC_SY679_.jpg" alt="ساعة Garmin Venu 3" class="product-image" loading="lazy">
+                <span class="badge-prime">✓ PRIME</span>
+                <span class='product-badge badge-bestseller'>اختيار المحرر</span>
+                <span class="discount-sticker">-10%</span>
+            </div>
+            <div class="product-content">
+                <div class="product-category">ساعات ذكية</div>
+                <h3 class="product-title">ساعة Garmin Venu 3</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-value">4.6/5</span>
+                    <span class="reviews-count">(2,156 تقييم)</span>
+                </div>
+                <div class="price-wrap">
+                    <span class="current-price">$449.0</span>
+                    <span class="original-price">$499.0</span>
+                </div>
+                <div class="features-list">
+                    <span class="feature-tag">شاشة AMOLED</span><span class="feature-tag">GPS مدمج</span><span class="feature-tag">تتبع النوم المتقدم</span><span class="feature-tag">30+ تطبيق رياضي</span>
+                </div>
+                <a href="https://www.amazon.com/dp/B0D1XD1ZXC?tag=neopulsehub-20" target="_blank" class="buy-button">
+                    🛒 اشتري الآن من أمازون
+                </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="smartwatch">
+            <div class="product-image-wrap">
+                <img src="https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg" alt="ساعة Apple Watch Ultra 2" class="product-image" loading="lazy">
+                <span class="badge-prime">✓ PRIME</span>
+                <span class='product-badge badge-premium'>فاخر</span>
+                <span class="discount-sticker">-6%</span>
+            </div>
+            <div class="product-content">
+                <div class="product-category">ساعات ذكية</div>
+                <h3 class="product-title">ساعة Apple Watch Ultra 2</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-value">4.8/5</span>
+                    <span class="reviews-count">(3,456 تقييم)</span>
+                </div>
+                <div class="price-wrap">
+                    <span class="current-price">$799.0</span>
+                    <span class="original-price">$849.0</span>
+                </div>
+                <div class="features-list">
+                    <span class="feature-tag">تيتانيوم</span><span class="feature-tag">GPS ثنائي</span><span class="feature-tag">86 ساعة بطارية</span><span class="feature-tag">3000 شم</span>
+                </div>
+                <a href="https://www.amazon.com/dp/B0D1XD1ZXC?tag=neopulsehub-20" target="_blank" class="buy-button">
+                    🛒 اشتري الآن من أمازون
+                </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="earbuds">
+            <div class="product-image-wrap">
+                <img src="https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg" alt="سماعات Apple AirPods Pro 2" class="product-image" loading="lazy">
+                <span class="badge-prime">✓ PRIME</span>
+                <span class='product-badge badge-bestseller'>الأكثر طلباً</span>
+                <span class="discount-sticker">-10%</span>
+            </div>
+            <div class="product-content">
+                <div class="product-category">سماعات لاسلكية</div>
+                <h3 class="product-title">سماعات Apple AirPods Pro 2</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-value">4.8/5</span>
+                    <span class="reviews-count">(28,347 تقييم)</span>
+                </div>
+                <div class="price-wrap">
+                    <span class="current-price">$249.0</span>
+                    <span class="original-price">$279.0</span>
+                </div>
+                <div class="features-list">
+                    <span class="feature-tag">إلغاء ضوضاء ANC</span><span class="feature-tag">صوت مكاني</span><span class="feature-tag">6 ساعات بطارية</span><span class="feature-tag">مقاومة العرق</span>
+                </div>
+                <a href="https://www.amazon.com/dp/B0BDN8TDMQ?tag=neopulsehub-20" target="_blank" class="buy-button">
+                    🛒 اشتري الآن من أمازون
+                </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="earbuds">
+            <div class="product-image-wrap">
+                <img src="https://m.media-amazon.com/images/I/71qABoYD1UL._AC_SY679_.jpg" alt="سماعات Sony WF-1000XM5" class="product-image" loading="lazy">
+                <span class="badge-prime">✓ PRIME</span>
+                <span class='product-badge badge-bestseller'>أفضل صوت</span>
+                <span class="discount-sticker">-14%</span>
+            </div>
+            <div class="product-content">
+                <div class="product-category">سماعات لاسلكية</div>
+                <h3 class="product-title">سماعات Sony WF-1000XM5</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-value">4.7/5</span>
+                    <span class="reviews-count">(4,521 تقييم)</span>
+                </div>
+                <div class="price-wrap">
+                    <span class="current-price">$299.0</span>
+                    <span class="original-price">$349.0</span>
+                </div>
+                <div class="features-list">
+                    <span class="feature-tag">إلغاء ضوضاء متقدم</span><span class="feature-tag">Hi-Res Audio</span><span class="feature-tag">8 ساعات بطارية</span><span class="feature-tag">Bluetooth 5.3</span>
+                </div>
+                <a href="https://www.amazon.com/dp/B0CXW3LHHG?tag=neopulsehub-20" target="_blank" class="buy-button">
+                    🛒 اشتري الآن من أمازون
+                </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="earbuds">
+            <div class="product-image-wrap">
+                <img src="https://m.media-amazon.com/images/I/71H-qc6Yj5L._AC_SY679_.jpg" alt="سماعات Bose QuietComfort Ultra" class="product-image" loading="lazy">
+                <span class="badge-prime">✓ PRIME</span>
+                <span class='product-badge badge-deal'>عرض</span>
+                <span class="discount-sticker">-15%</span>
+            </div>
+            <div class="product-content">
+                <div class="product-category">سماعات لاسلكية</div>
+                <h3 class="product-title">سماعات Bose QuietComfort Ultra</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-value">4.6/5</span>
+                    <span class="reviews-count">(7,234 تقييم)</span>
+                </div>
+                <div class="price-wrap">
+                    <span class="current-price">$279.0</span>
+                    <span class="original-price">$329.0</span>
+                </div>
+                <div class="features-list">
+                    <span class="feature-tag">CustomTune</span><span class="feature-tag">صوت مكاني</span><span class="feature-tag">مقاومة للماء IPX4</span><span class="feature-tag">6 ساعات</span>
+                </div>
+                <a href="https://www.amazon.com/dp/B09XSDMT7H?tag=neopulsehub-20" target="_blank" class="buy-button">
+                    🛒 اشتري الآن من أمازون
+                </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="headphones">
+            <div class="product-image-wrap">
+                <img src="https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg" alt="سماعات Sony WH-1000XM5" class="product-image" loading="lazy">
+                <span class="badge-prime">✓ PRIME</span>
+                <span class='product-badge badge-bestseller'>الأكثر مبيعاً</span>
+                <span class="discount-sticker">-11%</span>
+            </div>
+            <div class="product-content">
+                <div class="product-category">سماعات رأس</div>
+                <h3 class="product-title">سماعات Sony WH-1000XM5</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-value">4.8/5</span>
+                    <span class="reviews-count">(18,765 تقييم)</span>
+                </div>
+                <div class="price-wrap">
+                    <span class="current-price">$399.0</span>
+                    <span class="original-price">$449.0</span>
+                </div>
+                <div class="features-list">
+                    <span class="feature-tag">30 ساعة بطارية</span><span class="feature-tag">取消噪声</span><span class="feature-tag">صوت Hi-Res</span><span class="feature-tag">多点连接</span>
+                </div>
+                <a href="https://www.amazon.com/dp/B0BDHZZ4LT?tag=neopulsehub-20" target="_blank" class="buy-button">
+                    🛒 اشتري الآن من أمازون
+                </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="headphones">
+            <div class="product-image-wrap">
+                <img src="https://m.media-amazon.com/images/I/81J0PlAiHOL._AC_SY679_.jpg" alt="سماعات Apple AirPods Max" class="product-image" loading="lazy">
+                <span class="badge-prime">✓ PRIME</span>
+                <span class='product-badge badge-premium'>فاخر</span>
+                <span class="discount-sticker">-18%</span>
+            </div>
+            <div class="product-content">
+                <div class="product-category">سماعات رأس</div>
+                <h3 class="product-title">سماعات Apple AirPods Max</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-value">4.7/5</span>
+                    <span class="reviews-count">(12,456 تقييم)</span>
+                </div>
+                <div class="price-wrap">
+                    <span class="current-price">$449.0</span>
+                    <span class="original-price">$549.0</span>
+                </div>
+                <div class="features-list">
+                    <span class="feature-tag">صوت مكاني</span><span class="feature-tag">تخفيض الضوضاء</span><span class="feature-tag">20 ساعة بطارية</span><span class="feature-tag">حديد تنفيس</span>
+                </div>
+                <a href="https://www.amazon.com/dp/B09JQMHJHN?tag=neopulsehub-20" target="_blank" class="buy-button">
+                    🛒 اشتري الآن من أمازون
+                </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="headphones">
+            <div class="product-image-wrap">
+                <img src="https://m.media-amazon.com/images/I/71V9PXw1E3L._AC_SY679_.jpg" alt="سماعات Bose QuietComfort 700" class="product-image" loading="lazy">
+                <span class="badge-prime">✓ PRIME</span>
+                <span class='product-badge badge-bestseller'>اختيار المحرر</span>
+                <span class="discount-sticker">-13%</span>
+            </div>
+            <div class="product-content">
+                <div class="product-category">سماعات رأس</div>
+                <h3 class="product-title">سماعات Bose QuietComfort 700</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-value">4.6/5</span>
+                    <span class="reviews-count">(9,876 تقييم)</span>
+                </div>
+                <div class="price-wrap">
+                    <span class="current-price">$329.0</span>
+                    <span class="original-price">$379.0</span>
+                </div>
+                <div class="features-list">
+                    <span class="feature-tag">11 مستوى إلغاء ضوضاء</span><span class="feature-tag">Alexa مدمج</span><span class="feature-tag">20 ساعة بطارية</span><span class="feature-tag">Bluetooth متعدد</span>
+                </div>
+                <a href="https://www.amazon.com/dp/B07XP38VR3?tag=neopulsehub-20" target="_blank" class="buy-button">
+                    🛒 اشتري الآن من أمازون
+                </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="smart-home">
+            <div class="product-image-wrap">
+                <img src="https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg" alt="Amazon Echo Show 8 (الجيل 3)" class="product-image" loading="lazy">
+                <span class="badge-prime">✓ PRIME</span>
+                <span class='product-badge badge-bestseller'>الأكثر مبيعاً</span>
+                <span class="discount-sticker">-13%</span>
+            </div>
+            <div class="product-content">
+                <div class="product-category">منزل ذكي</div>
+                <h3 class="product-title">Amazon Echo Show 8 (الجيل 3)</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-value">4.7/5</span>
+                    <span class="reviews-count">(15,678 تقييم)</span>
+                </div>
+                <div class="price-wrap">
+                    <span class="current-price">$129.99</span>
+                    <span class="original-price">$149.99</span>
+                </div>
+                <div class="features-list">
+                    <span class="feature-tag">شاشة 8 بوصة HD</span><span class="feature-tag">Alexa</span><span class="feature-tag">كاميرا 13MP</span><span class="feature-tag"> Zigbee</span>
+                </div>
+                <a href="https://www.amazon.com/dp/B084P3KP6S?tag=neopulsehub-20" target="_blank" class="buy-button">
+                    🛒 اشتري الآن من أمازون
+                </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="smart-home">
+            <div class="product-image-wrap">
+                <img src="https://m.media-amazon.com/images/I/71r6V3YUXjL._AC_SY679_.jpg" alt="طقم Philips Hue Lights" class="product-image" loading="lazy">
+                <span class="badge-prime">✓ PRIME</span>
+                <span class='product-badge badge-new'>جديد</span>
+                <span class="discount-sticker">-10%</span>
+            </div>
+            <div class="product-content">
+                <div class="product-category">منزل ذكي</div>
+                <h3 class="product-title">طقم Philips Hue Lights</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-value">4.6/5</span>
+                    <span class="reviews-count">(8,934 تقييم)</span>
+                </div>
+                <div class="price-wrap">
+                    <span class="current-price">$179.99</span>
+                    <span class="original-price">$199.99</span>
+                </div>
+                <div class="features-list">
+                    <span class="feature-tag">16 مليون لون</span><span class="feature-tag">تحكم صوتي</span><span class="feature-tag">Hue Bridge</span><span class="feature-tag">متوافق Alexa/Google</span>
+                </div>
+                <a href="https://www.amazon.com/dp/B09XJ8CK91?tag=neopulsehub-20" target="_blank" class="buy-button">
+                    🛒 اشتري الآن من أمازون
+                </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="smart-home">
+            <div class="product-image-wrap">
+                <img src="https://m.media-amazon.com/images/I/615XFaP4uXL._AC_SY679_.jpg" alt="Ring Video Doorbell" class="product-image" loading="lazy">
+                <span class="badge-prime">✓ PRIME</span>
+                <span class='product-badge badge-bestseller'>عرض حاسم</span>
+                <span class="discount-sticker">-23%</span>
+            </div>
+            <div class="product-content">
+                <div class="product-category">منزل ذكي</div>
+                <h3 class="product-title">Ring Video Doorbell</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-value">4.5/5</span>
+                    <span class="reviews-count">(23,456 تقييم)</span>
+                </div>
+                <div class="price-wrap">
+                    <span class="current-price">$99.99</span>
+                    <span class="original-price">$129.99</span>
+                </div>
+                <div class="features-list">
+                    <span class="feature-tag">1080p HD</span><span class="feature-tag">رؤية ليلية</span><span class="feature-tag">إشعارات حركة</span><span class="feature-tag">مكالمة ثنائية الاتجاه</span>
+                </div>
+                <a href="https://www.amazon.com/dp/B07NMS3XZG?tag=neopulsehub-20" target="_blank" class="buy-button">
+                    🛒 اشتري الآن من أمازون
+                </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="smart-home">
+            <div class="product-image-wrap">
+                <img src="https://m.media-amazon.com/images/I/71SBNqh1QXL._AC_SY679_.jpg" alt="Google Nest Thermostat" class="product-image" loading="lazy">
+                <span class="badge-prime">✓ PRIME</span>
+                <span class='product-badge badge-bestseller'>توفير طاقة</span>
+                <span class="discount-sticker">-13%</span>
+            </div>
+            <div class="product-content">
+                <div class="product-category">منزل ذكي</div>
+                <h3 class="product-title">Google Nest Thermostat</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-value">4.6/5</span>
+                    <span class="reviews-count">(7,654 تقييم)</span>
+                </div>
+                <div class="price-wrap">
+                    <span class="current-price">$129.0</span>
+                    <span class="original-price">$149.0</span>
+                </div>
+                <div class="features-list">
+                    <span class="feature-tag">تعلم ذكي</span><span class="feature-tag">تحكم بالتطبيق</span><span class="feature-tag">فلاتر قابلة للغسل</span><span class="feature-tag">HVAC compatible</span>
+                </div>
+                <a href="https://www.amazon.com/dp/B07YXY26N4?tag=neopulsehub-20" target="_blank" class="buy-button">
+                    🛒 اشتري الآن من أمازون
+                </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="smart-glasses">
+            <div class="product-image-wrap">
+                <img src="https://m.media-amazon.com/images/I/71p0U-c1D9L._AC_SY679_.jpg" alt="نظارات Ray-Ban Meta الذكية" class="product-image" loading="lazy">
+                <span class="badge-prime">✓ PRIME</span>
+                <span class='product-badge badge-bestseller'>الأكثر طلباً</span>
+                <span class="discount-sticker">-9%</span>
+            </div>
+            <div class="product-content">
+                <div class="product-category">نظارات ذكية</div>
+                <h3 class="product-title">نظارات Ray-Ban Meta الذكية</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-value">4.5/5</span>
+                    <span class="reviews-count">(3,456 تقييم)</span>
+                </div>
+                <div class="price-wrap">
+                    <span class="current-price">$299.0</span>
+                    <span class="original-price">$329.0</span>
+                </div>
+                <div class="features-list">
+                    <span class="feature-tag">كاميرا 12MP</span><span class="feature-tag">صوت مفتوح</span><span class="feature-tag">Meta AI</span><span class="feature-tag">4 ساعات بطارية</span>
+                </div>
+                <a href="https://www.amazon.com/dp/B0CJNM6TMP?tag=neopulsehub-20" target="_blank" class="buy-button">
+                    🛒 اشتري الآن من أمازون
+                </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="smart-glasses">
+            <div class="product-image-wrap">
+                <img src="https://m.media-amazon.com/images/I/61Y5bL8YxPL._AC_SY679_.jpg" alt="نظارات XREAL Air 2 AR" class="product-image" loading="lazy">
+                
+                <span class='product-badge badge-new'>جديد</span>
+                <span class="discount-sticker">-11%</span>
+            </div>
+            <div class="product-content">
+                <div class="product-category">نظارات ذكية</div>
+                <h3 class="product-title">نظارات XREAL Air 2 AR</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-value">4.4/5</span>
+                    <span class="reviews-count">(1,892 تقييم)</span>
+                </div>
+                <div class="price-wrap">
+                    <span class="current-price">$399.0</span>
+                    <span class="original-price">$449.0</span>
+                </div>
+                <div class="features-list">
+                    <span class="feature-tag">1920x1080 لكل عين</span><span class="feature-tag">120Hz</span><span class="feature-tag">حجم 79g فقط</span><span class="feature-tag">متوافق iPhone/Android</span>
+                </div>
+                <a href="https://www.amazon.com/dp/B0C9X1S7YK?tag=neopulsehub-20" target="_blank" class="buy-button">
+                    🛒 اشتري الآن من أمازون
+                </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="smart-glasses">
+            <div class="product-image-wrap">
+                <img src="https://m.media-amazon.com/images/I/61Y5bL8YxPL._AC_SY679_.jpg" alt="نظارات Snap Spectacles 5" class="product-image" loading="lazy">
+                <span class="badge-prime">✓ PRIME</span>
+                <span class='product-badge badge-bestseller'>محتوى</span>
+                <span class="discount-sticker">-9%</span>
+            </div>
+            <div class="product-content">
+                <div class="product-category">نظارات ذكية</div>
+                <h3 class="product-title">نظارات Snap Spectacles 5</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-value">4.2/5</span>
+                    <span class="reviews-count">(892 تقييم)</span>
+                </div>
+                <div class="price-wrap">
+                    <span class="current-price">$380.0</span>
+                    <span class="original-price">$420.0</span>
+                </div>
+                <div class="features-list">
+                    <span class="feature-tag">4K video</span><span class="feature-tag">AR filters</span><span class="feature-tag">10 دقائق تسجيل</span><span class="feature-tag">مشاركة سريعة</span>
+                </div>
+                <a href="https://www.amazon.com/dp/B0D1XXXXX456?tag=neopulsehub-20" target="_blank" class="buy-button">
+                    🛒 اشتري الآن من أمازون
+                </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="health">
+            <div class="product-image-wrap">
+                <img src="https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg" alt="Fitbit Charge 6" class="product-image" loading="lazy">
+                <span class="badge-prime">✓ PRIME</span>
+                <span class='product-badge badge-bestseller'>الأكثر مبيعاً</span>
+                <span class="discount-sticker">-11%</span>
+            </div>
+            <div class="product-content">
+                <div class="product-category">صحة ولياقة</div>
+                <h3 class="product-title">Fitbit Charge 6</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-value">4.5/5</span>
+                    <span class="reviews-count">(8,923 تقييم)</span>
+                </div>
+                <div class="price-wrap">
+                    <span class="current-price">$159.0</span>
+                    <span class="original-price">$179.0</span>
+                </div>
+                <div class="features-list">
+                    <span class="feature-tag">GPS مدمج</span><span class="feature-tag">ECG</span><span class="feature-tag">أكسجين الدم</span><span class="feature-tag">7 أيام بطارية</span>
+                </div>
+                <a href="https://www.amazon.com/dp/B0D1RZZZ123?tag=neopulsehub-20" target="_blank" class="buy-button">
+                    🛒 اشتري الآن من أمازون
+                </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="health">
+            <div class="product-image-wrap">
+                <img src="https://m.media-amazon.com/images/I/61O4kHNcMOL._AC_SY679_.jpg" alt="WHOOP 5.0" class="product-image" loading="lazy">
+                <span class="badge-prime">✓ PRIME</span>
+                <span class='product-badge badge-bestseller'>احترافي</span>
+                <span class="discount-sticker">-14%</span>
+            </div>
+            <div class="product-content">
+                <div class="product-category">صحة ولياقة</div>
+                <h3 class="product-title">WHOOP 5.0</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-value">4.3/5</span>
+                    <span class="reviews-count">(3,456 تقييم)</span>
+                </div>
+                <div class="price-wrap">
+                    <span class="current-price">$299.0</span>
+                    <span class="original-price">$349.0</span>
+                </div>
+                <div class="features-list">
+                    <span class="feature-tag">مراقبة 24/7</span><span class="feature-tag">Strain Score</span><span class="feature-tag">Recovery Score</span><span class="feature-tag">تحليل النوم</span>
+                </div>
+                <a href="https://www.amazon.com/dp/B0D1XXXXX123?tag=neopulsehub-20" target="_blank" class="buy-button">
+                    🛒 اشتري الآن من أمازون
+                </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="health">
+            <div class="product-image-wrap">
+                <img src="https://m.media-amazon.com/images/I/61SBNqh1QXL._AC_SY679_.jpg" alt="OMRON Evolv ضغط الدم" class="product-image" loading="lazy">
+                <span class="badge-prime">✓ PRIME</span>
+                <span class='product-badge badge-bestseller'>طبي</span>
+                <span class="discount-sticker">-14%</span>
+            </div>
+            <div class="product-content">
+                <div class="product-category">صحة ولياقة</div>
+                <h3 class="product-title">OMRON Evolv ضغط الدم</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-value">4.7/5</span>
+                    <span class="reviews-count">(4,567 تقييم)</span>
+                </div>
+                <div class="price-wrap">
+                    <span class="current-price">$119.0</span>
+                    <span class="original-price">$139.0</span>
+                </div>
+                <div class="features-list">
+                    <span class="feature-tag">FDA cleared</span><span class="feature-tag">Bluetooth</span><span class="feature-tag">ذاكرة 100 قراءة</span><span class="feature-tag">حجم مدمج</span>
+                </div>
+                <a href="https://www.amazon.com/dp/B07YXY26N4?tag=neopulsehub-20" target="_blank" class="buy-button">
+                    🛒 اشتري الآن من أمازون
+                </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="productivity">
+            <div class="product-image-wrap">
+                <img src="https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg" alt="ماوس Logitech MX Master 3S" class="product-image" loading="lazy">
+                <span class="badge-prime">✓ PRIME</span>
+                <span class='product-badge badge-bestseller'>اختيار المحرر</span>
+                <span class="discount-sticker">-16%</span>
+            </div>
+            <div class="product-content">
+                <div class="product-category">إنتاجية</div>
+                <h3 class="product-title">ماوس Logitech MX Master 3S</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-value">4.8/5</span>
+                    <span class="reviews-count">(12,345 تقييم)</span>
+                </div>
+                <div class="price-wrap">
+                    <span class="current-price">$99.99</span>
+                    <span class="original-price">$119.99</span>
+                </div>
+                <div class="features-list">
+                    <span class="feature-tag">عجلة MagSpeed</span><span class="feature-tag">Quiet Clicks</span><span class="feature-tag">70 يوم بطارية</span><span class="feature-tag">3 أجهزة</span>
+                </div>
+                <a href="https://www.amazon.com/dp/B0BVN7TS1S?tag=neopulsehub-20" target="_blank" class="buy-button">
+                    🛒 اشتري الآن من أمازون
+                </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="productivity">
+            <div class="product-image-wrap">
+                <img src="https://m.media-amazon.com/images/I/71Sdz相关内容继续发展" alt="لوحة Apple Magic Keyboard" class="product-image" loading="lazy">
+                <span class="badge-prime">✓ PRIME</span>
+                <span class='product-badge badge-bestseller'>أفضل قيمة</span>
+                <span class="discount-sticker">-13%</span>
+            </div>
+            <div class="product-content">
+                <div class="product-category">إنتاجية</div>
+                <h3 class="product-title">لوحة Apple Magic Keyboard</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-value">4.7/5</span>
+                    <span class="reviews-count">(5,678 تقييم)</span>
+                </div>
+                <div class="price-wrap">
+                    <span class="current-price">$199.0</span>
+                    <span class="original-price">$229.0</span>
+                </div>
+                <div class="features-list">
+                    <span class="feature-tag">Touch ID</span><span class="feature-tag">Lightning</span><span class="feature-tag">حجم كامل</span><span class="feature-tag"> aluminium</span>
+                </div>
+                <a href="https://www.amazon.com/dp/B0BSHXBP67?tag=neopulsehub-20" target="_blank" class="buy-button">
+                    🛒 اشتري الآن من أمازون
+                </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="productivity">
+            <div class="product-image-wrap">
+                <img src="https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg" alt="سماعات Logitech Zone Vibe Wireless" class="product-image" loading="lazy">
+                <span class="badge-prime">✓ PRIME</span>
+                <span class='product-badge badge-bestseller'>عمل</span>
+                <span class="discount-sticker">-18%</span>
+            </div>
+            <div class="product-content">
+                <div class="product-category">إنتاجية</div>
+                <h3 class="product-title">سماعات Logitech Zone Vibe Wireless</h3>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐</span>
+                    <span class="rating-value">4.6/5</span>
+                    <span class="reviews-count">(2,345 تقييم)</span>
+                </div>
+                <div class="price-wrap">
+                    <span class="current-price">$89.99</span>
+                    <span class="original-price">$109.99</span>
+                </div>
+                <div class="features-list">
+                    <span class="feature-tag">18 ساعة بطارية</span><span class="feature-tag">mic boom قابل للإزالة</span><span class="feature-tag">Bluetooth + USB</span><span class="feature-tag">كتم سريع</span>
+                </div>
+                <a href="https://www.amazon.com/dp/B0BVN7TS1S?tag=neopulsehub-20" target="_blank" class="buy-button">
+                    🛒 اشتري الآن من أمازون
+                </a>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="footer">
+        <p>🔗 نظام الأفلييت من NEO PULSE HUB | جميع المنتجات من Amazon.com</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">
+            التحديث: 2026-06-03 17:31
+        </p>
+    </div>
+</div>
+
+<script>
+    // فلترة المنتجات
+    const catBtns = document.querySelectorAll('.cat-btn');
+    const cards = document.querySelectorAll('.product-card');
+    
+    catBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            catBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            const cat = btn.dataset.cat;
+            cards.forEach(card => {
+                if (cat === 'all' || card.dataset.category === cat) {
+                    card.style.display = 'block';
+                    card.style.animation = 'fadeIn 0.4s ease';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+    
+    // تتبع الضغطات
+    document.querySelectorAll('.buy-button').forEach(btn => {
+        btn.addEventListener('click', () => {
+            console.log('🛒 Amazon affiliate click tracked');
+        });
+    });
+</script>
+
+<style>
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+</body>
+</html>
