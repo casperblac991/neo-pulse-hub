@@ -421,27 +421,29 @@ async function sendChatMessage() {
   input.value = '';
   messagesDiv.scrollTop = messagesDiv.scrollHeight;
   
-  const loadingId = 'loading-' + Date.now();
-  messagesDiv.innerHTML += `<div id="${loadingId}" style="margin: 5px 0; padding: 6px 10px; background: rgba(96,165,250,.1); border-radius: 10px;"><span style="color:#60a5fa;">🤖</span> جاري الرد...</div>`;
-  messagesDiv.scrollTop = messagesDiv.scrollHeight;
+  // Simple offline responses
+  const responses = {
+    'مرحبا': ['مرحباً! كيف حالك؟ 👋', 'أهلاً وسهلاً! كيف أقدر أساعدك؟'],
+    'hello': ['Hello! How are you?', 'Hi there!'],
+    'سعر': ['المنتجات تبدأ من $50 💰', 'أسعارنا منافسة جداً!'],
+    'price': ['Products from $50 💰', 'Very competitive prices!'],
+    'شحن': ['الشحن مجاني للطلبات فوق $100 🚚', 'نوصل خلال 3-7 أيام'],
+    'shipping': ['Free shipping over $100 🚚', 'Delivery in 3-7 days'],
+    'منتج': ['شاهد المنتجات في المتجر 🔥', 'أساعدك تختار المنتج المناسب!'],
+    'product': ['Browse our store 🔥', 'I can help you find the right product!'],
+    'help': ['اكتب اسم المنتج وأساعدك 💡', 'كيف أقدر أساعدك؟'],
+  };
   
-  try {
-    const response = await fetch(`${MANAGER_URL}/api/chat`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ message: message })
-    });
-    const data = await response.json();
-    const loadingEl = document.getElementById(loadingId);
-    if (loadingEl) {
-      loadingEl.innerHTML = `<span style="color:#60a5fa;">🤖</span> ${data.answer || 'عذراً، حدث خطأ'}`;
-    }
-  } catch (error) {
-    const loadingEl = document.getElementById(loadingId);
-    if (loadingEl) {
-      loadingEl.innerHTML = `<span style="color:#ef4444;">🤖</span> عذراً، حدث خطأ في الاتصال`;
+  let response = 'شكراً لتواصلك! اكتب سؤالك وسأساعدك 🔥';
+  const lower = message.toLowerCase();
+  for (const [key, vals] of Object.entries(responses)) {
+    if (lower.includes(key)) {
+      response = vals[Math.floor(Math.random() * vals.length)];
+      break;
     }
   }
+  
+  messagesDiv.innerHTML += `<div style="margin: 5px 0; padding: 6px 10px; background: rgba(96,165,250,.1); border-radius: 10px;"><span style="color:#60a5fa;">🤖</span> ${response}</div>`;
   messagesDiv.scrollTop = messagesDiv.scrollHeight;
 }
 
