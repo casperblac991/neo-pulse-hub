@@ -72,7 +72,7 @@ async function generateReport(products) {
       <h3>${p.name?.ar || p.name}</h3>
       <div class="price">${p.price}$</div>
       <p>⭐ ${p.rating}/5 (${(p.reviews || 0).toLocaleString()} مراجعة)</p>
-      <a href="${(p.affiliate_amazon || '#').replace('YOUR_AMAZON_TAG', 'neopulsehub-20')}" target="_blank" class="buy-btn" style="display:inline-block;background:#ff9900;color:#fff;padding:8px 16px;border-radius:50px;text-decoration:none;margin-top:10px;">🛒 شراء من أمازون</a>
+      <a href="${(p.affiliate_amazon || '#').replace('YOUR_AMAZON_TAG', 'neopulsehub-20')}" target="_blank" class="buy-btn" style="display:inline-block;background:#ff9900;color:#fff;padding:8px 16px;border-radius:6px;text-decoration:none;">اشتر الآن 🛒</a>
     </div>
     `).join('')}
   </div>
