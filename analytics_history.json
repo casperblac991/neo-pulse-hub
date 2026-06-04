@@ -1,0 +1,139 @@
+[
+  {
+    "date": "2026-06-04",
+    "generated_at": "2026-06-04T09:40:39.297458",
+    "store_metrics": {
+      "total_revenue": 0.0,
+      "total_orders": 0,
+      "avg_order_value": 0,
+      "conversion_rate": 0,
+      "returning_customers": 0,
+      "new_customers": 0
+    },
+    "top_products": [
+      {
+        "product_id": "AI-1777896006-328",
+        "name": "ساعة سامسونج جالكسي واتش 5",
+        "views": 0,
+        "conversions": 0,
+        "revenue": 0.0,
+        "conversion_rate": 0,
+        "performance_score": 0.0
+      },
+      {
+        "product_id": "AI-1777896006-109",
+        "name": "أبل ووتش سيريز 9",
+        "views": 0,
+        "conversions": 0,
+        "revenue": 0.0,
+        "conversion_rate": 0,
+        "performance_score": 0.0
+      },
+      {
+        "product_id": "AI-1777896009-367",
+        "name": "سماعات أبل إيربودز برو",
+        "views": 0,
+        "conversions": 0,
+        "revenue": 0.0,
+        "conversion_rate": 0,
+        "performance_score": 0.0
+      },
+      {
+        "product_id": "AI-1777896009-508",
+        "name": "سماعات سوني WF-1000XM4",
+        "views": 0,
+        "conversions": 0,
+        "revenue": 0.0,
+        "conversion_rate": 0,
+        "performance_score": 0.0
+      },
+      {
+        "product_id": "AI-1777896014-208",
+        "name": "أمازون إيكو دوت (الجيل الخامس)",
+        "views": 0,
+        "conversions": 0,
+        "revenue": 0.0,
+        "conversion_rate": 0,
+        "performance_score": 0.0
+      }
+    ],
+    "products_needing_attention": [
+      {
+        "product_id": "AI-1777896006-328",
+        "name": "ساعة سامسونج جالكسي واتش 5",
+        "views": 0,
+        "conversions": 0,
+        "revenue": 0.0,
+        "conversion_rate": 0,
+        "performance_score": 0.0
+      },
+      {
+        "product_id": "AI-1777896006-109",
+        "name": "أبل ووتش سيريز 9",
+        "views": 0,
+        "conversions": 0,
+        "revenue": 0.0,
+        "conversion_rate": 0,
+        "performance_score": 0.0
+      },
+      {
+        "product_id": "AI-1777896009-367",
+        "name": "سماعات أبل إيربودز برو",
+        "views": 0,
+        "conversions": 0,
+        "revenue": 0.0,
+        "conversion_rate": 0,
+        "performance_score": 0.0
+      },
+      {
+        "product_id": "AI-1777896009-508",
+        "name": "سماعات سوني WF-1000XM4",
+        "views": 0,
+        "conversions": 0,
+        "revenue": 0.0,
+        "conversion_rate": 0,
+        "performance_score": 0.0
+      },
+      {
+        "product_id": "AI-1777896014-208",
+        "name": "أمازون إيكو دوت (الجيل الخامس)",
+        "views": 0,
+        "conversions": 0,
+        "revenue": 0.0,
+        "conversion_rate": 0,
+        "performance_score": 0.0
+      }
+    ],
+    "customer_segments": {
+      "vip_count": 0,
+      "active_count": 0,
+      "new_count": 0,
+      "dormant_count": 0,
+      "total_customers": 0
+    },
+    "ai_insights": [
+      "⚠️ معدل التحويل منخفض (<1%) - يحتاج تحسين",
+      "💡平均值订单价值低 - 可以推广更高价值的产品",
+      "🏆 أفضل منتج: ساعة سامسونج جالكسي واتش 5",
+      "📦 الفئة الأفضل: smartwatch"
+    ],
+    "recommendations": [
+      {
+        "category": "conversion",
+        "priority": "high",
+        "action": "تحسين صور المنتجات والأوصاف",
+        "impact": "قد يرفع التحويل بنسبة 20-30%"
+      },
+      {
+        "category": "inventory",
+        "priority": "medium",
+        "action": "مراجعة المنتجات ضعيفة الأداء",
+        "impact": "تحسين إدارة المخزون"
+      }
+    ],
+    "next_actions": [
+      "تحسين صور المنتجات والأوصاف",
+      "مراجعة المنتجات ضعيفة الأداء"
+    ]
+  }
+]
