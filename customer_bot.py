@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-NEO PULSE HUB — Customer Bot v2.0
+NEO PULSE HUB — Customer Bot v3.0
 ✅ CUSTOMER_BOT_TOKEN (صح)
 ✅ _register_handlers (للـ webhook)
 ✅ chat history
 ✅ بحث في المنتجات
+✅ نظام Leads محسّن
+✅ عروض حصرية للعملاء
 """
 import os, json, logging
 from datetime import datetime
@@ -27,6 +29,7 @@ ADMIN_USER_ID      = int(os.environ.get("ADMIN_USER_ID", "0"))
 BASE_DIR           = os.path.dirname(os.path.abspath(__file__))
 PRODUCTS_FILE      = os.path.join(BASE_DIR, "products.json")
 LEADS_FILE         = os.path.join(BASE_DIR, "leads.json")
+SITE_URL           = os.environ.get("SITE_URL", "https://neo-pulse-hub.it.com")
 
 log = logging.getLogger("customer_bot")
 
@@ -121,7 +124,7 @@ def build_prompt(user_msg: str, uid: int) -> str:
 
     prod_lines = "\n".join([
         f"- {p.get('name_ar','')} | ${p.get('price',0)} | ⭐{p.get('rating',0)} | "
-        f"https://neo-pulse-hub.it.com/product-detail.html?id={p.get('id','')}"
+        f"{SITE_URL}/product-detail.html?id={p.get('id','')}"
         for p in relevant[:6]
     ])
     history = get_history(uid)
@@ -131,7 +134,7 @@ def build_prompt(user_msg: str, uid: int) -> str:
     ])
     return f"""أنت مساعد خدمة عملاء ذكي لمتجر NEO PULSE HUB للأجهزة الذكية.
 
-المتجر: https://neo-pulse-hub.it.com
+المتجر: {SITE_URL}
 الدفع: PayPal | الشحن: 3-7 أيام | الإرجاع: 30 يوم مجاناً
 
 المنتجات المتاحة:
@@ -146,7 +149,7 @@ def build_prompt(user_msg: str, uid: int) -> str:
 
 def kb_main():
     return InlineKeyboardMarkup([
-        [InlineKeyboardButton("🛍️ تصفح المنتجات", url="https://neo-pulse-hub.it.com/products.html")],
+        [InlineKeyboardButton("🛍️ تصفح المنتجات", url=f"{SITE_URL}/products.html")],
         [InlineKeyboardButton("📦 تتبع طلب", callback_data="track"),
          InlineKeyboardButton("🚚 الشحن", callback_data="shipping")],
         [InlineKeyboardButton("🔄 الإرجاع", callback_data="returns"),
@@ -175,12 +178,12 @@ async def cmd_products(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
         featured = sorted(products, key=lambda x: x.get("rating", 0), reverse=True)[:5]
     lines = "\n".join([
         f"• *{p['name_ar']}* — ${p['price']} ⭐{p.get('rating',0)}\n"
-        f"  [عرض المنتج](https://neo-pulse-hub.it.com/product-detail.html?id={p['id']})"
+        f"  [عرض المنتج]({SITE_URL}/product-detail.html?id={p['id']})"
         for p in featured
     ])
     await update.message.reply_text(
         f"🌟 *أبرز منتجاتنا:*\n\n{lines}\n\n"
-        f"[← تصفح الكل](https://neo-pulse-hub.it.com/products.html)",
+        f"[← تصفح الكل]({SITE_URL}/products.html)",
         parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
     )
 
@@ -206,7 +209,7 @@ async def handle_callback(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
             "📦 *تتبع طلبك*\n\nأرسل رقم طلبك أو تتبع من الموقع مباشرة:",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("🔍 تتبع الطلب", url="https://neo-pulse-hub.it.com/track.html")],
+                [InlineKeyboardButton("🔍 تتبع الطلب", url=f"{SITE_URL}/track.html")],
                 [InlineKeyboardButton("🔙 رجوع", callback_data="back")]
             ])
         )
@@ -215,7 +218,7 @@ async def handle_callback(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
             "🚚 *الشحن والدفع*\n\n• الشحن: 3-7 أيام عمل\n• مجاني فوق $200\n• الدفع: PayPal آمن 100%",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("📄 سياسة الشحن", url="https://neo-pulse-hub.it.com/shipping.html")],
+                [InlineKeyboardButton("📄 سياسة الشحن", url=f"{SITE_URL}/shipping.html")],
                 [InlineKeyboardButton("🔙 رجوع", callback_data="back")]
             ])
         )
@@ -224,7 +227,7 @@ async def handle_callback(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
             "🔄 *سياسة الإرجاع*\n\n• إرجاع مجاني خلال 30 يوم\n• استرداد كامل خلال 3-5 أيام",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("📄 سياسة الإرجاع", url="https://neo-pulse-hub.it.com/returns.html")],
+                [InlineKeyboardButton("📄 سياسة الإرجاع", url=f"{SITE_URL}/returns.html")],
                 [InlineKeyboardButton("🔙 رجوع", callback_data="back")]
             ])
         )
