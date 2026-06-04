@@ -105,12 +105,18 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .product-price-row{display:flex;align-items:center;justify-content:space-between;gap:.5rem;flex-wrap:wrap}
 .product-price{font-family:'Orbitron',sans-serif;font-size:1.2rem;font-weight:700;background:linear-gradient(135deg,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .product-original{font-size:.82rem;color:var(--muted);text-decoration:line-through}
-.buy-btns{display:flex;gap:6px;margin-top:.9rem}
-.buy-btn{flex:1;display:flex;align-items:center;justify-content:center;gap:5px;padding:.5rem .6rem;border-radius:var(--rp);font-size:.78rem;font-weight:700;cursor:pointer;transition:all var(--ease);color:#fff;text-decoration:none;border:none}
-.buy-amazon{background:linear-gradient(135deg,#ff9900,#e47911)}
-.buy-amazon:hover{box-shadow:0 4px 16px rgba(255,153,0,.5);transform:translateY(-1px)}
+.buy-btns{display:flex;gap:8px;margin-top:.9rem}
+.buy-btn{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:.6rem .8rem;border-radius:var(--rp);font-size:.8rem;font-weight:700;cursor:pointer;transition:all var(--ease);color:#fff;text-decoration:none;border:none;position:relative;overflow:hidden}
+.buy-btn::after{content:'';position:absolute;top:0;left:-100%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent);transition:left .5s}
+.buy-btn:hover::after{left:100%}
+.buy-amazon{background:linear-gradient(135deg,#FF9900 0%,#e47911 100%);box-shadow:0 4px 15px rgba(255,153,0,.35)}
+.buy-amazon:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(255,153,0,.5)}
+.buy-amazon .btn-icon{font-size:1.1rem}
 .buy-ali{background:linear-gradient(135deg,#e62e04,#ff4d1a)}
 .buy-ali:hover{box-shadow:0 4px 16px rgba(230,46,4,.5);transform:translateY(-1px)}
+.buy-prime{background:linear-gradient(135deg,#00A8E1,#007DBC);font-size:.7rem;padding:.4rem .5rem}
+.buy-prime:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,168,225,.4)}
+.amazon-rating{display:inline-flex;align-items:center;gap:4px;font-size:.7rem;color:#FF9900;margin-top:4px}
 .commission-badge{display:inline-flex;align-items:center;gap:3px;font-size:.68rem;color:var(--green);background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.2);border-radius:999px;padding:.2rem .6rem}
 .features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem}
 .feature-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:2rem 1.5rem;position:relative;overflow:hidden;transition:all var(--ease)}
@@ -155,6 +161,70 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
 @media(max-width:768px){nav{padding:.9rem 1.2rem}.nav-links{display:none}.hamburger{display:flex}.hero-btns{flex-direction:column;align-items:center}.hero-stats{gap:1.5rem}.newsletter-form{flex-direction:column}}
 @media(max-width:480px){.section{padding:3.5rem 1rem}.products-grid{grid-template-columns:1fr}.categories-grid{grid-template-columns:repeat(2,1fr)}.buy-btns{flex-direction:column}}
 </style>
+
+<!-- SEO Schema.org markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "NEO PULSE HUB",
+  "url": "https://neo-pulse-hub.com",
+  "description": "متجر التقنية الذكي - أفضل ساعات ذكية، سماعات، منتجات تقنية بأسعار منافسة",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://neo-pulse-hub.com/store.html?search={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NEO PULSE HUB",
+  "url": "https://neo-pulse-hub.com",
+  "logo": "https://neo-pulse-hub.com/logo.png",
+  "description": "متجر التقنية الذكي متخصص في الساعات الذكية والسماعات والمنتجات التقنية",
+  "sameAs": [
+    "https://twitter.com/neopulsehub",
+    "https://instagram.com/neopulsehub"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "أفضل المنتجات التقنية",
+  "description": "قائمة بأفضل الساعات الذكية والسماعات اللاسلكية",
+  "itemListElement": [
+    {
+      "@type": "Product",
+      "position": 1,
+      "name": "Apple Watch Series 9",
+      "description": "أفضل ساعة ذكية للرياضيين ومحبي التقنية",
+      "brand": {"@type": "Brand", "name": "Apple"},
+      "offers": {"@type": "Offer", "price": "399", "priceCurrency": "USD"}
+    },
+    {
+      "@type": "Product",
+      "position": 2,
+      "name": "Samsung Galaxy Watch 6 Classic",
+      "description": "أفضل ساعة أندرويد مع إطار دوار",
+      "brand": {"@type": "Brand", "name": "Samsung"},
+      "offers": {"@type": "Offer", "price": "299", "priceCurrency": "USD"}
+    },
+    {
+      "@type": "Product",
+      "position": 3,
+      "name": "Sony WF-1000XM5",
+      "description": "أفضل سماعات لاسلكية مع إلغاء ضوضاء",
+      "brand": {"@type": "Brand", "name": "Sony"},
+      "offers": {"@type": "Offer", "price": "279", "priceCurrency": "USD"}
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <div class="bg-grid"></div><div class="bg-grad"></div><div class="scanline"></div>
@@ -492,6 +562,25 @@ function showToast(message, icon = '✅') {
   setTimeout(() => toast.classList.remove('show'), 3000);
 }
 
+// Track affiliate clicks
+function trackAffiliateClick(productId, source) {
+  console.log('🛒 Affiliate Click:', { productId, source, timestamp: new Date().toISOString() });
+  
+  // Store in localStorage for analytics
+  const clicks = JSON.parse(localStorage.getItem('nph_affiliate_clicks') || '{}');
+  clicks[productId] = { source, time: new Date().toISOString() };
+  localStorage.setItem('nph_affiliate_clicks', JSON.stringify(clicks));
+  
+  // Send to analytics endpoint if available
+  if (typeof fetch !== 'undefined') {
+    fetch('/api/track-click', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ productId, source, timestamp: Date.now() })
+    }).catch(() => {}); // Silent fail
+  }
+}
+
 // Filter products
 function filterProducts(category) {
   currentFilter = category;
@@ -574,9 +663,13 @@ function displayProducts() {
           ${product.original_price ? `<span class="product-original">$${product.original_price}</span>` : ''}
         </div>
         <div class="buy-btns">
-          <a href="${product.affiliate_amazon || '#'}" target="_blank" class="buy-btn buy-amazon">${T[lang].buy_amazon}</a>
-          ${product.affiliate_ali ? `<a href="${product.affiliate_ali}" target="_blank" class="buy-btn buy-ali">${T[lang].buy_ali}</a>` : ''}
+          <a href="${product.affiliate_amazon || '#'}" target="_blank" class="buy-btn buy-amazon" onclick="trackAffiliateClick('${product.asin || 'unknown'}', 'amazon')">
+            <span class="btn-icon">🛒</span>
+            <span>اشترِ من أمازون</span>
+          </a>
+          ${product.affiliate_ali ? `<a href="${product.affiliate_ali}" target="_blank" class="buy-btn buy-ali" onclick="trackAffiliateClick('${product.asin || 'unknown'}', 'aliexpress')">🔥 مقارنة</a>` : ''}
         </div>
+        <div class="amazon-rating">⭐ ${product.rating || 4.5} | ${product.reviews ? product.reviews.toLocaleString() + ' تقييم' : ''}</div>
       </div>
     </div>
   `).join('');
