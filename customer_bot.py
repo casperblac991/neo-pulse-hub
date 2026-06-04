@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-NEO PULSE HUB — Customer Bot v3.0
+NEO PULSE HUB — Customer Bot v3.1
 ✅ CUSTOMER_BOT_TOKEN (صح)
+✅ GROQ_API_KEY support
 ✅ _register_handlers (للـ webhook)
 ✅ chat history
 ✅ بحث في المنتجات
 ✅ نظام Leads محسّن
 ✅ عروض حصرية للعملاء
+✅ SITE_URL from CNAME
 """
 import os, json, logging
 from datetime import datetime
@@ -23,6 +25,7 @@ except ImportError:
     pass
 
 CUSTOMER_BOT_TOKEN = os.environ.get("CUSTOMER_BOT_TOKEN", "")
+GROQ_API_KEY       = os.environ.get("GROQ_API_KEY", "")
 GEMINI_API_KEY     = (os.environ.get("GEMINI_API_KEY") or
                       os.environ.get("GOOGLE_API_KEY") or "")
 ADMIN_USER_ID      = int(os.environ.get("ADMIN_USER_ID", "0"))
@@ -76,15 +79,33 @@ def upsert_lead(tg_user):
     data["total_users"] = len(data["users"])
     save_json(LEADS_FILE, data)
 
-def ask_gemini(prompt: str) -> str:
-    key = (os.environ.get("GEMINI_API_KEY") or
-           os.environ.get("GOOGLE_API_KEY") or "")
-    if not key:
-        log.error("GEMINI_API_KEY missing!")
+def ask_ai(prompt: str) -> str:
+    """Use Groq or Gemini for AI responses"""
+    # Try Groq first (faster and free tier available)
+    groq_key = os.environ.get("GROQ_API_KEY", "")
+    if groq_key and groq_key != "YOUR_API_KEY_HERE":
+        try:
+            import groq as _groq
+            client = _groq.Groq(api_key=groq_key)
+            resp = client.chat.completions.create(
+                model="llama-3.1-8b-instant",
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.7,
+                max_tokens=2000
+            )
+            return resp.choices[0].message.content
+        except Exception as e:
+            log.warning(f"Groq error: {e}")
+    
+    # Fallback to Gemini
+    gemini_key = (os.environ.get("GEMINI_API_KEY") or
+                  os.environ.get("GOOGLE_API_KEY") or "")
+    if not gemini_key:
+        log.error("No AI API key available!")
         return ""
     import requests as _r
     url = ("https://generativelanguage.googleapis.com/v1beta/models/"
-           "gemini-2.5-flash:generateContent?key=" + key)
+           "gemini-2.5-flash:generateContent?key=" + gemini_key)
     body = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {
@@ -196,7 +217,7 @@ async def handle_message(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     await update.message.chat.send_action(ChatAction.TYPING)
     msg = await update.message.reply_text("⏳ جاري البحث...")
     add_history(uid, "user", text)
-    answer = ask_gemini(build_prompt(text, uid))
+    answer = ask_ai(build_prompt(text, uid))
     add_history(uid, "assistant", answer)
     await msg.edit_text(answer, parse_mode=ParseMode.MARKDOWN)
 
