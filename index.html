@@ -500,14 +500,48 @@ function filterProducts(category) {
 
 // Load and display products
 async function loadProducts() {
+  const grid = document.getElementById('productsGrid');
+  
   try {
-    const response = await fetch('/api/products');
-    const products = await response.json();
+    // Try direct products.json first (works without server)
+    let products = [];
+    
+    try {
+      const response = await fetch('./products.json');
+      if (response.ok) {
+        products = await response.json();
+        console.log('✅ Loaded', products.length, 'products from products.json');
+      }
+    } catch (e) {
+      console.log('products.json not available, trying API...');
+    }
+    
+    // Fallback to API
+    if (products.length === 0) {
+      try {
+        const apiResponse = await fetch('/api/products');
+        if (apiResponse.ok) {
+          products = await apiResponse.json();
+          console.log('✅ Loaded', products.length, 'products from API');
+        }
+      } catch (e2) {
+        console.log('API not available');
+      }
+    }
+    
+    // Update PRODUCTS and display
     PRODUCTS = products;
+    
+    if (products.length === 0) {
+      grid.innerHTML = '<p style="text-align:center;padding:40px;color:#64748b;">لا توجد منتجات متوفرة</p>';
+      return;
+    }
+    
     displayProducts();
+    
   } catch (error) {
-    console.error('Error loading products:', error);
-    showToast(T[lang].load_error, '⚠️');
+    console.error('❌ Error loading products:', error);
+    grid.innerHTML = '<p style="text-align:center;padding:40px;color:#64748b;">تعذر تحميل المنتجات. حاول تحديث الصفحة.</p>';
   }
 }
 
