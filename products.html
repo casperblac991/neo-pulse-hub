@@ -104,6 +104,7 @@ nav{position:sticky;top:0;z-index:200;display:flex;align-items:center;justify-co
 .cart-btn.added{background:linear-gradient(135deg,var(--green),#059669)}
 .no-results{text-align:center;padding:4rem 2rem;color:var(--muted)}
 .no-results .icon{font-size:3rem;margin-bottom:1rem}
+.ai-shop-widget{position:fixed;bottom:2rem;left:2rem;z-index:320}.ai-shop-btn{width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,var(--cyan),var(--purple));color:#fff;font-size:1.45rem;box-shadow:0 6px 24px rgba(6,182,212,.35);display:flex;align-items:center;justify-content:center}.ai-shop-panel{position:absolute;bottom:74px;left:0;width:min(360px,calc(100vw - 2rem));background:var(--surface2);border:1px solid var(--border2);border-radius:var(--r2);box-shadow:0 18px 45px rgba(0,0,0,.55);padding:1rem;display:none}.ai-shop-panel.show{display:block;animation:fadeIn .25s ease}.ai-shop-head{display:flex;justify-content:space-between;align-items:center;font-weight:800;margin-bottom:.7rem}.ai-shop-messages{height:230px;overflow:auto;background:#0b1020;border-radius:12px;padding:.65rem;font-size:.84rem;color:var(--text);margin-bottom:.65rem}.ai-msg{margin:.35rem 0;padding:.48rem .6rem;border-radius:10px;line-height:1.6}.ai-msg.user{background:rgba(59,130,246,.18);text-align:end}.ai-msg.bot{background:rgba(6,182,212,.10);border:1px solid rgba(6,182,212,.16)}.ai-shop-input{display:flex;gap:.5rem}.ai-shop-input input{flex:1;background:#10172a;border:1px solid var(--border2);border-radius:50px;color:var(--text);padding:.55rem .85rem;outline:none}.ai-shop-input button{background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;border-radius:50px;padding:.55rem .9rem;font-weight:700}.ai-suggestions{display:flex;gap:.35rem;flex-wrap:wrap;margin-bottom:.55rem}.ai-chip{font-size:.72rem;color:var(--cyan2);background:rgba(6,182,212,.08);border:1px solid rgba(6,182,212,.22);border-radius:999px;padding:.24rem .55rem}
 .toast{position:fixed;bottom:2rem;right:2rem;z-index:999;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--r);padding:.9rem 1.4rem;display:flex;align-items:center;gap:.7rem;box-shadow:0 10px 30px rgba(0,0,0,.5);transform:translateY(80px);opacity:0;transition:all var(--ease);pointer-events:none}
 .toast.show{transform:translateY(0);opacity:1}
 @media(max-width:900px){.catalog-layout{grid-template-columns:1fr}.sidebar{position:static;display:grid;grid-template-columns:1fr 1fr;gap:1rem}}
@@ -185,6 +186,20 @@ nav{position:sticky;top:0;z-index:200;display:flex;align-items:center;justify-co
 </div>
 
 <div class="toast" id="toast"><span id="toastIcon"></span><span id="toastText"></span></div>
+
+<div class="ai-shop-widget">
+  <div class="ai-shop-panel" id="aiShopPanel" aria-live="polite">
+    <div class="ai-shop-head"><span id="aiShopTitle">مساعد التسوق AI</span><button onclick="toggleAiShop()" aria-label="Close">✕</button></div>
+    <div class="ai-suggestions">
+      <button class="ai-chip" onclick="askAiShop('أفضل ساعة ذكية')">أفضل ساعة</button>
+      <button class="ai-chip" onclick="askAiShop('منتج للبيت الذكي')">بيت ذكي</button>
+      <button class="ai-chip" onclick="askAiShop('سماعات بسعر مناسب')">سماعات</button>
+    </div>
+    <div class="ai-shop-messages" id="aiShopMessages"><div class="ai-msg bot">🤖 أهلاً! اكتب احتياجك وسأقترح لك منتجات مناسبة من المتجر.</div></div>
+    <div class="ai-shop-input"><input id="aiShopInput" type="text" placeholder="مثال: أريد منتج رياضي أقل من 200 دولار" onkeydown="if(event.key==='Enter') sendAiShop()"><button onclick="sendAiShop()">إرسال</button></div>
+  </div>
+  <button class="ai-shop-btn" onclick="toggleAiShop()" aria-label="AI shopping assistant">🤖</button>
+</div>
 
 <script>
 // ============================================
@@ -11799,6 +11814,67 @@ let sortBy = 'rating';
 let cart = JSON.parse(localStorage.getItem('nph_cart') || '[]');
 let countersRan = false;
 
+const CATEGORY_META = {
+  all:{ar:'🌐 جميع المنتجات',en:'🌐 All Products'}, smartwatch:{ar:'⌚ ساعات ذكية',en:'⌚ Smart Watches'}, 'smart-glasses':{ar:'🥽 نظارات ذكية',en:'🥽 Smart Glasses'}, health:{ar:'❤️ الصحة الذكية',en:'❤️ Health Tech'}, 'smart-home':{ar:'🏠 المنزل الذكي',en:'🏠 Smart Home'}, earbuds:{ar:'🎧 سماعات أذن',en:'🎧 Earbuds'}, headphones:{ar:'🎧 سماعات رأس',en:'🎧 Headphones'}, productivity:{ar:'💼 الإنتاجية',en:'💼 Productivity'}, accessories:{ar:'🔌 إكسسوارات',en:'🔌 Accessories'}, cameras:{ar:'📷 كاميرات',en:'📷 Cameras'}, car:{ar:'🚗 سيارات ذكية',en:'🚗 Smart Car'}, gaming:{ar:'🎮 ألعاب',en:'🎮 Gaming'}, kids:{ar:'🧒 تقنية الأطفال',en:'🧒 Kids Tech'}, kitchen:{ar:'🍳 مطبخ ذكي',en:'🍳 Smart Kitchen'}, office:{ar:'🏢 المكتب',en:'🏢 Office'}, sports:{ar:'🏃 رياضة',en:'🏃 Sports'}
+};
+
+function pickText(value, fallback = '') {
+  if (value == null) return fallback;
+  if (typeof value === 'string' || typeof value === 'number') return String(value);
+  if (typeof value === 'object') return value[lang] || value.ar || value.en || Object.values(value).find(v => typeof v === 'string') || fallback;
+  return fallback;
+}
+function escapeHtml(value) {
+  return String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+}
+function normalizeProduct(p, index = 0) {
+  const cat = String(p.category || 'accessories');
+  const meta = CATEGORY_META[cat] || {ar: cat, en: cat};
+  const price = Number(p.price) || 0;
+  const original = Number(p.original_price || p.originalPrice || 0);
+  const discount = Number(p.discount || (original > price ? Math.round((original - price) / original * 100) : 0)) || 0;
+  return {
+    ...p,
+    id: String(p.id || p.asin || ('product-' + index)),
+    name_ar: pickText(p.name_ar ?? p.name, 'منتج ذكي'),
+    name_en: pickText(p.name_en ?? p.name, 'Smart Product'),
+    category: cat,
+    category_ar: pickText(p.category_ar, meta.ar),
+    category_en: pickText(p.category_en, meta.en),
+    badge_ar: pickText(p.badge_ar ?? p.badge, ''),
+    badge_en: pickText(p.badge_en ?? p.badge, ''),
+    price, original_price: original, discount,
+    rating: Number(p.rating) || 4.5,
+    reviews: Number(p.reviews) || 0,
+    image: p.image || 'https://placehold.co/600x400/1e3a5f/ffffff?text=NEO+PULSE+HUB',
+    affiliate_amazon: p.affiliate_amazon || p.amazon || '#',
+    in_stock: p.in_stock !== false && (p.stock == null || Number(p.stock) > 0)
+  };
+}
+function renderCategoryFilters() {
+  const card = document.querySelector('.sidebar-card');
+  if (!card || allProducts.length === 0) return;
+  const categories = ['all', ...Object.keys(CATEGORY_META).filter(c => c !== 'all' && allProducts.some(p => p.category === c))];
+  card.querySelectorAll('.filter-btn').forEach(btn => btn.remove());
+  categories.forEach(cat => {
+    const count = cat === 'all' ? allProducts.length : allProducts.filter(p => p.category === cat).length;
+    const meta = CATEGORY_META[cat] || {ar: cat, en: cat};
+    const btn = document.createElement('button');
+    btn.className = 'filter-btn' + (activeCategory === cat ? ' active' : '');
+    btn.onclick = () => setFilter(cat, btn);
+    btn.innerHTML = `${lang === 'en' ? meta.en : meta.ar} <span class="filter-count">${count}</span>`;
+    card.appendChild(btn);
+  });
+}
+function updatePriceRange() {
+  const range = document.getElementById('priceRange');
+  if (!range || !allProducts.length) return;
+  const nextMax = Math.ceil(Math.max(...allProducts.map(p => p.price || 0), 700) / 100) * 100;
+  range.max = String(nextMax);
+  if (!range.dataset.userChanged) { range.value = String(nextMax); maxPrice = nextMax; }
+  document.getElementById('priceLabel').textContent = '$' + range.value;
+}
+
 // ============================================
 // دالة تغيير اللغة (محدثة)
 // ============================================
@@ -11939,82 +12015,49 @@ function changeLang(l) {
   document.getElementById('f_copy').textContent = ui.f_copy;
   document.querySelector('.search-input').placeholder = ui.search_placeholder;
   
-  // إعادة عرض المنتجات
+  // إعادة عرض الفئات والمنتجات
   if (allProducts.length > 0) {
+    renderCategoryFilters();
     applyFilters();
   }
+  const aiTitle = document.getElementById('aiShopTitle');
+  const aiInput = document.getElementById('aiShopInput');
+  if (aiTitle) aiTitle.textContent = l === 'en' ? 'AI Shopping Assistant' : 'مساعد التسوق AI';
+  if (aiInput) aiInput.placeholder = l === 'en' ? 'Example: sports product under $200' : 'مثال: أريد منتج رياضي أقل من 200 دولار';
   updateCartUI();
 }
 
 // ============================================
 // تحميل المنتجات (مع fallback لـ products.json)
 function loadProducts() {
-  const grid = document.getElementById('productsGrid');
-  
   async function loadFromJson() {
     try {
-      const response = await fetch('./products.json');
-      if (response.ok) {
-        const products = await response.json();
-        return products.map(p => ({
-          ...p,
-          name_ar: p.name?.ar || p.name_ar || 'منتج',
-          name_en: p.name?.en || p.name_en || 'Product',
-          category_ar: p.category || p.category_ar || 'تقنية',
-          category_en: p.category || p.category_en || 'Tech',
-          badge_ar: p.badge || p.badge_ar || '',
-          badge_en: p.badge || p.badge_en || '',
-          in_stock: p.stock > 0
-        }));
-      }
+      const response = await fetch('./products.json', { cache: 'no-store' });
+      if (response.ok) return await response.json();
     } catch (e) {
-      console.log('products.json not available');
+      console.warn('products.json not available, using inline fallback', e);
     }
     return null;
   }
-  
+
   loadFromJson().then(products => {
-    if (products && products.length > 0) {
-      allProducts = products;
-      console.log('✅ تم تحميل', allProducts.length, 'منتج من products.json');
-    } else {
-      // Use inline data as fallback
-      allProducts = INLINE_PRODUCTS.map(p => ({
-        ...p,
-        name_ar: p.name_ar,
-        name_en: p.name_en,
-        category_ar: p.category_ar,
-        category_en: p.category_en,
-        badge_ar: p.badge_ar,
-        badge_en: p.badge_en,
-        in_stock: true
-      }));
-      console.log('✅ تم تحميل', allProducts.length, 'منتج محلي');
-    }
-    
-    // تحديث أعداد الفئات
-    document.getElementById('count-all').textContent = allProducts.length;
-    document.getElementById('count-smartwatch').textContent = allProducts.filter(p => p.category === 'smartwatch').length;
-    document.getElementById('count-smart-glasses').textContent = allProducts.filter(p => p.category === 'smart-glasses').length;
-    document.getElementById('count-health').textContent = allProducts.filter(p => p.category === 'health').length;
-    document.getElementById('count-smart-home').textContent = allProducts.filter(p => p.category === 'smart-home').length;
-    document.getElementById('count-earbuds').textContent = allProducts.filter(p => p.category === 'earbuds').length;
-    document.getElementById('count-productivity').textContent = allProducts.filter(p => p.category === 'productivity').length;
-    
+    const source = Array.isArray(products) && products.length ? products : INLINE_PRODUCTS;
+    allProducts = source.map(normalizeProduct);
+    console.log('✅ تم تحميل', allProducts.length, 'منتج');
+    renderCategoryFilters();
+    updatePriceRange();
     applyFilters();
   }).catch(e => {
     console.error('❌ خطأ في تحميل المنتجات:', e);
-    allProducts = INLINE_PRODUCTS.map(p => ({
-      ...p,
-      name_ar: p.name_ar,
-      name_en: p.name_en,
-      in_stock: true
-    }));
+    allProducts = INLINE_PRODUCTS.map(normalizeProduct);
+    renderCategoryFilters();
+    updatePriceRange();
     applyFilters();
   });
 }
 
 // ============================================
+// تطبيق الفلاتر والبحث// ============================================
 // تطبيق الفلاتر والبحث
 // ============================================
 function applyFilters() {
@@ -12022,17 +12065,17 @@ function applyFilters() {
   
   filteredProducts = allProducts.filter(p => {
     const matchCat = activeCategory === 'all' || p.category === activeCategory;
-    const matchPrice = p.price <= maxPrice;
-    const name = lang === 'en' ? (p.name_en || '').toLowerCase() : (p.name_ar || '').toLowerCase();
-    const matchQ = !q || name.includes(q);
+    const matchPrice = (Number(p.price) || 0) <= maxPrice;
+    const haystack = [p.name_ar, p.name_en, p.category_ar, p.category_en, p.badge_ar, p.badge_en, p.description].map(v => pickText(v, '').toLowerCase()).join(' ');
+    const matchQ = !q || haystack.includes(q);
     return matchCat && matchPrice && matchQ;
   });
 
   // تطبيق الترتيب
-  if (sortBy === 'price-asc') filteredProducts.sort((a,b) => a.price - b.price);
-  if (sortBy === 'price-desc') filteredProducts.sort((a,b) => b.price - a.price);
-  if (sortBy === 'rating') filteredProducts.sort((a,b) => b.rating - a.rating);
-  if (sortBy === 'discount') filteredProducts.sort((a,b) => b.discount - a.discount);
+  if (sortBy === 'price-asc') filteredProducts.sort((a,b) => (a.price||0) - (b.price||0));
+  if (sortBy === 'price-desc') filteredProducts.sort((a,b) => (b.price||0) - (a.price||0));
+  if (sortBy === 'rating') filteredProducts.sort((a,b) => (b.rating||0) - (a.rating||0));
+  if (sortBy === 'discount') filteredProducts.sort((a,b) => (b.discount||0) - (a.discount||0));
 
   renderProducts();
   
@@ -12061,16 +12104,16 @@ function renderProducts() {
   
   grid.innerHTML = visible.map((p, i) => {
     const inCart = cart.some(c => c.id === p.id);
-    const name = lang === 'en' ? (p.name_en || p.name_ar) : p.name_ar;
-    const category = lang === 'en' ? (p.category_en || p.category_ar) : p.category_ar;
-    const badge = lang === 'en' ? (p.badge_en || p.badge_ar) : p.badge_ar;
+    const name = escapeHtml(lang === 'en' ? (p.name_en || p.name_ar) : p.name_ar);
+    const category = escapeHtml(lang === 'en' ? (p.category_en || p.category_ar) : p.category_ar);
+    const badge = escapeHtml(lang === 'en' ? (p.badge_en || p.badge_ar) : p.badge_ar);
     const addBtnText = inCart ? '✓' : (lang === 'en' ? '+' : '+');
     const outOfStockText = lang === 'en' ? 'Out of Stock' : 'نفد المخزون';
     
     return `
     <div class="product-card" style="animation-delay:${i*0.04}s" onclick="goProduct('${p.id}')">
       <div class="product-img">
-        <img src="${p.image}" alt="${name}" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x400/1e3a5f/ffffff?text='+encodeURIComponent('${name}')">
+        <img src="${escapeHtml(p.image)}" alt="${name}" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x400/1e3a5f/ffffff?text=NEO+PULSE+HUB'">
         ${badge ? `<span class="badge">${badge}</span>` : ''}
         ${p.discount ? `<span class="discount-tag">-${p.discount}%</span>` : ''}
         ${!p.in_stock ? `<div class="out-of-stock"><span>${outOfStockText}</span></div>` : ''}
@@ -12136,6 +12179,7 @@ function sortProducts(by, btn) {
 // تصفية حسب السعر
 // ============================================
 function filterByPrice(val) {
+  document.getElementById('priceRange').dataset.userChanged = '1';
   maxPrice = parseInt(val);
   document.getElementById('priceLabel').textContent = '$' + val;
   applyFilters();
@@ -12216,6 +12260,52 @@ function showToast(icon, text) {
   t.classList.add('show');
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => t.classList.remove('show'), 2800);
+}
+
+
+// ============================================
+// مساعد التسوق الذكي المحلي
+// ============================================
+function toggleAiShop() {
+  const panel = document.getElementById('aiShopPanel');
+  if (panel) panel.classList.toggle('show');
+}
+function askAiShop(text) {
+  const input = document.getElementById('aiShopInput');
+  input.value = text;
+  sendAiShop();
+}
+function sendAiShop() {
+  const input = document.getElementById('aiShopInput');
+  const box = document.getElementById('aiShopMessages');
+  const q = (input?.value || '').trim();
+  if (!q || !box) return;
+  box.innerHTML += `<div class="ai-msg user">${escapeHtml(q)}</div>`;
+  input.value = '';
+  const reply = buildAiRecommendation(q);
+  box.innerHTML += `<div class="ai-msg bot">🤖 ${reply}</div>`;
+  box.scrollTop = box.scrollHeight;
+}
+function buildAiRecommendation(query) {
+  const q = query.toLowerCase();
+  const budget = (q.match(/(\d{2,4})/) || [])[1];
+  let candidates = allProducts.length ? [...allProducts] : [...filteredProducts];
+  if (budget) candidates = candidates.filter(p => p.price <= Number(budget));
+  const keywords = [
+    ['ساعة','watch','smartwatch'],['سماعة','headphone','earbud','earbuds','headphones'],['بيت','منزل','home','smart-home'],['صحة','health','health'],['رياض','sport','sports'],['كاميرا','camera','cameras'],['ألعاب','gaming','gaming'],['مكتب','office','office'],['سيارة','car','car'],['مطبخ','kitchen','kitchen']
+  ];
+  const hit = keywords.find(row => row.some(k => q.includes(k)));
+  if (hit) candidates = candidates.filter(p => p.category === hit[hit.length - 1] || q.includes(String(p.category).toLowerCase()));
+  const searchWords = q.split(/\s+/).filter(w => w.length > 2);
+  candidates = candidates.map(p => ({ p, score: (p.rating || 0) * 10 + (p.discount || 0) + searchWords.reduce((s,w) => s + ([p.name_ar,p.name_en,p.category_ar,p.category_en].join(' ').toLowerCase().includes(w) ? 8 : 0), 0) }))
+    .sort((a,b) => b.score - a.score).slice(0,3).map(x => x.p);
+  if (!candidates.length) return lang === 'en' ? 'I could not find an exact match. Try increasing the budget or using a broader category.' : 'لم أجد نتيجة مطابقة تماماً. جرّب رفع الميزانية أو استخدام فئة أوسع.';
+  const intro = lang === 'en' ? 'Best matches from the store:' : 'أفضل اقتراحات من المتجر:';
+  return intro + '<br>' + candidates.map(p => {
+    const name = escapeHtml(lang === 'en' ? p.name_en : p.name_ar);
+    const cat = escapeHtml(lang === 'en' ? p.category_en : p.category_ar);
+    return `<a style="color:#22d3ee" href="product-detail.html?id=${encodeURIComponent(p.id)}">${name}</a> — ${cat} — $${Number(p.price).toFixed(2)} — ⭐ ${p.rating}`;
+  }).join('<br>');
 }
 
 // ============================================
