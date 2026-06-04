@@ -65,6 +65,30 @@ AMAZON_IMAGES = {
     
     # PS5
     "B0BJHHBDN9": "https://m.media-amazon.com/images/I/71NQB6BgvlL._AC_SY679_.jpg",
+    
+    # Google Nest
+    "B07Y8LRNSP": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    
+    # Ray-Ban Meta
+    "B0CJNM6TMP": "https://m.media-amazon.com/images/I/61Y5bL8YxPL._AC_SY679_.jpg",
+    
+    # Beats
+    "B0C4BWMD4F": "https://m.media-amazon.com/images/I/71H-qc6Yj5L._AC_SY679_.jpg",
+    
+    # Amazfit
+    "B0B8V7CNPK": "https://m.media-amazon.com/images/I/61O4kHNcMOL._AC_SY679_.jpg",
+    
+    # Xiaomi
+    "B0CG4H4Y4T": "https://m.media-amazon.com/images/I/61O4kHNcMOL._AC_SY679_.jpg",
+    
+    # Keychron
+    "B09ZWB1FGN": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+    
+    # Tile
+    "B09B2R44GF": "https://m.media-amazon.com/images/I/61O4kHNcMOL._AC_SY679_.jpg",
+    
+    # Whoop
+    "B09HK3TRSL": "https://m.media-amazon.com/images/I/61O4kHNcMOL._AC_SY679_.jpg",
 }
 
 # ═══════════════════════════════════════════════════════════
