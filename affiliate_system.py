@@ -193,7 +193,7 @@ AMAZON_PRODUCTS = {
     "fitbit-charge-6": {
         "name_ar": "فيتبت تشارج 6",
         "name_en": "Fitbit Charge 6",
-        "asin": "B0D1RZZZ123",
+        "asin": "B0CHB6X7Y9",
         "category": "health",
         "price": 159.00,
         "original_price": 179.00,
@@ -207,7 +207,7 @@ AMAZON_PRODUCTS = {
     "whoop-5": {
         "name_ar": "سوار WHOOP 5.0",
         "name_en": "WHOOP 5.0",
-        "asin": "B0D1XXXXX123",
+        "asin": "B09G96TFF7",
         "category": "health",
         "price": 299.00,
         "original_price": 349.00,
@@ -237,14 +237,14 @@ AMAZON_PRODUCTS = {
     "apple-magic-keyboard": {
         "name_ar": "لوحة مفاتيح أبل ماجيك",
         "name_en": "Apple Magic Keyboard",
-        "asin": "B0BSHXBP67",
+        "asin": "B09BR9Z5Z3",
         "category": "productivity",
         "price": 199.00,
         "original_price": 229.00,
         "discount": 13,
         "rating": 4.7,
         "reviews": 5678,
-        "image": "https://m.media-amazon.com/images/I/71Sdz相关内容继续发展",
+        "image": "https://m.media-amazon.com/images/I/71Sdz6Y+mPL._AC_SY679_.jpg",
         "prime": True,
         "badge": {"ar": "أفضل قيمة", "en": "Best Value"}
     },

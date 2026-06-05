@@ -232,22 +232,22 @@ def create_product_object(product, index, base_id="NPH-EXP"):
     """إنشاء كائن منتج كامل"""
     product_id = f"{base_id}-{index:04d}"
     
-    # صور من Unsplash بناءً على التصنيف
+    # صور بناءً على التصنيف
     category_images = {
-        "smartwatch": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80",
-        "earbuds": "https://images.unsplash.com/photo-1590658268037-6bf12165a8ae?w=600&q=80",
-        "headphones": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80",
-        "smart-home": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-        "health": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&q=80",
-        "productivity": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&q=80",
-        "gaming": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=600&q=80",
-        "cameras": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&q=80",
-        "smart-glasses": "https://images.unsplash.com/photo-1574482620811-1aa16ffe3c82?w=600&q=80",
-        "accessories": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&q=80",
-        "kitchen": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
-        "sports": "https://images.unsplash.com/photo-1517836357463-d25dfeac3408?w=600&q=80",
-        "car": "https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=600&q=80",
-        "kids": "https://images.unsplash.com/photo-1558060370-d64edd50ad47?w=600&q=80",
+        "smartwatch": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+        "earbuds": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+        "headphones": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+        "smart-home": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+        "health": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+        "productivity": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+        "gaming": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+        "cameras": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+        "smart-glasses": "https://m.media-amazon.com/images/I/71p0U-c1D9L._AC_SY679_.jpg",
+        "accessories": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+        "kitchen": "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+        "sports": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+        "car": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+        "kids": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
     }
     
     category_ar = {
@@ -291,6 +291,7 @@ def create_product_object(product, index, base_id="NPH-EXP"):
         "featured": random.random() > 0.8,
         "in_stock": True,
         "affiliate_amazon": f"https://www.amazon.com/s?k={name_for_url}&tag=neopulsehub-20",
+        "asin": "", # Placeholder for ASIN if available
         "affiliate_aliexpress": "",
         "description": {
             "ar": f"{product['name_ar']} - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
