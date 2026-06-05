@@ -32,7 +32,9 @@ async function loadProducts() {
                 badge_ar: p.badge?.ar || p.badge_ar || '',
                 badge_en: p.badge?.en || p.badge_en || '',
                 in_stock: p.in_stock !== false,
-                featured: p.featured || false
+                featured: p.featured || false,
+                affiliate_amazon: p.affiliate_amazon || '',
+                asin: p.asin || ''
             }));
             console.log('✅ تم تحميل', allProducts.length, 'منتج من products.json');
             updateCategoryCounts();

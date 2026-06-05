@@ -325,12 +325,18 @@ function renderCart() {
 
   document.getElementById('paypalBtn').disabled = false;
 
+  function getItemName(item) {
+  return lang === 'en' 
+    ? (item.name_en || (item.name && item.name.en) || item.name_ar || (item.name && item.name.ar) || '') 
+    : (item.name_ar || (item.name && item.name.ar) || item.name_en || (item.name && item.name.en) || '');
+}
+
   itemsEl.innerHTML = items.map(item => `
     <div class="order-item">
-      <img class="item-img" src="${item.image||''}" alt="${lang==='en'?(item.name_en||item.name_ar):item.name_ar}"
+      <img class="item-img" src="${item.image||''}" alt="${getItemName(item)}"
            onerror="this.src='https://placehold.co/56x56/0a0d1a/60a5fa?text=IMG'">
       <div class="item-info">
-        <div class="item-name">${lang==='en'?(item.name_en||item.name_ar):item.name_ar}</div>
+        <div class="item-name">${getItemName(item)}</div>
         <div class="item-qty">${lang==='en'?'Qty':'الكمية'}: ${item.qty}</div>
       </div>
       <div class="item-price">$${((item.price||0) * item.qty).toFixed(2)}</div>
@@ -426,7 +432,7 @@ function payWithPayPal() {
 
   if (items.length === 1) {
     const p = items[0];
-    const name = encodeURIComponent(lang==='en'?(p.name_en||p.name_ar):p.name_ar);
+    const name = encodeURIComponent(getItemName(p));
     const url = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=${encodeURIComponent(PAYPAL_EMAIL)}&item_name=${name}&amount=${p.price}&quantity=${p.qty}&currency_code=USD&return=${encodeURIComponent(location.origin+'/thanks.html?id='+p.id+'&qty='+p.qty+'&total='+(p.price*p.qty))}&cancel_return=${encodeURIComponent(location.href)}`;
     window.location.href = url;
   } else {
@@ -439,7 +445,7 @@ function payWithPayPal() {
 function orderViaTelegram() {
   const items = window._checkoutItems || [];
   if (items.length === 0) { window.open('https://t.me/NeoPulseBot','_blank'); return; }
-  const list = items.map(i=>`${lang==='en'?(i.name_en||i.name_ar):i.name_ar} x${i.qty}`).join(', ');
+  const list = items.map(i=>`${getItemName(i)} x${i.qty}`).join(', ');
   const total = window._checkoutTotal || 0;
   const msg = encodeURIComponent(`🛒 طلب جديد\n${list}\n💰 الإجمالي: $${total.toFixed(2)}`);
   window.open(`https://t.me/NeoPulseBot?start=order`, '_blank');

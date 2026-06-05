@@ -76,6 +76,8 @@ nav{position:sticky;top:0;z-index:200;display:flex;align-items:center;justify-co
 .btn-primary:hover{opacity:.88;transform:translateY(-1px)}
 .btn-outline{border:1px solid var(--border2);color:var(--blue2);background:rgba(59,130,246,.06)}
 .btn-outline:hover{background:rgba(59,130,246,.15)}
+.btn-amazon{background:linear-gradient(135deg,#ff9900,#ff8c00);color:#fff;flex:1;min-width:140px;border:none}
+.btn-amazon:hover{opacity:.9;transform:translateY(-1px);box-shadow:0 4px 15px rgba(255,153,0,.3)}
 .features-list{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem}
 .features-list li{background:rgba(59,130,246,.08);border:1px solid var(--border);border-radius:var(--rp);font-size:.8rem;padding:.2rem .75rem;color:var(--muted)}
 .trust-row{display:flex;flex-wrap:wrap;gap:.5rem}
@@ -234,7 +236,8 @@ var T = {
     footer_copy: 'جميع الحقوق محفوظة 2026',
     toast_added: 'تمت الإضافة للسلة',
     toast_already: 'المنتج موجود في السلة',
-    only_left: 'باقي فقط'
+    only_left: 'باقي فقط',
+    buy_amazon: 'اشترِ من أمازون'
   },
   en: {
     title_suffix: 'Product Details',
@@ -281,7 +284,8 @@ var T = {
     footer_copy: 'All Rights Reserved 2026',
     toast_added: 'Added to cart',
     toast_already: 'Already in cart',
-    only_left: 'Only'
+    only_left: 'Only',
+    buy_amazon: 'Buy from Amazon'
   }
 };
 
@@ -391,15 +395,17 @@ function addToCart() {
   }
   cart.push({
     id: product.id,
-    name_ar: product.name_ar,
-    name_en: product.name_en || product.name_ar,
+    name_ar: product.name_ar || (product.name && product.name.ar) || '',
+    name_en: product.name_en || (product.name && product.name.en) || product.name_ar || (product.name && product.name.ar) || '',
     price: product.price,
     image: product.image,
     qty: qty
   });
   saveCart(cart);
   updateCartBadge();
-  var pname = lang === 'en' ? (product.name_en || product.name_ar) : product.name_ar;
+  var pname = lang === 'en' 
+    ? (product.name_en || (product.name && product.name.en) || product.name_ar || (product.name && product.name.ar) || '') 
+    : (product.name_ar || (product.name && product.name.ar) || product.name_en || (product.name && product.name.en) || '');
   showToast('OK', t.toast_added + ': ' + pname);
   var btn = document.getElementById('cartBtn');
   if (btn) btn.textContent = t.in_cart;
@@ -426,11 +432,13 @@ function renderProduct() {
     if (cart[i].id === product.id) { inCart = true; break; }
   }
 
-  var pname = lang === 'en' ? (product.name_en || product.name_ar) : product.name_ar;
+  var pname = lang === 'en' 
+    ? (product.name_en || (product.name && product.name.en) || product.name_ar || (product.name && product.name.ar) || '') 
+    : (product.name_ar || (product.name && product.name.ar) || product.name_en || (product.name && product.name.en) || '');
   var pcat  = lang === 'en' ? (product.category_en || product.category_ar || '') : (product.category_ar || '');
-  var pdesc = lang === 'en' ? (product.description_en || product.description_ar || '') : (product.description_ar || '');
-  var pbadge = lang === 'en' ? (product.badge_en || product.badge || '') : (product.badge || '');
-  var features = lang === 'en' ? (product.features_en || product.features_ar || []) : (product.features_ar || []);
+  var pdesc = lang === 'en' ? (product.description_en || (product.description && product.description.en) || product.description_ar || (product.description && product.description.ar) || '') : (product.description_ar || (product.description && product.description.ar) || product.description_en || (product.description && product.description.en) || '');
+  var pbadge = lang === 'en' ? (product.badge_en || (product.badge && product.badge.en) || product.badge || '') : (product.badge || (product.badge && product.badge.ar) || product.badge_en || '');
+  var features = lang === 'en' ? (product.features_en || (product.features && product.features.en) || product.features_ar || (product.features && product.features.ar) || []) : (product.features_ar || (product.features && product.features.ar) || product.features_en || (product.features && product.features.en) || []);
 
   document.title = pname + ' | NEO PULSE HUB';
   var bread = el('breadProduct');
@@ -490,6 +498,7 @@ function renderProduct() {
     + '<button class="btn btn-primary" id="cartBtn" onclick="addToCart()">'
     + (inCart ? t.in_cart : t.add_cart) + '</button>'
     + '<button class="btn btn-outline" onclick="buyNow()">\u26A1 ' + t.buy_now + '</button>'
+    + (product.affiliate_amazon ? '<a href="' + product.affiliate_amazon + '" target="_blank" rel="sponsored nofollow" class="btn btn-amazon">\u{1F6D2} ' + t.buy_amazon + '</a>' : '')
     + '</div>'
     + featHtml
     + '<div class="trust-row">'
@@ -534,7 +543,9 @@ function renderRelated() {
   var html = '';
   for (var i = 0; i < related.length; i++) {
     var p = related[i];
-    var n = lang === 'en' ? (p.name_en || p.name_ar) : p.name_ar;
+    var n = lang === 'en' 
+      ? (p.name_en || (p.name && p.name.en) || p.name_ar || (p.name && p.name.ar) || '') 
+      : (p.name_ar || (p.name && p.name.ar) || p.name_en || (p.name && p.name.en) || '');
     html += '<div class="related-card" onclick="location.href=\'product-detail.html?id=' + p.id + '\'">'
       + '<img src="' + p.image + '" alt="' + n + '" loading="lazy"'
       + ' onerror="this.src=\'https://placehold.co/200x200/0a0d1a/60a5fa?text=IMG\'">'
