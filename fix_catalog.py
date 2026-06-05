@@ -1,5 +1,5 @@
 import json
-import re
+import urllib.parse
 
 def fix_catalog():
     try:
@@ -8,9 +8,7 @@ def fix_catalog():
         
         print(f"Loaded {len(products)} products.")
         
-        fixed_count = 0
-        
-        # Mapping categories to fallback images (Amazon official images)
+        # Mapping categories to reliable fallback images
         category_images = {
             "smartwatch": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
             "earbuds": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
@@ -25,42 +23,40 @@ def fix_catalog():
             "kids": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
         }
 
+        tag = "neopulsehub-20"
+        
         for p in products:
-            # 1. Fix Image URLs
+            # 1. Standardize name and get search query
+            name_ar = ""
+            name_en = ""
+            
+            if isinstance(p.get("name"), dict):
+                name_ar = p["name"].get("ar", "")
+                name_en = p["name"].get("en", "")
+            elif isinstance(p.get("name"), str):
+                name_ar = name_en = p["name"]
+            
+            if not name_ar and p.get("title"):
+                name_ar = name_en = p["title"]
+            
+            search_query = name_en or name_ar or "electronics"
+            encoded_query = urllib.parse.quote(search_query)
+
+            # 2. Fix Affiliate Links - Use Search by default to guarantee the link works
+            # Direct DP links often fail if ASIN is old/wrong. Search links always show results.
+            p["affiliate_amazon"] = f"https://www.amazon.com/s?k={encoded_query}&tag={tag}"
+            
+            # 3. Fix Image URLs
             image = p.get("image", "")
-            if not image or "placeholder" in image or "unsplash" in image or "via.placeholder" in image:
+            # If image is a placeholder or missing, use category fallback
+            if not image or any(x in image.lower() for x in ["placeholder", "via.placeholder", "unsplash.com"]):
                 cat = p.get("category", "smartwatch")
                 p["image"] = category_images.get(cat, category_images["smartwatch"])
-                fixed_count += 1
             
-            # 2. Fix Affiliate Links
-            # Ensure the tag is correct
-            tag = "neopulsehub-20"
-            url = p.get("affiliate_amazon") or p.get("url") or ""
-            asin = p.get("asin", "")
+            # 4. Ensure name is a dictionary for the frontend
+            p["name"] = {"ar": name_ar, "en": name_en}
             
-            if asin and len(asin) == 10:
-                # Reconstruct direct DP link
-                p["affiliate_amazon"] = f"https://www.amazon.com/dp/{asin}?tag={tag}"
-            elif url:
-                # Ensure existing URL has the correct tag
-                if "tag=" in url:
-                    url = re.sub(r'tag=[^&]+', f'tag={tag}', url)
-                else:
-                    sep = '&' if '?' in url else '?'
-                    url = f"{url}{sep}tag={tag}"
-                p["affiliate_amazon"] = url
-            else:
-                # Fallback to search if no ASIN or URL
-                name = p.get("name", {}).get("en") or p.get("title") or "electronics"
-                query = name.replace(" ", "+")
-                p["affiliate_amazon"] = f"https://www.amazon.com/s?k={query}&tag={tag}"
-            
-            # Standardize field names for the storefront
-            if "name" not in p and "title" in p:
-                p["name"] = {"ar": p["title"], "en": p["title"]}
-            
-            # Ensure price is a number
+            # 5. Fix price
             if isinstance(p.get("price"), str):
                 try:
                     p["price"] = float(p["price"].replace("$", "").replace(",", ""))
@@ -70,7 +66,7 @@ def fix_catalog():
         with open('products.json', 'w', encoding='utf-8') as f:
             json.dump(products, f, ensure_ascii=False, indent=2)
             
-        print(f"Successfully fixed {len(products)} products.")
+        print(f"Successfully processed and fixed {len(products)} products with guaranteed search links.")
         
     except Exception as e:
         print(f"Error: {e}")
