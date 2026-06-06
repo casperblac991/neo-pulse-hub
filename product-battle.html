@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معركة المنتجات - NEO PULSE HUB</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to main stylesheet -->
+    <style>
+        :root {
+            --primary: #00d4ff;
+            --secondary: #7c3aed;
+            --accent: #ff00c8;
+            --bg: #0a0a0a;
+            --bg-secondary: #1a1a1a;
+            --bg-card: #1f1f1f;
+            --text: #ffffff;
+            --text-muted: #b0b0b0;
+            --border: #333333;
+            --gradient-primary: linear-gradient(45deg, var(--primary), var(--secondary));
+            --gradient-accent: linear-gradient(45deg, var(--accent), #ff6a88);
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        header {
+            background-color: var(--bg-secondary);
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary);
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+
+        nav ul li a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+
+        .battle-hero {
+            background: var(--bg);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .battle-hero h1 {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .battle-hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        .product-battle-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 2rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .product-card-battle {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+            width: 350px;
+            transition: all 0.3s;
+            overflow: hidden;
+        }
+
+        .product-card-battle:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent);
+            box-shadow: 0 12px 30px rgba(255, 0, 200, 0.2);
+        }
+
+        .product-card-battle img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+        }
+
+        .product-card-battle h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+
+        .product-card-battle p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .product-card-battle .price {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .btn-vote, .btn-amazon-battle {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .btn-amazon-battle {
+            background: linear-gradient(135deg, #FF9900, #FFC107);
+            margin-top: 0.5rem;
+        }
+
+        .btn-vote:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 212, 255, 0.3);
+        }
+
+        .vs-separator {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--accent);
+            margin-top: 10rem;
+        }
+
+        .vote-results {
+            margin-top: 2rem;
+            font-size: 1.2rem;
+            color: var(--text);
+        }
+
+        .vote-bar-container {
+            background-color: var(--bg-secondary);
+            border-radius: 10px;
+            height: 20px;
+            margin-top: 1rem;
+            overflow: hidden;
+            display: flex;
+        }
+
+        .vote-bar-left {
+            background: var(--primary);
+            height: 100%;
+            text-align: center;
+            color: white;
+            line-height: 20px;
+            font-size: 0.8rem;
+            transition: width 0.5s ease-in-out;
+        }
+
+        .vote-bar-right {
+            background: var(--secondary);
+            height: 100%;
+            text-align: center;
+            color: white;
+            line-height: 20px;
+            font-size: 0.8rem;
+            transition: width 0.5s ease-in-out;
+        }
+
+        footer {
+            background-color: var(--bg-secondary);
+            color: var(--text-muted);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+            border-top: 1px solid var(--border);
+        }
+
+        @media (max-width: 768px) {
+            .battle-hero h1 {
+                font-size: 2rem;
+            }
+            .battle-hero p {
+                font-size: 1rem;
+            }
+            .product-battle-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .vs-separator {
+                margin: 1rem 0;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">NEO PULSE HUB</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="products.html">المنتجات</a></li>
+                    <li><a href="gift-finder.html">مكتشف الهدايا AI</a></li>
+                    <li><a href="deals-of-the-hour.html">عروض الساعة</a></li>
+                    <li><a href="product-battle.html">معركة المنتجات</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="battle-hero">
+            <div class="container">
+                <h1>⚔️ معركة المنتجات الذكية ⚔️</h1>
+                <p>صوّت لمنتجك المفضل وساعدنا في تحديد الأفضل! قارن بين أحدث المنتجات الذكية واكتشف الفائز.</p>
+                
+                <div class="product-battle-container">
+                    <div class="product-card-battle" id="product1">
+                        <img src="https://m.media-amazon.com/images/I/71X8Vb3gSLL._AC_SY679_.jpg" alt="Apple Watch Ultra 2">
+                        <h3>Apple Watch Ultra 2</h3>
+                        <p>أقوى وأقدر ساعة Apple Watch على الإطلاق، مصممة للمغامرات.</p>
+                        <div class="price">$799</div>
+                        <button class="btn-vote" data-product-id="1">صوّت الآن</button>
+                        <a href="https://www.amazon.com/Apple-Watch-Ultra-GPS-Cellular/dp/B0CHX912Y2?tag=neopulsehub-20" target="_blank" class="btn-amazon-battle">شراء من أمازون</a>
+                    </div>
+
+                    <div class="vs-separator">VS</div>
+
+                    <div class="product-card-battle" id="product2">
+                        <img src="https://m.media-amazon.com/images/I/71X8Vb3gSLL._AC_SY679_.jpg" alt="Samsung Galaxy Watch 6 Classic">
+                        <h3>Samsung Galaxy Watch 6 Classic</h3>
+                        <p>تصميم كلاسيكي مع أحدث تقنيات تتبع الصحة واللياقة البدنية.</p>
+                        <div class="price">$429</div>
+                        <button class="btn-vote" data-product-id="2">صوّت الآن</button>
+                        <a href="https://www.amazon.com/Samsung-Galaxy-Watch-Classic-Bluetooth/dp/B0C688531J?tag=neopulsehub-20" target="_blank" class="btn-amazon-battle">شراء من أمازون</a>
+                    </div>
+                </div>
+
+                <div class="vote-results" id="voteResults" style="display: none;">
+                    <h2>نتائج التصويت</h2>
+                    <div class="vote-bar-container">
+                        <div class="vote-bar-left" id="voteBar1" style="width: 50%;">50%</div>
+                        <div class="vote-bar-right" id="voteBar2" style="width: 50%;">50%</div>
+                    </div>
+                    <p id="totalVotes">إجمالي الأصوات: 0</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 NEO PULSE HUB. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script>
+        let votes = { '1': 0, '2': 0 };
+
+        document.querySelectorAll(".btn-vote").forEach(button => {
+            button.addEventListener("click", function() {
+                const productId = this.dataset.productId;
+                votes[productId]++;
+                updateVoteResults();
+            });
+        });
+
+        function updateVoteResults() {
+            const totalVotes = votes['1'] + votes['2'];
+            if (totalVotes === 0) return;
+
+            const percent1 = (votes['1'] / totalVotes) * 100;
+            const percent2 = (votes['2'] / totalVotes) * 100;
+
+            document.getElementById("voteBar1").style.width = `${percent1}%`;
+            document.getElementById("voteBar1").textContent = `${percent1.toFixed(0)}%`;
+            document.getElementById("voteBar2").style.width = `${percent2}%`;
+            document.getElementById("voteBar2").textContent = `${percent2.toFixed(0)}%`;
+            document.getElementById("totalVotes").textContent = `إجمالي الأصوات: ${totalVotes}`;
+            document.getElementById("voteResults").style.display = "block";
+        }
+    </script>
+</body>
+</html>
