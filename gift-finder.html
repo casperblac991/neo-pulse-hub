@@ -1,0 +1,471 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتشف الهدايا بالذكاء الاصطناعي - NEO PULSE HUB</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to main stylesheet -->
+    <style>
+        :root {
+            --primary: #00d4ff;
+            --secondary: #7c3aed;
+            --accent: #ff00c8;
+            --bg: #0a0a0a;
+            --bg-secondary: #1a1a1a;
+            --bg-card: #1f1f1f;
+            --text: #ffffff;
+            --text-muted: #b0b0b0;
+            --border: #333333;
+            --gradient-primary: linear-gradient(45deg, var(--primary), var(--secondary));
+            --gradient-accent: linear-gradient(45deg, var(--accent), #ff6a88);
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        header {
+            background-color: var(--bg-secondary);
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary);
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+
+        nav ul li a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+
+        .hero-gift-finder {
+            background: var(--bg);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero-gift-finder h1 {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .hero-gift-finder p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        .gift-finder-form {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            display: grid;
+            gap: 1.5rem;
+            text-align: right;
+        }
+
+        .form-group {
+            text-align: right;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: var(--text);
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background-color: var(--bg-secondary);
+            color: var(--text);
+            font-size: 1rem;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.2);
+        }
+
+        .btn-find-gifts {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .btn-find-gifts:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 212, 255, 0.3);
+        }
+
+        .gift-results {
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .gift-results h2 {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 2rem;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .product-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s;
+            overflow: hidden;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent);
+            box-shadow: 0 12px 30px rgba(255, 0, 200, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+        }
+
+        .product-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+
+        .product-card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .product-card .price {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .product-card .btn-amazon {
+            background: linear-gradient(135deg, #FF9900, #FFC107);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .product-card .btn-amazon:hover {
+            opacity: 0.9;
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(255, 153, 0, 0.3);
+        }
+
+        footer {
+            background-color: var(--bg-secondary);
+            color: var(--text-muted);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+            border-top: 1px solid var(--border);
+        }
+
+        @media (max-width: 768px) {
+            .hero-gift-finder h1 {
+                font-size: 2rem;
+            }
+            .hero-gift-finder p {
+                font-size: 1rem;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">NEO PULSE HUB</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="products.html">المنتجات</a></li>
+                    <li><a href="gift-finder.html">مكتشف الهدايا AI</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-gift-finder">
+            <div class="container">
+                <h1>🎁 مكتشف الهدايا بالذكاء الاصطناعي</h1>
+                <p>دع ذكاءنا الاصطناعي يساعدك في العثور على الهدية المثالية لأي شخص وفي أي مناسبة. أجِب عن بعض الأسئلة ودعنا نقوم بالباقي!</p>
+                
+                <div class="gift-finder-form">
+                    <div class="form-group">
+                        <label for="recipient">لمن الهدية؟</label>
+                        <input type="text" id="recipient" placeholder="مثال: صديق، زميل عمل، طفل، شريك حياتي">
+                    </div>
+                    <div class="form-group">
+                        <label for="interests">ما هي اهتماماته/اهتماماتها؟</label>
+                        <input type="text" id="interests" placeholder="مثال: ألعاب الفيديو، القراءة، الرياضة، الطبخ، التكنولوجيا">
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">الميزانية التقريبية؟</label>
+                        <select id="budget">
+                            <option value="any">أي ميزانية</option>
+                            <option value="50">أقل من 50 دولار</option>
+                            <option value="100">50 - 100 دولار</option>
+                            <option value="200">100 - 200 دولار</option>
+                            <option value="500">200 - 500 دولار</option>
+                            <option value="500+">أكثر من 500 دولار</option>
+                        </select>
+                    </div>
+                    <button class="btn-find-gifts" id="findGiftsBtn">ابحث عن الهدايا</button>
+                </div>
+
+                <div class="gift-results" id="giftResults" style="display: none;">
+                    <h2>✨ هدايا مقترحة لك</h2>
+                    <div class="results-grid" id="resultsGrid">
+                        <!-- Products will be injected here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 NEO PULSE HUB. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script>
+        const products = [
+            // Existing products from store.html can be copied here for local search
+            // For simplicity, I'll use a subset or mock data for now
+            {
+                id: 'apple-watch-ultra',
+                name: 'ساعة Apple Watch Ultra 2',
+                category: 'Smartwatches',
+                price: 799,
+                image: 'https://m.media-amazon.com/images/I/71X8Vb3gSLL._AC_SY679_.jpg',
+                description: 'أقوى وأقدر ساعة Apple Watch على الإطلاق، مصممة للمغامرات.',
+                amazon_link: 'https://www.amazon.com/Apple-Watch-Ultra-GPS-Cellular/dp/B0CHX912Y2?tag=neopulsehub-20'
+            },
+            {
+                id: 'sony-wh1000xm5',
+                name: 'سماعات Sony WH-1000XM5',
+                category: 'Headphones',
+                price: 348,
+                image: 'https://m.media-amazon.com/images/I/61b+2G3-GFL._AC_SY679_.jpg',
+                description: 'سماعات رأس لاسلكية مانعة للضوضاء مع ميكروفون مدمج.',
+                amazon_link: 'https://www.amazon.com/Sony-WH-1000XM5-Canceling-Headphones-Hands-Free/dp/B09JPK6L3K?tag=neopulsehub-20'
+            },
+            {
+                id: 'echo-dot-5th-gen',
+                name: 'مكبر صوت Echo Dot (الجيل الخامس)',
+                category: 'Smart Home',
+                price: 49,
+                image: 'https://m.media-amazon.com/images/I/71t+b-9eWCL._AC_SY679_.jpg',
+                description: 'مكبر صوت ذكي مع Alexa، صوت أوضح، جهير أعمق، وتجربة منزل ذكي محسنة.',
+                amazon_link: 'https://www.amazon.com/Echo-Dot-5th-Gen-2022/dp/B09B8V1BM3?tag=neopulsehub-20'
+            },
+            {
+                id: 'limx-oli-robot',
+                name: 'روبوت LimX Oli الذكي',
+                category: 'Robots',
+                price: 2499,
+                image: 'https://m.media-amazon.com/images/I/61O4kHNcMOL._AC_SY679_.jpg',
+                description: 'روبوت منزلي ذكي متعدد الاستخدامات بـ 31 درجة حرية.',
+                amazon_link: 'https://www.amazon.com/s?k=LimX+Oli+Robot&tag=neopulsehub-20'
+            },
+            {
+                id: 'rog-xreal-r1',
+                name: 'نظارات ROG XREAL R1',
+                category: 'AR/VR',
+                price: 849,
+                image: 'https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg',
+                description: 'نظارات واقع معزز للألعاب بشاشة 171 بوصة.',
+                amazon_link: 'https://www.amazon.com/s?k=ROG+XREAL+R1&tag=neopulsehub-20'
+            },
+            {
+                id: 'hoverair-aqua',
+                name: 'طائرة HOVERAir AQUA',
+                category: 'Drones',
+                price: 599,
+                image: 'https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg',
+                description: 'طائرة بدون طيار مقاومة للماء للتصوير الذاتي.',
+                amazon_link: 'https://www.amazon.com/s?k=HOVERAir+AQUA&tag=neopulsehub-20'
+            },
+            {
+                id: 'looki-l1-camera',
+                name: 'كاميرا Looki L1 الذكية',
+                category: 'AI',
+                price: 249,
+                image: 'https://m.media-amazon.com/images/I/51pKKLxTEfL._AC_SY679_.jpg',
+                description: 'كاميرا ذكية تلبس وتلتقط اللحظات تلقائياً بالذكاء الاصطناعي.',
+                amazon_link: 'https://www.amazon.com/s?k=Looki+L1+Camera&tag=neopulsehub-20'
+            },
+            {
+                id: 'withings-bodyfit',
+                name: 'ميزان Withings BodyFit',
+                category: 'Health',
+                price: 279,
+                image: 'https://m.media-amazon.com/images/I/71J8bHILgZL._AC_SY679_.jpg',
+                description: 'ميزان ذكي متطور لتحليل تكوين الجسم بالكامل.',
+                amazon_link: 'https://www.amazon.com/s?k=Withings+BodyFit&tag=neopulsehub-20'
+            },
+            {
+                id: 'sandsara-table',
+                name: 'طاولة SANDSARA الفنية',
+                category: 'Smart Home',
+                price: 499,
+                image: 'https://m.media-amazon.com/images/I/71YJEHzGCdL._AC_SY679_.jpg',
+                description: 'طاولة قهوة فنية تعمل بالحركة الحركية والتحكم الذكي.',
+                amazon_link: 'https://www.amazon.com/s?k=SANDSARA+Table&tag=neopulsehub-20'
+            }
+        ];
+
+        document.getElementById('findGiftsBtn').addEventListener('click', function() {
+            const recipient = document.getElementById('recipient').value.toLowerCase();
+            const interests = document.getElementById('interests').value.toLowerCase();
+            const budget = document.getElementById('budget').value;
+            const resultsGrid = document.getElementById('resultsGrid');
+            const giftResultsSection = document.getElementById('giftResults');
+            resultsGrid.innerHTML = ''; // Clear previous results
+
+            let filteredProducts = products.filter(product => {
+                let matches = true;
+
+                // Filter by interests (simple keyword matching)
+                if (interests) {
+                    const interestKeywords = interests.split(',').map(kw => kw.trim());
+                    matches = interestKeywords.some(keyword => 
+                        product.name.toLowerCase().includes(keyword) || 
+                        product.description.toLowerCase().includes(keyword) ||
+                        product.category.toLowerCase().includes(keyword)
+                    );
+                }
+
+                // Filter by budget
+                if (budget !== 'any' && matches) {
+                    const productPrice = product.price;
+                    if (budget === '50') {
+                        matches = productPrice <= 50;
+                    } else if (budget === '100') {
+                        matches = productPrice > 50 && productPrice <= 100;
+                    } else if (budget === '200') {
+                        matches = productPrice > 100 && productPrice <= 200;
+                    } else if (budget === '500') {
+                        matches = productPrice > 200 && productPrice <= 500;
+                    } else if (budget === '500+') {
+                        matches = productPrice > 500;
+                    }
+                }
+
+                return matches;
+            });
+
+            if (filteredProducts.length === 0) {
+                resultsGrid.innerHTML = '<p style="color: var(--text-muted);">عذراً، لم نجد هدايا مطابقة لمعاييرك. حاول البحث بكلمات مفتاحية مختلفة أو ميزانية أوسع.</p>';
+            } else {
+                filteredProducts.forEach(product => {
+                    const productCard = `
+                        <div class="product-card">
+                            <img src="${product.image}" alt="${product.name}">
+                            <h3>${product.name}</h3>
+                            <p>${product.description}</p>
+                            <div class="price">$${product.price}</div>
+                            <a href="${product.amazon_link}" target="_blank" class="btn-amazon">شراء من أمازون</a>
+                        </div>
+                    `;
+                    resultsGrid.innerHTML += productCard;
+                });
+            }
+            giftResultsSection.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
