@@ -160,6 +160,222 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
 @media(max-width:1024px){.footer-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:768px){nav{padding:.9rem 1.2rem}.nav-links{display:none}.hamburger{display:flex}.hero-btns{flex-direction:column;align-items:center}.hero-stats{gap:1.5rem}.newsletter-form{flex-direction:column}}
 @media(max-width:480px){.section{padding:3.5rem 1rem}.products-grid{grid-template-columns:1fr}.categories-grid{grid-template-columns:repeat(2,1fr)}.buy-btns{flex-direction:column}}
+
+/* Trending Now Section */
+.trending-now {
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.05), rgba(124, 58, 237, 0.05));
+  padding: 3rem 0;
+  margin: 2rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.trending-now h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.trending-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.trending-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  position: relative;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.trending-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary);
+  box-shadow: 0 12px 30px rgba(0, 212, 255, 0.2);
+}
+
+.trending-rank {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: linear-gradient(135deg, var(--secondary), var(--accent));
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.trending-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.trending-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.trending-desc {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.trending-rating {
+  color: var(--primary);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.btn-trending {
+  display: block;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.btn-trending:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 212, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .trending-now {
+    padding: 2rem 0;
+  }
+  
+  .trending-now h2 {
+    font-size: 1.5rem;
+  }
+  
+  .trending-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Collections Section */
+.collections {
+  padding: 3rem 0;
+  background: var(--bg-secondary);
+}
+
+.collections h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.collection-item {
+  background: var(--bg-card);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.collection-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 212, 255, 0.2);
+}
+
+.collection-cover {
+  height: 150px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 1rem;
+  position: relative;
+}
+
+.collection-count {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.collection-item h3 {
+  font-size: 1.1rem;
+  padding: 1rem 1.5rem 0;
+  margin: 0;
+}
+
+.collection-item p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  padding: 0.5rem 1.5rem;
+  margin: 0;
+}
+
+.btn-collection {
+  display: block;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+  padding: 0.8rem 1.5rem;
+  margin: 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.btn-collection:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 212, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .collections {
+    padding: 2rem 0;
+  }
+  
+  .collections h2 {
+    font-size: 1.5rem;
+  }
+  
+  .collections-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 </style>
 
 <!-- SEO Schema.org markup -->
