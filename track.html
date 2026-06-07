@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BVV5SDM5P"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BVV5SDM5P');</script>
+<script>(function(){var l=localStorage.getItem('nph_lang')||'ar';document.documentElement.setAttribute('lang',l);document.documentElement.setAttribute('dir',l==='en'?'ltr':'rtl');})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="تتبع طلبك — NEO PULSE HUB">
+<title>تتبع الطلب | NEO PULSE HUB</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#020510;--surface:#0a0d1a;--surface2:#0f1423;--border:rgba(99,179,237,.12);--border2:rgba(99,179,237,.25);--blue:#3b82f6;--blue2:#60a5fa;--purple:#7c3aed;--cyan2:#22d3ee;--green:#10b981;--gold:#f59e0b;--text:#e2e8f0;--muted:rgba(226,232,240,.55);--r:12px;--r2:20px;--rp:50px;--ease:.3s cubic-bezier(.4,0,.2,1)}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.7;min-height:100vh}
+a{color:inherit;text-decoration:none}button{cursor:pointer;border:none;background:none;font-family:inherit}
+.bg-grid{position:fixed;inset:0;z-index:-1;background-image:linear-gradient(rgba(59,130,246,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,.03) 1px,transparent 1px);background-size:60px 60px}
+nav{position:sticky;top:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:.9rem 2.5rem;gap:1rem;background:rgba(2,5,16,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.nav-logo{font-family:'Orbitron',sans-serif;font-size:1.05rem;font-weight:700;background:linear-gradient(135deg,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.nav-links{display:flex;gap:.2rem;list-style:none}
+.nav-links a{font-size:.85rem;color:var(--muted);padding:.35rem .8rem;border-radius:var(--rp);transition:color var(--ease),background var(--ease)}
+.nav-links a:hover{color:var(--cyan2);background:rgba(6,182,212,.08)}
+.nav-right{display:flex;align-items:center;gap:.6rem}
+.lang-switch{display:flex;background:var(--surface2);border:1px solid var(--border);border-radius:var(--rp);overflow:hidden}
+.lang-btn{padding:.3rem .8rem;font-size:.8rem;font-weight:600;color:var(--muted);transition:all var(--ease)}
+.lang-btn.active{background:var(--blue);color:#fff}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:.4rem;border-radius:6px}
+.hamburger span{display:block;width:20px;height:2px;background:var(--blue2);border-radius:2px}
+.mobile-drawer{display:none;position:fixed;top:61px;inset:0;z-index:190;background:rgba(2,5,16,.97);flex-direction:column;align-items:center;justify-content:center;gap:1.8rem}
+.mobile-drawer.open{display:flex}
+.mobile-drawer a{font-size:1.3rem;font-weight:700;color:var(--muted)}
+.main{max-width:700px;margin:0 auto;padding:3rem 1.5rem 5rem}
+.page-header{text-align:center;margin-bottom:2.5rem}
+.page-icon{font-size:3rem;margin-bottom:1rem}
+.page-title{font-family:'Orbitron',sans-serif;font-size:clamp(1.5rem,3vw,2rem);font-weight:700;background:linear-gradient(135deg,var(--blue2),var(--cyan2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.5rem}
+.page-sub{color:var(--muted);font-size:.95rem}
+.search-box{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:2rem;margin-bottom:2rem}
+.search-box h3{font-size:1rem;font-weight:700;margin-bottom:1.2rem;color:var(--blue2)}
+.input-row{display:flex;gap:.8rem;flex-wrap:wrap}
+.search-input{flex:1;min-width:200px;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--rp);padding:.7rem 1.2rem;font-family:'Cairo',sans-serif;font-size:.9rem;color:var(--text);outline:none;transition:border-color var(--ease)}
+.search-input:focus{border-color:var(--blue2)}
+.search-input::placeholder{color:var(--muted)}
+.btn-search{background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;font-family:'Cairo',sans-serif;font-size:.9rem;font-weight:700;padding:.7rem 1.8rem;border-radius:var(--rp);transition:opacity var(--ease)}
+.btn-search:hover{opacity:.85}
+.result-box{background:var(--surface);border:1px solid var(--border2);border-radius:var(--r2);padding:2rem;margin-bottom:2rem;display:none}
+.result-box.show{display:block}
+.order-header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid var(--border)}
+.order-id{font-family:'Orbitron',sans-serif;font-size:.85rem;color:var(--cyan2);font-weight:700}
+.status-badge{padding:.3rem 1rem;border-radius:var(--rp);font-size:.82rem;font-weight:700}
+.status-pending{background:rgba(245,158,11,.15);border:1px solid rgba(245,158,11,.3);color:var(--gold)}
+.status-processing{background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.3);color:var(--blue2)}
+.status-shipped{background:rgba(124,58,237,.15);border:1px solid rgba(124,58,237,.3);color:#a78bfa}
+.status-delivered{background:rgba(16,185,129,.15);border:1px solid rgba(16,185,129,.3);color:var(--green)}
+.order-meta{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.5rem}
+.meta-item label{display:block;font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.25rem}
+.meta-item span{font-size:.9rem;font-weight:600}
+.order-items{margin-bottom:1.5rem}
+.order-items h4{font-size:.85rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.8rem}
+.order-item{display:flex;align-items:center;gap:1rem;padding:.7rem 0;border-bottom:1px solid var(--border)}
+.order-item:last-child{border-bottom:none}
+.item-img{width:50px;height:50px;border-radius:var(--r);overflow:hidden;flex-shrink:0;background:var(--surface2)}
+.item-img img{width:100%;height:100%;object-fit:cover}
+.item-info{flex:1}
+.item-name{font-size:.88rem;font-weight:600}
+.item-price{font-size:.82rem;color:var(--muted)}
+.item-qty{font-size:.82rem;color:var(--cyan2);font-weight:600}
+.order-total{display:flex;justify-content:space-between;align-items:center;padding:1rem;background:var(--surface2);border-radius:var(--r);font-weight:700}
+.total-amount{font-family:'Orbitron',sans-serif;font-size:1.1rem;color:var(--blue2)}
+.timeline{margin-top:1.5rem}
+.timeline h4{font-size:.85rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+.timeline-steps{display:flex;gap:0;position:relative}
+.timeline-steps::before{content:'';position:absolute;top:18px;inset-inline-start:18px;inset-inline-end:18px;height:2px;background:var(--border2);z-index:0}
+.t-step{flex:1;display:flex;flex-direction:column;align-items:center;gap:.4rem;z-index:1}
+.t-dot{width:36px;height:36px;border-radius:50%;border:2px solid var(--border2);background:var(--surface);display:flex;align-items:center;justify-content:center;font-size:.95rem;transition:all var(--ease)}
+.t-dot.done{background:var(--green);border-color:var(--green)}
+.t-dot.active{background:var(--blue);border-color:var(--blue);box-shadow:0 0 12px rgba(59,130,246,.4)}
+.t-label{font-size:.72rem;color:var(--muted);text-align:center;max-width:70px}
+.t-label.done,.t-label.active{color:var(--text)}
+.no-result{text-align:center;padding:3rem 1.5rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);display:none}
+.no-result.show{display:block}
+.no-result-icon{font-size:3rem;margin-bottom:1rem}
+.my-orders{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:2rem}
+.my-orders h3{font-size:1rem;font-weight:700;margin-bottom:1.2rem;color:var(--blue2)}
+.order-row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;padding:.8rem;background:var(--surface2);border-radius:var(--r);margin-bottom:.5rem;cursor:pointer;transition:border-color var(--ease);border:1px solid transparent}
+.order-row:hover{border-color:var(--border2)}
+.or-id{font-family:'Orbitron',sans-serif;font-size:.78rem;color:var(--cyan2)}
+.or-date{font-size:.78rem;color:var(--muted)}
+.or-amount{font-family:'Orbitron',sans-serif;font-size:.85rem;color:var(--blue2)}
+.empty-orders{text-align:center;color:var(--muted);padding:1.5rem;font-size:.9rem}
+footer{background:var(--surface);border-top:1px solid var(--border);padding:1.5rem 2rem}
+.fi{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem}
+.f-links{display:flex;flex-wrap:wrap;gap:.5rem}
+.f-links a{font-size:.78rem;color:var(--muted);padding:.2rem .6rem;border-radius:var(--rp);transition:color var(--ease)}
+.f-links a:hover{color:var(--cyan2)}
+.f-copy{font-size:.75rem;color:rgba(226,232,240,.3)}
+@media(max-width:600px){.order-meta{grid-template-columns:1fr}.hamburger{display:flex}.timeline-steps{flex-wrap:wrap;gap:.8rem}.timeline-steps::before{display:none}.nav-links{display:none}}
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<nav>
+  <a href="index.html" class="nav-logo">NEO PULSE HUB</a>
+  <ul class="nav-links">
+    <li><a href="index.html" id="nav_home">الرئيسية</a></li>
+    <li><a href="products.html" id="nav_products">المنتجات</a></li>
+    <li><a href="contact.html" id="nav_contact">اتصل بنا</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-switch">
+      <button class="lang-btn active" id="langAr" onclick="changeLang('ar')">عربي</button>
+      <button class="lang-btn" id="langEn" onclick="changeLang('en')">EN</button>
+    </div>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-drawer" id="mobileDrawer">
+  <a href="index.html" id="m_home">الرئيسية</a>
+  <a href="products.html" id="m_products">المنتجات</a>
+  <a href="contact.html" id="m_contact">اتصل بنا</a>
+  <a href="track.html">تتبع الطلب</a>
+</div>
+
+<main class="main">
+  <div class="page-header">
+    <div class="page-icon">&#x1F4E6;</div>
+    <h1 class="page-title" id="pg_title">تتبع طلبك</h1>
+    <p class="page-sub" id="pg_sub">أدخل رقم طلبك أو بريدك الإلكتروني لمعرفة حالة شحنتك</p>
+  </div>
+
+  <div class="search-box">
+    <h3 id="search_title">&#x1F50D; البحث عن طلب</h3>
+    <div class="input-row">
+      <input class="search-input" type="text" id="searchInput" placeholder="رقم الطلب مثال: NPH-20260312-001" />
+      <button class="btn-search" onclick="searchOrder()" id="btn_search">بحث</button>
+    </div>
+  </div>
+
+  <div class="result-box" id="resultBox"></div>
+  <div class="no-result" id="noResult">
+    <div class="no-result-icon">&#x1F914;</div>
+    <h3 id="no_result_title">لم يُعثر على الطلب</h3>
+    <p id="no_result_sub" style="color:var(--muted);margin-top:.5rem">تأكد من رقم الطلب أو تواصل معنا عبر التيليجرام</p>
+    <a href="https://t.me/NeoPulseBot" target="_blank" style="display:inline-block;margin-top:1rem;padding:.6rem 1.5rem;background:rgba(59,130,246,.1);border:1px solid var(--border2);border-radius:var(--rp);color:var(--blue2);font-size:.9rem">@NeoPulseBot</a>
+  </div>
+
+  <div class="my-orders" id="myOrdersBox">
+    <h3 id="my_orders_title">&#x1F4CB; طلباتي السابقة</h3>
+    <div id="myOrdersList"></div>
+  </div>
+</main>
+
+<footer>
+  <div class="fi">
+    <div class="f-links">
+      <a href="index.html" id="f_home">الرئيسية</a>
+      <a href="products.html" id="f_products">المنتجات</a>
+      <a href="shipping.html" id="f_ship">الشحن</a>
+      <a href="returns.html" id="f_return">الإرجاع</a>
+      <a href="faq.html" id="f_faq">FAQ</a>
+      <a href="contact.html" id="f_contact">اتصل بنا</a>
+    </div>
+    <div class="f-copy" id="f_copy">&#xA9; 2026 NEO PULSE HUB</div>
+  </div>
+</footer>
+
+<script>
+var T = {
+  ar: {
+    pg_title: 'تتبع طلبك',
+    pg_sub: 'أدخل رقم طلبك لمعرفة حالة شحنتك',
+    search_title: 'البحث عن طلب',
+    btn_search: 'بحث',
+    my_orders_title: 'طلباتي السابقة',
+    no_result_title: 'لم يُعثر على الطلب',
+    no_result_sub: 'تأكد من رقم الطلب أو تواصل معنا',
+    nav_home: 'الرئيسية', nav_products: 'المنتجات', nav_contact: 'اتصل بنا',
+    f_home: 'الرئيسية', f_products: 'المنتجات', f_ship: 'الشحن',
+    f_return: 'الإرجاع', f_faq: 'FAQ', f_contact: 'اتصل بنا',
+    f_copy: '© 2026 NEO PULSE HUB',
+    lbl_order: 'رقم الطلب', lbl_date: 'تاريخ الطلب', lbl_total: 'الإجمالي',
+    lbl_items: 'المنتجات', lbl_status: 'الحالة', lbl_timeline: 'مسار الشحن',
+    lbl_qty: 'الكمية', lbl_price: 'السعر',
+    st_pending: 'قيد المعالجة', st_processing: 'جاري التجهيز',
+    st_shipped: 'تم الشحن', st_delivered: 'تم التوصيل',
+    tl_confirmed: 'تأكيد', tl_processing: 'تجهيز', tl_shipped: 'شحن', tl_delivered: 'توصيل',
+    empty_orders: 'لا توجد طلبات سابقة بعد',
+    lbl_amount: 'المبلغ الإجمالي'
+  },
+  en: {
+    pg_title: 'Track Your Order',
+    pg_sub: 'Enter your order number to track your shipment',
+    search_title: 'Search Order',
+    btn_search: 'Search',
+    my_orders_title: 'My Previous Orders',
+    no_result_title: 'Order Not Found',
+    no_result_sub: 'Check your order number or contact us',
+    nav_home: 'Home', nav_products: 'Products', nav_contact: 'Contact',
+    f_home: 'Home', f_products: 'Products', f_ship: 'Shipping',
+    f_return: 'Returns', f_faq: 'FAQ', f_contact: 'Contact',
+    f_copy: '© 2026 NEO PULSE HUB',
+    lbl_order: 'Order ID', lbl_date: 'Order Date', lbl_total: 'Total',
+    lbl_items: 'Items', lbl_status: 'Status', lbl_timeline: 'Shipment Tracking',
+    lbl_qty: 'Qty', lbl_price: 'Price',
+    st_pending: 'Pending', st_processing: 'Processing',
+    st_shipped: 'Shipped', st_delivered: 'Delivered',
+    tl_confirmed: 'Confirmed', tl_processing: 'Processing', tl_shipped: 'Shipped', tl_delivered: 'Delivered',
+    empty_orders: 'No previous orders yet',
+    lbl_amount: 'Total Amount'
+  }
+};
+
+var lang = 'ar';
+
+function safeGet(k) { try { return localStorage.getItem(k); } catch(e) { return null; } }
+function safeSet(k, v) { try { localStorage.setItem(k, v); } catch(e) {} }
+function getOrders() { try { return JSON.parse(safeGet('nph_orders') || '[]'); } catch(e) { return []; } }
+
+function applyLang(l) {
+  lang = l;
+  safeSet('nph_lang', l);
+  document.documentElement.setAttribute('dir', l === 'ar' ? 'rtl' : 'ltr');
+  document.documentElement.setAttribute('lang', l);
+  var arBtn = document.getElementById('langAr');
+  var enBtn = document.getElementById('langEn');
+  if (arBtn) arBtn.className = 'lang-btn' + (l === 'ar' ? ' active' : '');
+  if (enBtn) enBtn.className = 'lang-btn' + (l === 'en' ? ' active' : '');
+  var inp = document.getElementById('searchInput');
+  if (inp) inp.placeholder = l === 'en' ? 'Order number e.g: NPH-20260312-001' : 'رقم الطلب مثال: NPH-20260312-001';
+  var keys = Object.keys(T[l]);
+  for (var i = 0; i < keys.length; i++) {
+    var el = document.getElementById(keys[i]);
+    if (el) el.textContent = T[l][keys[i]];
+  }
+  renderMyOrders();
+}
+
+function changeLang(l) { applyLang(l); }
+
+function getStatusClass(st) {
+  if (st === 'delivered') return 'status-delivered';
+  if (st === 'shipped') return 'status-shipped';
+  if (st === 'processing') return 'status-processing';
+  return 'status-pending';
+}
+
+function getStatusText(st) {
+  var t = T[lang];
+  if (st === 'delivered') return t.st_delivered;
+  if (st === 'shipped') return t.st_shipped;
+  if (st === 'processing') return t.st_processing;
+  return t.st_pending;
+}
+
+function getTimelineStep(st) {
+  if (st === 'delivered') return 3;
+  if (st === 'shipped') return 2;
+  if (st === 'processing') return 1;
+  return 0;
+}
+
+function renderTimeline(st) {
+  var t = T[lang];
+  var step = getTimelineStep(st);
+  var steps = [t.tl_confirmed, t.tl_processing, t.tl_shipped, t.tl_delivered];
+  var icons = ['&#x2705;', '&#x1F4E6;', '&#x1F69A;', '&#x1F3E0;'];
+  var html = '<div class="timeline"><h4>' + t.lbl_timeline + '</h4><div class="timeline-steps">';
+  for (var i = 0; i < steps.length; i++) {
+    var cls = i < step ? 'done' : (i === step ? 'active' : '');
+    html += '<div class="t-step">'
+      + '<div class="t-dot ' + cls + '">' + (i < step ? '&#x2714;' : icons[i]) + '</div>'
+      + '<div class="t-label ' + cls + '">' + steps[i] + '</div>'
+      + '</div>';
+  }
+  html += '</div></div>';
+  return html;
+}
+
+function renderOrderCard(order) {
+  var t = T[lang];
+  var statusCls = getStatusClass(order.status || 'pending');
+  var statusTxt = getStatusText(order.status || 'pending');
+
+  var itemsHtml = '';
+  var items = order.items || order.cart || [];
+  for (var i = 0; i < items.length; i++) {
+    var item = items[i];
+    var name = lang === 'en' ? (item.name_en || item.name_ar || item.name || '') : (item.name_ar || item.name || '');
+    itemsHtml += '<div class="order-item">'
+      + '<div class="item-img"><img src="' + (item.image || '') + '" onerror="this.style.display=\'none\'" alt="' + name + '"></div>'
+      + '<div class="item-info"><div class="item-name">' + name + '</div>'
+      + '<div class="item-price">$' + item.price + ' &times; <span class="item-qty">' + (item.qty || 1) + '</span></div>'
+      + '</div></div>';
+  }
+
+  var dateStr = order.date ? new Date(order.date).toLocaleDateString(lang === 'ar' ? 'ar-SA' : 'en-US') : '—';
+  var total = order.total || 0;
+
+  return '<div class="order-header">'
+    + '<div><div class="order-id">' + order.id + '</div></div>'
+    + '<span class="status-badge ' + statusCls + '">' + statusTxt + '</span>'
+    + '</div>'
+    + '<div class="order-meta">'
+    + '<div class="meta-item"><label>' + t.lbl_date + '</label><span>' + dateStr + '</span></div>'
+    + '<div class="meta-item"><label>' + t.lbl_total + '</label><span class="total-amount">$' + total + '</span></div>'
+    + '</div>'
+    + '<div class="order-items"><h4>' + t.lbl_items + '</h4>' + itemsHtml + '</div>'
+    + renderTimeline(order.status || 'pending');
+}
+
+function searchOrder() {
+  var q = (document.getElementById('searchInput').value || '').trim().toUpperCase();
+  var resultBox = document.getElementById('resultBox');
+  var noResult = document.getElementById('noResult');
+  resultBox.className = 'result-box';
+  noResult.className = 'no-result';
+  if (!q) return;
+
+  var orders = getOrders();
+  var found = null;
+  for (var i = 0; i < orders.length; i++) {
+    var id = (orders[i].id || '').toUpperCase();
+    var email = (orders[i].email || '').toUpperCase();
+    if (id === q || id.indexOf(q) > -1 || email === q) { found = orders[i]; break; }
+  }
+
+  if (found) {
+    resultBox.innerHTML = renderOrderCard(found);
+    resultBox.className = 'result-box show';
+  } else {
+    noResult.className = 'no-result show';
+  }
+}
+
+function renderMyOrders() {
+  var box = document.getElementById('myOrdersList');
+  if (!box) return;
+  var orders = getOrders();
+  if (!orders.length) {
+    box.innerHTML = '<div class="empty-orders">' + T[lang].empty_orders + '</div>';
+    return;
+  }
+  var html = '';
+  for (var i = orders.length - 1; i >= 0; i--) {
+    var o = orders[i];
+    var statusCls = getStatusClass(o.status || 'pending');
+    var statusTxt = getStatusText(o.status || 'pending');
+    var dateStr = o.date ? new Date(o.date).toLocaleDateString(lang === 'ar' ? 'ar-SA' : 'en-US') : '—';
+    html += '<div class="order-row" onclick="showOrder(\'' + o.id + '\')">'
+      + '<span class="or-id">' + o.id + '</span>'
+      + '<span class="or-date">' + dateStr + '</span>'
+      + '<span class="status-badge ' + statusCls + '" style="font-size:.72rem">' + statusTxt + '</span>'
+      + '<span class="or-amount">$' + (o.total || 0) + '</span>'
+      + '</div>';
+  }
+  box.innerHTML = html;
+}
+
+function showOrder(id) {
+  var orders = getOrders();
+  var found = null;
+  for (var i = 0; i < orders.length; i++) {
+    if (orders[i].id === id) { found = orders[i]; break; }
+  }
+  if (!found) return;
+  var resultBox = document.getElementById('resultBox');
+  resultBox.innerHTML = renderOrderCard(found);
+  resultBox.className = 'result-box show';
+  resultBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+document.getElementById('searchInput').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') searchOrder();
+});
+
+function toggleMenu() {
+  var d = document.getElementById('mobileDrawer');
+  if (d) d.className = d.className.indexOf('open') > -1 ? 'mobile-drawer' : 'mobile-drawer open';
+}
+function closeMenu() {
+  var d = document.getElementById('mobileDrawer');
+  if (d) d.className = 'mobile-drawer';
+}
+window.onload = function() {
+  var l = safeGet('nph_lang') || 'ar';
+  applyLang(l);
+
+  var params = new URLSearchParams(window.location.search);
+  var id = params.get('id');
+  if (id) {
+    document.getElementById('searchInput').value = id;
+    searchOrder();
+  }
+};
+</script>
+</body>
+</html>

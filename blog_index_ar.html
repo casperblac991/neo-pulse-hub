@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="مدونة NEO PULSE HUB — مراجعات شاملة وأدلة شراء لأفضل المنتجات التقنية">
+    <meta name="keywords" content="مراجعات منتجات، أدلة شراء، أمازون، منتجات ذكية">
+    <title>المدونة | NEO PULSE HUB</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #3b82f6;
+            --secondary: #7c3aed;
+            --accent: #60a5fa;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --dark-bg: #020510;
+            --card-bg: rgba(10, 13, 26, 0.8);
+            --border-color: #3b82f6;
+            --text-primary: #e2e8f0;
+            --text-secondary: #94a3b8;
+        }
+
+        body {
+            font-family: 'Cairo', 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, var(--dark-bg) 0%, #0f172a 100%);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        /* Header */
+        header {
+            background: rgba(3, 7, 18, 0.95);
+            border-bottom: 2px solid var(--primary);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Page Title */
+        .page-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .page-title h1 {
+            font-size: 2.5em;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+
+        .page-title p {
+            color: var(--text-secondary);
+            font-size: 1.1em;
+        }
+
+        /* Filter Section */
+        .filter-section {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 40px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: var(--card-bg);
+            border: 2px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: white;
+        }
+
+        /* Articles Grid */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .article-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent);
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
+        }
+
+        .article-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            color: white;
+        }
+
+        .article-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-category {
+            display: inline-block;
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--success);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-bottom: 10px;
+            width: fit-content;
+        }
+
+        .article-title {
+            font-size: 1.3em;
+            color: var(--accent);
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .article-description {
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+
+        .article-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.9em;
+            color: var(--text-secondary);
+        }
+
+        .article-rating {
+            color: var(--warning);
+            font-weight: bold;
+        }
+
+        .article-link {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .article-link:hover {
+            transform: scale(1.05);
+        }
+
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 50px;
+        }
+
+        .pagination a,
+        .pagination span {
+            padding: 10px 15px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .pagination a:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .pagination .active {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(3, 7, 18, 0.95);
+            border-top: 2px solid var(--primary);
+            padding: 40px 20px;
+            margin-top: 60px;
+            text-align: center;
+            color: var(--text-secondary);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-title h1 {
+                font-size: 1.8em;
+            }
+
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-links {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">🚀 NEO PULSE HUB</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="blog_index_ar.html">المدونة</a></li>
+                    <li><a href="blog_index_en.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Page Title -->
+        <div class="page-title">
+            <h1>📰 مدونة NEO PULSE HUB</h1>
+            <p>مراجعات شاملة وأدلة شراء لأفضل المنتجات التقنية</p>
+        </div>
+
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <button class="filter-btn active" onclick="filterArticles('all')">جميع المقالات</button>
+            <button class="filter-btn" onclick="filterArticles('smartwatch')">ساعات ذكية</button>
+            <button class="filter-btn" onclick="filterArticles('earbuds')">سماعات</button>
+            <button class="filter-btn" onclick="filterArticles('smart-home')">منزل ذكي</button>
+        </div>
+
+        <!-- Articles Grid -->
+        <div class="articles-grid" id="articlesContainer">
+            <!-- سيتم ملء هذا القسم بـ JavaScript -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 NEO PULSE HUB. جميع الحقوق محفوظة.</p>
+        <p>تحديث آخر: 29 أبريل 2026</p>
+    </footer>
+
+    <script>
+        // بيانات المقالات
+        const articles = [
+            {
+                id: 1,
+                title: "TP-Link Kasa - مقبس ذكي 4 قطع",
+                description: "مراجعة شاملة لمقبس TP-Link الذكي مع ميزات التحكم عن بعد والجدولة",
+                category: "smart-home",
+                categoryName: "منزل ذكي",
+                rating: 4.5,
+                link: "ar/tp-link-kasa---مقبس-ذكي-4-قطع-review.html",
+                icon: "🔌",
+                date: "29 أبريل 2026"
+            },
+            {
+                id: 2,
+                title: "Tile Mate 4-Pack - متتبع بلوتوث",
+                description: "دليل شامل لمتتبع Tile مع مقارنة الأسعار والميزات",
+                category: "tracker",
+                categoryName: "متتبعات",
+                rating: 4.3,
+                link: "ar/tile-mate-4-pack---متتبع-بلوتوث-review.html",
+                icon: "📍",
+                date: "29 أبريل 2026"
+            },
+            {
+                id: 3,
+                title: "نظارات Ray-Ban Meta الذكية",
+                description: "مراجعة النظارات الذكية من Ray-Ban مع الكاميرا والتصوير",
+                category: "wearable",
+                categoryName: "أجهزة قابلة للارتداء",
+                rating: 4.7,
+                link: "ar/نظارات-ray-ban-meta-الذكية-review.html",
+                icon: "👓",
+                date: "29 أبريل 2026"
+            },
+            {
+                id: 4,
+                title: "Amazfit GTR 4 - ساعة ذكية",
+                description: "ساعة ذكية بتصميم فاخر وميزات صحية متقدمة",
+                category: "smartwatch",
+                categoryName: "ساعات ذكية",
+                rating: 4.6,
+                link: "ar/amazfit-gtr-4---ساعة-ذكية-review.html",
+                icon: "⌚",
+                date: "29 أبريل 2026"
+            }
+        ];
+
+        // دالة عرض المقالات
+        function displayArticles(articlesToShow) {
+            const container = document.getElementById('articlesContainer');
+            container.innerHTML = '';
+
+            articlesToShow.forEach(article => {
+                const card = document.createElement('div');
+                card.className = 'article-card';
+                card.innerHTML = `
+                    <div class="article-image">${article.icon}</div>
+                    <div class="article-content">
+                        <span class="article-category">${article.categoryName}</span>
+                        <h3 class="article-title">${article.title}</h3>
+                        <p class="article-description">${article.description}</p>
+                        <div class="article-meta">
+                            <span>📅 ${article.date}</span>
+                            <span class="article-rating">⭐ ${article.rating}/5</span>
+                        </div>
+                        <a href="${article.link}" class="article-link">اقرأ المقالة الكاملة →</a>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // دالة التصفية
+        function filterArticles(category) {
+            // تحديث الأزرار النشطة
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // تصفية المقالات
+            if (category === 'all') {
+                displayArticles(articles);
+            } else {
+                const filtered = articles.filter(a => a.category === category);
+                displayArticles(filtered);
+            }
+        }
+
+        // عرض جميع المقالات عند التحميل
+        window.addEventListener('load', () => {
+            displayArticles(articles);
+        });
+    </script>
+</body>
+</html>

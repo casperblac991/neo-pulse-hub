@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NEO PULSE HUB Blog — Comprehensive reviews and buying guides for the best tech products">
+    <meta name="keywords" content="product reviews, buying guides, amazon, smart products">
+    <title>Blog | NEO PULSE HUB</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #3b82f6;
+            --secondary: #7c3aed;
+            --accent: #60a5fa;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --dark-bg: #020510;
+            --card-bg: rgba(10, 13, 26, 0.8);
+            --border-color: #3b82f6;
+            --text-primary: #e2e8f0;
+            --text-secondary: #94a3b8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, var(--dark-bg) 0%, #0f172a 100%);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        /* Header */
+        header {
+            background: rgba(3, 7, 18, 0.95);
+            border-bottom: 2px solid var(--primary);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Page Title */
+        .page-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .page-title h1 {
+            font-size: 2.5em;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+
+        .page-title p {
+            color: var(--text-secondary);
+            font-size: 1.1em;
+        }
+
+        /* Filter Section */
+        .filter-section {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 40px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: var(--card-bg);
+            border: 2px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: white;
+        }
+
+        /* Articles Grid */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .article-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent);
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
+        }
+
+        .article-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            color: white;
+        }
+
+        .article-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-category {
+            display: inline-block;
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--success);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-bottom: 10px;
+            width: fit-content;
+        }
+
+        .article-title {
+            font-size: 1.3em;
+            color: var(--accent);
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .article-description {
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+
+        .article-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.9em;
+            color: var(--text-secondary);
+        }
+
+        .article-rating {
+            color: var(--warning);
+            font-weight: bold;
+        }
+
+        .article-link {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .article-link:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(3, 7, 18, 0.95);
+            border-top: 2px solid var(--primary);
+            padding: 40px 20px;
+            margin-top: 60px;
+            text-align: center;
+            color: var(--text-secondary);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-title h1 {
+                font-size: 1.8em;
+            }
+
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-links {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">🚀 NEO PULSE HUB</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog_index_ar.html">المدونة</a></li>
+                    <li><a href="blog_index_en.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Page Title -->
+        <div class="page-title">
+            <h1>📰 NEO PULSE HUB Blog</h1>
+            <p>Comprehensive reviews and buying guides for the best tech products</p>
+        </div>
+
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <button class="filter-btn active" onclick="filterArticles('all')">All Articles</button>
+            <button class="filter-btn" onclick="filterArticles('smartwatch')">Smartwatches</button>
+            <button class="filter-btn" onclick="filterArticles('earbuds')">Earbuds</button>
+            <button class="filter-btn" onclick="filterArticles('smart-home')">Smart Home</button>
+        </div>
+
+        <!-- Articles Grid -->
+        <div class="articles-grid" id="articlesContainer">
+            <!-- Articles will be populated by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 NEO PULSE HUB. All rights reserved.</p>
+        <p>Last update: April 29, 2026</p>
+    </footer>
+
+    <script>
+        // Articles data
+        const articles = [
+            {
+                id: 1,
+                title: "TP-Link Kasa - Smart Plug 4 Pack",
+                description: "Comprehensive review of TP-Link smart plug with remote control and scheduling features",
+                category: "smart-home",
+                categoryName: "Smart Home",
+                rating: 4.5,
+                link: "en/tp-link-kasa-smart-plug-4-pack-review.html",
+                icon: "🔌",
+                date: "April 29, 2026"
+            },
+            {
+                id: 2,
+                title: "Tile Mate 4-Pack - Bluetooth Tracker",
+                description: "Complete guide to Tile tracker with price comparison and features",
+                category: "tracker",
+                categoryName: "Trackers",
+                rating: 4.3,
+                link: "en/tile-mate-bluetooth-tracker-4-pack-review.html",
+                icon: "📍",
+                date: "April 29, 2026"
+            },
+            {
+                id: 3,
+                title: "Ray-Ban Meta Smart Glasses",
+                description: "Review of Ray-Ban smart glasses with camera and recording features",
+                category: "wearable",
+                categoryName: "Wearables",
+                rating: 4.7,
+                link: "en/ray-ban-meta-smart-glasses-gen-2-review.html",
+                icon: "👓",
+                date: "April 29, 2026"
+            },
+            {
+                id: 4,
+                title: "Amazfit GTR 4 - Smartwatch GPS",
+                description: "Luxury smartwatch with advanced health features and long battery life",
+                category: "smartwatch",
+                categoryName: "Smartwatches",
+                rating: 4.6,
+                link: "en/amazfit-gtr-4-smartwatch-gps-review.html",
+                icon: "⌚",
+                date: "April 29, 2026"
+            }
+        ];
+
+        // Display articles function
+        function displayArticles(articlesToShow) {
+            const container = document.getElementById('articlesContainer');
+            container.innerHTML = '';
+
+            articlesToShow.forEach(article => {
+                const card = document.createElement('div');
+                card.className = 'article-card';
+                card.innerHTML = `
+                    <div class="article-image">${article.icon}</div>
+                    <div class="article-content">
+                        <span class="article-category">${article.categoryName}</span>
+                        <h3 class="article-title">${article.title}</h3>
+                        <p class="article-description">${article.description}</p>
+                        <div class="article-meta">
+                            <span>📅 ${article.date}</span>
+                            <span class="article-rating">⭐ ${article.rating}/5</span>
+                        </div>
+                        <a href="${article.link}" class="article-link">Read Full Article →</a>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // Filter function
+        function filterArticles(category) {
+            // Update active buttons
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Filter articles
+            if (category === 'all') {
+                displayArticles(articles);
+            } else {
+                const filtered = articles.filter(a => a.category === category);
+                displayArticles(filtered);
+            }
+        }
+
+        // Display all articles on page load
+        window.addEventListener('load', () => {
+            displayArticles(articles);
+        });
+    </script>
+</body>
+</html>
