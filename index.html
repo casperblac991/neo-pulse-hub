@@ -912,5 +912,146 @@ window.addEventListener('load', () => {
   loadProducts();
 });
 </script>
+
+    <!-- Email Collector Modal -->
+    <div class="email-modal-overlay" id="emailModal">
+        <div class="email-modal">
+            <button class="close-btn" onclick="closeEmailModal()">&times;</button>
+            <div class="email-header">
+                <h2>🎁 اشترك في نشرتنا</h2>
+                <p>احصل على أفضل العروض والمنتجات الجديدة مباشرة في بريدك</p>
+            </div>
+            <div class="benefits-list">
+                <ul>
+                    <li>عروض حصرية وخصومات خاصة</li>
+                    <li>تقارير منتجات يومية احترافية</li>
+                    <li>نصائح تسوق ذكية من الخبراء</li>
+                    <li>أول من يعرف بالمنتجات الجديدة</li>
+                </ul>
+            </div>
+            <div class="error-message" id="errorMessage"></div>
+            <div class="success-message" id="successMessage">
+                <i class="fas fa-check-circle"></i>
+                <p>شكراً لاشتراكك!</p>
+                <small>سيصلك أول عرض خاص في أقرب وقت</small>
+            </div>
+            <form class="email-form" id="emailForm" onsubmit="submitEmail(event)">
+                <div class="form-group">
+                    <label for="subscriberName">الاسم الكامل</label>
+                    <input type="text" id="subscriberName" name="name" placeholder="أدخل اسمك" required>
+                </div>
+                <div class="form-group">
+                    <label for="subscriberEmail">البريد الإلكتروني</label>
+                    <input type="email" id="subscriberEmail" name="email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="subscriberInterests">اهتماماتك (اختياري)</label>
+                    <input type="text" id="subscriberInterests" name="interests" placeholder="مثال: ساعات ذكية، سماعات">
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="agreeTerms" name="agree" required>
+                    <label for="agreeTerms" style="margin: 0;">أوافق على استقبال رسائل بريدية</label>
+                </div>
+                <button type="submit" class="submit-btn" id="submitBtn">اشترك الآن</button>
+            </form>
+        </div>
+    </div>
+    
+
+    <script>
+        // Email Collector Functions
+        function showEmailModal() {
+            const modal = document.getElementById('emailModal');
+            if (modal) modal.classList.add('active');
+        }
+
+        function closeEmailModal() {
+            const modal = document.getElementById('emailModal');
+            if (modal) modal.classList.remove('active');
+        }
+
+        async function submitEmail(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('subscriberName').value;
+            const email = document.getElementById('subscriberEmail').value;
+            const interests = document.getElementById('subscriberInterests').value;
+            const submitBtn = document.getElementById('submitBtn');
+            const errorMessage = document.getElementById('errorMessage');
+            const successMessage = document.getElementById('successMessage');
+            const emailForm = document.getElementById('emailForm');
+
+            // Clear previous messages
+            if (errorMessage) errorMessage.classList.remove('active');
+            if (successMessage) successMessage.classList.remove('active');
+
+            // Disable submit button
+            if (submitBtn) {
+                submitBtn.classList.add('loading');
+                submitBtn.disabled = true;
+            }
+
+            try {
+                // Send to backend API
+                const response = await fetch('/api/subscribe', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        name: name,
+                        email: email,
+                        interests: interests,
+                        timestamp: new Date().toISOString()
+                    })
+                });
+
+                if (response.ok) {
+                    // Show success message
+                    if (emailForm) emailForm.style.display = 'none';
+                    if (successMessage) successMessage.classList.add('active');
+                    
+                    // Reset form
+                    if (emailForm) emailForm.reset();
+                    
+                    // Close modal after 3 seconds
+                    setTimeout(() => {
+                        closeEmailModal();
+                        if (emailForm) emailForm.style.display = 'block';
+                    }, 3000);
+                } else {
+                    throw new Error('فشل الاشتراك. حاول مرة أخرى.');
+                }
+            } catch (error) {
+                if (errorMessage) {
+                    errorMessage.textContent = error.message || 'حدث خطأ. يرجى المحاولة لاحقاً.';
+                    errorMessage.classList.add('active');
+                }
+            } finally {
+                if (submitBtn) {
+                    submitBtn.classList.remove('loading');
+                    submitBtn.disabled = false;
+                }
+            }
+        }
+
+        // Show modal on page load (after 5 seconds)
+        window.addEventListener('load', () => {
+            setTimeout(showEmailModal, 5000);
+        });
+
+        // Close modal when clicking outside
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('emailModal');
+            if (modal) {
+                modal.addEventListener('click', (e) => {
+                    if (e.target.id === 'emailModal') {
+                        closeEmailModal();
+                    }
+                });
+            }
+        });
+    </script>
+    
 </body>
 </html>

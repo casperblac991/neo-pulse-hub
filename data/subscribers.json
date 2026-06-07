@@ -1,0 +1,16 @@
+{
+  "subscribers": [
+    {
+      "name": "محمد أحمد",
+      "email": "test@example.com",
+      "interests": "ساعات ذكية، سماعات",
+      "timestamp": "2026-06-07T06:26:59.164673",
+      "status": "active"
+    }
+  ],
+  "metadata": {
+    "created": "2026-06-07T06:30:00Z",
+    "updated": "2026-06-07T06:30:00Z",
+    "total": 0
+  }
+}
