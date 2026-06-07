@@ -1,238 +1,285 @@
-# 🌟 NEO PULSE HUB — منصة ذكية للتسويق الإلكتروني
+# 🚀 NEO PULSE HUB - متجر ذكي متقدم
+## NEO PULSE HUB - Advanced Smart Store
 
-## 📌 نظرة عامة
-
-**NEO PULSE HUB** هي منصة تسويق إلكترونية ذكية تعمل بالذكاء الاصطناعي (Gemini) لجلب المنتجات من أمازون وتسويقها تلقائياً.
-
-### الميزات الرئيسية
-
-🤖 **ذكاء اصطناعي متقدم**
-- توليد محتوى بالعربية والإنجليزية
-- توصيات منتجات ذكية
-- تحليل المشاعر والنوايا
-
-📦 **جلب منتجات تلقائي**
-- ربط مع أمازون أفلييت
-- تحديث يومي للمنتجات
-- أسعار وتقييمات حقيقية
-
-📝 **محتوى ذكي**
-- مقالات مراجعة يومية
-- أدلة شراء شاملة
-- محتوى محسّن للـ SEO
-
-📢 **تسويق آلي**
-- حملات على Telegram
-- منشورات Instagram
-- رسائل WhatsApp
-
-💰 **تحسين الأرباح**
-- روابط أفلييت في كل مقالة
-- محتوى عالي الجودة لـ AdSense
-- تحسين معدل التحويل
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+![Version](https://img.shields.io/badge/Version-2.0-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
-## 🚀 البدء السريع
+## 📝 نظرة عامة | Overview
 
-### المتطلبات
+**NEO PULSE HUB** هو متجر إلكتروني ذكي متقدم يجمع بين:
+- 🤖 **الذكاء الاصطناعي** للتوصيات الذكية
+- 💰 **روابط Affiliate** لـ Amazon و AliExpress
+- 📧 **نظام جمع الإيميلات** مع Google Sheets
+- 🔄 **أتمتة المحتوى** بتقارير يومية
+- 🎯 **صفحات ذكية** للمقارنة والعروض
 
-```bash
-# Python 3.8+
-# pip
+---
 
-# تثبيت المكتبات
-pip install -r requirements.txt
+## ✨ الميزات الرئيسية | Key Features
+
+### 1. 🎁 **مكتشف الهدايا الذكي**
+```
+الملف: gift-finder.html
+الميزات:
+- تصفية حسب الفئة والميزانية
+- توصيات ذكية بناءً على الاهتمامات
+- روابط Amazon مباشرة
+- واجهة سهلة الاستخدام
 ```
 
-### التثبيت
+### 2. ⏰ **عروض الساعة المحدودة**
+```
+الملف: deals-of-the-hour.html
+الميزات:
+- عروض محدودة الوقت
+- عداد تنازلي حي
+- تنبيهات الأسعار
+- تحديث تلقائي
+```
 
+### 3. ⚔️ **معركة المنتجات**
+```
+الملف: product-battle.html
+الميزات:
+- مقارنة تفاعلية بين المنتجات
+- نظام التصويت الحي
+- رسوم بيانية للنتائج
+- تحديث فوري
+```
+
+### 4. 📧 **نظام جمع الإيميلات**
+```
+الملفات: email-collector.html, subscribe-server.js
+الميزات:
+- نموذج جذاب يظهر تلقائياً
+- التحقق من البيانات
+- حفظ آمن في Google Sheets
+- نسخة احتياطية محلية
+```
+
+### 5. 🤖 **روبوت المدونة الذكي**
+```
+الملف: content_automation_bot_v3.py
+الميزات:
+- توليد تقارير يومية
+- دعم اللغة العربية والإنجليزية
+- تحليل المنتجات
+- نشر تلقائي
+```
+
+---
+
+## 🛠️ التثبيت والإعداد | Installation & Setup
+
+### المتطلبات | Requirements
 ```bash
-# 1. استنساخ المستودع
+- Node.js 22.13.0+
+- Python 3.11+
+- Git
+- npm/pnpm
+```
+
+### التثبيت | Installation
+```bash
+# استنساخ المستودع
 git clone https://github.com/casperblac991/neo-pulse-hub.git
 cd neo-pulse-hub
 
-# 2. إعداد المتغيرات البيئية
-cp .env.example .env
-# ثم عدّل .env بمفاتيحك
+# تثبيت المكتبات
+npm install
+pip install -r requirements.txt
 
-# 3. تشغيل المجدول
-python scheduler_integration.py
+# تشغيل الخادم
+node subscribe-server.js
+
+# تشغيل روبوت المدونة
+python3 content_automation_bot_v3.py
 ```
 
 ---
 
-## 📚 الأنظمة الرئيسية
+## 📁 هيكل المشروع | Project Structure
 
-### 1. Amazon AI Fetcher
-جلب منتجات من أمازون بذكاء اصطناعي
+```
+neo-pulse-hub/
+├── index.html                      # الصفحة الرئيسية
+├── gift-finder.html               # مكتشف الهدايا
+├── deals-of-the-hour.html         # عروض الساعة
+├── product-battle.html            # معركة المنتجات
+├── email-collector.html           # نموذج الإيميلات
+├── subscribe-server.js            # خادم Express
+├── email_to_sheets.py             # سكريبت المزامنة
+├── content_automation_bot_v3.py   # روبوت المدونة
+├── data/
+│   └── subscribers.json           # قاعدة البيانات
+├── EMAIL_SYSTEM_DOCUMENTATION.md  # وثائق الإيميلات
+└── README.md                      # هذا الملف
+```
 
+---
+
+## 🚀 كيفية الاستخدام | Usage
+
+### تشغيل الخادم
 ```bash
-python amazon_ai_fetcher.py
+cd /home/ubuntu/neo-pulse-hub
+node subscribe-server.js
 ```
 
-### 2. Content Automation Bot
-نشر مقالات مراجعة تلقائياً
-
+### تشغيل روبوت المدونة
 ```bash
-python content_automation_bot.py
+python3 content_automation_bot_v3.py
 ```
 
-### 3. Social Media Automation
-نشر حملات تسويقية على وسائل التواصل
-
+### مزامنة الإيميلات مع Google Sheets
 ```bash
-python social_media_automation.py
-```
-
-### 4. Scheduler Integration
-تنسيق جميع الأنظمة الآلية
-
-```bash
-python scheduler_integration.py
+python3 email_to_sheets.py
 ```
 
 ---
 
-## 📖 الدليل الكامل
+## 🔗 نقاط النهاية | API Endpoints
 
-- 📘 [دليل الأتمتة الشامل](AUTOMATION_GUIDE.md)
-- 📊 [ملخص التحديثات](IMPLEMENTATION_SUMMARY.md)
-- 🔧 [دليل التثبيت](INSTALLATION.md)
+### إضافة مشترك جديد
+```
+POST /api/subscribe
+Content-Type: application/json
 
----
-
-## 🎯 جدول المهام
-
-| المهمة | التكرار | الوقت |
-|-------|--------|------|
-| جلب منتجات | كل 6 ساعات | 00:00, 06:00, 12:00, 18:00 |
-| نشر مقالة | يومياً | 10:00 |
-| حملات تسويقية | 3 مرات يومياً | 08:00, 14:00, 20:00 |
-| أدلة شراء | أسبوعياً | الاثنين 02:00 |
-| تنظيف بيانات | يومياً | 03:00 |
-
----
-
-## 💡 الاستخدام
-
-### جلب منتجات من أمازون
-
-```python
-import amazon_ai_fetcher
-
-# جلب منتجات من جميع الفئات
-products = amazon_ai_fetcher.fetch_all_categories(2)
-print(f"تم جلب {len(products)} منتج")
+{
+  "name": "محمد أحمد",
+  "email": "user@example.com",
+  "interests": "ساعات ذكية، سماعات"
+}
 ```
 
-### نشر مقالة مراجعة
-
-```python
-import content_automation_bot
-
-# نشر مقالة يومية
-content_automation_bot.auto_publish_daily()
+### الحصول على المشتركين
+```
+GET /api/subscribers
 ```
 
-### نشر حملة تسويقية
-
-```python
-import social_media_automation
-
-# نشر حملات على وسائل التواصل
-results = social_media_automation.publish_daily_campaigns(3)
+### فحص صحة الخادم
+```
+GET /api/health
 ```
 
 ---
 
-## 🔐 الأمان
+## 🎨 التصميم | Design
 
-### حماية API Keys
-
-```bash
-# استخدم متغيرات البيئة
-export GEMINI_API_KEY=your_key_here
-export GITHUB_TOKEN=your_token_here
+### الألوان | Colors
+```
+- الأساسي: #00d4ff (أزرق سماوي)
+- الثانوي: #7c3aed (بنفسجي)
+- التركيز: #ff00c8 (وردي)
+- الخلفية: #0a0a0a (أسود)
 ```
 
-### عدم الكشف عن البيانات
-
-- لا تكتب المفاتيح في الكود
-- استخدم .env للبيانات الحساسة
-- لا تشارك المفاتيح علناً
-
----
-
-## 📈 الأداء
-
-### المؤشرات الرئيسية
-
-```bash
-# عدد المقالات
-grep "✅ Saved" scheduler.log | wc -l
-
-# عدد الحملات
-grep "✅ Campaign" scheduler.log | wc -l
-
-# عدد المنتجات
-grep "✅ Added" scheduler.log | wc -l
+### الخطوط | Fonts
 ```
-
-### الأهداف الشهرية
-
-- 30+ مقالة جديدة
-- 90+ حملة تسويقية
-- 60+ منتج جديد
-- 10,000+ زيارة
-
----
-
-## 🐛 استكشاف الأخطاء
-
-### لا توجد منتجات
-
-```bash
-python amazon_ai_fetcher.py
-```
-
-### Gemini API غير متاح
-
-```bash
-export GEMINI_API_KEY=your_key_here
-```
-
-### Telegram لا يعمل
-
-```bash
-export CUSTOMER_BOT_TOKEN=your_token_here
+- الخط الرئيسي: Segoe UI, Arial
+- حجم العنوان: 2.5rem
+- حجم النص: 1rem
 ```
 
 ---
 
-## 📞 الدعم
+## 📊 الإحصائيات | Statistics
 
-- 📧 البريد: support@neo-pulse-hub.it.com
-- 💬 Telegram: @neo_pulse_hub_bot
-- 🌐 الموقع: https://neo-pulse-hub.it.com
-
----
-
-## 📝 الترخيص
-
-هذا المشروع مرخص تحت MIT License
+| المقياس | القيمة |
+|--------|--------|
+| عدد الصفحات | 8+ |
+| عدد المنتجات | 50+ |
+| المشتركين | 1+ |
+| معدل التحويل | قيد التحسين |
+| سرعة التحميل | ⚡ سريع |
 
 ---
 
-## 🙏 شكر خاص
+## 🔐 الأمان | Security
 
-شكر لـ:
-- Gemini AI لتوليد المحتوى
-- Amazon للمنتجات والأفلييت
-- Telegram للتسويق الآلي
+- ✅ التحقق من صحة البيانات
+- ✅ عدم السماح بالإيميلات المكررة
+- ✅ تنظيف البيانات من الأحرف الخاصة
+- ✅ استخدام HTTPS
+- ✅ حماية من هجمات XSS
 
 ---
 
-**آخر تحديث**: 29 أبريل 2026
-**الإصدار**: 2.0
-**الحالة**: ✅ جاهز للإنتاج
+## 🐛 استكشاف الأخطاء | Troubleshooting
+
+### المشكلة: النموذج لا يظهر
+**الحل:** تأكد من تفعيل JavaScript وأن `emailModal` موجود
+
+### المشكلة: الاشتراك لا يعمل
+**الحل:** تأكد من تشغيل الخادم على المنفذ 3001
+
+### المشكلة: البيانات لا تظهر في Google Sheets
+**الحل:** تأكد من تعيين `GOOGLE_SHEETS_ID`
+
+---
+
+## 🤝 المساهمة | Contributing
+
+نرحب بالمساهمات! يرجى:
+1. Fork المستودع
+2. إنشاء فرع جديد (`git checkout -b feature/AmazingFeature`)
+3. Commit التغييرات (`git commit -m 'Add some AmazingFeature'`)
+4. Push إلى الفرع (`git push origin feature/AmazingFeature`)
+5. فتح Pull Request
+
+---
+
+## 📄 الترخيص | License
+
+هذا المشروع مرخص تحت رخصة MIT. انظر ملف `LICENSE` للمزيد.
+
+---
+
+## 📞 التواصل | Contact
+
+- **البريد الإلكتروني:** support@neopulsehub.com
+- **الموقع:** https://casperblac991.github.io/neo-pulse-hub/
+- **GitHub:** https://github.com/casperblac991/neo-pulse-hub
+- **Twitter:** @neopulsehub
+
+---
+
+## 🙏 شكر وتقدير | Acknowledgments
+
+شكر خاص لـ:
+- OpenAI و Groq لتوفير خدمات الذكاء الاصطناعي
+- Amazon و AliExpress للبرامج الإحالية
+- Google Sheets للتخزين السحابي
+- GitHub Pages للاستضافة المجانية
+
+---
+
+## 📚 المراجع | References
+
+- [Email System Documentation](EMAIL_SYSTEM_DOCUMENTATION.md)
+- [OpenAI API](https://openai.com/api/)
+- [Express.js](https://expressjs.com/)
+- [Google Sheets API](https://developers.google.com/sheets/api)
+
+---
+
+## 🎯 الخطط المستقبلية | Future Plans
+
+- [ ] إضافة نظام الدفع
+- [ ] تحسين SEO
+- [ ] إضافة تطبيق موبايل
+- [ ] توسيع إلى أسواق جديدة
+- [ ] إضافة ميزات AI متقدمة
+
+---
+
+**آخر تحديث:** 2026-06-07  
+**الإصدار:** 2.0  
+**الحالة:** ✅ نشط وجاهز للاستخدام
+
+---
+
+## ⭐ إذا أعجبك المشروع، لا تنسَ إضافة نجمة! ⭐
