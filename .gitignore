@@ -1,17 +1,19 @@
-# Dependencies
-node_modules/
-__pycache__/
-*.pyc
-.pyc
 
 # Build
-dist/
-.env
-
+# Dependencies
 # IDE
-.vscode/
-.idea/
-*.swp
-
 # Logs
+*.bak
 *.log
+*.pyc
+*.swp
+.env
+.idea/
+.pyc
+.vscode/
+__pycache__/
+dist/
+leads.json
+node_modules/
+package-lock.json
+pnpm-lock.yaml

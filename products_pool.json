@@ -12,7 +12,7 @@
     "rating": 4.7,
     "reviews": 3200,
     "stock": 73,
-    "image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "New",
     "active": true,
@@ -38,7 +38,8 @@
     ],
     "shipping_days": 6,
     "added_at": "2026-03-13T10:42:10.691677",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Omega%20Smart%20X1&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P202",
@@ -53,7 +54,7 @@
     "rating": 4.6,
     "reviews": 2100,
     "stock": 54,
-    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "Featured",
     "active": true,
@@ -79,7 +80,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-03-13T10:42:10.691695",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=NeoTime%20Pro&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P203",
@@ -94,7 +96,7 @@
     "rating": 4.8,
     "reviews": 5400,
     "stock": 48,
-    "image": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "الأكثر مبيعاً",
     "badge_en": "Best Seller",
     "active": true,
@@ -120,7 +122,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-03-13T10:42:10.691703",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=VitaFlow%203&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P204",
@@ -135,7 +138,7 @@
     "rating": 4.9,
     "reviews": 8900,
     "stock": 33,
-    "image": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "برميوم",
     "badge_en": "Premium",
     "active": true,
@@ -161,7 +164,8 @@
     ],
     "shipping_days": 6,
     "added_at": "2026-03-13T10:42:10.691707",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Zenith%20Ultra&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P205",
@@ -176,7 +180,7 @@
     "rating": 4.5,
     "reviews": 1800,
     "stock": 57,
-    "image": "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "رياضي",
     "badge_en": "Sport",
     "active": true,
@@ -202,7 +206,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-03-13T10:42:10.691710",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Pulse%20Sport%20X&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P206",
@@ -217,7 +222,7 @@
     "rating": 4.6,
     "reviews": 2700,
     "stock": 72,
-    "image": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "كلاسيك",
     "badge_en": "Classic",
     "active": true,
@@ -243,7 +248,8 @@
     ],
     "shipping_days": 6,
     "added_at": "2026-03-13T10:42:10.691713",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Luna%20Classic&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P207",
@@ -258,7 +264,7 @@
     "rating": 4.7,
     "reviews": 4100,
     "stock": 42,
-    "image": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "New",
     "active": true,
@@ -284,7 +290,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-03-13T10:42:10.691719",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Echo%20Alpha%202&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P208",
@@ -299,7 +306,7 @@
     "rating": 4.8,
     "reviews": 3600,
     "stock": 52,
-    "image": "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "Featured",
     "active": true,
@@ -325,7 +332,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-03-13T10:42:10.691722",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Arctic%20Plus&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P209",
@@ -340,7 +348,7 @@
     "rating": 4.4,
     "reviews": 950,
     "stock": 55,
-    "image": "https://images.unsplash.com/photo-1617043786394-f977fa12eddf?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "اقتصادي",
     "badge_en": "Value",
     "active": true,
@@ -366,7 +374,8 @@
     ],
     "shipping_days": 6,
     "added_at": "2026-03-13T10:42:10.691726",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Symphony%20Lite&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P210",
@@ -381,7 +390,7 @@
     "rating": 4.9,
     "reviews": 12000,
     "stock": 69,
-    "image": "https://images.unsplash.com/photo-1630989809082-9e2f671d56db?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "الأفضل",
     "badge_en": "Top Pick",
     "active": true,
@@ -407,7 +416,8 @@
     ],
     "shipping_days": 5,
     "added_at": "2026-03-13T10:42:10.691729",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Quantum%20X7&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P211",
@@ -422,7 +432,7 @@
     "rating": 4.7,
     "reviews": 2800,
     "stock": 54,
-    "image": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71p0U-c1D9L._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "New",
     "active": true,
@@ -448,7 +458,8 @@
     ],
     "shipping_days": 6,
     "added_at": "2026-03-13T10:42:10.691733",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Vision%20Pro%20X&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P212",
@@ -463,7 +474,7 @@
     "rating": 4.6,
     "reviews": 1900,
     "stock": 37,
-    "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71p0U-c1D9L._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "Featured",
     "active": true,
@@ -489,7 +500,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-03-13T10:42:10.691736",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Optic%20Flow&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P213",
@@ -504,7 +516,7 @@
     "rating": 4.5,
     "reviews": 1200,
     "stock": 80,
-    "image": "https://images.unsplash.com/photo-1603400521630-9f2de124b33b?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71p0U-c1D9L._AC_SL1500_.jpg",
     "badge": "رياضي",
     "badge_en": "Sport",
     "active": true,
@@ -530,7 +542,8 @@
     ],
     "shipping_days": 5,
     "added_at": "2026-03-13T10:42:10.691739",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=SmartShade&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P214",
@@ -545,7 +558,7 @@
     "rating": 4.8,
     "reviews": 4200,
     "stock": 41,
-    "image": "https://images.unsplash.com/photo-1577803645773-f96470509666?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71p0U-c1D9L._AC_SL1500_.jpg",
     "badge": "برميوم",
     "badge_en": "Premium",
     "active": true,
@@ -571,7 +584,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-03-13T10:42:10.691743",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=EchoLook%20Pro&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P215",
@@ -586,7 +600,7 @@
     "rating": 4.4,
     "reviews": 800,
     "stock": 34,
-    "image": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71p0U-c1D9L._AC_SL1500_.jpg",
     "badge": "اقتصادي",
     "badge_en": "Value",
     "active": true,
@@ -612,7 +626,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-03-13T10:42:10.691745",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=NeoLens%202&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P216",
@@ -627,7 +642,7 @@
     "rating": 4.9,
     "reviews": 6700,
     "stock": 31,
-    "image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71p0U-c1D9L._AC_SL1500_.jpg",
     "badge": "حصري",
     "badge_en": "Exclusive",
     "active": true,
@@ -653,7 +668,8 @@
     ],
     "shipping_days": 6,
     "added_at": "2026-03-13T10:42:10.691749",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=HoloView&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P217",
@@ -668,7 +684,7 @@
     "rating": 4.3,
     "reviews": 650,
     "stock": 63,
-    "image": "https://images.unsplash.com/photo-1542219550-37153d387c27?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71p0U-c1D9L._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "New",
     "active": true,
@@ -694,7 +710,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-03-13T10:42:10.691752",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=LiteFrame&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P218",
@@ -709,7 +726,7 @@
     "rating": 4.8,
     "reviews": 3300,
     "stock": 72,
-    "image": "https://images.unsplash.com/photo-1501159599894-155982264a55?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71p0U-c1D9L._AC_SL1500_.jpg",
     "badge": "متطور",
     "badge_en": "Advanced",
     "active": true,
@@ -735,7 +752,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-03-13T10:42:10.691755",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=DeepSight&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P219",
@@ -750,7 +768,7 @@
     "rating": 4.7,
     "reviews": 8900,
     "stock": 59,
-    "image": "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SL1500_.jpg",
     "badge": "الأكثر مبيعاً",
     "badge_en": "Best Seller",
     "active": true,
@@ -776,7 +794,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-03-13T10:42:10.691758",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=VitaTrack%205&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P220",
@@ -791,7 +810,7 @@
     "rating": 4.8,
     "reviews": 5600,
     "stock": 55,
-    "image": "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "Featured",
     "active": true,
@@ -817,7 +836,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-03-13T10:42:10.691761",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=HealthCore%20Pro&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P221",
@@ -832,7 +852,7 @@
     "rating": 4.9,
     "reviews": 12000,
     "stock": 30,
-    "image": "https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SL1500_.jpg",
     "badge": "الأفضل",
     "badge_en": "Top Pick",
     "active": true,
@@ -858,7 +878,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-03-13T10:42:10.691764",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Wellness%20Ring&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P222",
@@ -873,7 +894,7 @@
     "rating": 4.6,
     "reviews": 4200,
     "stock": 40,
-    "image": "https://images.unsplash.com/photo-1510771463146-e89e6e86560e?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "New",
     "active": true,
@@ -899,7 +920,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-03-13T10:42:10.691767",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Body%20X%20Scale&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P223",
@@ -914,7 +936,7 @@
     "rating": 4.5,
     "reviews": 2300,
     "stock": 23,
-    "image": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SL1500_.jpg",
     "badge": "رياضي",
     "badge_en": "Sport",
     "active": true,
@@ -940,7 +962,8 @@
     ],
     "shipping_days": 6,
     "added_at": "2026-03-13T10:42:10.691770",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Smart%20Pulse&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P224",
@@ -955,7 +978,7 @@
     "rating": 4.7,
     "reviews": 3800,
     "stock": 20,
-    "image": "https://images.unsplash.com/photo-1549476464-37392f717541?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SL1500_.jpg",
     "badge": "طبي",
     "badge_en": "Medical",
     "active": true,
@@ -981,7 +1004,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-03-13T10:42:10.691773",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=MedTrack&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P225",
@@ -996,7 +1020,7 @@
     "rating": 4.6,
     "reviews": 1700,
     "stock": 41,
-    "image": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SL1500_.jpg",
     "badge": "مبتكر",
     "badge_en": "Innovative",
     "active": true,
@@ -1022,7 +1046,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-03-13T10:42:10.691776",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=BioListen&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P226",
@@ -1037,7 +1062,7 @@
     "rating": 4.5,
     "reviews": 2100,
     "stock": 22,
-    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SL1500_.jpg",
     "badge": "إجهاد",
     "badge_en": "Stress",
     "active": true,
@@ -1063,7 +1088,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-03-13T10:42:10.691779",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Relax%20Pro&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P227",
@@ -1078,7 +1104,7 @@
     "rating": 4.4,
     "reviews": 980,
     "stock": 53,
-    "image": "https://images.unsplash.com/photo-1607962837359-5e7e89f86776?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SL1500_.jpg",
     "badge": "اقتصادي",
     "badge_en": "Value",
     "active": true,
@@ -1104,7 +1130,8 @@
     ],
     "shipping_days": 5,
     "added_at": "2026-03-13T10:42:10.691854",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=ActiveFit%20Band&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P228",
@@ -1119,7 +1146,7 @@
     "rating": 4.8,
     "reviews": 6700,
     "stock": 71,
-    "image": "https://images.unsplash.com/photo-1434682772747-f16d3ea162c3?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SL1500_.jpg",
     "badge": "الأكثر مبيعاً",
     "badge_en": "Best Seller",
     "active": true,
@@ -1145,7 +1172,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-03-13T10:42:10.691857",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=EcoHealth%20Plus&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P229",
@@ -1160,7 +1188,7 @@
     "rating": 4.8,
     "reviews": 15000,
     "stock": 26,
-    "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SL1500_.jpg",
     "badge": "الأكثر مبيعاً",
     "badge_en": "Best Seller",
     "active": true,
@@ -1186,7 +1214,8 @@
     ],
     "shipping_days": 6,
     "added_at": "2026-03-13T10:42:10.691863",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Echo%20Nova&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P230",
@@ -1201,7 +1230,7 @@
     "rating": 4.7,
     "reviews": 8900,
     "stock": 51,
-    "image": "https://images.unsplash.com/photo-1558002038-1055907df827?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "Featured",
     "active": true,
@@ -1227,7 +1256,8 @@
     ],
     "shipping_days": 5,
     "added_at": "2026-03-13T10:42:10.691866",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=SecureView%204K&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P231",
@@ -1242,7 +1272,7 @@
     "rating": 4.6,
     "reviews": 22000,
     "stock": 65,
-    "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SL1500_.jpg",
     "badge": "الأكثر مبيعاً",
     "badge_en": "Best Seller",
     "active": true,
@@ -1268,7 +1298,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-03-13T10:42:10.691869",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=SmartPlug%20Pro&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P232",
@@ -1283,7 +1314,7 @@
     "rating": 4.8,
     "reviews": 6700,
     "stock": 78,
-    "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SL1500_.jpg",
     "badge": "ذكي",
     "badge_en": "Smart",
     "active": true,
@@ -1309,7 +1340,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-03-13T10:42:10.691872",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=NeoClimate&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P233",
@@ -1324,7 +1356,7 @@
     "rating": 4.7,
     "reviews": 4500,
     "stock": 61,
-    "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SL1500_.jpg",
     "badge": "أمان",
     "badge_en": "Security",
     "active": true,
@@ -1350,7 +1382,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-03-13T10:42:10.691890",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=SmartLock%20X&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P234",
@@ -1365,7 +1398,7 @@
     "rating": 4.9,
     "reviews": 28000,
     "stock": 72,
-    "image": "https://images.unsplash.com/photo-1601924582970-9238bcb495d9?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SL1500_.jpg",
     "badge": "الأفضل",
     "badge_en": "Top Pick",
     "active": true,
@@ -1391,7 +1424,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-03-13T10:42:10.691896",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Hue%20Color%20Pro&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P235",
@@ -1406,7 +1440,7 @@
     "rating": 4.8,
     "reviews": 11000,
     "stock": 26,
-    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "Featured",
     "active": true,
@@ -1432,7 +1466,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-03-13T10:42:10.691900",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=CleanBot%20X&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P236",
@@ -1447,7 +1482,7 @@
     "rating": 4.7,
     "reviews": 7800,
     "stock": 22,
-    "image": "https://images.unsplash.com/photo-1567721913486-6585f069b332?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "New",
     "active": true,
@@ -1473,7 +1508,8 @@
     ],
     "shipping_days": 5,
     "added_at": "2026-03-13T10:42:10.691904",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=VideoBell%20Pro&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P237",
@@ -1488,7 +1524,7 @@
     "rating": 4.6,
     "reviews": 5200,
     "stock": 42,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SL1500_.jpg",
     "badge": "شبكة",
     "badge_en": "Network",
     "active": true,
@@ -1514,7 +1550,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-03-13T10:42:10.691909",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=MeshNet%20Pro&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P238",
@@ -1529,7 +1566,7 @@
     "rating": 4.9,
     "reviews": 3400,
     "stock": 69,
-    "image": "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SL1500_.jpg",
     "badge": "فاخر",
     "badge_en": "Luxury",
     "active": true,
@@ -1555,7 +1592,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-03-13T10:42:10.691913",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=FitMirror&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P239",
@@ -1570,7 +1608,7 @@
     "rating": 4.8,
     "reviews": 18000,
     "stock": 58,
-    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SL1500_.jpg",
     "badge": "الأكثر مبيعاً",
     "badge_en": "Best Seller",
     "active": true,
@@ -1596,7 +1634,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-03-13T10:42:10.691918",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=NoiseKiller%20X&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P240",
@@ -1611,7 +1650,7 @@
     "rating": 4.7,
     "reviews": 9800,
     "stock": 68,
-    "image": "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "Featured",
     "active": true,
@@ -1637,7 +1676,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-03-13T10:42:10.691922",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=BassBoomer%20Pro&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P241",
@@ -1652,7 +1692,7 @@
     "rating": 4.6,
     "reviews": 12000,
     "stock": 48,
-    "image": "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SL1500_.jpg",
     "badge": "خفيف",
     "badge_en": "Light",
     "active": true,
@@ -1678,7 +1718,8 @@
     ],
     "shipping_days": 6,
     "added_at": "2026-03-13T10:42:10.691926",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=AirFlow%203&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P242",
@@ -1693,7 +1734,7 @@
     "rating": 4.9,
     "reviews": 6700,
     "stock": 44,
-    "image": "https://images.unsplash.com/photo-1545127398-14699f92334b?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SL1500_.jpg",
     "badge": "برميوم",
     "badge_en": "Premium",
     "active": true,
@@ -1719,7 +1760,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-03-13T10:42:10.691931",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=DeepSound%20Elite&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P243",
@@ -1734,7 +1776,7 @@
     "rating": 4.5,
     "reviews": 5400,
     "stock": 31,
-    "image": "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SL1500_.jpg",
     "badge": "رياضي",
     "badge_en": "Sport",
     "active": true,
@@ -1760,7 +1802,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-03-13T10:42:10.691935",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=SportRun%20Pro&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P244",
@@ -1775,7 +1818,7 @@
     "rating": 4.7,
     "reviews": 4200,
     "stock": 77,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SL1500_.jpg",
     "badge": "ذكي",
     "badge_en": "Smart",
     "active": true,
@@ -1801,7 +1844,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-03-13T10:42:10.691940",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=MuseMind&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P245",
@@ -1816,7 +1860,7 @@
     "rating": 4.3,
     "reviews": 7800,
     "stock": 27,
-    "image": "https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SL1500_.jpg",
     "badge": "اقتصادي",
     "badge_en": "Value",
     "active": true,
@@ -1842,7 +1886,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-03-13T10:42:10.691943",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Mini%20Pods&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P246",
@@ -1857,7 +1902,7 @@
     "rating": 4.8,
     "reviews": 8900,
     "stock": 59,
-    "image": "https://images.unsplash.com/photo-1585298723682-7115561c51b7?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SL1500_.jpg",
     "badge": "وضوح",
     "badge_en": "Clarity",
     "active": true,
@@ -1883,7 +1928,8 @@
     ],
     "shipping_days": 6,
     "added_at": "2026-03-13T10:42:10.691947",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=UltraClear&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P247",
@@ -1898,7 +1944,7 @@
     "rating": 4.6,
     "reviews": 3300,
     "stock": 65,
-    "image": "https://images.unsplash.com/photo-1610894636781-8e5b4dc4c3d9?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "New",
     "active": true,
@@ -1924,7 +1970,8 @@
     ],
     "shipping_days": 5,
     "added_at": "2026-03-13T10:42:10.691951",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=NeoTone&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P248",
@@ -1939,7 +1986,7 @@
     "rating": 4.9,
     "reviews": 5100,
     "stock": 69,
-    "image": "https://images.unsplash.com/photo-1613040809024-b4ef7ba99bc3?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SL1500_.jpg",
     "badge": "الأفضل",
     "badge_en": "Top Pick",
     "active": true,
@@ -1965,7 +2012,8 @@
     ],
     "shipping_days": 6,
     "added_at": "2026-03-13T10:42:10.691954",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Crystal%20X%20Pro&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P249",
@@ -1980,7 +2028,7 @@
     "rating": 4.7,
     "reviews": 4500,
     "stock": 57,
-    "image": "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "Featured",
     "active": true,
@@ -2006,7 +2054,8 @@
     ],
     "shipping_days": 6,
     "added_at": "2026-03-13T10:42:10.691958",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=SmartPen%20X&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P250",
@@ -2021,7 +2070,7 @@
     "rating": 4.8,
     "reviews": 8900,
     "stock": 77,
-    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SL1500_.jpg",
     "badge": "الأكثر مبيعاً",
     "badge_en": "Best Seller",
     "active": true,
@@ -2047,7 +2096,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-03-13T10:42:10.691964",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=EcoType%20Pro&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P251",
@@ -2062,7 +2112,7 @@
     "rating": 4.7,
     "reviews": 6700,
     "stock": 56,
-    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SL1500_.jpg",
     "badge": "دقيق",
     "badge_en": "Precise",
     "active": true,
@@ -2088,7 +2138,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-03-13T10:42:10.691967",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=FlowTrack%20Pro&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P252",
@@ -2103,7 +2154,7 @@
     "rating": 4.8,
     "reviews": 3200,
     "stock": 73,
-    "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SL1500_.jpg",
     "badge": "محمول",
     "badge_en": "Portable",
     "active": true,
@@ -2129,7 +2180,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-03-13T10:42:10.691970",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=PortaDisplay%2015&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P253",
@@ -2144,7 +2196,7 @@
     "rating": 4.6,
     "reviews": 11000,
     "stock": 71,
-    "image": "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SL1500_.jpg",
     "badge": "ضروري",
     "badge_en": "Essential",
     "active": true,
@@ -2170,7 +2222,8 @@
     ],
     "shipping_days": 5,
     "added_at": "2026-03-13T10:42:10.691976",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=SmartHub%2012&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P254",
@@ -2185,7 +2238,7 @@
     "rating": 4.7,
     "reviews": 14000,
     "stock": 27,
-    "image": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SL1500_.jpg",
     "badge": "مبيعاً",
     "badge_en": "Popular",
     "active": true,
@@ -2211,7 +2264,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-03-13T10:42:10.691980",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=EcoStand%20Pro&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P255",
@@ -2226,7 +2280,7 @@
     "rating": 4.5,
     "reviews": 3800,
     "stock": 74,
-    "image": "https://images.unsplash.com/photo-1484788984921-03950022c9ef?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "New",
     "active": true,
@@ -2252,7 +2306,8 @@
     ],
     "shipping_days": 5,
     "added_at": "2026-03-13T10:42:10.691983",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=NeoFocus%20Chip&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P256",
@@ -2267,7 +2322,7 @@
     "rating": 4.6,
     "reviews": 5600,
     "stock": 66,
-    "image": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SL1500_.jpg",
     "badge": "مدهش",
     "badge_en": "Amazing",
     "active": true,
@@ -2293,7 +2348,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-03-13T10:42:10.691986",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=PocketPrint%20Mini&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P257",
@@ -2308,7 +2364,7 @@
     "rating": 4.8,
     "reviews": 9200,
     "stock": 25,
-    "image": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SL1500_.jpg",
     "badge": "احترافي",
     "badge_en": "Pro",
     "active": true,
@@ -2334,7 +2390,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-03-13T10:42:10.691989",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=CrystalCam%204K&tag=neopulsehub-20"
   },
   {
     "id": "NPH-P258",
@@ -2349,7 +2406,7 @@
     "rating": 4.5,
     "reviews": 2700,
     "stock": 75,
-    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SL1500_.jpg",
     "badge": "صوتي",
     "badge_en": "Audio",
     "active": true,
@@ -2375,7 +2432,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-03-13T10:42:10.691992",
-    "added_by": "pool_v1"
+    "added_by": "pool_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=VoiceRec%20Pro&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0059",
@@ -2390,7 +2448,7 @@
     "rating": 4.9,
     "reviews": 30695,
     "stock": 76,
-    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "تسريع",
     "badge_en": "Exclusive",
     "active": true,
@@ -2417,7 +2475,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-06-01T16:58:39.776828",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple%20Watch%20Ultra%202&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0060",
@@ -2432,7 +2491,7 @@
     "rating": 4.7,
     "reviews": 11011,
     "stock": 28,
-    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "Exclusive",
     "active": true,
@@ -2459,7 +2518,8 @@
     ],
     "shipping_days": 8,
     "added_at": "2026-06-01T16:58:39.776847",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung%20Galaxy%20Watch%207&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0061",
@@ -2474,7 +2534,7 @@
     "rating": 4.8,
     "reviews": 26115,
     "stock": 95,
-    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "الأكثر مبيعاً",
     "badge_en": "Best Seller",
     "active": true,
@@ -2501,7 +2561,8 @@
     ],
     "shipping_days": 6,
     "added_at": "2026-06-01T16:58:39.776860",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin%20Fenix%207X%20Pro&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0062",
@@ -2516,7 +2577,7 @@
     "rating": 4.5,
     "reviews": 32012,
     "stock": 35,
-    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "Hot",
     "active": true,
@@ -2543,7 +2604,8 @@
     ],
     "shipping_days": 10,
     "added_at": "2026-06-01T16:58:39.776870",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Fitbit%20Sense%202&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0063",
@@ -2558,7 +2620,7 @@
     "rating": 4.6,
     "reviews": 32181,
     "stock": 30,
-    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "حصري",
     "badge_en": "Hot",
     "active": true,
@@ -2585,7 +2647,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-06-01T16:58:39.776879",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Amazfit%20GTR%204&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0064",
@@ -2600,7 +2663,7 @@
     "rating": 4.4,
     "reviews": 4652,
     "stock": 70,
-    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "تسريع",
     "badge_en": "Best Seller",
     "active": true,
@@ -2627,7 +2690,8 @@
     ],
     "shipping_days": 5,
     "added_at": "2026-06-01T16:58:39.776892",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Fossil%20Gen%206%20Smartwatch&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0065",
@@ -2642,7 +2706,7 @@
     "rating": 4.6,
     "reviews": 49325,
     "stock": 65,
-    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "حصري",
     "badge_en": "Sale",
     "active": true,
@@ -2669,7 +2733,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-06-01T16:58:39.776901",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Huawei%20Watch%20GT%204&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0066",
@@ -2684,7 +2749,7 @@
     "rating": 4.5,
     "reviews": 48650,
     "stock": 83,
-    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "Best Seller",
     "active": true,
@@ -2711,7 +2776,8 @@
     ],
     "shipping_days": 9,
     "added_at": "2026-06-01T16:58:39.776909",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=TicWatch%20Pro%205&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0067",
@@ -2726,7 +2792,7 @@
     "rating": 4.7,
     "reviews": 10136,
     "stock": 35,
-    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "Featured",
     "active": true,
@@ -2753,7 +2819,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-06-01T16:58:39.776917",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung%20Galaxy%20Watch%206&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0068",
@@ -2768,7 +2835,7 @@
     "rating": 4.6,
     "reviews": 44356,
     "stock": 55,
-    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "Hot",
     "active": true,
@@ -2795,7 +2862,8 @@
     ],
     "shipping_days": 8,
     "added_at": "2026-06-01T16:58:39.776925",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple%20Watch%20SE%202&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0069",
@@ -2810,7 +2878,7 @@
     "rating": 4.9,
     "reviews": 28225,
     "stock": 44,
-    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8ae?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SL1500_.jpg",
     "badge": "حصري",
     "badge_en": "Best Seller",
     "active": true,
@@ -2837,7 +2905,8 @@
     ],
     "shipping_days": 5,
     "added_at": "2026-06-01T16:58:39.776932",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple%20AirPods%20Pro%202&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0070",
@@ -2852,7 +2921,7 @@
     "rating": 4.7,
     "reviews": 28325,
     "stock": 45,
-    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8ae?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "Limited",
     "active": true,
@@ -2879,7 +2948,8 @@
     ],
     "shipping_days": 10,
     "added_at": "2026-06-01T16:58:39.776941",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung%20Galaxy%20Buds2%20Pro&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0071",
@@ -2894,7 +2964,7 @@
     "rating": 4.8,
     "reviews": 39231,
     "stock": 88,
-    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8ae?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "Exclusive",
     "active": true,
@@ -2921,7 +2991,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-06-01T16:58:39.776952",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Sony%20WF-1000XM5&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0072",
@@ -2936,7 +3007,7 @@
     "rating": 4.7,
     "reviews": 8835,
     "stock": 78,
-    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8ae?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SL1500_.jpg",
     "badge": "عرض محدود",
     "badge_en": "Hot",
     "active": true,
@@ -2963,7 +3034,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-06-01T16:58:39.776960",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Bose%20QuietComfort%20Ultra%20Earbuds&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0073",
@@ -2978,7 +3050,7 @@
     "rating": 4.6,
     "reviews": 41774,
     "stock": 28,
-    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8ae?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SL1500_.jpg",
     "badge": "حصري",
     "badge_en": "Hot",
     "active": true,
@@ -3005,7 +3077,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-06-01T16:58:39.776968",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Jabra%20Elite%2085t&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0074",
@@ -3020,7 +3093,7 @@
     "rating": 4.5,
     "reviews": 9887,
     "stock": 75,
-    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8ae?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SL1500_.jpg",
     "badge": "حصري",
     "badge_en": "Limited",
     "active": true,
@@ -3047,7 +3120,8 @@
     ],
     "shipping_days": 8,
     "added_at": "2026-06-01T16:58:39.776975",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Anker%20Soundcore%20Space%20A40&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0075",
@@ -3062,7 +3136,7 @@
     "rating": 4.8,
     "reviews": 41242,
     "stock": 37,
-    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8ae?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SL1500_.jpg",
     "badge": "تسريع",
     "badge_en": "Featured",
     "active": true,
@@ -3089,7 +3163,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-06-01T16:58:39.776983",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Sennheiser%20Momentum%204%20Wireless&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0076",
@@ -3104,7 +3179,7 @@
     "rating": 4.6,
     "reviews": 21044,
     "stock": 71,
-    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8ae?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "New",
     "active": true,
@@ -3131,7 +3206,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-06-01T16:58:39.776990",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Beats%20Studio%20Pro&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0077",
@@ -3146,7 +3222,7 @@
     "rating": 4.6,
     "reviews": 16694,
     "stock": 57,
-    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8ae?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "Limited",
     "active": true,
@@ -3173,7 +3249,8 @@
     ],
     "shipping_days": 9,
     "added_at": "2026-06-01T16:58:39.776998",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Google%20Pixel%20Buds%20Pro&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0078",
@@ -3188,7 +3265,7 @@
     "rating": 4.5,
     "reviews": 14560,
     "stock": 44,
-    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8ae?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "Featured",
     "active": true,
@@ -3215,7 +3292,8 @@
     ],
     "shipping_days": 9,
     "added_at": "2026-06-01T16:58:39.777007",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=OnePlus%20Buds%20Pro%202&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0079",
@@ -3230,7 +3308,7 @@
     "rating": 4.9,
     "reviews": 18764,
     "stock": 81,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "Exclusive",
     "active": true,
@@ -3257,7 +3335,8 @@
     ],
     "shipping_days": 10,
     "added_at": "2026-06-01T16:58:39.777015",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Sony%20WH-1000XM5&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0080",
@@ -3272,7 +3351,7 @@
     "rating": 4.8,
     "reviews": 8547,
     "stock": 51,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "Best Seller",
     "active": true,
@@ -3299,7 +3378,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-06-01T16:58:39.777023",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Bose%20QuietComfort%20Ultra%20Headphones&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0081",
@@ -3314,7 +3394,7 @@
     "rating": 4.7,
     "reviews": 11241,
     "stock": 75,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "Exclusive",
     "active": true,
@@ -3341,7 +3421,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-06-01T16:58:39.777030",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple%20AirPods%20Max&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0082",
@@ -3356,7 +3437,7 @@
     "rating": 4.8,
     "reviews": 13284,
     "stock": 38,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SL1500_.jpg",
     "badge": "تسريع",
     "badge_en": "Best Seller",
     "active": true,
@@ -3383,7 +3464,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-06-01T16:58:39.777038",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Sennheiser%20Momentum%204&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0083",
@@ -3398,7 +3480,7 @@
     "rating": 4.7,
     "reviews": 13449,
     "stock": 44,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "Featured",
     "active": true,
@@ -3425,7 +3507,8 @@
     ],
     "shipping_days": 8,
     "added_at": "2026-06-01T16:58:39.777046",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Audio-Technica%20ATH-M50x&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0084",
@@ -3440,7 +3523,7 @@
     "rating": 4.6,
     "reviews": 28805,
     "stock": 74,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "Featured",
     "active": true,
@@ -3467,7 +3550,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-06-01T16:58:39.777053",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=JBL%20Tour%20One%20M2&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0085",
@@ -3482,7 +3566,7 @@
     "rating": 4.5,
     "reviews": 22546,
     "stock": 55,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SL1500_.jpg",
     "badge": "حصري",
     "badge_en": "Featured",
     "active": true,
@@ -3509,7 +3593,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-06-01T16:58:39.777061",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Beats%20Studio3%20Wireless&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0086",
@@ -3524,7 +3609,7 @@
     "rating": 4.7,
     "reviews": 29576,
     "stock": 64,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "Limited",
     "active": true,
@@ -3551,7 +3636,8 @@
     ],
     "shipping_days": 6,
     "added_at": "2026-06-01T16:58:39.777069",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=SteelSeries%20Arctis%20Nova%20Pro&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0087",
@@ -3566,7 +3652,7 @@
     "rating": 4.6,
     "reviews": 45114,
     "stock": 38,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SL1500_.jpg",
     "badge": "عرض محدود",
     "badge_en": "Exclusive",
     "active": true,
@@ -3593,7 +3679,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-06-01T16:58:39.777077",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=HyperX%20Cloud%20III&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0088",
@@ -3608,7 +3695,7 @@
     "rating": 4.5,
     "reviews": 25462,
     "stock": 33,
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SL1500_.jpg",
     "badge": "عرض محدود",
     "badge_en": "Limited",
     "active": true,
@@ -3635,7 +3722,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-06-01T16:58:39.777085",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Razer%20BlackShark%20V2&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0089",
@@ -3650,7 +3738,7 @@
     "rating": 4.7,
     "reviews": 14267,
     "stock": 54,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "New",
     "active": true,
@@ -3677,7 +3765,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-06-01T16:58:39.777094",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Amazon%20Echo%20Dot%20%285th%20Gen%29&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0090",
@@ -3692,7 +3781,7 @@
     "rating": 4.6,
     "reviews": 33999,
     "stock": 54,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SL1500_.jpg",
     "badge": "الأكثر مبيعاً",
     "badge_en": "Sale",
     "active": true,
@@ -3719,7 +3808,8 @@
     ],
     "shipping_days": 5,
     "added_at": "2026-06-01T16:58:39.777102",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Google%20Nest%20Hub%20%282nd%20Gen%29&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0091",
@@ -3734,7 +3824,7 @@
     "rating": 4.5,
     "reviews": 19628,
     "stock": 49,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SL1500_.jpg",
     "badge": "الأكثر مبيعاً",
     "badge_en": "Best Seller",
     "active": true,
@@ -3761,7 +3851,8 @@
     ],
     "shipping_days": 9,
     "added_at": "2026-06-01T16:58:39.777109",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Arlo%20Pro%204K%20Security%20Camera&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0092",
@@ -3776,7 +3867,7 @@
     "rating": 4.6,
     "reviews": 10880,
     "stock": 92,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "Hot",
     "active": true,
@@ -3803,7 +3894,8 @@
     ],
     "shipping_days": 5,
     "added_at": "2026-06-01T16:58:39.777117",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Ring%20Video%20Doorbell%204&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0093",
@@ -3818,7 +3910,7 @@
     "rating": 4.6,
     "reviews": 38462,
     "stock": 52,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SL1500_.jpg",
     "badge": "حصري",
     "badge_en": "Exclusive",
     "active": true,
@@ -3845,7 +3937,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-06-01T16:58:39.777124",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=TP-Link%20Kasa%20Smart%20Plugs&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0094",
@@ -3860,7 +3953,7 @@
     "rating": 4.8,
     "reviews": 38237,
     "stock": 74,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "Limited",
     "active": true,
@@ -3887,7 +3980,8 @@
     ],
     "shipping_days": 6,
     "added_at": "2026-06-01T16:58:39.777131",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Philips%20Hue%20Starter%20Kit&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0095",
@@ -3902,7 +3996,7 @@
     "rating": 4.7,
     "reviews": 15148,
     "stock": 86,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SL1500_.jpg",
     "badge": "تسريع",
     "badge_en": "Limited",
     "active": true,
@@ -3929,7 +4023,8 @@
     ],
     "shipping_days": 10,
     "added_at": "2026-06-01T16:58:39.777139",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Ecobee%20SmartThermostat&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0096",
@@ -3944,7 +4039,7 @@
     "rating": 4.5,
     "reviews": 3724,
     "stock": 29,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SL1500_.jpg",
     "badge": "الأكثر مبيعاً",
     "badge_en": "Limited",
     "active": true,
@@ -3971,7 +4066,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-06-01T16:58:39.777147",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=August%20Smart%20Lock%20Pro&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0097",
@@ -3986,7 +4082,7 @@
     "rating": 4.4,
     "reviews": 43483,
     "stock": 64,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SL1500_.jpg",
     "badge": "حصري",
     "badge_en": "Limited",
     "active": true,
@@ -4013,7 +4109,8 @@
     ],
     "shipping_days": 5,
     "added_at": "2026-06-01T16:58:39.777154",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Google%20Nest%20Temperature%20Sensor&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0098",
@@ -4028,7 +4125,7 @@
     "rating": 4.6,
     "reviews": 46605,
     "stock": 49,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SL1500_.jpg",
     "badge": "تسريع",
     "badge_en": "Exclusive",
     "active": true,
@@ -4055,7 +4152,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-06-01T16:58:39.777162",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung%20Smart%20TV%2055%20inch&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0099",
@@ -4070,7 +4168,7 @@
     "rating": 4.7,
     "reviews": 17003,
     "stock": 64,
-    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "Best Seller",
     "active": true,
@@ -4097,7 +4195,8 @@
     ],
     "shipping_days": 9,
     "added_at": "2026-06-01T16:58:39.777169",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Omron%20Evolv%20Blood%20Pressure%20Monitor&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0100",
@@ -4112,7 +4211,7 @@
     "rating": 4.5,
     "reviews": 18366,
     "stock": 62,
-    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "Sale",
     "active": true,
@@ -4139,7 +4238,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-06-01T16:58:39.777177",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Ava%20Fertility%20Tracker%20Bracelet&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0101",
@@ -4154,7 +4254,7 @@
     "rating": 4.8,
     "reviews": 33756,
     "stock": 87,
-    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SL1500_.jpg",
     "badge": "عرض محدود",
     "badge_en": "Exclusive",
     "active": true,
@@ -4181,7 +4281,8 @@
     ],
     "shipping_days": 8,
     "added_at": "2026-06-01T16:58:39.777184",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=FreeStyle%20Libre%20CGM&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0102",
@@ -4196,7 +4297,7 @@
     "rating": 4.6,
     "reviews": 47346,
     "stock": 58,
-    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "Exclusive",
     "active": true,
@@ -4223,7 +4324,8 @@
     ],
     "shipping_days": 8,
     "added_at": "2026-06-01T16:58:39.777192",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Air%20Doctor%20Pro%20Air%20Purifier&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0103",
@@ -4238,7 +4340,7 @@
     "rating": 4.7,
     "reviews": 37544,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "Best Seller",
     "active": true,
@@ -4265,7 +4367,8 @@
     ],
     "shipping_days": 5,
     "added_at": "2026-06-01T16:58:39.777202",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Oral-B%20iO%20Series%209&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0104",
@@ -4280,7 +4383,7 @@
     "rating": 4.8,
     "reviews": 1130,
     "stock": 57,
-    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SL1500_.jpg",
     "badge": "الأكثر مبيعاً",
     "badge_en": "New",
     "active": true,
@@ -4307,7 +4410,8 @@
     ],
     "shipping_days": 8,
     "added_at": "2026-06-01T16:58:39.777209",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Theragun%20Prime&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0105",
@@ -4322,7 +4426,7 @@
     "rating": 4.4,
     "reviews": 17744,
     "stock": 38,
-    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "Sale",
     "active": true,
@@ -4349,7 +4453,8 @@
     ],
     "shipping_days": 5,
     "added_at": "2026-06-01T16:58:39.777217",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Neck%20Massager%20with%20Heat&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0106",
@@ -4364,7 +4469,7 @@
     "rating": 4.6,
     "reviews": 16101,
     "stock": 94,
-    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "Best Seller",
     "active": true,
@@ -4391,7 +4496,8 @@
     ],
     "shipping_days": 10,
     "added_at": "2026-06-01T16:58:39.777224",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=ResMed%20AirMini%20CPAP&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0107",
@@ -4406,7 +4512,7 @@
     "rating": 4.7,
     "reviews": 5394,
     "stock": 50,
-    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "Featured",
     "active": true,
@@ -4433,7 +4539,8 @@
     ],
     "shipping_days": 6,
     "added_at": "2026-06-01T16:58:39.777232",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Withings%20Body%20Smart%20Scale&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0108",
@@ -4448,7 +4555,7 @@
     "rating": 4.5,
     "reviews": 11034,
     "stock": 67,
-    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SL1500_.jpg",
     "badge": "الأكثر مبيعاً",
     "badge_en": "New",
     "active": true,
@@ -4475,7 +4582,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-06-01T16:58:39.777242",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Fingertip%20Pulse%20Oximeter&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0109",
@@ -4490,7 +4598,7 @@
     "rating": 4.9,
     "reviews": 26212,
     "stock": 43,
-    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SL1500_.jpg",
     "badge": "تسريع",
     "badge_en": "New",
     "active": true,
@@ -4517,7 +4625,8 @@
     ],
     "shipping_days": 9,
     "added_at": "2026-06-01T16:58:39.777254",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=MacBook%20Air%20M3&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0110",
@@ -4532,7 +4641,7 @@
     "rating": 4.7,
     "reviews": 33887,
     "stock": 75,
-    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SL1500_.jpg",
     "badge": "الأكثر مبيعاً",
     "badge_en": "New",
     "active": true,
@@ -4559,7 +4668,8 @@
     ],
     "shipping_days": 9,
     "added_at": "2026-06-01T16:58:39.777267",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Dell%20XPS%2013%20Plus&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0111",
@@ -4574,7 +4684,7 @@
     "rating": 4.6,
     "reviews": 5625,
     "stock": 31,
-    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "Featured",
     "active": true,
@@ -4601,7 +4711,8 @@
     ],
     "shipping_days": 8,
     "added_at": "2026-06-01T16:58:39.777279",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=HP%20Spectre%20x360&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0112",
@@ -4616,7 +4727,7 @@
     "rating": 4.8,
     "reviews": 4724,
     "stock": 74,
-    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SL1500_.jpg",
     "badge": "تسريع",
     "badge_en": "Hot",
     "active": true,
@@ -4643,7 +4754,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-06-01T16:58:39.777290",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Lenovo%20ThinkPad%20X1%20Carbon&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0113",
@@ -4658,7 +4770,7 @@
     "rating": 4.6,
     "reviews": 3491,
     "stock": 20,
-    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "Limited",
     "active": true,
@@ -4685,7 +4797,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-06-01T16:58:39.777297",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=ASUS%20ZenBook%2014&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0114",
@@ -4700,7 +4813,7 @@
     "rating": 4.8,
     "reviews": 37522,
     "stock": 22,
-    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "Exclusive",
     "active": true,
@@ -4727,7 +4840,8 @@
     ],
     "shipping_days": 5,
     "added_at": "2026-06-01T16:58:39.777305",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple%20iPad%20Pro%2011%20inch&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0115",
@@ -4742,7 +4856,7 @@
     "rating": 4.7,
     "reviews": 12291,
     "stock": 22,
-    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SL1500_.jpg",
     "badge": "الأكثر مبيعاً",
     "badge_en": "Sale",
     "active": true,
@@ -4769,7 +4883,8 @@
     ],
     "shipping_days": 8,
     "added_at": "2026-06-01T16:58:39.777312",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple%20iPad%20Air%2010.9%20inch&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0116",
@@ -4784,7 +4899,7 @@
     "rating": 4.6,
     "reviews": 48688,
     "stock": 24,
-    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "Hot",
     "active": true,
@@ -4811,7 +4926,8 @@
     ],
     "shipping_days": 6,
     "added_at": "2026-06-01T16:58:39.777320",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung%20Galaxy%20Tab%20S9&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0117",
@@ -4826,7 +4942,7 @@
     "rating": 4.8,
     "reviews": 5833,
     "stock": 27,
-    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SL1500_.jpg",
     "badge": "عرض محدود",
     "badge_en": "Sale",
     "active": true,
@@ -4853,7 +4969,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-06-01T16:58:39.777327",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple%20Pencil%20Pro&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0118",
@@ -4868,7 +4985,7 @@
     "rating": 4.9,
     "reviews": 49861,
     "stock": 76,
-    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "Featured",
     "active": true,
@@ -4895,7 +5012,8 @@
     ],
     "shipping_days": 8,
     "added_at": "2026-06-01T16:58:39.777339",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech%20MX%20Master%203S&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0119",
@@ -4910,7 +5028,7 @@
     "rating": 4.9,
     "reviews": 40616,
     "stock": 39,
-    "image": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SL1500_.jpg",
     "badge": "الأكثر مبيعاً",
     "badge_en": "Featured",
     "active": true,
@@ -4937,7 +5055,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-06-01T16:58:39.777347",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=PlayStation%205&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0120",
@@ -4952,7 +5071,7 @@
     "rating": 4.8,
     "reviews": 13017,
     "stock": 80,
-    "image": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SL1500_.jpg",
     "badge": "عرض محدود",
     "badge_en": "Featured",
     "active": true,
@@ -4979,7 +5098,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-06-01T16:58:39.777354",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Xbox%20Series%20X&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0121",
@@ -4994,7 +5114,7 @@
     "rating": 4.8,
     "reviews": 4094,
     "stock": 85,
-    "image": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SL1500_.jpg",
     "badge": "تسريع",
     "badge_en": "Best Seller",
     "active": true,
@@ -5021,7 +5141,8 @@
     ],
     "shipping_days": 6,
     "added_at": "2026-06-01T16:58:39.777361",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Nintendo%20Switch%20OLED&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0122",
@@ -5036,7 +5157,7 @@
     "rating": 4.7,
     "reviews": 34447,
     "stock": 86,
-    "image": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "Best Seller",
     "active": true,
@@ -5063,7 +5184,8 @@
     ],
     "shipping_days": 10,
     "added_at": "2026-06-01T16:58:39.777370",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Meta%20Quest%203%20VR%20Headset&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0123",
@@ -5078,7 +5200,7 @@
     "rating": 4.8,
     "reviews": 41005,
     "stock": 99,
-    "image": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "Best Seller",
     "active": true,
@@ -5105,7 +5227,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-06-01T16:58:39.777377",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Steam%20Deck%20OLED&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0124",
@@ -5120,7 +5243,7 @@
     "rating": 4.6,
     "reviews": 15235,
     "stock": 54,
-    "image": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SL1500_.jpg",
     "badge": "تسريع",
     "badge_en": "Limited",
     "active": true,
@@ -5147,7 +5270,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-06-01T16:58:39.777384",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Razer%20Iskur%20V2%20Gaming%20Chair&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0125",
@@ -5162,7 +5286,7 @@
     "rating": 4.7,
     "reviews": 49932,
     "stock": 92,
-    "image": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "Best Seller",
     "active": true,
@@ -5189,7 +5313,8 @@
     ],
     "shipping_days": 9,
     "added_at": "2026-06-01T16:58:39.777392",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung%20Odyssey%20G7%20Gaming%20Monitor&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0126",
@@ -5204,7 +5329,7 @@
     "rating": 4.7,
     "reviews": 48653,
     "stock": 48,
-    "image": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SL1500_.jpg",
     "badge": "حصري",
     "badge_en": "Limited",
     "active": true,
@@ -5231,7 +5356,8 @@
     ],
     "shipping_days": 9,
     "added_at": "2026-06-01T16:58:39.777400",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Astro%20A50%20Gaming%20Headset&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0127",
@@ -5246,7 +5372,7 @@
     "rating": 4.9,
     "reviews": 30803,
     "stock": 76,
-    "image": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "Exclusive",
     "active": true,
@@ -5273,7 +5399,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-06-01T16:58:39.777407",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech%20G%20Pro%20X%20Superlight%202&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0128",
@@ -5288,7 +5415,7 @@
     "rating": 4.7,
     "reviews": 23949,
     "stock": 87,
-    "image": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SL1500_.jpg",
     "badge": "حصري",
     "badge_en": "Limited",
     "active": true,
@@ -5315,7 +5442,8 @@
     ],
     "shipping_days": 9,
     "added_at": "2026-06-01T16:58:39.777414",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Corsair%20K70%20Pro%20Mechanical&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0129",
@@ -5330,7 +5458,7 @@
     "rating": 4.9,
     "reviews": 19492,
     "stock": 95,
-    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SL1500_.jpg",
     "badge": "تسريع",
     "badge_en": "New",
     "active": true,
@@ -5357,7 +5485,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-06-01T16:58:39.777423",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Sony%20Alpha%20A7%20IV&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0130",
@@ -5372,7 +5501,7 @@
     "rating": 4.8,
     "reviews": 17917,
     "stock": 64,
-    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "Best Seller",
     "active": true,
@@ -5399,7 +5528,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-06-01T16:58:39.777431",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Canon%20EOS%20R6%20Mark%20II&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0131",
@@ -5414,7 +5544,7 @@
     "rating": 4.8,
     "reviews": 26860,
     "stock": 97,
-    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SL1500_.jpg",
     "badge": "الأكثر مبيعاً",
     "badge_en": "Sale",
     "active": true,
@@ -5441,7 +5571,8 @@
     ],
     "shipping_days": 10,
     "added_at": "2026-06-01T16:58:39.777438",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Fujifilm%20X-T5&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0132",
@@ -5456,7 +5587,7 @@
     "rating": 4.9,
     "reviews": 38720,
     "stock": 53,
-    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SL1500_.jpg",
     "badge": "الأكثر مبيعاً",
     "badge_en": "Exclusive",
     "active": true,
@@ -5483,7 +5614,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-06-01T16:58:39.777446",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Nikon%20Z8&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0133",
@@ -5498,7 +5630,7 @@
     "rating": 4.7,
     "reviews": 21764,
     "stock": 60,
-    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "Sale",
     "active": true,
@@ -5525,7 +5657,8 @@
     ],
     "shipping_days": 6,
     "added_at": "2026-06-01T16:58:39.777453",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=GoPro%20HERO12%20Black&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0134",
@@ -5540,7 +5673,7 @@
     "rating": 4.8,
     "reviews": 13900,
     "stock": 27,
-    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "Hot",
     "active": true,
@@ -5567,7 +5700,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-06-01T16:58:39.777461",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=DJI%20Osmo%20Pocket%203&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0135",
@@ -5582,7 +5716,7 @@
     "rating": 4.7,
     "reviews": 13821,
     "stock": 58,
-    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SL1500_.jpg",
     "badge": "حصري",
     "badge_en": "New",
     "active": true,
@@ -5609,7 +5743,8 @@
     ],
     "shipping_days": 9,
     "added_at": "2026-06-01T16:58:39.777468",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Insta360%20X4&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0136",
@@ -5624,7 +5759,7 @@
     "rating": 4.7,
     "reviews": 34090,
     "stock": 35,
-    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SL1500_.jpg",
     "badge": "الأكثر مبيعاً",
     "badge_en": "Featured",
     "active": true,
@@ -5651,7 +5786,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-06-01T16:58:39.777476",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech%20Brio%204K%20Webcam&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0137",
@@ -5666,7 +5802,7 @@
     "rating": 4.5,
     "reviews": 47476,
     "stock": 28,
-    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "Exclusive",
     "active": true,
@@ -5693,7 +5829,8 @@
     ],
     "shipping_days": 6,
     "added_at": "2026-06-01T16:58:39.777483",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Ring%20Indoor%20Cam&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0138",
@@ -5708,7 +5845,7 @@
     "rating": 4.6,
     "reviews": 41008,
     "stock": 25,
-    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SL1500_.jpg",
     "badge": "عرض محدود",
     "badge_en": "Hot",
     "active": true,
@@ -5735,7 +5872,8 @@
     ],
     "shipping_days": 5,
     "added_at": "2026-06-01T16:58:39.777491",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Arlo%20Essential%20Spotlight&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0139",
@@ -5750,7 +5888,7 @@
     "rating": 4.5,
     "reviews": 3269,
     "stock": 86,
-    "image": "https://images.unsplash.com/photo-1574482620811-1aa16ffe3c82?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71p0U-c1D9L._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "Hot",
     "active": true,
@@ -5777,7 +5915,8 @@
     ],
     "shipping_days": 9,
     "added_at": "2026-06-01T16:58:39.777499",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Ray-Ban%20Meta%20Smart%20Glasses&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0140",
@@ -5792,7 +5931,7 @@
     "rating": 4.6,
     "reviews": 46438,
     "stock": 27,
-    "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "Hot",
     "active": true,
@@ -5819,7 +5958,8 @@
     ],
     "shipping_days": 8,
     "added_at": "2026-06-01T16:58:39.777506",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Targus%20Newport%20Convertible&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0141",
@@ -5834,7 +5974,7 @@
     "rating": 4.7,
     "reviews": 14891,
     "stock": 23,
-    "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "New",
     "active": true,
@@ -5861,7 +6001,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-06-01T16:58:39.777513",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple%20MagSafe%20Charger&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0142",
@@ -5876,7 +6017,7 @@
     "rating": 4.8,
     "reviews": 1619,
     "stock": 78,
-    "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "New",
     "active": true,
@@ -5903,7 +6044,8 @@
     ],
     "shipping_days": 8,
     "added_at": "2026-06-01T16:58:39.777521",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Anker%20PowerCore%2020000&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0143",
@@ -5918,7 +6060,7 @@
     "rating": 4.5,
     "reviews": 38752,
     "stock": 24,
-    "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "حصري",
     "badge_en": "New",
     "active": true,
@@ -5945,7 +6087,8 @@
     ],
     "shipping_days": 9,
     "added_at": "2026-06-01T16:58:39.777528",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Coil%20Phone%20Stand&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0144",
@@ -5960,7 +6103,7 @@
     "rating": 4.4,
     "reviews": 3108,
     "stock": 84,
-    "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "Featured",
     "active": true,
@@ -5987,7 +6130,8 @@
     ],
     "shipping_days": 6,
     "added_at": "2026-06-01T16:58:39.777536",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple%20EarPods%20Lightning&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0145",
@@ -6002,7 +6146,7 @@
     "rating": 4.7,
     "reviews": 32024,
     "stock": 79,
-    "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "عرض محدود",
     "badge_en": "Hot",
     "active": true,
@@ -6029,7 +6173,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-06-01T16:58:39.777543",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Anker%20USB-C%20Cable%206ft&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0146",
@@ -6044,7 +6189,7 @@
     "rating": 4.6,
     "reviews": 21099,
     "stock": 66,
-    "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "الأكثر مبيعاً",
     "badge_en": "Best Seller",
     "active": true,
@@ -6071,7 +6216,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-06-01T16:58:39.777551",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=MacMate%20Watch%20Stand&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0147",
@@ -6086,7 +6232,7 @@
     "rating": 4.5,
     "reviews": 39730,
     "stock": 82,
-    "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "Best Seller",
     "active": true,
@@ -6113,7 +6259,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-06-01T16:58:39.777558",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=AirPods%20Pro%20Case&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0148",
@@ -6128,7 +6275,7 @@
     "rating": 4.4,
     "reviews": 39226,
     "stock": 59,
-    "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "Hot",
     "active": true,
@@ -6155,7 +6302,8 @@
     ],
     "shipping_days": 6,
     "added_at": "2026-06-01T16:58:39.777565",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=iPhone%2015%20Pro%20Screen%20Protector&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0149",
@@ -6170,7 +6318,7 @@
     "rating": 4.7,
     "reviews": 20799,
     "stock": 42,
-    "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "Sale",
     "active": true,
@@ -6197,7 +6345,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-06-01T16:58:39.777573",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Ninja%20Foodi%20Power%20Pitcher&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0150",
@@ -6212,7 +6361,7 @@
     "rating": 4.8,
     "reviews": 40313,
     "stock": 63,
-    "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "Best Seller",
     "active": true,
@@ -6239,7 +6388,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-06-01T16:58:39.777584",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Breville%20Barista%20Express&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0151",
@@ -6254,7 +6404,7 @@
     "rating": 4.6,
     "reviews": 24239,
     "stock": 57,
-    "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "الأكثر مبيعاً",
     "badge_en": "Exclusive",
     "active": true,
@@ -6281,7 +6431,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-06-01T16:58:39.777592",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=George%20Foreman%20Contact%20Grill&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0152",
@@ -6296,7 +6447,7 @@
     "rating": 4.7,
     "reviews": 7526,
     "stock": 22,
-    "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "New",
     "active": true,
@@ -6323,7 +6474,8 @@
     ],
     "shipping_days": 5,
     "added_at": "2026-06-01T16:58:39.777599",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Cosori%20Air%20Fryer%205.8qt&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0153",
@@ -6338,7 +6490,7 @@
     "rating": 4.5,
     "reviews": 4134,
     "stock": 68,
-    "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "حصري",
     "badge_en": "Sale",
     "active": true,
@@ -6365,7 +6517,8 @@
     ],
     "shipping_days": 10,
     "added_at": "2026-06-01T16:58:39.777607",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Cuisinart%20TOAST-PIX&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0154",
@@ -6380,7 +6533,7 @@
     "rating": 4.6,
     "reviews": 23645,
     "stock": 62,
-    "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "عرض محدود",
     "badge_en": "Best Seller",
     "active": true,
@@ -6407,7 +6560,8 @@
     ],
     "shipping_days": 10,
     "added_at": "2026-06-01T16:58:39.777615",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Hamilton%20Beach%20Kettle&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0155",
@@ -6422,7 +6576,7 @@
     "rating": 4.5,
     "reviews": 4170,
     "stock": 26,
-    "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "Hot",
     "active": true,
@@ -6449,7 +6603,8 @@
     ],
     "shipping_days": 10,
     "added_at": "2026-06-01T16:58:39.777653",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Cuisinart%20DBM-8%20Supreme&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0156",
@@ -6464,7 +6619,7 @@
     "rating": 4.4,
     "reviews": 22251,
     "stock": 38,
-    "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "Sale",
     "active": true,
@@ -6491,7 +6646,8 @@
     ],
     "shipping_days": 5,
     "added_at": "2026-06-01T16:58:39.777660",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Smart%20Food%20Scale&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0157",
@@ -6506,7 +6662,7 @@
     "rating": 4.5,
     "reviews": 29567,
     "stock": 77,
-    "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "Limited",
     "active": true,
@@ -6533,7 +6689,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-06-01T16:58:39.777668",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Kitchen%20iPad%20Stand&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0158",
@@ -6548,7 +6705,7 @@
     "rating": 4.6,
     "reviews": 11163,
     "stock": 75,
-    "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "الأكثر مبيعاً",
     "badge_en": "Best Seller",
     "active": true,
@@ -6575,7 +6732,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-06-01T16:58:39.777676",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung%20Smart%20Fridge&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0159",
@@ -6590,7 +6748,7 @@
     "rating": 4.7,
     "reviews": 34756,
     "stock": 45,
-    "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3408?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "Best Seller",
     "active": true,
@@ -6617,7 +6775,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-06-01T16:58:39.777683",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Bowflex%20SelectTech%20552&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0160",
@@ -6632,7 +6791,7 @@
     "rating": 4.8,
     "reviews": 9783,
     "stock": 61,
-    "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3408?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "New",
     "active": true,
@@ -6659,7 +6818,8 @@
     ],
     "shipping_days": 6,
     "added_at": "2026-06-01T16:58:39.777691",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Hypervolt%20GO%202&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0161",
@@ -6674,7 +6834,7 @@
     "rating": 4.6,
     "reviews": 16370,
     "stock": 74,
-    "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3408?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "Limited",
     "active": true,
@@ -6701,7 +6861,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-06-01T16:58:39.777698",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Ninebot%20MAX%20G2&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0162",
@@ -6716,7 +6877,7 @@
     "rating": 4.7,
     "reviews": 19176,
     "stock": 88,
-    "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3408?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "حصري",
     "badge_en": "Hot",
     "active": true,
@@ -6743,7 +6904,8 @@
     ],
     "shipping_days": 9,
     "added_at": "2026-06-01T16:58:39.777706",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Peloton%20Bike%2B&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0163",
@@ -6758,7 +6920,7 @@
     "rating": 4.8,
     "reviews": 30863,
     "stock": 73,
-    "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3408?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "تسريع",
     "badge_en": "Sale",
     "active": true,
@@ -6785,7 +6947,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-06-01T16:58:39.777713",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin%20Forerunner%20965&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0164",
@@ -6800,7 +6963,7 @@
     "rating": 4.5,
     "reviews": 21104,
     "stock": 70,
-    "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3408?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "Featured",
     "active": true,
@@ -6827,7 +6990,8 @@
     ],
     "shipping_days": 5,
     "added_at": "2026-06-01T16:58:39.777721",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Smart%20Jump%20Rope&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0165",
@@ -6842,7 +7006,7 @@
     "rating": 4.7,
     "reviews": 18705,
     "stock": 62,
-    "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3408?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "الأكثر مبيعاً",
     "badge_en": "Exclusive",
     "active": true,
@@ -6869,7 +7033,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-06-01T16:58:39.777728",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Gaiam%20Premium%20Yoga%20Mat&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0166",
@@ -6884,7 +7049,7 @@
     "rating": 4.6,
     "reviews": 42524,
     "stock": 55,
-    "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3408?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "Hot",
     "active": true,
@@ -6911,7 +7076,8 @@
     ],
     "shipping_days": 9,
     "added_at": "2026-06-01T16:58:39.777736",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Pendoji%20Badminton%20Racket&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0167",
@@ -6926,7 +7092,7 @@
     "rating": 4.6,
     "reviews": 1053,
     "stock": 22,
-    "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3408?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "عرض محدود",
     "badge_en": "Limited",
     "active": true,
@@ -6953,7 +7119,8 @@
     ],
     "shipping_days": 5,
     "added_at": "2026-06-01T16:58:39.777743",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Under%20Armour%20Storm%20Bag&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0168",
@@ -6968,7 +7135,7 @@
     "rating": 4.5,
     "reviews": 13431,
     "stock": 78,
-    "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3408?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "Limited",
     "active": true,
@@ -6995,7 +7162,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-06-01T16:58:39.777750",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Aqualens%20Swim%20Goggles&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0169",
@@ -7010,7 +7178,7 @@
     "rating": 4.6,
     "reviews": 39563,
     "stock": 57,
-    "image": "https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SL1500_.jpg",
     "badge": "تسريع",
     "badge_en": "Featured",
     "active": true,
@@ -7037,7 +7205,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-06-01T16:58:39.777758",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=MagSafe%20Car%20Charger&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0170",
@@ -7052,7 +7221,7 @@
     "rating": 4.5,
     "reviews": 23434,
     "stock": 26,
-    "image": "https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SL1500_.jpg",
     "badge": "حصري",
     "badge_en": "Sale",
     "active": true,
@@ -7079,7 +7248,8 @@
     ],
     "shipping_days": 5,
     "added_at": "2026-06-01T16:58:39.777765",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin%20Drive%2052&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0171",
@@ -7094,7 +7264,7 @@
     "rating": 4.7,
     "reviews": 39862,
     "stock": 100,
-    "image": "https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "Sale",
     "active": true,
@@ -7121,7 +7291,8 @@
     ],
     "shipping_days": 5,
     "added_at": "2026-06-01T16:58:39.777773",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Rexing%20V1%20Dash%20Cam&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0172",
@@ -7136,7 +7307,7 @@
     "rating": 4.4,
     "reviews": 11472,
     "stock": 83,
-    "image": "https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "Sale",
     "active": true,
@@ -7163,7 +7334,8 @@
     ],
     "shipping_days": 8,
     "added_at": "2026-06-01T16:58:39.777780",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Joying%20Android%20Car%20Radio&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0173",
@@ -7178,7 +7350,7 @@
     "rating": 4.6,
     "reviews": 37527,
     "stock": 65,
-    "image": "https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "Exclusive",
     "active": true,
@@ -7205,7 +7377,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-06-01T16:58:39.777787",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=JBL%20Car%20Speaker&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0174",
@@ -7220,7 +7393,7 @@
     "rating": 4.4,
     "reviews": 47819,
     "stock": 25,
-    "image": "https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SL1500_.jpg",
     "badge": "الأكثر مبيعاً",
     "badge_en": "Sale",
     "active": true,
@@ -7247,7 +7420,8 @@
     ],
     "shipping_days": 9,
     "added_at": "2026-06-01T16:58:39.777795",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Car%20Air%20Purifier&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0175",
@@ -7262,7 +7436,7 @@
     "rating": 4.7,
     "reviews": 40597,
     "stock": 63,
-    "image": "https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SL1500_.jpg",
     "badge": "عرض محدود",
     "badge_en": "Featured",
     "active": true,
@@ -7289,7 +7463,8 @@
     ],
     "shipping_days": 10,
     "added_at": "2026-06-01T16:58:39.777802",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Magnetic%20Car%20Phone%20Mount&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0176",
@@ -7304,7 +7479,7 @@
     "rating": 4.5,
     "reviews": 33251,
     "stock": 65,
-    "image": "https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "Best Seller",
     "active": true,
@@ -7331,7 +7506,8 @@
     ],
     "shipping_days": 9,
     "added_at": "2026-06-01T16:58:39.777810",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=OBD2%20Bluetooth%20Scanner&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0177",
@@ -7346,7 +7522,7 @@
     "rating": 4.4,
     "reviews": 20819,
     "stock": 64,
-    "image": "https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "Exclusive",
     "active": true,
@@ -7373,7 +7549,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-06-01T16:58:39.777817",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Car%20LED%20Interior%20Lights&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0178",
@@ -7388,7 +7565,7 @@
     "rating": 4.5,
     "reviews": 12514,
     "stock": 26,
-    "image": "https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "New",
     "active": true,
@@ -7415,7 +7592,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-06-01T16:58:39.777828",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Rear%20View%20Backup%20Camera&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0179",
@@ -7430,7 +7608,7 @@
     "rating": 4.6,
     "reviews": 7792,
     "stock": 75,
-    "image": "https://images.unsplash.com/photo-1558060370-d64edd50ad47?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SL1500_.jpg",
     "badge": "الأكثر مبيعاً",
     "badge_en": "Sale",
     "active": true,
@@ -7457,7 +7635,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-06-01T16:58:39.777840",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin%20v%C3%ADvofit%20jr.%203&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0180",
@@ -7472,7 +7651,7 @@
     "rating": 4.5,
     "reviews": 21637,
     "stock": 60,
-    "image": "https://images.unsplash.com/photo-1558060370-d64edd50ad47?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SL1500_.jpg",
     "badge": "مميز",
     "badge_en": "Sale",
     "active": true,
@@ -7499,7 +7678,8 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-06-01T16:58:39.777853",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Amazon%20Fire%20Kids%20Tablet&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0181",
@@ -7514,7 +7694,7 @@
     "rating": 4.7,
     "reviews": 3056,
     "stock": 71,
-    "image": "https://images.unsplash.com/photo-1558060370-d64edd50ad47?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "New",
     "active": true,
@@ -7541,7 +7721,8 @@
     ],
     "shipping_days": 3,
     "added_at": "2026-06-01T16:58:39.777865",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Anki%20Cozmo%20Robot&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0182",
@@ -7556,7 +7737,7 @@
     "rating": 4.6,
     "reviews": 34420,
     "stock": 53,
-    "image": "https://images.unsplash.com/photo-1558060370-d64edd50ad47?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SL1500_.jpg",
     "badge": "الأكثر مبيعاً",
     "badge_en": "Featured",
     "active": true,
@@ -7583,7 +7764,8 @@
     ],
     "shipping_days": 9,
     "added_at": "2026-06-01T16:58:39.777878",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Echo%20Dot%20Kids%20Edition&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0183",
@@ -7598,7 +7780,7 @@
     "rating": 4.8,
     "reviews": 25994,
     "stock": 86,
-    "image": "https://images.unsplash.com/photo-1558060370-d64edd50ad47?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SL1500_.jpg",
     "badge": "جديد",
     "badge_en": "Limited",
     "active": true,
@@ -7625,7 +7807,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-06-01T16:58:39.777890",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=LEGO%20Education%20Spike&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0184",
@@ -7640,7 +7823,7 @@
     "rating": 4.5,
     "reviews": 7894,
     "stock": 60,
-    "image": "https://images.unsplash.com/photo-1558060370-d64edd50ad47?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "Featured",
     "active": true,
@@ -7667,7 +7850,8 @@
     ],
     "shipping_days": 7,
     "added_at": "2026-06-01T16:58:39.777902",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Razor%20Power%20Core%20E100&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0185",
@@ -7682,7 +7866,7 @@
     "rating": 4.4,
     "reviews": 35110,
     "stock": 96,
-    "image": "https://images.unsplash.com/photo-1558060370-d64edd50ad47?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SL1500_.jpg",
     "badge": "حصري",
     "badge_en": "Best Seller",
     "active": true,
@@ -7709,7 +7893,8 @@
     ],
     "shipping_days": 6,
     "added_at": "2026-06-01T16:58:39.777915",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=VTech%20Kidizoom%20Camera&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0186",
@@ -7724,7 +7909,7 @@
     "rating": 4.5,
     "reviews": 4719,
     "stock": 73,
-    "image": "https://images.unsplash.com/photo-1558060370-d64edd50ad47?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SL1500_.jpg",
     "badge": "تسريع",
     "badge_en": "New",
     "active": true,
@@ -7751,7 +7936,8 @@
     ],
     "shipping_days": 8,
     "added_at": "2026-06-01T16:58:39.777927",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=JBL%20Jr.%20headphones&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0187",
@@ -7766,7 +7952,7 @@
     "rating": 4.6,
     "reviews": 1309,
     "stock": 33,
-    "image": "https://images.unsplash.com/photo-1558060370-d64edd50ad47?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SL1500_.jpg",
     "badge": "عرض محدود",
     "badge_en": "Exclusive",
     "active": true,
@@ -7793,7 +7979,8 @@
     ],
     "shipping_days": 10,
     "added_at": "2026-06-01T16:58:39.777937",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=LeapFrog%20LeapTable&tag=neopulsehub-20"
   },
   {
     "id": "NPH-POOL-0188",
@@ -7808,7 +7995,7 @@
     "rating": 4.7,
     "reviews": 47086,
     "stock": 98,
-    "image": "https://images.unsplash.com/photo-1558060370-d64edd50ad47?w=600&q=80",
+    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SL1500_.jpg",
     "badge": "خصم",
     "badge_en": "New",
     "active": true,
@@ -7835,6 +8022,7 @@
     ],
     "shipping_days": 4,
     "added_at": "2026-06-01T16:58:39.777945",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Owl%20Camera%20Baby%20Monitor&tag=neopulsehub-20"
   }
 ]
