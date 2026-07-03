@@ -50,5 +50,5985 @@
     "image": "images/products/9Ctxi24QHCa5.jpg",
     "affiliate_amazon": "https://www.amazon.com/s?k=Sony%20WF-1000XM4&tag=neopulsehub-20",
     "asin": "B094C4VDJZ"
+  },
+  {
+    "id": "NPH-EXP-0005",
+    "name": {
+      "ar": "ساعة أبل واتش ألترا 2",
+      "en": "Apple Watch Ultra 2"
+    },
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "Smart Watches",
+    "price": 799,
+    "original_price": 899,
+    "discount": 11,
+    "rating": 4.9,
+    "reviews": 39282,
+    "stock": 39,
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Hot"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+Watch+Ultra+2&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "ساعة أبل واتش ألترا 2 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Apple Watch Ultra 2 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.238895",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0006",
+    "name": {
+      "ar": "ساعة سامسونج جالكسي ووتش 7",
+      "en": "Samsung Galaxy Watch 7"
+    },
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "Smart Watches",
+    "price": 329,
+    "original_price": 399,
+    "discount": 17,
+    "rating": 4.7,
+    "reviews": 44368,
+    "stock": 52,
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Best Seller"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Galaxy+Watch+7&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "ساعة سامسونج جالكسي ووتش 7 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Samsung Galaxy Watch 7 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.238918",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0007",
+    "name": {
+      "ar": "ساعة Garmin Fenix 7X برو",
+      "en": "Garmin Fenix 7X Pro"
+    },
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "Smart Watches",
+    "price": 899,
+    "original_price": 999,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 33544,
+    "stock": 63,
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Featured"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin+Fenix+7X+Pro&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "ساعة Garmin Fenix 7X برو - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Garmin Fenix 7X Pro - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.238930",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0008",
+    "name": {
+      "ar": "ساعة Fitbit Sense 2",
+      "en": "Fitbit Sense 2"
+    },
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "Smart Watches",
+    "price": 249,
+    "original_price": 299,
+    "discount": 16,
+    "rating": 4.5,
+    "reviews": 22068,
+    "stock": 39,
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "خصم",
+      "en": "Sale"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Fitbit+Sense+2&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "ساعة Fitbit Sense 2 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Fitbit Sense 2 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.238938",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0009",
+    "name": {
+      "ar": "ساعة Amazfit GTR 4",
+      "en": "Amazfit GTR 4"
+    },
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "Smart Watches",
+    "price": 179,
+    "original_price": 219,
+    "discount": 18,
+    "rating": 4.6,
+    "reviews": 22853,
+    "stock": 81,
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "Limited"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Amazfit+GTR+4&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "ساعة Amazfit GTR 4 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Amazfit GTR 4 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.238945",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0010",
+    "name": {
+      "ar": "ساعة Fossil Gen 6",
+      "en": "Fossil Gen 6 Smartwatch"
+    },
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "Smart Watches",
+    "price": 249,
+    "original_price": 299,
+    "discount": 16,
+    "rating": 4.4,
+    "reviews": 46402,
+    "stock": 86,
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "خصم",
+      "en": "Best Seller"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Fossil+Gen+6+Smartwatch&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "ساعة Fossil Gen 6 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Fossil Gen 6 Smartwatch - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.238955",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0011",
+    "name": {
+      "ar": "ساعة Huawei Watch GT 4",
+      "en": "Huawei Watch GT 4"
+    },
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "Smart Watches",
+    "price": 229,
+    "original_price": 279,
+    "discount": 17,
+    "rating": 4.6,
+    "reviews": 46603,
+    "stock": 74,
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Featured"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Huawei+Watch+GT+4&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "ساعة Huawei Watch GT 4 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Huawei Watch GT 4 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.238962",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0012",
+    "name": {
+      "ar": "ساعة TicWatch Pro 5",
+      "en": "TicWatch Pro 5"
+    },
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "Smart Watches",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.5,
+    "reviews": 5962,
+    "stock": 40,
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "جديد",
+      "en": "Sale"
+    },
+    "featured": true,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=TicWatch+Pro+5&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "ساعة TicWatch Pro 5 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "TicWatch Pro 5 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.238971",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0013",
+    "name": {
+      "ar": "ساعة Galaxy Watch 6",
+      "en": "Samsung Galaxy Watch 6"
+    },
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "Smart Watches",
+    "price": 249,
+    "original_price": 299,
+    "discount": 16,
+    "rating": 4.7,
+    "reviews": 17416,
+    "stock": 65,
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Limited"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Galaxy+Watch+6&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "ساعة Galaxy Watch 6 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Samsung Galaxy Watch 6 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.238977",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0014",
+    "name": {
+      "ar": "ساعة Apple Watch SE 2",
+      "en": "Apple Watch SE 2"
+    },
+    "category": "smartwatch",
+    "category_ar": "ساعات ذكية",
+    "category_en": "Smart Watches",
+    "price": 249,
+    "original_price": 299,
+    "discount": 16,
+    "rating": 4.6,
+    "reviews": 45151,
+    "stock": 31,
+    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "تسريع",
+      "en": "Featured"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+Watch+SE+2&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "ساعة Apple Watch SE 2 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Apple Watch SE 2 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.238983",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0015",
+    "name": {
+      "ar": "سماعات أبل إيربودز برو 2",
+      "en": "Apple AirPods Pro 2"
+    },
+    "category": "earbuds",
+    "category_ar": "سماعات لاسلكية",
+    "category_en": "Wireless Earbuds",
+    "price": 249,
+    "original_price": 279,
+    "discount": 10,
+    "rating": 4.9,
+    "reviews": 40076,
+    "stock": 47,
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "تسريع",
+      "en": "Exclusive"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+AirPods+Pro+2&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "سماعات أبل إيربودز برو 2 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Apple AirPods Pro 2 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.238989",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0016",
+    "name": {
+      "ar": "سماعات سامسونج جالكسي بودز 2 برو",
+      "en": "Samsung Galaxy Buds2 Pro"
+    },
+    "category": "earbuds",
+    "category_ar": "سماعات لاسلكية",
+    "category_en": "Wireless Earbuds",
+    "price": 189,
+    "original_price": 229,
+    "discount": 17,
+    "rating": 4.7,
+    "reviews": 23456,
+    "stock": 43,
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "خصم",
+      "en": "Limited"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Galaxy+Buds2+Pro&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "سماعات سامسونج جالكسي بودز 2 برو - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Samsung Galaxy Buds2 Pro - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239029",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0017",
+    "name": {
+      "ar": "سماعات Sony WF-1000XM5",
+      "en": "Sony WF-1000XM5"
+    },
+    "category": "earbuds",
+    "category_ar": "سماعات لاسلكية",
+    "category_en": "Wireless Earbuds",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.8,
+    "reviews": 38495,
+    "stock": 26,
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Limited"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Sony+WF-1000XM5&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "سماعات Sony WF-1000XM5 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Sony WF-1000XM5 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239046",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0018",
+    "name": {
+      "ar": "سماعات Bose QuietComfort Ultra",
+      "en": "Bose QuietComfort Ultra Earbuds"
+    },
+    "category": "earbuds",
+    "category_ar": "سماعات لاسلكية",
+    "category_en": "Wireless Earbuds",
+    "price": 299,
+    "original_price": 329,
+    "discount": 9,
+    "rating": 4.7,
+    "reviews": 38713,
+    "stock": 55,
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "تسريع",
+      "en": "New"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Bose+QuietComfort+Ultra+Earbuds&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "سماعات Bose QuietComfort Ultra - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Bose QuietComfort Ultra Earbuds - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239061",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0019",
+    "name": {
+      "ar": "سماعات Jabra Elite 85t",
+      "en": "Jabra Elite 85t"
+    },
+    "category": "earbuds",
+    "category_ar": "سماعات لاسلكية",
+    "category_en": "Wireless Earbuds",
+    "price": 179,
+    "original_price": 229,
+    "discount": 21,
+    "rating": 4.6,
+    "reviews": 46666,
+    "stock": 51,
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "Best Seller"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Jabra+Elite+85t&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "سماعات Jabra Elite 85t - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Jabra Elite 85t - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239074",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0020",
+    "name": {
+      "ar": "سماعات Anker Soundcore Space A40",
+      "en": "Anker Soundcore Space A40"
+    },
+    "category": "earbuds",
+    "category_ar": "سماعات لاسلكية",
+    "category_en": "Wireless Earbuds",
+    "price": 79,
+    "original_price": 99,
+    "discount": 20,
+    "rating": 4.5,
+    "reviews": 19747,
+    "stock": 32,
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Featured"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Anker+Soundcore+Space+A40&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "سماعات Anker Soundcore Space A40 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Anker Soundcore Space A40 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239085",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0021",
+    "name": {
+      "ar": "سماعات Sennheiser Momentum 4",
+      "en": "Sennheiser Momentum 4 Wireless"
+    },
+    "category": "earbuds",
+    "category_ar": "سماعات لاسلكية",
+    "category_en": "Wireless Earbuds",
+    "price": 349,
+    "original_price": 399,
+    "discount": 12,
+    "rating": 4.8,
+    "reviews": 44008,
+    "stock": 90,
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Limited"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Sennheiser+Momentum+4+Wireless&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "سماعات Sennheiser Momentum 4 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Sennheiser Momentum 4 Wireless - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239097",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0022",
+    "name": {
+      "ar": "سماعات Beats Studio Pro",
+      "en": "Beats Studio Pro"
+    },
+    "category": "earbuds",
+    "category_ar": "سماعات لاسلكية",
+    "category_en": "Wireless Earbuds",
+    "price": 349,
+    "original_price": 399,
+    "discount": 12,
+    "rating": 4.6,
+    "reviews": 23149,
+    "stock": 82,
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "تسريع",
+      "en": "Best Seller"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Beats+Studio+Pro&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "سماعات Beats Studio Pro - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Beats Studio Pro - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239107",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0023",
+    "name": {
+      "ar": "سماعات Google Pixel Buds Pro",
+      "en": "Google Pixel Buds Pro"
+    },
+    "category": "earbuds",
+    "category_ar": "سماعات لاسلكية",
+    "category_en": "Wireless Earbuds",
+    "price": 199,
+    "original_price": 249,
+    "discount": 20,
+    "rating": 4.6,
+    "reviews": 7448,
+    "stock": 27,
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "Best Seller"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Google+Pixel+Buds+Pro&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "سماعات Google Pixel Buds Pro - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Google Pixel Buds Pro - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239174",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0024",
+    "name": {
+      "ar": "سماعات OnePlus Buds Pro 2",
+      "en": "OnePlus Buds Pro 2"
+    },
+    "category": "earbuds",
+    "category_ar": "سماعات لاسلكية",
+    "category_en": "Wireless Earbuds",
+    "price": 149,
+    "original_price": 179,
+    "discount": 16,
+    "rating": 4.5,
+    "reviews": 41188,
+    "stock": 24,
+    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "جديد",
+      "en": "Featured"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=OnePlus+Buds+Pro+2&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "سماعات OnePlus Buds Pro 2 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "OnePlus Buds Pro 2 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239184",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0025",
+    "name": {
+      "ar": "سماعات Sony WH-1000XM5",
+      "en": "Sony WH-1000XM5"
+    },
+    "category": "headphones",
+    "category_ar": "سماعات رأس",
+    "category_en": "Headphones",
+    "price": 399,
+    "original_price": 449,
+    "discount": 11,
+    "rating": 4.9,
+    "reviews": 29286,
+    "stock": 70,
+    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "تسريع",
+      "en": "Hot"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Sony+WH-1000XM5&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "سماعات Sony WH-1000XM5 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Sony WH-1000XM5 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239196",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0026",
+    "name": {
+      "ar": "سماعات Bose QuietComfort Ultra",
+      "en": "Bose QuietComfort Ultra Headphones"
+    },
+    "category": "headphones",
+    "category_ar": "سماعات رأس",
+    "category_en": "Headphones",
+    "price": 429,
+    "original_price": 479,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 39754,
+    "stock": 96,
+    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Hot"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Bose+QuietComfort+Ultra+Headphones&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "سماعات Bose QuietComfort Ultra - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Bose QuietComfort Ultra Headphones - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239207",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0027",
+    "name": {
+      "ar": "سماعات Apple AirPods Max",
+      "en": "Apple AirPods Max"
+    },
+    "category": "headphones",
+    "category_ar": "سماعات رأس",
+    "category_en": "Headphones",
+    "price": 549,
+    "original_price": 599,
+    "discount": 8,
+    "rating": 4.7,
+    "reviews": 11066,
+    "stock": 87,
+    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Limited"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+AirPods+Max&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "سماعات Apple AirPods Max - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Apple AirPods Max - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239221",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0028",
+    "name": {
+      "ar": "سماعات Sennheiser Momentum 4",
+      "en": "Sennheiser Momentum 4"
+    },
+    "category": "headphones",
+    "category_ar": "سماعات رأس",
+    "category_en": "Headphones",
+    "price": 349,
+    "original_price": 399,
+    "discount": 12,
+    "rating": 4.8,
+    "reviews": 13777,
+    "stock": 27,
+    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Featured"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Sennheiser+Momentum+4&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "سماعات Sennheiser Momentum 4 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Sennheiser Momentum 4 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239229",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0029",
+    "name": {
+      "ar": "سماعات Audio-Technica ATH-M50x",
+      "en": "Audio-Technica ATH-M50x"
+    },
+    "category": "headphones",
+    "category_ar": "سماعات رأس",
+    "category_en": "Headphones",
+    "price": 149,
+    "original_price": 179,
+    "discount": 16,
+    "rating": 4.7,
+    "reviews": 7550,
+    "stock": 28,
+    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "حصري",
+      "en": "Featured"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Audio-Technica+ATH-M50x&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "سماعات Audio-Technica ATH-M50x - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Audio-Technica ATH-M50x - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239237",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0030",
+    "name": {
+      "ar": "سماعات JBL Tour One M2",
+      "en": "JBL Tour One M2"
+    },
+    "category": "headphones",
+    "category_ar": "سماعات رأس",
+    "category_en": "Headphones",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.6,
+    "reviews": 37760,
+    "stock": 64,
+    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "عرض محدود",
+      "en": "New"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=JBL+Tour+One+M2&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "سماعات JBL Tour One M2 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "JBL Tour One M2 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239243",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0031",
+    "name": {
+      "ar": "سماعات Beats Studio 3",
+      "en": "Beats Studio3 Wireless"
+    },
+    "category": "headphones",
+    "category_ar": "سماعات رأس",
+    "category_en": "Headphones",
+    "price": 279,
+    "original_price": 329,
+    "discount": 15,
+    "rating": 4.5,
+    "reviews": 10854,
+    "stock": 61,
+    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "حصري",
+      "en": "Sale"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Beats+Studio3+Wireless&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "سماعات Beats Studio 3 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Beats Studio3 Wireless - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239250",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0032",
+    "name": {
+      "ar": "سماعات SteelSeries Arctis Nova Pro",
+      "en": "SteelSeries Arctis Nova Pro"
+    },
+    "category": "headphones",
+    "category_ar": "سماعات رأس",
+    "category_en": "Headphones",
+    "price": 399,
+    "original_price": 449,
+    "discount": 11,
+    "rating": 4.7,
+    "reviews": 33426,
+    "stock": 79,
+    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "حصري",
+      "en": "Best Seller"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=SteelSeries+Arctis+Nova+Pro&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "سماعات SteelSeries Arctis Nova Pro - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "SteelSeries Arctis Nova Pro - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239258",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0033",
+    "name": {
+      "ar": "سماعات HyperX Cloud III",
+      "en": "HyperX Cloud III"
+    },
+    "category": "headphones",
+    "category_ar": "سماعات رأس",
+    "category_en": "Headphones",
+    "price": 99,
+    "original_price": 119,
+    "discount": 16,
+    "rating": 4.6,
+    "reviews": 22196,
+    "stock": 52,
+    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "تسريع",
+      "en": "Exclusive"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=HyperX+Cloud+III&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "سماعات HyperX Cloud III - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "HyperX Cloud III - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239266",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0034",
+    "name": {
+      "ar": "سماعات Razer BlackShark V2",
+      "en": "Razer BlackShark V2"
+    },
+    "category": "headphones",
+    "category_ar": "سماعات رأس",
+    "category_en": "Headphones",
+    "price": 99,
+    "original_price": 119,
+    "discount": 16,
+    "rating": 4.5,
+    "reviews": 41120,
+    "stock": 93,
+    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "حصري",
+      "en": "Exclusive"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Razer+BlackShark+V2&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "سماعات Razer BlackShark V2 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Razer BlackShark V2 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239272",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0035",
+    "name": {
+      "ar": "مساعد أمازون إيكو دوت 5",
+      "en": "Amazon Echo Dot (5th Gen)"
+    },
+    "category": "smart-home",
+    "category_ar": "المنزل الذكي",
+    "category_en": "Smart Home",
+    "price": 49,
+    "original_price": 59,
+    "discount": 16,
+    "rating": 4.7,
+    "reviews": 20405,
+    "stock": 90,
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "خصم",
+      "en": "Sale"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Amazon+Echo+Dot+(5th+Gen)&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "مساعد أمازون إيكو دوت 5 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Amazon Echo Dot (5th Gen) - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239280",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0036",
+    "name": {
+      "ar": "مساعد جوجل نست هب 2",
+      "en": "Google Nest Hub (2nd Gen)"
+    },
+    "category": "smart-home",
+    "category_ar": "المنزل الذكي",
+    "category_en": "Smart Home",
+    "price": 99,
+    "original_price": 119,
+    "discount": 16,
+    "rating": 4.6,
+    "reviews": 43495,
+    "stock": 70,
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "جديد",
+      "en": "Exclusive"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Google+Nest+Hub+(2nd+Gen)&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "مساعد جوجل نست هب 2 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Google Nest Hub (2nd Gen) - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239286",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0037",
+    "name": {
+      "ar": "كاميرا أرلو برو 4K",
+      "en": "Arlo Pro 4K Security Camera"
+    },
+    "category": "smart-home",
+    "category_ar": "المنزل الذكي",
+    "category_en": "Smart Home",
+    "price": 199,
+    "original_price": 249,
+    "discount": 20,
+    "rating": 4.5,
+    "reviews": 41524,
+    "stock": 94,
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "جديد",
+      "en": "Featured"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Arlo+Pro+4K+Security+Camera&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "كاميرا أرلو برو 4K - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Arlo Pro 4K Security Camera - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239294",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0038",
+    "name": {
+      "ar": "جرس باب رينج فيديو 4",
+      "en": "Ring Video Doorbell 4"
+    },
+    "category": "smart-home",
+    "category_ar": "المنزل الذكي",
+    "category_en": "Smart Home",
+    "price": 199,
+    "original_price": 249,
+    "discount": 20,
+    "rating": 4.6,
+    "reviews": 21202,
+    "stock": 22,
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "حصري",
+      "en": "Limited"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Ring+Video+Doorbell+4&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "جرس باب رينج فيديو 4 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Ring Video Doorbell 4 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239299",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0039",
+    "name": {
+      "ar": "مقابس TP-Link كاسا الذكية",
+      "en": "TP-Link Kasa Smart Plugs"
+    },
+    "category": "smart-home",
+    "category_ar": "المنزل الذكي",
+    "category_en": "Smart Home",
+    "price": 29,
+    "original_price": 39,
+    "discount": 25,
+    "rating": 4.6,
+    "reviews": 29175,
+    "stock": 54,
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "عرض محدود",
+      "en": "Sale"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=TP-Link+Kasa+Smart+Plugs&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "مقابس TP-Link كاسا الذكية - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "TP-Link Kasa Smart Plugs - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239305",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0040",
+    "name": {
+      "ar": "إضاءة فيليبس هيو",
+      "en": "Philips Hue Starter Kit"
+    },
+    "category": "smart-home",
+    "category_ar": "المنزل الذكي",
+    "category_en": "Smart Home",
+    "price": 199,
+    "original_price": 249,
+    "discount": 20,
+    "rating": 4.8,
+    "reviews": 15510,
+    "stock": 69,
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "تسريع",
+      "en": "Hot"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Philips+Hue+Starter+Kit&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "إضاءة فيليبس هيو - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Philips Hue Starter Kit - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239311",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0041",
+    "name": {
+      "ar": "مكيف صوتي Ecobee",
+      "en": "Ecobee SmartThermostat"
+    },
+    "category": "smart-home",
+    "category_ar": "المنزل الذكي",
+    "category_en": "Smart Home",
+    "price": 249,
+    "original_price": 299,
+    "discount": 16,
+    "rating": 4.7,
+    "reviews": 40656,
+    "stock": 71,
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "عرض محدود",
+      "en": "Sale"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Ecobee+SmartThermostat&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "مكيف صوتي Ecobee - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Ecobee SmartThermostat - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239318",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0042",
+    "name": {
+      "ar": "قفل August Smart Lock Pro",
+      "en": "August Smart Lock Pro"
+    },
+    "category": "smart-home",
+    "category_ar": "المنزل الذكي",
+    "category_en": "Smart Home",
+    "price": 229,
+    "original_price": 279,
+    "discount": 17,
+    "rating": 4.5,
+    "reviews": 36566,
+    "stock": 73,
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "جديد",
+      "en": "Hot"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=August+Smart+Lock+Pro&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "قفل August Smart Lock Pro - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "August Smart Lock Pro - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239327",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0043",
+    "name": {
+      "ar": "مقياس حرارة Nest",
+      "en": "Google Nest Temperature Sensor"
+    },
+    "category": "smart-home",
+    "category_ar": "المنزل الذكي",
+    "category_en": "Smart Home",
+    "price": 39,
+    "original_price": 49,
+    "discount": 20,
+    "rating": 4.4,
+    "reviews": 43698,
+    "stock": 72,
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "Featured"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Google+Nest+Temperature+Sensor&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "مقياس حرارة Nest - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Google Nest Temperature Sensor - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239335",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0044",
+    "name": {
+      "ar": "شاشة تلفزيون سامسونج ذكي 55",
+      "en": "Samsung Smart TV 55 inch"
+    },
+    "category": "smart-home",
+    "category_ar": "المنزل الذكي",
+    "category_en": "Smart Home",
+    "price": 499,
+    "original_price": 599,
+    "discount": 16,
+    "rating": 4.6,
+    "reviews": 47130,
+    "stock": 98,
+    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "حصري",
+      "en": "Limited"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Smart+TV+55+inch&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "شاشة تلفزيون سامسونج ذكي 55 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Samsung Smart TV 55 inch - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239341",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0045",
+    "name": {
+      "ar": "ميزان أومرون الذكي",
+      "en": "Omron Evolv Blood Pressure Monitor"
+    },
+    "category": "health",
+    "category_ar": "الصحة الذكية",
+    "category_en": "Smart Health",
+    "price": 129,
+    "original_price": 159,
+    "discount": 18,
+    "rating": 4.7,
+    "reviews": 13044,
+    "stock": 74,
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "حصري",
+      "en": "Limited"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Omron+Evolv+Blood+Pressure+Monitor&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "ميزان أومرون الذكي - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Omron Evolv Blood Pressure Monitor - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239350",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0046",
+    "name": {
+      "ar": "جهاز تتبع الخصوبة ava",
+      "en": "Ava Fertility Tracker Bracelet"
+    },
+    "category": "health",
+    "category_ar": "الصحة الذكية",
+    "category_en": "Smart Health",
+    "price": 279,
+    "original_price": 329,
+    "discount": 15,
+    "rating": 4.5,
+    "reviews": 2122,
+    "stock": 52,
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Featured"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Ava+Fertility+Tracker+Bracelet&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "جهاز تتبع الخصوبة ava - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Ava Fertility Tracker Bracelet - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239359",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0047",
+    "name": {
+      "ar": "مقياس سكر فريستايل ليبر",
+      "en": "FreeStyle Libre CGM"
+    },
+    "category": "health",
+    "category_ar": "الصحة الذكية",
+    "category_en": "Smart Health",
+    "price": 159,
+    "original_price": 199,
+    "discount": 20,
+    "rating": 4.8,
+    "reviews": 24739,
+    "stock": 66,
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "خصم",
+      "en": "Featured"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=FreeStyle+Libre+CGM&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "مقياس سكر فريستايل ليبر - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "FreeStyle Libre CGM - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239368",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0048",
+    "name": {
+      "ar": "جهاز air doctor",
+      "en": "Air Doctor Pro Air Purifier"
+    },
+    "category": "health",
+    "category_ar": "الصحة الذكية",
+    "category_en": "Smart Health",
+    "price": 399,
+    "original_price": 499,
+    "discount": 20,
+    "rating": 4.6,
+    "reviews": 27752,
+    "stock": 20,
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "Sale"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Air+Doctor+Pro+Air+Purifier&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "جهاز air doctor - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Air Doctor Pro Air Purifier - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239387",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0049",
+    "name": {
+      "ar": "فرشاة أسنان ألكسا",
+      "en": "Oral-B iO Series 9"
+    },
+    "category": "health",
+    "category_ar": "الصحة الذكية",
+    "category_en": "Smart Health",
+    "price": 199,
+    "original_price": 249,
+    "discount": 20,
+    "rating": 4.7,
+    "reviews": 38390,
+    "stock": 28,
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "خصم",
+      "en": "Sale"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Oral-B+iO+Series+9&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "فرشاة أسنان ألكسا - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Oral-B iO Series 9 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239397",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0050",
+    "name": {
+      "ar": "جهاز ماساج Theragun",
+      "en": "Theragun Prime"
+    },
+    "category": "health",
+    "category_ar": "الصحة الذكية",
+    "category_en": "Smart Health",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.8,
+    "reviews": 25985,
+    "stock": 75,
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "حصري",
+      "en": "Sale"
+    },
+    "featured": true,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Theragun+Prime&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "جهاز ماساج Theragun - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Theragun Prime - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239407",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0051",
+    "name": {
+      "ar": "جهاز تدليك الرقبة",
+      "en": "Neck Massager with Heat"
+    },
+    "category": "health",
+    "category_ar": "الصحة الذكية",
+    "category_en": "Smart Health",
+    "price": 59,
+    "original_price": 79,
+    "discount": 25,
+    "rating": 4.4,
+    "reviews": 30786,
+    "stock": 26,
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "Sale"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Neck+Massager+with+Heat&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "جهاز تدليك الرقبة - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Neck Massager with Heat - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239418",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0052",
+    "name": {
+      "ar": "مرتبة CPAP ResMed",
+      "en": "ResMed AirMini CPAP"
+    },
+    "category": "health",
+    "category_ar": "الصحة الذكية",
+    "category_en": "Smart Health",
+    "price": 499,
+    "original_price": 599,
+    "discount": 16,
+    "rating": 4.6,
+    "reviews": 22804,
+    "stock": 89,
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "New"
+    },
+    "featured": true,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=ResMed+AirMini+CPAP&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "مرتبة CPAP ResMed - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "ResMed AirMini CPAP - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239428",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0053",
+    "name": {
+      "ar": "ميزان ذكي Withings",
+      "en": "Withings Body Smart Scale"
+    },
+    "category": "health",
+    "category_ar": "الصحة الذكية",
+    "category_en": "Smart Health",
+    "price": 99,
+    "original_price": 129,
+    "discount": 23,
+    "rating": 4.7,
+    "reviews": 5611,
+    "stock": 62,
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "New"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Withings+Body+Smart+Scale&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "ميزان ذكي Withings - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Withings Body Smart Scale - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239438",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0054",
+    "name": {
+      "ar": "جهاز قياس الأكسجين",
+      "en": "Fingertip Pulse Oximeter"
+    },
+    "category": "health",
+    "category_ar": "الصحة الذكية",
+    "category_en": "Smart Health",
+    "price": 39,
+    "original_price": 49,
+    "discount": 20,
+    "rating": 4.5,
+    "reviews": 36271,
+    "stock": 60,
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "Best Seller"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Fingertip+Pulse+Oximeter&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "جهاز قياس الأكسجين - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Fingertip Pulse Oximeter - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239446",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0055",
+    "name": {
+      "ar": "لابتوب ماك بوك اير M3",
+      "en": "MacBook Air M3"
+    },
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "category_en": "Productivity",
+    "price": 1099,
+    "original_price": 1199,
+    "discount": 8,
+    "rating": 4.9,
+    "reviews": 27528,
+    "stock": 90,
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "Hot"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=MacBook+Air+M3&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "لابتوب ماك بوك اير M3 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "MacBook Air M3 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239461",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0056",
+    "name": {
+      "ar": "لابتوب Dell XPS 13 بلس",
+      "en": "Dell XPS 13 Plus"
+    },
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "category_en": "Productivity",
+    "price": 1299,
+    "original_price": 1499,
+    "discount": 13,
+    "rating": 4.7,
+    "reviews": 44548,
+    "stock": 51,
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Sale"
+    },
+    "featured": true,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Dell+XPS+13+Plus&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "لابتوب Dell XPS 13 بلس - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Dell XPS 13 Plus - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239482",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0057",
+    "name": {
+      "ar": "لابتوب HP Spectre x360",
+      "en": "HP Spectre x360"
+    },
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "category_en": "Productivity",
+    "price": 1199,
+    "original_price": 1399,
+    "discount": 14,
+    "rating": 4.6,
+    "reviews": 12767,
+    "stock": 89,
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "تسريع",
+      "en": "Limited"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=HP+Spectre+x360&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "لابتوب HP Spectre x360 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "HP Spectre x360 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239492",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0058",
+    "name": {
+      "ar": "لابتوب Lenovo ThinkPad X1",
+      "en": "Lenovo ThinkPad X1 Carbon"
+    },
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "category_en": "Productivity",
+    "price": 1499,
+    "original_price": 1699,
+    "discount": 11,
+    "rating": 4.8,
+    "reviews": 2148,
+    "stock": 28,
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "تسريع",
+      "en": "Sale"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Lenovo+ThinkPad+X1+Carbon&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "لابتوب Lenovo ThinkPad X1 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Lenovo ThinkPad X1 Carbon - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239503",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0059",
+    "name": {
+      "ar": "لابتوب ASUS ZenBook 14",
+      "en": "ASUS ZenBook 14"
+    },
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "category_en": "Productivity",
+    "price": 899,
+    "original_price": 999,
+    "discount": 10,
+    "rating": 4.6,
+    "reviews": 16799,
+    "stock": 46,
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "جديد",
+      "en": "Best Seller"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=ASUS+ZenBook+14&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "لابتوب ASUS ZenBook 14 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "ASUS ZenBook 14 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239515",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0060",
+    "name": {
+      "ar": "آيباد أبل برو 11",
+      "en": "Apple iPad Pro 11 inch"
+    },
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "category_en": "Productivity",
+    "price": 799,
+    "original_price": 899,
+    "discount": 11,
+    "rating": 4.8,
+    "reviews": 15075,
+    "stock": 78,
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "تسريع",
+      "en": "Best Seller"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+iPad+Pro+11+inch&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "آيباد أبل برو 11 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Apple iPad Pro 11 inch - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239524",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0061",
+    "name": {
+      "ar": "آيباد أبل اير 10.9",
+      "en": "Apple iPad Air 10.9 inch"
+    },
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "category_en": "Productivity",
+    "price": 599,
+    "original_price": 699,
+    "discount": 14,
+    "rating": 4.7,
+    "reviews": 13279,
+    "stock": 37,
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "تسريع",
+      "en": "New"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+iPad+Air+10.9+inch&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "آيباد أبل اير 10.9 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Apple iPad Air 10.9 inch - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239533",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0062",
+    "name": {
+      "ar": "آيباد سامسونج جالكسي Tab S9",
+      "en": "Samsung Galaxy Tab S9"
+    },
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "category_en": "Productivity",
+    "price": 799,
+    "original_price": 899,
+    "discount": 11,
+    "rating": 4.6,
+    "reviews": 37682,
+    "stock": 51,
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "جديد",
+      "en": "Featured"
+    },
+    "featured": true,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Galaxy+Tab+S9&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "آيباد سامسونج جالكسي Tab S9 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Samsung Galaxy Tab S9 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239541",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0063",
+    "name": {
+      "ar": "قلم أبل بنسل برو",
+      "en": "Apple Pencil Pro"
+    },
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "category_en": "Productivity",
+    "price": 129,
+    "original_price": 149,
+    "discount": 13,
+    "rating": 4.8,
+    "reviews": 16892,
+    "stock": 36,
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "خصم",
+      "en": "Hot"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+Pencil+Pro&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "قلم أبل بنسل برو - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Apple Pencil Pro - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239554",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0064",
+    "name": {
+      "ar": "كيبورد لوجيتك MX ماستر",
+      "en": "Logitech MX Master 3S"
+    },
+    "category": "productivity",
+    "category_ar": "إنتاجية",
+    "category_en": "Productivity",
+    "price": 99,
+    "original_price": 119,
+    "discount": 16,
+    "rating": 4.9,
+    "reviews": 34588,
+    "stock": 88,
+    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "Featured"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech+MX+Master+3S&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "كيبورد لوجيتك MX ماستر - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Logitech MX Master 3S - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239564",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0065",
+    "name": {
+      "ar": "جهاز بلاي ستيشن 5",
+      "en": "PlayStation 5"
+    },
+    "category": "gaming",
+    "category_ar": "ألعاب وترفيه",
+    "category_en": "Gaming & Entertainment",
+    "price": 499,
+    "original_price": 559,
+    "discount": 10,
+    "rating": 4.9,
+    "reviews": 32384,
+    "stock": 25,
+    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "تسريع",
+      "en": "Best Seller"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=PlayStation+5&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "جهاز بلاي ستيشن 5 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "PlayStation 5 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239574",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0066",
+    "name": {
+      "ar": "جهاز Xbox Series X",
+      "en": "Xbox Series X"
+    },
+    "category": "gaming",
+    "category_ar": "ألعاب وترفيه",
+    "category_en": "Gaming & Entertainment",
+    "price": 499,
+    "original_price": 559,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 15553,
+    "stock": 27,
+    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "عرض محدود",
+      "en": "Best Seller"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Xbox+Series+X&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "جهاز Xbox Series X - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Xbox Series X - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239584",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0067",
+    "name": {
+      "ar": "جهاز نينتندو سويتش اولد",
+      "en": "Nintendo Switch OLED"
+    },
+    "category": "gaming",
+    "category_ar": "ألعاب وترفيه",
+    "category_en": "Gaming & Entertainment",
+    "price": 349,
+    "original_price": 399,
+    "discount": 12,
+    "rating": 4.8,
+    "reviews": 26368,
+    "stock": 62,
+    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "خصم",
+      "en": "Featured"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Nintendo+Switch+OLED&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "جهاز نينتندو سويتش اولد - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Nintendo Switch OLED - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239595",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0068",
+    "name": {
+      "ar": "نظارات Meta Quest 3",
+      "en": "Meta Quest 3 VR Headset"
+    },
+    "category": "gaming",
+    "category_ar": "ألعاب وترفيه",
+    "category_en": "Gaming & Entertainment",
+    "price": 499,
+    "original_price": 599,
+    "discount": 16,
+    "rating": 4.7,
+    "reviews": 12377,
+    "stock": 39,
+    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Exclusive"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Meta+Quest+3+VR+Headset&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "نظارات Meta Quest 3 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Meta Quest 3 VR Headset - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239605",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0069",
+    "name": {
+      "ar": "طاولة لعب Steam Deck",
+      "en": "Steam Deck OLED"
+    },
+    "category": "gaming",
+    "category_ar": "ألعاب وترفيه",
+    "category_en": "Gaming & Entertainment",
+    "price": 549,
+    "original_price": 649,
+    "discount": 15,
+    "rating": 4.8,
+    "reviews": 24049,
+    "stock": 20,
+    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "Sale"
+    },
+    "featured": true,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Steam+Deck+OLED&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "طاولة لعب Steam Deck - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Steam Deck OLED - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239616",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0070",
+    "name": {
+      "ar": "كرسي ألعاب ريزر",
+      "en": "Razer Iskur V2 Gaming Chair"
+    },
+    "category": "gaming",
+    "category_ar": "ألعاب وترفيه",
+    "category_en": "Gaming & Entertainment",
+    "price": 599,
+    "original_price": 699,
+    "discount": 14,
+    "rating": 4.6,
+    "reviews": 14994,
+    "stock": 100,
+    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "Featured"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Razer+Iskur+V2+Gaming+Chair&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "كرسي ألعاب ريزر - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Razer Iskur V2 Gaming Chair - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239625",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0071",
+    "name": {
+      "ar": "شاشة ألعاب سامسونج 27",
+      "en": "Samsung Odyssey G7 Gaming Monitor"
+    },
+    "category": "gaming",
+    "category_ar": "ألعاب وترفيه",
+    "category_en": "Gaming & Entertainment",
+    "price": 699,
+    "original_price": 799,
+    "discount": 12,
+    "rating": 4.7,
+    "reviews": 8052,
+    "stock": 72,
+    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "عرض محدود",
+      "en": "New"
+    },
+    "featured": true,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Odyssey+G7+Gaming+Monitor&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "شاشة ألعاب سامسونج 27 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Samsung Odyssey G7 Gaming Monitor - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239634",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0072",
+    "name": {
+      "ar": "سماعات جيمينج Astro A50",
+      "en": "Astro A50 Gaming Headset"
+    },
+    "category": "gaming",
+    "category_ar": "ألعاب وترفيه",
+    "category_en": "Gaming & Entertainment",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.7,
+    "reviews": 3962,
+    "stock": 100,
+    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "Sale"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Astro+A50+Gaming+Headset&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "سماعات جيمينج Astro A50 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Astro A50 Gaming Headset - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239646",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0073",
+    "name": {
+      "ar": "ماوس جيمينج لوجيتك G Pro",
+      "en": "Logitech G Pro X Superlight 2"
+    },
+    "category": "gaming",
+    "category_ar": "ألعاب وترفيه",
+    "category_en": "Gaming & Entertainment",
+    "price": 199,
+    "original_price": 249,
+    "discount": 20,
+    "rating": 4.9,
+    "reviews": 25940,
+    "stock": 76,
+    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "خصم",
+      "en": "New"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech+G+Pro+X+Superlight+2&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "ماوس جيمينج لوجيتك G Pro - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Logitech G Pro X Superlight 2 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239655",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0074",
+    "name": {
+      "ar": "كيبورد ميكانيكي Corsair",
+      "en": "Corsair K70 Pro Mechanical"
+    },
+    "category": "gaming",
+    "category_ar": "ألعاب وترفيه",
+    "category_en": "Gaming & Entertainment",
+    "price": 169,
+    "original_price": 199,
+    "discount": 15,
+    "rating": 4.7,
+    "reviews": 41624,
+    "stock": 99,
+    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "عرض محدود",
+      "en": "New"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Corsair+K70+Pro+Mechanical&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "كيبورد ميكانيكي Corsair - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Corsair K70 Pro Mechanical - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239673",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0075",
+    "name": {
+      "ar": "كاميرا سوني A7 IV",
+      "en": "Sony Alpha A7 IV"
+    },
+    "category": "cameras",
+    "category_ar": "كاميرات",
+    "category_en": "Cameras",
+    "price": 2499,
+    "original_price": 2799,
+    "discount": 10,
+    "rating": 4.9,
+    "reviews": 19510,
+    "stock": 42,
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "تسريع",
+      "en": "New"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Sony+Alpha+A7+IV&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "كاميرا سوني A7 IV - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Sony Alpha A7 IV - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239685",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0076",
+    "name": {
+      "ar": "كاميرا كانون R6 مارك 2",
+      "en": "Canon EOS R6 Mark II"
+    },
+    "category": "cameras",
+    "category_ar": "كاميرات",
+    "category_en": "Cameras",
+    "price": 2499,
+    "original_price": 2799,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 26127,
+    "stock": 60,
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "Best Seller"
+    },
+    "featured": true,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Canon+EOS+R6+Mark+II&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "كاميرا كانون R6 مارك 2 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Canon EOS R6 Mark II - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239695",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0077",
+    "name": {
+      "ar": "كاميرا فوجي X-T5",
+      "en": "Fujifilm X-T5"
+    },
+    "category": "cameras",
+    "category_ar": "كاميرات",
+    "category_en": "Cameras",
+    "price": 1699,
+    "original_price": 1899,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 33846,
+    "stock": 85,
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "Best Seller"
+    },
+    "featured": true,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Fujifilm+X-T5&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "كاميرا فوجي X-T5 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Fujifilm X-T5 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239704",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0078",
+    "name": {
+      "ar": "كاميرا Nikon Z8",
+      "en": "Nikon Z8"
+    },
+    "category": "cameras",
+    "category_ar": "كاميرات",
+    "category_en": "Cameras",
+    "price": 3999,
+    "original_price": 4499,
+    "discount": 11,
+    "rating": 4.9,
+    "reviews": 16356,
+    "stock": 35,
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "عرض محدود",
+      "en": "New"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Nikon+Z8&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "كاميرا Nikon Z8 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Nikon Z8 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239718",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0079",
+    "name": {
+      "ar": "كاميرا GoPro Hero 12",
+      "en": "GoPro HERO12 Black"
+    },
+    "category": "cameras",
+    "category_ar": "كاميرات",
+    "category_en": "Cameras",
+    "price": 399,
+    "original_price": 449,
+    "discount": 11,
+    "rating": 4.7,
+    "reviews": 49124,
+    "stock": 97,
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "عرض محدود",
+      "en": "Hot"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=GoPro+HERO12+Black&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "كاميرا GoPro Hero 12 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "GoPro HERO12 Black - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239728",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0080",
+    "name": {
+      "ar": "كاميرا DJI Osmo Pocket 3",
+      "en": "DJI Osmo Pocket 3"
+    },
+    "category": "cameras",
+    "category_ar": "كاميرات",
+    "category_en": "Cameras",
+    "price": 499,
+    "original_price": 599,
+    "discount": 16,
+    "rating": 4.8,
+    "reviews": 39266,
+    "stock": 24,
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "تسريع",
+      "en": "Limited"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=DJI+Osmo+Pocket+3&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "كاميرا DJI Osmo Pocket 3 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "DJI Osmo Pocket 3 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239739",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0081",
+    "name": {
+      "ar": "كاميرا insta360 X4",
+      "en": "Insta360 X4"
+    },
+    "category": "cameras",
+    "category_ar": "كاميرات",
+    "category_en": "Cameras",
+    "price": 499,
+    "original_price": 599,
+    "discount": 16,
+    "rating": 4.7,
+    "reviews": 49828,
+    "stock": 72,
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "حصري",
+      "en": "Best Seller"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Insta360+X4&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "كاميرا insta360 X4 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Insta360 X4 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239748",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0082",
+    "name": {
+      "ar": "كاميرا ويب لوجيتك Brio 4K",
+      "en": "Logitech Brio 4K Webcam"
+    },
+    "category": "cameras",
+    "category_ar": "كاميرات",
+    "category_en": "Cameras",
+    "price": 199,
+    "original_price": 249,
+    "discount": 20,
+    "rating": 4.7,
+    "reviews": 23575,
+    "stock": 74,
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "New"
+    },
+    "featured": true,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech+Brio+4K+Webcam&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "كاميرا ويب لوجيتك Brio 4K - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Logitech Brio 4K Webcam - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239760",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0083",
+    "name": {
+      "ar": "كاميرا_ring_indoor",
+      "en": "Ring Indoor Cam"
+    },
+    "category": "cameras",
+    "category_ar": "كاميرات",
+    "category_en": "Cameras",
+    "price": 59,
+    "original_price": 79,
+    "discount": 25,
+    "rating": 4.5,
+    "reviews": 11401,
+    "stock": 60,
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "تسريع",
+      "en": "Sale"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Ring+Indoor+Cam&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "كاميرا_ring_indoor - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Ring Indoor Cam - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239776",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0084",
+    "name": {
+      "ar": "كاميرا ArloEssential",
+      "en": "Arlo Essential Spotlight"
+    },
+    "category": "cameras",
+    "category_ar": "كاميرات",
+    "category_en": "Cameras",
+    "price": 179,
+    "original_price": 229,
+    "discount": 21,
+    "rating": 4.6,
+    "reviews": 43003,
+    "stock": 53,
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "Featured"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Arlo+Essential+Spotlight&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "كاميرا ArloEssential - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Arlo Essential Spotlight - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239785",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0085",
+    "name": {
+      "ar": "نظارات Ray-Ban Meta الذكية",
+      "en": "Ray-Ban Meta Smart Glasses"
+    },
+    "category": "smart-glasses",
+    "category_ar": "نظارات ذكية",
+    "category_en": "Smart Glasses",
+    "price": 299,
+    "original_price": 329,
+    "discount": 9,
+    "rating": 4.5,
+    "reviews": 44026,
+    "stock": 29,
+    "image": "https://m.media-amazon.com/images/I/71p0U-c1D9L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "Hot"
+    },
+    "featured": true,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Ray-Ban+Meta+Smart+Glasses&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "نظارات Ray-Ban Meta الذكية - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Ray-Ban Meta Smart Glasses - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239795",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0086",
+    "name": {
+      "ar": "حقيبة لابتوب Targus",
+      "en": "Targus Newport Convertible"
+    },
+    "category": "accessories",
+    "category_ar": "إكسسوارات",
+    "category_en": "Accessories",
+    "price": 89,
+    "original_price": 109,
+    "discount": 18,
+    "rating": 4.6,
+    "reviews": 48976,
+    "stock": 53,
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "عرض محدود",
+      "en": "Limited"
+    },
+    "featured": true,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Targus+Newport+Convertible&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "حقيبة لابتوب Targus - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Targus Newport Convertible - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239806",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0087",
+    "name": {
+      "ar": "شاحن MagSafe أبل",
+      "en": "Apple MagSafe Charger"
+    },
+    "category": "accessories",
+    "category_ar": "إكسسوارات",
+    "category_en": "Accessories",
+    "price": 39,
+    "original_price": 49,
+    "discount": 20,
+    "rating": 4.7,
+    "reviews": 7922,
+    "stock": 58,
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "Exclusive"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+MagSafe+Charger&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "شاحن MagSafe أبل - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Apple MagSafe Charger - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239814",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0088",
+    "name": {
+      "ar": "باور بانك أنكر 20000",
+      "en": "Anker PowerCore 20000"
+    },
+    "category": "accessories",
+    "category_ar": "إكسسوارات",
+    "category_en": "Accessories",
+    "price": 59,
+    "original_price": 79,
+    "discount": 25,
+    "rating": 4.8,
+    "reviews": 33057,
+    "stock": 33,
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "حصري",
+      "en": "Best Seller"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Anker+PowerCore+20000&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "باور بانك أنكر 20000 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Anker PowerCore 20000 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239823",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0089",
+    "name": {
+      "ar": "حامل هاتف كويل",
+      "en": "Coil Phone Stand"
+    },
+    "category": "accessories",
+    "category_ar": "إكسسوارات",
+    "category_en": "Accessories",
+    "price": 29,
+    "original_price": 39,
+    "discount": 25,
+    "rating": 4.5,
+    "reviews": 35554,
+    "stock": 24,
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "تسريع",
+      "en": "Sale"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Coil+Phone+Stand&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "حامل هاتف كويل - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Coil Phone Stand - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239834",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0090",
+    "name": {
+      "ar": "سماعة جاك Lightning",
+      "en": "Apple EarPods Lightning"
+    },
+    "category": "accessories",
+    "category_ar": "إكسسوارات",
+    "category_en": "Accessories",
+    "price": 19,
+    "original_price": 29,
+    "discount": 34,
+    "rating": 4.4,
+    "reviews": 30745,
+    "stock": 44,
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "حصري",
+      "en": "Hot"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+EarPods+Lightning&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "سماعة جاك Lightning - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Apple EarPods Lightning - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239844",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0091",
+    "name": {
+      "ar": "كابل USB-C أنكر",
+      "en": "Anker USB-C Cable 6ft"
+    },
+    "category": "accessories",
+    "category_ar": "إكسسوارات",
+    "category_en": "Accessories",
+    "price": 15,
+    "original_price": 19,
+    "discount": 21,
+    "rating": 4.7,
+    "reviews": 26234,
+    "stock": 46,
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "خصم",
+      "en": "Hot"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Anker+USB-C+Cable+6ft&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "كابل USB-C أنكر - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Anker USB-C Cable 6ft - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239856",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0092",
+    "name": {
+      "ar": "حامل ساعة ماك",
+      "en": "MacMate Watch Stand"
+    },
+    "category": "accessories",
+    "category_ar": "إكسسوارات",
+    "category_en": "Accessories",
+    "price": 35,
+    "original_price": 45,
+    "discount": 22,
+    "rating": 4.6,
+    "reviews": 32788,
+    "stock": 67,
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "تسريع",
+      "en": "Exclusive"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=MacMate+Watch+Stand&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "حامل ساعة ماك - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "MacMate Watch Stand - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239865",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0093",
+    "name": {
+      "ar": "جراب AirPods برو",
+      "en": "AirPods Pro Case"
+    },
+    "category": "accessories",
+    "category_ar": "إكسسوارات",
+    "category_en": "Accessories",
+    "price": 19,
+    "original_price": 29,
+    "discount": 34,
+    "rating": 4.5,
+    "reviews": 1540,
+    "stock": 37,
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "خصم",
+      "en": "Limited"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=AirPods+Pro+Case&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "جراب AirPods برو - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "AirPods Pro Case - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239875",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0094",
+    "name": {
+      "ar": "واقي شاشة أيفون",
+      "en": "iPhone 15 Pro Screen Protector"
+    },
+    "category": "accessories",
+    "category_ar": "إكسسوارات",
+    "category_en": "Accessories",
+    "price": 12,
+    "original_price": 19,
+    "discount": 36,
+    "rating": 4.4,
+    "reviews": 17917,
+    "stock": 20,
+    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "جديد",
+      "en": "Sale"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=iPhone+15+Pro+Screen+Protector&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "واقي شاشة أيفون - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "iPhone 15 Pro Screen Protector - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239888",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0095",
+    "name": {
+      "ar": "خلاط Ninja Foodi",
+      "en": "Ninja Foodi Power Pitcher"
+    },
+    "category": "kitchen",
+    "category_ar": "مطبخ ذكي",
+    "category_en": "Smart Kitchen",
+    "price": 149,
+    "original_price": 179,
+    "discount": 16,
+    "rating": 4.7,
+    "reviews": 5698,
+    "stock": 62,
+    "image": "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "Exclusive"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Ninja+Foodi+Power+Pitcher&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "خلاط Ninja Foodi - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Ninja Foodi Power Pitcher - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239900",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0096",
+    "name": {
+      "ar": "قهوة Barista Express",
+      "en": "Breville Barista Express"
+    },
+    "category": "kitchen",
+    "category_ar": "مطبخ ذكي",
+    "category_en": "Smart Kitchen",
+    "price": 699,
+    "original_price": 799,
+    "discount": 12,
+    "rating": 4.8,
+    "reviews": 25824,
+    "stock": 27,
+    "image": "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "Exclusive"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Breville+Barista+Express&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "قهوة Barista Express - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Breville Barista Express - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239908",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0097",
+    "name": {
+      "ar": "شواية George Foreman",
+      "en": "George Foreman Contact Grill"
+    },
+    "category": "kitchen",
+    "category_ar": "مطبخ ذكي",
+    "category_en": "Smart Kitchen",
+    "price": 99,
+    "original_price": 129,
+    "discount": 23,
+    "rating": 4.6,
+    "reviews": 21675,
+    "stock": 46,
+    "image": "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "عرض محدود",
+      "en": "Sale"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=George+Foreman+Contact+Grill&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "شواية George Foreman - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "George Foreman Contact Grill - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239917",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0098",
+    "name": {
+      "ar": "مقلاة هوائية Cosori",
+      "en": "Cosori Air Fryer 5.8qt"
+    },
+    "category": "kitchen",
+    "category_ar": "مطبخ ذكي",
+    "category_en": "Smart Kitchen",
+    "price": 129,
+    "original_price": 159,
+    "discount": 18,
+    "rating": 4.7,
+    "reviews": 13680,
+    "stock": 64,
+    "image": "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "جديد",
+      "en": "Hot"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Cosori+Air+Fryer+5.8qt&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "مقلاة هوائية Cosori - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Cosori Air Fryer 5.8qt - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239930",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0099",
+    "name": {
+      "ar": "محمصة توست البيتزا",
+      "en": "Cuisinart TOAST-PIX"
+    },
+    "category": "kitchen",
+    "category_ar": "مطبخ ذكي",
+    "category_en": "Smart Kitchen",
+    "price": 49,
+    "original_price": 69,
+    "discount": 28,
+    "rating": 4.5,
+    "reviews": 48851,
+    "stock": 53,
+    "image": "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "حصري",
+      "en": "Featured"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Cuisinart+TOAST-PIX&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "محمصة توست البيتزا - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Cuisinart TOAST-PIX - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239941",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0100",
+    "name": {
+      "ar": "غلاية كهربائية Hamilton",
+      "en": "Hamilton Beach Kettle"
+    },
+    "category": "kitchen",
+    "category_ar": "مطبخ ذكي",
+    "category_en": "Smart Kitchen",
+    "price": 39,
+    "original_price": 49,
+    "discount": 20,
+    "rating": 4.6,
+    "reviews": 22795,
+    "stock": 21,
+    "image": "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "خصم",
+      "en": "New"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Hamilton+Beach+Kettle&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "غلاية كهربائية Hamilton - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Hamilton Beach Kettle - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239951",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0101",
+    "name": {
+      "ar": "مطحنة قهوة Cuisinart",
+      "en": "Cuisinart DBM-8 Supreme"
+    },
+    "category": "kitchen",
+    "category_ar": "مطبخ ذكي",
+    "category_en": "Smart Kitchen",
+    "price": 59,
+    "original_price": 79,
+    "discount": 25,
+    "rating": 4.5,
+    "reviews": 16693,
+    "stock": 39,
+    "image": "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "جديد",
+      "en": "Best Seller"
+    },
+    "featured": true,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Cuisinart+DBM-8+Supreme&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "مطحنة قهوة Cuisinart - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Cuisinart DBM-8 Supreme - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239962",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0102",
+    "name": {
+      "ar": "مقياس طعام ذكي",
+      "en": "Smart Food Scale"
+    },
+    "category": "kitchen",
+    "category_ar": "مطبخ ذكي",
+    "category_en": "Smart Kitchen",
+    "price": 29,
+    "original_price": 39,
+    "discount": 25,
+    "rating": 4.4,
+    "reviews": 22376,
+    "stock": 65,
+    "image": "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "حصري",
+      "en": "Sale"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Smart+Food+Scale&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "مقياس طعام ذكي - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Smart Food Scale - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239972",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0103",
+    "name": {
+      "ar": "حامل آيباد للمطبخ",
+      "en": "Kitchen iPad Stand"
+    },
+    "category": "kitchen",
+    "category_ar": "مطبخ ذكي",
+    "category_en": "Smart Kitchen",
+    "price": 35,
+    "original_price": 45,
+    "discount": 22,
+    "rating": 4.5,
+    "reviews": 43092,
+    "stock": 58,
+    "image": "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "Limited"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Kitchen+iPad+Stand&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "حامل آيباد للمطبخ - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Kitchen iPad Stand - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.239983",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0104",
+    "name": {
+      "ar": "ثلاجة ذكية Samsung",
+      "en": "Samsung Smart Fridge"
+    },
+    "category": "kitchen",
+    "category_ar": "مطبخ ذكي",
+    "category_en": "Smart Kitchen",
+    "price": 2499,
+    "original_price": 2999,
+    "discount": 16,
+    "rating": 4.6,
+    "reviews": 48003,
+    "stock": 23,
+    "image": "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+    "badge": {
+      "ar": "عرض محدود",
+      "en": "Sale"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Smart+Fridge&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "ثلاجة ذكية Samsung - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Samsung Smart Fridge - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.240017",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0105",
+    "name": {
+      "ar": "دمبل ذكي Bowflex",
+      "en": "Bowflex SelectTech 552"
+    },
+    "category": "sports",
+    "category_ar": "رياضة ولياقة",
+    "category_en": "Sports & Fitness",
+    "price": 329,
+    "original_price": 399,
+    "discount": 17,
+    "rating": 4.7,
+    "reviews": 47484,
+    "stock": 61,
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "جديد",
+      "en": "Best Seller"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Bowflex+SelectTech+552&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "دمبل ذكي Bowflex - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Bowflex SelectTech 552 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.240035",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0106",
+    "name": {
+      "ar": "جهاز HIIT صغير",
+      "en": "Hypervolt GO 2"
+    },
+    "category": "sports",
+    "category_ar": "رياضة ولياقة",
+    "category_en": "Sports & Fitness",
+    "price": 199,
+    "original_price": 249,
+    "discount": 20,
+    "rating": 4.8,
+    "reviews": 8919,
+    "stock": 71,
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "جديد",
+      "en": "Sale"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Hypervolt+GO+2&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "جهاز HIIT صغير - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Hypervolt GO 2 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.240052",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0107",
+    "name": {
+      "ar": "سكوتر Ninebot",
+      "en": "Ninebot MAX G2"
+    },
+    "category": "sports",
+    "category_ar": "رياضة ولياقة",
+    "category_en": "Sports & Fitness",
+    "price": 699,
+    "original_price": 799,
+    "discount": 12,
+    "rating": 4.6,
+    "reviews": 47540,
+    "stock": 38,
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Exclusive"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Ninebot+MAX+G2&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "سكوتر Ninebot - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Ninebot MAX G2 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.240066",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0108",
+    "name": {
+      "ar": "دراجة Peloton",
+      "en": "Peloton Bike+"
+    },
+    "category": "sports",
+    "category_ar": "رياضة ولياقة",
+    "category_en": "Sports & Fitness",
+    "price": 2495,
+    "original_price": 2995,
+    "discount": 16,
+    "rating": 4.7,
+    "reviews": 11152,
+    "stock": 96,
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "عرض محدود",
+      "en": "Sale"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Peloton+Bike+&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "دراجة Peloton - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Peloton Bike+ - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.240078",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0109",
+    "name": {
+      "ar": "ساعة garmin forerunner",
+      "en": "Garmin Forerunner 965"
+    },
+    "category": "sports",
+    "category_ar": "رياضة ولياقة",
+    "category_en": "Sports & Fitness",
+    "price": 599,
+    "original_price": 699,
+    "discount": 14,
+    "rating": 4.8,
+    "reviews": 15648,
+    "stock": 93,
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "Limited"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin+Forerunner+965&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "ساعة garmin forerunner - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Garmin Forerunner 965 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.240089",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0110",
+    "name": {
+      "ar": "حبل قفز ذكي",
+      "en": "Smart Jump Rope"
+    },
+    "category": "sports",
+    "category_ar": "رياضة ولياقة",
+    "category_en": "Sports & Fitness",
+    "price": 39,
+    "original_price": 49,
+    "discount": 20,
+    "rating": 4.5,
+    "reviews": 39677,
+    "stock": 29,
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "Sale"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Smart+Jump+Rope&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "حبل قفز ذكي - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Smart Jump Rope - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.240098",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0111",
+    "name": {
+      "ar": "مرتبة يوغا Gaiam",
+      "en": "Gaiam Premium Yoga Mat"
+    },
+    "category": "sports",
+    "category_ar": "رياضة ولياقة",
+    "category_en": "Sports & Fitness",
+    "price": 49,
+    "original_price": 69,
+    "discount": 28,
+    "rating": 4.7,
+    "reviews": 21940,
+    "stock": 62,
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "New"
+    },
+    "featured": true,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Gaiam+Premium+Yoga+Mat&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "مرتبة يوغا Gaiam - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Gaiam Premium Yoga Mat - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.240108",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0112",
+    "name": {
+      "ar": "مضرب بيدو",
+      "en": "Pendoji Badminton Racket"
+    },
+    "category": "sports",
+    "category_ar": "رياضة ولياقة",
+    "category_en": "Sports & Fitness",
+    "price": 79,
+    "original_price": 99,
+    "discount": 20,
+    "rating": 4.6,
+    "reviews": 18633,
+    "stock": 83,
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "عرض محدود",
+      "en": "Exclusive"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Pendoji+Badminton+Racket&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "مضرب بيدو - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Pendoji Badminton Racket - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.240120",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0113",
+    "name": {
+      "ar": "شنطة رياضة Under Armour",
+      "en": "Under Armour Storm Bag"
+    },
+    "category": "sports",
+    "category_ar": "رياضة ولياقة",
+    "category_en": "Sports & Fitness",
+    "price": 89,
+    "original_price": 109,
+    "discount": 18,
+    "rating": 4.6,
+    "reviews": 7021,
+    "stock": 82,
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "Best Seller"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Under+Armour+Storm+Bag&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "شنطة رياضة Under Armour - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Under Armour Storm Bag - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.240129",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0114",
+    "name": {
+      "ar": "نظارات سباحة Aqualens",
+      "en": "Aqualens Swim Goggles"
+    },
+    "category": "sports",
+    "category_ar": "رياضة ولياقة",
+    "category_en": "Sports & Fitness",
+    "price": 35,
+    "original_price": 45,
+    "discount": 22,
+    "rating": 4.5,
+    "reviews": 18092,
+    "stock": 53,
+    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "تسريع",
+      "en": "Featured"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Aqualens+Swim+Goggles&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "نظارات سباحة Aqualens - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Aqualens Swim Goggles - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.240141",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0115",
+    "name": {
+      "ar": "شاحن سيارة MagSafe",
+      "en": "MagSafe Car Charger"
+    },
+    "category": "car",
+    "category_ar": "إلكترونيات السيارات",
+    "category_en": "Car Electronics",
+    "price": 45,
+    "original_price": 59,
+    "discount": 23,
+    "rating": 4.6,
+    "reviews": 23107,
+    "stock": 47,
+    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "حصري",
+      "en": "Best Seller"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=MagSafe+Car+Charger&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "شاحن سيارة MagSafe - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "MagSafe Car Charger - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.240150",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0116",
+    "name": {
+      "ar": "GPS Garmin Drive",
+      "en": "Garmin Drive 52"
+    },
+    "category": "car",
+    "category_ar": "إلكترونيات السيارات",
+    "category_en": "Car Electronics",
+    "price": 199,
+    "original_price": 249,
+    "discount": 20,
+    "rating": 4.5,
+    "reviews": 8404,
+    "stock": 92,
+    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "جديد",
+      "en": "Hot"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin+Drive+52&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "GPS Garmin Drive - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Garmin Drive 52 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.240160",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0117",
+    "name": {
+      "ar": "كاميرا سيارة Rexing",
+      "en": "Rexing V1 Dash Cam"
+    },
+    "category": "car",
+    "category_ar": "إلكترونيات السيارات",
+    "category_en": "Car Electronics",
+    "price": 149,
+    "original_price": 199,
+    "discount": 25,
+    "rating": 4.7,
+    "reviews": 32884,
+    "stock": 70,
+    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "New"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Rexing+V1+Dash+Cam&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "كاميرا سيارة Rexing - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Rexing V1 Dash Cam - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.240173",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0118",
+    "name": {
+      "ar": "راديو اندرويد Joying",
+      "en": "Joying Android Car Radio"
+    },
+    "category": "car",
+    "category_ar": "إلكترونيات السيارات",
+    "category_en": "Car Electronics",
+    "price": 299,
+    "original_price": 399,
+    "discount": 25,
+    "rating": 4.4,
+    "reviews": 34910,
+    "stock": 58,
+    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "جديد",
+      "en": "Sale"
+    },
+    "featured": true,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Joying+Android+Car+Radio&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "راديو اندرويد Joying - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Joying Android Car Radio - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.240183",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0119",
+    "name": {
+      "ar": "مكبر صوت سيارة JBL",
+      "en": "JBL Car Speaker"
+    },
+    "category": "car",
+    "category_ar": "إلكترونيات السيارات",
+    "category_en": "Car Electronics",
+    "price": 89,
+    "original_price": 109,
+    "discount": 18,
+    "rating": 4.6,
+    "reviews": 41711,
+    "stock": 77,
+    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "حصري",
+      "en": "Limited"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=JBL+Car+Speaker&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "مكبر صوت سيارة JBL - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "JBL Car Speaker - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.240192",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0120",
+    "name": {
+      "ar": "منظف هواء سيارة",
+      "en": "Car Air Purifier"
+    },
+    "category": "car",
+    "category_ar": "إلكترونيات السيارات",
+    "category_en": "Car Electronics",
+    "price": 49,
+    "original_price": 69,
+    "discount": 28,
+    "rating": 4.4,
+    "reviews": 15410,
+    "stock": 46,
+    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "جديد",
+      "en": "Best Seller"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Car+Air+Purifier&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "منظف هواء سيارة - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Car Air Purifier - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.240201",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0121",
+    "name": {
+      "ar": "حامل هاتف سيارة",
+      "en": "Magnetic Car Phone Mount"
+    },
+    "category": "car",
+    "category_ar": "إلكترونيات السيارات",
+    "category_en": "Car Electronics",
+    "price": 25,
+    "original_price": 35,
+    "discount": 28,
+    "rating": 4.7,
+    "reviews": 44668,
+    "stock": 45,
+    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Limited"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Magnetic+Car+Phone+Mount&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "حامل هاتف سيارة - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Magnetic Car Phone Mount - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.240212",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0122",
+    "name": {
+      "ar": "مسجل بيانات OBD2",
+      "en": "OBD2 Bluetooth Scanner"
+    },
+    "category": "car",
+    "category_ar": "إلكترونيات السيارات",
+    "category_en": "Car Electronics",
+    "price": 79,
+    "original_price": 99,
+    "discount": 20,
+    "rating": 4.5,
+    "reviews": 43687,
+    "stock": 41,
+    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "خصم",
+      "en": "Exclusive"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=OBD2+Bluetooth+Scanner&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "مسجل بيانات OBD2 - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "OBD2 Bluetooth Scanner - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.240224",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0123",
+    "name": {
+      "ar": "إضاءة LED سيارة",
+      "en": "Car LED Interior Lights"
+    },
+    "category": "car",
+    "category_ar": "إلكترونيات السيارات",
+    "category_en": "Car Electronics",
+    "price": 29,
+    "original_price": 39,
+    "discount": 25,
+    "rating": 4.4,
+    "reviews": 11379,
+    "stock": 70,
+    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Limited"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Car+LED+Interior+Lights&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "إضاءة LED سيارة - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Car LED Interior Lights - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.241137",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0124",
+    "name": {
+      "ar": "كاميرا رجوع سيارة",
+      "en": "Rear View Backup Camera"
+    },
+    "category": "car",
+    "category_ar": "إلكترونيات السيارات",
+    "category_en": "Car Electronics",
+    "price": 89,
+    "original_price": 119,
+    "discount": 25,
+    "rating": 4.5,
+    "reviews": 42035,
+    "stock": 50,
+    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "خصم",
+      "en": "Hot"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Rear+View+Backup+Camera&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "كاميرا رجوع سيارة - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Rear View Backup Camera - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.241152",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0125",
+    "name": {
+      "ar": "ساعة أطفال Garmin",
+      "en": "Garmin vívofit jr. 3"
+    },
+    "category": "kids",
+    "category_ar": "أطفال وتقنية",
+    "category_en": "Kids Tech",
+    "price": 99,
+    "original_price": 129,
+    "discount": 23,
+    "rating": 4.6,
+    "reviews": 39018,
+    "stock": 70,
+    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Hot"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin+vívofit+jr.+3&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "ساعة أطفال Garmin - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Garmin vívofit jr. 3 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.241168",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0126",
+    "name": {
+      "ar": "جهاز Kindle للأطفال",
+      "en": "Amazon Fire Kids Tablet"
+    },
+    "category": "kids",
+    "category_ar": "أطفال وتقنية",
+    "category_en": "Kids Tech",
+    "price": 149,
+    "original_price": 189,
+    "discount": 21,
+    "rating": 4.5,
+    "reviews": 33431,
+    "stock": 57,
+    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "تسريع",
+      "en": "Exclusive"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Amazon+Fire+Kids+Tablet&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "جهاز Kindle للأطفال - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Amazon Fire Kids Tablet - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.241178",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0127",
+    "name": {
+      "ar": "روبوت Cozmo",
+      "en": "Anki Cozmo Robot"
+    },
+    "category": "kids",
+    "category_ar": "أطفال وتقنية",
+    "category_en": "Kids Tech",
+    "price": 299,
+    "original_price": 349,
+    "discount": 14,
+    "rating": 4.7,
+    "reviews": 28566,
+    "stock": 20,
+    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "تسريع",
+      "en": "Exclusive"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Anki+Cozmo+Robot&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "روبوت Cozmo - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Anki Cozmo Robot - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.241190",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0128",
+    "name": {
+      "ar": "مساعد Echo Dot للأطفال",
+      "en": "Echo Dot Kids Edition"
+    },
+    "category": "kids",
+    "category_ar": "أطفال وتقنية",
+    "category_en": "Kids Tech",
+    "price": 44,
+    "original_price": 59,
+    "discount": 25,
+    "rating": 4.6,
+    "reviews": 45152,
+    "stock": 52,
+    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "New"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Echo+Dot+Kids+Edition&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "مساعد Echo Dot للأطفال - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Echo Dot Kids Edition - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.241203",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0129",
+    "name": {
+      "ar": "لعبة ليغو Spike",
+      "en": "LEGO Education Spike"
+    },
+    "category": "kids",
+    "category_ar": "أطفال وتقنية",
+    "category_en": "Kids Tech",
+    "price": 329,
+    "original_price": 399,
+    "discount": 17,
+    "rating": 4.8,
+    "reviews": 39301,
+    "stock": 93,
+    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "مميز",
+      "en": "Featured"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=LEGO+Education+Spike&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "لعبة ليغو Spike - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "LEGO Education Spike - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.241213",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0130",
+    "name": {
+      "ar": "دراجة كهربائية للأطفال",
+      "en": "Razor Power Core E100"
+    },
+    "category": "kids",
+    "category_ar": "أطفال وتقنية",
+    "category_en": "Kids Tech",
+    "price": 149,
+    "original_price": 179,
+    "discount": 16,
+    "rating": 4.5,
+    "reviews": 3947,
+    "stock": 67,
+    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "الأكثر مبيعاً",
+      "en": "Sale"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Razor+Power+Core+E100&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "دراجة كهربائية للأطفال - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Razor Power Core E100 - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.241224",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0131",
+    "name": {
+      "ar": "كاميرا أكشن للأطفال",
+      "en": "VTech Kidizoom Camera"
+    },
+    "category": "kids",
+    "category_ar": "أطفال وتقنية",
+    "category_en": "Kids Tech",
+    "price": 59,
+    "original_price": 79,
+    "discount": 25,
+    "rating": 4.4,
+    "reviews": 1875,
+    "stock": 63,
+    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "تسريع",
+      "en": "Best Seller"
+    },
+    "featured": true,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=VTech+Kidizoom+Camera&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "كاميرا أكشن للأطفال - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "VTech Kidizoom Camera - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.241234",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0132",
+    "name": {
+      "ar": "سماعات للأطفال JBL",
+      "en": "JBL Jr. headphones"
+    },
+    "category": "kids",
+    "category_ar": "أطفال وتقنية",
+    "category_en": "Kids Tech",
+    "price": 29,
+    "original_price": 39,
+    "discount": 25,
+    "rating": 4.5,
+    "reviews": 1272,
+    "stock": 66,
+    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "عرض محدود",
+      "en": "Best Seller"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=JBL+Jr.+headphones&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "سماعات للأطفال JBL - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "JBL Jr. headphones - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.241245",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0133",
+    "name": {
+      "ar": "جهاز تعليمي تابلت",
+      "en": "LeapFrog LeapTable"
+    },
+    "category": "kids",
+    "category_ar": "أطفال وتقنية",
+    "category_en": "Kids Tech",
+    "price": 79,
+    "original_price": 99,
+    "discount": 20,
+    "rating": 4.6,
+    "reviews": 17467,
+    "stock": 27,
+    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "خصم",
+      "en": "Featured"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=LeapFrog+LeapTable&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "جهاز تعليمي تابلت - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "LeapFrog LeapTable - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.241255",
+    "added_by": "expansion_v1"
+  },
+  {
+    "id": "NPH-EXP-0134",
+    "name": {
+      "ar": "مراقبة طفل OwlCam",
+      "en": "Owl Camera Baby Monitor"
+    },
+    "category": "kids",
+    "category_ar": "أطفال وتقنية",
+    "category_en": "Kids Tech",
+    "price": 149,
+    "original_price": 189,
+    "discount": 21,
+    "rating": 4.7,
+    "reviews": 5220,
+    "stock": 71,
+    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+    "badge": {
+      "ar": "عرض محدود",
+      "en": "New"
+    },
+    "featured": false,
+    "in_stock": true,
+    "affiliate_amazon": "https://www.amazon.com/s?k=Owl+Camera+Baby+Monitor&tag=neopulsehub-20",
+    "asin": "",
+    "affiliate_aliexpress": "",
+    "description": {
+      "ar": "مراقبة طفل OwlCam - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل.",
+      "en": "Owl Camera Baby Monitor - High quality product with 2-year warranty and 24/7 customer service. Delivery in 3-7 business days."
+    },
+    "features": {
+      "ar": [
+        "ضمان سنتين",
+        "توصيل مجاني",
+        "دعم فني",
+        "جودة عالية"
+      ],
+      "en": [
+        "2 Year Warranty",
+        "Free Shipping",
+        "Technical Support",
+        "High Quality"
+      ]
+    },
+    "added_at": "2026-07-03T09:18:55.241264",
+    "added_by": "expansion_v1"
   }
 ]
