@@ -18,7 +18,7 @@ ADMIN_USER_ID      = int(os.environ.get("ADMIN_USER_ID", "0"))
 GEMINI_API_KEY     = os.environ.get("GEMINI_API_KEY", "")
 GITHUB_TOKEN       = os.environ.get("GITHUB_TOKEN", "")
 GITHUB_REPO        = os.environ.get("GITHUB_REPO", "casperblac991/neo-pulse-hub")
-GOOGLE_API_KEY     = os.environ.get("GOOGLE_API_KEY", "AIzaSyBjH8OXjZ9r_tvB4z9miqlncdvVuRsfWiU")
+GOOGLE_API_KEY     = os.environ.get("GOOGLE_API_KEY", "")
 GOOGLE_CX          = os.environ.get("GOOGLE_CX", "53f17b4ecf9924a25")
 
 GITHUB_API         = "https://api.github.com"

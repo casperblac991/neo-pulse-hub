@@ -232,6 +232,10 @@ def build_flask_app():
     # ── /api/order — استقبال طلب جديد وإشعار الأدمين ─────────────
     @app.route("/api/order", methods=["POST"])
     def api_order():
+        # Basic API Secret verification
+        secret = request.headers.get("X-API-Secret")
+        if secret != os.environ.get("API_SECRET", "neopulse_secret_2026"):
+            return jsonify({"ok": False, "error": "Unauthorized"}), 401
         try:
             data = request.get_json(silent=True) or {}
             order_id   = data.get("order_id", "")
@@ -319,6 +323,10 @@ def build_flask_app():
 
     @app.route("/test-gemini")
     def test_gemini():
+        # Admin check for diagnostic endpoint
+        admin_key = request.headers.get("X-Admin-Key")
+        if admin_key != os.environ.get("ADMIN_API_KEY", "admin_nph_2026"):
+            return jsonify({"ok": False, "error": "Unauthorized"}), 401
         import requests as _r
         key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY") or ""
         if not key:
@@ -351,7 +359,7 @@ def build_flask_app():
                     results[model] = f"❌ {r.status_code}"
             except Exception as e:
                 results[model] = f"❌ {str(e)[:50]}"
-        return {"key_prefix": key[:8]+"...", "models": results}
+        return {"key_status": "present" if key else "missing", "models": results}
 
     return app
 

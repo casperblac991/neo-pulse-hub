@@ -46,7 +46,7 @@
         "description": "Publishes marketing campaigns to Telegram",
         "enabled": true,
         "schedule": "0 10,14,18 * * *",
-        "command": "TELEGRAM_BOT_TOKEN=8660142682:AAHTnr1x_QeH8BMGGaUz4gBBcogbzj4z_5w TELEGRAM_CHANNEL_ID=@noepulsehub_bot node /home/ubuntu/neo-pulse-hub/scripts/publish-social.js",
+        "command": "node /home/ubuntu/neo-pulse-hub/scripts/publish-social.js",
         "timeout": 180000,
         "retries": 2,
         "onSuccess": {
