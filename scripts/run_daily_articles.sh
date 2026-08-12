@@ -6,7 +6,7 @@
 
 # المتغيرات
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PYTHON_SCRIPT="$SCRIPT_DIR/daily_article_generator.py"
+PYTHON_SCRIPT="$SCRIPT_DIR/../backend/daily_article_generator.py"
 LOG_FILE="$SCRIPT_DIR/daily_articles.log"
 
 # دالة التشغيل

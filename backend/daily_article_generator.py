@@ -15,7 +15,8 @@ from pathlib import Path
 
 class DailyArticleGenerator:
     def __init__(self):
-        self.blog_dir = Path("blog/ar")
+        self.blog_dir_ar = Path("blog/ar")
+        self.blog_dir_en = Path("blog/en")
         self.products_file = "products.json"
         self.articles_data_file = "articles_data.json"
         self.articles = []
@@ -32,37 +33,62 @@ class DailyArticleGenerator:
             with open(self.articles_data_file, 'r', encoding='utf-8') as f:
                 data = json.load(f)
                 # التعامل مع هيكل JSON القديم
-                if isinstance(data, dict) and 'ar' in data:
-                    self.articles = data['ar']
+                if isinstance(data, dict):
+                    self.articles = data.get('ar', [])
+                    self.articles_en = data.get('en', [])
                 elif isinstance(data, list):
                     self.articles = data
+                    self.articles_en = []
                 else:
                     self.articles = []
+                    self.articles_en = []
         else:
             self.articles = []
+            self.articles_en = []
     
     def save_articles_data(self):
         """حفظ بيانات المقالات"""
         # الحفاظ على هيكل JSON القديم
-        data = {"ar": self.articles, "en": []}
+        if isinstance(self.articles, list):
+            data = {"ar": self.articles, "en": self.articles_en if hasattr(self, 'articles_en') else []}
+        else:
+            data = self.articles
+            
         with open(self.articles_data_file, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
     
-    def generate_article_title(self, product):
+    def generate_article_title(self, product, lang='ar'):
         """توليد عنوان المقالة"""
-        templates_ar = [
-            "مراجعة شاملة: {name} - هل يستحق الشراء؟",
-            "دليل الشراء: {name} - كل ما تحتاج معرفته",
-            "{name} - مراجعة تفصيلية وأراء المستخدمين",
-            "أفضل {name} في 2026 - مراجعة شاملة",
-            "{name}: مراجعة شاملة مع verdict النهائي",
-            " اكتشف {name} - مراجعة صادقة ومفصلة",
-            "{name} - هل هو أفضل خيار في فئته؟",
-            "تقرير كامل عن {name}: الميزات والعيوب",
-            "{name} - مراجعة الخبراء والاختبارات",
-            "كل ما تريد معرفته عن {name}",
-        ]
-        return random.choice(templates_ar).format(name=product.get('name', {}).get('ar', product.get('name', 'منتج')))
+        if lang == 'ar':
+            templates = [
+                "مراجعة شاملة: {name} - هل يستحق الشراء؟",
+                "دليل الشراء: {name} - كل ما تحتاج معرفته",
+                "{name} - مراجعة تفصيلية وأراء المستخدمين",
+                "أفضل {name} في 2026 - مراجعة شاملة",
+                "{name}: مراجعة شاملة مع verdict النهائي",
+                " اكتشف {name} - مراجعة صادقة ومفصلة",
+                "{name} - هل هو أفضل خيار في فئته؟",
+                "تقرير كامل عن {name}: الميزات والعيوب",
+                "{name} - مراجعة الخبراء والاختبارات",
+                "كل ما تريد معرفته عن {name}",
+            ]
+            name = product.get('name', {}).get('ar', product.get('name', 'منتج'))
+        else:
+            templates = [
+                "Comprehensive Review: {name} - Is it worth buying?",
+                "Buying Guide: {name} - Everything you need to know",
+                "{name} - Detailed review and user opinions",
+                "Best {name} in 2026 - Comprehensive review",
+                "{name}: Full review with final verdict",
+                "Discover {name} - Honest and detailed review",
+                "{name} - Is it the best choice in its category?",
+                "Complete report on {name}: Pros and Cons",
+                "{name} - Expert review and tests",
+                "Everything you want to know about {name}",
+            ]
+            name = product.get('name', {}).get('en', product.get('name', 'Product'))
+            
+        return random.choice(templates).format(name=name)
     
     def generate_article_content(self, product):
         """توليد محتوى المقالة"""
@@ -160,12 +186,13 @@ price: {price}
         
         return content
     
-    def generate_html_article(self, product):
+    def generate_html_article(self, product, lang='ar'):
         """توليد صفحة HTML للمقالة"""
         name_ar = product.get('name', {}).get('ar', 'منتج')
         name_en = product.get('name', {}).get('en', 'Product')
         category = product.get('category', 'general')
         category_ar = product.get('category_ar', 'متفرقات')
+        category_en = product.get('category_en', 'Miscellaneous')
         price = product.get('price', 0)
         original_price = product.get('original_price', 0)
         rating = product.get('rating', 4.5)
@@ -176,24 +203,83 @@ price: {price}
         
         rating_stars = "⭐" * int(rating)
         
-        slug = name_ar.replace(' ', '-').replace('/', '-').replace(':', '').replace('"', '')[:50]
+        if lang == 'ar':
+            slug = name_ar.replace(' ', '-').replace('/', '-').replace(':', '').replace('"', '')[:50]
+            title_tag = f"{name_ar} - مراجعة شاملة | NEO PULSE HUB"
+            desc_tag = f"مراجعة شاملة لـ {name_ar} - تقييم {rating}/5. اكتشف المميزات والعيوب والسعر الحالي على أمازون."
+            dir_attr = 'rtl'
+            lang_attr = 'ar'
+            back_text = "← العودة للمدونة"
+            back_link = "../blog_index_ar.html"
+            current_price_label = "السعر الحالي على أمازون"
+            buy_now_text = f"🛒 اشتري الآن من أمازون - ${price}"
+            review_title = "📝 مراجعة شاملة"
+            review_desc = f"{name_ar} هو أحد أبرز المنتجات في فئته. في هذه المراجعة الشاملة، سنستعرض جميع جوانب هذا المنتج لمساعدتك في اتخاذ قرار الشراء الذكي."
+            features_title = "⭐ المميزات"
+            feature_1 = f"تقييم عالي {rating_stars}"
+            feature_2 = f"سعر تنافسي مع خصم {discount}%"
+            feature_3 = f"عدد مراجعات كبير ({reviews:,})"
+            specs_title = "📋 المواصفات التقنية"
+            spec_name = "الاسم"
+            spec_cat = "التصنيف"
+            spec_rating = "التقييم"
+            spec_reviews = "عدد المراجعات"
+            pros_title = "✅ المميزات"
+            cons_title = "❌ العيوب"
+            pro_1 = f"تقييم {rating}/5 ممتاز"
+            pro_2 = "سعر معقول"
+            pro_3 = "جودة عالية"
+            con_1 = "قد يحتاج وقت للتعود"
+            con_2 = "التوصيل 3-7 أيام"
+            verdict_title = "🎯 الحكم النهائي"
+            verdict_desc = f"<strong>{name_ar}</strong> هو خيار ممتاز. التقييم العالي وعدد المراجعات الكبيرة يؤكدان جودة هذا المنتج. ننصح بالشراء!"
+            footer_text = f"🔄 هذا التقرير تم توليده تلقائياً يوم {datetime.now().strftime('%Y-%m-%d')}"
+            cat_label = category_ar
+            name_label = name_ar
+        else:
+            slug = name_en.replace(' ', '-').replace('/', '-').replace(':', '').replace('"', '')[:50]
+            title_tag = f"{name_en} - Comprehensive Review | NEO PULSE HUB"
+            desc_tag = f"Comprehensive review of {name_en} - Rated {rating}/5. Discover features, pros, cons, and current price on Amazon."
+            dir_attr = 'ltr'
+            lang_attr = 'en'
+            back_text = "← Back to Blog"
+            back_link = "../blog_index_en.html"
+            current_price_label = "Current Price on Amazon"
+            buy_now_text = f"🛒 Buy Now on Amazon - ${price}"
+            review_title = "📝 Comprehensive Review"
+            review_desc = f"{name_en} is one of the leading products in its category. In this comprehensive review, we will explore all aspects of this product to help you make a smart buying decision."
+            features_title = "⭐ Key Features"
+            feature_1 = f"High rating {rating_stars}"
+            feature_2 = f"Competitive price with {discount}% discount"
+            feature_3 = f"Large number of reviews ({reviews:,})"
+            specs_title = "📋 Technical Specifications"
+            spec_name = "Name"
+            spec_cat = "Category"
+            spec_rating = "Rating"
+            spec_reviews = "Reviews Count"
+            pros_title = "✅ Pros"
+            cons_title = "❌ Cons"
+            pro_1 = f"Excellent {rating}/5 rating"
+            pro_2 = "Reasonable price"
+            pro_3 = "High quality"
+            con_1 = "May take time to get used to"
+            con_2 = "Shipping takes 3-7 days"
+            verdict_title = "🎯 Final Verdict"
+            verdict_desc = f"<strong>{name_en}</strong> is an excellent choice. The high rating and large number of reviews confirm the quality of this product. Highly recommended!"
+            footer_text = f"🔄 This report was auto-generated on {datetime.now().strftime('%Y-%m-%d')}"
+            cat_label = category_en
+            name_label = name_en
+
         filename = f"{slug}-review.html"
         
         html = f"""<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="{lang_attr}" dir="{dir_attr}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{name_ar} - مراجعة شاملة | NEO PULSE HUB</title>
-    <meta name="description" content="مراجعة شاملة لـ {name_ar} - تقييم {rating}/5. اكتشف المميزات والعيوب والسعر الحالي على أمازون.">
-    <meta name="keywords" content="{name_ar}, مراجعة, تقييم, أمازون, شراء">
-    <link rel="canonical" href="https://neo-pulse-hub.com/blog/ar/{filename}">
-    
-    <!-- Open Graph -->
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="{name_ar} - مراجعة شاملة">
-    <meta property="og:description" content="مراجعة شاملة لـ {name_ar} - تقييم {rating}/5">
-    <meta property="og:image" content="{image}">
+    <title>{title_tag}</title>
+    <meta name="description" content="{desc_tag}">
+    <link rel="canonical" href="https://neo-pulse-hub.com/blog/{lang}/{filename}">
     
     <style>
         :root {{
@@ -209,7 +295,7 @@ price: {price}
         * {{ margin: 0; padding: 0; box-sizing: border-box; }}
         
         body {{
-            font-family: 'Cairo', sans-serif;
+            font-family: {("'Cairo', sans-serif" if lang == 'ar' else "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif")};
             background: linear-gradient(135deg, var(--dark-bg), #0f172a);
             color: var(--text);
             line-height: 1.8;
@@ -268,11 +354,6 @@ price: {price}
             margin: 2rem 0;
         }}
         
-        .price-label {{
-            font-size: 1rem;
-            opacity: 0.9;
-        }}
-        
         .current-price {{
             font-size: 2.5rem;
             font-weight: bold;
@@ -324,20 +405,6 @@ price: {price}
             margin: 1.5rem 0 1rem;
         }}
         
-        p {{
-            margin-bottom: 1rem;
-            color: var(--text);
-        }}
-        
-        ul, ol {{
-            margin: 1rem 0;
-            padding-right: 2rem;
-        }}
-        
-        li {{
-            margin-bottom: 0.5rem;
-        }}
-        
         .specs-table {{
             width: 100%;
             border-collapse: collapse;
@@ -347,7 +414,7 @@ price: {price}
         .specs-table th, .specs-table td {{
             padding: 1rem;
             border: 1px solid rgba(59, 130, 246, 0.2);
-            text-align: right;
+            text-align: {('right' if lang == 'ar' else 'left')};
         }}
         
         .specs-table th {{
@@ -368,8 +435,8 @@ price: {price}
             border-radius: 10px;
         }}
         
-        .pros {{ border-right: 4px solid #10b981; }}
-        .cons {{ border-right: 4px solid #ef4444; }}
+        .pros {{ border-{('right' if lang == 'ar' else 'left')}: 4px solid #10b981; }}
+        .cons {{ border-{('right' if lang == 'ar' else 'left')}: 4px solid #ef4444; }}
         
         .pros h4 {{ color: #10b981; margin-bottom: 1rem; }}
         .cons h4 {{ color: #ef4444; margin-bottom: 1rem; }}
@@ -413,116 +480,85 @@ price: {price}
     <div class="container">
         <article>
             <header class="article-header">
-                <span class="category-badge">{category_ar}</span>
-                <h1 class="article-title">{name_ar}</h1>
+                <span class="category-badge">{cat_label}</span>
+                <h1 class="article-title">{name_label}</h1>
                 <div class="article-meta">
                     <span>📅 {datetime.now().strftime('%Y-%m-%d')}</span>
                     <span>⭐ {rating}/5</span>
-                    <span>👁️ {reviews:,} مراجعة</span>
+                    <span>👁️ {reviews:,} {('مراجعة' if lang == 'ar' else 'Reviews')}</span>
                 </div>
             </header>
             
-            <img src="{image}" alt="{name_ar}" class="article-image">
+            <img src="{image}" alt="{name_label}" class="article-image">
             
             <div class="price-box">
-                <div class="price-label">السعر الحالي على أمازون</div>
+                <div class="price-label">{current_price_label}</div>
                 <div class="current-price">${price}</div>
                 <div class="original-price">${original_price}</div>
-                <span class="discount-badge">خصم {discount}%</span>
+                <span class="discount-badge">{('خصم' if lang == 'ar' else 'Discount')} {discount}%</span>
             </div>
             
             <a href="{affiliate}" target="_blank" class="buy-button">
-                🛒 اشتري الآن من أمازون - ${price}
+                {buy_now_text}
             </a>
             
             <section>
-                <h2>📝 مراجعة شاملة</h2>
-                <p>
-                    {name_ar} هو أحد أبرز المنتجات في فئته. في هذه المراجعة الشاملة، 
-                    سنستعرض جميع جوانب هذا المنتج لمساعدتك في اتخاذ قرار الشراء الذكي.
-                </p>
+                <h2>{review_title}</h2>
+                <p>{review_desc}</p>
                 
-                <h3>⭐ المميزات</h3>
+                <h3>{features_title}</h3>
                 <ul>
-                    <li>تقييم عالي {rating_stars}</li>
-                    <li>سعر تنافسي مع خصم {discount}%</li>
-                    <li>عدد مراجعات كبير ({reviews:,})</li>
-                    <li>جودة تصنيع عالية</li>
-                    <li>ضمان شامل</li>
-                    <li>توصيل سريع</li>
+                    <li>✅ {feature_1}</li>
+                    <li>✅ {feature_2}</li>
+                    <li>✅ {feature_3}</li>
+                    <li>✅ {('جودة تصنيع عالية' if lang == 'ar' else 'High build quality')}</li>
+                    <li>✅ {('ضمان شامل' if lang == 'ar' else 'Full warranty')}</li>
+                    <li>✅ {('توصيل سريع' if lang == 'ar' else 'Fast delivery')}</li>
                 </ul>
             </section>
             
             <section>
-                <h2>📋 المواصفات التقنية</h2>
+                <h2>{specs_title}</h2>
                 <table class="specs-table">
-                    <tr>
-                        <th>المواصفة</th>
-                        <th>القيمة</th>
-                    </tr>
-                    <tr>
-                        <td>الاسم</td>
-                        <td>{name_en}</td>
-                    </tr>
-                    <tr>
-                        <td>التصنيف</td>
-                        <td>{category_ar}</td>
-                    </tr>
-                    <tr>
-                        <td>السعر</td>
-                        <td>${price}</td>
-                    </tr>
-                    <tr>
-                        <td>التقييم</td>
-                        <td>{rating_stars} ({rating}/5)</td>
-                    </tr>
-                    <tr>
-                        <td>عدد المراجعات</td>
-                        <td>{reviews:,}</td>
-                    </tr>
+                    <tr><th>{spec_name}</th><td>{name_label}</td></tr>
+                    <tr><th>{spec_cat}</th><td>{cat_label}</td></tr>
+                    <tr><th>{spec_rating}</th><td>{rating}/5</td></tr>
+                    <tr><th>{spec_reviews}</th><td>{reviews:,}</td></tr>
                 </table>
             </section>
             
-            <section>
-                <h2>✅ المميزات vs ❌ العيوب</h2>
-                <div class="pros-cons">
-                    <div class="pros">
-                        <h4>✅ المميزات</h4>
-                        <ul>
-                            <li>تقييم {rating}/5 ممتاز</li>
-                            <li>سعر معقول</li>
-                            <li>جودة عالية</li>
-                            <li>سهل الاستخدام</li>
-                            <li>دعم فني ممتاز</li>
-                        </ul>
-                    </div>
-                    <div class="cons">
-                        <h4>❌ العيوب</h4>
-                        <ul>
-                            <li>قد يحتاج وقت للتعود</li>
-                            <li>التوصيل 3-7 أيام</li>
-                        </ul>
-                    </div>
+            <section class="pros-cons">
+                <div class="pros">
+                    <h4>{pros_title}</h4>
+                    <ul>
+                        <li>{pro_1}</li>
+                        <li>{pro_2}</li>
+                        <li>{pro_3}</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h4>{cons_title}</h4>
+                    <ul>
+                        <li>{con_1}</li>
+                        <li>{con_2}</li>
+                    </ul>
                 </div>
             </section>
             
             <div class="verdict-box">
-                <h2>🎯 الحكم النهائي</h2>
+                <h2>{verdict_title}</h2>
                 <div class="rating">{rating_stars} ({rating}/5)</div>
-                <p>
-                    <strong>{name_ar}</strong> هو خيار ممتاز. التقييم العالي وعدد المراجعات 
-                    الكبيرة يؤكدان جودة هذا المنتج. ننصح بالشراء!
-                </p>
+                <p>{verdict_desc}</p>
             </div>
             
             <a href="{affiliate}" target="_blank" class="buy-button">
-                🛒 اطلب الآن من أمازون
+                {buy_now_text}
             </a>
         </article>
         
         <footer>
-            <p>🔄 هذا التقرير تم توليده تلقائياً يوم {datetime.now().strftime('%Y-%m-%d')}</p>
-            <p><a href="../blog_index_ar.html" class="back-link">← العودة للمدونة</a></p>
+            <p>{footer_text}</p>
+            <p><a href="{back_link}" class="back-link">{back_text}</a></p>
         </footer>
     </div>
 </body>
@@ -531,7 +567,7 @@ price: {price}
         return filename, html
     
     def create_daily_article(self):
-        """إنشاء مقالة يومية جديدة"""
+        """إنشاء مقالة يومية جديدة باللغتين"""
         print("=" * 70)
         print("🎯 بدء توليد المقالات اليومية")
         print("=" * 70)
@@ -557,22 +593,18 @@ price: {price}
         
         print(f"📝 اختيار منتج: {product.get('name', {}).get('ar', 'غير محدد')}")
         
-        # توليد المقالة
-        title = self.generate_article_title(product)
-        filename, html_content = self.generate_html_article(product)
+        # 1. توليد المقالة العربية
+        title_ar = self.generate_article_title(product, 'ar')
+        filename_ar, html_ar = self.generate_html_article(product, 'ar')
+        filepath_ar = self.blog_dir_ar / filename_ar
+        with open(filepath_ar, 'w', encoding='utf-8') as f:
+            f.write(html_ar)
+        print(f"✅ تم حفظ (AR): {filepath_ar}")
         
-        # حفظ ملف HTML
-        filepath = self.blog_dir / filename
-        with open(filepath, 'w', encoding='utf-8') as f:
-            f.write(html_content)
-        
-        print(f"✅ تم حفظ: {filepath}")
-        
-        # حفظ بيانات المقالة (تنسيق مطابق لل существующий)
-        article_data = {
-            "title": title,
-            "file": filename,
-            "path": f"blog/ar/{filename}",
+        article_data_ar = {
+            "title": title_ar,
+            "file": filename_ar,
+            "path": f"blog/ar/{filename_ar}",
             "product_id": product_id,
             "product_name": product.get('name', {}).get('ar', ''),
             "category": product.get('category', ''),
@@ -581,20 +613,42 @@ price: {price}
             "affiliate_link": product.get('affiliate_amazon', ''),
             "rating": product.get('rating', 0)
         }
+        self.articles.append(article_data_ar)
+
+        # 2. توليد المقالة الإنجليزية
+        title_en = self.generate_article_title(product, 'en')
+        filename_en, html_en = self.generate_html_article(product, 'en')
+        filepath_en = self.blog_dir_en / filename_en
+        with open(filepath_en, 'w', encoding='utf-8') as f:
+            f.write(html_en)
+        print(f"✅ تم حفظ (EN): {filepath_en}")
         
-        self.articles.append(article_data)
+        article_data_en = {
+            "title": title_en,
+            "file": filename_en,
+            "path": f"blog/en/{filename_en}",
+            "product_id": product_id,
+            "product_name": product.get('name', {}).get('en', ''),
+            "category": product.get('category', ''),
+            "date": today,
+            "created_at": datetime.now().isoformat(),
+            "affiliate_link": product.get('affiliate_amazon', ''),
+            "rating": product.get('rating', 0)
+        }
+        self.articles_en.append(article_data_en)
+        
         self.save_articles_data()
         
-        print(f"\n✨ تم إنشاء مقالة جديدة: '{title}'")
+        print(f"\n✨ تم إنشاء مقالات جديدة بنجاح!")
         print(f"📅 التاريخ: {today}")
-        print(f"🔗 الملف: {filename}")
         
-        return article_data
+        return article_data_ar
     
     def run(self):
         """تشغيل النظام"""
         # التأكد من وجود مجلد المدونة
-        self.blog_dir.mkdir(parents=True, exist_ok=True)
+        self.blog_dir_ar.mkdir(parents=True, exist_ok=True)
+        self.blog_dir_en.mkdir(parents=True, exist_ok=True)
         
         # إنشاء المقالة اليومية
         result = self.create_daily_article()
@@ -604,9 +658,14 @@ price: {price}
             print("🎉 تم إنجاز التنزيل اليومي بنجاح!")
             print("=" * 70)
             
+            # مزامنة الفهارس
+            print("\n🔄 مزامنة فهارس المدونة...")
+            os.system("python3 backend/sync_blog_indices.py")
+            
             # عرض إحصائيات
             print(f"\n📊 إحصائيات المدونة:")
-            print(f"   • إجمالي المقالات: {len(self.articles)}")
+            print(f"   • إجمالي المقالات (AR): {len(self.articles)}")
+            print(f"   • إجمالي المقالات (EN): {len(self.articles_en)}")
             print(f"   • المقالات اليوم: 1")
             print(f"   • المنتجات المتاحة: {len(self.products)}")
         else:

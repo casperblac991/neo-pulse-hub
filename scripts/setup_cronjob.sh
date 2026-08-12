@@ -4,7 +4,7 @@
 # =====================================================
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PYTHON_SCRIPT="$SCRIPT_DIR/daily_article_generator.py"
+PYTHON_SCRIPT="$SCRIPT_DIR/../backend/daily_article_generator.py"
 
 # ألوان
 GREEN='\033[0;32m'
