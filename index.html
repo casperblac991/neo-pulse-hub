@@ -455,13 +455,20 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
       <li><a href="product-battle.html">⚔️ معركة المنتجات</a></li>
       <li><a href="blog/ar/" data-i18n="nav_blog_ar">📝 المدونة</a></li>
 </ul>
-  <div style="display:flex;align-items:center;gap:.8rem">
-    <div class="lang-switch">
-      <button class="lang-btn active" id="langAr" onclick="changeLang('ar')">عربي</button>
-      <button class="lang-btn" id="langEn" onclick="changeLang('en')">EN</button>
-    </div>
-    <button class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
-  </div>
+	  <div style="display:flex;align-items:center;gap:.8rem">
+	    <div class="lang-switch">
+	      <button class="lang-btn active" id="langAr" onclick="changeLang('ar')">عربي</button>
+	      <button class="lang-btn" id="langEn" onclick="changeLang('en')">EN</button>
+	    </div>
+        <select class="currency-select" onchange="changeCurrency(this.value)">
+            <option value="USD">$ USD</option>
+            <option value="SAR">ر.س SAR</option>
+            <option value="AED">د.إ AED</option>
+            <option value="EUR">€ EUR</option>
+        </select>
+        <div id="auth-nav-item"></div>
+	    <button class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+	  </div>
 </nav>
 <div class="mobile-drawer" id="mobileDrawer">
     <a href="index.html" class="active" data-i18n="nav_home">الرئيسية</a>
@@ -548,10 +555,14 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
   <div class="newsletter-inner">
     <h2 class="newsletter-title" data-i18n="newsletter_title">انضم لمجتمع NEO PULSE</h2>
     <p class="newsletter-sub" data-i18n="newsletter_sub">اشترك وكن أول من يعلم بالمنتجات الجديدة والعروض الحصرية</p>
-    <div class="newsletter-form">
-      <input class="newsletter-input" type="email" id="emailInput" placeholder="بريدك الإلكتروني...">
-      <button class="btn btn-primary" onclick="subscribeEmail()"><span data-i18n="newsletter_btn">اشترك ⚡</span></button>
-    </div>
+	    <div class="newsletter-form">
+	      <input class="newsletter-input" type="email" id="emailInput" placeholder="بريدك الإلكتروني...">
+	      <button class="btn btn-primary" onclick="subscribeEmail()"><span data-i18n="newsletter_btn">اشترك ⚡</span></button>
+	    </div>
+        <div style="margin-top:10px; font-size:0.75rem; color:var(--muted)">
+            <input type="checkbox" id="marketingConsent" checked> 
+            <label for="marketingConsent">أوافق على استقبال عروض ترويجية (يمكنك إلغاء الاشتراك لاحقاً)</label>
+        </div>
   </div>
 </section>
 
@@ -625,8 +636,43 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
   <span class="toast-text" id="toastText"></span>
 </div>
 
-<script>
-'use strict';
+    <style>
+        .user-dropdown { position: relative; display: inline-block; }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background: var(--surface);
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+            z-index: 300;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+        }
+        .dropdown-content a {
+            color: var(--text);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 0.85rem;
+        }
+        .dropdown-content a:hover { background: rgba(59, 130, 246, 0.1); color: var(--blue2); }
+	        .user-dropdown:hover .dropdown-content { display: block; }
+        .currency-select {
+            background: var(--surface2);
+            color: var(--text);
+            border: 1px solid var(--border);
+            border-radius: var(--rp);
+            padding: 0.3rem 0.5rem;
+            font-size: 0.8rem;
+            cursor: pointer;
+            outline: none;
+        }
+    </style>
+    <script src="scripts/auth-client.js"></script>
+	<script>
+	'use strict';
 
 const AMAZON_TAG = 'neopulsehub-20';
 const MANAGER_URL = 'https://neo-pulse-manager.onrender.com';
@@ -734,16 +780,22 @@ async function sendChatMessage() {
   messagesDiv.scrollTop = messagesDiv.scrollHeight;
 }
 
-// Language switching
-function changeLang(newLang) {
-  lang = newLang;
-  localStorage.setItem('nph_lang', lang);
-  document.documentElement.setAttribute('lang', lang);
-  document.documentElement.setAttribute('dir', lang === 'en' ? 'ltr' : 'rtl');
-  updateTranslations();
-  document.getElementById('langAr').classList.toggle('active', lang === 'ar');
-  document.getElementById('langEn').classList.toggle('active', lang === 'en');
-}
+	// Language switching
+	function changeLang(newLang) {
+	  lang = newLang;
+	  localStorage.setItem('nph_lang', lang);
+	  document.documentElement.setAttribute('lang', lang);
+	  document.documentElement.setAttribute('dir', lang === 'en' ? 'ltr' : 'rtl');
+	  updateTranslations();
+	  document.getElementById('langAr').classList.toggle('active', lang === 'ar');
+	  document.getElementById('langEn').classList.toggle('active', lang === 'en');
+      loadProducts(); // Refresh prices
+	}
+
+    function changeCurrency(newCurrency) {
+        localStorage.setItem('nph_currency', newCurrency);
+        loadProducts();
+    }
 
 function updateTranslations() {
   document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -877,10 +929,10 @@ function displayProducts() {
           <span class="stars">★★★★☆</span>
           <span class="rating-num">(${product.reviews || 0})</span>
         </div>
-        <div class="product-price-row">
-          <span class="product-price">$${product.price}</span>
-          ${product.original_price ? `<span class="product-original">$${product.original_price}</span>` : ''}
-        </div>
+	        <div class="product-price-row">
+	          <span class="product-price">${getFormattedPrice(product)}</span>
+	          ${product.original_price ? `<span class="product-original">${getFormattedPrice(product, true)}</span>` : ''}
+	        </div>
         <div class="buy-btns">
           <a href="${product.affiliate_amazon || '#'}" target="_blank" class="buy-btn buy-amazon" onclick="trackAffiliateClick('${product.asin || 'unknown'}', 'amazon')">
             <span class="btn-icon">🛒</span>
@@ -904,13 +956,34 @@ const observer = new IntersectionObserver(entries => {
   });
 }, observerOptions);
 
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+	  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+	
+    function getFormattedPrice(product, isOriginal = false) {
+        const currency = localStorage.getItem('nph_currency') || 'USD';
+        const symbols = { 'USD': '$', 'SAR': 'ر.س', 'AED': 'د.إ', 'EUR': '€' };
+        const rates = { 'SAR': 3.75, 'AED': 3.67, 'EUR': 0.92, 'USD': 1 };
+        
+        let val = isOriginal ? product.original_price : product.price;
+        if (!val) return '';
 
-// Initialize
-window.addEventListener('load', () => {
-  updateTranslations();
-  loadProducts();
-});
+        if (product.global_prices && product.global_prices[currency]) {
+            val = product.global_prices[currency];
+        } else {
+            val = (val * (rates[currency] || 1)).toFixed(2);
+        }
+        
+        return `${symbols[currency]} ${val}`;
+    }
+
+	// Initialize
+	window.addEventListener('load', () => {
+      const savedCurrency = localStorage.getItem('nph_currency') || 'USD';
+      const select = document.querySelector('.currency-select');
+      if (select) select.value = savedCurrency;
+      
+	  updateTranslations();
+	  loadProducts();
+	});
 </script>
 
     <!-- Email Collector Modal -->

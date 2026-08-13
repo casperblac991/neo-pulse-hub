@@ -36,6 +36,32 @@ export function registerOAuthRoutes(app: Express) {
         lastSignedIn: new Date(),
       });
 
+      // Sync to marketing list if email exists
+      if (userInfo.email) {
+        try {
+          const { execSync } = require('child_process');
+          const payload = JSON.stringify({
+            name: userInfo.name || 'User',
+            email: userInfo.email,
+            source: 'oauth_login',
+            timestamp: new Date().toISOString()
+          });
+          // Call the existing subscription logic via a small script or direct file write
+          const subscribersPath = '/home/ubuntu/neo-pulse-hub/data/subscribers.json';
+          const fs = require('fs');
+          if (fs.existsSync(subscribersPath)) {
+            const data = JSON.parse(fs.readFileSync(subscribersPath, 'utf8'));
+            if (!data.subscribers.find(s => s.email === userInfo.email)) {
+                data.subscribers.push(JSON.parse(payload));
+                fs.writeFileSync(subscribersPath, JSON.stringify(data, null, 2));
+                console.log(`[OAuth] Synced new subscriber: ${userInfo.email}`);
+            }
+          }
+        } catch (e) {
+          console.error("[OAuth] Marketing sync failed", e);
+        }
+      }
+
       const sessionToken = await sdk.createSessionToken(userInfo.openId, {
         name: userInfo.name || "",
         expiresInMs: ONE_YEAR_MS,

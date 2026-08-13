@@ -73,6 +73,9 @@ export const products = mysqlTable("products", {
   reviews: int("reviews"),
   category: varchar("category", { length: 64 }),
   image: text("image"),
+  gallery: text("gallery"), // JSON array of images
+  specifications: text("specifications"), // JSON object for technical specs
+  globalPrices: text("globalPrices"), // JSON with different currencies
   url: text("url"),
   features: text("features"), // JSON array
   descriptions: text("descriptions"), // JSON with en/ar

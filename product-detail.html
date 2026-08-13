@@ -81,8 +81,18 @@ nav{position:sticky;top:0;z-index:200;display:flex;align-items:center;justify-co
 .features-list{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem}
 .features-list li{background:rgba(59,130,246,.08);border:1px solid var(--border);border-radius:var(--rp);font-size:.8rem;padding:.2rem .75rem;color:var(--muted)}
 .trust-row{display:flex;flex-wrap:wrap;gap:.5rem}
-.trust-item{font-size:.78rem;color:var(--muted);background:var(--surface2);border:1px solid var(--border);border-radius:var(--rp);padding:.25rem .7rem}
-.desc-section{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:1.8rem;margin-bottom:2.5rem}
+	.trust-item{font-size:.78rem;color:var(--muted);background:var(--surface2);border:1px solid var(--border);border-radius:var(--rp);padding:.25rem .7rem}
+    .thumb-row{display:flex;gap:10px;margin-top:10px;overflow-x:auto;padding-bottom:5px}
+    .thumb-box{width:70px;height:70px;border-radius:8px;border:1px solid var(--border);cursor:pointer;overflow:hidden;flex-shrink:0;transition:all .2s}
+    .thumb-box:hover{border-color:var(--blue2);transform:scale(1.05)}
+    .thumb-box img{width:100%;height:100%;object-fit:cover}
+    .specs-section{margin:2rem 0;padding-top:1.5rem;border-top:1px solid var(--border)}
+    .specs-title{font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--cyan2)}
+    .specs-table{width:100%;border-collapse:collapse}
+    .specs-table th{text-align:start;padding:10px;background:rgba(59,130,246,.05);width:40%;color:var(--muted);font-size:.85rem;border-bottom:1px solid var(--border)}
+    .specs-table td{padding:10px;border-bottom:1px solid var(--border);font-size:.9rem}
+    .wholesale-badge{background:rgba(16,185,129,.1);color:var(--green);padding:.5rem 1rem;border-radius:8px;font-size:.85rem;font-weight:600;margin-bottom:1.5rem;display:inline-block;border:1px solid rgba(16,185,129,.2)}
+	.desc-section{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:1.8rem;margin-bottom:2.5rem}
 .desc-title{font-size:1rem;font-weight:700;color:var(--blue2);margin-bottom:1rem}
 .desc-text{color:var(--muted);font-size:.92rem;line-height:1.9}
 .related-title{font-size:1.1rem;font-weight:800;margin-bottom:1.2rem}
@@ -104,8 +114,42 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:2.5r
 .fb{font-size:.78rem;color:rgba(226,232,240,.3);text-align:center;padding-top:1.2rem;border-top:1px solid var(--border)}
 @media(max-width:768px){.product-layout{grid-template-columns:1fr}.nav-links{display:none}.hamburger{display:flex}}
 @media(max-width:600px){.fg{grid-template-columns:1fr}}
-</style>
-</head>
+    .user-dropdown { position: relative; display: inline-block; }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background: var(--surface);
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+        z-index: 300;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+        overflow: hidden;
+    }
+    .dropdown-content a {
+        color: var(--text);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 0.85rem;
+    }
+    .dropdown-content a:hover { background: rgba(59, 130, 246, 0.1); color: var(--blue2); }
+    .user-dropdown:hover .dropdown-content { display: block; }
+    .currency-select {
+        background: var(--surface2);
+        color: var(--text);
+        border: 1px solid var(--border);
+        border-radius: var(--rp);
+        padding: 0.3rem 0.5rem;
+        font-size: 0.8rem;
+        cursor: pointer;
+        outline: none;
+        margin-right: 10px;
+    }
+	</style>
+    <script src="scripts/auth-client.js"></script>
+	</head>
 <body>
 <div class="bg-grid"></div>
 
@@ -118,15 +162,22 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:2.5r
     <li><a href="contact.html" id="nav_contact">اتصل بنا</a></li>
   </ul>
   <div class="nav-right">
-    <div class="lang-switch">
-      <button class="lang-btn active" id="langAr" onclick="changeLang('ar')">عربي</button>
-      <button class="lang-btn" id="langEn" onclick="changeLang('en')">EN</button>
-    </div>
-    <a href="checkout.html" class="nav-cart" id="cartLink"><span id="nav_cart">&#x1F6D2; السلة</span></a>
-    <button class="hamburger" id="hamburger" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
+	    <div class="lang-switch">
+	      <button class="lang-btn active" id="langAr" onclick="changeLang('ar')">عربي</button>
+	      <button class="lang-btn" id="langEn" onclick="changeLang('en')">EN</button>
+	    </div>
+        <select class="currency-select" onchange="changeCurrency(this.value)">
+            <option value="USD">$ USD</option>
+            <option value="SAR">ر.س SAR</option>
+            <option value="AED">د.إ AED</option>
+            <option value="EUR">€ EUR</option>
+        </select>
+	    <a href="checkout.html" class="nav-cart" id="cartLink"><span id="nav_cart">&#x1F6D2; السلة</span></a>
+        <div id="auth-nav-item"></div>
+	    <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+	      <span></span><span></span><span></span>
+	    </button>
+	  </div>
 </nav>
 
 <div class="mobile-drawer" id="mobileDrawer">
@@ -337,6 +388,11 @@ function applyLang(l) {
 
 function changeLang(l) { applyLang(l); }
 
+function changeCurrency(newCurrency) {
+    localStorage.setItem('nph_currency', newCurrency);
+    if (product) renderProduct();
+}
+
 function updateCartBadge() {
   var cart = getCart();
   var el = document.getElementById('nav_cart');
@@ -473,17 +529,40 @@ function renderProduct() {
 
   var warranty = product.rating > 4.5 ? 24 : 12;
 
-  var html = '<div class="img-box">'
-    + '<img src="' + product.image + '" alt="' + pname + '" onerror="this.src=\'https://placehold.co/400x400/0a0d1a/60a5fa?text=IMG\'">'
-    + badgeHtml + '</div>'
+  // Global Price Selection
+  var selectedCurrency = safeStorage('get', 'nph_currency') || 'USD';
+  var priceVal = product.global_prices ? product.global_prices[selectedCurrency] : product.price;
+  var currencySymbol = selectedCurrency === 'SAR' ? 'ر.س' : (selectedCurrency === 'AED' ? 'د.إ' : (selectedCurrency === 'EUR' ? '€' : '$'));
+
+  // Gallery HTML
+  var galleryHtml = '<div class="gallery-container">';
+  var gallery = product.gallery || [product.image];
+  galleryHtml += '<div class="main-img-box img-box">'
+    + '<img id="mainProductImg" src="' + gallery[0] + '" alt="' + pname + '" onerror="this.src=\'https://placehold.co/400x400/0a0d1a/60a5fa?text=IMG\'">'
+    + badgeHtml + '</div>';
+  
+  if (gallery.length > 1) {
+    galleryHtml += '<div class="thumb-row">';
+    for (var g = 0; f < gallery.length; g++) {
+        if (!gallery[g]) break;
+        galleryHtml += '<div class="thumb-box" onclick="document.getElementById(\'mainProductImg\').src=\'' + gallery[g] + '\'">'
+            + '<img src="' + gallery[g] + '" onerror="this.style.display=\'none\'"></div>';
+        if (g >= 3) break;
+    }
+    galleryHtml += '</div>';
+  }
+  galleryHtml += '</div>';
+
+  var html = galleryHtml
     + '<div class="product-info">'
     + '<div class="product-cat">' + pcat + '</div>'
     + '<h1 class="product-name">' + pname + '</h1>'
     + '<div class="stars-row"><span class="stars">' + stars + '</span>'
     + '<span class="rev">' + product.rating + ' ' + t.out_of + ' 5 (' + (product.reviews || 0) + ' ' + t.reviews + ')</span></div>'
     + '<div class="price-box">'
-    + '<span class="price-big">$' + product.price + '</span>' + origHtml + discHtml
+    + '<span class="price-big">' + currencySymbol + ' ' + priceVal + '</span>' + origHtml + discHtml
     + '</div>'
+    + (product.wholesale ? '<div class="wholesale-badge">📦 ' + (lang === 'ar' ? 'سعر الجملة: ' : 'Wholesale: ') + currencySymbol + ' ' + product.wholesale.bulk_price + ' (' + (lang === 'ar' ? 'أقل طلب: ' : 'MOQ: ') + product.wholesale.moq + ')</div>' : '')
     + '<div class="stock-indicator">'
     + '<span class="stock-dot"></span>' + stockHtml
     + '<span style="color:var(--muted);font-size:.8rem">&nbsp;&#x2022;&nbsp;' + t.ships_in + ' ' + (product.shipping_days || 3) + ' ' + t.days + '</span>'
@@ -501,6 +580,16 @@ function renderProduct() {
     + (product.affiliate_amazon ? '<a href="' + product.affiliate_amazon + '" target="_blank" rel="sponsored nofollow" class="btn btn-amazon">\u{1F6D2} ' + t.buy_amazon + '</a>' : '')
     + '</div>'
     + featHtml
+    + '<div class="specs-section">'
+    + '<h3 class="specs-title">' + (lang === 'ar' ? 'المواصفات التقنية' : 'Technical Specifications') + '</h3>'
+    + '<table class="specs-table">';
+  
+  var specs = product.specifications ? (product.specifications[lang] || product.specifications['en'] || {}) : {};
+  var specKeys = Object.keys(specs);
+  for (var k = 0; k < specKeys.length; k++) {
+      html += '<tr><th>' + specKeys[k] + '</th><td>' + specs[specKeys[k]] + '</td></tr>';
+  }
+  html += '</table></div>'
     + '<div class="trust-row">'
     + '<span class="trust-item">&#x1F6E1; ' + t.warranty + ' ' + warranty + ' ' + t.months + '</span>'
     + '<span class="trust-item">&#x1F504; ' + t.t1 + '</span>'
@@ -624,9 +713,14 @@ function init() {
     var elem = el(keys[i]);
     if (elem) elem.textContent = tObj[keys[i]];
   }
-  updateCartBadge();
-  loadProduct();
-}
+	  updateCartBadge();
+      
+      const savedCurrency = localStorage.getItem('nph_currency') || 'USD';
+      const select = document.querySelector('.currency-select');
+      if (select) select.value = savedCurrency;
+
+	  loadProduct();
+	}
 
 window.onload = function() { init(); };
 </script>

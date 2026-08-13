@@ -10,7 +10,37 @@
     "category": "smartwatch",
     "image": "images/products/5AjtpPKrp8e3.jpg",
     "affiliate_amazon": "https://www.amazon.com/s?k=Samsung%20Galaxy%20Watch%205&tag=neopulsehub-20",
-    "asin": "B0B5W8V2L3"
+    "asin": "B0B5W8V2L3",
+    "gallery": [
+      "images/products/5AjtpPKrp8e3.jpg",
+      "images/products/5AjtpPKrp8e3_alt1.jpg",
+      "images/products/5AjtpPKrp8e3_alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 279.99,
+      "SAR": 1049.96,
+      "AED": 1027.56,
+      "EUR": 257.59
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 223.99
+    }
   },
   {
     "id": "AI-1777896006-109",
@@ -23,7 +53,37 @@
     "category": "smartwatch",
     "image": "images/products/Gq2JNMnegXco.jpg",
     "affiliate_amazon": "https://www.amazon.com/s?k=Apple%20Watch%20Series%209&tag=neopulsehub-20",
-    "asin": "B0CHKV4YVM"
+    "asin": "B0CHKV4YVM",
+    "gallery": [
+      "images/products/Gq2JNMnegXco.jpg",
+      "images/products/Gq2JNMnegXco_alt1.jpg",
+      "images/products/Gq2JNMnegXco_alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 399.0,
+      "SAR": 1496.25,
+      "AED": 1464.33,
+      "EUR": 367.08
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 319.2
+    }
   },
   {
     "id": "AI-1777896009-367",
@@ -36,7 +96,37 @@
     "category": "earbuds",
     "image": "images/products/wvyoImQU6MkS.jpg",
     "affiliate_amazon": "https://www.amazon.com/s?k=Apple%20AirPods%20Pro&tag=neopulsehub-20",
-    "asin": "B0BDN8TDMQ"
+    "asin": "B0BDN8TDMQ",
+    "gallery": [
+      "images/products/wvyoImQU6MkS.jpg",
+      "images/products/wvyoImQU6MkS_alt1.jpg",
+      "images/products/wvyoImQU6MkS_alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "إلغاء الضوضاء": "نشط (ANC)",
+        "وقت التشغيل": "30 ساعة مع العلبة",
+        "الاتصال": "Bluetooth 5.3",
+        "الوزن": "4.5 جرام لكل سماعة"
+      },
+      "en": {
+        "Noise Cancellation": "Active (ANC)",
+        "Playtime": "30 Hours with Case",
+        "Connectivity": "Bluetooth 5.3",
+        "Weight": "4.5g per bud"
+      }
+    },
+    "global_prices": {
+      "USD": 249.0,
+      "SAR": 933.75,
+      "AED": 913.83,
+      "EUR": 229.08
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 199.2
+    }
   },
   {
     "id": "AI-1777896009-508",
@@ -49,7 +139,37 @@
     "category": "earbuds",
     "image": "images/products/9Ctxi24QHCa5.jpg",
     "affiliate_amazon": "https://www.amazon.com/s?k=Sony%20WF-1000XM4&tag=neopulsehub-20",
-    "asin": "B094C4VDJZ"
+    "asin": "B094C4VDJZ",
+    "gallery": [
+      "images/products/9Ctxi24QHCa5.jpg",
+      "images/products/9Ctxi24QHCa5_alt1.jpg",
+      "images/products/9Ctxi24QHCa5_alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "إلغاء الضوضاء": "نشط (ANC)",
+        "وقت التشغيل": "30 ساعة مع العلبة",
+        "الاتصال": "Bluetooth 5.3",
+        "الوزن": "4.5 جرام لكل سماعة"
+      },
+      "en": {
+        "Noise Cancellation": "Active (ANC)",
+        "Playtime": "30 Hours with Case",
+        "Connectivity": "Bluetooth 5.3",
+        "Weight": "4.5g per bud"
+      }
+    },
+    "global_prices": {
+      "USD": 279.0,
+      "SAR": 1046.25,
+      "AED": 1023.93,
+      "EUR": 256.68
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 223.2
+    }
   },
   {
     "id": "NPH-EXP-0005",
@@ -95,7 +215,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.238895",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 799.0,
+      "SAR": 2996.25,
+      "AED": 2932.33,
+      "EUR": 735.08
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 639.2
+    }
   },
   {
     "id": "NPH-EXP-0006",
@@ -141,7 +291,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.238918",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 329.0,
+      "SAR": 1233.75,
+      "AED": 1207.43,
+      "EUR": 302.68
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 263.2
+    }
   },
   {
     "id": "NPH-EXP-0007",
@@ -187,7 +367,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.238930",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 899.0,
+      "SAR": 3371.25,
+      "AED": 3299.33,
+      "EUR": 827.08
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 719.2
+    }
   },
   {
     "id": "NPH-EXP-0008",
@@ -233,7 +443,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.238938",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 249.0,
+      "SAR": 933.75,
+      "AED": 913.83,
+      "EUR": 229.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 199.2
+    }
   },
   {
     "id": "NPH-EXP-0009",
@@ -279,7 +519,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.238945",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 179.0,
+      "SAR": 671.25,
+      "AED": 656.93,
+      "EUR": 164.68
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 143.2
+    }
   },
   {
     "id": "NPH-EXP-0010",
@@ -325,7 +595,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.238955",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 249.0,
+      "SAR": 933.75,
+      "AED": 913.83,
+      "EUR": 229.08
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 199.2
+    }
   },
   {
     "id": "NPH-EXP-0011",
@@ -371,7 +671,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.238962",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 229.0,
+      "SAR": 858.75,
+      "AED": 840.43,
+      "EUR": 210.68
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 183.2
+    }
   },
   {
     "id": "NPH-EXP-0012",
@@ -417,7 +747,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.238971",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 299.0,
+      "SAR": 1121.25,
+      "AED": 1097.33,
+      "EUR": 275.08
+    },
+    "wholesale": {
+      "moq": 100,
+      "bulk_price": 239.2
+    }
   },
   {
     "id": "NPH-EXP-0013",
@@ -463,7 +823,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.238977",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 249.0,
+      "SAR": 933.75,
+      "AED": 913.83,
+      "EUR": 229.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 199.2
+    }
   },
   {
     "id": "NPH-EXP-0014",
@@ -509,7 +899,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.238983",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 249.0,
+      "SAR": 933.75,
+      "AED": 913.83,
+      "EUR": 229.08
+    },
+    "wholesale": {
+      "moq": 100,
+      "bulk_price": 199.2
+    }
   },
   {
     "id": "NPH-EXP-0015",
@@ -555,7 +975,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.238989",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "إلغاء الضوضاء": "نشط (ANC)",
+        "وقت التشغيل": "30 ساعة مع العلبة",
+        "الاتصال": "Bluetooth 5.3",
+        "الوزن": "4.5 جرام لكل سماعة"
+      },
+      "en": {
+        "Noise Cancellation": "Active (ANC)",
+        "Playtime": "30 Hours with Case",
+        "Connectivity": "Bluetooth 5.3",
+        "Weight": "4.5g per bud"
+      }
+    },
+    "global_prices": {
+      "USD": 249.0,
+      "SAR": 933.75,
+      "AED": 913.83,
+      "EUR": 229.08
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 199.2
+    }
   },
   {
     "id": "NPH-EXP-0016",
@@ -601,7 +1051,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239029",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "إلغاء الضوضاء": "نشط (ANC)",
+        "وقت التشغيل": "30 ساعة مع العلبة",
+        "الاتصال": "Bluetooth 5.3",
+        "الوزن": "4.5 جرام لكل سماعة"
+      },
+      "en": {
+        "Noise Cancellation": "Active (ANC)",
+        "Playtime": "30 Hours with Case",
+        "Connectivity": "Bluetooth 5.3",
+        "Weight": "4.5g per bud"
+      }
+    },
+    "global_prices": {
+      "USD": 189.0,
+      "SAR": 708.75,
+      "AED": 693.63,
+      "EUR": 173.88
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 151.2
+    }
   },
   {
     "id": "NPH-EXP-0017",
@@ -647,7 +1127,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239046",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "إلغاء الضوضاء": "نشط (ANC)",
+        "وقت التشغيل": "30 ساعة مع العلبة",
+        "الاتصال": "Bluetooth 5.3",
+        "الوزن": "4.5 جرام لكل سماعة"
+      },
+      "en": {
+        "Noise Cancellation": "Active (ANC)",
+        "Playtime": "30 Hours with Case",
+        "Connectivity": "Bluetooth 5.3",
+        "Weight": "4.5g per bud"
+      }
+    },
+    "global_prices": {
+      "USD": 299.0,
+      "SAR": 1121.25,
+      "AED": 1097.33,
+      "EUR": 275.08
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 239.2
+    }
   },
   {
     "id": "NPH-EXP-0018",
@@ -693,7 +1203,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239061",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "إلغاء الضوضاء": "نشط (ANC)",
+        "وقت التشغيل": "30 ساعة مع العلبة",
+        "الاتصال": "Bluetooth 5.3",
+        "الوزن": "4.5 جرام لكل سماعة"
+      },
+      "en": {
+        "Noise Cancellation": "Active (ANC)",
+        "Playtime": "30 Hours with Case",
+        "Connectivity": "Bluetooth 5.3",
+        "Weight": "4.5g per bud"
+      }
+    },
+    "global_prices": {
+      "USD": 299.0,
+      "SAR": 1121.25,
+      "AED": 1097.33,
+      "EUR": 275.08
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 239.2
+    }
   },
   {
     "id": "NPH-EXP-0019",
@@ -739,7 +1279,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239074",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "إلغاء الضوضاء": "نشط (ANC)",
+        "وقت التشغيل": "30 ساعة مع العلبة",
+        "الاتصال": "Bluetooth 5.3",
+        "الوزن": "4.5 جرام لكل سماعة"
+      },
+      "en": {
+        "Noise Cancellation": "Active (ANC)",
+        "Playtime": "30 Hours with Case",
+        "Connectivity": "Bluetooth 5.3",
+        "Weight": "4.5g per bud"
+      }
+    },
+    "global_prices": {
+      "USD": 179.0,
+      "SAR": 671.25,
+      "AED": 656.93,
+      "EUR": 164.68
+    },
+    "wholesale": {
+      "moq": 100,
+      "bulk_price": 143.2
+    }
   },
   {
     "id": "NPH-EXP-0020",
@@ -785,7 +1355,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239085",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "إلغاء الضوضاء": "نشط (ANC)",
+        "وقت التشغيل": "30 ساعة مع العلبة",
+        "الاتصال": "Bluetooth 5.3",
+        "الوزن": "4.5 جرام لكل سماعة"
+      },
+      "en": {
+        "Noise Cancellation": "Active (ANC)",
+        "Playtime": "30 Hours with Case",
+        "Connectivity": "Bluetooth 5.3",
+        "Weight": "4.5g per bud"
+      }
+    },
+    "global_prices": {
+      "USD": 79.0,
+      "SAR": 296.25,
+      "AED": 289.93,
+      "EUR": 72.68
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 63.2
+    }
   },
   {
     "id": "NPH-EXP-0021",
@@ -831,7 +1431,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239097",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "إلغاء الضوضاء": "نشط (ANC)",
+        "وقت التشغيل": "30 ساعة مع العلبة",
+        "الاتصال": "Bluetooth 5.3",
+        "الوزن": "4.5 جرام لكل سماعة"
+      },
+      "en": {
+        "Noise Cancellation": "Active (ANC)",
+        "Playtime": "30 Hours with Case",
+        "Connectivity": "Bluetooth 5.3",
+        "Weight": "4.5g per bud"
+      }
+    },
+    "global_prices": {
+      "USD": 349.0,
+      "SAR": 1308.75,
+      "AED": 1280.83,
+      "EUR": 321.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 279.2
+    }
   },
   {
     "id": "NPH-EXP-0022",
@@ -877,7 +1507,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239107",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "إلغاء الضوضاء": "نشط (ANC)",
+        "وقت التشغيل": "30 ساعة مع العلبة",
+        "الاتصال": "Bluetooth 5.3",
+        "الوزن": "4.5 جرام لكل سماعة"
+      },
+      "en": {
+        "Noise Cancellation": "Active (ANC)",
+        "Playtime": "30 Hours with Case",
+        "Connectivity": "Bluetooth 5.3",
+        "Weight": "4.5g per bud"
+      }
+    },
+    "global_prices": {
+      "USD": 349.0,
+      "SAR": 1308.75,
+      "AED": 1280.83,
+      "EUR": 321.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 279.2
+    }
   },
   {
     "id": "NPH-EXP-0023",
@@ -923,7 +1583,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239174",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "إلغاء الضوضاء": "نشط (ANC)",
+        "وقت التشغيل": "30 ساعة مع العلبة",
+        "الاتصال": "Bluetooth 5.3",
+        "الوزن": "4.5 جرام لكل سماعة"
+      },
+      "en": {
+        "Noise Cancellation": "Active (ANC)",
+        "Playtime": "30 Hours with Case",
+        "Connectivity": "Bluetooth 5.3",
+        "Weight": "4.5g per bud"
+      }
+    },
+    "global_prices": {
+      "USD": 199.0,
+      "SAR": 746.25,
+      "AED": 730.33,
+      "EUR": 183.08
+    },
+    "wholesale": {
+      "moq": 100,
+      "bulk_price": 159.2
+    }
   },
   {
     "id": "NPH-EXP-0024",
@@ -969,7 +1659,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239184",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "إلغاء الضوضاء": "نشط (ANC)",
+        "وقت التشغيل": "30 ساعة مع العلبة",
+        "الاتصال": "Bluetooth 5.3",
+        "الوزن": "4.5 جرام لكل سماعة"
+      },
+      "en": {
+        "Noise Cancellation": "Active (ANC)",
+        "Playtime": "30 Hours with Case",
+        "Connectivity": "Bluetooth 5.3",
+        "Weight": "4.5g per bud"
+      }
+    },
+    "global_prices": {
+      "USD": 149.0,
+      "SAR": 558.75,
+      "AED": 546.83,
+      "EUR": 137.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 119.2
+    }
   },
   {
     "id": "NPH-EXP-0025",
@@ -1015,7 +1735,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239196",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 399.0,
+      "SAR": 1496.25,
+      "AED": 1464.33,
+      "EUR": 367.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 319.2
+    }
   },
   {
     "id": "NPH-EXP-0026",
@@ -1061,7 +1811,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239207",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 429.0,
+      "SAR": 1608.75,
+      "AED": 1574.43,
+      "EUR": 394.68
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 343.2
+    }
   },
   {
     "id": "NPH-EXP-0027",
@@ -1107,7 +1887,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239221",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 549.0,
+      "SAR": 2058.75,
+      "AED": 2014.83,
+      "EUR": 505.08
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 439.2
+    }
   },
   {
     "id": "NPH-EXP-0028",
@@ -1153,7 +1963,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239229",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 349.0,
+      "SAR": 1308.75,
+      "AED": 1280.83,
+      "EUR": 321.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 279.2
+    }
   },
   {
     "id": "NPH-EXP-0029",
@@ -1199,7 +2039,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239237",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 149.0,
+      "SAR": 558.75,
+      "AED": 546.83,
+      "EUR": 137.08
+    },
+    "wholesale": {
+      "moq": 100,
+      "bulk_price": 119.2
+    }
   },
   {
     "id": "NPH-EXP-0030",
@@ -1245,7 +2115,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239243",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 299.0,
+      "SAR": 1121.25,
+      "AED": 1097.33,
+      "EUR": 275.08
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 239.2
+    }
   },
   {
     "id": "NPH-EXP-0031",
@@ -1291,7 +2191,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239250",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 279.0,
+      "SAR": 1046.25,
+      "AED": 1023.93,
+      "EUR": 256.68
+    },
+    "wholesale": {
+      "moq": 100,
+      "bulk_price": 223.2
+    }
   },
   {
     "id": "NPH-EXP-0032",
@@ -1337,7 +2267,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239258",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 399.0,
+      "SAR": 1496.25,
+      "AED": 1464.33,
+      "EUR": 367.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 319.2
+    }
   },
   {
     "id": "NPH-EXP-0033",
@@ -1383,7 +2343,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239266",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 99.0,
+      "SAR": 371.25,
+      "AED": 363.33,
+      "EUR": 91.08
+    },
+    "wholesale": {
+      "moq": 100,
+      "bulk_price": 79.2
+    }
   },
   {
     "id": "NPH-EXP-0034",
@@ -1429,7 +2419,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239272",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 99.0,
+      "SAR": 371.25,
+      "AED": 363.33,
+      "EUR": 91.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 79.2
+    }
   },
   {
     "id": "NPH-EXP-0035",
@@ -1475,7 +2495,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239280",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "التوافق": "Alexa, Google Home",
+        "الجهد": "110-240V",
+        "الاتصال": "Wi-Fi 2.4GHz",
+        "المادة": "بلاستيك مقاوم للحريق"
+      },
+      "en": {
+        "Compatibility": "Alexa, Google Home",
+        "Voltage": "110-240V",
+        "Connectivity": "Wi-Fi 2.4GHz",
+        "Material": "Fire-resistant Plastic"
+      }
+    },
+    "global_prices": {
+      "USD": 49.0,
+      "SAR": 183.75,
+      "AED": 179.83,
+      "EUR": 45.08
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 39.2
+    }
   },
   {
     "id": "NPH-EXP-0036",
@@ -1521,7 +2571,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239286",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "التوافق": "Alexa, Google Home",
+        "الجهد": "110-240V",
+        "الاتصال": "Wi-Fi 2.4GHz",
+        "المادة": "بلاستيك مقاوم للحريق"
+      },
+      "en": {
+        "Compatibility": "Alexa, Google Home",
+        "Voltage": "110-240V",
+        "Connectivity": "Wi-Fi 2.4GHz",
+        "Material": "Fire-resistant Plastic"
+      }
+    },
+    "global_prices": {
+      "USD": 99.0,
+      "SAR": 371.25,
+      "AED": 363.33,
+      "EUR": 91.08
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 79.2
+    }
   },
   {
     "id": "NPH-EXP-0037",
@@ -1567,7 +2647,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239294",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "التوافق": "Alexa, Google Home",
+        "الجهد": "110-240V",
+        "الاتصال": "Wi-Fi 2.4GHz",
+        "المادة": "بلاستيك مقاوم للحريق"
+      },
+      "en": {
+        "Compatibility": "Alexa, Google Home",
+        "Voltage": "110-240V",
+        "Connectivity": "Wi-Fi 2.4GHz",
+        "Material": "Fire-resistant Plastic"
+      }
+    },
+    "global_prices": {
+      "USD": 199.0,
+      "SAR": 746.25,
+      "AED": 730.33,
+      "EUR": 183.08
+    },
+    "wholesale": {
+      "moq": 100,
+      "bulk_price": 159.2
+    }
   },
   {
     "id": "NPH-EXP-0038",
@@ -1613,7 +2723,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239299",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "التوافق": "Alexa, Google Home",
+        "الجهد": "110-240V",
+        "الاتصال": "Wi-Fi 2.4GHz",
+        "المادة": "بلاستيك مقاوم للحريق"
+      },
+      "en": {
+        "Compatibility": "Alexa, Google Home",
+        "Voltage": "110-240V",
+        "Connectivity": "Wi-Fi 2.4GHz",
+        "Material": "Fire-resistant Plastic"
+      }
+    },
+    "global_prices": {
+      "USD": 199.0,
+      "SAR": 746.25,
+      "AED": 730.33,
+      "EUR": 183.08
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 159.2
+    }
   },
   {
     "id": "NPH-EXP-0039",
@@ -1659,7 +2799,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239305",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "التوافق": "Alexa, Google Home",
+        "الجهد": "110-240V",
+        "الاتصال": "Wi-Fi 2.4GHz",
+        "المادة": "بلاستيك مقاوم للحريق"
+      },
+      "en": {
+        "Compatibility": "Alexa, Google Home",
+        "Voltage": "110-240V",
+        "Connectivity": "Wi-Fi 2.4GHz",
+        "Material": "Fire-resistant Plastic"
+      }
+    },
+    "global_prices": {
+      "USD": 29.0,
+      "SAR": 108.75,
+      "AED": 106.43,
+      "EUR": 26.68
+    },
+    "wholesale": {
+      "moq": 100,
+      "bulk_price": 23.2
+    }
   },
   {
     "id": "NPH-EXP-0040",
@@ -1705,7 +2875,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239311",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "التوافق": "Alexa, Google Home",
+        "الجهد": "110-240V",
+        "الاتصال": "Wi-Fi 2.4GHz",
+        "المادة": "بلاستيك مقاوم للحريق"
+      },
+      "en": {
+        "Compatibility": "Alexa, Google Home",
+        "Voltage": "110-240V",
+        "Connectivity": "Wi-Fi 2.4GHz",
+        "Material": "Fire-resistant Plastic"
+      }
+    },
+    "global_prices": {
+      "USD": 199.0,
+      "SAR": 746.25,
+      "AED": 730.33,
+      "EUR": 183.08
+    },
+    "wholesale": {
+      "moq": 100,
+      "bulk_price": 159.2
+    }
   },
   {
     "id": "NPH-EXP-0041",
@@ -1751,7 +2951,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239318",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "التوافق": "Alexa, Google Home",
+        "الجهد": "110-240V",
+        "الاتصال": "Wi-Fi 2.4GHz",
+        "المادة": "بلاستيك مقاوم للحريق"
+      },
+      "en": {
+        "Compatibility": "Alexa, Google Home",
+        "Voltage": "110-240V",
+        "Connectivity": "Wi-Fi 2.4GHz",
+        "Material": "Fire-resistant Plastic"
+      }
+    },
+    "global_prices": {
+      "USD": 249.0,
+      "SAR": 933.75,
+      "AED": 913.83,
+      "EUR": 229.08
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 199.2
+    }
   },
   {
     "id": "NPH-EXP-0042",
@@ -1797,7 +3027,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239327",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "التوافق": "Alexa, Google Home",
+        "الجهد": "110-240V",
+        "الاتصال": "Wi-Fi 2.4GHz",
+        "المادة": "بلاستيك مقاوم للحريق"
+      },
+      "en": {
+        "Compatibility": "Alexa, Google Home",
+        "Voltage": "110-240V",
+        "Connectivity": "Wi-Fi 2.4GHz",
+        "Material": "Fire-resistant Plastic"
+      }
+    },
+    "global_prices": {
+      "USD": 229.0,
+      "SAR": 858.75,
+      "AED": 840.43,
+      "EUR": 210.68
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 183.2
+    }
   },
   {
     "id": "NPH-EXP-0043",
@@ -1843,7 +3103,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239335",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "التوافق": "Alexa, Google Home",
+        "الجهد": "110-240V",
+        "الاتصال": "Wi-Fi 2.4GHz",
+        "المادة": "بلاستيك مقاوم للحريق"
+      },
+      "en": {
+        "Compatibility": "Alexa, Google Home",
+        "Voltage": "110-240V",
+        "Connectivity": "Wi-Fi 2.4GHz",
+        "Material": "Fire-resistant Plastic"
+      }
+    },
+    "global_prices": {
+      "USD": 39.0,
+      "SAR": 146.25,
+      "AED": 143.13,
+      "EUR": 35.88
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 31.2
+    }
   },
   {
     "id": "NPH-EXP-0044",
@@ -1889,7 +3179,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239341",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "التوافق": "Alexa, Google Home",
+        "الجهد": "110-240V",
+        "الاتصال": "Wi-Fi 2.4GHz",
+        "المادة": "بلاستيك مقاوم للحريق"
+      },
+      "en": {
+        "Compatibility": "Alexa, Google Home",
+        "Voltage": "110-240V",
+        "Connectivity": "Wi-Fi 2.4GHz",
+        "Material": "Fire-resistant Plastic"
+      }
+    },
+    "global_prices": {
+      "USD": 499.0,
+      "SAR": 1871.25,
+      "AED": 1831.33,
+      "EUR": 459.08
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 399.2
+    }
   },
   {
     "id": "NPH-EXP-0045",
@@ -1935,7 +3255,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239350",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 129.0,
+      "SAR": 483.75,
+      "AED": 473.43,
+      "EUR": 118.68
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 103.2
+    }
   },
   {
     "id": "NPH-EXP-0046",
@@ -1981,7 +3331,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239359",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 279.0,
+      "SAR": 1046.25,
+      "AED": 1023.93,
+      "EUR": 256.68
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 223.2
+    }
   },
   {
     "id": "NPH-EXP-0047",
@@ -2027,7 +3407,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239368",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 159.0,
+      "SAR": 596.25,
+      "AED": 583.53,
+      "EUR": 146.28
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 127.2
+    }
   },
   {
     "id": "NPH-EXP-0048",
@@ -2073,7 +3483,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239387",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 399.0,
+      "SAR": 1496.25,
+      "AED": 1464.33,
+      "EUR": 367.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 319.2
+    }
   },
   {
     "id": "NPH-EXP-0049",
@@ -2119,7 +3559,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239397",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 199.0,
+      "SAR": 746.25,
+      "AED": 730.33,
+      "EUR": 183.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 159.2
+    }
   },
   {
     "id": "NPH-EXP-0050",
@@ -2165,7 +3635,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239407",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 299.0,
+      "SAR": 1121.25,
+      "AED": 1097.33,
+      "EUR": 275.08
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 239.2
+    }
   },
   {
     "id": "NPH-EXP-0051",
@@ -2211,7 +3711,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239418",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 59.0,
+      "SAR": 221.25,
+      "AED": 216.53,
+      "EUR": 54.28
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 47.2
+    }
   },
   {
     "id": "NPH-EXP-0052",
@@ -2257,7 +3787,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239428",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 499.0,
+      "SAR": 1871.25,
+      "AED": 1831.33,
+      "EUR": 459.08
+    },
+    "wholesale": {
+      "moq": 100,
+      "bulk_price": 399.2
+    }
   },
   {
     "id": "NPH-EXP-0053",
@@ -2303,7 +3863,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239438",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 99.0,
+      "SAR": 371.25,
+      "AED": 363.33,
+      "EUR": 91.08
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 79.2
+    }
   },
   {
     "id": "NPH-EXP-0054",
@@ -2349,7 +3939,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239446",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 39.0,
+      "SAR": 146.25,
+      "AED": 143.13,
+      "EUR": 35.88
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 31.2
+    }
   },
   {
     "id": "NPH-EXP-0055",
@@ -2395,7 +4015,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239461",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 1099.0,
+      "SAR": 4121.25,
+      "AED": 4033.33,
+      "EUR": 1011.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 879.2
+    }
   },
   {
     "id": "NPH-EXP-0056",
@@ -2441,7 +4091,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239482",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 1299.0,
+      "SAR": 4871.25,
+      "AED": 4767.33,
+      "EUR": 1195.08
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 1039.2
+    }
   },
   {
     "id": "NPH-EXP-0057",
@@ -2487,7 +4167,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239492",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 1199.0,
+      "SAR": 4496.25,
+      "AED": 4400.33,
+      "EUR": 1103.08
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 959.2
+    }
   },
   {
     "id": "NPH-EXP-0058",
@@ -2533,7 +4243,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239503",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 1499.0,
+      "SAR": 5621.25,
+      "AED": 5501.33,
+      "EUR": 1379.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 1199.2
+    }
   },
   {
     "id": "NPH-EXP-0059",
@@ -2579,7 +4319,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239515",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 899.0,
+      "SAR": 3371.25,
+      "AED": 3299.33,
+      "EUR": 827.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 719.2
+    }
   },
   {
     "id": "NPH-EXP-0060",
@@ -2625,7 +4395,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239524",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 799.0,
+      "SAR": 2996.25,
+      "AED": 2932.33,
+      "EUR": 735.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 639.2
+    }
   },
   {
     "id": "NPH-EXP-0061",
@@ -2671,7 +4471,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239533",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 599.0,
+      "SAR": 2246.25,
+      "AED": 2198.33,
+      "EUR": 551.08
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 479.2
+    }
   },
   {
     "id": "NPH-EXP-0062",
@@ -2717,7 +4547,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239541",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 799.0,
+      "SAR": 2996.25,
+      "AED": 2932.33,
+      "EUR": 735.08
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 639.2
+    }
   },
   {
     "id": "NPH-EXP-0063",
@@ -2763,7 +4623,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239554",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 129.0,
+      "SAR": 483.75,
+      "AED": 473.43,
+      "EUR": 118.68
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 103.2
+    }
   },
   {
     "id": "NPH-EXP-0064",
@@ -2809,7 +4699,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239564",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 99.0,
+      "SAR": 371.25,
+      "AED": 363.33,
+      "EUR": 91.08
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 79.2
+    }
   },
   {
     "id": "NPH-EXP-0065",
@@ -2855,7 +4775,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239574",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 499.0,
+      "SAR": 1871.25,
+      "AED": 1831.33,
+      "EUR": 459.08
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 399.2
+    }
   },
   {
     "id": "NPH-EXP-0066",
@@ -2901,7 +4851,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239584",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 499.0,
+      "SAR": 1871.25,
+      "AED": 1831.33,
+      "EUR": 459.08
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 399.2
+    }
   },
   {
     "id": "NPH-EXP-0067",
@@ -2947,7 +4927,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239595",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 349.0,
+      "SAR": 1308.75,
+      "AED": 1280.83,
+      "EUR": 321.08
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 279.2
+    }
   },
   {
     "id": "NPH-EXP-0068",
@@ -2993,7 +5003,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239605",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 499.0,
+      "SAR": 1871.25,
+      "AED": 1831.33,
+      "EUR": 459.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 399.2
+    }
   },
   {
     "id": "NPH-EXP-0069",
@@ -3039,7 +5079,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239616",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 549.0,
+      "SAR": 2058.75,
+      "AED": 2014.83,
+      "EUR": 505.08
+    },
+    "wholesale": {
+      "moq": 100,
+      "bulk_price": 439.2
+    }
   },
   {
     "id": "NPH-EXP-0070",
@@ -3085,7 +5155,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239625",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 599.0,
+      "SAR": 2246.25,
+      "AED": 2198.33,
+      "EUR": 551.08
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 479.2
+    }
   },
   {
     "id": "NPH-EXP-0071",
@@ -3131,7 +5231,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239634",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 699.0,
+      "SAR": 2621.25,
+      "AED": 2565.33,
+      "EUR": 643.08
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 559.2
+    }
   },
   {
     "id": "NPH-EXP-0072",
@@ -3177,7 +5307,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239646",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 299.0,
+      "SAR": 1121.25,
+      "AED": 1097.33,
+      "EUR": 275.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 239.2
+    }
   },
   {
     "id": "NPH-EXP-0073",
@@ -3223,7 +5383,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239655",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 199.0,
+      "SAR": 746.25,
+      "AED": 730.33,
+      "EUR": 183.08
+    },
+    "wholesale": {
+      "moq": 100,
+      "bulk_price": 159.2
+    }
   },
   {
     "id": "NPH-EXP-0074",
@@ -3269,7 +5459,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239673",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 169.0,
+      "SAR": 633.75,
+      "AED": 620.23,
+      "EUR": 155.48
+    },
+    "wholesale": {
+      "moq": 100,
+      "bulk_price": 135.2
+    }
   },
   {
     "id": "NPH-EXP-0075",
@@ -3315,7 +5535,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239685",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 2499.0,
+      "SAR": 9371.25,
+      "AED": 9171.33,
+      "EUR": 2299.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 1999.2
+    }
   },
   {
     "id": "NPH-EXP-0076",
@@ -3361,7 +5611,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239695",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 2499.0,
+      "SAR": 9371.25,
+      "AED": 9171.33,
+      "EUR": 2299.08
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 1999.2
+    }
   },
   {
     "id": "NPH-EXP-0077",
@@ -3407,7 +5687,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239704",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 1699.0,
+      "SAR": 6371.25,
+      "AED": 6235.33,
+      "EUR": 1563.08
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 1359.2
+    }
   },
   {
     "id": "NPH-EXP-0078",
@@ -3453,7 +5763,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239718",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 3999.0,
+      "SAR": 14996.25,
+      "AED": 14676.33,
+      "EUR": 3679.08
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 3199.2
+    }
   },
   {
     "id": "NPH-EXP-0079",
@@ -3499,7 +5839,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239728",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 399.0,
+      "SAR": 1496.25,
+      "AED": 1464.33,
+      "EUR": 367.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 319.2
+    }
   },
   {
     "id": "NPH-EXP-0080",
@@ -3545,7 +5915,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239739",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 499.0,
+      "SAR": 1871.25,
+      "AED": 1831.33,
+      "EUR": 459.08
+    },
+    "wholesale": {
+      "moq": 100,
+      "bulk_price": 399.2
+    }
   },
   {
     "id": "NPH-EXP-0081",
@@ -3591,7 +5991,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239748",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 499.0,
+      "SAR": 1871.25,
+      "AED": 1831.33,
+      "EUR": 459.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 399.2
+    }
   },
   {
     "id": "NPH-EXP-0082",
@@ -3637,7 +6067,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239760",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 199.0,
+      "SAR": 746.25,
+      "AED": 730.33,
+      "EUR": 183.08
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 159.2
+    }
   },
   {
     "id": "NPH-EXP-0083",
@@ -3683,7 +6143,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239776",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 59.0,
+      "SAR": 221.25,
+      "AED": 216.53,
+      "EUR": 54.28
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 47.2
+    }
   },
   {
     "id": "NPH-EXP-0084",
@@ -3729,7 +6219,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239785",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 179.0,
+      "SAR": 671.25,
+      "AED": 656.93,
+      "EUR": 164.68
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 143.2
+    }
   },
   {
     "id": "NPH-EXP-0085",
@@ -3775,7 +6295,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239795",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71p0U-c1D9L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71p0U-c1D9L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71p0U-c1D9L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 299.0,
+      "SAR": 1121.25,
+      "AED": 1097.33,
+      "EUR": 275.08
+    },
+    "wholesale": {
+      "moq": 100,
+      "bulk_price": 239.2
+    }
   },
   {
     "id": "NPH-EXP-0086",
@@ -3821,7 +6371,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239806",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 89.0,
+      "SAR": 333.75,
+      "AED": 326.63,
+      "EUR": 81.88
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 71.2
+    }
   },
   {
     "id": "NPH-EXP-0087",
@@ -3867,7 +6447,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239814",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 39.0,
+      "SAR": 146.25,
+      "AED": 143.13,
+      "EUR": 35.88
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 31.2
+    }
   },
   {
     "id": "NPH-EXP-0088",
@@ -3913,7 +6523,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239823",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 59.0,
+      "SAR": 221.25,
+      "AED": 216.53,
+      "EUR": 54.28
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 47.2
+    }
   },
   {
     "id": "NPH-EXP-0089",
@@ -3959,7 +6599,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239834",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 29.0,
+      "SAR": 108.75,
+      "AED": 106.43,
+      "EUR": 26.68
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 23.2
+    }
   },
   {
     "id": "NPH-EXP-0090",
@@ -4005,7 +6675,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239844",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 19.0,
+      "SAR": 71.25,
+      "AED": 69.73,
+      "EUR": 17.48
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 15.2
+    }
   },
   {
     "id": "NPH-EXP-0091",
@@ -4051,7 +6751,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239856",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 15.0,
+      "SAR": 56.25,
+      "AED": 55.05,
+      "EUR": 13.8
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 12.0
+    }
   },
   {
     "id": "NPH-EXP-0092",
@@ -4097,7 +6827,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239865",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 35.0,
+      "SAR": 131.25,
+      "AED": 128.45,
+      "EUR": 32.2
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 28.0
+    }
   },
   {
     "id": "NPH-EXP-0093",
@@ -4143,7 +6903,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239875",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 19.0,
+      "SAR": 71.25,
+      "AED": 69.73,
+      "EUR": 17.48
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 15.2
+    }
   },
   {
     "id": "NPH-EXP-0094",
@@ -4189,7 +6979,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239888",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 12.0,
+      "SAR": 45.0,
+      "AED": 44.04,
+      "EUR": 11.04
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 9.6
+    }
   },
   {
     "id": "NPH-EXP-0095",
@@ -4235,7 +7055,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239900",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 149.0,
+      "SAR": 558.75,
+      "AED": 546.83,
+      "EUR": 137.08
+    },
+    "wholesale": {
+      "moq": 100,
+      "bulk_price": 119.2
+    }
   },
   {
     "id": "NPH-EXP-0096",
@@ -4281,7 +7131,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239908",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 699.0,
+      "SAR": 2621.25,
+      "AED": 2565.33,
+      "EUR": 643.08
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 559.2
+    }
   },
   {
     "id": "NPH-EXP-0097",
@@ -4327,7 +7207,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239917",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 99.0,
+      "SAR": 371.25,
+      "AED": 363.33,
+      "EUR": 91.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 79.2
+    }
   },
   {
     "id": "NPH-EXP-0098",
@@ -4373,7 +7283,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239930",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 129.0,
+      "SAR": 483.75,
+      "AED": 473.43,
+      "EUR": 118.68
+    },
+    "wholesale": {
+      "moq": 100,
+      "bulk_price": 103.2
+    }
   },
   {
     "id": "NPH-EXP-0099",
@@ -4419,7 +7359,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239941",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 49.0,
+      "SAR": 183.75,
+      "AED": 179.83,
+      "EUR": 45.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 39.2
+    }
   },
   {
     "id": "NPH-EXP-0100",
@@ -4465,7 +7435,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239951",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 39.0,
+      "SAR": 146.25,
+      "AED": 143.13,
+      "EUR": 35.88
+    },
+    "wholesale": {
+      "moq": 100,
+      "bulk_price": 31.2
+    }
   },
   {
     "id": "NPH-EXP-0101",
@@ -4511,7 +7511,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239962",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 59.0,
+      "SAR": 221.25,
+      "AED": 216.53,
+      "EUR": 54.28
+    },
+    "wholesale": {
+      "moq": 100,
+      "bulk_price": 47.2
+    }
   },
   {
     "id": "NPH-EXP-0102",
@@ -4557,7 +7587,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239972",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 29.0,
+      "SAR": 108.75,
+      "AED": 106.43,
+      "EUR": 26.68
+    },
+    "wholesale": {
+      "moq": 100,
+      "bulk_price": 23.2
+    }
   },
   {
     "id": "NPH-EXP-0103",
@@ -4603,7 +7663,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.239983",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 35.0,
+      "SAR": 131.25,
+      "AED": 128.45,
+      "EUR": 32.2
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 28.0
+    }
   },
   {
     "id": "NPH-EXP-0104",
@@ -4649,7 +7739,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.240017",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 2499.0,
+      "SAR": 9371.25,
+      "AED": 9171.33,
+      "EUR": 2299.08
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 1999.2
+    }
   },
   {
     "id": "NPH-EXP-0105",
@@ -4695,7 +7815,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.240035",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 329.0,
+      "SAR": 1233.75,
+      "AED": 1207.43,
+      "EUR": 302.68
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 263.2
+    }
   },
   {
     "id": "NPH-EXP-0106",
@@ -4741,7 +7891,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.240052",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 199.0,
+      "SAR": 746.25,
+      "AED": 730.33,
+      "EUR": 183.08
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 159.2
+    }
   },
   {
     "id": "NPH-EXP-0107",
@@ -4787,7 +7967,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.240066",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 699.0,
+      "SAR": 2621.25,
+      "AED": 2565.33,
+      "EUR": 643.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 559.2
+    }
   },
   {
     "id": "NPH-EXP-0108",
@@ -4833,7 +8043,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.240078",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 2495.0,
+      "SAR": 9356.25,
+      "AED": 9156.65,
+      "EUR": 2295.4
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 1996.0
+    }
   },
   {
     "id": "NPH-EXP-0109",
@@ -4879,7 +8119,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.240089",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 599.0,
+      "SAR": 2246.25,
+      "AED": 2198.33,
+      "EUR": 551.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 479.2
+    }
   },
   {
     "id": "NPH-EXP-0110",
@@ -4925,7 +8195,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.240098",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 39.0,
+      "SAR": 146.25,
+      "AED": 143.13,
+      "EUR": 35.88
+    },
+    "wholesale": {
+      "moq": 100,
+      "bulk_price": 31.2
+    }
   },
   {
     "id": "NPH-EXP-0111",
@@ -4971,7 +8271,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.240108",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 49.0,
+      "SAR": 183.75,
+      "AED": 179.83,
+      "EUR": 45.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 39.2
+    }
   },
   {
     "id": "NPH-EXP-0112",
@@ -5017,7 +8347,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.240120",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 79.0,
+      "SAR": 296.25,
+      "AED": 289.93,
+      "EUR": 72.68
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 63.2
+    }
   },
   {
     "id": "NPH-EXP-0113",
@@ -5063,7 +8423,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.240129",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 89.0,
+      "SAR": 333.75,
+      "AED": 326.63,
+      "EUR": 81.88
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 71.2
+    }
   },
   {
     "id": "NPH-EXP-0114",
@@ -5109,7 +8499,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.240141",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 35.0,
+      "SAR": 131.25,
+      "AED": 128.45,
+      "EUR": 32.2
+    },
+    "wholesale": {
+      "moq": 100,
+      "bulk_price": 28.0
+    }
   },
   {
     "id": "NPH-EXP-0115",
@@ -5155,7 +8575,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.240150",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 45.0,
+      "SAR": 168.75,
+      "AED": 165.15,
+      "EUR": 41.4
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 36.0
+    }
   },
   {
     "id": "NPH-EXP-0116",
@@ -5201,7 +8651,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.240160",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 199.0,
+      "SAR": 746.25,
+      "AED": 730.33,
+      "EUR": 183.08
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 159.2
+    }
   },
   {
     "id": "NPH-EXP-0117",
@@ -5247,7 +8727,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.240173",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 149.0,
+      "SAR": 558.75,
+      "AED": 546.83,
+      "EUR": 137.08
+    },
+    "wholesale": {
+      "moq": 100,
+      "bulk_price": 119.2
+    }
   },
   {
     "id": "NPH-EXP-0118",
@@ -5293,7 +8803,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.240183",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 299.0,
+      "SAR": 1121.25,
+      "AED": 1097.33,
+      "EUR": 275.08
+    },
+    "wholesale": {
+      "moq": 100,
+      "bulk_price": 239.2
+    }
   },
   {
     "id": "NPH-EXP-0119",
@@ -5339,7 +8879,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.240192",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 89.0,
+      "SAR": 333.75,
+      "AED": 326.63,
+      "EUR": 81.88
+    },
+    "wholesale": {
+      "moq": 100,
+      "bulk_price": 71.2
+    }
   },
   {
     "id": "NPH-EXP-0120",
@@ -5385,7 +8955,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.240201",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 49.0,
+      "SAR": 183.75,
+      "AED": 179.83,
+      "EUR": 45.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 39.2
+    }
   },
   {
     "id": "NPH-EXP-0121",
@@ -5431,7 +9031,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.240212",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 25.0,
+      "SAR": 93.75,
+      "AED": 91.75,
+      "EUR": 23.0
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 20.0
+    }
   },
   {
     "id": "NPH-EXP-0122",
@@ -5477,7 +9107,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.240224",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 79.0,
+      "SAR": 296.25,
+      "AED": 289.93,
+      "EUR": 72.68
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 63.2
+    }
   },
   {
     "id": "NPH-EXP-0123",
@@ -5523,7 +9183,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.241137",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 29.0,
+      "SAR": 108.75,
+      "AED": 106.43,
+      "EUR": 26.68
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 23.2
+    }
   },
   {
     "id": "NPH-EXP-0124",
@@ -5569,7 +9259,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.241152",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 89.0,
+      "SAR": 333.75,
+      "AED": 326.63,
+      "EUR": 81.88
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 71.2
+    }
   },
   {
     "id": "NPH-EXP-0125",
@@ -5615,7 +9335,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.241168",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 99.0,
+      "SAR": 371.25,
+      "AED": 363.33,
+      "EUR": 91.08
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 79.2
+    }
   },
   {
     "id": "NPH-EXP-0126",
@@ -5661,7 +9411,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.241178",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 149.0,
+      "SAR": 558.75,
+      "AED": 546.83,
+      "EUR": 137.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 119.2
+    }
   },
   {
     "id": "NPH-EXP-0127",
@@ -5707,7 +9487,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.241190",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 299.0,
+      "SAR": 1121.25,
+      "AED": 1097.33,
+      "EUR": 275.08
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 239.2
+    }
   },
   {
     "id": "NPH-EXP-0128",
@@ -5753,7 +9563,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.241203",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 44.0,
+      "SAR": 165.0,
+      "AED": 161.48,
+      "EUR": 40.48
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 35.2
+    }
   },
   {
     "id": "NPH-EXP-0129",
@@ -5799,7 +9639,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.241213",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 329.0,
+      "SAR": 1233.75,
+      "AED": 1207.43,
+      "EUR": 302.68
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 263.2
+    }
   },
   {
     "id": "NPH-EXP-0130",
@@ -5845,7 +9715,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.241224",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 149.0,
+      "SAR": 558.75,
+      "AED": 546.83,
+      "EUR": 137.08
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 119.2
+    }
   },
   {
     "id": "NPH-EXP-0131",
@@ -5891,7 +9791,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.241234",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 59.0,
+      "SAR": 221.25,
+      "AED": 216.53,
+      "EUR": 54.28
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 47.2
+    }
   },
   {
     "id": "NPH-EXP-0132",
@@ -5937,7 +9867,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.241245",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 29.0,
+      "SAR": 108.75,
+      "AED": 106.43,
+      "EUR": 26.68
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 23.2
+    }
   },
   {
     "id": "NPH-EXP-0133",
@@ -5983,7 +9943,37 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.241255",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 79.0,
+      "SAR": 296.25,
+      "AED": 289.93,
+      "EUR": 72.68
+    },
+    "wholesale": {
+      "moq": 5,
+      "bulk_price": 63.2
+    }
   },
   {
     "id": "NPH-EXP-0134",
@@ -6029,6 +10019,36 @@
       ]
     },
     "added_at": "2026-07-03T09:18:55.241264",
-    "added_by": "expansion_v1"
+    "added_by": "expansion_v1",
+    "gallery": [
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt1.jpg",
+      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt2.jpg",
+      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 149.0,
+      "SAR": 558.75,
+      "AED": 546.83,
+      "EUR": 137.08
+    },
+    "wholesale": {
+      "moq": 10,
+      "bulk_price": 119.2
+    }
   }
 ]
