@@ -69,6 +69,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .hero-sub-title{font-size:clamp(1rem,2vw,1.5rem);font-weight:700;color:var(--purple2);margin-bottom:1.2rem;animation:fadeUp .9s ease .2s both}
 .hero-desc{font-size:1rem;color:var(--muted);max-width:600px;margin:0 auto 2.5rem;animation:fadeUp .9s ease .3s both}
 .hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;animation:fadeUp .9s ease .4s both}
+.growth-status{max-width:780px;margin:1.8rem auto 0;padding:1rem 1.2rem;border:1px solid rgba(34,211,238,.25);border-radius:16px;background:linear-gradient(135deg,rgba(6,182,212,.08),rgba(124,58,237,.08));display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:1rem;align-items:center;text-align:right;animation:fadeUp .9s ease .5s both}
+.growth-status-main{display:flex;align-items:center;gap:.7rem}.growth-status-dot{width:10px;height:10px;border-radius:50%;background:#10b981;box-shadow:0 0 14px rgba(16,185,129,.8);flex:0 0 auto}.growth-status-title{font-weight:800;color:#fff;font-size:.9rem}.growth-status-sub{font-size:.72rem;color:var(--muted)}.growth-status-metric{border-right:1px solid var(--border);padding-right:1rem}.growth-status-value{display:block;font-family:'Orbitron',sans-serif;color:var(--cyan2);font-size:1rem;font-weight:700}.growth-status-label{font-size:.7rem;color:var(--muted)}
+@media(max-width:768px){.growth-status{grid-template-columns:1fr;text-align:center}.growth-status-main{justify-content:center}.growth-status-metric{border-right:0;border-top:1px solid var(--border);padding: .7rem 0 0}}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:.85rem 2rem;border-radius:var(--rp);font-weight:700;font-size:.95rem;font-family:inherit;transition:all var(--ease);white-space:nowrap;cursor:pointer}
 .btn-primary{background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;box-shadow:0 0 25px rgba(59,130,246,.4)}
 .btn-primary:hover{transform:translateY(-3px);box-shadow:0 8px 40px rgba(59,130,246,.6)}
@@ -491,6 +494,11 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
       <a href="products.html" class="btn btn-primary">🛍️ <span data-i18n="shop_now">تسوق الآن</span></a>
       <a href="#products" class="btn btn-outline">⚡ <span data-i18n="see_featured">المنتجات المميزة</span></a>
     </div>
+    <div class="growth-status" aria-live="polite">
+      <div class="growth-status-main"><span class="growth-status-dot"></span><div><div class="growth-status-title" data-i18n="growth_title">محرك النمو العالمي يعمل</div><div class="growth-status-sub" id="growthCycleAt">تتم المزامنة كل 6 ساعات</div></div></div>
+      <div class="growth-status-metric"><span class="growth-status-value" id="liveProductCount">—</span><span class="growth-status-label" data-i18n="growth_products">منتج محمّل الآن</span></div>
+      <div class="growth-status-metric"><span class="growth-status-value" id="liveDataSource">JSON + AI</span><span class="growth-status-label" data-i18n="growth_source">مصدر البيانات</span></div>
+    </div>
     <div class="hero-stats">
       <div><div class="hero-stat-num" id="stat0">682+</div><div class="hero-stat-label" data-i18n="stat_products">منتج ذكي</div></div>
       <div><div class="hero-stat-num" id="stat1">1000+</div><div class="hero-stat-label" data-i18n="stat_customers">عميل سعيد</div></div>
@@ -684,9 +692,9 @@ let currentFilter = 'featured';
 const T = {
   ar: {
     nav_home:"الرئيسية", nav_products:"المنتجات", nav_blog_ar:"📝 المدونة", nav_about:"من نحن", nav_contact:"اتصل بنا",
-    hero_badge:"🤖 منتجات الذكاء الاصطناعي — متاحة الآن", hero_subtitle:"مستقبل التقنية بين يديك",
+    hero_badge:"⚡ تحديث عالمي كل 6 ساعات — متاح الآن", hero_subtitle:"مستقبل التقنية بين يديك",
     hero_desc:"متجرك المتخصص لأحدث منتجات الذكاء الاصطناعي والتقنية الذكية. اشترِ من أمازون بأفضل الأسعار.",
-    shop_now:"تسوق الآن", see_featured:"المنتجات المميزة",
+    shop_now:"تسوق الآن", see_featured:"المنتجات المميزة", growth_title:"محرك النمو العالمي يعمل", growth_products:"منتج محمّل الآن", growth_source:"مصدر البيانات",
     stat_products:"منتج ذكي", stat_customers:"عميل سعيد", stat_satisfaction:"رضا العملاء", stat_commission:"عمولة مضمونة",
     categories_tag:"الفئات", categories_title:"تسوق حسب الفئة", categories_sub:"اختر من أحدث فئات التقنية الذكية",
     cat_smartwatch:"ساعات ذكية", cat_glasses:"نظارات وكاميرات", cat_health:"الصحة الذكية", cat_smarthome:"المنزل الذكي", cat_earbuds:"سماعات ذكية", cat_productivity:"الإنتاجية",
@@ -711,9 +719,9 @@ const T = {
   },
   en: {
     nav_home:"Home", nav_products:"Products", nav_blog_ar:"📝 Blog", nav_about:"About", nav_contact:"Contact",
-    hero_badge:"🤖 AI Products — Available Now", hero_subtitle:"The Future of Tech in Your Hands",
+    hero_badge:"⚡ Global refresh every 6 hours — Live", hero_subtitle:"The Future of Tech in Your Hands",
     hero_desc:"Your specialized store for the latest AI products and smart technology. Buy from Amazon at the best prices.",
-    shop_now:"Shop Now", see_featured:"Featured Products",
+    shop_now:"Shop Now", see_featured:"Featured Products", growth_title:"Global growth engine is live", growth_products:"products loaded now", growth_source:"data source",
     stat_products:"Smart Products", stat_customers:"Happy Customers", stat_satisfaction:"Satisfaction Rate", stat_commission:"Guaranteed Commission",
     categories_tag:"Categories", categories_title:"Shop by Category", categories_sub:"Choose from the latest smart tech categories",
     cat_smartwatch:"Smart Watches", cat_glasses:"Glasses & Cameras", cat_health:"Smart Health", cat_smarthome:"Smart Home", cat_earbuds:"Smart Earbuds", cat_productivity:"Productivity",
@@ -891,6 +899,15 @@ async function loadProducts() {
     
     // Update PRODUCTS and display
     PRODUCTS = products;
+    const productCount = document.getElementById('liveProductCount');
+    if (productCount) productCount.textContent = products.length.toLocaleString();
+    const cycleAt = document.getElementById('growthCycleAt');
+    if (cycleAt) {
+      const now = new Date();
+      cycleAt.textContent = lang === 'en'
+        ? `Last checked: ${now.toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' })}`
+        : `آخر فحص: ${now.toLocaleString('ar', { dateStyle: 'medium', timeStyle: 'short' })}`;
+    }
     
     if (products.length === 0) {
       grid.innerHTML = '<p style="text-align:center;padding:40px;color:#64748b;">لا توجد منتجات متوفرة</p>';
