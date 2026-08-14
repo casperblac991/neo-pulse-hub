@@ -205,7 +205,11 @@
                 const cat = p.category_ar || p.category;
                 const price = getFormattedPrice(p);
                 const origPrice = p.original_price ? getFormattedPrice(p, true) : '';
-                const specs = Object.entries(p.specs || p.specifications || {}).slice(0, 3).map(([k,v]) => `<span>${k}: ${v}</span>`).join('');
+                const localizedSpecs = p.specifications?.[lang] || p.specs?.[lang] || p.specifications || p.specs || {};
+                const specs = Object.entries(localizedSpecs).slice(0, 3).map(([k, v]) => {
+                    const value = v && typeof v === 'object' ? (v[lang] || v.ar || v.en || '') : v;
+                    return `<span>${k}: ${value}</span>`;
+                }).join('');
                 
                 return `
                     <div class="product-card" onclick="window.location.href='product-detail.html?id=${p.id}'">
