@@ -76,15 +76,24 @@ def start_scheduler():
         import pytz
 
         def refresh_job():
-            """تجديد المتجر كل 6 ساعات — يحذف القديم ويضيف الجديد"""
-            log.info("🔄 Auto store refresh starting...")
+            """تجديد المتجر ودورة النمو كل 6 ساعات."""
+            log.info("🔄 Auto store refresh and growth cycle starting...")
             try:
                 import supplier_bot as sb
                 result = sb.refresh_store(keep_per_cat=12, add_per_cat=3)
                 log.info(f"✅ Refresh done: +{result['added']} -{result['deleted']}")
                 sb.notify_admin_refresh(result)
             except Exception as e:
-                log.error(f"refresh_job error: {e}")
+                log.error(f"refresh_job supplier error: {e}")
+
+            # دورة آمنة: تدقيق الكتالوج، إنشاء مسودات الحملات،
+            # وإرسال مهمة تحليل منظمة إلى Manus عند توفر MANUS_API_KEY.
+            try:
+                import global_growth_cycle
+                code = global_growth_cycle.main()
+                log.info(f"✅ Global growth cycle finished with code {code}")
+            except Exception as e:
+                log.error(f"refresh_job growth cycle error: {e}")
 
         def startup_job():
             """عند الإقلاع — أضف منتجات إذا كان العدد قليلاً"""
