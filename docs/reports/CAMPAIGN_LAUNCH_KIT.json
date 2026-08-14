@@ -1,0 +1,26 @@
+{
+  "campaign_name": "Pulse of Tomorrow 2026",
+  "base_url": "https://neo-pulse-hub.im/",
+  "tracking_links": {
+    "facebook": "https://neo-pulse-hub.im/?utm_source=facebook&utm_medium=social&utm_campaign=pulse_of_tomorrow",
+    "instagram": "https://neo-pulse-hub.im/?utm_source=instagram&utm_medium=social&utm_campaign=pulse_of_tomorrow",
+    "tiktok": "https://neo-pulse-hub.im/?utm_source=tiktok&utm_medium=video&utm_campaign=pulse_of_tomorrow",
+    "google_ads": "https://neo-pulse-hub.im/?utm_source=google&utm_medium=cpc&utm_campaign=pulse_of_tomorrow",
+    "x_twitter": "https://neo-pulse-hub.im/?utm_source=x&utm_medium=social&utm_campaign=pulse_of_tomorrow",
+    "email_newsletter": "https://neo-pulse-hub.im/?utm_source=newsletter&utm_medium=email&utm_campaign=pulse_of_tomorrow"
+  },
+  "launch_checklist": [
+    "تأكد من رفع جميع الصور الإعلانية إلى منصات التواصل الاجتماعي.",
+    "استخدم الفيديو الترويجي (promo_video.mp4) كإعلان رئيسي في TikTok وReels.",
+    "قم بتصدير قائمة الإيميلات الحديثة باستخدام سكربت backend/export_marketing_list.py.",
+    "ارفع قائمة الإيميلات إلى Facebook Ads كـ 'Custom Audience' لتحسين الاستهداف.",
+    "تأكد من أن جميع الروابط تعمل وتوجه إلى الصفحة الرئيسية أو صفحة المنتجات.",
+    "راقب أداء الروابط عبر Google Analytics باستخدام بارامترات UTM."
+  ],
+  "ad_creative_assets": [
+    "images/ads/hero_ad_global.png",
+    "images/ads/instagram_post.png",
+    "images/ads/tiktok_bg.png",
+    "images/ads/promo_video.mp4"
+  ]
+}
