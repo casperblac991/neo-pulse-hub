@@ -33,10 +33,18 @@ def create_manus_task(prompt):
         "agent_profile": "standard" # يمكن استخدام lite لتوفير التكلفة أو max للمهام المعقدة
     }
 
+    # في v2، المسار هو task.create والهدف يوضع في message.content
+    payload = {
+        "message": {
+            "content": prompt
+        }
+    }
+
     try:
-        response = requests.post(f"{BASE_URL}/v2/tasks", json=payload, headers=headers)
+        response = requests.post(f"{BASE_URL}/v2/task.create", json=payload, headers=headers)
         if response.status_code == 200:
-            task_id = response.json().get("data", {}).get("task_id")
+            data = response.json()
+            task_id = data.get("task_id")
             log.info(f"✅ Task created successfully! Task ID: {task_id}")
             return task_id
         else:
@@ -50,9 +58,11 @@ def check_task_status(task_id):
     """التحقق من حالة المهمة"""
     headers = {"x-manus-api-key": MANUS_API_KEY}
     try:
-        response = requests.get(f"{BASE_URL}/v2/tasks/{task_id}", headers=headers)
+        response = requests.get(f"{BASE_URL}/v2/task.detail?task_id={task_id}", headers=headers)
         if response.status_code == 200:
-            status = response.json().get("data", {}).get("status")
+            data = response.json()
+            # في v2، الحالة قد تكون في مستوى أعلى أو داخل الكائن
+            status = data.get("status") or data.get("data", {}).get("status")
             log.info(f"🔄 Task {task_id} status: {status}")
             return status
         return "error"
