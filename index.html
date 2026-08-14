@@ -684,6 +684,7 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
 
 const AMAZON_TAG = 'neopulsehub-20';
 const MANAGER_URL = 'https://neo-pulse-manager.onrender.com';
+const APP_VERSION = '2026.08.14.home-v1';
 
 let lang = localStorage.getItem('nph_lang') || 'ar';
 let PRODUCTS = [];
@@ -875,7 +876,7 @@ async function loadProducts() {
     let products = [];
     
     try {
-      const response = await fetch('./products.json');
+      const response = await fetch(`./products.json?v=${APP_VERSION}`, { cache: 'no-store' });
       if (response.ok) {
         products = await response.json();
         console.log('✅ Loaded', products.length, 'products from products.json');
