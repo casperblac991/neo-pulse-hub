@@ -393,6 +393,20 @@ function changeCurrency(newCurrency) {
     if (product) renderProduct();
 }
 
+function formatProductPrice(item, amount, useGlobal) {
+  var currency = safeStorage('get', 'nph_currency') || 'USD';
+  var symbols = { USD: '$', SAR: 'ر.س', AED: 'د.إ', EUR: '€' };
+  var rates = { USD: 1, SAR: 3.75, AED: 3.67, EUR: 0.92 };
+  var value = Number(amount || 0);
+  if (useGlobal && item && item.global_prices && item.global_prices[currency] != null) {
+    value = Number(item.global_prices[currency]);
+  } else {
+    value = value * (rates[currency] || 1);
+  }
+  var locale = lang === 'ar' ? 'ar-SA' : 'en-US';
+  return symbols[currency] + ' ' + value.toLocaleString(locale, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+
 function updateCartBadge() {
   var cart = getCart();
   var el = document.getElementById('nav_cart');
@@ -432,7 +446,8 @@ function showToast(icon, msg) {
 function changeQty(delta) {
   qty = qty + delta;
   if (qty < 1) qty = 1;
-  if (product && qty > product.stock) qty = product.stock;
+  var maxStock = product ? Number(product.stock || 25) : 25;
+  if (qty > maxStock) qty = maxStock;
   var el = document.getElementById('qtyNum');
   if (el) el.textContent = qty;
 }
@@ -483,6 +498,7 @@ function renderProduct() {
 
   var t = T[lang];
   var cart = getCart();
+  var stock = Number(product.stock || 25);
   var inCart = false;
   for (var i = 0; i < cart.length; i++) {
     if (cart[i].id === product.id) { inCart = true; break; }
@@ -505,12 +521,12 @@ function renderProduct() {
   for (var s = 0; s < rf; s++) stars += '\u2605';
   for (var s = rf; s < 5; s++) stars += '\u2606';
 
-  var stockHtml = product.stock > 10
+  var stockHtml = stock > 10
     ? '<span style="color:var(--green);font-weight:600">' + t.in_stock + '</span>'
-    : '<span style="color:#f87171;font-weight:600">' + t.only_left + ' ' + product.stock + '</span>';
+    : '<span style="color:#f87171;font-weight:600">' + t.only_left + ' ' + stock + '</span>';
 
   var origHtml = product.original_price
-    ? '<span class="orig-price">$' + product.original_price + '</span>' : '';
+    ? '<span class="orig-price">' + formatProductPrice(product, product.original_price, false) + '</span>' : '';
 
   var discHtml = product.discount
     ? '<span class="discount-pill">' + product.discount + '% ' + t.discount_text + '</span>' : '';
@@ -530,20 +546,22 @@ function renderProduct() {
   var warranty = product.rating > 4.5 ? 24 : 12;
 
   // Global Price Selection
-  var selectedCurrency = safeStorage('get', 'nph_currency') || 'USD';
-  var priceVal = product.global_prices ? product.global_prices[selectedCurrency] : product.price;
-  var currencySymbol = selectedCurrency === 'SAR' ? 'ر.س' : (selectedCurrency === 'AED' ? 'د.إ' : (selectedCurrency === 'EUR' ? '€' : '$'));
+  var priceLabel = formatProductPrice(product, product.price, true);
+  var wholesaleLabel = product.wholesale ? formatProductPrice(product, product.wholesale.bulk_price, false) : '';
 
   // Gallery HTML
   var galleryHtml = '<div class="gallery-container">';
-  var gallery = product.gallery || [product.image];
+  var gallery = (product.gallery || [product.image]).filter(function(src) {
+    return src && src.indexOf('placehold.co') === -1;
+  });
+  if (!gallery.length && product.image) gallery = [product.image];
   galleryHtml += '<div class="main-img-box img-box">'
     + '<img id="mainProductImg" src="' + gallery[0] + '" alt="' + pname + '" onerror="this.src=\'https://placehold.co/400x400/0a0d1a/60a5fa?text=IMG\'">'
     + badgeHtml + '</div>';
   
   if (gallery.length > 1) {
     galleryHtml += '<div class="thumb-row">';
-    for (var g = 0; f < gallery.length; g++) {
+    for (var g = 0; g < gallery.length; g++) {
         if (!gallery[g]) break;
         galleryHtml += '<div class="thumb-box" onclick="document.getElementById(\'mainProductImg\').src=\'' + gallery[g] + '\'">'
             + '<img src="' + gallery[g] + '" onerror="this.style.display=\'none\'"></div>';
@@ -560,9 +578,9 @@ function renderProduct() {
     + '<div class="stars-row"><span class="stars">' + stars + '</span>'
     + '<span class="rev">' + product.rating + ' ' + t.out_of + ' 5 (' + (product.reviews || 0) + ' ' + t.reviews + ')</span></div>'
     + '<div class="price-box">'
-    + '<span class="price-big">' + currencySymbol + ' ' + priceVal + '</span>' + origHtml + discHtml
+    + '<span class="price-big">' + priceLabel + '</span>' + origHtml + discHtml
     + '</div>'
-    + (product.wholesale ? '<div class="wholesale-badge">📦 ' + (lang === 'ar' ? 'سعر الجملة: ' : 'Wholesale: ') + currencySymbol + ' ' + product.wholesale.bulk_price + ' (' + (lang === 'ar' ? 'أقل طلب: ' : 'MOQ: ') + product.wholesale.moq + ')</div>' : '')
+    + (product.wholesale ? '<div class="wholesale-badge">📦 ' + (lang === 'ar' ? 'سعر الجملة: ' : 'Wholesale: ') + wholesaleLabel + ' (' + (lang === 'ar' ? 'أقل طلب: ' : 'MOQ: ') + product.wholesale.moq + ')</div>' : '')
     + '<div class="stock-indicator">'
     + '<span class="stock-dot"></span>' + stockHtml
     + '<span style="color:var(--muted);font-size:.8rem">&nbsp;&#x2022;&nbsp;' + t.ships_in + ' ' + (product.shipping_days || 3) + ' ' + t.days + '</span>'
@@ -587,7 +605,9 @@ function renderProduct() {
   var specs = product.specifications ? (product.specifications[lang] || product.specifications['en'] || {}) : {};
   var specKeys = Object.keys(specs);
   for (var k = 0; k < specKeys.length; k++) {
-      html += '<tr><th>' + specKeys[k] + '</th><td>' + specs[specKeys[k]] + '</td></tr>';
+      var specValue = specs[specKeys[k]];
+      if (specValue && typeof specValue === 'object') specValue = specValue[lang] || specValue.ar || specValue.en || '';
+      html += '<tr><th>' + specKeys[k] + '</th><td>' + specValue + '</td></tr>';
   }
   html += '</table></div>'
     + '<div class="trust-row">'
@@ -640,7 +660,7 @@ function renderRelated() {
       + ' onerror="this.src=\'https://placehold.co/200x200/0a0d1a/60a5fa?text=IMG\'">'
       + '<div class="rc-info">'
       + '<div class="rc-name">' + n + '</div>'
-      + '<div class="rc-price">$' + p.price + '</div>'
+      + '<div class="rc-price">' + formatProductPrice(p, p.price, true) + '</div>'
       + '</div></div>';
   }
   grid.innerHTML = html;
