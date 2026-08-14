@@ -137,14 +137,14 @@ def build_prompt(user_msg: str, uid: int) -> str:
     products = load_products()
     keywords = user_msg.lower().split()
     relevant = [p for p in products
-                if any(kw in (p.get("name_ar","") + p.get("name_en","") +
-                              p.get("category_ar","")).lower()
+                if any(kw in (str(p.get("name", {}).get("ar","")) + str(p.get("name", {}).get("en","")) +
+                              str(p.get("category",""))).lower()
                        for kw in keywords)]
     if not relevant:
-        relevant = sorted(products, key=lambda x: x.get("reviews", 0), reverse=True)[:6]
+        relevant = sorted(products, key=lambda x: x.get("rating", 0), reverse=True)[:6]
 
     prod_lines = "\n".join([
-        f"- {p.get('name_ar','')} | ${p.get('price',0)} | ⭐{p.get('rating',0)} | "
+        f"- {p.get('name', {}).get('ar','')} | ${p.get('price',0)} | ⭐{p.get('rating',0)} | "
         f"{SITE_URL}/product-detail.html?id={p.get('id','')}"
         for p in relevant[:6]
     ])
@@ -215,9 +215,24 @@ async def handle_message(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     if len(text) < 2:
         return
     await update.message.chat.send_action(ChatAction.TYPING)
-    msg = await update.message.reply_text("⏳ جاري البحث...")
+    msg = await update.message.reply_text("⏳ جاري التفكير...")
+    
+    # استخدام محرك الذكاء الاصطناعي الموحد
+    try:
+        from ai_engine import answer_customer
+        products = load_products()
+        context = "\n".join([f"- {p.get('name', {}).get('ar','')} (${p.get('price',0)})" for p in products[:5]])
+        history = "\n".join([f"{h['role']}: {h['text']}" for h in get_history(uid)])
+        
+        answer = answer_customer(text, products_context=context, user_history=history)
+    except Exception as e:
+        log.error(f"AI Engine error: {e}")
+        answer = ask_ai(build_prompt(text, uid)) # Fallback to local ask_ai
+    
+    if not answer:
+        answer = "عذراً، لم أستطع فهم ذلك. هل يمكنك توضيح سؤالك؟"
+        
     add_history(uid, "user", text)
-    answer = ask_ai(build_prompt(text, uid))
     add_history(uid, "assistant", answer)
     await msg.edit_text(answer, parse_mode=ParseMode.MARKDOWN)
 

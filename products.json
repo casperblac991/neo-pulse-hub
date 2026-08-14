@@ -13,9 +13,8 @@
     "asin": "B0B5W8V2L3",
     "gallery": [
       "images/products/5AjtpPKrp8e3.jpg",
-      "images/products/5AjtpPKrp8e3_alt1.jpg",
-      "images/products/5AjtpPKrp8e3_alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+2"
     ],
     "specifications": {
       "ar": {
@@ -56,9 +55,8 @@
     "asin": "B0CHKV4YVM",
     "gallery": [
       "images/products/Gq2JNMnegXco.jpg",
-      "images/products/Gq2JNMnegXco_alt1.jpg",
-      "images/products/Gq2JNMnegXco_alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+2"
     ],
     "specifications": {
       "ar": {
@@ -94,14 +92,13 @@
     "price": 249.0,
     "rating": 4.8,
     "category": "earbuds",
-    "image": "images/products/wvyoImQU6MkS.jpg",
+    "image": "images/products/kgRdLhjYdmul.jpg",
     "affiliate_amazon": "https://www.amazon.com/s?k=Apple%20AirPods%20Pro&tag=neopulsehub-20",
     "asin": "B0BDN8TDMQ",
     "gallery": [
-      "images/products/wvyoImQU6MkS.jpg",
-      "images/products/wvyoImQU6MkS_alt1.jpg",
-      "images/products/wvyoImQU6MkS_alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "images/products/kgRdLhjYdmul.jpg",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+2"
     ],
     "specifications": {
       "ar": {
@@ -137,14 +134,13 @@
     "price": 279.0,
     "rating": 4.7,
     "category": "earbuds",
-    "image": "images/products/9Ctxi24QHCa5.jpg",
+    "image": "images/products/z3EeMLnHoL92.jpg",
     "affiliate_amazon": "https://www.amazon.com/s?k=Sony%20WF-1000XM4&tag=neopulsehub-20",
     "asin": "B094C4VDJZ",
     "gallery": [
-      "images/products/9Ctxi24QHCa5.jpg",
-      "images/products/9Ctxi24QHCa5_alt1.jpg",
-      "images/products/9Ctxi24QHCa5_alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "images/products/z3EeMLnHoL92.jpg",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+2"
     ],
     "specifications": {
       "ar": {
@@ -186,7 +182,7 @@
     "rating": 4.9,
     "reviews": 39282,
     "stock": 39,
-    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+    "image": "images/products/Lf6rD7HuugSb.jpg",
     "badge": {
       "ar": "الأكثر مبيعاً",
       "en": "Hot"
@@ -217,10 +213,9 @@
     "added_at": "2026-07-03T09:18:55.238895",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "images/products/Lf6rD7HuugSb.jpg",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+2"
     ],
     "specifications": {
       "ar": {
@@ -262,7 +257,7 @@
     "rating": 4.7,
     "reviews": 44368,
     "stock": 52,
-    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+    "image": "images/products/Nwz8VU3re2bv.jpg",
     "badge": {
       "ar": "الأكثر مبيعاً",
       "en": "Best Seller"
@@ -293,10 +288,9 @@
     "added_at": "2026-07-03T09:18:55.238918",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "images/products/Nwz8VU3re2bv.jpg",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+2"
     ],
     "specifications": {
       "ar": {
@@ -338,7 +332,7 @@
     "rating": 4.8,
     "reviews": 33544,
     "stock": 63,
-    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+    "image": "images/products/TvEXUBnP9BjG.jpg",
     "badge": {
       "ar": "الأكثر مبيعاً",
       "en": "Featured"
@@ -369,10 +363,9 @@
     "added_at": "2026-07-03T09:18:55.238930",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "images/products/TvEXUBnP9BjG.jpg",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+2"
     ],
     "specifications": {
       "ar": {
@@ -414,7 +407,7 @@
     "rating": 4.5,
     "reviews": 22068,
     "stock": 39,
-    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+    "image": "images/products/NLsOdopfrsBX.jpg",
     "badge": {
       "ar": "خصم",
       "en": "Sale"
@@ -445,10 +438,9 @@
     "added_at": "2026-07-03T09:18:55.238938",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "images/products/NLsOdopfrsBX.jpg",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+2"
     ],
     "specifications": {
       "ar": {
@@ -490,7 +482,7 @@
     "rating": 4.6,
     "reviews": 22853,
     "stock": 81,
-    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+    "image": "images/products/rL6yuZKQseW1.jpg",
     "badge": {
       "ar": "مميز",
       "en": "Limited"
@@ -521,10 +513,9 @@
     "added_at": "2026-07-03T09:18:55.238945",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "images/products/rL6yuZKQseW1.jpg",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+2"
     ],
     "specifications": {
       "ar": {
@@ -566,7 +557,7 @@
     "rating": 4.4,
     "reviews": 46402,
     "stock": 86,
-    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=800&q=80",
     "badge": {
       "ar": "خصم",
       "en": "Best Seller"
@@ -597,10 +588,9 @@
     "added_at": "2026-07-03T09:18:55.238955",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+2"
     ],
     "specifications": {
       "ar": {
@@ -642,7 +632,7 @@
     "rating": 4.6,
     "reviews": 46603,
     "stock": 74,
-    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1617043786394-f977fa12eddf?w=800&q=80",
     "badge": {
       "ar": "الأكثر مبيعاً",
       "en": "Featured"
@@ -673,10 +663,9 @@
     "added_at": "2026-07-03T09:18:55.238962",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1617043786394-f977fa12eddf?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+2"
     ],
     "specifications": {
       "ar": {
@@ -718,7 +707,7 @@
     "rating": 4.5,
     "reviews": 5962,
     "stock": 40,
-    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800&q=80",
     "badge": {
       "ar": "جديد",
       "en": "Sale"
@@ -749,10 +738,9 @@
     "added_at": "2026-07-03T09:18:55.238971",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+2"
     ],
     "specifications": {
       "ar": {
@@ -794,7 +782,7 @@
     "rating": 4.7,
     "reviews": 17416,
     "stock": 65,
-    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80",
     "badge": {
       "ar": "الأكثر مبيعاً",
       "en": "Limited"
@@ -825,10 +813,9 @@
     "added_at": "2026-07-03T09:18:55.238977",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+2"
     ],
     "specifications": {
       "ar": {
@@ -870,7 +857,7 @@
     "rating": 4.6,
     "reviews": 45151,
     "stock": 31,
-    "image": "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1523395243481-163f8f6155ab?w=800&q=80",
     "badge": {
       "ar": "تسريع",
       "en": "Featured"
@@ -901,10 +888,9 @@
     "added_at": "2026-07-03T09:18:55.238983",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71rSQvzS8QL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1523395243481-163f8f6155ab?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+2"
     ],
     "specifications": {
       "ar": {
@@ -946,7 +932,7 @@
     "rating": 4.9,
     "reviews": 40076,
     "stock": 47,
-    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1558466941-8f9a3f5a4a0c?w=800&q=80",
     "badge": {
       "ar": "تسريع",
       "en": "Exclusive"
@@ -977,10 +963,9 @@
     "added_at": "2026-07-03T09:18:55.238989",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1558466941-8f9a3f5a4a0c?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+2"
     ],
     "specifications": {
       "ar": {
@@ -1022,7 +1007,7 @@
     "rating": 4.7,
     "reviews": 23456,
     "stock": 43,
-    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
     "badge": {
       "ar": "خصم",
       "en": "Limited"
@@ -1053,10 +1038,9 @@
     "added_at": "2026-07-03T09:18:55.239029",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+2"
     ],
     "specifications": {
       "ar": {
@@ -1098,7 +1082,7 @@
     "rating": 4.8,
     "reviews": 38495,
     "stock": 26,
-    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&q=80",
     "badge": {
       "ar": "الأكثر مبيعاً",
       "en": "Limited"
@@ -1129,10 +1113,9 @@
     "added_at": "2026-07-03T09:18:55.239046",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+2"
     ],
     "specifications": {
       "ar": {
@@ -1174,7 +1157,7 @@
     "rating": 4.7,
     "reviews": 38713,
     "stock": 55,
-    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&q=80",
     "badge": {
       "ar": "تسريع",
       "en": "New"
@@ -1205,10 +1188,9 @@
     "added_at": "2026-07-03T09:18:55.239061",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+2"
     ],
     "specifications": {
       "ar": {
@@ -1250,7 +1232,7 @@
     "rating": 4.6,
     "reviews": 46666,
     "stock": 51,
-    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1516280440614-379a5dc9db41?w=800&q=80",
     "badge": {
       "ar": "مميز",
       "en": "Best Seller"
@@ -1281,10 +1263,9 @@
     "added_at": "2026-07-03T09:18:55.239074",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1516280440614-379a5dc9db41?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+2"
     ],
     "specifications": {
       "ar": {
@@ -1326,7 +1307,7 @@
     "rating": 4.5,
     "reviews": 19747,
     "stock": 32,
-    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80",
     "badge": {
       "ar": "الأكثر مبيعاً",
       "en": "Featured"
@@ -1357,10 +1338,9 @@
     "added_at": "2026-07-03T09:18:55.239085",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+2"
     ],
     "specifications": {
       "ar": {
@@ -1402,7 +1382,7 @@
     "rating": 4.8,
     "reviews": 44008,
     "stock": 90,
-    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcc75?w=800&q=80",
     "badge": {
       "ar": "الأكثر مبيعاً",
       "en": "Limited"
@@ -1433,10 +1413,9 @@
     "added_at": "2026-07-03T09:18:55.239097",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcc75?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+2"
     ],
     "specifications": {
       "ar": {
@@ -1478,7 +1457,7 @@
     "rating": 4.6,
     "reviews": 23149,
     "stock": 82,
-    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8ae?w=800&q=80",
     "badge": {
       "ar": "تسريع",
       "en": "Best Seller"
@@ -1509,10 +1488,9 @@
     "added_at": "2026-07-03T09:18:55.239107",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8ae?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+2"
     ],
     "specifications": {
       "ar": {
@@ -1554,7 +1532,7 @@
     "rating": 4.6,
     "reviews": 7448,
     "stock": 27,
-    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800&q=80",
     "badge": {
       "ar": "مميز",
       "en": "Best Seller"
@@ -1585,10 +1563,9 @@
     "added_at": "2026-07-03T09:18:55.239174",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+2"
     ],
     "specifications": {
       "ar": {
@@ -1630,7 +1607,7 @@
     "rating": 4.5,
     "reviews": 41188,
     "stock": 24,
-    "image": "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80",
     "badge": {
       "ar": "جديد",
       "en": "Featured"
@@ -1661,10 +1638,9 @@
     "added_at": "2026-07-03T09:18:55.239184",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/65bsB9JfUvL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+2"
     ],
     "specifications": {
       "ar": {
@@ -1706,7 +1682,7 @@
     "rating": 4.9,
     "reviews": 29286,
     "stock": 70,
-    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Sony+WH-1000XM5",
     "badge": {
       "ar": "تسريع",
       "en": "Hot"
@@ -1737,10 +1713,9 @@
     "added_at": "2026-07-03T09:18:55.239196",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Sony+WH-1000XM5",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+2"
     ],
     "specifications": {
       "ar": {
@@ -1782,7 +1757,7 @@
     "rating": 4.8,
     "reviews": 39754,
     "stock": 96,
-    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Bose+QuietComfort+Ultra+Headphones",
     "badge": {
       "ar": "الأكثر مبيعاً",
       "en": "Hot"
@@ -1813,10 +1788,9 @@
     "added_at": "2026-07-03T09:18:55.239207",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Bose+QuietComfort+Ultra+Headphones",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+2"
     ],
     "specifications": {
       "ar": {
@@ -1858,7 +1832,7 @@
     "rating": 4.7,
     "reviews": 11066,
     "stock": 87,
-    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Apple+AirPods+Max",
     "badge": {
       "ar": "الأكثر مبيعاً",
       "en": "Limited"
@@ -1889,10 +1863,9 @@
     "added_at": "2026-07-03T09:18:55.239221",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Apple+AirPods+Max",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+2"
     ],
     "specifications": {
       "ar": {
@@ -1934,7 +1907,7 @@
     "rating": 4.8,
     "reviews": 13777,
     "stock": 27,
-    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Sennheiser+Momentum+4",
     "badge": {
       "ar": "الأكثر مبيعاً",
       "en": "Featured"
@@ -1965,10 +1938,9 @@
     "added_at": "2026-07-03T09:18:55.239229",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Sennheiser+Momentum+4",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+2"
     ],
     "specifications": {
       "ar": {
@@ -2010,7 +1982,7 @@
     "rating": 4.7,
     "reviews": 7550,
     "stock": 28,
-    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Audio-Technica+ATH-M50x",
     "badge": {
       "ar": "حصري",
       "en": "Featured"
@@ -2041,10 +2013,9 @@
     "added_at": "2026-07-03T09:18:55.239237",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Audio-Technica+ATH-M50x",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+2"
     ],
     "specifications": {
       "ar": {
@@ -2086,7 +2057,7 @@
     "rating": 4.6,
     "reviews": 37760,
     "stock": 64,
-    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=JBL+Tour+One+M2",
     "badge": {
       "ar": "عرض محدود",
       "en": "New"
@@ -2117,10 +2088,9 @@
     "added_at": "2026-07-03T09:18:55.239243",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=JBL+Tour+One+M2",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+2"
     ],
     "specifications": {
       "ar": {
@@ -2162,7 +2132,7 @@
     "rating": 4.5,
     "reviews": 10854,
     "stock": 61,
-    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Beats+Studio3+Wireless",
     "badge": {
       "ar": "حصري",
       "en": "Sale"
@@ -2193,10 +2163,9 @@
     "added_at": "2026-07-03T09:18:55.239250",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Beats+Studio3+Wireless",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+2"
     ],
     "specifications": {
       "ar": {
@@ -2238,7 +2207,7 @@
     "rating": 4.7,
     "reviews": 33426,
     "stock": 79,
-    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=SteelSeries+Arctis+Nova+Pro",
     "badge": {
       "ar": "حصري",
       "en": "Best Seller"
@@ -2269,10 +2238,9 @@
     "added_at": "2026-07-03T09:18:55.239258",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=SteelSeries+Arctis+Nova+Pro",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+2"
     ],
     "specifications": {
       "ar": {
@@ -2314,7 +2282,7 @@
     "rating": 4.6,
     "reviews": 22196,
     "stock": 52,
-    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=HyperX+Cloud+III",
     "badge": {
       "ar": "تسريع",
       "en": "Exclusive"
@@ -2345,10 +2313,9 @@
     "added_at": "2026-07-03T09:18:55.239266",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=HyperX+Cloud+III",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+2"
     ],
     "specifications": {
       "ar": {
@@ -2390,7 +2357,7 @@
     "rating": 4.5,
     "reviews": 41120,
     "stock": 93,
-    "image": "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Razer+BlackShark+V2",
     "badge": {
       "ar": "حصري",
       "en": "Exclusive"
@@ -2421,10 +2388,9 @@
     "added_at": "2026-07-03T09:18:55.239272",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/72TpY5M8JRL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Razer+BlackShark+V2",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=headphones+View+2"
     ],
     "specifications": {
       "ar": {
@@ -2466,7 +2432,7 @@
     "rating": 4.7,
     "reviews": 20405,
     "stock": 90,
-    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80",
     "badge": {
       "ar": "خصم",
       "en": "Sale"
@@ -2497,10 +2463,9 @@
     "added_at": "2026-07-03T09:18:55.239280",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smart+home+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smart+home+View+2"
     ],
     "specifications": {
       "ar": {
@@ -2542,7 +2507,7 @@
     "rating": 4.6,
     "reviews": 43495,
     "stock": 70,
-    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&q=80",
     "badge": {
       "ar": "جديد",
       "en": "Exclusive"
@@ -2573,10 +2538,9 @@
     "added_at": "2026-07-03T09:18:55.239286",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smart+home+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smart+home+View+2"
     ],
     "specifications": {
       "ar": {
@@ -2618,7 +2582,7 @@
     "rating": 4.5,
     "reviews": 41524,
     "stock": 94,
-    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1585338107529-13afc5f02586?w=800&q=80",
     "badge": {
       "ar": "جديد",
       "en": "Featured"
@@ -2649,10 +2613,9 @@
     "added_at": "2026-07-03T09:18:55.239294",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1585338107529-13afc5f02586?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smart+home+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smart+home+View+2"
     ],
     "specifications": {
       "ar": {
@@ -2694,7 +2657,7 @@
     "rating": 4.6,
     "reviews": 21202,
     "stock": 22,
-    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&q=80",
     "badge": {
       "ar": "حصري",
       "en": "Limited"
@@ -2725,10 +2688,9 @@
     "added_at": "2026-07-03T09:18:55.239299",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smart+home+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smart+home+View+2"
     ],
     "specifications": {
       "ar": {
@@ -2770,7 +2732,7 @@
     "rating": 4.6,
     "reviews": 29175,
     "stock": 54,
-    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1556911229-8d3734527a3d?w=800&q=80",
     "badge": {
       "ar": "عرض محدود",
       "en": "Sale"
@@ -2801,10 +2763,9 @@
     "added_at": "2026-07-03T09:18:55.239305",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1556911229-8d3734527a3d?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smart+home+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smart+home+View+2"
     ],
     "specifications": {
       "ar": {
@@ -2846,7 +2807,7 @@
     "rating": 4.8,
     "reviews": 15510,
     "stock": 69,
-    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1567721913486-6585f069b332?w=800&q=80",
     "badge": {
       "ar": "تسريع",
       "en": "Hot"
@@ -2877,10 +2838,9 @@
     "added_at": "2026-07-03T09:18:55.239311",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1567721913486-6585f069b332?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smart+home+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smart+home+View+2"
     ],
     "specifications": {
       "ar": {
@@ -2922,7 +2882,7 @@
     "rating": 4.7,
     "reviews": 40656,
     "stock": 71,
-    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
     "badge": {
       "ar": "عرض محدود",
       "en": "Sale"
@@ -2953,10 +2913,9 @@
     "added_at": "2026-07-03T09:18:55.239318",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smart+home+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smart+home+View+2"
     ],
     "specifications": {
       "ar": {
@@ -2998,7 +2957,7 @@
     "rating": 4.5,
     "reviews": 36566,
     "stock": 73,
-    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
     "badge": {
       "ar": "جديد",
       "en": "Hot"
@@ -3029,10 +2988,9 @@
     "added_at": "2026-07-03T09:18:55.239327",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smart+home+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smart+home+View+2"
     ],
     "specifications": {
       "ar": {
@@ -3074,7 +3032,7 @@
     "rating": 4.4,
     "reviews": 43698,
     "stock": 72,
-    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1527018601619-a508a2be00cd?w=800&q=80",
     "badge": {
       "ar": "مميز",
       "en": "Featured"
@@ -3105,10 +3063,9 @@
     "added_at": "2026-07-03T09:18:55.239335",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1527018601619-a508a2be00cd?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smart+home+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smart+home+View+2"
     ],
     "specifications": {
       "ar": {
@@ -3150,7 +3107,7 @@
     "rating": 4.6,
     "reviews": 47130,
     "stock": 98,
-    "image": "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Samsung+Smart+TV+55+inch",
     "badge": {
       "ar": "حصري",
       "en": "Limited"
@@ -3181,10 +3138,9 @@
     "added_at": "2026-07-03T09:18:55.239341",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/61ERwZ1H8eL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Samsung+Smart+TV+55+inch",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smart+home+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smart+home+View+2"
     ],
     "specifications": {
       "ar": {
@@ -3226,7 +3182,7 @@
     "rating": 4.7,
     "reviews": 13044,
     "stock": 74,
-    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1535303311164-664fc9ec6532?w=800&q=80",
     "badge": {
       "ar": "حصري",
       "en": "Limited"
@@ -3257,10 +3213,9 @@
     "added_at": "2026-07-03T09:18:55.239350",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1535303311164-664fc9ec6532?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -3302,7 +3257,7 @@
     "rating": 4.5,
     "reviews": 2122,
     "stock": 52,
-    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80",
     "badge": {
       "ar": "الأكثر مبيعاً",
       "en": "Featured"
@@ -3333,10 +3288,9 @@
     "added_at": "2026-07-03T09:18:55.239359",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -3378,7 +3332,7 @@
     "rating": 4.8,
     "reviews": 24739,
     "stock": 66,
-    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1550009158-9ebf69173e03?w=800&q=80",
     "badge": {
       "ar": "خصم",
       "en": "Featured"
@@ -3409,10 +3363,9 @@
     "added_at": "2026-07-03T09:18:55.239368",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1550009158-9ebf69173e03?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -3454,7 +3407,7 @@
     "rating": 4.6,
     "reviews": 27752,
     "stock": 20,
-    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1526738549149-8e07eca270b4?w=800&q=80",
     "badge": {
       "ar": "مميز",
       "en": "Sale"
@@ -3485,10 +3438,9 @@
     "added_at": "2026-07-03T09:18:55.239387",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1526738549149-8e07eca270b4?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -3530,7 +3482,7 @@
     "rating": 4.7,
     "reviews": 38390,
     "stock": 28,
-    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80",
     "badge": {
       "ar": "خصم",
       "en": "Sale"
@@ -3561,10 +3513,9 @@
     "added_at": "2026-07-03T09:18:55.239397",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -3606,7 +3557,7 @@
     "rating": 4.8,
     "reviews": 25985,
     "stock": 75,
-    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Theragun+Prime",
     "badge": {
       "ar": "حصري",
       "en": "Sale"
@@ -3637,10 +3588,9 @@
     "added_at": "2026-07-03T09:18:55.239407",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Theragun+Prime",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -3682,7 +3632,7 @@
     "rating": 4.4,
     "reviews": 30786,
     "stock": 26,
-    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Neck+Massager+with+Heat",
     "badge": {
       "ar": "مميز",
       "en": "Sale"
@@ -3713,10 +3663,9 @@
     "added_at": "2026-07-03T09:18:55.239418",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Neck+Massager+with+Heat",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -3758,7 +3707,7 @@
     "rating": 4.6,
     "reviews": 22804,
     "stock": 89,
-    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=ResMed+AirMini+CPAP",
     "badge": {
       "ar": "مميز",
       "en": "New"
@@ -3789,10 +3738,9 @@
     "added_at": "2026-07-03T09:18:55.239428",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=ResMed+AirMini+CPAP",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -3834,7 +3782,7 @@
     "rating": 4.7,
     "reviews": 5611,
     "stock": 62,
-    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Withings+Body+Smart+Scale",
     "badge": {
       "ar": "الأكثر مبيعاً",
       "en": "New"
@@ -3865,10 +3813,9 @@
     "added_at": "2026-07-03T09:18:55.239438",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Withings+Body+Smart+Scale",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -3910,7 +3857,7 @@
     "rating": 4.5,
     "reviews": 36271,
     "stock": 60,
-    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Fingertip+Pulse+Oximeter",
     "badge": {
       "ar": "مميز",
       "en": "Best Seller"
@@ -3941,10 +3888,9 @@
     "added_at": "2026-07-03T09:18:55.239446",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Fingertip+Pulse+Oximeter",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -3986,7 +3932,7 @@
     "rating": 4.9,
     "reviews": 27528,
     "stock": 90,
-    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=MacBook+Air+M3",
     "badge": {
       "ar": "مميز",
       "en": "Hot"
@@ -4017,10 +3963,9 @@
     "added_at": "2026-07-03T09:18:55.239461",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=MacBook+Air+M3",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -4062,7 +4007,7 @@
     "rating": 4.7,
     "reviews": 44548,
     "stock": 51,
-    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Dell+XPS+13+Plus",
     "badge": {
       "ar": "الأكثر مبيعاً",
       "en": "Sale"
@@ -4093,10 +4038,9 @@
     "added_at": "2026-07-03T09:18:55.239482",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Dell+XPS+13+Plus",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -4138,7 +4082,7 @@
     "rating": 4.6,
     "reviews": 12767,
     "stock": 89,
-    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=HP+Spectre+x360",
     "badge": {
       "ar": "تسريع",
       "en": "Limited"
@@ -4169,10 +4113,9 @@
     "added_at": "2026-07-03T09:18:55.239492",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=HP+Spectre+x360",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -4214,7 +4157,7 @@
     "rating": 4.8,
     "reviews": 2148,
     "stock": 28,
-    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Lenovo+ThinkPad+X1+Carbon",
     "badge": {
       "ar": "تسريع",
       "en": "Sale"
@@ -4245,10 +4188,9 @@
     "added_at": "2026-07-03T09:18:55.239503",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Lenovo+ThinkPad+X1+Carbon",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -4290,7 +4232,7 @@
     "rating": 4.6,
     "reviews": 16799,
     "stock": 46,
-    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=ASUS+ZenBook+14",
     "badge": {
       "ar": "جديد",
       "en": "Best Seller"
@@ -4321,10 +4263,9 @@
     "added_at": "2026-07-03T09:18:55.239515",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=ASUS+ZenBook+14",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -4366,7 +4307,7 @@
     "rating": 4.8,
     "reviews": 15075,
     "stock": 78,
-    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Apple+iPad+Pro+11+inch",
     "badge": {
       "ar": "تسريع",
       "en": "Best Seller"
@@ -4397,10 +4338,9 @@
     "added_at": "2026-07-03T09:18:55.239524",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Apple+iPad+Pro+11+inch",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -4442,7 +4382,7 @@
     "rating": 4.7,
     "reviews": 13279,
     "stock": 37,
-    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Apple+iPad+Air+10.9+inch",
     "badge": {
       "ar": "تسريع",
       "en": "New"
@@ -4473,10 +4413,9 @@
     "added_at": "2026-07-03T09:18:55.239533",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Apple+iPad+Air+10.9+inch",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -4518,7 +4457,7 @@
     "rating": 4.6,
     "reviews": 37682,
     "stock": 51,
-    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Samsung+Galaxy+Tab+S9",
     "badge": {
       "ar": "جديد",
       "en": "Featured"
@@ -4549,10 +4488,9 @@
     "added_at": "2026-07-03T09:18:55.239541",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Samsung+Galaxy+Tab+S9",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -4594,7 +4532,7 @@
     "rating": 4.8,
     "reviews": 16892,
     "stock": 36,
-    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Apple+Pencil+Pro",
     "badge": {
       "ar": "خصم",
       "en": "Hot"
@@ -4625,10 +4563,9 @@
     "added_at": "2026-07-03T09:18:55.239554",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Apple+Pencil+Pro",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -4670,7 +4607,7 @@
     "rating": 4.9,
     "reviews": 34588,
     "stock": 88,
-    "image": "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Logitech+MX+Master+3S",
     "badge": {
       "ar": "مميز",
       "en": "Featured"
@@ -4701,10 +4638,9 @@
     "added_at": "2026-07-03T09:18:55.239564",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/61GN5Y+k8XL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Logitech+MX+Master+3S",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -4746,7 +4682,7 @@
     "rating": 4.9,
     "reviews": 32384,
     "stock": 25,
-    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=PlayStation+5",
     "badge": {
       "ar": "تسريع",
       "en": "Best Seller"
@@ -4777,10 +4713,9 @@
     "added_at": "2026-07-03T09:18:55.239574",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=PlayStation+5",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -4822,7 +4757,7 @@
     "rating": 4.8,
     "reviews": 15553,
     "stock": 27,
-    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Xbox+Series+X",
     "badge": {
       "ar": "عرض محدود",
       "en": "Best Seller"
@@ -4853,10 +4788,9 @@
     "added_at": "2026-07-03T09:18:55.239584",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Xbox+Series+X",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -4898,7 +4832,7 @@
     "rating": 4.8,
     "reviews": 26368,
     "stock": 62,
-    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Nintendo+Switch+OLED",
     "badge": {
       "ar": "خصم",
       "en": "Featured"
@@ -4929,10 +4863,9 @@
     "added_at": "2026-07-03T09:18:55.239595",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Nintendo+Switch+OLED",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -4974,7 +4907,7 @@
     "rating": 4.7,
     "reviews": 12377,
     "stock": 39,
-    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Meta+Quest+3+VR+Headset",
     "badge": {
       "ar": "الأكثر مبيعاً",
       "en": "Exclusive"
@@ -5005,10 +4938,9 @@
     "added_at": "2026-07-03T09:18:55.239605",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Meta+Quest+3+VR+Headset",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -5050,7 +4982,7 @@
     "rating": 4.8,
     "reviews": 24049,
     "stock": 20,
-    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Steam+Deck+OLED",
     "badge": {
       "ar": "مميز",
       "en": "Sale"
@@ -5081,10 +5013,9 @@
     "added_at": "2026-07-03T09:18:55.239616",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Steam+Deck+OLED",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -5126,7 +5057,7 @@
     "rating": 4.6,
     "reviews": 14994,
     "stock": 100,
-    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Razer+Iskur+V2+Gaming+Chair",
     "badge": {
       "ar": "مميز",
       "en": "Featured"
@@ -5157,10 +5088,9 @@
     "added_at": "2026-07-03T09:18:55.239625",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Razer+Iskur+V2+Gaming+Chair",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -5202,7 +5132,7 @@
     "rating": 4.7,
     "reviews": 8052,
     "stock": 72,
-    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Samsung+Odyssey+G7+Gaming+Monitor",
     "badge": {
       "ar": "عرض محدود",
       "en": "New"
@@ -5233,10 +5163,9 @@
     "added_at": "2026-07-03T09:18:55.239634",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Samsung+Odyssey+G7+Gaming+Monitor",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -5278,7 +5207,7 @@
     "rating": 4.7,
     "reviews": 3962,
     "stock": 100,
-    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Astro+A50+Gaming+Headset",
     "badge": {
       "ar": "مميز",
       "en": "Sale"
@@ -5309,10 +5238,9 @@
     "added_at": "2026-07-03T09:18:55.239646",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Astro+A50+Gaming+Headset",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -5354,7 +5282,7 @@
     "rating": 4.9,
     "reviews": 25940,
     "stock": 76,
-    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Logitech+G+Pro+X+Superlight+2",
     "badge": {
       "ar": "خصم",
       "en": "New"
@@ -5385,10 +5313,9 @@
     "added_at": "2026-07-03T09:18:55.239655",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Logitech+G+Pro+X+Superlight+2",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -5430,7 +5357,7 @@
     "rating": 4.7,
     "reviews": 41624,
     "stock": 99,
-    "image": "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Corsair+K70+Pro+Mechanical",
     "badge": {
       "ar": "عرض محدود",
       "en": "New"
@@ -5461,10 +5388,9 @@
     "added_at": "2026-07-03T09:18:55.239673",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/81tCtIXGKFL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Corsair+K70+Pro+Mechanical",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -5506,7 +5432,7 @@
     "rating": 4.9,
     "reviews": 19510,
     "stock": 42,
-    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=800&q=80",
     "badge": {
       "ar": "تسريع",
       "en": "New"
@@ -5537,10 +5463,9 @@
     "added_at": "2026-07-03T09:18:55.239685",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=camera+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=camera+View+2"
     ],
     "specifications": {
       "ar": {
@@ -5582,7 +5507,7 @@
     "rating": 4.8,
     "reviews": 26127,
     "stock": 60,
-    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1511367461989-f85a21fda167?w=800&q=80",
     "badge": {
       "ar": "مميز",
       "en": "Best Seller"
@@ -5613,10 +5538,9 @@
     "added_at": "2026-07-03T09:18:55.239695",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1511367461989-f85a21fda167?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=camera+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=camera+View+2"
     ],
     "specifications": {
       "ar": {
@@ -5658,7 +5582,7 @@
     "rating": 4.8,
     "reviews": 33846,
     "stock": 85,
-    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1626379953822-baec19c3accd?w=800&q=80",
     "badge": {
       "ar": "مميز",
       "en": "Best Seller"
@@ -5689,10 +5613,9 @@
     "added_at": "2026-07-03T09:18:55.239704",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1626379953822-baec19c3accd?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=camera+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=camera+View+2"
     ],
     "specifications": {
       "ar": {
@@ -5734,7 +5657,7 @@
     "rating": 4.9,
     "reviews": 16356,
     "stock": 35,
-    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&q=80",
     "badge": {
       "ar": "عرض محدود",
       "en": "New"
@@ -5765,10 +5688,9 @@
     "added_at": "2026-07-03T09:18:55.239718",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=camera+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=camera+View+2"
     ],
     "specifications": {
       "ar": {
@@ -5810,7 +5732,7 @@
     "rating": 4.7,
     "reviews": 49124,
     "stock": 97,
-    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "image": "https://images.unsplash.com/photo-1574482620811-1aa16ffe3c82?w=800&q=80",
     "badge": {
       "ar": "عرض محدود",
       "en": "Hot"
@@ -5841,10 +5763,9 @@
     "added_at": "2026-07-03T09:18:55.239728",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://images.unsplash.com/photo-1574482620811-1aa16ffe3c82?w=800&q=80",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=camera+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=camera+View+2"
     ],
     "specifications": {
       "ar": {
@@ -5886,7 +5807,7 @@
     "rating": 4.8,
     "reviews": 39266,
     "stock": 24,
-    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=DJI+Osmo+Pocket+3",
     "badge": {
       "ar": "تسريع",
       "en": "Limited"
@@ -5917,10 +5838,9 @@
     "added_at": "2026-07-03T09:18:55.239739",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=DJI+Osmo+Pocket+3",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=camera+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=camera+View+2"
     ],
     "specifications": {
       "ar": {
@@ -5962,7 +5882,7 @@
     "rating": 4.7,
     "reviews": 49828,
     "stock": 72,
-    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Insta360+X4",
     "badge": {
       "ar": "حصري",
       "en": "Best Seller"
@@ -5993,10 +5913,9 @@
     "added_at": "2026-07-03T09:18:55.239748",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Insta360+X4",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=camera+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=camera+View+2"
     ],
     "specifications": {
       "ar": {
@@ -6038,7 +5957,7 @@
     "rating": 4.7,
     "reviews": 23575,
     "stock": 74,
-    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Logitech+Brio+4K+Webcam",
     "badge": {
       "ar": "الأكثر مبيعاً",
       "en": "New"
@@ -6069,10 +5988,9 @@
     "added_at": "2026-07-03T09:18:55.239760",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Logitech+Brio+4K+Webcam",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=camera+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=camera+View+2"
     ],
     "specifications": {
       "ar": {
@@ -6114,7 +6032,7 @@
     "rating": 4.5,
     "reviews": 11401,
     "stock": 60,
-    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Ring+Indoor+Cam",
     "badge": {
       "ar": "تسريع",
       "en": "Sale"
@@ -6145,10 +6063,9 @@
     "added_at": "2026-07-03T09:18:55.239776",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Ring+Indoor+Cam",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=camera+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=camera+View+2"
     ],
     "specifications": {
       "ar": {
@@ -6190,7 +6107,7 @@
     "rating": 4.6,
     "reviews": 43003,
     "stock": 53,
-    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Arlo+Essential+Spotlight",
     "badge": {
       "ar": "مميز",
       "en": "Featured"
@@ -6221,10 +6138,9 @@
     "added_at": "2026-07-03T09:18:55.239785",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Arlo+Essential+Spotlight",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=camera+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=camera+View+2"
     ],
     "specifications": {
       "ar": {
@@ -6266,7 +6182,7 @@
     "rating": 4.5,
     "reviews": 44026,
     "stock": 29,
-    "image": "https://m.media-amazon.com/images/I/71p0U-c1D9L._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Ray-Ban+Meta+Smart+Glasses",
     "badge": {
       "ar": "مميز",
       "en": "Hot"
@@ -6297,10 +6213,9 @@
     "added_at": "2026-07-03T09:18:55.239795",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71p0U-c1D9L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71p0U-c1D9L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71p0U-c1D9L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Ray-Ban+Meta+Smart+Glasses",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -6342,7 +6257,7 @@
     "rating": 4.6,
     "reviews": 48976,
     "stock": 53,
-    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Targus+Newport+Convertible",
     "badge": {
       "ar": "عرض محدود",
       "en": "Limited"
@@ -6373,10 +6288,9 @@
     "added_at": "2026-07-03T09:18:55.239806",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Targus+Newport+Convertible",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -6418,7 +6332,7 @@
     "rating": 4.7,
     "reviews": 7922,
     "stock": 58,
-    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Apple+MagSafe+Charger",
     "badge": {
       "ar": "مميز",
       "en": "Exclusive"
@@ -6449,10 +6363,9 @@
     "added_at": "2026-07-03T09:18:55.239814",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Apple+MagSafe+Charger",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -6494,7 +6407,7 @@
     "rating": 4.8,
     "reviews": 33057,
     "stock": 33,
-    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Anker+PowerCore+20000",
     "badge": {
       "ar": "حصري",
       "en": "Best Seller"
@@ -6525,10 +6438,9 @@
     "added_at": "2026-07-03T09:18:55.239823",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Anker+PowerCore+20000",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -6570,7 +6482,7 @@
     "rating": 4.5,
     "reviews": 35554,
     "stock": 24,
-    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Coil+Phone+Stand",
     "badge": {
       "ar": "تسريع",
       "en": "Sale"
@@ -6601,10 +6513,9 @@
     "added_at": "2026-07-03T09:18:55.239834",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Coil+Phone+Stand",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -6646,7 +6557,7 @@
     "rating": 4.4,
     "reviews": 30745,
     "stock": 44,
-    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Apple+EarPods+Lightning",
     "badge": {
       "ar": "حصري",
       "en": "Hot"
@@ -6677,10 +6588,9 @@
     "added_at": "2026-07-03T09:18:55.239844",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Apple+EarPods+Lightning",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -6722,7 +6632,7 @@
     "rating": 4.7,
     "reviews": 26234,
     "stock": 46,
-    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Anker+USB-C+Cable+6ft",
     "badge": {
       "ar": "خصم",
       "en": "Hot"
@@ -6753,10 +6663,9 @@
     "added_at": "2026-07-03T09:18:55.239856",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Anker+USB-C+Cable+6ft",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -6798,7 +6707,7 @@
     "rating": 4.6,
     "reviews": 32788,
     "stock": 67,
-    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=MacMate+Watch+Stand",
     "badge": {
       "ar": "تسريع",
       "en": "Exclusive"
@@ -6829,10 +6738,9 @@
     "added_at": "2026-07-03T09:18:55.239865",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=MacMate+Watch+Stand",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -6874,7 +6782,7 @@
     "rating": 4.5,
     "reviews": 1540,
     "stock": 37,
-    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=AirPods+Pro+Case",
     "badge": {
       "ar": "خصم",
       "en": "Limited"
@@ -6905,10 +6813,9 @@
     "added_at": "2026-07-03T09:18:55.239875",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=AirPods+Pro+Case",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -6950,7 +6857,7 @@
     "rating": 4.4,
     "reviews": 17917,
     "stock": 20,
-    "image": "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=iPhone+15+Pro+Screen+Protector",
     "badge": {
       "ar": "جديد",
       "en": "Sale"
@@ -6981,10 +6888,9 @@
     "added_at": "2026-07-03T09:18:55.239888",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/51KzXhX+L0L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=iPhone+15+Pro+Screen+Protector",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -7026,7 +6932,7 @@
     "rating": 4.7,
     "reviews": 5698,
     "stock": 62,
-    "image": "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Ninja+Foodi+Power+Pitcher",
     "badge": {
       "ar": "مميز",
       "en": "Exclusive"
@@ -7057,10 +6963,9 @@
     "added_at": "2026-07-03T09:18:55.239900",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Ninja+Foodi+Power+Pitcher",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -7102,7 +7007,7 @@
     "rating": 4.8,
     "reviews": 25824,
     "stock": 27,
-    "image": "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Breville+Barista+Express",
     "badge": {
       "ar": "مميز",
       "en": "Exclusive"
@@ -7133,10 +7038,9 @@
     "added_at": "2026-07-03T09:18:55.239908",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Breville+Barista+Express",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -7178,7 +7082,7 @@
     "rating": 4.6,
     "reviews": 21675,
     "stock": 46,
-    "image": "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=George+Foreman+Contact+Grill",
     "badge": {
       "ar": "عرض محدود",
       "en": "Sale"
@@ -7209,10 +7113,9 @@
     "added_at": "2026-07-03T09:18:55.239917",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=George+Foreman+Contact+Grill",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -7254,7 +7157,7 @@
     "rating": 4.7,
     "reviews": 13680,
     "stock": 64,
-    "image": "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Cosori+Air+Fryer+5.8qt",
     "badge": {
       "ar": "جديد",
       "en": "Hot"
@@ -7285,10 +7188,9 @@
     "added_at": "2026-07-03T09:18:55.239930",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Cosori+Air+Fryer+5.8qt",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -7330,7 +7232,7 @@
     "rating": 4.5,
     "reviews": 48851,
     "stock": 53,
-    "image": "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Cuisinart+TOAST-PIX",
     "badge": {
       "ar": "حصري",
       "en": "Featured"
@@ -7361,10 +7263,9 @@
     "added_at": "2026-07-03T09:18:55.239941",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Cuisinart+TOAST-PIX",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -7406,7 +7307,7 @@
     "rating": 4.6,
     "reviews": 22795,
     "stock": 21,
-    "image": "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Hamilton+Beach+Kettle",
     "badge": {
       "ar": "خصم",
       "en": "New"
@@ -7437,10 +7338,9 @@
     "added_at": "2026-07-03T09:18:55.239951",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Hamilton+Beach+Kettle",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -7482,7 +7382,7 @@
     "rating": 4.5,
     "reviews": 16693,
     "stock": 39,
-    "image": "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Cuisinart+DBM-8+Supreme",
     "badge": {
       "ar": "جديد",
       "en": "Best Seller"
@@ -7513,10 +7413,9 @@
     "added_at": "2026-07-03T09:18:55.239962",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Cuisinart+DBM-8+Supreme",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -7558,7 +7457,7 @@
     "rating": 4.4,
     "reviews": 22376,
     "stock": 65,
-    "image": "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Smart+Food+Scale",
     "badge": {
       "ar": "حصري",
       "en": "Sale"
@@ -7589,10 +7488,9 @@
     "added_at": "2026-07-03T09:18:55.239972",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Smart+Food+Scale",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -7634,7 +7532,7 @@
     "rating": 4.5,
     "reviews": 43092,
     "stock": 58,
-    "image": "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Kitchen+iPad+Stand",
     "badge": {
       "ar": "مميز",
       "en": "Limited"
@@ -7665,10 +7563,9 @@
     "added_at": "2026-07-03T09:18:55.239983",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Kitchen+iPad+Stand",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -7710,7 +7607,7 @@
     "rating": 4.6,
     "reviews": 48003,
     "stock": 23,
-    "image": "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Samsung+Smart+Fridge",
     "badge": {
       "ar": "عرض محدود",
       "en": "Sale"
@@ -7741,10 +7638,9 @@
     "added_at": "2026-07-03T09:18:55.240017",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71yvxNx9g2L._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Samsung+Smart+Fridge",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -7786,7 +7682,7 @@
     "rating": 4.7,
     "reviews": 47484,
     "stock": 61,
-    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Bowflex+SelectTech+552",
     "badge": {
       "ar": "جديد",
       "en": "Best Seller"
@@ -7817,10 +7713,9 @@
     "added_at": "2026-07-03T09:18:55.240035",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Bowflex+SelectTech+552",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -7862,7 +7757,7 @@
     "rating": 4.8,
     "reviews": 8919,
     "stock": 71,
-    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Hypervolt+GO+2",
     "badge": {
       "ar": "جديد",
       "en": "Sale"
@@ -7893,10 +7788,9 @@
     "added_at": "2026-07-03T09:18:55.240052",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Hypervolt+GO+2",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -7938,7 +7832,7 @@
     "rating": 4.6,
     "reviews": 47540,
     "stock": 38,
-    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Ninebot+MAX+G2",
     "badge": {
       "ar": "الأكثر مبيعاً",
       "en": "Exclusive"
@@ -7969,10 +7863,9 @@
     "added_at": "2026-07-03T09:18:55.240066",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Ninebot+MAX+G2",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -8014,7 +7907,7 @@
     "rating": 4.7,
     "reviews": 11152,
     "stock": 96,
-    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Peloton+Bike+",
     "badge": {
       "ar": "عرض محدود",
       "en": "Sale"
@@ -8045,10 +7938,9 @@
     "added_at": "2026-07-03T09:18:55.240078",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Peloton+Bike+",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -8090,7 +7982,7 @@
     "rating": 4.8,
     "reviews": 15648,
     "stock": 93,
-    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Garmin+Forerunner+965",
     "badge": {
       "ar": "مميز",
       "en": "Limited"
@@ -8121,10 +8013,9 @@
     "added_at": "2026-07-03T09:18:55.240089",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Garmin+Forerunner+965",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -8166,7 +8057,7 @@
     "rating": 4.5,
     "reviews": 39677,
     "stock": 29,
-    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Smart+Jump+Rope",
     "badge": {
       "ar": "مميز",
       "en": "Sale"
@@ -8197,10 +8088,9 @@
     "added_at": "2026-07-03T09:18:55.240098",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Smart+Jump+Rope",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -8242,7 +8132,7 @@
     "rating": 4.7,
     "reviews": 21940,
     "stock": 62,
-    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Gaiam+Premium+Yoga+Mat",
     "badge": {
       "ar": "مميز",
       "en": "New"
@@ -8273,10 +8163,9 @@
     "added_at": "2026-07-03T09:18:55.240108",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Gaiam+Premium+Yoga+Mat",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -8318,7 +8207,7 @@
     "rating": 4.6,
     "reviews": 18633,
     "stock": 83,
-    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Pendoji+Badminton+Racket",
     "badge": {
       "ar": "عرض محدود",
       "en": "Exclusive"
@@ -8349,10 +8238,9 @@
     "added_at": "2026-07-03T09:18:55.240120",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Pendoji+Badminton+Racket",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -8394,7 +8282,7 @@
     "rating": 4.6,
     "reviews": 7021,
     "stock": 82,
-    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Under+Armour+Storm+Bag",
     "badge": {
       "ar": "مميز",
       "en": "Best Seller"
@@ -8425,10 +8313,9 @@
     "added_at": "2026-07-03T09:18:55.240129",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Under+Armour+Storm+Bag",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -8470,7 +8357,7 @@
     "rating": 4.5,
     "reviews": 18092,
     "stock": 53,
-    "image": "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Aqualens+Swim+Goggles",
     "badge": {
       "ar": "تسريع",
       "en": "Featured"
@@ -8501,10 +8388,9 @@
     "added_at": "2026-07-03T09:18:55.240141",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71X-4ycOHBL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Aqualens+Swim+Goggles",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -8546,7 +8432,7 @@
     "rating": 4.6,
     "reviews": 23107,
     "stock": 47,
-    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=MagSafe+Car+Charger",
     "badge": {
       "ar": "حصري",
       "en": "Best Seller"
@@ -8577,10 +8463,9 @@
     "added_at": "2026-07-03T09:18:55.240150",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=MagSafe+Car+Charger",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -8622,7 +8507,7 @@
     "rating": 4.5,
     "reviews": 8404,
     "stock": 92,
-    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Garmin+Drive+52",
     "badge": {
       "ar": "جديد",
       "en": "Hot"
@@ -8653,10 +8538,9 @@
     "added_at": "2026-07-03T09:18:55.240160",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Garmin+Drive+52",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -8698,7 +8582,7 @@
     "rating": 4.7,
     "reviews": 32884,
     "stock": 70,
-    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Rexing+V1+Dash+Cam",
     "badge": {
       "ar": "الأكثر مبيعاً",
       "en": "New"
@@ -8729,10 +8613,9 @@
     "added_at": "2026-07-03T09:18:55.240173",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Rexing+V1+Dash+Cam",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -8774,7 +8657,7 @@
     "rating": 4.4,
     "reviews": 34910,
     "stock": 58,
-    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Joying+Android+Car+Radio",
     "badge": {
       "ar": "جديد",
       "en": "Sale"
@@ -8805,10 +8688,9 @@
     "added_at": "2026-07-03T09:18:55.240183",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Joying+Android+Car+Radio",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -8850,7 +8732,7 @@
     "rating": 4.6,
     "reviews": 41711,
     "stock": 77,
-    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=JBL+Car+Speaker",
     "badge": {
       "ar": "حصري",
       "en": "Limited"
@@ -8881,10 +8763,9 @@
     "added_at": "2026-07-03T09:18:55.240192",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=JBL+Car+Speaker",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -8926,7 +8807,7 @@
     "rating": 4.4,
     "reviews": 15410,
     "stock": 46,
-    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Car+Air+Purifier",
     "badge": {
       "ar": "جديد",
       "en": "Best Seller"
@@ -8957,10 +8838,9 @@
     "added_at": "2026-07-03T09:18:55.240201",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Car+Air+Purifier",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -9002,7 +8882,7 @@
     "rating": 4.7,
     "reviews": 44668,
     "stock": 45,
-    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Magnetic+Car+Phone+Mount",
     "badge": {
       "ar": "الأكثر مبيعاً",
       "en": "Limited"
@@ -9033,10 +8913,9 @@
     "added_at": "2026-07-03T09:18:55.240212",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Magnetic+Car+Phone+Mount",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -9078,7 +8957,7 @@
     "rating": 4.5,
     "reviews": 43687,
     "stock": 41,
-    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=OBD2+Bluetooth+Scanner",
     "badge": {
       "ar": "خصم",
       "en": "Exclusive"
@@ -9109,10 +8988,9 @@
     "added_at": "2026-07-03T09:18:55.240224",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=OBD2+Bluetooth+Scanner",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -9154,7 +9032,7 @@
     "rating": 4.4,
     "reviews": 11379,
     "stock": 70,
-    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Car+LED+Interior+Lights",
     "badge": {
       "ar": "الأكثر مبيعاً",
       "en": "Limited"
@@ -9185,10 +9063,9 @@
     "added_at": "2026-07-03T09:18:55.241137",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Car+LED+Interior+Lights",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -9230,7 +9107,7 @@
     "rating": 4.5,
     "reviews": 42035,
     "stock": 50,
-    "image": "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Rear+View+Backup+Camera",
     "badge": {
       "ar": "خصم",
       "en": "Hot"
@@ -9261,10 +9138,9 @@
     "added_at": "2026-07-03T09:18:55.241152",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/71J8TZ3V3VL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Rear+View+Backup+Camera",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -9306,7 +9182,7 @@
     "rating": 4.6,
     "reviews": 39018,
     "stock": 70,
-    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Garmin+vívofit+jr.+3",
     "badge": {
       "ar": "الأكثر مبيعاً",
       "en": "Hot"
@@ -9337,10 +9213,9 @@
     "added_at": "2026-07-03T09:18:55.241168",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Garmin+vívofit+jr.+3",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -9382,7 +9257,7 @@
     "rating": 4.5,
     "reviews": 33431,
     "stock": 57,
-    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Amazon+Fire+Kids+Tablet",
     "badge": {
       "ar": "تسريع",
       "en": "Exclusive"
@@ -9413,10 +9288,9 @@
     "added_at": "2026-07-03T09:18:55.241178",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Amazon+Fire+Kids+Tablet",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -9458,7 +9332,7 @@
     "rating": 4.7,
     "reviews": 28566,
     "stock": 20,
-    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Anki+Cozmo+Robot",
     "badge": {
       "ar": "تسريع",
       "en": "Exclusive"
@@ -9489,10 +9363,9 @@
     "added_at": "2026-07-03T09:18:55.241190",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Anki+Cozmo+Robot",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -9534,7 +9407,7 @@
     "rating": 4.6,
     "reviews": 45152,
     "stock": 52,
-    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Echo+Dot+Kids+Edition",
     "badge": {
       "ar": "مميز",
       "en": "New"
@@ -9565,10 +9438,9 @@
     "added_at": "2026-07-03T09:18:55.241203",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Echo+Dot+Kids+Edition",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -9610,7 +9482,7 @@
     "rating": 4.8,
     "reviews": 39301,
     "stock": 93,
-    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=LEGO+Education+Spike",
     "badge": {
       "ar": "مميز",
       "en": "Featured"
@@ -9641,10 +9513,9 @@
     "added_at": "2026-07-03T09:18:55.241213",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=LEGO+Education+Spike",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -9686,7 +9557,7 @@
     "rating": 4.5,
     "reviews": 3947,
     "stock": 67,
-    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Razor+Power+Core+E100",
     "badge": {
       "ar": "الأكثر مبيعاً",
       "en": "Sale"
@@ -9717,10 +9588,9 @@
     "added_at": "2026-07-03T09:18:55.241224",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Razor+Power+Core+E100",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -9762,7 +9632,7 @@
     "rating": 4.4,
     "reviews": 1875,
     "stock": 63,
-    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=VTech+Kidizoom+Camera",
     "badge": {
       "ar": "تسريع",
       "en": "Best Seller"
@@ -9793,10 +9663,9 @@
     "added_at": "2026-07-03T09:18:55.241234",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=VTech+Kidizoom+Camera",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -9838,7 +9707,7 @@
     "rating": 4.5,
     "reviews": 1272,
     "stock": 66,
-    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=JBL+Jr.+headphones",
     "badge": {
       "ar": "عرض محدود",
       "en": "Best Seller"
@@ -9869,10 +9738,9 @@
     "added_at": "2026-07-03T09:18:55.241245",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=JBL+Jr.+headphones",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -9914,7 +9782,7 @@
     "rating": 4.6,
     "reviews": 17467,
     "stock": 27,
-    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=LeapFrog+LeapTable",
     "badge": {
       "ar": "خصم",
       "en": "Featured"
@@ -9945,10 +9813,9 @@
     "added_at": "2026-07-03T09:18:55.241255",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=LeapFrog+LeapTable",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {
@@ -9990,7 +9857,7 @@
     "rating": 4.7,
     "reviews": 5220,
     "stock": 71,
-    "image": "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
+    "image": "https://placehold.co/800x800/0a0d1a/60a5fa?text=Owl+Camera+Baby+Monitor",
     "badge": {
       "ar": "عرض محدود",
       "en": "New"
@@ -10021,10 +9888,9 @@
     "added_at": "2026-07-03T09:18:55.241264",
     "added_by": "expansion_v1",
     "gallery": [
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679_.jpg",
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt1.jpg",
-      "https://m.media-amazon.com/images/I/714fP0K2VXL._AC_SY679__alt2.jpg",
-      "https://placehold.co/600x600/0a0d1a/60a5fa?text=Detail+View"
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=Owl+Camera+Baby+Monitor",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=other+View+2"
     ],
     "specifications": {
       "ar": {

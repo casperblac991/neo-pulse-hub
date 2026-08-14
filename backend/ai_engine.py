@@ -56,6 +56,22 @@ def _call_json(prompt, temperature=0.3):
     return None
 
 def answer_customer(question, products_context="", faqs_context="", user_history=""):
+    # Fallback logic if API fails or key is missing
+    def local_fallback(q):
+        q = q.lower()
+        if any(w in q for w in ["شحن", "توصيل", "shipping"]):
+            return "توصيلنا سريع (3-7 أيام) ومجاني للطلبات فوق $50! 🚚"
+        if any(w in q for w in ["سعر", "بكم", "price", "cost"]):
+            return "أسعارنا منافسة جداً! يمكنك رؤية السعر بجانب كل منتج في صفحة المنتجات. 💰"
+        if any(w in q for w in ["ارجاع", "استبدال", "return"]):
+            return "نقدم سياسة إرجاع مرنة لمدة 30 يوماً مجاناً. 🔄"
+        if any(w in q for w in ["مرحبا", "اهلا", "hi", "hello"]):
+            return "أهلاً بك في NEO PULSE HUB! كيف يمكنني مساعدتك اليوم؟ 😊"
+        return "شكراً لتواصلك! أنا مساعدك الذكي، كيف يمكنني مساعدتك في اختيار أفضل الأجهزة التقنية؟"
+
+    if not os.environ.get("GEMINI_API_KEY") and not os.environ.get("GOOGLE_API_KEY"):
+        return local_fallback(question)
+
     parts = [STORE_SYSTEM]
     if products_context:
         parts.append("المنتجات: " + products_context)
@@ -65,7 +81,11 @@ def answer_customer(question, products_context="", faqs_context="", user_history
         parts.append("تاريخ المحادثة: " + user_history)
     parts.append("سؤال الزبون: " + question)
     parts.append("اجب بشكل مختصر ومفيد.")
-    return _call("\n\n".join(parts), temperature=0.5, max_tokens=500)
+    
+    response = _call("\n\n".join(parts), temperature=0.5, max_tokens=500)
+    if "خطا" in response or "مفتاح" in response:
+        return local_fallback(question)
+    return response
 
 def analyze_sentiment(text):
     result = _call('حلل مشاعر هذا النص وأجب بكلمة واحدة (positive/negative/neutral/urgent): "' + text + '"', temperature=0.1, max_tokens=10)

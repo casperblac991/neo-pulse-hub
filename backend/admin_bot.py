@@ -1,12 +1,5 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-NEO PULSE HUB — Admin Bot v2.0
-✅ ADMIN_BOT_TOKEN (صح)
-✅ _register_handlers (للـ webhook)
-✅ إحصائيات + إدارة المنتجات + broadcast
-"""
-import os, json, logging
+import os, json, logging, csv
 from datetime import datetime
 from pathlib import Path
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
@@ -20,8 +13,6 @@ except ImportError:
     pass
 
 ADMIN_BOT_TOKEN = os.environ.get("ADMIN_BOT_TOKEN", "")
-GEMINI_API_KEY  = (os.environ.get("GEMINI_API_KEY") or
-                   os.environ.get("GOOGLE_API_KEY") or "")
 ADMIN_USER_ID   = int(os.environ.get("ADMIN_USER_ID", "0"))
 BASE_DIR        = os.path.dirname(os.path.abspath(__file__))
 PRODUCTS_FILE   = os.path.join(BASE_DIR, "products.json")
@@ -30,6 +21,9 @@ LEADS_FILE      = os.path.join(BASE_DIR, "leads.json")
 
 log = logging.getLogger("admin_bot")
 
+def is_admin(uid):
+    return ADMIN_USER_ID and int(uid) == ADMIN_USER_ID
+
 def load_json(path, default):
     try:
         p = Path(path)
@@ -37,58 +31,141 @@ def load_json(path, default):
     except:
         return default
 
-def save_json(path, data):
-    try:
-        Path(path).write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-    except Exception as e:
-        log.error(f"save_json: {e}")
+async def cmd_start(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+    if not is_admin(update.effective_user.id):
+        await update.message.reply_text("❌ عذراً، هذا البوت مخصص للمديرين فقط.")
+        return
+    
+    await update.message.reply_text(
+        "🛡️ *مرحباً بك في لوحة تحكم NEO PULSE HUB*\n\n"
+        "يمكنك إدارة المتجر وتنزيل التقارير من هنا.\n\n"
+        "📋 *الأوامر المتاحة:*\n"
+        "• /stats - إحصائيات المتجر\n"
+        "• /report - تنزيل تقرير المراجعات (CSV)\n"
+        "• /orders - آخر الطلبات\n"
+        "• /products - حالة المخزون\n"
+        "• /broadcast [رسالة] - إرسال لكل المشتركين",
+        parse_mode=ParseMode.MARKDOWN
+    )
 
-def is_admin(uid):
-    return ADMIN_USER_ID and int(uid) == ADMIN_USER_ID
+async def cmd_stats(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+    if not is_admin(update.effective_user.id): return
+    
+    products = load_json(PRODUCTS_FILE, [])
+    orders = load_json(ORDERS_FILE, {"orders": [], "total_revenue": 0})
+    leads = load_json(LEADS_FILE, {"users": []})
+    
+    msg = (
+        "📊 *إحصائيات المتجر الحالية:*\n\n"
+        f"📦 عدد المنتجات: {len(products)}\n"
+        f"🛒 إجمالي الطلبات: {len(orders.get('orders', []))}\n"
+        f"💰 إجمالي الإيرادات: ${orders.get('total_revenue', 0)}\n"
+        f"👥 عدد المشتركين: {len(leads.get('users', []))}\n"
+    )
+    await update.message.reply_text(msg, parse_mode=ParseMode.MARKDOWN)
 
-def ask_gemini(prompt: str) -> str:
-    key = (os.environ.get("GEMINI_API_KEY") or
-           os.environ.get("GOOGLE_API_KEY") or "")
-    if not key:
-        log.error("GEMINI_API_KEY missing!")
-        return ""
-    import requests as _r
-    url = ("https://generativelanguage.googleapis.com/v1beta/models/"
-           "gemini-2.5-flash:generateContent?key=" + key)
-    body = {
-        "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {
-            "temperature": 0.7,
-            "maxOutputTokens": 2000,
-            "thinkingConfig": {"thinkingBudget": 0}
-        }
-    }
+async def cmd_report(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+    """توليد وتنزيل تقرير المراجعات والمنتجات"""
+    if not is_admin(update.effective_user.id): return
+    
+    await update.message.reply_text("⏳ جاري توليد التقارير (CSV & PDF)...")
+    
+    products = load_json(PRODUCTS_FILE, [])
+    csv_path = os.path.join(BASE_DIR, "store_report.csv")
+    
     try:
-        resp = _r.post(url, json=body, timeout=30)
-        if resp.status_code != 200:
-            log.error(f"Gemini HTTP {resp.status_code}: {resp.text[:150]}")
-            return ""
-        data = resp.json()
-        candidates = data.get("candidates", [])
-        if not candidates:
-            log.error(f"Gemini no candidates: {str(data)[:150]}")
-            return ""
-        parts = candidates[0].get("content", {}).get("parts", [])
-        if not parts:
-            log.error(f"Gemini empty parts. finishReason: {candidates[0].get('finishReason')}")
-            return ""
-        return parts[0].get("text", "")
+        # 1. Generate CSV
+        with open(csv_path, 'w', newline='', encoding='utf-8-sig') as f:
+            writer = csv.writer(f)
+            writer.writerow(['ID', 'المنتج', 'السعر', 'التقييم', 'الفئة', 'رابط أمازون'])
+            for p in products:
+                writer.writerow([
+                    p.get('id', ''),
+                    p.get('name', {}).get('ar', ''),
+                    p.get('price', 0),
+                    p.get('rating', 0),
+                    p.get('category', ''),
+                    p.get('affiliate_amazon', '')
+                ])
+        
+        await update.message.reply_document(
+            document=open(csv_path, 'rb'),
+            filename=f"NPH_Report_{datetime.now().strftime('%Y%m%d')}.csv",
+            caption="📊 تقرير CSV جاهز."
+        )
+
+        # 2. Generate PDF
+        try:
+            from generate_pdf_report import generate_pdf
+            pdf_path = generate_pdf()
+            if pdf_path and os.path.exists(pdf_path):
+                await update.message.reply_document(
+                    document=open(pdf_path, 'rb'),
+                    filename=f"NPH_Analysis_{datetime.now().strftime('%Y%m%d')}.pdf",
+                    caption="📄 تقرير التحليل PDF جاهز."
+                )
+        except Exception as pe:
+            log.error(f"PDF generation error: {pe}")
+            
     except Exception as e:
-        log.error(f"Gemini exception: {e}")
-        return ""
+        log.error(f"Report error: {e}")
+        await update.message.reply_text(f"❌ فشل توليد التقرير: {e}")
+
+async def cmd_orders(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+    if not is_admin(update.effective_user.id): return
+    orders_data = load_json(ORDERS_FILE, {"orders": []})
+    orders = orders_data.get("orders", [])[:5]
+    
+    if not orders:
+        await update.message.reply_text("📭 لا توجد طلبات حالياً.")
+        return
+        
+    msg = "🛒 *آخر 5 طلبات:*\n\n"
+    for o in orders:
+        msg += f"🔹 طلب #{o['id']}\n   المنتج: {o['product']}\n   المبلغ: ${o['total']}\n\n"
+    
+    await update.message.reply_text(msg, parse_mode=ParseMode.MARKDOWN)
+
+async def cmd_products(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+    if not is_admin(update.effective_user.id): return
+    products = load_json(PRODUCTS_FILE, [])
+    low_stock = [p for p in products if p.get('stock', 10) < 5]
+    
+    msg = f"📦 *حالة المخزون:*\n\nإجمالي المنتجات: {len(products)}\n"
+    if low_stock:
+        msg += f"⚠️ تنبيه: {len(low_stock)} منتجات مخزونها منخفض!"
+    else:
+        msg += "✅ جميع المنتجات متوفرة بشكل جيد."
+        
+    await update.message.reply_text(msg, parse_mode=ParseMode.MARKDOWN)
+
+async def cmd_broadcast(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+    if not is_admin(update.effective_user.id): return
+    
+    text = " ".join(ctx.args)
+    if not text:
+        await update.message.reply_text("❌ يرجى كتابة الرسالة بعد الأمر. مثال: /broadcast عرض جديد!")
+        return
+        
+    leads = load_json(LEADS_FILE, {"users": []})
+    users = leads.get("users", [])
+    
+    await update.message.reply_text(f"📢 جاري إرسال الرسالة إلى {len(users)} مشترك...")
+    
+    # في الواقع سنحتاج لبوت العملاء للإرسال للمستخدمين
+    # هنا فقط محاكاة أو استخدام توكن بوت العملاء إذا كان متاحاً
+    await update.message.reply_text("✅ تمت العملية (محاكاة - يتطلب ربط توكن بوت العملاء للإرسال الفعلي).")
+
+async def error_handler(update, ctx: ContextTypes.DEFAULT_TYPE):
+    log.error(f"Error: {ctx.error}")
 
 def _register_handlers(app):
     app.add_handler(CommandHandler("start",      cmd_start))
     app.add_handler(CommandHandler("stats",      cmd_stats))
+    app.add_handler(CommandHandler("report",     cmd_report))
     app.add_handler(CommandHandler("orders",     cmd_orders))
     app.add_handler(CommandHandler("products",   cmd_products))
     app.add_handler(CommandHandler("broadcast",  cmd_broadcast))
-    app.add_handler(CommandHandler("ai",         cmd_ai))
     app.add_error_handler(error_handler)
 
 if __name__ == "__main__":
