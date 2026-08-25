@@ -149,16 +149,21 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
 .footer-links a{font-size:.85rem;color:var(--muted);transition:color var(--ease)}.footer-links a:hover{color:var(--cyan2)}
 .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;padding-top:1.5rem;border-top:1px solid var(--border)}
 .footer-copy{font-size:.78rem;color:rgba(226,232,240,.3)}
-.chat-widget{position:fixed;bottom:2rem;right:2rem;z-index:300}
-.chat-btn{width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--purple));display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 4px 20px rgba(59,130,246,.4);cursor:pointer;transition:all var(--ease)}
-.chat-btn:hover{transform:scale(1.1);box-shadow:0 6px 30px rgba(59,130,246,.6)}
-.chat-bubble{position:absolute;bottom:72px;right:0;width:300px;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--r2);padding:1rem;box-shadow:0 10px 30px rgba(0,0,0,.5);display:none}
-.chat-bubble.show{display:block;animation:fadeUp .3s ease}
-#chatMessages{height:200px;overflow-y:auto;margin-bottom:10px;font-size:13px;background:#0f1423;border-radius:12px;padding:8px}
-	#chatMessages div{margin:5px 0}
-	#chatInput{flex:1;padding:8px;border-radius:50px;border:none;background:#1e1e2e;color:#fff;outline:none}
-	.send-btn{background:#3b82f6;border:none;border-radius:50px;padding:8px 16px;color:white;cursor:pointer}
-	.send-btn:disabled{opacity:.65;cursor:wait}.chat-status{min-height:18px;margin-top:8px;color:var(--muted);font-size:.72rem}.chat-status.error{color:#fda4af}.chat-status.ok{color:#5eead4}
+	.chat-widget{position:fixed;bottom:2rem;right:2rem;z-index:500}
+	.chat-btn{width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--purple));display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 4px 20px rgba(59,130,246,.4);cursor:pointer;transition:all var(--ease)}
+	.chat-btn:hover{transform:scale(1.1);box-shadow:0 6px 30px rgba(59,130,246,.6)}
+	.chat-bubble{position:absolute;bottom:72px;right:0;width:336px;max-height:min(590px,72vh);background:var(--surface2);border:1px solid var(--border2);border-radius:var(--r2);padding:1rem;box-shadow:0 18px 45px rgba(0,0,0,.58);display:none}
+	.chat-bubble.show{display:flex;flex-direction:column;animation:fadeUp .3s ease}
+	.chat-header{display:flex;justify-content:space-between;align-items:center;gap:.75rem;margin-bottom:.75rem}.chat-header-title{font-weight:800;font-size:.9rem;color:#fff}.chat-close{width:32px;height:32px;display:grid;place-items:center;border-radius:50%;color:var(--text);font-size:1.25rem;transition:background var(--ease)}.chat-close:hover{background:rgba(255,255,255,.1)}
+	#chatMessages{height:238px;overflow-y:auto;margin-bottom:10px;font-size:13px;background:#0f1423;border:1px solid var(--border);border-radius:12px;padding:10px;scroll-behavior:smooth}
+	.chat-message{margin:6px 0;padding:8px 10px;border-radius:12px;line-height:1.65;white-space:pre-wrap}.chat-message.user{margin-right:1.5rem;text-align:right;background:rgba(59,130,246,.22)}.chat-message.assistant{margin-left:1.5rem;background:rgba(96,165,250,.1)}
+	.chat-prompts{display:flex;gap:6px;overflow-x:auto;margin:0 0 10px;padding-bottom:2px;scrollbar-width:none}.chat-prompts::-webkit-scrollbar{display:none}.chat-prompt{flex:0 0 auto;border:1px solid rgba(96,165,250,.28);background:rgba(59,130,246,.10);color:var(--blue2);padding:.35rem .65rem;border-radius:999px;font-size:.7rem;white-space:nowrap}.chat-prompt:hover{background:rgba(59,130,246,.2)}
+	.chat-input-row{display:flex;gap:8px;margin-top:2px}.chat-input-row #chatInput{flex:1;min-width:0;padding:10px 13px;border-radius:12px;border:1px solid transparent;background:#1e1e2e;color:#fff;outline:none;transition:border var(--ease),box-shadow var(--ease)}.chat-input-row #chatInput:focus{border-color:var(--blue2);box-shadow:0 0 0 3px rgba(59,130,246,.16)}
+	.send-btn{background:#3b82f6;border:none;border-radius:12px;padding:10px 16px;color:white;cursor:pointer;font-weight:700;white-space:nowrap}.send-btn:disabled{opacity:.65;cursor:wait}.chat-status{min-height:20px;margin-top:8px;color:var(--muted);font-size:.72rem;line-height:1.5}.chat-status.error{color:#fda4af}.chat-status.ok{color:#5eead4}
+	.email-modal-overlay{position:fixed;inset:0;z-index:450;display:none;align-items:center;justify-content:center;padding:1.25rem;background:rgba(2,5,16,.72);backdrop-filter:blur(8px)}.email-modal-overlay.active{display:flex}.email-modal{position:relative;width:min(100%,440px);max-height:calc(100dvh - 2.5rem);overflow:auto;background:var(--surface2);border:1px solid var(--border2);box-shadow:0 22px 55px rgba(0,0,0,.62);border-radius:20px;padding:1.5rem}.email-modal .close-btn{position:absolute;top:.75rem;left:.75rem;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.08);color:var(--text);font-size:1.4rem}.email-header{padding-left:2.25rem;margin-bottom:1.1rem}.email-header h2{font-size:1.2rem;margin-bottom:.3rem}.email-header p,.benefits-list{font-size:.84rem;color:var(--muted)}.benefits-list ul{padding-right:1.1rem;margin:1rem 0}.form-group{margin:.8rem 0}.form-group label{display:block;margin-bottom:.3rem;font-size:.82rem}.form-group input{width:100%;background:#131827;border:1px solid var(--border2);color:var(--text);border-radius:10px;padding:.75rem;font-family:inherit}.checkbox-group{display:flex;align-items:flex-start;gap:.5rem;font-size:.75rem;color:var(--muted);margin:1rem 0}.submit-btn{width:100%;padding:.8rem;border-radius:10px;background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;font-weight:700}.success-message,.error-message{display:none;padding:.75rem;border-radius:10px;font-size:.85rem}.success-message.active,.error-message.active{display:block}.success-message{background:rgba(16,185,129,.12);color:#a7f3d0}.error-message{background:rgba(244,63,94,.12);color:#fecdd3}
+	body.chat-open .email-modal-overlay{display:none!important}
+	@media(max-width:768px){.chat-widget{right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:600}.chat-btn{width:58px;height:58px}.chat-bubble{position:fixed;right:12px;left:12px;bottom:calc(82px + env(safe-area-inset-bottom));width:auto;max-height:min(72dvh,620px);padding:12px;border-radius:18px}.chat-bubble.show{display:flex}.chat-header{margin-bottom:8px}#chatMessages{height:auto;min-height:168px;max-height:calc(72dvh - 190px);flex:1;font-size:13px}.chat-message.user{margin-right:.5rem}.chat-message.assistant{margin-left:.5rem}.chat-input-row{gap:7px}.chat-input-row #chatInput{padding:11px 12px;font-size:16px}.send-btn{padding:11px 14px;font-size:.86rem}.email-modal-overlay{padding:12px}.email-modal{padding:1.25rem;max-height:calc(100dvh - 24px)}body.chat-open{overflow:hidden}}
+	@media(max-width:480px){.chat-prompts{margin-bottom:8px}.chat-prompt{font-size:.67rem;padding:.32rem .55rem}.chat-status{font-size:.69rem}.email-modal-overlay.active{display:none}}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:translateY(0)}
 .toast{position:fixed;bottom:2rem;left:2rem;z-index:999;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--r);padding:1rem 1.5rem;display:flex;align-items:center;gap:.8rem;transform:translateY(150%);opacity:0;transition:all var(--ease)}
 .toast.show{transform:translateY(0);opacity:1}.toast-icon{font-size:1.2rem}.toast-text{font-size:.9rem;font-weight:600}
@@ -626,15 +631,20 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
 </footer>
 
 <div class="chat-widget">
-  <div class="chat-bubble" id="chatBubble">
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-      <span style="font-weight: bold;">🤖 مساعد NEO PULSE</span>
-      <button onclick="toggleChat()" style="background: none; border: none; color: #fff; font-size: 18px; cursor: pointer;">✕</button>
-    </div>
-    <div id="chatMessages">
-      <div style="color: #60a5fa;">🤖 مرحباً! كيف يمكنني مساعدتك اليوم؟</div>
-    </div>
-    <div style="display: flex; gap: 8px; margin-top: 10px;">
+	  <div class="chat-bubble" id="chatBubble" role="dialog" aria-label="مساعد NEO PULSE" aria-modal="false">
+	    <div class="chat-header">
+	      <span class="chat-header-title">🤖 مساعد NEO PULSE</span>
+	      <button class="chat-close" type="button" onclick="toggleChat(false)" aria-label="إغلاق المساعد">✕</button>
+	    </div>
+	    <div id="chatMessages">
+	      <div class="chat-message assistant">🤖 مرحباً! كيف يمكنني مساعدتك اليوم؟</div>
+	    </div>
+	    <div class="chat-prompts" aria-label="اقتراحات سريعة">
+	      <button class="chat-prompt" type="button" onclick="useChatPrompt('أريد سماعات للموسيقى تحت 300 دولار، ماذا تقترح؟')">سماعات تحت 300$</button>
+	      <button class="chat-prompt" type="button" onclick="useChatPrompt('قارن لي بين أفضل ساعتين للرياضة')">قارن ساعتين للرياضة</button>
+	      <button class="chat-prompt" type="button" onclick="useChatPrompt('أريد هدية تقنية لصديق')">هدية تقنية لصديق</button>
+	    </div>
+	    <div class="chat-input-row">
       <input type="text" id="chatInput" maxlength="500" autocomplete="off" placeholder="اسأل عن منتج أو اطلب مقارنة…" aria-label="رسالة إلى مساعد NEO PULSE">
       <button class="send-btn" id="chatSendBtn" type="button" onclick="sendChatMessage()">إرسال</button>
     </div>
@@ -688,7 +698,7 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
 
 const AMAZON_TAG = 'neopulsehub-20';
 const MANAGER_URL = 'https://neo-pulse-manager.onrender.com';
-const APP_VERSION = '2026.08.25.home-ai-v3';
+const APP_VERSION = '2026.08.25.home-ai-v4';
 
 // يتحقق من ملف إصدار غير مخزّن مؤقتاً؛ عند وصول إصدار أحدث يعيد فتح الصفحة برابط مميز بالنسخة.
 async function synchronizeBuildVersion() {
@@ -769,17 +779,26 @@ const T = {
 // مساعد الصفحة الرئيسية: لا تُمرَّر مفاتيح API إلى المتصفح؛ يستدعي API المنشور على Render فقط.
 const CHAT_API_URL = window.NEO_PULSE_CHAT_API_URL || 'https://neo-pulse-hub.onrender.com/api/chat';
 
-function toggleChat() {
-  const bubble = document.getElementById('chatBubble');
-  if (!bubble) return;
-  bubble.classList.toggle('show');
-  if (bubble.classList.contains('show')) document.getElementById('chatInput')?.focus();
-}
+	function toggleChat(forceState) {
+	  const bubble = document.getElementById('chatBubble');
+	  if (!bubble) return;
+	  const shouldOpen = typeof forceState === 'boolean' ? forceState : !bubble.classList.contains('show');
+	  bubble.classList.toggle('show', shouldOpen);
+	  document.body.classList.toggle('chat-open', shouldOpen);
+	  if (shouldOpen) { closeEmailModal(); document.getElementById('chatInput')?.focus(); }
+	}
+
+	function useChatPrompt(prompt) {
+	  const input = document.getElementById('chatInput');
+	  if (!input) return;
+	  input.value = prompt;
+	  sendChatMessage();
+	}
 
 function appendChatMessage(author, text, isUser = false) {
   const messagesDiv = document.getElementById('chatMessages');
   const line = document.createElement('div');
-  line.style.cssText = `margin:5px 0;padding:6px 10px;border-radius:10px;${isUser ? 'text-align:right;background:rgba(59,130,246,.2)' : 'background:rgba(96,165,250,.1)'}`;
+	  line.className = `chat-message ${isUser ? 'user' : 'assistant'}`;
   line.textContent = `${author} ${text}`;
   messagesDiv.appendChild(line);
   messagesDiv.scrollTop = messagesDiv.scrollHeight;
@@ -802,7 +821,8 @@ async function sendChatMessage() {
   input.value = '';
   input.disabled = true;
   button.disabled = true;
-  setChatStatus('جارٍ الاتصال بالمساعد…');
+	  setChatStatus('جارٍ الاتصال بالمساعد…');
+	  const progressTimer = window.setTimeout(() => setChatStatus('نراجع الكتالوج ونجهز اقتراحات مناسبة…'), 2000);
 
   const controller = new AbortController();
   const timeoutId = window.setTimeout(() => controller.abort(), 12000);
@@ -821,7 +841,8 @@ async function sendChatMessage() {
     appendChatMessage('🤖', 'المساعد غير متاح مؤقتاً. يمكنك تصفح المنتجات أو إعادة المحاولة بعد قليل.');
     setChatStatus('تعذر الاتصال بخدمة المساعد. لم تُرسل بياناتك إلى أي وجهة بديلة.', 'error');
   } finally {
-    window.clearTimeout(timeoutId);
+	    window.clearTimeout(timeoutId);
+	    window.clearTimeout(progressTimer);
     input.disabled = false;
     button.disabled = false;
     input.focus();
@@ -1094,14 +1115,17 @@ const observer = new IntersectionObserver(entries => {
 
     <script>
         // Email Collector Functions
-        function showEmailModal() {
-            const modal = document.getElementById('emailModal');
-            if (modal) modal.classList.add('active');
+	        function showEmailModal() {
+	            const modal = document.getElementById('emailModal');
+	            if (!modal || document.body.classList.contains('chat-open') || window.matchMedia('(max-width: 480px)').matches) return;
+	            if (sessionStorage.getItem('nph_email_modal_dismissed') === 'true') return;
+	            modal.classList.add('active');
         }
 
-        function closeEmailModal() {
-            const modal = document.getElementById('emailModal');
-            if (modal) modal.classList.remove('active');
+	        function closeEmailModal() {
+	            const modal = document.getElementById('emailModal');
+	            if (modal) modal.classList.remove('active');
+	            sessionStorage.setItem('nph_email_modal_dismissed', 'true');
         }
 
         async function submitEmail(event) {
