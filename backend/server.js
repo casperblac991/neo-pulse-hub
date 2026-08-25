@@ -76,9 +76,18 @@ async function geminiRecommendations({ query, recipient, interests, budget, prod
     }
     const data = await response.json();
     const text = data?.candidates?.[0]?.content?.parts?.map((part) => part.text || '').join('') || '';
-    const result = JSON.parse(text.replace(/^```json\s*|\s*```$/g, ''));
-    const ids = Array.isArray(result.ids) ? result.ids.filter((id) => allowedIds.has(id)).slice(0, 3) : [];
-    const recommended = ids.map((id) => candidates.find((product) => product.id === id)).filter(Boolean);
+    const result = JSON.parse(text.trim().replace(/^```json\s*|\s*```$/g, ''));
+    const rawIds = Array.isArray(result.ids) ? result.ids
+      : Array.isArray(result.products) ? result.products.map((product) => typeof product === 'string' ? product : product?.id)
+      : Array.isArray(result.recommendations) ? result.recommendations.map((product) => typeof product === 'string' ? product : product?.id)
+      : [];
+    const ids = rawIds.filter((id) => allowedIds.has(id)).slice(0, 3);
+    let recommended = ids.map((id) => candidates.find((product) => product.id === id)).filter(Boolean);
+    if (!recommended.length) {
+      // بديل parsing آمن عندما يعيد النموذج أسماء منتجات بدلاً من المعرفات المطلوبة.
+      const normalizedText = text.toLowerCase();
+      recommended = candidates.filter((product) => normalizedText.includes(productName(product).toLowerCase())).slice(0, 3);
+    }
     if (!recommended.length) return null;
     return { products: recommended, reason: String(result.reason || 'اختيرت المنتجات وفق الاهتمامات والميزانية.'), mode: 'ai' };
   } catch (error) {
