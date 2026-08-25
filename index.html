@@ -11,7 +11,9 @@
 </script>
 <!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5154456531537651" crossorigin="anonymous"></script>
-<meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
 <script>
 (function(){
   var l = localStorage.getItem('nph_lang') || 'ar';
@@ -686,7 +688,22 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
 
 const AMAZON_TAG = 'neopulsehub-20';
 const MANAGER_URL = 'https://neo-pulse-manager.onrender.com';
-const APP_VERSION = '2026.08.14.home-v1';
+const APP_VERSION = '2026.08.25.home-ai-v3';
+
+// يتحقق من ملف إصدار غير مخزّن مؤقتاً؛ عند وصول إصدار أحدث يعيد فتح الصفحة برابط مميز بالنسخة.
+async function synchronizeBuildVersion() {
+  try {
+    const response = await fetch(`/site-version.json?ts=${Date.now()}`, { cache: 'no-store' });
+    if (!response.ok) return;
+    const build = await response.json();
+    if (!build?.homeVersion || build.homeVersion === APP_VERSION) return;
+    const url = new URL(window.location.href);
+    if (url.searchParams.get('build') === build.homeVersion) return;
+    url.searchParams.set('build', build.homeVersion);
+    window.location.replace(url.toString());
+  } catch (_) { /* يظل الموقع قابلاً للاستخدام إذا تعذر فحص الإصدار. */ }
+}
+synchronizeBuildVersion();
 
 let lang = localStorage.getItem('nph_lang') || 'ar';
 let PRODUCTS = [];
