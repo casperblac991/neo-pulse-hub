@@ -158,6 +158,8 @@
             border-radius: 12px;
             margin-bottom: 1rem;
         }
+        .deal-card img.image-fallback { object-fit: cover; }
+        .deals-notice { grid-column: 1 / -1; border: 1px solid rgba(0,212,255,.26); background: rgba(0,212,255,.08); border-radius: 10px; padding: .8rem 1rem; color: #c8f6ff; font-size: .86rem; text-align: right; }
 
         .deal-card h3 {
             font-size: 1.4rem;
@@ -371,5 +373,6 @@
         const countdownInterval = setInterval(updateCountdown, 1000);
         updateCountdown(); // Initial call to display immediately
     </script>
+    <script src="scripts/deals-page.js"></script>
 </body>
 </html>

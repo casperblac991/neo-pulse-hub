@@ -64,12 +64,35 @@ def _write(path: Path, data):
     except Exception as e:
         log.error(f"write {path.name}: {e}")
 
+def normalize_product(product: dict) -> dict:
+    """يوحّد الحقول القديمة والجديدة دون تغيير ملف الكتالوج الأصلي."""
+    p = dict(product)
+    name = p.get("name", {})
+    if isinstance(name, dict):
+        p["name_ar"] = p.get("name_ar") or name.get("ar") or name.get("en") or ""
+        p["name_en"] = p.get("name_en") or name.get("en") or name.get("ar") or ""
+    else:
+        p["name_ar"] = p.get("name_ar") or str(name or "")
+        p["name_en"] = p.get("name_en") or str(name or "")
+
+    features = p.get("features", {})
+    if isinstance(features, dict):
+        p["features_ar"] = p.get("features_ar") or features.get("ar") or []
+        p["features_en"] = p.get("features_en") or features.get("en") or []
+    else:
+        p["features_ar"] = p.get("features_ar") or (features if isinstance(features, list) else [])
+        p["features_en"] = p.get("features_en") or []
+
+    p["category_ar"] = p.get("category_ar") or p.get("category", "")
+    p["category_en"] = p.get("category_en") or p.get("category", "")
+    return p
+
 # ══════════════════════════════════════════════════════════════════
 # PRODUCTS
 # ══════════════════════════════════════════════════════════════════
 
 def get_products() -> list:
-    return _read(DB["products"], list)
+    return [normalize_product(p) for p in _read(DB["products"], list) if isinstance(p, dict)]
 
 def get_product(pid: str) -> Optional[dict]:
     return next((p for p in get_products() if p["id"] == pid), None)
@@ -111,6 +134,7 @@ def search_products(query: str) -> list:
             if q in p.get("name_ar","").lower()
             or q in p.get("name_en","").lower()
             or q in p.get("category","").lower()
+            or q in p.get("category_ar","").lower()
             or any(q in f.lower() for f in p.get("features_ar",[]))]
 
 def get_low_stock(threshold=5) -> list:

@@ -157,6 +157,16 @@
             box-shadow: 0 8px 20px rgba(0, 212, 255, 0.3);
         }
 
+        .btn-find-gifts:disabled { opacity: .65; cursor: wait; transform: none; }
+        .form-status { display: none; border-radius: 10px; padding: .85rem 1rem; font-size: .9rem; line-height: 1.65; text-align: right; }
+        .form-status.visible { display: block; }
+        .form-status.loading { background: rgba(0,212,255,.10); border: 1px solid rgba(0,212,255,.35); color: #c8f6ff; }
+        .form-status.error { background: rgba(255,106,136,.10); border: 1px solid rgba(255,106,136,.45); color: #ffd8e1; }
+        .form-status.success { background: rgba(61,220,151,.10); border: 1px solid rgba(61,220,151,.4); color: #cbffe4; }
+        .recommendation-note { max-width: 780px; margin: 0 auto 1.5rem; padding: 1rem 1.15rem; background: rgba(0,212,255,.08); border: 1px solid rgba(0,212,255,.26); color: var(--text-muted); border-radius: 12px; text-align: right; font-size: .9rem; }
+        .recommendation-note strong { color: var(--primary); }
+        .product-card img.image-fallback { object-fit: cover; }
+
         .gift-results {
             margin-top: 3rem;
             text-align: center;
@@ -285,11 +295,11 @@
                 <div class="gift-finder-form">
                     <div class="form-group">
                         <label for="recipient">لمن الهدية؟</label>
-                        <input type="text" id="recipient" placeholder="مثال: صديق، زميل عمل، طفل، شريك حياتي">
+                        <input type="text" id="recipient" minlength="2" aria-describedby="giftStatus" placeholder="مثال: صديق، زميل عمل، طفل، شريك حياتي">
                     </div>
                     <div class="form-group">
                         <label for="interests">ما هي اهتماماته/اهتماماتها؟</label>
-                        <input type="text" id="interests" placeholder="مثال: ألعاب الفيديو، القراءة، الرياضة، الطبخ، التكنولوجيا">
+                        <input type="text" id="interests" minlength="2" aria-describedby="giftStatus" placeholder="مثال: ألعاب الفيديو، القراءة، الرياضة، الطبخ، التكنولوجيا">
                     </div>
                     <div class="form-group">
                         <label for="budget">الميزانية التقريبية؟</label>
@@ -302,7 +312,8 @@
                             <option value="500+">أكثر من 500 دولار</option>
                         </select>
                     </div>
-                    <button class="btn-find-gifts" id="findGiftsBtn">ابحث عن الهدايا</button>
+                    <button class="btn-find-gifts" id="findGiftsBtn" type="button">حلّل التفضيلات واقترح هدايا</button>
+                    <div class="form-status" id="giftStatus" role="status" aria-live="polite"></div>
                 </div>
 
                 <div class="gift-results" id="giftResults" style="display: none;">
@@ -467,5 +478,6 @@
             giftResultsSection.style.display = 'block';
         });
     </script>
+    <script src="scripts/gift-recommender.js"></script>
 </body>
 </html>

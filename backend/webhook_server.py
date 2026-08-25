@@ -42,7 +42,7 @@ from shared_db import (
     get_analytics_summary, get_orders_by_user, init_db
 )
 from ai_engine import (
-    answer_customer, recommend_products, extract_budget,
+    answer_customer, recommend_products_with_reason, extract_budget,
     continue_conversation
 )
 
@@ -336,8 +336,8 @@ def api_ai_chat():
 def api_ai_recommend():
     """
     POST /api/ai/recommend
-    Body: {query, budget?, category?}
-    يُرجع قائمة منتجات مُوصى بها
+    Body: {query, budget?, category?, recipient?, interests?}
+    يُرجع قائمة منتجات مخصصة مع سبب واضح ومصدر التوصية
     """
     body     = request.get_json(silent=True) or {}
     query    = body.get("query","").strip()
@@ -357,13 +357,15 @@ def api_ai_recommend():
     if budget:
         products = [p for p in products if p.get("price",9999) <= float(budget) * 1.1]
 
-    rec_ids  = recommend_products(query, products, budget)
+    preferences = [str(body.get("recipient", "")).strip(), str(body.get("interests", "")).strip()]
+    preferences = [item for item in preferences if item]
+    rec_ids, reason, mode = recommend_products_with_reason(query, products, budget, preferences)
     recs     = [get_product(pid) for pid in rec_ids if get_product(pid)]
     if not recs:
         recs = get_featured_products(3)
 
-    track_event("ai_recommend", {"query": query, "budget": budget})
-    return ok(recs[:3], count=len(recs[:3]))
+    track_event("ai_recommend", {"query": query, "budget": budget, "mode": mode})
+    return ok(recs[:3], count=len(recs[:3]), reason=reason, recommendation_mode=mode)
 
 # ══════════════════════════════════════════════════════════════════
 # ANALYTICS (admin only)

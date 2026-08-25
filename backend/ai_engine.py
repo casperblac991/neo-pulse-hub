@@ -105,10 +105,12 @@ def categorize_query(text):
             return c
     return "أخرى"
 
-def recommend_products(user_query, products, budget=None, preferences=None):
+def recommend_products_with_reason(user_query, products, budget=None, preferences=None):
+    """يرجّح منتجات الكتالوج ويعيد سبباً صريحاً لوضعه في واجهة المستخدم."""
     lines = []
     for p in products[:20]:
-        lines.append("ID:" + p["id"] + " | " + p.get("name_ar","") + " | $" + str(p["price"]) + " | " + p.get("category","") + " | تقييم:" + str(p.get("rating",0)))
+        name = p.get("name_ar") or (p.get("name", {}) if isinstance(p.get("name"), dict) else {}).get("ar", "")
+        lines.append("ID:" + p["id"] + " | " + name + " | $" + str(p.get("price", 0)) + " | " + p.get("category", "") + " | تقييم:" + str(p.get("rating",0)))
     products_summary = "\n".join(lines)
     parts = [
         "انت محرك توصيات لمتجر تقنية ذكية.",
@@ -120,11 +122,19 @@ def recommend_products(user_query, products, budget=None, preferences=None):
         parts.append("الميزانية: $" + str(budget))
     if preferences:
         parts.append("التفضيلات: " + ", ".join(preferences))
-    parts.append('ارجع JSON: {"recommendations": ["ID1","ID2","ID3"], "reason": "السبب"}')
+    parts.append('ارجع JSON فقط: {"recommendations": ["ID1","ID2","ID3"], "reason": "سبب قصير يربط الاختيار باهتمامات وميزانية المستخدم"}')
     result = _call_json("\n".join(parts))
     if result and "recommendations" in result:
-        return result.get("recommendations", [])
-    return [p["id"] for p in sorted(products, key=lambda x: x.get("rating", 0), reverse=True)[:3]]
+        valid_ids = {p.get("id") for p in products}
+        ids = [pid for pid in result.get("recommendations", []) if pid in valid_ids]
+        if ids:
+            return ids[:3], str(result.get("reason") or "اختيارات متوافقة مع التفضيلات والميزانية."), "ai"
+    fallback = sorted(products, key=lambda x: (x.get("rating", 0), x.get("reviews", 0)), reverse=True)[:3]
+    return [p["id"] for p in fallback], "تعذر الوصول إلى النموذج؛ رُتبت الخيارات المتاحة حسب الميزانية والتقييم.", "fallback"
+
+def recommend_products(user_query, products, budget=None, preferences=None):
+    ids, _, _ = recommend_products_with_reason(user_query, products, budget, preferences)
+    return ids
 
 def extract_budget(text):
     result = _call('استخرج الميزانية بالدولار من هذا النص وارجع رقما فقط، اذا لم توجد ارجع null: "' + text + '"', temperature=0.1, max_tokens=20)

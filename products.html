@@ -66,7 +66,20 @@
         .product-card:hover { transform: translateY(-8px); border-color: var(--blue2); box-shadow: 0 15px 40px rgba(59, 130, 246, 0.2); }
         .product-image { height: 220px; background: rgba(59, 130, 246, 0.05); display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
         .product-image img { max-width: 90%; max-height: 90%; object-fit: contain; }
+        .product-image img.image-fallback { width: 100%; height: 100%; max-width: none; max-height: none; object-fit: cover; }
         .badge { position: absolute; top: 10px; right: 10px; background: #ef4444; color: white; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.7rem; font-weight: bold; }
+        .catalog-status { min-height: 300px; display: grid; place-items: center; grid-column: 1 / -1; text-align: center; padding: 2rem; border: 1px dashed var(--border2); border-radius: 16px; background: linear-gradient(135deg, rgba(15,20,35,.82), rgba(5,17,30,.7)); }
+        .catalog-status-inner { max-width: 450px; }
+        .catalog-status-icon { width: 46px; height: 46px; margin: 0 auto .9rem; border-radius: 50%; display: grid; place-items: center; background: rgba(59,130,246,.14); color: var(--blue2); font-size: 1.2rem; }
+        .catalog-status h3 { margin-bottom: .4rem; font-size: 1.1rem; }
+        .catalog-status p { color: var(--muted); font-size: .88rem; margin: 0; }
+        .status-retry { margin-top: 1.1rem; border: 1px solid var(--border2); background: rgba(59,130,246,.18); color: #fff; padding: .7rem 1rem; border-radius: 9px; cursor: pointer; font: inherit; }
+        .status-retry:hover { background: rgba(59,130,246,.32); }
+        .product-skeleton { height: 382px; border: 1px solid var(--border); border-radius: var(--r); overflow: hidden; background: var(--surface); }
+        .product-skeleton::before { content: ''; display: block; height: 220px; background: linear-gradient(90deg, var(--surface2), #17253d, var(--surface2)); background-size: 220% 100%; animation: catalog-shimmer 1.25s infinite linear; }
+        .product-skeleton::after { content: ''; display: block; height: 86px; margin: 22px; border-radius: 6px; background: linear-gradient(90deg, rgba(99,179,237,.08), rgba(99,179,237,.2), rgba(99,179,237,.08)); background-size: 220% 100%; animation: catalog-shimmer 1.25s infinite linear; }
+        .catalog-notice { grid-column: 1 / -1; display: flex; align-items: center; gap: .7rem; padding: .75rem 1rem; background: rgba(34,211,238,.08); border: 1px solid rgba(34,211,238,.25); color: #c7f4fb; font-size: .82rem; border-radius: 10px; }
+        @keyframes catalog-shimmer { to { background-position: -220% 0; } }
         
         .product-info { padding: 1.1rem; }
         .spec-preview { display:flex; flex-wrap:wrap; gap:.35rem; margin:-.1rem 0 .9rem; }
@@ -152,11 +165,9 @@
             </aside>
             <main class="catalog-main">
                 <div class="catalog-heading"><h2>اختيارات ذكية لهذا الأسبوع</h2><span id="visibleCount">—</span></div>
-                <div class="products-grid" id="productsGrid">
-            <div style="text-align:center; padding:50px; grid-column:1/-1;">
-                <p>جاري تحميل المنتجات العالمية...</p>
-            </div>
-        </div>
+                <div class="products-grid" id="productsGrid" aria-live="polite" aria-busy="true">
+                    <div class="product-skeleton"></div><div class="product-skeleton"></div><div class="product-skeleton"></div>
+                </div>
     </div>
 
     <script src="scripts/auth-client.js"></script>
@@ -306,5 +317,6 @@
             fetchProducts();
         };
     </script>
+    <script src="scripts/catalog-page.js"></script>
 </body>
 </html>
