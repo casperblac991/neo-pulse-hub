@@ -165,7 +165,32 @@ async function generateReport(products) {
 // الاتصال بـ Groq API
 // ============================================
 async function getAIResponse(message) {
-  if (!GROQ_API_KEY) return 'مرحباً! أنا مساعد NEO PULSE HUB. اكتب "انزل تقرير" لنشر تقرير المنتجات.';
+  const systemInstruction = 'أنت مساعد ذكي لمتجر NEO PULSE HUB. أجب بالعربية باختصار وبصورة مفيدة عن المنتجات التقنية والمقارنات. لا تختلق أسعاراً أو توفراً غير موجود. عند عدم كفاية المعلومات وجّه المستخدم إلى صفحة المنتجات أو مكتشف الهدايا.';
+
+  if (GEMINI_API_KEY) {
+    try {
+      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(GEMINI_MODEL)}:generateContent?key=${encodeURIComponent(GEMINI_API_KEY)}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          systemInstruction: { parts: [{ text: systemInstruction }] },
+          contents: [{ role: 'user', parts: [{ text: message }] }],
+          generationConfig: { temperature: 0.45, maxOutputTokens: 300 },
+        }),
+      });
+      if (response.ok) {
+        const data = await response.json();
+        const answer = data?.candidates?.[0]?.content?.parts?.map((part) => part.text || '').join('').trim();
+        if (answer) return answer;
+      } else {
+        console.error(`Gemini chat error: ${response.status}`);
+      }
+    } catch (error) {
+      console.error(`Gemini chat failure: ${error.message}`);
+    }
+  }
+
+  if (!GROQ_API_KEY) return 'مرحباً! أنا مساعد NEO PULSE HUB. أستطيع مساعدتك في اختيار منتج أو توجيهك إلى مكتشف الهدايا.';
   
   try {
     const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
@@ -179,7 +204,7 @@ async function getAIResponse(message) {
         messages: [
           {
             role: 'system',
-            content: `أنت مساعد ذكي لمتجر NEO PULSE HUB. المنتجات: Apple Watch (399$), Samsung Galaxy Watch (299$), AirPods Pro 2 (249$). أجب بالعربية مختصراً.`
+            content: systemInstruction
           },
           { role: 'user', content: message }
         ],
@@ -217,7 +242,10 @@ app.post('/api/post-report', async (req, res) => {
 // شات بوت
 // ============================================
 app.post('/api/chat', async (req, res) => {
-  const { message } = req.body;
+  const message = String(req.body?.message || '').trim();
+  if (!message || message.length > 500) {
+    return res.status(400).json({ success: false, error: 'message is required and must be at most 500 characters' });
+  }
   console.log(`📩: ${message}`);
   
   // أمر نشر التقرير (فقط إذا قال "انزل تقرير" أو "نشر تقرير")

@@ -153,9 +153,10 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
 .chat-bubble{position:absolute;bottom:72px;right:0;width:300px;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--r2);padding:1rem;box-shadow:0 10px 30px rgba(0,0,0,.5);display:none}
 .chat-bubble.show{display:block;animation:fadeUp .3s ease}
 #chatMessages{height:200px;overflow-y:auto;margin-bottom:10px;font-size:13px;background:#0f1423;border-radius:12px;padding:8px}
-#chatMessages div{margin:5px 0}
-#chatInput{flex:1;padding:8px;border-radius:50px;border:none;background:#1e1e2e;color:#fff;outline:none}
-.send-btn{background:#3b82f6;border:none;border-radius:50px;padding:8px 16px;color:white;cursor:pointer}
+	#chatMessages div{margin:5px 0}
+	#chatInput{flex:1;padding:8px;border-radius:50px;border:none;background:#1e1e2e;color:#fff;outline:none}
+	.send-btn{background:#3b82f6;border:none;border-radius:50px;padding:8px 16px;color:white;cursor:pointer}
+	.send-btn:disabled{opacity:.65;cursor:wait}.chat-status{min-height:18px;margin-top:8px;color:var(--muted);font-size:.72rem}.chat-status.error{color:#fda4af}.chat-status.ok{color:#5eead4}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:translateY(0)}
 .toast{position:fixed;bottom:2rem;left:2rem;z-index:999;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--r);padding:1rem 1.5rem;display:flex;align-items:center;gap:.8rem;transform:translateY(150%);opacity:0;transition:all var(--ease)}
 .toast.show{transform:translateY(0);opacity:1}.toast-icon{font-size:1.2rem}.toast-text{font-size:.9rem;font-weight:600}
@@ -632,9 +633,10 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
       <div style="color: #60a5fa;">🤖 مرحباً! كيف يمكنني مساعدتك اليوم؟</div>
     </div>
     <div style="display: flex; gap: 8px; margin-top: 10px;">
-      <input type="text" id="chatInput" placeholder="اكتب سؤالك...">
-      <button class="send-btn" onclick="sendChatMessage()">إرسال</button>
+      <input type="text" id="chatInput" maxlength="500" autocomplete="off" placeholder="اسأل عن منتج أو اطلب مقارنة…" aria-label="رسالة إلى مساعد NEO PULSE">
+      <button class="send-btn" id="chatSendBtn" type="button" onclick="sendChatMessage()">إرسال</button>
     </div>
+    <div class="chat-status" id="chatStatus" role="status" aria-live="polite"></div>
   </div>
   <button class="chat-btn" onclick="toggleChat()" aria-label="AI Chat">🤖</button>
 </div>
@@ -747,47 +749,71 @@ const T = {
   }
 };
 
-// Chat Bot Functions
+// مساعد الصفحة الرئيسية: لا تُمرَّر مفاتيح API إلى المتصفح؛ يستدعي API المنشور على Render فقط.
+const CHAT_API_URL = window.NEO_PULSE_CHAT_API_URL || 'https://neo-pulse-hub.onrender.com/api/chat';
+
 function toggleChat() {
   const bubble = document.getElementById('chatBubble');
-  if (bubble) bubble.classList.toggle('show');
+  if (!bubble) return;
+  bubble.classList.toggle('show');
+  if (bubble.classList.contains('show')) document.getElementById('chatInput')?.focus();
+}
+
+function appendChatMessage(author, text, isUser = false) {
+  const messagesDiv = document.getElementById('chatMessages');
+  const line = document.createElement('div');
+  line.style.cssText = `margin:5px 0;padding:6px 10px;border-radius:10px;${isUser ? 'text-align:right;background:rgba(59,130,246,.2)' : 'background:rgba(96,165,250,.1)'}`;
+  line.textContent = `${author} ${text}`;
+  messagesDiv.appendChild(line);
+  messagesDiv.scrollTop = messagesDiv.scrollHeight;
+}
+
+function setChatStatus(message = '', state = '') {
+  const status = document.getElementById('chatStatus');
+  status.textContent = message;
+  status.className = `chat-status ${state}`;
 }
 
 async function sendChatMessage() {
   const input = document.getElementById('chatInput');
+  const button = document.getElementById('chatSendBtn');
   const message = input.value.trim();
   if (!message) return;
-  
-  const messagesDiv = document.getElementById('chatMessages');
-  messagesDiv.innerHTML += `<div style="text-align: right; margin: 5px 0; padding: 6px 10px; background: rgba(59,130,246,.2); border-radius: 10px;">👤 ${message}</div>`;
+  if (message.length > 500) { setChatStatus('الرسالة طويلة جداً. استخدم 500 حرف أو أقل.', 'error'); return; }
+
+  appendChatMessage('👤', message, true);
   input.value = '';
-  messagesDiv.scrollTop = messagesDiv.scrollHeight;
-  
-  // Simple offline responses
-  const responses = {
-    'مرحبا': ['مرحباً! كيف حالك؟ 👋', 'أهلاً وسهلاً! كيف أقدر أساعدك؟'],
-    'hello': ['Hello! How are you?', 'Hi there!'],
-    'سعر': ['المنتجات تبدأ من $50 💰', 'أسعارنا منافسة جداً!'],
-    'price': ['Products from $50 💰', 'Very competitive prices!'],
-    'شحن': ['الشحن مجاني للطلبات فوق $100 🚚', 'نوصل خلال 3-7 أيام'],
-    'shipping': ['Free shipping over $100 🚚', 'Delivery in 3-7 days'],
-    'منتج': ['شاهد المنتجات في المتجر 🔥', 'أساعدك تختار المنتج المناسب!'],
-    'product': ['Browse our store 🔥', 'I can help you find the right product!'],
-    'help': ['اكتب اسم المنتج وأساعدك 💡', 'كيف أقدر أساعدك؟'],
-  };
-  
-  let response = 'شكراً لتواصلك! اكتب سؤالك وسأساعدك 🔥';
-  const lower = message.toLowerCase();
-  for (const [key, vals] of Object.entries(responses)) {
-    if (lower.includes(key)) {
-      response = vals[Math.floor(Math.random() * vals.length)];
-      break;
-    }
+  input.disabled = true;
+  button.disabled = true;
+  setChatStatus('جارٍ الاتصال بالمساعد…');
+
+  const controller = new AbortController();
+  const timeoutId = window.setTimeout(() => controller.abort(), 12000);
+  try {
+    const response = await fetch(CHAT_API_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify({ message }),
+      signal: controller.signal,
+    });
+    const payload = await response.json().catch(() => null);
+    if (!response.ok || !payload?.success || typeof payload.answer !== 'string') throw new Error('assistant unavailable');
+    appendChatMessage('🤖', payload.answer);
+    setChatStatus('ردّ المساعد الآن.', 'ok');
+  } catch (error) {
+    appendChatMessage('🤖', 'المساعد غير متاح مؤقتاً. يمكنك تصفح المنتجات أو إعادة المحاولة بعد قليل.');
+    setChatStatus('تعذر الاتصال بخدمة المساعد. لم تُرسل بياناتك إلى أي وجهة بديلة.', 'error');
+  } finally {
+    window.clearTimeout(timeoutId);
+    input.disabled = false;
+    button.disabled = false;
+    input.focus();
   }
-  
-  messagesDiv.innerHTML += `<div style="margin: 5px 0; padding: 6px 10px; background: rgba(96,165,250,.1); border-radius: 10px;"><span style="color:#60a5fa;">🤖</span> ${response}</div>`;
-  messagesDiv.scrollTop = messagesDiv.scrollHeight;
 }
+
+document.getElementById('chatInput')?.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter' && !event.shiftKey) { event.preventDefault(); sendChatMessage(); }
+});
 
 	// Language switching
 	function changeLang(newLang) {
