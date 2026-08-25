@@ -2,7 +2,8 @@
 (() => {
   const $ = (id) => document.getElementById(id);
   const escapeHTML = (value) => String(value ?? '').replace(/[&<>'"]/g, (char) => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', "'":'&#39;', '"':'&quot;' }[char]));
-  const apiEndpoint = '/api/ai/recommend';
+  // الواجهة ثابتة على نطاق مستقل؛ تستدعي API المنشور على Render صراحةً.
+  const apiEndpoint = window.NEO_PULSE_API_URL || 'https://neo-pulse-hub.onrender.com/api/ai/recommend';
   const budgetLabels = { any: 'أي ميزانية', 50: 'أقل من 50 دولار', 100: '50 إلى 100 دولار', 200: '100 إلى 200 دولار', 500: '200 إلى 500 دولار', '500+': 'أكثر من 500 دولار' };
   const intentMap = {
     smartwatch: ['ساعة','رياضة','لياقة','صحة','جري','نوم','fitness','watch','sport'],
