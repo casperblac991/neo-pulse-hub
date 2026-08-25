@@ -149,6 +149,7 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:2.5r
     }
 	</style>
     <script src="scripts/auth-client.js"></script>
+    <script src="scripts/product-visuals.js"></script>
 	</head>
 <body>
 <div class="bg-grid"></div>
@@ -183,6 +184,9 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:2.5r
 <div class="mobile-drawer" id="mobileDrawer">
   <a href="index.html" onclick="closeMenu()" id="m_home">&#x1F3E0; الرئيسية</a>
   <a href="products.html" onclick="closeMenu()" id="m_products">&#x1F6CD; المنتجات</a>
+  <a href="explore.html" onclick="closeMenu()">&#x1F9ED; استكشف</a>
+  <a href="guides.html" onclick="closeMenu()">&#x1F4DA; أدلة الشراء</a>
+  <a href="site-index.html" onclick="closeMenu()">&#x2630; فهرس كل الصفحات</a>
   <a href="about.html" onclick="closeMenu()" id="m_about">&#x2139; من نحن</a>
   <a href="contact.html" onclick="closeMenu()" id="m_contact">&#x1F4DE; اتصل بنا</a>
 </div>
@@ -469,7 +473,7 @@ function addToCart() {
     name_ar: product.name_ar || (product.name && product.name.ar) || '',
     name_en: product.name_en || (product.name && product.name.en) || product.name_ar || (product.name && product.name.ar) || '',
     price: product.price,
-    image: product.image,
+    image: window.NeoPulseVisuals ? window.NeoPulseVisuals.get(product, lang).src : product.image,
     qty: qty
   });
   saveCart(cart);
@@ -509,7 +513,7 @@ function renderProduct() {
     : (product.name_ar || (product.name && product.name.ar) || product.name_en || (product.name && product.name.en) || '');
   var pcat  = lang === 'en' ? (product.category_en || product.category_ar || '') : (product.category_ar || '');
   var pdesc = lang === 'en' ? (product.description_en || (product.description && product.description.en) || product.description_ar || (product.description && product.description.ar) || '') : (product.description_ar || (product.description && product.description.ar) || product.description_en || (product.description && product.description.en) || '');
-  var pbadge = lang === 'en' ? (product.badge_en || (product.badge && product.badge.en) || product.badge || '') : (product.badge || (product.badge && product.badge.ar) || product.badge_en || '');
+  var pbadge = lang === 'en' ? (product.badge_en || (product.badge && product.badge.en) || (typeof product.badge === 'string' ? product.badge : '') || '') : ((product.badge && product.badge.ar) || (typeof product.badge === 'string' ? product.badge : '') || product.badge_en || '');
   var features = lang === 'en' ? (product.features_en || (product.features && product.features.en) || product.features_ar || (product.features && product.features.ar) || []) : (product.features_ar || (product.features && product.features.ar) || product.features_en || (product.features && product.features.en) || []);
 
   document.title = pname + ' | NEO PULSE HUB';
@@ -551,12 +555,11 @@ function renderProduct() {
 
   // Gallery HTML
   var galleryHtml = '<div class="gallery-container">';
-  var gallery = (product.gallery || [product.image]).filter(function(src) {
-    return src && src.indexOf('placehold.co') === -1;
-  });
-  if (!gallery.length && product.image) gallery = [product.image];
+  var visual = window.NeoPulseVisuals ? window.NeoPulseVisuals.get(product, lang) : { verified: false, src: 'images/product-fallback.svg', alt: pname, label: 'صورة توضيحية للفئة' };
+  var gallery = visual.verified ? [visual.src] : [visual.src];
   galleryHtml += '<div class="main-img-box img-box">'
-    + '<img id="mainProductImg" src="' + gallery[0] + '" alt="' + pname + '" onerror="this.src=\'https://placehold.co/400x400/0a0d1a/60a5fa?text=IMG\'">'
+    + '<img id="mainProductImg" src="' + gallery[0] + '" alt="' + visual.alt + '">'
+    + (visual.label ? '<span style="position:absolute;bottom:1rem;inset-inline:1rem;padding:.4rem .6rem;text-align:center;background:rgba(2,5,16,.7);border:1px solid var(--border2);border-radius:8px;color:#c7f4fb;font-size:.72rem">' + visual.label + '</span>' : '')
     + badgeHtml + '</div>';
   
   if (gallery.length > 1) {
@@ -655,9 +658,9 @@ function renderRelated() {
     var n = lang === 'en' 
       ? (p.name_en || (p.name && p.name.en) || p.name_ar || (p.name && p.name.ar) || '') 
       : (p.name_ar || (p.name && p.name.ar) || p.name_en || (p.name && p.name.en) || '');
+    var relatedVisual = window.NeoPulseVisuals ? window.NeoPulseVisuals.get(p, lang) : { src: 'images/product-fallback.svg', alt: n };
     html += '<div class="related-card" onclick="location.href=\'product-detail.html?id=' + p.id + '\'">'
-      + '<img src="' + p.image + '" alt="' + n + '" loading="lazy"'
-      + ' onerror="this.src=\'https://placehold.co/200x200/0a0d1a/60a5fa?text=IMG\'">'
+      + '<img src="' + relatedVisual.src + '" alt="' + relatedVisual.alt + '" loading="lazy">'
       + '<div class="rc-info">'
       + '<div class="rc-name">' + n + '</div>'
       + '<div class="rc-price">' + formatProductPrice(p, p.price, true) + '</div>'

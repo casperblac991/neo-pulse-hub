@@ -60,7 +60,8 @@
     const note = `<div class="recommendation-note"><strong>${label}</strong> · ${escapeHTML(reason || `اختيرت الخيارات بعد مواءمة الاهتمامات مع ${budgetLabels[budget] || 'الميزانية المحددة'}.`)}<br><small>ملف الهدية: ${escapeHTML(recipient)} · ${escapeHTML(budgetLabels[budget] || '')}</small></div>`;
     grid.innerHTML = note + products.map((product) => {
       const link = /^https:\/\//.test(product.affiliate_amazon || '') ? product.affiliate_amazon : `product-detail.html?id=${encodeURIComponent(product.id || '')}`;
-      return `<article class="product-card"><img src="${escapeHTML(image(product))}" alt="${escapeHTML(name(product))}" loading="lazy" onerror="this.onerror=null;this.src='images/product-fallback.svg';this.classList.add('image-fallback')"><h3>${escapeHTML(name(product))}</h3><p>${escapeHTML(description(product))}</p><div class="price">$${Number(product.price || 0).toLocaleString()}</div><a href="${escapeHTML(link)}" target="_blank" rel="noopener noreferrer" class="btn-amazon">عرض المنتج</a></article>`;
+      const visual = window.NeoPulseVisuals?.get(product, document.documentElement.lang || 'ar') || { src: image(product), alt: name(product), label: '' };
+      return `<article class="product-card"><img src="${escapeHTML(visual.src)}" alt="${escapeHTML(visual.alt)}" loading="lazy">${visual.label ? `<small class="recommendation-visual-note">${escapeHTML(visual.label)}</small>` : ''}<h3>${escapeHTML(name(product))}</h3><p>${escapeHTML(description(product))}</p><div class="price">$${Number(product.price || 0).toLocaleString()}</div><a href="${escapeHTML(link)}" target="_blank" rel="noopener noreferrer" class="btn-amazon">عرض المنتج</a></article>`;
     }).join('');
     results.style.display = 'block'; results.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }

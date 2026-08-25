@@ -464,6 +464,8 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
       <li><a href="gift-finder.html">🎁 هدايا AI</a></li>
       <li><a href="deals-of-the-hour.html">⚡ عروض الساعة</a></li>
       <li><a href="product-battle.html">⚔️ معركة المنتجات</a></li>
+      <li><a href="explore.html">🧭 استكشف</a></li>
+      <li><a href="site-index.html">☰ الفهرس</a></li>
       <li><a href="blog/ar/" data-i18n="nav_blog_ar">📝 المدونة</a></li>
 </ul>
 	  <div style="display:flex;align-items:center;gap:.8rem">
@@ -487,6 +489,9 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
     <a href="gift-finder.html">🎁 هدايا AI</a>
     <a href="deals-of-the-hour.html">⚡ عروض الساعة</a>
     <a href="product-battle.html">⚔️ معركة المنتجات</a>
+    <a href="explore.html">🧭 استكشف حسب هدفك</a>
+    <a href="guides.html">📚 أدلة الشراء</a>
+    <a href="site-index.html">☰ فهرس كل الصفحات</a>
     <a href="blog/ar/" data-i18n="nav_blog_ar">📝 المدونة</a>
     <a href="#contact" data-i18n="nav_contact">اتصل بنا</a>
 </div>
@@ -693,6 +698,7 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
         }
     </style>
     <script src="scripts/auth-client.js"></script>
+    <script src="scripts/product-visuals.js"></script>
 	<script>
 	'use strict';
 
@@ -997,10 +1003,12 @@ function displayProducts() {
     filtered = PRODUCTS.slice(0, 12);
   }
   
-  grid.innerHTML = filtered.map(product => `
+      grid.innerHTML = filtered.map(product => {
+        const visual = window.NeoPulseVisuals?.get(product, lang) || { src: 'images/product-fallback.svg', alt: product.name?.ar || product.name || '' };
+        return `
     <div class="product-card">
       <div class="product-img">
-        <img src="${product.image || 'https://via.placeholder.com/280x220?text=No+Image'}" alt="${product.name?.ar || product.name}">
+        <img src="${visual.src}" alt="${visual.alt}">
         <div class="product-badge">⭐ ${product.rating || 4.5}/5</div>
         ${product.discount ? `<div class="product-discount">-${product.discount}%</div>` : ''}
       </div>
@@ -1025,7 +1033,8 @@ function displayProducts() {
         <div class="amazon-rating">⭐ ${product.rating || 4.5} | ${product.reviews ? product.reviews.toLocaleString() + ' تقييم' : ''}</div>
       </div>
     </div>
-  `).join('');
+  `;
+      }).join('');
 }
 
 // Intersection Observer for animations

@@ -160,6 +160,7 @@
         }
         .deal-card img.image-fallback { object-fit: cover; }
         .deals-notice { grid-column: 1 / -1; border: 1px solid rgba(0,212,255,.26); background: rgba(0,212,255,.08); border-radius: 10px; padding: .8rem 1rem; color: #c8f6ff; font-size: .86rem; text-align: right; }
+        .deal-visual-note { display:block; margin:-.55rem 0 .8rem; color:#9eefff; font-size:.72rem; }
 
         .deal-card h3 {
             font-size: 1.4rem;
@@ -262,6 +263,7 @@
                     <li><a href="products.html">المنتجات</a></li>
                     <li><a href="gift-finder.html">مكتشف الهدايا AI</a></li>
                     <li><a href="deals-of-the-hour.html">عروض الساعة</a></li>
+                    <li><a href="site-index.html">فهرس الصفحات</a></li>
                     <li><a href="#contact">تواصل معنا</a></li>
                 </ul>
             </nav>
@@ -347,32 +349,10 @@
             }
         }
 
-        function loadDeals() {
-            const dealsGrid = document.getElementById('dealsGrid');
-            dealsGrid.innerHTML = ''; // Clear existing deals
-
-            deals.forEach(deal => {
-                const dealCard = `
-                    <div class="deal-card">
-                        <span class="discount-badge">-${deal.discount}</span>
-                        <img src="${deal.image}" alt="${deal.name}">
-                        <h3>${deal.name}</h3>
-                        <p>${deal.description}</p>
-                        <div>
-                            <span class="price-old">$${deal.old_price}</span>
-                            <span class="price-new">$${deal.new_price}</span>
-                        </div>
-                        <a href="${deal.amazon_link}" target="_blank" class="btn-buy-deal">اشترِ الآن</a>
-                    </div>
-                `;
-                dealsGrid.innerHTML += dealCard;
-            });
-        }
-
-        loadDeals();
         const countdownInterval = setInterval(updateCountdown, 1000);
         updateCountdown(); // Initial call to display immediately
     </script>
+    <script src="scripts/product-visuals.js"></script>
     <script src="scripts/deals-page.js"></script>
 </body>
 </html>

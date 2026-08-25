@@ -35,6 +35,7 @@
     original_price: Number(product.original_price) || 0,
   });
   const supportedData = (payload) => Array.isArray(payload) ? payload : (Array.isArray(payload?.data) ? payload.data : []);
+  const visualFor = (product) => window.NeoPulseVisuals?.get(product, currentLang) || { verified: false, src: 'images/product-fallback.svg', alt: localize(product.name), label: currentLang === 'en' ? 'Category visual' : 'صورة توضيحية للفئة' };
 
   function showStatus(state, detail = '') {
     const grid = $('productsGrid');
@@ -68,6 +69,11 @@
     for (const source of sources) {
       try {
         allProducts = await loadFrom(source);
+        const requestedCategory = new URLSearchParams(window.location.search).get('category');
+        if (requestedCategory && allProducts.some((product) => product.category === requestedCategory)) {
+          currentCategory = requestedCategory;
+          document.querySelectorAll('.category-btn').forEach((item) => item.classList.toggle('active', item.getAttribute('onclick')?.includes(`'${requestedCategory}'`)));
+        }
         text('totalMetric', allProducts.length.toLocaleString());
         renderProducts();
         return;
@@ -115,8 +121,9 @@
       const badge = escapeHTML(localize(product.badge));
       const specs = Object.entries(localize(product.specifications) || localize(product.specs) || {}).slice(0, 3).map(([key, value]) => `<span>${escapeHTML(key)}: ${escapeHTML(localize(value))}</span>`).join('');
       const original = product.original_price > product.price ? `<span class="original-price">${formatPrice(product, true)}</span>` : '';
+      const visual = visualFor(product);
       const affiliate = /^https:\/\//.test(product.affiliate_amazon || '') ? product.affiliate_amazon : `product-detail.html?id=${encodeURIComponent(product.id)}`;
-      return `<article class="product-card"><div class="product-image"><img src="${escapeHTML(product.image)}" alt="${name}" loading="lazy" onerror="this.onerror=null;this.src='images/product-fallback.svg';this.classList.add('image-fallback')">${badge ? `<span class="badge">${badge}</span>` : ''}</div><div class="product-info"><div class="product-category">${category}</div><h3 class="product-name">${name}</h3><div class="product-rating"><span class="stars" aria-hidden="true">★★★★★</span><span>${escapeHTML(product.rating || '—')}/5</span>${product.reviews ? `<span>(${Number(product.reviews).toLocaleString()})</span>` : ''}</div><div class="price-row"><span class="price">${formatPrice(product)}</span>${original}</div>${specs ? `<div class="spec-preview">${specs}</div>` : ''}<div class="card-actions"><a href="product-detail.html?id=${encodeURIComponent(product.id)}" class="details-btn">${currentLang === 'en' ? 'Details' : 'التفاصيل'}</a><a href="${escapeHTML(affiliate)}" target="_blank" rel="noopener noreferrer" class="buy-btn">${currentLang === 'en' ? 'Buy now' : 'اشترِ الآن'}</a></div></div></article>`;
+      return `<article class="product-card"><div class="product-image"><img src="${escapeHTML(visual.src)}" alt="${escapeHTML(visual.alt || name)}" loading="lazy">${visual.label ? `<span class="visual-status">${escapeHTML(visual.label)}</span>` : ''}${badge ? `<span class="badge">${badge}</span>` : ''}</div><div class="product-info"><div class="product-category">${category}</div><h3 class="product-name">${name}</h3><div class="product-rating"><span class="stars" aria-hidden="true">★★★★★</span><span>${escapeHTML(product.rating || '—')}/5</span>${product.reviews ? `<span>(${Number(product.reviews).toLocaleString()})</span>` : ''}</div><div class="price-row"><span class="price">${formatPrice(product)}</span>${original}</div>${specs ? `<div class="spec-preview">${specs}</div>` : ''}<div class="card-actions"><a href="product-detail.html?id=${encodeURIComponent(product.id)}" class="details-btn">${currentLang === 'en' ? 'Details' : 'التفاصيل'}</a><a href="${escapeHTML(affiliate)}" target="_blank" rel="noopener noreferrer" class="buy-btn">${currentLang === 'en' ? 'Buy now' : 'اشترِ الآن'}</a></div></div></article>`;
     }).join('');
   }
 
