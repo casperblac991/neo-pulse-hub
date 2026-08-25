@@ -13,6 +13,79 @@ app.use(cors({ origin: '*' }));
 app.use(express.json());
 
 const GROQ_API_KEY = process.env.GROQ_API_KEY;
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
+const CATALOG_PATH = path.resolve(__dirname, '..', 'products.json');
+
+// تُعاد بيانات الكتالوج من جذر المشروع حتى تعمل الخدمة من backend/ على Render.
+function loadProducts() {
+  if (!fs.existsSync(CATALOG_PATH)) return [];
+  const products = JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf8'));
+  return Array.isArray(products) ? products : [];
+}
+
+function productName(product) {
+  if (typeof product?.name === 'object') return product.name.ar || product.name.en || '';
+  return product?.name || '';
+}
+
+function safeRecommendationCandidates(products, budget) {
+  const maximum = Number.isFinite(Number(budget)) && Number(budget) > 0 ? Number(budget) * 1.1 : Infinity;
+  return products
+    .filter((product) => Number(product.price) <= maximum)
+    .sort((left, right) => Number(right.rating || 0) - Number(left.rating || 0))
+    .slice(0, 30);
+}
+
+function localRecommendations(products, interests, budget) {
+  const terms = String(interests || '').toLowerCase().split(/[،,\s]+/).map((term) => term.trim()).filter((term) => term.length > 1);
+  const candidates = safeRecommendationCandidates(products, budget);
+  return candidates
+    .map((product) => {
+      const searchable = `${productName(product)} ${product.name?.en || ''} ${product.category || ''} ${JSON.stringify(product.specifications || {})}`.toLowerCase();
+      const matches = terms.reduce((count, term) => count + (searchable.includes(term) ? 1 : 0), 0);
+      return { product, score: Number(product.rating || 0) * 10 + matches * 30 };
+    })
+    .sort((left, right) => right.score - left.score)
+    .slice(0, 3)
+    .map((entry) => entry.product);
+}
+
+async function geminiRecommendations({ query, recipient, interests, budget, products }) {
+  if (!GEMINI_API_KEY) return null;
+  const candidates = safeRecommendationCandidates(products, budget);
+  const allowedIds = new Set(candidates.map((product) => product.id));
+  const catalog = candidates.map((product) => ({
+    id: product.id,
+    name: productName(product),
+    category: product.category,
+    price: product.price,
+    rating: product.rating,
+  }));
+  const prompt = `أنت مساعد توصيات هدايا عربي. اختر حتى 3 معرفات فقط من قائمة المنتجات المعطاة. ملف الهدية: ${recipient || 'غير محدد'}. الاهتمامات: ${interests || 'غير محددة'}. الطلب: ${query}. الميزانية: ${budget || 'غير محددة'}. أعد JSON صالحاً فقط بالشكل {"ids":["id"],"reason":"سبب عربي قصير"}. المنتجات: ${JSON.stringify(catalog)}`;
+
+  try {
+    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(GEMINI_MODEL)}:generateContent?key=${encodeURIComponent(GEMINI_API_KEY)}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { temperature: 0.2, maxOutputTokens: 250, responseMimeType: 'application/json' } }),
+    });
+    if (!response.ok) {
+      console.error(`Gemini recommendation error: ${response.status}`);
+      return null;
+    }
+    const data = await response.json();
+    const text = data?.candidates?.[0]?.content?.parts?.map((part) => part.text || '').join('') || '';
+    const result = JSON.parse(text.replace(/^```json\s*|\s*```$/g, ''));
+    const ids = Array.isArray(result.ids) ? result.ids.filter((id) => allowedIds.has(id)).slice(0, 3) : [];
+    const recommended = ids.map((id) => candidates.find((product) => product.id === id)).filter(Boolean);
+    if (!recommended.length) return null;
+    return { products: recommended, reason: String(result.reason || 'اختيرت المنتجات وفق الاهتمامات والميزانية.'), mode: 'ai' };
+  } catch (error) {
+    console.error(`Gemini recommendation failure: ${error.message}`);
+    return null;
+  }
+}
 
 // ============================================
 // حفظ في المدونة
@@ -127,9 +200,7 @@ async function getAIResponse(message) {
 // ============================================
 app.post('/api/post-report', async (req, res) => {
   try {
-    let products = [];
-    const pPath = path.join(__dirname, 'products.json');
-    if (fs.existsSync(pPath)) products = JSON.parse(fs.readFileSync(pPath, 'utf8'));
+    const products = loadProducts();
     
     const content = await generateReport(products);
     const now = new Date();
@@ -151,9 +222,7 @@ app.post('/api/chat', async (req, res) => {
   
   // أمر نشر التقرير (فقط إذا قال "انزل تقرير" أو "نشر تقرير")
   if (message.includes('انزل') && message.includes('تقرير') || message.includes('نشر') && message.includes('تقرير')) {
-    let products = [];
-    const pPath = path.join(__dirname, 'products.json');
-    if (fs.existsSync(pPath)) products = JSON.parse(fs.readFileSync(pPath, 'utf8'));
+    const products = loadProducts();
     
     const content = await generateReport(products);
     const now = new Date();
@@ -168,11 +237,37 @@ app.post('/api/chat', async (req, res) => {
   res.json({ success: true, answer });
 });
 
+// توصيات هدايا مخصصة: Gemini عند توفر المفتاح، وترتيب كتالوج محلي واضح عند عدم توفره.
+app.post('/api/ai/recommend', async (req, res) => {
+  const { query = '', recipient = '', interests = '', budget = null } = req.body || {};
+  const normalizedQuery = String(query).trim();
+  if (!normalizedQuery || normalizedQuery.length > 500) {
+    return res.status(400).json({ success: false, error: 'query is required and must be at most 500 characters' });
+  }
+  const products = loadProducts();
+  if (!products.length) return res.status(503).json({ success: false, error: 'catalog unavailable' });
+
+  const aiResult = await geminiRecommendations({ query: normalizedQuery, recipient: String(recipient).slice(0, 160), interests: String(interests).slice(0, 300), budget, products });
+  if (aiResult) return res.json({ success: true, data: aiResult.products, reason: aiResult.reason, recommendation_mode: aiResult.mode });
+
+  const fallback = localRecommendations(products, interests || normalizedQuery, budget);
+  return res.json({
+    success: true,
+    data: fallback,
+    reason: 'تعذر الوصول إلى نموذج الذكاء الاصطناعي؛ رتّبنا المنتجات محلياً حسب الاهتمامات والميزانية.',
+    recommendation_mode: 'fallback',
+  });
+});
+
 // ============================================
 // نقطة فحص الحالة
 // ============================================
 app.get('/api/status', (req, res) => {
   res.json({ success: true, status: 'running', time: new Date().toISOString() });
+});
+
+app.get('/api/health', (_req, res) => {
+  res.json({ success: true, status: 'healthy', service: 'neo-pulse-node-api', products: loadProducts().length, geminiConfigured: Boolean(GEMINI_API_KEY) });
 });
 
 // ============================================
@@ -184,6 +279,8 @@ app.listen(PORT, '0.0.0.0', () => {
   console.log(`✅ /api/chat - شات بوت`);
   console.log(`✅ /api/post-report - نشر تقرير`);
   console.log(`✅ /api/status - فحص الحالة`);
+  console.log(`✅ /api/ai/recommend - توصيات الهدايا`);
+  console.log(`✅ /api/health - فحص الصحة`);
 });
 
 export default app;
