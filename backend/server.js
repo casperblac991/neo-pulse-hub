@@ -55,14 +55,15 @@ async function geminiRecommendations({ query, recipient, interests, budget, prod
   if (!GEMINI_API_KEY) return null;
   const candidates = safeRecommendationCandidates(products, budget);
   const allowedIds = new Set(candidates.map((product) => product.id));
-  const catalog = candidates.map((product) => ({
+  const catalog = candidates.map((product, index) => ({
+    index: index + 1,
     id: product.id,
     name: productName(product),
     category: product.category,
     price: product.price,
     rating: product.rating,
   }));
-  const prompt = `أنت مساعد توصيات هدايا عربي. اختر حتى 3 معرفات فقط من قائمة المنتجات المعطاة. ملف الهدية: ${recipient || 'غير محدد'}. الاهتمامات: ${interests || 'غير محددة'}. الطلب: ${query}. الميزانية: ${budget || 'غير محددة'}. أعد JSON صالحاً فقط بالشكل {"ids":["id"],"reason":"سبب عربي قصير"}. المنتجات: ${JSON.stringify(catalog)}`;
+  const prompt = `أنت مساعد توصيات هدايا عربي. اختر حتى 3 منتجات فقط من القائمة المرقمة. ملف الهدية: ${recipient || 'غير محدد'}. الاهتمامات: ${interests || 'غير محددة'}. الطلب: ${query}. الميزانية: ${budget || 'غير محددة'}. أعد JSON صالحاً فقط بالشكل {"indexes":[1,2,3],"reason":"سبب عربي قصير"}. استخدم أرقام index المعروضة حصراً ولا تختر منتجاً خارج القائمة. المنتجات: ${JSON.stringify(catalog)}`;
 
   try {
     const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(GEMINI_MODEL)}:generateContent?key=${encodeURIComponent(GEMINI_API_KEY)}`, {
@@ -77,12 +78,16 @@ async function geminiRecommendations({ query, recipient, interests, budget, prod
     const data = await response.json();
     const text = data?.candidates?.[0]?.content?.parts?.map((part) => part.text || '').join('') || '';
     const result = JSON.parse(text.trim().replace(/^```json\s*|\s*```$/g, ''));
+    const indexes = Array.isArray(result.indexes)
+      ? result.indexes.map((index) => Number(index)).filter((index) => Number.isInteger(index) && index >= 1 && index <= candidates.length).slice(0, 3)
+      : [];
     const rawIds = Array.isArray(result.ids) ? result.ids
       : Array.isArray(result.products) ? result.products.map((product) => typeof product === 'string' ? product : product?.id)
       : Array.isArray(result.recommendations) ? result.recommendations.map((product) => typeof product === 'string' ? product : product?.id)
       : [];
     const ids = rawIds.filter((id) => allowedIds.has(id)).slice(0, 3);
-    let recommended = ids.map((id) => candidates.find((product) => product.id === id)).filter(Boolean);
+    let recommended = indexes.map((index) => candidates[index - 1]).filter(Boolean);
+    if (!recommended.length) recommended = ids.map((id) => candidates.find((product) => product.id === id)).filter(Boolean);
     if (!recommended.length) {
       // بديل parsing آمن عندما يعيد النموذج أسماء منتجات بدلاً من المعرفات المطلوبة.
       const normalizedText = text.toLowerCase();
