@@ -178,8 +178,21 @@ async function generateReport(products) {
 // ============================================
 // الاتصال بـ Groq API
 // ============================================
+function buildCatalogContext(products) {
+  return products.slice(0, 60).map((product) => ({
+    id: product.id,
+    name: productName(product),
+    category: product.category || 'غير محدد',
+    price: product.price ?? null,
+    rating: product.rating ?? null,
+    reviews: product.reviews ?? null,
+    discount: product.discount ?? null,
+  }));
+}
+
 async function getAIResponse(message) {
-  const systemInstruction = 'أنت مساعد ذكي لمتجر NEO PULSE HUB. أجب بالعربية باختصار وبصورة مفيدة عن المنتجات التقنية والمقارنات. لا تختلق أسعاراً أو توفراً غير موجود. عند عدم كفاية المعلومات وجّه المستخدم إلى صفحة المنتجات أو مكتشف الهدايا.';
+  const catalog = buildCatalogContext(loadProducts());
+  const systemInstruction = `أنت Neo Copilot، مساعد ذكي لمتجر NEO PULSE HUB. أجب بالعربية باختصار وبصورة مفيدة عن المنتجات التقنية والمقارنات. استخدم كتالوج المنتجات المرفق عند التوصية، ولا تختلق أسعاراً أو توفراً أو مواصفات غير موجودة. إذا لم تكفِ البيانات، صرّح بذلك ووجّه المستخدم إلى صفحة المنتجات أو مكتشف الهدايا. لا تنفذ شراءً أو نشرًا خارجيًا من تلقاء نفسك.\\n\\nالكتالوج الحالي بصيغة JSON:\\n${JSON.stringify(catalog)}`;
 
   if (GEMINI_API_KEY) {
     try {
