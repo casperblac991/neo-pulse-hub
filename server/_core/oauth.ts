@@ -50,7 +50,7 @@ export function registerOAuthRoutes(app: Express) {
           const subscribersPath = '/home/ubuntu/neo-pulse-hub/data/subscribers.json';
           const fs = require('fs');
           if (fs.existsSync(subscribersPath)) {
-            const data = JSON.parse(fs.readFileSync(subscribersPath, 'utf8'));
+            const data: { subscribers: Array<{ email?: string; [key: string]: unknown }> } = JSON.parse(fs.readFileSync(subscribersPath, 'utf8'));
             if (!data.subscribers.find(s => s.email === userInfo.email)) {
                 data.subscribers.push(JSON.parse(payload));
                 fs.writeFileSync(subscribersPath, JSON.stringify(data, null, 2));

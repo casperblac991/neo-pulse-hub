@@ -3,7 +3,7 @@ import { trpc } from "@/lib/trpc";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Loader2, Activity, FileText, Send, GitBranch, AlertCircle } from "lucide-react";
+import { Loader2, Activity, FileText, Send, GitBranch, AlertCircle, Sparkles } from "lucide-react";
 import { getLoginUrl } from "@/const";
 import { useState } from "react";
 
@@ -92,9 +92,14 @@ export default function Home() {
               <h1 className="text-3xl font-bold text-gradient">Neo Pulse Hub</h1>
               <p className="text-sm text-muted-foreground mt-1">AI Automation Dashboard</p>
             </div>
-            <div className="text-right">
+            <div className="flex items-center gap-3">
+              <a href="/copilot" className="inline-flex items-center gap-2 rounded-lg border border-primary/40 bg-primary/10 px-3 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/20">
+                <Sparkles className="h-4 w-4" /> Neo Copilot
+              </a>
+              <div className="text-right">
               <p className="text-sm text-muted-foreground">Welcome back</p>
-              <p className="font-semibold text-foreground">{user?.name || "User"}</p>
+                <p className="font-semibold text-foreground">{user?.name || "User"}</p>
+              </div>
             </div>
           </div>
         </div>

@@ -9,6 +9,7 @@ import Products from "./pages/Products";
 import Blogs from "./pages/Blogs";
 import Campaigns from "./pages/Campaigns";
 import Health from "./pages/Health";
+import Copilot from "./pages/Copilot";
 
 function Router() {
   return (
@@ -18,6 +19,7 @@ function Router() {
       <Route path="/blogs" component={Blogs} />
       <Route path="/campaigns" component={Campaigns} />
       <Route path="/health" component={Health} />
+      <Route path="/copilot" component={Copilot} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
