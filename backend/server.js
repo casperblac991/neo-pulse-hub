@@ -29,6 +29,53 @@ function productName(product) {
   return product?.name || '';
 }
 
+const CATEGORY_ALIASES = {
+  smartwatch: ['smartwatch', 'smart watch', 'ساعة ذكية', 'ساعات ذكية', 'ساعة رياضية', 'ساعات رياضية', 'watch'],
+  earbuds: ['earbuds', 'سماعات اذن', 'سماعات أذن', 'ايربودز', 'إيربودز', 'سماعات لاسلكية'],
+  headphones: ['headphones', 'سماعات رأس', 'سماعة رأس', 'عازلة للضوضاء'],
+  smartglasses: ['smart glasses', 'نظارات ذكية', 'نظارة ذكية', 'نظارات'],
+  smarthome: ['smart home', 'منزل ذكي', 'المنزل الذكي', 'مقبس ذكي', 'كاميرا منزلية'],
+  health: ['health', 'صحة', 'لياقة', 'رياضة', 'fitness', 'خاتم ذكي', 'سوار صحي'],
+  productivity: ['productivity', 'إنتاجية', 'لوحة مفاتيح', 'ماوس', 'طابعة'],
+};
+
+function normalizeArabic(value) {
+  return String(value || '')
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[\u064B-\u065F\u0670]/g, '')
+    .replace(/[إأآ]/g, 'ا')
+    .replace(/ة/g, 'ه')
+    .replace(/ى/g, 'ي')
+    .replace(/ـ/g, '')
+    .replace(/[^\p{L}\p{N}]+/gu, ' ')
+    .trim();
+}
+
+function requestedCategories(text) {
+  const normalized = normalizeArabic(text);
+  return Object.entries(CATEGORY_ALIASES)
+    .filter(([, aliases]) => aliases.some((alias) => normalized.includes(normalizeArabic(alias))))
+    .map(([category]) => category);
+}
+
+function productCategoryText(product) {
+  return normalizeArabic([
+    product.category,
+    product.category_ar,
+    product.category_en,
+    productName(product),
+    product.description?.ar,
+    JSON.stringify(product.specifications || {}),
+  ].filter(Boolean).join(' '));
+}
+
+function matchesRequestedCategory(product, categories) {
+  if (!categories.length) return true;
+  const text = productCategoryText(product);
+  return categories.some((category) => CATEGORY_ALIASES[category].some((alias) => text.includes(normalizeArabic(alias))));
+}
+
 function safeRecommendationCandidates(products, budget) {
   const maximum = Number.isFinite(Number(budget)) && Number(budget) > 0 ? Number(budget) * 1.1 : Infinity;
   return products
@@ -38,13 +85,20 @@ function safeRecommendationCandidates(products, budget) {
 }
 
 function localRecommendations(products, interests, budget) {
-  const terms = String(interests || '').toLowerCase().split(/[،,\s]+/).map((term) => term.trim()).filter((term) => term.length > 1);
+  const normalizedInput = normalizeArabic(interests);
+  const terms = normalizedInput.split(/\s+/).filter((term) => term.length > 1);
+  const categories = requestedCategories(normalizedInput);
+  const primaryCategories = categories.filter((category) => ['smartwatch', 'earbuds', 'headphones', 'smartglasses', 'smarthome', 'productivity'].includes(category));
+  const filterCategories = primaryCategories.length ? primaryCategories : categories;
   const candidates = safeRecommendationCandidates(products, budget);
-  return candidates
+  const categoryCandidates = candidates.filter((product) => matchesRequestedCategory(product, filterCategories));
+  const pool = categoryCandidates.length ? categoryCandidates : candidates;
+  return pool
     .map((product) => {
-      const searchable = `${productName(product)} ${product.name?.en || ''} ${product.category || ''} ${JSON.stringify(product.specifications || {})}`.toLowerCase();
+      const searchable = productCategoryText(product);
       const matches = terms.reduce((count, term) => count + (searchable.includes(term) ? 1 : 0), 0);
-      return { product, score: Number(product.rating || 0) * 10 + matches * 30 };
+      const categoryBonus = filterCategories.length && matchesRequestedCategory(product, filterCategories) ? 500 : 0;
+      return { product, score: categoryBonus + Number(product.rating || 0) * 10 + matches * 30 };
     })
     .sort((left, right) => right.score - left.score)
     .slice(0, 3)
@@ -90,11 +144,17 @@ async function geminiRecommendations({ query, recipient, interests, budget, prod
     if (!recommended.length) recommended = ids.map((id) => candidates.find((product) => product.id === id)).filter(Boolean);
     if (!recommended.length) {
       // بديل parsing آمن عندما يعيد النموذج أسماء منتجات بدلاً من المعرفات المطلوبة.
-      const normalizedText = text.toLowerCase();
-      recommended = candidates.filter((product) => normalizedText.includes(productName(product).toLowerCase())).slice(0, 3);
+      const normalizedText = normalizeArabic(text);
+      recommended = candidates.filter((product) => normalizedText.includes(normalizeArabic(productName(product)))).slice(0, 3);
     }
+    const categories = requestedCategories(`${query || ''} ${interests || ''}`);
+    const primaryCategories = categories.filter((category) => ['smartwatch', 'earbuds', 'headphones', 'smartglasses', 'smarthome', 'productivity'].includes(category));
+    const filterCategories = primaryCategories.length ? primaryCategories : categories;
+    const categorySafe = recommended.filter((product) => matchesRequestedCategory(product, filterCategories));
+    if (filterCategories.length && categorySafe.length) recommended = categorySafe;
+    if (filterCategories.length && !categorySafe.length) return null;
     if (!recommended.length) return null;
-    return { products: recommended, reason: String(result.reason || 'اختيرت المنتجات وفق الاهتمامات والميزانية.'), mode: 'ai' };
+    return { products: recommended, reason: String(result.reason || 'اختيرت المنتجات وفق الفئة والاهتمامات والميزانية.'), mode: 'ai' };
   } catch (error) {
     console.error(`Gemini recommendation failure: ${error.message}`);
     return null;
@@ -305,7 +365,7 @@ app.post('/api/ai/recommend', async (req, res) => {
   const aiResult = await geminiRecommendations({ query: normalizedQuery, recipient: String(recipient).slice(0, 160), interests: String(interests).slice(0, 300), budget, products });
   if (aiResult) return res.json({ success: true, data: aiResult.products, reason: aiResult.reason, recommendation_mode: aiResult.mode });
 
-  const fallback = localRecommendations(products, interests || normalizedQuery, budget);
+  const fallback = localRecommendations(products, `${normalizedQuery} ${interests}`, budget);
   return res.json({
     success: true,
     data: fallback,
