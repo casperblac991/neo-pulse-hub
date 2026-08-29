@@ -1,9 +1,12 @@
 name: Deploy to Production
+
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   deploy:
@@ -11,24 +14,25 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        
+        with:
+          fetch-depth: 0
+
       - name: Generate daily product article
-        run: |
-          python3 daily_article_generator.py || echo "No article needed today"
-      
+        run: python3 daily_article_generator.py || echo "No article needed today"
+
       - name: Commit any new content
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
           git add -A
-          git diff --staged --quiet || git commit -m "📝 Auto-update - $(date +'%Y-%m-%d %H:%M')"
-          git push || echo "Push skipped - no remote configured"
-      
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "📝 Auto-update - $(date +'%Y-%m-%d %H:%M') [skip ci]"
+            git push origin HEAD:main
+          fi
+
       - name: Verify deployment
         run: |
           echo "✅ Deployment ready"
-          echo "📁 Files committed to main branch"
           echo "🌐 Site: https://neo-pulse-hub.it.com"
-          echo ""
-          echo "Note: If using GitHub Pages, enable it in Settings > Pages"
-          echo "If using external hosting, configure webhook in your hosting provider"
