@@ -105,6 +105,21 @@ function localRecommendations(products, interests, budget) {
     .map((entry) => entry.product);
 }
 
+function parseGeminiJson(text) {
+  const cleaned = String(text || '').replace(/```(?:json)?/gi, '').trim();
+  const start = cleaned.indexOf('{');
+  const end = cleaned.lastIndexOf('}');
+  if (start < 0 || end <= start) throw new Error('Gemini response contains no JSON object');
+  const candidate = cleaned.slice(start, end + 1);
+  try {
+    return JSON.parse(candidate);
+  } catch (error) {
+    // Handle a common harmless formatting issue without accepting arbitrary text.
+    const repaired = candidate.replace(/,\s*([}\]])/g, '$1');
+    return JSON.parse(repaired);
+  }
+}
+
 async function geminiRecommendations({ query, recipient, interests, budget, products }) {
   if (!GEMINI_API_KEY) return null;
   const candidates = safeRecommendationCandidates(products, budget);
@@ -131,7 +146,7 @@ async function geminiRecommendations({ query, recipient, interests, budget, prod
     }
     const data = await response.json();
     const text = data?.candidates?.[0]?.content?.parts?.map((part) => part.text || '').join('') || '';
-    const result = JSON.parse(text.trim().replace(/^```json\s*|\s*```$/g, ''));
+    const result = parseGeminiJson(text);
     const indexes = Array.isArray(result.indexes)
       ? result.indexes.map((index) => Number(index)).filter((index) => Number.isInteger(index) && index >= 1 && index <= candidates.length).slice(0, 3)
       : [];
