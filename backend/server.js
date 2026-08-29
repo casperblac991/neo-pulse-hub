@@ -135,6 +135,7 @@ async function geminiRecommendations({ query, recipient, interests, budget, prod
   const prompt = `أنت مساعد توصيات هدايا عربي. اختر حتى 3 منتجات فقط من القائمة المرقمة. ملف الهدية: ${recipient || 'غير محدد'}. الاهتمامات: ${interests || 'غير محددة'}. الطلب: ${query}. الميزانية: ${budget || 'غير محددة'}. أعد JSON صالحاً فقط بالشكل {"indexes":[1,2,3],"reason":"سبب عربي قصير"}. استخدم أرقام index المعروضة حصراً ولا تختر منتجاً خارج القائمة. المنتجات: ${JSON.stringify(catalog)}`;
 
   try {
+    const startedAt = Date.now();
     const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(GEMINI_MODEL)}:generateContent?key=${encodeURIComponent(GEMINI_API_KEY)}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -146,7 +147,21 @@ async function geminiRecommendations({ query, recipient, interests, budget, prod
     }
     const data = await response.json();
     const text = data?.candidates?.[0]?.content?.parts?.map((part) => part.text || '').join('') || '';
-    const result = parseGeminiJson(text);
+    console.log(`Gemini recommendation response: ${Date.now() - startedAt}ms`);
+    let result;
+    try {
+      result = parseGeminiJson(text);
+    } catch (parseError) {
+      const normalizedText = normalizeArabic(text);
+      const mentioned = candidates
+        .filter((product) => normalizedText.includes(normalizeArabic(productName(product))))
+        .slice(0, 3);
+      console.warn(`Gemini JSON format fallback: ${parseError.message}; matched=${mentioned.length}`);
+      result = {
+        ids: mentioned.map((product) => product.id),
+        reason: 'تم استخراج الاختيارات من رد Gemini والتحقق منها مقابل الكتالوج.',
+      };
+    }
     const indexes = Array.isArray(result.indexes)
       ? result.indexes.map((index) => Number(index)).filter((index) => Number.isInteger(index) && index >= 1 && index <= candidates.length).slice(0, 3)
       : [];
