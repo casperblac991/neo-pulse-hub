@@ -19,7 +19,7 @@ jobs:
           
       - name: Generate daily article
         run: |
-          python3 daily_article_generator.py
+          python3 backend/daily_article_generator.py
           
       - name: Commit changes
         run: |

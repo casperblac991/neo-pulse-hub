@@ -1,47 +1,5 @@
 [
   {
-    "id": "AI-1777896006-328",
-    "name": {
-      "ar": "ساعة سامسونج جالكسي واتش 5",
-      "en": "Samsung Galaxy Watch 5"
-    },
-    "price": 279.99,
-    "rating": 4.5,
-    "category": "smartwatch",
-    "image": "images/products/5AjtpPKrp8e3.jpg",
-    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung%20Galaxy%20Watch%205&tag=neopulsehub-20",
-    "asin": "B0B5W8V2L3",
-    "gallery": [
-      "images/products/5AjtpPKrp8e3.jpg",
-      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+1",
-      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+2"
-    ],
-    "specifications": {
-      "ar": {
-        "الشاشة": "AMOLED 1.43 inch",
-        "البطارية": "حتى 14 يوم",
-        "المقاومة": "IP68 ضد الماء",
-        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
-      },
-      "en": {
-        "Display": "AMOLED 1.43 inch",
-        "Battery": "Up to 14 days",
-        "Waterproof": "IP68 Rated",
-        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
-      }
-    },
-    "global_prices": {
-      "USD": 279.99,
-      "SAR": 1049.96,
-      "AED": 1027.56,
-      "EUR": 257.59
-    },
-    "wholesale": {
-      "moq": 50,
-      "bulk_price": 223.99
-    }
-  },
-  {
     "id": "AI-1777896006-109",
     "name": {
       "ar": "أبل ووتش سيريز 9",
@@ -81,7 +39,53 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 319.2
-    }
+    },
+    "reviews": 0,
+    "updated_at": ""
+  },
+  {
+    "id": "AI-1777896006-328",
+    "name": {
+      "ar": "ساعة سامسونج جالكسي واتش 5",
+      "en": "Samsung Galaxy Watch 5"
+    },
+    "price": 279.99,
+    "rating": 4.5,
+    "category": "smartwatch",
+    "image": "images/products/5AjtpPKrp8e3.jpg",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung%20Galaxy%20Watch%205&tag=neopulsehub-20",
+    "asin": "B0B5W8V2L3",
+    "gallery": [
+      "images/products/5AjtpPKrp8e3.jpg",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+1",
+      "https://placehold.co/800x800/0a0d1a/60a5fa?text=smartwatch+View+2"
+    ],
+    "specifications": {
+      "ar": {
+        "الشاشة": "AMOLED 1.43 inch",
+        "البطارية": "حتى 14 يوم",
+        "المقاومة": "IP68 ضد الماء",
+        "المستشعرات": "نبضات القلب، SPO2، تتبع النوم"
+      },
+      "en": {
+        "Display": "AMOLED 1.43 inch",
+        "Battery": "Up to 14 days",
+        "Waterproof": "IP68 Rated",
+        "Sensors": "Heart Rate, SPO2, Sleep Tracking"
+      }
+    },
+    "global_prices": {
+      "USD": 279.99,
+      "SAR": 1049.96,
+      "AED": 1027.56,
+      "EUR": 257.59
+    },
+    "wholesale": {
+      "moq": 50,
+      "bulk_price": 223.99
+    },
+    "reviews": 0,
+    "updated_at": ""
   },
   {
     "id": "AI-1777896009-367",
@@ -123,7 +127,9 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 199.2
-    }
+    },
+    "reviews": 0,
+    "updated_at": ""
   },
   {
     "id": "AI-1777896009-508",
@@ -165,7 +171,9 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 223.2
-    }
+    },
+    "reviews": 0,
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0005",
@@ -176,7 +184,7 @@
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
     "category_en": "Smart Watches",
-    "price": 799,
+    "price": 799.0,
     "original_price": 899,
     "discount": 11,
     "rating": 4.9,
@@ -240,7 +248,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 639.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0006",
@@ -251,7 +260,7 @@
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
     "category_en": "Smart Watches",
-    "price": 329,
+    "price": 329.0,
     "original_price": 399,
     "discount": 17,
     "rating": 4.7,
@@ -315,7 +324,8 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 263.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0007",
@@ -326,7 +336,7 @@
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
     "category_en": "Smart Watches",
-    "price": 899,
+    "price": 899.0,
     "original_price": 999,
     "discount": 10,
     "rating": 4.8,
@@ -390,7 +400,8 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 719.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0008",
@@ -401,7 +412,7 @@
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
     "category_en": "Smart Watches",
-    "price": 249,
+    "price": 249.0,
     "original_price": 299,
     "discount": 16,
     "rating": 4.5,
@@ -465,7 +476,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 199.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0009",
@@ -476,7 +488,7 @@
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
     "category_en": "Smart Watches",
-    "price": 179,
+    "price": 179.0,
     "original_price": 219,
     "discount": 18,
     "rating": 4.6,
@@ -540,7 +552,8 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 143.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0010",
@@ -551,7 +564,7 @@
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
     "category_en": "Smart Watches",
-    "price": 249,
+    "price": 249.0,
     "original_price": 299,
     "discount": 16,
     "rating": 4.4,
@@ -615,7 +628,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 199.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0011",
@@ -626,7 +640,7 @@
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
     "category_en": "Smart Watches",
-    "price": 229,
+    "price": 229.0,
     "original_price": 279,
     "discount": 17,
     "rating": 4.6,
@@ -690,7 +704,8 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 183.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0012",
@@ -701,7 +716,7 @@
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
     "category_en": "Smart Watches",
-    "price": 299,
+    "price": 299.0,
     "original_price": 349,
     "discount": 14,
     "rating": 4.5,
@@ -765,7 +780,8 @@
     "wholesale": {
       "moq": 100,
       "bulk_price": 239.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0013",
@@ -776,7 +792,7 @@
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
     "category_en": "Smart Watches",
-    "price": 249,
+    "price": 249.0,
     "original_price": 299,
     "discount": 16,
     "rating": 4.7,
@@ -840,7 +856,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 199.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0014",
@@ -851,7 +868,7 @@
     "category": "smartwatch",
     "category_ar": "ساعات ذكية",
     "category_en": "Smart Watches",
-    "price": 249,
+    "price": 249.0,
     "original_price": 299,
     "discount": 16,
     "rating": 4.6,
@@ -915,7 +932,8 @@
     "wholesale": {
       "moq": 100,
       "bulk_price": 199.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0015",
@@ -926,7 +944,7 @@
     "category": "earbuds",
     "category_ar": "سماعات لاسلكية",
     "category_en": "Wireless Earbuds",
-    "price": 249,
+    "price": 249.0,
     "original_price": 279,
     "discount": 10,
     "rating": 4.9,
@@ -990,7 +1008,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 199.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0016",
@@ -1001,7 +1020,7 @@
     "category": "earbuds",
     "category_ar": "سماعات لاسلكية",
     "category_en": "Wireless Earbuds",
-    "price": 189,
+    "price": 189.0,
     "original_price": 229,
     "discount": 17,
     "rating": 4.7,
@@ -1065,7 +1084,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 151.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0017",
@@ -1076,7 +1096,7 @@
     "category": "earbuds",
     "category_ar": "سماعات لاسلكية",
     "category_en": "Wireless Earbuds",
-    "price": 299,
+    "price": 299.0,
     "original_price": 349,
     "discount": 14,
     "rating": 4.8,
@@ -1140,7 +1160,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 239.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0018",
@@ -1151,7 +1172,7 @@
     "category": "earbuds",
     "category_ar": "سماعات لاسلكية",
     "category_en": "Wireless Earbuds",
-    "price": 299,
+    "price": 299.0,
     "original_price": 329,
     "discount": 9,
     "rating": 4.7,
@@ -1215,7 +1236,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 239.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0019",
@@ -1226,7 +1248,7 @@
     "category": "earbuds",
     "category_ar": "سماعات لاسلكية",
     "category_en": "Wireless Earbuds",
-    "price": 179,
+    "price": 179.0,
     "original_price": 229,
     "discount": 21,
     "rating": 4.6,
@@ -1290,7 +1312,8 @@
     "wholesale": {
       "moq": 100,
       "bulk_price": 143.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0020",
@@ -1301,7 +1324,7 @@
     "category": "earbuds",
     "category_ar": "سماعات لاسلكية",
     "category_en": "Wireless Earbuds",
-    "price": 79,
+    "price": 79.0,
     "original_price": 99,
     "discount": 20,
     "rating": 4.5,
@@ -1365,7 +1388,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 63.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0021",
@@ -1376,7 +1400,7 @@
     "category": "earbuds",
     "category_ar": "سماعات لاسلكية",
     "category_en": "Wireless Earbuds",
-    "price": 349,
+    "price": 349.0,
     "original_price": 399,
     "discount": 12,
     "rating": 4.8,
@@ -1440,7 +1464,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 279.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0022",
@@ -1451,7 +1476,7 @@
     "category": "earbuds",
     "category_ar": "سماعات لاسلكية",
     "category_en": "Wireless Earbuds",
-    "price": 349,
+    "price": 349.0,
     "original_price": 399,
     "discount": 12,
     "rating": 4.6,
@@ -1515,7 +1540,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 279.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0023",
@@ -1526,7 +1552,7 @@
     "category": "earbuds",
     "category_ar": "سماعات لاسلكية",
     "category_en": "Wireless Earbuds",
-    "price": 199,
+    "price": 199.0,
     "original_price": 249,
     "discount": 20,
     "rating": 4.6,
@@ -1590,7 +1616,8 @@
     "wholesale": {
       "moq": 100,
       "bulk_price": 159.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0024",
@@ -1601,7 +1628,7 @@
     "category": "earbuds",
     "category_ar": "سماعات لاسلكية",
     "category_en": "Wireless Earbuds",
-    "price": 149,
+    "price": 149.0,
     "original_price": 179,
     "discount": 16,
     "rating": 4.5,
@@ -1665,7 +1692,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 119.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0025",
@@ -1676,7 +1704,7 @@
     "category": "headphones",
     "category_ar": "سماعات رأس",
     "category_en": "Headphones",
-    "price": 399,
+    "price": 399.0,
     "original_price": 449,
     "discount": 11,
     "rating": 4.9,
@@ -1740,7 +1768,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 319.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0026",
@@ -1751,7 +1780,7 @@
     "category": "headphones",
     "category_ar": "سماعات رأس",
     "category_en": "Headphones",
-    "price": 429,
+    "price": 429.0,
     "original_price": 479,
     "discount": 10,
     "rating": 4.8,
@@ -1815,7 +1844,8 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 343.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0027",
@@ -1826,7 +1856,7 @@
     "category": "headphones",
     "category_ar": "سماعات رأس",
     "category_en": "Headphones",
-    "price": 549,
+    "price": 549.0,
     "original_price": 599,
     "discount": 8,
     "rating": 4.7,
@@ -1890,7 +1920,8 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 439.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0028",
@@ -1901,7 +1932,7 @@
     "category": "headphones",
     "category_ar": "سماعات رأس",
     "category_en": "Headphones",
-    "price": 349,
+    "price": 349.0,
     "original_price": 399,
     "discount": 12,
     "rating": 4.8,
@@ -1965,7 +1996,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 279.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0029",
@@ -1976,7 +2008,7 @@
     "category": "headphones",
     "category_ar": "سماعات رأس",
     "category_en": "Headphones",
-    "price": 149,
+    "price": 149.0,
     "original_price": 179,
     "discount": 16,
     "rating": 4.7,
@@ -2040,7 +2072,8 @@
     "wholesale": {
       "moq": 100,
       "bulk_price": 119.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0030",
@@ -2051,7 +2084,7 @@
     "category": "headphones",
     "category_ar": "سماعات رأس",
     "category_en": "Headphones",
-    "price": 299,
+    "price": 299.0,
     "original_price": 349,
     "discount": 14,
     "rating": 4.6,
@@ -2115,7 +2148,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 239.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0031",
@@ -2126,7 +2160,7 @@
     "category": "headphones",
     "category_ar": "سماعات رأس",
     "category_en": "Headphones",
-    "price": 279,
+    "price": 279.0,
     "original_price": 329,
     "discount": 15,
     "rating": 4.5,
@@ -2190,7 +2224,8 @@
     "wholesale": {
       "moq": 100,
       "bulk_price": 223.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0032",
@@ -2201,7 +2236,7 @@
     "category": "headphones",
     "category_ar": "سماعات رأس",
     "category_en": "Headphones",
-    "price": 399,
+    "price": 399.0,
     "original_price": 449,
     "discount": 11,
     "rating": 4.7,
@@ -2265,7 +2300,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 319.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0033",
@@ -2276,7 +2312,7 @@
     "category": "headphones",
     "category_ar": "سماعات رأس",
     "category_en": "Headphones",
-    "price": 99,
+    "price": 99.0,
     "original_price": 119,
     "discount": 16,
     "rating": 4.6,
@@ -2340,7 +2376,8 @@
     "wholesale": {
       "moq": 100,
       "bulk_price": 79.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0034",
@@ -2351,7 +2388,7 @@
     "category": "headphones",
     "category_ar": "سماعات رأس",
     "category_en": "Headphones",
-    "price": 99,
+    "price": 99.0,
     "original_price": 119,
     "discount": 16,
     "rating": 4.5,
@@ -2415,7 +2452,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 79.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0035",
@@ -2426,7 +2464,7 @@
     "category": "smart-home",
     "category_ar": "المنزل الذكي",
     "category_en": "Smart Home",
-    "price": 49,
+    "price": 49.0,
     "original_price": 59,
     "discount": 16,
     "rating": 4.7,
@@ -2490,7 +2528,8 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 39.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0036",
@@ -2501,7 +2540,7 @@
     "category": "smart-home",
     "category_ar": "المنزل الذكي",
     "category_en": "Smart Home",
-    "price": 99,
+    "price": 99.0,
     "original_price": 119,
     "discount": 16,
     "rating": 4.6,
@@ -2565,7 +2604,8 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 79.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0037",
@@ -2576,7 +2616,7 @@
     "category": "smart-home",
     "category_ar": "المنزل الذكي",
     "category_en": "Smart Home",
-    "price": 199,
+    "price": 199.0,
     "original_price": 249,
     "discount": 20,
     "rating": 4.5,
@@ -2640,7 +2680,8 @@
     "wholesale": {
       "moq": 100,
       "bulk_price": 159.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0038",
@@ -2651,7 +2692,7 @@
     "category": "smart-home",
     "category_ar": "المنزل الذكي",
     "category_en": "Smart Home",
-    "price": 199,
+    "price": 199.0,
     "original_price": 249,
     "discount": 20,
     "rating": 4.6,
@@ -2715,7 +2756,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 159.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0039",
@@ -2726,7 +2768,7 @@
     "category": "smart-home",
     "category_ar": "المنزل الذكي",
     "category_en": "Smart Home",
-    "price": 29,
+    "price": 29.0,
     "original_price": 39,
     "discount": 25,
     "rating": 4.6,
@@ -2790,7 +2832,8 @@
     "wholesale": {
       "moq": 100,
       "bulk_price": 23.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0040",
@@ -2801,7 +2844,7 @@
     "category": "smart-home",
     "category_ar": "المنزل الذكي",
     "category_en": "Smart Home",
-    "price": 199,
+    "price": 199.0,
     "original_price": 249,
     "discount": 20,
     "rating": 4.8,
@@ -2865,7 +2908,8 @@
     "wholesale": {
       "moq": 100,
       "bulk_price": 159.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0041",
@@ -2876,7 +2920,7 @@
     "category": "smart-home",
     "category_ar": "المنزل الذكي",
     "category_en": "Smart Home",
-    "price": 249,
+    "price": 249.0,
     "original_price": 299,
     "discount": 16,
     "rating": 4.7,
@@ -2940,7 +2984,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 199.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0042",
@@ -2951,7 +2996,7 @@
     "category": "smart-home",
     "category_ar": "المنزل الذكي",
     "category_en": "Smart Home",
-    "price": 229,
+    "price": 229.0,
     "original_price": 279,
     "discount": 17,
     "rating": 4.5,
@@ -3015,7 +3060,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 183.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0043",
@@ -3026,7 +3072,7 @@
     "category": "smart-home",
     "category_ar": "المنزل الذكي",
     "category_en": "Smart Home",
-    "price": 39,
+    "price": 39.0,
     "original_price": 49,
     "discount": 20,
     "rating": 4.4,
@@ -3090,7 +3136,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 31.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0044",
@@ -3101,7 +3148,7 @@
     "category": "smart-home",
     "category_ar": "المنزل الذكي",
     "category_en": "Smart Home",
-    "price": 499,
+    "price": 499.0,
     "original_price": 599,
     "discount": 16,
     "rating": 4.6,
@@ -3165,7 +3212,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 399.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0045",
@@ -3176,7 +3224,7 @@
     "category": "health",
     "category_ar": "الصحة الذكية",
     "category_en": "Smart Health",
-    "price": 129,
+    "price": 129.0,
     "original_price": 159,
     "discount": 18,
     "rating": 4.7,
@@ -3240,7 +3288,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 103.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0046",
@@ -3251,7 +3300,7 @@
     "category": "health",
     "category_ar": "الصحة الذكية",
     "category_en": "Smart Health",
-    "price": 279,
+    "price": 279.0,
     "original_price": 329,
     "discount": 15,
     "rating": 4.5,
@@ -3315,7 +3364,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 223.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0047",
@@ -3326,7 +3376,7 @@
     "category": "health",
     "category_ar": "الصحة الذكية",
     "category_en": "Smart Health",
-    "price": 159,
+    "price": 159.0,
     "original_price": 199,
     "discount": 20,
     "rating": 4.8,
@@ -3390,7 +3440,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 127.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0048",
@@ -3401,7 +3452,7 @@
     "category": "health",
     "category_ar": "الصحة الذكية",
     "category_en": "Smart Health",
-    "price": 399,
+    "price": 399.0,
     "original_price": 499,
     "discount": 20,
     "rating": 4.6,
@@ -3465,7 +3516,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 319.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0049",
@@ -3476,7 +3528,7 @@
     "category": "health",
     "category_ar": "الصحة الذكية",
     "category_en": "Smart Health",
-    "price": 199,
+    "price": 199.0,
     "original_price": 249,
     "discount": 20,
     "rating": 4.7,
@@ -3540,7 +3592,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 159.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0050",
@@ -3551,7 +3604,7 @@
     "category": "health",
     "category_ar": "الصحة الذكية",
     "category_en": "Smart Health",
-    "price": 299,
+    "price": 299.0,
     "original_price": 349,
     "discount": 14,
     "rating": 4.8,
@@ -3615,7 +3668,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 239.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0051",
@@ -3626,7 +3680,7 @@
     "category": "health",
     "category_ar": "الصحة الذكية",
     "category_en": "Smart Health",
-    "price": 59,
+    "price": 59.0,
     "original_price": 79,
     "discount": 25,
     "rating": 4.4,
@@ -3690,7 +3744,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 47.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0052",
@@ -3701,7 +3756,7 @@
     "category": "health",
     "category_ar": "الصحة الذكية",
     "category_en": "Smart Health",
-    "price": 499,
+    "price": 499.0,
     "original_price": 599,
     "discount": 16,
     "rating": 4.6,
@@ -3765,7 +3820,8 @@
     "wholesale": {
       "moq": 100,
       "bulk_price": 399.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0053",
@@ -3776,7 +3832,7 @@
     "category": "health",
     "category_ar": "الصحة الذكية",
     "category_en": "Smart Health",
-    "price": 99,
+    "price": 99.0,
     "original_price": 129,
     "discount": 23,
     "rating": 4.7,
@@ -3840,7 +3896,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 79.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0054",
@@ -3851,7 +3908,7 @@
     "category": "health",
     "category_ar": "الصحة الذكية",
     "category_en": "Smart Health",
-    "price": 39,
+    "price": 39.0,
     "original_price": 49,
     "discount": 20,
     "rating": 4.5,
@@ -3915,7 +3972,8 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 31.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0055",
@@ -3926,7 +3984,7 @@
     "category": "productivity",
     "category_ar": "إنتاجية",
     "category_en": "Productivity",
-    "price": 1099,
+    "price": 1099.0,
     "original_price": 1199,
     "discount": 8,
     "rating": 4.9,
@@ -3990,7 +4048,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 879.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0056",
@@ -4001,7 +4060,7 @@
     "category": "productivity",
     "category_ar": "إنتاجية",
     "category_en": "Productivity",
-    "price": 1299,
+    "price": 1299.0,
     "original_price": 1499,
     "discount": 13,
     "rating": 4.7,
@@ -4065,7 +4124,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 1039.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0057",
@@ -4076,7 +4136,7 @@
     "category": "productivity",
     "category_ar": "إنتاجية",
     "category_en": "Productivity",
-    "price": 1199,
+    "price": 1199.0,
     "original_price": 1399,
     "discount": 14,
     "rating": 4.6,
@@ -4140,7 +4200,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 959.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0058",
@@ -4151,7 +4212,7 @@
     "category": "productivity",
     "category_ar": "إنتاجية",
     "category_en": "Productivity",
-    "price": 1499,
+    "price": 1499.0,
     "original_price": 1699,
     "discount": 11,
     "rating": 4.8,
@@ -4215,7 +4276,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 1199.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0059",
@@ -4226,7 +4288,7 @@
     "category": "productivity",
     "category_ar": "إنتاجية",
     "category_en": "Productivity",
-    "price": 899,
+    "price": 899.0,
     "original_price": 999,
     "discount": 10,
     "rating": 4.6,
@@ -4290,7 +4352,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 719.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0060",
@@ -4301,7 +4364,7 @@
     "category": "productivity",
     "category_ar": "إنتاجية",
     "category_en": "Productivity",
-    "price": 799,
+    "price": 799.0,
     "original_price": 899,
     "discount": 11,
     "rating": 4.8,
@@ -4365,7 +4428,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 639.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0061",
@@ -4376,7 +4440,7 @@
     "category": "productivity",
     "category_ar": "إنتاجية",
     "category_en": "Productivity",
-    "price": 599,
+    "price": 599.0,
     "original_price": 699,
     "discount": 14,
     "rating": 4.7,
@@ -4440,7 +4504,8 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 479.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0062",
@@ -4451,7 +4516,7 @@
     "category": "productivity",
     "category_ar": "إنتاجية",
     "category_en": "Productivity",
-    "price": 799,
+    "price": 799.0,
     "original_price": 899,
     "discount": 11,
     "rating": 4.6,
@@ -4515,7 +4580,8 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 639.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0063",
@@ -4526,7 +4592,7 @@
     "category": "productivity",
     "category_ar": "إنتاجية",
     "category_en": "Productivity",
-    "price": 129,
+    "price": 129.0,
     "original_price": 149,
     "discount": 13,
     "rating": 4.8,
@@ -4590,7 +4656,8 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 103.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0064",
@@ -4601,7 +4668,7 @@
     "category": "productivity",
     "category_ar": "إنتاجية",
     "category_en": "Productivity",
-    "price": 99,
+    "price": 99.0,
     "original_price": 119,
     "discount": 16,
     "rating": 4.9,
@@ -4665,7 +4732,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 79.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0065",
@@ -4676,7 +4744,7 @@
     "category": "gaming",
     "category_ar": "ألعاب وترفيه",
     "category_en": "Gaming & Entertainment",
-    "price": 499,
+    "price": 499.0,
     "original_price": 559,
     "discount": 10,
     "rating": 4.9,
@@ -4740,7 +4808,8 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 399.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0066",
@@ -4751,7 +4820,7 @@
     "category": "gaming",
     "category_ar": "ألعاب وترفيه",
     "category_en": "Gaming & Entertainment",
-    "price": 499,
+    "price": 499.0,
     "original_price": 559,
     "discount": 10,
     "rating": 4.8,
@@ -4815,7 +4884,8 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 399.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0067",
@@ -4826,7 +4896,7 @@
     "category": "gaming",
     "category_ar": "ألعاب وترفيه",
     "category_en": "Gaming & Entertainment",
-    "price": 349,
+    "price": 349.0,
     "original_price": 399,
     "discount": 12,
     "rating": 4.8,
@@ -4890,7 +4960,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 279.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0068",
@@ -4901,7 +4972,7 @@
     "category": "gaming",
     "category_ar": "ألعاب وترفيه",
     "category_en": "Gaming & Entertainment",
-    "price": 499,
+    "price": 499.0,
     "original_price": 599,
     "discount": 16,
     "rating": 4.7,
@@ -4965,7 +5036,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 399.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0069",
@@ -4976,7 +5048,7 @@
     "category": "gaming",
     "category_ar": "ألعاب وترفيه",
     "category_en": "Gaming & Entertainment",
-    "price": 549,
+    "price": 549.0,
     "original_price": 649,
     "discount": 15,
     "rating": 4.8,
@@ -5040,7 +5112,8 @@
     "wholesale": {
       "moq": 100,
       "bulk_price": 439.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0070",
@@ -5051,7 +5124,7 @@
     "category": "gaming",
     "category_ar": "ألعاب وترفيه",
     "category_en": "Gaming & Entertainment",
-    "price": 599,
+    "price": 599.0,
     "original_price": 699,
     "discount": 14,
     "rating": 4.6,
@@ -5115,7 +5188,8 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 479.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0071",
@@ -5126,7 +5200,7 @@
     "category": "gaming",
     "category_ar": "ألعاب وترفيه",
     "category_en": "Gaming & Entertainment",
-    "price": 699,
+    "price": 699.0,
     "original_price": 799,
     "discount": 12,
     "rating": 4.7,
@@ -5190,7 +5264,8 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 559.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0072",
@@ -5201,7 +5276,7 @@
     "category": "gaming",
     "category_ar": "ألعاب وترفيه",
     "category_en": "Gaming & Entertainment",
-    "price": 299,
+    "price": 299.0,
     "original_price": 349,
     "discount": 14,
     "rating": 4.7,
@@ -5265,7 +5340,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 239.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0073",
@@ -5276,7 +5352,7 @@
     "category": "gaming",
     "category_ar": "ألعاب وترفيه",
     "category_en": "Gaming & Entertainment",
-    "price": 199,
+    "price": 199.0,
     "original_price": 249,
     "discount": 20,
     "rating": 4.9,
@@ -5340,7 +5416,8 @@
     "wholesale": {
       "moq": 100,
       "bulk_price": 159.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0074",
@@ -5351,7 +5428,7 @@
     "category": "gaming",
     "category_ar": "ألعاب وترفيه",
     "category_en": "Gaming & Entertainment",
-    "price": 169,
+    "price": 169.0,
     "original_price": 199,
     "discount": 15,
     "rating": 4.7,
@@ -5415,7 +5492,8 @@
     "wholesale": {
       "moq": 100,
       "bulk_price": 135.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0075",
@@ -5426,7 +5504,7 @@
     "category": "cameras",
     "category_ar": "كاميرات",
     "category_en": "Cameras",
-    "price": 2499,
+    "price": 2499.0,
     "original_price": 2799,
     "discount": 10,
     "rating": 4.9,
@@ -5490,7 +5568,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 1999.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0076",
@@ -5501,7 +5580,7 @@
     "category": "cameras",
     "category_ar": "كاميرات",
     "category_en": "Cameras",
-    "price": 2499,
+    "price": 2499.0,
     "original_price": 2799,
     "discount": 10,
     "rating": 4.8,
@@ -5565,7 +5644,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 1999.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0077",
@@ -5576,7 +5656,7 @@
     "category": "cameras",
     "category_ar": "كاميرات",
     "category_en": "Cameras",
-    "price": 1699,
+    "price": 1699.0,
     "original_price": 1899,
     "discount": 10,
     "rating": 4.8,
@@ -5640,7 +5720,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 1359.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0078",
@@ -5651,7 +5732,7 @@
     "category": "cameras",
     "category_ar": "كاميرات",
     "category_en": "Cameras",
-    "price": 3999,
+    "price": 3999.0,
     "original_price": 4499,
     "discount": 11,
     "rating": 4.9,
@@ -5715,7 +5796,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 3199.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0079",
@@ -5726,7 +5808,7 @@
     "category": "cameras",
     "category_ar": "كاميرات",
     "category_en": "Cameras",
-    "price": 399,
+    "price": 399.0,
     "original_price": 449,
     "discount": 11,
     "rating": 4.7,
@@ -5790,7 +5872,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 319.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0080",
@@ -5801,7 +5884,7 @@
     "category": "cameras",
     "category_ar": "كاميرات",
     "category_en": "Cameras",
-    "price": 499,
+    "price": 499.0,
     "original_price": 599,
     "discount": 16,
     "rating": 4.8,
@@ -5865,7 +5948,8 @@
     "wholesale": {
       "moq": 100,
       "bulk_price": 399.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0081",
@@ -5876,7 +5960,7 @@
     "category": "cameras",
     "category_ar": "كاميرات",
     "category_en": "Cameras",
-    "price": 499,
+    "price": 499.0,
     "original_price": 599,
     "discount": 16,
     "rating": 4.7,
@@ -5940,7 +6024,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 399.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0082",
@@ -5951,7 +6036,7 @@
     "category": "cameras",
     "category_ar": "كاميرات",
     "category_en": "Cameras",
-    "price": 199,
+    "price": 199.0,
     "original_price": 249,
     "discount": 20,
     "rating": 4.7,
@@ -6015,7 +6100,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 159.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0083",
@@ -6026,7 +6112,7 @@
     "category": "cameras",
     "category_ar": "كاميرات",
     "category_en": "Cameras",
-    "price": 59,
+    "price": 59.0,
     "original_price": 79,
     "discount": 25,
     "rating": 4.5,
@@ -6090,7 +6176,8 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 47.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0084",
@@ -6101,7 +6188,7 @@
     "category": "cameras",
     "category_ar": "كاميرات",
     "category_en": "Cameras",
-    "price": 179,
+    "price": 179.0,
     "original_price": 229,
     "discount": 21,
     "rating": 4.6,
@@ -6165,7 +6252,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 143.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0085",
@@ -6176,7 +6264,7 @@
     "category": "smart-glasses",
     "category_ar": "نظارات ذكية",
     "category_en": "Smart Glasses",
-    "price": 299,
+    "price": 299.0,
     "original_price": 329,
     "discount": 9,
     "rating": 4.5,
@@ -6240,7 +6328,8 @@
     "wholesale": {
       "moq": 100,
       "bulk_price": 239.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0086",
@@ -6251,7 +6340,7 @@
     "category": "accessories",
     "category_ar": "إكسسوارات",
     "category_en": "Accessories",
-    "price": 89,
+    "price": 89.0,
     "original_price": 109,
     "discount": 18,
     "rating": 4.6,
@@ -6315,7 +6404,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 71.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0087",
@@ -6326,7 +6416,7 @@
     "category": "accessories",
     "category_ar": "إكسسوارات",
     "category_en": "Accessories",
-    "price": 39,
+    "price": 39.0,
     "original_price": 49,
     "discount": 20,
     "rating": 4.7,
@@ -6390,7 +6480,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 31.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0088",
@@ -6401,7 +6492,7 @@
     "category": "accessories",
     "category_ar": "إكسسوارات",
     "category_en": "Accessories",
-    "price": 59,
+    "price": 59.0,
     "original_price": 79,
     "discount": 25,
     "rating": 4.8,
@@ -6465,7 +6556,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 47.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0089",
@@ -6476,7 +6568,7 @@
     "category": "accessories",
     "category_ar": "إكسسوارات",
     "category_en": "Accessories",
-    "price": 29,
+    "price": 29.0,
     "original_price": 39,
     "discount": 25,
     "rating": 4.5,
@@ -6540,7 +6632,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 23.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0090",
@@ -6551,7 +6644,7 @@
     "category": "accessories",
     "category_ar": "إكسسوارات",
     "category_en": "Accessories",
-    "price": 19,
+    "price": 19.0,
     "original_price": 29,
     "discount": 34,
     "rating": 4.4,
@@ -6615,7 +6708,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 15.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0091",
@@ -6626,7 +6720,7 @@
     "category": "accessories",
     "category_ar": "إكسسوارات",
     "category_en": "Accessories",
-    "price": 15,
+    "price": 15.0,
     "original_price": 19,
     "discount": 21,
     "rating": 4.7,
@@ -6690,7 +6784,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 12.0
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0092",
@@ -6701,7 +6796,7 @@
     "category": "accessories",
     "category_ar": "إكسسوارات",
     "category_en": "Accessories",
-    "price": 35,
+    "price": 35.0,
     "original_price": 45,
     "discount": 22,
     "rating": 4.6,
@@ -6765,7 +6860,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 28.0
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0093",
@@ -6776,7 +6872,7 @@
     "category": "accessories",
     "category_ar": "إكسسوارات",
     "category_en": "Accessories",
-    "price": 19,
+    "price": 19.0,
     "original_price": 29,
     "discount": 34,
     "rating": 4.5,
@@ -6840,7 +6936,8 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 15.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0094",
@@ -6851,7 +6948,7 @@
     "category": "accessories",
     "category_ar": "إكسسوارات",
     "category_en": "Accessories",
-    "price": 12,
+    "price": 12.0,
     "original_price": 19,
     "discount": 36,
     "rating": 4.4,
@@ -6915,7 +7012,8 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 9.6
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0095",
@@ -6926,7 +7024,7 @@
     "category": "kitchen",
     "category_ar": "مطبخ ذكي",
     "category_en": "Smart Kitchen",
-    "price": 149,
+    "price": 149.0,
     "original_price": 179,
     "discount": 16,
     "rating": 4.7,
@@ -6990,7 +7088,8 @@
     "wholesale": {
       "moq": 100,
       "bulk_price": 119.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0096",
@@ -7001,7 +7100,7 @@
     "category": "kitchen",
     "category_ar": "مطبخ ذكي",
     "category_en": "Smart Kitchen",
-    "price": 699,
+    "price": 699.0,
     "original_price": 799,
     "discount": 12,
     "rating": 4.8,
@@ -7065,7 +7164,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 559.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0097",
@@ -7076,7 +7176,7 @@
     "category": "kitchen",
     "category_ar": "مطبخ ذكي",
     "category_en": "Smart Kitchen",
-    "price": 99,
+    "price": 99.0,
     "original_price": 129,
     "discount": 23,
     "rating": 4.6,
@@ -7140,7 +7240,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 79.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0098",
@@ -7151,7 +7252,7 @@
     "category": "kitchen",
     "category_ar": "مطبخ ذكي",
     "category_en": "Smart Kitchen",
-    "price": 129,
+    "price": 129.0,
     "original_price": 159,
     "discount": 18,
     "rating": 4.7,
@@ -7215,7 +7316,8 @@
     "wholesale": {
       "moq": 100,
       "bulk_price": 103.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0099",
@@ -7226,7 +7328,7 @@
     "category": "kitchen",
     "category_ar": "مطبخ ذكي",
     "category_en": "Smart Kitchen",
-    "price": 49,
+    "price": 49.0,
     "original_price": 69,
     "discount": 28,
     "rating": 4.5,
@@ -7290,7 +7392,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 39.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0100",
@@ -7301,7 +7404,7 @@
     "category": "kitchen",
     "category_ar": "مطبخ ذكي",
     "category_en": "Smart Kitchen",
-    "price": 39,
+    "price": 39.0,
     "original_price": 49,
     "discount": 20,
     "rating": 4.6,
@@ -7365,7 +7468,8 @@
     "wholesale": {
       "moq": 100,
       "bulk_price": 31.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0101",
@@ -7376,7 +7480,7 @@
     "category": "kitchen",
     "category_ar": "مطبخ ذكي",
     "category_en": "Smart Kitchen",
-    "price": 59,
+    "price": 59.0,
     "original_price": 79,
     "discount": 25,
     "rating": 4.5,
@@ -7440,7 +7544,8 @@
     "wholesale": {
       "moq": 100,
       "bulk_price": 47.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0102",
@@ -7451,7 +7556,7 @@
     "category": "kitchen",
     "category_ar": "مطبخ ذكي",
     "category_en": "Smart Kitchen",
-    "price": 29,
+    "price": 29.0,
     "original_price": 39,
     "discount": 25,
     "rating": 4.4,
@@ -7515,7 +7620,8 @@
     "wholesale": {
       "moq": 100,
       "bulk_price": 23.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0103",
@@ -7526,7 +7632,7 @@
     "category": "kitchen",
     "category_ar": "مطبخ ذكي",
     "category_en": "Smart Kitchen",
-    "price": 35,
+    "price": 35.0,
     "original_price": 45,
     "discount": 22,
     "rating": 4.5,
@@ -7590,7 +7696,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 28.0
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0104",
@@ -7601,7 +7708,7 @@
     "category": "kitchen",
     "category_ar": "مطبخ ذكي",
     "category_en": "Smart Kitchen",
-    "price": 2499,
+    "price": 2499.0,
     "original_price": 2999,
     "discount": 16,
     "rating": 4.6,
@@ -7665,7 +7772,8 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 1999.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0105",
@@ -7676,7 +7784,7 @@
     "category": "sports",
     "category_ar": "رياضة ولياقة",
     "category_en": "Sports & Fitness",
-    "price": 329,
+    "price": 329.0,
     "original_price": 399,
     "discount": 17,
     "rating": 4.7,
@@ -7740,7 +7848,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 263.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0106",
@@ -7751,7 +7860,7 @@
     "category": "sports",
     "category_ar": "رياضة ولياقة",
     "category_en": "Sports & Fitness",
-    "price": 199,
+    "price": 199.0,
     "original_price": 249,
     "discount": 20,
     "rating": 4.8,
@@ -7815,7 +7924,8 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 159.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0107",
@@ -7826,7 +7936,7 @@
     "category": "sports",
     "category_ar": "رياضة ولياقة",
     "category_en": "Sports & Fitness",
-    "price": 699,
+    "price": 699.0,
     "original_price": 799,
     "discount": 12,
     "rating": 4.6,
@@ -7890,7 +8000,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 559.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0108",
@@ -7901,7 +8012,7 @@
     "category": "sports",
     "category_ar": "رياضة ولياقة",
     "category_en": "Sports & Fitness",
-    "price": 2495,
+    "price": 2495.0,
     "original_price": 2995,
     "discount": 16,
     "rating": 4.7,
@@ -7965,7 +8076,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 1996.0
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0109",
@@ -7976,7 +8088,7 @@
     "category": "sports",
     "category_ar": "رياضة ولياقة",
     "category_en": "Sports & Fitness",
-    "price": 599,
+    "price": 599.0,
     "original_price": 699,
     "discount": 14,
     "rating": 4.8,
@@ -8040,7 +8152,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 479.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0110",
@@ -8051,7 +8164,7 @@
     "category": "sports",
     "category_ar": "رياضة ولياقة",
     "category_en": "Sports & Fitness",
-    "price": 39,
+    "price": 39.0,
     "original_price": 49,
     "discount": 20,
     "rating": 4.5,
@@ -8115,7 +8228,8 @@
     "wholesale": {
       "moq": 100,
       "bulk_price": 31.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0111",
@@ -8126,7 +8240,7 @@
     "category": "sports",
     "category_ar": "رياضة ولياقة",
     "category_en": "Sports & Fitness",
-    "price": 49,
+    "price": 49.0,
     "original_price": 69,
     "discount": 28,
     "rating": 4.7,
@@ -8190,7 +8304,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 39.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0112",
@@ -8201,7 +8316,7 @@
     "category": "sports",
     "category_ar": "رياضة ولياقة",
     "category_en": "Sports & Fitness",
-    "price": 79,
+    "price": 79.0,
     "original_price": 99,
     "discount": 20,
     "rating": 4.6,
@@ -8265,7 +8380,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 63.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0113",
@@ -8276,7 +8392,7 @@
     "category": "sports",
     "category_ar": "رياضة ولياقة",
     "category_en": "Sports & Fitness",
-    "price": 89,
+    "price": 89.0,
     "original_price": 109,
     "discount": 18,
     "rating": 4.6,
@@ -8340,7 +8456,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 71.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0114",
@@ -8351,7 +8468,7 @@
     "category": "sports",
     "category_ar": "رياضة ولياقة",
     "category_en": "Sports & Fitness",
-    "price": 35,
+    "price": 35.0,
     "original_price": 45,
     "discount": 22,
     "rating": 4.5,
@@ -8415,7 +8532,8 @@
     "wholesale": {
       "moq": 100,
       "bulk_price": 28.0
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0115",
@@ -8426,7 +8544,7 @@
     "category": "car",
     "category_ar": "إلكترونيات السيارات",
     "category_en": "Car Electronics",
-    "price": 45,
+    "price": 45.0,
     "original_price": 59,
     "discount": 23,
     "rating": 4.6,
@@ -8490,7 +8608,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 36.0
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0116",
@@ -8501,7 +8620,7 @@
     "category": "car",
     "category_ar": "إلكترونيات السيارات",
     "category_en": "Car Electronics",
-    "price": 199,
+    "price": 199.0,
     "original_price": 249,
     "discount": 20,
     "rating": 4.5,
@@ -8565,7 +8684,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 159.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0117",
@@ -8576,7 +8696,7 @@
     "category": "car",
     "category_ar": "إلكترونيات السيارات",
     "category_en": "Car Electronics",
-    "price": 149,
+    "price": 149.0,
     "original_price": 199,
     "discount": 25,
     "rating": 4.7,
@@ -8640,7 +8760,8 @@
     "wholesale": {
       "moq": 100,
       "bulk_price": 119.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0118",
@@ -8651,7 +8772,7 @@
     "category": "car",
     "category_ar": "إلكترونيات السيارات",
     "category_en": "Car Electronics",
-    "price": 299,
+    "price": 299.0,
     "original_price": 399,
     "discount": 25,
     "rating": 4.4,
@@ -8715,7 +8836,8 @@
     "wholesale": {
       "moq": 100,
       "bulk_price": 239.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0119",
@@ -8726,7 +8848,7 @@
     "category": "car",
     "category_ar": "إلكترونيات السيارات",
     "category_en": "Car Electronics",
-    "price": 89,
+    "price": 89.0,
     "original_price": 109,
     "discount": 18,
     "rating": 4.6,
@@ -8790,7 +8912,8 @@
     "wholesale": {
       "moq": 100,
       "bulk_price": 71.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0120",
@@ -8801,7 +8924,7 @@
     "category": "car",
     "category_ar": "إلكترونيات السيارات",
     "category_en": "Car Electronics",
-    "price": 49,
+    "price": 49.0,
     "original_price": 69,
     "discount": 28,
     "rating": 4.4,
@@ -8865,7 +8988,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 39.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0121",
@@ -8876,7 +9000,7 @@
     "category": "car",
     "category_ar": "إلكترونيات السيارات",
     "category_en": "Car Electronics",
-    "price": 25,
+    "price": 25.0,
     "original_price": 35,
     "discount": 28,
     "rating": 4.7,
@@ -8940,7 +9064,8 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 20.0
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0122",
@@ -8951,7 +9076,7 @@
     "category": "car",
     "category_ar": "إلكترونيات السيارات",
     "category_en": "Car Electronics",
-    "price": 79,
+    "price": 79.0,
     "original_price": 99,
     "discount": 20,
     "rating": 4.5,
@@ -9015,7 +9140,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 63.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0123",
@@ -9026,7 +9152,7 @@
     "category": "car",
     "category_ar": "إلكترونيات السيارات",
     "category_en": "Car Electronics",
-    "price": 29,
+    "price": 29.0,
     "original_price": 39,
     "discount": 25,
     "rating": 4.4,
@@ -9090,7 +9216,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 23.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0124",
@@ -9101,7 +9228,7 @@
     "category": "car",
     "category_ar": "إلكترونيات السيارات",
     "category_en": "Car Electronics",
-    "price": 89,
+    "price": 89.0,
     "original_price": 119,
     "discount": 25,
     "rating": 4.5,
@@ -9165,7 +9292,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 71.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0125",
@@ -9176,7 +9304,7 @@
     "category": "kids",
     "category_ar": "أطفال وتقنية",
     "category_en": "Kids Tech",
-    "price": 99,
+    "price": 99.0,
     "original_price": 129,
     "discount": 23,
     "rating": 4.6,
@@ -9240,7 +9368,8 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 79.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0126",
@@ -9251,7 +9380,7 @@
     "category": "kids",
     "category_ar": "أطفال وتقنية",
     "category_en": "Kids Tech",
-    "price": 149,
+    "price": 149.0,
     "original_price": 189,
     "discount": 21,
     "rating": 4.5,
@@ -9315,7 +9444,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 119.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0127",
@@ -9326,7 +9456,7 @@
     "category": "kids",
     "category_ar": "أطفال وتقنية",
     "category_en": "Kids Tech",
-    "price": 299,
+    "price": 299.0,
     "original_price": 349,
     "discount": 14,
     "rating": 4.7,
@@ -9390,7 +9520,8 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 239.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0128",
@@ -9401,7 +9532,7 @@
     "category": "kids",
     "category_ar": "أطفال وتقنية",
     "category_en": "Kids Tech",
-    "price": 44,
+    "price": 44.0,
     "original_price": 59,
     "discount": 25,
     "rating": 4.6,
@@ -9465,7 +9596,8 @@
     "wholesale": {
       "moq": 50,
       "bulk_price": 35.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0129",
@@ -9476,7 +9608,7 @@
     "category": "kids",
     "category_ar": "أطفال وتقنية",
     "category_en": "Kids Tech",
-    "price": 329,
+    "price": 329.0,
     "original_price": 399,
     "discount": 17,
     "rating": 4.8,
@@ -9540,7 +9672,8 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 263.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0130",
@@ -9551,7 +9684,7 @@
     "category": "kids",
     "category_ar": "أطفال وتقنية",
     "category_en": "Kids Tech",
-    "price": 149,
+    "price": 149.0,
     "original_price": 179,
     "discount": 16,
     "rating": 4.5,
@@ -9615,7 +9748,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 119.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0131",
@@ -9626,7 +9760,7 @@
     "category": "kids",
     "category_ar": "أطفال وتقنية",
     "category_en": "Kids Tech",
-    "price": 59,
+    "price": 59.0,
     "original_price": 79,
     "discount": 25,
     "rating": 4.4,
@@ -9690,7 +9824,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 47.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0132",
@@ -9701,7 +9836,7 @@
     "category": "kids",
     "category_ar": "أطفال وتقنية",
     "category_en": "Kids Tech",
-    "price": 29,
+    "price": 29.0,
     "original_price": 39,
     "discount": 25,
     "rating": 4.5,
@@ -9765,7 +9900,8 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 23.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0133",
@@ -9776,7 +9912,7 @@
     "category": "kids",
     "category_ar": "أطفال وتقنية",
     "category_en": "Kids Tech",
-    "price": 79,
+    "price": 79.0,
     "original_price": 99,
     "discount": 20,
     "rating": 4.6,
@@ -9840,7 +9976,8 @@
     "wholesale": {
       "moq": 5,
       "bulk_price": 63.2
-    }
+    },
+    "updated_at": ""
   },
   {
     "id": "NPH-EXP-0134",
@@ -9851,7 +9988,7 @@
     "category": "kids",
     "category_ar": "أطفال وتقنية",
     "category_en": "Kids Tech",
-    "price": 149,
+    "price": 149.0,
     "original_price": 189,
     "discount": 21,
     "rating": 4.7,
@@ -9915,6 +10052,7 @@
     "wholesale": {
       "moq": 10,
       "bulk_price": 119.2
-    }
+    },
+    "updated_at": ""
   }
 ]

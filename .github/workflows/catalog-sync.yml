@@ -1,0 +1,51 @@
+name: Catalog validation and six-hour sync
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "products.json"
+      - "scripts/normalize_catalog.py"
+      - "backend/ai_engine.py"
+      - "backend/ai_orchestrator.py"
+      - "backend/test_ai_engine.py"
+
+permissions:
+  contents: write
+
+jobs:
+  validate-and-normalize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Normalize and validate canonical catalog
+        run: python3 scripts/normalize_catalog.py --write
+
+      - name: Run AI engine tests
+        run: python3 -m unittest discover -s backend -p 'test_ai_engine.py' -v
+
+      - name: Check for unsafe mock product fetchers in the production path
+        run: |
+          ! grep -R "Math.random\|mock implementation" -n scripts/normalize_catalog.py backend/ai_orchestrator.py
+
+      - name: Commit catalog changes when needed
+        run: |
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
+          git add products.json
+          if git diff --staged --quiet; then
+            echo "Catalog is already normalized"
+          else
+            git commit -m "chore: normalize canonical product catalog [skip ci]"
+            git push origin HEAD:main
+          fi

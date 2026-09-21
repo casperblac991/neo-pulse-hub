@@ -219,12 +219,11 @@ async def handle_message(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     
     # استخدام محرك الذكاء الاصطناعي الموحد
     try:
-        from ai_engine import answer_customer
+        from ai_orchestrator import customer_reply
         products = load_products()
-        context = "\n".join([f"- {p.get('name', {}).get('ar','')} (${p.get('price',0)})" for p in products[:5]])
         history = "\n".join([f"{h['role']}: {h['text']}" for h in get_history(uid)])
-        
-        answer = answer_customer(text, products_context=context, user_history=history)
+
+        answer = customer_reply(text, history=history, products=products)
     except Exception as e:
         log.error(f"AI Engine error: {e}")
         answer = ask_ai(build_prompt(text, uid)) # Fallback to local ask_ai

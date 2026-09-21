@@ -17,8 +17,16 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Generate daily product article
-        run: python3 daily_article_generator.py || echo "No article needed today"
+      - name: Validate canonical catalog and AI engine
+        run: |
+          python3 scripts/normalize_catalog.py --check
+          python3 -m py_compile backend/ai_engine.py backend/ai_orchestrator.py
+          python3 -m unittest discover -s backend -p 'test_ai_engine.py' -v
+
+      - name: Build React application
+        run: |
+          npm exec --yes pnpm@10.15.1 -- install --frozen-lockfile
+          npm exec --yes pnpm@10.15.1 -- run build
 
       - name: Commit any new content
         run: |
@@ -34,5 +42,7 @@ jobs:
 
       - name: Verify deployment
         run: |
-          echo "✅ Deployment ready"
+          test -f CNAME
+          test "$(cat CNAME)" = "neo-pulse-hub.it.com"
+          echo "✅ GitHub Pages deployment source validated"
           echo "🌐 Site: https://neo-pulse-hub.it.com"
