@@ -12,6 +12,7 @@ on:
       - "backend/ai_engine.py"
       - "backend/ai_orchestrator.py"
       - "backend/test_ai_engine.py"
+      - "scripts/fetch-products.js"
 
 permissions:
   contents: write
@@ -36,7 +37,11 @@ jobs:
 
       - name: Check for unsafe mock product fetchers in the production path
         run: |
-          ! grep -R "Math.random\|mock implementation" -n scripts/normalize_catalog.py backend/ai_orchestrator.py
+          ! grep -R "Math.random\|mock implementation" -n scripts/normalize_catalog.py scripts/fetch-products.js backend/ai_orchestrator.py
+
+      - name: Check repository for leaked Telegram tokens
+        run: |
+          ! git grep -n -E 'TELEGRAM_BOT_TOKEN=[0-9]+:|[0-9]{8,}:AA[A-Za-z0-9_-]+' -- ':!logs/*'
 
       - name: Commit catalog changes when needed
         run: |

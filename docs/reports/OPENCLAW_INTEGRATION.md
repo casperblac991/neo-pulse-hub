@@ -119,7 +119,7 @@ This document outlines the complete integration of **OpenClaw** (AI Gateway) wit
 ## Environment Variables Required
 
 ```bash
-TELEGRAM_BOT_TOKEN=8660142682:AAHTnr1x_QeH8BMGGaUz4gBBcogbzj4z_5w
+TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
 GROQ_API_KEY=your_groq_api_key
 OPENAI_API_KEY=your_openai_api_key
 AMAZON_AFFILIATE_TAG=neopulsehub-20

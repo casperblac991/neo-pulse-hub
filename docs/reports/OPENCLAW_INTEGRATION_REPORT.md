@@ -235,7 +235,7 @@ Status: ✅ WORKING
 ### Test 3: Social Media Publishing ⚠️ PARTIAL
 
 ```
-Command: TELEGRAM_BOT_TOKEN="..." node scripts/publish-social.js
+Command: TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
 Result: Campaign message sent, product messages failed (channel not found)
 Status: ⚠️ REQUIRES VALID TELEGRAM CHANNEL
 ```
@@ -331,7 +331,7 @@ nano .env
 ### Step 4: Start OpenClaw Gateway
 
 ```bash
-TELEGRAM_BOT_TOKEN="your_token" npx openclaw gateway
+TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
 ```
 
 ### Step 5: Register Cron Jobs

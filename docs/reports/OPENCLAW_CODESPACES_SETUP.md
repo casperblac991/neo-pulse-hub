@@ -37,7 +37,7 @@ AMAZON_SECRET_KEY=...
 AMAZON_ASSOCIATE_TAG=...
 
 # Telegram Configuration
-TELEGRAM_BOT_TOKEN=...
+TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
 TELEGRAM_CHANNEL_ID=...
 
 # GitHub Configuration
@@ -115,7 +115,7 @@ ls -la
 2. Get your bot token
 3. Add to `.env`:
    ```
-   TELEGRAM_BOT_TOKEN=your-bot-token
+   TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
    TELEGRAM_CHANNEL_ID=your-channel-id
    ```
 

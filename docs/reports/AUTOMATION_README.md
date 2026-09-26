@@ -48,7 +48,7 @@ Create or update `.env` file:
 ```bash
 GROQ_API_KEY=your_groq_api_key
 OPENAI_API_KEY=your_openai_api_key
-TELEGRAM_BOT_TOKEN=8660142682:AAHTnr1x_QeH8BMGGaUz4gBBcogbzj4z_5w
+TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
 TELEGRAM_CHANNEL_ID=@noepulsehub_bot
 ADMIN_USER_ID=your_telegram_user_id
 AMAZON_AFFILIATE_TAG=neopulsehub-20
@@ -59,7 +59,7 @@ GITHUB_TOKEN=your_github_token
 
 ```bash
 cd /home/ubuntu/neo-pulse-hub
-TELEGRAM_BOT_TOKEN="8660142682:AAHTnr1x_QeH8BMGGaUz4gBBcogbzj4z_5w" npx openclaw gateway
+TELEGRAM_BOT_TOKEN="your_telegram_bot_token_here" npx openclaw gateway
 ```
 
 The gateway will start on port 18789.
@@ -231,7 +231,7 @@ node scripts/generate-content.js
 
 ```bash
 cd /home/ubuntu/neo-pulse-hub
-TELEGRAM_BOT_TOKEN="8660142682:AAHTnr1x_QeH8BMGGaUz4gBBcogbzj4z_5w" \
+TELEGRAM_BOT_TOKEN="your_telegram_bot_token_here" \
 TELEGRAM_CHANNEL_ID="@noepulsehub_bot" \
 node scripts/publish-social.js
 ```
@@ -255,7 +255,7 @@ lsof -i :18789
 kill -9 <PID>
 
 # Start gateway again
-TELEGRAM_BOT_TOKEN="..." npx openclaw gateway
+TELEGRAM_BOT_TOKEN="your_telegram_bot_token_here" npx openclaw gateway
 ```
 
 ### Products Not Fetching

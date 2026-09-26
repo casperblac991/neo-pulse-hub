@@ -174,7 +174,7 @@ pip install schedule requests openai
 # تعيين متغيرات البيئة
 export OPENAI_API_KEY="your-api-key"
 export AMAZON_AFFILIATE_TAG="your-tag-20"
-export TELEGRAM_BOT_TOKEN="your-token"
+export TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
 export TELEGRAM_CHANNEL_ID="your-channel-id"
 ```
 

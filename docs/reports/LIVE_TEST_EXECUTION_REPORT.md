@@ -223,7 +223,7 @@ Sony WH-1000XM5
 ```bash
 export OPENAI_API_KEY="your-key"
 export AMAZON_AFFILIATE_TAG="your-tag-20"
-export TELEGRAM_BOT_TOKEN="your-token" (اختياري)
+export TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
 ```
 
 2. **تشغيل المجدول:**

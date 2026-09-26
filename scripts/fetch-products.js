@@ -10,10 +10,10 @@ const fs = require('fs');
 const path = require('path');
 const { OpenAI } = require('openai');
 
-// Initialize OpenAI client
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
+// The fetcher is opt-in. Never generate random/mock commercial products.
+const openai = process.env.OPENAI_API_KEY
+  ? new OpenAI({ apiKey: process.env.OPENAI_API_KEY })
+  : null;
 
 // Configuration
 const CONFIG = {
@@ -39,37 +39,34 @@ function ensureDirectories() {
   });
 }
 
-// Mock Amazon API call (replace with real API integration)
 async function fetchFromAmazon(category) {
-  console.log(`[Fetcher] Fetching products from category: ${category}`);
-
-  // This is a mock implementation
-  // In production, integrate with Amazon Product Advertising API
-  const mockProducts = [
-    {
-      id: `PROD-${Date.now()}-1`,
-      title: `Premium ${category} Device`,
-      price: Math.floor(Math.random() * 500) + 50,
-      rating: (Math.random() * 2 + 3).toFixed(1),
-      reviews: Math.floor(Math.random() * 5000) + 100,
-      image: `https://via.placeholder.com/300?text=${category}`,
-      url: `https://amazon.com/s?k=${category}&tag=${CONFIG.affiliateTag}`,
-      category: category,
-      features: [
-        'High quality',
-        'Durable',
-        'Fast shipping',
-        'Great value',
-      ],
+  const endpoint = process.env.AMAZON_PRODUCTS_API_URL;
+  if (!endpoint) {
+    console.warn('[Fetcher] AMAZON_PRODUCTS_API_URL is not configured; no products fetched.');
+    return [];
+  }
+  const url = new URL(endpoint);
+  url.searchParams.set('category', category);
+  const response = await fetch(url, {
+    headers: {
+      Accept: 'application/json',
+      ...(process.env.AMAZON_PRODUCTS_API_KEY
+        ? { Authorization: `Bearer ${process.env.AMAZON_PRODUCTS_API_KEY}` }
+        : {}),
     },
-  ];
-
-  return mockProducts;
+  });
+  if (!response.ok) throw new Error(`Product source returned HTTP ${response.status}`);
+  const payload = await response.json();
+  const products = Array.isArray(payload) ? payload : payload.products;
+  if (!Array.isArray(products)) throw new Error('Product source must return an array or { products: [] }');
+  return products.filter((product) => product && product.id && product.title && product.price != null);
 }
 
 // Generate AI-powered product description
 async function generateProductDescription(product) {
   console.log(`[AI Generator] Generating description for: ${product.title}`);
+
+  if (!openai) return { en: '', ar: '' };
 
   const prompt = `
 Generate a comprehensive and engaging product description for an e-commerce store.
@@ -111,10 +108,7 @@ Format the response as JSON with keys: "en" and "ar"
     return JSON.parse(content);
   } catch (error) {
     console.error(`[Error] Failed to generate description:`, error.message);
-    return {
-      en: `${product.title} - Premium quality product at $${product.price}. Rated ${product.rating}/5 by ${product.reviews} customers.`,
-      ar: `${product.title} - منتج عالي الجودة بسعر $${product.price}. تقييم ${product.rating}/5 من ${product.reviews} عميل.`,
-    };
+    return { en: '', ar: '' };
   }
 }
 
