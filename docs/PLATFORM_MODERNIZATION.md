@@ -44,6 +44,7 @@ python3 scripts/normalize_catalog.py --write
 
 ```bash
 python3 -m py_compile backend/ai_engine.py backend/ai_orchestrator.py
+python3 -m pip install requests
 python3 -m unittest discover -s backend -p 'test_ai_engine.py' -v
 npm exec --yes pnpm@10.15.1 -- install --frozen-lockfile
 npm exec --yes pnpm@10.15.1 -- run build

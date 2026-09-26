@@ -17,6 +17,9 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Install Python test dependencies
+        run: python3 -m pip install --disable-pip-version-check requests
+
       - name: Validate canonical catalog and AI engine
         run: |
           python3 scripts/normalize_catalog.py --check

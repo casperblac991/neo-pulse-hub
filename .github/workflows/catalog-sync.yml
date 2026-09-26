@@ -29,6 +29,9 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Install Python test dependencies
+        run: python -m pip install --disable-pip-version-check requests
+
       - name: Normalize and validate canonical catalog
         run: python3 scripts/normalize_catalog.py --write
 
