@@ -36,6 +36,15 @@ async function startServer() {
   app.use(express.urlencoded({ limit: "100kb", extended: false, parameterLimit: 100 }));
   registerStorageProxy(app);
   registerOAuthRoutes(app);
+  app.get("/healthz", (_req, res) => {
+    res.status(200).json({
+      status: "ok",
+      service: "neo-pulse-hub",
+      environment: process.env.NODE_ENV || "development",
+      uptime: process.uptime(),
+      timestamp: new Date().toISOString(),
+    });
+  });
   // tRPC API
   app.use(
     "/api/trpc",

@@ -1,5 +1,7 @@
 import { COOKIE_NAME, ONE_YEAR_MS } from "@shared/const";
 import type { Express, Request, Response } from "express";
+import fs from "fs";
+import path from "path";
 import * as db from "../db";
 import { getSessionCookieOptions } from "./cookies";
 import { sdk } from "./sdk";
@@ -39,16 +41,14 @@ export function registerOAuthRoutes(app: Express) {
       // Sync to marketing list if email exists
       if (userInfo.email) {
         try {
-          const { execSync } = require('child_process');
           const payload = JSON.stringify({
             name: userInfo.name || 'User',
             email: userInfo.email,
             source: 'oauth_login',
             timestamp: new Date().toISOString()
           });
-          // Call the existing subscription logic via a small script or direct file write
-          const subscribersPath = '/home/ubuntu/neo-pulse-hub/data/subscribers.json';
-          const fs = require('fs');
+          // Local JSON sync is best-effort; production should use the database.
+          const subscribersPath = path.resolve(process.cwd(), 'data/subscribers.json');
           if (fs.existsSync(subscribersPath)) {
             const data: { subscribers: Array<{ email?: string; [key: string]: unknown }> } = JSON.parse(fs.readFileSync(subscribersPath, 'utf8'));
             if (!data.subscribers.find(s => s.email === userInfo.email)) {

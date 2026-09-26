@@ -68,6 +68,8 @@ STORE_RETURN_DAYS=30
 
 GitHub Pages is suitable for the public static storefront. It cannot run Express, MySQL, Telegram webhooks, or a persistent AI server. The React/Node application therefore requires a Node-capable host before it can replace the public static storefront at the domain.
 
+For the recommended Render deployment, DNS cutover, database, secrets, health checks, and Railway alternative, see [`docs/DEPLOY_NODE.md`](docs/DEPLOY_NODE.md).
+
 ## Data quality policy
 
 The project does not treat generated text as verified commercial data. Product prices, ratings, specifications, images, and affiliate URLs must come from a configured source. If no trusted source is available, the system uses a visible fallback or reports that the information is unavailable rather than inventing it.
