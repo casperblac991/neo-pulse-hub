@@ -8,7 +8,7 @@ import { registerStorageProxy } from "./storageProxy";
 import { appRouter } from "../routers";
 import { createContext } from "./context";
 import { serveStatic, setupVite } from "./vite";
-import { affiliateDisclosure, listAffiliatePrograms } from "../affiliate-registry";
+import { affiliateDisclosure, getPublicAffiliateStatus, listAffiliatePrograms } from "../affiliate-registry";
 
 function isPortAvailable(port: number): Promise<boolean> {
   return new Promise(resolve => {
@@ -51,6 +51,13 @@ async function startServer() {
       success: true,
       programs: listAffiliatePrograms(),
       disclosure: affiliateDisclosure,
+    });
+  });
+  app.get("/api/affiliate/status", (_req, res) => {
+    res.status(200).json({
+      success: true,
+      networks: getPublicAffiliateStatus(),
+      note: "Credential presence is reported without exposing secret values. Network activation still requires explicit approval.",
     });
   });
   // tRPC API

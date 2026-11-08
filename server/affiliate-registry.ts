@@ -111,6 +111,22 @@ export function getAffiliateReadiness() {
   }));
 }
 
+export function getPublicAffiliateStatus() {
+  const approved = new Set(
+    (process.env.AFFILIATE_APPROVED_NETWORKS || "")
+      .split(",")
+      .map(value => value.trim())
+      .filter(Boolean),
+  );
+  return programs.map(program => ({
+    id: program.id,
+    name: program.name,
+    status: approved.has(program.id) ? "approved" : program.status,
+    credentialConfigured: Boolean(process.env[environmentKeys[program.id]]),
+    markets: program.markets,
+  }));
+}
+
 export function buildAffiliateLink(network: string, destination: string): string | null {
   const program = getAffiliateProgram(network);
   if (!program || program.status !== "approved") return null;

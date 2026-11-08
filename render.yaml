@@ -31,3 +31,45 @@ services:
         sync: false
       - key: SITE_URL
         value: https://neo-pulse-hub.it.com
+      - key: AFFILIATE_APPROVED_NETWORKS
+        sync: false
+      - key: AMAZON_ASSOCIATE_TAG
+        sync: false
+      - key: AMAZON_PAAPI_ACCESS_KEY
+        sync: false
+      - key: AMAZON_PAAPI_SECRET_KEY
+        sync: false
+      - key: AMAZON_PAAPI_PARTNER_TAG
+        sync: false
+      - key: AMAZON_PAAPI_PARTNER_TYPE
+        value: Associates
+      - key: AMAZON_PAAPI_REGION
+        sync: false
+      - key: AMAZON_PAAPI_HOST
+        sync: false
+      - key: EBAY_CAMPAIGN_ID
+        sync: false
+      - key: EBAY_CLIENT_ID
+        sync: false
+      - key: EBAY_CLIENT_SECRET
+        sync: false
+      - key: AWIN_PUBLISHER_ID
+        sync: false
+      - key: AWIN_API_TOKEN
+        sync: false
+      - key: CJ_PUBLISHER_ID
+        sync: false
+      - key: CJ_API_TOKEN
+        sync: false
+      - key: IMPACT_PARTNER_ID
+        sync: false
+      - key: IMPACT_API_TOKEN
+        sync: false
+      - key: RAKUTEN_PUBLISHER_ID
+        sync: false
+      - key: RAKUTEN_API_TOKEN
+        sync: false
+      - key: ALIEXPRESS_PUBLISHER_ID
+        sync: false
+      - key: ALIEXPRESS_API_TOKEN
+        sync: false
