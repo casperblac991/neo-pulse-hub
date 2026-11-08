@@ -2,6 +2,7 @@ services:
   - type: web
     name: neo-pulse-hub
     runtime: node
+    rootDir: .
     buildCommand: npm exec --yes pnpm@10.15.1 -- install --frozen-lockfile && npm exec --yes pnpm@10.15.1 -- run build
     # Compatibility entry point for existing Render services configured with node server.js.
     # It imports the canonical production bundle from dist/index.js.
