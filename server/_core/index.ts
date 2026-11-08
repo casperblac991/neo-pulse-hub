@@ -30,6 +30,7 @@ async function findAvailablePort(startPort: number = 3000): Promise<number> {
 }
 
 async function startServer() {
+  console.log(`[neo-pulse] booting production server; PORT=${process.env.PORT || "3000"}`);
   const app = express();
   const server = createServer(app);
   // Keep API payloads bounded; binary uploads should use object storage directly.
