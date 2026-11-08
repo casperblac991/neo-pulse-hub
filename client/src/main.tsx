@@ -5,7 +5,7 @@ import { httpBatchLink, TRPCClientError } from "@trpc/client";
 import { createRoot } from "react-dom/client";
 import superjson from "superjson";
 import App from "./App";
-import { getLoginUrl } from "./const";
+import { getLoginUrl, isOAuthConfigured } from "./const";
 import "./index.css";
 
 const queryClient = new QueryClient();
@@ -18,7 +18,11 @@ const redirectToLoginIfUnauthorized = (error: unknown) => {
 
   if (!isUnauthorized) return;
 
-  window.location.href = getLoginUrl();
+  if (isOAuthConfigured()) {
+    window.location.href = getLoginUrl();
+  } else {
+    console.warn("[Auth] OAuth is not configured; keeping the user on the current page.");
+  }
 };
 
 queryClient.getQueryCache().subscribe(event => {
