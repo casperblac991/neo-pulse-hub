@@ -53,6 +53,9 @@ export default function Products() {
       </header>
 
       <main className="container space-y-6 py-8">
+        <p className="rounded-lg border border-primary/20 bg-primary/5 p-3 text-sm text-muted-foreground" role="note">
+          قد يحصل Neo Pulse Hub على عمولة عند إتمام عملية شراء مؤهلة عبر بعض الروابط. الدفع والشحن والضمان يتمون لدى المتجر الشريك.
+        </p>
         <section className="space-y-4" aria-label="خيارات البحث والتصفية">
           <div className="relative">
             <Search className="absolute right-3 top-3 h-4 w-4 text-muted-foreground" />

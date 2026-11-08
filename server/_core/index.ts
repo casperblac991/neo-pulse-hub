@@ -8,6 +8,7 @@ import { registerStorageProxy } from "./storageProxy";
 import { appRouter } from "../routers";
 import { createContext } from "./context";
 import { serveStatic, setupVite } from "./vite";
+import { affiliateDisclosure, listAffiliatePrograms } from "../affiliate-registry";
 
 function isPortAvailable(port: number): Promise<boolean> {
   return new Promise(resolve => {
@@ -43,6 +44,13 @@ async function startServer() {
       environment: process.env.NODE_ENV || "development",
       uptime: process.uptime(),
       timestamp: new Date().toISOString(),
+    });
+  });
+  app.get("/api/affiliate/programs", (_req, res) => {
+    res.status(200).json({
+      success: true,
+      programs: listAffiliatePrograms(),
+      disclosure: affiliateDisclosure,
     });
   });
   // tRPC API
