@@ -3,7 +3,9 @@ services:
     name: neo-pulse-hub
     runtime: node
     buildCommand: npm exec --yes pnpm@10.15.1 -- install --frozen-lockfile && npm exec --yes pnpm@10.15.1 -- run build
-    startCommand: node dist/index.js
+    # Compatibility entry point for existing Render services configured with node server.js.
+    # It imports the canonical production bundle from dist/index.js.
+    startCommand: node server.js
     healthCheckPath: /healthz
     envVars:
       - key: NODE_ENV
