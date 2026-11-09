@@ -61,6 +61,24 @@ async function startServer() {
       note: "Credential presence is reported without exposing secret values. Network activation still requires explicit approval.",
     });
   });
+  const siteUrl = (process.env.SITE_URL || "https://neo-pulse-hub.it.com").replace(/\/$/, "");
+  app.get("/robots.txt", (_req, res) => {
+    res.type("text/plain").send([
+      "User-agent: *",
+      "Allow: /",
+      "Disallow: /api/",
+      "Disallow: /copilot",
+      `Sitemap: ${siteUrl}/sitemap.xml`,
+      "",
+    ].join("\n"));
+  });
+  app.get("/sitemap.xml", (_req, res) => {
+    const publicRoutes = ["/", "/products", "/blogs", "/videos", "/affiliate-programs"];
+    const urls = publicRoutes
+      .map((route) => `  <url><loc>${siteUrl}${route}</loc><changefreq>${route === "/" ? "daily" : "weekly"}</changefreq><priority>${route === "/" ? "1.0" : "0.7"}</priority></url>`)
+      .join("\n");
+    res.type("application/xml").send(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>`);
+  });
   // tRPC API
   app.use(
     "/api/trpc",

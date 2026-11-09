@@ -70,10 +70,11 @@ export const appRouter = router({
   }),
 
   blogs: router({
-    all: protectedProcedure.query(async () => {
+    // Editorial content is public; publishing and administration stay protected.
+    all: publicProcedure.query(async () => {
       return await getAllBlogPosts();
     }),
-    byLanguage: protectedProcedure.input(z.enum(["EN", "AR"])).query(async ({ input }) => {
+    byLanguage: publicProcedure.input(z.enum(["EN", "AR"])).query(async ({ input }) => {
       return await getBlogPostsByLanguage(input);
     }),
   }),
