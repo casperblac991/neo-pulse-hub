@@ -81,9 +81,10 @@ async function startServer() {
     res.type("application/xml").send(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>`);
   });
   // Preserve the original catalog media paths used by products.json.
-  app.use("/images", express.static(path.join(process.cwd(), "images"), { maxAge: "1d" }));
+  const publishedAssets = path.join(import.meta.dirname, "public");
+  app.use("/images", express.static(path.join(publishedAssets, "images"), { maxAge: "1d" }));
   // Keep the original 52 HTML articles reachable while the new React library grows.
-  app.use("/legacy-blog", express.static(path.join(process.cwd(), "blog"), { maxAge: "1h" }));
+  app.use("/legacy-blog", express.static(path.join(publishedAssets, "legacy-blog"), { maxAge: "1h" }));
   // tRPC API
   app.use(
     "/api/trpc",

@@ -8,10 +8,16 @@ import { ENV } from './_core/env';
 let _db: ReturnType<typeof drizzle> | null = null;
 
 const projectRoot = process.cwd();
+const assetRoot = fs.existsSync(path.join(projectRoot, "products.json"))
+  ? projectRoot
+  : path.join(projectRoot, "dist", "public");
+const blogRoot = fs.existsSync(path.join(projectRoot, "blog"))
+  ? path.join(projectRoot, "blog")
+  : path.join(projectRoot, "dist", "public", "legacy-blog");
 
 function readLegacyProducts() {
   try {
-    const source = JSON.parse(fs.readFileSync(path.join(projectRoot, "products.json"), "utf8"));
+    const source = JSON.parse(fs.readFileSync(path.join(assetRoot, "products.json"), "utf8"));
     if (!Array.isArray(source)) return [];
     return source.map((item) => ({
       id: String(item.id),
@@ -38,7 +44,7 @@ function readLegacyProducts() {
 
 function readLegacyBlogs() {
   try {
-    const directory = path.join(projectRoot, "blog");
+    const directory = blogRoot;
     return fs.readdirSync(directory).filter((file) => file.endsWith(".md")).map((file) => {
       const raw = fs.readFileSync(path.join(directory, file), "utf8");
       const frontmatter = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
