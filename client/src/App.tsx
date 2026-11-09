@@ -12,12 +12,11 @@ import Health from "@/pages/Health";
 import Copilot from "@/pages/Copilot";
 import Videos from "@/pages/Videos";
 import AffiliatePrograms from "@/pages/AffiliatePrograms";
-import Landing from "@/pages/Landing";
 
 function Router() {
   return (
     <Switch>
-      <Route path="/" component={Landing} />
+      <Route path="/" component={Home} />
       <Route path="/dashboard" component={Home} />
       <Route path="/products" component={Products} />
       <Route path="/blogs" component={Blogs} />

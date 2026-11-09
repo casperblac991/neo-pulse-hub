@@ -2,7 +2,7 @@ import { trpc } from "@/lib/trpc";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { FileText, ChevronDown, Loader2 } from "lucide-react";
+import { ExternalLink, FileText, ChevronDown, Loader2 } from "lucide-react";
 import { useState, useMemo } from "react";
 import { Streamdown } from "streamdown";
 
@@ -27,6 +27,9 @@ export default function Blogs() {
         <div className="container py-6">
           <h1 className="text-3xl font-bold text-gradient">Blog Posts Library</h1>
           <p className="text-sm text-muted-foreground mt-1">View all AI-generated blog content</p>
+          <a href="/legacy-blog/ar/index.html" className="mt-3 inline-flex items-center gap-2 text-sm text-primary hover:underline">
+            فتح أرشيف المقالات القديم (52 مقالًا) <ExternalLink className="h-4 w-4" />
+          </a>
         </div>
       </div>
 
