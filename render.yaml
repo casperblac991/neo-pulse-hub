@@ -6,6 +6,9 @@ services:
     buildCommand: npm exec --yes pnpm@10.15.1 -- install --frozen-lockfile && npm exec --yes pnpm@10.15.1 -- run build
     startCommand: npm run start
     healthCheckPath: /healthz
+    domains:
+      - neo-pulse-hub.it.com
+      - www.neo-pulse-hub.it.com
     envVars:
       - key: NODE_ENV
         value: production
