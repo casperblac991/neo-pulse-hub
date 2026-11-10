@@ -5,6 +5,7 @@
 # Logs
 *.bak
 *.log
+logs/
 *.pyc
 *.swp
 .env
@@ -17,4 +18,3 @@ leads.json
 node_modules/
 package-lock.json
 !backend/package-lock.json
-pnpm-lock.yaml
