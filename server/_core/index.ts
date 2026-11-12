@@ -50,6 +50,10 @@ async function startServer() {
       timestamp: new Date().toISOString(),
     });
   });
+  app.get("/site-version.json", (_req, res) => {
+    res.setHeader("Cache-Control", "no-store");
+    res.status(200).json({ homeVersion: "2026.11.12.legacy-store-v1" });
+  });
   app.get("/api/affiliate/programs", (_req, res) => {
     res.status(200).json({
       success: true,

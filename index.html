@@ -710,7 +710,7 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
 
 const AMAZON_TAG = 'neopulsehub-20';
 const MANAGER_URL = 'https://neo-pulse-manager.onrender.com';
-const APP_VERSION = '2026.08.25.home-ai-v4';
+const APP_VERSION = '2026.11.12.legacy-store-v1';
 
 // يتحقق من ملف إصدار غير مخزّن مؤقتاً؛ عند وصول إصدار أحدث يعيد فتح الصفحة برابط مميز بالنسخة.
 async function synchronizeBuildVersion() {
@@ -899,14 +899,24 @@ function closeMenu() {
 }
 
 // Newsletter subscription
-function subscribeEmail() {
+async function subscribeEmail() {
   const email = document.getElementById('emailInput').value;
   if (!email || !email.includes('@')) {
     showToast(T[lang].subscribe_err, '❌');
     return;
   }
-  showToast(T[lang].subscribe_ok, '✅');
-  document.getElementById('emailInput').value = '';
+  try {
+    const response = await fetch('/api/subscribe', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, source: 'legacy-home-newsletter' }),
+    });
+    if (!response.ok) throw new Error('subscription failed');
+    showToast(T[lang].subscribe_ok, '✅');
+    document.getElementById('emailInput').value = '';
+  } catch (_) {
+    showToast(T[lang].subscribe_err, '❌');
+  }
 }
 
 // Toast notification
