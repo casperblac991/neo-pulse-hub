@@ -8,7 +8,7 @@
     "npm": ">=10.0.0"
   },
   "scripts": {
-    "build": "vite build && esbuild server/_core/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist && mkdir -p dist/public/images dist/public/legacy-blog && cp -R images/. dist/public/images/ && cp -R blog/. dist/public/legacy-blog/ && cp products.json dist/public/products.json",
+    "build": "vite build && esbuild server/_core/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist && mkdir -p dist/public/images dist/public/legacy-blog dist/public/blog dist/public/scripts dist/public/data && cp -R images/. dist/public/images/ && cp -R blog/. dist/public/legacy-blog/ && cp -R blog/. dist/public/blog/ && cp products.json dist/public/products.json && cp -f *.html dist/public/ && for f in auth-client.js catalog-page.js deals-page.js gift-recommender.js product-visuals.js; do cp -f scripts/$f dist/public/scripts/$f; done && cp -R data/. dist/public/data/",
     "start": "NODE_ENV=production node dist/index.js",
     "dev": "NODE_ENV=development tsx watch server/_core/index.ts",
     "check": "tsc --noEmit",
