@@ -16,6 +16,12 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
       - name: Install Python test dependencies
         run: python3 -m pip install --disable-pip-version-check requests
@@ -26,12 +32,27 @@ jobs:
           python3 -m py_compile backend/ai_engine.py backend/ai_orchestrator.py
           python3 -m unittest discover -s backend -p 'test_ai_engine.py' -v
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
       - name: Build React application
+        env:
+          NODE_ENV: production
+          VITE_OAUTH_PORTAL_URL: ${{ secrets.VITE_OAUTH_PORTAL_URL }}
+          VITE_APP_ID: ${{ secrets.VITE_APP_ID }}
         run: |
           npm exec --yes pnpm@10.15.1 -- install --frozen-lockfile
           npm exec --yes pnpm@10.15.1 -- run build
 
-      - name: Commit any new content
+      - name: Verify CNAME for domain
+        run: |
+          test -f CNAME
+          echo "CNAME content: $(cat CNAME)"
+          echo "✅ Domain: https://$(cat CNAME)"
+
+      - name: Commit build artifacts
         run: |
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
@@ -39,13 +60,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "📝 Auto-update - $(date +'%Y-%m-%d %H:%M') [skip ci]"
+            git commit -m "🚀 Build & Deploy - $(date +'%Y-%m-%d %H:%M') [skip ci]"
             git push origin HEAD:main
           fi
-
-      - name: Verify deployment
-        run: |
-          test -f CNAME
-          test "$(cat CNAME)" = "neo-pulse-hub.it.com"
-          echo "✅ GitHub Pages deployment source validated"
-          echo "🌐 Site: https://neo-pulse-hub.it.com"

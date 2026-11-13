@@ -1,9 +1,13 @@
 name: Daily Article Generator
+
 on:
   schedule:
     # يعمل يومياً الساعة 8:00 صباحاً (UTC)
     - cron: '0 8 * * *'
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   generate-article:
@@ -11,16 +15,25 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          
+
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --disable-pip-version-check requests python-dotenv
+
       - name: Generate daily article
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SITE_URL: https://neo-pulse-hub.it.com
         run: |
           python3 backend/daily_article_generator.py
-          
+
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"

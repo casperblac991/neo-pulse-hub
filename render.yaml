@@ -12,18 +12,21 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
+      - key: PORT
+        value: 10000
+      - key: SITE_URL
+        value: https://neo-pulse-hub.it.com
+      # Database
       - key: DATABASE_URL
+        sync: false
+      # AI Keys
+      - key: GEMINI_API_KEY
         sync: false
       - key: OPENAI_API_KEY
         sync: false
       - key: GROQ_API_KEY
         sync: false
-      - key: GEMINI_API_KEY
-        sync: false
-      - key: API_SECRET
-        sync: false
-      - key: ADMIN_API_KEY
-        sync: false
+      # Auth
       - key: JWT_SECRET
         sync: false
       - key: OAUTH_SERVER_URL
@@ -32,8 +35,7 @@ services:
         sync: false
       - key: VITE_APP_ID
         sync: false
-      - key: SITE_URL
-        value: https://neo-pulse-hub.it.com
+      # Affiliate Networks
       - key: AFFILIATE_APPROVED_NETWORKS
         sync: false
       - key: AMAZON_ASSOCIATE_TAG
@@ -63,16 +65,4 @@ services:
       - key: CJ_PUBLISHER_ID
         sync: false
       - key: CJ_API_TOKEN
-        sync: false
-      - key: IMPACT_PARTNER_ID
-        sync: false
-      - key: IMPACT_API_TOKEN
-        sync: false
-      - key: RAKUTEN_PUBLISHER_ID
-        sync: false
-      - key: RAKUTEN_API_TOKEN
-        sync: false
-      - key: ALIEXPRESS_PUBLISHER_ID
-        sync: false
-      - key: ALIEXPRESS_API_TOKEN
         sync: false

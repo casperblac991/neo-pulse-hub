@@ -1,20 +1,31 @@
 
 # Build
-# Dependencies
-# IDE
-# Logs
-*.bak
-*.log
-*.pyc
-*.swp
-.env
-.idea/
-.pyc
-.vscode/
-__pycache__/
 dist/
-leads.json
+.manus-logs/
+
+# Dependencies
 node_modules/
-package-lock.json
+
+# IDE
+.idea/
+.vscode/
+
+# Logs - NEVER commit logs
+*.log
+*.bak
+*.swp
+logs/
+scheduler.log
+
+# Python
+*.pyc
+.pyc
+__pycache__/
+
+# Environment
+.env
+leads.json
+
+# Lock files (pnpm-lock.yaml is tracked intentionally for Render/CI)
+# package-lock.json (root) is NOT needed
 !backend/package-lock.json
-pnpm-lock.yaml
