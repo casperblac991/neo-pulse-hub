@@ -5,14 +5,16 @@ Automatically injects into every HTML page at deploy time:
   1. Affiliate disclosure notice (required by Amazon Associates ToS / FTC)
   2. Self-hosted affiliate click tracker (scripts/affiliate-tracker.js)
 Safe: idempotent (skips already-injected pages), no external calls, no secrets.
+
+Usage:
+  python3 scripts/inject_affiliate_assets.py          # inject
+  python3 scripts/inject_affiliate_assets.py --check  # verify only, exit 1 if missing
 """
 import re
 import sys
 from pathlib import Path
 
-TRACKER_SNIPPET = (
-    '<script src="scripts/affiliate-tracker.js" defer></script>'
-)
+TRACKER_SNIPPET = '<script src="scripts/affiliate-tracker.js" defer></script>'
 
 DISCLOSURE_SNIPPET = (
     '<div id="nph-affiliate-disclosure" style="position:fixed;bottom:0;left:0;right:0;'
@@ -36,7 +38,7 @@ DISCLOSURE_EN = (
 
 SKIP_FILES = {
     "affiliate-disclosure.html",  # already a disclosure page
-    "404.html",                   # not public-facing revenue page
+    "404.html",                   # not a public revenue page
 }
 
 
@@ -50,12 +52,10 @@ def process_html(path: Path) -> bool:
     original = html
     changed = False
 
-    # 1) Inject tracker before </body> if not present
     if "affiliate-tracker.js" not in html:
         html = html.replace("</body>", TRACKER_SNIPPET + "\n</body>", 1)
         changed = True
 
-    # 2) Inject disclosure banner before </body> if not present
     if "nph-affiliate-disclosure" not in html:
         lang = re.search(r'<html[^>]*\blang\s*=\s*["\']?([a-zA-Z]{2})', html[:200])
         snippet = DISCLOSURE_EN if lang and lang.group(1).lower().startswith("e") else DISCLOSURE_SNIPPET
@@ -64,21 +64,38 @@ def process_html(path: Path) -> bool:
 
     if changed:
         path.write_text(html, encoding="utf-8")
-    return changed
+    return html != original
 
 
 def main() -> int:
+    check_mode = "--check" in sys.argv
     root = Path(".").resolve()
-    root_files = {p.name for p in root.glob("*.html")}
     changed_files = []
+    missing = []
     total = 0
 
     for path in sorted(root.glob("*.html")):
         if path.name in SKIP_FILES:
             continue
         total += 1
-        if process_html(path):
+        try:
+            html = path.read_text(encoding="utf-8")
+        except (OSError, UnicodeDecodeError):
+            continue
+        has_assets = ("affiliate-tracker.js" in html and "nph-affiliate-disclosure" in html)
+        if check_mode and not has_assets:
+            missing.append(path.name)
+        if not check_mode and process_html(path):
             changed_files.append(path.name)
+
+    if check_mode:
+        if missing:
+            print(f"❌ {len(missing)} page(s) missing affiliate assets:")
+            for name in missing:
+                print(f"  - {name}")
+            return 1
+        print(f"✅ All {total} pages carry disclosure + tracker.")
+        return 0
 
     print(f"Processed {total} HTML files at repo root.")
     if changed_files:
@@ -87,12 +104,6 @@ def main() -> int:
             print(f"  ✅ {name}")
     else:
         print("No changes needed — all pages already carry disclosure + tracker.")
-
-    if "--check" in sys.argv:
-        print("CHECK MODE: listing pages missing disclosure only.")
-        missing = []
-        for path in sorted(root.glob("*. *.html")):
-            pass  # placeholder
     return 0
 
 
