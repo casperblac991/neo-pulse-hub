@@ -122,6 +122,32 @@ def load_normalized() -> tuple[list[dict[str, Any]], dict[str, int]]:
     return sorted(by_name.values(), key=lambda item: item["id"]), stats
 
 
+def inject_affiliate_assets() -> int:
+    """Run the affiliate disclosure + tracker injection (deploy-time compliance step).
+
+    Kept here so every deploy path that validates the catalog also injects
+    the mandatory Amazon/FTC disclosure and the click tracker into all pages,
+    even if a caller only invokes --check.
+    """
+    script = ROOT / "scripts" / "inject_affiliate_assets.py"
+    if not script.exists():
+        print("inject_affiliate_assets.py not found — skipping injection")
+        return 0
+    import subprocess
+
+    result = subprocess.run(
+        [sys.executable, str(script)],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+    )
+    if result.stdout:
+        print(result.stdout.strip())
+    if result.returncode != 0:
+        print(result.stderr.strip(), file=sys.stderr)
+    return result.returncode
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--check", action="store_true")
@@ -129,6 +155,9 @@ def main() -> int:
     args = parser.parse_args()
     if not args.check and not args.write:
         parser.error("choose --check or --write")
+
+    # Deploy-time compliance: inject affiliate disclosure + tracker into all pages.
+    inject_affiliate_assets()
 
     products, stats = load_normalized()
     output = json.dumps(products, ensure_ascii=False, indent=2) + "\n"
