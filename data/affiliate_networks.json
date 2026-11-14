@@ -1,8 +1,13 @@
 {
-  "updatedAt": "2026-11-14T22:30:00Z",
-  "version": "affiliate-expansion-v1",
+  "updatedAt": "2026-11-15T00:05:00Z",
+  "version": "affiliate-expansion-v2",
   "defaultLocale": "ar",
   "amazonTag": "neopulsehub-20",
+  "signupPriority": [
+    { "order": 1, "id": "aliexpress", "reason": "Global + Arabic audience fit, no geographic restrictions, higher device commissions than Amazon" },
+    { "order": 2, "id": "ebay", "reason": "Refurbished tech niche, low $10 payout threshold, multi-currency payouts" },
+    { "order": 3, "id": "awin", "reason": "High-commission brands: Anker 8%, Logitech 6%" }
+  ],
   "networks": [
     {
       "id": "amazon",
@@ -11,37 +16,37 @@
       "priority": 1,
       "tag": "neopulsehub-20",
       "categories": ["smartwatches", "earbuds", "smart-home", "accessories"],
-      "notes": "Primary US store. Existing tag neopulsehub-20 is live and verified."
-    },
-    {
-      "id": "ebay",
-      "name": "eBay Partner Network",
-      "status": "pending-registration",
-      "priority": 2,
-      "signupUrl": "https://partnernetwork.ebay.com/",
-      "commissionNote": "24h window on Buy It Now, 10 days on won auctions",
-      "categories": ["refurbished", "collectibles", "deals"],
-      "notes": "Best for refurbished tech and hard-to-find items. Register at partnernetwork.ebay.com then replace pub-XXXX placeholders."
+      "notes": "Primary US store. Tag neopulsehub-20 is live and already earning."
     },
     {
       "id": "aliexpress",
       "name": "AliExpress Portals",
       "status": "pending-registration",
-      "priority": 3,
+      "priority": 2,
       "signupUrl": "https://portals.aliexpress.com/",
       "commissionNote": "Rates set per category inside the portal",
       "categories": ["budget-gadgets", "accessories", "global-audience"],
-      "notes": "Global audience, low prices. Insert affiliate ID from Portals dashboard."
+      "notes": "TOP PRIORITY for this platform: accepts global audiences, fits Arabic-speaking shoppers, budget-friendly catalog."
     },
     {
-      "id": "walmart",
-      "name": "Walmart Affiliate Program",
+      "id": "ebay",
+      "name": "eBay Partner Network",
+      "status": "pending-registration",
+      "priority": 3,
+      "signupUrl": "https://partnernetwork.ebay.com/",
+      "commissionNote": "24h window on Buy It Now, 10 days on won auctions; min payout $10; multi-currency",
+      "categories": ["refurbished", "collectibles", "deals"],
+      "notes": "Requires tax form upload (even for non-US residents) BEFORE payouts are released. Name/address/bank on tax form must match ePN account."
+    },
+    {
+      "id": "awin",
+      "name": "Awin Network",
       "status": "pending-registration",
       "priority": 4,
-      "signupUrl": "https://www.walmart.com/help/article/affiliate-program",
-      "commissionNote": "Category-based commission tables",
-      "categories": ["us-everyday", "tech", "gaming"],
-      "notes": "US audience, fast approval (~1 day). Managed via Affiliate Member Center."
+      "signupUrl": "https://www.awin.com/",
+      "commissionNote": "Per-advertiser rates: Anker 8%, Logitech 6%, JBL 6%, Garmin 5%",
+      "categories": ["brands", "retailers"],
+      "notes": "May require a deposit/refundable fee on signup. Gives access to thousands of brands in one account."
     },
     {
       "id": "banggood",
@@ -51,27 +56,27 @@
       "signupUrl": "https://www.banggood.com/Affiliate-login.html",
       "commissionNote": "Up to 10%+ on gadgets depending on tier",
       "categories": ["budget-gadgets", "global-audience"],
-      "notes": "Budget gadget audience, global reach."
-    },
-    {
-      "id": "awin",
-      "name": "Awin Network",
-      "status": "pending-registration",
-      "priority": 6,
-      "signupUrl": "https://www.awin.com/",
-      "commissionNote": "Per-advertiser rates via network",
-      "categories": ["brands", "retailers"],
-      "notes": "Access to thousands of brands in one account (incl. former ShareASale programs)."
+      "notes": "Optional: budget gadget audience, global reach."
     },
     {
       "id": "impact",
       "name": "Impact.com",
       "status": "pending-registration",
-      "priority": 7,
+      "priority": 6,
       "signupUrl": "https://impact.com/",
       "commissionNote": "Per-advertiser rates via network",
       "categories": ["brands", "retailers"],
-      "notes": "Hosts Best Buy and many tech brands in one account."
+      "notes": "Optional: hosts Best Buy (US-only) and many tech brands in one account."
+    },
+    {
+      "id": "walmart",
+      "name": "Walmart Affiliate Program",
+      "status": "rejected",
+      "priority": null,
+      "signupUrl": "https://affiliates.walmart.com/",
+      "commissionNote": "1-4%, 3-day cookie, ~90 day payment delay",
+      "categories": [],
+      "notes": "DO NOT APPLY: Walmart terms prohibit non-US sites and sites serving primarily non-US audiences. This platform serves an Arabic-speaking audience and would be rejected or terminated. Verified Nov 2026."
     }
   ],
   "brandPrograms": [
@@ -93,9 +98,9 @@
       "Collect emails via email-collector page and retarget with weekly best deals"
     ],
     "trafficPlan": {
-      "seo": "Fix sitemap.xml domain from neo-pulse-hub.com to neo-pulse-hub.it.com and resubmit in Google Search Console",
+      "seo": "Sitemap fixed to neo-pulse-hub.it.com - resubmit in Google Search Console after merge",
       "social": "Publish daily best-deal posts via publish-social.js (already automated)",
-      "content": "Daily article generation is already running via GitHub Actions - maintain cadence",
+      "content": "Daily article generation already running via GitHub Actions - maintain cadence",
       "email": "Leverage subscribers.json list with weekly deal digests",
       "telegram": "Promote @NeoPulseBot for deal alerts push notifications"
     }
