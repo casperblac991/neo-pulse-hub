@@ -86,13 +86,13 @@ const programs: AffiliateProgram[] = [
 ];
 
 const environmentKeys: Record<AffiliateNetwork, string> = {
-  "amazon-associates": "AMAZON_ASSOCIATE_TAG",
-  "ebay-partner-network": "EBAY_CAMPAIGN_ID",
-  awin: "AWIN_PUBLISHER_ID",
-  "cj-affiliate": "CJ_PUBLISHER_ID",
-  impact: "IMPACT_PARTNER_ID",
+  "amazon-associates":   "AMAZON_ASSOCIATE_TAG",
+  "ebay-partner-network":"EBAY_CAMPAIGN_ID",
+  "awin":                "AWIN_PUBLISHER_ID",
+  "cj-affiliate":        "CJ_PUBLISHER_ID",
+  "impact":              "IMPACT_PARTNER_ID",
   "rakuten-advertising": "RAKUTEN_PUBLISHER_ID",
-  aliexpress: "ALIEXPRESS_PUBLISHER_ID",
+  "aliexpress":          "ALIEXPRESS_PUBLISHER_ID",
 };
 
 export function listAffiliatePrograms(): AffiliateProgram[] {
@@ -106,8 +106,8 @@ export function getAffiliateProgram(id: string): AffiliateProgram | undefined {
 export function getAffiliateReadiness() {
   return programs.map(program => ({
     ...program,
-    credentialConfigured: Boolean(process.env[environmentKeys[program.id]]),
-    credentialVariable: environmentKeys[program.id],
+    credentialConfigured: Boolean(process.env[environmentKeys[program.id as AffiliateNetwork]]),
+    credentialVariable: environmentKeys[program.id as AffiliateNetwork],
   }));
 }
 
@@ -115,21 +115,31 @@ export function getPublicAffiliateStatus() {
   const approved = new Set(
     (process.env.AFFILIATE_APPROVED_NETWORKS || "")
       .split(",")
-      .map(value => value.trim())
+      .map(v => v.trim())
       .filter(Boolean),
   );
   return programs.map(program => ({
     id: program.id,
     name: program.name,
+    officialUrl: program.officialUrl,
     status: approved.has(program.id) ? "approved" : program.status,
-    credentialConfigured: Boolean(process.env[environmentKeys[program.id]]),
+    credentialConfigured: Boolean(process.env[environmentKeys[program.id as AffiliateNetwork]]),
     markets: program.markets,
   }));
 }
 
+/**
+ * يبني رابط أفلييت حقيقي بعد تفعيل الشبكة وإضافة المعرّف في Render.
+ * يُرجع null إذا لم تكن الشبكة مفعّلة أو المعرّف غير موجود.
+ */
 export function buildAffiliateLink(network: string, destination: string): string | null {
   const program = getAffiliateProgram(network);
-  if (!program || program.status !== "approved") return null;
+  if (!program) return null;
+
+  const approved = new Set(
+    (process.env.AFFILIATE_APPROVED_NETWORKS || "").split(",").map(v => v.trim()).filter(Boolean),
+  );
+  if (!approved.has(network)) return null;
 
   let url: URL;
   try {
@@ -142,11 +152,36 @@ export function buildAffiliateLink(network: string, destination: string): string
   const credential = process.env[environmentKeys[program.id]];
   if (!credential) return null;
 
-  // Network-specific link generation must be implemented only after the account
-  // is approved and its current official API/link rules are configured.
-  // Never guess tracking parameters or expose credentials to the browser.
-  return null;
+  // ── Amazon Associates ──────────────────────────────────
+  if (network === "amazon-associates") {
+    url.searchParams.set("tag", credential);
+    url.searchParams.set("linkCode", "ogi");
+    return url.toString();
+  }
+
+  // ── AliExpress Portals ─────────────────────────────────
+  if (network === "aliexpress") {
+    return `https://s.click.aliexpress.com/e/_affiliateLink?pid=${credential}&url=${encodeURIComponent(destination)}`;
+  }
+
+  // ── eBay Partner Network ───────────────────────────────
+  if (network === "ebay-partner-network") {
+    return `https://rover.ebay.com/rover/1/${credential}/1/?ff3=4&toolid=10001&campid=${credential}&customid=&lgeo=1&vectorid=229466&item=${encodeURIComponent(destination)}`;
+  }
+
+  // ── Awin deep-link ─────────────────────────────────────
+  if (network === "awin") {
+    return `https://www.awin1.com/cread.php?awinmid=&awinaffid=${credential}&linkid=&p=${encodeURIComponent(destination)}`;
+  }
+
+  // ── CJ Affiliate ──────────────────────────────────────
+  if (network === "cj-affiliate") {
+    return `https://www.tkqlhce.com/click-${credential}-0?url=${encodeURIComponent(destination)}`;
+  }
+
+  // Other networks: return destination unchanged until integrated
+  return destination;
 }
 
 export const affiliateDisclosure =
-  "قد يحصل Neo Pulse Hub على عمولة عند إتمام عملية شراء مؤهلة عبر هذا الرابط.";
+  "قد يحصل Neo Pulse Hub على عمولة عند إتمام عملية شراء مؤهلة عبر هذا الرابط. السعر والشحن والضمان يحددها المتجر الشريك مباشرةً.";
