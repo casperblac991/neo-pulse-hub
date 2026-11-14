@@ -1,5 +1,4 @@
 {
-  "$schema": "https://neo-pulse-hub.it.com/schema/affiliate-networks.json",
   "updatedAt": "2026-11-14T22:30:00Z",
   "version": "affiliate-expansion-v1",
   "defaultLocale": "ar",
@@ -22,7 +21,7 @@
       "signupUrl": "https://partnernetwork.ebay.com/",
       "commissionNote": "24h window on Buy It Now, 10 days on won auctions",
       "categories": ["refurbished", "collectibles", "deals"],
-      "notes": "Best for refurbished tech and hard-to-find items. Register at partnernetwork.ebay.com then replace pub-XXXX placeholders below."
+      "notes": "Best for refurbished tech and hard-to-find items. Register at partnernetwork.ebay.com then replace pub-XXXX placeholders."
     },
     {
       "id": "aliexpress",
@@ -39,7 +38,7 @@
       "name": "Walmart Affiliate Program",
       "status": "pending-registration",
       "priority": 4,
-     signupUrl: "https://www.walmart.com/help/article/affiliate-program",
+      "signupUrl": "https://www.walmart.com/help/article/affiliate-program",
       "commissionNote": "Category-based commission tables",
       "categories": ["us-everyday", "tech", "gaming"],
       "notes": "US audience, fast approval (~1 day). Managed via Affiliate Member Center."
@@ -97,7 +96,7 @@
       "seo": "Fix sitemap.xml domain from neo-pulse-hub.com to neo-pulse-hub.it.com and resubmit in Google Search Console",
       "social": "Publish daily best-deal posts via publish-social.js (already automated)",
       "content": "Daily article generation is already running via GitHub Actions - maintain cadence",
-      "email": "Leverage subscribers.json (353 bytes) list with weekly deal digests"
+      "email": "Leverage subscribers.json list with weekly deal digests",
       "telegram": "Promote @NeoPulseBot for deal alerts push notifications"
     }
   }
