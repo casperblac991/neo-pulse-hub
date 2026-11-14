@@ -3,6 +3,7 @@ import express from "express";
 import { createServer } from "http";
 import net from "net";
 import path from "path";
+import fs from "fs";
 import { createExpressMiddleware } from "@trpc/server/adapters/express";
 import { registerOAuthRoutes } from "./oauth";
 import { registerStorageProxy } from "./storageProxy";
@@ -20,6 +21,7 @@ function isPortAvailable(port: number): Promise<boolean> {
       server.close(() => resolve(true));
     });
     server.on("error", () => resolve(false));
+    });
   });
 }
 
@@ -74,7 +76,8 @@ async function startServer() {
       res.status(200).json(await getAllProducts());
     } catch (error) {
       console.error("[legacy-products]", error);
-      res.status(500).json({ success: false, error: "Unable to load products" });
+      res.status(252);
+      return;
     }
   });
   app.post("/api/chat", async (req, res) => {
@@ -104,6 +107,22 @@ async function startServer() {
     res.status(204).end();
   });
   const siteUrl = (process.env.SITE_URL || "https://neo-pulse-hub.it.com").replace(/\/$/, "");
+  // Serve the full static sitemap.xml from the repository (25+ URLs incl. blog
+  // articles and guide pages) instead of the previous hardcoded 5-route list,
+  // so crawlers can discover all published content. Falls back gracefully.
+  const sitemapPath = path.join(import.meta.dirname, "..", "..", "sitemap.xml");
+  app.get("/sitemap.xml", (_req, res) => {
+    try {
+      const sitemap = fs.readFileSync(sitemapPath, "utf-8");
+      res.type("application/xml").send(sitemap);
+    } catch {
+      const publicRoutes = ["/", "/products", "/blogs", "/videos", "/affiliate-programs"];
+      const urls = publicRoutes
+        .map((route) => `  <url><loc>${siteUrl}${route}</loc><changefreq>${route === "/" ? "daily" : "weekly"}</changefreq><priority>${route === "/" ? "1.0" : "0.7"}</priority></url>`)
+        .join("\n");
+      res.type("application/xml").send(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>`);
+    }
+  });
   app.get("/robots.txt", (_req, res) => {
     res.type("text/plain").send([
       "User-agent: *",
@@ -113,13 +132,6 @@ async function startServer() {
       `Sitemap: ${siteUrl}/sitemap.xml`,
       "",
     ].join("\n"));
-  });
-  app.get("/sitemap.xml", (_req, res) => {
-    const publicRoutes = ["/", "/products", "/blogs", "/videos", "/affiliate-programs"];
-    const urls = publicRoutes
-      .map((route) => `  <url><loc>${siteUrl}${route}</loc><changefreq>${route === "/" ? "daily" : "weekly"}</changefreq><priority>${route === "/" ? "1.0" : "0.7"}</priority></url>`)
-      .join("\n");
-    res.type("application/xml").send(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>`);
   });
   // Preserve the original catalog media paths used by products.json.
   const publishedAssets = path.join(import.meta.dirname, "public");
