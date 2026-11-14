@@ -10,6 +10,8 @@ import { appRouter } from "../routers";
 import { createContext } from "./context";
 import { serveStatic, setupVite } from "./vite";
 import { affiliateDisclosure, getPublicAffiliateStatus, listAffiliatePrograms } from "../affiliate-registry";
+import { runCopilot } from "../ai-orchestrator";
+import { getAllProducts, getAllBlogPosts } from "../db";
 
 function isPortAvailable(port: number): Promise<boolean> {
   return new Promise(resolve => {
@@ -48,6 +50,10 @@ async function startServer() {
       timestamp: new Date().toISOString(),
     });
   });
+  app.get("/site-version.json", (_req, res) => {
+    res.setHeader("Cache-Control", "no-store");
+    res.status(200).json({ homeVersion: "2026.11.12.legacy-store-v1" });
+  });
   app.get("/api/affiliate/programs", (_req, res) => {
     res.status(200).json({
       success: true,
@@ -61,6 +67,41 @@ async function startServer() {
       networks: getPublicAffiliateStatus(),
       note: "Credential presence is reported without exposing secret values. Network activation still requires explicit approval.",
     });
+  });
+  // Compatibility endpoints used by the original storefront.
+  app.get("/api/products", async (_req, res) => {
+    try {
+      res.status(200).json(await getAllProducts());
+    } catch (error) {
+      console.error("[legacy-products]", error);
+      res.status(500).json({ success: false, error: "Unable to load products" });
+    }
+  });
+  app.post("/api/chat", async (req, res) => {
+    const message = typeof req.body?.message === "string" ? req.body.message.trim() : "";
+    if (!message || message.length > 500) {
+      res.status(400).json({ success: false, error: "message must be between 1 and 500 characters" });
+      return;
+    }
+    try {
+      const [products, blogs] = await Promise.all([getAllProducts(), getAllBlogPosts()]);
+      const answer = await runCopilot([{ role: "user", content: message }], products, blogs);
+      res.status(200).json({ success: true, answer });
+    } catch (error) {
+      console.error("[legacy-chat]", error);
+      res.status(200).json({ success: true, answer: "المساعد غير متاح مؤقتًا. يمكنك تصفح المنتجات والأدلة المتاحة." });
+    }
+  });
+  app.post("/api/subscribe", (req, res) => {
+    const email = typeof req.body?.email === "string" ? req.body.email.trim() : "";
+    if (!/^\S+@\S+\.\S+$/.test(email)) {
+      res.status(400).json({ success: false, error: "A valid email is required" });
+      return;
+    }
+    res.status(200).json({ success: true, message: "Subscription request received" });
+  });
+  app.post("/api/track-click", (_req, res) => {
+    res.status(204).end();
   });
   const siteUrl = (process.env.SITE_URL || "https://neo-pulse-hub.it.com").replace(/\/$/, "");
   app.get("/robots.txt", (_req, res) => {

@@ -26,6 +26,6 @@ __pycache__/
 .env
 leads.json
 
-# Lock files (pnpm-lock.yaml is tracked intentionally for Render/CI)
-# package-lock.json (root) is NOT needed
+# Lock files
 !backend/package-lock.json
+pnpm-lock.yaml

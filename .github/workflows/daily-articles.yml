@@ -2,7 +2,6 @@ name: Daily Article Generator
 
 on:
   schedule:
-    # يعمل يومياً الساعة 8:00 صباحاً (UTC)
     - cron: '0 8 * * *'
   workflow_dispatch:
 
@@ -30,6 +29,8 @@ jobs:
       - name: Generate daily article
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           SITE_URL: https://neo-pulse-hub.it.com
         run: |
           python3 backend/daily_article_generator.py
