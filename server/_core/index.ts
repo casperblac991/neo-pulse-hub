@@ -52,8 +52,20 @@ async function startServer() {
     });
   });
   app.get("/site-version.json", (_req, res) => {
-    res.setHeader("Cache-Control", "no-store");
-    res.status(200).json({ homeVersion: "2026.11.12.legacy-store-v1" });
+    res.setHeader("Cache-Control", "no-store, max-age=0");
+    res.setHeader("Pragma", "no-cache");
+    const versionPath = path.join(import.meta.dirname, "public", "site-version.json");
+    try {
+      const metadata = JSON.parse(fs.readFileSync(versionPath, "utf8"));
+      if (metadata && typeof metadata.homeVersion === "string" && metadata.homeVersion.trim()) {
+        res.status(200).json(metadata);
+        return;
+      }
+      res.status(503).json({ error: "Build version metadata is invalid" });
+    } catch (error) {
+      console.error("[site-version] Unable to read build metadata:", error);
+      res.status(503).json({ error: "Build version metadata is unavailable" });
+    }
   });
   app.get("/api/affiliate/programs", (_req, res) => {
     res.status(200).json({
