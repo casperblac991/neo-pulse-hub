@@ -77,6 +77,7 @@ def clean_product(raw: dict[str, Any]) -> dict[str, Any] | None:
     if not isinstance(product.get("global_prices"), dict):
         product["global_prices"] = product.get("global_prices") or product.get("globalPrices") or {}
     product["affiliate_amazon"] = text(product.get("affiliate_amazon"))
+    product["affiliate_aliexpress"] = text(product.get("affiliate_aliexpress"))
     product["updated_at"] = text(product.get("updated_at") or product.get("updatedAt"))
     return product
 
@@ -114,7 +115,7 @@ def load_normalized() -> tuple[list[dict[str, Any]], dict[str, int]]:
             stats["duplicate_names"] += 1
             current = by_name[key]
             current_score = (number(current.get("rating")), integer(current.get("reviews")))
-            product_score = (number(product.get("rating")), integer(current.get("reviews")))
+            product_score = (number(product.get("rating")), integer(product.get("reviews")))
             if product_score > current_score:
                 by_name[key] = product
         else:
@@ -123,7 +124,7 @@ def load_normalized() -> tuple[list[dict[str, Any]], dict[str, int]]:
 
 
 def run_helper_script(name: str, required: bool = False) -> int:
-    """Run a deploy-time helper script (affiliate injection, image fixes)."""
+    """Run a deploy-time helper script (affiliate fill, image fixes, disclosure injection)."""
     script = ROOT / "scripts" / name
     if not script.exists():
         print(f"{name} not found — skipping")
@@ -150,6 +151,10 @@ def main() -> int:
     args = parser.parse_args()
     if not args.check and not args.write:
         parser.error("choose --check or --write")
+
+    # Deploy-time affiliate compliance: fill AliExpress links FIRST so the
+    # catalog is fully monetized before normalization and HTML injection.
+    run_helper_script("fill_aliexpress_links.py")
 
     # Deploy-time compliance: inject affiliate disclosure + tracker into all pages.
     run_helper_script("inject_affiliate_assets.py")
