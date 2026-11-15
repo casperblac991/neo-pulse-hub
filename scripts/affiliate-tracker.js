@@ -73,3 +73,44 @@
     };
   };
 })();
+
+/**
+ * Compatibility shim: some pages (index.html) read `product.affiliate_ali`
+ * while products.json stores the link as `affiliate_aliexpress`, so the
+ * AliExpress compare button never rendered. This runs via defer before any
+ * product fetch, and normalizes fetched product JSON so both names exist.
+ * Remove this block once all pages read affiliate_aliexpress directly.
+ */
+(function () {
+  'use strict';
+  if (typeof window.fetch !== 'function') return;
+  var nativeFetch = window.fetch.bind(window);
+
+  window.fetch = function (input, init) {
+    return nativeFetch(input, init).then(function (response) {
+      var url = typeof input === 'string' ? input : (input && input.url) || '';
+      if (url.indexOf('products.json') === -1 && url.indexOf('/api/products') === -1) {
+        return response;
+      }
+      var originalJson = response.json.bind(response);
+      var parsed = null;
+      response.json = function () {
+        if (!parsed) {
+          parsed = originalJson().then(function (data) {
+            if (Array.isArray(data)) {
+              for (var i = 0; i < data.length; i++) {
+                var p = data[i];
+                if (p && typeof p === 'object' && p.affiliate_aliexpress && !p.affiliate_ali) {
+                  p.affiliate_ali = p.affiliate_aliexpress;
+                }
+              }
+            }
+            return data;
+          });
+        }
+        return parsed;
+      };
+      return response;
+    });
+  };
+})();
