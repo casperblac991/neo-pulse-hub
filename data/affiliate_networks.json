@@ -1,10 +1,11 @@
 {
-  "updatedAt": "2026-11-15T00:05:00Z",
-  "version": "affiliate-expansion-v2",
+  "updatedAt": "2026-11-15T00:40:00Z",
+  "version": "affiliate-expansion-v3-activated",
   "defaultLocale": "ar",
   "amazonTag": "neopulsehub-20",
+  "aliexpressTrackingId": "ma1023802882fefae",
   "signupPriority": [
-    { "order": 1, "id": "aliexpress", "reason": "Global + Arabic audience fit, no geographic restrictions, higher device commissions than Amazon" },
+    { "order": 1, "id": "aliexpress", "reason": "APPROVED 2026-11-14: global + Arabic audience fit, no geographic restrictions, higher device commissions than Amazon" },
     { "order": 2, "id": "ebay", "reason": "Refurbished tech niche, low $10 payout threshold, multi-currency payouts" },
     { "order": 3, "id": "awin", "reason": "High-commission brands: Anker 8%, Logitech 6%" }
   ],
@@ -21,12 +22,14 @@
     {
       "id": "aliexpress",
       "name": "AliExpress Portals",
-      "status": "pending-registration",
+      "status": "active",
       "priority": 2,
+      "trackingId": "ma1023802882fefae",
       "signupUrl": "https://portals.aliexpress.com/",
-      "commissionNote": "Rates set per category inside the portal",
+      "commissionNote": "Rates set per category inside the portal; tech typically up to 9%",
+      "payoutNote": "PayPal (Saidchaik@gmail.com) — confirm it is entered in Portals payment settings",
       "categories": ["budget-gadgets", "accessories", "global-audience"],
-      "notes": "TOP PRIORITY for this platform: accepts global audiences, fits Arabic-speaking shoppers, budget-friendly catalog."
+      "notes": "APPROVED 2026-11-14. Tracking ID ma1023802882fefae active in catalog links via scripts/fill_aliexpress_links.py."
     },
     {
       "id": "ebay",
