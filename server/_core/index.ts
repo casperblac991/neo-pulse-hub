@@ -21,7 +21,6 @@ function isPortAvailable(port: number): Promise<boolean> {
       server.close(() => resolve(true));
     });
     server.on("error", () => resolve(false));
-    });
   });
 }
 
@@ -107,21 +106,32 @@ async function startServer() {
     res.status(204).end();
   });
   const siteUrl = (process.env.SITE_URL || "https://neo-pulse-hub.it.com").replace(/\/$/, "");
-  // Serve the full static sitemap.xml from the repository (25+ URLs incl. blog
-  // articles and guide pages) instead of the previous hardcoded 5-route list,
-  // so crawlers can discover all published content. Falls back gracefully.
-  const sitemapPath = path.join(import.meta.dirname, "..", "..", "sitemap.xml");
+  // Serve the full static sitemap.xml (25+ URLs incl. blog articles and guide
+  // pages) so crawlers can discover all published content. In the bundled
+  // production build the sitemap is copied next to the server entry inside
+  // dist/, so resolve from import.meta.dirname first and fall back to the
+  // repository root for development runs.
+  const sitemapCandidates = [
+    path.join(import.meta.dirname, "sitemap.xml"),
+    path.join(import.meta.dirname, "public", "sitemap.xml"),
+    path.join(import.meta.dirname, "..", "..", "sitemap.xml"),
+  ];
+  const sitemapPath = sitemapCandidates.find((candidate) => fs.existsSync(candidate));
   app.get("/sitemap.xml", (_req, res) => {
-    try {
-      const sitemap = fs.readFileSync(sitemapPath, "utf-8");
-      res.type("application/xml").send(sitemap);
-    } catch {
-      const publicRoutes = ["/", "/products", "/blogs", "/videos", "/affiliate-programs"];
-      const urls = publicRoutes
-        .map((route) => `  <url><loc>${siteUrl}${route}</loc><changefreq>${route === "/" ? "daily" : "weekly"}</changefreq><priority>${route === "/" ? "1.0" : "0.7"}</priority></url>`)
-        .join("\n");
-      res.type("application/xml").send(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>`);
+    if (sitemapPath) {
+      try {
+        const sitemap = fs.readFileSync(sitemapPath, "utf-8");
+        res.type("application/xml").send(sitemap);
+        return;
+      } catch {
+        console.error("[sitemap] failed to read", sitemapPath);
+      }
     }
+    const publicRoutes = ["/", "/products", "/blogs", "/videos", "/affiliate-programs"];
+    const urls = publicRoutes
+      .map((route) => `  <url><loc>${siteUrl}${route}</loc><changefreq>${route === "/" ? "daily" : "weekly"}</changefreq><priority>${route === "/" ? "1.0" : "0.7"}</priority></url>`)
+      .join("\n");
+    res.type("application/xml").send(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>`);
   });
   app.get("/robots.txt", (_req, res) => {
     res.type("text/plain").send([
