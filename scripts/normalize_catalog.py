@@ -77,6 +77,7 @@ def clean_product(raw: dict[str, Any]) -> dict[str, Any] | None:
     if not isinstance(product.get("global_prices"), dict):
         product["global_prices"] = product.get("global_prices") or product.get("globalPrices") or {}
     product["affiliate_amazon"] = text(product.get("affiliate_amazon"))
+    product["affiliate_aliexpress"] = text(product.get("affiliate_aliexpress"))
     product["updated_at"] = text(product.get("updated_at") or product.get("updatedAt"))
     return product
 
@@ -122,6 +123,27 @@ def load_normalized() -> tuple[list[dict[str, Any]], dict[str, int]]:
     return sorted(by_name.values(), key=lambda item: item["id"]), stats
 
 
+def run_helper_script(name: str, required: bool = False) -> int:
+    """Run a deploy-time helper script (affiliate fill, image fixes, disclosure injection)."""
+    script = ROOT / "scripts" / name
+    if not script.exists():
+        print(f"{name} not found — skipping")
+        return 0 if not required else 1
+    import subprocess
+
+    result = subprocess.run(
+        [sys.executable, str(script)],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+    )
+    if result.stdout:
+        print(result.stdout.strip())
+    if result.returncode != 0:
+        print(result.stderr.strip(), file=sys.stderr)
+    return result.returncode
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--check", action="store_true")
@@ -129,6 +151,16 @@ def main() -> int:
     args = parser.parse_args()
     if not args.check and not args.write:
         parser.error("choose --check or --write")
+
+    # Deploy-time affiliate compliance: fill AliExpress links FIRST so the
+    # catalog is fully monetized before normalization and HTML injection.
+    run_helper_script("fill_aliexpress_links.py")
+
+    # Deploy-time compliance: inject affiliate disclosure + tracker into all pages.
+    run_helper_script("inject_affiliate_assets.py")
+
+    # Deploy-time image hygiene: replace duplicated placeholders with unique photos.
+    run_helper_script("fix_product_images.py")
 
     products, stats = load_normalized()
     output = json.dumps(products, ensure_ascii=False, indent=2) + "\n"

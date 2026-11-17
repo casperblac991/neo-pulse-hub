@@ -1,0 +1,16 @@
+Live fix branch notes (2026-11-15)
+====================================
+
+Fixes in this branch:
+1. scripts/normalize_catalog.py — runs scripts/fill_aliexpress_links.py at
+   normalize time (deploy + 6h catalog-sync) so affiliate_aliexpress is
+   always populated with the approved Portals tracking ID. The field is also
+   preserved (no longer dropped) by clean_product().
+2. server/_core/index.ts — /sitemap.xml now resolves the static sitemap from
+   the bundled dist paths (dist/sitemap.xml or dist/public/sitemap.xml) with
+   a repository fallback for dev; serves the full 25+ URL sitemap instead
+   of the 5-route legacy list.
+3. package.json — build now copies sitemap.xml and robots.txt into
+   dist/public/ so the server can serve them in production.
+4. affiliate-disclosure.html — reflects current state: Amazon + AliExpress
+   active, Walmart dropped (policy), eBay/Awin/Impact pending.

@@ -1,0 +1,111 @@
+{
+  "updatedAt": "2026-11-15T00:40:00Z",
+  "version": "affiliate-expansion-v3-activated",
+  "defaultLocale": "ar",
+  "amazonTag": "neopulsehub-20",
+  "aliexpressTrackingId": "ma1023802882fefae",
+  "signupPriority": [
+    { "order": 1, "id": "aliexpress", "reason": "APPROVED 2026-11-14: global + Arabic audience fit, no geographic restrictions, higher device commissions than Amazon" },
+    { "order": 2, "id": "ebay", "reason": "Refurbished tech niche, low $10 payout threshold, multi-currency payouts" },
+    { "order": 3, "id": "awin", "reason": "High-commission brands: Anker 8%, Logitech 6%" }
+  ],
+  "networks": [
+    {
+      "id": "amazon",
+      "name": "Amazon Associates",
+      "status": "active",
+      "priority": 1,
+      "tag": "neopulsehub-20",
+      "categories": ["smartwatches", "earbuds", "smart-home", "accessories"],
+      "notes": "Primary US store. Tag neopulsehub-20 is live and already earning."
+    },
+    {
+      "id": "aliexpress",
+      "name": "AliExpress Portals",
+      "status": "active",
+      "priority": 2,
+      "trackingId": "ma1023802882fefae",
+      "signupUrl": "https://portals.aliexpress.com/",
+      "commissionNote": "Rates set per category inside the portal; tech typically up to 9%",
+      "payoutNote": "PayPal (Saidchaik@gmail.com) — confirm it is entered in Portals payment settings",
+      "categories": ["budget-gadgets", "accessories", "global-audience"],
+      "notes": "APPROVED 2026-11-14. Tracking ID ma1023802882fefae active in catalog links via scripts/fill_aliexpress_links.py."
+    },
+    {
+      "id": "ebay",
+      "name": "eBay Partner Network",
+      "status": "pending-registration",
+      "priority": 3,
+      "signupUrl": "https://partnernetwork.ebay.com/",
+      "commissionNote": "24h window on Buy It Now, 10 days on won auctions; min payout $10; multi-currency",
+      "categories": ["refurbished", "collectibles", "deals"],
+      "notes": "Requires tax form upload (even for non-US residents) BEFORE payouts are released. Name/address/bank on tax form must match ePN account."
+    },
+    {
+      "id": "awin",
+      "name": "Awin Network",
+      "status": "pending-registration",
+      "priority": 4,
+      "signupUrl": "https://www.awin.com/",
+      "commissionNote": "Per-advertiser rates: Anker 8%, Logitech 6%, JBL 6%, Garmin 5%",
+      "categories": ["brands", "retailers"],
+      "notes": "May require a deposit/refundable fee on signup. Gives access to thousands of brands in one account."
+    },
+    {
+      "id": "banggood",
+      "name": "Banggood Affiliate Program",
+      "status": "pending-registration",
+      "priority": 5,
+      "signupUrl": "https://www.banggood.com/Affiliate-login.html",
+      "commissionNote": "Up to 10%+ on gadgets depending on tier",
+      "categories": ["budget-gadgets", "global-audience"],
+      "notes": "Optional: budget gadget audience, global reach."
+    },
+    {
+      "id": "impact",
+      "name": "Impact.com",
+      "status": "pending-registration",
+      "priority": 6,
+      "signupUrl": "https://impact.com/",
+      "commissionNote": "Per-advertiser rates via network",
+      "categories": ["brands", "retailers"],
+      "notes": "Optional: hosts Best Buy (US-only) and many tech brands in one account."
+    },
+    {
+      "id": "walmart",
+      "name": "Walmart Affiliate Program",
+      "status": "rejected",
+      "priority": null,
+      "signupUrl": "https://affiliates.walmart.com/",
+      "commissionNote": "1-4%, 3-day cookie, ~90 day payment delay",
+      "categories": [],
+      "notes": "DO NOT APPLY: Walmart terms prohibit non-US sites and sites serving primarily non-US audiences. This platform serves an Arabic-speaking audience and would be rejected or terminated. Verified Nov 2026."
+    }
+  ],
+  "brandPrograms": [
+    { "brand": "Anker", "rate": "8%", "cookie": "30 days", "source": "LinkApprove, Nov 2026" },
+    { "brand": "Logitech", "rate": "6%", "cookie": "30 days", "source": "LinkApprove, Nov 2026" },
+    { "brand": "JBL", "rate": "6%", "cookie": "14 days", "source": "LinkApprove, Nov 2026" },
+    { "brand": "Garmin", "rate": "5%", "cookie": "30 days", "source": "LinkApprove, Nov 2026" },
+    { "brand": "GoPro", "rate": "5%", "cookie": "30 days", "source": "LinkApprove, Nov 2026" },
+    { "brand": "Sonos", "rate": "5%", "cookie": "14 days", "source": "LinkApprove, Nov 2026" },
+    { "brand": "Sony", "rate": "up to 4%", "cookie": "30 days", "source": "LinkApprove, Nov 2026" },
+    { "brand": "Bose", "rate": "4%", "cookie": "30 days", "source": "LinkApprove, Nov 2026" },
+    { "brand": "Samsung", "rate": "3%", "cookie": "30 days", "source": "LinkApprove, Nov 2026" }
+  ],
+  "growth": {
+    "conversionTips": [
+      "Add price comparison widget on product pages (Amazon vs AliExpress vs eBay)",
+      "Use localized links for international visitors (link localizer services)",
+      "Highlight coupons/deals prominently on the deals page",
+      "Collect emails via email-collector page and retarget with weekly best deals"
+    ],
+    "trafficPlan": {
+      "seo": "Sitemap fixed to neo-pulse-hub.it.com - resubmit in Google Search Console after merge",
+      "social": "Publish daily best-deal posts via publish-social.js (already automated)",
+      "content": "Daily article generation already running via GitHub Actions - maintain cadence",
+      "email": "Leverage subscribers.json list with weekly deal digests",
+      "telegram": "Promote @NeoPulseBot for deal alerts push notifications"
+    }
+  }
+}

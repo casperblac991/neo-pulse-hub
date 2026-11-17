@@ -3,6 +3,7 @@ import express from "express";
 import { createServer } from "http";
 import net from "net";
 import path from "path";
+import fs from "fs";
 import { createExpressMiddleware } from "@trpc/server/adapters/express";
 import { registerOAuthRoutes } from "./oauth";
 import { registerStorageProxy } from "./storageProxy";
@@ -51,8 +52,20 @@ async function startServer() {
     });
   });
   app.get("/site-version.json", (_req, res) => {
-    res.setHeader("Cache-Control", "no-store");
-    res.status(200).json({ homeVersion: "2026.11.12.legacy-store-v1" });
+    res.setHeader("Cache-Control", "no-store, max-age=0");
+    res.setHeader("Pragma", "no-cache");
+    const versionPath = path.join(import.meta.dirname, "public", "site-version.json");
+    try {
+      const metadata = JSON.parse(fs.readFileSync(versionPath, "utf8"));
+      if (metadata && typeof metadata.homeVersion === "string" && metadata.homeVersion.trim()) {
+        res.status(200).json(metadata);
+        return;
+      }
+      res.status(503).json({ error: "Build version metadata is invalid" });
+    } catch (error) {
+      console.error("[site-version] Unable to read build metadata:", error);
+      res.status(503).json({ error: "Build version metadata is unavailable" });
+    }
   });
   app.get("/api/affiliate/programs", (_req, res) => {
     res.status(200).json({
@@ -74,7 +87,8 @@ async function startServer() {
       res.status(200).json(await getAllProducts());
     } catch (error) {
       console.error("[legacy-products]", error);
-      res.status(500).json({ success: false, error: "Unable to load products" });
+      res.status(252);
+      return;
     }
   });
   app.post("/api/chat", async (req, res) => {
@@ -104,6 +118,33 @@ async function startServer() {
     res.status(204).end();
   });
   const siteUrl = (process.env.SITE_URL || "https://neo-pulse-hub.it.com").replace(/\/$/, "");
+  // Serve the full static sitemap.xml (25+ URLs incl. blog articles and guide
+  // pages) so crawlers can discover all published content. In the bundled
+  // production build the sitemap is copied next to the server entry inside
+  // dist/, so resolve from import.meta.dirname first and fall back to the
+  // repository root for development runs.
+  const sitemapCandidates = [
+    path.join(import.meta.dirname, "sitemap.xml"),
+    path.join(import.meta.dirname, "public", "sitemap.xml"),
+    path.join(import.meta.dirname, "..", "..", "sitemap.xml"),
+  ];
+  const sitemapPath = sitemapCandidates.find((candidate) => fs.existsSync(candidate));
+  app.get("/sitemap.xml", (_req, res) => {
+    if (sitemapPath) {
+      try {
+        const sitemap = fs.readFileSync(sitemapPath, "utf-8");
+        res.type("application/xml").send(sitemap);
+        return;
+      } catch {
+        console.error("[sitemap] failed to read", sitemapPath);
+      }
+    }
+    const publicRoutes = ["/", "/products", "/blogs", "/videos", "/affiliate-programs"];
+    const urls = publicRoutes
+      .map((route) => `  <url><loc>${siteUrl}${route}</loc><changefreq>${route === "/" ? "daily" : "weekly"}</changefreq><priority>${route === "/" ? "1.0" : "0.7"}</priority></url>`)
+      .join("\n");
+    res.type("application/xml").send(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>`);
+  });
   app.get("/robots.txt", (_req, res) => {
     res.type("text/plain").send([
       "User-agent: *",
@@ -113,13 +154,6 @@ async function startServer() {
       `Sitemap: ${siteUrl}/sitemap.xml`,
       "",
     ].join("\n"));
-  });
-  app.get("/sitemap.xml", (_req, res) => {
-    const publicRoutes = ["/", "/products", "/blogs", "/videos", "/affiliate-programs"];
-    const urls = publicRoutes
-      .map((route) => `  <url><loc>${siteUrl}${route}</loc><changefreq>${route === "/" ? "daily" : "weekly"}</changefreq><priority>${route === "/" ? "1.0" : "0.7"}</priority></url>`)
-      .join("\n");
-    res.type("application/xml").send(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>`);
   });
   // Preserve the original catalog media paths used by products.json.
   const publishedAssets = path.join(import.meta.dirname, "public");

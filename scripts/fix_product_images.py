@@ -1,0 +1,127 @@
+#!/usr/bin/env python3
+"""Fix duplicated/placeholder product images in products.json.
+
+Replaces repeated placehold.co placeholders in galleries with unique,
+category-appropriate real photos (Unsplash source URLs, free to hotlink
+with attribution-free license), and deduplicates gallery entries.
+
+Runs automatically as part of catalog normalization (deploy time).
+"""
+from __future__ import annotations
+
+import json
+import re
+import sys
+from pathlib import Path
+from typing import Any
+
+ROOT = Path(__file__).resolve().parents[1]
+CATALOG_PATH = ROOT / "products.json"
+
+# Unique, per-category product photos (Unsplash CDN, free license).
+# Keys map to product category; fallback covers anything else.
+CATEGORY_IMAGES: dict[str, list[str]] = {
+    "smartwatch": [
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80",
+        "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=800&q=80",
+        "https://images.unsplash.com/photo-1617043786394-f977fa12eddf?w=800&q=80",
+        "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800&q=80",
+    ],
+    "earbuds": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
+        "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&q=80",
+        "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&q=80",
+        "https://images.unsplash.com/photo-1516280440614-379a5dc9db41?w=800&q=80",
+    ],
+    "smart-home": [
+        "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80",
+        "https://images.unsplash.com/photo-1585060544812-6b45742d762a?w=800&q=80",
+        "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&q=80",
+        "https://images.unsplash.com/photo-1558021212-9f277a9a6ef0?w=800&q=80",
+    ],
+    "accessories": [
+        "https://images.unsplash.com/photo-1527814050087-3793815479db?w=800&q=80",
+        "https://images.unsplash.com/photo-1572569517542-6c2ad68f7854?w=800&q=80",
+        "https://images.unsplash.com/photo-1600294037681-c5b4a4d0b4ef?w=800&q=80",
+        "https://images.unsplash.com/photo-1625139201317-0a4b0e1f4b41?w=800&q=80",
+    ],
+}
+
+PLACEHOLDER_PATTERNS = re.compile(r"placehold\.co|via\.placeholder", re.IGNORECASE)
+
+
+def is_placeholder(url: str) -> bool:
+    return bool(url and PLACEHOLDER_PATTERNS.search(url))
+
+
+def fix_product_gallery(product: dict[str, Any], used: set[str]) -> dict[str, Any]:
+    category = str(product.get("category", "")).lower().strip()
+    category = "smart-home" if "home" in category else category
+    category = "smartwatch" if "watch" in category else category
+    category = "earbuds" if "earbud" in category or "headphone" in category else category
+    pool = CATEGORY_IMAGES.get(category, CATEGORY_IMAGES["accessories"])
+
+    main_image = str(product.get("image", "") or "")
+    gallery = product.get("gallery") if isinstance(product.get("gallery"), list) else []
+    gallery = [str(item) for item in gallery if str(item).strip()]
+
+    # Keep real (non-placeholder) images first, in order.
+    real = [u for u in gallery if not is_placeholder(u)]
+    # Replace placeholders with unique real photos not already used.
+    replacements: list[str] = []
+    for url in pool:
+        if len(replacements) + len(real) >= 4:
+            break
+        if url not in real and url not in used:
+            replacements.append(url)
+            used.add(url)
+
+    new_gallery = real + replacements
+    # Deduplicate while preserving order.
+    seen: set[str] = set()
+    unique: list[str] = []
+    for url in new_gallery:
+        if url not in seen:
+            seen.add(url)
+            unique.append(url)
+    if not unique:
+        unique = [pool[0]]
+
+    product["gallery"] = unique[:4]
+    if main_image and not is_placeholder(main_image):
+        # Keep the real main image first if it's not already there.
+        if main_image not in product["gallery"]:
+            product["gallery"] = [main_image] + product["gallery"][:3]
+    else:
+        product["image"] = unique[0]
+
+    # Ensure image is the first gallery entry for consistency.
+    if product["gallery"] and product["gallery"][0] != product.get("image"):
+        product["image"] = product["gallery"][0]
+    return product
+
+
+def main() -> int:
+    data = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
+    if not isinstance(data, list):
+        print("products.json must be a JSON array", file=sys.stderr)
+        return 1
+
+    used: set[str] = set()
+    fixed = 0
+    for product in data:
+        if not isinstance(product, dict):
+            continue
+        before = json.dumps(product.get("gallery"), ensure_ascii=False)
+        fix_product_gallery(product, used)
+        after = json.dumps(product.get("gallery"), ensure_ascii=False)
+        if before != after:
+            fixed += 1
+
+    CATALOG_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"products_total": len(data), "galleries_fixed": fixed}, ensure_ascii=False))
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
