@@ -1,218 +1,224 @@
-import { useAuth } from "@/_core/hooks/useAuth";
 import { trpc } from "@/lib/trpc";
-import { Card } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Loader2, Activity, FileText, Send, GitBranch, AlertCircle, Sparkles } from "lucide-react";
+import {
+  Sparkles, Package, FileText, TrendingUp, Zap, ArrowLeft,
+  DollarSign, Users, Eye, Link2, BarChart3, ExternalLink,
+  AlertCircle, CheckCircle, Clock, RefreshCw,
+} from "lucide-react";
+import { useAuth } from "@/_core/hooks/useAuth";
 import { getLoginUrl } from "@/const";
-import { useState } from "react";
+import { useMemo } from "react";
 
 export default function Home() {
-  const { user, loading, isAuthenticated } = useAuth();
-  const [selectedTask, setSelectedTask] = useState<string | null>(null);
+  const { loading, isAuthenticated, user } = useAuth();
+  const productsQuery = trpc.products.all.useQuery(undefined, { staleTime: 60_000 });
+  const products = productsQuery.data ?? [];
 
-  // Fetch dashboard data
-  const tasksQuery = trpc.automation.tasks.useQuery(undefined, { enabled: isAuthenticated });
-  const logsQuery = trpc.logs.recent.useQuery(50, { enabled: isAuthenticated });
-  const productsQuery = trpc.products.all.useQuery(undefined, { enabled: isAuthenticated });
-  const blogsQuery = trpc.blogs.all.useQuery(undefined, { enabled: isAuthenticated });
-  const campaignsQuery = trpc.campaigns.all.useQuery(undefined, { enabled: isAuthenticated });
+  const stats = useMemo(() => {
+    const totalProducts = products.length;
+    const categories = new Set(products.map(p => p.category).filter(Boolean)).size;
+    const withUrls = products.filter(p => p.url).length;
+    const avgRating = products.reduce((s, p) => s + Number(p.rating || 0), 0) / (totalProducts || 1);
+    return { totalProducts, categories, withUrls, avgRating: avgRating.toFixed(1) };
+  }, [products]);
 
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-background grid-pattern flex items-center justify-center">
-        <Loader2 className="animate-spin text-primary w-12 h-12" />
-      </div>
-    );
-  }
+  const affiliateNetworks = [
+    { name: "Amazon Associates", var: "AMAZON_ASSOCIATE_TAG",    signup: "https://affiliate-program.amazon.com/", commission: "1–10%" },
+    { name: "AliExpress",        var: "ALIEXPRESS_PUBLISHER_ID", signup: "https://portals.aliexpress.com/",       commission: "3–9%"  },
+    { name: "eBay Partner",      var: "EBAY_CAMPAIGN_ID",        signup: "https://partnernetwork.ebay.com/",      commission: "1–6%"  },
+    { name: "Awin",              var: "AWIN_PUBLISHER_ID",       signup: "https://www.awin.com/",                 commission: "2–15%" },
+    { name: "CJ Affiliate",      var: "CJ_PUBLISHER_ID",         signup: "https://www.cj.com/",                   commission: "2–10%" },
+    { name: "Impact.com",        var: "IMPACT_PARTNER_ID",       signup: "https://impact.com/partners/affiliate-partners/", commission: "3–12%" },
+    { name: "Rakuten",           var: "RAKUTEN_PUBLISHER_ID",    signup: "https://rakutenadvertising.com/affiliate/", commission: "1–8%" },
+  ];
 
-  if (!isAuthenticated) {
-    return (
-      <div className="min-h-screen bg-background grid-pattern flex flex-col items-center justify-center">
-        <div className="text-center space-y-6">
-          <h1 className="text-4xl font-bold text-gradient">Neo Pulse Hub</h1>
-          <p className="text-xl text-muted-foreground">AI Automation Dashboard</p>
-          <a href={getLoginUrl()}>
-            <Button className="bg-primary hover:bg-primary/80 text-primary-foreground">
-              Sign In to Dashboard
-            </Button>
-          </a>
+  if (loading) return (
+    <div className="min-h-screen bg-background flex items-center justify-center">
+      <Sparkles className="h-10 w-10 animate-pulse text-primary" />
+    </div>
+  );
+
+  if (!isAuthenticated) return (
+    <div className="min-h-screen bg-background flex items-center justify-center p-6">
+      <Card className="max-w-md p-8 text-center space-y-5">
+        <div className="mx-auto rounded-2xl bg-primary/15 p-4 w-fit">
+          <BarChart3 className="h-10 w-10 text-primary" />
         </div>
-      </div>
-    );
-  }
-
-  // Calculate KPIs
-  const totalProducts = productsQuery.data?.length || 0;
-  const totalBlogs = blogsQuery.data?.length || 0;
-  const totalCampaigns = campaignsQuery.data?.length || 0;
-  const successfulTasks = tasksQuery.data?.filter(t => t.status === "success").length || 0;
-
-  // Get task statuses
-  const taskStatuses = tasksQuery.data?.reduce((acc, task) => {
-    acc[task.name] = task.status;
-    return acc;
-  }, {} as Record<string, string>) || {};
-
-  const getStatusColor = (status: string) => {
-    switch (status) {
-      case "success":
-        return "status-success";
-      case "error":
-        return "status-error";
-      case "running":
-        return "status-running";
-      case "pending":
-        return "status-pending";
-      default:
-        return "status-warning";
-    }
-  };
-
-  const getStatusIcon = (status: string) => {
-    switch (status) {
-      case "running":
-        return <Activity className="w-4 h-4 animate-spin" />;
-      case "success":
-        return "✓";
-      case "error":
-        return <AlertCircle className="w-4 h-4" />;
-      default:
-        return "○";
-    }
-  };
+        <h1 className="text-2xl font-bold">لوحة التحكم</h1>
+        <p className="text-muted-foreground text-sm leading-7">
+          سجّل الدخول لعرض إحصائيات منصتك وإدارة قنوات الأفيليت.
+        </p>
+        <Button asChild className="w-full">
+          <a href={getLoginUrl()}>تسجيل الدخول <Zap className="ms-2 h-4 w-4" /></a>
+        </Button>
+      </Card>
+    </div>
+  );
 
   return (
-    <div className="min-h-screen bg-background grid-pattern">
+    <div dir="rtl" className="min-h-screen bg-background">
       {/* Header */}
-      <div className="border-b border-border bg-card/50 backdrop-blur">
-        <div className="container py-6">
-          <div className="flex items-center justify-between">
+      <header className="border-b border-border bg-card/70 backdrop-blur sticky top-0 z-40">
+        <div className="container flex items-center justify-between gap-4 py-4">
+          <div className="flex items-center gap-3">
+            <a href="/" className="text-muted-foreground hover:text-primary transition-colors">
+              <ArrowLeft className="h-5 w-5" />
+            </a>
             <div>
-              <h1 className="text-3xl font-bold text-gradient">Neo Pulse Hub</h1>
-              <p className="text-sm text-muted-foreground mt-1">AI Automation Dashboard</p>
+              <h1 className="text-xl font-bold">لوحة التحكم</h1>
+              <p className="text-xs text-muted-foreground">مرحباً {user?.name ?? "بك"} 👋</p>
             </div>
-            <div className="flex items-center gap-3">
-              <a href="/copilot" className="inline-flex items-center gap-2 rounded-lg border border-primary/40 bg-primary/10 px-3 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/20">
-                <Sparkles className="h-4 w-4" /> Neo Copilot
-              </a>
-              <div className="text-right">
-              <p className="text-sm text-muted-foreground">Welcome back</p>
-                <p className="font-semibold text-foreground">{user?.name || "User"}</p>
-              </div>
-            </div>
+          </div>
+          <div className="flex gap-2">
+            <Button asChild variant="outline" size="sm">
+              <a href="/copilot"><Sparkles className="ml-2 h-4 w-4" />Neo Copilot</a>
+            </Button>
+            <Button asChild size="sm">
+              <a href="/products"><Package className="ml-2 h-4 w-4" />المنتجات</a>
+            </Button>
           </div>
         </div>
-      </div>
+      </header>
 
-      {/* Main Content */}
-      <div className="container py-8 space-y-8">
-        {/* KPI Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <div className="kpi-card">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-sm text-muted-foreground">Products Fetched</p>
-                <p className="text-3xl font-bold text-primary mt-2">{totalProducts}</p>
-              </div>
-              <Activity className="w-8 h-8 text-primary/50" />
-            </div>
-            <p className="text-xs text-muted-foreground mt-4">Today's automation cycle</p>
-          </div>
+      <main className="container space-y-8 py-8">
 
-          <div className="kpi-card">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-sm text-muted-foreground">Blog Posts Generated</p>
-                <p className="text-3xl font-bold text-secondary mt-2">{totalBlogs}</p>
-              </div>
-              <FileText className="w-8 h-8 text-secondary/50" />
-            </div>
-            <p className="text-xs text-muted-foreground mt-4">Content created</p>
-          </div>
-
-          <div className="kpi-card">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-sm text-muted-foreground">Campaigns Sent</p>
-                <p className="text-3xl font-bold text-accent mt-2">{totalCampaigns}</p>
-              </div>
-              <Send className="w-8 h-8 text-accent/50" />
-            </div>
-            <p className="text-xs text-muted-foreground mt-4">Telegram posts</p>
-          </div>
-
-          <div className="kpi-card">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-sm text-muted-foreground">Successful Tasks</p>
-                <p className="text-3xl font-bold text-green-400 mt-2">{successfulTasks}</p>
-              </div>
-              <GitBranch className="w-8 h-8 text-green-400/50" />
-            </div>
-            <p className="text-xs text-muted-foreground mt-4">GitHub syncs</p>
-          </div>
-        </div>
-
-        {/* Task Status Overview */}
-        <div className="space-y-4">
-          <h2 className="text-xl font-bold text-foreground">Automation Tasks Status</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {["fetch-products", "generate-content", "publish-social", "sync-github"].map((taskName) => (
-              <div
-                key={taskName}
-                className="task-card cursor-pointer"
-                onClick={() => setSelectedTask(taskName)}
-              >
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="font-semibold text-foreground capitalize">{taskName.replace("-", " ")}</h3>
-                  <Badge className={`${getStatusColor(taskStatuses[taskName] || "pending")} flex items-center gap-1`}>
-                    {getStatusIcon(taskStatuses[taskName] || "pending")}
-                    {taskStatuses[taskName] || "pending"}
-                  </Badge>
-                </div>
-                <div className="space-y-2 text-xs text-muted-foreground">
-                  <p>Last Run: {tasksQuery.data?.find(t => t.name === taskName)?.lastRun ? new Date(tasksQuery.data.find(t => t.name === taskName)!.lastRun!).toLocaleString() : "Never"}</p>
-                  <p>Next Run: {tasksQuery.data?.find(t => t.name === taskName)?.nextRun ? new Date(tasksQuery.data.find(t => t.name === taskName)!.nextRun!).toLocaleString() : "Pending"}</p>
-                </div>
-                  <Button
-                  size="sm"
-                  className="w-full mt-4 bg-primary/20 hover:bg-primary/40 text-primary border border-primary/50"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                  }}
-                >
-                  Trigger Now
-                </Button>
-              </div>
+        {/* KPI Stats */}
+        <section>
+          <h2 className="mb-4 text-lg font-bold">📊 إحصائيات المنصة</h2>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { icon: Package,    label: "إجمالي المنتجات",    value: stats.totalProducts, color: "text-blue-400",   sub: "في الكتالوج" },
+              { icon: TrendingUp, label: "فئات المنتجات",      value: stats.categories,    color: "text-green-400",  sub: "فئة مختلفة" },
+              { icon: Link2,      label: "روابط أفيليت",       value: stats.withUrls,      color: "text-purple-400", sub: "منتج بروابط" },
+              { icon: Eye,        label: "متوسط التقييم",      value: stats.avgRating,     color: "text-yellow-400", sub: "من 5 نجوم" },
+            ].map(({ icon: Icon, label, value, color, sub }) => (
+              <Card key={label} className="border-primary/20 bg-card/80">
+                <CardContent className="p-5">
+                  <Icon className={`h-5 w-5 ${color} mb-3`} />
+                  <p className={`text-3xl font-black ${color}`}>{value}</p>
+                  <p className="mt-1 text-sm font-medium">{label}</p>
+                  <p className="text-xs text-muted-foreground">{sub}</p>
+                </CardContent>
+              </Card>
             ))}
           </div>
-        </div>
+        </section>
 
-        {/* Recent Logs */}
-        <div className="space-y-4">
-          <h2 className="text-xl font-bold text-foreground">Recent Execution Logs</h2>
-          <Card className="bg-card border-primary/20">
-            <div className="divide-y divide-border max-h-96 overflow-y-auto">
-              {logsQuery.data && logsQuery.data.length > 0 ? (
-                logsQuery.data.slice(0, 10).map((log) => (
-                  <div key={log.id} className="p-4 hover:bg-popover/50 transition-colors">
-                    <div className="flex items-center justify-between mb-2">
-                      <p className="font-semibold text-foreground text-sm">{log.taskName}</p>
-                      <Badge className={getStatusColor(log.status)}>{log.status}</Badge>
-                    </div>
-                    <p className="text-xs text-muted-foreground">{log.message}</p>
-                    <p className="text-xs text-muted-foreground/50 mt-1">{new Date(log.timestamp).toLocaleString()}</p>
+        {/* Affiliate status */}
+        <section>
+          <div className="mb-4 flex items-center justify-between">
+            <h2 className="text-lg font-bold">💰 شبكات الأفيليت</h2>
+            <Button asChild variant="outline" size="sm">
+              <a href="/affiliate-programs">إدارة الكل</a>
+            </Button>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {affiliateNetworks.map(net => (
+              <Card key={net.name} className="border-primary/15 bg-card/80">
+                <CardContent className="p-4">
+                  <div className="flex items-start justify-between gap-2 mb-3">
+                    <p className="font-semibold text-sm">{net.name}</p>
+                    <Badge className="bg-yellow-500/15 text-yellow-400 border-yellow-500/20 text-xs shrink-0">
+                      <Clock className="h-3 w-3 ml-1" /> بانتظار
+                    </Badge>
                   </div>
-                ))
-              ) : (
-                <div className="p-4 text-center text-muted-foreground">No logs yet</div>
-              )}
-            </div>
+                  <p className="text-xs text-green-400 font-semibold mb-3">عمولة {net.commission}</p>
+                  <code className="block text-xs bg-muted rounded px-2 py-1 text-muted-foreground mb-3 break-all">
+                    {net.var}
+                  </code>
+                  <Button asChild variant="outline" size="sm" className="w-full gap-1 text-xs">
+                    <a href={net.signup} target="_blank" rel="noreferrer noopener">
+                      سجّل <ExternalLink className="h-3 w-3" />
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+          {/* Render setup hint */}
+          <Card className="mt-4 border-blue-500/20 bg-blue-500/5">
+            <CardContent className="p-4 text-sm">
+              <div className="flex items-start gap-3">
+                <AlertCircle className="h-5 w-5 text-blue-400 shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-semibold text-blue-400">بعد التسجيل في أي شبكة:</p>
+                  <ol className="mt-2 space-y-1 text-muted-foreground text-xs">
+                    <li>1. اذهب لـ <a href="https://dashboard.render.com" target="_blank" rel="noreferrer" className="text-primary underline">dashboard.render.com</a> ← neo-pulse-hub ← Environment</li>
+                    <li>2. أضف المتغير (الاسم موضح فوق) بالقيمة التي حصلت عليها من الشبكة</li>
+                    <li>3. أضف اسم الشبكة إلى <code className="bg-muted px-1 rounded">AFFILIATE_APPROVED_NETWORKS</code></li>
+                    <li>4. اضغط Save — الروابط تتفعّل تلقائياً ✅</li>
+                  </ol>
+                </div>
+              </div>
+            </CardContent>
           </Card>
-        </div>
-      </div>
+        </section>
+
+        {/* Quick nav */}
+        <section>
+          <h2 className="mb-4 text-lg font-bold">🚀 الوصول السريع</h2>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { href: "/products",           icon: Package,    label: "كتالوج المنتجات",  sub: `${stats.totalProducts} منتج`,  color: "text-blue-400"   },
+              { href: "/blogs",              icon: FileText,   label: "المقالات والأدلة",  sub: "محتوى SEO",                   color: "text-green-400"  },
+              { href: "/copilot",            icon: Sparkles,   label: "Neo Copilot AI",   sub: "مساعد ذكي",                   color: "text-purple-400" },
+              { href: "/affiliate-programs", icon: Link2,      label: "شبكات الأفيليت",   sub: "7 شبكات",                     color: "text-yellow-400" },
+            ].map(({ href, icon: Icon, label, sub, color }) => (
+              <a key={href} href={href}>
+                <Card className="border-primary/15 bg-card/70 p-4 transition hover:-translate-y-1 hover:border-primary/50 hover:shadow-md cursor-pointer">
+                  <Icon className={`h-6 w-6 ${color} mb-3`} />
+                  <p className="font-semibold text-sm">{label}</p>
+                  <p className="text-xs text-muted-foreground mt-1">{sub}</p>
+                </Card>
+              </a>
+            ))}
+          </div>
+        </section>
+
+        {/* Top products preview */}
+        {products.length > 0 && (
+          <section>
+            <div className="mb-4 flex items-center justify-between">
+              <h2 className="text-lg font-bold">🛍️ أعلى المنتجات تقييماً</h2>
+              <Button asChild variant="ghost" size="sm">
+                <a href="/products">عرض الكل</a>
+              </Button>
+            </div>
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {[...products]
+                .sort((a, b) => Number(b.rating) - Number(a.rating))
+                .slice(0, 6)
+                .map(p => (
+                  <Card key={p.id} className="border-primary/15 bg-card/80 flex items-center gap-3 p-3">
+                    <img
+                      src={p.image || "https://placehold.co/80x80/0a0d1a/60a5fa?text=N"}
+                      alt={p.title}
+                      className="h-12 w-12 rounded-lg object-cover shrink-0"
+                      loading="lazy"
+                      onError={e => { e.currentTarget.src = "https://placehold.co/80x80/0a0d1a/60a5fa?text=N"; }}
+                    />
+                    <div className="min-w-0 flex-1">
+                      <p className="text-sm font-medium line-clamp-1">{p.title}</p>
+                      <div className="flex items-center gap-2 mt-1">
+                        {p.price && <span className="text-sm font-bold text-primary">${p.price}</span>}
+                        {p.rating && <span className="text-xs text-yellow-400">⭐ {p.rating}</span>}
+                      </div>
+                    </div>
+                    {p.url && (
+                      <a href={p.url} target="_blank" rel="noreferrer noopener sponsored" className="text-muted-foreground hover:text-primary transition-colors shrink-0">
+                        <ExternalLink className="h-4 w-4" />
+                      </a>
+                    )}
+                  </Card>
+                ))
+              }
+            </div>
+          </section>
+        )}
+
+      </main>
     </div>
   );
 }
-

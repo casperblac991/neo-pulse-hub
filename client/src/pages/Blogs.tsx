@@ -1,130 +1,170 @@
 import { trpc } from "@/lib/trpc";
-import { Card } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, FileText, ChevronDown, Loader2 } from "lucide-react";
-import { useState, useMemo } from "react";
-import { Streamdown } from "streamdown";
+import {
+  Search, BookOpen, ArrowLeft, Loader2, RefreshCw,
+  Clock, Globe, Sparkles, TrendingUp, ExternalLink,
+} from "lucide-react";
+import { useMemo, useState } from "react";
 
 export default function Blogs() {
-  const [expandedId, setExpandedId] = useState<string | null>(null);
-  const [selectedLanguage, setSelectedLanguage] = useState<"EN" | "AR" | null>(null);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [lang, setLang] = useState<"all" | "ar" | "en">("all");
 
-  const blogsQuery = trpc.blogs.all.useQuery();
-  const blogs = blogsQuery.data || [];
+  const blogsQuery = trpc.blogs.list.useQuery(undefined, { retry: 2, staleTime: 5 * 60_000 });
+  const blogs = blogsQuery.data ?? [];
 
-  const filteredBlogs = useMemo(() => {
-    return blogs.filter(blog => !selectedLanguage || blog.language === selectedLanguage);
-  }, [blogs, selectedLanguage]);
+  const filtered = useMemo(() => {
+    const q = searchTerm.trim().toLowerCase();
+    return blogs.filter(b => {
+      const matchLang = lang === "all" || b.language === lang;
+      const matchQ = !q || b.title.toLowerCase().includes(q) || (b.excerpt ?? "").toLowerCase().includes(q);
+      return matchLang && matchQ;
+    });
+  }, [blogs, searchTerm, lang]);
 
-  const enCount = blogs.filter(b => b.language === "EN").length;
-  const arCount = blogs.filter(b => b.language === "AR").length;
+  const arCount = blogs.filter(b => b.language === "ar").length;
+  const enCount = blogs.filter(b => b.language === "en").length;
 
   return (
-    <div className="min-h-screen bg-background grid-pattern">
+    <div dir="rtl" className="min-h-screen bg-background">
       {/* Header */}
-      <div className="border-b border-border bg-card/50 backdrop-blur">
-        <div className="container py-6">
-          <h1 className="text-3xl font-bold text-gradient">Blog Posts Library</h1>
-          <p className="text-sm text-muted-foreground mt-1">View all AI-generated blog content</p>
-          <a href="/legacy-blog/ar/index.html" className="mt-3 inline-flex items-center gap-2 text-sm text-primary hover:underline">
-            فتح أرشيف المقالات القديم (52 مقالًا) <ExternalLink className="h-4 w-4" />
-          </a>
+      <header className="border-b border-border bg-card/70 backdrop-blur sticky top-0 z-40">
+        <div className="container flex items-center justify-between gap-4 py-4">
+          <div className="flex items-center gap-3">
+            <a href="/" className="text-muted-foreground hover:text-primary transition-colors">
+              <ArrowLeft className="h-5 w-5" />
+            </a>
+            <div>
+              <h1 className="text-xl font-bold">الأدلة والمقارنات</h1>
+              <p className="text-xs text-muted-foreground">{blogs.length} مقال · عربي وإنجليزي</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-2 text-xs text-muted-foreground">
+            <span className="text-primary font-semibold">{arCount}</span> عربي
+            <span>·</span>
+            <span className="text-blue-400 font-semibold">{enCount}</span> إنجليزي
+          </div>
         </div>
-      </div>
+      </header>
 
-      {/* Content */}
-      <div className="container py-8 space-y-6">
-        {/* Language Filter */}
-        <div className="flex flex-wrap gap-2">
-          <Button
-            variant={selectedLanguage === null ? "default" : "outline"}
-            onClick={() => setSelectedLanguage(null)}
-            className="text-xs"
-          >
-            All Languages ({blogs.length})
-          </Button>
-          <Button
-            variant={selectedLanguage === "EN" ? "default" : "outline"}
-            onClick={() => setSelectedLanguage("EN")}
-            className="text-xs"
-          >
-            EN ({enCount})
-          </Button>
-          <Button
-            variant={selectedLanguage === "AR" ? "default" : "outline"}
-            onClick={() => setSelectedLanguage("AR")}
-            className="text-xs"
-          >
-            AR ({arCount})
-          </Button>
+      <main className="container space-y-6 py-6">
+        {/* SEO note */}
+        <div className="flex items-start gap-3 rounded-xl border border-green-500/20 bg-green-500/5 p-4 text-sm">
+          <TrendingUp className="h-5 w-5 text-green-400 shrink-0 mt-0.5" />
+          <div>
+            <p className="font-semibold text-green-400">محتوى مُحسَّن للبحث (SEO)</p>
+            <p className="text-muted-foreground text-xs mt-1">
+              كل مقال يستهدف كلمات مفتاحية بحثية — الزوار من Google يتحولون لعملاء عبر روابط الأفيليت.
+            </p>
+          </div>
         </div>
 
-        {/* Blog List */}
-        {blogsQuery.isLoading ? (
-          <div className="flex justify-center py-12">
-            <Loader2 className="animate-spin text-primary w-8 h-8" />
+        {/* Search + lang filter */}
+        <div className="space-y-3">
+          <div className="relative">
+            <Search className="absolute right-3 top-3 h-4 w-4 text-muted-foreground" />
+            <Input
+              dir="rtl"
+              placeholder="ابحث في المقالات..."
+              value={searchTerm}
+              onChange={e => setSearchTerm(e.target.value)}
+              className="pr-10 input-neon"
+            />
           </div>
-        ) : filteredBlogs.length === 0 ? (
-          <div className="text-center py-12">
-            <p className="text-muted-foreground">No blog posts found</p>
+          <div className="flex gap-2">
+            {([
+              { key: "all", label: `الكل (${blogs.length})` },
+              { key: "ar",  label: `🇸🇦 عربي (${arCount})` },
+              { key: "en",  label: `🇬🇧 English (${enCount})` },
+            ] as const).map(({ key, label }) => (
+              <Button key={key} size="sm" variant={lang === key ? "default" : "outline"} onClick={() => setLang(key)}>
+                {label}
+              </Button>
+            ))}
           </div>
-        ) : (
-          <div className="space-y-4">
-            {filteredBlogs.map(blog => (
-              <Card
-                key={blog.id}
-                className="bg-card border-primary/20 hover:border-primary/50 transition-all cursor-pointer"
-                onClick={() => setExpandedId(expandedId === blog.id ? null : blog.id)}
-              >
-                <div className="p-4">
-                  <div className="flex items-start justify-between">
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2 mb-2">
-                        <FileText className="w-4 h-4 text-primary" />
-                        <h3 className="font-semibold text-foreground text-lg">{blog.title}</h3>
-                      </div>
-                      <div className="flex flex-wrap gap-2">
-                        <Badge className="bg-accent/20 text-accent border-accent/30">
-                          {blog.language}
-                        </Badge>
-                        {blog.productId && (
-                          <Badge className="bg-secondary/20 text-secondary border-secondary/30">
-                            Product: {blog.productId}
-                          </Badge>
-                        )}
-                      </div>
-                      <p className="text-xs text-muted-foreground mt-2">
-                        Created: {new Date(blog.createdAt).toLocaleString()}
-                      </p>
-                    </div>
-                    <ChevronDown
-                      className={`w-5 h-5 text-primary transition-transform ${
-                        expandedId === blog.id ? "rotate-180" : ""
-                      }`}
+        </div>
+
+        {/* Loading */}
+        {blogsQuery.isLoading && (
+          <div className="flex items-center justify-center gap-3 py-16 text-muted-foreground">
+            <Loader2 className="h-6 w-6 animate-spin text-primary" />
+            <p>جارٍ تحميل المقالات...</p>
+          </div>
+        )}
+
+        {/* Error */}
+        {blogsQuery.isError && (
+          <Card className="mx-auto max-w-md p-8 text-center">
+            <RefreshCw className="mx-auto h-8 w-8 text-destructive mb-3" />
+            <p className="font-semibold">تعذر تحميل المقالات</p>
+            <Button className="mt-4" onClick={() => blogsQuery.refetch()}>إعادة المحاولة</Button>
+          </Card>
+        )}
+
+        {/* Empty */}
+        {!blogsQuery.isLoading && !blogsQuery.isError && filtered.length === 0 && (
+          <Card className="mx-auto max-w-md p-10 text-center">
+            <BookOpen className="mx-auto h-10 w-10 text-muted-foreground mb-3" />
+            <p className="font-semibold">لا توجد مقالات مطابقة</p>
+            <p className="text-sm text-muted-foreground mt-1">جرّب كلمة بحث أخرى أو غيّر اللغة</p>
+          </Card>
+        )}
+
+        {/* Blogs grid */}
+        {!blogsQuery.isLoading && !blogsQuery.isError && filtered.length > 0 && (
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {filtered.map((blog, i) => (
+              <Card key={(blog as any).id ?? i} className="group border-primary/15 bg-card/80 overflow-hidden transition hover:-translate-y-1 hover:border-primary/50">
+                {(blog as any).image && (
+                  <div className="overflow-hidden">
+                    <img
+                      src={(blog as any).image}
+                      alt={blog.title}
+                      className="h-40 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      loading="lazy"
+                      onError={e => { e.currentTarget.style.display = "none"; }}
                     />
                   </div>
-
-                  {/* Expanded Content */}
-                  {expandedId === blog.id && blog.content && (
-                    <div className="mt-4 pt-4 border-t border-border">
-                      <div className="prose prose-invert max-w-none text-sm">
-                        <Streamdown>{blog.content.substring(0, 500) + "..."}</Streamdown>
-                      </div>
-                      <Button
-                        size="sm"
-                        className="mt-4 bg-primary/20 hover:bg-primary/40 text-primary border border-primary/50"
-                      >
-                        Read Full Post
-                      </Button>
-                    </div>
+                )}
+                <CardContent className="p-5 space-y-3">
+                  <div className="flex items-center gap-2">
+                    <Badge variant="outline" className="text-xs">
+                      {blog.language === "ar" ? "🇸🇦 عربي" : "🇬🇧 English"}
+                    </Badge>
+                    {(blog as any).category && (
+                      <Badge className="text-xs bg-primary/15 text-primary border-primary/20">
+                        {(blog as any).category}
+                      </Badge>
+                    )}
+                  </div>
+                  <h2 className="font-bold leading-snug line-clamp-2 group-hover:text-primary transition-colors">
+                    {blog.title}
+                  </h2>
+                  {(blog as any).excerpt && (
+                    <p className="text-xs leading-5 text-muted-foreground line-clamp-3">
+                      {(blog as any).excerpt}
+                    </p>
                   )}
-                </div>
+                  {(blog as any).url ? (
+                    <Button asChild variant="outline" size="sm" className="w-full gap-2">
+                      <a href={(blog as any).url} target="_blank" rel="noreferrer noopener">
+                        قراءة المقال <ExternalLink className="h-3 w-3" />
+                      </a>
+                    </Button>
+                  ) : (blog as any).slug ? (
+                    <Button asChild variant="outline" size="sm" className="w-full">
+                      <a href={`/blogs/${(blog as any).slug}`}>قراءة المقال</a>
+                    </Button>
+                  ) : null}
+                </CardContent>
               </Card>
             ))}
           </div>
         )}
-      </div>
+      </main>
     </div>
   );
 }
