@@ -55,7 +55,7 @@
   "rating": 4.7,
   "reviews": 2543,
   "image": "https://m.media-amazon.com/images/...",
-  "affiliate_link": "https://www.amazon.com/dp/B0CQSW5P6N?tag=neopulsehub-20",
+  "affiliate_link": "https://www.amazon.com/dp/B0CQSW5P6N?tag=neopulsehub09-20",
   "description": "وصف جذاب تم توليده بـ GPT..."
 }
 ```

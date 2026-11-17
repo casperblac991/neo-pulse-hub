@@ -317,7 +317,7 @@ def generate_html():
                     {discount_html}
                     <span class="original-price">${product.get('original_price', 0)}</span>
                 </div>
-                <a href="https://www.amazon.com/s?k={product.get('name_en', '')}&tag=neopulsehub-20" target="_blank" class="buy-button">اشتري من أمازون</a>
+                <a href="https://www.amazon.com/s?k={product.get('name_en', '')}&tag=neopulsehub09-20" target="_blank" class="buy-button">اشتري من أمازون</a>
                 <div class="stock-info">المخزون: {product.get('stock', 0)} وحدة</div>
             </div>
         </div>

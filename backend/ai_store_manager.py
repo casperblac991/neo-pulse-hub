@@ -37,7 +37,7 @@ class Config:
     GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", os.getenv("GOOGLE_API_KEY", ""))
     
     # Affiliate
-    AMAZON_TAG = os.getenv("AMAZON_AFFILIATE_TAG", "neopulsehub-20")
+    AMAZON_TAG = os.getenv("AMAZON_AFFILIATE_TAG", "neopulsehub09-20")
 
 # ─────────────────────────────────────────────────────────────
 # Logging

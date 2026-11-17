@@ -43,12 +43,12 @@
 
 ### روابط الأفلييت:
 ```
-https://www.amazon.com/dp/[ASIN]?tag=neopulsehub-20
+https://www.amazon.com/dp/[ASIN]?tag=neopulsehub09-20
 ```
 
 **مثال:**
 ```
-https://www.amazon.com/dp/B0CQSW5P6N?tag=neopulsehub-20
+https://www.amazon.com/dp/B0CQSW5P6N?tag=neopulsehub09-20
 ```
 
 ---
@@ -76,7 +76,7 @@ https://www.amazon.com/dp/B0CQSW5P6N?tag=neopulsehub-20
 شاشة Retina عالية الدقة + ميزات صحية متقدمة
 بطارية تدوم طوال اليوم + تصميم أنيق
 
-🔗 اشتري الآن: https://www.amazon.com/dp/B0CQSW5P6N?tag=neopulsehub-20
+🔗 اشتري الآن: https://www.amazon.com/dp/B0CQSW5P6N?tag=neopulsehub09-20
 
 #تسوق_ذكي #أمازون #ساعات_ذكية
 ```
@@ -100,7 +100,7 @@ Apple Watch Series 9
 
 أحدث ساعة ذكية من أبل مع شاشة Retina وميزات صحية متقدمة!
 
-👉 اشتري الآن: https://www.amazon.com/dp/B0CQSW5P6N?tag=neopulsehub-20
+👉 اشتري الآن: https://www.amazon.com/dp/B0CQSW5P6N?tag=neopulsehub09-20
 
 #NEO_PULSE_HUB
 ```
@@ -120,7 +120,7 @@ Sony WH-1000XM5 - أفضل سماعات إلغاء ضوضاء
 ✨ صوت Hi-Res عالي الجودة
 ✨ بطارية 30 ساعة
 
-🔗 اشتري الآن: https://www.amazon.com/dp/B0BDHZZ4LT?tag=neopulsehub-20
+🔗 اشتري الآن: https://www.amazon.com/dp/B0BDHZZ4LT?tag=neopulsehub09-20
 
 #تسوق_ذكي #أمازون #سماعات
 ```
@@ -144,7 +144,7 @@ Sony WH-1000XM5
 
 أفضل سماعات إلغاء ضوضاء مع صوت Hi-Res وبطارية 30 ساعة!
 
-👉 اشتري الآن: https://www.amazon.com/dp/B0BDHZZ4LT?tag=neopulsehub-20
+👉 اشتري الآن: https://www.amazon.com/dp/B0BDHZZ4LT?tag=neopulsehub09-20
 
 #NEO_PULSE_HUB
 ```

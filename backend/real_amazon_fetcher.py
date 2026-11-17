@@ -19,7 +19,7 @@ except ImportError:
 # ═══════════════════════════════════════════════════════════
 # إعدادات
 # ═══════════════════════════════════════════════════════════
-AFFILIATE_TAG = os.getenv("AMAZON_AFFILIATE_TAG", "neopulsehub-20")
+AFFILIATE_TAG = os.getenv("AMAZON_AFFILIATE_TAG", "neopulsehub09-20")
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # ═══════════════════════════════════════════════════════════

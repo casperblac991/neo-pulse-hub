@@ -83,7 +83,7 @@ function getRandomProducts(count) {
 
 // Format product as Telegram message
 function formatProductMessage(product) {
-  const affiliateUrl = `${product.url}?tag=${process.env.AMAZON_AFFILIATE_TAG || 'neopulsehub-20'}`;
+  const affiliateUrl = `${product.url}?tag=${process.env.AMAZON_AFFILIATE_TAG || 'neopulsehub09-20'}`;
 
   const message = `
 🎯 *${product.title}*

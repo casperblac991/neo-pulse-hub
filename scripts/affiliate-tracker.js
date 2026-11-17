@@ -8,7 +8,7 @@
   'use strict';
   var STORAGE_KEY = 'nph_affiliate_log_v1';
   var NETWORKS = [
-    { id: 'amazon', match: 'amazon.com', tagParam: 'tag', tag: 'neopulsehub-20' },
+    { id: 'amazon', match: 'amazon.com', tagParam: 'tag', tag: 'neopulsehub09-20' },
     { id: 'aliexpress', match: 'aliexpress.com' },
     { id: 'ebay', match: 'ebay.com' },
     { id: 'walmart', match: 'walmart.com' },

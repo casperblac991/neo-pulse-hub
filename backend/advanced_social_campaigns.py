@@ -54,7 +54,7 @@ class SocialMediaCampaignGenerator:
     
     def create_telegram_campaign(self, product, campaign_text):
         """إنشاء حملة تيليجرام"""
-        affiliate_link = f"https://www.amazon.com/dp/{product['asin']}?tag=neopulsehub-20"
+        affiliate_link = f"https://www.amazon.com/dp/{product['asin']}?tag=neopulsehub09-20"
         
         message = f"""
 {campaign_text}
@@ -86,7 +86,7 @@ class SocialMediaCampaignGenerator:
     
     def create_whatsapp_campaign(self, product, campaign_text):
         """إنشاء حملة واتساب"""
-        affiliate_link = f"https://www.amazon.com/dp/{product['asin']}?tag=neopulsehub-20"
+        affiliate_link = f"https://www.amazon.com/dp/{product['asin']}?tag=neopulsehub09-20"
         
         message = f"""
 🎉 عرض حصري! 🎉

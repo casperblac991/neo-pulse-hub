@@ -6,7 +6,7 @@ import urllib.parse
 JSON_STORE = 'data/products.json'
 JSON_POOL = 'data/products_pool.json'
 
-def get_smart_link(name, tag="neopulsehub-20"):
+def get_smart_link(name, tag="neopulsehub09-20"):
     encoded_query = urllib.parse.quote(name)
     return f"https://www.amazon.com/s?k={encoded_query}&tag={tag}"
 

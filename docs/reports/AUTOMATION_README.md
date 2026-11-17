@@ -51,7 +51,7 @@ OPENAI_API_KEY=your_openai_api_key
 TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
 TELEGRAM_CHANNEL_ID=@noepulsehub_bot
 ADMIN_USER_ID=your_telegram_user_id
-AMAZON_AFFILIATE_TAG=neopulsehub-20
+AMAZON_AFFILIATE_TAG=neopulsehub09-20
 GITHUB_TOKEN=your_github_token
 ```
 

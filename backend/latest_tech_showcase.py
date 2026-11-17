@@ -162,7 +162,7 @@ class LatestTechShowcase:
     """عرض أحدث التقنيات"""
     
     def __init__(self):
-        self.affiliate_tag = "neopulsehub-20"
+        self.affiliate_tag = "neopulsehub09-20"
         self.data_file = "latest_tech.json"
         
     def generate_affiliate_link(self, asin):

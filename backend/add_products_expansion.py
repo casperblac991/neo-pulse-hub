@@ -290,7 +290,7 @@ def create_product_object(product, index, base_id="NPH-EXP"):
         "badge": {"ar": random.choice(badges), "en": random.choice(badges_en)},
         "featured": random.random() > 0.8,
         "in_stock": True,
-        "affiliate_amazon": f"https://www.amazon.com/s?k={name_for_url}&tag=neopulsehub-20",
+        "affiliate_amazon": f"https://www.amazon.com/s?k={name_for_url}&tag=neopulsehub09-20",
         "asin": "", # Placeholder for ASIN if available
         "affiliate_aliexpress": "",
         "description": {
@@ -395,7 +395,7 @@ def main():
         print(f"   • {cat}: {count} منتج")
     
     print(f"\n🎯 الهدف: زيادة النقرات والإيرادات عبر Amazon Associates")
-    print(f"💰 رابط التسويق: ?tag=neopulsehub-20")
+    print(f"💰 رابط التسويق: ?tag=neopulsehub09-20")
 
 if __name__ == "__main__":
     main()

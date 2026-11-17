@@ -17,7 +17,7 @@ client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 
 class AmazonAffiliateFetcher:
     def __init__(self):
-        self.affiliate_tag = os.getenv('AMAZON_AFFILIATE_TAG', 'neopulsehub-20')
+        self.affiliate_tag = os.getenv('AMAZON_AFFILIATE_TAG', 'neopulsehub09-20')
         self.products_file = 'amazon_products.json'
         self.products = []
         self.load_products()

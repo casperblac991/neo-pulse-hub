@@ -122,7 +122,7 @@ This document outlines the complete integration of **OpenClaw** (AI Gateway) wit
 TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
 GROQ_API_KEY=your_groq_api_key
 OPENAI_API_KEY=your_openai_api_key
-AMAZON_AFFILIATE_TAG=neopulsehub-20
+AMAZON_AFFILIATE_TAG=neopulsehub09-20
 GITHUB_TOKEN=your_github_token
 GITHUB_REPO=your_username/neo-pulse-hub
 ```

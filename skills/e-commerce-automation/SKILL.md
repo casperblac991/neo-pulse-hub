@@ -74,7 +74,7 @@ python3 social_media_automation.py
 CUSTOMER_BOT_TOKEN=your_telegram_bot_token
 GEMINI_API_KEY=your_gemini_api_key
 SITE_URL=https://neo-pulse-hub.it.com
-AMAZON_AFFILIATE_TAG=neopulsehub-20
+AMAZON_AFFILIATE_TAG=neopulsehub09-20
 ```
 
 ## File Structure

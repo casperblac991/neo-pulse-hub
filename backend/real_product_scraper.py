@@ -48,7 +48,7 @@ class RealProductScraper:
                 "image_url": "https://www.apple.com/iphone-15/images/overview/hero/iphone15_pro_max__fv0oy9b2rlaa_large.jpg",
                 "description": "أحدث هاتف ذكي من أبل مع معالج A17 Pro وكاميرا 48MP",
                 "asin": "B0CQSW5P6N",
-                "affiliate_link": f"https://www.amazon.com/dp/B0CQSW5P6N?tag=neopulsehub-20",
+                "affiliate_link": f"https://www.amazon.com/dp/B0CQSW5P6N?tag=neopulsehub09-20",
                 "scraped_date": datetime.now().isoformat(),
                 "verified": True
             },
@@ -63,7 +63,7 @@ class RealProductScraper:
                 "image_url": "https://images.samsung.com/is/image/samsung/assets/us/2024/smartphones/01-galaxy-s24-ultra/hero/01-s24-ultra-hero-highlights-1600x1200.jpg",
                 "description": "هاتف سامسونج الرائد مع شاشة Dynamic AMOLED وقلم S Pen",
                 "asin": "B0BDHZZ4LT",
-                "affiliate_link": f"https://www.amazon.com/dp/B0BDHZZ4LT?tag=neopulsehub-20",
+                "affiliate_link": f"https://www.amazon.com/dp/B0BDHZZ4LT?tag=neopulsehub09-20",
                 "scraped_date": datetime.now().isoformat(),
                 "verified": True
             },
@@ -78,7 +78,7 @@ class RealProductScraper:
                 "image_url": "https://www.apple.com/macbook-pro/images/overview/hero/16-inch__fv0oy9b2rlaa_large.jpg",
                 "description": "لابتوب احترافي بمعالج M3 Max وشاشة 16 بوصة Liquid Retina XDR",
                 "asin": "B07BVFVR9L",
-                "affiliate_link": f"https://www.amazon.com/dp/B07BVFVR9L?tag=neopulsehub-20",
+                "affiliate_link": f"https://www.amazon.com/dp/B07BVFVR9L?tag=neopulsehub09-20",
                 "scraped_date": datetime.now().isoformat(),
                 "verified": True
             },
@@ -93,7 +93,7 @@ class RealProductScraper:
                 "image_url": "https://www.sony.com/image/wh1000xm5_hero_large.jpg",
                 "description": "أفضل سماعات إلغاء الضوضاء مع صوت Hi-Res وبطارية 30 ساعة",
                 "asin": "B0CQSW5P6N",
-                "affiliate_link": f"https://www.amazon.com/dp/B0CQSW5P6N?tag=neopulsehub-20",
+                "affiliate_link": f"https://www.amazon.com/dp/B0CQSW5P6N?tag=neopulsehub09-20",
                 "scraped_date": datetime.now().isoformat(),
                 "verified": True
             },
@@ -108,7 +108,7 @@ class RealProductScraper:
                 "image_url": "https://www.apple.com/ipad-pro/images/overview/hero/ipad_pro_12_9__fv0oy9b2rlaa_large.jpg",
                 "description": "جهاز لوحي احترافي مع معالج M2 وشاشة Liquid Retina XDR",
                 "asin": "B0BVFVR9L",
-                "affiliate_link": f"https://www.amazon.com/dp/B0BVFVR9L?tag=neopulsehub-20",
+                "affiliate_link": f"https://www.amazon.com/dp/B0BVFVR9L?tag=neopulsehub09-20",
                 "scraped_date": datetime.now().isoformat(),
                 "verified": True
             },
@@ -123,7 +123,7 @@ class RealProductScraper:
                 "image_url": "https://lh3.googleusercontent.com/pixel8pro_hero.jpg",
                 "description": "هاتف جوجل الرائد مع معالج Tensor G3 وكاميرا ذكية",
                 "asin": "B0CQSW5P6N",
-                "affiliate_link": f"https://www.amazon.com/dp/B0CQSW5P6N?tag=neopulsehub-20",
+                "affiliate_link": f"https://www.amazon.com/dp/B0CQSW5P6N?tag=neopulsehub09-20",
                 "scraped_date": datetime.now().isoformat(),
                 "verified": True
             },
@@ -138,7 +138,7 @@ class RealProductScraper:
                 "image_url": "https://www.dell.com/xps15_hero.jpg",
                 "description": "لابتوب قوي مع معالج Intel Core i9 وشاشة OLED",
                 "asin": "B0BDHZZ4LT",
-                "affiliate_link": f"https://www.amazon.com/dp/B0BDHZZ4LT?tag=neopulsehub-20",
+                "affiliate_link": f"https://www.amazon.com/dp/B0BDHZZ4LT?tag=neopulsehub09-20",
                 "scraped_date": datetime.now().isoformat(),
                 "verified": True
             },
@@ -153,7 +153,7 @@ class RealProductScraper:
                 "image_url": "https://images.samsung.com/galaxy-watch-6-classic.jpg",
                 "description": "ساعة ذكية مع تصميم كلاسيكي وإطار دوار",
                 "asin": "B07BVFVR9L",
-                "affiliate_link": f"https://www.amazon.com/dp/B07BVFVR9L?tag=neopulsehub-20",
+                "affiliate_link": f"https://www.amazon.com/dp/B07BVFVR9L?tag=neopulsehub09-20",
                 "scraped_date": datetime.now().isoformat(),
                 "verified": True
             }

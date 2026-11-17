@@ -19,7 +19,7 @@ const openai = process.env.OPENAI_API_KEY
 const CONFIG = {
   productsDir: path.join(__dirname, '../products'),
   logsDir: path.join(__dirname, '../logs'),
-  affiliateTag: process.env.AMAZON_AFFILIATE_TAG || 'neopulsehub-20',
+  affiliateTag: process.env.AMAZON_AFFILIATE_TAG || 'neopulsehub09-20',
   maxProducts: 10, // Fetch up to 10 new products per run
   productCategories: [
     'electronics',

@@ -2,7 +2,7 @@
   "updatedAt": "2026-11-15T00:40:00Z",
   "version": "affiliate-expansion-v3-activated",
   "defaultLocale": "ar",
-  "amazonTag": "neopulsehub-20",
+  "amazonTag": "neopulsehub09-20",
   "aliexpressTrackingId": "ma1023802882fefae",
   "signupPriority": [
     { "order": 1, "id": "aliexpress", "reason": "APPROVED 2026-11-14: global + Arabic audience fit, no geographic restrictions, higher device commissions than Amazon" },
@@ -15,9 +15,9 @@
       "name": "Amazon Associates",
       "status": "active",
       "priority": 1,
-      "tag": "neopulsehub-20",
+      "tag": "neopulsehub09-20",
       "categories": ["smartwatches", "earbuds", "smart-home", "accessories"],
-      "notes": "Primary US store. Tag neopulsehub-20 is live and already earning."
+      "notes": "Primary US store. Tag neopulsehub09-20 is live and already earning."
     },
     {
       "id": "aliexpress",

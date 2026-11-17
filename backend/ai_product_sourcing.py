@@ -25,7 +25,7 @@ except ImportError:
 # Configuration
 # ─────────────────────────────────────────────────────────────
 
-AMAZON_TAG = os.getenv("AMAZON_AFFILIATE_TAG", "neopulsehub-20")
+AMAZON_TAG = os.getenv("AMAZON_AFFILIATE_TAG", "neopulsehub09-20")
 
 logging.basicConfig(
     format="%(asctime)s | %(name)s | %(levelname)s | %(message)s",

@@ -21,7 +21,7 @@ log = logging.getLogger("affiliate_system")
 # ═══════════════════════════════════════════════════════════
 # إعدادات الأفلييت
 # ═══════════════════════════════════════════════════════════
-AFFILIATE_TAG = os.getenv("AMAZON_AFFILIATE_TAG", "neopulsehub-20")
+AFFILIATE_TAG = os.getenv("AMAZON_AFFILIATE_TAG", "neopulsehub09-20")
 ADMIN_BOT_TOKEN = os.getenv("ADMIN_BOT_TOKEN", "")
 ADMIN_USER_ID = int(os.getenv("ADMIN_USER_ID", "6790340715"))
 

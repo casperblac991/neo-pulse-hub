@@ -407,7 +407,7 @@ def create_product_entry(product, index):
         "badge": {"ar": random.choice(badges_ar), "en": random.choice(badges_en)},
         "featured": random.random() > 0.85,
         "in_stock": True,
-        "affiliate_amazon": f"https://www.amazon.com/s?k={name_for_url}&tag=neopulsehub-20",
+        "affiliate_amazon": f"https://www.amazon.com/s?k={name_for_url}&tag=neopulsehub09-20",
         "affiliate_aliexpress": "",
         "description": {
             "ar": f"{product['name_en']} - منتج عالي الجودة مع ضمان سنتين وخدمة عملاء 24/7. التوصيل خلال 3-7 أيام عمل. مصمم لتجربة مستخدم ممتازة.",
@@ -465,7 +465,7 @@ def main():
         print(f"   • {cat_name}: {count} منتج")
     
     print(f"\n🎯 الهدف: زيادة النقرات والإيرادات")
-    print(f"💰 رابط التسويق: ?tag=neopulsehub-20")
+    print(f"💰 رابط التسويق: ?tag=neopulsehub09-20")
 
 if __name__ == "__main__":
     main()

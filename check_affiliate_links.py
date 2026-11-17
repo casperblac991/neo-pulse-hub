@@ -2,7 +2,7 @@ import os
 import re
 from bs4 import BeautifulSoup
 
-def check_and_update_affiliate_links(html_file_path, amazon_tag='neopulsehub-20'):
+def check_and_update_affiliate_links(html_file_path, amazon_tag='neopulsehub09-20'):
     with open(html_file_path, 'r', encoding='utf-8') as f:
         content = f.read()
 

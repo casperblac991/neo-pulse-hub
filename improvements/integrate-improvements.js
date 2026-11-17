@@ -45,7 +45,7 @@
         // Affiliate link
         let amazonLink = product.affiliate_amazon || '#';
         if (!amazonLink.includes('tag=')) {
-            amazonLink += (amazonLink.includes('?') ? '&' : '?') + 'tag=neopulsehub-20';
+            amazonLink += (amazonLink.includes('?') ? '&' : '?') + 'tag=neopulsehub09-20';
         }
         
         // Discount calculation

@@ -24,7 +24,7 @@ CUSTOMER_BOT_TOKEN=your_telegram_bot_token
 TELEGRAM_CHANNEL=@your_channel_name
 
 # Amazon (اختياري)
-AMAZON_AFFILIATE_TAG=neopulsehub-20
+AMAZON_AFFILIATE_TAG=neopulsehub09-20
 ```
 
 ### تثبيت المكتبات
