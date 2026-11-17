@@ -9,7 +9,7 @@
     "rating": 4.8,
     "category": "smartwatch",
     "image": "images/products/Gq2JNMnegXco.jpg",
-    "affiliate_amazon": "https://www.amazon.com/s?k=Apple%20Watch%20Series%209&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0CHKV4YVM?tag=neopulsehub09-20&linkCode=ogi&th=1&psc=1",
     "asin": "B0CHKV4YVM",
     "gallery": [
       "images/products/Gq2JNMnegXco.jpg",
@@ -55,7 +55,7 @@
     "rating": 4.5,
     "category": "smartwatch",
     "image": "images/products/5AjtpPKrp8e3.jpg",
-    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung%20Galaxy%20Watch%205&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0B5W8V2L3?tag=neopulsehub09-20&linkCode=ogi&th=1&psc=1",
     "asin": "B0B5W8V2L3",
     "gallery": [
       "images/products/5AjtpPKrp8e3.jpg",
@@ -101,7 +101,7 @@
     "rating": 4.8,
     "category": "earbuds",
     "image": "images/products/kgRdLhjYdmul.jpg",
-    "affiliate_amazon": "https://www.amazon.com/s?k=Apple%20AirPods%20Pro&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B0BDN8TDMQ?tag=neopulsehub09-20&linkCode=ogi&th=1&psc=1",
     "asin": "B0BDN8TDMQ",
     "gallery": [
       "images/products/kgRdLhjYdmul.jpg",
@@ -147,7 +147,7 @@
     "rating": 4.7,
     "category": "earbuds",
     "image": "images/products/z3EeMLnHoL92.jpg",
-    "affiliate_amazon": "https://www.amazon.com/s?k=Sony%20WF-1000XM4&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/dp/B094C4VDJZ?tag=neopulsehub09-20&linkCode=ogi&th=1&psc=1",
     "asin": "B094C4VDJZ",
     "gallery": [
       "images/products/z3EeMLnHoL92.jpg",
@@ -205,7 +205,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+Watch+Ultra+2&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+Watch+Ultra+2&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DApple%2520Watch%2520Ultra%25202",
     "description": {
@@ -282,7 +282,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Galaxy+Watch+7&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Galaxy+Watch+7&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSamsung%2520Galaxy%2520Watch%25207",
     "description": {
@@ -359,7 +359,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin+Fenix+7X+Pro&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin+Fenix+7X+Pro&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DGarmin%2520Fenix%25207X%2520Pro",
     "description": {
@@ -436,7 +436,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Fitbit+Sense+2&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Fitbit+Sense+2&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DFitbit%2520Sense%25202",
     "description": {
@@ -513,7 +513,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Amazfit+GTR+4&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Amazfit+GTR+4&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAmazfit%2520GTR%25204",
     "description": {
@@ -590,7 +590,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Fossil+Gen+6+Smartwatch&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Fossil+Gen+6+Smartwatch&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DFossil%2520Gen%25206%2520Smartwatch",
     "description": {
@@ -667,7 +667,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Huawei+Watch+GT+4&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Huawei+Watch+GT+4&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DHuawei%2520Watch%2520GT%25204",
     "description": {
@@ -744,7 +744,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=TicWatch+Pro+5&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=TicWatch+Pro+5&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DTicWatch%2520Pro%25205",
     "description": {
@@ -821,7 +821,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Galaxy+Watch+6&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Galaxy+Watch+6&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSamsung%2520Galaxy%2520Watch%25206",
     "description": {
@@ -898,7 +898,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+Watch+SE+2&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+Watch+SE+2&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DApple%2520Watch%2520SE%25202",
     "description": {
@@ -975,7 +975,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+AirPods+Pro+2&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+AirPods+Pro+2&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DApple%2520AirPods%2520Pro%25202",
     "description": {
@@ -1052,7 +1052,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Galaxy+Buds2+Pro&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Galaxy+Buds2+Pro&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSamsung%2520Galaxy%2520Buds2%2520Pro",
     "description": {
@@ -1129,7 +1129,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Sony+WF-1000XM5&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Sony+WF-1000XM5&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSony%2520WF-1000XM5",
     "description": {
@@ -1206,7 +1206,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Bose+QuietComfort+Ultra+Earbuds&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Bose+QuietComfort+Ultra+Earbuds&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DBose%2520QuietComfort%2520Ultra%2520Earbuds",
     "description": {
@@ -1283,7 +1283,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Jabra+Elite+85t&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Jabra+Elite+85t&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DJabra%2520Elite%252085t",
     "description": {
@@ -1360,7 +1360,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Anker+Soundcore+Space+A40&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Anker+Soundcore+Space+A40&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAnker%2520Soundcore%2520Space%2520A40",
     "description": {
@@ -1437,7 +1437,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Sennheiser+Momentum+4+Wireless&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Sennheiser+Momentum+4+Wireless&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSennheiser%2520Momentum%25204%2520Wireless",
     "description": {
@@ -1514,7 +1514,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Beats+Studio+Pro&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Beats+Studio+Pro&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DBeats%2520Studio%2520Pro",
     "description": {
@@ -1591,7 +1591,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Google+Pixel+Buds+Pro&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Google+Pixel+Buds+Pro&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DGoogle%2520Pixel%2520Buds%2520Pro",
     "description": {
@@ -1668,7 +1668,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=OnePlus+Buds+Pro+2&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=OnePlus+Buds+Pro+2&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DOnePlus%2520Buds%2520Pro%25202",
     "description": {
@@ -1745,7 +1745,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Sony+WH-1000XM5&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Sony+WH-1000XM5&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSony%2520WH-1000XM5",
     "description": {
@@ -1822,7 +1822,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Bose+QuietComfort+Ultra+Headphones&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Bose+QuietComfort+Ultra+Headphones&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DBose%2520QuietComfort%2520Ultra%2520Headphones",
     "description": {
@@ -1899,7 +1899,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+AirPods+Max&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+AirPods+Max&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DApple%2520AirPods%2520Max",
     "description": {
@@ -1976,7 +1976,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Sennheiser+Momentum+4&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Sennheiser+Momentum+4&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSennheiser%2520Momentum%25204",
     "description": {
@@ -2050,7 +2050,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Audio-Technica+ATH-M50x&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Audio-Technica+ATH-M50x&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAudio-Technica%2520ATH-M50x",
     "description": {
@@ -2124,7 +2124,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=JBL+Tour+One+M2&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=JBL+Tour+One+M2&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DJBL%2520Tour%2520One%2520M2",
     "description": {
@@ -2198,7 +2198,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Beats+Studio3+Wireless&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Beats+Studio3+Wireless&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DBeats%2520Studio3%2520Wireless",
     "description": {
@@ -2272,7 +2272,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=SteelSeries+Arctis+Nova+Pro&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=SteelSeries+Arctis+Nova+Pro&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSteelSeries%2520Arctis%2520Nova%2520Pro",
     "description": {
@@ -2346,7 +2346,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=HyperX+Cloud+III&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=HyperX+Cloud+III&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DHyperX%2520Cloud%2520III",
     "description": {
@@ -2420,7 +2420,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Razer+BlackShark+V2&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Razer+BlackShark+V2&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DRazer%2520BlackShark%2520V2",
     "description": {
@@ -2494,7 +2494,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Amazon+Echo+Dot+(5th+Gen)&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Amazon+Echo+Dot+%285th+Gen%29&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAmazon%2520Echo%2520Dot%2520%25285th%2520Gen%2529",
     "description": {
@@ -2571,7 +2571,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Google+Nest+Hub+(2nd+Gen)&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Google+Nest+Hub+%282nd+Gen%29&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DGoogle%2520Nest%2520Hub%2520%25282nd%2520Gen%2529",
     "description": {
@@ -2648,7 +2648,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Arlo+Pro+4K+Security+Camera&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Arlo+Pro+4K+Security+Camera&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DArlo%2520Pro%25204K%2520Security%2520Camera",
     "description": {
@@ -2725,7 +2725,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Ring+Video+Doorbell+4&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Ring+Video+Doorbell+4&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DRing%2520Video%2520Doorbell%25204",
     "description": {
@@ -2802,7 +2802,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=TP-Link+Kasa+Smart+Plugs&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=TP-Link+Kasa+Smart+Plugs&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DTP-Link%2520Kasa%2520Smart%2520Plugs",
     "description": {
@@ -2879,7 +2879,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Philips+Hue+Starter+Kit&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Philips+Hue+Starter+Kit&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DPhilips%2520Hue%2520Starter%2520Kit",
     "description": {
@@ -2956,7 +2956,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Ecobee+SmartThermostat&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Ecobee+SmartThermostat&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DEcobee%2520SmartThermostat",
     "description": {
@@ -3033,7 +3033,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=August+Smart+Lock+Pro&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=August+Smart+Lock+Pro&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAugust%2520Smart%2520Lock%2520Pro",
     "description": {
@@ -3110,7 +3110,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Google+Nest+Temperature+Sensor&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Google+Nest+Temperature+Sensor&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DGoogle%2520Nest%2520Temperature%2520Sensor",
     "description": {
@@ -3187,7 +3187,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Smart+TV+55+inch&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Smart+TV+55+inch&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSamsung%2520Smart%2520TV%252055%2520inch",
     "description": {
@@ -3264,7 +3264,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Omron+Evolv+Blood+Pressure+Monitor&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Omron+Evolv+Blood+Pressure+Monitor&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DOmron%2520Evolv%2520Blood%2520Pressure%2520Monitor",
     "description": {
@@ -3341,7 +3341,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Ava+Fertility+Tracker+Bracelet&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Ava+Fertility+Tracker+Bracelet&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAva%2520Fertility%2520Tracker%2520Bracelet",
     "description": {
@@ -3418,7 +3418,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=FreeStyle+Libre+CGM&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=FreeStyle+Libre+CGM&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DFreeStyle%2520Libre%2520CGM",
     "description": {
@@ -3495,7 +3495,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Air+Doctor+Pro+Air+Purifier&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Air+Doctor+Pro+Air+Purifier&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAir%2520Doctor%2520Pro%2520Air%2520Purifier",
     "description": {
@@ -3572,7 +3572,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Oral-B+iO+Series+9&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Oral-B+iO+Series+9&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DOral-B%2520iO%2520Series%25209",
     "description": {
@@ -3649,7 +3649,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Theragun+Prime&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Theragun+Prime&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DTheragun%2520Prime",
     "description": {
@@ -3726,7 +3726,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Neck+Massager+with+Heat&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Neck+Massager+with+Heat&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DNeck%2520Massager%2520with%2520Heat",
     "description": {
@@ -3803,7 +3803,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=ResMed+AirMini+CPAP&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=ResMed+AirMini+CPAP&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DResMed%2520AirMini%2520CPAP",
     "description": {
@@ -3880,7 +3880,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Withings+Body+Smart+Scale&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Withings+Body+Smart+Scale&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DWithings%2520Body%2520Smart%2520Scale",
     "description": {
@@ -3957,7 +3957,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Fingertip+Pulse+Oximeter&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Fingertip+Pulse+Oximeter&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DFingertip%2520Pulse%2520Oximeter",
     "description": {
@@ -4034,7 +4034,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=MacBook+Air+M3&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=MacBook+Air+M3&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DMacBook%2520Air%2520M3",
     "description": {
@@ -4111,7 +4111,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Dell+XPS+13+Plus&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Dell+XPS+13+Plus&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DDell%2520XPS%252013%2520Plus",
     "description": {
@@ -4188,7 +4188,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=HP+Spectre+x360&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=HP+Spectre+x360&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DHP%2520Spectre%2520x360",
     "description": {
@@ -4265,7 +4265,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Lenovo+ThinkPad+X1+Carbon&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Lenovo+ThinkPad+X1+Carbon&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DLenovo%2520ThinkPad%2520X1%2520Carbon",
     "description": {
@@ -4340,7 +4340,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=ASUS+ZenBook+14&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=ASUS+ZenBook+14&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DASUS%2520ZenBook%252014",
     "description": {
@@ -4414,7 +4414,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+iPad+Pro+11+inch&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+iPad+Pro+11+inch&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DApple%2520iPad%2520Pro%252011%2520inch",
     "description": {
@@ -4488,7 +4488,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+iPad+Air+10.9+inch&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+iPad+Air+10.9+inch&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DApple%2520iPad%2520Air%252010.9%2520inch",
     "description": {
@@ -4562,7 +4562,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Galaxy+Tab+S9&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Galaxy+Tab+S9&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSamsung%2520Galaxy%2520Tab%2520S9",
     "description": {
@@ -4636,7 +4636,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+Pencil+Pro&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+Pencil+Pro&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DApple%2520Pencil%2520Pro",
     "description": {
@@ -4710,7 +4710,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech+MX+Master+3S&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech+MX+Master+3S&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DLogitech%2520MX%2520Master%25203S",
     "description": {
@@ -4784,7 +4784,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=PlayStation+5&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=PlayStation+5&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DPlayStation%25205",
     "description": {
@@ -4858,7 +4858,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Xbox+Series+X&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Xbox+Series+X&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DXbox%2520Series%2520X",
     "description": {
@@ -4932,7 +4932,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Nintendo+Switch+OLED&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Nintendo+Switch+OLED&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DNintendo%2520Switch%2520OLED",
     "description": {
@@ -5006,7 +5006,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Meta+Quest+3+VR+Headset&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Meta+Quest+3+VR+Headset&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DMeta%2520Quest%25203%2520VR%2520Headset",
     "description": {
@@ -5080,7 +5080,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Steam+Deck+OLED&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Steam+Deck+OLED&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSteam%2520Deck%2520OLED",
     "description": {
@@ -5154,7 +5154,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Razer+Iskur+V2+Gaming+Chair&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Razer+Iskur+V2+Gaming+Chair&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DRazer%2520Iskur%2520V2%2520Gaming%2520Chair",
     "description": {
@@ -5228,7 +5228,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Odyssey+G7+Gaming+Monitor&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Odyssey+G7+Gaming+Monitor&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSamsung%2520Odyssey%2520G7%2520Gaming%2520Monitor",
     "description": {
@@ -5302,7 +5302,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Astro+A50+Gaming+Headset&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Astro+A50+Gaming+Headset&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAstro%2520A50%2520Gaming%2520Headset",
     "description": {
@@ -5376,7 +5376,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech+G+Pro+X+Superlight+2&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech+G+Pro+X+Superlight+2&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DLogitech%2520G%2520Pro%2520X%2520Superlight%25202",
     "description": {
@@ -5450,7 +5450,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Corsair+K70+Pro+Mechanical&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Corsair+K70+Pro+Mechanical&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DCorsair%2520K70%2520Pro%2520Mechanical",
     "description": {
@@ -5524,7 +5524,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Sony+Alpha+A7+IV&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Sony+Alpha+A7+IV&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSony%2520Alpha%2520A7%2520IV",
     "description": {
@@ -5599,7 +5599,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Canon+EOS+R6+Mark+II&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Canon+EOS+R6+Mark+II&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DCanon%2520EOS%2520R6%2520Mark%2520II",
     "description": {
@@ -5674,7 +5674,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Fujifilm+X-T5&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Fujifilm+X-T5&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DFujifilm%2520X-T5",
     "description": {
@@ -5749,7 +5749,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Nikon+Z8&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Nikon+Z8&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DNikon%2520Z8",
     "description": {
@@ -5824,7 +5824,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=GoPro+HERO12+Black&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=GoPro+HERO12+Black&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DGoPro%2520HERO12%2520Black",
     "description": {
@@ -5899,7 +5899,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=DJI+Osmo+Pocket+3&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=DJI+Osmo+Pocket+3&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DDJI%2520Osmo%2520Pocket%25203",
     "description": {
@@ -5973,7 +5973,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Insta360+X4&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Insta360+X4&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DInsta360%2520X4",
     "description": {
@@ -6047,7 +6047,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech+Brio+4K+Webcam&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Logitech+Brio+4K+Webcam&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DLogitech%2520Brio%25204K%2520Webcam",
     "description": {
@@ -6121,7 +6121,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Ring+Indoor+Cam&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Ring+Indoor+Cam&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DRing%2520Indoor%2520Cam",
     "description": {
@@ -6195,7 +6195,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Arlo+Essential+Spotlight&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Arlo+Essential+Spotlight&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DArlo%2520Essential%2520Spotlight",
     "description": {
@@ -6269,7 +6269,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Ray-Ban+Meta+Smart+Glasses&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Ray-Ban+Meta+Smart+Glasses&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DRay-Ban%2520Meta%2520Smart%2520Glasses",
     "description": {
@@ -6343,7 +6343,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Targus+Newport+Convertible&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Targus+Newport+Convertible&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DTargus%2520Newport%2520Convertible",
     "description": {
@@ -6417,7 +6417,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+MagSafe+Charger&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+MagSafe+Charger&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DApple%2520MagSafe%2520Charger",
     "description": {
@@ -6491,7 +6491,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Anker+PowerCore+20000&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Anker+PowerCore+20000&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAnker%2520PowerCore%252020000",
     "description": {
@@ -6565,7 +6565,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Coil+Phone+Stand&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Coil+Phone+Stand&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DCoil%2520Phone%2520Stand",
     "description": {
@@ -6639,7 +6639,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+EarPods+Lightning&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Apple+EarPods+Lightning&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DApple%2520EarPods%2520Lightning",
     "description": {
@@ -6713,7 +6713,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Anker+USB-C+Cable+6ft&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Anker+USB-C+Cable+6ft&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAnker%2520USB-C%2520Cable%25206ft",
     "description": {
@@ -6787,7 +6787,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=MacMate+Watch+Stand&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=MacMate+Watch+Stand&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DMacMate%2520Watch%2520Stand",
     "description": {
@@ -6861,7 +6861,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=AirPods+Pro+Case&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=AirPods+Pro+Case&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAirPods%2520Pro%2520Case",
     "description": {
@@ -6935,7 +6935,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=iPhone+15+Pro+Screen+Protector&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=iPhone+15+Pro+Screen+Protector&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DiPhone%252015%2520Pro%2520Screen%2520Protector",
     "description": {
@@ -7009,7 +7009,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Ninja+Foodi+Power+Pitcher&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Ninja+Foodi+Power+Pitcher&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DNinja%2520Foodi%2520Power%2520Pitcher",
     "description": {
@@ -7083,7 +7083,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Breville+Barista+Express&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Breville+Barista+Express&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DBreville%2520Barista%2520Express",
     "description": {
@@ -7157,7 +7157,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=George+Foreman+Contact+Grill&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=George+Foreman+Contact+Grill&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DGeorge%2520Foreman%2520Contact%2520Grill",
     "description": {
@@ -7231,7 +7231,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Cosori+Air+Fryer+5.8qt&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Cosori+Air+Fryer+5.8qt&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DCosori%2520Air%2520Fryer%25205.8qt",
     "description": {
@@ -7305,7 +7305,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Cuisinart+TOAST-PIX&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Cuisinart+TOAST-PIX&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DCuisinart%2520TOAST-PIX",
     "description": {
@@ -7379,7 +7379,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Hamilton+Beach+Kettle&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Hamilton+Beach+Kettle&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DHamilton%2520Beach%2520Kettle",
     "description": {
@@ -7453,7 +7453,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Cuisinart+DBM-8+Supreme&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Cuisinart+DBM-8+Supreme&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DCuisinart%2520DBM-8%2520Supreme",
     "description": {
@@ -7527,7 +7527,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Smart+Food+Scale&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Smart+Food+Scale&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSmart%2520Food%2520Scale",
     "description": {
@@ -7601,7 +7601,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Kitchen+iPad+Stand&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Kitchen+iPad+Stand&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DKitchen%2520iPad%2520Stand",
     "description": {
@@ -7675,7 +7675,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Smart+Fridge&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Samsung+Smart+Fridge&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSamsung%2520Smart%2520Fridge",
     "description": {
@@ -7749,7 +7749,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Bowflex+SelectTech+552&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Bowflex+SelectTech+552&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DBowflex%2520SelectTech%2520552",
     "description": {
@@ -7823,7 +7823,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Hypervolt+GO+2&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Hypervolt+GO+2&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DHypervolt%2520GO%25202",
     "description": {
@@ -7897,7 +7897,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Ninebot+MAX+G2&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Ninebot+MAX+G2&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DNinebot%2520MAX%2520G2",
     "description": {
@@ -7971,7 +7971,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Peloton+Bike+&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Peloton+Bike%2B&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DPeloton%2520Bike%252B",
     "description": {
@@ -8045,7 +8045,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin+Forerunner+965&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin+Forerunner+965&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DGarmin%2520Forerunner%2520965",
     "description": {
@@ -8119,7 +8119,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Smart+Jump+Rope&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Smart+Jump+Rope&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSmart%2520Jump%2520Rope",
     "description": {
@@ -8193,7 +8193,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Gaiam+Premium+Yoga+Mat&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Gaiam+Premium+Yoga+Mat&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DGaiam%2520Premium%2520Yoga%2520Mat",
     "description": {
@@ -8267,7 +8267,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Pendoji+Badminton+Racket&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Pendoji+Badminton+Racket&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DPendoji%2520Badminton%2520Racket",
     "description": {
@@ -8341,7 +8341,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Under+Armour+Storm+Bag&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Under+Armour+Storm+Bag&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DUnder%2520Armour%2520Storm%2520Bag",
     "description": {
@@ -8415,7 +8415,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Aqualens+Swim+Goggles&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Aqualens+Swim+Goggles&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAqualens%2520Swim%2520Goggles",
     "description": {
@@ -8489,7 +8489,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=MagSafe+Car+Charger&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=MagSafe+Car+Charger&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DMagSafe%2520Car%2520Charger",
     "description": {
@@ -8563,7 +8563,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin+Drive+52&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin+Drive+52&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DGarmin%2520Drive%252052",
     "description": {
@@ -8637,7 +8637,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Rexing+V1+Dash+Cam&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Rexing+V1+Dash+Cam&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DRexing%2520V1%2520Dash%2520Cam",
     "description": {
@@ -8711,7 +8711,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Joying+Android+Car+Radio&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Joying+Android+Car+Radio&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DJoying%2520Android%2520Car%2520Radio",
     "description": {
@@ -8785,7 +8785,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=JBL+Car+Speaker&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=JBL+Car+Speaker&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DJBL%2520Car%2520Speaker",
     "description": {
@@ -8859,7 +8859,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Car+Air+Purifier&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Car+Air+Purifier&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DCar%2520Air%2520Purifier",
     "description": {
@@ -8933,7 +8933,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Magnetic+Car+Phone+Mount&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Magnetic+Car+Phone+Mount&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DMagnetic%2520Car%2520Phone%2520Mount",
     "description": {
@@ -9007,7 +9007,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=OBD2+Bluetooth+Scanner&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=OBD2+Bluetooth+Scanner&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DOBD2%2520Bluetooth%2520Scanner",
     "description": {
@@ -9081,7 +9081,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Car+LED+Interior+Lights&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Car+LED+Interior+Lights&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DCar%2520LED%2520Interior%2520Lights",
     "description": {
@@ -9155,7 +9155,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Rear+View+Backup+Camera&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Rear+View+Backup+Camera&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DRear%2520View%2520Backup%2520Camera",
     "description": {
@@ -9229,7 +9229,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin+vívofit+jr.+3&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Garmin+v%C3%ADvofit+jr.+3&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DGarmin%2520v%25C3%25ADvofit%2520jr.%25203",
     "description": {
@@ -9303,7 +9303,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Amazon+Fire+Kids+Tablet&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Amazon+Fire+Kids+Tablet&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAmazon%2520Fire%2520Kids%2520Tablet",
     "description": {
@@ -9377,7 +9377,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Anki+Cozmo+Robot&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Anki+Cozmo+Robot&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAnki%2520Cozmo%2520Robot",
     "description": {
@@ -9451,7 +9451,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Echo+Dot+Kids+Edition&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Echo+Dot+Kids+Edition&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DEcho%2520Dot%2520Kids%2520Edition",
     "description": {
@@ -9525,7 +9525,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=LEGO+Education+Spike&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=LEGO+Education+Spike&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DLEGO%2520Education%2520Spike",
     "description": {
@@ -9599,7 +9599,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Razor+Power+Core+E100&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Razor+Power+Core+E100&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DRazor%2520Power%2520Core%2520E100",
     "description": {
@@ -9673,7 +9673,7 @@
     },
     "featured": true,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=VTech+Kidizoom+Camera&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=VTech+Kidizoom+Camera&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DVTech%2520Kidizoom%2520Camera",
     "description": {
@@ -9747,7 +9747,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=JBL+Jr.+headphones&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=JBL+Jr.+headphones&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DJBL%2520Jr.%2520headphones",
     "description": {
@@ -9821,7 +9821,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=LeapFrog+LeapTable&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=LeapFrog+LeapTable&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DLeapFrog%2520LeapTable",
     "description": {
@@ -9895,7 +9895,7 @@
     },
     "featured": false,
     "in_stock": true,
-    "affiliate_amazon": "https://www.amazon.com/s?k=Owl+Camera+Baby+Monitor&tag=neopulsehub09-20",
+    "affiliate_amazon": "https://www.amazon.com/s?k=Owl+Camera+Baby+Monitor&tag=neopulsehub09-20&ref=nosim",
     "asin": "",
     "affiliate_aliexpress": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DOwl%2520Camera%2520Baby%2520Monitor",
     "description": {
