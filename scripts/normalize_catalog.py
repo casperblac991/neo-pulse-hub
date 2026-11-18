@@ -166,13 +166,34 @@ def run_cta_fixer() -> int:
 
 
 def run_domain_fixer() -> int:
-    """Replace every legacy-domain reference (www.neo-pulse-hub.it.com without .it)
+    """Replace every legacy-domain reference (neo-pulse-hub.com without .it)
     with the live domain across all text files. Idempotent — safe on every
     deploy; keeps new generated articles and canonicals pointing at the
     domain we own."""
     script = ROOT / "scripts" / "fix_old_domain.py"
     if not script.exists():
         print("fix_old_domain.py not found — skipping domain rewrite")
+        return 0
+    result = subprocess.run(
+        [sys.executable, str(script), "--write"],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+    )
+    if result.stdout:
+        print(result.stdout.strip())
+    if result.returncode != 0:
+        print(result.stderr.strip(), file=sys.stderr)
+    return result.returncode
+
+
+def run_schema_fixer() -> int:
+    """Enrich Product JSON-LD (image, url, availability, aggregateRating,
+    offer url) from the canonical catalog so Google's merchant checks pass,
+    and unify hosts (legacy + www -> non-www live host). Idempotent."""
+    script = ROOT / "scripts" / "fix_schema_markup.py"
+    if not script.exists():
+        print("fix_schema_markup.py not found — skipping schema enrichment")
         return 0
     result = subprocess.run(
         [sys.executable, str(script), "--write"],
@@ -263,6 +284,11 @@ def main() -> int:
     # Deploy-time SEO: replace legacy domain references with the live domain
     # (canonicals, generator templates, JSON-LD) so Google indexes what we own.
     run_domain_fixer()
+
+    # Deploy-time rich results: enrich Product JSON-LD with merchant-critical
+    # fields (image, url, availability, aggregateRating) and unify hosts so
+    # Google's "merchant data" checks pass and product snippets go live.
+    run_schema_fixer()
 
     products, stats = load_normalized()
     output = json.dumps(products, ensure_ascii=False, indent=2) + "\n"
