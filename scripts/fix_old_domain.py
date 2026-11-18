@@ -3,15 +3,15 @@
 NEO PULSE HUB — Legacy Domain Rewriter
 
 Problem (diagnosed 2026-11-18): 22 files still reference the legacy domain
-`www.neo-pulse-hub.it.com` (no `.it`) — including the daily article generator, which
+`neo-pulse-hub.it.com` (no `.it`) — including the daily article generator, which
 stamps every NEW article with a canonical pointing at a domain we don't own.
 Google treats such pages as duplicate/unverifiable and drops them from the
 index — silently killing SEO for new content.
 
 This script rewrites every occurrence of the legacy domain to the live one:
-    https://www.neo-pulse-hub.it.com/...  ->  https://www.neo-pulse-hub.it.com/...
-    http://www.neo-pulse-hub.it.com/...   ->  https://www.neo-pulse-hub.it.com/...
-    //www.neo-pulse-hub.it.com/...        ->  //www.neo-pulse-hub.it.com/...
+    https://neo-pulse-hub.it.com/...  ->  https://neo-pulse-hub.it.com/...
+    https://neo-pulse-hub.it.com/...   ->  https://neo-pulse-hub.it.com/...
+    //neo-pulse-hub.it.com/...        ->  //neo-pulse-hub.it.com/...
 
 Safe:
   - idempotent (once fixed, no legacy domain remains to match)
@@ -26,10 +26,10 @@ import re
 import sys
 from pathlib import Path
 
-LEGACY = "www.neo-pulse-hub.it.com"
-LIVE = "www.neo-pulse-hub.it.com"
+LEGACY = "neo-pulse-hub.it.com"
+LIVE = "neo-pulse-hub.it.com"
 
-# www.neo-pulse-hub.it.com must not match neo-pulse-hub.it.com (it wouldn't, since
+# neo-pulse-hub.it.com must not match neo-pulse-hub.it.com (it wouldn't, since
 # .it.com differs, but we anchor on the exact host boundary to be safe).
 LEGACY_RE = re.compile(
     r"(?<![\w.\-])neo-pulse-hub\.com(?![\w.\-])"

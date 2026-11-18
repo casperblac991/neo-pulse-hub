@@ -62,7 +62,7 @@ log = logging.getLogger("webhook_server")
 app = Flask(__name__)
 CORS(app, origins=[
     "https://neo-pulse-hub.it.com",
-    "https://www.neo-pulse-hub.it.com",
+    "https://neo-pulse-hub.it.com",
     "http://localhost:*",
     "http://127.0.0.1:*",
 ])

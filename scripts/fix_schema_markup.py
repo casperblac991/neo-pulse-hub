@@ -21,8 +21,8 @@ What this script does:
   4. Rewrites the JSON blocks with ensure_ascii=False (Arabic-safe).
   5. Also unifies the host across all text files to the NON-WWW live host
      (Google's selected canonical, and the host used in sitemap.xml):
-       legacy   neo-pulse-hub.com / www.neo-pulse-hub.com -> neo-pulse-hub.it.com
-       current  www.neo-pulse-hub.it.com                  -> neo-pulse-hub.it.com
+       legacy   neo-pulse-hub.it.com / neo-pulse-hub.it.com -> neo-pulse-hub.it.com
+       current  neo-pulse-hub.it.com                  -> neo-pulse-hub.it.com
 
 Idempotent: enriched products already carry the fields, so re-running is a
 no-op. --check mode reports what would change (exit 1 if anything missing).
@@ -39,13 +39,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG_PATH = ROOT / "products.json"
 
-LEGACY_HOST = "neo-pulse-hub.com"
+LEGACY_HOST = "neo-pulse-hub.it.com"
 LIVE_HOST = "neo-pulse-hub.it.com"
 
 # Matches:
 #   https://neo-pulse-hub.com...      (legacy, no .it)
 #   https://www.neo-pulse-hub.com...  (legacy with www)
-#   https://www.neo-pulse-hub.it.com  (live host with www — unify to non-www)
+#   https://neo-pulse-hub.it.com  (live host with www — unify to non-www)
 # Scheme is captured so we can preserve/normalize it; paths stay untouched
 # because they sit outside the match. Does NOT match the non-www live host
 # itself (idempotent) nor neo-pulse-hub.it.com inside longer names.

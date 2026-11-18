@@ -134,7 +134,7 @@ def build_flask_app():
     import json as _json
 
     app = Flask(__name__)
-    CORS(app, origins=["https://neo-pulse-hub.it.com", "https://www.neo-pulse-hub.it.com",
+    CORS(app, origins=["https://neo-pulse-hub.it.com", "https://neo-pulse-hub.it.com",
                         "http://localhost:*", "http://127.0.0.1:*"])
 
     # ── lazy-load بوتات Telegram (Application objects) ──────────

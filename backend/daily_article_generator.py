@@ -279,7 +279,7 @@ price: {price}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title_tag}</title>
     <meta name="description" content="{desc_tag}">
-    <link rel="canonical" href="https://www.neo-pulse-hub.it.com/blog/{lang}/{filename}">
+    <link rel="canonical" href="https://neo-pulse-hub.it.com/blog/{lang}/{filename}">
     
     <style>
         :root {{
