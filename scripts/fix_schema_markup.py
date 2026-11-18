@@ -19,10 +19,10 @@ What this script does:
        - offers.url (affiliate link), availability, price, priceCurrency
        - aggregateRating (ratingValue, reviewCount)
   4. Rewrites the JSON blocks with ensure_ascii=False (Arabic-safe).
-  5. Also unifies the host across all text files:
-       legacy  neo-pulse-hub.com        -> neo-pulse-hub.it.com
-       current www.neo-pulse-hub.it.com -> neo-pulse-hub.it.com  (non-www,
-       matching Google's selected canonical and the sitemap)
+  5. Also unifies the host across all text files to the NON-WWW live host
+     (Google's selected canonical, and the host used in sitemap.xml):
+       legacy   neo-pulse-hub.com / www.neo-pulse-hub.com -> neo-pulse-hub.it.com
+       current  www.neo-pulse-hub.it.com                  -> neo-pulse-hub.it.com
 
 Idempotent: enriched products already carry the fields, so re-running is a
 no-op. --check mode reports what would change (exit 1 if anything missing).
@@ -41,9 +41,17 @@ CATALOG_PATH = ROOT / "products.json"
 
 LEGACY_HOST = "neo-pulse-hub.com"
 LIVE_HOST = "neo-pulse-hub.it.com"
-WWW_HOST = "www." + LIVE_HOST
 
-HOST_RE = re.compile(r"(?<![\w.\-])(?:(?:https?://)?)((?:www\.)?neo-pulse-hub\.com)(?![\w.\-])")
+# Matches:
+#   https://neo-pulse-hub.com...      (legacy, no .it)
+#   https://www.neo-pulse-hub.com...  (legacy with www)
+#   https://www.neo-pulse-hub.it.com  (live host with www — unify to non-www)
+# Scheme is captured so we can preserve/normalize it; paths stay untouched
+# because they sit outside the match. Does NOT match the non-www live host
+# itself (idempotent) nor neo-pulse-hub.it.com inside longer names.
+HOST_RE = re.compile(
+    r"(https?://)?(www\.neo-pulse-hub\.it\.com|www\.neo-pulse-hub\.com|neo-pulse-hub\.com)(?![\w.\-])"
+)
 
 TEXT_SUFFIXES = {".html", ".py", ".js", ".json", ".xml", ".txt", ".md", ".yml", ".yaml"}
 SKIP_DIRS = {"node_modules", ".git", "dist", "build"}
@@ -84,10 +92,10 @@ def find_product(catalog: dict, node: dict):
         return None
     if name in catalog:
         return catalog[name]
-    # fallback: substring match on English names
-    for key, product in catalog.items():
-        if name and (name in key or key in name):
-            return product
+    # fallback: substring match (longest key first to reduce false positives)
+    for key in sorted(catalog, key=len, reverse=True):
+        if name in key or key in name:
+            return catalog[key]
     return None
 
 
@@ -138,7 +146,7 @@ def enrich_product(node: dict, product: dict | None, changed: list) -> dict:
     return node
 
 
-def walk_nodes(node, catalog, changed: list):
+def walk_nodes(node, catalog: dict, changed: list):
     """Recursively enrich every Product node inside any JSON-LD structure."""
     if isinstance(node, dict):
         if node.get("@type") == "Product":
@@ -172,20 +180,17 @@ def fix_jsonld_blocks(content: str, catalog: dict) -> tuple[str, list]:
 
 
 def unify_host(content: str) -> tuple[str, int]:
-    """Legacy domain and www-variant -> live non-www host."""
+    """Legacy domain and www-variant of the live host -> non-www live host."""
     count = 0
 
     def repl(match: re.Match) -> str:
         nonlocal count
         count += 1
-        # rebuild with the scheme if the original had one
-        whole = match.group(0)
-        if whole.startswith("http"):
-            return f"https://{LIVE_HOST}"
-        return LIVE_HOST
+        scheme = match.group(1)  # may be None
+        host = "https://" + LIVE_HOST if scheme else LIVE_HOST
+        return host
 
-    new_content = HOST_RE.sub(repl, content)
-    return new_content, count
+    return HOST_RE.sub(repl, content), count
 
 
 def iter_files(root: Path):
@@ -223,7 +228,7 @@ def main() -> int:
         if host_count or schema_changes:
             if check_mode:
                 if host_count:
-                    problems.append(f"{rel}: {host_count} host reference(s) to fix")
+                    problems.append(f"{rel}: {host_count} host reference(s) to unify")
                 if schema_changes:
                     problems.append(f"{rel}: schema fields missing: {sorted(set(schema_changes))}")
             else:
@@ -232,11 +237,11 @@ def main() -> int:
 
     if check_mode:
         if problems:
-            print(f"❌ {len(problems)} issue(s) found:")
+            print(f"X {len(problems)} issue(s) found:")
             for p in problems:
-                print(f"  ⚠️ {p}")
+                print(f"  ! {p}")
             return 1
-        print("✅ All JSON-LD products fully enriched and hosts unified.")
+        print("OK: all JSON-LD products fully enriched and hosts unified.")
         return 0
 
     if fixes:
@@ -244,10 +249,10 @@ def main() -> int:
         for rel, host_count, fields in fixes:
             detail = []
             if host_count:
-                detail.append(f"{host_count} host ref(s)")
+                detail.append(f"{host_count} host ref(s) unified to non-www")
             if fields:
                 detail.append("schema: " + ", ".join(fields))
-            print(f"  ✅ {rel} ({'; '.join(detail)})")
+            print(f"  + {rel} ({'; '.join(detail)})")
     else:
         print("No changes needed — schema complete, hosts unified.")
     return 0
