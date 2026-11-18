@@ -1,0 +1,2952 @@
+{
+  "products": [
+    {
+      "id": "AI-1777896006-109",
+      "name": {
+        "ar": "أبل ووتش سيريز 9",
+        "en": "Apple Watch Series 9"
+      },
+      "category": "smartwatch",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/dp/B0CHKV4YVM?tag=neopulsehub09-20&linkCode=ogi&th=1&psc=1",
+          "price": 399.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DApple%2520Watch%2520Series%25209",
+          "price": 399.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388754+00:00"
+    },
+    {
+      "id": "AI-1777896006-328",
+      "name": {
+        "ar": "ساعة سامسونج جالكسي واتش 5",
+        "en": "Samsung Galaxy Watch 5"
+      },
+      "category": "smartwatch",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/dp/B0B5W8V2L3?tag=neopulsehub09-20&linkCode=ogi&th=1&psc=1",
+          "price": 279.99
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSamsung%2520Galaxy%2520Watch%25205",
+          "price": 279.99
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388771+00:00"
+    },
+    {
+      "id": "AI-1777896009-367",
+      "name": {
+        "ar": "سماعات أبل إيربودز برو",
+        "en": "Apple AirPods Pro"
+      },
+      "category": "earbuds",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/dp/B0BDN8TDMQ?tag=neopulsehub09-20&linkCode=ogi&th=1&psc=1",
+          "price": 249.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DApple%2520AirPods%2520Pro",
+          "price": 249.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388778+00:00"
+    },
+    {
+      "id": "AI-1777896009-508",
+      "name": {
+        "ar": "سماعات سوني WF-1000XM4",
+        "en": "Sony WF-1000XM4"
+      },
+      "category": "earbuds",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/dp/B094C4VDJZ?tag=neopulsehub09-20&linkCode=ogi&th=1&psc=1",
+          "price": 279.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSony%2520WF-1000XM4",
+          "price": 279.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388785+00:00"
+    },
+    {
+      "id": "NPH-EXP-0005",
+      "name": {
+        "ar": "ساعة أبل واتش ألترا 2",
+        "en": "Apple Watch Ultra 2"
+      },
+      "category": "smartwatch",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Apple+Watch+Ultra+2&tag=neopulsehub09-20&ref=nosim",
+          "price": 799.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DApple%2520Watch%2520Ultra%25202",
+          "price": 799.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388790+00:00"
+    },
+    {
+      "id": "NPH-EXP-0006",
+      "name": {
+        "ar": "ساعة سامسونج جالكسي ووتش 7",
+        "en": "Samsung Galaxy Watch 7"
+      },
+      "category": "smartwatch",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Samsung+Galaxy+Watch+7&tag=neopulsehub09-20&ref=nosim",
+          "price": 329.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSamsung%2520Galaxy%2520Watch%25207",
+          "price": 329.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388796+00:00"
+    },
+    {
+      "id": "NPH-EXP-0007",
+      "name": {
+        "ar": "ساعة Garmin Fenix 7X برو",
+        "en": "Garmin Fenix 7X Pro"
+      },
+      "category": "smartwatch",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Garmin+Fenix+7X+Pro&tag=neopulsehub09-20&ref=nosim",
+          "price": 899.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DGarmin%2520Fenix%25207X%2520Pro",
+          "price": 899.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388803+00:00"
+    },
+    {
+      "id": "NPH-EXP-0008",
+      "name": {
+        "ar": "ساعة Fitbit Sense 2",
+        "en": "Fitbit Sense 2"
+      },
+      "category": "smartwatch",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Fitbit+Sense+2&tag=neopulsehub09-20&ref=nosim",
+          "price": 249.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DFitbit%2520Sense%25202",
+          "price": 249.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388814+00:00"
+    },
+    {
+      "id": "NPH-EXP-0009",
+      "name": {
+        "ar": "ساعة Amazfit GTR 4",
+        "en": "Amazfit GTR 4"
+      },
+      "category": "smartwatch",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Amazfit+GTR+4&tag=neopulsehub09-20&ref=nosim",
+          "price": 179.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAmazfit%2520GTR%25204",
+          "price": 179.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388820+00:00"
+    },
+    {
+      "id": "NPH-EXP-0010",
+      "name": {
+        "ar": "ساعة Fossil Gen 6",
+        "en": "Fossil Gen 6 Smartwatch"
+      },
+      "category": "smartwatch",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Fossil+Gen+6+Smartwatch&tag=neopulsehub09-20&ref=nosim",
+          "price": 249.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DFossil%2520Gen%25206%2520Smartwatch",
+          "price": 249.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388825+00:00"
+    },
+    {
+      "id": "NPH-EXP-0011",
+      "name": {
+        "ar": "ساعة Huawei Watch GT 4",
+        "en": "Huawei Watch GT 4"
+      },
+      "category": "smartwatch",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Huawei+Watch+GT+4&tag=neopulsehub09-20&ref=nosim",
+          "price": 229.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DHuawei%2520Watch%2520GT%25204",
+          "price": 229.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388830+00:00"
+    },
+    {
+      "id": "NPH-EXP-0012",
+      "name": {
+        "ar": "ساعة TicWatch Pro 5",
+        "en": "TicWatch Pro 5"
+      },
+      "category": "smartwatch",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=TicWatch+Pro+5&tag=neopulsehub09-20&ref=nosim",
+          "price": 299.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DTicWatch%2520Pro%25205",
+          "price": 299.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388834+00:00"
+    },
+    {
+      "id": "NPH-EXP-0013",
+      "name": {
+        "ar": "ساعة Galaxy Watch 6",
+        "en": "Samsung Galaxy Watch 6"
+      },
+      "category": "smartwatch",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Samsung+Galaxy+Watch+6&tag=neopulsehub09-20&ref=nosim",
+          "price": 249.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSamsung%2520Galaxy%2520Watch%25206",
+          "price": 249.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388839+00:00"
+    },
+    {
+      "id": "NPH-EXP-0014",
+      "name": {
+        "ar": "ساعة Apple Watch SE 2",
+        "en": "Apple Watch SE 2"
+      },
+      "category": "smartwatch",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Apple+Watch+SE+2&tag=neopulsehub09-20&ref=nosim",
+          "price": 249.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DApple%2520Watch%2520SE%25202",
+          "price": 249.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388845+00:00"
+    },
+    {
+      "id": "NPH-EXP-0015",
+      "name": {
+        "ar": "سماعات أبل إيربودز برو 2",
+        "en": "Apple AirPods Pro 2"
+      },
+      "category": "earbuds",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Apple+AirPods+Pro+2&tag=neopulsehub09-20&ref=nosim",
+          "price": 249.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DApple%2520AirPods%2520Pro%25202",
+          "price": 249.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388849+00:00"
+    },
+    {
+      "id": "NPH-EXP-0016",
+      "name": {
+        "ar": "سماعات سامسونج جالكسي بودز 2 برو",
+        "en": "Samsung Galaxy Buds2 Pro"
+      },
+      "category": "earbuds",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Samsung+Galaxy+Buds2+Pro&tag=neopulsehub09-20&ref=nosim",
+          "price": 189.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSamsung%2520Galaxy%2520Buds2%2520Pro",
+          "price": 189.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388853+00:00"
+    },
+    {
+      "id": "NPH-EXP-0017",
+      "name": {
+        "ar": "سماعات Sony WF-1000XM5",
+        "en": "Sony WF-1000XM5"
+      },
+      "category": "earbuds",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Sony+WF-1000XM5&tag=neopulsehub09-20&ref=nosim",
+          "price": 299.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSony%2520WF-1000XM5",
+          "price": 299.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388859+00:00"
+    },
+    {
+      "id": "NPH-EXP-0018",
+      "name": {
+        "ar": "سماعات Bose QuietComfort Ultra",
+        "en": "Bose QuietComfort Ultra Earbuds"
+      },
+      "category": "earbuds",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Bose+QuietComfort+Ultra+Earbuds&tag=neopulsehub09-20&ref=nosim",
+          "price": 299.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DBose%2520QuietComfort%2520Ultra%2520Earbuds",
+          "price": 299.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388863+00:00"
+    },
+    {
+      "id": "NPH-EXP-0019",
+      "name": {
+        "ar": "سماعات Jabra Elite 85t",
+        "en": "Jabra Elite 85t"
+      },
+      "category": "earbuds",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Jabra+Elite+85t&tag=neopulsehub09-20&ref=nosim",
+          "price": 179.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DJabra%2520Elite%252085t",
+          "price": 179.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388867+00:00"
+    },
+    {
+      "id": "NPH-EXP-0020",
+      "name": {
+        "ar": "سماعات Anker Soundcore Space A40",
+        "en": "Anker Soundcore Space A40"
+      },
+      "category": "earbuds",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Anker+Soundcore+Space+A40&tag=neopulsehub09-20&ref=nosim",
+          "price": 79.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAnker%2520Soundcore%2520Space%2520A40",
+          "price": 79.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388871+00:00"
+    },
+    {
+      "id": "NPH-EXP-0021",
+      "name": {
+        "ar": "سماعات Sennheiser Momentum 4",
+        "en": "Sennheiser Momentum 4 Wireless"
+      },
+      "category": "earbuds",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Sennheiser+Momentum+4+Wireless&tag=neopulsehub09-20&ref=nosim",
+          "price": 349.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSennheiser%2520Momentum%25204%2520Wireless",
+          "price": 349.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388875+00:00"
+    },
+    {
+      "id": "NPH-EXP-0022",
+      "name": {
+        "ar": "سماعات Beats Studio Pro",
+        "en": "Beats Studio Pro"
+      },
+      "category": "earbuds",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Beats+Studio+Pro&tag=neopulsehub09-20&ref=nosim",
+          "price": 349.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DBeats%2520Studio%2520Pro",
+          "price": 349.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388881+00:00"
+    },
+    {
+      "id": "NPH-EXP-0023",
+      "name": {
+        "ar": "سماعات Google Pixel Buds Pro",
+        "en": "Google Pixel Buds Pro"
+      },
+      "category": "earbuds",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Google+Pixel+Buds+Pro&tag=neopulsehub09-20&ref=nosim",
+          "price": 199.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DGoogle%2520Pixel%2520Buds%2520Pro",
+          "price": 199.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388885+00:00"
+    },
+    {
+      "id": "NPH-EXP-0024",
+      "name": {
+        "ar": "سماعات OnePlus Buds Pro 2",
+        "en": "OnePlus Buds Pro 2"
+      },
+      "category": "earbuds",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=OnePlus+Buds+Pro+2&tag=neopulsehub09-20&ref=nosim",
+          "price": 149.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DOnePlus%2520Buds%2520Pro%25202",
+          "price": 149.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388889+00:00"
+    },
+    {
+      "id": "NPH-EXP-0025",
+      "name": {
+        "ar": "سماعات Sony WH-1000XM5",
+        "en": "Sony WH-1000XM5"
+      },
+      "category": "headphones",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Sony+WH-1000XM5&tag=neopulsehub09-20&ref=nosim",
+          "price": 399.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSony%2520WH-1000XM5",
+          "price": 399.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388893+00:00"
+    },
+    {
+      "id": "NPH-EXP-0026",
+      "name": {
+        "ar": "سماعات Bose QuietComfort Ultra",
+        "en": "Bose QuietComfort Ultra Headphones"
+      },
+      "category": "headphones",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Bose+QuietComfort+Ultra+Headphones&tag=neopulsehub09-20&ref=nosim",
+          "price": 429.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DBose%2520QuietComfort%2520Ultra%2520Headphones",
+          "price": 429.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388898+00:00"
+    },
+    {
+      "id": "NPH-EXP-0027",
+      "name": {
+        "ar": "سماعات Apple AirPods Max",
+        "en": "Apple AirPods Max"
+      },
+      "category": "headphones",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Apple+AirPods+Max&tag=neopulsehub09-20&ref=nosim",
+          "price": 549.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DApple%2520AirPods%2520Max",
+          "price": 549.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388903+00:00"
+    },
+    {
+      "id": "NPH-EXP-0028",
+      "name": {
+        "ar": "سماعات Sennheiser Momentum 4",
+        "en": "Sennheiser Momentum 4"
+      },
+      "category": "headphones",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Sennheiser+Momentum+4&tag=neopulsehub09-20&ref=nosim",
+          "price": 349.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSennheiser%2520Momentum%25204",
+          "price": 349.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388908+00:00"
+    },
+    {
+      "id": "NPH-EXP-0029",
+      "name": {
+        "ar": "سماعات Audio-Technica ATH-M50x",
+        "en": "Audio-Technica ATH-M50x"
+      },
+      "category": "headphones",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Audio-Technica+ATH-M50x&tag=neopulsehub09-20&ref=nosim",
+          "price": 149.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAudio-Technica%2520ATH-M50x",
+          "price": 149.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388913+00:00"
+    },
+    {
+      "id": "NPH-EXP-0030",
+      "name": {
+        "ar": "سماعات JBL Tour One M2",
+        "en": "JBL Tour One M2"
+      },
+      "category": "headphones",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=JBL+Tour+One+M2&tag=neopulsehub09-20&ref=nosim",
+          "price": 299.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DJBL%2520Tour%2520One%2520M2",
+          "price": 299.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388917+00:00"
+    },
+    {
+      "id": "NPH-EXP-0031",
+      "name": {
+        "ar": "سماعات Beats Studio 3",
+        "en": "Beats Studio3 Wireless"
+      },
+      "category": "headphones",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Beats+Studio3+Wireless&tag=neopulsehub09-20&ref=nosim",
+          "price": 279.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DBeats%2520Studio3%2520Wireless",
+          "price": 279.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388922+00:00"
+    },
+    {
+      "id": "NPH-EXP-0032",
+      "name": {
+        "ar": "سماعات SteelSeries Arctis Nova Pro",
+        "en": "SteelSeries Arctis Nova Pro"
+      },
+      "category": "headphones",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=SteelSeries+Arctis+Nova+Pro&tag=neopulsehub09-20&ref=nosim",
+          "price": 399.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSteelSeries%2520Arctis%2520Nova%2520Pro",
+          "price": 399.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388926+00:00"
+    },
+    {
+      "id": "NPH-EXP-0033",
+      "name": {
+        "ar": "سماعات HyperX Cloud III",
+        "en": "HyperX Cloud III"
+      },
+      "category": "headphones",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=HyperX+Cloud+III&tag=neopulsehub09-20&ref=nosim",
+          "price": 99.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DHyperX%2520Cloud%2520III",
+          "price": 99.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388930+00:00"
+    },
+    {
+      "id": "NPH-EXP-0034",
+      "name": {
+        "ar": "سماعات Razer BlackShark V2",
+        "en": "Razer BlackShark V2"
+      },
+      "category": "headphones",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Razer+BlackShark+V2&tag=neopulsehub09-20&ref=nosim",
+          "price": 99.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DRazer%2520BlackShark%2520V2",
+          "price": 99.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388934+00:00"
+    },
+    {
+      "id": "NPH-EXP-0035",
+      "name": {
+        "ar": "مساعد أمازون إيكو دوت 5",
+        "en": "Amazon Echo Dot (5th Gen)"
+      },
+      "category": "smart-home",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Amazon+Echo+Dot+%285th+Gen%29&tag=neopulsehub09-20&ref=nosim",
+          "price": 49.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAmazon%2520Echo%2520Dot%2520%25285th%2520Gen%2529",
+          "price": 49.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388938+00:00"
+    },
+    {
+      "id": "NPH-EXP-0036",
+      "name": {
+        "ar": "مساعد جوجل نست هب 2",
+        "en": "Google Nest Hub (2nd Gen)"
+      },
+      "category": "smart-home",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Google+Nest+Hub+%282nd+Gen%29&tag=neopulsehub09-20&ref=nosim",
+          "price": 99.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DGoogle%2520Nest%2520Hub%2520%25282nd%2520Gen%2529",
+          "price": 99.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388942+00:00"
+    },
+    {
+      "id": "NPH-EXP-0037",
+      "name": {
+        "ar": "كاميرا أرلو برو 4K",
+        "en": "Arlo Pro 4K Security Camera"
+      },
+      "category": "smart-home",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Arlo+Pro+4K+Security+Camera&tag=neopulsehub09-20&ref=nosim",
+          "price": 199.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DArlo%2520Pro%25204K%2520Security%2520Camera",
+          "price": 199.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388946+00:00"
+    },
+    {
+      "id": "NPH-EXP-0038",
+      "name": {
+        "ar": "جرس باب رينج فيديو 4",
+        "en": "Ring Video Doorbell 4"
+      },
+      "category": "smart-home",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Ring+Video+Doorbell+4&tag=neopulsehub09-20&ref=nosim",
+          "price": 199.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DRing%2520Video%2520Doorbell%25204",
+          "price": 199.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388950+00:00"
+    },
+    {
+      "id": "NPH-EXP-0039",
+      "name": {
+        "ar": "مقابس TP-Link كاسا الذكية",
+        "en": "TP-Link Kasa Smart Plugs"
+      },
+      "category": "smart-home",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=TP-Link+Kasa+Smart+Plugs&tag=neopulsehub09-20&ref=nosim",
+          "price": 29.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DTP-Link%2520Kasa%2520Smart%2520Plugs",
+          "price": 29.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388959+00:00"
+    },
+    {
+      "id": "NPH-EXP-0040",
+      "name": {
+        "ar": "إضاءة فيليبس هيو",
+        "en": "Philips Hue Starter Kit"
+      },
+      "category": "smart-home",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Philips+Hue+Starter+Kit&tag=neopulsehub09-20&ref=nosim",
+          "price": 199.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DPhilips%2520Hue%2520Starter%2520Kit",
+          "price": 199.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388963+00:00"
+    },
+    {
+      "id": "NPH-EXP-0041",
+      "name": {
+        "ar": "مكيف صوتي Ecobee",
+        "en": "Ecobee SmartThermostat"
+      },
+      "category": "smart-home",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Ecobee+SmartThermostat&tag=neopulsehub09-20&ref=nosim",
+          "price": 249.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DEcobee%2520SmartThermostat",
+          "price": 249.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388969+00:00"
+    },
+    {
+      "id": "NPH-EXP-0042",
+      "name": {
+        "ar": "قفل August Smart Lock Pro",
+        "en": "August Smart Lock Pro"
+      },
+      "category": "smart-home",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=August+Smart+Lock+Pro&tag=neopulsehub09-20&ref=nosim",
+          "price": 229.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAugust%2520Smart%2520Lock%2520Pro",
+          "price": 229.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388973+00:00"
+    },
+    {
+      "id": "NPH-EXP-0043",
+      "name": {
+        "ar": "مقياس حرارة Nest",
+        "en": "Google Nest Temperature Sensor"
+      },
+      "category": "smart-home",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Google+Nest+Temperature+Sensor&tag=neopulsehub09-20&ref=nosim",
+          "price": 39.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DGoogle%2520Nest%2520Temperature%2520Sensor",
+          "price": 39.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388977+00:00"
+    },
+    {
+      "id": "NPH-EXP-0044",
+      "name": {
+        "ar": "شاشة تلفزيون سامسونج ذكي 55",
+        "en": "Samsung Smart TV 55 inch"
+      },
+      "category": "smart-home",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Samsung+Smart+TV+55+inch&tag=neopulsehub09-20&ref=nosim",
+          "price": 499.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSamsung%2520Smart%2520TV%252055%2520inch",
+          "price": 499.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388981+00:00"
+    },
+    {
+      "id": "NPH-EXP-0045",
+      "name": {
+        "ar": "ميزان أومرون الذكي",
+        "en": "Omron Evolv Blood Pressure Monitor"
+      },
+      "category": "health",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Omron+Evolv+Blood+Pressure+Monitor&tag=neopulsehub09-20&ref=nosim",
+          "price": 129.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DOmron%2520Evolv%2520Blood%2520Pressure%2520Monitor",
+          "price": 129.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388984+00:00"
+    },
+    {
+      "id": "NPH-EXP-0046",
+      "name": {
+        "ar": "جهاز تتبع الخصوبة ava",
+        "en": "Ava Fertility Tracker Bracelet"
+      },
+      "category": "health",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Ava+Fertility+Tracker+Bracelet&tag=neopulsehub09-20&ref=nosim",
+          "price": 279.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAva%2520Fertility%2520Tracker%2520Bracelet",
+          "price": 279.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388988+00:00"
+    },
+    {
+      "id": "NPH-EXP-0047",
+      "name": {
+        "ar": "مقياس سكر فريستايل ليبر",
+        "en": "FreeStyle Libre CGM"
+      },
+      "category": "health",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=FreeStyle+Libre+CGM&tag=neopulsehub09-20&ref=nosim",
+          "price": 159.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DFreeStyle%2520Libre%2520CGM",
+          "price": 159.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388992+00:00"
+    },
+    {
+      "id": "NPH-EXP-0048",
+      "name": {
+        "ar": "جهاز air doctor",
+        "en": "Air Doctor Pro Air Purifier"
+      },
+      "category": "health",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Air+Doctor+Pro+Air+Purifier&tag=neopulsehub09-20&ref=nosim",
+          "price": 399.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAir%2520Doctor%2520Pro%2520Air%2520Purifier",
+          "price": 399.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.388996+00:00"
+    },
+    {
+      "id": "NPH-EXP-0049",
+      "name": {
+        "ar": "فرشاة أسنان ألكسا",
+        "en": "Oral-B iO Series 9"
+      },
+      "category": "health",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Oral-B+iO+Series+9&tag=neopulsehub09-20&ref=nosim",
+          "price": 199.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DOral-B%2520iO%2520Series%25209",
+          "price": 199.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389002+00:00"
+    },
+    {
+      "id": "NPH-EXP-0050",
+      "name": {
+        "ar": "جهاز ماساج Theragun",
+        "en": "Theragun Prime"
+      },
+      "category": "health",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Theragun+Prime&tag=neopulsehub09-20&ref=nosim",
+          "price": 299.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DTheragun%2520Prime",
+          "price": 299.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389006+00:00"
+    },
+    {
+      "id": "NPH-EXP-0051",
+      "name": {
+        "ar": "جهاز تدليك الرقبة",
+        "en": "Neck Massager with Heat"
+      },
+      "category": "health",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Neck+Massager+with+Heat&tag=neopulsehub09-20&ref=nosim",
+          "price": 59.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DNeck%2520Massager%2520with%2520Heat",
+          "price": 59.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389010+00:00"
+    },
+    {
+      "id": "NPH-EXP-0052",
+      "name": {
+        "ar": "مرتبة CPAP ResMed",
+        "en": "ResMed AirMini CPAP"
+      },
+      "category": "health",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=ResMed+AirMini+CPAP&tag=neopulsehub09-20&ref=nosim",
+          "price": 499.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DResMed%2520AirMini%2520CPAP",
+          "price": 499.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389016+00:00"
+    },
+    {
+      "id": "NPH-EXP-0053",
+      "name": {
+        "ar": "ميزان ذكي Withings",
+        "en": "Withings Body Smart Scale"
+      },
+      "category": "health",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Withings+Body+Smart+Scale&tag=neopulsehub09-20&ref=nosim",
+          "price": 99.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DWithings%2520Body%2520Smart%2520Scale",
+          "price": 99.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389020+00:00"
+    },
+    {
+      "id": "NPH-EXP-0054",
+      "name": {
+        "ar": "جهاز قياس الأكسجين",
+        "en": "Fingertip Pulse Oximeter"
+      },
+      "category": "health",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Fingertip+Pulse+Oximeter&tag=neopulsehub09-20&ref=nosim",
+          "price": 39.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DFingertip%2520Pulse%2520Oximeter",
+          "price": 39.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389024+00:00"
+    },
+    {
+      "id": "NPH-EXP-0055",
+      "name": {
+        "ar": "لابتوب ماك بوك اير M3",
+        "en": "MacBook Air M3"
+      },
+      "category": "productivity",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=MacBook+Air+M3&tag=neopulsehub09-20&ref=nosim",
+          "price": 1099.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DMacBook%2520Air%2520M3",
+          "price": 1099.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389028+00:00"
+    },
+    {
+      "id": "NPH-EXP-0056",
+      "name": {
+        "ar": "لابتوب Dell XPS 13 بلس",
+        "en": "Dell XPS 13 Plus"
+      },
+      "category": "productivity",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Dell+XPS+13+Plus&tag=neopulsehub09-20&ref=nosim",
+          "price": 1299.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DDell%2520XPS%252013%2520Plus",
+          "price": 1299.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389032+00:00"
+    },
+    {
+      "id": "NPH-EXP-0057",
+      "name": {
+        "ar": "لابتوب HP Spectre x360",
+        "en": "HP Spectre x360"
+      },
+      "category": "productivity",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=HP+Spectre+x360&tag=neopulsehub09-20&ref=nosim",
+          "price": 1199.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DHP%2520Spectre%2520x360",
+          "price": 1199.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389036+00:00"
+    },
+    {
+      "id": "NPH-EXP-0058",
+      "name": {
+        "ar": "لابتوب Lenovo ThinkPad X1",
+        "en": "Lenovo ThinkPad X1 Carbon"
+      },
+      "category": "productivity",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Lenovo+ThinkPad+X1+Carbon&tag=neopulsehub09-20&ref=nosim",
+          "price": 1499.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DLenovo%2520ThinkPad%2520X1%2520Carbon",
+          "price": 1499.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389040+00:00"
+    },
+    {
+      "id": "NPH-EXP-0059",
+      "name": {
+        "ar": "لابتوب ASUS ZenBook 14",
+        "en": "ASUS ZenBook 14"
+      },
+      "category": "productivity",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=ASUS+ZenBook+14&tag=neopulsehub09-20&ref=nosim",
+          "price": 899.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DASUS%2520ZenBook%252014",
+          "price": 899.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389044+00:00"
+    },
+    {
+      "id": "NPH-EXP-0060",
+      "name": {
+        "ar": "آيباد أبل برو 11",
+        "en": "Apple iPad Pro 11 inch"
+      },
+      "category": "productivity",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Apple+iPad+Pro+11+inch&tag=neopulsehub09-20&ref=nosim",
+          "price": 799.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DApple%2520iPad%2520Pro%252011%2520inch",
+          "price": 799.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389051+00:00"
+    },
+    {
+      "id": "NPH-EXP-0061",
+      "name": {
+        "ar": "آيباد أبل اير 10.9",
+        "en": "Apple iPad Air 10.9 inch"
+      },
+      "category": "productivity",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Apple+iPad+Air+10.9+inch&tag=neopulsehub09-20&ref=nosim",
+          "price": 599.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DApple%2520iPad%2520Air%252010.9%2520inch",
+          "price": 599.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389057+00:00"
+    },
+    {
+      "id": "NPH-EXP-0062",
+      "name": {
+        "ar": "آيباد سامسونج جالكسي Tab S9",
+        "en": "Samsung Galaxy Tab S9"
+      },
+      "category": "productivity",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Samsung+Galaxy+Tab+S9&tag=neopulsehub09-20&ref=nosim",
+          "price": 799.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSamsung%2520Galaxy%2520Tab%2520S9",
+          "price": 799.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389061+00:00"
+    },
+    {
+      "id": "NPH-EXP-0063",
+      "name": {
+        "ar": "قلم أبل بنسل برو",
+        "en": "Apple Pencil Pro"
+      },
+      "category": "productivity",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Apple+Pencil+Pro&tag=neopulsehub09-20&ref=nosim",
+          "price": 129.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DApple%2520Pencil%2520Pro",
+          "price": 129.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389065+00:00"
+    },
+    {
+      "id": "NPH-EXP-0064",
+      "name": {
+        "ar": "كيبورد لوجيتك MX ماستر",
+        "en": "Logitech MX Master 3S"
+      },
+      "category": "productivity",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Logitech+MX+Master+3S&tag=neopulsehub09-20&ref=nosim",
+          "price": 99.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DLogitech%2520MX%2520Master%25203S",
+          "price": 99.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389069+00:00"
+    },
+    {
+      "id": "NPH-EXP-0065",
+      "name": {
+        "ar": "جهاز بلاي ستيشن 5",
+        "en": "PlayStation 5"
+      },
+      "category": "gaming",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=PlayStation+5&tag=neopulsehub09-20&ref=nosim",
+          "price": 499.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DPlayStation%25205",
+          "price": 499.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389075+00:00"
+    },
+    {
+      "id": "NPH-EXP-0066",
+      "name": {
+        "ar": "جهاز Xbox Series X",
+        "en": "Xbox Series X"
+      },
+      "category": "gaming",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Xbox+Series+X&tag=neopulsehub09-20&ref=nosim",
+          "price": 499.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DXbox%2520Series%2520X",
+          "price": 499.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389079+00:00"
+    },
+    {
+      "id": "NPH-EXP-0067",
+      "name": {
+        "ar": "جهاز نينتندو سويتش اولد",
+        "en": "Nintendo Switch OLED"
+      },
+      "category": "gaming",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Nintendo+Switch+OLED&tag=neopulsehub09-20&ref=nosim",
+          "price": 349.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DNintendo%2520Switch%2520OLED",
+          "price": 349.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389083+00:00"
+    },
+    {
+      "id": "NPH-EXP-0068",
+      "name": {
+        "ar": "نظارات Meta Quest 3",
+        "en": "Meta Quest 3 VR Headset"
+      },
+      "category": "gaming",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Meta+Quest+3+VR+Headset&tag=neopulsehub09-20&ref=nosim",
+          "price": 499.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DMeta%2520Quest%25203%2520VR%2520Headset",
+          "price": 499.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389087+00:00"
+    },
+    {
+      "id": "NPH-EXP-0069",
+      "name": {
+        "ar": "طاولة لعب Steam Deck",
+        "en": "Steam Deck OLED"
+      },
+      "category": "gaming",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Steam+Deck+OLED&tag=neopulsehub09-20&ref=nosim",
+          "price": 549.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSteam%2520Deck%2520OLED",
+          "price": 549.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389090+00:00"
+    },
+    {
+      "id": "NPH-EXP-0070",
+      "name": {
+        "ar": "كرسي ألعاب ريزر",
+        "en": "Razer Iskur V2 Gaming Chair"
+      },
+      "category": "gaming",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Razer+Iskur+V2+Gaming+Chair&tag=neopulsehub09-20&ref=nosim",
+          "price": 599.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DRazer%2520Iskur%2520V2%2520Gaming%2520Chair",
+          "price": 599.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389096+00:00"
+    },
+    {
+      "id": "NPH-EXP-0071",
+      "name": {
+        "ar": "شاشة ألعاب سامسونج 27",
+        "en": "Samsung Odyssey G7 Gaming Monitor"
+      },
+      "category": "gaming",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Samsung+Odyssey+G7+Gaming+Monitor&tag=neopulsehub09-20&ref=nosim",
+          "price": 699.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSamsung%2520Odyssey%2520G7%2520Gaming%2520Monitor",
+          "price": 699.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389100+00:00"
+    },
+    {
+      "id": "NPH-EXP-0072",
+      "name": {
+        "ar": "سماعات جيمينج Astro A50",
+        "en": "Astro A50 Gaming Headset"
+      },
+      "category": "gaming",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Astro+A50+Gaming+Headset&tag=neopulsehub09-20&ref=nosim",
+          "price": 299.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAstro%2520A50%2520Gaming%2520Headset",
+          "price": 299.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389104+00:00"
+    },
+    {
+      "id": "NPH-EXP-0073",
+      "name": {
+        "ar": "ماوس جيمينج لوجيتك G Pro",
+        "en": "Logitech G Pro X Superlight 2"
+      },
+      "category": "gaming",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Logitech+G+Pro+X+Superlight+2&tag=neopulsehub09-20&ref=nosim",
+          "price": 199.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DLogitech%2520G%2520Pro%2520X%2520Superlight%25202",
+          "price": 199.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389108+00:00"
+    },
+    {
+      "id": "NPH-EXP-0074",
+      "name": {
+        "ar": "كيبورد ميكانيكي Corsair",
+        "en": "Corsair K70 Pro Mechanical"
+      },
+      "category": "gaming",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Corsair+K70+Pro+Mechanical&tag=neopulsehub09-20&ref=nosim",
+          "price": 169.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DCorsair%2520K70%2520Pro%2520Mechanical",
+          "price": 169.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389112+00:00"
+    },
+    {
+      "id": "NPH-EXP-0075",
+      "name": {
+        "ar": "كاميرا سوني A7 IV",
+        "en": "Sony Alpha A7 IV"
+      },
+      "category": "cameras",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Sony+Alpha+A7+IV&tag=neopulsehub09-20&ref=nosim",
+          "price": 2499.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSony%2520Alpha%2520A7%2520IV",
+          "price": 2499.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389116+00:00"
+    },
+    {
+      "id": "NPH-EXP-0076",
+      "name": {
+        "ar": "كاميرا كانون R6 مارك 2",
+        "en": "Canon EOS R6 Mark II"
+      },
+      "category": "cameras",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Canon+EOS+R6+Mark+II&tag=neopulsehub09-20&ref=nosim",
+          "price": 2499.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DCanon%2520EOS%2520R6%2520Mark%2520II",
+          "price": 2499.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389119+00:00"
+    },
+    {
+      "id": "NPH-EXP-0077",
+      "name": {
+        "ar": "كاميرا فوجي X-T5",
+        "en": "Fujifilm X-T5"
+      },
+      "category": "cameras",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Fujifilm+X-T5&tag=neopulsehub09-20&ref=nosim",
+          "price": 1699.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DFujifilm%2520X-T5",
+          "price": 1699.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389123+00:00"
+    },
+    {
+      "id": "NPH-EXP-0078",
+      "name": {
+        "ar": "كاميرا Nikon Z8",
+        "en": "Nikon Z8"
+      },
+      "category": "cameras",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Nikon+Z8&tag=neopulsehub09-20&ref=nosim",
+          "price": 3999.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DNikon%2520Z8",
+          "price": 3999.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389133+00:00"
+    },
+    {
+      "id": "NPH-EXP-0079",
+      "name": {
+        "ar": "كاميرا GoPro Hero 12",
+        "en": "GoPro HERO12 Black"
+      },
+      "category": "cameras",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=GoPro+HERO12+Black&tag=neopulsehub09-20&ref=nosim",
+          "price": 399.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DGoPro%2520HERO12%2520Black",
+          "price": 399.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389138+00:00"
+    },
+    {
+      "id": "NPH-EXP-0080",
+      "name": {
+        "ar": "كاميرا DJI Osmo Pocket 3",
+        "en": "DJI Osmo Pocket 3"
+      },
+      "category": "cameras",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=DJI+Osmo+Pocket+3&tag=neopulsehub09-20&ref=nosim",
+          "price": 499.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DDJI%2520Osmo%2520Pocket%25203",
+          "price": 499.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389143+00:00"
+    },
+    {
+      "id": "NPH-EXP-0081",
+      "name": {
+        "ar": "كاميرا insta360 X4",
+        "en": "Insta360 X4"
+      },
+      "category": "cameras",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Insta360+X4&tag=neopulsehub09-20&ref=nosim",
+          "price": 499.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DInsta360%2520X4",
+          "price": 499.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389149+00:00"
+    },
+    {
+      "id": "NPH-EXP-0082",
+      "name": {
+        "ar": "كاميرا ويب لوجيتك Brio 4K",
+        "en": "Logitech Brio 4K Webcam"
+      },
+      "category": "cameras",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Logitech+Brio+4K+Webcam&tag=neopulsehub09-20&ref=nosim",
+          "price": 199.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DLogitech%2520Brio%25204K%2520Webcam",
+          "price": 199.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389155+00:00"
+    },
+    {
+      "id": "NPH-EXP-0083",
+      "name": {
+        "ar": "كاميرا_ring_indoor",
+        "en": "Ring Indoor Cam"
+      },
+      "category": "cameras",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Ring+Indoor+Cam&tag=neopulsehub09-20&ref=nosim",
+          "price": 59.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DRing%2520Indoor%2520Cam",
+          "price": 59.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389159+00:00"
+    },
+    {
+      "id": "NPH-EXP-0084",
+      "name": {
+        "ar": "كاميرا ArloEssential",
+        "en": "Arlo Essential Spotlight"
+      },
+      "category": "cameras",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Arlo+Essential+Spotlight&tag=neopulsehub09-20&ref=nosim",
+          "price": 179.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DArlo%2520Essential%2520Spotlight",
+          "price": 179.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389163+00:00"
+    },
+    {
+      "id": "NPH-EXP-0085",
+      "name": {
+        "ar": "نظارات Ray-Ban Meta الذكية",
+        "en": "Ray-Ban Meta Smart Glasses"
+      },
+      "category": "smart-glasses",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Ray-Ban+Meta+Smart+Glasses&tag=neopulsehub09-20&ref=nosim",
+          "price": 299.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DRay-Ban%2520Meta%2520Smart%2520Glasses",
+          "price": 299.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389167+00:00"
+    },
+    {
+      "id": "NPH-EXP-0086",
+      "name": {
+        "ar": "حقيبة لابتوب Targus",
+        "en": "Targus Newport Convertible"
+      },
+      "category": "accessories",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Targus+Newport+Convertible&tag=neopulsehub09-20&ref=nosim",
+          "price": 89.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DTargus%2520Newport%2520Convertible",
+          "price": 89.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389171+00:00"
+    },
+    {
+      "id": "NPH-EXP-0087",
+      "name": {
+        "ar": "شاحن MagSafe أبل",
+        "en": "Apple MagSafe Charger"
+      },
+      "category": "accessories",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Apple+MagSafe+Charger&tag=neopulsehub09-20&ref=nosim",
+          "price": 39.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DApple%2520MagSafe%2520Charger",
+          "price": 39.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389175+00:00"
+    },
+    {
+      "id": "NPH-EXP-0088",
+      "name": {
+        "ar": "باور بانك أنكر 20000",
+        "en": "Anker PowerCore 20000"
+      },
+      "category": "accessories",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Anker+PowerCore+20000&tag=neopulsehub09-20&ref=nosim",
+          "price": 59.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAnker%2520PowerCore%252020000",
+          "price": 59.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389179+00:00"
+    },
+    {
+      "id": "NPH-EXP-0089",
+      "name": {
+        "ar": "حامل هاتف كويل",
+        "en": "Coil Phone Stand"
+      },
+      "category": "accessories",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Coil+Phone+Stand&tag=neopulsehub09-20&ref=nosim",
+          "price": 29.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DCoil%2520Phone%2520Stand",
+          "price": 29.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389183+00:00"
+    },
+    {
+      "id": "NPH-EXP-0090",
+      "name": {
+        "ar": "سماعة جاك Lightning",
+        "en": "Apple EarPods Lightning"
+      },
+      "category": "accessories",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Apple+EarPods+Lightning&tag=neopulsehub09-20&ref=nosim",
+          "price": 19.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DApple%2520EarPods%2520Lightning",
+          "price": 19.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389186+00:00"
+    },
+    {
+      "id": "NPH-EXP-0091",
+      "name": {
+        "ar": "كابل USB-C أنكر",
+        "en": "Anker USB-C Cable 6ft"
+      },
+      "category": "accessories",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Anker+USB-C+Cable+6ft&tag=neopulsehub09-20&ref=nosim",
+          "price": 15.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAnker%2520USB-C%2520Cable%25206ft",
+          "price": 15.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389192+00:00"
+    },
+    {
+      "id": "NPH-EXP-0092",
+      "name": {
+        "ar": "حامل ساعة ماك",
+        "en": "MacMate Watch Stand"
+      },
+      "category": "accessories",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=MacMate+Watch+Stand&tag=neopulsehub09-20&ref=nosim",
+          "price": 35.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DMacMate%2520Watch%2520Stand",
+          "price": 35.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389199+00:00"
+    },
+    {
+      "id": "NPH-EXP-0093",
+      "name": {
+        "ar": "جراب AirPods برو",
+        "en": "AirPods Pro Case"
+      },
+      "category": "accessories",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=AirPods+Pro+Case&tag=neopulsehub09-20&ref=nosim",
+          "price": 19.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAirPods%2520Pro%2520Case",
+          "price": 19.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389203+00:00"
+    },
+    {
+      "id": "NPH-EXP-0094",
+      "name": {
+        "ar": "واقي شاشة أيفون",
+        "en": "iPhone 15 Pro Screen Protector"
+      },
+      "category": "accessories",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=iPhone+15+Pro+Screen+Protector&tag=neopulsehub09-20&ref=nosim",
+          "price": 12.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DiPhone%252015%2520Pro%2520Screen%2520Protector",
+          "price": 12.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389207+00:00"
+    },
+    {
+      "id": "NPH-EXP-0095",
+      "name": {
+        "ar": "خلاط Ninja Foodi",
+        "en": "Ninja Foodi Power Pitcher"
+      },
+      "category": "kitchen",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Ninja+Foodi+Power+Pitcher&tag=neopulsehub09-20&ref=nosim",
+          "price": 149.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DNinja%2520Foodi%2520Power%2520Pitcher",
+          "price": 149.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389211+00:00"
+    },
+    {
+      "id": "NPH-EXP-0096",
+      "name": {
+        "ar": "قهوة Barista Express",
+        "en": "Breville Barista Express"
+      },
+      "category": "kitchen",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Breville+Barista+Express&tag=neopulsehub09-20&ref=nosim",
+          "price": 699.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DBreville%2520Barista%2520Express",
+          "price": 699.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389215+00:00"
+    },
+    {
+      "id": "NPH-EXP-0097",
+      "name": {
+        "ar": "شواية George Foreman",
+        "en": "George Foreman Contact Grill"
+      },
+      "category": "kitchen",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=George+Foreman+Contact+Grill&tag=neopulsehub09-20&ref=nosim",
+          "price": 99.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DGeorge%2520Foreman%2520Contact%2520Grill",
+          "price": 99.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389218+00:00"
+    },
+    {
+      "id": "NPH-EXP-0098",
+      "name": {
+        "ar": "مقلاة هوائية Cosori",
+        "en": "Cosori Air Fryer 5.8qt"
+      },
+      "category": "kitchen",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Cosori+Air+Fryer+5.8qt&tag=neopulsehub09-20&ref=nosim",
+          "price": 129.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DCosori%2520Air%2520Fryer%25205.8qt",
+          "price": 129.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389222+00:00"
+    },
+    {
+      "id": "NPH-EXP-0099",
+      "name": {
+        "ar": "محمصة توست البيتزا",
+        "en": "Cuisinart TOAST-PIX"
+      },
+      "category": "kitchen",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Cuisinart+TOAST-PIX&tag=neopulsehub09-20&ref=nosim",
+          "price": 49.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DCuisinart%2520TOAST-PIX",
+          "price": 49.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389226+00:00"
+    },
+    {
+      "id": "NPH-EXP-0100",
+      "name": {
+        "ar": "غلاية كهربائية Hamilton",
+        "en": "Hamilton Beach Kettle"
+      },
+      "category": "kitchen",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Hamilton+Beach+Kettle&tag=neopulsehub09-20&ref=nosim",
+          "price": 39.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DHamilton%2520Beach%2520Kettle",
+          "price": 39.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389232+00:00"
+    },
+    {
+      "id": "NPH-EXP-0101",
+      "name": {
+        "ar": "مطحنة قهوة Cuisinart",
+        "en": "Cuisinart DBM-8 Supreme"
+      },
+      "category": "kitchen",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Cuisinart+DBM-8+Supreme&tag=neopulsehub09-20&ref=nosim",
+          "price": 59.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DCuisinart%2520DBM-8%2520Supreme",
+          "price": 59.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389236+00:00"
+    },
+    {
+      "id": "NPH-EXP-0102",
+      "name": {
+        "ar": "مقياس طعام ذكي",
+        "en": "Smart Food Scale"
+      },
+      "category": "kitchen",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Smart+Food+Scale&tag=neopulsehub09-20&ref=nosim",
+          "price": 29.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSmart%2520Food%2520Scale",
+          "price": 29.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389242+00:00"
+    },
+    {
+      "id": "NPH-EXP-0103",
+      "name": {
+        "ar": "حامل آيباد للمطبخ",
+        "en": "Kitchen iPad Stand"
+      },
+      "category": "kitchen",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Kitchen+iPad+Stand&tag=neopulsehub09-20&ref=nosim",
+          "price": 35.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DKitchen%2520iPad%2520Stand",
+          "price": 35.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389247+00:00"
+    },
+    {
+      "id": "NPH-EXP-0104",
+      "name": {
+        "ar": "ثلاجة ذكية Samsung",
+        "en": "Samsung Smart Fridge"
+      },
+      "category": "kitchen",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Samsung+Smart+Fridge&tag=neopulsehub09-20&ref=nosim",
+          "price": 2499.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSamsung%2520Smart%2520Fridge",
+          "price": 2499.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389251+00:00"
+    },
+    {
+      "id": "NPH-EXP-0105",
+      "name": {
+        "ar": "دمبل ذكي Bowflex",
+        "en": "Bowflex SelectTech 552"
+      },
+      "category": "sports",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Bowflex+SelectTech+552&tag=neopulsehub09-20&ref=nosim",
+          "price": 329.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DBowflex%2520SelectTech%2520552",
+          "price": 329.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389274+00:00"
+    },
+    {
+      "id": "NPH-EXP-0106",
+      "name": {
+        "ar": "جهاز HIIT صغير",
+        "en": "Hypervolt GO 2"
+      },
+      "category": "sports",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Hypervolt+GO+2&tag=neopulsehub09-20&ref=nosim",
+          "price": 199.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DHypervolt%2520GO%25202",
+          "price": 199.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389279+00:00"
+    },
+    {
+      "id": "NPH-EXP-0107",
+      "name": {
+        "ar": "سكوتر Ninebot",
+        "en": "Ninebot MAX G2"
+      },
+      "category": "sports",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Ninebot+MAX+G2&tag=neopulsehub09-20&ref=nosim",
+          "price": 699.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DNinebot%2520MAX%2520G2",
+          "price": 699.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389283+00:00"
+    },
+    {
+      "id": "NPH-EXP-0108",
+      "name": {
+        "ar": "دراجة Peloton",
+        "en": "Peloton Bike+"
+      },
+      "category": "sports",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Peloton+Bike%2B&tag=neopulsehub09-20&ref=nosim",
+          "price": 2495.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DPeloton%2520Bike%252B",
+          "price": 2495.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389286+00:00"
+    },
+    {
+      "id": "NPH-EXP-0109",
+      "name": {
+        "ar": "ساعة garmin forerunner",
+        "en": "Garmin Forerunner 965"
+      },
+      "category": "sports",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Garmin+Forerunner+965&tag=neopulsehub09-20&ref=nosim",
+          "price": 599.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DGarmin%2520Forerunner%2520965",
+          "price": 599.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389290+00:00"
+    },
+    {
+      "id": "NPH-EXP-0110",
+      "name": {
+        "ar": "حبل قفز ذكي",
+        "en": "Smart Jump Rope"
+      },
+      "category": "sports",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Smart+Jump+Rope&tag=neopulsehub09-20&ref=nosim",
+          "price": 39.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DSmart%2520Jump%2520Rope",
+          "price": 39.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389294+00:00"
+    },
+    {
+      "id": "NPH-EXP-0111",
+      "name": {
+        "ar": "مرتبة يوغا Gaiam",
+        "en": "Gaiam Premium Yoga Mat"
+      },
+      "category": "sports",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Gaiam+Premium+Yoga+Mat&tag=neopulsehub09-20&ref=nosim",
+          "price": 49.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DGaiam%2520Premium%2520Yoga%2520Mat",
+          "price": 49.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389298+00:00"
+    },
+    {
+      "id": "NPH-EXP-0112",
+      "name": {
+        "ar": "مضرب بيدو",
+        "en": "Pendoji Badminton Racket"
+      },
+      "category": "sports",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Pendoji+Badminton+Racket&tag=neopulsehub09-20&ref=nosim",
+          "price": 79.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DPendoji%2520Badminton%2520Racket",
+          "price": 79.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389302+00:00"
+    },
+    {
+      "id": "NPH-EXP-0113",
+      "name": {
+        "ar": "شنطة رياضة Under Armour",
+        "en": "Under Armour Storm Bag"
+      },
+      "category": "sports",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Under+Armour+Storm+Bag&tag=neopulsehub09-20&ref=nosim",
+          "price": 89.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DUnder%2520Armour%2520Storm%2520Bag",
+          "price": 89.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389308+00:00"
+    },
+    {
+      "id": "NPH-EXP-0114",
+      "name": {
+        "ar": "نظارات سباحة Aqualens",
+        "en": "Aqualens Swim Goggles"
+      },
+      "category": "sports",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Aqualens+Swim+Goggles&tag=neopulsehub09-20&ref=nosim",
+          "price": 35.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAqualens%2520Swim%2520Goggles",
+          "price": 35.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389312+00:00"
+    },
+    {
+      "id": "NPH-EXP-0115",
+      "name": {
+        "ar": "شاحن سيارة MagSafe",
+        "en": "MagSafe Car Charger"
+      },
+      "category": "car",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=MagSafe+Car+Charger&tag=neopulsehub09-20&ref=nosim",
+          "price": 45.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DMagSafe%2520Car%2520Charger",
+          "price": 45.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389316+00:00"
+    },
+    {
+      "id": "NPH-EXP-0116",
+      "name": {
+        "ar": "GPS Garmin Drive",
+        "en": "Garmin Drive 52"
+      },
+      "category": "car",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Garmin+Drive+52&tag=neopulsehub09-20&ref=nosim",
+          "price": 199.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DGarmin%2520Drive%252052",
+          "price": 199.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389322+00:00"
+    },
+    {
+      "id": "NPH-EXP-0117",
+      "name": {
+        "ar": "كاميرا سيارة Rexing",
+        "en": "Rexing V1 Dash Cam"
+      },
+      "category": "car",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Rexing+V1+Dash+Cam&tag=neopulsehub09-20&ref=nosim",
+          "price": 149.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DRexing%2520V1%2520Dash%2520Cam",
+          "price": 149.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389326+00:00"
+    },
+    {
+      "id": "NPH-EXP-0118",
+      "name": {
+        "ar": "راديو اندرويد Joying",
+        "en": "Joying Android Car Radio"
+      },
+      "category": "car",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Joying+Android+Car+Radio&tag=neopulsehub09-20&ref=nosim",
+          "price": 299.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DJoying%2520Android%2520Car%2520Radio",
+          "price": 299.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389329+00:00"
+    },
+    {
+      "id": "NPH-EXP-0119",
+      "name": {
+        "ar": "مكبر صوت سيارة JBL",
+        "en": "JBL Car Speaker"
+      },
+      "category": "car",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=JBL+Car+Speaker&tag=neopulsehub09-20&ref=nosim",
+          "price": 89.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DJBL%2520Car%2520Speaker",
+          "price": 89.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389335+00:00"
+    },
+    {
+      "id": "NPH-EXP-0120",
+      "name": {
+        "ar": "منظف هواء سيارة",
+        "en": "Car Air Purifier"
+      },
+      "category": "car",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Car+Air+Purifier&tag=neopulsehub09-20&ref=nosim",
+          "price": 49.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DCar%2520Air%2520Purifier",
+          "price": 49.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389339+00:00"
+    },
+    {
+      "id": "NPH-EXP-0121",
+      "name": {
+        "ar": "حامل هاتف سيارة",
+        "en": "Magnetic Car Phone Mount"
+      },
+      "category": "car",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Magnetic+Car+Phone+Mount&tag=neopulsehub09-20&ref=nosim",
+          "price": 25.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DMagnetic%2520Car%2520Phone%2520Mount",
+          "price": 25.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389343+00:00"
+    },
+    {
+      "id": "NPH-EXP-0122",
+      "name": {
+        "ar": "مسجل بيانات OBD2",
+        "en": "OBD2 Bluetooth Scanner"
+      },
+      "category": "car",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=OBD2+Bluetooth+Scanner&tag=neopulsehub09-20&ref=nosim",
+          "price": 79.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DOBD2%2520Bluetooth%2520Scanner",
+          "price": 79.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389346+00:00"
+    },
+    {
+      "id": "NPH-EXP-0123",
+      "name": {
+        "ar": "إضاءة LED سيارة",
+        "en": "Car LED Interior Lights"
+      },
+      "category": "car",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Car+LED+Interior+Lights&tag=neopulsehub09-20&ref=nosim",
+          "price": 29.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DCar%2520LED%2520Interior%2520Lights",
+          "price": 29.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389353+00:00"
+    },
+    {
+      "id": "NPH-EXP-0124",
+      "name": {
+        "ar": "كاميرا رجوع سيارة",
+        "en": "Rear View Backup Camera"
+      },
+      "category": "car",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Rear+View+Backup+Camera&tag=neopulsehub09-20&ref=nosim",
+          "price": 89.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DRear%2520View%2520Backup%2520Camera",
+          "price": 89.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389359+00:00"
+    },
+    {
+      "id": "NPH-EXP-0125",
+      "name": {
+        "ar": "ساعة أطفال Garmin",
+        "en": "Garmin vívofit jr. 3"
+      },
+      "category": "kids",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Garmin+v%C3%ADvofit+jr.+3&tag=neopulsehub09-20&ref=nosim",
+          "price": 99.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DGarmin%2520v%25C3%25ADvofit%2520jr.%25203",
+          "price": 99.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389363+00:00"
+    },
+    {
+      "id": "NPH-EXP-0126",
+      "name": {
+        "ar": "جهاز Kindle للأطفال",
+        "en": "Amazon Fire Kids Tablet"
+      },
+      "category": "kids",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Amazon+Fire+Kids+Tablet&tag=neopulsehub09-20&ref=nosim",
+          "price": 149.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAmazon%2520Fire%2520Kids%2520Tablet",
+          "price": 149.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389367+00:00"
+    },
+    {
+      "id": "NPH-EXP-0127",
+      "name": {
+        "ar": "روبوت Cozmo",
+        "en": "Anki Cozmo Robot"
+      },
+      "category": "kids",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Anki+Cozmo+Robot&tag=neopulsehub09-20&ref=nosim",
+          "price": 299.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DAnki%2520Cozmo%2520Robot",
+          "price": 299.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389371+00:00"
+    },
+    {
+      "id": "NPH-EXP-0128",
+      "name": {
+        "ar": "مساعد Echo Dot للأطفال",
+        "en": "Echo Dot Kids Edition"
+      },
+      "category": "kids",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Echo+Dot+Kids+Edition&tag=neopulsehub09-20&ref=nosim",
+          "price": 44.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DEcho%2520Dot%2520Kids%2520Edition",
+          "price": 44.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389375+00:00"
+    },
+    {
+      "id": "NPH-EXP-0129",
+      "name": {
+        "ar": "لعبة ليغو Spike",
+        "en": "LEGO Education Spike"
+      },
+      "category": "kids",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=LEGO+Education+Spike&tag=neopulsehub09-20&ref=nosim",
+          "price": 329.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DLEGO%2520Education%2520Spike",
+          "price": 329.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389381+00:00"
+    },
+    {
+      "id": "NPH-EXP-0130",
+      "name": {
+        "ar": "دراجة كهربائية للأطفال",
+        "en": "Razor Power Core E100"
+      },
+      "category": "kids",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Razor+Power+Core+E100&tag=neopulsehub09-20&ref=nosim",
+          "price": 149.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DRazor%2520Power%2520Core%2520E100",
+          "price": 149.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389385+00:00"
+    },
+    {
+      "id": "NPH-EXP-0131",
+      "name": {
+        "ar": "كاميرا أكشن للأطفال",
+        "en": "VTech Kidizoom Camera"
+      },
+      "category": "kids",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=VTech+Kidizoom+Camera&tag=neopulsehub09-20&ref=nosim",
+          "price": 59.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DVTech%2520Kidizoom%2520Camera",
+          "price": 59.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389389+00:00"
+    },
+    {
+      "id": "NPH-EXP-0132",
+      "name": {
+        "ar": "سماعات للأطفال JBL",
+        "en": "JBL Jr. headphones"
+      },
+      "category": "kids",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=JBL+Jr.+headphones&tag=neopulsehub09-20&ref=nosim",
+          "price": 29.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DJBL%2520Jr.%2520headphones",
+          "price": 29.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389393+00:00"
+    },
+    {
+      "id": "NPH-EXP-0133",
+      "name": {
+        "ar": "جهاز تعليمي تابلت",
+        "en": "LeapFrog LeapTable"
+      },
+      "category": "kids",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=LeapFrog+LeapTable&tag=neopulsehub09-20&ref=nosim",
+          "price": 79.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DLeapFrog%2520LeapTable",
+          "price": 79.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389397+00:00"
+    },
+    {
+      "id": "NPH-EXP-0134",
+      "name": {
+        "ar": "مراقبة طفل OwlCam",
+        "en": "Owl Camera Baby Monitor"
+      },
+      "category": "kids",
+      "stores": {
+        "amazon": {
+          "url": "https://www.amazon.com/s?k=Owl+Camera+Baby+Monitor&tag=neopulsehub09-20&ref=nosim",
+          "price": 149.0
+        },
+        "aliexpress": {
+          "url": "https://s.click.aliexpress.com/e/_DDeGdzQ?aff_fcid=ma1023802882fefae&aff_platform=portals-tool&src=portals&url=https%3A%2F%2Fwww.aliexpress.com%2Fwholesale%3FSearchText%3DOwl%2520Camera%2520Baby%2520Monitor",
+          "price": 149.0
+        }
+      },
+      "cheaper_store": "amazon",
+      "price_delta_usd": 0.0,
+      "savings_percent": 0.0,
+      "generated_at": "2026-11-18T23:48:21.389402+00:00"
+    }
+  ]
+}
