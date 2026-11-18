@@ -9,7 +9,9 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
+import subprocess
 import sys
 from pathlib import Path
 from typing import Any
@@ -129,7 +131,6 @@ def run_helper_script(name: str, required: bool = False) -> int:
     if not script.exists():
         print(f"{name} not found — skipping")
         return 0 if not required else 1
-    import subprocess
 
     result = subprocess.run(
         [sys.executable, str(script)],
@@ -147,8 +148,6 @@ def run_helper_script(name: str, required: bool = False) -> int:
 def run_cta_fixer() -> int:
     """Rewrite legacy dead blog CTAs (products.html?id=NPH-*) into direct
     Amazon/AliExpress affiliate links. Idempotent — safe on every deploy."""
-    import subprocess
-
     script = ROOT / "scripts" / "fix_blog_ctas.py"
     if not script.exists():
         print("fix_blog_ctas.py not found — skipping CTA rewrite")
@@ -164,6 +163,57 @@ def run_cta_fixer() -> int:
     if result.returncode != 0:
         print(result.stderr.strip(), file=sys.stderr)
     return result.returncode
+
+
+def commit_generated_changes_in_ci() -> bool:
+    """In GitHub Actions (--write mode), commit and push ALL generated changes
+    (products.json + rewritten blog articles + injected assets) so nothing is
+    silently dropped by the workflow's narrower `git add products.json`.
+
+    The workflow's own commit step then finds a clean tree and skips its push,
+    avoiding duplicate commits or push races. Local runs (no GITHUB_ACTIONS)
+    are never touched — this only acts inside CI.
+    """
+    if os.environ.get("GITHUB_ACTIONS") != "true":
+        return False
+
+    def git(*args: str) -> subprocess.CompletedProcess:
+        return subprocess.run(["git", *args], cwd=ROOT, capture_output=True, text=True)
+
+    status = git("status", "--porcelain")
+    if status.returncode != 0 or not status.stdout.strip():
+        return False
+
+    if git("config", "user.email").returncode != 0:
+        git("config", "user.email", "action@github.com")
+    if git("config", "user.name").returncode != 0:
+        git("config", "user.name", "GitHub Action")
+
+    git("add", "-A")
+    staged = git("diff", "--staged", "--quiet")
+    if staged.returncode == 0:
+        return False
+
+    commit = git(
+        "commit",
+        "-m",
+        "chore: sync catalog + rewrite blog CTAs to direct affiliate links [skip ci]",
+    )
+    if commit.returncode != 0:
+        print(commit.stderr.strip(), file=sys.stderr)
+        return False
+
+    push = git("push", "origin", "HEAD:main")
+    if push.returncode != 0:
+        # Remote moved while we ran (another workflow pushed first):
+        # rebase our commit on top and retry once.
+        git("pull", "--rebase", "origin", "main")
+        retry = git("push", "origin", "HEAD:main")
+        if retry.returncode != 0:
+            print(retry.stderr.strip(), file=sys.stderr)
+            return False
+    print("Committed and pushed generated changes (catalog + blog CTAs).")
+    return True
 
 
 def main() -> int:
@@ -196,6 +246,8 @@ def main() -> int:
     if args.write and changed:
         CATALOG_PATH.write_text(output, encoding="utf-8")
         print(f"wrote {CATALOG_PATH}")
+    if args.write:
+        commit_generated_changes_in_ci()
     return 1 if args.check and changed else 0
 
 
