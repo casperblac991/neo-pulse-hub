@@ -1,12 +1,36 @@
 User-agent: *
 Allow: /
+Allow: /blog/
+Allow: /blog/ar/
+Allow: /blog/en/
 
-# Block internal/dynamic paths
 Disallow: /bots/
 Disallow: /*.py$
 Disallow: /admin_bot.py
 Disallow: /webhook_server.py
 Disallow: /shared_db.py
+Disallow: /logs/
+Disallow: /node_modules/
+Disallow: /.env
+
+# Allow major crawlers explicitly
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
 
 # Sitemap
 Sitemap: https://neo-pulse-hub.it.com/sitemap.xml

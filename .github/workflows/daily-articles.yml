@@ -42,3 +42,5 @@ jobs:
           git add -A
           git diff --staged --quiet || git commit -m "📝 مقالة يومية جديدة - $(date +'%Y-%m-%d')"
           git push
+      - name: Ping search engines
+        run: python3 scripts/ping_search_engines.py || true
