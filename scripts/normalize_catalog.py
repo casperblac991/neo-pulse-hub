@@ -166,7 +166,7 @@ def run_cta_fixer() -> int:
 
 
 def run_domain_fixer() -> int:
-    """Replace every legacy-domain reference (neo-pulse-hub.com without .it)
+    """Replace every legacy-domain reference (www.neo-pulse-hub.it.com without .it)
     with the live domain across all text files. Idempotent — safe on every
     deploy; keeps new generated articles and canonicals pointing at the
     domain we own."""
