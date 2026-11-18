@@ -144,6 +144,28 @@ def run_helper_script(name: str, required: bool = False) -> int:
     return result.returncode
 
 
+def run_cta_fixer() -> int:
+    """Rewrite legacy dead blog CTAs (products.html?id=NPH-*) into direct
+    Amazon/AliExpress affiliate links. Idempotent — safe on every deploy."""
+    import subprocess
+
+    script = ROOT / "scripts" / "fix_blog_ctas.py"
+    if not script.exists():
+        print("fix_blog_ctas.py not found — skipping CTA rewrite")
+        return 0
+    result = subprocess.run(
+        [sys.executable, str(script), "--write"],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+    )
+    if result.stdout:
+        print(result.stdout.strip())
+    if result.returncode != 0:
+        print(result.stderr.strip(), file=sys.stderr)
+    return result.returncode
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--check", action="store_true")
@@ -161,6 +183,10 @@ def main() -> int:
 
     # Deploy-time image hygiene: replace duplicated placeholders with unique photos.
     run_helper_script("fix_product_images.py")
+
+    # Deploy-time monetization: rewrite dead blog buy-buttons into direct
+    # Amazon/AliExpress affiliate links (idempotent, guards revenue path).
+    run_cta_fixer()
 
     products, stats = load_normalized()
     output = json.dumps(products, ensure_ascii=False, indent=2) + "\n"
