@@ -165,6 +165,28 @@ def run_cta_fixer() -> int:
     return result.returncode
 
 
+def run_domain_fixer() -> int:
+    """Replace every legacy-domain reference (neo-pulse-hub.com without .it)
+    with the live domain across all text files. Idempotent — safe on every
+    deploy; keeps new generated articles and canonicals pointing at the
+    domain we own."""
+    script = ROOT / "scripts" / "fix_old_domain.py"
+    if not script.exists():
+        print("fix_old_domain.py not found — skipping domain rewrite")
+        return 0
+    result = subprocess.run(
+        [sys.executable, str(script), "--write"],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+    )
+    if result.stdout:
+        print(result.stdout.strip())
+    if result.returncode != 0:
+        print(result.stderr.strip(), file=sys.stderr)
+    return result.returncode
+
+
 def commit_generated_changes_in_ci() -> bool:
     """In GitHub Actions (--write mode), commit and push ALL generated changes
     (products.json + rewritten blog articles + injected assets) so nothing is
@@ -237,6 +259,10 @@ def main() -> int:
     # Deploy-time monetization: rewrite dead blog buy-buttons into direct
     # Amazon/AliExpress affiliate links (idempotent, guards revenue path).
     run_cta_fixer()
+
+    # Deploy-time SEO: replace legacy domain references with the live domain
+    # (canonicals, generator templates, JSON-LD) so Google indexes what we own.
+    run_domain_fixer()
 
     products, stats = load_normalized()
     output = json.dumps(products, ensure_ascii=False, indent=2) + "\n"
