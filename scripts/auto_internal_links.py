@@ -9,8 +9,9 @@ For every blog article (blog/ar/*.html and blog/en/*.html):
      so Google can show expanded FAQ rich results.
 
 Idempotent: each injected block carries a data-nph-auto marker; re-running
-replaces existing blocks instead of duplicating them. Original content is
-never touched.
+removes ALL previously injected blocks (however many, wherever they sit in
+the file — other deploy-time injectors may interleave content between them)
+and re-injects exactly one clean copy. Original content is never touched.
 
 Usage:
   python3 scripts/auto_internal_links.py --write
@@ -30,13 +31,22 @@ BLOG_DIRS = [ROOT / "blog" / "ar", ROOT / "blog" / "en"]
 BASE_URL = "https://neo-pulse-hub.it.com"
 
 MARKER = "data-nph-auto"
-FAQ_Q = "هل {name} يستحق الشراء؟"
-FAQ_BLOCK_RE = re.compile(
-    r'<section class="nph-faq-section"[^>]*' + re.escape(MARKER) + r'[^>]*>.*?</section>\s*<script type="application/ld\+json"[^>]*' + re.escape(MARKER) + r'>.*?</script>',
+
+# IMPORTANT: section and script are matched independently. Earlier versions
+# matched them as one glued block; once another injector (affiliate
+# disclosure) inserted a <div> between them, the removal failed silently and
+# every sync stacked another copy. Independent patterns clean up any number
+# of leftovers wherever they sit.
+FAQ_SECTION_RE = re.compile(
+    r'<section class="nph-faq-section"[^>]*' + re.escape(MARKER) + r'[^>]*>.*?</section>\s*',
+    re.DOTALL,
+)
+FAQ_JSON_RE = re.compile(
+    r'<script type="application/ld\+json"[^>]*' + re.escape(MARKER) + r'[^>]*>.*?</script>\s*',
     re.DOTALL,
 )
 RELATED_RE = re.compile(
-    r'<aside class="nph-related"[^>]*' + re.escape(MARKER) + r'[^>]*>.*?</aside>',
+    r'<aside class="nph-related"[^>]*' + re.escape(MARKER) + r'[^>]*>.*?</aside>\s*',
     re.DOTALL,
 )
 
@@ -175,9 +185,19 @@ def build_faq_block(product: dict[str, Any] | None, lang: str) -> str:
     return block
 
 
+def count_auto_blocks(content: str) -> tuple[int, int]:
+    """Return (faq_section_count, faq_json_count) in a page — used for stats."""
+    return (
+        len(FAQ_SECTION_RE.findall(content)),
+        len(FAQ_JSON_RE.findall(content)),
+    )
+
+
 def inject(content: str, related_html: str, faq_html: str) -> str:
-    # Remove any previous injected blocks (idempotency).
-    content = FAQ_BLOCK_RE.sub("", content)
+    # Remove ALL previous injected blocks, wherever they sit (idempotency).
+    # Counts before cleanup let us report pages that had stacked duplicates.
+    content = FAQ_SECTION_RE.sub("", content)
+    content = FAQ_JSON_RE.sub("", content)
     content = RELATED_RE.sub("", content)
 
     injection = faq_html + related_html
@@ -206,31 +226,46 @@ def main() -> int:
         catalog = []
 
     articles = load_articles()
-    problems, fixed = [], 0
+    problems, fixed, deduped = [], 0, 0
 
     for article in articles:
         content = article["content"]
+        faq_sections, faq_jsons = count_auto_blocks(content)
+        had_duplicates = faq_sections > 1 or faq_jsons > 1
+
         related = related_articles(article, articles)
         product = find_product_for(article["title"], catalog)
         related_html = build_related_block(article, related, article["lang"])
         faq_html = build_faq_block(product, article["lang"])
         new_content = inject(content, related_html, faq_html)
-        if new_content != content:
+
+        # A page is "current" if it has exactly one clean copy of each block
+        # and no duplicates were removed.
+        sections_now, jsons_now = count_auto_blocks(new_content)
+        is_current = (not had_duplicates) and new_content == content and sections_now == 1 and jsons_now == 1
+
+        if not is_current:
             if check_mode:
                 problems.append(str(article["path"].relative_to(ROOT)))
             else:
                 article["path"].write_text(new_content, encoding="utf-8")
                 fixed += 1
+                if had_duplicates:
+                    deduped += 1
 
     if check_mode:
         if problems:
-            print(f"X {len(problems)} article(s) missing blocks:")
+            print(f"X {len(problems)} article(s) missing/duplicated blocks:")
             for p in problems:
                 print(f"  ! {p}")
             return 1
-        print("OK: all articles carry related + FAQ blocks.")
+        print("OK: all articles carry exactly one related + FAQ block set.")
         return 0
-    print(json.dumps({"articles_processed": len(articles), "articles_injected": fixed}, ensure_ascii=False))
+    print(json.dumps({
+        "articles_processed": len(articles),
+        "articles_rewritten": fixed,
+        "duplicates_cleaned": deduped,
+    }, ensure_ascii=False))
     return 0
 
 
