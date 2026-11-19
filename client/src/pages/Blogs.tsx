@@ -13,7 +13,7 @@ export default function Blogs() {
   const [searchTerm, setSearchTerm] = useState("");
   const [lang, setLang] = useState<"all" | "ar" | "en">("all");
 
-  const blogsQuery = trpc.blogs.list.useQuery(undefined, { retry: 2, staleTime: 5 * 60_000 });
+  const blogsQuery = trpc.blogs.all.useQuery(undefined, { retry: 2, staleTime: 5 * 60_000 });
   const blogs = blogsQuery.data ?? [];
 
   const filtered = useMemo(() => {

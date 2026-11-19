@@ -29,3 +29,6 @@ leads.json
 # Lock files
 !backend/package-lock.json
 pnpm-lock.yaml
+-e 
+# Patch files
+*.patch
