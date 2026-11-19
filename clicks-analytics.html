@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>لوحة النقرات | NEO PULSE HUB</title>
+<meta name="robots" content="noindex, nofollow">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#020510;--surface:#0a0d1a;--surface2:#0f1423;--border:rgba(99,179,237,.12);--border2:rgba(99,179,237,.25);--blue2:#60a5fa;--cyan2:#22d3ee;--green:#10b981;--gold:#f59e0b;--text:#e2e8f0;--muted:rgba(226,232,240,.55)}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+.container{max-width:900px;margin:0 auto;padding:3rem 1.2rem}
+h1{font-family:'Orbitron',sans-serif;font-size:1.6rem;margin-bottom:.4rem}
+.lead{color:var(--muted);font-size:.9rem;margin-bottom:2rem}
+h2{font-size:1.1rem;font-weight:800;margin:2rem 0 1rem;display:flex;align-items:center;gap:.5rem}
+h2::before{content:"";width:4px;height:1.2em;background:linear-gradient(180deg,var(--blue2),var(--cyan2));border-radius:2px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:1rem;margin-bottom:1rem}
+.kpi{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.1rem 1.3rem}
+.kpi .label{font-size:.75rem;color:var(--muted);font-weight:700}
+.kpi .value{font-family:'Orbitron',sans-serif;font-size:1.7rem;font-weight:900;margin-top:.2rem;color:var(--cyan2)}
+table{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:.5rem}
+th,td{border:1px solid var(--border);padding:.6rem .8rem;text-align:right}
+th{background:var(--surface2);font-weight:800}
+.test-zone{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.3rem;margin-top:1rem}
+.test-btn{display:inline-block;margin:.4rem .4rem 0 0;padding:.7rem 1.2rem;border-radius:10px;font-weight:800;font-size:.85rem;color:#111;background:linear-gradient(135deg,#f59e0b,#d97706);cursor:pointer;border:none}
+.note{background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.25);border-radius:12px;padding:1rem 1.2rem;font-size:.85rem;margin-top:1.5rem}
+.note strong{color:var(--gold)}
+.actions{margin-top:1.5rem;display:flex;gap:.7rem;flex-wrap:wrap}
+button{font-family:'Cairo',sans-serif;cursor:pointer}
+.refresh{background:linear-gradient(135deg,#3b82f6,#22d3ee);color:#fff;border:none;padding:.7rem 1.4rem;border-radius:10px;font-weight:800;font-size:.85rem}
+.clear{background:transparent;border:1px solid var(--border2);color:var(--muted);padding:.7rem 1.4rem;border-radius:10px;font-weight:700;font-size:.85rem}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>📊 لوحة نقرات الأفيليت</h1>
+  <p class="lead">صفحة إدارية لاختبار ومراقبة عدّ النقرات على روابط العمولة — تعرض نقرات هذا المتصفح (كل زائر له سجلّه الخاص على جهازه).</p>
+
+  <div class="kpis" id="kpis"></div>
+
+  <h2>🌐 النقرات حسب المتجر</h2>
+  <table id="byNetwork"><thead><tr><th>المتجر</th><th>النقرات</th></tr></thead><tbody></tbody></table>
+
+  <h2>📅 النقرات حسب اليوم</h2>
+  <table id="byDay"><thead><tr><th>التاريخ</th><th>النقرات</th></tr></thead><tbody></tbody></table>
+
+  <h2>🧪 منطقة الاختبار — جرّب بنفسك</h2>
+  <div class="test-zone">
+    <p style="font-size:.85rem;color:var(--muted);margin-bottom:.8rem">اضغط أي زر (يفتح المتجر في تبويب جديد) ثم عد لهذه الصفحة واضغط "تحديث" — يجب أن يزيد العدّاد.</p>
+    <a class="test-btn" href="https://www.amazon.com/s?k=smartwatch&amp;tag=neopulsehub09-20" target="_blank" rel="nofollow sponsored noopener">⚡ اختبار: أمازون</a>
+    <a class="test-btn" href="https://www.aliexpress.com/wholesale?SearchText=smartwatch" target="_blank" rel="nofollow sponsored noopener">🛒 اختبار: AliExpress</a>
+  </div>
+
+  <div class="actions">
+    <button class="refresh" onclick="render()">🔄 تحديث</button>
+    <button class="clear" onclick="if(confirm('مسح كل النقرات المسجلة في هذا المتصفح؟')){localStorage.removeItem('nph_affiliate_log_v1');render();}">🗑️ مسح السجل</button>
+  </div>
+
+  <div class="note">
+    <strong>مهم:</strong> هذه اللوحة تُظهر النقرات المسجلة في <u>هذا المتصفح فقط</u> (localStorage) — النقرات الحقيقية لكل زوار موقعك تظهر مباشرة في حساباتك الرسمية: <strong>Amazon Associates Reports</strong> و<strong>AliExpress Portal</strong>. لوحة الموقع هنا للاختبار والفحص الذاتي فقط، وليست مصدر الحساب المالي.
+  </div>
+</div>
+<script src="scripts/affiliate-tracker.js" defer></script>
+<script>
+function render() {
+  var stats = window.NPH_AFFILIATE_STATS ? window.NPH_AFFILIATE_STATS() : null;
+  var kpis = document.getElementById("kpis");
+  if (!stats) { kpis.innerHTML = '<div class="kpi"><div class="label">الحالة</div><div class="value">—</div></div>'; return; }
+  var amazon = stats.clicksByNetwork.amazon || 0;
+  var ali = stats.clicksByNetwork.aliexpress || 0;
+  var today = new Date().toISOString().slice(0, 10);
+  var todayClicks = stats.clicksByDay[today] || 0;
+  kpis.innerHTML =
+    '<div class="kpi"><div class="label">إجمالي النقرات</div><div class="value">' + stats.totalClicks + '</div></div>' +
+    '<div class="kpi"><div class="label">اليوم</div><div class="value">' + todayClicks + '</div></div>' +
+    '<div class="kpi"><div class="label">أمازون</div><div class="value" style="color:var(--gold)">' + amazon + '</div></div>' +
+    '<div class="kpi"><div class="label">AliExpress</div><div class="value" style="color:#ef4444">' + ali + '</div></div>';
+
+  var nT = document.querySelector("#byNetwork tbody");
+  nT.innerHTML = Object.keys(stats.clicksByNetwork).length
+    ? Object.entries(stats.clicksByNetwork).map(function (e) { return "<tr><td>" + e[0] + "</td><td>" + e[1] + "</td></tr>"; }).join("")
+    : "<tr><td colspan='2' style='color:var(--muted)'>لا نقرات بعد — جرّب أزرار الاختبار</td></tr>";
+
+  var dT = document.querySelector("#byDay tbody");
+  dT.innerHTML = Object.keys(stats.clicksByDay).length
+    ? Object.entries(stats.clicksByDay).sort().reverse().map(function (e) { return "<tr><td>" + e[0] + "</td><td>" + e[1] + "</td></tr>"; }).join("")
+    : "<tr><td colspan='2' style='color:var(--muted)'>لا نقرات بعد</td></tr>";
+}
+window.addEventListener("load", function () { setTimeout(render, 300); });
+</script>
+</body>
+</html>
