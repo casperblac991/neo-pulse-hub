@@ -32,3 +32,15 @@ pnpm-lock.yaml
 -e 
 # Patch files
 *.patch
+
+# Large media files — host on CDN instead
+images/products/*.jpg
+images/products/*.png
+images/ads/*.png
+images/ads/*.mp4
+images/*.png
+platform-audit/assets/*.jpg
+platform-audit/assets/*.png
+
+# Logs
+logs/
