@@ -114,3 +114,134 @@
     });
   };
 })();
+
+/** Keep homepage claims aligned with observable catalog data. */
+(function () {
+  'use strict';
+  var path = window.location.pathname;
+  var isHome = path === '/' || /\/index\.html$/.test(path);
+  var isContact = /\/contact\.html$/.test(path);
+  if (!isHome && !isContact) return;
+
+  function patchTranslations(patches) {
+    try {
+      if (typeof T === 'undefined') return;
+      Object.keys(patches).forEach(function (language) {
+        if (T[language]) Object.assign(T[language], patches[language]);
+      });
+    } catch (e) { /* Leave the page usable if a translation table is unavailable. */ }
+  }
+
+  if (isHome) {
+    patchTranslations({
+      ar: {
+        hero_badge: 'منتجات تقنية ذكية مختارة',
+        hero_desc: 'تصفّح منتجات التقنية الذكية عبر روابط المتاجر. تحقّق من السعر والتوفر لدى البائع قبل الشراء.',
+        growth_title: 'كتالوج المنتجات',
+        growth_products: 'منتجات في الكتالوج',
+        products_sub: 'استكشف المنتجات عبر صفحات المتاجر، وتحقق من السعر والتوفر قبل الشراء.',
+        f1t: 'تفاصيل الشراء لدى البائع',
+        f1d: 'تحقق من معلومات الضمان وسياسة الإرجاع لدى البائع قبل الشراء.',
+        f2t: 'تصفح الخيارات',
+        f2d: 'استكشف مجموعة من المنتجات التقنية عبر روابط المتاجر.',
+        f4t: 'الشحن حسب البائع',
+        f4d: 'تختلف خيارات الشحن والتكلفة ومدة التسليم حسب المنتج وموقعك والبائع.',
+        f6t: 'معلومات المنتج',
+        f6d: 'تحقق من السعر والتوفر ومواصفات المنتج مباشرة لدى البائع.',
+        footer_desc: 'استكشف منتجات التقنية الذكية عبر روابط المتاجر، وتحقق من التفاصيل لدى البائع قبل الشراء.'
+      },
+      en: {
+        hero_badge: 'Selected smart technology products',
+        hero_desc: 'Browse smart-tech products through retailer links. Check current price and availability with the seller before buying.',
+        growth_title: 'Product catalog',
+        growth_products: 'products in the catalog',
+        products_sub: 'Explore products through retailer pages and check price and availability before buying.',
+        f1t: 'Seller purchase details',
+        f1d: 'Check warranty information and the seller’s return policy before buying.',
+        f2t: 'Browse options',
+        f2d: 'Explore a selection of technology products through retailer links.',
+        f4t: 'Shipping depends on the seller',
+        f4d: 'Shipping options, cost and delivery time vary by product, location and seller.',
+        f6t: 'Product information',
+        f6d: 'Check price, availability and product specifications directly with the seller.',
+        footer_desc: 'Explore smart-tech products through retailer links and check details with the seller before buying.'
+      }
+    });
+
+    if (typeof updateTranslations === 'function') updateTranslations();
+    var status = document.getElementById('growthCycleAt');
+    if (status) status.textContent = document.documentElement.lang === 'en' ? 'Checking catalog…' : 'جارٍ فحص الكتالوج…';
+    var dataSource = document.getElementById('liveDataSource');
+    if (dataSource) dataSource.textContent = 'JSON';
+    var unsupportedStats = document.querySelector('.hero-stats');
+    if (unsupportedStats) unsupportedStats.hidden = true;
+
+    document.querySelectorAll('script[type="application/ld+json"]').forEach(function (schema) {
+      try {
+        var data = JSON.parse(schema.textContent || 'null');
+        if (data && data['@type'] === 'ItemList') {
+          schema.remove();
+        } else if (data && data['@type'] === 'WebSite' && data.potentialAction) {
+          delete data.potentialAction;
+          schema.textContent = JSON.stringify(data);
+        }
+      } catch (e) { /* Keep unrelated structured data unchanged. */ }
+    });
+
+    document.querySelectorAll('a[href="privacy.html#affiliate"]').forEach(function (link) {
+      link.setAttribute('href', '/affiliate-disclosure.html');
+    });
+  }
+
+  if (isContact) {
+    patchTranslations({
+      ar: {
+        btn_send: 'فتح مسودة البريد الإلكتروني',
+        toast_ok: 'إذا فُتح تطبيق البريد، أرسل الرسالة منه لإكمال الإرسال.',
+        toast_err: 'أدخل اسمًا وبريدًا صحيحًا ورسالة قبل المتابعة.'
+      },
+      en: {
+        btn_send: 'Open email draft',
+        toast_ok: 'If your email app opens, send the draft there to complete delivery.',
+        toast_err: 'Enter your name, a valid email address and a message to continue.'
+      }
+    });
+
+    window.sendMessage = function () {
+      var name = document.getElementById('inp_name').value.trim();
+      var email = document.getElementById('inp_email').value.trim();
+      var subjectInput = document.getElementById('inp_subject').value.trim();
+      var message = document.getElementById('inp_message').value.trim();
+      var language = document.documentElement.lang === 'en' ? 'en' : 'ar';
+      var messages = {
+        ar: {
+          invalid: 'أدخل اسمًا وبريدًا صحيحًا ورسالة قبل المتابعة.',
+          tooLong: 'اختصر الرسالة إلى 4000 حرف أو أقل لفتحها في تطبيق البريد.',
+          opened: 'إذا فُتح تطبيق البريد، أرسل الرسالة منه لإكمال الإرسال.',
+          subject: 'رسالة من موقع NEO PULSE HUB'
+        },
+        en: {
+          invalid: 'Enter your name, a valid email address and a message to continue.',
+          tooLong: 'Shorten the message to 4000 characters or fewer to open it in your email app.',
+          opened: 'If your email app opens, send the draft there to complete delivery.',
+          subject: 'Message from NEO PULSE HUB'
+        }
+      };
+      if (!name || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || !message) {
+        if (typeof window.showToast === 'function') window.showToast('⚠️', messages[language].invalid);
+        return;
+      }
+      if (message.length > 4000) {
+        if (typeof window.showToast === 'function') window.showToast('⚠️', messages[language].tooLong);
+        return;
+      }
+      var subject = subjectInput || messages[language].subject;
+      var body = language === 'en'
+        ? 'Name: ' + name + '\nEmail: ' + email + '\n\n' + message
+        : 'الاسم: ' + name + '\nالبريد الإلكتروني: ' + email + '\n\n' + message;
+      var mailto = 'mailto:Saidchaik@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      if (typeof window.showToast === 'function') window.showToast('📧', messages[language].opened);
+      window.location.href = mailto;
+    };
+  }
+})();
