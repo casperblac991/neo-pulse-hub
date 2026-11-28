@@ -215,6 +215,18 @@
       "created_at": "2026-11-27T17:55:12.601480",
       "affiliate_link": "https://www.amazon.com/s?k=Breville+Barista+Express&tag=neopulsehub09-20&ref=nosim",
       "rating": 4.8
+    },
+    {
+      "title": "دليل الشراء: ساعة Garmin Fenix 7X برو - كل ما تحتاج معرفته",
+      "file": "ساعة-Garmin-Fenix-7X-برو-review.html",
+      "path": "blog/ar/ساعة-Garmin-Fenix-7X-برو-review.html",
+      "product_id": "NPH-EXP-0007",
+      "product_name": "ساعة Garmin Fenix 7X برو",
+      "category": "smartwatch",
+      "date": "2026-11-28",
+      "created_at": "2026-11-28T16:41:15.615155",
+      "affiliate_link": "https://www.amazon.com/s?k=Garmin+Fenix+7X+Pro&tag=neopulsehub09-20&ref=nosim",
+      "rating": 4.8
     }
   ],
   "en": [
@@ -432,6 +444,18 @@
       "date": "2026-11-27",
       "created_at": "2026-11-27T17:55:12.601636",
       "affiliate_link": "https://www.amazon.com/s?k=Breville+Barista+Express&tag=neopulsehub09-20&ref=nosim",
+      "rating": 4.8
+    },
+    {
+      "title": "Buying Guide: Garmin Fenix 7X Pro - Everything you need to know",
+      "file": "Garmin-Fenix-7X-Pro-review.html",
+      "path": "blog/en/Garmin-Fenix-7X-Pro-review.html",
+      "product_id": "NPH-EXP-0007",
+      "product_name": "Garmin Fenix 7X Pro",
+      "category": "smartwatch",
+      "date": "2026-11-28",
+      "created_at": "2026-11-28T16:41:15.615303",
+      "affiliate_link": "https://www.amazon.com/s?k=Garmin+Fenix+7X+Pro&tag=neopulsehub09-20&ref=nosim",
       "rating": 4.8
     }
   ]
